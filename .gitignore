@@ -1,0 +1,15 @@
+build/
+.vitis/
+.hw/
+.vscode/
+
+*.o
+*.obj
+*.exe
+*.log
+*.jou
+*.str
+*.xo
+*.xclbin
+*.bin
+*.dat
