@@ -7,7 +7,8 @@ $tests = @(
     ".\scripts\run_grayscale_test.ps1",
     ".\scripts\run_gaussian_test.ps1",
     ".\scripts\run_sobel_test.ps1",
-    ".\scripts\run_nms_test.ps1"
+    ".\scripts\run_nms_test.ps1",
+    ".\scripts\run_threshold_test.ps1"
 )
 
 foreach ($test in $tests) {
