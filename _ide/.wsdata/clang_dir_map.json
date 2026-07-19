@@ -1,0 +1,32 @@
+{
+  "workspaceRoot": "/home/superkooks/Uni/COMP4601/assign",
+  "mapping": {
+    "../reference/gaussian_reference.cpp": "canny_hls",
+    "testbench/test_top.cpp": "canny_hls",
+    "testbench/test_sobel.cpp": "canny_hls",
+    "../reference/sobel_reference.cpp": "canny_hls",
+    "reference/sobel_reference.cpp": "canny_hls",
+    "include/canny_types.h": "canny_hls",
+    "src/gaussian_blur.cpp": "canny_hls",
+    "src/hysteresis.cpp": "canny_hls",
+    "src/grayscale.cpp": "canny_hls",
+    "testbench/test_gaussian.cpp": "canny_hls",
+    "testbench/sobel_reference.cpp": "canny_hls",
+    "include/config.h": "canny_hls",
+    "testbench/test_pipeline.cpp": "canny_hls",
+    "testbench/nms_reference.cpp": "canny_hls",
+    "testbench/test_nms.cpp": "canny_hls",
+    "testbench/test_threshold.cpp": "canny_hls",
+    "reference/gaussian_reference.cpp": "canny_hls",
+    "testbench/test_hysteresis.cpp": "canny_hls",
+    "src/double_threshold.cpp": "canny_hls",
+    "src/canny_top.cpp": "canny_hls",
+    "../reference/nms_reference.cpp": "canny_hls",
+    "src/non_maximum_suppression.cpp": "canny_hls",
+    "testbench/test_grayscale.cpp": "canny_hls",
+    "include/canny_stages.h": "canny_hls",
+    "testbench/gaussian_reference.cpp": "canny_hls",
+    "src/sobel.cpp": "canny_hls",
+    "reference/nms_reference.cpp": "canny_hls"
+  }
+}

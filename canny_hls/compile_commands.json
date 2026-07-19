@@ -1,0 +1,261 @@
+[
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "../reference/gaussian_reference.cpp"
+    ],
+    "file": "../reference/gaussian_reference.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_hysteresis.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_hysteresis.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "../reference/sobel_reference.cpp"
+    ],
+    "file": "../reference/sobel_reference.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/gaussian_reference.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/gaussian_reference.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_top.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_top.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_pipeline.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_pipeline.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/sobel_reference.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/sobel_reference.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_grayscale.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_grayscale.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_nms.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_nms.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_sobel.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_sobel.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_gaussian.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_gaussian.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "../reference/nms_reference.cpp"
+    ],
+    "file": "../reference/nms_reference.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_threshold.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_threshold.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
+      "-c",
+      "/home/superkooks/Uni/COMP4601/assign/testbench/nms_reference.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/nms_reference.cpp"
+  }
+]

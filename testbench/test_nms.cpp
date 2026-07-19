@@ -36,7 +36,7 @@ void set_magnitude(
 
 }
 
-int main() {
+int test_nms() {
     const int pixelCount = HEIGHT * WIDTH;
 
     std::vector<GradientPixel> input(

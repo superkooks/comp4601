@@ -7,7 +7,7 @@
 #include "canny_stages.h"
 #include "sobel_reference.h"
 
-const char* direction_name(
+static const char* direction_name(
     GradientDirection direction
 ) {
     switch (direction) {
@@ -27,7 +27,7 @@ const char* direction_name(
     return "unknown";
 }
 
-int main() {
+int test_sobel() {
     const int pixelCount = HEIGHT * WIDTH;
 
     std::vector<std::uint8_t> input(pixelCount, 0);

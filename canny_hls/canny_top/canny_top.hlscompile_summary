@@ -1,0 +1,257 @@
+<ENTRY>
+{
+ "thisFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/canny_top.hlscompile_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Sun Jul 19 16:55:41 2026",
+ "timestampMillis": "1784444141157",
+ "buildStep": {
+  "cmdId": "ca57624e-581f-417b-9ca5-3494574680ab",
+  "name": "v++",
+  "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/logs/canny_top.steps.log",
+  "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg --work_dir canny_top ",
+  "args": [
+   "-c",
+   "--mode",
+   "hls",
+   "--config",
+   "/home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg",
+   "--work_dir",
+   "canny_top"
+  ],
+  "iniFiles": [
+   {
+    "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg",
+    "content": "part=xck26-sfvc784-2LV-c\n\n[hls]\nflow_target=vitis\npackage.output.format=xo\npackage.output.syn=false\nsyn.top=canny_top\nclock=200MHz\nsyn.file=../src/sobel.cpp\nsyn.file=../src/non_maximum_suppression.cpp\nsyn.file=../src/hysteresis.cpp\nsyn.file=../src/grayscale.cpp\nsyn.file=../src/double_threshold.cpp\nsyn.file=../src/canny_top.cpp\nsyn.file=../src/gaussian_blur.cpp\nsyn.file=../include/config.h\nsyn.file=../include/canny_types.h\nsyn.file=../include/canny_stages.h\nsyn.file=../src/config.h\nsyn.file=../src/canny_types.h\nsyn.file=../src/canny_stages.h\ntb.file=../testbench/test_threshold.cpp\ntb.file=../testbench/test_sobel.cpp\ntb.file=../testbench/test_pipeline.cpp\ntb.file=../testbench/test_nms.cpp\ntb.file=../testbench/test_hysteresis.cpp\ntb.file=../testbench/test_grayscale.cpp\ntb.file=../testbench/test_gaussian.cpp\ntb.file=../include/config.h\ntb.file=../include/canny_types.h\ntb.file=../include/canny_stages.h\ntb.file=../testbench/config.h\ntb.file=../testbench/canny_types.h\ntb.file=../testbench/canny_stages.h\ntb.file=../reference/sobel_reference.h\ntb.file=../reference/sobel_reference.cpp\ntb.file=../reference/nms_reference.h\ntb.file=../reference/nms_reference.cpp\ntb.file=../reference/gaussian_reference.h\ntb.file=../reference/gaussian_reference.cpp\ntb.file=../testbench/sobel_reference.h\ntb.file=../testbench/sobel_reference.cpp\ntb.file=../testbench/nms_reference.h\ntb.file=../testbench/nms_reference.cpp\ntb.file=../testbench/gaussian_reference.h\ntb.file=../testbench/gaussian_reference.cpp\ntb.file=../testbench/test_top.cpp"
+   }
+  ],
+  "cwd": "/home/superkooks/Uni/COMP4601/assign/canny_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 19 16:55:41 2026",
+ "timestampMillis": "1784444141157",
+ "status": {
+  "cmdId": "ca57624e-581f-417b-9ca5-3494574680ab",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Sun Jul 19 16:55:47 2026",
+ "timestampMillis": "1784444147026",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_COMPILE",
+  "target": "TT_HW",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "canny_top",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/include/config.h",
+     "/home/superkooks/Uni/COMP4601/assign/include/canny_types.h",
+     "/home/superkooks/Uni/COMP4601/assign/include/canny_stages.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/config.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_types.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_stages.h"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Sun Jul 19 16:55:47 2026",
+ "timestampMillis": "1784444147028",
+ "buildStep": {
+  "cmdId": "5f3c48b9-743f-4374-b80e-fc91bf6a9989",
+  "name": "",
+  "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/superkooks/Uni/COMP4601/assign/canny_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 19 16:55:47 2026",
+ "timestampMillis": "1784444147029",
+ "status": {
+  "cmdId": "5f3c48b9-743f-4374-b80e-fc91bf6a9989",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:55:47 2026",
+ "timestampMillis": "1784444147029",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/hls_data.json",
+  "name": "",
+  "fileType": "JSON",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:55:47 2026",
+ "timestampMillis": "1784444147029",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/syn/report/csynth.rpt",
+  "name": "",
+  "fileType": "TEXT",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:55:47 2026",
+ "timestampMillis": "1784444147030",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/syn/report/csynth.xml",
+  "name": "",
+  "fileType": "XML",
+  "reportType": "HLS_SYNTHESIS",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:56:01 2026",
+ "timestampMillis": "1784444161074",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_DATAFLOW",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:56:01 2026",
+ "timestampMillis": "1784444161075",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_FUNCTION_CALL_GRAPH",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:56:01 2026",
+ "timestampMillis": "1784444161075",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls",
+  "name": "",
+  "fileType": "DIR",
+  "reportType": "HLS_SCHEDULE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 19 16:56:01 2026",
+ "timestampMillis": "1784444161076",
+ "status": {
+  "cmdId": "5f3c48b9-743f-4374-b80e-fc91bf6a9989",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Sun Jul 19 16:56:01 2026",
+ "timestampMillis": "1784444161174",
+ "status": {
+  "cmdId": "ca57624e-581f-417b-9ca5-3494574680ab",
+  "state": "CS_FAILED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:56:01 2026",
+ "timestampMillis": "1784444161220",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/reports/v++_compile_canny_top_guidance.html",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Sun Jul 19 16:56:01 2026",
+ "timestampMillis": "1784444161221",
+ "report": {
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/reports/.db/v++_compile_canny_top_guidance.pb3",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

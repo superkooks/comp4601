@@ -7,7 +7,7 @@
 #include "canny_stages.h"
 #include "gaussian_reference.h"
 
-int main() {
+int test_gaussian() {
     const int pixelCount = HEIGHT * WIDTH;
 
     std::vector<std::uint8_t> input(pixelCount, 0);

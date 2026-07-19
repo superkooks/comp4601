@@ -1,10 +1,9 @@
 #include <array>
 #include <cstdint>
 #include <iostream>
-
 #include "canny_stages.h"
 
-int main() {
+int test_grayscale() {
     std::array<RGBPixel, WIDTH> input{};
     std::array<std::uint8_t, WIDTH> output{};
 

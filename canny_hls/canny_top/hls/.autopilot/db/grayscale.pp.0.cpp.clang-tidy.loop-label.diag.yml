@@ -1,0 +1,16 @@
+---
+MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/grayscale.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_7_1:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp'
+      FileOffset:      7
+      Replacements:
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/grayscale.pp.0.cpp'
+          Offset:          19971
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_7_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+...
