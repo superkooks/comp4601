@@ -13,33 +13,46 @@ void grayscale(
 
 void gaussian_blur(
     const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH]
+    std::uint8_t output[WIDTH],
+    bool *valid_out
 );
 
 void sobel(
     const std::uint8_t input[WIDTH],
-    GradientPixel output[WIDTH]
+    GradientPixel output[WIDTH],
+    bool valid_in,
+    bool *valid_out
 );
 
 void non_maximum_suppression(
     const GradientPixel input[WIDTH],
-    std::uint8_t output[WIDTH]
+    std::uint8_t output[WIDTH],
+    bool valid_in,
+    bool *valid_out
 );
 
 void double_threshold(
     const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH]
+    std::uint8_t output[WIDTH],
+    bool valid_in,
+    bool *valid_out
 );
 
 void hysteresis(
     const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH]
+    std::uint8_t output[WIDTH],
+    bool valid_in,
+    bool *valid_out
 );
+
+void output_row(uint8_t input[WIDTH], uint8_t out[WIDTH*HEIGHT], bool valid);
 
 void gaussian_blur_reset();
 void sobel_reset();
 void non_maximum_suppression_reset();
 void hysteresis_reset();
 void reset_canny_stages();
+void output_row_reset();
+
 
 #endif
