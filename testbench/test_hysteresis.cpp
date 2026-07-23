@@ -15,7 +15,7 @@ int image_index(int row, int column) {
 
 }
 
-int main() {
+int test_hysteresis() {
     const int pixelCount = HEIGHT * WIDTH;
 
     std::vector<std::uint8_t> input(

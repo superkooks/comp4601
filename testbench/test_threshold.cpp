@@ -6,7 +6,7 @@
 #include "canny_stages.h"
 #include "threshold_reference.h"
 
-int main() {
+int test_threshold() {
     const int pixelCount = HEIGHT * WIDTH;
 
     std::vector<std::uint8_t> input(pixelCount, 0);

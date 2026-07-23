@@ -1,3 +1,14 @@
+param(
+    [Parameter(Mandatory = $true)]
+    [string]$TestName,
+
+    [Parameter(Mandatory = $true)]
+    [string]$TestFunction,
+
+    [Parameter(Mandatory = $true)]
+    [string[]]$Sources
+)
+
 $ErrorActionPreference = "Stop"
 
 $projectRoot = Split-Path -Parent $PSScriptRoot
@@ -10,12 +21,15 @@ if (-not (Test-Path $compiler)) {
 }
 
 $buildDirectory = Join-Path $projectRoot "build\windows"
+
 New-Item `
     -ItemType Directory `
     -Path $buildDirectory `
     -Force | Out-Null
 
-$outputExecutable = Join-Path $buildDirectory "test_grayscale.exe"
+$outputExecutable = Join-Path `
+    $buildDirectory `
+    "$TestFunction.exe"
 
 Write-Host "Using compiler: $compiler"
 
@@ -25,9 +39,12 @@ $compilerArguments = @(
     "-Wextra",
     "-Isrc",
     "-Itestbench",
-    "-DTEST_FUNCTION=test_grayscale",
-    "src\grayscale.cpp",
-    "testbench\test_grayscale.cpp",
+    "-DTEST_FUNCTION=$TestFunction"
+)
+
+$compilerArguments += $Sources
+
+$compilerArguments += @(
     "testbench\test_single_stage.cpp",
     "-o",
     $outputExecutable
@@ -36,11 +53,11 @@ $compilerArguments = @(
 & $compiler @compilerArguments
 
 if ($LASTEXITCODE -ne 0) {
-    throw "Compilation failed with exit code $LASTEXITCODE."
+    throw "$TestName compilation failed with exit code $LASTEXITCODE."
 }
 
 & $outputExecutable
 
 if ($LASTEXITCODE -ne 0) {
-    throw "Grayscale test failed with exit code $LASTEXITCODE."
+    throw "$TestName test failed with exit code $LASTEXITCODE."
 }
