@@ -36,7 +36,8 @@ void gaussian_blur_reset() {
 
 void gaussian_blur(
     const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH]
+    std::uint8_t output[WIDTH],
+    bool *valid_out
 ) {
     const int writeSlot =
         rowsReceived % KERNEL_SIZE;
@@ -46,25 +47,17 @@ void gaussian_blur(
         lineBuffer[writeSlot][column] = input[column];
         output[column] = 0;
     }
-
-    /*
-     * Five rows are required before the first complete
-     * 5x5 neighbourhood is available.
-     */
-    if (rowsReceived < KERNEL_SIZE - 1) {
-        ++rowsReceived;
-        return;
-    }
+    ++rowsReceived;
 
     /*
      * When the newest received row is r, the output belongs
      * to row r - 2.
      */
-    const int outputRow = rowsReceived - 2;
+    const int outputRow = rowsReceived - 3;
 
     // Preserve zero-valued top and bottom borders.
     if (outputRow < 2 || outputRow >= HEIGHT - 2) {
-        ++rowsReceived;
+        *valid_out = false;
         return;
     }
 
@@ -107,5 +100,5 @@ void gaussian_blur(
             static_cast<std::uint8_t>(sum >> 8);
     }
 
-    ++rowsReceived;
+    *valid_out = true;
 }

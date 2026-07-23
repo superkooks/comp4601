@@ -1,52 +1,52 @@
 ---
-MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
+MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_22_1:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
       FileOffset:      22
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          20268
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          22081
           Length:          0
           ReplacementText: 'VITIS_LOOP_22_1: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_23_2:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
       FileOffset:      23
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          20322
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          22135
           Length:          0
           ReplacementText: 'VITIS_LOOP_23_2: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_38_1:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
-      FileOffset:      38
+      Message:         'Added loop label VITIS_LOOP_45_1:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      45
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          20701
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          22626
           Length:          0
-          ReplacementText: 'VITIS_LOOP_38_1: '
+          ReplacementText: 'VITIS_LOOP_45_1: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_72_2:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
-      FileOffset:      72
+      Message:         'Added loop label VITIS_LOOP_81_2:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      81
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          21330
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          23311
           Length:          0
-          ReplacementText: 'VITIS_LOOP_72_2: '
+          ReplacementText: 'VITIS_LOOP_81_2: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
 ...

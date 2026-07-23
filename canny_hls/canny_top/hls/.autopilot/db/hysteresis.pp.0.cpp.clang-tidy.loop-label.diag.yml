@@ -1,0 +1,52 @@
+---
+MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_39_1:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
+      FileOffset:      39
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
+          Offset:          22601
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_39_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_40_2:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
+      FileOffset:      40
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
+          Offset:          22655
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_40_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_60_1:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
+      FileOffset:      60
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
+          Offset:          23039
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_60_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_108_2:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
+      FileOffset:      108
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
+          Offset:          23836
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_108_2: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+...

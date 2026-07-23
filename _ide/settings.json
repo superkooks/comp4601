@@ -2,6 +2,9 @@
     "clangd.fallbackFlags": [
         "-I/opt/Xilinx/2025.2/Vitis/include",
         "-I/opt/Xilinx/2025.2/Vitis/include/etc",
-        "-I/opt/Xilinx/2025.2/Vitis/lnx64/tools/auto_cc/include"
+        "-I/opt/Xilinx/2025.2/Vitis/lnx64/tools/auto_cc/include",
+        "-IC:\\AMDDesignTools\\2025.2\\Vitis\\include",
+        "-IC:\\AMDDesignTools\\2025.2\\Vitis\\include\\etc",
+        "-IC:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\auto_cc\\include"
     ]
 }

@@ -1,0 +1,172 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'gaussian_blur'" level="0">
+<item name = "Date">Thu Jul 23 23:06:30 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">canny_top</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.321 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">551, 4654, 2.755 us, 23.270 us, 551, 4654, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54">gaussian_blur_Pipeline_VITIS_LOOP_46_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67">gaussian_blur_Pipeline_VITIS_LOOP_64_2, 4068, 4068, 20.340 us, 20.340 us, 0, 0, loop pipeline stp</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 291, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 2253, 2244, -</column>
+<column name="Memory">2, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, 0, 555, -</column>
+<column name="Register">-, -, 160, -, -</column>
+<specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
+<specialColumn name="Utilization (%)">~0, 0, 1, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54">gaussian_blur_Pipeline_VITIS_LOOP_46_1, 0, 0, 22, 73, 0</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67">gaussian_blur_Pipeline_VITIS_LOOP_64_2, 0, 0, 261, 981, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U30">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U31">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U33">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U34">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="urem_32ns_4ns_3_36_seq_1_U32">urem_32ns_4ns_3_36_seq_1, 0, 0, 394, 238, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_U">gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1280, 8, 1, 10240</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_U">gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1280, 8, 1, 10240</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln22_1_fu_238_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln22_2_fu_176_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln22_3_fu_265_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln22_fu_206_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln50_fu_97_p2">+, 0, 0, 39, 32, 1</column>
+<column name="grp_fu_146_p0">+, 0, 0, 39, 32, 3</column>
+<column name="grp_fu_163_p0">+, 0, 0, 39, 32, 2</column>
+<column name="outputRow_fu_108_p2">+, 0, 0, 39, 32, 3</column>
+<column name="ap_block_state73_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln59_1_fu_129_p2">icmp, 0, 0, 39, 32, 9</column>
+<column name="icmp_ln59_fu_123_p2">icmp, 0, 0, 38, 31, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln59_fu_135_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln22_1_fu_244_p3">select, 0, 0, 3, 1, 3</column>
+<column name="select_ln22_2_fu_181_p3">select, 0, 0, 3, 1, 3</column>
+<column name="select_ln22_3_fu_271_p3">select, 0, 0, 3, 1, 3</column>
+<column name="select_ln22_fu_212_p3">select, 0, 0, 3, 1, 3</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">389, 74, 1, 74</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="ap_phi_mux_valid_out_write_assign_phi_fu_46_p4">9, 2, 1, 2</column>
+<column name="output_r_address0">14, 3, 9, 27</column>
+<column name="output_r_ce0">14, 3, 1, 3</column>
+<column name="output_r_d0">14, 3, 8, 24</column>
+<column name="output_r_we0">14, 3, 1, 3</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_address0">14, 3, 11, 33</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_ce0">14, 3, 1, 3</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_we0">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_address0">14, 3, 11, 33</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_ce0">14, 3, 1, 3</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_we0">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">73, 0, 73, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_start_reg">1, 0, 1, 0</column>
+<column name="or_ln59_reg_305">1, 0, 1, 0</column>
+<column name="p_anonymous_namespace_rowsReceived">32, 0, 32, 0</column>
+<column name="select_ln22_1_reg_334">3, 0, 3, 0</column>
+<column name="select_ln22_2_reg_319">3, 0, 3, 0</column>
+<column name="select_ln22_3_reg_339">3, 0, 3, 0</column>
+<column name="select_ln22_reg_324">3, 0, 3, 0</column>
+<column name="trunc_ln42_reg_288">3, 0, 3, 0</column>
+<column name="trunc_ln79_reg_329">3, 0, 3, 0</column>
+<column name="valid_out_write_assign_reg_42">1, 0, 1, 0</column>
+<column name="writeSlot_reg_283">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="ap_return">out, 1, ap_ctrl_hs, gaussian_blur, return value</column>
+<column name="input_r_address0">out, 9, ap_memory, input_r, array</column>
+<column name="input_r_ce0">out, 1, ap_memory, input_r, array</column>
+<column name="input_r_q0">in, 8, ap_memory, input_r, array</column>
+<column name="output_r_address0">out, 9, ap_memory, output_r, array</column>
+<column name="output_r_ce0">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_we0">out, 1, ap_memory, output_r, array</column>
+<column name="output_r_d0">out, 8, ap_memory, output_r, array</column>
+</table>
+</item>
+</section>
+</profile>

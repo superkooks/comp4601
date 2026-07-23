@@ -1,29 +1,73 @@
-# 2026-07-19T16:41:47.643531352
+# 2026-07-23T22:22:33.503525100
 import vitis
 
 client = vitis.create_client()
-client.set_workspace(path="assign")
-
-cfg = client.get_config_file(path="/home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg")
-
-cfg.set_values(key="syn.file", values=["../src/sobel.cpp", "../src/non_maximum_suppression.cpp", "../src/hysteresis.cpp", "../src/grayscale.cpp", "../src/double_threshold.cpp", "../src/canny_top.cpp", "../src/gaussian_blur.cpp", "../include/config.h", "../include/canny_types.h", "../include/canny_stages.h", "../src/config.h", "../src/canny_types.h", "../src/canny_stages.h"])
-
-cfg.set_values(key="tb.file", values=["../testbench/test_threshold.cpp", "../testbench/test_sobel.cpp", "../testbench/test_pipeline.cpp", "../testbench/test_nms.cpp", "../testbench/test_hysteresis.cpp", "../testbench/test_grayscale.cpp", "../testbench/test_gaussian.cpp", "../include/config.h", "../include/canny_types.h", "../include/canny_stages.h", "../testbench/config.h", "../testbench/canny_types.h", "../testbench/canny_stages.h"])
+client.set_workspace(path="comp4601")
 
 comp = client.get_component(name="canny_hls")
-comp.run(operation="C_SIMULATION")
+comp.run(operation="SYNTHESIS")
 
-cfg.set_values(key="tb.file", values=["../testbench/test_threshold.cpp", "../testbench/test_sobel.cpp", "../testbench/test_pipeline.cpp", "../testbench/test_nms.cpp", "../testbench/test_hysteresis.cpp", "../testbench/test_grayscale.cpp", "../testbench/test_gaussian.cpp", "../include/config.h", "../include/canny_types.h", "../include/canny_stages.h", "../testbench/config.h", "../testbench/canny_types.h", "../testbench/canny_stages.h", "../reference/sobel_reference.h", "../reference/sobel_reference.cpp", "../reference/nms_reference.h", "../reference/nms_reference.cpp", "../reference/gaussian_reference.h", "../reference/gaussian_reference.cpp"])
+cfg = client.get_config_file(path="/c:/Users/twhsaw/Projects/comp4601/canny_hls/hls_config.cfg")
 
-comp.run(operation="C_SIMULATION")
+cfg = client.get_config_file(path="/c:/Users/twhsaw/Projects/comp4601/canny_hls/hls_config.cfg")
 
-cfg.set_values(key="tb.file", values=["../testbench/test_threshold.cpp", "../testbench/test_sobel.cpp", "../testbench/test_pipeline.cpp", "../testbench/test_nms.cpp", "../testbench/test_hysteresis.cpp", "../testbench/test_grayscale.cpp", "../testbench/test_gaussian.cpp", "../include/config.h", "../include/canny_types.h", "../include/canny_stages.h", "../testbench/config.h", "../testbench/canny_types.h", "../testbench/canny_stages.h", "../reference/sobel_reference.h", "../reference/sobel_reference.cpp", "../reference/nms_reference.h", "../reference/nms_reference.cpp", "../reference/gaussian_reference.h", "../reference/gaussian_reference.cpp", "../testbench/sobel_reference.h", "../testbench/sobel_reference.cpp", "../testbench/nms_reference.h", "../testbench/nms_reference.cpp", "../testbench/gaussian_reference.h", "../testbench/gaussian_reference.cpp"])
+cfg = client.get_config_file(path="/c:/Users/twhsaw/Projects/comp4601/canny_hls/hls_config.cfg")
 
-comp.run(operation="C_SIMULATION")
+cfg = client.get_config_file(path="/c:/Users/twhsaw/Projects/comp4601/canny_hls/hls_config.cfg")
 
-cfg.set_values(key="tb.file", values=["../testbench/test_threshold.cpp", "../testbench/test_sobel.cpp", "../testbench/test_pipeline.cpp", "../testbench/test_nms.cpp", "../testbench/test_hysteresis.cpp", "../testbench/test_grayscale.cpp", "../testbench/test_gaussian.cpp", "../include/config.h", "../include/canny_types.h", "../include/canny_stages.h", "../testbench/config.h", "../testbench/canny_types.h", "../testbench/canny_stages.h", "../reference/sobel_reference.h", "../reference/sobel_reference.cpp", "../reference/nms_reference.h", "../reference/nms_reference.cpp", "../reference/gaussian_reference.h", "../reference/gaussian_reference.cpp", "../testbench/sobel_reference.h", "../testbench/sobel_reference.cpp", "../testbench/nms_reference.h", "../testbench/nms_reference.cpp", "../testbench/gaussian_reference.h", "../testbench/gaussian_reference.cpp", "../testbench/test_top.cpp"])
+cfg = client.get_config_file(path="/c:/Users/twhsaw/Projects/comp4601/canny_hls/hls_config.cfg")
 
-comp.run(operation="C_SIMULATION")
+cfg.set_value(section="hls", key="syn.cflags", value="")
+
+cfg.set_value(section="hls", key="syn.csimflags", value="")
+
+cfg.set_values(key="syn.file_cflags", values=[])
+
+cfg.set_values(key="syn.file_csimflags", values=[])
+
+cfg.set_values(key="syn.file", values=["../src/sobel.cpp", "../src/non_maximum_suppression.cpp", "../src/hysteresis.cpp", "../src/grayscale.cpp", "../src/double_threshold.cpp", "../src/canny_top.cpp", "../src/gaussian_blur.cpp", "../include/canny_types.h", "../include/canny_stages.h", "../src/config.h", "../src/canny_types.h", "../src/canny_stages.h"])
+
+cfg.set_values(key="syn.file_cflags", values=[])
+
+cfg.set_value(section="hls", key="syn.csimflags", value="")
+
+cfg.set_value(section="hls", key="syn.cflags", value="")
+
+cfg.set_values(key="syn.file_csimflags", values=[])
+
+cfg.set_values(key="syn.file", values=["../src/sobel.cpp", "../src/non_maximum_suppression.cpp", "../src/hysteresis.cpp", "../src/grayscale.cpp", "../src/double_threshold.cpp", "../src/canny_top.cpp", "../src/gaussian_blur.cpp", "../include/canny_stages.h", "../src/config.h", "../src/canny_types.h", "../src/canny_stages.h"])
+
+cfg.set_values(key="syn.file_cflags", values=[])
+
+cfg.set_values(key="syn.file_csimflags", values=[])
+
+cfg.set_value(section="hls", key="syn.cflags", value="")
+
+cfg.set_values(key="syn.file", values=["../src/sobel.cpp", "../src/non_maximum_suppression.cpp", "../src/hysteresis.cpp", "../src/grayscale.cpp", "../src/double_threshold.cpp", "../src/canny_top.cpp", "../src/gaussian_blur.cpp", "../src/config.h", "../src/canny_types.h", "../src/canny_stages.h"])
+
+cfg.set_value(section="hls", key="syn.csimflags", value="")
+
+cfg.set_value(section="hls", key="syn.csimflags", value="")
+
+cfg.set_value(section="hls", key="syn.cflags", value="")
+
+cfg.set_values(key="syn.file_cflags", values=[])
+
+cfg.set_values(key="syn.file", values=["../src/sobel.cpp", "../src/non_maximum_suppression.cpp", "../src/hysteresis.cpp", "../src/grayscale.cpp", "../src/double_threshold.cpp", "../src/canny_top.cpp", "../src/gaussian_blur.cpp", "../src/config.h", "../src/canny_types.h", "../src/canny_stages.h", "../src/output_row.cpp"])
+
+cfg.set_values(key="syn.file_csimflags", values=[])
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
+
+comp.run(operation="SYNTHESIS")
 
 comp.run(operation="SYNTHESIS")
 

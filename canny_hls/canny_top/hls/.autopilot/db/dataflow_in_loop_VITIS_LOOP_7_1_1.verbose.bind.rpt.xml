@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_7_1_1'" level="0">
+<item name = "Date">Thu Jul 23 23:06:26 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">canny_top</item>
+<item name = "Solution">hls (Vitis Kernel Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xck26-sfvc784-2LV-c</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">5.00 ns, 3.650 ns, 1.35 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">2179, 14314, 10.895 us, 71.570 us, 1617, 4655, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="call_ln0_entry_proc_fu_150">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="cond_loc_channel_dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc_fu_157">dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_grayscale_fu_163">grayscale, 1616, 1616, 8.080 us, 8.080 us, 1616, 1616, no</column>
+<column name="grp_gaussian_blur_fu_173">gaussian_blur, 551, 4654, 2.755 us, 23.270 us, 551, 4654, no</column>
+<column name="grp_sobel_fu_185">sobel, 1, 2187, 5.000 ns, 10.935 us, 1, 2187, no</column>
+<column name="grp_non_maximum_suppression_fu_199">non_maximum_suppression, 1, 1608, 5.000 ns, 8.040 us, 1, 1608, no</column>
+<column name="grp_double_threshold_fu_215">double_threshold, 1, 515, 5.000 ns, 2.575 us, 1, 515, no</column>
+<column name="grp_hysteresis_fu_222">hysteresis, 1, 3141, 5.000 ns, 15.705 us, 1, 3141, no</column>
+<column name="grp_output_row_fu_235">output_row, 1, 586, 5.000 ns, 2.930 us, 1, 586, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

@@ -1,0 +1,249 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_7_1_1'
+================================================================
+* Date:           Thu Jul 23 23:06:26 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        canny_top
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.650 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     2179|    14314|  10.895 us|  71.570 us|  1617|  4655|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 15
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 15, States = { 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.82>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%out_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %out_r"   --->   Operation 16 'read' 'out_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%i_0_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %i_0"   --->   Operation 17 'read' 'i_0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%out_c = alloca i64 1"   --->   Operation 18 'alloca' 'out_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.94> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 9> <FIFO>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%out_hysteresis = alloca i64 1" [../src/canny_top.cpp:14]   --->   Operation 19 'alloca' 'out_hysteresis' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%out_double = alloca i64 1" [../src/canny_top.cpp:13]   --->   Operation 20 'alloca' 'out_double' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%out_nonmax = alloca i64 1" [../src/canny_top.cpp:12]   --->   Operation 21 'alloca' 'out_nonmax' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%out_sobel_direction = alloca i64 1" [../src/canny_top.cpp:11]   --->   Operation 22 'alloca' 'out_sobel_direction' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%out_sobel_magnitude = alloca i64 1" [../src/canny_top.cpp:11]   --->   Operation 23 'alloca' 'out_sobel_magnitude' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%out_gaussian = alloca i64 1" [../src/canny_top.cpp:10]   --->   Operation 24 'alloca' 'out_gaussian' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%out_grayscale = alloca i64 1" [../src/canny_top.cpp:9]   --->   Operation 25 'alloca' 'out_grayscale' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (1.82ns)   --->   "%call_ln0 = call void @entry_proc, i64 %out_read, i64 %out_c"   --->   Operation 26 'call' 'call_ln0' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 27 [1/1] (0.36ns)   --->   "%cond_loc_channel = call i18 @dataflow_in_loop_VITIS_LOOP_7_1.1_Block_newFuncRoot_proc, i10 %i_0_read" [../src/canny_top.cpp:21]   --->   Operation 27 'call' 'cond_loc_channel' <Predicate = true> <Delay = 0.36> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 18> <Depth = 2> <FIFO>
+
+State 2 <SV = 1> <Delay = 2.17>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%in_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %in_r"   --->   Operation 28 'read' 'in_read' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [2/2] (2.17ns)   --->   "%call_ln23 = call void @grayscale, i18 %cond_loc_channel, i32 %gmem_in, i64 %in_read, i8 %out_grayscale" [../src/canny_top.cpp:23]   --->   Operation 29 'call' 'call_ln23' <Predicate = true> <Delay = 2.17> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 30 [1/2] (0.00ns)   --->   "%call_ln23 = call void @grayscale, i18 %cond_loc_channel, i32 %gmem_in, i64 %in_read, i8 %out_grayscale" [../src/canny_top.cpp:23]   --->   Operation 30 'call' 'call_ln23' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 31 [2/2] (0.00ns)   --->   "%gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %out_gaussian, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1" [../src/canny_top.cpp:24]   --->   Operation 31 'call' 'gaussian_valid' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 5 <SV = 4> <Delay = 0.42>
+ST_5 : Operation 32 [1/2] (0.42ns)   --->   "%gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %out_gaussian, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1" [../src/canny_top.cpp:24]   --->   Operation 32 'call' 'gaussian_valid' <Predicate = true> <Delay = 0.42> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 6 <SV = 5> <Delay = 2.25>
+ST_6 : Operation 33 [2/2] (2.25ns)   --->   "%sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussian, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i32 %p_anonymous_namespace_rowsReceived_2, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1" [../src/canny_top.cpp:25]   --->   Operation 33 'call' 'sobel_valid' <Predicate = true> <Delay = 2.25> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 7 <SV = 6> <Delay = 0.85>
+ST_7 : Operation 34 [1/2] (0.85ns)   --->   "%sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussian, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i32 %p_anonymous_namespace_rowsReceived_2, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1" [../src/canny_top.cpp:25]   --->   Operation 34 'call' 'sobel_valid' <Predicate = true> <Delay = 0.85> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 8 <SV = 7> <Delay = 2.25>
+ST_8 : Operation 35 [2/2] (2.25ns)   --->   "%nonmax_valid = call i1 @non_maximum_suppression, i1 %sobel_valid, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %out_nonmax, i32 %p_anonymous_namespace_rowsReceived_3, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1" [../src/canny_top.cpp:26]   --->   Operation 35 'call' 'nonmax_valid' <Predicate = true> <Delay = 2.25> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 9 <SV = 8> <Delay = 0.85>
+ST_9 : Operation 36 [1/2] (0.85ns)   --->   "%nonmax_valid = call i1 @non_maximum_suppression, i1 %sobel_valid, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %out_nonmax, i32 %p_anonymous_namespace_rowsReceived_3, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1" [../src/canny_top.cpp:26]   --->   Operation 36 'call' 'nonmax_valid' <Predicate = true> <Delay = 0.85> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 10 <SV = 9> <Delay = 2.25>
+ST_10 : Operation 37 [2/2] (2.25ns)   --->   "%double_valid = call i1 @double_threshold, i1 %nonmax_valid, i8 %out_nonmax, i8 %out_double" [../src/canny_top.cpp:27]   --->   Operation 37 'call' 'double_valid' <Predicate = true> <Delay = 2.25> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 11 <SV = 10> <Delay = 0.42>
+ST_11 : Operation 38 [1/2] (0.42ns)   --->   "%double_valid = call i1 @double_threshold, i1 %nonmax_valid, i8 %out_nonmax, i8 %out_double" [../src/canny_top.cpp:27]   --->   Operation 38 'call' 'double_valid' <Predicate = true> <Delay = 0.42> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 12 <SV = 11> <Delay = 2.25>
+ST_12 : Operation 39 [2/2] (2.25ns)   --->   "%hysteresis_valid = call i1 @hysteresis, i1 %double_valid, i8 %out_double, i2 %out_hysteresis, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_6_0, i8 %p_anonymous_namespace_lineBuffer_6_1" [../src/canny_top.cpp:28]   --->   Operation 39 'call' 'hysteresis_valid' <Predicate = true> <Delay = 2.25> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 13 <SV = 12> <Delay = 0.85>
+ST_13 : Operation 40 [1/2] (0.85ns)   --->   "%hysteresis_valid = call i1 @hysteresis, i1 %double_valid, i8 %out_double, i2 %out_hysteresis, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_6_0, i8 %p_anonymous_namespace_lineBuffer_6_1" [../src/canny_top.cpp:28]   --->   Operation 40 'call' 'hysteresis_valid' <Predicate = true> <Delay = 0.85> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+
+State 14 <SV = 13> <Delay = 1.82>
+ST_14 : Operation 41 [2/2] (1.82ns)   --->   "%call_ln29 = call void @output_row, i1 %hysteresis_valid, i2 %out_hysteresis, i512 %gmem_out, i64 %out_c, i32 %rowsReceived" [../src/canny_top.cpp:29]   --->   Operation 41 'call' 'call_ln29' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 42 [1/1] (0.00ns)   --->   "%empty = specchannel i32 @_ssdm_op_SpecChannel, void @out_c_str, i32 1, void @p_str, void @p_str, i32 9, i32 0, i64 %out_c, i64 %out_c"   --->   Operation 42 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_c, void @ap_fifo_str, i32 0, i32 0, void @p_str, i32 0, i32 0, void @p_str, void @p_str, void @p_str, i32 2, i32 2, i32 16, i32 16, void @p_str, void @p_str, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 44 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_0"   --->   Operation 44 'specdataflowpipeline' 'specdataflowpipeline_ln0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 45 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem_out, void @empty, i32 0, i32 0, void @empty_0, i32 64, i32 0, void @empty_8, void @empty_14, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 45 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 46 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %gmem_in, void @empty, i32 0, i32 0, void @empty_0, i32 64, i32 0, void @empty_17, void @empty_14, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 4"   --->   Operation 46 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_15 : Operation 47 [1/2] (0.00ns)   --->   "%call_ln29 = call void @output_row, i1 %hysteresis_valid, i2 %out_hysteresis, i512 %gmem_out, i64 %out_c, i32 %rowsReceived" [../src/canny_top.cpp:29]   --->   Operation 47 'call' 'call_ln29' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_15 : Operation 48 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 48 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 5.000ns, clock uncertainty: 1.350ns.
+
+ <State 1>: 1.825ns
+The critical path consists of the following:
+	wire read operation ('out_read') on port 'out_r' [20]  (0.000 ns)
+	'call' operation ('call_ln0') to 'entry_proc' [36]  (1.825 ns)
+
+ <State 2>: 2.170ns
+The critical path consists of the following:
+	wire read operation ('in_read') on port 'in_r' [21]  (0.000 ns)
+	'call' operation ('call_ln23', ../src/canny_top.cpp:23) to 'grayscale' [38]  (2.170 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.427ns
+The critical path consists of the following:
+	'call' operation 1 bit ('gaussian_valid', ../src/canny_top.cpp:24) to 'gaussian_blur' [39]  (0.427 ns)
+
+ <State 6>: 2.252ns
+The critical path consists of the following:
+	'call' operation 1 bit ('sobel_valid', ../src/canny_top.cpp:25) to 'sobel' [40]  (2.252 ns)
+
+ <State 7>: 0.854ns
+The critical path consists of the following:
+	'call' operation 1 bit ('sobel_valid', ../src/canny_top.cpp:25) to 'sobel' [40]  (0.854 ns)
+
+ <State 8>: 2.252ns
+The critical path consists of the following:
+	'call' operation 1 bit ('nonmax_valid', ../src/canny_top.cpp:26) to 'non_maximum_suppression' [41]  (2.252 ns)
+
+ <State 9>: 0.854ns
+The critical path consists of the following:
+	'call' operation 1 bit ('nonmax_valid', ../src/canny_top.cpp:26) to 'non_maximum_suppression' [41]  (0.854 ns)
+
+ <State 10>: 2.252ns
+The critical path consists of the following:
+	'call' operation 1 bit ('double_valid', ../src/canny_top.cpp:27) to 'double_threshold' [42]  (2.252 ns)
+
+ <State 11>: 0.427ns
+The critical path consists of the following:
+	'call' operation 1 bit ('double_valid', ../src/canny_top.cpp:27) to 'double_threshold' [42]  (0.427 ns)
+
+ <State 12>: 2.252ns
+The critical path consists of the following:
+	'call' operation 1 bit ('hysteresis_valid', ../src/canny_top.cpp:28) to 'hysteresis' [43]  (2.252 ns)
+
+ <State 13>: 0.854ns
+The critical path consists of the following:
+	'call' operation 1 bit ('hysteresis_valid', ../src/canny_top.cpp:28) to 'hysteresis' [43]  (0.854 ns)
+
+ <State 14>: 1.825ns
+The critical path consists of the following:
+	'call' operation ('call_ln29', ../src/canny_top.cpp:29) to 'output_row' [44]  (1.825 ns)
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,16 @@
+---
+MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/canny_top.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_7_1:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\canny_top.cpp'
+      FileOffset:      7
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\canny_top.pp.0.cpp'
+          Offset:          22015
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_7_1: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+...

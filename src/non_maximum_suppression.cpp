@@ -30,8 +30,15 @@ void non_maximum_suppression_reset() {
 
 void non_maximum_suppression(
     const GradientPixel input[WIDTH],
-    std::uint8_t output[WIDTH]
+    std::uint8_t output[WIDTH],
+    bool valid_in,
+    bool *valid_out
 ) {
+    if (!valid_in) {
+        *valid_out = false;
+        return;
+    }
+
     const int writeSlot =
         rowsReceived % WINDOW_SIZE;
 
@@ -46,6 +53,7 @@ void non_maximum_suppression(
      */
     if (rowsReceived < WINDOW_SIZE - 1) {
         ++rowsReceived;
+        *valid_out = false;
         return;
     }
 
@@ -57,6 +65,7 @@ void non_maximum_suppression(
 
     if (outputRow < 1 || outputRow >= HEIGHT - 1) {
         ++rowsReceived;
+        *valid_out = false;
         return;
     }
 
@@ -120,6 +129,8 @@ void non_maximum_suppression(
             output[column] = 0;
         }
     }
+
+    *valid_out = true;
 
     ++rowsReceived;
 }

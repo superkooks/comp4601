@@ -45,8 +45,15 @@ void hysteresis_reset() {
 
 void hysteresis(
     const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH]
+    std::uint8_t output[WIDTH],
+    bool valid_in,
+    bool *valid_out
 ) {
+    if (!valid_in) {
+        *valid_out = false;
+        return;
+    }
+
     const int writeSlot =
         rowsReceived % WINDOW_SIZE;
 
@@ -60,6 +67,7 @@ void hysteresis(
      * 3x3 neighbourhood is available.
      */
     if (rowsReceived < WINDOW_SIZE - 1) {
+        *valid_out = false;
         ++rowsReceived;
         return;
     }
@@ -74,6 +82,7 @@ void hysteresis(
      * Force the outer image border to NON_EDGE.
      */
     if (outputRow < 1 || outputRow >= HEIGHT - 1) {
+        *valid_out = false;
         ++rowsReceived;
         return;
     }
@@ -119,5 +128,6 @@ void hysteresis(
         }
     }
 
+    *valid_out = true;
     ++rowsReceived;
 }

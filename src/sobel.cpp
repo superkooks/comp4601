@@ -74,8 +74,15 @@ void sobel_reset() {
 
 void sobel(
     const std::uint8_t input[WIDTH],
-    GradientPixel output[WIDTH]
+    GradientPixel output[WIDTH],
+    bool valid_in,
+    bool *valid_out
 ) {
+    if (!valid_in) {
+        *valid_out = false;
+        return;
+    }
+
     const int writeSlot =
         rowsReceived % KERNEL_SIZE;
 
@@ -93,6 +100,7 @@ void sobel(
      */
     if (rowsReceived < KERNEL_SIZE - 1) {
         ++rowsReceived;
+        *valid_out = false;
         return;
     }
 
@@ -103,6 +111,7 @@ void sobel(
      */
     if (outputRow < 1 || outputRow >= HEIGHT - 1) {
         ++rowsReceived;
+        *valid_out = false;
         return;
     }
 
@@ -167,6 +176,8 @@ void sobel(
                 gradientY
             );
     }
+
+    *valid_out = true;
 
     ++rowsReceived;
 }

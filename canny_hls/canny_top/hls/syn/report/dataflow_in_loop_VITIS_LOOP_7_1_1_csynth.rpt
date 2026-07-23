@@ -1,0 +1,323 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_7_1_1'
+================================================================
+* Date:           Thu Jul 23 23:06:38 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        canny_top
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.650 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+------+------+----------+
+    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
+    |   min   |   max   |    min    |    max    |  min |  max |   Type   |
+    +---------+---------+-----------+-----------+------+------+----------+
+    |     2179|    14314|  10.895 us|  71.570 us|  1617|  4655|  dataflow|
+    +---------+---------+-----------+-----------+------+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+-----------+------+------+---------+
+        |                                                             |                                                          |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline|
+        |                           Instance                          |                          Module                          |   min   |   max   |    min   |    max    |  min |  max |   Type  |
+        +-------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+-----------+------+------+---------+
+        |entry_proc_U0                                                |entry_proc                                                |        0|        0|      0 ns|       0 ns|     0|     0|       no|
+        |dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc_U0  |dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc  |        0|        0|      0 ns|       0 ns|     0|     0|       no|
+        |grayscale_U0                                                 |grayscale                                                 |     1616|     1616|  8.080 us|   8.080 us|  1616|  1616|       no|
+        |gaussian_blur_U0                                             |gaussian_blur                                             |      551|     4654|  2.755 us|  23.270 us|   551|  4654|       no|
+        |sobel_U0                                                     |sobel                                                     |        1|     2187|  5.000 ns|  10.935 us|     1|  2187|       no|
+        |non_maximum_suppression_U0                                   |non_maximum_suppression                                   |        1|     1608|  5.000 ns|   8.040 us|     1|  1608|       no|
+        |double_threshold_U0                                          |double_threshold                                          |        1|      515|  5.000 ns|   2.575 us|     1|   515|       no|
+        |hysteresis_U0                                                |hysteresis                                                |        1|     3141|  5.000 ns|  15.705 us|     1|  3141|       no|
+        |output_row_U0                                                |output_row                                                |        1|      586|  5.000 ns|   2.930 us|     1|   586|       no|
+        +-------------------------------------------------------------+----------------------------------------------------------+---------+---------+----------+-----------+------+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      56|    -|
+|FIFO             |        -|     -|     693|     468|    -|
+|Instance         |        9|     6|    9313|   13512|    0|
+|Memory           |        7|     -|       0|       0|    0|
+|Multiplexer      |        -|     -|       0|     117|    -|
+|Register         |        -|     -|      13|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |       16|     6|   10019|   14153|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        5|    ~0|       4|      12|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------------------------------------------+----------------------------------------------------------+---------+----+------+------+-----+
+    |                           Instance                          |                          Module                          | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +-------------------------------------------------------------+----------------------------------------------------------+---------+----+------+------+-----+
+    |dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc_U0  |dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc  |        0|   0|    11|    37|    0|
+    |double_threshold_U0                                          |double_threshold                                          |        0|   0|    29|   156|    0|
+    |entry_proc_U0                                                |entry_proc                                                |        0|   0|     2|    20|    0|
+    |gaussian_blur_U0                                             |gaussian_blur                                             |        2|   0|  2413|  3090|    0|
+    |grayscale_U0                                                 |grayscale                                                 |        0|   2|   757|  1273|    0|
+    |hysteresis_U0                                                |hysteresis                                                |        2|   0|  1433|  1931|    0|
+    |non_maximum_suppression_U0                                   |non_maximum_suppression                                   |        3|   0|  1393|  1935|    0|
+    |output_row_U0                                                |output_row                                                |        0|   0|  1187|  1311|    0|
+    |sobel_U0                                                     |sobel                                                     |        2|   4|  2088|  3759|    0|
+    +-------------------------------------------------------------+----------------------------------------------------------+---------+----+------+------+-----+
+    |Total                                                        |                                                          |        9|   6|  9313| 13512|    0|
+    +-------------------------------------------------------------+----------------------------------------------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +-----------------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |         Memory        |                             Module                             | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-----------------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |out_double_U           |dataflow_in_loop_VITIS_LOOP_7_1_1_out_double_RAM_AUTO_1R1W      |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |out_nonmax_U           |dataflow_in_loop_VITIS_LOOP_7_1_1_out_double_RAM_AUTO_1R1W      |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |out_sobel_magnitude_U  |dataflow_in_loop_VITIS_LOOP_7_1_1_out_double_RAM_AUTO_1R1W      |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |out_gaussian_U         |dataflow_in_loop_VITIS_LOOP_7_1_1_out_double_RAM_AUTO_1R1W      |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |out_grayscale_U        |dataflow_in_loop_VITIS_LOOP_7_1_1_out_double_RAM_AUTO_1R1W      |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |out_hysteresis_U       |dataflow_in_loop_VITIS_LOOP_7_1_1_out_hysteresis_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    2|     1|         1024|
+    |out_sobel_direction_U  |dataflow_in_loop_VITIS_LOOP_7_1_1_out_hysteresis_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    2|     1|         1024|
+    +-----------------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                  |                                                                |        7|  0|   0|    0|  3584|   44|     7|        22528|
+    +-----------------------+----------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |        Name        | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |cond_loc_channel_U  |        0|  99|   0|    -|     2|   18|       36|
+    |double_valid_U      |        0|  99|   0|    -|     2|    1|        2|
+    |gaussian_valid_U    |        0|  99|   0|    -|     2|    1|        2|
+    |hysteresis_valid_U  |        0|  99|   0|    -|     2|    1|        2|
+    |nonmax_valid_U      |        0|  99|   0|    -|     2|    1|        2|
+    |out_c_U             |        0|  99|   0|    -|     9|   64|      576|
+    |sobel_valid_U       |        0|  99|   0|    -|     2|    1|        2|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+    |Total               |        0| 693|   0|    0|    21|   87|      622|
+    +--------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |                                 Variable Name                                | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |ap_channel_done_double_valid                                                  |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_gaussian_valid                                                |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_hysteresis_valid                                              |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_nonmax_valid                                                  |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_out_double                                                    |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_out_gaussian                                                  |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_out_hysteresis                                                |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_out_nonmax                                                    |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_out_sobel_direction                                           |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_sobel_valid                                                   |       and|   0|  0|   2|           1|           1|
+    |ap_idle                                                                       |       and|   0|  0|   2|           1|           1|
+    |ap_sync_ready                                                                 |       and|   0|  0|   2|           1|           1|
+    |dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc_U0_ap_start          |       and|   0|  0|   2|           1|           1|
+    |entry_proc_U0_ap_start                                                        |       and|   0|  0|   2|           1|           1|
+    |grayscale_U0_ap_start                                                         |       and|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_double_valid                                            |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_gaussian_valid                                          |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_hysteresis_valid                                        |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_nonmax_valid                                            |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_out_double                                              |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_out_gaussian                                            |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_out_hysteresis                                          |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_out_nonmax                                              |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_out_sobel_direction                                     |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_sobel_valid                                             |        or|   0|  0|   2|           1|           1|
+    |ap_sync_dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc_U0_ap_ready  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_entry_proc_U0_ap_ready                                                |        or|   0|  0|   2|           1|           1|
+    |ap_sync_grayscale_U0_ap_ready                                                 |        or|   0|  0|   2|           1|           1|
+    +------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                                                         |          |   0|  0|  56|          28|          28|
+    +------------------------------------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |                                       Name                                       | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_double_valid                                            |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_gaussian_valid                                          |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_hysteresis_valid                                        |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_nonmax_valid                                            |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_out_double                                              |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_out_gaussian                                            |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_out_hysteresis                                          |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_out_nonmax                                              |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_out_sobel_direction                                     |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_sobel_valid                                             |   9|          2|    1|          2|
+    |ap_sync_reg_dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc_U0_ap_ready  |   9|          2|    1|          2|
+    |ap_sync_reg_entry_proc_U0_ap_ready                                                |   9|          2|    1|          2|
+    |ap_sync_reg_grayscale_U0_ap_ready                                                 |   9|          2|    1|          2|
+    +----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                                             | 117|         26|   13|         26|
+    +----------------------------------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------------------------------------------+---+----+-----+-----------+
+    |                                       Name                                       | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_double_valid                                            |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_gaussian_valid                                          |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_hysteresis_valid                                        |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_nonmax_valid                                            |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_out_double                                              |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_out_gaussian                                            |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_out_hysteresis                                          |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_out_nonmax                                              |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_out_sobel_direction                                     |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_sobel_valid                                             |  1|   0|    1|          0|
+    |ap_sync_reg_dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc_U0_ap_ready  |  1|   0|    1|          0|
+    |ap_sync_reg_entry_proc_U0_ap_ready                                                |  1|   0|    1|          0|
+    |ap_sync_reg_grayscale_U0_ap_ready                                                 |  1|   0|    1|          0|
+    +----------------------------------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                                             | 13|   0|   13|          0|
+    +----------------------------------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------------+-----+-----+------------+-----------------------------------+--------------+
+|         RTL Ports         | Dir | Bits|  Protocol  |           Source Object           |    C Type    |
++---------------------------+-----+-----+------------+-----------------------------------+--------------+
+|ap_clk                     |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_7_1.1|  return value|
+|ap_rst                     |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_7_1.1|  return value|
+|ap_start                   |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_7_1.1|  return value|
+|ap_done                    |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_7_1.1|  return value|
+|ap_ready                   |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_7_1.1|  return value|
+|ap_idle                    |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_7_1.1|  return value|
+|ap_continue                |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_7_1.1|  return value|
+|i_0                        |   in|   10|     ap_none|                                i_0|        scalar|
+|i_0_ap_vld                 |   in|    1|     ap_none|                                i_0|        scalar|
+|m_axi_gmem_in_0_AWVALID    |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWREADY    |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWADDR     |  out|   64|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWID       |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWLEN      |  out|   32|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWSIZE     |  out|    3|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWBURST    |  out|    2|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWLOCK     |  out|    2|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWCACHE    |  out|    4|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWPROT     |  out|    3|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWQOS      |  out|    4|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWREGION   |  out|    4|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_AWUSER     |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_WVALID     |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_WREADY     |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_WDATA      |  out|   32|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_WSTRB      |  out|    4|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_WLAST      |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_WID        |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_WUSER      |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARVALID    |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARREADY    |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARADDR     |  out|   64|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARID       |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARLEN      |  out|   32|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARSIZE     |  out|    3|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARBURST    |  out|    2|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARLOCK     |  out|    2|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARCACHE    |  out|    4|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARPROT     |  out|    3|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARQOS      |  out|    4|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARREGION   |  out|    4|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_ARUSER     |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RVALID     |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RREADY     |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RDATA      |   in|   32|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RLAST      |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RID        |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RFIFONUM   |   in|    9|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RUSER      |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_RRESP      |   in|    2|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_BVALID     |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_BREADY     |  out|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_BRESP      |   in|    2|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_BID        |   in|    1|       m_axi|                            gmem_in|       pointer|
+|m_axi_gmem_in_0_BUSER      |   in|    1|       m_axi|                            gmem_in|       pointer|
+|in_r                       |   in|   64|     ap_none|                               in_r|        scalar|
+|in_r_ap_vld                |   in|    1|     ap_none|                               in_r|        scalar|
+|m_axi_gmem_out_0_AWVALID   |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWREADY   |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWADDR    |  out|   64|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWID      |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWLEN     |  out|   32|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWSIZE    |  out|    3|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWBURST   |  out|    2|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWLOCK    |  out|    2|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWCACHE   |  out|    4|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWPROT    |  out|    3|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWQOS     |  out|    4|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWREGION  |  out|    4|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_AWUSER    |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_WVALID    |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_WREADY    |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_WDATA     |  out|  512|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_WSTRB     |  out|   64|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_WLAST     |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_WID       |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_WUSER     |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARVALID   |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARREADY   |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARADDR    |  out|   64|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARID      |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARLEN     |  out|   32|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARSIZE    |  out|    3|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARBURST   |  out|    2|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARLOCK    |  out|    2|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARCACHE   |  out|    4|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARPROT    |  out|    3|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARQOS     |  out|    4|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARREGION  |  out|    4|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_ARUSER    |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RVALID    |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RREADY    |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RDATA     |   in|  512|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RLAST     |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RID       |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RFIFONUM  |   in|    9|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RUSER     |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_RRESP     |   in|    2|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_BVALID    |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_BREADY    |  out|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_BRESP     |   in|    2|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_BID       |   in|    1|       m_axi|                           gmem_out|       pointer|
+|m_axi_gmem_out_0_BUSER     |   in|    1|       m_axi|                           gmem_out|       pointer|
+|out_r                      |   in|   64|     ap_none|                              out_r|        scalar|
+|out_r_ap_vld               |   in|    1|     ap_none|                              out_r|        scalar|
++---------------------------+-----+-----+------------+-----------------------------------+--------------+
+

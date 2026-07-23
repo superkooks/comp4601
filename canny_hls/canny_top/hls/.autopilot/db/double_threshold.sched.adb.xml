@@ -1,0 +1,141 @@
+<stg><name>double_threshold</name>
+
+
+<trans_list>
+
+<trans id="10" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>FIFO_SRL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="1" op_0_bw="1" op_1_bw="1">
+<![CDATA[
+newFuncRoot:0 %p_read_6 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read
+
+]]></Node>
+<StgValue><ssdm name="p_read_6"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<![CDATA[
+newFuncRoot:1 %br_ln11 = br i1 %p_read_6, void %_Z16double_thresholdPKhPhbPb.4.exit, void %for.body.i.preheader
+
+]]></Node>
+<StgValue><ssdm name="br_ln11"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="p_read_6" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+for.body.i.preheader:0 %call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i8 %out_nonmax, i8 %out_double
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="6" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="p_read_6" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8">
+<![CDATA[
+for.body.i.preheader:0 %call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i8 %out_nonmax, i8 %out_double
+
+]]></Node>
+<StgValue><ssdm name="call_ln0"/></StgValue>
+</operation>
+
+<operation id="7" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="p_read_6" val="1"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="0" op_0_bw="0">
+<![CDATA[
+for.body.i.preheader:1 %br_ln0 = br void %_Z16double_thresholdPKhPhbPb.4.exit
+
+]]></Node>
+<StgValue><ssdm name="br_ln0"/></StgValue>
+</operation>
+
+<operation id="8" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="1" op_0_bw="1" op_1_bw="0" op_2_bw="1" op_3_bw="0">
+<![CDATA[
+_Z16double_thresholdPKhPhbPb.4.exit:0 %valid_out_write_assign = phi i1 0, void %newFuncRoot, i1 1, void %for.body.i.preheader
+
+]]></Node>
+<StgValue><ssdm name="valid_out_write_assign"/></StgValue>
+</operation>
+
+<operation id="9" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="11" bw="0" op_0_bw="1">
+<![CDATA[
+_Z16double_thresholdPKhPhbPb.4.exit:1 %ret_ln0 = ret i1 %valid_out_write_assign
+
+]]></Node>
+<StgValue><ssdm name="ret_ln0"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

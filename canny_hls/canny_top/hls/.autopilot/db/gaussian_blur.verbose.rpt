@@ -1,0 +1,1931 @@
+
+
+================================================================
+== Vitis HLS Report for 'gaussian_blur'
+================================================================
+* Date:           Thu Jul 23 23:06:30 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        canny_top
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.321 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+-----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min   |    max    | min |  max |   Type  |
+    +---------+---------+----------+-----------+-----+------+---------+
+    |      551|     4654|  2.755 us|  23.270 us|  551|  4654|       no|
+    +---------+---------+----------+-----------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |                                                  |                                        |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
+        |                     Instance                     |                 Module                 |   min   |   max   |    min    |    max    | min | max |        Type       |
+        +--------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        |grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54  |gaussian_blur_Pipeline_VITIS_LOOP_46_1  |      514|      514|   2.570 us|   2.570 us|    0|    0|  loop pipeline stp|
+        |grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67  |gaussian_blur_Pipeline_VITIS_LOOP_64_2  |     4068|     4068|  20.340 us|  20.340 us|    0|    0|  loop pipeline stp|
+        +--------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     291|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|    2253|    2244|    -|
+|Memory           |        2|     -|       0|       0|    0|
+|Multiplexer      |        -|     -|       0|     555|    -|
+|Register         |        -|     -|     160|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        2|     0|    2413|    3090|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |       ~0|     0|       1|       2|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
+    |                     Instance                     |                 Module                 | BRAM_18K| DSP|  FF | LUT | URAM|
+    +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
+    |grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54  |gaussian_blur_Pipeline_VITIS_LOOP_46_1  |        0|   0|   22|   73|    0|
+    |grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67  |gaussian_blur_Pipeline_VITIS_LOOP_64_2  |        0|   0|  261|  981|    0|
+    |srem_32ns_4ns_32_36_seq_1_U30                     |srem_32ns_4ns_32_36_seq_1               |        0|   0|  394|  238|    0|
+    |srem_32ns_4ns_32_36_seq_1_U31                     |srem_32ns_4ns_32_36_seq_1               |        0|   0|  394|  238|    0|
+    |srem_32ns_4ns_32_36_seq_1_U33                     |srem_32ns_4ns_32_36_seq_1               |        0|   0|  394|  238|    0|
+    |srem_32ns_4ns_32_36_seq_1_U34                     |srem_32ns_4ns_32_36_seq_1               |        0|   0|  394|  238|    0|
+    |urem_32ns_4ns_3_36_seq_1_U32                      |urem_32ns_4ns_3_36_seq_1                |        0|   0|  394|  238|    0|
+    +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
+    |Total                                             |                                        |        0|   0| 2253| 2244|    0|
+    +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +------------------------------------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |               Memory               |                            Module                            | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +------------------------------------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |p_ZN12_GLOBAL_N_110lineBufferE_0_U  |gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W  |        1|  0|   0|    0|  1280|    8|     1|        10240|
+    |p_ZN12_GLOBAL_N_110lineBufferE_1_U  |gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W  |        1|  0|   0|    0|  1280|    8|     1|        10240|
+    +------------------------------------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                               |                                                              |        2|  0|   0|    0|  2560|   16|     2|        20480|
+    +------------------------------------+--------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln22_1_fu_238_p2              |         +|   0|  0|  10|           3|           3|
+    |add_ln22_2_fu_176_p2              |         +|   0|  0|  10|           3|           3|
+    |add_ln22_3_fu_265_p2              |         +|   0|  0|  10|           3|           3|
+    |add_ln22_fu_206_p2                |         +|   0|  0|  10|           3|           3|
+    |add_ln50_fu_97_p2                 |         +|   0|  0|  39|          32|           1|
+    |grp_fu_146_p0                     |         +|   0|  0|  39|          32|           3|
+    |grp_fu_163_p0                     |         +|   0|  0|  39|          32|           2|
+    |outputRow_fu_108_p2               |         +|   0|  0|  39|          32|           3|
+    |ap_block_state73_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln59_1_fu_129_p2             |      icmp|   0|  0|  39|          32|           9|
+    |icmp_ln59_fu_123_p2               |      icmp|   0|  0|  38|          31|           1|
+    |ap_block_state1                   |        or|   0|  0|   2|           1|           1|
+    |or_ln59_fu_135_p2                 |        or|   0|  0|   2|           1|           1|
+    |select_ln22_1_fu_244_p3           |    select|   0|  0|   3|           1|           3|
+    |select_ln22_2_fu_181_p3           |    select|   0|  0|   3|           1|           3|
+    |select_ln22_3_fu_271_p3           |    select|   0|  0|   3|           1|           3|
+    |select_ln22_fu_212_p3             |    select|   0|  0|   3|           1|           3|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0| 291|         210|          46|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------------------------------+-----+-----------+-----+-----------+
+    |                      Name                      | LUT | Input Size| Bits| Total Bits|
+    +------------------------------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                                       |  389|         74|    1|         74|
+    |ap_done                                         |    9|          2|    1|          2|
+    |ap_phi_mux_valid_out_write_assign_phi_fu_46_p4  |    9|          2|    1|          2|
+    |output_r_address0                               |   14|          3|    9|         27|
+    |output_r_ce0                                    |   14|          3|    1|          3|
+    |output_r_d0                                     |   14|          3|    8|         24|
+    |output_r_we0                                    |   14|          3|    1|          3|
+    |p_ZN12_GLOBAL_N_110lineBufferE_0_address0       |   14|          3|   11|         33|
+    |p_ZN12_GLOBAL_N_110lineBufferE_0_ce0            |   14|          3|    1|          3|
+    |p_ZN12_GLOBAL_N_110lineBufferE_0_ce1            |    9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferE_0_we0            |    9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferE_1_address0       |   14|          3|   11|         33|
+    |p_ZN12_GLOBAL_N_110lineBufferE_1_ce0            |   14|          3|    1|          3|
+    |p_ZN12_GLOBAL_N_110lineBufferE_1_ce1            |    9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferE_1_we0            |    9|          2|    1|          2|
+    +------------------------------------------------+-----+-----------+-----+-----------+
+    |Total                                           |  555|        110|   50|        215|
+    +------------------------------------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |                              Name                             | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                      |  73|   0|   73|          0|
+    |ap_done_reg                                                    |   1|   0|    1|          0|
+    |grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_start_reg  |   1|   0|    1|          0|
+    |grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_start_reg  |   1|   0|    1|          0|
+    |or_ln59_reg_305                                                |   1|   0|    1|          0|
+    |p_anonymous_namespace_rowsReceived                             |  32|   0|   32|          0|
+    |select_ln22_1_reg_334                                          |   3|   0|    3|          0|
+    |select_ln22_2_reg_319                                          |   3|   0|    3|          0|
+    |select_ln22_3_reg_339                                          |   3|   0|    3|          0|
+    |select_ln22_reg_324                                            |   3|   0|    3|          0|
+    |trunc_ln42_reg_288                                             |   3|   0|    3|          0|
+    |trunc_ln79_reg_329                                             |   3|   0|    3|          0|
+    |valid_out_write_assign_reg_42                                  |   1|   0|    1|          0|
+    |writeSlot_reg_283                                              |  32|   0|   32|          0|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                          | 160|   0|  160|          0|
+    +---------------------------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+---------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object |    C Type    |
++-------------------+-----+-----+------------+---------------+--------------+
+|ap_clk             |   in|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|ap_rst             |   in|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|ap_start           |   in|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|ap_done            |  out|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|ap_continue        |   in|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|ap_idle            |  out|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|ap_ready           |  out|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|ap_return          |  out|    1|  ap_ctrl_hs|  gaussian_blur|  return value|
+|input_r_address0   |  out|    9|   ap_memory|        input_r|         array|
+|input_r_ce0        |  out|    1|   ap_memory|        input_r|         array|
+|input_r_q0         |   in|    8|   ap_memory|        input_r|         array|
+|output_r_address0  |  out|    9|   ap_memory|       output_r|         array|
+|output_r_ce0       |  out|    1|   ap_memory|       output_r|         array|
+|output_r_we0       |  out|    1|   ap_memory|       output_r|         array|
+|output_r_d0        |  out|    8|   ap_memory|       output_r|         array|
++-------------------+-----+-----+------------+---------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 73
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 73 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 45 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 
+52 --> 53 
+53 --> 54 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 64 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.47>
+ST_1 : Operation 74 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_rowsReceived_load = load i32 %p_anonymous_namespace_rowsReceived" [../src/gaussian_blur.cpp:43]   --->   Operation 74 'load' 'p_anonymous_namespace_rowsReceived_load' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 75 [36/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 75 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 1.47>
+ST_2 : Operation 76 [35/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 76 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 1.47>
+ST_3 : Operation 77 [34/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 77 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 1.47>
+ST_4 : Operation 78 [33/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 78 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 1.47>
+ST_5 : Operation 79 [32/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 79 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 1.47>
+ST_6 : Operation 80 [31/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 80 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 1.47>
+ST_7 : Operation 81 [30/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 81 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 1.47>
+ST_8 : Operation 82 [29/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 82 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 1.47>
+ST_9 : Operation 83 [28/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 83 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 1.47>
+ST_10 : Operation 84 [27/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 84 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 1.47>
+ST_11 : Operation 85 [26/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 85 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 1.47>
+ST_12 : Operation 86 [25/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 86 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 1.47>
+ST_13 : Operation 87 [24/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 87 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 1.47>
+ST_14 : Operation 88 [23/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 88 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 1.47>
+ST_15 : Operation 89 [22/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 89 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 1.47>
+ST_16 : Operation 90 [21/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 90 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 1.47>
+ST_17 : Operation 91 [20/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 91 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 1.47>
+ST_18 : Operation 92 [19/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 92 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 1.47>
+ST_19 : Operation 93 [18/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 93 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 1.47>
+ST_20 : Operation 94 [17/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 94 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 1.47>
+ST_21 : Operation 95 [16/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 95 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 1.47>
+ST_22 : Operation 96 [15/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 96 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 1.47>
+ST_23 : Operation 97 [14/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 97 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 1.47>
+ST_24 : Operation 98 [13/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 98 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 1.47>
+ST_25 : Operation 99 [12/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 99 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 1.47>
+ST_26 : Operation 100 [11/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 100 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 1.47>
+ST_27 : Operation 101 [10/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 101 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 1.47>
+ST_28 : Operation 102 [9/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 102 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 1.47>
+ST_29 : Operation 103 [8/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 103 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 1.47>
+ST_30 : Operation 104 [7/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 104 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 1.47>
+ST_31 : Operation 105 [6/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 105 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 1.47>
+ST_32 : Operation 106 [5/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 106 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 1.47>
+ST_33 : Operation 107 [4/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 107 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 1.47>
+ST_34 : Operation 108 [3/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 108 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 1.47>
+ST_35 : Operation 109 [2/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 109 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 1.47>
+ST_36 : Operation 110 [1/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_load, i32 5" [../src/gaussian_blur.cpp:43]   --->   Operation 110 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 111 [1/1] (0.00ns)   --->   "%trunc_ln42 = trunc i32 %writeSlot" [../src/gaussian_blur.cpp:42]   --->   Operation 111 'trunc' 'trunc_ln42' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 112 [2/2] (0.00ns)   --->   "%call_ln42 = call void @gaussian_blur_Pipeline_VITIS_LOOP_46_1, i8 %output_r, i3 %trunc_ln42, i8 %input_r, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1" [../src/gaussian_blur.cpp:42]   --->   Operation 112 'call' 'call_ln42' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 37 <SV = 36> <Delay = 2.74>
+ST_37 : Operation 113 [1/2] (1.64ns)   --->   "%call_ln42 = call void @gaussian_blur_Pipeline_VITIS_LOOP_46_1, i8 %output_r, i3 %trunc_ln42, i8 %input_r, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1" [../src/gaussian_blur.cpp:42]   --->   Operation 113 'call' 'call_ln42' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
+ST_37 : Operation 114 [1/1] (1.01ns)   --->   "%add_ln50 = add i32 %p_anonymous_namespace_rowsReceived_load, i32 1" [../src/gaussian_blur.cpp:50]   --->   Operation 114 'add' 'add_ln50' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 115 [1/1] (0.00ns)   --->   "%store_ln50 = store i32 %add_ln50, i32 %p_anonymous_namespace_rowsReceived" [../src/gaussian_blur.cpp:50]   --->   Operation 115 'store' 'store_ln50' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 116 [1/1] (1.01ns)   --->   "%outputRow = add i32 %p_anonymous_namespace_rowsReceived_load, i32 4294967294" [../src/gaussian_blur.cpp:56]   --->   Operation 116 'add' 'outputRow' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 117 [1/1] (0.00ns)   --->   "%tmp = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %outputRow, i32 1, i32 31" [../src/gaussian_blur.cpp:59]   --->   Operation 117 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 118 [1/1] (1.00ns)   --->   "%icmp_ln59 = icmp_slt  i31 %tmp, i31 1" [../src/gaussian_blur.cpp:59]   --->   Operation 118 'icmp' 'icmp_ln59' <Predicate = true> <Delay = 1.00> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 119 [1/1] (1.01ns)   --->   "%icmp_ln59_1 = icmp_sgt  i32 %outputRow, i32 509" [../src/gaussian_blur.cpp:59]   --->   Operation 119 'icmp' 'icmp_ln59_1' <Predicate = true> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 120 [1/1] (0.28ns)   --->   "%or_ln59 = or i1 %icmp_ln59, i1 %icmp_ln59_1" [../src/gaussian_blur.cpp:59]   --->   Operation 120 'or' 'or_ln59' <Predicate = true> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 121 [1/1] (0.42ns)   --->   "%br_ln59 = br i1 %or_ln59, void %VITIS_LOOP_64_2, void %cleanup" [../src/gaussian_blur.cpp:59]   --->   Operation 121 'br' 'br_ln59' <Predicate = true> <Delay = 0.42>
+ST_37 : Operation 122 [1/1] (1.01ns)   --->   "%add_ln76 = add i32 %p_anonymous_namespace_rowsReceived_load, i32 4294967293" [../src/gaussian_blur.cpp:76]   --->   Operation 122 'add' 'add_ln76' <Predicate = (!or_ln59)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 123 [36/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 123 'srem' 'srem_ln21' <Predicate = (!or_ln59)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 124 [36/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 124 'urem' 'result_15' <Predicate = (!or_ln59)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 125 [1/1] (1.01ns)   --->   "%add_ln79 = add i32 %p_anonymous_namespace_rowsReceived_load, i32 4294967295" [../src/gaussian_blur.cpp:79]   --->   Operation 125 'add' 'add_ln79' <Predicate = (!or_ln59)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 126 [36/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 126 'srem' 'srem_ln21_1' <Predicate = (!or_ln59)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 127 [1/1] (0.00ns)   --->   "%tmp_25 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %writeSlot, i32 3" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 127 'bitselect' 'tmp_25' <Predicate = (!or_ln59)> <Delay = 0.00>
+ST_37 : Operation 128 [1/1] (0.67ns)   --->   "%add_ln22_2 = add i3 %trunc_ln42, i3 5" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 128 'add' 'add_ln22_2' <Predicate = (!or_ln59)> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 129 [1/1] (0.20ns)   --->   "%select_ln22_2 = select i1 %tmp_25, i3 %add_ln22_2, i3 %trunc_ln42" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 129 'select' 'select_ln22_2' <Predicate = (!or_ln59)> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_37 : Operation 130 [36/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 130 'srem' 'srem_ln21_2' <Predicate = (!or_ln59)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 1.47>
+ST_38 : Operation 131 [35/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 131 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 132 [35/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 132 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 133 [35/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 133 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 134 [35/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 134 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 1.47>
+ST_39 : Operation 135 [34/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 135 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 136 [34/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 136 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 137 [34/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 137 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 138 [34/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 138 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 1.47>
+ST_40 : Operation 139 [33/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 139 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 140 [33/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 140 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 141 [33/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 141 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 142 [33/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 142 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 1.47>
+ST_41 : Operation 143 [32/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 143 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 144 [32/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 144 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 145 [32/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 145 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 146 [32/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 146 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 1.47>
+ST_42 : Operation 147 [31/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 147 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 148 [31/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 148 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 149 [31/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 149 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 150 [31/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 150 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 1.47>
+ST_43 : Operation 151 [30/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 151 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 152 [30/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 152 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 153 [30/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 153 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 154 [30/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 154 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 1.47>
+ST_44 : Operation 155 [29/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 155 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 156 [29/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 156 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 157 [29/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 157 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 158 [29/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 158 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 45 <SV = 44> <Delay = 1.47>
+ST_45 : Operation 159 [28/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 159 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 160 [28/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 160 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 161 [28/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 161 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 162 [28/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 162 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 46 <SV = 45> <Delay = 1.47>
+ST_46 : Operation 163 [27/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 163 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 164 [27/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 164 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 165 [27/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 165 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 166 [27/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 166 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 47 <SV = 46> <Delay = 1.47>
+ST_47 : Operation 167 [26/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 167 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 168 [26/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 168 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 169 [26/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 169 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 170 [26/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 170 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 48 <SV = 47> <Delay = 1.47>
+ST_48 : Operation 171 [25/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 171 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 172 [25/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 172 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 173 [25/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 173 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 174 [25/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 174 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 49 <SV = 48> <Delay = 1.47>
+ST_49 : Operation 175 [24/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 175 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 176 [24/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 176 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 177 [24/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 177 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 178 [24/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 178 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 50 <SV = 49> <Delay = 1.47>
+ST_50 : Operation 179 [23/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 179 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 180 [23/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 180 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 181 [23/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 181 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 182 [23/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 182 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 51 <SV = 50> <Delay = 1.47>
+ST_51 : Operation 183 [22/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 183 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 184 [22/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 184 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 185 [22/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 185 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 186 [22/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 186 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 52 <SV = 51> <Delay = 1.47>
+ST_52 : Operation 187 [21/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 187 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 188 [21/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 188 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 189 [21/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 189 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 190 [21/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 190 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 53 <SV = 52> <Delay = 1.47>
+ST_53 : Operation 191 [20/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 191 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 192 [20/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 192 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 193 [20/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 193 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 194 [20/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 194 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 54 <SV = 53> <Delay = 1.47>
+ST_54 : Operation 195 [19/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 195 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 196 [19/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 196 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 197 [19/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 197 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 198 [19/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 198 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 55 <SV = 54> <Delay = 1.47>
+ST_55 : Operation 199 [18/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 199 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 200 [18/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 200 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 201 [18/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 201 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 202 [18/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 202 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 55> <Delay = 1.47>
+ST_56 : Operation 203 [17/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 203 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 204 [17/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 204 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 205 [17/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 205 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 206 [17/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 206 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 56> <Delay = 1.47>
+ST_57 : Operation 207 [16/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 207 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 208 [16/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 208 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 209 [16/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 209 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 210 [16/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 210 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 57> <Delay = 1.47>
+ST_58 : Operation 211 [15/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 211 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 212 [15/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 212 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 213 [15/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 213 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 214 [15/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 214 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 58> <Delay = 1.47>
+ST_59 : Operation 215 [14/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 215 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 216 [14/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 216 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 217 [14/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 217 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 218 [14/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 218 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 59> <Delay = 1.47>
+ST_60 : Operation 219 [13/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 219 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 220 [13/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 220 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 221 [13/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 221 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 222 [13/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 222 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 60> <Delay = 1.47>
+ST_61 : Operation 223 [12/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 223 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 224 [12/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 224 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 225 [12/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 225 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 226 [12/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 226 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 61> <Delay = 1.47>
+ST_62 : Operation 227 [11/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 227 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 228 [11/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 228 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 229 [11/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 229 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 230 [11/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 230 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 62> <Delay = 1.47>
+ST_63 : Operation 231 [10/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 231 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 232 [10/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 232 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 233 [10/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 233 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 234 [10/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 234 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 64 <SV = 63> <Delay = 1.47>
+ST_64 : Operation 235 [9/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 235 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 236 [9/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 236 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 237 [9/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 237 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 238 [9/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 238 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 64> <Delay = 1.47>
+ST_65 : Operation 239 [8/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 239 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 240 [8/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 240 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 241 [8/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 241 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 242 [8/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 242 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 65> <Delay = 1.47>
+ST_66 : Operation 243 [7/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 243 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 244 [7/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 244 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 245 [7/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 245 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 246 [7/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 246 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 66> <Delay = 1.47>
+ST_67 : Operation 247 [6/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 247 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 248 [6/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 248 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 249 [6/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 249 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 250 [6/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 250 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 67> <Delay = 1.47>
+ST_68 : Operation 251 [5/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 251 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 252 [5/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 252 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 253 [5/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 253 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 254 [5/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 254 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 68> <Delay = 1.47>
+ST_69 : Operation 255 [4/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 255 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 256 [4/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 256 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 257 [4/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 257 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 258 [4/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 258 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 70 <SV = 69> <Delay = 1.47>
+ST_70 : Operation 259 [3/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 259 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 260 [3/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 260 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 261 [3/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 261 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 262 [3/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 262 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 71 <SV = 70> <Delay = 1.47>
+ST_71 : Operation 263 [2/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 263 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 264 [2/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 264 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 265 [2/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 265 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 266 [2/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 266 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+
+State 72 <SV = 71> <Delay = 2.35>
+ST_72 : Operation 267 [1/36] (1.47ns)   --->   "%srem_ln21 = srem i32 %add_ln76, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 267 'srem' 'srem_ln21' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 268 [1/1] (0.00ns)   --->   "%trunc_ln22 = trunc i32 %srem_ln21" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 268 'trunc' 'trunc_ln22' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 269 [1/1] (0.00ns)   --->   "%tmp_23 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %srem_ln21, i32 3" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 269 'bitselect' 'tmp_23' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 270 [1/1] (0.67ns)   --->   "%add_ln22 = add i3 %trunc_ln22, i3 5" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 270 'add' 'add_ln22' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 271 [1/1] (0.20ns)   --->   "%select_ln22 = select i1 %tmp_23, i3 %add_ln22, i3 %trunc_ln22" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 271 'select' 'select_ln22' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_72 : Operation 272 [1/36] (1.47ns)   --->   "%result_15 = urem i32 %outputRow, i32 5" [../src/gaussian_blur.cpp:56]   --->   Operation 272 'urem' 'result_15' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 3> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 273 [1/1] (0.00ns)   --->   "%trunc_ln79 = trunc i3 %result_15" [../src/gaussian_blur.cpp:79]   --->   Operation 273 'trunc' 'trunc_ln79' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 274 [1/36] (1.47ns)   --->   "%srem_ln21_1 = srem i32 %add_ln79, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 274 'srem' 'srem_ln21_1' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 275 [1/1] (0.00ns)   --->   "%trunc_ln22_1 = trunc i32 %srem_ln21_1" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 275 'trunc' 'trunc_ln22_1' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 276 [1/1] (0.00ns)   --->   "%tmp_24 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %srem_ln21_1, i32 3" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 276 'bitselect' 'tmp_24' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 277 [1/1] (0.67ns)   --->   "%add_ln22_1 = add i3 %trunc_ln22_1, i3 5" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 277 'add' 'add_ln22_1' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 278 [1/1] (0.20ns)   --->   "%select_ln22_1 = select i1 %tmp_24, i3 %add_ln22_1, i3 %trunc_ln22_1" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 278 'select' 'select_ln22_1' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_72 : Operation 279 [1/36] (1.47ns)   --->   "%srem_ln21_2 = srem i32 %add_ln50, i32 5" [../src/gaussian_blur.cpp:21->../src/gaussian_blur.cpp:79]   --->   Operation 279 'srem' 'srem_ln21_2' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 280 [1/1] (0.00ns)   --->   "%trunc_ln22_2 = trunc i32 %srem_ln21_2" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 280 'trunc' 'trunc_ln22_2' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 281 [1/1] (0.00ns)   --->   "%tmp_26 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %srem_ln21_2, i32 3" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 281 'bitselect' 'tmp_26' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 282 [1/1] (0.67ns)   --->   "%add_ln22_3 = add i3 %trunc_ln22_2, i3 5" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 282 'add' 'add_ln22_3' <Predicate = true> <Delay = 0.67> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.67> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 283 [1/1] (0.20ns)   --->   "%select_ln22_3 = select i1 %tmp_26, i3 %add_ln22_3, i3 %trunc_ln22_2" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 283 'select' 'select_ln22_3' <Predicate = true> <Delay = 0.20> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.20> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_72 : Operation 284 [2/2] (0.00ns)   --->   "%call_ln22 = call void @gaussian_blur_Pipeline_VITIS_LOOP_64_2, i3 %select_ln22, i3 %trunc_ln79, i3 %select_ln22_1, i3 %select_ln22_2, i3 %select_ln22_3, i8 %output_r, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 284 'call' 'call_ln22' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 73 <SV = 72> <Delay = 0.42>
+ST_73 : Operation 285 [1/2] (0.00ns)   --->   "%call_ln22 = call void @gaussian_blur_Pipeline_VITIS_LOOP_64_2, i3 %select_ln22, i3 %trunc_ln79, i3 %select_ln22_1, i3 %select_ln22_2, i3 %select_ln22_3, i8 %output_r, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1" [../src/gaussian_blur.cpp:22->../src/gaussian_blur.cpp:79]   --->   Operation 285 'call' 'call_ln22' <Predicate = (!or_ln59)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_73 : Operation 286 [1/1] (0.42ns)   --->   "%br_ln0 = br void %cleanup"   --->   Operation 286 'br' 'br_ln0' <Predicate = (!or_ln59)> <Delay = 0.42>
+ST_73 : Operation 287 [1/1] (0.00ns)   --->   "%valid_out_write_assign = phi i1 0, void %entry, i1 1, void %VITIS_LOOP_64_2"   --->   Operation 287 'phi' 'valid_out_write_assign' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 288 [1/1] (0.00ns)   --->   "%ret_ln104 = ret i1 %valid_out_write_assign" [../src/gaussian_blur.cpp:104]   --->   Operation 288 'ret' 'ret_ln104' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ input_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=1; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ output_r]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=1; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ p_anonymous_namespace_rowsReceived]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+p_anonymous_namespace_rowsReceived_load (load      ) [ 00111111111111111111111111111111111111000000000000000000000000000000000000]
+writeSlot                               (srem      ) [ 00000000000000000000000000000000000001000000000000000000000000000000000000]
+trunc_ln42                              (trunc     ) [ 00000000000000000000000000000000000001000000000000000000000000000000000000]
+call_ln42                               (call      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln50                                (add       ) [ 00000000000000000000000000000000000000111111111111111111111111111111111110]
+store_ln50                              (store     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+outputRow                               (add       ) [ 00000000000000000000000000000000000000111111111111111111111111111111111110]
+tmp                                     (partselect) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln59                               (icmp      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+icmp_ln59_1                             (icmp      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+or_ln59                                 (or        ) [ 00000000000000000000000000000000000001111111111111111111111111111111111111]
+br_ln59                                 (br        ) [ 00000000000000000000000000000000000001111111111111111111111111111111111111]
+add_ln76                                (add       ) [ 00000000000000000000000000000000000000111111111111111111111111111111111110]
+add_ln79                                (add       ) [ 00000000000000000000000000000000000000111111111111111111111111111111111110]
+tmp_25                                  (bitselect ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln22_2                              (add       ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+select_ln22_2                           (select    ) [ 00000000000000000000000000000000000000111111111111111111111111111111111111]
+srem_ln21                               (srem      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln22                              (trunc     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_23                                  (bitselect ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln22                                (add       ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+select_ln22                             (select    ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+result_15                               (urem      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln79                              (trunc     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+srem_ln21_1                             (srem      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln22_1                            (trunc     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_24                                  (bitselect ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln22_1                              (add       ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+select_ln22_1                           (select    ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+srem_ln21_2                             (srem      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln22_2                            (trunc     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_26                                  (bitselect ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln22_3                              (add       ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+select_ln22_3                           (select    ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+call_ln22                               (call      ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln0                                  (br        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+valid_out_write_assign                  (phi       ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+ret_ln104                               (ret       ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="input_r">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="input_r"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="output_r">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="output_r"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="p_anonymous_namespace_rowsReceived">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_anonymous_namespace_rowsReceived"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="p_ZN12_GLOBAL_N_110lineBufferE_0">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="p_ZN12_GLOBAL_N_110lineBufferE_1">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="gaussian_blur_Pipeline_VITIS_LOOP_46_1"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1001" name="const_14">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1001" name="const_16">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1001" name="const_18">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_PartSelect.i31.i32.i32.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1001" name="const_20">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1001" name="const_22">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1001" name="const_28">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1001" name="const_30">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitSelect.i1.i32.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1001" name="const_32">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="gaussian_blur_Pipeline_VITIS_LOOP_64_2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="36"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1005" name="valid_out_write_assign_reg_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="1" slack="36"/>
+<pin id="44" dir="1" index="1" bw="1" slack="36"/>
+</pin_list>
+<bind>
+<opset="valid_out_write_assign (phireg) "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="valid_out_write_assign_phi_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="1" slack="36"/>
+<pin id="48" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="49" dir="0" index="2" bw="1" slack="0"/>
+<pin id="50" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="51" dir="1" index="4" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="phi(47) " fcode="phi"/>
+<opset="valid_out_write_assign/73 "/>
+</bind>
+</comp>
+
+<comp id="54" class="1004" name="grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54">
+<pin_list>
+<pin id="55" dir="0" index="0" bw="0" slack="0"/>
+<pin id="56" dir="0" index="1" bw="8" slack="0"/>
+<pin id="57" dir="0" index="2" bw="3" slack="0"/>
+<pin id="58" dir="0" index="3" bw="8" slack="0"/>
+<pin id="59" dir="0" index="4" bw="8" slack="0"/>
+<pin id="60" dir="0" index="5" bw="8" slack="0"/>
+<pin id="61" dir="1" index="6" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln42/36 "/>
+</bind>
+</comp>
+
+<comp id="67" class="1004" name="grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67">
+<pin_list>
+<pin id="68" dir="0" index="0" bw="0" slack="0"/>
+<pin id="69" dir="0" index="1" bw="3" slack="0"/>
+<pin id="70" dir="0" index="2" bw="3" slack="0"/>
+<pin id="71" dir="0" index="3" bw="3" slack="0"/>
+<pin id="72" dir="0" index="4" bw="3" slack="35"/>
+<pin id="73" dir="0" index="5" bw="3" slack="0"/>
+<pin id="74" dir="0" index="6" bw="8" slack="0"/>
+<pin id="75" dir="0" index="7" bw="8" slack="0"/>
+<pin id="76" dir="0" index="8" bw="8" slack="0"/>
+<pin id="77" dir="1" index="9" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln22/72 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="p_anonymous_namespace_rowsReceived_load_load_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="32" slack="0"/>
+<pin id="84" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="load(27) " fcode="load"/>
+<opset="p_anonymous_namespace_rowsReceived_load/1 "/>
+</bind>
+</comp>
+
+<comp id="86" class="1004" name="grp_fu_86">
+<pin_list>
+<pin id="87" dir="0" index="0" bw="32" slack="0"/>
+<pin id="88" dir="0" index="1" bw="4" slack="0"/>
+<pin id="89" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="srem(18) " fcode="srem"/>
+<opset="writeSlot/1 "/>
+</bind>
+</comp>
+
+<comp id="92" class="1004" name="trunc_ln42_fu_92">
+<pin_list>
+<pin id="93" dir="0" index="0" bw="4" slack="0"/>
+<pin id="94" dir="1" index="1" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln42/36 "/>
+</bind>
+</comp>
+
+<comp id="97" class="1004" name="add_ln50_fu_97">
+<pin_list>
+<pin id="98" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="99" dir="0" index="1" bw="1" slack="0"/>
+<pin id="100" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln50/37 "/>
+</bind>
+</comp>
+
+<comp id="102" class="1004" name="store_ln50_store_fu_102">
+<pin_list>
+<pin id="103" dir="0" index="0" bw="32" slack="0"/>
+<pin id="104" dir="0" index="1" bw="32" slack="0"/>
+<pin id="105" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="store_ln50/37 "/>
+</bind>
+</comp>
+
+<comp id="108" class="1004" name="outputRow_fu_108">
+<pin_list>
+<pin id="109" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="110" dir="0" index="1" bw="2" slack="0"/>
+<pin id="111" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="outputRow/37 "/>
+</bind>
+</comp>
+
+<comp id="113" class="1004" name="tmp_fu_113">
+<pin_list>
+<pin id="114" dir="0" index="0" bw="31" slack="0"/>
+<pin id="115" dir="0" index="1" bw="32" slack="0"/>
+<pin id="116" dir="0" index="2" bw="1" slack="0"/>
+<pin id="117" dir="0" index="3" bw="6" slack="0"/>
+<pin id="118" dir="1" index="4" bw="31" slack="0"/>
+</pin_list>
+<bind>
+<opcode="partselect(1002) " fcode="partselect"/>
+<opset="tmp/37 "/>
+</bind>
+</comp>
+
+<comp id="123" class="1004" name="icmp_ln59_fu_123">
+<pin_list>
+<pin id="124" dir="0" index="0" bw="31" slack="0"/>
+<pin id="125" dir="0" index="1" bw="31" slack="0"/>
+<pin id="126" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln59/37 "/>
+</bind>
+</comp>
+
+<comp id="129" class="1004" name="icmp_ln59_1_fu_129">
+<pin_list>
+<pin id="130" dir="0" index="0" bw="32" slack="0"/>
+<pin id="131" dir="0" index="1" bw="32" slack="0"/>
+<pin id="132" dir="1" index="2" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln59_1/37 "/>
+</bind>
+</comp>
+
+<comp id="135" class="1004" name="or_ln59_fu_135">
+<pin_list>
+<pin id="136" dir="0" index="0" bw="1" slack="0"/>
+<pin id="137" dir="0" index="1" bw="1" slack="0"/>
+<pin id="138" dir="1" index="2" bw="1" slack="36"/>
+</pin_list>
+<bind>
+<opcode="or(24) " fcode="or"/>
+<opset="or_ln59/37 "/>
+</bind>
+</comp>
+
+<comp id="141" class="1004" name="add_ln76_fu_141">
+<pin_list>
+<pin id="142" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="143" dir="0" index="1" bw="3" slack="0"/>
+<pin id="144" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln76/37 "/>
+</bind>
+</comp>
+
+<comp id="146" class="1004" name="grp_fu_146">
+<pin_list>
+<pin id="147" dir="0" index="0" bw="32" slack="0"/>
+<pin id="148" dir="0" index="1" bw="4" slack="0"/>
+<pin id="149" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="srem(18) " fcode="srem"/>
+<opset="srem_ln21/37 "/>
+</bind>
+</comp>
+
+<comp id="152" class="1004" name="grp_fu_152">
+<pin_list>
+<pin id="153" dir="0" index="0" bw="32" slack="0"/>
+<pin id="154" dir="0" index="1" bw="4" slack="0"/>
+<pin id="155" dir="1" index="2" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="urem(17) " fcode="urem"/>
+<opset="result_15/37 "/>
+</bind>
+</comp>
+
+<comp id="158" class="1004" name="add_ln79_fu_158">
+<pin_list>
+<pin id="159" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="160" dir="0" index="1" bw="1" slack="0"/>
+<pin id="161" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln79/37 "/>
+</bind>
+</comp>
+
+<comp id="163" class="1004" name="grp_fu_163">
+<pin_list>
+<pin id="164" dir="0" index="0" bw="32" slack="0"/>
+<pin id="165" dir="0" index="1" bw="4" slack="0"/>
+<pin id="166" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="srem(18) " fcode="srem"/>
+<opset="srem_ln21_1/37 "/>
+</bind>
+</comp>
+
+<comp id="169" class="1004" name="tmp_25_fu_169">
+<pin_list>
+<pin id="170" dir="0" index="0" bw="1" slack="0"/>
+<pin id="171" dir="0" index="1" bw="4" slack="1"/>
+<pin id="172" dir="0" index="2" bw="3" slack="0"/>
+<pin id="173" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp_25/37 "/>
+</bind>
+</comp>
+
+<comp id="176" class="1004" name="add_ln22_2_fu_176">
+<pin_list>
+<pin id="177" dir="0" index="0" bw="3" slack="1"/>
+<pin id="178" dir="0" index="1" bw="3" slack="0"/>
+<pin id="179" dir="1" index="2" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln22_2/37 "/>
+</bind>
+</comp>
+
+<comp id="181" class="1004" name="select_ln22_2_fu_181">
+<pin_list>
+<pin id="182" dir="0" index="0" bw="1" slack="0"/>
+<pin id="183" dir="0" index="1" bw="3" slack="0"/>
+<pin id="184" dir="0" index="2" bw="3" slack="1"/>
+<pin id="185" dir="1" index="3" bw="3" slack="35"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln22_2/37 "/>
+</bind>
+</comp>
+
+<comp id="188" class="1004" name="grp_fu_188">
+<pin_list>
+<pin id="189" dir="0" index="0" bw="32" slack="0"/>
+<pin id="190" dir="0" index="1" bw="4" slack="0"/>
+<pin id="191" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="srem(18) " fcode="srem"/>
+<opset="srem_ln21_2/37 "/>
+</bind>
+</comp>
+
+<comp id="194" class="1004" name="trunc_ln22_fu_194">
+<pin_list>
+<pin id="195" dir="0" index="0" bw="4" slack="0"/>
+<pin id="196" dir="1" index="1" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln22/72 "/>
+</bind>
+</comp>
+
+<comp id="198" class="1004" name="tmp_23_fu_198">
+<pin_list>
+<pin id="199" dir="0" index="0" bw="1" slack="0"/>
+<pin id="200" dir="0" index="1" bw="4" slack="0"/>
+<pin id="201" dir="0" index="2" bw="3" slack="0"/>
+<pin id="202" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp_23/72 "/>
+</bind>
+</comp>
+
+<comp id="206" class="1004" name="add_ln22_fu_206">
+<pin_list>
+<pin id="207" dir="0" index="0" bw="3" slack="0"/>
+<pin id="208" dir="0" index="1" bw="3" slack="0"/>
+<pin id="209" dir="1" index="2" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln22/72 "/>
+</bind>
+</comp>
+
+<comp id="212" class="1004" name="select_ln22_fu_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="1" slack="0"/>
+<pin id="214" dir="0" index="1" bw="3" slack="0"/>
+<pin id="215" dir="0" index="2" bw="3" slack="0"/>
+<pin id="216" dir="1" index="3" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln22/72 "/>
+</bind>
+</comp>
+
+<comp id="221" class="1004" name="trunc_ln79_fu_221">
+<pin_list>
+<pin id="222" dir="0" index="0" bw="3" slack="0"/>
+<pin id="223" dir="1" index="1" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln79/72 "/>
+</bind>
+</comp>
+
+<comp id="226" class="1004" name="trunc_ln22_1_fu_226">
+<pin_list>
+<pin id="227" dir="0" index="0" bw="4" slack="0"/>
+<pin id="228" dir="1" index="1" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln22_1/72 "/>
+</bind>
+</comp>
+
+<comp id="230" class="1004" name="tmp_24_fu_230">
+<pin_list>
+<pin id="231" dir="0" index="0" bw="1" slack="0"/>
+<pin id="232" dir="0" index="1" bw="4" slack="0"/>
+<pin id="233" dir="0" index="2" bw="3" slack="0"/>
+<pin id="234" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp_24/72 "/>
+</bind>
+</comp>
+
+<comp id="238" class="1004" name="add_ln22_1_fu_238">
+<pin_list>
+<pin id="239" dir="0" index="0" bw="3" slack="0"/>
+<pin id="240" dir="0" index="1" bw="3" slack="0"/>
+<pin id="241" dir="1" index="2" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln22_1/72 "/>
+</bind>
+</comp>
+
+<comp id="244" class="1004" name="select_ln22_1_fu_244">
+<pin_list>
+<pin id="245" dir="0" index="0" bw="1" slack="0"/>
+<pin id="246" dir="0" index="1" bw="3" slack="0"/>
+<pin id="247" dir="0" index="2" bw="3" slack="0"/>
+<pin id="248" dir="1" index="3" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln22_1/72 "/>
+</bind>
+</comp>
+
+<comp id="253" class="1004" name="trunc_ln22_2_fu_253">
+<pin_list>
+<pin id="254" dir="0" index="0" bw="4" slack="0"/>
+<pin id="255" dir="1" index="1" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln22_2/72 "/>
+</bind>
+</comp>
+
+<comp id="257" class="1004" name="tmp_26_fu_257">
+<pin_list>
+<pin id="258" dir="0" index="0" bw="1" slack="0"/>
+<pin id="259" dir="0" index="1" bw="4" slack="0"/>
+<pin id="260" dir="0" index="2" bw="3" slack="0"/>
+<pin id="261" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp_26/72 "/>
+</bind>
+</comp>
+
+<comp id="265" class="1004" name="add_ln22_3_fu_265">
+<pin_list>
+<pin id="266" dir="0" index="0" bw="3" slack="0"/>
+<pin id="267" dir="0" index="1" bw="3" slack="0"/>
+<pin id="268" dir="1" index="2" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln22_3/72 "/>
+</bind>
+</comp>
+
+<comp id="271" class="1004" name="select_ln22_3_fu_271">
+<pin_list>
+<pin id="272" dir="0" index="0" bw="1" slack="0"/>
+<pin id="273" dir="0" index="1" bw="3" slack="0"/>
+<pin id="274" dir="0" index="2" bw="3" slack="0"/>
+<pin id="275" dir="1" index="3" bw="3" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln22_3/72 "/>
+</bind>
+</comp>
+
+<comp id="283" class="1005" name="writeSlot_reg_283">
+<pin_list>
+<pin id="284" dir="0" index="0" bw="32" slack="1"/>
+<pin id="285" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="writeSlot "/>
+</bind>
+</comp>
+
+<comp id="288" class="1005" name="trunc_ln42_reg_288">
+<pin_list>
+<pin id="289" dir="0" index="0" bw="3" slack="1"/>
+<pin id="290" dir="1" index="1" bw="3" slack="1"/>
+</pin_list>
+<bind>
+<opset="trunc_ln42 "/>
+</bind>
+</comp>
+
+<comp id="295" class="1005" name="add_ln50_reg_295">
+<pin_list>
+<pin id="296" dir="0" index="0" bw="32" slack="1"/>
+<pin id="297" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="add_ln50 "/>
+</bind>
+</comp>
+
+<comp id="300" class="1005" name="outputRow_reg_300">
+<pin_list>
+<pin id="301" dir="0" index="0" bw="32" slack="1"/>
+<pin id="302" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="outputRow "/>
+</bind>
+</comp>
+
+<comp id="305" class="1005" name="or_ln59_reg_305">
+<pin_list>
+<pin id="306" dir="0" index="0" bw="1" slack="36"/>
+<pin id="307" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="or_ln59 "/>
+</bind>
+</comp>
+
+<comp id="309" class="1005" name="add_ln76_reg_309">
+<pin_list>
+<pin id="310" dir="0" index="0" bw="32" slack="1"/>
+<pin id="311" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="add_ln76 "/>
+</bind>
+</comp>
+
+<comp id="314" class="1005" name="add_ln79_reg_314">
+<pin_list>
+<pin id="315" dir="0" index="0" bw="32" slack="1"/>
+<pin id="316" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="add_ln79 "/>
+</bind>
+</comp>
+
+<comp id="319" class="1005" name="select_ln22_2_reg_319">
+<pin_list>
+<pin id="320" dir="0" index="0" bw="3" slack="35"/>
+<pin id="321" dir="1" index="1" bw="3" slack="35"/>
+</pin_list>
+<bind>
+<opset="select_ln22_2 "/>
+</bind>
+</comp>
+
+<comp id="324" class="1005" name="select_ln22_reg_324">
+<pin_list>
+<pin id="325" dir="0" index="0" bw="3" slack="1"/>
+<pin id="326" dir="1" index="1" bw="3" slack="1"/>
+</pin_list>
+<bind>
+<opset="select_ln22 "/>
+</bind>
+</comp>
+
+<comp id="329" class="1005" name="trunc_ln79_reg_329">
+<pin_list>
+<pin id="330" dir="0" index="0" bw="3" slack="1"/>
+<pin id="331" dir="1" index="1" bw="3" slack="1"/>
+</pin_list>
+<bind>
+<opset="trunc_ln79 "/>
+</bind>
+</comp>
+
+<comp id="334" class="1005" name="select_ln22_1_reg_334">
+<pin_list>
+<pin id="335" dir="0" index="0" bw="3" slack="1"/>
+<pin id="336" dir="1" index="1" bw="3" slack="1"/>
+</pin_list>
+<bind>
+<opset="select_ln22_1 "/>
+</bind>
+</comp>
+
+<comp id="339" class="1005" name="select_ln22_3_reg_339">
+<pin_list>
+<pin id="340" dir="0" index="0" bw="3" slack="1"/>
+<pin id="341" dir="1" index="1" bw="3" slack="1"/>
+</pin_list>
+<bind>
+<opset="select_ln22_3 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="45"><net_src comp="38" pin="0"/><net_sink comp="42" pin=0"/></net>
+
+<net id="52"><net_src comp="42" pin="1"/><net_sink comp="46" pin=0"/></net>
+
+<net id="53"><net_src comp="40" pin="0"/><net_sink comp="46" pin=2"/></net>
+
+<net id="62"><net_src comp="12" pin="0"/><net_sink comp="54" pin=0"/></net>
+
+<net id="63"><net_src comp="2" pin="0"/><net_sink comp="54" pin=1"/></net>
+
+<net id="64"><net_src comp="0" pin="0"/><net_sink comp="54" pin=3"/></net>
+
+<net id="65"><net_src comp="6" pin="0"/><net_sink comp="54" pin=4"/></net>
+
+<net id="66"><net_src comp="8" pin="0"/><net_sink comp="54" pin=5"/></net>
+
+<net id="78"><net_src comp="36" pin="0"/><net_sink comp="67" pin=0"/></net>
+
+<net id="79"><net_src comp="2" pin="0"/><net_sink comp="67" pin=6"/></net>
+
+<net id="80"><net_src comp="6" pin="0"/><net_sink comp="67" pin=7"/></net>
+
+<net id="81"><net_src comp="8" pin="0"/><net_sink comp="67" pin=8"/></net>
+
+<net id="85"><net_src comp="4" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="90"><net_src comp="82" pin="1"/><net_sink comp="86" pin=0"/></net>
+
+<net id="91"><net_src comp="10" pin="0"/><net_sink comp="86" pin=1"/></net>
+
+<net id="95"><net_src comp="86" pin="2"/><net_sink comp="92" pin=0"/></net>
+
+<net id="96"><net_src comp="92" pin="1"/><net_sink comp="54" pin=2"/></net>
+
+<net id="101"><net_src comp="14" pin="0"/><net_sink comp="97" pin=1"/></net>
+
+<net id="106"><net_src comp="97" pin="2"/><net_sink comp="102" pin=0"/></net>
+
+<net id="107"><net_src comp="4" pin="0"/><net_sink comp="102" pin=1"/></net>
+
+<net id="112"><net_src comp="16" pin="0"/><net_sink comp="108" pin=1"/></net>
+
+<net id="119"><net_src comp="18" pin="0"/><net_sink comp="113" pin=0"/></net>
+
+<net id="120"><net_src comp="108" pin="2"/><net_sink comp="113" pin=1"/></net>
+
+<net id="121"><net_src comp="14" pin="0"/><net_sink comp="113" pin=2"/></net>
+
+<net id="122"><net_src comp="20" pin="0"/><net_sink comp="113" pin=3"/></net>
+
+<net id="127"><net_src comp="113" pin="4"/><net_sink comp="123" pin=0"/></net>
+
+<net id="128"><net_src comp="22" pin="0"/><net_sink comp="123" pin=1"/></net>
+
+<net id="133"><net_src comp="108" pin="2"/><net_sink comp="129" pin=0"/></net>
+
+<net id="134"><net_src comp="24" pin="0"/><net_sink comp="129" pin=1"/></net>
+
+<net id="139"><net_src comp="123" pin="2"/><net_sink comp="135" pin=0"/></net>
+
+<net id="140"><net_src comp="129" pin="2"/><net_sink comp="135" pin=1"/></net>
+
+<net id="145"><net_src comp="26" pin="0"/><net_sink comp="141" pin=1"/></net>
+
+<net id="150"><net_src comp="141" pin="2"/><net_sink comp="146" pin=0"/></net>
+
+<net id="151"><net_src comp="10" pin="0"/><net_sink comp="146" pin=1"/></net>
+
+<net id="156"><net_src comp="108" pin="2"/><net_sink comp="152" pin=0"/></net>
+
+<net id="157"><net_src comp="10" pin="0"/><net_sink comp="152" pin=1"/></net>
+
+<net id="162"><net_src comp="28" pin="0"/><net_sink comp="158" pin=1"/></net>
+
+<net id="167"><net_src comp="158" pin="2"/><net_sink comp="163" pin=0"/></net>
+
+<net id="168"><net_src comp="10" pin="0"/><net_sink comp="163" pin=1"/></net>
+
+<net id="174"><net_src comp="30" pin="0"/><net_sink comp="169" pin=0"/></net>
+
+<net id="175"><net_src comp="32" pin="0"/><net_sink comp="169" pin=2"/></net>
+
+<net id="180"><net_src comp="34" pin="0"/><net_sink comp="176" pin=1"/></net>
+
+<net id="186"><net_src comp="169" pin="3"/><net_sink comp="181" pin=0"/></net>
+
+<net id="187"><net_src comp="176" pin="2"/><net_sink comp="181" pin=1"/></net>
+
+<net id="192"><net_src comp="97" pin="2"/><net_sink comp="188" pin=0"/></net>
+
+<net id="193"><net_src comp="10" pin="0"/><net_sink comp="188" pin=1"/></net>
+
+<net id="197"><net_src comp="146" pin="2"/><net_sink comp="194" pin=0"/></net>
+
+<net id="203"><net_src comp="30" pin="0"/><net_sink comp="198" pin=0"/></net>
+
+<net id="204"><net_src comp="146" pin="2"/><net_sink comp="198" pin=1"/></net>
+
+<net id="205"><net_src comp="32" pin="0"/><net_sink comp="198" pin=2"/></net>
+
+<net id="210"><net_src comp="194" pin="1"/><net_sink comp="206" pin=0"/></net>
+
+<net id="211"><net_src comp="34" pin="0"/><net_sink comp="206" pin=1"/></net>
+
+<net id="217"><net_src comp="198" pin="3"/><net_sink comp="212" pin=0"/></net>
+
+<net id="218"><net_src comp="206" pin="2"/><net_sink comp="212" pin=1"/></net>
+
+<net id="219"><net_src comp="194" pin="1"/><net_sink comp="212" pin=2"/></net>
+
+<net id="220"><net_src comp="212" pin="3"/><net_sink comp="67" pin=1"/></net>
+
+<net id="224"><net_src comp="152" pin="2"/><net_sink comp="221" pin=0"/></net>
+
+<net id="225"><net_src comp="221" pin="1"/><net_sink comp="67" pin=2"/></net>
+
+<net id="229"><net_src comp="163" pin="2"/><net_sink comp="226" pin=0"/></net>
+
+<net id="235"><net_src comp="30" pin="0"/><net_sink comp="230" pin=0"/></net>
+
+<net id="236"><net_src comp="163" pin="2"/><net_sink comp="230" pin=1"/></net>
+
+<net id="237"><net_src comp="32" pin="0"/><net_sink comp="230" pin=2"/></net>
+
+<net id="242"><net_src comp="226" pin="1"/><net_sink comp="238" pin=0"/></net>
+
+<net id="243"><net_src comp="34" pin="0"/><net_sink comp="238" pin=1"/></net>
+
+<net id="249"><net_src comp="230" pin="3"/><net_sink comp="244" pin=0"/></net>
+
+<net id="250"><net_src comp="238" pin="2"/><net_sink comp="244" pin=1"/></net>
+
+<net id="251"><net_src comp="226" pin="1"/><net_sink comp="244" pin=2"/></net>
+
+<net id="252"><net_src comp="244" pin="3"/><net_sink comp="67" pin=3"/></net>
+
+<net id="256"><net_src comp="188" pin="2"/><net_sink comp="253" pin=0"/></net>
+
+<net id="262"><net_src comp="30" pin="0"/><net_sink comp="257" pin=0"/></net>
+
+<net id="263"><net_src comp="188" pin="2"/><net_sink comp="257" pin=1"/></net>
+
+<net id="264"><net_src comp="32" pin="0"/><net_sink comp="257" pin=2"/></net>
+
+<net id="269"><net_src comp="253" pin="1"/><net_sink comp="265" pin=0"/></net>
+
+<net id="270"><net_src comp="34" pin="0"/><net_sink comp="265" pin=1"/></net>
+
+<net id="276"><net_src comp="257" pin="3"/><net_sink comp="271" pin=0"/></net>
+
+<net id="277"><net_src comp="265" pin="2"/><net_sink comp="271" pin=1"/></net>
+
+<net id="278"><net_src comp="253" pin="1"/><net_sink comp="271" pin=2"/></net>
+
+<net id="279"><net_src comp="271" pin="3"/><net_sink comp="67" pin=5"/></net>
+
+<net id="286"><net_src comp="86" pin="2"/><net_sink comp="283" pin=0"/></net>
+
+<net id="287"><net_src comp="283" pin="1"/><net_sink comp="169" pin=1"/></net>
+
+<net id="291"><net_src comp="92" pin="1"/><net_sink comp="288" pin=0"/></net>
+
+<net id="292"><net_src comp="288" pin="1"/><net_sink comp="54" pin=2"/></net>
+
+<net id="293"><net_src comp="288" pin="1"/><net_sink comp="176" pin=0"/></net>
+
+<net id="294"><net_src comp="288" pin="1"/><net_sink comp="181" pin=2"/></net>
+
+<net id="298"><net_src comp="97" pin="2"/><net_sink comp="295" pin=0"/></net>
+
+<net id="299"><net_src comp="295" pin="1"/><net_sink comp="188" pin=0"/></net>
+
+<net id="303"><net_src comp="108" pin="2"/><net_sink comp="300" pin=0"/></net>
+
+<net id="304"><net_src comp="300" pin="1"/><net_sink comp="152" pin=0"/></net>
+
+<net id="308"><net_src comp="135" pin="2"/><net_sink comp="305" pin=0"/></net>
+
+<net id="312"><net_src comp="141" pin="2"/><net_sink comp="309" pin=0"/></net>
+
+<net id="313"><net_src comp="309" pin="1"/><net_sink comp="146" pin=0"/></net>
+
+<net id="317"><net_src comp="158" pin="2"/><net_sink comp="314" pin=0"/></net>
+
+<net id="318"><net_src comp="314" pin="1"/><net_sink comp="163" pin=0"/></net>
+
+<net id="322"><net_src comp="181" pin="3"/><net_sink comp="319" pin=0"/></net>
+
+<net id="323"><net_src comp="319" pin="1"/><net_sink comp="67" pin=4"/></net>
+
+<net id="327"><net_src comp="212" pin="3"/><net_sink comp="324" pin=0"/></net>
+
+<net id="328"><net_src comp="324" pin="1"/><net_sink comp="67" pin=1"/></net>
+
+<net id="332"><net_src comp="221" pin="1"/><net_sink comp="329" pin=0"/></net>
+
+<net id="333"><net_src comp="329" pin="1"/><net_sink comp="67" pin=2"/></net>
+
+<net id="337"><net_src comp="244" pin="3"/><net_sink comp="334" pin=0"/></net>
+
+<net id="338"><net_src comp="334" pin="1"/><net_sink comp="67" pin=3"/></net>
+
+<net id="342"><net_src comp="271" pin="3"/><net_sink comp="339" pin=0"/></net>
+
+<net id="343"><net_src comp="339" pin="1"/><net_sink comp="67" pin=5"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: output_r | {36 37 72 73 }
+	Port: p_anonymous_namespace_rowsReceived | {37 }
+	Port: p_ZN12_GLOBAL_N_110lineBufferE_0 | {36 37 }
+	Port: p_ZN12_GLOBAL_N_110lineBufferE_1 | {36 37 }
+ - Input state : 
+	Port: gaussian_blur : input_r | {36 37 }
+	Port: gaussian_blur : p_anonymous_namespace_rowsReceived | {1 }
+	Port: gaussian_blur : p_ZN12_GLOBAL_N_110lineBufferE_0 | {72 73 }
+	Port: gaussian_blur : p_ZN12_GLOBAL_N_110lineBufferE_1 | {72 73 }
+  - Chain level:
+	State 1
+		writeSlot : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+		trunc_ln42 : 1
+		call_ln42 : 2
+	State 37
+		store_ln50 : 1
+		tmp : 1
+		icmp_ln59 : 2
+		icmp_ln59_1 : 1
+		or_ln59 : 3
+		br_ln59 : 3
+		srem_ln21 : 1
+		result_15 : 1
+		srem_ln21_1 : 1
+		select_ln22_2 : 1
+		srem_ln21_2 : 1
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+		trunc_ln22 : 1
+		tmp_23 : 1
+		add_ln22 : 2
+		select_ln22 : 3
+		trunc_ln79 : 1
+		trunc_ln22_1 : 1
+		tmp_24 : 1
+		add_ln22_1 : 2
+		select_ln22_1 : 3
+		trunc_ln22_2 : 1
+		tmp_26 : 1
+		add_ln22_3 : 2
+		select_ln22_3 : 3
+		call_ln22 : 4
+	State 73
+		valid_out_write_assign : 1
+		ret_ln104 : 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|--------------------------------------------------|---------|---------|---------|
+| Operation|                  Functional Unit                 |  Delay  |    FF   |   LUT   |
+|----------|--------------------------------------------------|---------|---------|---------|
+|          |                     grp_fu_86                    |    0    |   394   |   238   |
+|   srem   |                    grp_fu_146                    |    0    |   394   |   238   |
+|          |                    grp_fu_163                    |    0    |   394   |   238   |
+|          |                    grp_fu_188                    |    0    |   394   |   238   |
+|----------|--------------------------------------------------|---------|---------|---------|
+|   call   | grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54 |  0.427  |    31   |    43   |
+|          | grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67 |  3.5096 |   805   |   1070  |
+|----------|--------------------------------------------------|---------|---------|---------|
+|   urem   |                    grp_fu_152                    |    0    |   394   |   238   |
+|----------|--------------------------------------------------|---------|---------|---------|
+|          |                  add_ln50_fu_97                  |    0    |    0    |    39   |
+|          |                 outputRow_fu_108                 |    0    |    0    |    39   |
+|          |                  add_ln76_fu_141                 |    0    |    0    |    39   |
+|    add   |                  add_ln79_fu_158                 |    0    |    0    |    39   |
+|          |                 add_ln22_2_fu_176                |    0    |    0    |    10   |
+|          |                  add_ln22_fu_206                 |    0    |    0    |    10   |
+|          |                 add_ln22_1_fu_238                |    0    |    0    |    10   |
+|          |                 add_ln22_3_fu_265                |    0    |    0    |    10   |
+|----------|--------------------------------------------------|---------|---------|---------|
+|   icmp   |                 icmp_ln59_fu_123                 |    0    |    0    |    38   |
+|          |                icmp_ln59_1_fu_129                |    0    |    0    |    39   |
+|----------|--------------------------------------------------|---------|---------|---------|
+|          |               select_ln22_2_fu_181               |    0    |    0    |    3    |
+|  select  |                select_ln22_fu_212                |    0    |    0    |    3    |
+|          |               select_ln22_1_fu_244               |    0    |    0    |    3    |
+|          |               select_ln22_3_fu_271               |    0    |    0    |    3    |
+|----------|--------------------------------------------------|---------|---------|---------|
+|    or    |                  or_ln59_fu_135                  |    0    |    0    |    2    |
+|----------|--------------------------------------------------|---------|---------|---------|
+|          |                 trunc_ln42_fu_92                 |    0    |    0    |    0    |
+|          |                 trunc_ln22_fu_194                |    0    |    0    |    0    |
+|   trunc  |                 trunc_ln79_fu_221                |    0    |    0    |    0    |
+|          |                trunc_ln22_1_fu_226               |    0    |    0    |    0    |
+|          |                trunc_ln22_2_fu_253               |    0    |    0    |    0    |
+|----------|--------------------------------------------------|---------|---------|---------|
+|partselect|                    tmp_fu_113                    |    0    |    0    |    0    |
+|----------|--------------------------------------------------|---------|---------|---------|
+|          |                   tmp_25_fu_169                  |    0    |    0    |    0    |
+| bitselect|                   tmp_23_fu_198                  |    0    |    0    |    0    |
+|          |                   tmp_24_fu_230                  |    0    |    0    |    0    |
+|          |                   tmp_26_fu_257                  |    0    |    0    |    0    |
+|----------|--------------------------------------------------|---------|---------|---------|
+|   Total  |                                                  |  3.9366 |   2806  |   2590  |
+|----------|--------------------------------------------------|---------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
++-----------------------------+--------+
+|                             |   FF   |
++-----------------------------+--------+
+|       add_ln50_reg_295      |   32   |
+|       add_ln76_reg_309      |   32   |
+|       add_ln79_reg_314      |   32   |
+|       or_ln59_reg_305       |    1   |
+|      outputRow_reg_300      |   32   |
+|    select_ln22_1_reg_334    |    3   |
+|    select_ln22_2_reg_319    |    3   |
+|    select_ln22_3_reg_339    |    3   |
+|     select_ln22_reg_324     |    3   |
+|      trunc_ln42_reg_288     |    3   |
+|      trunc_ln79_reg_329     |    3   |
+|valid_out_write_assign_reg_42|    1   |
+|      writeSlot_reg_283      |   32   |
++-----------------------------+--------+
+|            Total            |   180  |
++-----------------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------------------------------------------------|------|------|------|--------||---------||---------||---------|
+|                       Comp                       |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
+|--------------------------------------------------|------|------|------|--------||---------||---------||---------|
+| grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54 |  p2  |   2  |   3  |    6   ||    0    ||    9    |
+| grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67 |  p1  |   2  |   3  |    6   ||    0    ||    9    |
+| grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67 |  p2  |   2  |   3  |    6   ||    0    ||    9    |
+| grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67 |  p3  |   2  |   3  |    6   ||    0    ||    9    |
+| grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67 |  p5  |   2  |   3  |    6   ||    0    ||    9    |
+|                    grp_fu_146                    |  p0  |   2  |  32  |   64   ||    0    ||    9    |
+|                    grp_fu_152                    |  p0  |   2  |  32  |   64   ||    0    ||    9    |
+|                    grp_fu_163                    |  p0  |   2  |  32  |   64   ||    0    ||    9    |
+|                    grp_fu_188                    |  p0  |   2  |  32  |   64   ||    0    ||    9    |
+|--------------------------------------------------|------|------|------|--------||---------||---------||---------|
+|                       Total                      |      |      |      |   286  ||  3.843  ||    0    ||    81   |
+|--------------------------------------------------|------|------|------|--------||---------||---------||---------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+
+|           |  Delay |   FF   |   LUT  |
++-----------+--------+--------+--------+
+|  Function |    3   |  2806  |  2590  |
+|   Memory  |    -   |    -   |    -   |
+|Multiplexer|    3   |    0   |   81   |
+|  Register |    -   |   180  |    -   |
++-----------+--------+--------+--------+
+|   Total   |    7   |  2986  |  2671  |
++-----------+--------+--------+--------+
