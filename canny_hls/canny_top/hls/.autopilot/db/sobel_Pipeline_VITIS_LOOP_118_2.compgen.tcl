@@ -1,24 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set name canny_top_sitodp_32s_64_6_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {sitodp} IMPL {auto} LATENCY 5 ALLOW_PRAGMA 1
-}
-
-
-set name canny_top_dsqrt_64ns_64ns_64_57_no_dsp_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {dsqrt} IMPL {fabric} LATENCY 56 ALLOW_PRAGMA 1
-}
-
-
 set name canny_top_mul_10ns_11ns_20_1_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
-}
-
-
-set name canny_top_mul_11s_11s_22_1_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {mul} IMPL {auto} LATENCY 0 ALLOW_PRAGMA 1
 }
@@ -41,11 +23,6 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 }
 
 
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler canny_top_mac_muladd_11s_11s_22s_22_4_1 BINDTYPE {op} TYPE {all} IMPL {dsp_slice} LATENCY 3
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -57,14 +34,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 80 \
+    id 72 \
     name out_sobel_magnitude \
     reset_level 1 \
     sync_rst true \
     dir O \
     corename out_sobel_magnitude \
     op interface \
-    ports { out_sobel_magnitude_address0 { O 9 vector } out_sobel_magnitude_ce0 { O 1 bit } out_sobel_magnitude_we0 { O 1 bit } out_sobel_magnitude_d0 { O 8 vector } } \
+    ports { out_sobel_magnitude_address0 { O 9 vector } out_sobel_magnitude_ce0 { O 1 bit } out_sobel_magnitude_we0 { O 1 bit } out_sobel_magnitude_d0 { O 11 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_sobel_magnitude'"
@@ -76,7 +53,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 81 \
+    id 73 \
     name out_sobel_direction \
     reset_level 1 \
     sync_rst true \
@@ -95,7 +72,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 82 \
+    id 74 \
     name p_anonymous_namespace_lineBuffer_32_0 \
     reset_level 1 \
     sync_rst true \
@@ -114,7 +91,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 83 \
+    id 75 \
     name p_anonymous_namespace_lineBuffer_32_1 \
     reset_level 1 \
     sync_rst true \
@@ -132,7 +109,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 77 \
+    id 69 \
     name result \
     type other \
     dir I \
@@ -147,7 +124,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 78 \
+    id 70 \
     name writeSlot \
     type other \
     dir I \
@@ -162,15 +139,15 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 79 \
-    name result_7 \
+    id 71 \
+    name result_1 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_result_7 \
+    corename dc_result_1 \
     op interface \
-    ports { result_7 { I 2 vector } } \
+    ports { result_1 { I 2 vector } } \
 } "
 }
 

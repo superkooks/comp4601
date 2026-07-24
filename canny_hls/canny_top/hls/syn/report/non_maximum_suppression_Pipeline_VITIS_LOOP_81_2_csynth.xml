@@ -18,7 +18,7 @@
 <PipelineType>loop pipeline stp</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>2.788</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.813</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/non_maximum_suppression.cpp:81~../src/canny_top.cpp:31</SourceLocation>
+<SourceLocation>../src/non_maximum_suppression.cpp:81~../src/canny_top.cpp:32</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_81_2>
 <Name>VITIS_LOOP_81_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/non_maximum_suppression.cpp:94~../src/canny_top.cpp:31</SourceLocation>
+<SourceLocation>../src/non_maximum_suppression.cpp:94~../src/canny_top.cpp:32</SourceLocation>
 </VITIS_LOOP_81_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -63,8 +63,8 @@
 
 <AreaEstimates>
 <Resources>
-<FF>60</FF>
-<LUT>353</LUT>
+<FF>66</FF>
+<LUT>371</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -186,12 +186,12 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>result_9</name>
-<Object>result_9</Object>
+<name>result_2</name>
+<Object>result_2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -252,7 +252,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -285,7 +285,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -318,7 +318,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -351,7 +351,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

@@ -136,14 +136,14 @@ output   ap_ready;
 input  [0:0] p_read;
 output  [8:0] out_sobel_magnitude_address0;
 output   out_sobel_magnitude_ce0;
-input  [7:0] out_sobel_magnitude_q0;
+input  [10:0] out_sobel_magnitude_q0;
 output  [8:0] out_sobel_direction_address0;
 output   out_sobel_direction_ce0;
 input  [1:0] out_sobel_direction_q0;
 output  [8:0] out_nonmax_address0;
 output   out_nonmax_ce0;
 output   out_nonmax_we0;
-output  [7:0] out_nonmax_d0;
+output  [10:0] out_nonmax_d0;
 input  [31:0] p_anonymous_namespace_rowsReceived_2_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_2_o;
 output   p_anonymous_namespace_rowsReceived_2_o_ap_vld;
@@ -155,19 +155,19 @@ input  [1:0] p_anonymous_namespace_lineBuffer_direction_q0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
+output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q1;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q1;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q0;
+output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address1;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q1;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q1;
 output  [0:0] ap_return;
 
 reg ap_done;
@@ -176,7 +176,7 @@ reg ap_ready;
 reg[8:0] out_nonmax_address0;
 reg out_nonmax_ce0;
 reg out_nonmax_we0;
-reg[7:0] out_nonmax_d0;
+reg[10:0] out_nonmax_d0;
 reg[31:0] p_anonymous_namespace_rowsReceived_2_o;
 reg p_anonymous_namespace_rowsReceived_2_o_ap_vld;
 reg[10:0] p_anonymous_namespace_lineBuffer_direction_address0;
@@ -221,7 +221,7 @@ wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_ap_ready;
 wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_nonmax_address0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_nonmax_ce0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_nonmax_we0;
-wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_nonmax_d0;
+wire   [10:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_nonmax_d0;
 wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_sobel_magnitude_address0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_sobel_magnitude_ce0;
 wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_sobel_direction_address0;
@@ -233,11 +233,11 @@ wire   [1:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonym
 wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+wire   [10:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
 wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
+wire   [10:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_ap_start;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_ap_done;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_ap_idle;
@@ -245,7 +245,7 @@ wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_ap_ready;
 wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_address0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_ce0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_we0;
-wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_d0;
+wire   [10:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_d0;
 wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
 wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
 wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
@@ -479,7 +479,7 @@ canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 grp_non_maximum_suppr
     .out_nonmax_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_ce0),
     .out_nonmax_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_we0),
     .out_nonmax_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_d0),
-    .result_9(trunc_ln13_1_reg_257),
+    .result_2(trunc_ln13_1_reg_257),
     .result(trunc_ln13_reg_252),
     .empty(trunc_ln46_reg_227),
     .p_anonymous_namespace_lineBuffer_25_magnitude_0_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0),
@@ -505,7 +505,7 @@ canny_top_srem_32ns_3ns_2_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 2 ))
-srem_32ns_3ns_2_36_seq_1_U111(
+srem_32ns_3ns_2_36_seq_1_U103(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_122_ap_start),
@@ -522,7 +522,7 @@ canny_top_urem_31ns_3ns_2_35_seq_1 #(
     .din0_WIDTH( 31 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 2 ))
-urem_31ns_3ns_2_35_seq_1_U112(
+urem_31ns_3ns_2_35_seq_1_U104(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_178_ap_start),
@@ -539,7 +539,7 @@ canny_top_urem_31ns_3ns_2_35_seq_1 #(
     .din0_WIDTH( 31 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 2 ))
-urem_31ns_3ns_2_35_seq_1_U113(
+urem_31ns_3ns_2_35_seq_1_U105(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_184_ap_start),

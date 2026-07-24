@@ -30,7 +30,7 @@ void non_maximum_suppression_reset() {
 
 void non_maximum_suppression(
     const GradientPixel input[WIDTH],
-    std::uint8_t output[WIDTH],
+    std::uint16_t output[WIDTH],
     bool valid_in,
     bool *valid_out
 ) {
@@ -82,8 +82,8 @@ void non_maximum_suppression(
         const GradientPixel centre =
             lineBuffer[centreSlot][column];
 
-        std::uint8_t neighbourOne = 0;
-        std::uint8_t neighbourTwo = 0;
+        std::uint16_t neighbourOne = 0;
+        std::uint16_t neighbourTwo = 0;
 
         switch (centre.direction) {
             case GradientDirection::DEG_0:

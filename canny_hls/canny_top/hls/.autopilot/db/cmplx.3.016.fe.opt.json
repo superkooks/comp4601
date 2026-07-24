@@ -1,145 +1,38 @@
 {
   "0": {
     "basicblocks": 67,
-    "calls": "10",
+    "calls": "4",
     "control_depth": 2,
     "def_use_depth": 3,
     "file": "canny_top.cpp",
-    "fileloc": 8,
+    "fileloc": 9,
     "instructions": 289,
     "memory_accesses": 23,
     "name": "canny_top",
     "stores": {
       "G": 23
     },
-    "total_instructions": 1723
+    "total_instructions": 1714
   },
   "1": {
-    "basicblocks": 1,
+    "basicblocks": 4,
     "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
+    "control_depth": 1,
+    "def_use_depth": 11,
     "file": "canny_top.cpp",
     "fileloc": 0,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_",
+    "instructions": 56,
+    "loads": {
+      "L": 4
+    },
+    "memory_accesses": 4,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft",
     "stores": {
       "L": 1
     },
-    "total_instructions": 5
+    "total_instructions": 56
   },
   "10": {
-    "basicblocks": 1,
-    "calls": "1 9 8 7 4 3 6 11 12 2 5",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 32,
-    "memory_accesses": 0,
-    "name": "_Z9canny_topP8RGBPixelPh_for.body",
-    "total_instructions": 1434
-  },
-  "11": {
-    "basicblocks": 31,
-    "calls": "",
-    "control_depth": 11,
-    "def_use_depth": 6,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 159,
-    "loads": {
-      "G": 19,
-      "L": 2
-    },
-    "memory_accesses": 26,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 3,
-      "L": 8
-    },
-    "total_instructions": 159
-  },
-  "12": {
-    "basicblocks": 31,
-    "calls": "",
-    "control_depth": 11,
-    "def_use_depth": 6,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 159,
-    "loads": {
-      "G": 19,
-      "L": 2
-    },
-    "memory_accesses": 26,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 3,
-      "L": 8
-    },
-    "total_instructions": 159
-  },
-  "2": {
-    "basicblocks": 31,
-    "calls": "",
-    "control_depth": 11,
-    "def_use_depth": 6,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 159,
-    "loads": {
-      "G": 19,
-      "L": 2
-    },
-    "memory_accesses": 26,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 3,
-      "L": 8
-    },
-    "total_instructions": 159
-  },
-  "3": {
-    "basicblocks": 6,
-    "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 5,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 23,
-    "loads": {
-      "L": 2
-    },
-    "memory_accesses": 2,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 23
-  },
-  "4": {
-    "basicblocks": 24,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 9,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 155,
-    "loads": {
-      "G": 20,
-      "L": 3
-    },
-    "memory_accesses": 27,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 6,
-      "L": 6
-    },
-    "total_instructions": 155
-  },
-  "5": {
     "basicblocks": 8,
     "calls": "",
     "control_depth": 2,
@@ -152,53 +45,53 @@
       "L": 2
     },
     "memory_accesses": 2,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
     "stores": {
       "G": 1
     },
     "total_instructions": 37
   },
-  "6": {
-    "basicblocks": 31,
-    "calls": "",
-    "control_depth": 11,
-    "def_use_depth": 6,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 159,
-    "loads": {
-      "G": 19,
-      "L": 2
-    },
-    "memory_accesses": 26,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 3,
-      "L": 8
-    },
-    "total_instructions": 159
-  },
-  "7": {
+  "11": {
     "basicblocks": 25,
     "calls": "",
     "control_depth": 6,
-    "def_use_depth": 25,
+    "def_use_depth": 14,
     "file": "canny_top.cpp",
     "fileloc": 0,
-    "instructions": 210,
+    "instructions": 181,
     "loads": {
       "G": 17,
       "L": 2
     },
-    "memory_accesses": 25,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft",
+    "memory_accesses": 24,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft",
     "stores": {
       "G": 5,
       "L": 8
     },
-    "total_instructions": 210
+    "total_instructions": 181
   },
-  "8": {
+  "12": {
+    "basicblocks": 34,
+    "calls": "",
+    "control_depth": 12,
+    "def_use_depth": 6,
+    "file": "canny_top.cpp",
+    "fileloc": 0,
+    "instructions": 164,
+    "loads": {
+      "G": 19,
+      "L": 2
+    },
+    "memory_accesses": 27,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft",
+    "stores": {
+      "G": 3,
+      "L": 9
+    },
+    "total_instructions": 164
+  },
+  "2": {
     "basicblocks": 12,
     "calls": "",
     "control_depth": 2,
@@ -218,22 +111,129 @@
     },
     "total_instructions": 280
   },
-  "9": {
-    "basicblocks": 4,
+  "3": {
+    "basicblocks": 24,
     "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 11,
+    "control_depth": 2,
+    "def_use_depth": 9,
     "file": "canny_top.cpp",
     "fileloc": 0,
-    "instructions": 56,
+    "instructions": 155,
     "loads": {
-      "L": 4
+      "G": 20,
+      "L": 3
     },
-    "memory_accesses": 4,
-    "name": "dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft",
+    "memory_accesses": 27,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft",
+    "stores": {
+      "G": 6,
+      "L": 6
+    },
+    "total_instructions": 155
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "7 1 2 11 3 5 12 9 6 8 10",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "canny_top.cpp",
+    "fileloc": 0,
+    "instructions": 32,
+    "memory_accesses": 0,
+    "name": "_Z9canny_topP8RGBPixelPh_for.body",
+    "total_instructions": 1425
+  },
+  "5": {
+    "basicblocks": 6,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 5,
+    "file": "canny_top.cpp",
+    "fileloc": 0,
+    "instructions": 23,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 2,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 23
+  },
+  "6": {
+    "basicblocks": 34,
+    "calls": "",
+    "control_depth": 12,
+    "def_use_depth": 6,
+    "file": "canny_top.cpp",
+    "fileloc": 0,
+    "instructions": 164,
+    "loads": {
+      "G": 19,
+      "L": 2
+    },
+    "memory_accesses": 27,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
+    "stores": {
+      "G": 3,
+      "L": 9
+    },
+    "total_instructions": 164
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "canny_top.cpp",
+    "fileloc": 0,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_",
     "stores": {
       "L": 1
     },
-    "total_instructions": 56
+    "total_instructions": 5
+  },
+  "8": {
+    "basicblocks": 34,
+    "calls": "",
+    "control_depth": 12,
+    "def_use_depth": 6,
+    "file": "canny_top.cpp",
+    "fileloc": 0,
+    "instructions": 164,
+    "loads": {
+      "G": 19,
+      "L": 2
+    },
+    "memory_accesses": 27,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
+    "stores": {
+      "G": 3,
+      "L": 9
+    },
+    "total_instructions": 164
+  },
+  "9": {
+    "basicblocks": 34,
+    "calls": "",
+    "control_depth": 12,
+    "def_use_depth": 6,
+    "file": "canny_top.cpp",
+    "fileloc": 0,
+    "instructions": 164,
+    "loads": {
+      "G": 19,
+      "L": 2
+    },
+    "memory_accesses": 27,
+    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
+    "stores": {
+      "G": 3,
+      "L": 9
+    },
+    "total_instructions": 164
   }
 }

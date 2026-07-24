@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'canny_top'" level="0">
-<item name = "Date">Fri Jul 24 16:27:49 2026
+<item name = "Date">Fri Jul 24 22:33:46 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">833759, 2408189, 4.169 ms, 12.041 ms, 833760, 2408190, no</column>
+<column name="">833759, 2414257, 4.169 ms, 12.071 ms, 833760, 2414258, no</column>
 </table>
 </item>
 <item name = "Detail">

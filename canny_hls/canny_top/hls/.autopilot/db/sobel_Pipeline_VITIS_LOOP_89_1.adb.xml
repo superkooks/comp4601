@@ -240,9 +240,9 @@ for.inc.split.i:12 %br_ln90 = br i1 %trunc_ln89, void %arrayidx46.case.0.i, void
 </and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="37" bw="9" op_0_bw="11" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-arrayidx46.exit.i:0 %out_sobel_magnitude_addr = getelementptr i8 %out_sobel_magnitude, i64 0, i64 %zext_ln89
+arrayidx46.exit.i:0 %out_sobel_magnitude_addr = getelementptr i11 %out_sobel_magnitude, i64 0, i64 %zext_ln89
 
 ]]></Node>
 <StgValue><ssdm name="out_sobel_magnitude_addr"/></StgValue>
@@ -256,9 +256,9 @@ arrayidx46.exit.i:0 %out_sobel_magnitude_addr = getelementptr i8 %out_sobel_magn
 </and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="38" bw="0" op_0_bw="11" op_1_bw="9">
 <![CDATA[
-arrayidx46.exit.i:1 %store_ln92 = store i8 0, i9 %out_sobel_magnitude_addr
+arrayidx46.exit.i:1 %store_ln92 = store i11 0, i9 %out_sobel_magnitude_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln92"/></StgValue>
@@ -356,7 +356,7 @@ for.end.i.exitStub:0 %ret_ln0 = ret
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc.split.i:2 %specpipeline_ln89 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
+for.inc.split.i:2 %specpipeline_ln89 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln89"/></StgValue>
@@ -386,7 +386,7 @@ for.inc.split.i:3 %speclooptripcount_ln89 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="21" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:4 %specloopname_ln89 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20
+for.inc.split.i:4 %specloopname_ln89 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln89"/></StgValue>
@@ -642,7 +642,7 @@ arrayidx46.case.1.i:1 %br_ln90 = br void %arrayidx46.exit.i
 </dataflow>
 <dataflow id="105" from="StgValue_99" to="specpipeline_ln89" fromId="99" toId="25">
 </dataflow>
-<dataflow id="107" from="empty_10" to="specpipeline_ln89" fromId="106" toId="25">
+<dataflow id="107" from="empty_22" to="specpipeline_ln89" fromId="106" toId="25">
 </dataflow>
 <dataflow id="109" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln89" fromId="108" toId="26">
 </dataflow>
@@ -654,7 +654,7 @@ arrayidx46.case.1.i:1 %br_ln90 = br void %arrayidx46.exit.i
 </dataflow>
 <dataflow id="115" from="_ssdm_op_SpecLoopName" to="specloopname_ln89" fromId="114" toId="27">
 </dataflow>
-<dataflow id="117" from="empty_20" to="specloopname_ln89" fromId="116" toId="27">
+<dataflow id="117" from="empty_18" to="specloopname_ln89" fromId="116" toId="27">
 </dataflow>
 <dataflow id="119" from="_ssdm_op_BitConcatenate.i10.i2.i8" to="tmp_3" fromId="118" toId="28">
 </dataflow>

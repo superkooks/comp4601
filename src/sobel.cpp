@@ -152,23 +152,8 @@ void sobel(
             }
         }
 
-        const int squaredMagnitude =
-            gradientX * gradientX +
-            gradientY * gradientY;
-
-        int magnitude =
-            static_cast<int>(
-                std::sqrt(
-                    static_cast<double>(squaredMagnitude)
-                )
-            );
-
-        if (magnitude > 255) {
-            magnitude = 255;
-        }
-
-        output[column].magnitude =
-            static_cast<std::uint8_t>(magnitude);
+        // Compute gradient the same way opencv does
+        output[column].magnitude = absolute_value(gradientX) + absolute_value(gradientY);
 
         output[column].direction =
             quantise_direction(

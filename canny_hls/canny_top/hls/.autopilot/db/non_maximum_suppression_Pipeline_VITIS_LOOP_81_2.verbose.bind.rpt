@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_81_2'
 ================================================================
-* Date:           Fri Jul 24 16:27:49 2026
+* Date:           Fri Jul 24 22:33:45 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  2.788 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  2.813 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -87,144 +87,144 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.66>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 7 'alloca' 'column' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 7 'alloca' 'column' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty"   --->   Operation 8 'read' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%result_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %result"   --->   Operation 9 'read' 'result_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%result_9_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %result_9"   --->   Operation 10 'read' 'result_9_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.42ns)   --->   "%store_ln81 = store i9 1, i9 %column" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 11 'store' 'store_ln81' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%result_2_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %result_2"   --->   Operation 10 'read' 'result_2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.42ns)   --->   "%store_ln81 = store i9 1, i9 %column" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 11 'store' 'store_ln81' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body24.i"   --->   Operation 12 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%column_2 = load i9 %column" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 13 'load' 'column_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.77ns)   --->   "%icmp_ln81 = icmp_eq  i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 14 'icmp' 'icmp_ln81' <Predicate = true> <Delay = 0.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln81 = br i1 %icmp_ln81, void %for.body24.split.i, void %cleanup94.i.loopexit.exitStub" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 15 'br' 'br_ln81' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i2.i9, i2 %result_9_read, i9 %column_2" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 16 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln83 = zext i11 %tmp_s" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 17 'zext' 'zext_ln83' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_direction_addr = getelementptr i2 %p_anonymous_namespace_lineBuffer_direction, i64 0, i64 %zext_ln83" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 18 'getelementptr' 'p_anonymous_namespace_lineBuffer_direction_addr' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%lshr_ln3 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %column_2, i32 1, i32 8" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 19 'partselect' 'lshr_ln3' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_13 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_9_read, i8 %lshr_ln3" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 20 'bitconcatenate' 'tmp_13' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln83_1 = zext i10 %tmp_13" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 21 'zext' 'zext_ln83_1' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln83_1" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 22 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln83_1" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 23 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_1 : Operation 24 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 24 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_1 : Operation 25 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 25 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_1 : Operation 26 [2/2] (1.23ns)   --->   "%centre_direction = load i11 %p_anonymous_namespace_lineBuffer_direction_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 26 'load' 'centre_direction' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 2> <Depth = 1536> <RAM>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%column_2 = load i9 %column" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 13 'load' 'column_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.77ns)   --->   "%icmp_ln81 = icmp_eq  i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 14 'icmp' 'icmp_ln81' <Predicate = true> <Delay = 0.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%br_ln81 = br i1 %icmp_ln81, void %for.body24.split.i, void %cleanup94.i.loopexit.exitStub" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 15 'br' 'br_ln81' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i2.i9, i2 %result_2_read, i9 %column_2" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 16 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln83 = zext i11 %tmp_s" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 17 'zext' 'zext_ln83' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_direction_addr = getelementptr i2 %p_anonymous_namespace_lineBuffer_direction, i64 0, i64 %zext_ln83" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 18 'getelementptr' 'p_anonymous_namespace_lineBuffer_direction_addr' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%lshr_ln3 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %column_2, i32 1, i32 8" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 19 'partselect' 'lshr_ln3' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%tmp_9 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_2_read, i8 %lshr_ln3" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 20 'bitconcatenate' 'tmp_9' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln83_1 = zext i10 %tmp_9" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 21 'zext' 'zext_ln83_1' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln83_1" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 22 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln83_1" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 23 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_1 : Operation 24 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 24 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_1 : Operation 25 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 25 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_1 : Operation 26 [2/2] (1.23ns)   --->   "%centre_direction = load i11 %p_anonymous_namespace_lineBuffer_direction_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 26 'load' 'centre_direction' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 2> <Depth = 1536> <RAM>
 
 State 2 <SV = 1> <Delay = 2.31>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln81 = trunc i9 %column_2" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 27 'trunc' 'trunc_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_14 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_read, i8 %lshr_ln3" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 28 'bitconcatenate' 'tmp_14' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln107 = zext i10 %tmp_14" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 29 'zext' 'zext_ln107' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln107" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 30 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_15 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %tmp, i8 %lshr_ln3" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 31 'bitconcatenate' 'tmp_15' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln110 = zext i10 %tmp_15" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 32 'zext' 'zext_ln110' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln110" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 33 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln107" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 34 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln110" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 35 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 36 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 36 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 37 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 37 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 38 [1/1] (0.39ns)   --->   "%centre_magnitude = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 38 'select' 'centre_magnitude' <Predicate = (!icmp_ln81)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 39 [1/2] ( I:1.23ns O:1.23ns )   --->   "%centre_direction = load i11 %p_anonymous_namespace_lineBuffer_direction_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31]   --->   Operation 39 'load' 'centre_direction' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 2> <Depth = 1536> <RAM>
-ST_2 : Operation 40 [1/1] (0.54ns)   --->   "%switch_ln88 = switch i2 %centre_direction, void %sw.bb.i, i2 3, void %sw.bb63.i, i2 1, void %sw.bb39.i, i2 2, void %sw.bb52.i" [../src/non_maximum_suppression.cpp:88->../src/canny_top.cpp:31]   --->   Operation 40 'switch' 'switch_ln88' <Predicate = (!icmp_ln81)> <Delay = 0.54>
-ST_2 : Operation 41 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 41 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 42 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 42 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 43 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 43 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 44 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 44 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 45 [1/1] (0.52ns)   --->   "%br_ln111 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:111->../src/canny_top.cpp:31]   --->   Operation 45 'br' 'br_ln111' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 0.52>
-ST_2 : Operation 46 [1/1] (0.77ns)   --->   "%add_ln99 = add i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 46 'add' 'add_ln99' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%lshr_ln8 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln99, i32 1, i32 8" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 47 'partselect' 'lshr_ln8' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%tmp_20 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_read, i8 %lshr_ln8" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 48 'bitconcatenate' 'tmp_20' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln99 = zext i10 %tmp_20" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 49 'zext' 'zext_ln99' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln99" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 50 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln99" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 51 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 52 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 52 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 53 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 53 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 54 [1/1] (0.77ns)   --->   "%add_ln102 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 54 'add' 'add_ln102' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%lshr_ln9 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln102, i32 1, i32 8" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 55 'partselect' 'lshr_ln9' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_21 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %tmp, i8 %lshr_ln9" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 56 'bitconcatenate' 'tmp_21' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln102 = zext i10 %tmp_21" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 57 'zext' 'zext_ln102' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln102" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 58 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln102" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 59 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
-ST_2 : Operation 60 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 60 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 61 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 61 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 62 [1/1] (0.52ns)   --->   "%br_ln103 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:103->../src/canny_top.cpp:31]   --->   Operation 62 'br' 'br_ln103' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.52>
-ST_2 : Operation 63 [1/1] (0.77ns)   --->   "%add_ln115 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 63 'add' 'add_ln115' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%lshr_ln6 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln115, i32 1, i32 8" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 64 'partselect' 'lshr_ln6' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_18 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_read, i8 %lshr_ln6" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 65 'bitconcatenate' 'tmp_18' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%zext_ln115 = zext i10 %tmp_18" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 66 'zext' 'zext_ln115' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln115" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 67 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln115" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 68 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 69 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 69 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 70 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 70 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 71 [1/1] (0.77ns)   --->   "%add_ln118 = add i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 71 'add' 'add_ln118' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%lshr_ln7 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln118, i32 1, i32 8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 72 'partselect' 'lshr_ln7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%tmp_19 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %tmp, i8 %lshr_ln7" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 73 'bitconcatenate' 'tmp_19' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln118 = zext i10 %tmp_19" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 74 'zext' 'zext_ln118' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln118" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 75 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln118" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 76 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
-ST_2 : Operation 77 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 77 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 78 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 78 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 79 [1/1] (0.52ns)   --->   "%br_ln119 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:119->../src/canny_top.cpp:31]   --->   Operation 79 'br' 'br_ln119' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.52>
-ST_2 : Operation 80 [1/1] (0.77ns)   --->   "%add_ln91 = add i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 80 'add' 'add_ln91' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%lshr_ln4 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln91, i32 1, i32 8" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 81 'partselect' 'lshr_ln4' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_16 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_9_read, i8 %lshr_ln4" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 82 'bitconcatenate' 'tmp_16' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i10 %tmp_16" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 83 'zext' 'zext_ln91' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln91" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 84 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln91" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 85 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 86 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 86 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 87 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 87 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 88 [1/1] (0.77ns)   --->   "%add_ln94 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 88 'add' 'add_ln94' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%lshr_ln5 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln94, i32 1, i32 8" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 89 'partselect' 'lshr_ln5' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_17 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_9_read, i8 %lshr_ln5" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 90 'bitconcatenate' 'tmp_17' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln94 = zext i10 %tmp_17" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 91 'zext' 'zext_ln94' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln94" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 92 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln94" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 93 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
-ST_2 : Operation 94 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 94 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 95 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 95 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_2 : Operation 96 [1/1] (0.52ns)   --->   "%br_ln95 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:95->../src/canny_top.cpp:31]   --->   Operation 96 'br' 'br_ln95' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.52>
-ST_2 : Operation 97 [1/1] (0.77ns)   --->   "%add_ln81 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 97 'add' 'add_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 98 [1/1] (0.42ns)   --->   "%store_ln81 = store i9 %add_ln81, i9 %column" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 98 'store' 'store_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.42>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln81 = trunc i9 %column_2" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 27 'trunc' 'trunc_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%tmp_10 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_read, i8 %lshr_ln3" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 28 'bitconcatenate' 'tmp_10' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln107 = zext i10 %tmp_10" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 29 'zext' 'zext_ln107' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln107" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 30 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%tmp_11 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %tmp, i8 %lshr_ln3" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 31 'bitconcatenate' 'tmp_11' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln110 = zext i10 %tmp_11" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 32 'zext' 'zext_ln110' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln110" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 33 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln107" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 34 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln110" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 35 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_2 : Operation 36 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 36 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 37 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 37 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 38 [1/1] (0.38ns)   --->   "%centre_magnitude = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 38 'select' 'centre_magnitude' <Predicate = (!icmp_ln81)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 39 [1/2] ( I:1.23ns O:1.23ns )   --->   "%centre_direction = load i11 %p_anonymous_namespace_lineBuffer_direction_addr" [../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:32]   --->   Operation 39 'load' 'centre_direction' <Predicate = (!icmp_ln81)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 2> <Depth = 1536> <RAM>
+ST_2 : Operation 40 [1/1] (0.54ns)   --->   "%switch_ln88 = switch i2 %centre_direction, void %sw.bb.i, i2 3, void %sw.bb63.i, i2 1, void %sw.bb39.i, i2 2, void %sw.bb52.i" [../src/non_maximum_suppression.cpp:88->../src/canny_top.cpp:32]   --->   Operation 40 'switch' 'switch_ln88' <Predicate = (!icmp_ln81)> <Delay = 0.54>
+ST_2 : Operation 41 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 41 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 42 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 42 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 43 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 43 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 44 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 44 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 45 [1/1] (0.52ns)   --->   "%br_ln111 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:111->../src/canny_top.cpp:32]   --->   Operation 45 'br' 'br_ln111' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 0.52>
+ST_2 : Operation 46 [1/1] (0.77ns)   --->   "%add_ln99 = add i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 46 'add' 'add_ln99' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%lshr_ln8 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln99, i32 1, i32 8" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 47 'partselect' 'lshr_ln8' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%tmp_16 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_read, i8 %lshr_ln8" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 48 'bitconcatenate' 'tmp_16' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 49 [1/1] (0.00ns)   --->   "%zext_ln99 = zext i10 %tmp_16" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 49 'zext' 'zext_ln99' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 50 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln99" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 50 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 51 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln99" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 51 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 52 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 52 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 53 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 53 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 54 [1/1] (0.77ns)   --->   "%add_ln102 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 54 'add' 'add_ln102' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 55 [1/1] (0.00ns)   --->   "%lshr_ln9 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln102, i32 1, i32 8" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 55 'partselect' 'lshr_ln9' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 56 [1/1] (0.00ns)   --->   "%tmp_17 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %tmp, i8 %lshr_ln9" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 56 'bitconcatenate' 'tmp_17' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 57 [1/1] (0.00ns)   --->   "%zext_ln102 = zext i10 %tmp_17" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 57 'zext' 'zext_ln102' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 58 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln102" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 58 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 59 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln102" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 59 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.00>
+ST_2 : Operation 60 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 60 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 61 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 61 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 62 [1/1] (0.52ns)   --->   "%br_ln103 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:103->../src/canny_top.cpp:32]   --->   Operation 62 'br' 'br_ln103' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.52>
+ST_2 : Operation 63 [1/1] (0.77ns)   --->   "%add_ln115 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 63 'add' 'add_ln115' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%lshr_ln6 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln115, i32 1, i32 8" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 64 'partselect' 'lshr_ln6' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%tmp_14 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_read, i8 %lshr_ln6" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 65 'bitconcatenate' 'tmp_14' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%zext_ln115 = zext i10 %tmp_14" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 66 'zext' 'zext_ln115' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 67 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln115" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 67 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 68 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln115" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 68 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 69 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 69 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 70 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 70 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 71 [1/1] (0.77ns)   --->   "%add_ln118 = add i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 71 'add' 'add_ln118' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 72 [1/1] (0.00ns)   --->   "%lshr_ln7 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln118, i32 1, i32 8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 72 'partselect' 'lshr_ln7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 73 [1/1] (0.00ns)   --->   "%tmp_15 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %tmp, i8 %lshr_ln7" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 73 'bitconcatenate' 'tmp_15' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln118 = zext i10 %tmp_15" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 74 'zext' 'zext_ln118' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 75 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln118" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 75 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 76 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln118" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 76 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.00>
+ST_2 : Operation 77 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 77 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 78 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 78 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 79 [1/1] (0.52ns)   --->   "%br_ln119 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:119->../src/canny_top.cpp:32]   --->   Operation 79 'br' 'br_ln119' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.52>
+ST_2 : Operation 80 [1/1] (0.77ns)   --->   "%add_ln91 = add i9 %column_2, i9 511" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 80 'add' 'add_ln91' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 81 [1/1] (0.00ns)   --->   "%lshr_ln4 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln91, i32 1, i32 8" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 81 'partselect' 'lshr_ln4' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 82 [1/1] (0.00ns)   --->   "%tmp_12 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_2_read, i8 %lshr_ln4" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 82 'bitconcatenate' 'tmp_12' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 83 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i10 %tmp_12" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 83 'zext' 'zext_ln91' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 84 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln91" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 84 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 85 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln91" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 85 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 86 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 86 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 87 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 87 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 88 [1/1] (0.77ns)   --->   "%add_ln94 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 88 'add' 'add_ln94' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 89 [1/1] (0.00ns)   --->   "%lshr_ln5 = partselect i8 @_ssdm_op_PartSelect.i8.i9.i32.i32, i9 %add_ln94, i32 1, i32 8" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 89 'partselect' 'lshr_ln5' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 90 [1/1] (0.00ns)   --->   "%tmp_13 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %result_2_read, i8 %lshr_ln5" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 90 'bitconcatenate' 'tmp_13' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 91 [1/1] (0.00ns)   --->   "%zext_ln94 = zext i10 %tmp_13" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 91 'zext' 'zext_ln94' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 92 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln94" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 92 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 93 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3 = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln94" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 93 'getelementptr' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.00>
+ST_2 : Operation 94 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 94 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 95 [2/2] (1.23ns)   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 95 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_2 : Operation 96 [1/1] (0.52ns)   --->   "%br_ln95 = br void %sw.epilog.i" [../src/non_maximum_suppression.cpp:95->../src/canny_top.cpp:32]   --->   Operation 96 'br' 'br_ln95' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.52>
+ST_2 : Operation 97 [1/1] (0.77ns)   --->   "%add_ln81 = add i9 %column_2, i9 1" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 97 'add' 'add_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 98 [1/1] (0.42ns)   --->   "%store_ln81 = store i9 %add_ln81, i9 %column" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 98 'store' 'store_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.42>
 ST_2 : Operation 138 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 138 'ret' 'ret_ln0' <Predicate = (icmp_ln81)> <Delay = 0.42>
 
-State 3 <SV = 2> <Delay = 2.78>
-ST_3 : Operation 99 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 99 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 100 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 100 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 101 [1/1] (0.39ns)   --->   "%neighbourOne_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31]   --->   Operation 101 'select' 'neighbourOne_3' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 102 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 102 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 103 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 103 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 104 [1/1] (0.39ns)   --->   "%neighbourTwo_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31]   --->   Operation 104 'select' 'neighbourTwo_3' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 105 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 105 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 106 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 106 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 107 [1/1] (0.39ns)   --->   "%neighbourOne_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:31]   --->   Operation 107 'select' 'neighbourOne_2' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 108 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 108 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 109 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 109 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 110 [1/1] (0.39ns)   --->   "%neighbourTwo_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:31]   --->   Operation 110 'select' 'neighbourTwo_2' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 111 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 111 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 112 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 112 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 113 [1/1] (0.39ns)   --->   "%neighbourOne_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:31]   --->   Operation 113 'select' 'neighbourOne_1' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 114 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 114 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 115 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 115 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 116 [1/1] (0.39ns)   --->   "%neighbourTwo_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:31]   --->   Operation 116 'select' 'neighbourTwo_1' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 117 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 117 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 118 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 118 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 119 [1/1] (0.39ns)   --->   "%neighbourOne = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:31]   --->   Operation 119 'select' 'neighbourOne' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 120 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 120 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 121 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 121 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 768> <RAM>
-ST_3 : Operation 122 [1/1] (0.39ns)   --->   "%neighbourTwo = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:31]   --->   Operation 122 'select' 'neighbourTwo' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_3 : Operation 123 [1/1] (0.00ns)   --->   "%neighbourOne_4 = phi i8 %neighbourOne_1, void %sw.bb63.i, i8 %neighbourOne_3, void %sw.bb52.i, i8 %neighbourOne_2, void %sw.bb39.i, i8 %neighbourOne, void %sw.bb.i"   --->   Operation 123 'phi' 'neighbourOne_4' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 124 [1/1] (0.00ns)   --->   "%neighbourTwo_4 = phi i8 %neighbourTwo_1, void %sw.bb63.i, i8 %neighbourTwo_3, void %sw.bb52.i, i8 %neighbourTwo_2, void %sw.bb39.i, i8 %neighbourTwo, void %sw.bb.i"   --->   Operation 124 'phi' 'neighbourTwo_4' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 125 [1/1] (0.76ns)   --->   "%icmp_ln123 = icmp_ult  i8 %centre_magnitude, i8 %neighbourOne_4" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:31]   --->   Operation 125 'icmp' 'icmp_ln123' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node select_ln123)   --->   "%xor_ln123 = xor i1 %icmp_ln123, i1 1" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:31]   --->   Operation 126 'xor' 'xor_ln123' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 127 [1/1] (0.76ns)   --->   "%icmp_ln124 = icmp_ult  i8 %centre_magnitude, i8 %neighbourTwo_4" [../src/non_maximum_suppression.cpp:124->../src/canny_top.cpp:31]   --->   Operation 127 'icmp' 'icmp_ln124' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node select_ln123)   --->   "%xor_ln124 = xor i1 %icmp_ln124, i1 1" [../src/non_maximum_suppression.cpp:124->../src/canny_top.cpp:31]   --->   Operation 128 'xor' 'xor_ln124' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 129 [1/1] (0.00ns) (grouped into LUT with out node select_ln123)   --->   "%and_ln123 = and i1 %xor_ln123, i1 %xor_ln124" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:31]   --->   Operation 129 'and' 'and_ln123' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 130 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln123 = select i1 %and_ln123, i8 %centre_magnitude, i8 0" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:31]   --->   Operation 130 'select' 'select_ln123' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+State 3 <SV = 2> <Delay = 2.81>
+ST_3 : Operation 99 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 99 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 100 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 100 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 101 [1/1] (0.38ns)   --->   "%neighbourOne_3 = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5" [../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:32]   --->   Operation 101 'select' 'neighbourOne_3' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 102 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 102 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 103 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 103 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 104 [1/1] (0.38ns)   --->   "%neighbourTwo_3 = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6" [../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:32]   --->   Operation 104 'select' 'neighbourTwo_3' <Predicate = (!icmp_ln81 & centre_direction == 2)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 105 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 105 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 106 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 106 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 107 [1/1] (0.38ns)   --->   "%neighbourOne_2 = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3" [../src/non_maximum_suppression.cpp:99->../src/canny_top.cpp:32]   --->   Operation 107 'select' 'neighbourOne_2' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 108 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 108 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 109 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 109 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 110 [1/1] (0.38ns)   --->   "%neighbourTwo_2 = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4" [../src/non_maximum_suppression.cpp:102->../src/canny_top.cpp:32]   --->   Operation 110 'select' 'neighbourTwo_2' <Predicate = (!icmp_ln81 & centre_direction == 1)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 111 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 111 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 112 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 112 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 113 [1/1] (0.38ns)   --->   "%neighbourOne_1 = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7" [../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32]   --->   Operation 113 'select' 'neighbourOne_1' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 114 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 114 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 115 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 115 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 116 [1/1] (0.38ns)   --->   "%neighbourTwo_1 = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8" [../src/non_maximum_suppression.cpp:118->../src/canny_top.cpp:32]   --->   Operation 116 'select' 'neighbourTwo_1' <Predicate = (!icmp_ln81 & centre_direction == 3)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 117 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 117 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 118 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 118 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 119 [1/1] (0.38ns)   --->   "%neighbourOne = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1" [../src/non_maximum_suppression.cpp:91->../src/canny_top.cpp:32]   --->   Operation 119 'select' 'neighbourOne' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 120 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 120 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 121 [1/2] ( I:1.23ns O:1.23ns )   --->   "%p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 121 'load' 'p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 768> <RAM>
+ST_3 : Operation 122 [1/1] (0.38ns)   --->   "%neighbourTwo = select i1 %trunc_ln81, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2" [../src/non_maximum_suppression.cpp:94->../src/canny_top.cpp:32]   --->   Operation 122 'select' 'neighbourTwo' <Predicate = (!icmp_ln81 & centre_direction == 0)> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 123 [1/1] (0.00ns)   --->   "%neighbourOne_4 = phi i11 %neighbourOne_1, void %sw.bb63.i, i11 %neighbourOne_3, void %sw.bb52.i, i11 %neighbourOne_2, void %sw.bb39.i, i11 %neighbourOne, void %sw.bb.i"   --->   Operation 123 'phi' 'neighbourOne_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 124 [1/1] (0.00ns)   --->   "%neighbourTwo_4 = phi i11 %neighbourTwo_1, void %sw.bb63.i, i11 %neighbourTwo_3, void %sw.bb52.i, i11 %neighbourTwo_2, void %sw.bb39.i, i11 %neighbourTwo, void %sw.bb.i"   --->   Operation 124 'phi' 'neighbourTwo_4' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 125 [1/1] (0.79ns)   --->   "%icmp_ln123 = icmp_ult  i11 %centre_magnitude, i11 %neighbourOne_4" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:32]   --->   Operation 125 'icmp' 'icmp_ln123' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 126 [1/1] (0.00ns) (grouped into LUT with out node select_ln123)   --->   "%xor_ln123 = xor i1 %icmp_ln123, i1 1" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:32]   --->   Operation 126 'xor' 'xor_ln123' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 127 [1/1] (0.79ns)   --->   "%icmp_ln124 = icmp_ult  i11 %centre_magnitude, i11 %neighbourTwo_4" [../src/non_maximum_suppression.cpp:124->../src/canny_top.cpp:32]   --->   Operation 127 'icmp' 'icmp_ln124' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node select_ln123)   --->   "%xor_ln124 = xor i1 %icmp_ln124, i1 1" [../src/non_maximum_suppression.cpp:124->../src/canny_top.cpp:32]   --->   Operation 128 'xor' 'xor_ln124' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 129 [1/1] (0.00ns) (grouped into LUT with out node select_ln123)   --->   "%and_ln123 = and i1 %xor_ln123, i1 %xor_ln124" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:32]   --->   Operation 129 'and' 'and_ln123' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 130 [1/1] (0.38ns) (out node of the LUT)   --->   "%select_ln123 = select i1 %and_ln123, i11 %centre_magnitude, i11 0" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:32]   --->   Operation 130 'select' 'select_ln123' <Predicate = true> <Delay = 0.38> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.38> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 1.23>
-ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln81 = zext i9 %column_2" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 131 'zext' 'zext_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%specpipeline_ln81 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 132 'specpipeline' 'specpipeline_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%speclooptripcount_ln81 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 510, i64 510, i64 510" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 133 'speclooptripcount' 'speclooptripcount_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%specloopname_ln81 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 134 'specloopname' 'specloopname_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_4 : Operation 135 [1/1] (0.00ns)   --->   "%out_nonmax_addr = getelementptr i8 %out_nonmax, i64 0, i64 %zext_ln81" [../src/non_maximum_suppression.cpp:129->../src/canny_top.cpp:31]   --->   Operation 135 'getelementptr' 'out_nonmax_addr' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 136 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln123 = store i8 %select_ln123, i9 %out_nonmax_addr" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:31]   --->   Operation 136 'store' 'store_ln123' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_4 : Operation 137 [1/1] (0.00ns)   --->   "%br_ln81 = br void %for.body24.i" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:31]   --->   Operation 137 'br' 'br_ln81' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln81 = zext i9 %column_2" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 131 'zext' 'zext_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_4 : Operation 132 [1/1] (0.00ns)   --->   "%specpipeline_ln81 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 132 'specpipeline' 'specpipeline_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_4 : Operation 133 [1/1] (0.00ns)   --->   "%speclooptripcount_ln81 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 510, i64 510, i64 510" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 133 'speclooptripcount' 'speclooptripcount_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_4 : Operation 134 [1/1] (0.00ns)   --->   "%specloopname_ln81 = specloopname void @_ssdm_op_SpecLoopName, void @empty_17" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 134 'specloopname' 'specloopname_ln81' <Predicate = (!icmp_ln81)> <Delay = 0.00>
+ST_4 : Operation 135 [1/1] (0.00ns)   --->   "%out_nonmax_addr = getelementptr i11 %out_nonmax, i64 0, i64 %zext_ln81" [../src/non_maximum_suppression.cpp:129->../src/canny_top.cpp:32]   --->   Operation 135 'getelementptr' 'out_nonmax_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 136 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln123 = store i11 %select_ln123, i9 %out_nonmax_addr" [../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:32]   --->   Operation 136 'store' 'store_ln123' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 512> <RAM>
+ST_4 : Operation 137 [1/1] (0.00ns)   --->   "%br_ln81 = br void %for.body24.i" [../src/non_maximum_suppression.cpp:81->../src/canny_top.cpp:32]   --->   Operation 137 'br' 'br_ln81' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -239,7 +239,7 @@ STG Binding:
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ out_nonmax]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=1; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
-Port [ result_9]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ result_2]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ result]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ empty]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ p_anonymous_namespace_lineBuffer_25_magnitude_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[11]; IO mode=ap_memory:ce=0
@@ -254,7 +254,7 @@ Port [ p_anonymous_namespace_lineBuffer_direction]:  wired=1; compound=1; hidden
 column                                                 (alloca           ) [ 01100]
 tmp                                                    (read             ) [ 00100]
 result_read                                            (read             ) [ 00100]
-result_9_read                                          (read             ) [ 00100]
+result_2_read                                          (read             ) [ 00100]
 store_ln81                                             (store            ) [ 00000]
 br_ln0                                                 (br               ) [ 00000]
 column_2                                               (load             ) [ 01111]
@@ -264,15 +264,15 @@ tmp_s                                                  (bitconcatenate   ) [ 000
 zext_ln83                                              (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_direction_addr        (getelementptr    ) [ 00100]
 lshr_ln3                                               (partselect       ) [ 00100]
-tmp_13                                                 (bitconcatenate   ) [ 00000]
+tmp_9                                                  (bitconcatenate   ) [ 00000]
 zext_ln83_1                                            (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr   (getelementptr    ) [ 00100]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr   (getelementptr    ) [ 00100]
 trunc_ln81                                             (trunc            ) [ 01010]
-tmp_14                                                 (bitconcatenate   ) [ 00000]
+tmp_10                                                 (bitconcatenate   ) [ 00000]
 zext_ln107                                             (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1 (getelementptr    ) [ 01010]
-tmp_15                                                 (bitconcatenate   ) [ 00000]
+tmp_11                                                 (bitconcatenate   ) [ 00000]
 zext_ln110                                             (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6 (getelementptr    ) [ 01010]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1 (getelementptr    ) [ 01010]
@@ -285,39 +285,39 @@ switch_ln88                                            (switch           ) [ 000
 br_ln111                                               (br               ) [ 01110]
 add_ln99                                               (add              ) [ 00000]
 lshr_ln8                                               (partselect       ) [ 00000]
-tmp_20                                                 (bitconcatenate   ) [ 00000]
+tmp_16                                                 (bitconcatenate   ) [ 00000]
 zext_ln99                                              (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4 (getelementptr    ) [ 01010]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4 (getelementptr    ) [ 01010]
 add_ln102                                              (add              ) [ 00000]
 lshr_ln9                                               (partselect       ) [ 00000]
-tmp_21                                                 (bitconcatenate   ) [ 00000]
+tmp_17                                                 (bitconcatenate   ) [ 00000]
 zext_ln102                                             (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5 (getelementptr    ) [ 01010]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5 (getelementptr    ) [ 01010]
 br_ln103                                               (br               ) [ 01110]
 add_ln115                                              (add              ) [ 00000]
 lshr_ln6                                               (partselect       ) [ 00000]
-tmp_18                                                 (bitconcatenate   ) [ 00000]
+tmp_14                                                 (bitconcatenate   ) [ 00000]
 zext_ln115                                             (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7 (getelementptr    ) [ 01010]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7 (getelementptr    ) [ 01010]
 add_ln118                                              (add              ) [ 00000]
 lshr_ln7                                               (partselect       ) [ 00000]
-tmp_19                                                 (bitconcatenate   ) [ 00000]
+tmp_15                                                 (bitconcatenate   ) [ 00000]
 zext_ln118                                             (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8 (getelementptr    ) [ 01010]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8 (getelementptr    ) [ 01010]
 br_ln119                                               (br               ) [ 01110]
 add_ln91                                               (add              ) [ 00000]
 lshr_ln4                                               (partselect       ) [ 00000]
-tmp_16                                                 (bitconcatenate   ) [ 00000]
+tmp_12                                                 (bitconcatenate   ) [ 00000]
 zext_ln91                                              (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2 (getelementptr    ) [ 01010]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2 (getelementptr    ) [ 01010]
 add_ln94                                               (add              ) [ 00000]
 lshr_ln5                                               (partselect       ) [ 00000]
-tmp_17                                                 (bitconcatenate   ) [ 00000]
+tmp_13                                                 (bitconcatenate   ) [ 00000]
 zext_ln94                                              (zext             ) [ 00000]
 p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3 (getelementptr    ) [ 01010]
 p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3 (getelementptr    ) [ 01010]
@@ -379,12 +379,12 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="2" class="1000" name="result_9">
+<comp id="2" class="1000" name="result_2">
 <pin_list>
 <pin id="3" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="result_9"/></StgValue>
+<StgValue><ssdm name="result_2"/></StgValue>
 </bind>
 </comp>
 
@@ -594,7 +594,7 @@ ret_ln0                                                (ret              ) [ 000
 <pin id="49" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -630,7 +630,7 @@ ret_ln0                                                (ret              ) [ 000
 <pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_19"/></StgValue>
+<StgValue><ssdm name="empty_17"/></StgValue>
 </bind>
 </comp>
 
@@ -669,7 +669,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="74" class="1004" name="result_9_read_read_fu_74">
+<comp id="74" class="1004" name="result_2_read_read_fu_74">
 <pin_list>
 <pin id="75" dir="0" index="0" bw="2" slack="0"/>
 <pin id="76" dir="0" index="1" bw="2" slack="0"/>
@@ -677,7 +677,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
-<opset="result_9_read/1 "/>
+<opset="result_2_read/1 "/>
 </bind>
 </comp>
 
@@ -696,7 +696,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="87" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_gep_fu_87">
 <pin_list>
-<pin id="88" dir="0" index="0" bw="8" slack="0"/>
+<pin id="88" dir="0" index="0" bw="11" slack="0"/>
 <pin id="89" dir="0" index="1" bw="1" slack="0"/>
 <pin id="90" dir="0" index="2" bw="10" slack="0"/>
 <pin id="91" dir="1" index="3" bw="10" slack="0"/>
@@ -709,7 +709,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="94" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_gep_fu_94">
 <pin_list>
-<pin id="95" dir="0" index="0" bw="8" slack="0"/>
+<pin id="95" dir="0" index="0" bw="11" slack="0"/>
 <pin id="96" dir="0" index="1" bw="1" slack="0"/>
 <pin id="97" dir="0" index="2" bw="10" slack="0"/>
 <pin id="98" dir="1" index="3" bw="10" slack="0"/>
@@ -723,13 +723,13 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="101" class="1004" name="grp_access_fu_101">
 <pin_list>
 <pin id="102" dir="0" index="0" bw="10" slack="0"/>
-<pin id="103" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="103" dir="0" index="1" bw="11" slack="2147483647"/>
 <pin id="104" dir="0" index="2" bw="0" slack="0"/>
 <pin id="147" dir="0" index="4" bw="10" slack="2147483647"/>
-<pin id="148" dir="0" index="5" bw="8" slack="2147483647"/>
+<pin id="148" dir="0" index="5" bw="11" slack="2147483647"/>
 <pin id="149" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="105" dir="1" index="3" bw="8" slack="0"/>
-<pin id="150" dir="1" index="7" bw="8" slack="0"/>
+<pin id="105" dir="1" index="3" bw="11" slack="0"/>
+<pin id="150" dir="1" index="7" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -740,13 +740,13 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="107" class="1004" name="grp_access_fu_107">
 <pin_list>
 <pin id="108" dir="0" index="0" bw="10" slack="0"/>
-<pin id="109" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="109" dir="0" index="1" bw="11" slack="2147483647"/>
 <pin id="110" dir="0" index="2" bw="0" slack="0"/>
 <pin id="152" dir="0" index="4" bw="10" slack="2147483647"/>
-<pin id="153" dir="0" index="5" bw="8" slack="2147483647"/>
+<pin id="153" dir="0" index="5" bw="11" slack="2147483647"/>
 <pin id="154" dir="0" index="6" bw="0" slack="2147483647"/>
-<pin id="111" dir="1" index="3" bw="8" slack="0"/>
-<pin id="155" dir="1" index="7" bw="8" slack="0"/>
+<pin id="111" dir="1" index="3" bw="11" slack="0"/>
+<pin id="155" dir="1" index="7" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -769,7 +769,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="119" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1_gep_fu_119">
 <pin_list>
-<pin id="120" dir="0" index="0" bw="8" slack="0"/>
+<pin id="120" dir="0" index="0" bw="11" slack="0"/>
 <pin id="121" dir="0" index="1" bw="1" slack="0"/>
 <pin id="122" dir="0" index="2" bw="10" slack="0"/>
 <pin id="123" dir="1" index="3" bw="10" slack="0"/>
@@ -782,7 +782,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="126" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6_gep_fu_126">
 <pin_list>
-<pin id="127" dir="0" index="0" bw="8" slack="0"/>
+<pin id="127" dir="0" index="0" bw="11" slack="0"/>
 <pin id="128" dir="0" index="1" bw="1" slack="0"/>
 <pin id="129" dir="0" index="2" bw="10" slack="0"/>
 <pin id="130" dir="1" index="3" bw="10" slack="0"/>
@@ -795,7 +795,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="133" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1_gep_fu_133">
 <pin_list>
-<pin id="134" dir="0" index="0" bw="8" slack="0"/>
+<pin id="134" dir="0" index="0" bw="11" slack="0"/>
 <pin id="135" dir="0" index="1" bw="1" slack="0"/>
 <pin id="136" dir="0" index="2" bw="10" slack="0"/>
 <pin id="137" dir="1" index="3" bw="10" slack="0"/>
@@ -808,7 +808,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="140" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6_gep_fu_140">
 <pin_list>
-<pin id="141" dir="0" index="0" bw="8" slack="0"/>
+<pin id="141" dir="0" index="0" bw="11" slack="0"/>
 <pin id="142" dir="0" index="1" bw="1" slack="0"/>
 <pin id="143" dir="0" index="2" bw="10" slack="0"/>
 <pin id="144" dir="1" index="3" bw="10" slack="0"/>
@@ -821,7 +821,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="159" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4_gep_fu_159">
 <pin_list>
-<pin id="160" dir="0" index="0" bw="8" slack="0"/>
+<pin id="160" dir="0" index="0" bw="11" slack="0"/>
 <pin id="161" dir="0" index="1" bw="1" slack="0"/>
 <pin id="162" dir="0" index="2" bw="10" slack="0"/>
 <pin id="163" dir="1" index="3" bw="10" slack="0"/>
@@ -834,7 +834,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="166" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4_gep_fu_166">
 <pin_list>
-<pin id="167" dir="0" index="0" bw="8" slack="0"/>
+<pin id="167" dir="0" index="0" bw="11" slack="0"/>
 <pin id="168" dir="0" index="1" bw="1" slack="0"/>
 <pin id="169" dir="0" index="2" bw="10" slack="0"/>
 <pin id="170" dir="1" index="3" bw="10" slack="0"/>
@@ -847,7 +847,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="175" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5_gep_fu_175">
 <pin_list>
-<pin id="176" dir="0" index="0" bw="8" slack="0"/>
+<pin id="176" dir="0" index="0" bw="11" slack="0"/>
 <pin id="177" dir="0" index="1" bw="1" slack="0"/>
 <pin id="178" dir="0" index="2" bw="10" slack="0"/>
 <pin id="179" dir="1" index="3" bw="10" slack="0"/>
@@ -860,7 +860,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="182" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5_gep_fu_182">
 <pin_list>
-<pin id="183" dir="0" index="0" bw="8" slack="0"/>
+<pin id="183" dir="0" index="0" bw="11" slack="0"/>
 <pin id="184" dir="0" index="1" bw="1" slack="0"/>
 <pin id="185" dir="0" index="2" bw="10" slack="0"/>
 <pin id="186" dir="1" index="3" bw="10" slack="0"/>
@@ -873,7 +873,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="191" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7_gep_fu_191">
 <pin_list>
-<pin id="192" dir="0" index="0" bw="8" slack="0"/>
+<pin id="192" dir="0" index="0" bw="11" slack="0"/>
 <pin id="193" dir="0" index="1" bw="1" slack="0"/>
 <pin id="194" dir="0" index="2" bw="10" slack="0"/>
 <pin id="195" dir="1" index="3" bw="10" slack="0"/>
@@ -886,7 +886,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="198" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7_gep_fu_198">
 <pin_list>
-<pin id="199" dir="0" index="0" bw="8" slack="0"/>
+<pin id="199" dir="0" index="0" bw="11" slack="0"/>
 <pin id="200" dir="0" index="1" bw="1" slack="0"/>
 <pin id="201" dir="0" index="2" bw="10" slack="0"/>
 <pin id="202" dir="1" index="3" bw="10" slack="0"/>
@@ -899,7 +899,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="207" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8_gep_fu_207">
 <pin_list>
-<pin id="208" dir="0" index="0" bw="8" slack="0"/>
+<pin id="208" dir="0" index="0" bw="11" slack="0"/>
 <pin id="209" dir="0" index="1" bw="1" slack="0"/>
 <pin id="210" dir="0" index="2" bw="10" slack="0"/>
 <pin id="211" dir="1" index="3" bw="10" slack="0"/>
@@ -912,7 +912,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="214" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8_gep_fu_214">
 <pin_list>
-<pin id="215" dir="0" index="0" bw="8" slack="0"/>
+<pin id="215" dir="0" index="0" bw="11" slack="0"/>
 <pin id="216" dir="0" index="1" bw="1" slack="0"/>
 <pin id="217" dir="0" index="2" bw="10" slack="0"/>
 <pin id="218" dir="1" index="3" bw="10" slack="0"/>
@@ -925,7 +925,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="223" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2_gep_fu_223">
 <pin_list>
-<pin id="224" dir="0" index="0" bw="8" slack="0"/>
+<pin id="224" dir="0" index="0" bw="11" slack="0"/>
 <pin id="225" dir="0" index="1" bw="1" slack="0"/>
 <pin id="226" dir="0" index="2" bw="10" slack="0"/>
 <pin id="227" dir="1" index="3" bw="10" slack="0"/>
@@ -938,7 +938,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="230" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2_gep_fu_230">
 <pin_list>
-<pin id="231" dir="0" index="0" bw="8" slack="0"/>
+<pin id="231" dir="0" index="0" bw="11" slack="0"/>
 <pin id="232" dir="0" index="1" bw="1" slack="0"/>
 <pin id="233" dir="0" index="2" bw="10" slack="0"/>
 <pin id="234" dir="1" index="3" bw="10" slack="0"/>
@@ -951,7 +951,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="239" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3_gep_fu_239">
 <pin_list>
-<pin id="240" dir="0" index="0" bw="8" slack="0"/>
+<pin id="240" dir="0" index="0" bw="11" slack="0"/>
 <pin id="241" dir="0" index="1" bw="1" slack="0"/>
 <pin id="242" dir="0" index="2" bw="10" slack="0"/>
 <pin id="243" dir="1" index="3" bw="10" slack="0"/>
@@ -964,7 +964,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="246" class="1004" name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3_gep_fu_246">
 <pin_list>
-<pin id="247" dir="0" index="0" bw="8" slack="0"/>
+<pin id="247" dir="0" index="0" bw="11" slack="0"/>
 <pin id="248" dir="0" index="1" bw="1" slack="0"/>
 <pin id="249" dir="0" index="2" bw="10" slack="0"/>
 <pin id="250" dir="1" index="3" bw="10" slack="0"/>
@@ -977,7 +977,7 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="255" class="1004" name="out_nonmax_addr_gep_fu_255">
 <pin_list>
-<pin id="256" dir="0" index="0" bw="8" slack="0"/>
+<pin id="256" dir="0" index="0" bw="11" slack="0"/>
 <pin id="257" dir="0" index="1" bw="1" slack="0"/>
 <pin id="258" dir="0" index="2" bw="9" slack="0"/>
 <pin id="259" dir="1" index="3" bw="9" slack="0"/>
@@ -991,9 +991,9 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="262" class="1004" name="store_ln123_access_fu_262">
 <pin_list>
 <pin id="263" dir="0" index="0" bw="9" slack="0"/>
-<pin id="264" dir="0" index="1" bw="8" slack="1"/>
+<pin id="264" dir="0" index="1" bw="11" slack="1"/>
 <pin id="265" dir="0" index="2" bw="0" slack="2147483647"/>
-<pin id="266" dir="1" index="3" bw="8" slack="2147483647"/>
+<pin id="266" dir="1" index="3" bw="11" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
@@ -1003,8 +1003,8 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="268" class="1005" name="neighbourOne_4_reg_268">
 <pin_list>
-<pin id="269" dir="0" index="0" bw="8" slack="2147483647"/>
-<pin id="270" dir="1" index="1" bw="8" slack="2147483647"/>
+<pin id="269" dir="0" index="0" bw="11" slack="2147483647"/>
+<pin id="270" dir="1" index="1" bw="11" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="neighbourOne_4 (phireg) "/>
@@ -1013,15 +1013,15 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="271" class="1004" name="neighbourOne_4_phi_fu_271">
 <pin_list>
-<pin id="272" dir="0" index="0" bw="8" slack="0"/>
+<pin id="272" dir="0" index="0" bw="11" slack="0"/>
 <pin id="273" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="274" dir="0" index="2" bw="8" slack="0"/>
+<pin id="274" dir="0" index="2" bw="11" slack="0"/>
 <pin id="275" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="276" dir="0" index="4" bw="8" slack="0"/>
+<pin id="276" dir="0" index="4" bw="11" slack="0"/>
 <pin id="277" dir="0" index="5" bw="0" slack="2147483647"/>
-<pin id="278" dir="0" index="6" bw="8" slack="0"/>
+<pin id="278" dir="0" index="6" bw="11" slack="0"/>
 <pin id="279" dir="0" index="7" bw="0" slack="2147483647"/>
-<pin id="280" dir="1" index="8" bw="8" slack="0"/>
+<pin id="280" dir="1" index="8" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -1031,8 +1031,8 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="281" class="1005" name="neighbourTwo_4_reg_281">
 <pin_list>
-<pin id="282" dir="0" index="0" bw="8" slack="2147483647"/>
-<pin id="283" dir="1" index="1" bw="8" slack="2147483647"/>
+<pin id="282" dir="0" index="0" bw="11" slack="2147483647"/>
+<pin id="283" dir="1" index="1" bw="11" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="neighbourTwo_4 (phireg) "/>
@@ -1041,15 +1041,15 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="284" class="1004" name="neighbourTwo_4_phi_fu_284">
 <pin_list>
-<pin id="285" dir="0" index="0" bw="8" slack="0"/>
+<pin id="285" dir="0" index="0" bw="11" slack="0"/>
 <pin id="286" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="287" dir="0" index="2" bw="8" slack="0"/>
+<pin id="287" dir="0" index="2" bw="11" slack="0"/>
 <pin id="288" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="289" dir="0" index="4" bw="8" slack="0"/>
+<pin id="289" dir="0" index="4" bw="11" slack="0"/>
 <pin id="290" dir="0" index="5" bw="0" slack="2147483647"/>
-<pin id="291" dir="0" index="6" bw="8" slack="0"/>
+<pin id="291" dir="0" index="6" bw="11" slack="0"/>
 <pin id="292" dir="0" index="7" bw="0" slack="2147483647"/>
-<pin id="293" dir="1" index="8" bw="8" slack="0"/>
+<pin id="293" dir="1" index="8" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
@@ -1112,9 +1112,9 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="324" class="1004" name="grp_fu_324">
 <pin_list>
 <pin id="325" dir="0" index="0" bw="1" slack="1"/>
-<pin id="326" dir="0" index="1" bw="8" slack="0"/>
-<pin id="327" dir="0" index="2" bw="8" slack="0"/>
-<pin id="328" dir="1" index="3" bw="8" slack="0"/>
+<pin id="326" dir="0" index="1" bw="11" slack="0"/>
+<pin id="327" dir="0" index="2" bw="11" slack="0"/>
+<pin id="328" dir="1" index="3" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1125,9 +1125,9 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="334" class="1004" name="grp_fu_334">
 <pin_list>
 <pin id="335" dir="0" index="0" bw="1" slack="1"/>
-<pin id="336" dir="0" index="1" bw="8" slack="0"/>
-<pin id="337" dir="0" index="2" bw="8" slack="0"/>
-<pin id="338" dir="1" index="3" bw="8" slack="0"/>
+<pin id="336" dir="0" index="1" bw="11" slack="0"/>
+<pin id="337" dir="0" index="2" bw="11" slack="0"/>
+<pin id="338" dir="1" index="3" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1208,7 +1208,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="381" class="1004" name="tmp_13_fu_381">
+<comp id="381" class="1004" name="tmp_9_fu_381">
 <pin_list>
 <pin id="382" dir="0" index="0" bw="10" slack="0"/>
 <pin id="383" dir="0" index="1" bw="2" slack="0"/>
@@ -1217,7 +1217,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_13/1 "/>
+<opset="tmp_9/1 "/>
 </bind>
 </comp>
 
@@ -1243,7 +1243,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="398" class="1004" name="tmp_14_fu_398">
+<comp id="398" class="1004" name="tmp_10_fu_398">
 <pin_list>
 <pin id="399" dir="0" index="0" bw="10" slack="0"/>
 <pin id="400" dir="0" index="1" bw="2" slack="1"/>
@@ -1252,7 +1252,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_14/2 "/>
+<opset="tmp_10/2 "/>
 </bind>
 </comp>
 
@@ -1267,7 +1267,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="410" class="1004" name="tmp_15_fu_410">
+<comp id="410" class="1004" name="tmp_11_fu_410">
 <pin_list>
 <pin id="411" dir="0" index="0" bw="10" slack="0"/>
 <pin id="412" dir="0" index="1" bw="2" slack="1"/>
@@ -1276,7 +1276,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_15/2 "/>
+<opset="tmp_11/2 "/>
 </bind>
 </comp>
 
@@ -1294,9 +1294,9 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="422" class="1004" name="centre_magnitude_fu_422">
 <pin_list>
 <pin id="423" dir="0" index="0" bw="1" slack="0"/>
-<pin id="424" dir="0" index="1" bw="8" slack="0"/>
-<pin id="425" dir="0" index="2" bw="8" slack="0"/>
-<pin id="426" dir="1" index="3" bw="8" slack="1"/>
+<pin id="424" dir="0" index="1" bw="11" slack="0"/>
+<pin id="425" dir="0" index="2" bw="11" slack="0"/>
+<pin id="426" dir="1" index="3" bw="11" slack="1"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1318,7 +1318,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="440" class="1004" name="tmp_20_fu_440">
+<comp id="440" class="1004" name="tmp_16_fu_440">
 <pin_list>
 <pin id="441" dir="0" index="0" bw="10" slack="0"/>
 <pin id="442" dir="0" index="1" bw="2" slack="1"/>
@@ -1327,7 +1327,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_20/2 "/>
+<opset="tmp_16/2 "/>
 </bind>
 </comp>
 
@@ -1342,7 +1342,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="453" class="1004" name="tmp_21_fu_453">
+<comp id="453" class="1004" name="tmp_17_fu_453">
 <pin_list>
 <pin id="454" dir="0" index="0" bw="10" slack="0"/>
 <pin id="455" dir="0" index="1" bw="2" slack="1"/>
@@ -1351,7 +1351,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_21/2 "/>
+<opset="tmp_17/2 "/>
 </bind>
 </comp>
 
@@ -1366,7 +1366,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="466" class="1004" name="tmp_18_fu_466">
+<comp id="466" class="1004" name="tmp_14_fu_466">
 <pin_list>
 <pin id="467" dir="0" index="0" bw="10" slack="0"/>
 <pin id="468" dir="0" index="1" bw="2" slack="1"/>
@@ -1375,7 +1375,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_18/2 "/>
+<opset="tmp_14/2 "/>
 </bind>
 </comp>
 
@@ -1390,7 +1390,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="479" class="1004" name="tmp_19_fu_479">
+<comp id="479" class="1004" name="tmp_15_fu_479">
 <pin_list>
 <pin id="480" dir="0" index="0" bw="10" slack="0"/>
 <pin id="481" dir="0" index="1" bw="2" slack="1"/>
@@ -1399,7 +1399,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_19/2 "/>
+<opset="tmp_15/2 "/>
 </bind>
 </comp>
 
@@ -1414,7 +1414,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="492" class="1004" name="tmp_16_fu_492">
+<comp id="492" class="1004" name="tmp_12_fu_492">
 <pin_list>
 <pin id="493" dir="0" index="0" bw="10" slack="0"/>
 <pin id="494" dir="0" index="1" bw="2" slack="1"/>
@@ -1423,7 +1423,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_16/2 "/>
+<opset="tmp_12/2 "/>
 </bind>
 </comp>
 
@@ -1438,7 +1438,7 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="505" class="1004" name="tmp_17_fu_505">
+<comp id="505" class="1004" name="tmp_13_fu_505">
 <pin_list>
 <pin id="506" dir="0" index="0" bw="10" slack="0"/>
 <pin id="507" dir="0" index="1" bw="2" slack="1"/>
@@ -1447,7 +1447,7 @@ ret_ln0                                                (ret              ) [ 000
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
-<opset="tmp_17/2 "/>
+<opset="tmp_13/2 "/>
 </bind>
 </comp>
 
@@ -1489,9 +1489,9 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="528" class="1004" name="neighbourOne_3_fu_528">
 <pin_list>
 <pin id="529" dir="0" index="0" bw="1" slack="1"/>
-<pin id="530" dir="0" index="1" bw="8" slack="0"/>
-<pin id="531" dir="0" index="2" bw="8" slack="0"/>
-<pin id="532" dir="1" index="3" bw="8" slack="0"/>
+<pin id="530" dir="0" index="1" bw="11" slack="0"/>
+<pin id="531" dir="0" index="2" bw="11" slack="0"/>
+<pin id="532" dir="1" index="3" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1502,9 +1502,9 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="536" class="1004" name="neighbourTwo_3_fu_536">
 <pin_list>
 <pin id="537" dir="0" index="0" bw="1" slack="1"/>
-<pin id="538" dir="0" index="1" bw="8" slack="0"/>
-<pin id="539" dir="0" index="2" bw="8" slack="0"/>
-<pin id="540" dir="1" index="3" bw="8" slack="0"/>
+<pin id="538" dir="0" index="1" bw="11" slack="0"/>
+<pin id="539" dir="0" index="2" bw="11" slack="0"/>
+<pin id="540" dir="1" index="3" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1514,8 +1514,8 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="544" class="1004" name="icmp_ln123_fu_544">
 <pin_list>
-<pin id="545" dir="0" index="0" bw="8" slack="1"/>
-<pin id="546" dir="0" index="1" bw="8" slack="0"/>
+<pin id="545" dir="0" index="0" bw="11" slack="1"/>
+<pin id="546" dir="0" index="1" bw="11" slack="0"/>
 <pin id="547" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
@@ -1538,8 +1538,8 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="555" class="1004" name="icmp_ln124_fu_555">
 <pin_list>
-<pin id="556" dir="0" index="0" bw="8" slack="1"/>
-<pin id="557" dir="0" index="1" bw="8" slack="0"/>
+<pin id="556" dir="0" index="0" bw="11" slack="1"/>
+<pin id="557" dir="0" index="1" bw="11" slack="0"/>
 <pin id="558" dir="1" index="2" bw="1" slack="0"/>
 </pin_list>
 <bind>
@@ -1575,9 +1575,9 @@ ret_ln0                                                (ret              ) [ 000
 <comp id="572" class="1004" name="select_ln123_fu_572">
 <pin_list>
 <pin id="573" dir="0" index="0" bw="1" slack="0"/>
-<pin id="574" dir="0" index="1" bw="8" slack="1"/>
+<pin id="574" dir="0" index="1" bw="11" slack="1"/>
 <pin id="575" dir="0" index="2" bw="1" slack="0"/>
-<pin id="576" dir="1" index="3" bw="8" slack="1"/>
+<pin id="576" dir="1" index="3" bw="11" slack="1"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
@@ -1626,13 +1626,13 @@ ret_ln0                                                (ret              ) [ 000
 </bind>
 </comp>
 
-<comp id="604" class="1005" name="result_9_read_reg_604">
+<comp id="604" class="1005" name="result_2_read_reg_604">
 <pin_list>
 <pin id="605" dir="0" index="0" bw="2" slack="1"/>
 <pin id="606" dir="1" index="1" bw="2" slack="1"/>
 </pin_list>
 <bind>
-<opset="result_9_read "/>
+<opset="result_2_read "/>
 </bind>
 </comp>
 
@@ -1748,8 +1748,8 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="672" class="1005" name="centre_magnitude_reg_672">
 <pin_list>
-<pin id="673" dir="0" index="0" bw="8" slack="1"/>
-<pin id="674" dir="1" index="1" bw="8" slack="1"/>
+<pin id="673" dir="0" index="0" bw="11" slack="1"/>
+<pin id="674" dir="1" index="1" bw="11" slack="1"/>
 </pin_list>
 <bind>
 <opset="centre_magnitude "/>
@@ -1888,8 +1888,8 @@ ret_ln0                                                (ret              ) [ 000
 
 <comp id="743" class="1005" name="select_ln123_reg_743">
 <pin_list>
-<pin id="744" dir="0" index="0" bw="8" slack="1"/>
-<pin id="745" dir="1" index="1" bw="8" slack="1"/>
+<pin id="744" dir="0" index="0" bw="11" slack="1"/>
+<pin id="745" dir="1" index="1" bw="11" slack="1"/>
 </pin_list>
 <bind>
 <opset="select_ln123 "/>
@@ -2396,7 +2396,7 @@ ret_ln0                                                (ret              ) [ 000
   - Output states:
 	Port: out_nonmax | {4 }
  - Input state : 
-	Port: non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 : result_9 | {1 }
+	Port: non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 : result_2 | {1 }
 	Port: non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 : result | {1 }
 	Port: non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 : empty | {1 }
 	Port: non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 : p_anonymous_namespace_lineBuffer_25_magnitude_0 | {1 2 3 }
@@ -2412,7 +2412,7 @@ ret_ln0                                                (ret              ) [ 000
 		zext_ln83 : 3
 		p_anonymous_namespace_lineBuffer_direction_addr : 4
 		lshr_ln3 : 2
-		tmp_13 : 3
+		tmp_9 : 3
 		zext_ln83_1 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_addr : 5
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_addr : 5
@@ -2433,42 +2433,42 @@ ret_ln0                                                (ret              ) [ 000
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6 : 3
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6 : 3
 		lshr_ln8 : 1
-		tmp_20 : 2
+		tmp_16 : 2
 		zext_ln99 : 3
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3 : 5
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3 : 5
 		lshr_ln9 : 1
-		tmp_21 : 2
+		tmp_17 : 2
 		zext_ln102 : 3
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4 : 5
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4 : 5
 		lshr_ln6 : 1
-		tmp_18 : 2
+		tmp_14 : 2
 		zext_ln115 : 3
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7 : 5
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7 : 5
 		lshr_ln7 : 1
-		tmp_19 : 2
+		tmp_15 : 2
 		zext_ln118 : 3
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8 : 5
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8 : 5
 		lshr_ln4 : 1
-		tmp_16 : 2
+		tmp_12 : 2
 		zext_ln91 : 3
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1 : 5
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1 : 5
 		lshr_ln5 : 1
-		tmp_17 : 2
+		tmp_13 : 2
 		zext_ln94 : 3
 		p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3 : 4
 		p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3 : 4
@@ -2505,20 +2505,20 @@ ret_ln0                                                (ret              ) [ 000
 |----------|--------------------------|---------|---------|
 | Operation|      Functional Unit     |    FF   |   LUT   |
 |----------|--------------------------|---------|---------|
+|          |        grp_fu_324        |    0    |    10   |
+|          |        grp_fu_334        |    0    |    10   |
+|  select  |  centre_magnitude_fu_422 |    0    |    10   |
+|          |   neighbourOne_3_fu_528  |    0    |    10   |
+|          |   neighbourTwo_3_fu_536  |    0    |    10   |
+|          |    select_ln123_fu_572   |    0    |    10   |
+|----------|--------------------------|---------|---------|
+|          |     icmp_ln81_fu_352     |    0    |    16   |
+|   icmp   |     icmp_ln123_fu_544    |    0    |    18   |
+|          |     icmp_ln124_fu_555    |    0    |    18   |
+|----------|--------------------------|---------|---------|
 |          |        grp_fu_294        |    0    |    16   |
 |    add   |        grp_fu_309        |    0    |    16   |
 |          |      add_ln81_fu_518     |    0    |    16   |
-|----------|--------------------------|---------|---------|
-|          |        grp_fu_324        |    0    |    8    |
-|          |        grp_fu_334        |    0    |    8    |
-|  select  |  centre_magnitude_fu_422 |    0    |    8    |
-|          |   neighbourOne_3_fu_528  |    0    |    8    |
-|          |   neighbourTwo_3_fu_536  |    0    |    8    |
-|          |    select_ln123_fu_572   |    0    |    8    |
-|----------|--------------------------|---------|---------|
-|          |     icmp_ln81_fu_352     |    0    |    16   |
-|   icmp   |     icmp_ln123_fu_544    |    0    |    15   |
-|          |     icmp_ln124_fu_555    |    0    |    15   |
 |----------|--------------------------|---------|---------|
 |    xor   |     xor_ln123_fu_549     |    0    |    2    |
 |          |     xor_ln124_fu_560     |    0    |    2    |
@@ -2527,22 +2527,22 @@ ret_ln0                                                (ret              ) [ 000
 |----------|--------------------------|---------|---------|
 |          |      tmp_read_fu_62      |    0    |    0    |
 |   read   |  result_read_read_fu_68  |    0    |    0    |
-|          | result_9_read_read_fu_74 |    0    |    0    |
+|          | result_2_read_read_fu_74 |    0    |    0    |
 |----------|--------------------------|---------|---------|
 |          |        grp_fu_299        |    0    |    0    |
 |partselect|        grp_fu_314        |    0    |    0    |
 |          |      lshr_ln3_fu_371     |    0    |    0    |
 |----------|--------------------------|---------|---------|
 |          |       tmp_s_fu_358       |    0    |    0    |
-|          |       tmp_13_fu_381      |    0    |    0    |
-|          |       tmp_14_fu_398      |    0    |    0    |
-|          |       tmp_15_fu_410      |    0    |    0    |
-|bitconcatenate|       tmp_20_fu_440      |    0    |    0    |
-|          |       tmp_21_fu_453      |    0    |    0    |
-|          |       tmp_18_fu_466      |    0    |    0    |
-|          |       tmp_19_fu_479      |    0    |    0    |
-|          |       tmp_16_fu_492      |    0    |    0    |
-|          |       tmp_17_fu_505      |    0    |    0    |
+|          |       tmp_9_fu_381       |    0    |    0    |
+|          |       tmp_10_fu_398      |    0    |    0    |
+|          |       tmp_11_fu_410      |    0    |    0    |
+|bitconcatenate|       tmp_16_fu_440      |    0    |    0    |
+|          |       tmp_17_fu_453      |    0    |    0    |
+|          |       tmp_14_fu_466      |    0    |    0    |
+|          |       tmp_15_fu_479      |    0    |    0    |
+|          |       tmp_12_fu_492      |    0    |    0    |
+|          |       tmp_13_fu_505      |    0    |    0    |
 |----------|--------------------------|---------|---------|
 |          |     zext_ln83_fu_366     |    0    |    0    |
 |          |    zext_ln83_1_fu_389    |    0    |    0    |
@@ -2560,7 +2560,7 @@ ret_ln0                                                (ret              ) [ 000
 |----------|--------------------------|---------|---------|
 |  switch  |    switch_ln88_fu_430    |    0    |    0    |
 |----------|--------------------------|---------|---------|
-|   Total  |                          |    0    |   148   |
+|   Total  |                          |    0    |   166   |
 |----------|--------------------------|---------|---------|
 
 Memories:
@@ -2571,13 +2571,13 @@ N/A
 |                                                              |   FF   |
 +--------------------------------------------------------------+--------+
 |                   centre_direction_reg_679                   |    2   |
-|                   centre_magnitude_reg_672                   |    8   |
+|                   centre_magnitude_reg_672                   |   11   |
 |                       column_2_reg_610                       |    9   |
 |                        column_reg_583                        |    9   |
 |                       icmp_ln81_reg_619                      |    1   |
 |                       lshr_ln3_reg_628                       |    8   |
-|                    neighbourOne_4_reg_268                    |    8   |
-|                    neighbourTwo_4_reg_281                    |    8   |
+|                    neighbourOne_4_reg_268                    |   11   |
+|                    neighbourTwo_4_reg_281                    |   11   |
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1_reg_652|   10   |
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2_reg_723|   10   |
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3_reg_733|   10   |
@@ -2597,13 +2597,13 @@ N/A
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8_reg_718|   10   |
 | p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_reg_639 |   10   |
 |    p_anonymous_namespace_lineBuffer_direction_addr_reg_623   |   11   |
-|                     result_9_read_reg_604                    |    2   |
+|                     result_2_read_reg_604                    |    2   |
 |                      result_read_reg_597                     |    2   |
-|                     select_ln123_reg_743                     |    8   |
+|                     select_ln123_reg_743                     |   11   |
 |                          tmp_reg_590                         |    2   |
 |                      trunc_ln81_reg_644                      |    1   |
 +--------------------------------------------------------------+--------+
-|                             Total                            |   259  |
+|                             Total                            |   271  |
 +--------------------------------------------------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -2625,10 +2625,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    -   |    0   |   148  |
+|  Function |    -   |    0   |   166  |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    3   |    0   |   203  |
-|  Register |    -   |   259  |    -   |
+|  Register |    -   |   271  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    3   |   259  |   351  |
+|   Total   |    3   |   271  |   369  |
 +-----------+--------+--------+--------+

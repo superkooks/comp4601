@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold_Pipeline_VITIS_LOOP_16_1'
 ================================================================
-* Date:           Fri Jul 24 16:27:50 2026
+* Date:           Fri Jul 24 22:33:47 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  3.632 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  2.035 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
     |   min   |   max   |    min   |    max   | min | max |        Type       |
     +---------+---------+----------+----------+-----+-----+-------------------+
-    |      514|      514|  2.570 us|  2.570 us|    0|    0|  loop pipeline stp|
+    |      515|      515|  2.575 us|  2.575 us|    0|    0|  loop pipeline stp|
     +---------+---------+----------+----------+-----+-----+-------------------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_16_1  |      512|      512|         2|          1|          1|   512|       yes|
+        |- VITIS_LOOP_16_1  |      513|      513|         3|          1|          1|   512|       yes|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
 +-----------------+---------+------+--------+--------+-----+
 |DSP              |        -|     -|       -|       -|    -|
-|Expression       |        -|     -|       0|      84|    -|
+|Expression       |        -|     -|       0|      90|    -|
 |FIFO             |        -|     -|       -|       -|    -|
 |Instance         |        -|     -|       -|       -|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       0|      36|    -|
-|Register         |        -|     -|      23|       -|    -|
+|Register         |        -|     -|      37|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     0|      23|     120|    0|
+|Total            |        0|     0|      37|     126|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -87,13 +87,13 @@
     +-------------------------+----------+----+---+----+------------+------------+
     |add_ln16_fu_84_p2        |         +|   0|  0|  17|          10|           1|
     |icmp_ln16_fu_78_p2       |      icmp|   0|  0|  18|          10|          11|
-    |icmp_ln19_fu_100_p2      |      icmp|   0|  0|  15|           8|           7|
-    |icmp_ln22_fu_106_p2      |      icmp|   0|  0|  15|           8|           5|
+    |icmp_ln19_fu_100_p2      |      icmp|   0|  0|  18|          11|           7|
+    |icmp_ln22_fu_106_p2      |      icmp|   0|  0|  18|          11|           5|
     |select_ln19_1_fu_112_p3  |    select|   0|  0|   9|           1|           2|
-    |select_ln19_fu_120_p3    |    select|   0|  0|   8|           1|           8|
+    |select_ln19_fu_119_p3    |    select|   0|  0|   8|           1|           8|
     |ap_enable_pp0            |       xor|   0|  0|   2|           1|           2|
     +-------------------------+----------+----+---+----+------------+------------+
-    |Total                    |          |   0|  0|  84|          39|          36|
+    |Total                    |          |   0|  0|  90|          45|          36|
     +-------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -109,17 +109,22 @@
     +----------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +-------------------------+----+----+-----+-----------+
-    |           Name          | FF | LUT| Bits| Const Bits|
-    +-------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                |   1|   0|    1|          0|
-    |ap_done_reg              |   1|   0|    1|          0|
-    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
-    |column_fu_40             |  10|   0|   10|          0|
-    |zext_ln16_reg_139        |  10|   0|   64|         54|
-    +-------------------------+----+----+-----+-----------+
-    |Total                    |  23|   0|   77|         54|
-    +-------------------------+----+----+-----+-----------+
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |column_fu_40                      |  10|   0|   10|          0|
+    |icmp_ln19_reg_148                 |   1|   0|    1|          0|
+    |icmp_ln22_reg_153                 |   1|   0|    1|          0|
+    |zext_ln16_reg_138                 |  10|   0|   64|         54|
+    |zext_ln16_reg_138_pp0_iter1_reg   |  10|   0|   64|         54|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  37|   0|  145|        108|
+    +----------------------------------+----+----+-----+-----------+
 
 
 
@@ -138,7 +143,7 @@
 |ap_ready             |  out|    1|  ap_ctrl_hs|  double_threshold_Pipeline_VITIS_LOOP_16_1|  return value|
 |out_nonmax_address0  |  out|    9|   ap_memory|                                 out_nonmax|         array|
 |out_nonmax_ce0       |  out|    1|   ap_memory|                                 out_nonmax|         array|
-|out_nonmax_q0        |   in|    8|   ap_memory|                                 out_nonmax|         array|
+|out_nonmax_q0        |   in|   11|   ap_memory|                                 out_nonmax|         array|
 |out_double_address0  |  out|    9|   ap_memory|                                 out_double|         array|
 |out_double_ce0       |  out|    1|   ap_memory|                                 out_double|         array|
 |out_double_we0       |  out|    1|   ap_memory|                                 out_double|         array|
@@ -168,49 +173,52 @@ HasImplIP: 0
 IsGatedGlobalClock: 0
 
 + Individual pipeline summary: 
-  * Pipeline-0: initiation interval (II) = 1, depth = 2
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
 
 
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 2
+* Number of FSM states : 3
 * Pipeline : 1
-  Pipeline-0 : II = 1, D = 2, States = { 1 2 }
+  Pipeline-0 : II = 1, D = 3, States = { 1 2 3 }
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
 1 --> 2 
-2 --> 
+2 --> 3 
+3 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.66>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 5 'alloca' 'column' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 0, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 6 'store' 'store_ln16' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.i"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%column_11 = load i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 8 'load' 'column_11' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.78ns)   --->   "%icmp_ln16 = icmp_eq  i10 %column_11, i10 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 9 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.78ns)   --->   "%add_ln16 = add i10 %column_11, i10 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 10 'add' 'add_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln16 = br i1 %icmp_ln16, void %for.body.split.i, void %_Z16double_thresholdPKhPhbPb.4.exit.loopexit.exitStub" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 11 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i10 %column_11" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 12 'zext' 'zext_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%out_nonmax_addr = getelementptr i8 %out_nonmax, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:17->../src/canny_top.cpp:32]   --->   Operation 13 'getelementptr' 'out_nonmax_addr' <Predicate = (!icmp_ln16)> <Delay = 0.00>
-ST_1 : Operation 14 [2/2] (1.23ns)   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:32]   --->   Operation 14 'load' 'magnitude' <Predicate = (!icmp_ln16)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 %add_ln16, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 15 'store' 'store_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.42>
-ST_1 : Operation 27 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = (icmp_ln16)> <Delay = 0.42>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 6 'alloca' 'column' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 0, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 7 'store' 'store_ln16' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.i"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%column_11 = load i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 9 'load' 'column_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.78ns)   --->   "%icmp_ln16 = icmp_eq  i10 %column_11, i10 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 10 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.78ns)   --->   "%add_ln16 = add i10 %column_11, i10 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 11 'add' 'add_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln16 = br i1 %icmp_ln16, void %for.body.split.i, void %_Z16double_thresholdPKtPhbPb.4.exit.loopexit.exitStub" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 12 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i10 %column_11" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 13 'zext' 'zext_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%out_nonmax_addr = getelementptr i11 %out_nonmax, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:17->../src/canny_top.cpp:33]   --->   Operation 14 'getelementptr' 'out_nonmax_addr' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 15 [2/2] (1.23ns)   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:33]   --->   Operation 15 'load' 'magnitude' <Predicate = (!icmp_ln16)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 512> <RAM>
+ST_1 : Operation 16 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 %add_ln16, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 16 'store' 'store_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.42>
 
-State 2 <SV = 1> <Delay = 3.63>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 16 'specpipeline' 'specpipeline_ln16' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln16' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_17" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 18 'specloopname' 'specloopname_ln16' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/2] ( I:1.23ns O:1.23ns )   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:32]   --->   Operation 19 'load' 'magnitude' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_2 : Operation 20 [1/1] (0.76ns)   --->   "%icmp_ln19 = icmp_ugt  i8 %magnitude, i8 79" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 20 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%out_double_addr = getelementptr i8 %out_double, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:23->../src/canny_top.cpp:32]   --->   Operation 21 'getelementptr' 'out_double_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.76ns)   --->   "%icmp_ln22 = icmp_ugt  i8 %magnitude, i8 19" [../src/double_threshold.cpp:22->../src/canny_top.cpp:32]   --->   Operation 22 'icmp' 'icmp_ln22' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node select_ln19)   --->   "%select_ln19_1 = select i1 %icmp_ln19, i8 255, i8 128" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 23 'select' 'select_ln19_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 24 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln19 = select i1 %icmp_ln22, i8 %select_ln19_1, i8 0" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 24 'select' 'select_ln19' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln19 = store i8 %select_ln19, i9 %out_double_addr" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 25 'store' 'store_ln19' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln16 = br void %for.body.i" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 26 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+State 2 <SV = 1> <Delay = 2.03>
+ST_2 : Operation 17 [1/2] ( I:1.23ns O:1.23ns )   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:33]   --->   Operation 17 'load' 'magnitude' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 512> <RAM>
+ST_2 : Operation 18 [1/1] (0.79ns)   --->   "%icmp_ln19 = icmp_ugt  i11 %magnitude, i11 79" [../src/double_threshold.cpp:19->../src/canny_top.cpp:33]   --->   Operation 18 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 19 [1/1] (0.79ns)   --->   "%icmp_ln22 = icmp_ugt  i11 %magnitude, i11 19" [../src/double_threshold.cpp:22->../src/canny_top.cpp:33]   --->   Operation 19 'icmp' 'icmp_ln22' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 28 'ret' 'ret_ln0' <Predicate = (icmp_ln16)> <Delay = 0.42>
+
+State 3 <SV = 2> <Delay = 1.63>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 20 'specpipeline' 'specpipeline_ln16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 22 'specloopname' 'specloopname_ln16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%out_double_addr = getelementptr i8 %out_double, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:23->../src/canny_top.cpp:33]   --->   Operation 23 'getelementptr' 'out_double_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node select_ln19)   --->   "%select_ln19_1 = select i1 %icmp_ln19, i8 255, i8 128" [../src/double_threshold.cpp:19->../src/canny_top.cpp:33]   --->   Operation 24 'select' 'select_ln19_1' <Predicate = (icmp_ln22)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 25 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln19 = select i1 %icmp_ln22, i8 %select_ln19_1, i8 0" [../src/double_threshold.cpp:19->../src/canny_top.cpp:33]   --->   Operation 25 'select' 'select_ln19' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 26 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln19 = store i8 %select_ln19, i9 %out_double_addr" [../src/double_threshold.cpp:19->../src/canny_top.cpp:33]   --->   Operation 26 'store' 'store_ln19' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%br_ln16 = br void %for.body.i" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 27 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -232,28 +240,28 @@ Port [ out_double]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0;
 
 <LifeTime>
 <method=bitvector/>
-column                 (alloca           ) [ 010]
-store_ln16             (store            ) [ 000]
-br_ln0                 (br               ) [ 000]
-column_11              (load             ) [ 000]
-icmp_ln16              (icmp             ) [ 010]
-add_ln16               (add              ) [ 000]
-br_ln16                (br               ) [ 000]
-zext_ln16              (zext             ) [ 011]
-out_nonmax_addr        (getelementptr    ) [ 011]
-store_ln16             (store            ) [ 000]
-specpipeline_ln16      (specpipeline     ) [ 000]
-speclooptripcount_ln16 (speclooptripcount) [ 000]
-specloopname_ln16      (specloopname     ) [ 000]
-magnitude              (load             ) [ 000]
-icmp_ln19              (icmp             ) [ 000]
-out_double_addr        (getelementptr    ) [ 000]
-icmp_ln22              (icmp             ) [ 000]
-select_ln19_1          (select           ) [ 000]
-select_ln19            (select           ) [ 000]
-store_ln19             (store            ) [ 000]
-br_ln16                (br               ) [ 000]
-ret_ln0                (ret              ) [ 000]
+column                 (alloca           ) [ 0100]
+store_ln16             (store            ) [ 0000]
+br_ln0                 (br               ) [ 0000]
+column_11              (load             ) [ 0000]
+icmp_ln16              (icmp             ) [ 0110]
+add_ln16               (add              ) [ 0000]
+br_ln16                (br               ) [ 0000]
+zext_ln16              (zext             ) [ 0111]
+out_nonmax_addr        (getelementptr    ) [ 0110]
+store_ln16             (store            ) [ 0000]
+magnitude              (load             ) [ 0000]
+icmp_ln19              (icmp             ) [ 0101]
+icmp_ln22              (icmp             ) [ 0101]
+specpipeline_ln16      (specpipeline     ) [ 0000]
+speclooptripcount_ln16 (speclooptripcount) [ 0000]
+specloopname_ln16      (specloopname     ) [ 0000]
+out_double_addr        (getelementptr    ) [ 0000]
+select_ln19_1          (select           ) [ 0000]
+select_ln19            (select           ) [ 0000]
+store_ln19             (store            ) [ 0000]
+br_ln16                (br               ) [ 0000]
+ret_ln0                (ret              ) [ 0000]
 </LifeTime>
 
 <model>
@@ -326,16 +334,16 @@ ret_ln0                (ret              ) [ 000]
 
 <comp id="14" class="1001" name="const_14">
 <pin_list>
-<pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecPipeline"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
 <comp id="16" class="1001" name="const_16">
 <pin_list>
-<pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
@@ -347,7 +355,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="19" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecPipeline"/></StgValue>
 </bind>
 </comp>
 
@@ -356,7 +364,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -365,7 +373,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -374,7 +382,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -383,7 +391,7 @@ ret_ln0                (ret              ) [ 000]
 <pin id="27" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecLoopTripCount"/></StgValue>
 </bind>
 </comp>
 
@@ -392,25 +400,25 @@ ret_ln0                (ret              ) [ 000]
 <pin id="29" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_17"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
 <comp id="30" class="1001" name="const_30">
 <pin_list>
-<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+<pin id="31" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_SpecLoopName"/></StgValue>
 </bind>
 </comp>
 
 <comp id="32" class="1001" name="const_32">
 <pin_list>
-<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+<pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="empty_16"/></StgValue>
 </bind>
 </comp>
 
@@ -454,7 +462,7 @@ ret_ln0                (ret              ) [ 000]
 
 <comp id="44" class="1004" name="out_nonmax_addr_gep_fu_44">
 <pin_list>
-<pin id="45" dir="0" index="0" bw="8" slack="0"/>
+<pin id="45" dir="0" index="0" bw="11" slack="0"/>
 <pin id="46" dir="0" index="1" bw="1" slack="0"/>
 <pin id="47" dir="0" index="2" bw="10" slack="0"/>
 <pin id="48" dir="1" index="3" bw="9" slack="0"/>
@@ -468,9 +476,9 @@ ret_ln0                (ret              ) [ 000]
 <comp id="51" class="1004" name="grp_access_fu_51">
 <pin_list>
 <pin id="52" dir="0" index="0" bw="9" slack="0"/>
-<pin id="53" dir="0" index="1" bw="8" slack="2147483647"/>
+<pin id="53" dir="0" index="1" bw="11" slack="2147483647"/>
 <pin id="54" dir="0" index="2" bw="0" slack="2147483647"/>
-<pin id="55" dir="1" index="3" bw="8" slack="0"/>
+<pin id="55" dir="1" index="3" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -482,12 +490,12 @@ ret_ln0                (ret              ) [ 000]
 <pin_list>
 <pin id="58" dir="0" index="0" bw="8" slack="0"/>
 <pin id="59" dir="0" index="1" bw="1" slack="0"/>
-<pin id="60" dir="0" index="2" bw="10" slack="1"/>
+<pin id="60" dir="0" index="2" bw="10" slack="2"/>
 <pin id="61" dir="1" index="3" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
-<opset="out_double_addr/2 "/>
+<opset="out_double_addr/3 "/>
 </bind>
 </comp>
 
@@ -500,7 +508,7 @@ ret_ln0                (ret              ) [ 000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln19/2 "/>
+<opset="store_ln19/3 "/>
 </bind>
 </comp>
 
@@ -531,7 +539,7 @@ ret_ln0                (ret              ) [ 000]
 <pin_list>
 <pin id="79" dir="0" index="0" bw="10" slack="0"/>
 <pin id="80" dir="0" index="1" bw="10" slack="0"/>
-<pin id="81" dir="1" index="2" bw="1" slack="2147483647"/>
+<pin id="81" dir="1" index="2" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -576,9 +584,9 @@ ret_ln0                (ret              ) [ 000]
 
 <comp id="100" class="1004" name="icmp_ln19_fu_100">
 <pin_list>
-<pin id="101" dir="0" index="0" bw="8" slack="0"/>
-<pin id="102" dir="0" index="1" bw="8" slack="0"/>
-<pin id="103" dir="1" index="2" bw="1" slack="0"/>
+<pin id="101" dir="0" index="0" bw="11" slack="0"/>
+<pin id="102" dir="0" index="1" bw="11" slack="0"/>
+<pin id="103" dir="1" index="2" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -588,9 +596,9 @@ ret_ln0                (ret              ) [ 000]
 
 <comp id="106" class="1004" name="icmp_ln22_fu_106">
 <pin_list>
-<pin id="107" dir="0" index="0" bw="8" slack="0"/>
-<pin id="108" dir="0" index="1" bw="8" slack="0"/>
-<pin id="109" dir="1" index="2" bw="1" slack="0"/>
+<pin id="107" dir="0" index="0" bw="11" slack="0"/>
+<pin id="108" dir="0" index="1" bw="11" slack="0"/>
+<pin id="109" dir="1" index="2" bw="1" slack="1"/>
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
@@ -600,57 +608,87 @@ ret_ln0                (ret              ) [ 000]
 
 <comp id="112" class="1004" name="select_ln19_1_fu_112">
 <pin_list>
-<pin id="113" dir="0" index="0" bw="1" slack="0"/>
+<pin id="113" dir="0" index="0" bw="1" slack="1"/>
 <pin id="114" dir="0" index="1" bw="8" slack="0"/>
 <pin id="115" dir="0" index="2" bw="8" slack="0"/>
 <pin id="116" dir="1" index="3" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln19_1/2 "/>
+<opset="select_ln19_1/3 "/>
 </bind>
 </comp>
 
-<comp id="120" class="1004" name="select_ln19_fu_120">
+<comp id="119" class="1004" name="select_ln19_fu_119">
 <pin_list>
-<pin id="121" dir="0" index="0" bw="1" slack="0"/>
-<pin id="122" dir="0" index="1" bw="8" slack="0"/>
-<pin id="123" dir="0" index="2" bw="8" slack="0"/>
-<pin id="124" dir="1" index="3" bw="8" slack="0"/>
+<pin id="120" dir="0" index="0" bw="1" slack="1"/>
+<pin id="121" dir="0" index="1" bw="8" slack="0"/>
+<pin id="122" dir="0" index="2" bw="8" slack="0"/>
+<pin id="123" dir="1" index="3" bw="8" slack="0"/>
 </pin_list>
 <bind>
 <opcode="select(49) " fcode="select"/>
-<opset="select_ln19/2 "/>
+<opset="select_ln19/3 "/>
 </bind>
 </comp>
 
-<comp id="129" class="1005" name="column_reg_129">
+<comp id="127" class="1005" name="column_reg_127">
 <pin_list>
-<pin id="130" dir="0" index="0" bw="10" slack="0"/>
-<pin id="131" dir="1" index="1" bw="10" slack="0"/>
+<pin id="128" dir="0" index="0" bw="10" slack="0"/>
+<pin id="129" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opset="column "/>
 </bind>
 </comp>
 
-<comp id="139" class="1005" name="zext_ln16_reg_139">
+<comp id="134" class="1005" name="icmp_ln16_reg_134">
 <pin_list>
-<pin id="140" dir="0" index="0" bw="64" slack="1"/>
-<pin id="141" dir="1" index="1" bw="64" slack="1"/>
+<pin id="135" dir="0" index="0" bw="1" slack="1"/>
+<pin id="136" dir="1" index="1" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<opset="icmp_ln16 "/>
+</bind>
+</comp>
+
+<comp id="138" class="1005" name="zext_ln16_reg_138">
+<pin_list>
+<pin id="139" dir="0" index="0" bw="64" slack="2"/>
+<pin id="140" dir="1" index="1" bw="64" slack="2"/>
 </pin_list>
 <bind>
 <opset="zext_ln16 "/>
 </bind>
 </comp>
 
-<comp id="144" class="1005" name="out_nonmax_addr_reg_144">
+<comp id="143" class="1005" name="out_nonmax_addr_reg_143">
 <pin_list>
-<pin id="145" dir="0" index="0" bw="9" slack="1"/>
-<pin id="146" dir="1" index="1" bw="9" slack="1"/>
+<pin id="144" dir="0" index="0" bw="9" slack="1"/>
+<pin id="145" dir="1" index="1" bw="9" slack="1"/>
 </pin_list>
 <bind>
 <opset="out_nonmax_addr "/>
+</bind>
+</comp>
+
+<comp id="148" class="1005" name="icmp_ln19_reg_148">
+<pin_list>
+<pin id="149" dir="0" index="0" bw="1" slack="1"/>
+<pin id="150" dir="1" index="1" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opset="icmp_ln19 "/>
+</bind>
+</comp>
+
+<comp id="153" class="1005" name="icmp_ln22_reg_153">
+<pin_list>
+<pin id="154" dir="0" index="0" bw="1" slack="1"/>
+<pin id="155" dir="1" index="1" bw="1" slack="1"/>
+</pin_list>
+<bind>
+<opset="icmp_ln22 "/>
 </bind>
 </comp>
 
@@ -689,41 +727,47 @@ ret_ln0                (ret              ) [ 000]
 
 <net id="104"><net_src comp="51" pin="3"/><net_sink comp="100" pin=0"/></net>
 
-<net id="105"><net_src comp="30" pin="0"/><net_sink comp="100" pin=1"/></net>
+<net id="105"><net_src comp="14" pin="0"/><net_sink comp="100" pin=1"/></net>
 
 <net id="110"><net_src comp="51" pin="3"/><net_sink comp="106" pin=0"/></net>
 
-<net id="111"><net_src comp="32" pin="0"/><net_sink comp="106" pin=1"/></net>
+<net id="111"><net_src comp="16" pin="0"/><net_sink comp="106" pin=1"/></net>
 
-<net id="117"><net_src comp="100" pin="2"/><net_sink comp="112" pin=0"/></net>
+<net id="117"><net_src comp="34" pin="0"/><net_sink comp="112" pin=1"/></net>
 
-<net id="118"><net_src comp="34" pin="0"/><net_sink comp="112" pin=1"/></net>
+<net id="118"><net_src comp="36" pin="0"/><net_sink comp="112" pin=2"/></net>
 
-<net id="119"><net_src comp="36" pin="0"/><net_sink comp="112" pin=2"/></net>
+<net id="124"><net_src comp="112" pin="3"/><net_sink comp="119" pin=1"/></net>
 
-<net id="125"><net_src comp="106" pin="2"/><net_sink comp="120" pin=0"/></net>
+<net id="125"><net_src comp="38" pin="0"/><net_sink comp="119" pin=2"/></net>
 
-<net id="126"><net_src comp="112" pin="3"/><net_sink comp="120" pin=1"/></net>
+<net id="126"><net_src comp="119" pin="3"/><net_sink comp="64" pin=1"/></net>
 
-<net id="127"><net_src comp="38" pin="0"/><net_sink comp="120" pin=2"/></net>
+<net id="130"><net_src comp="40" pin="1"/><net_sink comp="127" pin=0"/></net>
 
-<net id="128"><net_src comp="120" pin="3"/><net_sink comp="64" pin=1"/></net>
+<net id="131"><net_src comp="127" pin="1"/><net_sink comp="70" pin=1"/></net>
 
-<net id="132"><net_src comp="40" pin="1"/><net_sink comp="129" pin=0"/></net>
+<net id="132"><net_src comp="127" pin="1"/><net_sink comp="75" pin=0"/></net>
 
-<net id="133"><net_src comp="129" pin="1"/><net_sink comp="70" pin=1"/></net>
+<net id="133"><net_src comp="127" pin="1"/><net_sink comp="95" pin=1"/></net>
 
-<net id="134"><net_src comp="129" pin="1"/><net_sink comp="75" pin=0"/></net>
+<net id="137"><net_src comp="78" pin="2"/><net_sink comp="134" pin=0"/></net>
 
-<net id="135"><net_src comp="129" pin="1"/><net_sink comp="95" pin=1"/></net>
+<net id="141"><net_src comp="90" pin="1"/><net_sink comp="138" pin=0"/></net>
 
-<net id="142"><net_src comp="90" pin="1"/><net_sink comp="139" pin=0"/></net>
+<net id="142"><net_src comp="138" pin="1"/><net_sink comp="57" pin=2"/></net>
 
-<net id="143"><net_src comp="139" pin="1"/><net_sink comp="57" pin=2"/></net>
+<net id="146"><net_src comp="44" pin="3"/><net_sink comp="143" pin=0"/></net>
 
-<net id="147"><net_src comp="44" pin="3"/><net_sink comp="144" pin=0"/></net>
+<net id="147"><net_src comp="143" pin="1"/><net_sink comp="51" pin=0"/></net>
 
-<net id="148"><net_src comp="144" pin="1"/><net_sink comp="51" pin=0"/></net>
+<net id="151"><net_src comp="100" pin="2"/><net_sink comp="148" pin=0"/></net>
+
+<net id="152"><net_src comp="148" pin="1"/><net_sink comp="112" pin=0"/></net>
+
+<net id="156"><net_src comp="106" pin="2"/><net_sink comp="153" pin=0"/></net>
+
+<net id="157"><net_src comp="153" pin="1"/><net_sink comp="119" pin=0"/></net>
 
 </net_list>
 
@@ -733,7 +777,7 @@ ret_ln0                (ret              ) [ 000]
 * FSMD analyzer results:
   - Output states:
 	Port: out_nonmax | {}
-	Port: out_double | {2 }
+	Port: out_double | {3 }
  - Input state : 
 	Port: double_threshold_Pipeline_VITIS_LOOP_16_1 : out_nonmax | {1 2 }
 	Port: double_threshold_Pipeline_VITIS_LOOP_16_1 : out_double | {}
@@ -751,9 +795,9 @@ ret_ln0                (ret              ) [ 000]
 	State 2
 		icmp_ln19 : 1
 		icmp_ln22 : 1
-		select_ln19_1 : 2
-		select_ln19 : 3
-		store_ln19 : 4
+	State 3
+		select_ln19 : 1
+		store_ln19 : 2
 
 
 ============================================================
@@ -765,17 +809,17 @@ ret_ln0                (ret              ) [ 000]
 | Operation|    Functional Unit   |    FF   |   LUT   |
 |----------|----------------------|---------|---------|
 |          |    icmp_ln16_fu_78   |    0    |    17   |
-|   icmp   |   icmp_ln19_fu_100   |    0    |    15   |
-|          |   icmp_ln22_fu_106   |    0    |    15   |
+|   icmp   |   icmp_ln19_fu_100   |    0    |    18   |
+|          |   icmp_ln22_fu_106   |    0    |    18   |
 |----------|----------------------|---------|---------|
 |    add   |    add_ln16_fu_84    |    0    |    17   |
 |----------|----------------------|---------|---------|
 |  select  | select_ln19_1_fu_112 |    0    |    8    |
-|          |  select_ln19_fu_120  |    0    |    8    |
+|          |  select_ln19_fu_119  |    0    |    8    |
 |----------|----------------------|---------|---------|
 |   zext   |    zext_ln16_fu_90   |    0    |    0    |
 |----------|----------------------|---------|---------|
-|   Total  |                      |    0    |    80   |
+|   Total  |                      |    0    |    86   |
 |----------|----------------------|---------|---------|
 
 Memories:
@@ -785,11 +829,14 @@ N/A
 +-----------------------+--------+
 |                       |   FF   |
 +-----------------------+--------+
-|     column_reg_129    |   10   |
-|out_nonmax_addr_reg_144|    9   |
-|   zext_ln16_reg_139   |   64   |
+|     column_reg_127    |   10   |
+|   icmp_ln16_reg_134   |    1   |
+|   icmp_ln19_reg_148   |    1   |
+|   icmp_ln22_reg_153   |    1   |
+|out_nonmax_addr_reg_143|    9   |
+|   zext_ln16_reg_138   |   64   |
 +-----------------------+--------+
-|         Total         |   83   |
+|         Total         |   86   |
 +-----------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -807,10 +854,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    -   |    0   |   80   |
+|  Function |    -   |    0   |   86   |
 |   Memory  |    -   |    -   |    -   |
 |Multiplexer|    0   |    0   |    9   |
-|  Register |    -   |   83   |    -   |
+|  Register |    -   |   86   |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    0   |   83   |   89   |
+|   Total   |    0   |   86   |   95   |
 +-----------+--------+--------+--------+

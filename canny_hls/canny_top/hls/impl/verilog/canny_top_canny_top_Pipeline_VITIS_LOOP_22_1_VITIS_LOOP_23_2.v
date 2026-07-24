@@ -43,11 +43,11 @@ output  [1:0] p_anonymous_namespace_lineBuffer_direction_d0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
+output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
 
 reg ap_idle;
 
@@ -57,40 +57,40 @@ wire    ap_enable_reg_pp0_iter0;
 reg    ap_enable_reg_pp0_iter1;
 reg    ap_idle_pp0;
 wire    ap_block_pp0_stage0_subdone;
-wire   [0:0] icmp_ln22_fu_125_p2;
+wire   [0:0] icmp_ln22_fu_123_p2;
 reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
-reg   [10:0] p_anonymous_namespace_lineBuffer_direction_addr_reg_267;
+reg   [10:0] p_anonymous_namespace_lineBuffer_direction_addr_reg_265;
 wire    ap_block_pp0_stage0_11001;
-wire   [63:0] zext_ln25_1_fu_189_p1;
+wire   [63:0] zext_ln25_1_fu_187_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln24_fu_216_p1;
-reg   [9:0] column_9_fu_54;
-wire   [9:0] add_ln23_fu_222_p2;
+wire   [63:0] zext_ln24_fu_214_p1;
+reg   [9:0] column_9_fu_52;
+wire   [9:0] add_ln23_fu_220_p2;
 wire    ap_loop_init;
 reg   [9:0] ap_sig_allocacmp_column_9_load;
-reg   [1:0] row_fu_58;
-wire   [1:0] select_ln22_4_fu_163_p3;
+reg   [1:0] row_fu_56;
+wire   [1:0] select_ln22_4_fu_161_p3;
 reg   [1:0] ap_sig_allocacmp_row_load;
-reg   [10:0] indvar_flatten13_fu_62;
-wire   [10:0] add_ln22_4_fu_131_p2;
+reg   [10:0] indvar_flatten13_fu_60;
+wire   [10:0] add_ln22_4_fu_129_p2;
 reg   [10:0] ap_sig_allocacmp_indvar_flatten13_load;
 reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local;
-wire   [0:0] trunc_ln23_fu_194_p1;
+wire   [0:0] trunc_ln23_fu_192_p1;
 reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local;
 reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local;
 reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local;
 reg    p_anonymous_namespace_lineBuffer_direction_we0_local;
 reg    p_anonymous_namespace_lineBuffer_direction_ce0_local;
-wire   [0:0] icmp_ln23_fu_149_p2;
-wire   [1:0] add_ln22_fu_143_p2;
-wire   [9:0] select_ln22_fu_155_p3;
-wire   [10:0] tmp_s_fu_171_p3;
-wire   [10:0] zext_ln25_fu_179_p1;
-wire   [10:0] add_ln25_fu_183_p2;
-wire   [7:0] lshr_ln_fu_198_p4;
-wire   [9:0] tmp_54_fu_208_p3;
+wire   [0:0] icmp_ln23_fu_147_p2;
+wire   [1:0] add_ln22_fu_141_p2;
+wire   [9:0] select_ln22_fu_153_p3;
+wire   [10:0] tmp_s_fu_169_p3;
+wire   [10:0] zext_ln25_fu_177_p1;
+wire   [10:0] add_ln25_fu_181_p2;
+wire   [7:0] lshr_ln_fu_196_p4;
+wire   [9:0] tmp_74_fu_206_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -105,9 +105,9 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
-#0 column_9_fu_54 = 10'd0;
-#0 row_fu_58 = 2'd0;
-#0 indvar_flatten13_fu_62 = 11'd0;
+#0 column_9_fu_52 = 10'd0;
+#0 row_fu_56 = 2'd0;
+#0 indvar_flatten13_fu_60 = 11'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -160,42 +160,42 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln22_fu_125_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            column_9_fu_54 <= add_ln23_fu_222_p2;
+        if (((icmp_ln22_fu_123_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            column_9_fu_52 <= add_ln23_fu_220_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            column_9_fu_54 <= 10'd0;
+            column_9_fu_52 <= 10'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln22_fu_125_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            indvar_flatten13_fu_62 <= add_ln22_4_fu_131_p2;
+        if (((icmp_ln22_fu_123_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            indvar_flatten13_fu_60 <= add_ln22_4_fu_129_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            indvar_flatten13_fu_62 <= 11'd0;
+            indvar_flatten13_fu_60 <= 11'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        if (((icmp_ln22_fu_125_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            row_fu_58 <= select_ln22_4_fu_163_p3;
+        if (((icmp_ln22_fu_123_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
+            row_fu_56 <= select_ln22_4_fu_161_p3;
         end else if ((ap_loop_init == 1'b1)) begin
-            row_fu_58 <= 2'd0;
+            row_fu_56 <= 2'd0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_direction_addr_reg_267 <= zext_ln25_1_fu_189_p1;
+        p_anonymous_namespace_lineBuffer_direction_addr_reg_265 <= zext_ln25_1_fu_187_p1;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln22_fu_125_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+    if (((icmp_ln22_fu_123_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
         ap_condition_exit_pp0_iter0_stage0 = 1'b0;
@@ -238,7 +238,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_column_9_load = 10'd0;
     end else begin
-        ap_sig_allocacmp_column_9_load = column_9_fu_54;
+        ap_sig_allocacmp_column_9_load = column_9_fu_52;
     end
 end
 
@@ -246,7 +246,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_indvar_flatten13_load = 11'd0;
     end else begin
-        ap_sig_allocacmp_indvar_flatten13_load = indvar_flatten13_fu_62;
+        ap_sig_allocacmp_indvar_flatten13_load = indvar_flatten13_fu_60;
     end
 end
 
@@ -254,7 +254,7 @@ always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         ap_sig_allocacmp_row_load = 2'd0;
     end else begin
-        ap_sig_allocacmp_row_load = row_fu_58;
+        ap_sig_allocacmp_row_load = row_fu_56;
     end
 end
 
@@ -267,7 +267,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln22_fu_125_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln23_fu_194_p1 == 1'd0))) begin
+    if (((icmp_ln22_fu_123_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln23_fu_192_p1 == 1'd0))) begin
         p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local = 1'b1;
     end else begin
         p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local = 1'b0;
@@ -283,7 +283,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((icmp_ln22_fu_125_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln23_fu_194_p1 == 1'd1))) begin
+    if (((icmp_ln22_fu_123_p2 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (trunc_ln23_fu_192_p1 == 1'd1))) begin
         p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local = 1'b1;
     end else begin
         p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local = 1'b0;
@@ -317,13 +317,13 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln22_4_fu_131_p2 = (ap_sig_allocacmp_indvar_flatten13_load + 11'd1);
+assign add_ln22_4_fu_129_p2 = (ap_sig_allocacmp_indvar_flatten13_load + 11'd1);
 
-assign add_ln22_fu_143_p2 = (ap_sig_allocacmp_row_load + 2'd1);
+assign add_ln22_fu_141_p2 = (ap_sig_allocacmp_row_load + 2'd1);
 
-assign add_ln23_fu_222_p2 = (select_ln22_fu_155_p3 + 10'd1);
+assign add_ln23_fu_220_p2 = (select_ln22_fu_153_p3 + 10'd1);
 
-assign add_ln25_fu_183_p2 = (tmp_s_fu_171_p3 + zext_ln25_fu_179_p1);
+assign add_ln25_fu_181_p2 = (tmp_s_fu_169_p3 + zext_ln25_fu_177_p1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -343,29 +343,29 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln22_fu_125_p2 = ((ap_sig_allocacmp_indvar_flatten13_load == 11'd1536) ? 1'b1 : 1'b0);
+assign icmp_ln22_fu_123_p2 = ((ap_sig_allocacmp_indvar_flatten13_load == 11'd1536) ? 1'b1 : 1'b0);
 
-assign icmp_ln23_fu_149_p2 = ((ap_sig_allocacmp_column_9_load == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln23_fu_147_p2 = ((ap_sig_allocacmp_column_9_load == 10'd512) ? 1'b1 : 1'b0);
 
-assign lshr_ln_fu_198_p4 = {{select_ln22_fu_155_p3[8:1]}};
+assign lshr_ln_fu_196_p4 = {{select_ln22_fu_153_p3[8:1]}};
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 = zext_ln24_fu_216_p1;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 = zext_ln24_fu_214_p1;
 
 assign p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 = p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 = 8'd0;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 = 11'd0;
 
 assign p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 = p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 = zext_ln24_fu_216_p1;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 = zext_ln24_fu_214_p1;
 
 assign p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 = p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = 8'd0;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = 11'd0;
 
 assign p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local;
 
-assign p_anonymous_namespace_lineBuffer_direction_address0 = p_anonymous_namespace_lineBuffer_direction_addr_reg_267;
+assign p_anonymous_namespace_lineBuffer_direction_address0 = p_anonymous_namespace_lineBuffer_direction_addr_reg_265;
 
 assign p_anonymous_namespace_lineBuffer_direction_ce0 = p_anonymous_namespace_lineBuffer_direction_ce0_local;
 
@@ -373,20 +373,20 @@ assign p_anonymous_namespace_lineBuffer_direction_d0 = 2'd0;
 
 assign p_anonymous_namespace_lineBuffer_direction_we0 = p_anonymous_namespace_lineBuffer_direction_we0_local;
 
-assign select_ln22_4_fu_163_p3 = ((icmp_ln23_fu_149_p2[0:0] == 1'b1) ? add_ln22_fu_143_p2 : ap_sig_allocacmp_row_load);
+assign select_ln22_4_fu_161_p3 = ((icmp_ln23_fu_147_p2[0:0] == 1'b1) ? add_ln22_fu_141_p2 : ap_sig_allocacmp_row_load);
 
-assign select_ln22_fu_155_p3 = ((icmp_ln23_fu_149_p2[0:0] == 1'b1) ? 10'd0 : ap_sig_allocacmp_column_9_load);
+assign select_ln22_fu_153_p3 = ((icmp_ln23_fu_147_p2[0:0] == 1'b1) ? 10'd0 : ap_sig_allocacmp_column_9_load);
 
-assign tmp_54_fu_208_p3 = {{select_ln22_4_fu_163_p3}, {lshr_ln_fu_198_p4}};
+assign tmp_74_fu_206_p3 = {{select_ln22_4_fu_161_p3}, {lshr_ln_fu_196_p4}};
 
-assign tmp_s_fu_171_p3 = {{select_ln22_4_fu_163_p3}, {9'd0}};
+assign tmp_s_fu_169_p3 = {{select_ln22_4_fu_161_p3}, {9'd0}};
 
-assign trunc_ln23_fu_194_p1 = select_ln22_fu_155_p3[0:0];
+assign trunc_ln23_fu_192_p1 = select_ln22_fu_153_p3[0:0];
 
-assign zext_ln24_fu_216_p1 = tmp_54_fu_208_p3;
+assign zext_ln24_fu_214_p1 = tmp_74_fu_206_p3;
 
-assign zext_ln25_1_fu_189_p1 = add_ln25_fu_183_p2;
+assign zext_ln25_1_fu_187_p1 = add_ln25_fu_181_p2;
 
-assign zext_ln25_fu_179_p1 = select_ln22_fu_155_p3;
+assign zext_ln25_fu_177_p1 = select_ln22_fu_153_p3;
 
 endmodule //canny_top_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2

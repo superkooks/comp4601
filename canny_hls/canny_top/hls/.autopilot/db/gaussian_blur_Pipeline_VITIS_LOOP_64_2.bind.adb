@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>result_15</name>
+						<name>result_11</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -493,7 +493,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>result_15_read</name>
+						<name>result_11_read</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1193,7 +1193,7 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>tmp_30</name>
+						<name>tmp_50</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -1365,7 +1365,7 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>tmp_31</name>
+						<name>tmp_51</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -1537,7 +1537,7 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>tmp_32</name>
+						<name>tmp_52</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -1709,7 +1709,7 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>tmp_33</name>
+						<name>tmp_53</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -2228,7 +2228,7 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>lshr_ln3</name>
+						<name>lshr_ln9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -2287,7 +2287,7 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>tmp_34</name>
+						<name>tmp_54</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -2459,7 +2459,7 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>tmp_35</name>
+						<name>tmp_55</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -2631,7 +2631,7 @@
 					<Obj>
 						<type>0</type>
 						<id>56</id>
-						<name>tmp_36</name>
+						<name>tmp_56</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -2803,7 +2803,7 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>tmp_37</name>
+						<name>tmp_57</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -2975,7 +2975,7 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>tmp_38</name>
+						<name>tmp_58</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -3779,7 +3779,7 @@
 					<Obj>
 						<type>0</type>
 						<id>76</id>
-						<name>tmp_39</name>
+						<name>tmp_59</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -3951,7 +3951,7 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>tmp_40</name>
+						<name>tmp_60</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -4123,7 +4123,7 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>tmp_41</name>
+						<name>tmp_61</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -4295,7 +4295,7 @@
 					<Obj>
 						<type>0</type>
 						<id>85</id>
-						<name>tmp_42</name>
+						<name>tmp_62</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -4467,7 +4467,7 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>tmp_43</name>
+						<name>tmp_63</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -5441,7 +5441,7 @@
 					<Obj>
 						<type>0</type>
 						<id>105</id>
-						<name>tmp_44</name>
+						<name>tmp_64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -5613,7 +5613,7 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>tmp_45</name>
+						<name>tmp_65</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -5785,7 +5785,7 @@
 					<Obj>
 						<type>0</type>
 						<id>111</id>
-						<name>tmp_46</name>
+						<name>tmp_66</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -5957,7 +5957,7 @@
 					<Obj>
 						<type>0</type>
 						<id>114</id>
-						<name>tmp_47</name>
+						<name>tmp_67</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -6129,7 +6129,7 @@
 					<Obj>
 						<type>0</type>
 						<id>117</id>
-						<name>tmp_48</name>
+						<name>tmp_68</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -6818,7 +6818,7 @@
 					<Obj>
 						<type>0</type>
 						<id>129</id>
-						<name>tmp_49</name>
+						<name>tmp_69</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -6990,7 +6990,7 @@
 					<Obj>
 						<type>0</type>
 						<id>132</id>
-						<name>tmp_50</name>
+						<name>tmp_70</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -7162,7 +7162,7 @@
 					<Obj>
 						<type>0</type>
 						<id>135</id>
-						<name>tmp_51</name>
+						<name>tmp_71</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -7334,7 +7334,7 @@
 					<Obj>
 						<type>0</type>
 						<id>138</id>
-						<name>tmp_52</name>
+						<name>tmp_72</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -7506,7 +7506,7 @@
 					<Obj>
 						<type>0</type>
 						<id>141</id>
-						<name>tmp_53</name>
+						<name>tmp_73</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -12112,7 +12112,7 @@
 					<Obj>
 						<type>0</type>
 						<id>222</id>
-						<name>tmp_19</name>
+						<name>tmp_15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
@@ -12226,7 +12226,7 @@
 					<Obj>
 						<type>0</type>
 						<id>224</id>
-						<name>tmp_20</name>
+						<name>tmp_16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
@@ -12903,7 +12903,7 @@
 					<Obj>
 						<type>0</type>
 						<id>236</id>
-						<name>empty_42</name>
+						<name>empty_40</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -13979,7 +13979,7 @@
 					<Obj>
 						<type>0</type>
 						<id>255</id>
-						<name>tmp_21</name>
+						<name>tmp_17</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -14374,7 +14374,7 @@
 					<Obj>
 						<type>0</type>
 						<id>262</id>
-						<name>empty_43</name>
+						<name>empty_41</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
@@ -15196,7 +15196,7 @@
 					<Obj>
 						<type>0</type>
 						<id>276</id>
-						<name>tmp_22</name>
+						<name>tmp_18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
@@ -27533,7 +27533,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_42_fu_940</first>
+			<first>empty_40_fu_940</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -27541,7 +27541,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_43_fu_851</first>
+			<first>empty_41_fu_851</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -27624,14 +27624,6 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln3_fu_635</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>49</item>
-			</second>
-		</item>
-		<item>
 			<first>lshr_ln93_1_fu_663</first>
 			<second>
 				<count>1</count>
@@ -27645,6 +27637,14 @@
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>104</item>
+			</second>
+		</item>
+		<item>
+			<first>lshr_ln9_fu_635</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>49</item>
 			</second>
 		</item>
 		<item>
@@ -28440,7 +28440,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_19_fu_1008</first>
+			<first>tmp_15_fu_1008</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28448,7 +28448,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_20_fu_1020</first>
+			<first>tmp_16_fu_1020</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28456,7 +28456,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_21_fu_1349</first>
+			<first>tmp_17_fu_1349</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28464,7 +28464,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_22_fu_1295</first>
+			<first>tmp_18_fu_1295</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28472,7 +28472,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_30_fu_787</first>
+			<first>tmp_50_fu_787</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28480,7 +28480,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_31_fu_863</first>
+			<first>tmp_51_fu_863</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28488,7 +28488,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_32_fu_1080</first>
+			<first>tmp_52_fu_1080</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28496,7 +28496,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_33_fu_1138</first>
+			<first>tmp_53_fu_1138</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28504,7 +28504,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_34_fu_645</first>
+			<first>tmp_54_fu_645</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28512,7 +28512,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_35_fu_719</first>
+			<first>tmp_55_fu_719</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28520,7 +28520,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_36_fu_875</first>
+			<first>tmp_56_fu_875</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28528,7 +28528,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_37_fu_952</first>
+			<first>tmp_57_fu_952</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28536,7 +28536,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_38_fu_1150</first>
+			<first>tmp_58_fu_1150</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28544,7 +28544,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_39_fu_673</first>
+			<first>tmp_59_fu_673</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28552,7 +28552,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_40_fu_731</first>
+			<first>tmp_60_fu_731</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28560,7 +28560,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_41_fu_803</first>
+			<first>tmp_61_fu_803</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28568,7 +28568,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_42_fu_887</first>
+			<first>tmp_62_fu_887</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28576,7 +28576,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_43_fu_964</first>
+			<first>tmp_63_fu_964</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28584,7 +28584,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_44_fu_701</first>
+			<first>tmp_64_fu_701</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28592,7 +28592,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_45_fu_743</first>
+			<first>tmp_65_fu_743</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28600,7 +28600,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_46_fu_815</first>
+			<first>tmp_66_fu_815</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28608,7 +28608,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_47_fu_899</first>
+			<first>tmp_67_fu_899</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28616,7 +28616,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_48_fu_980</first>
+			<first>tmp_68_fu_980</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28624,7 +28624,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_49_fu_760</first>
+			<first>tmp_69_fu_760</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28632,7 +28632,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_50_fu_827</first>
+			<first>tmp_70_fu_827</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28640,7 +28640,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_51_fu_992</first>
+			<first>tmp_71_fu_992</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28648,7 +28648,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_52_fu_1092</first>
+			<first>tmp_72_fu_1092</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -28656,7 +28656,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_53_fu_1224</first>
+			<first>tmp_73_fu_1224</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -29088,7 +29088,7 @@
 			</second>
 		</item>
 		<item>
-			<first>result_15_read_read_fu_104</first>
+			<first>result_11_read_read_fu_104</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -30026,7 +30026,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_42_reg_1695</first>
+			<first>empty_40_reg_1695</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -30034,7 +30034,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_43_reg_1640</first>
+			<first>empty_41_reg_1640</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -30058,14 +30058,6 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln3_reg_1493</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>49</item>
-			</second>
-		</item>
-		<item>
 			<first>lshr_ln93_1_reg_1511</first>
 			<second>
 				<count>1</count>
@@ -30079,6 +30071,14 @@
 				<count>1</count>
 				<item_version>0</item_version>
 				<item>104</item>
+			</second>
+		</item>
+		<item>
+			<first>lshr_ln9_reg_1493</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>49</item>
 			</second>
 		</item>
 		<item>
@@ -30509,7 +30509,7 @@
 			</second>
 		</item>
 		<item>
-			<first>result_15_read_reg_1433</first>
+			<first>result_11_read_reg_1433</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -30812,7 +30812,7 @@
 			</second>
 		</item>
 		<item>
-			<first>result_15</first>
+			<first>result_11</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

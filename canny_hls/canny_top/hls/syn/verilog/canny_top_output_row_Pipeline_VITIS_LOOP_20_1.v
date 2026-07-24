@@ -164,8 +164,8 @@ reg   [9:0] ap_sig_allocacmp_i_1;
 reg    out_hysteresis4_ce0_local;
 wire   [5:0] trunc_ln20_fu_133_p1;
 wire  signed [497:0] sext_ln20_fu_151_p0;
-wire  signed [497:0] tmp_18_fu_155_p1;
-wire   [489:0] tmp_18_fu_155_p4;
+wire  signed [497:0] tmp_14_fu_155_p1;
+wire   [489:0] tmp_14_fu_155_p4;
 wire  signed [495:0] sext_ln20_2_fu_165_p1;
 wire   [497:0] tmp_s_fu_169_p3;
 wire   [505:0] tmp_fu_195_p3;
@@ -477,15 +477,15 @@ assign out_hysteresis4_ce0 = out_hysteresis4_ce0_local;
 
 assign select_ln21_fu_177_p3 = ((icmp_ln21_reg_234[0:0] == 1'b1) ? 498'd0 : tmp_s_fu_169_p3);
 
-assign sext_ln20_2_fu_165_p1 = $signed(tmp_18_fu_155_p4);
+assign sext_ln20_2_fu_165_p1 = $signed(tmp_14_fu_155_p4);
 
 assign sext_ln20_fu_151_p0 = phi_ln21_fu_64;
 
 assign sext_ln20_fu_151_p1 = sext_ln20_fu_151_p0;
 
-assign tmp_18_fu_155_p1 = phi_ln21_fu_64;
+assign tmp_14_fu_155_p1 = phi_ln21_fu_64;
 
-assign tmp_18_fu_155_p4 = {{tmp_18_fu_155_p1[497:8]}};
+assign tmp_14_fu_155_p4 = {{tmp_14_fu_155_p1[497:8]}};
 
 assign tmp_fu_195_p3 = {{out_hysteresis4_load_reg_244}, {sext_ln20_reg_239}};
 

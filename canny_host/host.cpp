@@ -56,6 +56,10 @@ void CannyFPGA::process_frame() {
 }
 
 class CannyCV {
+    private:
+    cv::Mat gray_mat;
+    cv::Mat blur_mat;
+
     public:
     cv::Mat in_mat;
     cv::Mat out_mat;
@@ -66,11 +70,15 @@ class CannyCV {
 
 CannyCV::CannyCV() {
     in_mat = cv::Mat(HEIGHT, WIDTH, CV_8UC3);
+    gray_mat = cv::Mat(HEIGHT, WIDTH, CV_8U);
+    blur_mat = cv::Mat(HEIGHT, WIDTH, CV_8U);
     out_mat = cv::Mat(HEIGHT, WIDTH, CV_8U);
 }
 
 void CannyCV::process_frame() {
-    cv::Canny(in_mat, out_mat, LOW_THRESHOLD, HIGH_THRESHOLD);
+    cv::cvtColor(in_mat, gray_mat, cv::COLOR_BGR2GRAY);
+    cv::GaussianBlur(gray_mat, blur_mat, cv::Size(5,5), 0);
+    cv::Canny(blur_mat, out_mat, LOW_THRESHOLD, HIGH_THRESHOLD);
 }
 
 int main(int argc, char** argv) {
@@ -82,6 +90,7 @@ int main(int argc, char** argv) {
     img_mat.copyTo(processor.in_mat);
     processor.process_frame();
     cv::imshow("Output", processor.out_mat);
+    cv::imwrite("out.jpg", processor.out_mat);
 
     for (;;)
         if (cv::waitKey(0) == 'q')

@@ -18,7 +18,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename out_sobel_magnitude \
     op interface \
-    ports { out_sobel_magnitude_address0 { O 9 vector } out_sobel_magnitude_ce0 { O 1 bit } out_sobel_magnitude_we0 { O 1 bit } out_sobel_magnitude_d0 { O 8 vector } } \
+    ports { out_sobel_magnitude_address0 { O 9 vector } out_sobel_magnitude_ce0 { O 1 bit } out_sobel_magnitude_we0 { O 1 bit } out_sobel_magnitude_d0 { O 11 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_sobel_magnitude'"

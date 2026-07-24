@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/non_maximum_suppression.cpp:23~../src/canny_top.cpp:44~../src/canny_top.cpp:9</SourceLocation>
+<SourceLocation>../src/non_maximum_suppression.cpp:23~../src/canny_top.cpp:45~../src/canny_top.cpp:10</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_22_1_VITIS_LOOP_23_2>
 <Name>VITIS_LOOP_22_1_VITIS_LOOP_23_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/non_maximum_suppression.cpp:22~../src/canny_top.cpp:44~../src/canny_top.cpp:9</SourceLocation>
+<SourceLocation>../src/non_maximum_suppression.cpp:22~../src/canny_top.cpp:45~../src/canny_top.cpp:10</SourceLocation>
 </VITIS_LOOP_22_1_VITIS_LOOP_23_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -230,7 +230,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -274,7 +274,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 </InterfaceSummary>

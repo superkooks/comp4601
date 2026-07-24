@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_parent_loop_proc'
 ================================================================
-* Date:           Fri Jul 24 16:27:49 2026
+* Date:           Fri Jul 24 22:33:46 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -29,24 +29,24 @@
     |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
     |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
     +---------+---------+----------+-----------+--------+---------+---------+
-    |   831194|  2405624|  4.156 ms|  12.028 ms|  831194|  2405624|       no|
+    |   831194|  2411692|  4.156 ms|  12.058 ms|  831194|  2411692|       no|
     +---------+---------+----------+-----------+--------+---------+---------+
 
     + Detail: 
         * Instance: 
-        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |                                               |                                    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
-        |                    Instance                   |               Module               |   min   |   max   |    min    |    max    |  min |  max |   Type   |
-        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |grp_dataflow_in_loop_VITIS_LOOP_11_1_1_fu_124  |dataflow_in_loop_VITIS_LOOP_11_1_1  |     2184|    17607|  10.920 us|  88.035 us|  1616|  4655|  dataflow|
-        +-----------------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+------+----------+
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+----------+------+------+----------+
+        |                                               |                                    |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline |
+        |                    Instance                   |               Module               |   min   |   max   |    min    |    max   |  min |  max |   Type   |
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+----------+------+------+----------+
+        |grp_dataflow_in_loop_VITIS_LOOP_12_1_1_fu_124  |dataflow_in_loop_VITIS_LOOP_12_1_1  |     2184|    23675|  10.920 us|  0.118 ms|  1616|  4655|  dataflow|
+        +-----------------------------------------------+------------------------------------+---------+---------+-----------+----------+------+------+----------+
 
         * Loop: 
         +-------------------+---------+---------+--------------+-----------+-----------+------+----------+
         |                   |  Latency (cycles) |   Iteration  |  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |    Latency   |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+--------------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_11_1  |   831193|  2405623|  2186 ~ 17609|          -|          -|   514|        no|
+        |- VITIS_LOOP_12_1  |   831193|  2411691|  2186 ~ 23677|          -|          -|   514|        no|
         +-------------------+---------+---------+--------------+-----------+-----------+------+----------+
 
 ============================================================
@@ -90,25 +90,25 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.42>
 ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i64 %out_r, i1 1, void @p_str"   --->   Operation 4 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i64 %in_r, i1 1, void @p_str"   --->   Operation 5 'specstablecontent' 'specstablecontent_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_10, i32 64, i32 0, void @empty_9, void @empty_8, void @empty_10, i32 16, i32 16, i32 16, i32 16, void @empty_10, void @empty_10, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_22, i32 64, i32 0, void @empty_10, void @empty_13, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%out_r_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %out_r"   --->   Operation 7 'read' 'out_r_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%in_r_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %in_r"   --->   Operation 8 'read' 'in_r_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.42ns)   --->   "%br_ln0 = br void %for.cond"   --->   Operation 9 'br' 'br_ln0' <Predicate = true> <Delay = 0.42>
 
 State 2 <SV = 1> <Delay = 2.95>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%i = phi i10 0, void %newFuncRoot, i10 %add_ln11, void %codeRepl" [../src/canny_top.cpp:11]   --->   Operation 10 'phi' 'i' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.78ns)   --->   "%icmp_ln11 = icmp_eq  i10 %i, i10 514" [../src/canny_top.cpp:11]   --->   Operation 11 'icmp' 'icmp_ln11' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 12 [1/1] (0.78ns)   --->   "%add_ln11 = add i10 %i, i10 1" [../src/canny_top.cpp:11]   --->   Operation 12 'add' 'add_ln11' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln11 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i10 %i, i10 514, i32 0, i10 0, i10 1, i32 1" [../src/canny_top.cpp:11]   --->   Operation 13 'specdataflowpipeline' 'specdataflowpipeline_ln11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln11 = br i1 %icmp_ln11, void %codeRepl, void %for.end.exitStub" [../src/canny_top.cpp:11]   --->   Operation 14 'br' 'br_ln11' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 15 [2/2] (2.17ns)   --->   "%call_ln23 = call void @dataflow_in_loop_VITIS_LOOP_11_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:23]   --->   Operation 15 'call' 'call_ln23' <Predicate = (!icmp_ln11)> <Delay = 2.17> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 16 'ret' 'ret_ln0' <Predicate = (icmp_ln11)> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%i = phi i10 0, void %newFuncRoot, i10 %add_ln12, void %codeRepl" [../src/canny_top.cpp:12]   --->   Operation 10 'phi' 'i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.78ns)   --->   "%icmp_ln12 = icmp_eq  i10 %i, i10 514" [../src/canny_top.cpp:12]   --->   Operation 11 'icmp' 'icmp_ln12' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.78ns)   --->   "%add_ln12 = add i10 %i, i10 1" [../src/canny_top.cpp:12]   --->   Operation 12 'add' 'add_ln12' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%specdataflowpipeline_ln12 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i10 %i, i10 514, i32 0, i10 0, i10 1, i32 1" [../src/canny_top.cpp:12]   --->   Operation 13 'specdataflowpipeline' 'specdataflowpipeline_ln12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln12 = br i1 %icmp_ln12, void %codeRepl, void %for.end.exitStub" [../src/canny_top.cpp:12]   --->   Operation 14 'br' 'br_ln12' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [2/2] (2.17ns)   --->   "%call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:24]   --->   Operation 15 'call' 'call_ln24' <Predicate = (!icmp_ln12)> <Delay = 2.17> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 16 'ret' 'ret_ln0' <Predicate = (icmp_ln12)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 0.00>
-ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln23 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 514, i64 514, i64 514" [../src/canny_top.cpp:23]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln23' <Predicate = (!icmp_ln11)> <Delay = 0.00>
-ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln11 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [../src/canny_top.cpp:11]   --->   Operation 18 'specloopname' 'specloopname_ln11' <Predicate = (!icmp_ln11)> <Delay = 0.00>
-ST_3 : Operation 19 [1/2] (0.00ns)   --->   "%call_ln23 = call void @dataflow_in_loop_VITIS_LOOP_11_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:23]   --->   Operation 19 'call' 'call_ln23' <Predicate = (!icmp_ln11)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln11 = br void %for.cond" [../src/canny_top.cpp:11]   --->   Operation 20 'br' 'br_ln11' <Predicate = (!icmp_ln11)> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 514, i64 514, i64 514" [../src/canny_top.cpp:24]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln24' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln12 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [../src/canny_top.cpp:12]   --->   Operation 18 'specloopname' 'specloopname_ln12' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_3 : Operation 19 [1/2] (0.00ns)   --->   "%call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:24]   --->   Operation 19 'call' 'call_ln24' <Predicate = (!icmp_ln12)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%br_ln12 = br void %for.cond" [../src/canny_top.cpp:12]   --->   Operation 20 'br' 'br_ln12' <Predicate = (!icmp_ln12)> <Delay = 0.00>
 
 
 ============================================================
@@ -139,14 +139,14 @@ Port [ p_anonymous_namespace_rowsReceived_1_s]:  wired=1; compound=0; hidden=0; 
 Port [ p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_anonymous_namespace_rowsReceived_2_s]:  wired=1; compound=0; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_anonymous_namespace_rowsReceived_3_s]:  wired=1; compound=0; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_anonymous_namespace_rowsReceived_4_s]:  wired=1; compound=0; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1]:  wired=1; compound=1; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=0; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ rowsReceived]:  wired=1; compound=0; hidden=0; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=0; IO mode=ap_ovld:ce=0
 ---------------- STG Properties END ------------------
 
@@ -161,15 +161,15 @@ out_r_read                (read                ) [ 0011]
 in_r_read                 (read                ) [ 0011]
 br_ln0                    (br                  ) [ 0111]
 i                         (phi                 ) [ 0011]
-icmp_ln11                 (icmp                ) [ 0011]
-add_ln11                  (add                 ) [ 0111]
-specdataflowpipeline_ln11 (specdataflowpipeline) [ 0000]
-br_ln11                   (br                  ) [ 0000]
+icmp_ln12                 (icmp                ) [ 0011]
+add_ln12                  (add                 ) [ 0111]
+specdataflowpipeline_ln12 (specdataflowpipeline) [ 0000]
+br_ln12                   (br                  ) [ 0000]
 ret_ln0                   (ret                 ) [ 0000]
-speclooptripcount_ln23    (speclooptripcount   ) [ 0000]
-specloopname_ln11         (specloopname        ) [ 0000]
-call_ln23                 (call                ) [ 0000]
-br_ln11                   (br                  ) [ 0111]
+speclooptripcount_ln24    (speclooptripcount   ) [ 0000]
+specloopname_ln12         (specloopname        ) [ 0000]
+call_ln24                 (call                ) [ 0000]
+br_ln12                   (br                  ) [ 0111]
 </LifeTime>
 
 <model>
@@ -343,7 +343,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="35" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -353,7 +353,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -372,7 +372,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="41" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -382,7 +382,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="43" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -401,7 +401,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="47" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -411,7 +411,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="49" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -484,7 +484,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -502,7 +502,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_9"/></StgValue>
+<StgValue><ssdm name="empty_10"/></StgValue>
 </bind>
 </comp>
 
@@ -511,7 +511,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="71" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -601,7 +601,7 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="91" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="dataflow_in_loop_VITIS_LOOP_11_1.1"/></StgValue>
+<StgValue><ssdm name="dataflow_in_loop_VITIS_LOOP_12_1.1"/></StgValue>
 </bind>
 </comp>
 
@@ -689,7 +689,7 @@ br_ln11                   (br                  ) [ 0111]
 </bind>
 </comp>
 
-<comp id="124" class="1004" name="grp_dataflow_in_loop_VITIS_LOOP_11_1_1_fu_124">
+<comp id="124" class="1004" name="grp_dataflow_in_loop_VITIS_LOOP_12_1_1_fu_124">
 <pin_list>
 <pin id="125" dir="0" index="0" bw="0" slack="0"/>
 <pin id="126" dir="0" index="1" bw="10" slack="0"/>
@@ -704,30 +704,30 @@ br_ln11                   (br                  ) [ 0111]
 <pin id="135" dir="0" index="10" bw="8" slack="0"/>
 <pin id="136" dir="0" index="11" bw="32" slack="0"/>
 <pin id="137" dir="0" index="12" bw="2" slack="0"/>
-<pin id="138" dir="0" index="13" bw="8" slack="0"/>
-<pin id="139" dir="0" index="14" bw="8" slack="0"/>
+<pin id="138" dir="0" index="13" bw="11" slack="0"/>
+<pin id="139" dir="0" index="14" bw="11" slack="0"/>
 <pin id="140" dir="0" index="15" bw="32" slack="0"/>
 <pin id="141" dir="0" index="16" bw="8" slack="0"/>
 <pin id="142" dir="0" index="17" bw="8" slack="0"/>
 <pin id="143" dir="0" index="18" bw="32" slack="0"/>
-<pin id="144" dir="0" index="19" bw="2" slack="0"/>
-<pin id="145" dir="0" index="20" bw="2" slack="0"/>
+<pin id="144" dir="0" index="19" bw="8" slack="0"/>
+<pin id="145" dir="0" index="20" bw="8" slack="0"/>
 <pin id="146" dir="0" index="21" bw="32" slack="0"/>
-<pin id="147" dir="0" index="22" bw="2" slack="0"/>
-<pin id="148" dir="0" index="23" bw="2" slack="0"/>
+<pin id="147" dir="0" index="22" bw="8" slack="0"/>
+<pin id="148" dir="0" index="23" bw="8" slack="0"/>
 <pin id="149" dir="0" index="24" bw="32" slack="0"/>
-<pin id="150" dir="0" index="25" bw="2" slack="0"/>
-<pin id="151" dir="0" index="26" bw="2" slack="0"/>
+<pin id="150" dir="0" index="25" bw="8" slack="0"/>
+<pin id="151" dir="0" index="26" bw="8" slack="0"/>
 <pin id="152" dir="0" index="27" bw="32" slack="0"/>
 <pin id="153" dir="1" index="28" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln23/2 "/>
+<opset="call_ln24/2 "/>
 </bind>
 </comp>
 
-<comp id="180" class="1004" name="icmp_ln11_fu_180">
+<comp id="180" class="1004" name="icmp_ln12_fu_180">
 <pin_list>
 <pin id="181" dir="0" index="0" bw="10" slack="0"/>
 <pin id="182" dir="0" index="1" bw="10" slack="0"/>
@@ -735,11 +735,11 @@ br_ln11                   (br                  ) [ 0111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln11/2 "/>
+<opset="icmp_ln12/2 "/>
 </bind>
 </comp>
 
-<comp id="186" class="1004" name="add_ln11_fu_186">
+<comp id="186" class="1004" name="add_ln12_fu_186">
 <pin_list>
 <pin id="187" dir="0" index="0" bw="10" slack="0"/>
 <pin id="188" dir="0" index="1" bw="1" slack="0"/>
@@ -747,7 +747,7 @@ br_ln11                   (br                  ) [ 0111]
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln11/2 "/>
+<opset="add_ln12/2 "/>
 </bind>
 </comp>
 
@@ -771,23 +771,23 @@ br_ln11                   (br                  ) [ 0111]
 </bind>
 </comp>
 
-<comp id="202" class="1005" name="icmp_ln11_reg_202">
+<comp id="202" class="1005" name="icmp_ln12_reg_202">
 <pin_list>
 <pin id="203" dir="0" index="0" bw="1" slack="1"/>
 <pin id="204" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln11 "/>
+<opset="icmp_ln12 "/>
 </bind>
 </comp>
 
-<comp id="206" class="1005" name="add_ln11_reg_206">
+<comp id="206" class="1005" name="add_ln12_reg_206">
 <pin_list>
 <pin id="207" dir="0" index="0" bw="10" slack="0"/>
 <pin id="208" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
-<opset="add_ln11 "/>
+<opset="add_ln12 "/>
 </bind>
 </comp>
 
@@ -943,11 +943,11 @@ br_ln11                   (br                  ) [ 0111]
   - Chain level:
 	State 1
 	State 2
-		icmp_ln11 : 1
-		add_ln11 : 1
-		specdataflowpipeline_ln11 : 1
-		br_ln11 : 2
-		call_ln23 : 1
+		icmp_ln12 : 1
+		add_ln12 : 1
+		specdataflowpipeline_ln12 : 1
+		br_ln12 : 2
+		call_ln24 : 1
 	State 3
 
 
@@ -959,16 +959,16 @@ br_ln11                   (br                  ) [ 0111]
 |----------|-----------------------------------------------|---------|---------|---------|---------|---------|---------|
 | Operation|                Functional Unit                |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|-----------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   call   | grp_dataflow_in_loop_VITIS_LOOP_11_1_1_fu_124 |    10   |    6    | 39.6369 |  15482  |  17727  |    0    |
+|   call   | grp_dataflow_in_loop_VITIS_LOOP_12_1_1_fu_124 |    10   |    4    | 50.2109 |  17067  |  19027  |    0    |
 |----------|-----------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   icmp   |                icmp_ln11_fu_180               |    0    |    0    |    0    |    0    |    17   |    0    |
+|   icmp   |                icmp_ln12_fu_180               |    0    |    0    |    0    |    0    |    17   |    0    |
 |----------|-----------------------------------------------|---------|---------|---------|---------|---------|---------|
-|    add   |                add_ln11_fu_186                |    0    |    0    |    0    |    0    |    17   |    0    |
+|    add   |                add_ln12_fu_186                |    0    |    0    |    0    |    0    |    17   |    0    |
 |----------|-----------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   read   |             out_r_read_read_fu_100            |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |             in_r_read_read_fu_106             |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|-----------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                               |    10   |    6    | 39.6369 |  15482  |  17761  |    0    |
+|   Total  |                                               |    10   |    4    | 50.2109 |  17067  |  19061  |    0    |
 |----------|-----------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -978,9 +978,9 @@ N/A
 +------------------+--------+
 |                  |   FF   |
 +------------------+--------+
-| add_ln11_reg_206 |   10   |
+| add_ln12_reg_206 |   10   |
 |     i_reg_112    |   10   |
-| icmp_ln11_reg_202|    1   |
+| icmp_ln12_reg_202|    1   |
 | in_r_read_reg_197|   64   |
 |out_r_read_reg_192|   64   |
 +------------------+--------+
@@ -1002,10 +1002,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   10   |    6   |   39   |  15482 |  17761 |    0   |
+|  Function |   10   |    4   |   50   |  17067 |  19061 |    0   |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    0   |    0   |    9   |    -   |
 |  Register |    -   |    -   |    -   |   149  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   10   |    6   |   40   |  15631 |  17770 |    0   |
+|   Total   |   10   |    4   |   50   |  17216 |  19070 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

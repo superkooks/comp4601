@@ -157,8 +157,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>result_15</name>
-<Object>result_15</Object>
+<name>result_11</name>
+<Object>result_11</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>

@@ -18,32 +18,32 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.420</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.626</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>1</Best-caseLatency>
-<Average-caseLatency>549</Average-caseLatency>
-<Worst-caseLatency>2187</Worst-caseLatency>
+<Average-caseLatency>538</Average-caseLatency>
+<Worst-caseLatency>2122</Worst-caseLatency>
 <Best-caseRealTimeLatency>5.000 ns</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.745 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>10.935 us</Worst-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.690 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>10.610 us</Worst-caseRealTimeLatency>
 <Interval-min>1</Interval-min>
-<Interval-max>2187</Interval-max>
+<Interval-max>2122</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/sobel.cpp:76~../src/canny_top.cpp:30</SourceLocation>
+<SourceLocation>../src/sobel.cpp:76~../src/canny_top.cpp:31</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
-<DSP>4</DSP>
-<FF>2056</FF>
-<LUT>3768</LUT>
+<DSP>2</DSP>
+<FF>1481</FF>
+<LUT>2359</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -230,7 +230,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>8</Bits>
+<Bits>11</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

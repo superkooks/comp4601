@@ -514,7 +514,7 @@ enum class GradientDirection : std::uint8_t {
 };
 
 struct GradientPixel {
-    std::uint8_t magnitude;
+    std::uint16_t magnitude;
     GradientDirection direction;
 };
 # 8 "../src/canny_stages.h" 2
@@ -539,13 +539,13 @@ void sobel(
 
 void non_maximum_suppression(
     const GradientPixel input[WIDTH],
-    std::uint8_t output[WIDTH],
+    std::uint16_t output[WIDTH],
     bool valid_in,
     bool *valid_out
 );
 
 void double_threshold(
-    const std::uint8_t input[WIDTH],
+    const std::uint16_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
     bool *valid_out
@@ -556,7 +556,8 @@ void hysteresis(
     const std::uint8_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
-    bool *valid_out
+    bool *valid_out,
+    std::uint8_t resolve_weak
 );
 
 void output_row(const uint8_t input[WIDTH], uint8_t out[WIDTH*HEIGHT], bool valid);
@@ -565,10 +566,10 @@ void reset_canny_stages();
 void gaussian_blur_reset();
 void sobel_reset();
 void non_maximum_suppression_reset();
+void output_row_reset();
 
 template <int Instance>
 void hysteresis_reset();
-void output_row_reset();
 
 __attribute__((sdx_kernel("canny_top", 0))) void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]);
 # 2 "../src/canny_top.cpp" 2
@@ -578,19 +579,20 @@ __attribute__((sdx_kernel("canny_top", 0))) void canny_top(struct RGBPixel in[WI
 
 
 
+
 __attribute__((sdx_kernel("canny_top", 0))) void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
 #line 1 "directive"
 #pragma HLSDIRECTIVE TOP name=canny_top
-# 8 "../src/canny_top.cpp"
+# 9 "../src/canny_top.cpp"
 
     reset_canny_stages();
 
-    VITIS_LOOP_11_1: for (int i = 0; i < HEIGHT+2; i++) {
+    VITIS_LOOP_12_1: for (int i = 0; i < HEIGHT+2; i++) {
 #pragma HLS DATAFLOW
         uint8_t out_grayscale[WIDTH];
         uint8_t out_gaussian[WIDTH];
         struct GradientPixel out_sobel[WIDTH];
-        uint8_t out_nonmax[WIDTH];
+        uint16_t out_nonmax[WIDTH];
         uint8_t out_double[WIDTH];
         uint8_t out_hysteresis1[WIDTH], out_hysteresis2[WIDTH], out_hysteresis3[WIDTH], out_hysteresis4[WIDTH];
         bool gaussian_valid;
@@ -607,10 +609,10 @@ __attribute__((sdx_kernel("canny_top", 0))) void canny_top(struct RGBPixel in[WI
         sobel(out_gaussian, out_sobel, gaussian_valid, &sobel_valid);
         non_maximum_suppression(out_sobel, out_nonmax, sobel_valid, &nonmax_valid);
         double_threshold(out_nonmax, out_double, nonmax_valid, &double_valid);
-        hysteresis<1>(out_double, out_hysteresis1, double_valid, &hysteresis1_valid);
-        hysteresis<2>(out_hysteresis1, out_hysteresis2, hysteresis1_valid, &hysteresis2_valid);
-        hysteresis<3>(out_hysteresis2, out_hysteresis3, hysteresis2_valid, &hysteresis3_valid);
-        hysteresis<4>(out_hysteresis3, out_hysteresis4, hysteresis3_valid, &hysteresis4_valid);
+        hysteresis<1>(out_double, out_hysteresis1, double_valid, &hysteresis1_valid, WEAK_EDGE);
+        hysteresis<2>(out_hysteresis1, out_hysteresis2, hysteresis1_valid, &hysteresis2_valid, WEAK_EDGE);
+        hysteresis<3>(out_hysteresis2, out_hysteresis3, hysteresis2_valid, &hysteresis3_valid, WEAK_EDGE);
+        hysteresis<4>(out_hysteresis3, out_hysteresis4, hysteresis3_valid, &hysteresis4_valid, NON_EDGE);
         output_row(out_hysteresis4, out, hysteresis4_valid);
     }
 }

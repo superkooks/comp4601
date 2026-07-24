@@ -51,12 +51,12 @@ output   ap_ready;
 output  [8:0] out_nonmax_address0;
 output   out_nonmax_ce0;
 output   out_nonmax_we0;
-output  [7:0] out_nonmax_d0;
+output  [10:0] out_nonmax_d0;
 input  [10:0] zext_ln46;
 input  [1:0] empty;
 output  [8:0] out_sobel_magnitude_address0;
 output   out_sobel_magnitude_ce0;
-input  [7:0] out_sobel_magnitude_q0;
+input  [10:0] out_sobel_magnitude_q0;
 output  [8:0] out_sobel_direction_address0;
 output   out_sobel_direction_ce0;
 input  [1:0] out_sobel_direction_q0;
@@ -67,11 +67,11 @@ output  [1:0] p_anonymous_namespace_lineBuffer_direction_d0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
+output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
 
 reg ap_idle;
 
@@ -362,7 +362,7 @@ assign out_nonmax_address0 = zext_ln45_fu_172_p1;
 
 assign out_nonmax_ce0 = out_nonmax_ce0_local;
 
-assign out_nonmax_d0 = 8'd0;
+assign out_nonmax_d0 = 11'd0;
 
 assign out_nonmax_we0 = out_nonmax_we0_local;
 

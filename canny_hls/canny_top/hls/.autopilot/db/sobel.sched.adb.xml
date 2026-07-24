@@ -1216,9 +1216,9 @@ if.end.i:3 %trunc_ln86 = trunc i2 %writeSlot
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
+if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln86"/></StgValue>
@@ -1234,9 +1234,9 @@ if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
+<Node id="15" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
+if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln86"/></StgValue>
@@ -1251,7 +1251,7 @@ if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel
 
 <Node id="18" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-if.end.i:7 %br_ln101 = br i1 %icmp_ln101, void %if.end12.i, void %cleanup76.i
+if.end.i:7 %br_ln101 = br i1 %icmp_ln101, void %if.end12.i, void %cleanup70.i
 
 ]]></Node>
 <StgValue><ssdm name="br_ln101"/></StgValue>
@@ -1315,7 +1315,7 @@ if.end12.i:2 %icmp_ln112 = icmp_sgt  i32 %outputRow, i32 510
 
 <Node id="23" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-if.end12.i:3 %br_ln112 = br i1 %icmp_ln112, void %VITIS_LOOP_118_2.i, void %cleanup76.i
+if.end12.i:3 %br_ln112 = br i1 %icmp_ln112, void %VITIS_LOOP_118_2.i, void %cleanup70.i
 
 ]]></Node>
 <StgValue><ssdm name="br_ln112"/></StgValue>
@@ -1366,10 +1366,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1399,10 +1399,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1432,10 +1432,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1465,10 +1465,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1498,10 +1498,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1531,10 +1531,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1564,10 +1564,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1597,10 +1597,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1630,10 +1630,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1663,10 +1663,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1696,10 +1696,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1729,10 +1729,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1762,10 +1762,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1795,10 +1795,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1828,10 +1828,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1861,10 +1861,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1894,10 +1894,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1927,10 +1927,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1960,10 +1960,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1993,10 +1993,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2026,10 +2026,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2059,10 +2059,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2092,10 +2092,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2125,10 +2125,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2158,10 +2158,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2191,10 +2191,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2224,10 +2224,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2257,10 +2257,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2290,10 +2290,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2323,10 +2323,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2356,10 +2356,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2389,10 +2389,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2422,10 +2422,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2455,10 +2455,10 @@ VITIS_LOOP_118_2.i:1 %urem_ln26 = urem i31 %add_ln26, i31 3
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2503,10 +2503,10 @@ VITIS_LOOP_118_2.i:2 %empty = trunc i2 %urem_ln26
 
 <Node id="28" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
+VITIS_LOOP_118_2.i:3 %result_1 = urem i31 %trunc_ln107, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_7"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 
 <operation id="195" st_id="71" stage="1" lat="1">
@@ -2518,7 +2518,7 @@ VITIS_LOOP_118_2.i:3 %result_7 = urem i31 %trunc_ln107, i31 3
 
 <Node id="29" bw="2" op_0_bw="2">
 <![CDATA[
-VITIS_LOOP_118_2.i:4 %trunc_ln118 = trunc i2 %result_7
+VITIS_LOOP_118_2.i:4 %trunc_ln118 = trunc i2 %result_1
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln118"/></StgValue>
@@ -2531,9 +2531,9 @@ VITIS_LOOP_118_2.i:4 %trunc_ln118 = trunc i2 %result_7
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
+<Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="11" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
+VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln26"/></StgValue>
@@ -2552,9 +2552,9 @@ VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2
 </and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
+<Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="11" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
+VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln26"/></StgValue>
@@ -2572,7 +2572,7 @@ VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2
 
 <Node id="31" bw="0" op_0_bw="0">
 <![CDATA[
-VITIS_LOOP_118_2.i:6 %br_ln0 = br void %cleanup76.i
+VITIS_LOOP_118_2.i:6 %br_ln0 = br void %cleanup70.i
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -2588,7 +2588,7 @@ VITIS_LOOP_118_2.i:6 %br_ln0 = br void %cleanup76.i
 
 <Node id="33" bw="1" op_0_bw="1" op_1_bw="0" op_2_bw="1" op_3_bw="0" op_4_bw="1" op_5_bw="0">
 <![CDATA[
-cleanup76.i:0 %sobel_valid_2 = phi i1 0, void %if.end.i, i1 0, void %if.end12.i, i1 1, void %VITIS_LOOP_118_2.i
+cleanup70.i:0 %sobel_valid_2 = phi i1 0, void %if.end.i, i1 0, void %if.end12.i, i1 1, void %VITIS_LOOP_118_2.i
 
 ]]></Node>
 <StgValue><ssdm name="sobel_valid_2"/></StgValue>
@@ -2604,7 +2604,7 @@ cleanup76.i:0 %sobel_valid_2 = phi i1 0, void %if.end.i, i1 0, void %if.end12.i,
 
 <Node id="34" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_1_load, i32 1
+cleanup70.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_1_load, i32 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln102"/></StgValue>
@@ -2620,7 +2620,7 @@ cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_1_load, i
 
 <Node id="35" bw="0" op_0_bw="32" op_1_bw="32" op_2_bw="0">
 <![CDATA[
-cleanup76.i:2 %store_ln102 = store i32 %add_ln102, i32 %p_anonymous_namespace_rowsReceived_1
+cleanup70.i:2 %store_ln102 = store i32 %add_ln102, i32 %p_anonymous_namespace_rowsReceived_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln102"/></StgValue>
@@ -2636,7 +2636,7 @@ cleanup76.i:2 %store_ln102 = store i32 %add_ln102, i32 %p_anonymous_namespace_ro
 
 <Node id="36" bw="0" op_0_bw="0">
 <![CDATA[
-cleanup76.i:3 %br_ln0 = br void %newFuncRoot.aft.aft.aft.aft.exitStub
+cleanup70.i:3 %br_ln0 = br void %newFuncRoot.aft.aft.aft.aft.exitStub
 
 ]]></Node>
 <StgValue><ssdm name="br_ln0"/></StgValue>
@@ -2651,7 +2651,7 @@ cleanup76.i:3 %br_ln0 = br void %newFuncRoot.aft.aft.aft.aft.exitStub
 
 <Node id="38" bw="1" op_0_bw="1" op_1_bw="0" op_2_bw="1" op_3_bw="0">
 <![CDATA[
-newFuncRoot.aft.aft.aft.aft.exitStub:0 %valid_out_write_assign = phi i1 %sobel_valid_2, void %cleanup76.i, i1 0, void %newFuncRoot
+newFuncRoot.aft.aft.aft.aft.exitStub:0 %valid_out_write_assign = phi i1 %sobel_valid_2, void %cleanup70.i, i1 0, void %newFuncRoot
 
 ]]></Node>
 <StgValue><ssdm name="valid_out_write_assign"/></StgValue>

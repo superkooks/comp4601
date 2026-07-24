@@ -73,7 +73,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <direction>0</direction>
           <if_type>1</if_type>
@@ -128,7 +128,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>p_read_6</name>
+              <name>p_read_8</name>
               <fileName>../src/double_threshold.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>6</lineNumber>
@@ -145,9 +145,9 @@
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
                       </first>
-                      <second>32</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
@@ -209,9 +209,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
                       </first>
-                      <second>32</second>
+                      <second>33</second>
                     </item>
                     <item>
                       <first>
@@ -594,7 +594,7 @@
           <Obj>
             <type>3</type>
             <id>12</id>
-            <name>_Z16double_thresholdPKhPhbPb.4.exit</name>
+            <name>_Z16double_thresholdPKtPhbPb.4.exit</name>
             <fileName></fileName>
             <fileDirectory></fileDirectory>
             <lineNumber>0</lineNumber>
@@ -764,7 +764,7 @@
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
         <mMinLatency>1</mMinLatency>
-        <mMaxLatency>515</mMaxLatency>
+        <mMaxLatency>516</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -854,11 +854,11 @@
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
               <first>FF</first>
-              <second>23</second>
+              <second>37</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>120</second>
+              <second>126</second>
             </item>
           </second>
         </item>
@@ -1067,7 +1067,7 @@
           </second>
         </item>
         <item>
-          <first>p_read_6_reg_40</first>
+          <first>p_read_8_reg_40</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1274,7 +1274,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read_6_read_fu_14</first>
+        <first>p_read_8_read_fu_14</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1322,7 +1322,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read_6_reg_40</first>
+        <first>p_read_8_reg_40</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_81_2'
 ================================================================
-* Date:           Fri Jul 24 16:27:50 2026
+* Date:           Fri Jul 24 22:33:47 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  2.788 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  2.813 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
 +-----------------+---------+------+--------+--------+-----+
 |DSP              |        -|     -|       -|       -|    -|
-|Expression       |        -|     -|       0|     152|    -|
+|Expression       |        -|     -|       0|     170|    -|
 |FIFO             |        -|     -|       -|       -|    -|
 |Instance         |        -|     -|       -|       -|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       0|     201|    -|
-|Register         |        -|     -|      60|       -|    -|
+|Register         |        -|     -|      66|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     0|      60|     353|    0|
+|Total            |        0|     0|      66|     371|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -90,20 +90,20 @@
     |grp_fu_309_p2               |         +|   0|  0|  16|           9|           1|
     |and_ln123_fu_566_p2         |       and|   0|  0|   2|           1|           1|
     |ap_condition_209            |       and|   0|  0|   2|           1|           1|
-    |icmp_ln123_fu_544_p2        |      icmp|   0|  0|  15|           8|           8|
-    |icmp_ln124_fu_555_p2        |      icmp|   0|  0|  15|           8|           8|
+    |icmp_ln123_fu_544_p2        |      icmp|   0|  0|  18|          11|          11|
+    |icmp_ln124_fu_555_p2        |      icmp|   0|  0|  18|          11|          11|
     |icmp_ln81_fu_352_p2         |      icmp|   0|  0|  16|           9|           2|
-    |centre_magnitude_fu_422_p3  |    select|   0|  0|   8|           1|           8|
-    |grp_fu_324_p3               |    select|   0|  0|   8|           1|           8|
-    |grp_fu_334_p3               |    select|   0|  0|   8|           1|           8|
-    |neighbourOne_3_fu_528_p3    |    select|   0|  0|   8|           1|           8|
-    |neighbourTwo_3_fu_536_p3    |    select|   0|  0|   8|           1|           8|
-    |select_ln123_fu_572_p3      |    select|   0|  0|   8|           1|           8|
+    |centre_magnitude_fu_422_p3  |    select|   0|  0|  10|           1|          11|
+    |grp_fu_324_p3               |    select|   0|  0|  10|           1|          11|
+    |grp_fu_334_p3               |    select|   0|  0|  10|           1|          11|
+    |neighbourOne_3_fu_528_p3    |    select|   0|  0|  10|           1|          11|
+    |neighbourTwo_3_fu_536_p3    |    select|   0|  0|  10|           1|          11|
+    |select_ln123_fu_572_p3      |    select|   0|  0|  10|           1|          11|
     |ap_enable_pp0               |       xor|   0|  0|   2|           1|           2|
     |xor_ln123_fu_549_p2         |       xor|   0|  0|   2|           1|           2|
     |xor_ln124_fu_560_p2         |       xor|   0|  0|   2|           1|           2|
     +----------------------------+----------+----+---+----+------------+------------+
-    |Total                       |          |   0|  0| 152|          63|          78|
+    |Total                       |          |   0|  0| 170|          69|         102|
     +----------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -114,8 +114,8 @@
     |ap_done_int                                                     |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter0                                         |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1                                         |   9|          2|    1|          2|
-    |ap_phi_mux_neighbourOne_4_phi_fu_271_p8                         |  14|          3|    8|         24|
-    |ap_phi_mux_neighbourTwo_4_phi_fu_284_p8                         |  14|          3|    8|         24|
+    |ap_phi_mux_neighbourOne_4_phi_fu_271_p8                         |  14|          3|   11|         33|
+    |ap_phi_mux_neighbourTwo_4_phi_fu_284_p8                         |  14|          3|   11|         33|
     |ap_sig_allocacmp_column_2                                       |   9|          2|    9|         18|
     |column_fu_58                                                    |   9|          2|    9|         18|
     |p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local  |  31|          6|   10|         60|
@@ -123,29 +123,29 @@
     |p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local  |  31|          6|   10|         60|
     |p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local  |  26|          5|   10|         50|
     +----------------------------------------------------------------+----+-----------+-----+-----------+
-    |Total                                                           | 201|         41|   78|        313|
+    |Total                                                           | 201|         41|   84|        331|
     +----------------------------------------------------------------+----+-----------+-----+-----------+
 
     * Register: 
-    +--------------------------------+---+----+-----+-----------+
-    |              Name              | FF| LUT| Bits| Const Bits|
-    +--------------------------------+---+----+-----+-----------+
-    |ap_CS_fsm                       |  2|   0|    2|          0|
-    |ap_done_reg                     |  1|   0|    1|          0|
-    |ap_enable_reg_pp0_iter0_reg     |  1|   0|    1|          0|
-    |ap_enable_reg_pp0_iter1         |  1|   0|    1|          0|
-    |centre_direction_reg_679        |  2|   0|    2|          0|
-    |centre_magnitude_reg_672        |  8|   0|    8|          0|
-    |column_2_reg_610                |  9|   0|    9|          0|
-    |column_2_reg_610_pp0_iter1_reg  |  9|   0|    9|          0|
-    |column_fu_58                    |  9|   0|    9|          0|
-    |icmp_ln81_reg_619               |  1|   0|    1|          0|
-    |lshr_ln3_reg_628                |  8|   0|    8|          0|
-    |select_ln123_reg_743            |  8|   0|    8|          0|
-    |trunc_ln81_reg_644              |  1|   0|    1|          0|
-    +--------------------------------+---+----+-----+-----------+
-    |Total                           | 60|   0|   60|          0|
-    +--------------------------------+---+----+-----+-----------+
+    +--------------------------------+----+----+-----+-----------+
+    |              Name              | FF | LUT| Bits| Const Bits|
+    +--------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                       |   2|   0|    2|          0|
+    |ap_done_reg                     |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter0_reg     |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1         |   1|   0|    1|          0|
+    |centre_direction_reg_679        |   2|   0|    2|          0|
+    |centre_magnitude_reg_672        |  11|   0|   11|          0|
+    |column_2_reg_610                |   9|   0|    9|          0|
+    |column_2_reg_610_pp0_iter1_reg  |   9|   0|    9|          0|
+    |column_fu_58                    |   9|   0|    9|          0|
+    |icmp_ln81_reg_619               |   1|   0|    1|          0|
+    |lshr_ln3_reg_628                |   8|   0|    8|          0|
+    |select_ln123_reg_743            |  11|   0|   11|          0|
+    |trunc_ln81_reg_644              |   1|   0|    1|          0|
+    +--------------------------------+----+----+-----+-----------+
+    |Total                           |  66|   0|   66|          0|
+    +--------------------------------+----+----+-----+-----------+
 
 
 
@@ -165,22 +165,22 @@
 |out_nonmax_address0                                       |  out|    9|   ap_memory|                                        out_nonmax|         array|
 |out_nonmax_ce0                                            |  out|    1|   ap_memory|                                        out_nonmax|         array|
 |out_nonmax_we0                                            |  out|    1|   ap_memory|                                        out_nonmax|         array|
-|out_nonmax_d0                                             |  out|    8|   ap_memory|                                        out_nonmax|         array|
-|result_9                                                  |   in|    2|     ap_none|                                          result_9|        scalar|
+|out_nonmax_d0                                             |  out|   11|   ap_memory|                                        out_nonmax|         array|
+|result_2                                                  |   in|    2|     ap_none|                                          result_2|        scalar|
 |result                                                    |   in|    2|     ap_none|                                            result|        scalar|
 |empty                                                     |   in|    2|     ap_none|                                             empty|        scalar|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_address0  |  out|   10|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0       |  out|    1|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_q0        |   in|    8|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_q0        |   in|   11|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_address1  |  out|   10|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1       |  out|    1|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_q1        |   in|    8|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_q1        |   in|   11|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_address0  |  out|   10|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0       |  out|    1|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_q0        |   in|    8|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_q0        |   in|   11|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_address1  |  out|   10|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1       |  out|    1|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_q1        |   in|    8|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_q1        |   in|   11|   ap_memory|   p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_direction_address0       |  out|   11|   ap_memory|        p_anonymous_namespace_lineBuffer_direction|         array|
 |p_anonymous_namespace_lineBuffer_direction_ce0            |  out|    1|   ap_memory|        p_anonymous_namespace_lineBuffer_direction|         array|
 |p_anonymous_namespace_lineBuffer_direction_q0             |   in|    2|   ap_memory|        p_anonymous_namespace_lineBuffer_direction|         array|

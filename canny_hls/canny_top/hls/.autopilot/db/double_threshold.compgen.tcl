@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 125 \
+    id 117 \
     name out_nonmax \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename out_nonmax \
     op interface \
-    ports { out_nonmax_address0 { O 9 vector } out_nonmax_ce0 { O 1 bit } out_nonmax_q0 { I 8 vector } } \
+    ports { out_nonmax_address0 { O 9 vector } out_nonmax_ce0 { O 1 bit } out_nonmax_q0 { I 11 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_nonmax'"
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 126 \
+    id 118 \
     name out_double \
     reset_level 1 \
     sync_rst true \
@@ -48,7 +48,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 124 \
+    id 116 \
     name p_read \
     type other \
     dir I \

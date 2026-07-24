@@ -1,4 +1,5 @@
 #include "canny_stages.h"
+#include "config.h"
 
 // static void hysteresis1(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
 // static void hysteresis2(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
@@ -13,7 +14,7 @@ void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
         uint8_t out_grayscale[WIDTH];
         uint8_t out_gaussian[WIDTH];
         struct GradientPixel out_sobel[WIDTH];
-        uint8_t out_nonmax[WIDTH];
+        uint16_t out_nonmax[WIDTH];
         uint8_t out_double[WIDTH];
         uint8_t out_hysteresis1[WIDTH], out_hysteresis2[WIDTH], out_hysteresis3[WIDTH], out_hysteresis4[WIDTH];
         bool gaussian_valid;
@@ -30,10 +31,10 @@ void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
         sobel(out_gaussian, out_sobel, gaussian_valid, &sobel_valid);
         non_maximum_suppression(out_sobel, out_nonmax, sobel_valid, &nonmax_valid);
         double_threshold(out_nonmax, out_double, nonmax_valid, &double_valid);
-        hysteresis<1>(out_double, out_hysteresis1, double_valid, &hysteresis1_valid);
-        hysteresis<2>(out_hysteresis1, out_hysteresis2, hysteresis1_valid, &hysteresis2_valid);
-        hysteresis<3>(out_hysteresis2, out_hysteresis3, hysteresis2_valid, &hysteresis3_valid);
-        hysteresis<4>(out_hysteresis3, out_hysteresis4, hysteresis3_valid, &hysteresis4_valid);
+        hysteresis<1>(out_double, out_hysteresis1, double_valid, &hysteresis1_valid, WEAK_EDGE);
+        hysteresis<2>(out_hysteresis1, out_hysteresis2, hysteresis1_valid, &hysteresis2_valid, WEAK_EDGE);
+        hysteresis<3>(out_hysteresis2, out_hysteresis3, hysteresis2_valid, &hysteresis3_valid, WEAK_EDGE);
+        hysteresis<4>(out_hysteresis3, out_hysteresis4, hysteresis3_valid, &hysteresis4_valid, NON_EDGE);
         output_row(out_hysteresis4, out, hysteresis4_valid);
     }
 }

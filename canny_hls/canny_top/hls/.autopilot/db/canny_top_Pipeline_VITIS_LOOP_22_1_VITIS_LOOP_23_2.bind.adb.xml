@@ -415,7 +415,7 @@ for.inc11.i.i:13 %trunc_ln23 = trunc i10 %select_ln22
 
 <Node id="31" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc11.i.i:14 %specpipeline_ln23 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
+for.inc11.i.i:14 %specpipeline_ln23 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln23"/></StgValue>
@@ -447,10 +447,10 @@ for.inc11.i.i:15 %lshr_ln = partselect i8 @_ssdm_op_PartSelect.i8.i10.i32.i32, i
 
 <Node id="33" bw="10" op_0_bw="10" op_1_bw="2" op_2_bw="8">
 <![CDATA[
-for.inc11.i.i:16 %tmp_54 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %select_ln22_4, i8 %lshr_ln
+for.inc11.i.i:16 %tmp_74 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %select_ln22_4, i8 %lshr_ln
 
 ]]></Node>
-<StgValue><ssdm name="tmp_54"/></StgValue>
+<StgValue><ssdm name="tmp_74"/></StgValue>
 </operation>
 
 <operation id="33" st_id="1" stage="1" lat="1">
@@ -463,7 +463,7 @@ for.inc11.i.i:16 %tmp_54 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8
 
 <Node id="34" bw="64" op_0_bw="10">
 <![CDATA[
-for.inc11.i.i:17 %zext_ln24 = zext i10 %tmp_54
+for.inc11.i.i:17 %zext_ln24 = zext i10 %tmp_74
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24"/></StgValue>
@@ -477,9 +477,9 @@ for.inc11.i.i:17 %zext_ln24 = zext i10 %tmp_54
 </and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="35" bw="10" op_0_bw="11" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc11.i.i:18 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln24
+for.inc11.i.i:18 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln24
 
 ]]></Node>
 <StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr"/></StgValue>
@@ -493,9 +493,9 @@ for.inc11.i.i:18 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelem
 </and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="36" bw="10" op_0_bw="11" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc11.i.i:19 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln24
+for.inc11.i.i:19 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln24
 
 ]]></Node>
 <StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr"/></StgValue>
@@ -526,9 +526,9 @@ for.inc11.i.i:20 %br_ln24 = br i1 %trunc_ln23, void %magnitude2.i.i.case.0, void
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="8" op_1_bw="10">
+<Node id="39" bw="0" op_0_bw="11" op_1_bw="10">
 <![CDATA[
-magnitude2.i.i.case.0:0 %store_ln24 = store i8 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
+magnitude2.i.i.case.0:0 %store_ln24 = store i11 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln24"/></StgValue>
@@ -560,9 +560,9 @@ magnitude2.i.i.case.0:1 %br_ln24 = br void %magnitude2.i.i.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="8" op_1_bw="10">
+<Node id="42" bw="0" op_0_bw="11" op_1_bw="10">
 <![CDATA[
-magnitude2.i.i.case.1:0 %store_ln24 = store i8 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
+magnitude2.i.i.case.1:0 %store_ln24 = store i11 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln24"/></StgValue>
@@ -818,7 +818,7 @@ magnitude2.i.i.exit:5 %br_ln23 = br void %for.inc.i13.i
 </dataflow>
 <dataflow id="128" from="StgValue_122" to="specpipeline_ln23" fromId="122" toId="30">
 </dataflow>
-<dataflow id="130" from="empty_10" to="specpipeline_ln23" fromId="129" toId="30">
+<dataflow id="130" from="empty_22" to="specpipeline_ln23" fromId="129" toId="30">
 </dataflow>
 <dataflow id="132" from="_ssdm_op_PartSelect.i8.i10.i32.i32" to="lshr_ln" fromId="131" toId="31">
 </dataflow>
@@ -828,13 +828,13 @@ magnitude2.i.i.exit:5 %br_ln23 = br void %for.inc.i13.i
 </dataflow>
 <dataflow id="136" from="StgValue_135" to="lshr_ln" fromId="135" toId="31">
 </dataflow>
-<dataflow id="138" from="_ssdm_op_BitConcatenate.i10.i2.i8" to="tmp_54" fromId="137" toId="32">
+<dataflow id="138" from="_ssdm_op_BitConcatenate.i10.i2.i8" to="tmp_74" fromId="137" toId="32">
 </dataflow>
-<dataflow id="139" from="select_ln22_4" to="tmp_54" fromId="23" toId="32">
+<dataflow id="139" from="select_ln22_4" to="tmp_74" fromId="23" toId="32">
 </dataflow>
-<dataflow id="140" from="lshr_ln" to="tmp_54" fromId="31" toId="32">
+<dataflow id="140" from="lshr_ln" to="tmp_74" fromId="31" toId="32">
 </dataflow>
-<dataflow id="141" from="tmp_54" to="zext_ln24" fromId="32" toId="33">
+<dataflow id="141" from="tmp_74" to="zext_ln24" fromId="32" toId="33">
 </dataflow>
 <dataflow id="142" from="p_anonymous_namespace_lineBuffer_25_magnitude_0" to="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" fromId="59" toId="34">
 </dataflow>
@@ -850,37 +850,37 @@ magnitude2.i.i.exit:5 %br_ln23 = br void %for.inc.i13.i
 </dataflow>
 <dataflow id="148" from="trunc_ln23" to="br_ln24" fromId="29" toId="36">
 </dataflow>
-<dataflow id="150" from="StgValue_149" to="store_ln24" fromId="149" toId="37">
+<dataflow id="149" from="StgValue_65" to="store_ln24" fromId="65" toId="37">
 </dataflow>
-<dataflow id="151" from="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" to="store_ln24" fromId="34" toId="37">
+<dataflow id="150" from="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" to="store_ln24" fromId="34" toId="37">
 </dataflow>
-<dataflow id="152" from="StgValue_149" to="store_ln24" fromId="149" toId="39">
+<dataflow id="151" from="StgValue_65" to="store_ln24" fromId="65" toId="39">
 </dataflow>
-<dataflow id="153" from="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" to="store_ln24" fromId="35" toId="39">
+<dataflow id="152" from="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" to="store_ln24" fromId="35" toId="39">
 </dataflow>
-<dataflow id="154" from="select_ln22" to="add_ln23" fromId="22" toId="41">
+<dataflow id="153" from="select_ln22" to="add_ln23" fromId="22" toId="41">
 </dataflow>
-<dataflow id="156" from="StgValue_155" to="add_ln23" fromId="155" toId="41">
+<dataflow id="155" from="StgValue_154" to="add_ln23" fromId="154" toId="41">
 </dataflow>
-<dataflow id="157" from="add_ln22_4" to="store_ln22" fromId="14" toId="42">
+<dataflow id="156" from="add_ln22_4" to="store_ln22" fromId="14" toId="42">
 </dataflow>
-<dataflow id="158" from="indvar_flatten13" to="store_ln22" fromId="7" toId="42">
+<dataflow id="157" from="indvar_flatten13" to="store_ln22" fromId="7" toId="42">
 </dataflow>
-<dataflow id="159" from="select_ln22_4" to="store_ln22" fromId="23" toId="43">
+<dataflow id="158" from="select_ln22_4" to="store_ln22" fromId="23" toId="43">
 </dataflow>
-<dataflow id="160" from="row" to="store_ln22" fromId="6" toId="43">
+<dataflow id="159" from="row" to="store_ln22" fromId="6" toId="43">
 </dataflow>
-<dataflow id="161" from="add_ln23" to="store_ln23" fromId="41" toId="44">
+<dataflow id="160" from="add_ln23" to="store_ln23" fromId="41" toId="44">
 </dataflow>
-<dataflow id="162" from="column_9" to="store_ln23" fromId="5" toId="44">
+<dataflow id="161" from="column_9" to="store_ln23" fromId="5" toId="44">
 </dataflow>
-<dataflow id="163" from="StgValue_68" to="store_ln25" fromId="68" toId="45">
+<dataflow id="162" from="StgValue_68" to="store_ln25" fromId="68" toId="45">
 </dataflow>
-<dataflow id="164" from="p_anonymous_namespace_lineBuffer_direction_addr" to="store_ln25" fromId="28" toId="45">
+<dataflow id="163" from="p_anonymous_namespace_lineBuffer_direction_addr" to="store_ln25" fromId="28" toId="45">
 </dataflow>
-<dataflow id="165" from="icmp_ln22" to="StgValue_2" fromId="13" toId="2">
+<dataflow id="164" from="icmp_ln22" to="StgValue_2" fromId="13" toId="2">
 </dataflow>
-<dataflow id="166" from="trunc_ln23" to="StgValue_2" fromId="29" toId="2">
+<dataflow id="165" from="trunc_ln23" to="StgValue_2" fromId="29" toId="2">
 </dataflow>
 </dataflows>
 

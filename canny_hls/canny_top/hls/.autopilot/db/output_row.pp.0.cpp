@@ -514,7 +514,7 @@ enum class GradientDirection : std::uint8_t {
 };
 
 struct GradientPixel {
-    std::uint8_t magnitude;
+    std::uint16_t magnitude;
     GradientDirection direction;
 };
 # 8 "../src/canny_stages.h" 2
@@ -539,13 +539,13 @@ void sobel(
 
 void non_maximum_suppression(
     const GradientPixel input[WIDTH],
-    std::uint8_t output[WIDTH],
+    std::uint16_t output[WIDTH],
     bool valid_in,
     bool *valid_out
 );
 
 void double_threshold(
-    const std::uint8_t input[WIDTH],
+    const std::uint16_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
     bool *valid_out
@@ -556,7 +556,8 @@ void hysteresis(
     const std::uint8_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
-    bool *valid_out
+    bool *valid_out,
+    std::uint8_t resolve_weak
 );
 
 void output_row(const uint8_t input[WIDTH], uint8_t out[WIDTH*HEIGHT], bool valid);
@@ -565,10 +566,10 @@ void reset_canny_stages();
 void gaussian_blur_reset();
 void sobel_reset();
 void non_maximum_suppression_reset();
+void output_row_reset();
 
 template <int Instance>
 void hysteresis_reset();
-void output_row_reset();
 
 void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]);
 # 2 "../src/output_row.cpp" 2

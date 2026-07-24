@@ -244,22 +244,22 @@ wire   [3:0] grp_fu_146_p1;
 wire   [3:0] grp_fu_152_p1;
 wire   [31:0] grp_fu_163_p0;
 wire   [3:0] grp_fu_163_p1;
-wire   [0:0] tmp_25_fu_169_p3;
+wire   [0:0] tmp_21_fu_169_p3;
 wire   [2:0] add_ln22_2_fu_176_p2;
 wire   [31:0] grp_fu_188_p0;
 wire   [3:0] grp_fu_188_p1;
 wire   [31:0] grp_fu_146_p2;
 wire   [2:0] trunc_ln22_fu_194_p1;
-wire   [0:0] tmp_23_fu_198_p3;
+wire   [0:0] tmp_19_fu_198_p3;
 wire   [2:0] add_ln22_fu_206_p2;
 wire   [2:0] grp_fu_152_p2;
 wire   [31:0] grp_fu_163_p2;
 wire   [2:0] trunc_ln22_1_fu_226_p1;
-wire   [0:0] tmp_24_fu_230_p3;
+wire   [0:0] tmp_20_fu_230_p3;
 wire   [2:0] add_ln22_1_fu_238_p2;
 wire   [31:0] grp_fu_188_p2;
 wire   [2:0] trunc_ln22_2_fu_253_p1;
-wire   [0:0] tmp_26_fu_257_p3;
+wire   [0:0] tmp_22_fu_257_p3;
 wire   [2:0] add_ln22_3_fu_265_p2;
 reg    grp_fu_86_ap_start;
 reg    ap_block_state1;
@@ -462,7 +462,7 @@ canny_top_gaussian_blur_Pipeline_VITIS_LOOP_64_2 grp_gaussian_blur_Pipeline_VITI
     .ap_idle(grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_idle),
     .ap_ready(grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_ready),
     .select_ln22(select_ln22_reg_324),
-    .result_15(trunc_ln79_reg_329),
+    .result_11(trunc_ln79_reg_329),
     .select_ln22_1(select_ln22_1_reg_334),
     .select_ln22_2(select_ln22_2_reg_319),
     .select_ln22_3(select_ln22_3_reg_339),
@@ -1500,21 +1500,21 @@ assign p_ZN12_GLOBAL_N_110lineBufferE_1_address1 = grp_gaussian_blur_Pipeline_VI
 
 assign p_ZN12_GLOBAL_N_110lineBufferE_1_d0 = grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
 
-assign select_ln22_1_fu_244_p3 = ((tmp_24_fu_230_p3[0:0] == 1'b1) ? add_ln22_1_fu_238_p2 : trunc_ln22_1_fu_226_p1);
+assign select_ln22_1_fu_244_p3 = ((tmp_20_fu_230_p3[0:0] == 1'b1) ? add_ln22_1_fu_238_p2 : trunc_ln22_1_fu_226_p1);
 
-assign select_ln22_2_fu_181_p3 = ((tmp_25_fu_169_p3[0:0] == 1'b1) ? add_ln22_2_fu_176_p2 : trunc_ln42_reg_288);
+assign select_ln22_2_fu_181_p3 = ((tmp_21_fu_169_p3[0:0] == 1'b1) ? add_ln22_2_fu_176_p2 : trunc_ln42_reg_288);
 
-assign select_ln22_3_fu_271_p3 = ((tmp_26_fu_257_p3[0:0] == 1'b1) ? add_ln22_3_fu_265_p2 : trunc_ln22_2_fu_253_p1);
+assign select_ln22_3_fu_271_p3 = ((tmp_22_fu_257_p3[0:0] == 1'b1) ? add_ln22_3_fu_265_p2 : trunc_ln22_2_fu_253_p1);
 
-assign select_ln22_fu_212_p3 = ((tmp_23_fu_198_p3[0:0] == 1'b1) ? add_ln22_fu_206_p2 : trunc_ln22_fu_194_p1);
+assign select_ln22_fu_212_p3 = ((tmp_19_fu_198_p3[0:0] == 1'b1) ? add_ln22_fu_206_p2 : trunc_ln22_fu_194_p1);
 
-assign tmp_23_fu_198_p3 = grp_fu_146_p2[32'd3];
+assign tmp_19_fu_198_p3 = grp_fu_146_p2[32'd3];
 
-assign tmp_24_fu_230_p3 = grp_fu_163_p2[32'd3];
+assign tmp_20_fu_230_p3 = grp_fu_163_p2[32'd3];
 
-assign tmp_25_fu_169_p3 = writeSlot_reg_283[32'd3];
+assign tmp_21_fu_169_p3 = writeSlot_reg_283[32'd3];
 
-assign tmp_26_fu_257_p3 = grp_fu_188_p2[32'd3];
+assign tmp_22_fu_257_p3 = grp_fu_188_p2[32'd3];
 
 assign tmp_fu_113_p4 = {{outputRow_fu_108_p2[31:1]}};
 

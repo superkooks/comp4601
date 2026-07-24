@@ -415,7 +415,7 @@ for.inc11.i.i:13 %trunc_ln23 = trunc i10 %select_ln22
 
 <Node id="31" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc11.i.i:14 %specpipeline_ln23 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
+for.inc11.i.i:14 %specpipeline_ln23 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln23"/></StgValue>
@@ -447,10 +447,10 @@ for.inc11.i.i:15 %lshr_ln = partselect i8 @_ssdm_op_PartSelect.i8.i10.i32.i32, i
 
 <Node id="33" bw="10" op_0_bw="10" op_1_bw="2" op_2_bw="8">
 <![CDATA[
-for.inc11.i.i:16 %tmp_54 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %select_ln22_4, i8 %lshr_ln
+for.inc11.i.i:16 %tmp_74 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %select_ln22_4, i8 %lshr_ln
 
 ]]></Node>
-<StgValue><ssdm name="tmp_54"/></StgValue>
+<StgValue><ssdm name="tmp_74"/></StgValue>
 </operation>
 
 <operation id="33" st_id="1" stage="1" lat="1">
@@ -463,7 +463,7 @@ for.inc11.i.i:16 %tmp_54 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8
 
 <Node id="34" bw="64" op_0_bw="10">
 <![CDATA[
-for.inc11.i.i:17 %zext_ln24 = zext i10 %tmp_54
+for.inc11.i.i:17 %zext_ln24 = zext i10 %tmp_74
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln24"/></StgValue>
@@ -477,9 +477,9 @@ for.inc11.i.i:17 %zext_ln24 = zext i10 %tmp_54
 </and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="35" bw="10" op_0_bw="11" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc11.i.i:18 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln24
+for.inc11.i.i:18 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln24
 
 ]]></Node>
 <StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr"/></StgValue>
@@ -493,9 +493,9 @@ for.inc11.i.i:18 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelem
 </and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="36" bw="10" op_0_bw="11" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc11.i.i:19 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln24
+for.inc11.i.i:19 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln24
 
 ]]></Node>
 <StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr"/></StgValue>
@@ -526,9 +526,9 @@ for.inc11.i.i:20 %br_ln24 = br i1 %trunc_ln23, void %magnitude2.i.i.case.0, void
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="8" op_1_bw="10">
+<Node id="39" bw="0" op_0_bw="11" op_1_bw="10">
 <![CDATA[
-magnitude2.i.i.case.0:0 %store_ln24 = store i8 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
+magnitude2.i.i.case.0:0 %store_ln24 = store i11 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln24"/></StgValue>
@@ -560,9 +560,9 @@ magnitude2.i.i.case.0:1 %br_ln24 = br void %magnitude2.i.i.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="8" op_1_bw="10">
+<Node id="42" bw="0" op_0_bw="11" op_1_bw="10">
 <![CDATA[
-magnitude2.i.i.case.1:0 %store_ln24 = store i8 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
+magnitude2.i.i.case.1:0 %store_ln24 = store i11 0, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln24"/></StgValue>

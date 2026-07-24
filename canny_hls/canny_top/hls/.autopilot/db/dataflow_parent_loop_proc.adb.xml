@@ -11,14 +11,14 @@
 
 <trans id="22" from="2" to="3">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
 <trans id="24" from="3" to="2">
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
@@ -69,7 +69,7 @@ newFuncRoot:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 
 <Node id="29" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_10, i32 64, i32 0, void @empty_9, void @empty_8, void @empty_10, i32 16, i32 16, i32 16, i32 16, void @empty_10, void @empty_10, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_22, i32 64, i32 0, void @empty_10, void @empty_13, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -132,7 +132,7 @@ newFuncRoot:5 %br_ln0 = br void %for.cond
 
 <Node id="34" bw="10" op_0_bw="10" op_1_bw="0" op_2_bw="10" op_3_bw="0">
 <![CDATA[
-for.cond:0 %i = phi i10 0, void %newFuncRoot, i10 %add_ln11, void %codeRepl
+for.cond:0 %i = phi i10 0, void %newFuncRoot, i10 %add_ln12, void %codeRepl
 
 ]]></Node>
 <StgValue><ssdm name="i"/></StgValue>
@@ -147,10 +147,10 @@ for.cond:0 %i = phi i10 0, void %newFuncRoot, i10 %add_ln11, void %codeRepl
 
 <Node id="35" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.cond:1 %icmp_ln11 = icmp_eq  i10 %i, i10 514
+for.cond:1 %icmp_ln12 = icmp_eq  i10 %i, i10 514
 
 ]]></Node>
-<StgValue><ssdm name="icmp_ln11"/></StgValue>
+<StgValue><ssdm name="icmp_ln12"/></StgValue>
 </operation>
 
 <operation id="12" st_id="2" stage="1" lat="1">
@@ -162,10 +162,10 @@ for.cond:1 %icmp_ln11 = icmp_eq  i10 %i, i10 514
 
 <Node id="36" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.cond:2 %add_ln11 = add i10 %i, i10 1
+for.cond:2 %add_ln12 = add i10 %i, i10 1
 
 ]]></Node>
-<StgValue><ssdm name="add_ln11"/></StgValue>
+<StgValue><ssdm name="add_ln12"/></StgValue>
 </operation>
 
 <operation id="13" st_id="2" stage="1" lat="1">
@@ -177,10 +177,10 @@ for.cond:2 %add_ln11 = add i10 %i, i10 1
 
 <Node id="37" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="10" op_5_bw="10" op_6_bw="32" op_7_bw="10" op_8_bw="10" op_9_bw="32">
 <![CDATA[
-for.cond:3 %specdataflowpipeline_ln11 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i10 %i, i10 514, i32 0, i10 0, i10 1, i32 1
+for.cond:3 %specdataflowpipeline_ln12 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i10 %i, i10 514, i32 0, i10 0, i10 1, i32 1
 
 ]]></Node>
-<StgValue><ssdm name="specdataflowpipeline_ln11"/></StgValue>
+<StgValue><ssdm name="specdataflowpipeline_ln12"/></StgValue>
 </operation>
 
 <operation id="14" st_id="2" stage="1" lat="1">
@@ -192,33 +192,33 @@ for.cond:3 %specdataflowpipeline_ln11 = specdataflowpipeline void @_ssdm_op_Spec
 
 <Node id="38" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
-for.cond:4 %br_ln11 = br i1 %icmp_ln11, void %codeRepl, void %for.end.exitStub
+for.cond:4 %br_ln12 = br i1 %icmp_ln12, void %codeRepl, void %for.end.exitStub
 
 ]]></Node>
-<StgValue><ssdm name="br_ln11"/></StgValue>
+<StgValue><ssdm name="br_ln12"/></StgValue>
 </operation>
 
 <operation id="15" st_id="2" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="32" op_9_bw="8" op_10_bw="8" op_11_bw="32" op_12_bw="2" op_13_bw="8" op_14_bw="8" op_15_bw="32" op_16_bw="8" op_17_bw="8" op_18_bw="32" op_19_bw="2" op_20_bw="2" op_21_bw="32" op_22_bw="2" op_23_bw="2" op_24_bw="32" op_25_bw="2" op_26_bw="2" op_27_bw="32">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="32" op_9_bw="8" op_10_bw="8" op_11_bw="32" op_12_bw="2" op_13_bw="11" op_14_bw="11" op_15_bw="32" op_16_bw="8" op_17_bw="8" op_18_bw="32" op_19_bw="8" op_20_bw="8" op_21_bw="32" op_22_bw="8" op_23_bw="8" op_24_bw="32" op_25_bw="8" op_26_bw="8" op_27_bw="32">
 <![CDATA[
-codeRepl:2 %call_ln23 = call void @dataflow_in_loop_VITIS_LOOP_11_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
+codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
 
 ]]></Node>
-<StgValue><ssdm name="call_ln23"/></StgValue>
+<StgValue><ssdm name="call_ln24"/></StgValue>
 </operation>
 
 <operation id="16" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="1"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="1"/>
 </and_exp></or_exp>
 </condition>
 
@@ -237,64 +237,64 @@ for.end.exitStub:0 %ret_ln0 = ret
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="40" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-codeRepl:0 %speclooptripcount_ln23 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 514, i64 514, i64 514
+codeRepl:0 %speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 514, i64 514, i64 514
 
 ]]></Node>
-<StgValue><ssdm name="speclooptripcount_ln23"/></StgValue>
+<StgValue><ssdm name="speclooptripcount_ln24"/></StgValue>
 </operation>
 
 <operation id="18" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="41" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-codeRepl:1 %specloopname_ln11 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
+codeRepl:1 %specloopname_ln12 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
 
 ]]></Node>
-<StgValue><ssdm name="specloopname_ln11"/></StgValue>
+<StgValue><ssdm name="specloopname_ln12"/></StgValue>
 </operation>
 
 <operation id="19" st_id="3" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="32" op_9_bw="8" op_10_bw="8" op_11_bw="32" op_12_bw="2" op_13_bw="8" op_14_bw="8" op_15_bw="32" op_16_bw="8" op_17_bw="8" op_18_bw="32" op_19_bw="2" op_20_bw="2" op_21_bw="32" op_22_bw="2" op_23_bw="2" op_24_bw="32" op_25_bw="2" op_26_bw="2" op_27_bw="32">
+<Node id="42" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="32" op_9_bw="8" op_10_bw="8" op_11_bw="32" op_12_bw="2" op_13_bw="11" op_14_bw="11" op_15_bw="32" op_16_bw="8" op_17_bw="8" op_18_bw="32" op_19_bw="8" op_20_bw="8" op_21_bw="32" op_22_bw="8" op_23_bw="8" op_24_bw="32" op_25_bw="8" op_26_bw="8" op_27_bw="32">
 <![CDATA[
-codeRepl:2 %call_ln23 = call void @dataflow_in_loop_VITIS_LOOP_11_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
+codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
 
 ]]></Node>
-<StgValue><ssdm name="call_ln23"/></StgValue>
+<StgValue><ssdm name="call_ln24"/></StgValue>
 </operation>
 
 <operation id="20" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 
 <Node id="43" bw="0" op_0_bw="0">
 <![CDATA[
-codeRepl:3 %br_ln11 = br void %for.cond
+codeRepl:3 %br_ln12 = br void %for.cond
 
 ]]></Node>
-<StgValue><ssdm name="br_ln11"/></StgValue>
+<StgValue><ssdm name="br_ln12"/></StgValue>
 </operation>
 </state>
 </state_list>
@@ -363,33 +363,33 @@ codeRepl:3 %br_ln11 = br void %for.cond
 <core>NULL</core><StgValue><ssdm name="p_anonymous_namespace_rowsReceived_2_s"/></StgValue>
 </port>
 <port id="43" name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="44" name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="45" name="p_anonymous_namespace_rowsReceived_3_s" dir="2" iftype="0">
 <core>NULL</core><StgValue><ssdm name="p_anonymous_namespace_rowsReceived_3_s"/></StgValue>
 </port>
 <port id="46" name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="47" name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="48" name="p_anonymous_namespace_rowsReceived_4_s" dir="2" iftype="0">
 <core>NULL</core><StgValue><ssdm name="p_anonymous_namespace_rowsReceived_4_s"/></StgValue>
 </port>
 <port id="49" name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="50" name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<core>RAM</core><StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 <port id="51" name="rowsReceived" dir="2" iftype="0">
@@ -425,17 +425,17 @@ codeRepl:3 %br_ln11 = br void %for.cond
 </dataflow>
 <dataflow id="70" from="StgValue_68" to="specinterface_ln0" fromId="68" toId="6">
 </dataflow>
-<dataflow id="72" from="empty_10" to="specinterface_ln0" fromId="71" toId="6">
+<dataflow id="72" from="empty_22" to="specinterface_ln0" fromId="71" toId="6">
 </dataflow>
 <dataflow id="74" from="StgValue_73" to="specinterface_ln0" fromId="73" toId="6">
 </dataflow>
 <dataflow id="75" from="StgValue_68" to="specinterface_ln0" fromId="68" toId="6">
 </dataflow>
-<dataflow id="77" from="empty_9" to="specinterface_ln0" fromId="76" toId="6">
+<dataflow id="77" from="empty_10" to="specinterface_ln0" fromId="76" toId="6">
 </dataflow>
-<dataflow id="79" from="empty_8" to="specinterface_ln0" fromId="78" toId="6">
+<dataflow id="79" from="empty_13" to="specinterface_ln0" fromId="78" toId="6">
 </dataflow>
-<dataflow id="80" from="empty_10" to="specinterface_ln0" fromId="71" toId="6">
+<dataflow id="80" from="empty_22" to="specinterface_ln0" fromId="71" toId="6">
 </dataflow>
 <dataflow id="82" from="StgValue_81" to="specinterface_ln0" fromId="81" toId="6">
 </dataflow>
@@ -445,9 +445,9 @@ codeRepl:3 %br_ln11 = br void %for.cond
 </dataflow>
 <dataflow id="85" from="StgValue_81" to="specinterface_ln0" fromId="81" toId="6">
 </dataflow>
-<dataflow id="86" from="empty_10" to="specinterface_ln0" fromId="71" toId="6">
+<dataflow id="86" from="empty_22" to="specinterface_ln0" fromId="71" toId="6">
 </dataflow>
-<dataflow id="87" from="empty_10" to="specinterface_ln0" fromId="71" toId="6">
+<dataflow id="87" from="empty_22" to="specinterface_ln0" fromId="71" toId="6">
 </dataflow>
 <dataflow id="89" from="StgValue_88" to="specinterface_ln0" fromId="88" toId="6">
 </dataflow>
@@ -472,173 +472,173 @@ codeRepl:3 %br_ln11 = br void %for.cond
 </dataflow>
 <dataflow id="100" from="br_ln0" to="i" fromId="9" toId="10">
 </dataflow>
-<dataflow id="101" from="add_ln11" to="i" fromId="12" toId="10">
+<dataflow id="101" from="add_ln12" to="i" fromId="12" toId="10">
 <BackEdge/>
 <condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln11" val="0"/>
+<or_exp><and_exp><literal name="icmp_ln12" val="0"/>
 </and_exp></or_exp>
 </condition>
 </dataflow>
-<dataflow id="102" from="br_ln11" to="i" fromId="20" toId="10">
+<dataflow id="102" from="br_ln12" to="i" fromId="20" toId="10">
 <BackEdge/>
 </dataflow>
-<dataflow id="103" from="i" to="icmp_ln11" fromId="10" toId="11">
+<dataflow id="103" from="i" to="icmp_ln12" fromId="10" toId="11">
 </dataflow>
-<dataflow id="105" from="StgValue_104" to="icmp_ln11" fromId="104" toId="11">
+<dataflow id="105" from="StgValue_104" to="icmp_ln12" fromId="104" toId="11">
 </dataflow>
-<dataflow id="106" from="i" to="add_ln11" fromId="10" toId="12">
+<dataflow id="106" from="i" to="add_ln12" fromId="10" toId="12">
 </dataflow>
-<dataflow id="108" from="StgValue_107" to="add_ln11" fromId="107" toId="12">
+<dataflow id="108" from="StgValue_107" to="add_ln12" fromId="107" toId="12">
 </dataflow>
-<dataflow id="110" from="_ssdm_op_SpecDataflowPipeline" to="specdataflowpipeline_ln11" fromId="109" toId="13">
+<dataflow id="110" from="_ssdm_op_SpecDataflowPipeline" to="specdataflowpipeline_ln12" fromId="109" toId="13">
 </dataflow>
-<dataflow id="111" from="StgValue_88" to="specdataflowpipeline_ln11" fromId="88" toId="13">
+<dataflow id="111" from="StgValue_88" to="specdataflowpipeline_ln12" fromId="88" toId="13">
 </dataflow>
-<dataflow id="112" from="StgValue_68" to="specdataflowpipeline_ln11" fromId="68" toId="13">
+<dataflow id="112" from="StgValue_68" to="specdataflowpipeline_ln12" fromId="68" toId="13">
 </dataflow>
-<dataflow id="114" from="dataflow_parent_loop_str" to="specdataflowpipeline_ln11" fromId="113" toId="13">
+<dataflow id="114" from="dataflow_parent_loop_str" to="specdataflowpipeline_ln12" fromId="113" toId="13">
 </dataflow>
-<dataflow id="115" from="i" to="specdataflowpipeline_ln11" fromId="10" toId="13">
+<dataflow id="115" from="i" to="specdataflowpipeline_ln12" fromId="10" toId="13">
 </dataflow>
-<dataflow id="116" from="StgValue_104" to="specdataflowpipeline_ln11" fromId="104" toId="13">
+<dataflow id="116" from="StgValue_104" to="specdataflowpipeline_ln12" fromId="104" toId="13">
 </dataflow>
-<dataflow id="117" from="StgValue_68" to="specdataflowpipeline_ln11" fromId="68" toId="13">
+<dataflow id="117" from="StgValue_68" to="specdataflowpipeline_ln12" fromId="68" toId="13">
 </dataflow>
-<dataflow id="118" from="StgValue_98" to="specdataflowpipeline_ln11" fromId="98" toId="13">
+<dataflow id="118" from="StgValue_98" to="specdataflowpipeline_ln12" fromId="98" toId="13">
 </dataflow>
-<dataflow id="119" from="StgValue_107" to="specdataflowpipeline_ln11" fromId="107" toId="13">
+<dataflow id="119" from="StgValue_107" to="specdataflowpipeline_ln12" fromId="107" toId="13">
 </dataflow>
-<dataflow id="121" from="StgValue_120" to="specdataflowpipeline_ln11" fromId="120" toId="13">
+<dataflow id="121" from="StgValue_120" to="specdataflowpipeline_ln12" fromId="120" toId="13">
 </dataflow>
-<dataflow id="122" from="icmp_ln11" to="br_ln11" fromId="11" toId="14">
+<dataflow id="122" from="icmp_ln12" to="br_ln12" fromId="11" toId="14">
 </dataflow>
-<dataflow id="124" from="dataflow_in_loop_VITIS_LOOP_11_1.1" to="call_ln23" fromId="123" toId="15">
+<dataflow id="124" from="dataflow_in_loop_VITIS_LOOP_12_1.1" to="call_ln24" fromId="123" toId="15">
 </dataflow>
-<dataflow id="125" from="i" to="call_ln23" fromId="10" toId="15">
+<dataflow id="125" from="i" to="call_ln24" fromId="10" toId="15">
 </dataflow>
-<dataflow id="126" from="gmem" to="call_ln23" fromId="26" toId="15">
+<dataflow id="126" from="gmem" to="call_ln24" fromId="26" toId="15">
 </dataflow>
-<dataflow id="127" from="in_r_read" to="call_ln23" fromId="8" toId="15">
+<dataflow id="127" from="in_r_read" to="call_ln24" fromId="8" toId="15">
 </dataflow>
-<dataflow id="128" from="out_r_read" to="call_ln23" fromId="7" toId="15">
+<dataflow id="128" from="out_r_read" to="call_ln24" fromId="7" toId="15">
 </dataflow>
-<dataflow id="129" from="p_anonymous_namespace_rowsReceived" to="call_ln23" fromId="29" toId="15">
+<dataflow id="129" from="p_anonymous_namespace_rowsReceived" to="call_ln24" fromId="29" toId="15">
 </dataflow>
-<dataflow id="130" from="p_ZN12_GLOBAL_N_110lineBufferE_0" to="call_ln23" fromId="30" toId="15">
+<dataflow id="130" from="p_ZN12_GLOBAL_N_110lineBufferE_0" to="call_ln24" fromId="30" toId="15">
 </dataflow>
-<dataflow id="131" from="p_ZN12_GLOBAL_N_110lineBufferE_1" to="call_ln23" fromId="31" toId="15">
+<dataflow id="131" from="p_ZN12_GLOBAL_N_110lineBufferE_1" to="call_ln24" fromId="31" toId="15">
 </dataflow>
-<dataflow id="132" from="p_anonymous_namespace_rowsReceived_1" to="call_ln23" fromId="32" toId="15">
+<dataflow id="132" from="p_anonymous_namespace_rowsReceived_1" to="call_ln24" fromId="32" toId="15">
 </dataflow>
-<dataflow id="133" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln23" fromId="33" toId="15">
+<dataflow id="133" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln24" fromId="33" toId="15">
 </dataflow>
-<dataflow id="134" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln23" fromId="34" toId="15">
+<dataflow id="134" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln24" fromId="34" toId="15">
 </dataflow>
-<dataflow id="135" from="p_anonymous_namespace_rowsReceived_2" to="call_ln23" fromId="35" toId="15">
+<dataflow id="135" from="p_anonymous_namespace_rowsReceived_2" to="call_ln24" fromId="35" toId="15">
 </dataflow>
-<dataflow id="136" from="p_anonymous_namespace_lineBuffer_direction" to="call_ln23" fromId="36" toId="15">
+<dataflow id="136" from="p_anonymous_namespace_lineBuffer_direction" to="call_ln24" fromId="36" toId="15">
 </dataflow>
-<dataflow id="137" from="p_anonymous_namespace_lineBuffer_25_magnitude_0" to="call_ln23" fromId="37" toId="15">
+<dataflow id="137" from="p_anonymous_namespace_lineBuffer_25_magnitude_0" to="call_ln24" fromId="37" toId="15">
 </dataflow>
-<dataflow id="138" from="p_anonymous_namespace_lineBuffer_25_magnitude_1" to="call_ln23" fromId="38" toId="15">
+<dataflow id="138" from="p_anonymous_namespace_lineBuffer_25_magnitude_1" to="call_ln24" fromId="38" toId="15">
 </dataflow>
-<dataflow id="139" from="p_anonymous_namespace_rowsReceived_1_s" to="call_ln23" fromId="39" toId="15">
+<dataflow id="139" from="p_anonymous_namespace_rowsReceived_1_s" to="call_ln24" fromId="39" toId="15">
 </dataflow>
-<dataflow id="140" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0" to="call_ln23" fromId="40" toId="15">
+<dataflow id="140" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0" to="call_ln24" fromId="40" toId="15">
 </dataflow>
-<dataflow id="141" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1" to="call_ln23" fromId="41" toId="15">
+<dataflow id="141" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1" to="call_ln24" fromId="41" toId="15">
 </dataflow>
-<dataflow id="142" from="p_anonymous_namespace_rowsReceived_2_s" to="call_ln23" fromId="42" toId="15">
+<dataflow id="142" from="p_anonymous_namespace_rowsReceived_2_s" to="call_ln24" fromId="42" toId="15">
 </dataflow>
-<dataflow id="143" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0" to="call_ln23" fromId="43" toId="15">
+<dataflow id="143" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0" to="call_ln24" fromId="43" toId="15">
 </dataflow>
-<dataflow id="144" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" to="call_ln23" fromId="44" toId="15">
+<dataflow id="144" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" to="call_ln24" fromId="44" toId="15">
 </dataflow>
-<dataflow id="145" from="p_anonymous_namespace_rowsReceived_3_s" to="call_ln23" fromId="45" toId="15">
+<dataflow id="145" from="p_anonymous_namespace_rowsReceived_3_s" to="call_ln24" fromId="45" toId="15">
 </dataflow>
-<dataflow id="146" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0" to="call_ln23" fromId="46" toId="15">
+<dataflow id="146" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0" to="call_ln24" fromId="46" toId="15">
 </dataflow>
-<dataflow id="147" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1" to="call_ln23" fromId="47" toId="15">
+<dataflow id="147" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1" to="call_ln24" fromId="47" toId="15">
 </dataflow>
-<dataflow id="148" from="p_anonymous_namespace_rowsReceived_4_s" to="call_ln23" fromId="48" toId="15">
+<dataflow id="148" from="p_anonymous_namespace_rowsReceived_4_s" to="call_ln24" fromId="48" toId="15">
 </dataflow>
-<dataflow id="149" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0" to="call_ln23" fromId="49" toId="15">
+<dataflow id="149" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0" to="call_ln24" fromId="49" toId="15">
 </dataflow>
-<dataflow id="150" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1" to="call_ln23" fromId="50" toId="15">
+<dataflow id="150" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1" to="call_ln24" fromId="50" toId="15">
 </dataflow>
-<dataflow id="151" from="rowsReceived" to="call_ln23" fromId="51" toId="15">
+<dataflow id="151" from="rowsReceived" to="call_ln24" fromId="51" toId="15">
 </dataflow>
-<dataflow id="153" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln23" fromId="152" toId="17">
+<dataflow id="153" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln24" fromId="152" toId="17">
 </dataflow>
-<dataflow id="155" from="StgValue_154" to="speclooptripcount_ln23" fromId="154" toId="17">
+<dataflow id="155" from="StgValue_154" to="speclooptripcount_ln24" fromId="154" toId="17">
 </dataflow>
-<dataflow id="156" from="StgValue_154" to="speclooptripcount_ln23" fromId="154" toId="17">
+<dataflow id="156" from="StgValue_154" to="speclooptripcount_ln24" fromId="154" toId="17">
 </dataflow>
-<dataflow id="157" from="StgValue_154" to="speclooptripcount_ln23" fromId="154" toId="17">
+<dataflow id="157" from="StgValue_154" to="speclooptripcount_ln24" fromId="154" toId="17">
 </dataflow>
-<dataflow id="159" from="_ssdm_op_SpecLoopName" to="specloopname_ln11" fromId="158" toId="18">
+<dataflow id="159" from="_ssdm_op_SpecLoopName" to="specloopname_ln12" fromId="158" toId="18">
 </dataflow>
-<dataflow id="161" from="empty_1" to="specloopname_ln11" fromId="160" toId="18">
+<dataflow id="161" from="empty_1" to="specloopname_ln12" fromId="160" toId="18">
 </dataflow>
-<dataflow id="162" from="dataflow_in_loop_VITIS_LOOP_11_1.1" to="call_ln23" fromId="123" toId="19">
+<dataflow id="162" from="dataflow_in_loop_VITIS_LOOP_12_1.1" to="call_ln24" fromId="123" toId="19">
 </dataflow>
-<dataflow id="163" from="i" to="call_ln23" fromId="10" toId="19">
+<dataflow id="163" from="i" to="call_ln24" fromId="10" toId="19">
 </dataflow>
-<dataflow id="164" from="gmem" to="call_ln23" fromId="26" toId="19">
+<dataflow id="164" from="gmem" to="call_ln24" fromId="26" toId="19">
 </dataflow>
-<dataflow id="165" from="in_r_read" to="call_ln23" fromId="8" toId="19">
+<dataflow id="165" from="in_r_read" to="call_ln24" fromId="8" toId="19">
 </dataflow>
-<dataflow id="166" from="out_r_read" to="call_ln23" fromId="7" toId="19">
+<dataflow id="166" from="out_r_read" to="call_ln24" fromId="7" toId="19">
 </dataflow>
-<dataflow id="167" from="p_anonymous_namespace_rowsReceived" to="call_ln23" fromId="29" toId="19">
+<dataflow id="167" from="p_anonymous_namespace_rowsReceived" to="call_ln24" fromId="29" toId="19">
 </dataflow>
-<dataflow id="168" from="p_ZN12_GLOBAL_N_110lineBufferE_0" to="call_ln23" fromId="30" toId="19">
+<dataflow id="168" from="p_ZN12_GLOBAL_N_110lineBufferE_0" to="call_ln24" fromId="30" toId="19">
 </dataflow>
-<dataflow id="169" from="p_ZN12_GLOBAL_N_110lineBufferE_1" to="call_ln23" fromId="31" toId="19">
+<dataflow id="169" from="p_ZN12_GLOBAL_N_110lineBufferE_1" to="call_ln24" fromId="31" toId="19">
 </dataflow>
-<dataflow id="170" from="p_anonymous_namespace_rowsReceived_1" to="call_ln23" fromId="32" toId="19">
+<dataflow id="170" from="p_anonymous_namespace_rowsReceived_1" to="call_ln24" fromId="32" toId="19">
 </dataflow>
-<dataflow id="171" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln23" fromId="33" toId="19">
+<dataflow id="171" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln24" fromId="33" toId="19">
 </dataflow>
-<dataflow id="172" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln23" fromId="34" toId="19">
+<dataflow id="172" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln24" fromId="34" toId="19">
 </dataflow>
-<dataflow id="173" from="p_anonymous_namespace_rowsReceived_2" to="call_ln23" fromId="35" toId="19">
+<dataflow id="173" from="p_anonymous_namespace_rowsReceived_2" to="call_ln24" fromId="35" toId="19">
 </dataflow>
-<dataflow id="174" from="p_anonymous_namespace_lineBuffer_direction" to="call_ln23" fromId="36" toId="19">
+<dataflow id="174" from="p_anonymous_namespace_lineBuffer_direction" to="call_ln24" fromId="36" toId="19">
 </dataflow>
-<dataflow id="175" from="p_anonymous_namespace_lineBuffer_25_magnitude_0" to="call_ln23" fromId="37" toId="19">
+<dataflow id="175" from="p_anonymous_namespace_lineBuffer_25_magnitude_0" to="call_ln24" fromId="37" toId="19">
 </dataflow>
-<dataflow id="176" from="p_anonymous_namespace_lineBuffer_25_magnitude_1" to="call_ln23" fromId="38" toId="19">
+<dataflow id="176" from="p_anonymous_namespace_lineBuffer_25_magnitude_1" to="call_ln24" fromId="38" toId="19">
 </dataflow>
-<dataflow id="177" from="p_anonymous_namespace_rowsReceived_1_s" to="call_ln23" fromId="39" toId="19">
+<dataflow id="177" from="p_anonymous_namespace_rowsReceived_1_s" to="call_ln24" fromId="39" toId="19">
 </dataflow>
-<dataflow id="178" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0" to="call_ln23" fromId="40" toId="19">
+<dataflow id="178" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0" to="call_ln24" fromId="40" toId="19">
 </dataflow>
-<dataflow id="179" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1" to="call_ln23" fromId="41" toId="19">
+<dataflow id="179" from="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1" to="call_ln24" fromId="41" toId="19">
 </dataflow>
-<dataflow id="180" from="p_anonymous_namespace_rowsReceived_2_s" to="call_ln23" fromId="42" toId="19">
+<dataflow id="180" from="p_anonymous_namespace_rowsReceived_2_s" to="call_ln24" fromId="42" toId="19">
 </dataflow>
-<dataflow id="181" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0" to="call_ln23" fromId="43" toId="19">
+<dataflow id="181" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0" to="call_ln24" fromId="43" toId="19">
 </dataflow>
-<dataflow id="182" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" to="call_ln23" fromId="44" toId="19">
+<dataflow id="182" from="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" to="call_ln24" fromId="44" toId="19">
 </dataflow>
-<dataflow id="183" from="p_anonymous_namespace_rowsReceived_3_s" to="call_ln23" fromId="45" toId="19">
+<dataflow id="183" from="p_anonymous_namespace_rowsReceived_3_s" to="call_ln24" fromId="45" toId="19">
 </dataflow>
-<dataflow id="184" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0" to="call_ln23" fromId="46" toId="19">
+<dataflow id="184" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0" to="call_ln24" fromId="46" toId="19">
 </dataflow>
-<dataflow id="185" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1" to="call_ln23" fromId="47" toId="19">
+<dataflow id="185" from="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1" to="call_ln24" fromId="47" toId="19">
 </dataflow>
-<dataflow id="186" from="p_anonymous_namespace_rowsReceived_4_s" to="call_ln23" fromId="48" toId="19">
+<dataflow id="186" from="p_anonymous_namespace_rowsReceived_4_s" to="call_ln24" fromId="48" toId="19">
 </dataflow>
-<dataflow id="187" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0" to="call_ln23" fromId="49" toId="19">
+<dataflow id="187" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0" to="call_ln24" fromId="49" toId="19">
 </dataflow>
-<dataflow id="188" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1" to="call_ln23" fromId="50" toId="19">
+<dataflow id="188" from="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1" to="call_ln24" fromId="50" toId="19">
 </dataflow>
-<dataflow id="189" from="rowsReceived" to="call_ln23" fromId="51" toId="19">
+<dataflow id="189" from="rowsReceived" to="call_ln24" fromId="51" toId="19">
 </dataflow>
-<dataflow id="190" from="icmp_ln11" to="StgValue_2" fromId="11" toId="2">
+<dataflow id="190" from="icmp_ln12" to="StgValue_2" fromId="11" toId="2">
 </dataflow>
-<dataflow id="191" from="icmp_ln11" to="StgValue_3" fromId="11" toId="3">
+<dataflow id="191" from="icmp_ln12" to="StgValue_3" fromId="11" toId="3">
 </dataflow>
 </dataflows>
 

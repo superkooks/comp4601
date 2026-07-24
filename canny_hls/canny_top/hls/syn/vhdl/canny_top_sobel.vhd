@@ -24,7 +24,7 @@ port (
     out_sobel_magnitude_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     out_sobel_magnitude_ce0 : OUT STD_LOGIC;
     out_sobel_magnitude_we0 : OUT STD_LOGIC;
-    out_sobel_magnitude_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    out_sobel_magnitude_d0 : OUT STD_LOGIC_VECTOR (10 downto 0);
     out_sobel_direction_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     out_sobel_direction_ce0 : OUT STD_LOGIC;
     out_sobel_direction_we0 : OUT STD_LOGIC;
@@ -246,7 +246,7 @@ attribute shreg_extract : string;
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_magnitude_address0 : STD_LOGIC_VECTOR (8 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_magnitude_ce0 : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_magnitude_we0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_magnitude_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_magnitude_d0 : STD_LOGIC_VECTOR (10 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_direction_address0 : STD_LOGIC_VECTOR (8 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_direction_ce0 : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_direction_we0 : STD_LOGIC;
@@ -268,7 +268,7 @@ attribute shreg_extract : string;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_address0 : STD_LOGIC_VECTOR (8 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_ce0 : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_we0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_d0 : STD_LOGIC_VECTOR (10 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_address0 : STD_LOGIC_VECTOR (8 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_ce0 : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_we0 : STD_LOGIC;
@@ -531,7 +531,7 @@ attribute shreg_extract : string;
         out_sobel_magnitude_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         out_sobel_magnitude_ce0 : OUT STD_LOGIC;
         out_sobel_magnitude_we0 : OUT STD_LOGIC;
-        out_sobel_magnitude_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        out_sobel_magnitude_d0 : OUT STD_LOGIC_VECTOR (10 downto 0);
         out_sobel_direction_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         out_sobel_direction_ce0 : OUT STD_LOGIC;
         out_sobel_direction_we0 : OUT STD_LOGIC;
@@ -561,11 +561,11 @@ attribute shreg_extract : string;
         ap_ready : OUT STD_LOGIC;
         result : IN STD_LOGIC_VECTOR (1 downto 0);
         writeSlot : IN STD_LOGIC_VECTOR (1 downto 0);
-        result_7 : IN STD_LOGIC_VECTOR (1 downto 0);
+        result_1 : IN STD_LOGIC_VECTOR (1 downto 0);
         out_sobel_magnitude_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         out_sobel_magnitude_ce0 : OUT STD_LOGIC;
         out_sobel_magnitude_we0 : OUT STD_LOGIC;
-        out_sobel_magnitude_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        out_sobel_magnitude_d0 : OUT STD_LOGIC_VECTOR (10 downto 0);
         out_sobel_direction_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         out_sobel_direction_ce0 : OUT STD_LOGIC;
         out_sobel_direction_we0 : OUT STD_LOGIC;
@@ -664,7 +664,7 @@ begin
         ap_ready => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_ap_ready,
         result => empty_reg_229,
         writeSlot => trunc_ln86_reg_209,
-        result_7 => trunc_ln118_reg_234,
+        result_1 => trunc_ln118_reg_234,
         out_sobel_magnitude_address0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_address0,
         out_sobel_magnitude_ce0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_ce0,
         out_sobel_magnitude_we0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_magnitude_we0,
@@ -686,7 +686,7 @@ begin
         p_anonymous_namespace_lineBuffer_32_1_ce1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce1,
         p_anonymous_namespace_lineBuffer_32_1_q1 => p_anonymous_namespace_lineBuffer_32_1_q1);
 
-    srem_32ns_3ns_2_36_seq_1_U84 : component canny_top_srem_32ns_3ns_2_36_seq_1
+    srem_32ns_3ns_2_36_seq_1_U76 : component canny_top_srem_32ns_3ns_2_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -703,7 +703,7 @@ begin
         ce => grp_fu_113_ce,
         dout => grp_fu_113_p2);
 
-    urem_31ns_3ns_2_35_seq_1_U85 : component canny_top_urem_31ns_3ns_2_35_seq_1
+    urem_31ns_3ns_2_35_seq_1_U77 : component canny_top_urem_31ns_3ns_2_35_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 35,
@@ -720,7 +720,7 @@ begin
         ce => grp_fu_160_ce,
         dout => grp_fu_160_p2);
 
-    urem_31ns_3ns_2_35_seq_1_U86 : component canny_top_urem_31ns_3ns_2_35_seq_1
+    urem_31ns_3ns_2_35_seq_1_U78 : component canny_top_urem_31ns_3ns_2_35_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 35,
@@ -1421,7 +1421,7 @@ begin
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
             out_sobel_magnitude_d0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_magnitude_d0;
         else 
-            out_sobel_magnitude_d0 <= "XXXXXXXX";
+            out_sobel_magnitude_d0 <= "XXXXXXXXXXX";
         end if; 
     end process;
 

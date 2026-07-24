@@ -1,6 +1,7 @@
 #include <cstdint>
 
 #include "canny_stages.h"
+#include "config.h"
 
 namespace {
 
@@ -53,7 +54,8 @@ void hysteresis(
     const std::uint8_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
-    bool *valid_out
+    bool *valid_out,
+    std::uint8_t resolve_weak
 ) {
     if (!valid_in) {
         *valid_out = false;
@@ -129,6 +131,9 @@ void hysteresis(
         ) {
             output[column] = STRONG_EDGE;
         }
+        else if (centre == WEAK_EDGE) {
+            output[column] = resolve_weak;
+        }
         else {
             output[column] = NON_EDGE;
         }
@@ -138,10 +143,10 @@ void hysteresis(
     ++rowsReceived<Instance>;
 }
 
-template void hysteresis<1>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
-template void hysteresis<2>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
-template void hysteresis<3>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
-template void hysteresis<4>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
+template void hysteresis<1>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
+template void hysteresis<2>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
+template void hysteresis<3>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
+template void hysteresis<4>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
 
 template void hysteresis_reset<1>();
 template void hysteresis_reset<2>();

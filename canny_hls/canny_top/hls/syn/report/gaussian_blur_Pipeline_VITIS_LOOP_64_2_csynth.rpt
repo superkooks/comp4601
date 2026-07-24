@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'gaussian_blur_Pipeline_VITIS_LOOP_64_2'
 ================================================================
-* Date:           Fri Jul 24 16:27:50 2026
+* Date:           Fri Jul 24 22:33:46 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -97,8 +97,8 @@
     |add_ln91_7_fu_1032_p2      |         +|   0|  0|  16|          14|          14|
     |add_ln91_fu_857_p2         |         +|   0|  0|  16|           9|           9|
     |add_ln93_fu_755_p2         |         +|   0|  0|  15|           8|           1|
-    |empty_42_fu_940_p2         |         +|   0|  0|  17|          10|          10|
-    |empty_43_fu_851_p2         |         +|   0|  0|  16|           9|           9|
+    |empty_40_fu_940_p2         |         +|   0|  0|  17|          10|          10|
+    |empty_41_fu_851_p2         |         +|   0|  0|  16|           9|           9|
     |empty_fu_781_p2            |         +|   0|  0|  16|           9|           9|
     |sum_1_fu_1382_p2           |         +|   0|  0|  16|          16|          16|
     |tmp10_fu_1218_p2           |         +|   0|  0|  17|          10|          10|
@@ -174,13 +174,13 @@
     |column_7_fu_82                     |   9|   0|    9|          0|
     |column_reg_1451                    |   9|   0|    9|          0|
     |column_reg_1451_pp0_iter1_reg      |   9|   0|    9|          0|
-    |empty_42_reg_1695                  |  10|   0|   10|          0|
-    |empty_43_reg_1640                  |   9|   0|    9|          0|
+    |empty_40_reg_1695                  |  10|   0|   10|          0|
+    |empty_41_reg_1640                  |   9|   0|    9|          0|
     |empty_reg_1595                     |   9|   0|    9|          0|
     |icmp_ln64_reg_1460                 |   1|   0|    1|          0|
-    |lshr_ln3_reg_1493                  |   8|   0|    8|          0|
     |lshr_ln93_1_reg_1511               |   8|   0|    8|          0|
     |lshr_ln93_2_reg_1529               |   8|   0|    8|          0|
+    |lshr_ln9_reg_1493                  |   8|   0|    8|          0|
     |lshr_ln_reg_1474                   |   8|   0|    8|          0|
     |reg_582                            |   8|   0|    8|          0|
     |reg_586                            |   8|   0|    8|          0|
@@ -215,7 +215,7 @@
 |ap_idle                                    |  out|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_64_2|  return value|
 |ap_ready                                   |  out|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_64_2|  return value|
 |select_ln22                                |   in|    3|     ap_none|                             select_ln22|        scalar|
-|result_15                                  |   in|    3|     ap_none|                               result_15|        scalar|
+|result_11                                  |   in|    3|     ap_none|                               result_11|        scalar|
 |select_ln22_1                              |   in|    3|     ap_none|                           select_ln22_1|        scalar|
 |select_ln22_2                              |   in|    3|     ap_none|                           select_ln22_2|        scalar|
 |select_ln22_3                              |   in|    3|     ap_none|                           select_ln22_3|        scalar|

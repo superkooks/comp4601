@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'canny_top'
 ================================================================
-* Date:           Fri Jul 24 16:27:51 2026
+* Date:           Fri Jul 24 22:33:48 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
     |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
     +---------+---------+----------+-----------+--------+---------+---------+
-    |   833759|  2408189|  4.169 ms|  12.041 ms|  833760|  2408190|       no|
+    |   833759|  2414257|  4.169 ms|  12.071 ms|  833760|  2414258|       no|
     +---------+---------+----------+-----------+--------+---------+---------+
 
     + Detail: 
@@ -41,11 +41,11 @@
         |grp_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_fu_120   |canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2   |     2562|     2562|  12.810 us|  12.810 us|       0|        0|  loop pipeline stp|
         |grp_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_128   |canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2   |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
         |grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_136   |canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2   |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
-        |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146   |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2   |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
-        |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154  |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21  |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
-        |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162  |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22  |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
-        |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170  |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23  |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
-        |grp_dataflow_parent_loop_proc_fu_178                            |dataflow_parent_loop_proc                            |   831194|  2405624|   4.156 ms|  12.028 ms|  831194|  2405624|                 no|
+        |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146   |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2   |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
+        |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154  |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21  |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
+        |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162  |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22  |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
+        |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170  |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23  |     1538|     1538|   7.690 us|   7.690 us|       0|        0|  loop pipeline stp|
+        |grp_dataflow_parent_loop_proc_fu_178                            |dataflow_parent_loop_proc                            |   831194|  2411692|   4.156 ms|  12.058 ms|  831194|  2411692|                 no|
         +----------------------------------------------------------------+-----------------------------------------------------+---------+---------+-----------+-----------+--------+---------+-------------------+
 
         * Loop: 
@@ -63,16 +63,16 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|       6|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |       39|     6|   15309|   27915|    0|
+|Instance         |       39|     4|   16248|   28387|    0|
 |Memory           |       15|     -|       0|       0|    0|
-|Multiplexer      |        -|     -|       0|    1064|    -|
+|Multiplexer      |        -|     -|       0|    1118|    -|
 |Register         |        -|     -|     402|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |       54|     6|   15711|   28985|    0|
+|Total            |       54|     4|   16650|   29511|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
-|Utilization (%)  |       18|    ~0|       6|      24|    0|
+|Utilization (%)  |       18|    ~0|       7|      25|    0|
 +-----------------+---------+------+--------+--------+-----+
 
 + Detail: 
@@ -82,43 +82,43 @@
     +----------------------------------------------------------------+-----------------------------------------------------+---------+----+-------+-------+-----+
     |grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_136   |canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2   |        0|   0|     37|    184|    0|
     |grp_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_fu_120   |canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2   |        0|   0|     27|    159|    0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146   |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2   |        0|   0|     25|    155|    0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154  |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21  |        0|   0|     25|    155|    0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162  |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22  |        0|   0|     25|    155|    0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170  |canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23  |        0|   0|     25|    155|    0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146   |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2   |        0|   0|     25|    155|    0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154  |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21  |        0|   0|     25|    155|    0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162  |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22  |        0|   0|     25|    155|    0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170  |canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23  |        0|   0|     25|    155|    0|
     |grp_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_128   |canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2   |        0|   0|     25|    155|    0|
     |control_s_axi_U                                                 |control_s_axi                                        |        0|   0|    176|    296|    0|
-    |grp_dataflow_parent_loop_proc_fu_178                            |dataflow_parent_loop_proc                            |       10|   6|  13271|  24773|    0|
+    |grp_dataflow_parent_loop_proc_fu_178                            |dataflow_parent_loop_proc                            |       10|   4|  14210|  25245|    0|
     |gmem_m_axi_U                                                    |gmem_m_axi                                           |       29|   0|   1673|   1728|    0|
     +----------------------------------------------------------------+-----------------------------------------------------+---------+----+-------+-------+-----+
-    |Total                                                           |                                                     |       39|   6|  15309|  27915|    0|
+    |Total                                                           |                                                     |       39|   4|  16248|  28387|    0|
     +----------------------------------------------------------------+-----------------------------------------------------+---------+----+-------+-------+-----+
 
     * DSP: 
     N/A
 
     * Memory: 
-    +---------------------------------------------------+----------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |                       Memory                      |                          Module                          | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
-    +---------------------------------------------------+----------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |p_ZN12_GLOBAL_N_110lineBufferE_0_U                 |p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|  1280|    8|     1|        10240|
-    |p_ZN12_GLOBAL_N_110lineBufferE_1_U                 |p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|  1280|    8|     1|        10240|
-    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_U           |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W      |        1|  0|   0|    0|   768|    2|     1|         1536|
-    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_U           |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W      |        1|  0|   0|    0|   768|    2|     1|         1536|
-    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_U           |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W      |        1|  0|   0|    0|   768|    2|     1|         1536|
-    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_U           |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W      |        1|  0|   0|    0|   768|    2|     1|         1536|
-    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_U           |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W      |        1|  0|   0|    0|   768|    2|     1|         1536|
-    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_U           |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W      |        1|  0|   0|    0|   768|    2|     1|         1536|
-    |p_anonymous_namespace_lineBuffer_32_0_U            |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W       |        1|  0|   0|    0|   768|    8|     1|         6144|
-    |p_anonymous_namespace_lineBuffer_32_1_U            |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W       |        1|  0|   0|    0|   768|    8|     1|         6144|
-    |p_anonymous_namespace_lineBuffer_25_magnitude_0_U  |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W       |        1|  0|   0|    0|   768|    8|     1|         6144|
-    |p_anonymous_namespace_lineBuffer_25_magnitude_1_U  |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W       |        1|  0|   0|    0|   768|    8|     1|         6144|
-    |p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W       |        1|  0|   0|    0|   768|    8|     1|         6144|
-    |p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W       |        1|  0|   0|    0|   768|    8|     1|         6144|
-    |p_anonymous_namespace_lineBuffer_direction_U       |p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W  |        1|  0|   0|    0|  1536|    2|     1|         3072|
-    +---------------------------------------------------+----------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total                                              |                                                          |       15|  0|   0|    0| 13312|   78|    15|        69632|
-    +---------------------------------------------------+----------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    +---------------------------------------------------+---------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |                       Memory                      |                             Module                            | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +---------------------------------------------------+---------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |p_ZN12_GLOBAL_N_110lineBufferE_0_U                 |p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W                 |        1|  0|   0|    0|  1280|    8|     1|        10240|
+    |p_ZN12_GLOBAL_N_110lineBufferE_1_U                 |p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W                 |        1|  0|   0|    0|  1280|    8|     1|        10240|
+    |p_anonymous_namespace_lineBuffer_25_magnitude_0_U  |p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W  |        1|  0|   0|    0|   768|   11|     1|         8448|
+    |p_anonymous_namespace_lineBuffer_25_magnitude_1_U  |p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W  |        1|  0|   0|    0|   768|   11|     1|         8448|
+    |p_anonymous_namespace_lineBuffer_32_0_U            |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_anonymous_namespace_lineBuffer_32_1_U            |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_U           |p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W            |        1|  0|   0|    0|   768|    8|     1|         6144|
+    |p_anonymous_namespace_lineBuffer_direction_U       |p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W       |        1|  0|   0|    0|  1536|    2|     1|         3072|
+    +---------------------------------------------------+---------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                                              |                                                               |       15|  0|   0|    0| 13312|  120|    15|       101888|
+    +---------------------------------------------------+---------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
     N/A
@@ -167,37 +167,43 @@
     |p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0                |  14|          3|    1|          3|
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0           |  14|          3|   10|         30|
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0                |  14|          3|    1|          3|
-    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0                 |  14|          3|    2|          6|
+    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1                |   9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0                 |  14|          3|    8|         24|
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0                |  14|          3|    1|          3|
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0           |  14|          3|   10|         30|
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0                |  14|          3|    1|          3|
-    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0                 |  14|          3|    2|          6|
+    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1                |   9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0                 |  14|          3|    8|         24|
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0                |  14|          3|    1|          3|
     |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0           |  14|          3|   10|         30|
     |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0                |  14|          3|    1|          3|
-    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0                 |  14|          3|    2|          6|
+    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1                |   9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0                 |  14|          3|    8|         24|
     |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0                |  14|          3|    1|          3|
     |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0           |  14|          3|   10|         30|
     |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0                |  14|          3|    1|          3|
-    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0                 |  14|          3|    2|          6|
+    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1                |   9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0                 |  14|          3|    8|         24|
     |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0                |  14|          3|    1|          3|
     |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0           |  14|          3|   10|         30|
     |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0                |  14|          3|    1|          3|
-    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0                 |  14|          3|    2|          6|
+    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1                |   9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0                 |  14|          3|    8|         24|
     |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0                |  14|          3|    1|          3|
     |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0           |  14|          3|   10|         30|
     |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0                |  14|          3|    1|          3|
-    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0                 |  14|          3|    2|          6|
+    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1                |   9|          2|    1|          2|
+    |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0                 |  14|          3|    8|         24|
     |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0                |  14|          3|    1|          3|
     |p_anonymous_namespace_lineBuffer_25_magnitude_0_address0  |  14|          3|   10|         30|
     |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0       |  14|          3|    1|          3|
     |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1       |   9|          2|    1|          2|
-    |p_anonymous_namespace_lineBuffer_25_magnitude_0_d0        |  14|          3|    8|         24|
+    |p_anonymous_namespace_lineBuffer_25_magnitude_0_d0        |  14|          3|   11|         33|
     |p_anonymous_namespace_lineBuffer_25_magnitude_0_we0       |  14|          3|    1|          3|
     |p_anonymous_namespace_lineBuffer_25_magnitude_1_address0  |  14|          3|   10|         30|
     |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0       |  14|          3|    1|          3|
     |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1       |   9|          2|    1|          2|
-    |p_anonymous_namespace_lineBuffer_25_magnitude_1_d0        |  14|          3|    8|         24|
+    |p_anonymous_namespace_lineBuffer_25_magnitude_1_d0        |  14|          3|   11|         33|
     |p_anonymous_namespace_lineBuffer_25_magnitude_1_we0       |  14|          3|    1|          3|
     |p_anonymous_namespace_lineBuffer_32_0_address0            |  14|          3|   10|         30|
     |p_anonymous_namespace_lineBuffer_32_0_ce0                 |  14|          3|    1|          3|
@@ -222,7 +228,7 @@
     |p_anonymous_namespace_rowsReceived_4_s                    |   9|          2|   32|         64|
     |rowsReceived                                              |   9|          2|   32|         64|
     +----------------------------------------------------------+----+-----------+-----+-----------+
-    |Total                                                     |1064|        229|  532|       1328|
+    |Total                                                     |1118|        241|  580|       1466|
     +----------------------------------------------------------+----+-----------+-----+-----------+
 
     * Register: 
@@ -238,10 +244,10 @@
     |ap_sync_reg_grp_dataflow_parent_loop_proc_fu_178_ap_ready                    |   1|   0|    1|          0|
     |grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_136_ap_start_reg   |   1|   0|    1|          0|
     |grp_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_fu_120_ap_start_reg   |   1|   0|    1|          0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154_ap_start_reg  |   1|   0|    1|          0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162_ap_start_reg  |   1|   0|    1|          0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170_ap_start_reg  |   1|   0|    1|          0|
-    |grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146_ap_start_reg   |   1|   0|    1|          0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154_ap_start_reg  |   1|   0|    1|          0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162_ap_start_reg  |   1|   0|    1|          0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170_ap_start_reg  |   1|   0|    1|          0|
+    |grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146_ap_start_reg   |   1|   0|    1|          0|
     |grp_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_128_ap_start_reg   |   1|   0|    1|          0|
     |grp_dataflow_parent_loop_proc_fu_178_ap_start_reg                            |   1|   0|    1|          0|
     |in_r_read_reg_287                                                            |  64|   0|   64|          0|
@@ -375,46 +381,46 @@ IsGatedGlobalClock: 0
 State 1 <SV = 0> <Delay = 0.00>
 ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1"   --->   Operation 5 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 6 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1"   --->   Operation 6 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_1 : Operation 11 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 7 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1"   --->   Operation 7 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1"   --->   Operation 8 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 10 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 11 [2/2] (0.00ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"   --->   Operation 11 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 1.66>
-ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%store_ln28 = store i32 0, i32 %p_anonymous_namespace_rowsReceived" [../src/gaussian_blur.cpp:28->../src/canny_top.cpp:42->../src/canny_top.cpp:9]   --->   Operation 12 'store' 'store_ln28' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%store_ln28 = store i32 0, i32 %p_anonymous_namespace_rowsReceived" [../src/gaussian_blur.cpp:28->../src/canny_top.cpp:43->../src/canny_top.cpp:10]   --->   Operation 12 'store' 'store_ln28' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 13 [1/2] (1.66ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1"   --->   Operation 13 'call' 'call_ln0' <Predicate = true> <Delay = 1.66> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%store_ln66 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_1" [../src/sobel.cpp:66->../src/canny_top.cpp:43->../src/canny_top.cpp:9]   --->   Operation 14 'store' 'store_ln66' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%store_ln66 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_1" [../src/sobel.cpp:66->../src/canny_top.cpp:44->../src/canny_top.cpp:10]   --->   Operation 14 'store' 'store_ln66' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 15 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1"   --->   Operation 15 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%store_ln20 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_2" [../src/non_maximum_suppression.cpp:20->../src/canny_top.cpp:44->../src/canny_top.cpp:9]   --->   Operation 16 'store' 'store_ln20' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%store_ln42 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_1_s" [../src/hysteresis.cpp:42->../src/canny_top.cpp:45->../src/canny_top.cpp:9]   --->   Operation 18 'store' 'store_ln42' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%store_ln42 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_2_s" [../src/hysteresis.cpp:42->../src/canny_top.cpp:46->../src/canny_top.cpp:9]   --->   Operation 20 'store' 'store_ln42' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 21 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%store_ln42 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_3_s" [../src/hysteresis.cpp:42->../src/canny_top.cpp:47->../src/canny_top.cpp:9]   --->   Operation 22 'store' 'store_ln42' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%store_ln42 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_4_s" [../src/hysteresis.cpp:42->../src/canny_top.cpp:48->../src/canny_top.cpp:9]   --->   Operation 24 'store' 'store_ln42' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%store_ln6 = store i32 0, i32 %rowsReceived" [../src/output_row.cpp:6->../src/canny_top.cpp:49->../src/canny_top.cpp:9]   --->   Operation 26 'store' 'store_ln6' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%store_ln20 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_2" [../src/non_maximum_suppression.cpp:20->../src/canny_top.cpp:45->../src/canny_top.cpp:10]   --->   Operation 16 'store' 'store_ln20' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%store_ln43 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_1_s" [../src/hysteresis.cpp:43->../src/canny_top.cpp:46->../src/canny_top.cpp:10]   --->   Operation 18 'store' 'store_ln43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1"   --->   Operation 19 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%store_ln43 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_2_s" [../src/hysteresis.cpp:43->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 20 'store' 'store_ln43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 21 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"   --->   Operation 21 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%store_ln43 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_3_s" [../src/hysteresis.cpp:43->../src/canny_top.cpp:48->../src/canny_top.cpp:10]   --->   Operation 22 'store' 'store_ln43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"   --->   Operation 23 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%store_ln43 = store i32 0, i32 %p_anonymous_namespace_rowsReceived_4_s" [../src/hysteresis.cpp:43->../src/canny_top.cpp:49->../src/canny_top.cpp:10]   --->   Operation 24 'store' 'store_ln43' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/2] (1.65ns)   --->   "%call_ln0 = call void @canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"   --->   Operation 25 'call' 'call_ln0' <Predicate = true> <Delay = 1.65> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%store_ln6 = store i32 0, i32 %rowsReceived" [../src/output_row.cpp:6->../src/canny_top.cpp:50->../src/canny_top.cpp:10]   --->   Operation 26 'store' 'store_ln6' <Predicate = true> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 1.00>
-ST_3 : Operation 27 [1/1] (1.00ns)   --->   "%out_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %out_r" [../src/canny_top.cpp:8]   --->   Operation 27 'read' 'out_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_3 : Operation 28 [1/1] (1.00ns)   --->   "%in_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_r" [../src/canny_top.cpp:8]   --->   Operation 28 'read' 'in_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
-ST_3 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln8 = call void @dataflow_parent_loop_proc, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:8]   --->   Operation 29 'call' 'call_ln8' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 27 [1/1] (1.00ns)   --->   "%out_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %out_r" [../src/canny_top.cpp:9]   --->   Operation 27 'read' 'out_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 28 [1/1] (1.00ns)   --->   "%in_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_r" [../src/canny_top.cpp:9]   --->   Operation 28 'read' 'in_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_3 : Operation 29 [2/2] (0.00ns)   --->   "%call_ln9 = call void @dataflow_parent_loop_proc, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:9]   --->   Operation 29 'call' 'call_ln9' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 4 <SV = 3> <Delay = 0.78>
-ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%spectopmodule_ln8 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_2" [../src/canny_top.cpp:8]   --->   Operation 30 'spectopmodule' 'spectopmodule_ln8' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln8 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_22, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_10, i32 4294967295, i32 0, i32 0, i32 0" [../src/canny_top.cpp:8]   --->   Operation 31 'specinterface' 'specinterface_ln8' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_10, i32 64, i32 0, void @empty_9, void @empty_8, void @empty_10, i32 16, i32 16, i32 16, i32 16, void @empty_10, void @empty_10, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%spectopmodule_ln9 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_12" [../src/canny_top.cpp:9]   --->   Operation 30 'spectopmodule' 'spectopmodule_ln9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%specinterface_ln9 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_3, i32 0, i32 0, void @empty_22, i32 0, i32 0, void @empty_22, void @empty_22, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 0" [../src/canny_top.cpp:9]   --->   Operation 31 'specinterface' 'specinterface_ln9' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_22, i32 64, i32 0, void @empty_10, void @empty_13, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 32 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i512 %gmem"   --->   Operation 33 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %in_r, void @empty_13, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_7, void @empty_6, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %in_r, void @empty_4, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_13, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_7, void @empty_3, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_4, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_10, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_13, i32 0, i32 0, void @empty_10, i32 0, i32 0, void @empty_7, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0, void @empty_10, void @empty_10, i32 0, i32 0, i32 0, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 39 [1/2] (0.78ns)   --->   "%call_ln8 = call void @dataflow_parent_loop_proc, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i2 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:8]   --->   Operation 39 'call' 'call_ln8' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
-ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%ret_ln39 = ret" [../src/canny_top.cpp:39]   --->   Operation 40 'ret' 'ret_ln39' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %in_r, void @empty_9, i32 0, i32 0, void @empty_22, i32 0, i32 0, void @empty_8, void @empty_7, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_6, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %in_r, void @empty_5, i32 0, i32 0, void @empty_22, i32 0, i32 0, void @empty_22, void @empty_22, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_6, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_9, i32 0, i32 0, void @empty_22, i32 0, i32 0, void @empty_8, void @empty_4, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_6, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_5, i32 0, i32 0, void @empty_22, i32 0, i32 0, void @empty_22, void @empty_22, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_6, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 37 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_9, i32 0, i32 0, void @empty_22, i32 0, i32 0, void @empty_8, void @empty_22, void @empty_22, i32 0, i32 0, i32 0, i32 0, void @empty_22, void @empty_22, i32 0, i32 0, i32 0, i32 0"   --->   Operation 38 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 39 [1/2] (0.78ns)   --->   "%call_ln9 = call void @dataflow_parent_loop_proc, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived" [../src/canny_top.cpp:9]   --->   Operation 39 'call' 'call_ln9' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+ST_4 : Operation 40 [1/1] (0.00ns)   --->   "%ret_ln40 = ret" [../src/canny_top.cpp:40]   --->   Operation 40 'ret' 'ret_ln40' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -445,14 +451,14 @@ Port [ p_anonymous_namespace_rowsReceived_1_s]:  wired=0; compound=0; hidden=1; 
 Port [ p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_anonymous_namespace_rowsReceived_2_s]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_anonymous_namespace_rowsReceived_3_s]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ p_anonymous_namespace_rowsReceived_4_s]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
-Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
+Port [ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; MemPort=[21]; IO mode=ap_memory:ce=0
 Port [ rowsReceived]:  wired=0; compound=0; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=0; pingpong=0; private_global=1; IO mode=ap_ovld:ce=0
 ---------------- STG Properties END ------------------
 
@@ -466,19 +472,19 @@ store_ln66        (store        ) [ 00000]
 call_ln0          (call         ) [ 00000]
 store_ln20        (store        ) [ 00000]
 call_ln0          (call         ) [ 00000]
-store_ln42        (store        ) [ 00000]
+store_ln43        (store        ) [ 00000]
 call_ln0          (call         ) [ 00000]
-store_ln42        (store        ) [ 00000]
+store_ln43        (store        ) [ 00000]
 call_ln0          (call         ) [ 00000]
-store_ln42        (store        ) [ 00000]
+store_ln43        (store        ) [ 00000]
 call_ln0          (call         ) [ 00000]
-store_ln42        (store        ) [ 00000]
+store_ln43        (store        ) [ 00000]
 call_ln0          (call         ) [ 00000]
 store_ln6         (store        ) [ 00000]
 out_r_read        (read         ) [ 00001]
 in_r_read         (read         ) [ 00001]
-spectopmodule_ln8 (spectopmodule) [ 00000]
-specinterface_ln8 (specinterface) [ 00000]
+spectopmodule_ln9 (spectopmodule) [ 00000]
+specinterface_ln9 (specinterface) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
 specbitsmap_ln0   (specbitsmap  ) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
@@ -486,8 +492,8 @@ specinterface_ln0 (specinterface) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
 specinterface_ln0 (specinterface) [ 00000]
-call_ln8          (call         ) [ 00000]
-ret_ln39          (ret          ) [ 00000]
+call_ln9          (call         ) [ 00000]
+ret_ln40          (ret          ) [ 00000]
 </LifeTime>
 
 <model>
@@ -661,7 +667,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="35" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -671,7 +677,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -690,7 +696,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="41" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -700,7 +706,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="43" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -719,7 +725,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="47" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -729,7 +735,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="49" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+<StgValue><ssdm name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </bind>
 </comp>
@@ -775,7 +781,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="59" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2"/></StgValue>
+<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2"/></StgValue>
 </bind>
 </comp>
 
@@ -784,7 +790,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="61" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21"/></StgValue>
+<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21"/></StgValue>
 </bind>
 </comp>
 
@@ -793,7 +799,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="63" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22"/></StgValue>
+<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22"/></StgValue>
 </bind>
 </comp>
 
@@ -802,7 +808,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="65" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23"/></StgValue>
+<StgValue><ssdm name="canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23"/></StgValue>
 </bind>
 </comp>
 
@@ -847,7 +853,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_2"/></StgValue>
+<StgValue><ssdm name="empty_12"/></StgValue>
 </bind>
 </comp>
 
@@ -865,7 +871,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="79" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_22"/></StgValue>
+<StgValue><ssdm name="empty_3"/></StgValue>
 </bind>
 </comp>
 
@@ -874,7 +880,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="81" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -910,7 +916,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="89" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_9"/></StgValue>
+<StgValue><ssdm name="empty_10"/></StgValue>
 </bind>
 </comp>
 
@@ -919,7 +925,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="91" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -946,7 +952,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="97" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_13"/></StgValue>
+<StgValue><ssdm name="empty_9"/></StgValue>
 </bind>
 </comp>
 
@@ -955,7 +961,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="99" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_7"/></StgValue>
+<StgValue><ssdm name="empty_8"/></StgValue>
 </bind>
 </comp>
 
@@ -964,7 +970,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="101" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_6"/></StgValue>
+<StgValue><ssdm name="empty_7"/></StgValue>
 </bind>
 </comp>
 
@@ -973,7 +979,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="103" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_5"/></StgValue>
+<StgValue><ssdm name="empty_6"/></StgValue>
 </bind>
 </comp>
 
@@ -982,7 +988,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="105" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_4"/></StgValue>
+<StgValue><ssdm name="empty_5"/></StgValue>
 </bind>
 </comp>
 
@@ -991,7 +997,7 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="107" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_3"/></StgValue>
+<StgValue><ssdm name="empty_4"/></StgValue>
 </bind>
 </comp>
 
@@ -1049,8 +1055,8 @@ ret_ln39          (ret          ) [ 00000]
 <pin_list>
 <pin id="137" dir="0" index="0" bw="0" slack="0"/>
 <pin id="138" dir="0" index="1" bw="2" slack="0"/>
-<pin id="139" dir="0" index="2" bw="8" slack="0"/>
-<pin id="140" dir="0" index="3" bw="8" slack="0"/>
+<pin id="139" dir="0" index="2" bw="11" slack="0"/>
+<pin id="140" dir="0" index="3" bw="11" slack="0"/>
 <pin id="141" dir="1" index="4" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1059,7 +1065,7 @@ ret_ln39          (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="146" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146">
+<comp id="146" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146">
 <pin_list>
 <pin id="147" dir="0" index="0" bw="0" slack="0"/>
 <pin id="148" dir="0" index="1" bw="8" slack="0"/>
@@ -1072,11 +1078,11 @@ ret_ln39          (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="154" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154">
+<comp id="154" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154">
 <pin_list>
 <pin id="155" dir="0" index="0" bw="0" slack="0"/>
-<pin id="156" dir="0" index="1" bw="2" slack="0"/>
-<pin id="157" dir="0" index="2" bw="2" slack="0"/>
+<pin id="156" dir="0" index="1" bw="8" slack="0"/>
+<pin id="157" dir="0" index="2" bw="8" slack="0"/>
 <pin id="158" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1085,11 +1091,11 @@ ret_ln39          (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="162" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162">
+<comp id="162" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162">
 <pin_list>
 <pin id="163" dir="0" index="0" bw="0" slack="0"/>
-<pin id="164" dir="0" index="1" bw="2" slack="0"/>
-<pin id="165" dir="0" index="2" bw="2" slack="0"/>
+<pin id="164" dir="0" index="1" bw="8" slack="0"/>
+<pin id="165" dir="0" index="2" bw="8" slack="0"/>
 <pin id="166" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1098,11 +1104,11 @@ ret_ln39          (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="170" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170">
+<comp id="170" class="1004" name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170">
 <pin_list>
 <pin id="171" dir="0" index="0" bw="0" slack="0"/>
-<pin id="172" dir="0" index="1" bw="2" slack="0"/>
-<pin id="173" dir="0" index="2" bw="2" slack="0"/>
+<pin id="172" dir="0" index="1" bw="8" slack="0"/>
+<pin id="173" dir="0" index="2" bw="8" slack="0"/>
 <pin id="174" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1125,26 +1131,26 @@ ret_ln39          (ret          ) [ 00000]
 <pin id="188" dir="0" index="9" bw="8" slack="0"/>
 <pin id="189" dir="0" index="10" bw="32" slack="0"/>
 <pin id="190" dir="0" index="11" bw="2" slack="0"/>
-<pin id="191" dir="0" index="12" bw="8" slack="0"/>
-<pin id="192" dir="0" index="13" bw="8" slack="0"/>
+<pin id="191" dir="0" index="12" bw="11" slack="0"/>
+<pin id="192" dir="0" index="13" bw="11" slack="0"/>
 <pin id="193" dir="0" index="14" bw="32" slack="0"/>
 <pin id="194" dir="0" index="15" bw="8" slack="0"/>
 <pin id="195" dir="0" index="16" bw="8" slack="0"/>
 <pin id="196" dir="0" index="17" bw="32" slack="0"/>
-<pin id="197" dir="0" index="18" bw="2" slack="0"/>
-<pin id="198" dir="0" index="19" bw="2" slack="0"/>
+<pin id="197" dir="0" index="18" bw="8" slack="0"/>
+<pin id="198" dir="0" index="19" bw="8" slack="0"/>
 <pin id="199" dir="0" index="20" bw="32" slack="0"/>
-<pin id="200" dir="0" index="21" bw="2" slack="0"/>
-<pin id="201" dir="0" index="22" bw="2" slack="0"/>
+<pin id="200" dir="0" index="21" bw="8" slack="0"/>
+<pin id="201" dir="0" index="22" bw="8" slack="0"/>
 <pin id="202" dir="0" index="23" bw="32" slack="0"/>
-<pin id="203" dir="0" index="24" bw="2" slack="0"/>
-<pin id="204" dir="0" index="25" bw="2" slack="0"/>
+<pin id="203" dir="0" index="24" bw="8" slack="0"/>
+<pin id="204" dir="0" index="25" bw="8" slack="0"/>
 <pin id="205" dir="0" index="26" bw="32" slack="0"/>
 <pin id="206" dir="1" index="27" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln8/3 "/>
+<opset="call_ln9/3 "/>
 </bind>
 </comp>
 
@@ -1184,7 +1190,7 @@ ret_ln39          (ret          ) [ 00000]
 </bind>
 </comp>
 
-<comp id="252" class="1004" name="store_ln42_store_fu_252">
+<comp id="252" class="1004" name="store_ln43_store_fu_252">
 <pin_list>
 <pin id="253" dir="0" index="0" bw="1" slack="0"/>
 <pin id="254" dir="0" index="1" bw="32" slack="0"/>
@@ -1192,11 +1198,11 @@ ret_ln39          (ret          ) [ 00000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln42/2 "/>
+<opset="store_ln43/2 "/>
 </bind>
 </comp>
 
-<comp id="258" class="1004" name="store_ln42_store_fu_258">
+<comp id="258" class="1004" name="store_ln43_store_fu_258">
 <pin_list>
 <pin id="259" dir="0" index="0" bw="1" slack="0"/>
 <pin id="260" dir="0" index="1" bw="32" slack="0"/>
@@ -1204,11 +1210,11 @@ ret_ln39          (ret          ) [ 00000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln42/2 "/>
+<opset="store_ln43/2 "/>
 </bind>
 </comp>
 
-<comp id="264" class="1004" name="store_ln42_store_fu_264">
+<comp id="264" class="1004" name="store_ln43_store_fu_264">
 <pin_list>
 <pin id="265" dir="0" index="0" bw="1" slack="0"/>
 <pin id="266" dir="0" index="1" bw="32" slack="0"/>
@@ -1216,11 +1222,11 @@ ret_ln39          (ret          ) [ 00000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln42/2 "/>
+<opset="store_ln43/2 "/>
 </bind>
 </comp>
 
-<comp id="270" class="1004" name="store_ln42_store_fu_270">
+<comp id="270" class="1004" name="store_ln43_store_fu_270">
 <pin_list>
 <pin id="271" dir="0" index="0" bw="1" slack="0"/>
 <pin id="272" dir="0" index="1" bw="32" slack="0"/>
@@ -1228,7 +1234,7 @@ ret_ln39          (ret          ) [ 00000]
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
-<opset="store_ln42/2 "/>
+<opset="store_ln43/2 "/>
 </bind>
 </comp>
 
@@ -1489,16 +1495,16 @@ ret_ln39          (ret          ) [ 00000]
 |          |  grp_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_fu_120 |    0    |    0    |    0    |    25   |    95   |    0    |
 |          |  grp_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_128 |    0    |    0    |    0    |    23   |    91   |    0    |
 |          |  grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_136 |    0    |    0    |    0    |    34   |   109   |    0    |
-|   call   |  grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146 |    0    |    0    |    0    |    23   |    91   |    0    |
-|          | grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154 |    0    |    0    |    0    |    23   |    91   |    0    |
-|          | grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162 |    0    |    0    |    0    |    23   |    91   |    0    |
-|          | grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170 |    0    |    0    |    0    |    23   |    91   |    0    |
-|          |              grp_dataflow_parent_loop_proc_fu_178              |    10   |    6    | 40.0639 |  15631  |  17770  |    0    |
+|   call   |  grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146 |    0    |    0    |    0    |    23   |    91   |    0    |
+|          | grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154 |    0    |    0    |    0    |    23   |    91   |    0    |
+|          | grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162 |    0    |    0    |    0    |    23   |    91   |    0    |
+|          | grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170 |    0    |    0    |    0    |    23   |    91   |    0    |
+|          |              grp_dataflow_parent_loop_proc_fu_178              |    10   |    4    | 50.6379 |  17216  |  19070  |    0    |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 |   read   |                     out_r_read_read_fu_108                     |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |                      in_r_read_read_fu_114                     |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                                                |    10   |    6    | 40.0639 |  15805  |  18429  |    0    |
+|   Total  |                                                                |    10   |    4    | 50.6379 |  17390  |  19729  |    0    |
 |----------|----------------------------------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -1550,10 +1556,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   10   |    6   |   40   |  15805 |  18429 |    0   |
+|  Function |   10   |    4   |   50   |  17390 |  19729 |    0   |
 |   Memory  |   15   |    -   |    -   |    0   |    0   |    0   |
 |Multiplexer|    -   |    -   |    0   |    0   |   18   |    -   |
 |  Register |    -   |    -   |    -   |   128  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   25   |    6   |   40   |  15933 |  18447 |    0   |
+|   Total   |   25   |    4   |   51   |  17518 |  19747 |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

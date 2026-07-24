@@ -35,7 +35,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/grayscale.cpp:4~../src/canny_top.cpp:27</SourceLocation>
+<SourceLocation>../src/grayscale.cpp:4~../src/canny_top.cpp:28</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

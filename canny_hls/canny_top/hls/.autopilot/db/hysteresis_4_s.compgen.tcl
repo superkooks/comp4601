@@ -11,14 +11,14 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 193 \
+    id 194 \
     name out_hysteresis3 \
     reset_level 1 \
     sync_rst true \
     dir I \
     corename out_hysteresis3 \
     op interface \
-    ports { out_hysteresis3_address0 { O 9 vector } out_hysteresis3_ce0 { O 1 bit } out_hysteresis3_q0 { I 2 vector } } \
+    ports { out_hysteresis3_address0 { O 9 vector } out_hysteresis3_ce0 { O 1 bit } out_hysteresis3_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_hysteresis3'"
@@ -30,7 +30,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 194 \
+    id 195 \
     name out_hysteresis4 \
     reset_level 1 \
     sync_rst true \
@@ -49,14 +49,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 196 \
+    id 197 \
     name p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 { O 2 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0 { I 2 vector } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0'"
@@ -68,14 +68,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 197 \
+    id 198 \
     name p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 { O 2 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0 { I 2 vector } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1'"
@@ -86,7 +86,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 192 \
+    id 193 \
     name p_read \
     type other \
     dir I \
@@ -101,7 +101,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 195 \
+    id 196 \
     name p_anonymous_namespace_rowsReceived_4_s \
     type other \
     dir IO \

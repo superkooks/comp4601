@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/sobel.cpp:69~../src/canny_top.cpp:43~../src/canny_top.cpp:9</SourceLocation>
+<SourceLocation>../src/sobel.cpp:69~../src/canny_top.cpp:44~../src/canny_top.cpp:10</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_68_1_VITIS_LOOP_69_2>
 <Name>VITIS_LOOP_68_1_VITIS_LOOP_69_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/sobel.cpp:68~../src/canny_top.cpp:43~../src/canny_top.cpp:9</SourceLocation>
+<SourceLocation>../src/sobel.cpp:68~../src/canny_top.cpp:44~../src/canny_top.cpp:10</SourceLocation>
 </VITIS_LOOP_68_1_VITIS_LOOP_69_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

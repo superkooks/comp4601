@@ -19,13 +19,13 @@ set cdfgNum 40
 set C_modelName {sobel_Pipeline_VITIS_LOOP_89_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict out_sobel_magnitude { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict out_sobel_magnitude { MEM_WIDTH 11 MEM_SIZE 1024 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict out_sobel_direction { MEM_WIDTH 2 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict out_gaussian { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_32_0 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_32_1 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ out_sobel_magnitude int 8 regular {array 512 { 0 3 } 0 1 }  }
+	{ out_sobel_magnitude int 11 regular {array 512 { 0 3 } 0 1 }  }
 	{ out_sobel_direction int 2 regular {array 512 { 0 3 } 0 1 }  }
 	{ writeSlot int 2 regular  }
 	{ out_gaussian int 8 regular {array 512 { 1 3 } 1 1 }  }
@@ -36,7 +36,7 @@ set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "out_sobel_magnitude", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
+	{ "Name" : "out_sobel_magnitude", "interface" : "memory", "bitwidth" : 11, "direction" : "WRITEONLY"} , 
  	{ "Name" : "out_sobel_direction", "interface" : "memory", "bitwidth" : 2, "direction" : "WRITEONLY"} , 
  	{ "Name" : "writeSlot", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "out_gaussian", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
@@ -54,7 +54,7 @@ set portList {
 	{ out_sobel_magnitude_address0 sc_out sc_lv 9 signal 0 } 
 	{ out_sobel_magnitude_ce0 sc_out sc_logic 1 signal 0 } 
 	{ out_sobel_magnitude_we0 sc_out sc_logic 1 signal 0 } 
-	{ out_sobel_magnitude_d0 sc_out sc_lv 8 signal 0 } 
+	{ out_sobel_magnitude_d0 sc_out sc_lv 11 signal 0 } 
 	{ out_sobel_direction_address0 sc_out sc_lv 9 signal 1 } 
 	{ out_sobel_direction_ce0 sc_out sc_logic 1 signal 1 } 
 	{ out_sobel_direction_we0 sc_out sc_logic 1 signal 1 } 
@@ -82,7 +82,7 @@ set NewPortList {[
  	{ "name": "out_sobel_magnitude_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "out_sobel_magnitude", "role": "address0" }} , 
  	{ "name": "out_sobel_magnitude_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_sobel_magnitude", "role": "ce0" }} , 
  	{ "name": "out_sobel_magnitude_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_sobel_magnitude", "role": "we0" }} , 
- 	{ "name": "out_sobel_magnitude_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "out_sobel_magnitude", "role": "d0" }} , 
+ 	{ "name": "out_sobel_magnitude_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "out_sobel_magnitude", "role": "d0" }} , 
  	{ "name": "out_sobel_direction_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "out_sobel_direction", "role": "address0" }} , 
  	{ "name": "out_sobel_direction_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_sobel_direction", "role": "ce0" }} , 
  	{ "name": "out_sobel_direction_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_sobel_direction", "role": "we0" }} , 
@@ -121,7 +121,7 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	out_sobel_magnitude { ap_memory {  { out_sobel_magnitude_address0 mem_address 1 9 }  { out_sobel_magnitude_ce0 mem_ce 1 1 }  { out_sobel_magnitude_we0 mem_we 1 1 }  { out_sobel_magnitude_d0 mem_din 1 8 } } }
+	out_sobel_magnitude { ap_memory {  { out_sobel_magnitude_address0 mem_address 1 9 }  { out_sobel_magnitude_ce0 mem_ce 1 1 }  { out_sobel_magnitude_we0 mem_we 1 1 }  { out_sobel_magnitude_d0 mem_din 1 11 } } }
 	out_sobel_direction { ap_memory {  { out_sobel_direction_address0 mem_address 1 9 }  { out_sobel_direction_ce0 mem_ce 1 1 }  { out_sobel_direction_we0 mem_we 1 1 }  { out_sobel_direction_d0 mem_din 1 2 } } }
 	writeSlot { ap_none {  { writeSlot in_data 0 2 } } }
 	out_gaussian { ap_memory {  { out_gaussian_address0 mem_address 1 9 }  { out_gaussian_ce0 mem_ce 1 1 }  { out_gaussian_q0 mem_dout 0 8 } } }

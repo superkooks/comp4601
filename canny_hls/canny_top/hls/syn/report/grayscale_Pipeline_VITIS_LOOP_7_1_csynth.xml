@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/grayscale.cpp:7~../src/canny_top.cpp:27</SourceLocation>
+<SourceLocation>../src/grayscale.cpp:7~../src/canny_top.cpp:28</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_7_1>
 <Name>VITIS_LOOP_7_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/grayscale.cpp:7~../src/canny_top.cpp:27</SourceLocation>
+<SourceLocation>../src/grayscale.cpp:7~../src/canny_top.cpp:28</SourceLocation>
 </VITIS_LOOP_7_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

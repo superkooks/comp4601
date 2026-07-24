@@ -49,13 +49,13 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:31~../src/canny_top.cpp:42~../src/canny_top.cpp:9</SourceLocation>
+<SourceLocation>../src/gaussian_blur.cpp:31~../src/canny_top.cpp:43~../src/canny_top.cpp:10</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_30_1_VITIS_LOOP_31_2>
 <Name>VITIS_LOOP_30_1_VITIS_LOOP_31_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:30~../src/canny_top.cpp:42~../src/canny_top.cpp:9</SourceLocation>
+<SourceLocation>../src/gaussian_blur.cpp:30~../src/canny_top.cpp:43~../src/canny_top.cpp:10</SourceLocation>
 </VITIS_LOOP_30_1_VITIS_LOOP_31_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>

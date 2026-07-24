@@ -17,7 +17,7 @@ enum class GradientDirection : std::uint8_t {
 };
 
 struct GradientPixel {
-    std::uint8_t magnitude;
+    std::uint16_t magnitude;
     GradientDirection direction;
 };
 

@@ -35,7 +35,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/output_row.cpp:10~../src/canny_top.cpp:37</SourceLocation>
+<SourceLocation>../src/output_row.cpp:10~../src/canny_top.cpp:38</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

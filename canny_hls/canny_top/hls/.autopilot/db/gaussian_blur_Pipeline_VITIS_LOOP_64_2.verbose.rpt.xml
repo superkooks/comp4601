@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'gaussian_blur_Pipeline_VITIS_LOOP_64_2'" level="0">
-<item name = "Date">Fri Jul 24 16:27:50 2026
+<item name = "Date">Fri Jul 24 22:33:46 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -90,8 +90,8 @@
 <column name="add_ln91_7_fu_1032_p2">+, 0, 0, 16, 14, 14</column>
 <column name="add_ln91_fu_857_p2">+, 0, 0, 16, 9, 9</column>
 <column name="add_ln93_fu_755_p2">+, 0, 0, 15, 8, 1</column>
-<column name="empty_42_fu_940_p2">+, 0, 0, 17, 10, 10</column>
-<column name="empty_43_fu_851_p2">+, 0, 0, 16, 9, 9</column>
+<column name="empty_40_fu_940_p2">+, 0, 0, 17, 10, 10</column>
+<column name="empty_41_fu_851_p2">+, 0, 0, 16, 9, 9</column>
 <column name="empty_fu_781_p2">+, 0, 0, 16, 9, 9</column>
 <column name="sum_1_fu_1382_p2">+, 0, 0, 16, 16, 16</column>
 <column name="tmp10_fu_1218_p2">+, 0, 0, 17, 10, 10</column>
@@ -159,13 +159,13 @@
 <column name="column_7_fu_82">9, 0, 9, 0</column>
 <column name="column_reg_1451">9, 0, 9, 0</column>
 <column name="column_reg_1451_pp0_iter1_reg">9, 0, 9, 0</column>
-<column name="empty_42_reg_1695">10, 0, 10, 0</column>
-<column name="empty_43_reg_1640">9, 0, 9, 0</column>
+<column name="empty_40_reg_1695">10, 0, 10, 0</column>
+<column name="empty_41_reg_1640">9, 0, 9, 0</column>
 <column name="empty_reg_1595">9, 0, 9, 0</column>
 <column name="icmp_ln64_reg_1460">1, 0, 1, 0</column>
-<column name="lshr_ln3_reg_1493">8, 0, 8, 0</column>
 <column name="lshr_ln93_1_reg_1511">8, 0, 8, 0</column>
 <column name="lshr_ln93_2_reg_1529">8, 0, 8, 0</column>
+<column name="lshr_ln9_reg_1493">8, 0, 8, 0</column>
 <column name="lshr_ln_reg_1474">8, 0, 8, 0</column>
 <column name="reg_582">8, 0, 8, 0</column>
 <column name="reg_586">8, 0, 8, 0</column>
@@ -196,7 +196,7 @@
 <column name="ap_idle">out, 1, ap_ctrl_hs, gaussian_blur_Pipeline_VITIS_LOOP_64_2, return value</column>
 <column name="ap_ready">out, 1, ap_ctrl_hs, gaussian_blur_Pipeline_VITIS_LOOP_64_2, return value</column>
 <column name="select_ln22">in, 3, ap_none, select_ln22, scalar</column>
-<column name="result_15">in, 3, ap_none, result_15, scalar</column>
+<column name="result_11">in, 3, ap_none, result_11, scalar</column>
 <column name="select_ln22_1">in, 3, ap_none, select_ln22_1, scalar</column>
 <column name="select_ln22_2">in, 3, ap_none, select_ln22_2, scalar</column>
 <column name="select_ln22_3">in, 3, ap_none, select_ln22_3, scalar</column>

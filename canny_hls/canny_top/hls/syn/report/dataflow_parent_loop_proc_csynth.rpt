@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'dataflow_parent_loop_proc'
 ================================================================
-* Date:           Fri Jul 24 16:27:51 2026
+* Date:           Fri Jul 24 22:33:47 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -29,24 +29,24 @@
     |  Latency (cycles) |  Latency (absolute)  |     Interval     | Pipeline|
     |   min   |   max   |    min   |    max    |   min  |   max   |   Type  |
     +---------+---------+----------+-----------+--------+---------+---------+
-    |   831194|  2405624|  4.156 ms|  12.028 ms|  831194|  2405624|       no|
+    |   831194|  2411692|  4.156 ms|  12.058 ms|  831194|  2411692|       no|
     +---------+---------+----------+-----------+--------+---------+---------+
 
     + Detail: 
         * Instance: 
-        +---------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |                                       |                                    |  Latency (cycles) |   Latency (absolute)  |   Interval  | Pipeline |
-        |                Instance               |               Module               |   min   |   max   |    min    |    max    |  min |  max |   Type   |
-        +---------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+------+----------+
-        |dataflow_in_loop_VITIS_LOOP_11_1_1_U0  |dataflow_in_loop_VITIS_LOOP_11_1_1  |     2184|    17607|  10.920 us|  88.035 us|  1616|  4655|  dataflow|
-        +---------------------------------------+------------------------------------+---------+---------+-----------+-----------+------+------+----------+
+        +---------------------------------------+------------------------------------+---------+---------+-----------+----------+------+------+----------+
+        |                                       |                                    |  Latency (cycles) |  Latency (absolute)  |   Interval  | Pipeline |
+        |                Instance               |               Module               |   min   |   max   |    min    |    max   |  min |  max |   Type   |
+        +---------------------------------------+------------------------------------+---------+---------+-----------+----------+------+------+----------+
+        |dataflow_in_loop_VITIS_LOOP_12_1_1_U0  |dataflow_in_loop_VITIS_LOOP_12_1_1  |     2184|    23675|  10.920 us|  0.118 ms|  1616|  4655|  dataflow|
+        +---------------------------------------+------------------------------------+---------+---------+-----------+----------+------+------+----------+
 
         * Loop: 
         +-------------------+---------+---------+--------------+-----------+-----------+------+----------+
         |                   |  Latency (cycles) |   Iteration  |  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |    Latency   |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+--------------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_11_1  |   831193|  2405623|  2186 ~ 17609|          -|          -|   514|        no|
+        |- VITIS_LOOP_12_1  |   831193|  2411691|  2186 ~ 23677|          -|          -|   514|        no|
         +-------------------+---------+---------+--------------+-----------+-----------+------+----------+
 
 
@@ -61,16 +61,16 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|      34|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |       10|     6|   13251|   24721|    0|
+|Instance         |       10|     4|   14190|   25193|    0|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       0|      18|    -|
 |Register         |        -|     -|      20|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |       10|     6|   13271|   24773|    0|
+|Total            |       10|     4|   14210|   25245|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
-|Utilization (%)  |        3|    ~0|       5|      21|    0|
+|Utilization (%)  |        3|    ~0|       6|      21|    0|
 +-----------------+---------+------+--------+--------+-----+
 
 + Detail: 
@@ -78,9 +78,9 @@
     +---------------------------------------+------------------------------------+---------+----+-------+-------+-----+
     |                Instance               |               Module               | BRAM_18K| DSP|   FF  |  LUT  | URAM|
     +---------------------------------------+------------------------------------+---------+----+-------+-------+-----+
-    |dataflow_in_loop_VITIS_LOOP_11_1_1_U0  |dataflow_in_loop_VITIS_LOOP_11_1_1  |       10|   6|  13251|  24721|    0|
+    |dataflow_in_loop_VITIS_LOOP_12_1_1_U0  |dataflow_in_loop_VITIS_LOOP_12_1_1  |       10|   4|  14190|  25193|    0|
     +---------------------------------------+------------------------------------+---------+----+-------+-------+-----+
-    |Total                                  |                                    |       10|   6|  13251|  24721|    0|
+    |Total                                  |                                    |       10|   4|  14190|  25193|    0|
     +---------------------------------------+------------------------------------+---------+----+-------+-------+-----+
 
     * DSP: 
@@ -245,23 +245,23 @@
 |p_anonymous_namespace_lineBuffer_direction_we1            |  out|    1|   ap_memory|       p_anonymous_namespace_lineBuffer_direction|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_address0  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_d0        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_q0        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_d0        |  out|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_q0        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_we0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_address1  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_d1        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_q1        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_d1        |  out|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_q1        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_we1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_address0  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_d0        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_q0        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_d0        |  out|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_q0        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_we0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_address1  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_d1        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_q1        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_d1        |  out|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_q1        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_we1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_rowsReceived_1_s_i                  |   in|   32|     ap_ovld|           p_anonymous_namespace_rowsReceived_1_s|       pointer|
 |p_anonymous_namespace_rowsReceived_1_s_o                  |  out|   32|     ap_ovld|           p_anonymous_namespace_rowsReceived_1_s|       pointer|
@@ -293,23 +293,23 @@
 |p_anonymous_namespace_rowsReceived_2_s_o_ap_vld           |  out|    1|     ap_ovld|           p_anonymous_namespace_rowsReceived_2_s|       pointer|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1|         array|
 |p_anonymous_namespace_rowsReceived_3_s_i                  |   in|   32|     ap_ovld|           p_anonymous_namespace_rowsReceived_3_s|       pointer|
 |p_anonymous_namespace_rowsReceived_3_s_o                  |  out|   32|     ap_ovld|           p_anonymous_namespace_rowsReceived_3_s|       pointer|
@@ -317,23 +317,23 @@
 |p_anonymous_namespace_rowsReceived_3_s_o_ap_vld           |  out|    1|     ap_ovld|           p_anonymous_namespace_rowsReceived_3_s|       pointer|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1|         array|
 |p_anonymous_namespace_rowsReceived_4_s_i                  |   in|   32|     ap_ovld|           p_anonymous_namespace_rowsReceived_4_s|       pointer|
 |p_anonymous_namespace_rowsReceived_4_s_o                  |  out|   32|     ap_ovld|           p_anonymous_namespace_rowsReceived_4_s|       pointer|
@@ -341,23 +341,23 @@
 |p_anonymous_namespace_rowsReceived_4_s_o_ap_vld           |  out|    1|     ap_ovld|           p_anonymous_namespace_rowsReceived_4_s|       pointer|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1           |  out|   10|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1                 |  out|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
-|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1                 |   in|    2|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1                 |  out|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
+|p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1                 |   in|    8|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
 |p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1                |  out|    1|   ap_memory|           p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1|         array|
 |rowsReceived_i                                            |   in|   32|     ap_ovld|                                     rowsReceived|       pointer|
 |rowsReceived_o                                            |  out|   32|     ap_ovld|                                     rowsReceived|       pointer|

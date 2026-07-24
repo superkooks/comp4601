@@ -20,20 +20,20 @@ set C_modelName {canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_direction { MEM_WIDTH 2 MEM_SIZE 1536 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_25_magnitude_0 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_25_magnitude_1 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_25_magnitude_0 { MEM_WIDTH 11 MEM_SIZE 1536 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_25_magnitude_1 { MEM_WIDTH 11 MEM_SIZE 1536 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ p_anonymous_namespace_lineBuffer_direction int 2 regular {array 1536 { 0 3 } 0 1 } {global 1}  }
-	{ p_anonymous_namespace_lineBuffer_25_magnitude_0 int 8 regular {array 768 { 0 3 } 0 1 } {global 1}  }
-	{ p_anonymous_namespace_lineBuffer_25_magnitude_1 int 8 regular {array 768 { 0 3 } 0 1 } {global 1}  }
+	{ p_anonymous_namespace_lineBuffer_25_magnitude_0 int 11 regular {array 768 { 0 3 } 0 1 } {global 1}  }
+	{ p_anonymous_namespace_lineBuffer_25_magnitude_1 int 11 regular {array 768 { 0 3 } 0 1 } {global 1}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "p_anonymous_namespace_lineBuffer_direction", "interface" : "memory", "bitwidth" : 2, "direction" : "WRITEONLY", "extern" : 0} , 
- 	{ "Name" : "p_anonymous_namespace_lineBuffer_25_magnitude_0", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY", "extern" : 0} , 
- 	{ "Name" : "p_anonymous_namespace_lineBuffer_25_magnitude_1", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY", "extern" : 0} ]}
+ 	{ "Name" : "p_anonymous_namespace_lineBuffer_25_magnitude_0", "interface" : "memory", "bitwidth" : 11, "direction" : "WRITEONLY", "extern" : 0} , 
+ 	{ "Name" : "p_anonymous_namespace_lineBuffer_25_magnitude_1", "interface" : "memory", "bitwidth" : 11, "direction" : "WRITEONLY", "extern" : 0} ]}
 # RTL Port declarations: 
 set portNum 18
 set portList { 
@@ -50,11 +50,11 @@ set portList {
 	{ p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 sc_out sc_lv 10 signal 1 } 
 	{ p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 sc_out sc_logic 1 signal 1 } 
 	{ p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 sc_out sc_logic 1 signal 1 } 
-	{ p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 sc_out sc_lv 8 signal 1 } 
+	{ p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 sc_out sc_lv 11 signal 1 } 
 	{ p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 sc_out sc_lv 10 signal 2 } 
 	{ p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 sc_out sc_logic 1 signal 2 } 
 	{ p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 sc_out sc_logic 1 signal 2 } 
-	{ p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 sc_out sc_lv 8 signal 2 } 
+	{ p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 sc_out sc_lv 11 signal 2 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -70,11 +70,11 @@ set NewPortList {[
  	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_0", "role": "address0" }} , 
  	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_0", "role": "ce0" }} , 
  	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_0_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_0", "role": "we0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_0_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_0", "role": "d0" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_0_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_0", "role": "d0" }} , 
  	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_1", "role": "address0" }} , 
  	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_1", "role": "ce0" }} , 
  	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_1", "role": "we0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_1", "role": "d0" }}  ]}
+ 	{ "name": "p_anonymous_namespace_lineBuffer_25_magnitude_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_25_magnitude_1", "role": "d0" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2 {
@@ -95,6 +95,6 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	p_anonymous_namespace_lineBuffer_direction { ap_memory {  { p_anonymous_namespace_lineBuffer_direction_address0 mem_address 1 11 }  { p_anonymous_namespace_lineBuffer_direction_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_direction_we0 mem_we 1 1 }  { p_anonymous_namespace_lineBuffer_direction_d0 mem_din 1 2 } } }
-	p_anonymous_namespace_lineBuffer_25_magnitude_0 { ap_memory {  { p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 mem_we 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 mem_din 1 8 } } }
-	p_anonymous_namespace_lineBuffer_25_magnitude_1 { ap_memory {  { p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 mem_we 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 mem_din 1 8 } } }
+	p_anonymous_namespace_lineBuffer_25_magnitude_0 { ap_memory {  { p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 mem_we 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 mem_din 1 11 } } }
+	p_anonymous_namespace_lineBuffer_25_magnitude_1 { ap_memory {  { p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 mem_we 1 1 }  { p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 mem_din 1 11 } } }
 }

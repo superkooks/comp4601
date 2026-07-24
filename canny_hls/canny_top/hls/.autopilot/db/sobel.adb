@@ -109,7 +109,7 @@
               <coreId>4294967295</coreId>
               <rtlModuleName></rtlModuleName>
             </Obj>
-            <bitwidth>8</bitwidth>
+            <bitwidth>11</bitwidth>
           </Value>
           <direction>1</direction>
           <if_type>1</if_type>
@@ -289,9 +289,9 @@
                     <item class_id="12" tracking_level="0" version="0">
                       <first class_id="13" tracking_level="0" version="0">
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -353,9 +353,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -418,9 +418,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -481,9 +481,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -544,9 +544,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -559,7 +559,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>writeSlot</originalName>
-              <rtlName>srem_32ns_3ns_2_36_seq_1_U84</rtlName>
+              <rtlName>srem_32ns_3ns_2_36_seq_1_U76</rtlName>
               <control>auto</control>
               <opType>srem</opType>
               <implIndex>auto_seq</implIndex>
@@ -608,9 +608,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -671,9 +671,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -740,9 +740,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -806,9 +806,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -870,9 +870,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -935,9 +935,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -999,9 +999,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1062,9 +1062,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1126,9 +1126,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1191,9 +1191,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1262,9 +1262,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1284,7 +1284,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>urem_31ns_3ns_2_35_seq_1_U85</rtlName>
+              <rtlName>urem_31ns_3ns_2_35_seq_1_U77</rtlName>
               <control>auto</control>
               <opType>urem</opType>
               <implIndex>auto_seq</implIndex>
@@ -1333,9 +1333,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1386,7 +1386,7 @@
             <Obj>
               <type>0</type>
               <id>28</id>
-              <name>result_7</name>
+              <name>result_1</name>
               <fileName>../src/sobel.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>107</lineNumber>
@@ -1403,9 +1403,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1418,7 +1418,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>urem_31ns_3ns_2_35_seq_1_U86</rtlName>
+              <rtlName>urem_31ns_3ns_2_35_seq_1_U78</rtlName>
               <control>auto</control>
               <opType>urem</opType>
               <implIndex>auto_seq</implIndex>
@@ -1467,9 +1467,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1530,9 +1530,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1698,9 +1698,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -1762,9 +1762,9 @@
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
-                        <second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
+                        <second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft</second>
                       </first>
-                      <second>30</second>
+                      <second>31</second>
                     </item>
                     <item>
                       <first>
@@ -2459,7 +2459,7 @@
           <Obj>
             <type>3</type>
             <id>37</id>
-            <name>cleanup76.i</name>
+            <name>cleanup70.i</name>
             <fileName></fileName>
             <fileDirectory></fileDirectory>
             <lineNumber>0</lineNumber>
@@ -3086,7 +3086,7 @@
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
         <mMinLatency>1</mMinLatency>
-        <mMaxLatency>2187</mMaxLatency>
+        <mMaxLatency>2122</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -5417,15 +5417,15 @@
             <item_version>0</item_version>
             <item class_id="40" tracking_level="0" version="0">
               <first>DSP</first>
-              <second>4</second>
+              <second>2</second>
             </item>
             <item>
               <first>FF</first>
-              <second>759</second>
+              <second>184</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>2176</second>
+              <second>767</second>
             </item>
           </second>
         </item>
@@ -5445,7 +5445,7 @@
           </second>
         </item>
         <item>
-          <first>srem_32ns_3ns_2_36_seq_1_U84 (srem_32ns_3ns_2_36_seq_1)</first>
+          <first>srem_32ns_3ns_2_36_seq_1_U76 (srem_32ns_3ns_2_36_seq_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -5460,7 +5460,7 @@
           </second>
         </item>
         <item>
-          <first>urem_31ns_3ns_2_35_seq_1_U85 (urem_31ns_3ns_2_35_seq_1)</first>
+          <first>urem_31ns_3ns_2_35_seq_1_U77 (urem_31ns_3ns_2_35_seq_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -5475,7 +5475,7 @@
           </second>
         </item>
         <item>
-          <first>urem_31ns_3ns_2_35_seq_1_U86 (urem_31ns_3ns_2_35_seq_1)</first>
+          <first>urem_31ns_3ns_2_35_seq_1_U78 (urem_31ns_3ns_2_35_seq_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -5970,11 +5970,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>8</second>
+              <second>11</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>24</second>
+              <second>33</second>
             </item>
             <item>
               <first>FF</first>
@@ -6553,21 +6553,21 @@
           </second>
         </item>
         <item>
-          <first>srem_32ns_3ns_2_36_seq_1_U84</first>
+          <first>srem_32ns_3ns_2_36_seq_1_U76</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>urem_31ns_3ns_2_35_seq_1_U85</first>
+          <first>urem_31ns_3ns_2_35_seq_1_U77</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>urem_31ns_3ns_2_35_seq_1_U86</first>
+          <first>urem_31ns_3ns_2_35_seq_1_U78</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -6594,7 +6594,7 @@
           </second>
         </item>
         <item>
-          <first>srem_32ns_3ns_2_36_seq_1_U84 (srem_32ns_3ns_2_36_seq_1)</first>
+          <first>srem_32ns_3ns_2_36_seq_1_U76 (srem_32ns_3ns_2_36_seq_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6602,7 +6602,7 @@
           </second>
         </item>
         <item>
-          <first>urem_31ns_3ns_2_35_seq_1_U85 (urem_31ns_3ns_2_35_seq_1)</first>
+          <first>urem_31ns_3ns_2_35_seq_1_U77 (urem_31ns_3ns_2_35_seq_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6610,7 +6610,7 @@
           </second>
         </item>
         <item>
-          <first>urem_31ns_3ns_2_35_seq_1_U86 (urem_31ns_3ns_2_35_seq_1)</first>
+          <first>urem_31ns_3ns_2_35_seq_1_U78 (urem_31ns_3ns_2_35_seq_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

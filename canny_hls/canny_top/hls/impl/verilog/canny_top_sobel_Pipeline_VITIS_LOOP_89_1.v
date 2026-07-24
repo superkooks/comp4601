@@ -47,7 +47,7 @@ output   ap_ready;
 output  [8:0] out_sobel_magnitude_address0;
 output   out_sobel_magnitude_ce0;
 output   out_sobel_magnitude_we0;
-output  [7:0] out_sobel_magnitude_d0;
+output  [10:0] out_sobel_magnitude_d0;
 output  [8:0] out_sobel_direction_address0;
 output   out_sobel_direction_ce0;
 output   out_sobel_direction_we0;
@@ -349,7 +349,7 @@ assign out_sobel_magnitude_address0 = zext_ln89_fu_149_p1;
 
 assign out_sobel_magnitude_ce0 = out_sobel_magnitude_ce0_local;
 
-assign out_sobel_magnitude_d0 = 8'd0;
+assign out_sobel_magnitude_d0 = 11'd0;
 
 assign out_sobel_magnitude_we0 = out_sobel_magnitude_we0_local;
 

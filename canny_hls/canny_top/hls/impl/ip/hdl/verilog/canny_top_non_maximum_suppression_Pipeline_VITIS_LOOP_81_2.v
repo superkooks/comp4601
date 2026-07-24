@@ -18,7 +18,7 @@ module canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 (
         out_nonmax_ce0,
         out_nonmax_we0,
         out_nonmax_d0,
-        result_9,
+        result_2,
         result,
         empty,
         p_anonymous_namespace_lineBuffer_25_magnitude_0_address0,
@@ -50,22 +50,22 @@ output   ap_ready;
 output  [8:0] out_nonmax_address0;
 output   out_nonmax_ce0;
 output   out_nonmax_we0;
-output  [7:0] out_nonmax_d0;
-input  [1:0] result_9;
+output  [10:0] out_nonmax_d0;
+input  [1:0] result_2;
 input  [1:0] result;
 input  [1:0] empty;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q1;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q1;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q0;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q0;
 output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address1;
 output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
-input  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q1;
+input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q1;
 output  [10:0] p_anonymous_namespace_lineBuffer_direction_address0;
 output   p_anonymous_namespace_lineBuffer_direction_ce0;
 input  [1:0] p_anonymous_namespace_lineBuffer_direction_q0;
@@ -93,20 +93,20 @@ reg   [7:0] lshr_ln3_reg_628;
 wire   [0:0] trunc_ln81_fu_395_p1;
 reg   [0:0] trunc_ln81_reg_644;
 wire    ap_block_pp0_stage1_11001;
-wire   [7:0] centre_magnitude_fu_422_p3;
-reg   [7:0] centre_magnitude_reg_672;
+wire   [10:0] centre_magnitude_fu_422_p3;
+reg   [10:0] centre_magnitude_reg_672;
 wire   [1:0] p_anonymous_namespace_lineBuffer_direction_q0_local;
 reg   [1:0] centre_direction_reg_679;
-wire   [7:0] select_ln123_fu_572_p3;
-reg   [7:0] select_ln123_reg_743;
-reg   [7:0] ap_phi_mux_neighbourOne_4_phi_fu_271_p8;
-wire   [7:0] grp_fu_324_p3;
-wire   [7:0] ap_phi_reg_pp0_iter1_neighbourOne_4_reg_268;
-wire   [7:0] neighbourOne_3_fu_528_p3;
-reg   [7:0] ap_phi_mux_neighbourTwo_4_phi_fu_284_p8;
-wire   [7:0] grp_fu_334_p3;
-wire   [7:0] ap_phi_reg_pp0_iter1_neighbourTwo_4_reg_281;
-wire   [7:0] neighbourTwo_3_fu_536_p3;
+wire   [10:0] select_ln123_fu_572_p3;
+reg   [10:0] select_ln123_reg_743;
+reg   [10:0] ap_phi_mux_neighbourOne_4_phi_fu_271_p8;
+wire   [10:0] grp_fu_324_p3;
+wire   [10:0] ap_phi_reg_pp0_iter1_neighbourOne_4_reg_268;
+wire   [10:0] neighbourOne_3_fu_528_p3;
+reg   [10:0] ap_phi_mux_neighbourTwo_4_phi_fu_284_p8;
+wire   [10:0] grp_fu_334_p3;
+wire   [10:0] ap_phi_reg_pp0_iter1_neighbourTwo_4_reg_281;
+wire   [10:0] neighbourTwo_3_fu_536_p3;
 wire   [63:0] zext_ln83_fu_366_p1;
 wire    ap_block_pp0_stage0;
 wire   [63:0] zext_ln83_1_fu_389_p1;
@@ -138,17 +138,17 @@ reg    out_nonmax_ce0_local;
 wire   [8:0] grp_fu_294_p2;
 wire   [8:0] grp_fu_309_p2;
 wire   [10:0] tmp_s_fu_358_p3;
-wire   [9:0] tmp_13_fu_381_p3;
-wire   [9:0] tmp_14_fu_398_p3;
-wire   [9:0] tmp_15_fu_410_p3;
+wire   [9:0] tmp_9_fu_381_p3;
+wire   [9:0] tmp_10_fu_398_p3;
+wire   [9:0] tmp_11_fu_410_p3;
 wire   [7:0] grp_fu_299_p4;
-wire   [9:0] tmp_20_fu_440_p3;
+wire   [9:0] tmp_16_fu_440_p3;
 wire   [7:0] grp_fu_314_p4;
-wire   [9:0] tmp_21_fu_453_p3;
-wire   [9:0] tmp_18_fu_466_p3;
-wire   [9:0] tmp_19_fu_479_p3;
-wire   [9:0] tmp_16_fu_492_p3;
-wire   [9:0] tmp_17_fu_505_p3;
+wire   [9:0] tmp_17_fu_453_p3;
+wire   [9:0] tmp_14_fu_466_p3;
+wire   [9:0] tmp_15_fu_479_p3;
+wire   [9:0] tmp_12_fu_492_p3;
+wire   [9:0] tmp_13_fu_505_p3;
 wire   [0:0] icmp_ln123_fu_544_p2;
 wire   [0:0] icmp_ln124_fu_555_p2;
 wire   [0:0] xor_ln123_fu_549_p2;
@@ -572,27 +572,27 @@ assign p_anonymous_namespace_lineBuffer_direction_ce0 = p_anonymous_namespace_li
 
 assign p_anonymous_namespace_lineBuffer_direction_q0_local = p_anonymous_namespace_lineBuffer_direction_q0;
 
-assign select_ln123_fu_572_p3 = ((and_ln123_fu_566_p2[0:0] == 1'b1) ? centre_magnitude_reg_672 : 8'd0);
+assign select_ln123_fu_572_p3 = ((and_ln123_fu_566_p2[0:0] == 1'b1) ? centre_magnitude_reg_672 : 11'd0);
 
-assign tmp_13_fu_381_p3 = {{result_9}, {lshr_ln3_fu_371_p4}};
+assign tmp_10_fu_398_p3 = {{result}, {lshr_ln3_reg_628}};
 
-assign tmp_14_fu_398_p3 = {{result}, {lshr_ln3_reg_628}};
+assign tmp_11_fu_410_p3 = {{empty}, {lshr_ln3_reg_628}};
 
-assign tmp_15_fu_410_p3 = {{empty}, {lshr_ln3_reg_628}};
+assign tmp_12_fu_492_p3 = {{result_2}, {grp_fu_299_p4}};
 
-assign tmp_16_fu_492_p3 = {{result_9}, {grp_fu_299_p4}};
+assign tmp_13_fu_505_p3 = {{result_2}, {grp_fu_314_p4}};
 
-assign tmp_17_fu_505_p3 = {{result_9}, {grp_fu_314_p4}};
+assign tmp_14_fu_466_p3 = {{result}, {grp_fu_314_p4}};
 
-assign tmp_18_fu_466_p3 = {{result}, {grp_fu_314_p4}};
+assign tmp_15_fu_479_p3 = {{empty}, {grp_fu_299_p4}};
 
-assign tmp_19_fu_479_p3 = {{empty}, {grp_fu_299_p4}};
+assign tmp_16_fu_440_p3 = {{result}, {grp_fu_299_p4}};
 
-assign tmp_20_fu_440_p3 = {{result}, {grp_fu_299_p4}};
+assign tmp_17_fu_453_p3 = {{empty}, {grp_fu_314_p4}};
 
-assign tmp_21_fu_453_p3 = {{empty}, {grp_fu_314_p4}};
+assign tmp_9_fu_381_p3 = {{result_2}, {lshr_ln3_fu_371_p4}};
 
-assign tmp_s_fu_358_p3 = {{result_9}, {ap_sig_allocacmp_column_2}};
+assign tmp_s_fu_358_p3 = {{result_2}, {ap_sig_allocacmp_column_2}};
 
 assign trunc_ln81_fu_395_p1 = column_2_reg_610[0:0];
 
@@ -600,26 +600,26 @@ assign xor_ln123_fu_549_p2 = (icmp_ln123_fu_544_p2 ^ 1'd1);
 
 assign xor_ln124_fu_560_p2 = (icmp_ln124_fu_555_p2 ^ 1'd1);
 
-assign zext_ln102_fu_460_p1 = tmp_21_fu_453_p3;
+assign zext_ln102_fu_460_p1 = tmp_17_fu_453_p3;
 
-assign zext_ln107_fu_404_p1 = tmp_14_fu_398_p3;
+assign zext_ln107_fu_404_p1 = tmp_10_fu_398_p3;
 
-assign zext_ln110_fu_416_p1 = tmp_15_fu_410_p3;
+assign zext_ln110_fu_416_p1 = tmp_11_fu_410_p3;
 
-assign zext_ln115_fu_473_p1 = tmp_18_fu_466_p3;
+assign zext_ln115_fu_473_p1 = tmp_14_fu_466_p3;
 
-assign zext_ln118_fu_486_p1 = tmp_19_fu_479_p3;
+assign zext_ln118_fu_486_p1 = tmp_15_fu_479_p3;
 
 assign zext_ln81_fu_579_p1 = column_2_reg_610_pp0_iter1_reg;
 
-assign zext_ln83_1_fu_389_p1 = tmp_13_fu_381_p3;
+assign zext_ln83_1_fu_389_p1 = tmp_9_fu_381_p3;
 
 assign zext_ln83_fu_366_p1 = tmp_s_fu_358_p3;
 
-assign zext_ln91_fu_499_p1 = tmp_16_fu_492_p3;
+assign zext_ln91_fu_499_p1 = tmp_12_fu_492_p3;
 
-assign zext_ln94_fu_512_p1 = tmp_17_fu_505_p3;
+assign zext_ln94_fu_512_p1 = tmp_13_fu_505_p3;
 
-assign zext_ln99_fu_447_p1 = tmp_20_fu_440_p3;
+assign zext_ln99_fu_447_p1 = tmp_16_fu_440_p3;
 
 endmodule //canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2

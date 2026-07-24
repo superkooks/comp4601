@@ -179,3 +179,37 @@ status = platform.build()
 
 comp.build(target="hw")
 
+status = platform.build()
+
+comp.build(target="hw")
+
+status = platform.build()
+
+comp.build(target="hw")
+
+status = platform.build()
+
+comp.build(target="hw")
+
+status = platform.build()
+
+comp.build(target="hw")
+
+status = platform.build()
+
+comp.build(target="hw")
+
+status = platform.build()
+
+comp.build(target="hw")
+
+status = platform.build()
+
+comp.build(target="hw")
+
+status = platform.build()
+
+comp.build(target="hw")
+
+proj.build(target = "hw",comp_name = ["canny_hls"],build_comps = False)
+

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hysteresis_4_s'" level="0">
-<item name = "Date">Fri Jul 24 16:27:49 2026
+<item name = "Date">Fri Jul 24 22:33:46 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.380 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.632 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 1097, 5.000 ns, 5.485 us, 1, 1097, no</column>
+<column name="">1, 3141, 5.000 ns, 15.705 us, 1, 3141, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_hysteresis_4_Pipeline_VITIS_LOOP_66_1_fu_71">hysteresis_4_Pipeline_VITIS_LOOP_66_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_hysteresis_4_Pipeline_VITIS_LOOP_114_2_fu_84">hysteresis_4_Pipeline_VITIS_LOOP_114_2, 512, 512, 2.560 us, 2.560 us, 0, 0, loop pipeline stp</column>
+<column name="grp_hysteresis_4_Pipeline_VITIS_LOOP_68_1_fu_73">hysteresis_4_Pipeline_VITIS_LOOP_68_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_hysteresis_4_Pipeline_VITIS_LOOP_116_2_fu_86">hysteresis_4_Pipeline_VITIS_LOOP_116_2, 2556, 2556, 12.780 us, 12.780 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

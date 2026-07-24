@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold'
 ================================================================
-* Date:           Fri Jul 24 16:27:49 2026
+* Date:           Fri Jul 24 22:33:45 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  3.632 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  2.252 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        1|      515|  5.000 ns|  2.575 us|    1|  515|       no|
+    |        1|      516|  5.000 ns|  2.580 us|    1|  516|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -76,13 +76,13 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.25>
-ST_1 : Operation 3 [1/1] (1.82ns)   --->   "%p_read_6 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read" [../src/double_threshold.cpp:6->../src/canny_top.cpp:32]   --->   Operation 3 'read' 'p_read_6' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
-ST_1 : Operation 4 [1/1] (0.42ns)   --->   "%br_ln11 = br i1 %p_read_6, void %_Z16double_thresholdPKhPhbPb.4.exit, void %for.body.i.preheader" [../src/double_threshold.cpp:11->../src/canny_top.cpp:32]   --->   Operation 4 'br' 'br_ln11' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i8 %out_nonmax, i8 %out_double"   --->   Operation 5 'call' 'call_ln0' <Predicate = (p_read_6)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 3 [1/1] (1.82ns)   --->   "%p_read_8 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read" [../src/double_threshold.cpp:6->../src/canny_top.cpp:33]   --->   Operation 3 'read' 'p_read_8' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_1 : Operation 4 [1/1] (0.42ns)   --->   "%br_ln11 = br i1 %p_read_8, void %_Z16double_thresholdPKtPhbPb.4.exit, void %for.body.i.preheader" [../src/double_threshold.cpp:11->../src/canny_top.cpp:33]   --->   Operation 4 'br' 'br_ln11' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i11 %out_nonmax, i8 %out_double"   --->   Operation 5 'call' 'call_ln0' <Predicate = (p_read_8)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 1.64>
-ST_2 : Operation 6 [1/2] (1.64ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i8 %out_nonmax, i8 %out_double"   --->   Operation 6 'call' 'call_ln0' <Predicate = (p_read_6)> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 7 [1/1] (0.42ns)   --->   "%br_ln0 = br void %_Z16double_thresholdPKhPhbPb.4.exit"   --->   Operation 7 'br' 'br_ln0' <Predicate = (p_read_6)> <Delay = 0.42>
+State 2 <SV = 1> <Delay = 0.42>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i11 %out_nonmax, i8 %out_double"   --->   Operation 6 'call' 'call_ln0' <Predicate = (p_read_8)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 7 [1/1] (0.42ns)   --->   "%br_ln0 = br void %_Z16double_thresholdPKtPhbPb.4.exit"   --->   Operation 7 'br' 'br_ln0' <Predicate = (p_read_8)> <Delay = 0.42>
 ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%valid_out_write_assign = phi i1 0, void %newFuncRoot, i1 1, void %for.body.i.preheader"   --->   Operation 8 'phi' 'valid_out_write_assign' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln0 = ret i1 %valid_out_write_assign"   --->   Operation 9 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
@@ -94,13 +94,15 @@ Target clock period: 5.000ns, clock uncertainty: 1.350ns.
 
  <State 1>: 2.252ns
 The critical path consists of the following:
-	wire read operation ('p_read_6', ../src/double_threshold.cpp:6->../src/canny_top.cpp:32) on port 'p_read' (../src/double_threshold.cpp:6->../src/canny_top.cpp:32) [4]  (1.825 ns)
+	wire read operation ('p_read_8', ../src/double_threshold.cpp:6->../src/canny_top.cpp:33) on port 'p_read' (../src/double_threshold.cpp:6->../src/canny_top.cpp:33) [4]  (1.825 ns)
 	multiplexor before 'phi' operation 1 bit ('valid_out') [10]  (0.427 ns)
-	'br' operation ('br_ln11', ../src/double_threshold.cpp:11->../src/canny_top.cpp:32) [5]  (0.427 ns)
+	'br' operation ('br_ln11', ../src/double_threshold.cpp:11->../src/canny_top.cpp:33) [5]  (0.427 ns)
 
- <State 2>: 1.641ns
+ <State 2>: 0.427ns
 The critical path consists of the following:
-	'call' operation ('call_ln0') to 'double_threshold_Pipeline_VITIS_LOOP_16_1' [7]  (1.641 ns)
+	multiplexor before 'phi' operation 1 bit ('valid_out') [10]  (0.427 ns)
+	'br' operation ('br_ln0') [8]  (0.427 ns)
+	'phi' operation 1 bit ('valid_out') [10]  (0.000 ns)
 
 
 ============================================================

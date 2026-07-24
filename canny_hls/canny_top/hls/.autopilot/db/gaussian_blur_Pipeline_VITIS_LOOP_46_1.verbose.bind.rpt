@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'gaussian_blur_Pipeline_VITIS_LOOP_46_1'
 ================================================================
-* Date:           Fri Jul 24 16:27:48 2026
+* Date:           Fri Jul 24 22:33:44 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -106,9 +106,9 @@ ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%br_ln46 = br void %for.inc" [../sr
 ST_1 : Operation 35 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 35 'ret' 'ret_ln0' <Predicate = (icmp_ln46)> <Delay = 0.42>
 
 State 2 <SV = 1> <Delay = 2.47>
-ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln46 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10" [../src/gaussian_blur.cpp:46]   --->   Operation 23 'specpipeline' 'specpipeline_ln46' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%specpipeline_ln46 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22" [../src/gaussian_blur.cpp:46]   --->   Operation 23 'specpipeline' 'specpipeline_ln46' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%speclooptripcount_ln46 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/gaussian_blur.cpp:46]   --->   Operation 24 'speclooptripcount' 'speclooptripcount_ln46' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_12" [../src/gaussian_blur.cpp:46]   --->   Operation 25 'specloopname' 'specloopname_ln46' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%specloopname_ln46 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [../src/gaussian_blur.cpp:46]   --->   Operation 25 'specloopname' 'specloopname_ln46' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i3.i8, i3 %tmp, i8 %lshr_ln" [../src/gaussian_blur.cpp:47]   --->   Operation 26 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i11 %tmp_s" [../src/gaussian_blur.cpp:47]   --->   Operation 27 'zext' 'zext_ln47' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%p_ZN12_GLOBAL_N_110lineBufferE_0_addr = getelementptr i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i64 0, i64 %zext_ln47" [../src/gaussian_blur.cpp:47]   --->   Operation 28 'getelementptr' 'p_ZN12_GLOBAL_N_110lineBufferE_0_addr' <Predicate = true> <Delay = 0.00>
@@ -339,7 +339,7 @@ ret_ln0                               (ret              ) [ 000]
 <pin id="35" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_10"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 
@@ -375,7 +375,7 @@ ret_ln0                               (ret              ) [ 000]
 <pin id="43" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_12"/></StgValue>
+<StgValue><ssdm name="empty_21"/></StgValue>
 </bind>
 </comp>
 

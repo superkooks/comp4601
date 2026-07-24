@@ -83,14 +83,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 36 \
-    name result_15 \
+    name result_11 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_result_15 \
+    corename dc_result_11 \
     op interface \
-    ports { result_15 { I 3 vector } } \
+    ports { result_11 { I 3 vector } } \
 } "
 }
 

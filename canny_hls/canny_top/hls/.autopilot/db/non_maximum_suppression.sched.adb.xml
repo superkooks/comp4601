@@ -1231,9 +1231,9 @@ if.end.i:4 %tmp_s = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i2.i9, i2 %t
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="11" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="2" op_7_bw="8" op_8_bw="8">
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="2" op_6_bw="2" op_7_bw="11" op_8_bw="11">
 <![CDATA[
-if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i8 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1
+if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i11 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln46"/></StgValue>
@@ -1249,9 +1249,9 @@ if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="11" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="2" op_7_bw="8" op_8_bw="8">
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="2" op_6_bw="2" op_7_bw="11" op_8_bw="11">
 <![CDATA[
-if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i8 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1
+if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i11 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln46"/></StgValue>
@@ -1381,10 +1381,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1414,10 +1414,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1447,10 +1447,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1480,10 +1480,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1513,10 +1513,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1546,10 +1546,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1579,10 +1579,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1612,10 +1612,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1645,10 +1645,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1678,10 +1678,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1711,10 +1711,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1744,10 +1744,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1777,10 +1777,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1810,10 +1810,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1843,10 +1843,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1876,10 +1876,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1909,10 +1909,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1942,10 +1942,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1975,10 +1975,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2008,10 +2008,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2041,10 +2041,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2074,10 +2074,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2107,10 +2107,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2140,10 +2140,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2173,10 +2173,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2206,10 +2206,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2239,10 +2239,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2272,10 +2272,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2305,10 +2305,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2338,10 +2338,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2371,10 +2371,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2404,10 +2404,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2437,10 +2437,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2470,10 +2470,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2518,10 +2518,10 @@ if.end15.i:2 %trunc_ln13 = trunc i2 %result
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 
 <operation id="196" st_id="71" stage="1" lat="1">
@@ -2533,7 +2533,7 @@ if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
 
 <Node id="31" bw="2" op_0_bw="2">
 <![CDATA[
-if.end15.i:4 %trunc_ln13_1 = trunc i2 %result_5
+if.end15.i:4 %trunc_ln13_1 = trunc i2 %result_1
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln13_1"/></StgValue>
@@ -2546,9 +2546,9 @@ if.end15.i:4 %trunc_ln13_1 = trunc i2 %result_5
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="8" op_6_bw="8" op_7_bw="2" op_8_bw="0" op_9_bw="0">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="11" op_6_bw="11" op_7_bw="2" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i8 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
+if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i11 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
 
 ]]></Node>
 <StgValue><ssdm name="call_ln13"/></StgValue>
@@ -2567,9 +2567,9 @@ if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP
 </and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="8" op_6_bw="8" op_7_bw="2" op_8_bw="0" op_9_bw="0">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="11" op_6_bw="11" op_7_bw="2" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i8 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
+if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i11 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
 
 ]]></Node>
 <StgValue><ssdm name="call_ln13"/></StgValue>

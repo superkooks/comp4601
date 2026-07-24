@@ -19,17 +19,17 @@ set cdfgNum 40
 set C_modelName {double_threshold_Pipeline_VITIS_LOOP_16_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict out_nonmax { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict out_nonmax { MEM_WIDTH 11 MEM_SIZE 1024 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 dict set ap_memory_interface_dict out_double { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
-	{ out_nonmax int 8 regular {array 512 { 1 3 } 1 1 }  }
+	{ out_nonmax int 11 regular {array 512 { 1 3 } 1 1 }  }
 	{ out_double int 8 regular {array 512 { 0 3 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "out_nonmax", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
+	{ "Name" : "out_nonmax", "interface" : "memory", "bitwidth" : 11, "direction" : "READONLY"} , 
  	{ "Name" : "out_double", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
 set portNum 13
@@ -42,7 +42,7 @@ set portList {
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ out_nonmax_address0 sc_out sc_lv 9 signal 0 } 
 	{ out_nonmax_ce0 sc_out sc_logic 1 signal 0 } 
-	{ out_nonmax_q0 sc_in sc_lv 8 signal 0 } 
+	{ out_nonmax_q0 sc_in sc_lv 11 signal 0 } 
 	{ out_double_address0 sc_out sc_lv 9 signal 1 } 
 	{ out_double_ce0 sc_out sc_logic 1 signal 1 } 
 	{ out_double_we0 sc_out sc_logic 1 signal 1 } 
@@ -57,7 +57,7 @@ set NewPortList {[
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "out_nonmax_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "out_nonmax", "role": "address0" }} , 
  	{ "name": "out_nonmax_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_nonmax", "role": "ce0" }} , 
- 	{ "name": "out_nonmax_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "out_nonmax", "role": "q0" }} , 
+ 	{ "name": "out_nonmax_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "out_nonmax", "role": "q0" }} , 
  	{ "name": "out_double_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "out_double", "role": "address0" }} , 
  	{ "name": "out_double_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_double", "role": "ce0" }} , 
  	{ "name": "out_double_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_double", "role": "we0" }} , 
@@ -66,12 +66,12 @@ set NewPortList {[
 set ArgLastReadFirstWriteLatency {
 	double_threshold_Pipeline_VITIS_LOOP_16_1 {
 		out_nonmax {Type I LastRead 0 FirstWrite -1}
-		out_double {Type O LastRead -1 FirstWrite 1}}}
+		out_double {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "514", "Max" : "514"}
+	{"Name" : "Latency", "Min" : "515", "Max" : "515"}
 	, {"Name" : "Interval", "Min" : "513", "Max" : "513"}
 ]}
 
@@ -80,6 +80,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	out_nonmax { ap_memory {  { out_nonmax_address0 mem_address 1 9 }  { out_nonmax_ce0 mem_ce 1 1 }  { out_nonmax_q0 mem_dout 0 8 } } }
+	out_nonmax { ap_memory {  { out_nonmax_address0 mem_address 1 9 }  { out_nonmax_ce0 mem_ce 1 1 }  { out_nonmax_q0 mem_dout 0 11 } } }
 	out_double { ap_memory {  { out_double_address0 mem_address 1 9 }  { out_double_ce0 mem_ce 1 1 }  { out_double_we0 mem_we 1 1 }  { out_double_d0 mem_din 1 8 } } }
 }

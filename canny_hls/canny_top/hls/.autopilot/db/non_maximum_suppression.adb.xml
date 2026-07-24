@@ -1231,9 +1231,9 @@ if.end.i:4 %tmp_s = bitconcatenate i11 @_ssdm_op_BitConcatenate.i11.i2.i9, i2 %t
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="11" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="2" op_7_bw="8" op_8_bw="8">
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="2" op_6_bw="2" op_7_bw="11" op_8_bw="11">
 <![CDATA[
-if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i8 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1
+if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i11 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln46"/></StgValue>
@@ -1249,9 +1249,9 @@ if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_4
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="17" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="11" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="2" op_7_bw="8" op_8_bw="8">
+<Node id="17" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="2" op_6_bw="2" op_7_bw="11" op_8_bw="11">
 <![CDATA[
-if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i8 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1
+if.end.i:5 %call_ln46 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, i11 %out_nonmax, i11 %tmp_s, i2 %trunc_ln46, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln46"/></StgValue>
@@ -1381,10 +1381,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1414,10 +1414,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1447,10 +1447,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1480,10 +1480,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1513,10 +1513,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1546,10 +1546,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1579,10 +1579,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1612,10 +1612,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1645,10 +1645,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1678,10 +1678,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1711,10 +1711,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1744,10 +1744,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1777,10 +1777,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1810,10 +1810,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1843,10 +1843,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1876,10 +1876,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1909,10 +1909,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1942,10 +1942,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -1975,10 +1975,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2008,10 +2008,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2041,10 +2041,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2074,10 +2074,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2107,10 +2107,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2140,10 +2140,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2173,10 +2173,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2206,10 +2206,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2239,10 +2239,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2272,10 +2272,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2305,10 +2305,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2338,10 +2338,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2371,10 +2371,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2404,10 +2404,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2437,10 +2437,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2470,10 +2470,10 @@ if.end15.i:1 %result = urem i31 %add_ln12, i31 3
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 </state>
 
@@ -2518,10 +2518,10 @@ if.end15.i:2 %trunc_ln13 = trunc i2 %result
 
 <Node id="30" bw="2" op_0_bw="31" op_1_bw="31">
 <![CDATA[
-if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
+if.end15.i:3 %result_1 = urem i31 %trunc_ln64, i31 3
 
 ]]></Node>
-<StgValue><ssdm name="result_5"/></StgValue>
+<StgValue><ssdm name="result_1"/></StgValue>
 </operation>
 
 <operation id="196" st_id="71" stage="1" lat="1">
@@ -2533,7 +2533,7 @@ if.end15.i:3 %result_5 = urem i31 %trunc_ln64, i31 3
 
 <Node id="31" bw="2" op_0_bw="2">
 <![CDATA[
-if.end15.i:4 %trunc_ln13_1 = trunc i2 %result_5
+if.end15.i:4 %trunc_ln13_1 = trunc i2 %result_1
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln13_1"/></StgValue>
@@ -2546,9 +2546,9 @@ if.end15.i:4 %trunc_ln13_1 = trunc i2 %result_5
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="8" op_6_bw="8" op_7_bw="2" op_8_bw="0" op_9_bw="0">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="11" op_6_bw="11" op_7_bw="2" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i8 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
+if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i11 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
 
 ]]></Node>
 <StgValue><ssdm name="call_ln13"/></StgValue>
@@ -2567,9 +2567,9 @@ if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP
 </and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="8" op_6_bw="8" op_7_bw="2" op_8_bw="0" op_9_bw="0">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="11" op_2_bw="2" op_3_bw="2" op_4_bw="2" op_5_bw="11" op_6_bw="11" op_7_bw="2" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i8 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
+if.end15.i:5 %call_ln13 = call void @non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, i11 %out_nonmax, i2 %trunc_ln13_1, i2 %trunc_ln13, i2 %trunc_ln46, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i2 %p_anonymous_namespace_lineBuffer_direction
 
 ]]></Node>
 <StgValue><ssdm name="call_ln13"/></StgValue>
@@ -2957,273 +2957,273 @@ newFuncRoot.aft.aft.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_writ
 </dataflow>
 <dataflow id="418" from="StgValue_417" to="result" fromId="417" toId="125">
 </dataflow>
-<dataflow id="419" from="trunc_ln64" to="result_5" fromId="121" toId="126">
+<dataflow id="419" from="trunc_ln64" to="result_1" fromId="121" toId="126">
 </dataflow>
-<dataflow id="420" from="StgValue_417" to="result_5" fromId="417" toId="126">
+<dataflow id="420" from="StgValue_417" to="result_1" fromId="417" toId="126">
 </dataflow>
 <dataflow id="421" from="add_ln12" to="result" fromId="124" toId="127">
 </dataflow>
 <dataflow id="422" from="StgValue_417" to="result" fromId="417" toId="127">
 </dataflow>
-<dataflow id="423" from="trunc_ln64" to="result_5" fromId="121" toId="128">
+<dataflow id="423" from="trunc_ln64" to="result_1" fromId="121" toId="128">
 </dataflow>
-<dataflow id="424" from="StgValue_417" to="result_5" fromId="417" toId="128">
+<dataflow id="424" from="StgValue_417" to="result_1" fromId="417" toId="128">
 </dataflow>
 <dataflow id="425" from="add_ln12" to="result" fromId="124" toId="129">
 </dataflow>
 <dataflow id="426" from="StgValue_417" to="result" fromId="417" toId="129">
 </dataflow>
-<dataflow id="427" from="trunc_ln64" to="result_5" fromId="121" toId="130">
+<dataflow id="427" from="trunc_ln64" to="result_1" fromId="121" toId="130">
 </dataflow>
-<dataflow id="428" from="StgValue_417" to="result_5" fromId="417" toId="130">
+<dataflow id="428" from="StgValue_417" to="result_1" fromId="417" toId="130">
 </dataflow>
 <dataflow id="429" from="add_ln12" to="result" fromId="124" toId="131">
 </dataflow>
 <dataflow id="430" from="StgValue_417" to="result" fromId="417" toId="131">
 </dataflow>
-<dataflow id="431" from="trunc_ln64" to="result_5" fromId="121" toId="132">
+<dataflow id="431" from="trunc_ln64" to="result_1" fromId="121" toId="132">
 </dataflow>
-<dataflow id="432" from="StgValue_417" to="result_5" fromId="417" toId="132">
+<dataflow id="432" from="StgValue_417" to="result_1" fromId="417" toId="132">
 </dataflow>
 <dataflow id="433" from="add_ln12" to="result" fromId="124" toId="133">
 </dataflow>
 <dataflow id="434" from="StgValue_417" to="result" fromId="417" toId="133">
 </dataflow>
-<dataflow id="435" from="trunc_ln64" to="result_5" fromId="121" toId="134">
+<dataflow id="435" from="trunc_ln64" to="result_1" fromId="121" toId="134">
 </dataflow>
-<dataflow id="436" from="StgValue_417" to="result_5" fromId="417" toId="134">
+<dataflow id="436" from="StgValue_417" to="result_1" fromId="417" toId="134">
 </dataflow>
 <dataflow id="437" from="add_ln12" to="result" fromId="124" toId="135">
 </dataflow>
 <dataflow id="438" from="StgValue_417" to="result" fromId="417" toId="135">
 </dataflow>
-<dataflow id="439" from="trunc_ln64" to="result_5" fromId="121" toId="136">
+<dataflow id="439" from="trunc_ln64" to="result_1" fromId="121" toId="136">
 </dataflow>
-<dataflow id="440" from="StgValue_417" to="result_5" fromId="417" toId="136">
+<dataflow id="440" from="StgValue_417" to="result_1" fromId="417" toId="136">
 </dataflow>
 <dataflow id="441" from="add_ln12" to="result" fromId="124" toId="137">
 </dataflow>
 <dataflow id="442" from="StgValue_417" to="result" fromId="417" toId="137">
 </dataflow>
-<dataflow id="443" from="trunc_ln64" to="result_5" fromId="121" toId="138">
+<dataflow id="443" from="trunc_ln64" to="result_1" fromId="121" toId="138">
 </dataflow>
-<dataflow id="444" from="StgValue_417" to="result_5" fromId="417" toId="138">
+<dataflow id="444" from="StgValue_417" to="result_1" fromId="417" toId="138">
 </dataflow>
 <dataflow id="445" from="add_ln12" to="result" fromId="124" toId="139">
 </dataflow>
 <dataflow id="446" from="StgValue_417" to="result" fromId="417" toId="139">
 </dataflow>
-<dataflow id="447" from="trunc_ln64" to="result_5" fromId="121" toId="140">
+<dataflow id="447" from="trunc_ln64" to="result_1" fromId="121" toId="140">
 </dataflow>
-<dataflow id="448" from="StgValue_417" to="result_5" fromId="417" toId="140">
+<dataflow id="448" from="StgValue_417" to="result_1" fromId="417" toId="140">
 </dataflow>
 <dataflow id="449" from="add_ln12" to="result" fromId="124" toId="141">
 </dataflow>
 <dataflow id="450" from="StgValue_417" to="result" fromId="417" toId="141">
 </dataflow>
-<dataflow id="451" from="trunc_ln64" to="result_5" fromId="121" toId="142">
+<dataflow id="451" from="trunc_ln64" to="result_1" fromId="121" toId="142">
 </dataflow>
-<dataflow id="452" from="StgValue_417" to="result_5" fromId="417" toId="142">
+<dataflow id="452" from="StgValue_417" to="result_1" fromId="417" toId="142">
 </dataflow>
 <dataflow id="453" from="add_ln12" to="result" fromId="124" toId="143">
 </dataflow>
 <dataflow id="454" from="StgValue_417" to="result" fromId="417" toId="143">
 </dataflow>
-<dataflow id="455" from="trunc_ln64" to="result_5" fromId="121" toId="144">
+<dataflow id="455" from="trunc_ln64" to="result_1" fromId="121" toId="144">
 </dataflow>
-<dataflow id="456" from="StgValue_417" to="result_5" fromId="417" toId="144">
+<dataflow id="456" from="StgValue_417" to="result_1" fromId="417" toId="144">
 </dataflow>
 <dataflow id="457" from="add_ln12" to="result" fromId="124" toId="145">
 </dataflow>
 <dataflow id="458" from="StgValue_417" to="result" fromId="417" toId="145">
 </dataflow>
-<dataflow id="459" from="trunc_ln64" to="result_5" fromId="121" toId="146">
+<dataflow id="459" from="trunc_ln64" to="result_1" fromId="121" toId="146">
 </dataflow>
-<dataflow id="460" from="StgValue_417" to="result_5" fromId="417" toId="146">
+<dataflow id="460" from="StgValue_417" to="result_1" fromId="417" toId="146">
 </dataflow>
 <dataflow id="461" from="add_ln12" to="result" fromId="124" toId="147">
 </dataflow>
 <dataflow id="462" from="StgValue_417" to="result" fromId="417" toId="147">
 </dataflow>
-<dataflow id="463" from="trunc_ln64" to="result_5" fromId="121" toId="148">
+<dataflow id="463" from="trunc_ln64" to="result_1" fromId="121" toId="148">
 </dataflow>
-<dataflow id="464" from="StgValue_417" to="result_5" fromId="417" toId="148">
+<dataflow id="464" from="StgValue_417" to="result_1" fromId="417" toId="148">
 </dataflow>
 <dataflow id="465" from="add_ln12" to="result" fromId="124" toId="149">
 </dataflow>
 <dataflow id="466" from="StgValue_417" to="result" fromId="417" toId="149">
 </dataflow>
-<dataflow id="467" from="trunc_ln64" to="result_5" fromId="121" toId="150">
+<dataflow id="467" from="trunc_ln64" to="result_1" fromId="121" toId="150">
 </dataflow>
-<dataflow id="468" from="StgValue_417" to="result_5" fromId="417" toId="150">
+<dataflow id="468" from="StgValue_417" to="result_1" fromId="417" toId="150">
 </dataflow>
 <dataflow id="469" from="add_ln12" to="result" fromId="124" toId="151">
 </dataflow>
 <dataflow id="470" from="StgValue_417" to="result" fromId="417" toId="151">
 </dataflow>
-<dataflow id="471" from="trunc_ln64" to="result_5" fromId="121" toId="152">
+<dataflow id="471" from="trunc_ln64" to="result_1" fromId="121" toId="152">
 </dataflow>
-<dataflow id="472" from="StgValue_417" to="result_5" fromId="417" toId="152">
+<dataflow id="472" from="StgValue_417" to="result_1" fromId="417" toId="152">
 </dataflow>
 <dataflow id="473" from="add_ln12" to="result" fromId="124" toId="153">
 </dataflow>
 <dataflow id="474" from="StgValue_417" to="result" fromId="417" toId="153">
 </dataflow>
-<dataflow id="475" from="trunc_ln64" to="result_5" fromId="121" toId="154">
+<dataflow id="475" from="trunc_ln64" to="result_1" fromId="121" toId="154">
 </dataflow>
-<dataflow id="476" from="StgValue_417" to="result_5" fromId="417" toId="154">
+<dataflow id="476" from="StgValue_417" to="result_1" fromId="417" toId="154">
 </dataflow>
 <dataflow id="477" from="add_ln12" to="result" fromId="124" toId="155">
 </dataflow>
 <dataflow id="478" from="StgValue_417" to="result" fromId="417" toId="155">
 </dataflow>
-<dataflow id="479" from="trunc_ln64" to="result_5" fromId="121" toId="156">
+<dataflow id="479" from="trunc_ln64" to="result_1" fromId="121" toId="156">
 </dataflow>
-<dataflow id="480" from="StgValue_417" to="result_5" fromId="417" toId="156">
+<dataflow id="480" from="StgValue_417" to="result_1" fromId="417" toId="156">
 </dataflow>
 <dataflow id="481" from="add_ln12" to="result" fromId="124" toId="157">
 </dataflow>
 <dataflow id="482" from="StgValue_417" to="result" fromId="417" toId="157">
 </dataflow>
-<dataflow id="483" from="trunc_ln64" to="result_5" fromId="121" toId="158">
+<dataflow id="483" from="trunc_ln64" to="result_1" fromId="121" toId="158">
 </dataflow>
-<dataflow id="484" from="StgValue_417" to="result_5" fromId="417" toId="158">
+<dataflow id="484" from="StgValue_417" to="result_1" fromId="417" toId="158">
 </dataflow>
 <dataflow id="485" from="add_ln12" to="result" fromId="124" toId="159">
 </dataflow>
 <dataflow id="486" from="StgValue_417" to="result" fromId="417" toId="159">
 </dataflow>
-<dataflow id="487" from="trunc_ln64" to="result_5" fromId="121" toId="160">
+<dataflow id="487" from="trunc_ln64" to="result_1" fromId="121" toId="160">
 </dataflow>
-<dataflow id="488" from="StgValue_417" to="result_5" fromId="417" toId="160">
+<dataflow id="488" from="StgValue_417" to="result_1" fromId="417" toId="160">
 </dataflow>
 <dataflow id="489" from="add_ln12" to="result" fromId="124" toId="161">
 </dataflow>
 <dataflow id="490" from="StgValue_417" to="result" fromId="417" toId="161">
 </dataflow>
-<dataflow id="491" from="trunc_ln64" to="result_5" fromId="121" toId="162">
+<dataflow id="491" from="trunc_ln64" to="result_1" fromId="121" toId="162">
 </dataflow>
-<dataflow id="492" from="StgValue_417" to="result_5" fromId="417" toId="162">
+<dataflow id="492" from="StgValue_417" to="result_1" fromId="417" toId="162">
 </dataflow>
 <dataflow id="493" from="add_ln12" to="result" fromId="124" toId="163">
 </dataflow>
 <dataflow id="494" from="StgValue_417" to="result" fromId="417" toId="163">
 </dataflow>
-<dataflow id="495" from="trunc_ln64" to="result_5" fromId="121" toId="164">
+<dataflow id="495" from="trunc_ln64" to="result_1" fromId="121" toId="164">
 </dataflow>
-<dataflow id="496" from="StgValue_417" to="result_5" fromId="417" toId="164">
+<dataflow id="496" from="StgValue_417" to="result_1" fromId="417" toId="164">
 </dataflow>
 <dataflow id="497" from="add_ln12" to="result" fromId="124" toId="165">
 </dataflow>
 <dataflow id="498" from="StgValue_417" to="result" fromId="417" toId="165">
 </dataflow>
-<dataflow id="499" from="trunc_ln64" to="result_5" fromId="121" toId="166">
+<dataflow id="499" from="trunc_ln64" to="result_1" fromId="121" toId="166">
 </dataflow>
-<dataflow id="500" from="StgValue_417" to="result_5" fromId="417" toId="166">
+<dataflow id="500" from="StgValue_417" to="result_1" fromId="417" toId="166">
 </dataflow>
 <dataflow id="501" from="add_ln12" to="result" fromId="124" toId="167">
 </dataflow>
 <dataflow id="502" from="StgValue_417" to="result" fromId="417" toId="167">
 </dataflow>
-<dataflow id="503" from="trunc_ln64" to="result_5" fromId="121" toId="168">
+<dataflow id="503" from="trunc_ln64" to="result_1" fromId="121" toId="168">
 </dataflow>
-<dataflow id="504" from="StgValue_417" to="result_5" fromId="417" toId="168">
+<dataflow id="504" from="StgValue_417" to="result_1" fromId="417" toId="168">
 </dataflow>
 <dataflow id="505" from="add_ln12" to="result" fromId="124" toId="169">
 </dataflow>
 <dataflow id="506" from="StgValue_417" to="result" fromId="417" toId="169">
 </dataflow>
-<dataflow id="507" from="trunc_ln64" to="result_5" fromId="121" toId="170">
+<dataflow id="507" from="trunc_ln64" to="result_1" fromId="121" toId="170">
 </dataflow>
-<dataflow id="508" from="StgValue_417" to="result_5" fromId="417" toId="170">
+<dataflow id="508" from="StgValue_417" to="result_1" fromId="417" toId="170">
 </dataflow>
 <dataflow id="509" from="add_ln12" to="result" fromId="124" toId="171">
 </dataflow>
 <dataflow id="510" from="StgValue_417" to="result" fromId="417" toId="171">
 </dataflow>
-<dataflow id="511" from="trunc_ln64" to="result_5" fromId="121" toId="172">
+<dataflow id="511" from="trunc_ln64" to="result_1" fromId="121" toId="172">
 </dataflow>
-<dataflow id="512" from="StgValue_417" to="result_5" fromId="417" toId="172">
+<dataflow id="512" from="StgValue_417" to="result_1" fromId="417" toId="172">
 </dataflow>
 <dataflow id="513" from="add_ln12" to="result" fromId="124" toId="173">
 </dataflow>
 <dataflow id="514" from="StgValue_417" to="result" fromId="417" toId="173">
 </dataflow>
-<dataflow id="515" from="trunc_ln64" to="result_5" fromId="121" toId="174">
+<dataflow id="515" from="trunc_ln64" to="result_1" fromId="121" toId="174">
 </dataflow>
-<dataflow id="516" from="StgValue_417" to="result_5" fromId="417" toId="174">
+<dataflow id="516" from="StgValue_417" to="result_1" fromId="417" toId="174">
 </dataflow>
 <dataflow id="517" from="add_ln12" to="result" fromId="124" toId="175">
 </dataflow>
 <dataflow id="518" from="StgValue_417" to="result" fromId="417" toId="175">
 </dataflow>
-<dataflow id="519" from="trunc_ln64" to="result_5" fromId="121" toId="176">
+<dataflow id="519" from="trunc_ln64" to="result_1" fromId="121" toId="176">
 </dataflow>
-<dataflow id="520" from="StgValue_417" to="result_5" fromId="417" toId="176">
+<dataflow id="520" from="StgValue_417" to="result_1" fromId="417" toId="176">
 </dataflow>
 <dataflow id="521" from="add_ln12" to="result" fromId="124" toId="177">
 </dataflow>
 <dataflow id="522" from="StgValue_417" to="result" fromId="417" toId="177">
 </dataflow>
-<dataflow id="523" from="trunc_ln64" to="result_5" fromId="121" toId="178">
+<dataflow id="523" from="trunc_ln64" to="result_1" fromId="121" toId="178">
 </dataflow>
-<dataflow id="524" from="StgValue_417" to="result_5" fromId="417" toId="178">
+<dataflow id="524" from="StgValue_417" to="result_1" fromId="417" toId="178">
 </dataflow>
 <dataflow id="525" from="add_ln12" to="result" fromId="124" toId="179">
 </dataflow>
 <dataflow id="526" from="StgValue_417" to="result" fromId="417" toId="179">
 </dataflow>
-<dataflow id="527" from="trunc_ln64" to="result_5" fromId="121" toId="180">
+<dataflow id="527" from="trunc_ln64" to="result_1" fromId="121" toId="180">
 </dataflow>
-<dataflow id="528" from="StgValue_417" to="result_5" fromId="417" toId="180">
+<dataflow id="528" from="StgValue_417" to="result_1" fromId="417" toId="180">
 </dataflow>
 <dataflow id="529" from="add_ln12" to="result" fromId="124" toId="181">
 </dataflow>
 <dataflow id="530" from="StgValue_417" to="result" fromId="417" toId="181">
 </dataflow>
-<dataflow id="531" from="trunc_ln64" to="result_5" fromId="121" toId="182">
+<dataflow id="531" from="trunc_ln64" to="result_1" fromId="121" toId="182">
 </dataflow>
-<dataflow id="532" from="StgValue_417" to="result_5" fromId="417" toId="182">
+<dataflow id="532" from="StgValue_417" to="result_1" fromId="417" toId="182">
 </dataflow>
 <dataflow id="533" from="add_ln12" to="result" fromId="124" toId="183">
 </dataflow>
 <dataflow id="534" from="StgValue_417" to="result" fromId="417" toId="183">
 </dataflow>
-<dataflow id="535" from="trunc_ln64" to="result_5" fromId="121" toId="184">
+<dataflow id="535" from="trunc_ln64" to="result_1" fromId="121" toId="184">
 </dataflow>
-<dataflow id="536" from="StgValue_417" to="result_5" fromId="417" toId="184">
+<dataflow id="536" from="StgValue_417" to="result_1" fromId="417" toId="184">
 </dataflow>
 <dataflow id="537" from="add_ln12" to="result" fromId="124" toId="185">
 </dataflow>
 <dataflow id="538" from="StgValue_417" to="result" fromId="417" toId="185">
 </dataflow>
-<dataflow id="539" from="trunc_ln64" to="result_5" fromId="121" toId="186">
+<dataflow id="539" from="trunc_ln64" to="result_1" fromId="121" toId="186">
 </dataflow>
-<dataflow id="540" from="StgValue_417" to="result_5" fromId="417" toId="186">
+<dataflow id="540" from="StgValue_417" to="result_1" fromId="417" toId="186">
 </dataflow>
 <dataflow id="541" from="add_ln12" to="result" fromId="124" toId="187">
 </dataflow>
 <dataflow id="542" from="StgValue_417" to="result" fromId="417" toId="187">
 </dataflow>
-<dataflow id="543" from="trunc_ln64" to="result_5" fromId="121" toId="188">
+<dataflow id="543" from="trunc_ln64" to="result_1" fromId="121" toId="188">
 </dataflow>
-<dataflow id="544" from="StgValue_417" to="result_5" fromId="417" toId="188">
+<dataflow id="544" from="StgValue_417" to="result_1" fromId="417" toId="188">
 </dataflow>
 <dataflow id="545" from="add_ln12" to="result" fromId="124" toId="189">
 </dataflow>
 <dataflow id="546" from="StgValue_417" to="result" fromId="417" toId="189">
 </dataflow>
-<dataflow id="547" from="trunc_ln64" to="result_5" fromId="121" toId="190">
+<dataflow id="547" from="trunc_ln64" to="result_1" fromId="121" toId="190">
 </dataflow>
-<dataflow id="548" from="StgValue_417" to="result_5" fromId="417" toId="190">
+<dataflow id="548" from="StgValue_417" to="result_1" fromId="417" toId="190">
 </dataflow>
 <dataflow id="549" from="add_ln12" to="result" fromId="124" toId="191">
 </dataflow>
 <dataflow id="550" from="StgValue_417" to="result" fromId="417" toId="191">
 </dataflow>
-<dataflow id="551" from="trunc_ln64" to="result_5" fromId="121" toId="192">
+<dataflow id="551" from="trunc_ln64" to="result_1" fromId="121" toId="192">
 </dataflow>
-<dataflow id="552" from="StgValue_417" to="result_5" fromId="417" toId="192">
+<dataflow id="552" from="StgValue_417" to="result_1" fromId="417" toId="192">
 </dataflow>
 <dataflow id="553" from="add_ln12" to="result" fromId="124" toId="193">
 </dataflow>
@@ -3231,11 +3231,11 @@ newFuncRoot.aft.aft.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_writ
 </dataflow>
 <dataflow id="555" from="result" to="trunc_ln13" fromId="193" toId="194">
 </dataflow>
-<dataflow id="556" from="trunc_ln64" to="result_5" fromId="121" toId="195">
+<dataflow id="556" from="trunc_ln64" to="result_1" fromId="121" toId="195">
 </dataflow>
-<dataflow id="557" from="StgValue_417" to="result_5" fromId="417" toId="195">
+<dataflow id="557" from="StgValue_417" to="result_1" fromId="417" toId="195">
 </dataflow>
-<dataflow id="558" from="result_5" to="trunc_ln13_1" fromId="195" toId="196">
+<dataflow id="558" from="result_1" to="trunc_ln13_1" fromId="195" toId="196">
 </dataflow>
 <dataflow id="560" from="non_maximum_suppression_Pipeline_VITIS_LOOP_81_2" to="call_ln13" fromId="559" toId="197">
 </dataflow>

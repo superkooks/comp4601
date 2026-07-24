@@ -3,50 +3,50 @@ MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_44_1:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
-      FileOffset:      44
-      Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
-          Offset:          21315
-          Length:          0
-          ReplacementText: 'VITIS_LOOP_44_1: '
-    Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
-  - DiagnosticName:  xilinx-label-all-loops
-    DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_45_2:  '
+      Message:         'Added loop label VITIS_LOOP_45_1:  '
       FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
       FileOffset:      45
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
-          Offset:          21369
+          Offset:          21350
           Length:          0
-          ReplacementText: 'VITIS_LOOP_45_2: '
+          ReplacementText: 'VITIS_LOOP_45_1: '
     Level:           Remark
     BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_66_1:  '
+      Message:         'Added loop label VITIS_LOOP_46_2:  '
       FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
-      FileOffset:      66
+      FileOffset:      46
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
-          Offset:          21797
+          Offset:          21404
           Length:          0
-          ReplacementText: 'VITIS_LOOP_66_1: '
+          ReplacementText: 'VITIS_LOOP_46_2: '
     Level:           Remark
     BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_114_2:  '
+      Message:         'Added loop label VITIS_LOOP_68_1:  '
       FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
-      FileOffset:      114
+      FileOffset:      68
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
-          Offset:          22674
+          Offset:          21863
           Length:          0
-          ReplacementText: 'VITIS_LOOP_114_2: '
+          ReplacementText: 'VITIS_LOOP_68_1: '
+    Level:           Remark
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_116_2:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
+      FileOffset:      116
+      Replacements:
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
+          Offset:          22740
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_116_2: '
     Level:           Remark
     BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
 ...

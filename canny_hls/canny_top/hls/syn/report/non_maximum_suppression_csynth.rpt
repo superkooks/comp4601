@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression'
 ================================================================
-* Date:           Fri Jul 24 16:27:50 2026
+* Date:           Fri Jul 24 22:33:47 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  2.788 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  2.813 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -57,12 +57,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|     199|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        -|     -|    1242|    1138|    -|
+|Instance         |        -|     -|    1248|    1156|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       0|     607|    -|
 |Register         |        -|     -|     119|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     0|    1361|    1944|    0|
+|Total            |        0|     0|    1367|    1962|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -75,12 +75,12 @@
     |                          Instance                          |                      Module                      | BRAM_18K| DSP|  FF | LUT | URAM|
     +------------------------------------------------------------+--------------------------------------------------+---------+----+-----+-----+-----+
     |grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81  |non_maximum_suppression_Pipeline_VITIS_LOOP_45_1  |        0|   0|   24|   91|    0|
-    |grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99  |non_maximum_suppression_Pipeline_VITIS_LOOP_81_2  |        0|   0|   60|  353|    0|
-    |srem_32ns_3ns_2_36_seq_1_U111                               |srem_32ns_3ns_2_36_seq_1                          |        0|   0|  394|  238|    0|
-    |urem_31ns_3ns_2_35_seq_1_U112                               |urem_31ns_3ns_2_35_seq_1                          |        0|   0|  382|  228|    0|
-    |urem_31ns_3ns_2_35_seq_1_U113                               |urem_31ns_3ns_2_35_seq_1                          |        0|   0|  382|  228|    0|
+    |grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99  |non_maximum_suppression_Pipeline_VITIS_LOOP_81_2  |        0|   0|   66|  371|    0|
+    |srem_32ns_3ns_2_36_seq_1_U103                               |srem_32ns_3ns_2_36_seq_1                          |        0|   0|  394|  238|    0|
+    |urem_31ns_3ns_2_35_seq_1_U104                               |urem_31ns_3ns_2_35_seq_1                          |        0|   0|  382|  228|    0|
+    |urem_31ns_3ns_2_35_seq_1_U105                               |urem_31ns_3ns_2_35_seq_1                          |        0|   0|  382|  228|    0|
     +------------------------------------------------------------+--------------------------------------------------+---------+----+-----+-----+-----+
-    |Total                                                       |                                                  |        0|   0| 1242| 1138|    0|
+    |Total                                                       |                                                  |        0|   0| 1248| 1156|    0|
     +------------------------------------------------------------+--------------------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -118,7 +118,7 @@
     |ap_phi_mux_valid_out_write_assign_phi_fu_73_p4            |    9|          2|    1|          2|
     |out_nonmax_address0                                       |   14|          3|    9|         27|
     |out_nonmax_ce0                                            |   14|          3|    1|          3|
-    |out_nonmax_d0                                             |   14|          3|    8|         24|
+    |out_nonmax_d0                                             |   14|          3|   11|         33|
     |out_nonmax_we0                                            |   14|          3|    1|          3|
     |p_anonymous_namespace_lineBuffer_25_magnitude_0_address0  |   14|          3|   10|         30|
     |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0       |   14|          3|    1|          3|
@@ -134,7 +134,7 @@
     |p_anonymous_namespace_rowsReceived_2_o                    |    9|          2|   32|         64|
     |valid_out_write_assign_reg_69                             |    9|          2|    1|          2|
     +----------------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                                     |  607|        123|   95|        314|
+    |Total                                                     |  607|        123|   98|        323|
     +----------------------------------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
@@ -179,14 +179,14 @@
 |p_read                                                    |   in|    1|     ap_none|                                           p_read|        scalar|
 |out_sobel_magnitude_address0                              |  out|    9|   ap_memory|                              out_sobel_magnitude|         array|
 |out_sobel_magnitude_ce0                                   |  out|    1|   ap_memory|                              out_sobel_magnitude|         array|
-|out_sobel_magnitude_q0                                    |   in|    8|   ap_memory|                              out_sobel_magnitude|         array|
+|out_sobel_magnitude_q0                                    |   in|   11|   ap_memory|                              out_sobel_magnitude|         array|
 |out_sobel_direction_address0                              |  out|    9|   ap_memory|                              out_sobel_direction|         array|
 |out_sobel_direction_ce0                                   |  out|    1|   ap_memory|                              out_sobel_direction|         array|
 |out_sobel_direction_q0                                    |   in|    2|   ap_memory|                              out_sobel_direction|         array|
 |out_nonmax_address0                                       |  out|    9|   ap_memory|                                       out_nonmax|         array|
 |out_nonmax_ce0                                            |  out|    1|   ap_memory|                                       out_nonmax|         array|
 |out_nonmax_we0                                            |  out|    1|   ap_memory|                                       out_nonmax|         array|
-|out_nonmax_d0                                             |  out|    8|   ap_memory|                                       out_nonmax|         array|
+|out_nonmax_d0                                             |  out|   11|   ap_memory|                                       out_nonmax|         array|
 |p_anonymous_namespace_rowsReceived_2_i                    |   in|   32|     ap_ovld|             p_anonymous_namespace_rowsReceived_2|       pointer|
 |p_anonymous_namespace_rowsReceived_2_o                    |  out|   32|     ap_ovld|             p_anonymous_namespace_rowsReceived_2|       pointer|
 |p_anonymous_namespace_rowsReceived_2_o_ap_vld             |  out|    1|     ap_ovld|             p_anonymous_namespace_rowsReceived_2|       pointer|
@@ -198,18 +198,18 @@
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_address0  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_we0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_d0        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_q0        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_d0        |  out|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_q0        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_address1  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_0_q1        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_0_q1        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_0|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_address0  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_we0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_d0        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_q0        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_d0        |  out|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_q0        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_address1  |  out|   10|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 |p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
-|p_anonymous_namespace_lineBuffer_25_magnitude_1_q1        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
+|p_anonymous_namespace_lineBuffer_25_magnitude_1_q1        |   in|   11|   ap_memory|  p_anonymous_namespace_lineBuffer_25_magnitude_1|         array|
 +----------------------------------------------------------+-----+-----+------------+-------------------------------------------------+--------------+
 

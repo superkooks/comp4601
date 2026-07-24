@@ -8,7 +8,7 @@ Diagnostics:
       FileOffset:      30
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
-          Offset:          20734
+          Offset:          20768
           Length:          0
           ReplacementText: 'VITIS_LOOP_30_1: '
     Level:           Remark
@@ -20,7 +20,7 @@ Diagnostics:
       FileOffset:      31
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
-          Offset:          20788
+          Offset:          20822
           Length:          0
           ReplacementText: 'VITIS_LOOP_31_2: '
     Level:           Remark
@@ -32,7 +32,7 @@ Diagnostics:
       FileOffset:      46
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
-          Offset:          21078
+          Offset:          21112
           Length:          0
           ReplacementText: 'VITIS_LOOP_46_1: '
     Level:           Remark
@@ -44,7 +44,7 @@ Diagnostics:
       FileOffset:      64
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
-          Offset:          21394
+          Offset:          21428
           Length:          0
           ReplacementText: 'VITIS_LOOP_64_2: '
     Level:           Remark
@@ -56,7 +56,7 @@ Diagnostics:
       FileOffset:      67
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
-          Offset:          21487
+          Offset:          21521
           Length:          0
           ReplacementText: 'VITIS_LOOP_67_3: '
     Level:           Remark
@@ -68,7 +68,7 @@ Diagnostics:
       FileOffset:      84
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
-          Offset:          21842
+          Offset:          21876
           Length:          0
           ReplacementText: 'VITIS_LOOP_84_4: '
     Level:           Remark

@@ -111,14 +111,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -181,14 +181,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -336,14 +336,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -407,14 +407,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -520,14 +520,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -591,14 +591,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -662,14 +662,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -733,14 +733,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -805,14 +805,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -876,14 +876,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -947,14 +947,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1018,14 +1018,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1089,14 +1089,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1161,14 +1161,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1233,14 +1233,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1303,14 +1303,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1376,14 +1376,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1448,14 +1448,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1518,14 +1518,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1590,14 +1590,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1662,14 +1662,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1734,14 +1734,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1805,14 +1805,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1875,14 +1875,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -1946,14 +1946,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -2016,14 +2016,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -2087,14 +2087,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -2160,14 +2160,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -2233,14 +2233,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -2306,14 +2306,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>

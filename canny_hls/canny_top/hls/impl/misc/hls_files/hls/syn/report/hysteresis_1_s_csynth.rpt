@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hysteresis_1_s'
 ================================================================
-* Date:           Fri Jul 24 16:27:50 2026
+* Date:           Fri Jul 24 22:33:47 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -38,8 +38,8 @@
         |                                                  |                                        |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
         |                     Instance                     |                 Module                 |   min   |   max   |    min    |    max    | min | max |        Type       |
         +--------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
-        |grp_hysteresis_1_Pipeline_VITIS_LOOP_66_1_fu_73   |hysteresis_1_Pipeline_VITIS_LOOP_66_1   |      514|      514|   2.570 us|   2.570 us|    0|    0|  loop pipeline stp|
-        |grp_hysteresis_1_Pipeline_VITIS_LOOP_114_2_fu_86  |hysteresis_1_Pipeline_VITIS_LOOP_114_2  |     2556|     2556|  12.780 us|  12.780 us|    0|    0|  loop pipeline stp|
+        |grp_hysteresis_1_Pipeline_VITIS_LOOP_68_1_fu_73   |hysteresis_1_Pipeline_VITIS_LOOP_68_1   |      514|      514|   2.570 us|   2.570 us|    0|    0|  loop pipeline stp|
+        |grp_hysteresis_1_Pipeline_VITIS_LOOP_116_2_fu_86  |hysteresis_1_Pipeline_VITIS_LOOP_116_2  |     2556|     2556|  12.780 us|  12.780 us|    0|    0|  loop pipeline stp|
         +--------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
 
         * Loop: 
@@ -57,12 +57,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|     199|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        -|     -|    1284|    1171|    -|
+|Instance         |        -|     -|    1284|    1183|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       0|     570|    -|
 |Register         |        -|     -|     117|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     0|    1401|    1940|    0|
+|Total            |        0|     0|    1401|    1952|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -74,13 +74,13 @@
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
     |                     Instance                     |                 Module                 | BRAM_18K| DSP|  FF | LUT | URAM|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
-    |grp_hysteresis_1_Pipeline_VITIS_LOOP_114_2_fu_86  |hysteresis_1_Pipeline_VITIS_LOOP_114_2  |        0|   0|  104|  404|    0|
-    |grp_hysteresis_1_Pipeline_VITIS_LOOP_66_1_fu_73   |hysteresis_1_Pipeline_VITIS_LOOP_66_1   |        0|   0|   22|   73|    0|
-    |srem_32ns_3ns_2_36_seq_1_U138                     |srem_32ns_3ns_2_36_seq_1                |        0|   0|  394|  238|    0|
-    |urem_31ns_3ns_2_35_seq_1_U139                     |urem_31ns_3ns_2_35_seq_1                |        0|   0|  382|  228|    0|
-    |urem_31ns_3ns_2_35_seq_1_U140                     |urem_31ns_3ns_2_35_seq_1                |        0|   0|  382|  228|    0|
+    |grp_hysteresis_1_Pipeline_VITIS_LOOP_116_2_fu_86  |hysteresis_1_Pipeline_VITIS_LOOP_116_2  |        0|   0|  104|  416|    0|
+    |grp_hysteresis_1_Pipeline_VITIS_LOOP_68_1_fu_73   |hysteresis_1_Pipeline_VITIS_LOOP_68_1   |        0|   0|   22|   73|    0|
+    |srem_32ns_3ns_2_36_seq_1_U130                     |srem_32ns_3ns_2_36_seq_1                |        0|   0|  394|  238|    0|
+    |urem_31ns_3ns_2_35_seq_1_U131                     |urem_31ns_3ns_2_35_seq_1                |        0|   0|  382|  228|    0|
+    |urem_31ns_3ns_2_35_seq_1_U132                     |urem_31ns_3ns_2_35_seq_1                |        0|   0|  382|  228|    0|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
-    |Total                                             |                                        |        0|   0| 1284| 1171|    0|
+    |Total                                             |                                        |        0|   0| 1284| 1183|    0|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -96,13 +96,13 @@
     +----------------------------------+----------+----+---+----+------------+------------+
     |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+----+---+----+------------+------------+
-    |add_ln92_fu_176_p2                |         +|   0|  0|  39|          32|           1|
+    |add_ln94_fu_176_p2                |         +|   0|  0|  39|          32|           1|
     |grp_fu_154_p0                     |         +|   0|  0|  38|          31|           3|
     |outputRow_fu_134_p2               |         +|   0|  0|  39|          32|           2|
     |ap_block_state72_on_subcall_done  |       and|   0|  0|   2|           1|           1|
     |ap_predicate_op197_call_state72   |       and|   0|  0|   2|           1|           1|
-    |icmp_ln75_fu_123_p2               |      icmp|   0|  0|  38|          31|           1|
-    |icmp_ln90_fu_143_p2               |      icmp|   0|  0|  39|          32|           9|
+    |icmp_ln77_fu_123_p2               |      icmp|   0|  0|  38|          31|           1|
+    |icmp_ln92_fu_143_p2               |      icmp|   0|  0|  39|          32|           9|
     |ap_block_state1                   |        or|   0|  0|   2|           1|           1|
     +----------------------------------+----------+----+---+----+------------+------------+
     |Total                             |          |   0|  0| 199|         161|          19|
@@ -118,7 +118,7 @@
     |ap_phi_mux_valid_out_write_assign_phi_fu_65_p4   |    9|          2|    1|          2|
     |out_hysteresis1_address0                         |   14|          3|    9|         27|
     |out_hysteresis1_ce0                              |   14|          3|    1|          3|
-    |out_hysteresis1_d0                               |   14|          3|    2|          6|
+    |out_hysteresis1_d0                               |   14|          3|    8|         24|
     |out_hysteresis1_we0                              |   14|          3|    1|          3|
     |p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0  |   14|          3|   10|         30|
     |p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0       |   14|          3|    1|          3|
@@ -131,7 +131,7 @@
     |p_anonymous_namespace_rowsReceived_1_s_o         |    9|          2|   32|         64|
     |valid_out_write_assign_reg_61                    |    9|          2|    1|          2|
     +-------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                            |  570|        115|   76|        258|
+    |Total                                            |  570|        115|   82|        276|
     +-------------------------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
@@ -140,16 +140,16 @@
     +---------------------------------------------------------------+----+----+-----+-----------+
     |ap_CS_fsm                                                      |  72|   0|   72|          0|
     |ap_done_reg                                                    |   1|   0|    1|          0|
-    |grp_hysteresis_1_Pipeline_VITIS_LOOP_114_2_fu_86_ap_start_reg  |   1|   0|    1|          0|
-    |grp_hysteresis_1_Pipeline_VITIS_LOOP_66_1_fu_73_ap_start_reg   |   1|   0|    1|          0|
+    |grp_hysteresis_1_Pipeline_VITIS_LOOP_116_2_fu_86_ap_start_reg  |   1|   0|    1|          0|
+    |grp_hysteresis_1_Pipeline_VITIS_LOOP_68_1_fu_73_ap_start_reg   |   1|   0|    1|          0|
     |hysteresis1_valid_1_reg_46                                     |   1|   0|    1|          0|
-    |icmp_ln75_reg_199                                              |   1|   0|    1|          0|
-    |icmp_ln90_reg_214                                              |   1|   0|    1|          0|
-    |p_read_4_reg_187                                               |   1|   0|    1|          0|
-    |trunc_ln16_1_reg_228                                           |   2|   0|    2|          0|
-    |trunc_ln16_reg_223                                             |   2|   0|    2|          0|
-    |trunc_ln63_reg_203                                             |   2|   0|    2|          0|
-    |trunc_ln64_reg_194                                             |  31|   0|   31|          0|
+    |icmp_ln77_reg_199                                              |   1|   0|    1|          0|
+    |icmp_ln92_reg_214                                              |   1|   0|    1|          0|
+    |p_read_7_reg_187                                               |   1|   0|    1|          0|
+    |trunc_ln17_4_reg_228                                           |   2|   0|    2|          0|
+    |trunc_ln17_reg_223                                             |   2|   0|    2|          0|
+    |trunc_ln65_reg_203                                             |   2|   0|    2|          0|
+    |trunc_ln66_reg_194                                             |  31|   0|   31|          0|
     |valid_out_write_assign_reg_61                                  |   1|   0|    1|          0|
     +---------------------------------------------------------------+----+----+-----+-----------+
     |Total                                                          | 117|   0|  117|          0|
@@ -179,7 +179,7 @@
 |out_hysteresis1_address0                         |  out|    9|   ap_memory|                         out_hysteresis1|         array|
 |out_hysteresis1_ce0                              |  out|    1|   ap_memory|                         out_hysteresis1|         array|
 |out_hysteresis1_we0                              |  out|    1|   ap_memory|                         out_hysteresis1|         array|
-|out_hysteresis1_d0                               |  out|    2|   ap_memory|                         out_hysteresis1|         array|
+|out_hysteresis1_d0                               |  out|    8|   ap_memory|                         out_hysteresis1|         array|
 |p_anonymous_namespace_rowsReceived_1_s_i         |   in|   32|     ap_ovld|  p_anonymous_namespace_rowsReceived_1_s|       pointer|
 |p_anonymous_namespace_rowsReceived_1_s_o         |  out|   32|     ap_ovld|  p_anonymous_namespace_rowsReceived_1_s|       pointer|
 |p_anonymous_namespace_rowsReceived_1_s_o_ap_vld  |  out|    1|     ap_ovld|  p_anonymous_namespace_rowsReceived_1_s|       pointer|

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'canny_top'" level="0">
-<item name = "Date">Fri Jul 24 16:27:51 2026
+<item name = "Date">Fri Jul 24 22:33:48 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">833759, 2408189, 4.169 ms, 12.041 ms, 833760, 2408190, no</column>
+<column name="">833759, 2414257, 4.169 ms, 12.071 ms, 833760, 2414258, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -34,11 +34,11 @@
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_fu_120">canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2, 2562, 2562, 12.810 us, 12.810 us, 0, 0, loop pipeline stp</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_128">canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_136">canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_dataflow_parent_loop_proc_fu_178">dataflow_parent_loop_proc, 831194, 2405624, 4.156 ms, 12.028 ms, 831194, 2405624, no</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
+<column name="grp_dataflow_parent_loop_proc_fu_178">dataflow_parent_loop_proc, 831194, 2411692, 4.156 ms, 12.058 ms, 831194, 2411692, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -57,12 +57,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 6, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">39, 6, 15309, 27915, 0</column>
+<column name="Instance">39, 4, 16248, 28387, 0</column>
 <column name="Memory">15, -, 0, 0, 0</column>
-<column name="Multiplexer">-, -, 0, 1064, -</column>
+<column name="Multiplexer">-, -, 0, 1118, -</column>
 <column name="Register">-, -, 402, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
-<specialColumn name="Utilization (%)">18, ~0, 6, 24, 0</specialColumn>
+<specialColumn name="Utilization (%)">18, ~0, 7, 25, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -71,13 +71,13 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_136">canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2, 0, 0, 37, 184, 0</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_fu_120">canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2, 0, 0, 27, 159, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2, 0, 0, 25, 155, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21, 0, 0, 25, 155, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22, 0, 0, 25, 155, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170">canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23, 0, 0, 25, 155, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2, 0, 0, 25, 155, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21, 0, 0, 25, 155, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22, 0, 0, 25, 155, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170">canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23, 0, 0, 25, 155, 0</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_128">canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2, 0, 0, 25, 155, 0</column>
 <column name="control_s_axi_U">control_s_axi, 0, 0, 176, 296, 0</column>
-<column name="grp_dataflow_parent_loop_proc_fu_178">dataflow_parent_loop_proc, 10, 6, 13271, 24773, 0</column>
+<column name="grp_dataflow_parent_loop_proc_fu_178">dataflow_parent_loop_proc, 10, 4, 14210, 25245, 0</column>
 <column name="gmem_m_axi_U">gmem_m_axi, 29, 0, 1673, 1728, 0</column>
 </table>
 </item>
@@ -89,18 +89,18 @@
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
 <column name="p_ZN12_GLOBAL_N_110lineBufferE_0_U">p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1280, 8, 1, 10240</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferE_1_U">p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 1280, 8, 1, 10240</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_U">p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 2, 1, 1536</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_U">p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 2, 1, 1536</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_U">p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 2, 1, 1536</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_U">p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 2, 1, 1536</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_U">p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 2, 1, 1536</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_U">p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 2, 1, 1536</column>
+<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_U">p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 11, 1, 8448</column>
+<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_U">p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 11, 1, 8448</column>
 <column name="p_anonymous_namespace_lineBuffer_32_0_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
 <column name="p_anonymous_namespace_lineBuffer_32_1_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_U">p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W, 1, 0, 0, 0, 768, 8, 1, 6144</column>
 <column name="p_anonymous_namespace_lineBuffer_direction_U">p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W, 1, 0, 0, 0, 1536, 2, 1, 3072</column>
 </table>
 </item>
@@ -146,37 +146,43 @@
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0">14, 3, 1, 3</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0">14, 3, 10, 30</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0">14, 3, 2, 6</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0">14, 3, 8, 24</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0">14, 3, 1, 3</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0">14, 3, 10, 30</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0">14, 3, 2, 6</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0">14, 3, 8, 24</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0">14, 3, 1, 3</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0">14, 3, 10, 30</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0">14, 3, 2, 6</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0">14, 3, 8, 24</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0">14, 3, 1, 3</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0">14, 3, 10, 30</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0">14, 3, 2, 6</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0">14, 3, 8, 24</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0">14, 3, 1, 3</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0">14, 3, 10, 30</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0">14, 3, 2, 6</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0">14, 3, 8, 24</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0">14, 3, 1, 3</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0">14, 3, 10, 30</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0">14, 3, 2, 6</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1">9, 2, 1, 2</column>
+<column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0">14, 3, 8, 24</column>
 <column name="p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0">14, 3, 1, 3</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_address0">14, 3, 10, 30</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0">14, 3, 1, 3</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1">9, 2, 1, 2</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_d0">14, 3, 8, 24</column>
+<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_d0">14, 3, 11, 33</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_we0">14, 3, 1, 3</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_address0">14, 3, 10, 30</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0">14, 3, 1, 3</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1">9, 2, 1, 2</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_d0">14, 3, 8, 24</column>
+<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_d0">14, 3, 11, 33</column>
 <column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_we0">14, 3, 1, 3</column>
 <column name="p_anonymous_namespace_lineBuffer_32_0_address0">14, 3, 10, 30</column>
 <column name="p_anonymous_namespace_lineBuffer_32_0_ce0">14, 3, 1, 3</column>
@@ -213,10 +219,10 @@
 <column name="ap_sync_reg_grp_dataflow_parent_loop_proc_fu_178_ap_ready">1, 0, 1, 0</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_136_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2_fu_120_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2_fu_128_ap_start_reg">1, 0, 1, 0</column>
 <column name="grp_dataflow_parent_loop_proc_fu_178_ap_start_reg">1, 0, 1, 0</column>
 <column name="in_r_read_reg_287">64, 0, 64, 0</column>

@@ -8,7 +8,7 @@ Diagnostics:
       FileOffset:      68
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
-          Offset:          581367
+          Offset:          581401
           Length:          0
           ReplacementText: 'VITIS_LOOP_68_1: '
     Level:           Remark
@@ -20,7 +20,7 @@ Diagnostics:
       FileOffset:      69
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
-          Offset:          581421
+          Offset:          581455
           Length:          0
           ReplacementText: 'VITIS_LOOP_69_2: '
     Level:           Remark
@@ -32,7 +32,7 @@ Diagnostics:
       FileOffset:      89
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
-          Offset:          581794
+          Offset:          581828
           Length:          0
           ReplacementText: 'VITIS_LOOP_89_1: '
     Level:           Remark
@@ -44,7 +44,7 @@ Diagnostics:
       FileOffset:      118
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
-          Offset:          582317
+          Offset:          582351
           Length:          0
           ReplacementText: 'VITIS_LOOP_118_2: '
     Level:           Remark
@@ -56,7 +56,7 @@ Diagnostics:
       FileOffset:      122
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
-          Offset:          582433
+          Offset:          582467
           Length:          0
           ReplacementText: 'VITIS_LOOP_122_3: '
     Level:           Remark
@@ -68,7 +68,7 @@ Diagnostics:
       FileOffset:      135
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
-          Offset:          582784
+          Offset:          582818
           Length:          0
           ReplacementText: 'VITIS_LOOP_135_4: '
     Level:           Remark

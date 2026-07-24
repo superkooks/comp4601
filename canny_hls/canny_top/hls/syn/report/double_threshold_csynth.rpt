@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold'
 ================================================================
-* Date:           Fri Jul 24 16:27:50 2026
+* Date:           Fri Jul 24 22:33:47 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  3.632 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  2.252 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
     |   min   |   max   |    min   |    max   | min | max |   Type  |
     +---------+---------+----------+----------+-----+-----+---------+
-    |        1|      515|  5.000 ns|  2.575 us|    1|  515|       no|
+    |        1|      516|  5.000 ns|  2.580 us|    1|  516|       no|
     +---------+---------+----------+----------+-----+-----+---------+
 
     + Detail: 
@@ -38,7 +38,7 @@
         |                                                     |                                           |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
         |                       Instance                      |                   Module                  |   min   |   max   |    min   |    max   | min | max |        Type       |
         +-----------------------------------------------------+-------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
-        |grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32  |double_threshold_Pipeline_VITIS_LOOP_16_1  |      514|      514|  2.570 us|  2.570 us|    0|    0|  loop pipeline stp|
+        |grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32  |double_threshold_Pipeline_VITIS_LOOP_16_1  |      515|      515|  2.575 us|  2.575 us|    0|    0|  loop pipeline stp|
         +-----------------------------------------------------+-------------------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
 
         * Loop: 
@@ -56,12 +56,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|       4|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        -|     -|      23|     120|    -|
+|Instance         |        -|     -|      37|     126|    -|
 |Memory           |        -|     -|       -|       -|    -|
 |Multiplexer      |        -|     -|       0|      32|    -|
 |Register         |        -|     -|       6|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     0|      29|     156|    0|
+|Total            |        0|     0|      43|     162|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -73,9 +73,9 @@
     +-----------------------------------------------------+-------------------------------------------+---------+----+----+-----+-----+
     |                       Instance                      |                   Module                  | BRAM_18K| DSP| FF | LUT | URAM|
     +-----------------------------------------------------+-------------------------------------------+---------+----+----+-----+-----+
-    |grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32  |double_threshold_Pipeline_VITIS_LOOP_16_1  |        0|   0|  23|  120|    0|
+    |grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32  |double_threshold_Pipeline_VITIS_LOOP_16_1  |        0|   0|  37|  126|    0|
     +-----------------------------------------------------+-------------------------------------------+---------+----+----+-----+-----+
-    |Total                                                |                                           |        0|   0|  23|  120|    0|
+    |Total                                                |                                           |        0|   0|  37|  126|    0|
     +-----------------------------------------------------+-------------------------------------------+---------+----+----+-----+-----+
 
     * DSP: 
@@ -115,7 +115,7 @@
     |ap_CS_fsm                                                         |  2|   0|    2|          0|
     |ap_done_reg                                                       |  1|   0|    1|          0|
     |grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg  |  1|   0|    1|          0|
-    |p_read_6_reg_40                                                   |  1|   0|    1|          0|
+    |p_read_8_reg_40                                                   |  1|   0|    1|          0|
     |valid_out_write_assign_reg_20                                     |  1|   0|    1|          0|
     +------------------------------------------------------------------+---+----+-----+-----------+
     |Total                                                             |  6|   0|    6|          0|
@@ -141,7 +141,7 @@
 |p_read               |   in|    1|     ap_none|            p_read|        scalar|
 |out_nonmax_address0  |  out|    9|   ap_memory|        out_nonmax|         array|
 |out_nonmax_ce0       |  out|    1|   ap_memory|        out_nonmax|         array|
-|out_nonmax_q0        |   in|    8|   ap_memory|        out_nonmax|         array|
+|out_nonmax_q0        |   in|   11|   ap_memory|        out_nonmax|         array|
 |out_double_address0  |  out|    9|   ap_memory|        out_double|         array|
 |out_double_ce0       |  out|    1|   ap_memory|        out_double|         array|
 |out_double_we0       |  out|    1|   ap_memory|        out_double|         array|

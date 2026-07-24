@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'double_threshold'" level="0">
-<item name = "Date">Fri Jul 24 16:27:49 2026
+<item name = "Date">Fri Jul 24 22:33:45 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.632 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 2.252 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 515, 5.000 ns, 2.575 us, 1, 515, no</column>
+<column name="">1, 516, 5.000 ns, 2.580 us, 1, 516, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32">double_threshold_Pipeline_VITIS_LOOP_16_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32">double_threshold_Pipeline_VITIS_LOOP_16_1, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

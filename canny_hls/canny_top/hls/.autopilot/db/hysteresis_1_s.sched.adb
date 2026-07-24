@@ -109,7 +109,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
@@ -236,10 +236,10 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>p_read_4</name>
+						<name>p_read_7</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>53</lineNumber>
+						<lineNumber>54</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -253,16 +253,16 @@
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>53</second>
+										<second>54</second>
 									</item>
 								</second>
 							</item>
@@ -300,10 +300,10 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>br_ln58</name>
+						<name>br_ln60</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>58</lineNumber>
+						<lineNumber>60</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -317,16 +317,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>58</second>
+										<second>60</second>
 									</item>
 								</second>
 							</item>
@@ -368,7 +368,7 @@
 						<name>p_anonymous_namespace_rowsReceived_1_load</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -382,16 +382,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>64</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -428,10 +428,10 @@
 					<Obj>
 						<type>0</type>
 						<id>11</id>
-						<name>trunc_ln64</name>
+						<name>trunc_ln66</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -445,16 +445,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>64</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -494,7 +494,7 @@
 						<name>writeSlot</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>64</lineNumber>
+						<lineNumber>66</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -508,16 +508,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>64</second>
+										<second>66</second>
 									</item>
 								</second>
 							</item>
@@ -555,10 +555,10 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>trunc_ln63</name>
+						<name>trunc_ln65</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -572,16 +572,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>63</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -618,10 +618,10 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>_ln63</name>
+						<name>_ln65</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>63</lineNumber>
+						<lineNumber>65</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -635,16 +635,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>63</second>
+										<second>65</second>
 									</item>
 								</second>
 							</item>
@@ -689,7 +689,7 @@
 						<name>tmp</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>77</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -703,16 +703,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>75</second>
+										<second>77</second>
 									</item>
 								</second>
 							</item>
@@ -752,10 +752,10 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>icmp_ln75</name>
+						<name>icmp_ln77</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>77</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -769,16 +769,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>75</second>
+										<second>77</second>
 									</item>
 								</second>
 							</item>
@@ -816,10 +816,10 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>br_ln75</name>
+						<name>br_ln77</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>75</lineNumber>
+						<lineNumber>77</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -833,16 +833,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>75</second>
+										<second>77</second>
 									</item>
 								</second>
 							</item>
@@ -884,7 +884,7 @@
 						<name>outputRow</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>85</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -898,16 +898,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>85</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -945,10 +945,10 @@
 					<Obj>
 						<type>0</type>
 						<id>20</id>
-						<name>trunc_ln85</name>
+						<name>trunc_ln87</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>85</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -962,16 +962,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>85</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -1008,10 +1008,10 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>icmp_ln90</name>
+						<name>icmp_ln92</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>90</lineNumber>
+						<lineNumber>92</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1025,16 +1025,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>90</second>
+										<second>92</second>
 									</item>
 								</second>
 							</item>
@@ -1072,10 +1072,10 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>br_ln90</name>
+						<name>br_ln92</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>90</lineNumber>
+						<lineNumber>92</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1089,16 +1089,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>90</second>
+										<second>92</second>
 									</item>
 								</second>
 							</item>
@@ -1137,10 +1137,10 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>add_ln15</name>
+						<name>add_ln16</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>15</lineNumber>
+						<lineNumber>16</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
 						<inlineStackInfo>
@@ -1154,23 +1154,23 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>97</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>positive_modulo</second>
 										</first>
-										<second>15</second>
+										<second>16</second>
 									</item>
 								</second>
 							</item>
@@ -1211,7 +1211,7 @@
 						<name>result</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
 						<inlineStackInfo>
@@ -1225,23 +1225,23 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>97</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>positive_modulo</second>
 										</first>
-										<second>16</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -1279,10 +1279,10 @@
 					<Obj>
 						<type>0</type>
 						<id>26</id>
-						<name>trunc_ln16</name>
+						<name>trunc_ln17</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
 						<inlineStackInfo>
@@ -1296,23 +1296,23 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>97</second>
+										<second>99</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>positive_modulo</second>
 										</first>
-										<second>16</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -1349,10 +1349,10 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>result_6</name>
+						<name>result_5</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>85</lineNumber>
+						<lineNumber>87</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1366,16 +1366,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>85</second>
+										<second>87</second>
 									</item>
 								</second>
 							</item>
@@ -1413,10 +1413,10 @@
 					<Obj>
 						<type>0</type>
 						<id>28</id>
-						<name>trunc_ln16_1</name>
+						<name>trunc_ln17_4</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
 						<inlineStackInfo>
@@ -1430,23 +1430,23 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>103</second>
+										<second>105</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>positive_modulo</second>
 										</first>
-										<second>16</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -1483,10 +1483,10 @@
 					<Obj>
 						<type>0</type>
 						<id>29</id>
-						<name>_ln16</name>
+						<name>_ln17</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>16</lineNumber>
+						<lineNumber>17</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
 						<inlineStackInfo>
@@ -1500,23 +1500,23 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>103</second>
+										<second>105</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>positive_modulo</second>
 										</first>
-										<second>16</second>
+										<second>17</second>
 									</item>
 								</second>
 							</item>
@@ -1650,10 +1650,10 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>add_ln92</name>
+						<name>add_ln94</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>94</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1667,16 +1667,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>92</second>
+										<second>94</second>
 									</item>
 								</second>
 							</item>
@@ -1714,10 +1714,10 @@
 					<Obj>
 						<type>0</type>
 						<id>34</id>
-						<name>p_anonymous_namespace_rowsReceived_1_s_write_ln92</name>
+						<name>p_anonymous_namespace_rowsReceived_1_s_write_ln94</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>92</lineNumber>
+						<lineNumber>94</lineNumber>
 						<contextFuncName>hysteresis&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -1731,16 +1731,16 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>33</second>
+										<second>34</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>92</second>
+										<second>94</second>
 									</item>
 								</second>
 							</item>
@@ -1974,7 +1974,7 @@
 					<Obj>
 						<type>2</type>
 						<id>58</id>
-						<name>hysteresis_1_Pipeline_VITIS_LOOP_66_1</name>
+						<name>hysteresis_1_Pipeline_VITIS_LOOP_68_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1998,7 +1998,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:hysteresis&lt;1&gt;_Pipeline_VITIS_LOOP_66_1&gt;</content>
+				<content>&lt;constant:hysteresis&lt;1&gt;_Pipeline_VITIS_LOOP_68_1&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_37">
 				<Value>
@@ -2222,7 +2222,7 @@
 					<Obj>
 						<type>2</type>
 						<id>96</id>
-						<name>hysteresis_1_Pipeline_VITIS_LOOP_114_2</name>
+						<name>hysteresis_1_Pipeline_VITIS_LOOP_116_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -2246,7 +2246,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:hysteresis&lt;1&gt;_Pipeline_VITIS_LOOP_114_2&gt;</content>
+				<content>&lt;constant:hysteresis&lt;1&gt;_Pipeline_VITIS_LOOP_116_2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_45">
 				<Value>
@@ -2428,7 +2428,7 @@
 				<Obj>
 					<type>3</type>
 					<id>36</id>
-					<name>cleanup48.i</name>
+					<name>cleanup55.i</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>

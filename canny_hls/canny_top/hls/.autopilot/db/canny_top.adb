@@ -131,7 +131,7 @@
               <name>out_r_read</name>
               <fileName>../src/canny_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>8</lineNumber>
+              <lineNumber>9</lineNumber>
               <contextFuncName>canny_top</contextFuncName>
               <contextNormFuncName>canny_top</contextNormFuncName>
               <inlineStackInfo>
@@ -147,7 +147,7 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>8</second>
+                      <second>9</second>
                     </item>
                   </second>
                 </item>
@@ -188,7 +188,7 @@
               <name>in_r_read</name>
               <fileName>../src/canny_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>8</lineNumber>
+              <lineNumber>9</lineNumber>
               <contextFuncName>canny_top</contextFuncName>
               <contextNormFuncName>canny_top</contextNormFuncName>
               <inlineStackInfo>
@@ -204,7 +204,7 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>8</second>
+                      <second>9</second>
                     </item>
                   </second>
                 </item>
@@ -261,14 +261,14 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                     <item>
                       <first>
@@ -376,14 +376,14 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>43</second>
+                      <second>44</second>
                     </item>
                     <item>
                       <first>
@@ -491,14 +491,14 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>44</second>
+                      <second>45</second>
                     </item>
                     <item>
                       <first>
@@ -588,10 +588,10 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>p_anonymous_namespace_rowsReceived_1_s_write_ln42</name>
+              <name>p_anonymous_namespace_rowsReceived_1_s_write_ln43</name>
               <fileName>../src/hysteresis.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>hysteresis_reset&amp;lt;1&amp;gt;</contextFuncName>
               <contextNormFuncName>hysteresis_reset_1_s</contextNormFuncName>
               <inlineStackInfo>
@@ -607,21 +607,21 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>45</second>
+                      <second>46</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/hysteresis.cpp</first>
                         <second>hysteresis_reset&amp;lt;1&amp;gt;</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -670,7 +670,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146</rtlName>
+              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -703,10 +703,10 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>p_anonymous_namespace_rowsReceived_2_s_write_ln42</name>
+              <name>p_anonymous_namespace_rowsReceived_2_s_write_ln43</name>
               <fileName>../src/hysteresis.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>hysteresis_reset&amp;lt;2&amp;gt;</contextFuncName>
               <contextNormFuncName>hysteresis_reset_2_s</contextNormFuncName>
               <inlineStackInfo>
@@ -722,21 +722,21 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>46</second>
+                      <second>47</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/hysteresis.cpp</first>
                         <second>hysteresis_reset&amp;lt;2&amp;gt;</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -785,7 +785,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154</rtlName>
+              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -818,10 +818,10 @@
             <Obj>
               <type>0</type>
               <id>48</id>
-              <name>p_anonymous_namespace_rowsReceived_3_s_write_ln42</name>
+              <name>p_anonymous_namespace_rowsReceived_3_s_write_ln43</name>
               <fileName>../src/hysteresis.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>hysteresis_reset&amp;lt;3&amp;gt;</contextFuncName>
               <contextNormFuncName>hysteresis_reset_3_s</contextNormFuncName>
               <inlineStackInfo>
@@ -837,21 +837,21 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>47</second>
+                      <second>48</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/hysteresis.cpp</first>
                         <second>hysteresis_reset&amp;lt;3&amp;gt;</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -900,7 +900,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162</rtlName>
+              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -933,10 +933,10 @@
             <Obj>
               <type>0</type>
               <id>50</id>
-              <name>p_anonymous_namespace_rowsReceived_4_s_write_ln42</name>
+              <name>p_anonymous_namespace_rowsReceived_4_s_write_ln43</name>
               <fileName>../src/hysteresis.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>42</lineNumber>
+              <lineNumber>43</lineNumber>
               <contextFuncName>hysteresis_reset&amp;lt;4&amp;gt;</contextFuncName>
               <contextNormFuncName>hysteresis_reset_4_s</contextNormFuncName>
               <inlineStackInfo>
@@ -952,21 +952,21 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>48</second>
+                      <second>49</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/hysteresis.cpp</first>
                         <second>hysteresis_reset&amp;lt;4&amp;gt;</second>
                       </first>
-                      <second>42</second>
+                      <second>43</second>
                     </item>
                   </second>
                 </item>
@@ -1015,7 +1015,7 @@
                 <item_version>0</item_version>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170</rtlName>
+              <rtlName>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -1067,14 +1067,14 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>9</second>
+                      <second>10</second>
                     </item>
                     <item>
                       <first>
                         <first>../src/canny_top.cpp</first>
                         <second>reset_canny_stages</second>
                       </first>
-                      <second>49</second>
+                      <second>50</second>
                     </item>
                     <item>
                       <first>
@@ -1119,10 +1119,10 @@
             <Obj>
               <type>0</type>
               <id>53</id>
-              <name>_ln8</name>
+              <name>_ln9</name>
               <fileName>../src/canny_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>8</lineNumber>
+              <lineNumber>9</lineNumber>
               <contextFuncName>canny_top</contextFuncName>
               <contextNormFuncName>canny_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1138,7 +1138,7 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>8</second>
+                      <second>9</second>
                     </item>
                   </second>
                 </item>
@@ -1217,10 +1217,10 @@
             <Obj>
               <type>0</type>
               <id>54</id>
-              <name>_ln39</name>
+              <name>_ln40</name>
               <fileName>../src/canny_top.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
-              <lineNumber>39</lineNumber>
+              <lineNumber>40</lineNumber>
               <contextFuncName>canny_top</contextFuncName>
               <contextNormFuncName>canny_top</contextNormFuncName>
               <inlineStackInfo>
@@ -1236,7 +1236,7 @@
                         <first>../src/canny_top.cpp</first>
                         <second>canny_top</second>
                       </first>
-                      <second>39</second>
+                      <second>40</second>
                     </item>
                   </second>
                 </item>
@@ -1496,7 +1496,7 @@
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1537,7 +1537,7 @@
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1654,13 +1654,13 @@
               <originalName></originalName>
               <rtlName>p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_U</rtlName>
               <control>auto</control>
-              <opType>ram_1p</opType>
+              <opType>ram_2p</opType>
               <implIndex>auto</implIndex>
               <coreName>RAM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1695,13 +1695,13 @@
               <originalName></originalName>
               <rtlName>p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_U</rtlName>
               <control>auto</control>
-              <opType>ram_1p</opType>
+              <opType>ram_2p</opType>
               <implIndex>auto</implIndex>
               <coreName>RAM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1736,13 +1736,13 @@
               <originalName></originalName>
               <rtlName>p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_U</rtlName>
               <control>auto</control>
-              <opType>ram_1p</opType>
+              <opType>ram_2p</opType>
               <implIndex>auto</implIndex>
               <coreName>RAM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1777,13 +1777,13 @@
               <originalName></originalName>
               <rtlName>p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_U</rtlName>
               <control>auto</control>
-              <opType>ram_1p</opType>
+              <opType>ram_2p</opType>
               <implIndex>auto</implIndex>
               <coreName>RAM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1818,13 +1818,13 @@
               <originalName></originalName>
               <rtlName>p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_U</rtlName>
               <control>auto</control>
-              <opType>ram_1p</opType>
+              <opType>ram_2p</opType>
               <implIndex>auto</implIndex>
               <coreName>RAM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -1859,13 +1859,13 @@
               <originalName></originalName>
               <rtlName>p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_U</rtlName>
               <control>auto</control>
-              <opType>ram_1p</opType>
+              <opType>ram_2p</opType>
               <implIndex>auto</implIndex>
               <coreName>RAM</coreName>
               <isStorage>1</isStorage>
               <storageDepth>768</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>0</bitwidth>
           </Value>
@@ -2015,7 +2015,7 @@
             <Obj>
               <type>2</type>
               <id>76</id>
-              <name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2</name>
+              <name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -2039,14 +2039,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2&gt;</content>
+          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_43">
           <Value>
             <Obj>
               <type>2</type>
               <id>80</id>
-              <name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21</name>
+              <name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -2070,14 +2070,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21&gt;</content>
+          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_44">
           <Value>
             <Obj>
               <type>2</type>
               <id>84</id>
-              <name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22</name>
+              <name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -2101,14 +2101,14 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22&gt;</content>
+          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_45">
           <Value>
             <Obj>
               <type>2</type>
               <id>88</id>
-              <name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23</name>
+              <name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23</name>
               <fileName></fileName>
               <fileDirectory></fileDirectory>
               <lineNumber>0</lineNumber>
@@ -2132,7 +2132,7 @@
             <bitwidth>0</bitwidth>
           </Value>
           <const_type>6</const_type>
-          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23&gt;</content>
+          <content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23&gt;</content>
         </item>
         <item class_id_reference="16" object_id="_46">
           <Value>
@@ -2827,7 +2827,7 @@
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
         <mMinLatency>833759</mMinLatency>
-        <mMaxLatency>2408189</mMaxLatency>
+        <mMaxLatency>2414257</mMaxLatency>
         <mIsDfPipe>0</mIsDfPipe>
         <mDfPipe class_id="-1"></mDfPipe>
       </item>
@@ -3176,7 +3176,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -3191,7 +3191,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -3206,7 +3206,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -3221,7 +3221,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -3261,15 +3261,15 @@
             </item>
             <item>
               <first>DSP</first>
-              <second>6</second>
+              <second>4</second>
             </item>
             <item>
               <first>FF</first>
-              <second>13271</second>
+              <second>14210</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>24773</second>
+              <second>25245</second>
             </item>
             <item>
               <first>URAM</first>
@@ -3525,7 +3525,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3533,7 +3533,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>1536</second>
+              <second>6144</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3564,7 +3564,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3572,7 +3572,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>1536</second>
+              <second>6144</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3603,7 +3603,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3611,7 +3611,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>1536</second>
+              <second>6144</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3642,7 +3642,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3650,7 +3650,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>1536</second>
+              <second>6144</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3681,7 +3681,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3689,7 +3689,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>1536</second>
+              <second>6144</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3720,7 +3720,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3728,7 +3728,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>1536</second>
+              <second>6144</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3759,7 +3759,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>8</second>
+              <second>11</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3767,7 +3767,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6144</second>
+              <second>8448</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3798,7 +3798,7 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>8</second>
+              <second>11</second>
             </item>
             <item>
               <first>(2Banks)</first>
@@ -3806,7 +3806,7 @@
             </item>
             <item>
               <first>(3W*Bits*Banks)</first>
-              <second>6144</second>
+              <second>8448</second>
             </item>
             <item>
               <first>BRAM</first>
@@ -3945,7 +3945,7 @@
         </item>
       </dp_memory_resource>
       <dp_multiplexer_resource>
-        <count>83</count>
+        <count>89</count>
         <item_version>0</item_version>
         <item>
           <first>ap_NS_fsm</first>
@@ -4731,6 +4731,33 @@
           </second>
         </item>
         <item>
+          <first>p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0</first>
           <second>
             <count>5</count>
@@ -4741,11 +4768,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>6</second>
+              <second>24</second>
             </item>
             <item>
               <first>FF</first>
@@ -4839,6 +4866,33 @@
           </second>
         </item>
         <item>
+          <first>p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0</first>
           <second>
             <count>5</count>
@@ -4849,11 +4903,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>6</second>
+              <second>24</second>
             </item>
             <item>
               <first>FF</first>
@@ -4947,6 +5001,33 @@
           </second>
         </item>
         <item>
+          <first>p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0</first>
           <second>
             <count>5</count>
@@ -4957,11 +5038,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>6</second>
+              <second>24</second>
             </item>
             <item>
               <first>FF</first>
@@ -5055,6 +5136,33 @@
           </second>
         </item>
         <item>
+          <first>p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0</first>
           <second>
             <count>5</count>
@@ -5065,11 +5173,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>6</second>
+              <second>24</second>
             </item>
             <item>
               <first>FF</first>
@@ -5163,6 +5271,33 @@
           </second>
         </item>
         <item>
+          <first>p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0</first>
           <second>
             <count>5</count>
@@ -5173,11 +5308,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>6</second>
+              <second>24</second>
             </item>
             <item>
               <first>FF</first>
@@ -5271,6 +5406,33 @@
           </second>
         </item>
         <item>
+          <first>p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1</first>
+          <second>
+            <count>5</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0Size)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>(1Bits)</first>
+              <second>1</second>
+            </item>
+            <item>
+              <first>(2Count)</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
           <first>p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0</first>
           <second>
             <count>5</count>
@@ -5281,11 +5443,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>2</second>
+              <second>8</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>6</second>
+              <second>24</second>
             </item>
             <item>
               <first>FF</first>
@@ -5416,11 +5578,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>8</second>
+              <second>11</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>24</second>
+              <second>33</second>
             </item>
             <item>
               <first>FF</first>
@@ -5551,11 +5713,11 @@
             </item>
             <item>
               <first>(1Bits)</first>
-              <second>8</second>
+              <second>11</second>
             </item>
             <item>
               <first>(2Count)</first>
-              <second>24</second>
+              <second>33</second>
             </item>
             <item>
               <first>FF</first>
@@ -6364,7 +6526,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154_ap_start_reg</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6383,7 +6545,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162_ap_start_reg</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6402,7 +6564,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170_ap_start_reg</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6421,7 +6583,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146_ap_start_reg</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146_ap_start_reg</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6700,28 +6862,28 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -6762,7 +6924,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6770,7 +6932,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6778,7 +6940,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6786,7 +6948,7 @@
           </second>
         </item>
         <item>
-          <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146 (canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2)</first>
+          <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146 (canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -6842,7 +7004,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>171</item>
+            <item>172</item>
           </second>
         </item>
         <item>
@@ -6850,7 +7012,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>183</item>
+            <item>184</item>
           </second>
         </item>
         <item>
@@ -6866,7 +7028,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>206</item>
+            <item>209</item>
           </second>
         </item>
         <item>
@@ -6874,7 +7036,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>216</item>
+            <item>222</item>
           </second>
         </item>
         <item>
@@ -6882,7 +7044,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>225</item>
+            <item>234</item>
           </second>
         </item>
         <item>
@@ -6890,7 +7052,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>235</item>
+            <item>247</item>
           </second>
         </item>
         <item>
@@ -6898,7 +7060,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>244</item>
+            <item>259</item>
           </second>
         </item>
         <item>
@@ -6906,7 +7068,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>146</item>
+            <item>147</item>
           </second>
         </item>
         <item>
@@ -6914,7 +7076,7 @@
           <second>
             <count>1</count>
             <item_version>0</item_version>
-            <item>158</item>
+            <item>159</item>
           </second>
         </item>
         <item>
@@ -7382,7 +7544,7 @@
         </second>
       </item>
       <item>
-        <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21_fu_154</first>
+        <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21_fu_154</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -7391,7 +7553,7 @@
         </second>
       </item>
       <item>
-        <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22_fu_162</first>
+        <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22_fu_162</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -7400,7 +7562,7 @@
         </second>
       </item>
       <item>
-        <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23_fu_170</first>
+        <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23_fu_170</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -7409,7 +7571,7 @@
         </second>
       </item>
       <item>
-        <first>grp_canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2_fu_146</first>
+        <first>grp_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2_fu_146</first>
         <second>
           <count>2</count>
           <item_version>0</item_version>
@@ -7472,7 +7634,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln42_store_fu_252</first>
+        <first>store_ln43_store_fu_252</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7480,7 +7642,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln42_store_fu_258</first>
+        <first>store_ln43_store_fu_258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7488,7 +7650,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln42_store_fu_264</first>
+        <first>store_ln43_store_fu_264</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -7496,7 +7658,7 @@
         </second>
       </item>
       <item>
-        <first>store_ln42_store_fu_270</first>
+        <first>store_ln43_store_fu_270</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

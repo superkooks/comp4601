@@ -1,27 +1,14 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 5 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 43, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'gaussian_blur_reset()'
     DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 43, Column: 5 }
-Function:        _Z18reset_canny_stagesv
-Args:            
-  - Callee:          'sobel_reset()'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -30,12 +17,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 44, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'non_maximum_suppression_reset()'
-    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 19, 
-                       Column: 0 }
+  - Callee:          'sobel_reset()'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -44,11 +30,12 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 45, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<1>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'non_maximum_suppression_reset()'
+    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 19, 
+                       Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -57,11 +44,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 46, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<2>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'void hysteresis_reset<1>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -70,11 +57,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 47, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<3>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'void hysteresis_reset<2>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -83,11 +70,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 48, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<4>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'void hysteresis_reset<3>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -96,11 +83,24 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 49, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
+  - Callee:          'void hysteresis_reset<4>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'reset_canny_stages()'
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 50, Column: 5 }
+Function:        _Z18reset_canny_stagesv
+Args:            
   - Callee:          'output_row_reset()'
     DebugLoc:        { File: ../src/output_row.cpp, Line: 5, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -114,102 +114,6 @@ Args:
   - String:          ' not inlined into '
   - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
     DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 13, Column: 17 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 15, Column: 57 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::mantissa() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 503, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 59, Column: 8 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::__signbit() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 512, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 18, Column: 79 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::expv() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 485, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 117, Column: 10 }
-Function:        _Z20generic_cast_IEEE754IidET_T0_b
-Args:            
-  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, double>(double, bool)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 116, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                   Line: 55, Column: 56 }
-Function:        __hls_fptosi_double_i32
-Args:            
-  - Callee:          'int generic_cast_IEEE754<int, double>(double, bool)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 116, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          __hls_fptosi_double_i32
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                       Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -241,12 +145,11 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 161, Column: 17 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 156, Column: 36 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
-  - Callee:          __hls_fptosi_double_i32
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                       Line: 55, Column: 0 }
+  - Callee:          '(anonymous namespace)::absolute_value(int)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
     DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
@@ -255,7 +158,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 174, Column: 13 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 159, Column: 13 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::quantise_direction(int, int)'
@@ -270,13 +173,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 73, 
                    Column: 9 }
-Function:        _Z23non_maximum_suppressionPK13GradientPixelPhbPb
+Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.28)'
     DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 12, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'non_maximum_suppression(GradientPixel const*, unsigned char*, bool, bool*)'
+  - Caller:          'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'
     DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -284,144 +187,131 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 5 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 10, Column: 5 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 27, Column: 9 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 28, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'grayscale(RGBPixel const*, unsigned char*)'
     DebugLoc:        { File: ../src/grayscale.cpp, Line: 6, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 29, Column: 9 }
-Function:        _Z9canny_topP8RGBPixelPh
-Args:            
-  - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -430,11 +320,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 30, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+  - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -443,12 +333,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 31, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'non_maximum_suppression(GradientPixel const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
-                       Column: 0 }
+  - Callee:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -457,11 +346,12 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 32, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'double_threshold(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/double_threshold.cpp, Line: 10, Column: 0 }
+  - Callee:          'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'
+    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
+                       Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -470,11 +360,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 33, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'double_threshold(unsigned short const*, unsigned char*, bool, bool*)'
+    DebugLoc:        { File: ../src/double_threshold.cpp, Line: 10, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -483,11 +373,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 34, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -496,11 +386,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 35, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -509,11 +399,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 36, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -522,24 +412,24 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 37, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'output_row(unsigned char const*, unsigned char*, bool)'
-    DebugLoc:        { File: ../src/output_row.cpp, Line: 13, Column: 0 }
+  - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 5 }
-Function:        _Z18reset_canny_stagesv
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 38, Column: 9 }
+Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'gaussian_blur_reset()'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 27, Column: 0 }
+  - Callee:          'output_row(unsigned char const*, unsigned char*, bool)'
+    DebugLoc:        { File: ../src/output_row.cpp, Line: 13, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+  - Caller:          'canny_top(RGBPixel*, unsigned char*)'
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -548,11 +438,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 43, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'sobel_reset()'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
+  - Callee:          'gaussian_blur_reset()'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -561,12 +451,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 44, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'non_maximum_suppression_reset()'
-    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 19, 
-                       Column: 0 }
+  - Callee:          'sobel_reset()'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -575,11 +464,12 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 45, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<1>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'non_maximum_suppression_reset()'
+    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 19, 
+                       Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -588,11 +478,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 46, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<2>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'void hysteresis_reset<1>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -601,11 +491,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 47, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<3>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'void hysteresis_reset<2>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -614,11 +504,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 48, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
-  - Callee:          'void hysteresis_reset<4>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+  - Callee:          'void hysteresis_reset<3>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -627,11 +517,24 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 49, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
+  - Callee:          'void hysteresis_reset<4>()'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'reset_canny_stages()'
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 50, Column: 5 }
+Function:        _Z18reset_canny_stagesv
+Args:            
   - Callee:          'output_row_reset()'
     DebugLoc:        { File: ../src/output_row.cpp, Line: 5, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -645,102 +548,6 @@ Args:
   - String:          ' not inlined into '
   - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
     DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 13, Column: 17 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 15, Column: 57 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::mantissa() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 503, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 18, Column: 79 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::expv() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 485, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 59, Column: 8 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - Callee:          'fp_struct<double>::__signbit() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 512, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 117, Column: 10 }
-Function:        _Z20generic_cast_IEEE754IidET_T0_b
-Args:            
-  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'int generic_cast_IEEE754<int, double>(double, bool)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 116, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                   Line: 55, Column: 56 }
-Function:        __hls_fptosi_double_i32
-Args:            
-  - Callee:          'int generic_cast_IEEE754<int, double>(double, bool)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 116, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          __hls_fptosi_double_i32
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                       Line: 55, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -772,12 +579,11 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 161, Column: 17 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 156, Column: 36 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
-  - Callee:          __hls_fptosi_double_i32
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                       Line: 55, Column: 0 }
+  - Callee:          '(anonymous namespace)::absolute_value(int)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
     DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
@@ -786,7 +592,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 174, Column: 13 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 159, Column: 13 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::quantise_direction(int, int)'
@@ -801,13 +607,13 @@ Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 73, 
                    Column: 9 }
-Function:        _Z23non_maximum_suppressionPK13GradientPixelPhbPb
+Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.28)'
     DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 12, 
                        Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'non_maximum_suppression(GradientPixel const*, unsigned char*, bool, bool*)'
+  - Caller:          'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'
     DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
                        Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
@@ -815,144 +621,131 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 97, Column: 9 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 123, Column: 13 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 5 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 10, Column: 5 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 27, Column: 9 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 28, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'grayscale(RGBPixel const*, unsigned char*)'
     DebugLoc:        { File: ../src/grayscale.cpp, Line: 6, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 29, Column: 9 }
-Function:        _Z9canny_topP8RGBPixelPh
-Args:            
-  - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -961,11 +754,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 30, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+  - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -974,12 +767,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 31, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'non_maximum_suppression(GradientPixel const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
-                       Column: 0 }
+  - Callee:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -988,11 +780,12 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 32, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'double_threshold(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/double_threshold.cpp, Line: 10, Column: 0 }
+  - Callee:          'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'
+    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
+                       Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1001,11 +794,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 33, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'double_threshold(unsigned short const*, unsigned char*, bool, bool*)'
+    DebugLoc:        { File: ../src/double_threshold.cpp, Line: 10, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1014,11 +807,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 34, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1027,11 +820,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 35, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1040,11 +833,11 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 36, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1053,11 +846,24 @@ Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 37, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
+  - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'canny_top(RGBPixel*, unsigned char*)'
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 38, Column: 9 }
+Function:        _Z9canny_topP8RGBPixelPh
+Args:            
   - Callee:          'output_row(unsigned char const*, unsigned char*, bool)'
     DebugLoc:        { File: ../src/output_row.cpp, Line: 13, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -1066,7 +872,7 @@ Name:            NeverInline
 Function:        apatb_canny_top_ir
 Args:            
   - Callee:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          apatb_canny_top_ir
   - String:          ' because it should never be inlined (cost=never)'
@@ -1074,7 +880,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
@@ -1082,13 +888,13 @@ Args:
     DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 27, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
@@ -1096,13 +902,13 @@ Args:
     DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
@@ -1111,69 +917,69 @@ Args:
                        Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<1>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<2>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<3>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<4>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
@@ -1181,7 +987,7 @@ Args:
     DebugLoc:        { File: ../src/output_row.cpp, Line: 5, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -1196,108 +1002,6 @@ Args:
   - String:          ''' into '''
   - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
     DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 12, Column: 0 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'fp_struct<double>::fp_struct(double)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 456, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 12, Column: 0 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'fp_struct<double>::mantissa() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 503, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 12, Column: 0 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'fp_struct<double>::expv() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 485, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 12, Column: 0 }
-Function:        _Z20generic_cast_IEEE754IiL9ap_q_mode6EdET_T1_bN3hls9enable_ifIXsr3std14numeric_limitsIS1_EE9is_signedEbE4typeE
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'fp_struct<double>::__signbit() const'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h, 
-                       Line: 512, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                   Line: 116, Column: 0 }
-Function:        _Z20generic_cast_IEEE754IidET_T0_b
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'int generic_cast_IEEE754<int, (ap_q_mode)6, double>(double, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 12, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          'int generic_cast_IEEE754<int, double>(double, bool)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 116, Column: 0 }
-  - String:          ''''
-...
---- !Passed
-Pass:            reflow-inliner
-Name:            Inline
-DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                   Line: 55, Column: 0 }
-Function:        __hls_fptosi_double_i32
-Args:            
-  - String:          'Inlining function '''
-  - Callee:          'int generic_cast_IEEE754<int, double>(double, bool)'
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h, 
-                       Line: 116, Column: 0 }
-  - String:          ''' into '''
-  - Caller:          __hls_fptosi_double_i32
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                       Line: 55, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -1335,9 +1039,8 @@ DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Inlining function '''
-  - Callee:          __hls_fptosi_double_i32
-    DebugLoc:        { File: /wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp, 
-                       Line: 55, Column: 0 }
+  - Callee:          '(anonymous namespace)::absolute_value(int)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
   - String:          ''' into '''
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
     DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
@@ -1362,14 +1065,14 @@ Pass:            reflow-inliner
 Name:            Inline
 DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
                    Column: 0 }
-Function:        _Z23non_maximum_suppressionPK13GradientPixelPhbPb
+Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.28)'
     DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 12, 
                        Column: 0 }
   - String:          ''' into '''
-  - Caller:          'non_maximum_suppression(GradientPixel const*, unsigned char*, bool, bool*)'
+  - Caller:          'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'
     DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 36, 
                        Column: 0 }
   - String:          ''''
@@ -1377,127 +1080,127 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 15, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
   - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 26, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 57, Column: 0 }
+  - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Inlining function '''
   - Callee:          'reset_canny_stages()'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
   - String:          ''' into '''
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -1670,16 +1373,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1690,10 +1393,10 @@ Args:
   - PragmaFunction:  'hysteresis<4>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1701,16 +1404,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1721,10 +1424,10 @@ Args:
   - PragmaFunction:  'hysteresis<4>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1732,16 +1435,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1752,10 +1455,10 @@ Args:
   - PragmaFunction:  'hysteresis<3>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1763,16 +1466,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1783,10 +1486,10 @@ Args:
   - PragmaFunction:  'hysteresis<3>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1794,16 +1497,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1814,10 +1517,10 @@ Args:
   - PragmaFunction:  'hysteresis<2>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1825,16 +1528,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1845,10 +1548,10 @@ Args:
   - PragmaFunction:  'hysteresis<2>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1856,16 +1559,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1876,10 +1579,10 @@ Args:
   - PragmaFunction:  'hysteresis<1>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_66_1
+  - LoopName:        VITIS_LOOP_68_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:66:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 66, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1887,16 +1590,16 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1907,10 +1610,10 @@ Args:
   - PragmaFunction:  'hysteresis<1>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_114_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:114:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 114, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1927,7 +1630,7 @@ Args:
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: ../src/double_threshold.cpp, Line: 16, Column: 22 }
-Function:        _Z16double_thresholdPKhPhbPb
+Function:        _Z16double_thresholdPKtPhbPb
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1959,7 +1662,7 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 45, 
                    Column: 22 }
-Function:        _Z23non_maximum_suppressionPK13GradientPixelPhbPb
+Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -1992,7 +1695,7 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
 DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 81, 
                    Column: 22 }
-Function:        _Z23non_maximum_suppressionPK13GradientPixelPhbPb
+Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
   - PragmaType:      pipeline
   - String:          ' '
@@ -2265,15 +1968,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2285,10 +1988,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -2296,15 +1999,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2316,10 +2019,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -2327,15 +2030,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2347,10 +2050,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -2358,15 +2061,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2378,10 +2081,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_45_2
+  - LoopName:        VITIS_LOOP_46_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:45:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 45, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
   - String:          ' '
 ...
 --- !Passed
@@ -2779,7 +2482,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      array_partition
@@ -2790,7 +2493,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  canny_top
   - String:          ' '
-  - VarLoc:          '../src/hysteresis.cpp:10:0'
+  - VarLoc:          '../src/hysteresis.cpp:11:0'
   - String:          ' '
   - VarName:         '(anonymous namespace)::lineBuffer<1>'
   - String:          ' '
@@ -2798,7 +2501,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Inferring pragma '''
@@ -2819,7 +2522,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      array_partition
@@ -2830,7 +2533,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  canny_top
   - String:          ' '
-  - VarLoc:          '../src/hysteresis.cpp:10:0'
+  - VarLoc:          '../src/hysteresis.cpp:11:0'
   - String:          ' '
   - VarName:         '(anonymous namespace)::lineBuffer<2>'
   - String:          ' '
@@ -2838,7 +2541,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Inferring pragma '''
@@ -2859,7 +2562,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      array_partition
@@ -2870,7 +2573,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  canny_top
   - String:          ' '
-  - VarLoc:          '../src/hysteresis.cpp:10:0'
+  - VarLoc:          '../src/hysteresis.cpp:11:0'
   - String:          ' '
   - VarName:         '(anonymous namespace)::lineBuffer<3>'
   - String:          ' '
@@ -2878,7 +2581,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Inferring pragma '''
@@ -2899,7 +2602,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      array_partition
@@ -2910,7 +2613,7 @@ Args:
   - String:          ' '
   - PragmaFunction:  canny_top
   - String:          ' '
-  - VarLoc:          '../src/hysteresis.cpp:10:0'
+  - VarLoc:          '../src/hysteresis.cpp:11:0'
   - String:          ' '
   - VarName:         '(anonymous namespace)::lineBuffer<4>'
   - String:          ' '
@@ -2918,7 +2621,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Inferring pragma '''
@@ -3011,8 +2714,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
-Function:        _Z10hysteresisILi4EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
+Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -3031,8 +2734,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
-Function:        _Z10hysteresisILi3EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
+Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -3051,8 +2754,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
-Function:        _Z10hysteresisILi2EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
+Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -3071,8 +2774,8 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 10, Column: 0 }
-Function:        _Z10hysteresisILi1EEvPKhPhbPb
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 11, Column: 0 }
+Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -3112,7 +2815,7 @@ Args:
 Pass:            reflow-array-partition
 Name:            ArrayXform
 DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 9, Column: 0 }
-Function:        _Z23non_maximum_suppressionPK13GradientPixelPhbPb
+Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
   - String:          'Applying '
   - String:          array_partition
@@ -3212,104 +2915,91 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 25, Column: 37 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 26, Column: 37 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
-  - Callee:          dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc
+  - Callee:          dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 27, Column: 20 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 28, Column: 20 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
   - Callee:          'grayscale(RGBPixel const*, unsigned char*) (.1)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 29, Column: 9 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 30, Column: 9 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
   - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
     DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 30, Column: 40 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 31, Column: 40 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
   - Callee:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 31, Column: 56 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 32, Column: 56 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
-  - Callee:          'non_maximum_suppression(GradientPixel const*, unsigned char*, bool, bool*)'
+  - Callee:          'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 32, Column: 50 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 33, Column: 50 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
-  - Callee:          'double_threshold(unsigned char const*, unsigned char*, bool, bool*)'
+  - Callee:          'double_threshold(unsigned short const*, unsigned char*, bool, bool*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 33, Column: 52 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 34, Column: 52 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
-  - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*)'
+  - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 34, Column: 57 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
-Args:            
-  - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -3317,12 +3007,12 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 35, Column: 57 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
-  - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*)'
+  - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
@@ -3330,38 +3020,51 @@ Args:
 Pass:            inline
 Name:            NeverInline
 DebugLoc:        { File: ../src/canny_top.cpp, Line: 36, Column: 57 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
-  - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*)'
+  - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 37, Column: 42 }
-Function:        dataflow_in_loop_VITIS_LOOP_11_1.1
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 37, Column: 57 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
+Args:            
+  - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 38, Column: 42 }
+Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
   - Callee:          'output_row(unsigned char const*, unsigned char*, bool) (.1)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
-  - Caller:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/canny_top.cpp, Line: 23, Column: 71 }
+DebugLoc:        { File: ../src/canny_top.cpp, Line: 24, Column: 71 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
-  - Callee:          dataflow_in_loop_VITIS_LOOP_11_1.1
+  - Callee:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
-    DebugLoc:        { File: ../src/canny_top.cpp, Line: 8, Column: 0 }
+    DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...

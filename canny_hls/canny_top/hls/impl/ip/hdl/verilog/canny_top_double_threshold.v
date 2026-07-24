@@ -39,7 +39,7 @@ output   ap_ready;
 input  [0:0] p_read;
 output  [8:0] out_nonmax_address0;
 output   out_nonmax_ce0;
-input  [7:0] out_nonmax_q0;
+input  [10:0] out_nonmax_q0;
 output  [8:0] out_double_address0;
 output   out_double_ce0;
 output   out_double_we0;
@@ -53,8 +53,8 @@ reg ap_ready;
 reg    ap_done_reg;
 (* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-wire   [0:0] p_read_6_read_fu_14_p2;
-reg   [0:0] p_read_6_reg_40;
+wire   [0:0] p_read_8_read_fu_14_p2;
+reg   [0:0] p_read_8_reg_40;
 reg    ap_block_state1;
 wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start;
 wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done;
@@ -124,7 +124,7 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call0) & (p_read_6_read_fu_14_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
+        if (((1'b0 == ap_block_state1_ignore_call0) & (p_read_8_read_fu_14_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
             grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= 1'b1;
         end else if ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_ready == 1'b1)) begin
             grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= 1'b0;
@@ -133,16 +133,16 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (p_read_6_reg_40 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b0 == ap_block_state2_on_subcall_done) & (p_read_8_reg_40 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         valid_out_write_assign_reg_20 <= 1'd1;
-    end else if (((1'b0 == ap_block_state1) & (p_read_6_read_fu_14_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
+    end else if (((1'b0 == ap_block_state1) & (p_read_8_read_fu_14_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
         valid_out_write_assign_reg_20 <= 1'd0;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        p_read_6_reg_40 <= p_read;
+        p_read_8_reg_40 <= p_read;
     end
 end
 
@@ -179,7 +179,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((p_read_6_reg_40 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((p_read_8_reg_40 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_phi_mux_valid_out_write_assign_phi_fu_24_p4 = 1'd1;
     end else begin
         ap_phi_mux_valid_out_write_assign_phi_fu_24_p4 = valid_out_write_assign_reg_20;
@@ -229,7 +229,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state2_on_subcall_done = ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done == 1'b0) & (p_read_6_reg_40 == 1'd1));
+    ap_block_state2_on_subcall_done = ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done == 1'b0) & (p_read_8_reg_40 == 1'd1));
 end
 
 assign ap_return = ap_phi_mux_valid_out_write_assign_phi_fu_24_p4;
@@ -248,6 +248,6 @@ assign out_nonmax_address0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32
 
 assign out_nonmax_ce0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_ce0;
 
-assign p_read_6_read_fu_14_p2 = p_read;
+assign p_read_8_read_fu_14_p2 = p_read;
 
 endmodule //canny_top_double_threshold

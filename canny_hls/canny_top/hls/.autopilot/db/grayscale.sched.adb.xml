@@ -31,10 +31,10 @@
 
 <Node id="8" bw="18" op_0_bw="18" op_1_bw="18">
 <![CDATA[
-newFuncRoot:3 %p_read_5 = read i18 @_ssdm_op_Read.ap_auto.i18, i18 %p_read
+newFuncRoot:3 %p_read15 = read i18 @_ssdm_op_Read.ap_auto.i18, i18 %p_read
 
 ]]></Node>
-<StgValue><ssdm name="p_read_5"/></StgValue>
+<StgValue><ssdm name="p_read15"/></StgValue>
 </operation>
 </state>
 
@@ -64,7 +64,7 @@ newFuncRoot:2 %in_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %in_r
 
 <Node id="9" bw="20" op_0_bw="18">
 <![CDATA[
-newFuncRoot:4 %zext_ln4 = zext i18 %p_read_5
+newFuncRoot:4 %zext_ln4 = zext i18 %p_read15
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln4"/></StgValue>
@@ -79,7 +79,7 @@ newFuncRoot:4 %zext_ln4 = zext i18 %p_read_5
 
 <Node id="10" bw="20" op_0_bw="20" op_1_bw="18" op_2_bw="2">
 <![CDATA[
-newFuncRoot:5 %p_shl = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i18.i2, i18 %p_read_5, i2 0
+newFuncRoot:5 %p_shl = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i18.i2, i18 %p_read15, i2 0
 
 ]]></Node>
 <StgValue><ssdm name="p_shl"/></StgValue>
@@ -124,10 +124,10 @@ newFuncRoot:7 %p_cast = zext i20 %empty
 
 <Node id="13" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-newFuncRoot:8 %empty_41 = add i64 %p_cast, i64 %in_read
+newFuncRoot:8 %empty_39 = add i64 %p_cast, i64 %in_read
 
 ]]></Node>
-<StgValue><ssdm name="empty_41"/></StgValue>
+<StgValue><ssdm name="empty_39"/></StgValue>
 </operation>
 
 <operation id="11" st_id="2" stage="2" lat="2">
@@ -139,7 +139,7 @@ newFuncRoot:8 %empty_41 = add i64 %p_cast, i64 %in_read
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="512" op_3_bw="8">
 <![CDATA[
-newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_41, i512 %gmem, i8 %out_grayscale
+newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_39, i512 %gmem, i8 %out_grayscale
 
 ]]></Node>
 <StgValue><ssdm name="call_ln4"/></StgValue>
@@ -172,7 +172,7 @@ newFuncRoot:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_10, i32 64, i32 0, void @empty_9, void @empty_8, void @empty_10, i32 16, i32 16, i32 16, i32 16, void @empty_10, void @empty_10, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_22, i32 64, i32 0, void @empty_10, void @empty_13, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -187,7 +187,7 @@ newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="512" op_3_bw="8">
 <![CDATA[
-newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_41, i512 %gmem, i8 %out_grayscale
+newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_39, i512 %gmem, i8 %out_grayscale
 
 ]]></Node>
 <StgValue><ssdm name="call_ln4"/></StgValue>

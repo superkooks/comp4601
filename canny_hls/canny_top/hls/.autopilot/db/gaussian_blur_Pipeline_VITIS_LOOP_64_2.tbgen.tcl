@@ -24,7 +24,7 @@ dict set ap_memory_interface_dict p_ZN12_GLOBAL_N_110lineBufferE_0 { MEM_WIDTH 8
 dict set ap_memory_interface_dict p_ZN12_GLOBAL_N_110lineBufferE_1 { MEM_WIDTH 8 MEM_SIZE 1280 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
 	{ select_ln22 int 3 regular  }
-	{ result_15 int 3 regular  }
+	{ result_11 int 3 regular  }
 	{ select_ln22_1 int 3 regular  }
 	{ select_ln22_2 int 3 regular  }
 	{ select_ln22_3 int 3 regular  }
@@ -37,7 +37,7 @@ set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
 	{ "Name" : "select_ln22", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
- 	{ "Name" : "result_15", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
+ 	{ "Name" : "result_11", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "select_ln22_1", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "select_ln22_2", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
  	{ "Name" : "select_ln22_3", "interface" : "wire", "bitwidth" : 3, "direction" : "READONLY"} , 
@@ -54,7 +54,7 @@ set portList {
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
 	{ select_ln22 sc_in sc_lv 3 signal 0 } 
-	{ result_15 sc_in sc_lv 3 signal 1 } 
+	{ result_11 sc_in sc_lv 3 signal 1 } 
 	{ select_ln22_1 sc_in sc_lv 3 signal 2 } 
 	{ select_ln22_2 sc_in sc_lv 3 signal 3 } 
 	{ select_ln22_3 sc_in sc_lv 3 signal 4 } 
@@ -83,7 +83,7 @@ set NewPortList {[
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
  	{ "name": "select_ln22", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "select_ln22", "role": "default" }} , 
- 	{ "name": "result_15", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "result_15", "role": "default" }} , 
+ 	{ "name": "result_11", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "result_11", "role": "default" }} , 
  	{ "name": "select_ln22_1", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "select_ln22_1", "role": "default" }} , 
  	{ "name": "select_ln22_2", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "select_ln22_2", "role": "default" }} , 
  	{ "name": "select_ln22_3", "direction": "in", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "select_ln22_3", "role": "default" }} , 
@@ -107,7 +107,7 @@ set NewPortList {[
 set ArgLastReadFirstWriteLatency {
 	gaussian_blur_Pipeline_VITIS_LOOP_64_2 {
 		select_ln22 {Type I LastRead 0 FirstWrite -1}
-		result_15 {Type I LastRead 0 FirstWrite -1}
+		result_11 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_1 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_2 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_3 {Type I LastRead 0 FirstWrite -1}
@@ -128,7 +128,7 @@ set PipelineEnableSignalInfo {[
 
 set Spec2ImplPortList { 
 	select_ln22 { ap_none {  { select_ln22 in_data 0 3 } } }
-	result_15 { ap_none {  { result_15 in_data 0 3 } } }
+	result_11 { ap_none {  { result_11 in_data 0 3 } } }
 	select_ln22_1 { ap_none {  { select_ln22_1 in_data 0 3 } } }
 	select_ln22_2 { ap_none {  { select_ln22_2 in_data 0 3 } } }
 	select_ln22_3 { ap_none {  { select_ln22_3 in_data 0 3 } } }

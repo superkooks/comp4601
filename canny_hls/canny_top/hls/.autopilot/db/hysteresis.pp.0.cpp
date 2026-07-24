@@ -516,7 +516,7 @@ enum class GradientDirection : std::uint8_t {
 };
 
 struct GradientPixel {
-    std::uint8_t magnitude;
+    std::uint16_t magnitude;
     GradientDirection direction;
 };
 # 8 "../src/canny_stages.h" 2
@@ -541,13 +541,13 @@ void sobel(
 
 void non_maximum_suppression(
     const GradientPixel input[WIDTH],
-    std::uint8_t output[WIDTH],
+    std::uint16_t output[WIDTH],
     bool valid_in,
     bool *valid_out
 );
 
 void double_threshold(
-    const std::uint8_t input[WIDTH],
+    const std::uint16_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
     bool *valid_out
@@ -558,7 +558,8 @@ void hysteresis(
     const std::uint8_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
-    bool *valid_out
+    bool *valid_out,
+    std::uint8_t resolve_weak
 );
 
 void output_row(const uint8_t input[WIDTH], uint8_t out[WIDTH*HEIGHT], bool valid);
@@ -567,13 +568,14 @@ void reset_canny_stages();
 void gaussian_blur_reset();
 void sobel_reset();
 void non_maximum_suppression_reset();
+void output_row_reset();
 
 template <int Instance>
 void hysteresis_reset();
-void output_row_reset();
 
 void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]);
 # 4 "../src/hysteresis.cpp" 2
+
 
 namespace {
 
@@ -614,8 +616,8 @@ template <int Instance>
 void hysteresis_reset() {
     rowsReceived<Instance> = 0;
 
-    VITIS_LOOP_44_1: for (int row = 0; row < WINDOW_SIZE; ++row) {
-        VITIS_LOOP_45_2: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_45_1: for (int row = 0; row < WINDOW_SIZE; ++row) {
+        VITIS_LOOP_46_2: for (int column = 0; column < WIDTH; ++column) {
             lineBuffer<Instance>[row][column] = NON_EDGE;
         }
     }
@@ -626,7 +628,8 @@ void hysteresis(
     const std::uint8_t input[WIDTH],
     std::uint8_t output[WIDTH],
     bool valid_in,
-    bool *valid_out
+    bool *valid_out,
+    std::uint8_t resolve_weak
 ) {
     if (!valid_in) {
         *valid_out = false;
@@ -636,7 +639,7 @@ void hysteresis(
     const int writeSlot =
         rowsReceived<Instance> % WINDOW_SIZE;
 
-    VITIS_LOOP_66_1: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_68_1: for (int column = 0; column < WIDTH; ++column) {
         lineBuffer<Instance>[writeSlot][column] = input[column];
         output[column] = NON_EDGE;
     }
@@ -684,7 +687,7 @@ void hysteresis(
             WINDOW_SIZE
         );
 
-    VITIS_LOOP_114_2: for (int column = 1; column < WIDTH - 1; ++column) {
+    VITIS_LOOP_116_2: for (int column = 1; column < WIDTH - 1; ++column) {
         const std::uint8_t centre =
             lineBuffer<Instance>[centreSlot][column];
 
@@ -702,6 +705,9 @@ void hysteresis(
         ) {
             output[column] = STRONG_EDGE;
         }
+        else if (centre == WEAK_EDGE) {
+            output[column] = resolve_weak;
+        }
         else {
             output[column] = NON_EDGE;
         }
@@ -711,10 +717,10 @@ void hysteresis(
     ++rowsReceived<Instance>;
 }
 
-template void hysteresis<1>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
-template void hysteresis<2>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
-template void hysteresis<3>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
-template void hysteresis<4>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
+template void hysteresis<1>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
+template void hysteresis<2>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
+template void hysteresis<3>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
+template void hysteresis<4>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
 
 template void hysteresis_reset<1>();
 template void hysteresis_reset<2>();

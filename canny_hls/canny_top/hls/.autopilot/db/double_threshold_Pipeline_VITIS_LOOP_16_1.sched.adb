@@ -37,7 +37,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
@@ -109,9 +109,9 @@
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -172,9 +172,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -278,9 +278,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -342,9 +342,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -406,9 +406,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -470,9 +470,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -535,9 +535,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -598,9 +598,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -663,9 +663,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -688,7 +688,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -726,9 +726,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -764,8 +764,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_delay>0.79</m_delay>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_14">
@@ -790,9 +790,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -830,7 +830,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_15">
@@ -855,9 +855,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -893,8 +893,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.76</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_delay>0.79</m_delay>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_16">
@@ -919,9 +919,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -984,9 +984,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -1049,9 +1049,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -1113,9 +1113,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -1179,9 +1179,9 @@
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>32</second>
+										<second>33</second>
 									</item>
 									<item>
 										<first>
@@ -1258,7 +1258,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.42</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
@@ -1446,7 +1446,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>79</content>
@@ -1477,7 +1477,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>19</content>
@@ -1691,7 +1691,7 @@
 				<Obj>
 					<type>3</type>
 					<id>28</id>
-					<name>_Z16double_thresholdPKhPhbPb.4.exit.loopexit.exitStub</name>
+					<name>_Z16double_thresholdPKtPhbPb.4.exit.loopexit.exitStub</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
 					<lineNumber>0</lineNumber>
@@ -2041,8 +2041,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>514</mMinLatency>
-			<mMaxLatency>514</mMaxLatency>
+			<mMinLatency>515</mMinLatency>
+			<mMaxLatency>515</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -2085,11 +2085,11 @@
 				<item>26</item>
 			</basic_blocks>
 			<mII>1</mII>
-			<mDepth>2</mDepth>
+			<mDepth>3</mDepth>
 			<mMinTripCount>512</mMinTripCount>
 			<mMaxTripCount>512</mMaxTripCount>
-			<mMinLatency>512</mMinLatency>
-			<mMaxLatency>512</mMaxLatency>
+			<mMinLatency>513</mMinLatency>
+			<mMaxLatency>513</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -2202,7 +2202,7 @@
 		<item>
 			<first>19</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2216,21 +2216,21 @@
 		<item>
 			<first>21</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>23</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2244,14 +2244,14 @@
 		<item>
 			<first>25</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>27</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -2277,7 +2277,7 @@
 			<first>26</first>
 			<second>
 				<first>1</first>
-				<second>2</second>
+				<second>3</second>
 			</second>
 		</item>
 		<item>
@@ -2306,7 +2306,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>1</interval>
-			<pipe_depth>2</pipe_depth>
+			<pipe_depth>3</pipe_depth>
 			<mDBIIViolationVec class_id="34" tracking_level="0" version="0">
 				<count>0</count>
 				<item_version>0</item_version>
@@ -2378,7 +2378,7 @@
 					<Ops class_id="43" tracking_level="0" version="0">
 						<Op class_id="44" tracking_level="0" version="0">
 							<source_obj>23</source_obj>
-							<cycle>1</cycle>
+							<cycle>2</cycle>
 							<type>W</type>
 							<direction>in</direction>
 						</Op>

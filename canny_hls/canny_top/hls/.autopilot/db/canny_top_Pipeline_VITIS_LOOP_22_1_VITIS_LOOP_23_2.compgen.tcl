@@ -37,7 +37,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename p_anonymous_namespace_lineBuffer_25_magnitude_0 \
     op interface \
-    ports { p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 { O 8 vector } } \
+    ports { p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 { O 11 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_25_magnitude_0'"
@@ -56,7 +56,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename p_anonymous_namespace_lineBuffer_25_magnitude_1 \
     op interface \
-    ports { p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 { O 8 vector } } \
+    ports { p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 { O 11 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_25_magnitude_1'"

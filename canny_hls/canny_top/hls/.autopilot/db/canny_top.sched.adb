@@ -131,7 +131,7 @@
 						<name>out_r_read</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -147,7 +147,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>8</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -188,7 +188,7 @@
 						<name>in_r_read</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -204,7 +204,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>8</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -261,14 +261,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>42</second>
+										<second>43</second>
 									</item>
 									<item>
 										<first>
@@ -376,14 +376,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>43</second>
+										<second>44</second>
 									</item>
 									<item>
 										<first>
@@ -491,14 +491,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>44</second>
+										<second>45</second>
 									</item>
 									<item>
 										<first>
@@ -588,10 +588,10 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>p_anonymous_namespace_rowsReceived_1_s_write_ln42</name>
+						<name>p_anonymous_namespace_rowsReceived_1_s_write_ln43</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>hysteresis_reset&amp;lt;1&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_reset_1_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -607,21 +607,21 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>45</second>
+										<second>46</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis_reset&amp;lt;1&amp;gt;</second>
 										</first>
-										<second>42</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -703,10 +703,10 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>p_anonymous_namespace_rowsReceived_2_s_write_ln42</name>
+						<name>p_anonymous_namespace_rowsReceived_2_s_write_ln43</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>hysteresis_reset&amp;lt;2&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_reset_2_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -722,21 +722,21 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>46</second>
+										<second>47</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis_reset&amp;lt;2&amp;gt;</second>
 										</first>
-										<second>42</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -818,10 +818,10 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>p_anonymous_namespace_rowsReceived_3_s_write_ln42</name>
+						<name>p_anonymous_namespace_rowsReceived_3_s_write_ln43</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>hysteresis_reset&amp;lt;3&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_reset_3_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -837,21 +837,21 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>47</second>
+										<second>48</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis_reset&amp;lt;3&amp;gt;</second>
 										</first>
-										<second>42</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -933,10 +933,10 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>p_anonymous_namespace_rowsReceived_4_s_write_ln42</name>
+						<name>p_anonymous_namespace_rowsReceived_4_s_write_ln43</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>42</lineNumber>
+						<lineNumber>43</lineNumber>
 						<contextFuncName>hysteresis_reset&amp;lt;4&amp;gt;</contextFuncName>
 						<contextNormFuncName>hysteresis_reset_4_s</contextNormFuncName>
 						<inlineStackInfo>
@@ -952,21 +952,21 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>48</second>
+										<second>49</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/hysteresis.cpp</first>
 											<second>hysteresis_reset&amp;lt;4&amp;gt;</second>
 										</first>
-										<second>42</second>
+										<second>43</second>
 									</item>
 								</second>
 							</item>
@@ -1067,14 +1067,14 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>9</second>
+										<second>10</second>
 									</item>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
 											<second>reset_canny_stages</second>
 										</first>
-										<second>49</second>
+										<second>50</second>
 									</item>
 									<item>
 										<first>
@@ -1119,10 +1119,10 @@
 					<Obj>
 						<type>0</type>
 						<id>53</id>
-						<name>_ln8</name>
+						<name>_ln9</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>8</lineNumber>
+						<lineNumber>9</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1138,7 +1138,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>8</second>
+										<second>9</second>
 									</item>
 								</second>
 							</item>
@@ -1217,10 +1217,10 @@
 					<Obj>
 						<type>0</type>
 						<id>54</id>
-						<name>_ln39</name>
+						<name>_ln40</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>39</lineNumber>
+						<lineNumber>40</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1236,7 +1236,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>39</second>
+										<second>40</second>
 									</item>
 								</second>
 							</item>
@@ -1400,7 +1400,7 @@
 					<Obj>
 						<type>2</type>
 						<id>76</id>
-						<name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2</name>
+						<name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1424,14 +1424,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2&gt;</content>
+				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_28">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>80</id>
-						<name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21</name>
+						<name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1455,14 +1455,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21&gt;</content>
+				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_29">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>84</id>
-						<name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22</name>
+						<name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1486,14 +1486,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22&gt;</content>
+				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_30">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>88</id>
-						<name>canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23</name>
+						<name>canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1517,7 +1517,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23&gt;</content>
+				<content>&lt;constant:canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23&gt;</content>
 			</item>
 			<item class_id_reference="16" object_id="_31">
 				<Value>
@@ -2212,7 +2212,7 @@
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>833759</mMinLatency>
-			<mMaxLatency>2408189</mMaxLatency>
+			<mMaxLatency>2414257</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

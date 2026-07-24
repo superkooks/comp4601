@@ -1074,7 +1074,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>tmp_23</name>
+						<name>tmp_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -1268,7 +1268,7 @@
 					<Obj>
 						<type>0</type>
 						<id>25</id>
-						<name>result_15</name>
+						<name>result_11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>56</lineNumber>
@@ -1565,7 +1565,7 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>tmp_24</name>
+						<name>tmp_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -1759,7 +1759,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>tmp_25</name>
+						<name>tmp_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -2080,7 +2080,7 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>tmp_26</name>
+						<name>tmp_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>

@@ -35,14 +35,14 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/hysteresis.cpp:53~../src/canny_top.cpp:33</SourceLocation>
+<SourceLocation>../src/hysteresis.cpp:54~../src/canny_top.cpp:34</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <FF>1401</FF>
-<LUT>1940</LUT>
+<LUT>1952</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP>0</DSP>
 <URAM>0</URAM>
@@ -230,7 +230,7 @@
 <IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>out</Dir>
-<Bits>2</Bits>
+<Bits>8</Bits>
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>

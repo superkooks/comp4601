@@ -205,16 +205,16 @@ set ArgLastReadFirstWriteLatency {
 		p_anonymous_namespace_lineBuffer_direction {Type O LastRead -1 FirstWrite 1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type O LastRead -1 FirstWrite 0}
 		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type O LastRead -1 FirstWrite 0}}
-	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2 {
+	canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2 {
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type O LastRead -1 FirstWrite 0}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type O LastRead -1 FirstWrite 0}}
-	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21 {
+	canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21 {
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type O LastRead -1 FirstWrite 0}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type O LastRead -1 FirstWrite 0}}
-	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22 {
+	canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22 {
 		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type O LastRead -1 FirstWrite 0}
 		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type O LastRead -1 FirstWrite 0}}
-	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23 {
+	canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23 {
 		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type O LastRead -1 FirstWrite 0}
 		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type O LastRead -1 FirstWrite 0}}
 	dataflow_parent_loop_proc {
@@ -235,16 +235,16 @@ set ArgLastReadFirstWriteLatency {
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type IO LastRead 8 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		p_anonymous_namespace_rowsReceived_4_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		rowsReceived {Type IO LastRead 0 FirstWrite 0}}
-	dataflow_in_loop_VITIS_LOOP_11_1_1 {
+	dataflow_in_loop_VITIS_LOOP_12_1_1 {
 		i_0 {Type I LastRead 0 FirstWrite -1}
 		gmem {Type IO LastRead 74 FirstWrite -1}
 		in_r {Type I LastRead 1 FirstWrite -1}
@@ -263,16 +263,16 @@ set ArgLastReadFirstWriteLatency {
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type IO LastRead 8 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		p_anonymous_namespace_rowsReceived_4_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 8 FirstWrite -1}
 		rowsReceived {Type IO LastRead 0 FirstWrite 0}}
-	dataflow_in_loop_VITIS_LOOP_11_1_1_Block_newFuncRoot_proc {
+	dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc {
 		i_0 {Type I LastRead 0 FirstWrite -1}}
 	grayscale {
 		p_read {Type I LastRead 0 FirstWrite -1}
@@ -297,7 +297,7 @@ set ArgLastReadFirstWriteLatency {
 		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type O LastRead -1 FirstWrite 1}}
 	gaussian_blur_Pipeline_VITIS_LOOP_64_2 {
 		select_ln22 {Type I LastRead 0 FirstWrite -1}
-		result_15 {Type I LastRead 0 FirstWrite -1}
+		result_11 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_1 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_2 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_3 {Type I LastRead 0 FirstWrite -1}
@@ -322,9 +322,9 @@ set ArgLastReadFirstWriteLatency {
 	sobel_Pipeline_VITIS_LOOP_118_2 {
 		result {Type I LastRead 0 FirstWrite -1}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
-		result_7 {Type I LastRead 0 FirstWrite -1}
-		out_sobel_magnitude {Type O LastRead -1 FirstWrite 73}
-		out_sobel_direction {Type O LastRead -1 FirstWrite 7}
+		result_1 {Type I LastRead 0 FirstWrite -1}
+		out_sobel_magnitude {Type O LastRead -1 FirstWrite 5}
+		out_sobel_direction {Type O LastRead -1 FirstWrite 8}
 		p_anonymous_namespace_lineBuffer_32_0 {Type I LastRead 4 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_32_1 {Type I LastRead 4 FirstWrite -1}}
 	non_maximum_suppression {
@@ -347,7 +347,7 @@ set ArgLastReadFirstWriteLatency {
 		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type O LastRead -1 FirstWrite 1}}
 	non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 {
 		out_nonmax {Type O LastRead -1 FirstWrite 3}
-		result_9 {Type I LastRead 0 FirstWrite -1}
+		result_2 {Type I LastRead 0 FirstWrite -1}
 		result {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type I LastRead 2 FirstWrite -1}
@@ -356,10 +356,10 @@ set ArgLastReadFirstWriteLatency {
 	double_threshold {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_nonmax {Type I LastRead 0 FirstWrite -1}
-		out_double {Type O LastRead -1 FirstWrite 1}}
+		out_double {Type O LastRead -1 FirstWrite 2}}
 	double_threshold_Pipeline_VITIS_LOOP_16_1 {
 		out_nonmax {Type I LastRead 0 FirstWrite -1}
-		out_double {Type O LastRead -1 FirstWrite 1}}
+		out_double {Type O LastRead -1 FirstWrite 2}}
 	hysteresis_1_s {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_double {Type I LastRead 0 FirstWrite -1}
@@ -367,15 +367,15 @@ set ArgLastReadFirstWriteLatency {
 		p_anonymous_namespace_rowsReceived_1_s {Type IO LastRead 0 FirstWrite 71}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type IO LastRead 8 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type IO LastRead 8 FirstWrite -1}}
-	hysteresis_1_Pipeline_VITIS_LOOP_66_1 {
+	hysteresis_1_Pipeline_VITIS_LOOP_68_1 {
 		out_hysteresis1 {Type O LastRead -1 FirstWrite 0}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		out_double {Type I LastRead 0 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type O LastRead -1 FirstWrite 1}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type O LastRead -1 FirstWrite 1}}
-	hysteresis_1_Pipeline_VITIS_LOOP_114_2 {
+	hysteresis_1_Pipeline_VITIS_LOOP_116_2 {
 		out_hysteresis1 {Type O LastRead -1 FirstWrite 1}
-		result_10 {Type I LastRead 0 FirstWrite -1}
+		result_6 {Type I LastRead 0 FirstWrite -1}
 		result {Type I LastRead 0 FirstWrite -1}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type I LastRead 8 FirstWrite -1}
@@ -385,55 +385,61 @@ set ArgLastReadFirstWriteLatency {
 		out_hysteresis1 {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis2 {Type O LastRead -1 FirstWrite 0}
 		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 0 FirstWrite -1}}
-	hysteresis_2_Pipeline_VITIS_LOOP_66_1 {
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 8 FirstWrite -1}}
+	hysteresis_2_Pipeline_VITIS_LOOP_68_1 {
 		out_hysteresis2 {Type O LastRead -1 FirstWrite 0}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis1 {Type I LastRead 0 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type O LastRead -1 FirstWrite 1}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type O LastRead -1 FirstWrite 1}}
-	hysteresis_2_Pipeline_VITIS_LOOP_114_2 {
-		result {Type I LastRead 0 FirstWrite -1}
+	hysteresis_2_Pipeline_VITIS_LOOP_116_2 {
 		out_hysteresis2 {Type O LastRead -1 FirstWrite 1}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type I LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type I LastRead 0 FirstWrite -1}}
+		result_5 {Type I LastRead 0 FirstWrite -1}
+		result {Type I LastRead 0 FirstWrite -1}
+		writeSlot {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type I LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type I LastRead 8 FirstWrite -1}}
 	hysteresis_3_s {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis2 {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis3 {Type O LastRead -1 FirstWrite 0}
 		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 0 FirstWrite -1}}
-	hysteresis_3_Pipeline_VITIS_LOOP_66_1 {
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 8 FirstWrite -1}}
+	hysteresis_3_Pipeline_VITIS_LOOP_68_1 {
 		out_hysteresis3 {Type O LastRead -1 FirstWrite 0}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis2 {Type I LastRead 0 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type O LastRead -1 FirstWrite 1}
 		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type O LastRead -1 FirstWrite 1}}
-	hysteresis_3_Pipeline_VITIS_LOOP_114_2 {
-		result {Type I LastRead 0 FirstWrite -1}
+	hysteresis_3_Pipeline_VITIS_LOOP_116_2 {
 		out_hysteresis3 {Type O LastRead -1 FirstWrite 1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type I LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type I LastRead 0 FirstWrite -1}}
+		result_4 {Type I LastRead 0 FirstWrite -1}
+		result {Type I LastRead 0 FirstWrite -1}
+		writeSlot {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type I LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type I LastRead 8 FirstWrite -1}}
 	hysteresis_4_s {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis3 {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis4 {Type O LastRead -1 FirstWrite 0}
 		p_anonymous_namespace_rowsReceived_4_s {Type IO LastRead 0 FirstWrite 71}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 0 FirstWrite -1}}
-	hysteresis_4_Pipeline_VITIS_LOOP_66_1 {
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 8 FirstWrite -1}}
+	hysteresis_4_Pipeline_VITIS_LOOP_68_1 {
 		out_hysteresis4 {Type O LastRead -1 FirstWrite 0}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis3 {Type I LastRead 0 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type O LastRead -1 FirstWrite 1}
 		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type O LastRead -1 FirstWrite 1}}
-	hysteresis_4_Pipeline_VITIS_LOOP_114_2 {
-		result {Type I LastRead 0 FirstWrite -1}
+	hysteresis_4_Pipeline_VITIS_LOOP_116_2 {
 		out_hysteresis4 {Type O LastRead -1 FirstWrite 1}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type I LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type I LastRead 0 FirstWrite -1}}
+		result_3 {Type I LastRead 0 FirstWrite -1}
+		result {Type I LastRead 0 FirstWrite -1}
+		writeSlot {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type I LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type I LastRead 8 FirstWrite -1}}
 	output_row {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis4 {Type I LastRead 0 FirstWrite -1}
@@ -448,8 +454,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "833759", "Max" : "2408189"}
-	, {"Name" : "Interval", "Min" : "833760", "Max" : "2408190"}
+	{"Name" : "Latency", "Min" : "833759", "Max" : "2414257"}
+	, {"Name" : "Interval", "Min" : "833760", "Max" : "2414258"}
 ]}
 
 set PipelineEnableSignalInfo {[

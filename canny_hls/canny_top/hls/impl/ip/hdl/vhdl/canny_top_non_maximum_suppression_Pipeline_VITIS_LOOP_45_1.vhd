@@ -19,12 +19,12 @@ port (
     out_nonmax_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     out_nonmax_ce0 : OUT STD_LOGIC;
     out_nonmax_we0 : OUT STD_LOGIC;
-    out_nonmax_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    out_nonmax_d0 : OUT STD_LOGIC_VECTOR (10 downto 0);
     zext_ln46 : IN STD_LOGIC_VECTOR (10 downto 0);
     empty : IN STD_LOGIC_VECTOR (1 downto 0);
     out_sobel_magnitude_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     out_sobel_magnitude_ce0 : OUT STD_LOGIC;
-    out_sobel_magnitude_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    out_sobel_magnitude_q0 : IN STD_LOGIC_VECTOR (10 downto 0);
     out_sobel_direction_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
     out_sobel_direction_ce0 : OUT STD_LOGIC;
     out_sobel_direction_q0 : IN STD_LOGIC_VECTOR (1 downto 0);
@@ -35,11 +35,11 @@ port (
     p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 : OUT STD_LOGIC;
     p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 : OUT STD_LOGIC_VECTOR (10 downto 0);
     p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 : OUT STD_LOGIC;
     p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0) );
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 : OUT STD_LOGIC_VECTOR (10 downto 0) );
 end;
 
 
@@ -55,7 +55,7 @@ architecture behav of canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
-    constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
     constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
@@ -309,7 +309,7 @@ begin
         end if; 
     end process;
 
-    out_nonmax_d0 <= ap_const_lv8_0;
+    out_nonmax_d0 <= ap_const_lv11_0;
     out_nonmax_we0 <= out_nonmax_we0_local;
 
     out_nonmax_we0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, icmp_ln45_fu_160_p2, ap_block_pp0_stage0_11001)

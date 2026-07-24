@@ -129,7 +129,7 @@ set ArgLastReadFirstWriteLatency {
 		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type O LastRead -1 FirstWrite 1}}
 	gaussian_blur_Pipeline_VITIS_LOOP_64_2 {
 		select_ln22 {Type I LastRead 0 FirstWrite -1}
-		result_15 {Type I LastRead 0 FirstWrite -1}
+		result_11 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_1 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_2 {Type I LastRead 0 FirstWrite -1}
 		select_ln22_3 {Type I LastRead 0 FirstWrite -1}

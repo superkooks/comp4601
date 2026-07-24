@@ -1,0 +1,147 @@
+<stg><name>dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc</name>
+
+
+<trans_list>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="2" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="2" bw="10" op_0_bw="10" op_1_bw="10">
+<![CDATA[
+newFuncRoot:0 %i_0_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %i_0
+
+]]></Node>
+<StgValue><ssdm name="i_0_read"/></StgValue>
+</operation>
+
+<operation id="3" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="3" bw="9" op_0_bw="10">
+<![CDATA[
+newFuncRoot:1 %trunc_ln26 = trunc i10 %i_0_read
+
+]]></Node>
+<StgValue><ssdm name="trunc_ln26"/></StgValue>
+</operation>
+
+<operation id="4" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="tmp" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="4" bw="18" op_0_bw="18" op_1_bw="9" op_2_bw="9">
+<![CDATA[
+newFuncRoot:2 %shl_ln = bitconcatenate i18 @_ssdm_op_BitConcatenate.i18.i9.i9, i9 %trunc_ln26, i9 0
+
+]]></Node>
+<StgValue><ssdm name="shl_ln"/></StgValue>
+</operation>
+
+<operation id="5" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="1" op_0_bw="1" op_1_bw="10" op_2_bw="32">
+<![CDATA[
+newFuncRoot:3 %tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %i_0_read, i32 9
+
+]]></Node>
+<StgValue><ssdm name="tmp"/></StgValue>
+</operation>
+
+<operation id="6" st_id="1" stage="1" lat="1">
+<core>Sel</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="18" op_0_bw="1" op_1_bw="18" op_2_bw="18">
+<![CDATA[
+newFuncRoot:4 %select_ln26 = select i1 %tmp, i18 0, i18 %shl_ln
+
+]]></Node>
+<StgValue><ssdm name="select_ln26"/></StgValue>
+</operation>
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="0" op_0_bw="18">
+<![CDATA[
+newFuncRoot:5 %ret_ln26 = ret i18 %select_ln26
+
+]]></Node>
+<StgValue><ssdm name="ret_ln26"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="8" name="i_0" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="i_0"/></StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="10" from="_ssdm_op_Read.ap_auto.i10" to="i_0_read" fromId="9" toId="2">
+</dataflow>
+<dataflow id="11" from="i_0" to="i_0_read" fromId="8" toId="2">
+</dataflow>
+<dataflow id="12" from="i_0_read" to="trunc_ln26" fromId="2" toId="3">
+</dataflow>
+<dataflow id="14" from="_ssdm_op_BitConcatenate.i18.i9.i9" to="shl_ln" fromId="13" toId="4">
+</dataflow>
+<dataflow id="15" from="trunc_ln26" to="shl_ln" fromId="3" toId="4">
+</dataflow>
+<dataflow id="17" from="StgValue_16" to="shl_ln" fromId="16" toId="4">
+</dataflow>
+<dataflow id="19" from="_ssdm_op_BitSelect.i1.i10.i32" to="tmp" fromId="18" toId="5">
+</dataflow>
+<dataflow id="20" from="i_0_read" to="tmp" fromId="2" toId="5">
+</dataflow>
+<dataflow id="22" from="StgValue_21" to="tmp" fromId="21" toId="5">
+</dataflow>
+<dataflow id="23" from="tmp" to="select_ln26" fromId="5" toId="6">
+</dataflow>
+<dataflow id="25" from="StgValue_24" to="select_ln26" fromId="24" toId="6">
+</dataflow>
+<dataflow id="26" from="shl_ln" to="select_ln26" fromId="4" toId="6">
+</dataflow>
+<dataflow id="27" from="select_ln26" to="ret_ln26" fromId="6" toId="7">
+</dataflow>
+<dataflow id="28" from="tmp" to="StgValue_1" fromId="5" toId="1">
+</dataflow>
+</dataflows>
+
+
+</stg>

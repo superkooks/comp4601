@@ -433,7 +433,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -469,7 +469,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>8</bitwidth>
+					<bitwidth>11</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -649,7 +649,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -685,7 +685,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -757,7 +757,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -793,7 +793,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -865,7 +865,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -901,7 +901,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<direction>2</direction>
 				<if_type>1</if_type>
@@ -1087,7 +1087,7 @@
 						<name>i</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>11</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1103,7 +1103,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>11</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -1143,10 +1143,10 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>icmp_ln11</name>
+						<name>icmp_ln12</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>11</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1162,7 +1162,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>11</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -1200,10 +1200,10 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>add_ln11</name>
+						<name>add_ln12</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>11</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1219,7 +1219,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>11</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -1257,10 +1257,10 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>br_ln11</name>
+						<name>br_ln12</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>11</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1276,7 +1276,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>11</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -1315,10 +1315,10 @@
 					<Obj>
 						<type>0</type>
 						<id>42</id>
-						<name>_ln23</name>
+						<name>_ln24</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>23</lineNumber>
+						<lineNumber>24</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1334,7 +1334,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>23</second>
+										<second>24</second>
 									</item>
 								</second>
 							</item>
@@ -1398,10 +1398,10 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>br_ln11</name>
+						<name>br_ln12</name>
 						<fileName>../src/canny_top.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
-						<lineNumber>11</lineNumber>
+						<lineNumber>12</lineNumber>
 						<contextFuncName>canny_top</contextFuncName>
 						<contextNormFuncName>canny_top</contextNormFuncName>
 						<inlineStackInfo>
@@ -1417,7 +1417,7 @@
 											<first>../src/canny_top.cpp</first>
 											<second>canny_top</second>
 										</first>
-										<second>11</second>
+										<second>12</second>
 									</item>
 								</second>
 							</item>
@@ -1592,7 +1592,7 @@
 					<Obj>
 						<type>2</type>
 						<id>67</id>
-						<name>dataflow_in_loop_VITIS_LOOP_11_1_1</name>
+						<name>dataflow_in_loop_VITIS_LOOP_12_1_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1616,7 +1616,7 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:dataflow_in_loop_VITIS_LOOP_11_1.1&gt;</content>
+				<content>&lt;constant:dataflow_in_loop_VITIS_LOOP_12_1.1&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
@@ -2111,7 +2111,7 @@
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
 			<mMinLatency>831194</mMinLatency>
-			<mMaxLatency>2405624</mMaxLatency>
+			<mMaxLatency>2411692</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -2140,8 +2140,8 @@
 		</item>
 		<item class_id_reference="22" object_id="_94">
 			<mId>3</mId>
-			<mTag>VITIS_LOOP_11_1</mTag>
-			<mNormTag>VITIS_LOOP_11_1</mNormTag>
+			<mTag>VITIS_LOOP_12_1</mTag>
+			<mNormTag>VITIS_LOOP_12_1</mNormTag>
 			<mType>1</mType>
 			<sub_regions>
 				<count>0</count>
@@ -2158,7 +2158,7 @@
 			<mMinTripCount>514</mMinTripCount>
 			<mMaxTripCount>514</mMaxTripCount>
 			<mMinLatency>831193</mMinLatency>
-			<mMaxLatency>2405623</mMaxLatency>
+			<mMaxLatency>2411691</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_95">
 				<port_list class_id="24" tracking_level="0" version="0">
@@ -2378,7 +2378,7 @@
 					<item_version>0</item_version>
 					<item class_id="28" tracking_level="1" version="0" object_id="_122">
 						<type>0</type>
-						<name>dataflow_in_loop_VITIS_LOOP_11_1_1_U0</name>
+						<name>dataflow_in_loop_VITIS_LOOP_12_1_1_U0</name>
 						<ssdmobj_id>42</ssdmobj_id>
 						<pins class_id="29" tracking_level="0" version="0">
 							<count>27</count>
@@ -2394,7 +2394,7 @@
 								</port>
 								<inst class_id="31" tracking_level="1" version="0" object_id="_125">
 									<type>0</type>
-									<name>dataflow_in_loop_VITIS_LOOP_11_1_1_U0</name>
+									<name>dataflow_in_loop_VITIS_LOOP_12_1_1_U0</name>
 									<ssdmobj_id>42</ssdmobj_id>
 								</inst>
 							</item>
@@ -3010,7 +3010,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="54" tracking_level="1" version="0" object_id="_203">
-			<region_name>VITIS_LOOP_11_1</region_name>
+			<region_name>VITIS_LOOP_12_1</region_name>
 			<basic_blocks>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3097,7 +3097,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item class_id="60" tracking_level="0" version="0">
-			<first>add_ln11_fu_186</first>
+			<first>add_ln12_fu_186</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3113,7 +3113,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln11_fu_180</first>
+			<first>icmp_ln12_fu_180</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3125,7 +3125,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_dataflow_in_loop_VITIS_LOOP_11_1_1_fu_124</first>
+			<first>grp_dataflow_in_loop_VITIS_LOOP_12_1_1_fu_124</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -3210,7 +3210,7 @@
 		<count>5</count>
 		<item_version>0</item_version>
 		<item>
-			<first>add_ln11_reg_206</first>
+			<first>add_ln12_reg_206</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -3226,7 +3226,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln11_reg_202</first>
+			<first>icmp_ln12_reg_202</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

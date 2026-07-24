@@ -23,28 +23,28 @@
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
 <Best-caseLatency>833759</Best-caseLatency>
-<Average-caseLatency>1346009</Average-caseLatency>
-<Worst-caseLatency>2408189</Worst-caseLatency>
+<Average-caseLatency>1347022</Average-caseLatency>
+<Worst-caseLatency>2414257</Worst-caseLatency>
 <Best-caseRealTimeLatency>4.169 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>6.730 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>12.041 ms</Worst-caseRealTimeLatency>
+<Average-caseRealTimeLatency>6.735 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>12.071 ms</Worst-caseRealTimeLatency>
 <Interval-min>833760</Interval-min>
-<Interval-max>2408190</Interval-max>
+<Interval-max>2414258</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/canny_top.cpp:8</SourceLocation>
+<SourceLocation>../src/canny_top.cpp:9</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
 <BRAM_18K>54</BRAM_18K>
-<DSP>6</DSP>
-<FF>15711</FF>
-<LUT>28985</LUT>
+<DSP>4</DSP>
+<FF>16650</FF>
+<LUT>29511</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

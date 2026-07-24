@@ -290,22 +290,22 @@ attribute shreg_extract : string;
     signal grp_fu_152_p1 : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_fu_163_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_163_p1 : STD_LOGIC_VECTOR (3 downto 0);
-    signal tmp_25_fu_169_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_21_fu_169_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln22_2_fu_176_p2 : STD_LOGIC_VECTOR (2 downto 0);
     signal grp_fu_188_p0 : STD_LOGIC_VECTOR (31 downto 0);
     signal grp_fu_188_p1 : STD_LOGIC_VECTOR (3 downto 0);
     signal grp_fu_146_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal trunc_ln22_fu_194_p1 : STD_LOGIC_VECTOR (2 downto 0);
-    signal tmp_23_fu_198_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_19_fu_198_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln22_fu_206_p2 : STD_LOGIC_VECTOR (2 downto 0);
     signal grp_fu_152_p2 : STD_LOGIC_VECTOR (2 downto 0);
     signal grp_fu_163_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal trunc_ln22_1_fu_226_p1 : STD_LOGIC_VECTOR (2 downto 0);
-    signal tmp_24_fu_230_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_20_fu_230_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln22_1_fu_238_p2 : STD_LOGIC_VECTOR (2 downto 0);
     signal grp_fu_188_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal trunc_ln22_2_fu_253_p1 : STD_LOGIC_VECTOR (2 downto 0);
-    signal tmp_26_fu_257_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_22_fu_257_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal add_ln22_3_fu_265_p2 : STD_LOGIC_VECTOR (2 downto 0);
     signal grp_fu_86_ap_start : STD_LOGIC;
     signal ap_block_state1 : BOOLEAN;
@@ -571,7 +571,7 @@ attribute shreg_extract : string;
         ap_idle : OUT STD_LOGIC;
         ap_ready : OUT STD_LOGIC;
         select_ln22 : IN STD_LOGIC_VECTOR (2 downto 0);
-        result_15 : IN STD_LOGIC_VECTOR (2 downto 0);
+        result_11 : IN STD_LOGIC_VECTOR (2 downto 0);
         select_ln22_1 : IN STD_LOGIC_VECTOR (2 downto 0);
         select_ln22_2 : IN STD_LOGIC_VECTOR (2 downto 0);
         select_ln22_3 : IN STD_LOGIC_VECTOR (2 downto 0);
@@ -668,7 +668,7 @@ begin
         ap_idle => grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_idle,
         ap_ready => grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_ready,
         select_ln22 => select_ln22_reg_324,
-        result_15 => trunc_ln79_reg_329,
+        result_11 => trunc_ln79_reg_329,
         select_ln22_1 => select_ln22_1_reg_334,
         select_ln22_2 => select_ln22_2_reg_319,
         select_ln22_3 => select_ln22_3_reg_339,
@@ -1558,21 +1558,21 @@ begin
     end process;
 
     select_ln22_1_fu_244_p3 <= 
-        add_ln22_1_fu_238_p2 when (tmp_24_fu_230_p3(0) = '1') else 
+        add_ln22_1_fu_238_p2 when (tmp_20_fu_230_p3(0) = '1') else 
         trunc_ln22_1_fu_226_p1;
     select_ln22_2_fu_181_p3 <= 
-        add_ln22_2_fu_176_p2 when (tmp_25_fu_169_p3(0) = '1') else 
+        add_ln22_2_fu_176_p2 when (tmp_21_fu_169_p3(0) = '1') else 
         trunc_ln42_reg_288;
     select_ln22_3_fu_271_p3 <= 
-        add_ln22_3_fu_265_p2 when (tmp_26_fu_257_p3(0) = '1') else 
+        add_ln22_3_fu_265_p2 when (tmp_22_fu_257_p3(0) = '1') else 
         trunc_ln22_2_fu_253_p1;
     select_ln22_fu_212_p3 <= 
-        add_ln22_fu_206_p2 when (tmp_23_fu_198_p3(0) = '1') else 
+        add_ln22_fu_206_p2 when (tmp_19_fu_198_p3(0) = '1') else 
         trunc_ln22_fu_194_p1;
-    tmp_23_fu_198_p3 <= grp_fu_146_p2(3 downto 3);
-    tmp_24_fu_230_p3 <= grp_fu_163_p2(3 downto 3);
-    tmp_25_fu_169_p3 <= writeSlot_reg_283(3 downto 3);
-    tmp_26_fu_257_p3 <= grp_fu_188_p2(3 downto 3);
+    tmp_19_fu_198_p3 <= grp_fu_146_p2(3 downto 3);
+    tmp_20_fu_230_p3 <= grp_fu_163_p2(3 downto 3);
+    tmp_21_fu_169_p3 <= writeSlot_reg_283(3 downto 3);
+    tmp_22_fu_257_p3 <= grp_fu_188_p2(3 downto 3);
     tmp_fu_113_p4 <= outputRow_fu_108_p2(31 downto 1);
     trunc_ln22_1_fu_226_p1 <= grp_fu_163_p2(3 - 1 downto 0);
     trunc_ln22_2_fu_253_p1 <= grp_fu_188_p2(3 - 1 downto 0);

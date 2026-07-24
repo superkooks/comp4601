@@ -140,10 +140,10 @@ reg ap_ready;
 reg    ap_done_reg;
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [17:0] p_read_5_reg_90;
+reg   [17:0] p_read15_reg_90;
 reg    ap_block_state1;
-wire   [63:0] empty_41_fu_83_p2;
-reg   [63:0] empty_41_reg_96;
+wire   [63:0] empty_39_fu_83_p2;
+reg   [63:0] empty_39_reg_96;
 wire    ap_CS_fsm_state2;
 wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start;
 wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done;
@@ -257,7 +257,7 @@ canny_top_grayscale_Pipeline_VITIS_LOOP_7_1 grp_grayscale_Pipeline_VITIS_LOOP_7_
     .m_axi_gmem_0_BRESP(2'd0),
     .m_axi_gmem_0_BID(1'd0),
     .m_axi_gmem_0_BUSER(1'd0),
-    .empty(empty_41_reg_96),
+    .empty(empty_39_reg_96),
     .out_grayscale_address0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_address0),
     .out_grayscale_ce0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_ce0),
     .out_grayscale_we0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_we0),
@@ -298,13 +298,13 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        empty_41_reg_96 <= empty_41_fu_83_p2;
+        empty_39_reg_96 <= empty_39_fu_83_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        p_read_5_reg_90 <= p_read;
+        p_read15_reg_90 <= p_read;
     end
 end
 
@@ -385,7 +385,7 @@ always @ (*) begin
     ap_block_state1 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
 end
 
-assign empty_41_fu_83_p2 = (p_cast_fu_79_p1 + in_r);
+assign empty_39_fu_83_p2 = (p_cast_fu_79_p1 + in_r);
 
 assign empty_fu_73_p2 = (p_shl_fu_66_p3 - zext_ln4_fu_63_p1);
 
@@ -465,8 +465,8 @@ assign out_grayscale_we0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grays
 
 assign p_cast_fu_79_p1 = empty_fu_73_p2;
 
-assign p_shl_fu_66_p3 = {{p_read_5_reg_90}, {2'd0}};
+assign p_shl_fu_66_p3 = {{p_read15_reg_90}, {2'd0}};
 
-assign zext_ln4_fu_63_p1 = p_read_5_reg_90;
+assign zext_ln4_fu_63_p1 = p_read15_reg_90;
 
 endmodule //canny_top_grayscale

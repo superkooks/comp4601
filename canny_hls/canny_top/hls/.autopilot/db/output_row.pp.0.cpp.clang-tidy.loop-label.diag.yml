@@ -8,7 +8,7 @@ Diagnostics:
       FileOffset:      20
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/output_row.pp.0.cpp'
-          Offset:          20491
+          Offset:          20525
           Length:          0
           ReplacementText: 'VITIS_LOOP_20_1: '
     Level:           Remark

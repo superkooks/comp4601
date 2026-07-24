@@ -3,14 +3,14 @@ MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_11_1:  '
+      Message:         'Added loop label VITIS_LOOP_12_1:  '
       FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp'
-      FileOffset:      11
+      FileOffset:      12
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/canny_top.pp.0.cpp'
-          Offset:          20513
+          Offset:          20548
           Length:          0
-          ReplacementText: 'VITIS_LOOP_11_1: '
+          ReplacementText: 'VITIS_LOOP_12_1: '
     Level:           Remark
     BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
 ...

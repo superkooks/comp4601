@@ -8,7 +8,7 @@ Diagnostics:
       FileOffset:      7
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/grayscale.pp.0.cpp'
-          Offset:          20311
+          Offset:          20345
           Length:          0
           ReplacementText: 'VITIS_LOOP_7_1: '
     Level:           Remark
