@@ -399,7 +399,7 @@ for.inc.split.i:4 %p_anonymous_namespace_lineBuffer_direction_addr = getelementp
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc.split.i:6 %specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0
+for.inc.split.i:6 %specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln45"/></StgValue>
@@ -429,7 +429,7 @@ for.inc.split.i:7 %speclooptripcount_ln45 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:8 %specloopname_ln45 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
+for.inc.split.i:8 %specloopname_ln45 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln45"/></StgValue>
@@ -489,10 +489,10 @@ for.inc.split.i:11 %zext_ln46_1 = zext i10 %tmp_s
 
 <Node id="32" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split.i:12 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln46_1
+for.inc.split.i:12 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln46_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr"/></StgValue>
 </operation>
 
 <operation id="35" st_id="2" stage="1" lat="1">
@@ -504,10 +504,10 @@ for.inc.split.i:12 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr = getel
 
 <Node id="33" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln46_1
+for.inc.split.i:13 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln46_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr"/></StgValue>
 </operation>
 
 <operation id="36" st_id="2" stage="1" lat="2">
@@ -550,7 +550,7 @@ for.inc.split.i:17 %out_sobel_direction_load = load i9 %out_sobel_direction_addr
 
 <Node id="40" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx418.03.case.0.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr
+arrayidx418.03.case.0.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln46"/></StgValue>
@@ -582,7 +582,7 @@ arrayidx418.03.case.0.i:1 %br_ln46 = br void %arrayidx418.03.exit.i
 
 <Node id="43" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx418.03.case.1.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr
+arrayidx418.03.case.1.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln46"/></StgValue>
@@ -660,12 +660,12 @@ arrayidx418.03.exit.i:4 %br_ln45 = br void %for.inc.i
 <core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_direction"/><MemPortTyVec>0 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="61" name="p_anonymous_namespace_lineBuffer_11_magnitude_0" dir="1" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0"/><MemPortTyVec>0 3 </MemPortTyVec>
+<port id="61" name="p_anonymous_namespace_lineBuffer_25_magnitude_0" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0"/><MemPortTyVec>0 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="62" name="p_anonymous_namespace_lineBuffer_11_magnitude_1" dir="1" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1"/><MemPortTyVec>0 3 </MemPortTyVec>
+<port id="62" name="p_anonymous_namespace_lineBuffer_25_magnitude_1" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1"/><MemPortTyVec>0 3 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
@@ -760,7 +760,7 @@ arrayidx418.03.exit.i:4 %br_ln45 = br void %for.inc.i
 </dataflow>
 <dataflow id="117" from="StgValue_111" to="specpipeline_ln45" fromId="111" toId="28">
 </dataflow>
-<dataflow id="119" from="empty_0" to="specpipeline_ln45" fromId="118" toId="28">
+<dataflow id="119" from="empty_10" to="specpipeline_ln45" fromId="118" toId="28">
 </dataflow>
 <dataflow id="121" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln45" fromId="120" toId="29">
 </dataflow>
@@ -772,7 +772,7 @@ arrayidx418.03.exit.i:4 %br_ln45 = br void %for.inc.i
 </dataflow>
 <dataflow id="127" from="_ssdm_op_SpecLoopName" to="specloopname_ln45" fromId="126" toId="30">
 </dataflow>
-<dataflow id="129" from="empty_2" to="specloopname_ln45" fromId="128" toId="30">
+<dataflow id="129" from="empty_18" to="specloopname_ln45" fromId="128" toId="30">
 </dataflow>
 <dataflow id="131" from="_ssdm_op_PartSelect.i8.i10.i32.i32" to="lshr_ln" fromId="130" toId="31">
 </dataflow>
@@ -790,17 +790,17 @@ arrayidx418.03.exit.i:4 %br_ln45 = br void %for.inc.i
 </dataflow>
 <dataflow id="140" from="tmp_s" to="zext_ln46_1" fromId="32" toId="33">
 </dataflow>
-<dataflow id="141" from="p_anonymous_namespace_lineBuffer_11_magnitude_0" to="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr" fromId="61" toId="34">
+<dataflow id="141" from="p_anonymous_namespace_lineBuffer_25_magnitude_0" to="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" fromId="61" toId="34">
 </dataflow>
-<dataflow id="142" from="StgValue_85" to="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr" fromId="85" toId="34">
+<dataflow id="142" from="StgValue_85" to="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" fromId="85" toId="34">
 </dataflow>
-<dataflow id="143" from="zext_ln46_1" to="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr" fromId="33" toId="34">
+<dataflow id="143" from="zext_ln46_1" to="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" fromId="33" toId="34">
 </dataflow>
-<dataflow id="144" from="p_anonymous_namespace_lineBuffer_11_magnitude_1" to="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr" fromId="62" toId="35">
+<dataflow id="144" from="p_anonymous_namespace_lineBuffer_25_magnitude_1" to="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" fromId="62" toId="35">
 </dataflow>
-<dataflow id="145" from="StgValue_85" to="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr" fromId="85" toId="35">
+<dataflow id="145" from="StgValue_85" to="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" fromId="85" toId="35">
 </dataflow>
-<dataflow id="146" from="zext_ln46_1" to="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr" fromId="33" toId="35">
+<dataflow id="146" from="zext_ln46_1" to="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" fromId="33" toId="35">
 </dataflow>
 <dataflow id="147" from="out_sobel_magnitude_addr" to="out_sobel_magnitude_load" fromId="16" toId="36">
 </dataflow>
@@ -808,11 +808,11 @@ arrayidx418.03.exit.i:4 %br_ln45 = br void %for.inc.i
 </dataflow>
 <dataflow id="149" from="out_sobel_magnitude_load" to="store_ln46" fromId="36" toId="38">
 </dataflow>
-<dataflow id="150" from="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr" to="store_ln46" fromId="34" toId="38">
+<dataflow id="150" from="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr" to="store_ln46" fromId="34" toId="38">
 </dataflow>
 <dataflow id="151" from="out_sobel_magnitude_load" to="store_ln46" fromId="36" toId="40">
 </dataflow>
-<dataflow id="152" from="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr" to="store_ln46" fromId="35" toId="40">
+<dataflow id="152" from="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr" to="store_ln46" fromId="35" toId="40">
 </dataflow>
 <dataflow id="153" from="out_sobel_direction_load" to="store_ln46" fromId="37" toId="42">
 </dataflow>

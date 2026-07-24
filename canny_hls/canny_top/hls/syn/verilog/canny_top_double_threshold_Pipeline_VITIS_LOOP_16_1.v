@@ -58,7 +58,7 @@ wire    ap_block_pp0_stage0;
 reg   [9:0] column_fu_40;
 wire   [9:0] add_ln16_fu_84_p2;
 wire    ap_loop_init;
-reg   [9:0] ap_sig_allocacmp_column_8;
+reg   [9:0] ap_sig_allocacmp_column_11;
 reg    out_nonmax_ce0_local;
 reg    out_double_we0_local;
 wire   [7:0] select_ln19_fu_120_p3;
@@ -189,9 +189,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_column_8 = 10'd0;
+        ap_sig_allocacmp_column_11 = 10'd0;
     end else begin
-        ap_sig_allocacmp_column_8 = column_fu_40;
+        ap_sig_allocacmp_column_11 = column_fu_40;
     end
 end
 
@@ -230,7 +230,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln16_fu_84_p2 = (ap_sig_allocacmp_column_8 + 10'd1);
+assign add_ln16_fu_84_p2 = (ap_sig_allocacmp_column_11 + 10'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -250,7 +250,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln16_fu_78_p2 = ((ap_sig_allocacmp_column_8 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln16_fu_78_p2 = ((ap_sig_allocacmp_column_11 == 10'd512) ? 1'b1 : 1'b0);
 
 assign icmp_ln19_fu_100_p2 = ((out_nonmax_q0 > 8'd79) ? 1'b1 : 1'b0);
 
@@ -272,7 +272,7 @@ assign select_ln19_1_fu_112_p3 = ((icmp_ln19_fu_100_p2[0:0] == 1'b1) ? 8'd255 : 
 
 assign select_ln19_fu_120_p3 = ((icmp_ln22_fu_106_p2[0:0] == 1'b1) ? select_ln19_1_fu_112_p3 : 8'd0);
 
-assign zext_ln16_fu_90_p1 = ap_sig_allocacmp_column_8;
+assign zext_ln16_fu_90_p1 = ap_sig_allocacmp_column_11;
 
 always @ (posedge ap_clk) begin
     zext_ln16_reg_139[63:10] <= 54'b000000000000000000000000000000000000000000000000000000;

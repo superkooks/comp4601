@@ -1,6 +1,6 @@
 <ENTRY>
 {
- "thisFile": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\canny_top.hlscompile_summary",
+ "thisFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/canny_top.hlscompile_summary",
  "connectId": "",
  "serverToken": "",
  "timestamp": "0"
@@ -9,39 +9,39 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "07/23/26 23:05:43",
- "timestampMillis": "1784811943066",
+ "dateTimestamp": "Fri Jul 24 16:27:31 2026",
+ "timestampMillis": "1784874451851",
  "buildStep": {
-  "cmdId": "b9cf07cb-7839-4bd7-8128-d8ac0726edc7",
+  "cmdId": "9d250217-901a-4ca4-8499-9eb128d08945",
   "name": "v++",
-  "logFile": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\logs\\canny_top.steps.log",
-  "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls\\hls_config.cfg --work_dir canny_top ",
+  "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/logs/canny_top.steps.log",
+  "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg --work_dir canny_top ",
   "args": [
    "-c",
    "--mode",
    "hls",
    "--config",
-   "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls\\hls_config.cfg",
+   "/home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg",
    "--work_dir",
    "canny_top"
   ],
   "iniFiles": [
    {
-    "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\hls_config.cfg",
+    "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg",
     "content": "part=xck26-sfvc784-2LV-c\n\n[hls]\nflow_target=vitis\npackage.output.format=xo\npackage.output.syn=false\nsyn.top=canny_top\nclock=200MHz\nsyn.file=../src/sobel.cpp\nsyn.file=../src/non_maximum_suppression.cpp\nsyn.file=../src/hysteresis.cpp\nsyn.file=../src/grayscale.cpp\nsyn.file=../src/double_threshold.cpp\nsyn.file=../src/canny_top.cpp\nsyn.file=../src/gaussian_blur.cpp\nsyn.file=../src/config.h\nsyn.file=../src/canny_types.h\nsyn.file=../src/canny_stages.h\nsyn.file=../src/output_row.cpp\ntb.file=../testbench/test_threshold.cpp\ntb.file=../testbench/test_sobel.cpp\ntb.file=../testbench/test_pipeline.cpp\ntb.file=../testbench/test_nms.cpp\ntb.file=../testbench/test_hysteresis.cpp\ntb.file=../testbench/test_grayscale.cpp\ntb.file=../testbench/test_gaussian.cpp\ntb.file=../include/config.h\ntb.file=../include/canny_types.h\ntb.file=../include/canny_stages.h\ntb.file=../testbench/config.h\ntb.file=../testbench/canny_types.h\ntb.file=../testbench/canny_stages.h\ntb.file=../reference/sobel_reference.h\ntb.file=../reference/sobel_reference.cpp\ntb.file=../reference/nms_reference.h\ntb.file=../reference/nms_reference.cpp\ntb.file=../reference/gaussian_reference.h\ntb.file=../reference/gaussian_reference.cpp\ntb.file=../testbench/sobel_reference.h\ntb.file=../testbench/sobel_reference.cpp\ntb.file=../testbench/nms_reference.h\ntb.file=../testbench/nms_reference.cpp\ntb.file=../testbench/gaussian_reference.h\ntb.file=../testbench/gaussian_reference.cpp\ntb.file=../testbench/test_top.cpp"
    }
   ],
-  "cwd": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls"
+  "cwd": "/home/superkooks/Uni/COMP4601/assign/canny_hls"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/23/26 23:05:43",
- "timestampMillis": "1784811943066",
+ "dateTimestamp": "Fri Jul 24 16:27:31 2026",
+ "timestampMillis": "1784874451852",
  "status": {
-  "cmdId": "b9cf07cb-7839-4bd7-8128-d8ac0726edc7",
+  "cmdId": "9d250217-901a-4ca4-8499-9eb128d08945",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "07/23/26 23:05:50",
- "timestampMillis": "1784811950091",
+ "dateTimestamp": "Fri Jul 24 16:27:34 2026",
+ "timestampMillis": "1784874454494",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -69,17 +69,17 @@
      "uuid": ""
     },
     "sources": [
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\sobel.cpp",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\non_maximum_suppression.cpp",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\hysteresis.cpp",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\grayscale.cpp",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\double_threshold.cpp",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\canny_top.cpp",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\gaussian_blur.cpp",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\config.h",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\canny_types.h",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\canny_stages.h",
-     "C:/Users\\twhsaw\\Projects\\comp4601\\src\\output_row.cpp"
+     "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/config.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_types.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/output_row.cpp"
     ],
     "psSources": [],
     "cuNames": [],
@@ -95,26 +95,26 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "07/23/26 23:05:50",
- "timestampMillis": "1784811950093",
+ "dateTimestamp": "Fri Jul 24 16:27:34 2026",
+ "timestampMillis": "1784874454495",
  "buildStep": {
-  "cmdId": "7fc7afa9-4588-460b-b647-7502400a18f8",
+  "cmdId": "ae2cb2cd-524f-4c63-a7fc-84726fb29bc4",
   "name": "",
-  "logFile": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\hls.log",
+  "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/hls.log",
   "commandLine": "",
   "args": [],
   "iniFiles": [],
-  "cwd": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls"
+  "cwd": "/home/superkooks/Uni/COMP4601/assign/canny_hls"
  }
 }
 </ENTRY>
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/23/26 23:05:50",
- "timestampMillis": "1784811950094",
+ "dateTimestamp": "Fri Jul 24 16:27:34 2026",
+ "timestampMillis": "1784874454495",
  "status": {
-  "cmdId": "7fc7afa9-4588-460b-b647-7502400a18f8",
+  "cmdId": "ae2cb2cd-524f-4c63-a7fc-84726fb29bc4",
   "state": "CS_RUNNING"
  }
 }
@@ -122,10 +122,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:05:50",
- "timestampMillis": "1784811950094",
+ "dateTimestamp": "Fri Jul 24 16:27:34 2026",
+ "timestampMillis": "1784874454495",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\hls_data.json",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/hls_data.json",
   "name": "",
   "fileType": "JSON",
   "reportType": "HLS_SYNTHESIS",
@@ -136,10 +136,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:05:50",
- "timestampMillis": "1784811950094",
+ "dateTimestamp": "Fri Jul 24 16:27:34 2026",
+ "timestampMillis": "1784874454495",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\syn\\report\\csynth.rpt",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/syn/report/csynth.rpt",
   "name": "",
   "fileType": "TEXT",
   "reportType": "HLS_SYNTHESIS",
@@ -150,10 +150,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:05:50",
- "timestampMillis": "1784811950095",
+ "dateTimestamp": "Fri Jul 24 16:27:34 2026",
+ "timestampMillis": "1784874454495",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\syn\\report\\csynth.xml",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/syn/report/csynth.xml",
   "name": "",
   "fileType": "XML",
   "reportType": "HLS_SYNTHESIS",
@@ -164,10 +164,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:06:40",
- "timestampMillis": "1784812000864",
+ "dateTimestamp": "Fri Jul 24 16:27:52 2026",
+ "timestampMillis": "1784874472312",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_DATAFLOW",
@@ -178,10 +178,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:06:40",
- "timestampMillis": "1784812000865",
+ "dateTimestamp": "Fri Jul 24 16:27:52 2026",
+ "timestampMillis": "1784874472312",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_FUNCTION_CALL_GRAPH",
@@ -192,10 +192,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:06:40",
- "timestampMillis": "1784812000865",
+ "dateTimestamp": "Fri Jul 24 16:27:52 2026",
+ "timestampMillis": "1784874472312",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls",
   "name": "",
   "fileType": "DIR",
   "reportType": "HLS_SCHEDULE",
@@ -206,10 +206,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/23/26 23:06:40",
- "timestampMillis": "1784812000866",
+ "dateTimestamp": "Fri Jul 24 16:27:52 2026",
+ "timestampMillis": "1784874472312",
  "status": {
-  "cmdId": "7fc7afa9-4588-460b-b647-7502400a18f8",
+  "cmdId": "ae2cb2cd-524f-4c63-a7fc-84726fb29bc4",
   "state": "CS_PASSED"
  }
 }
@@ -217,10 +217,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/23/26 23:06:41",
- "timestampMillis": "1784812001088",
+ "dateTimestamp": "Fri Jul 24 16:27:52 2026",
+ "timestampMillis": "1784874472437",
  "status": {
-  "cmdId": "b9cf07cb-7839-4bd7-8128-d8ac0726edc7",
+  "cmdId": "9d250217-901a-4ca4-8499-9eb128d08945",
   "state": "CS_PASSED"
  }
 }
@@ -228,10 +228,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:06:41",
- "timestampMillis": "1784812001105",
+ "dateTimestamp": "Fri Jul 24 16:27:52 2026",
+ "timestampMillis": "1784874472459",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\reports\\v++_compile_canny_top_guidance.html",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/reports/v++_compile_canny_top_guidance.html",
   "name": "",
   "fileType": "HTML",
   "reportType": "GLOBAL_RULECHECK_GUIDANCE",
@@ -242,10 +242,10 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/23/26 23:06:41",
- "timestampMillis": "1784812001106",
+ "dateTimestamp": "Fri Jul 24 16:27:52 2026",
+ "timestampMillis": "1784874472459",
  "report": {
-  "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\reports\\.db\\v++_compile_canny_top_guidance.pb3",
+  "path": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/reports/.db/v++_compile_canny_top_guidance.pb3",
   "name": "",
   "fileType": "BINARY_PROTOBUF",
   "reportType": "GLOBAL_RULECHECK_GUIDANCE",

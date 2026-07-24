@@ -91,7 +91,7 @@ newFuncRoot:3 %sext_ln20_1_cast = sext i58 %sext_ln20_1_read
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem_out, void @empty, i32 0, i32 0, void @empty_0, i32 64, i32 0, void @empty_8, void @empty_14, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_10, i32 64, i32 0, void @empty_9, void @empty_8, void @empty_10, i32 16, i32 16, i32 16, i32 16, void @empty_10, void @empty_10, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -244,10 +244,10 @@ for.inc.split.i:2 %trunc_ln20 = trunc i10 %i_1
 
 <Node id="26" bw="9" op_0_bw="2" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split.i:6 %out_hysteresis_addr = getelementptr i2 %out_hysteresis, i64 0, i64 %zext_ln20
+for.inc.split.i:6 %out_hysteresis4_addr = getelementptr i2 %out_hysteresis4, i64 0, i64 %zext_ln20
 
 ]]></Node>
-<StgValue><ssdm name="out_hysteresis_addr"/></StgValue>
+<StgValue><ssdm name="out_hysteresis4_addr"/></StgValue>
 </operation>
 
 <operation id="21" st_id="1" stage="2" lat="2">
@@ -260,10 +260,10 @@ for.inc.split.i:6 %out_hysteresis_addr = getelementptr i2 %out_hysteresis, i64 0
 
 <Node id="27" bw="2" op_0_bw="9">
 <![CDATA[
-for.inc.split.i:7 %out_hysteresis_load = load i9 %out_hysteresis_addr
+for.inc.split.i:7 %out_hysteresis4_load = load i9 %out_hysteresis4_addr
 
 ]]></Node>
-<StgValue><ssdm name="out_hysteresis_load"/></StgValue>
+<StgValue><ssdm name="out_hysteresis4_load"/></StgValue>
 </operation>
 
 <operation id="22" st_id="1" stage="1" lat="1">
@@ -357,10 +357,10 @@ for.inc.i:2 %sext_ln20 = sext i498 %phi_ln21_load
 
 <Node id="27" bw="2" op_0_bw="9">
 <![CDATA[
-for.inc.split.i:7 %out_hysteresis_load = load i9 %out_hysteresis_addr
+for.inc.split.i:7 %out_hysteresis4_load = load i9 %out_hysteresis4_addr
 
 ]]></Node>
-<StgValue><ssdm name="out_hysteresis_load"/></StgValue>
+<StgValue><ssdm name="out_hysteresis4_load"/></StgValue>
 </operation>
 
 <operation id="28" st_id="2" stage="1" lat="1">
@@ -408,7 +408,7 @@ for.inc.split.i._crit_edge:1 %sext_ln20_2 = sext i490 %tmp_18
 
 <Node id="38" bw="498" op_0_bw="498" op_1_bw="2" op_2_bw="496">
 <![CDATA[
-for.inc.split.i._crit_edge:2 %tmp_s = bitconcatenate i498 @_ssdm_op_BitConcatenate.i498.i2.i496, i2 %out_hysteresis_load, i496 %sext_ln20_2
+for.inc.split.i._crit_edge:2 %tmp_s = bitconcatenate i498 @_ssdm_op_BitConcatenate.i498.i2.i496, i2 %out_hysteresis4_load, i496 %sext_ln20_2
 
 ]]></Node>
 <StgValue><ssdm name="tmp_s"/></StgValue>
@@ -490,10 +490,10 @@ for.end.loopexit.i.exitStub:0 %ret_ln0 = ret
 
 <Node id="20" bw="512" op_0_bw="512" op_1_bw="64">
 <![CDATA[
-for.inc.split.i:0 %gmem_out_addr = getelementptr i512 %gmem_out, i64 %sext_ln20_1_cast
+for.inc.split.i:0 %gmem_addr = getelementptr i512 %gmem, i64 %sext_ln20_1_cast
 
 ]]></Node>
-<StgValue><ssdm name="gmem_out_addr"/></StgValue>
+<StgValue><ssdm name="gmem_addr"/></StgValue>
 </operation>
 
 <operation id="35" st_id="3" stage="1" lat="1">
@@ -505,7 +505,7 @@ for.inc.split.i:0 %gmem_out_addr = getelementptr i512 %gmem_out, i64 %sext_ln20_
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc.split.i:3 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0
+for.inc.split.i:3 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln20"/></StgValue>
@@ -535,7 +535,7 @@ for.inc.split.i:4 %speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:5 %specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13
+for.inc.split.i:5 %specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln20"/></StgValue>
@@ -550,7 +550,7 @@ for.inc.split.i:5 %specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName,
 
 <Node id="29" bw="506" op_0_bw="506" op_1_bw="2" op_2_bw="504">
 <![CDATA[
-for.inc.split.i:9 %tmp = bitconcatenate i506 @_ssdm_op_BitConcatenate.i506.i2.i504, i2 %out_hysteresis_load, i504 %sext_ln20
+for.inc.split.i:9 %tmp = bitconcatenate i506 @_ssdm_op_BitConcatenate.i506.i2.i504, i2 %out_hysteresis4_load, i504 %sext_ln20
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -581,7 +581,7 @@ for.inc.split.i:10 %sext_ln21 = sext i506 %tmp
 
 <Node id="33" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="512" op_3_bw="64">
 <![CDATA[
-:0 %write_ln21 = write void @_ssdm_op_Write.m_axi.p1i512.i512, i512 %gmem_out_addr, i512 %sext_ln21, i64 18446744073709551615
+:0 %write_ln21 = write void @_ssdm_op_Write.m_axi.p1i512.i512, i512 %gmem_addr, i512 %sext_ln21, i64 18446744073709551615
 
 ]]></Node>
 <StgValue><ssdm name="write_ln21"/></StgValue>

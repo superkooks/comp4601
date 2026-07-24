@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>gmem_in</name>
+						<name>gmem</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -73,7 +73,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>4</if_type>
@@ -163,10 +163,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>6</id>
+						<id>7</id>
 						<name>in_read</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -174,16 +174,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -211,8 +211,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>17</item>
 					<item>18</item>
+					<item>19</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -227,10 +227,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>7</id>
+						<id>8</id>
 						<name>p_read_5</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -238,16 +238,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -275,8 +275,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>20</item>
 					<item>21</item>
+					<item>22</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -291,10 +291,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>8</id>
+						<id>9</id>
 						<name>zext_ln4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -302,16 +302,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -339,7 +339,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>22</item>
+					<item>23</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -354,10 +354,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>9</id>
+						<id>10</id>
 						<name>p_shl</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -365,16 +365,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -402,9 +402,9 @@
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
-					<item>24</item>
 					<item>25</item>
-					<item>27</item>
+					<item>26</item>
+					<item>28</item>
 				</oprand_edges>
 				<opcode>bitconcatenate</opcode>
 				<m_Display>0</m_Display>
@@ -419,10 +419,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>10</id>
+						<id>11</id>
 						<name>empty</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -430,16 +430,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -467,8 +467,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>28</item>
 					<item>29</item>
+					<item>30</item>
 				</oprand_edges>
 				<opcode>sub</opcode>
 				<m_Display>0</m_Display>
@@ -483,10 +483,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>11</id>
+						<id>12</id>
 						<name>p_cast</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -494,16 +494,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -531,7 +531,7 @@
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>30</item>
+					<item>31</item>
 				</oprand_edges>
 				<opcode>zext</opcode>
 				<m_Display>0</m_Display>
@@ -546,10 +546,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>12</id>
-						<name>empty_42</name>
+						<id>13</id>
+						<name>empty_41</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -557,16 +557,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -594,8 +594,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>31</item>
 					<item>32</item>
+					<item>33</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
@@ -610,10 +610,10 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>13</id>
+						<id>14</id>
 						<name>_ln4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -621,16 +621,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -658,10 +658,10 @@
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item>34</item>
 					<item>35</item>
 					<item>36</item>
 					<item>37</item>
+					<item>38</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -676,7 +676,7 @@
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>14</id>
+						<id>15</id>
 						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -721,7 +721,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>26</id>
+						<id>27</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -752,7 +752,7 @@
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>33</id>
+						<id>34</id>
 						<name>grayscale_Pipeline_VITIS_LOOP_7_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -786,7 +786,7 @@
 			<item class_id="18" tracking_level="1" version="0" object_id="_16">
 				<Obj>
 					<type>3</type>
-					<id>15</id>
+					<id>16</id>
 					<name>grayscale</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -811,7 +811,6 @@
 				<node_objs>
 					<count>9</count>
 					<item_version>0</item_version>
-					<item>6</item>
 					<item>7</item>
 					<item>8</item>
 					<item>9</item>
@@ -820,6 +819,7 @@
 					<item>12</item>
 					<item>13</item>
 					<item>14</item>
+					<item>15</item>
 				</node_objs>
 			</item>
 		</blocks>
@@ -827,101 +827,101 @@
 			<count>14</count>
 			<item_version>0</item_version>
 			<item class_id="20" tracking_level="1" version="0" object_id="_17">
-				<id>18</id>
+				<id>19</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
-				<sink_obj>6</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_18">
-				<id>21</id>
-				<edge_type>1</edge_type>
-				<source_obj>1</source_obj>
 				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_19">
+			<item class_id_reference="20" object_id="_18">
 				<id>22</id>
 				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
+				<source_obj>1</source_obj>
 				<sink_obj>8</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
+			<item class_id_reference="20" object_id="_19">
+				<id>23</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>9</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
 			<item class_id_reference="20" object_id="_20">
-				<id>25</id>
-				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_21">
-				<id>27</id>
-				<edge_type>1</edge_type>
-				<source_obj>26</source_obj>
-				<sink_obj>9</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_22">
-				<id>28</id>
-				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
-				<sink_obj>10</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_23">
-				<id>29</id>
+				<id>26</id>
 				<edge_type>1</edge_type>
 				<source_obj>8</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_24">
-				<id>30</id>
+			<item class_id_reference="20" object_id="_21">
+				<id>28</id>
+				<edge_type>1</edge_type>
+				<source_obj>27</source_obj>
+				<sink_obj>10</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_22">
+				<id>29</id>
 				<edge_type>1</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>11</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_25">
+			<item class_id_reference="20" object_id="_23">
+				<id>30</id>
+				<edge_type>1</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>11</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_24">
 				<id>31</id>
 				<edge_type>1</edge_type>
 				<source_obj>11</source_obj>
 				<sink_obj>12</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_26">
+			<item class_id_reference="20" object_id="_25">
 				<id>32</id>
-				<edge_type>1</edge_type>
-				<source_obj>6</source_obj>
-				<sink_obj>12</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_27">
-				<id>34</id>
-				<edge_type>1</edge_type>
-				<source_obj>33</source_obj>
-				<sink_obj>13</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_28">
-				<id>35</id>
 				<edge_type>1</edge_type>
 				<source_obj>12</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_29">
-				<id>36</id>
+			<item class_id_reference="20" object_id="_26">
+				<id>33</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>7</source_obj>
 				<sink_obj>13</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_30">
+			<item class_id_reference="20" object_id="_27">
+				<id>35</id>
+				<edge_type>1</edge_type>
+				<source_obj>34</source_obj>
+				<sink_obj>14</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_28">
+				<id>36</id>
+				<edge_type>1</edge_type>
+				<source_obj>13</source_obj>
+				<sink_obj>14</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_29">
 				<id>37</id>
 				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
+				<sink_obj>14</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_30">
+				<id>38</id>
+				<edge_type>1</edge_type>
 				<source_obj>4</source_obj>
-				<sink_obj>13</sink_obj>
+				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -941,14 +941,14 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>15</item>
+				<item>16</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1616</mMinLatency>
-			<mMaxLatency>1616</mMaxLatency>
+			<mMinLatency>1615</mMinLatency>
+			<mMaxLatency>1615</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -959,23 +959,16 @@
 		<count>9</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
-			<first>6</first>
+			<first>7</first>
 			<second class_id="28" tracking_level="0" version="0">
 				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
-			<first>7</first>
-			<second>
-				<first>0</first>
-				<second>0</second>
-			</second>
-		</item>
-		<item>
 			<first>8</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1011,11 +1004,18 @@
 			<first>13</first>
 			<second>
 				<first>1</first>
-				<second>1</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>14</first>
+			<second>
+				<first>1</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>15</first>
 			<second>
 				<first>2</first>
 				<second>0</second>
@@ -1026,7 +1026,7 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>15</first>
+			<first>16</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
 				<second>2</second>

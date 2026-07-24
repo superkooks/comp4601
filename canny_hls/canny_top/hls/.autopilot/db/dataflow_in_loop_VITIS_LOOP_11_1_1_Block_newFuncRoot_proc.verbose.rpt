@@ -1,0 +1,417 @@
+
+
+================================================================
+== Vitis HLS Report for 'dataflow_in_loop_VITIS_LOOP_11_1_1_Block_newFuncRoot_proc'
+================================================================
+* Date:           Fri Jul 24 16:27:50 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        canny_top
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  0.360 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      19|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      18|    -|
+|Register         |        -|     -|      11|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|      11|      37|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |ap_block_state1       |        or|   0|  0|   2|           1|           1|
+    |select_ln25_fu_40_p3  |    select|   0|  0|  17|           1|           1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  19|           2|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_done    |   9|          2|    1|          2|
+    |ap_return  |   9|          2|    9|         18|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  18|          4|   10|         20|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |ap_return_preg  |  9|   0|   18|          9|
+    +----------------+---+----+-----+-----------+
+    |Total           | 11|   0|   20|          9|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |                       Source Object                       |    C Type    |
++-------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+|ap_clk       |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|ap_start     |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|ap_done      |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|ap_continue  |   in|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|ap_idle      |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|ap_ready     |  out|    1|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|ap_return    |  out|   18|  ap_ctrl_hs|  dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc|  return value|
+|i_0          |   in|   10|     ap_none|                                                        i_0|        scalar|
++-------------+-----+-----+------------+-----------------------------------------------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.36>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%i_0_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %i_0" [../src/canny_top.cpp:25]   --->   Operation 2 'read' 'i_0_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%trunc_ln25 = trunc i10 %i_0_read" [../src/canny_top.cpp:25]   --->   Operation 3 'trunc' 'trunc_ln25' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i18 @_ssdm_op_BitConcatenate.i18.i9.i9, i9 %trunc_ln25, i9 0" [../src/canny_top.cpp:25]   --->   Operation 4 'bitconcatenate' 'shl_ln' <Predicate = (!tmp)> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %i_0_read, i32 9" [../src/canny_top.cpp:25]   --->   Operation 5 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.36ns)   --->   "%select_ln25 = select i1 %tmp, i18 0, i18 %shl_ln" [../src/canny_top.cpp:25]   --->   Operation 6 'select' 'select_ln25' <Predicate = true> <Delay = 0.36> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.36> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%ret_ln25 = ret i18 %select_ln25" [../src/canny_top.cpp:25]   --->   Operation 7 'ret' 'ret_ln25' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 1
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ i_0]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+i_0_read    (read          ) [ 00]
+trunc_ln25  (trunc         ) [ 00]
+shl_ln      (bitconcatenate) [ 00]
+tmp         (bitselect     ) [ 01]
+select_ln25 (select        ) [ 00]
+ret_ln25    (ret           ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="i_0">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="i_0"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1001" name="const_2">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i10"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1001" name="const_4">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i18.i9.i9"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1001" name="const_6">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1001" name="const_8">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_BitSelect.i1.i10.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1001" name="const_10">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1001" name="const_12">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1004" name="i_0_read_read_fu_14">
+<pin_list>
+<pin id="15" dir="0" index="0" bw="10" slack="0"/>
+<pin id="16" dir="0" index="1" bw="10" slack="0"/>
+<pin id="17" dir="1" index="2" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="i_0_read/1 "/>
+</bind>
+</comp>
+
+<comp id="20" class="1004" name="trunc_ln25_fu_20">
+<pin_list>
+<pin id="21" dir="0" index="0" bw="10" slack="0"/>
+<pin id="22" dir="1" index="1" bw="9" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln25/1 "/>
+</bind>
+</comp>
+
+<comp id="24" class="1004" name="shl_ln_fu_24">
+<pin_list>
+<pin id="25" dir="0" index="0" bw="18" slack="0"/>
+<pin id="26" dir="0" index="1" bw="9" slack="0"/>
+<pin id="27" dir="0" index="2" bw="1" slack="0"/>
+<pin id="28" dir="1" index="3" bw="18" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="shl_ln/1 "/>
+</bind>
+</comp>
+
+<comp id="32" class="1004" name="tmp_fu_32">
+<pin_list>
+<pin id="33" dir="0" index="0" bw="1" slack="0"/>
+<pin id="34" dir="0" index="1" bw="10" slack="0"/>
+<pin id="35" dir="0" index="2" bw="5" slack="0"/>
+<pin id="36" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp/1 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="select_ln25_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="1" slack="0"/>
+<pin id="42" dir="0" index="1" bw="18" slack="0"/>
+<pin id="43" dir="0" index="2" bw="18" slack="0"/>
+<pin id="44" dir="1" index="3" bw="18" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln25/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="18"><net_src comp="2" pin="0"/><net_sink comp="14" pin=0"/></net>
+
+<net id="19"><net_src comp="0" pin="0"/><net_sink comp="14" pin=1"/></net>
+
+<net id="23"><net_src comp="14" pin="2"/><net_sink comp="20" pin=0"/></net>
+
+<net id="29"><net_src comp="4" pin="0"/><net_sink comp="24" pin=0"/></net>
+
+<net id="30"><net_src comp="20" pin="1"/><net_sink comp="24" pin=1"/></net>
+
+<net id="31"><net_src comp="6" pin="0"/><net_sink comp="24" pin=2"/></net>
+
+<net id="37"><net_src comp="8" pin="0"/><net_sink comp="32" pin=0"/></net>
+
+<net id="38"><net_src comp="14" pin="2"/><net_sink comp="32" pin=1"/></net>
+
+<net id="39"><net_src comp="10" pin="0"/><net_sink comp="32" pin=2"/></net>
+
+<net id="45"><net_src comp="32" pin="3"/><net_sink comp="40" pin=0"/></net>
+
+<net id="46"><net_src comp="12" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="47"><net_src comp="24" pin="3"/><net_sink comp="40" pin=2"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc : i_0 | {1 }
+  - Chain level:
+	State 1
+		shl_ln : 1
+		select_ln25 : 2
+		ret_ln25 : 3
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|---------------------|---------|---------|
+| Operation|   Functional Unit   |    FF   |   LUT   |
+|----------|---------------------|---------|---------|
+|  select  |  select_ln25_fu_40  |    0    |    17   |
+|----------|---------------------|---------|---------|
+|   read   | i_0_read_read_fu_14 |    0    |    0    |
+|----------|---------------------|---------|---------|
+|   trunc  |   trunc_ln25_fu_20  |    0    |    0    |
+|----------|---------------------|---------|---------|
+|bitconcatenate|     shl_ln_fu_24    |    0    |    0    |
+|----------|---------------------|---------|---------|
+| bitselect|      tmp_fu_32      |    0    |    0    |
+|----------|---------------------|---------|---------|
+|   Total  |                     |    0    |    17   |
+|----------|---------------------|---------|---------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+
+|           |   FF   |   LUT  |
++-----------+--------+--------+
+|  Function |    0   |   17   |
+|   Memory  |    -   |    -   |
+|Multiplexer|    -   |    -   |
+|  Register |    -   |    -   |
++-----------+--------+--------+
+|   Total   |    0   |   17   |
++-----------+--------+--------+

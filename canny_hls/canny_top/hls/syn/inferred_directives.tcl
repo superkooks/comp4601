@@ -1,7 +1,7 @@
 # Inferred from syn.compile.pipeline_loops=64
 set_directive_pipeline output_row/VITIS_LOOP_20_1
-set_directive_pipeline hysteresis/VITIS_LOOP_60_1
-set_directive_pipeline hysteresis/VITIS_LOOP_108_2
+set_directive_pipeline hysteresis<4>/VITIS_LOOP_66_1
+set_directive_pipeline hysteresis<4>/VITIS_LOOP_114_2
 set_directive_pipeline double_threshold/VITIS_LOOP_16_1
 set_directive_pipeline non_maximum_suppression/VITIS_LOOP_45_1
 set_directive_pipeline non_maximum_suppression/VITIS_LOOP_81_2
@@ -10,3 +10,12 @@ set_directive_pipeline sobel/VITIS_LOOP_118_2
 set_directive_pipeline gaussian_blur/VITIS_LOOP_46_1
 set_directive_pipeline gaussian_blur/VITIS_LOOP_64_2
 set_directive_pipeline grayscale/VITIS_LOOP_7_1
+set_directive_pipeline canny_top/VITIS_LOOP_31_2
+set_directive_pipeline canny_top/VITIS_LOOP_69_2
+set_directive_pipeline canny_top/VITIS_LOOP_23_2
+set_directive_pipeline canny_top/VITIS_LOOP_45_2
+# Inferred from Performance Budgeter performance directives
+set_directive_loop_flatten canny_top/VITIS_LOOP_30_1
+set_directive_loop_flatten canny_top/VITIS_LOOP_44_1
+set_directive_loop_flatten canny_top/VITIS_LOOP_22_1
+set_directive_loop_flatten canny_top/VITIS_LOOP_68_1

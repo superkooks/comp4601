@@ -6,7 +6,10 @@ namespace {
 
 constexpr int WINDOW_SIZE = 3;
 
+template <int Instance>
 std::uint8_t lineBuffer[WINDOW_SIZE][WIDTH] = {};
+
+template <int Instance>
 int rowsReceived = 0;
 
 int positive_modulo(int value, int divisor) {
@@ -14,6 +17,7 @@ int positive_modulo(int value, int divisor) {
     return result < 0 ? result + divisor : result;
 }
 
+template <int Instance>
 bool has_strong_neighbour(
     int topSlot,
     int centreSlot,
@@ -21,28 +25,30 @@ bool has_strong_neighbour(
     int column
 ) {
     return
-        lineBuffer[topSlot][column - 1] == STRONG_EDGE ||
-        lineBuffer[topSlot][column] == STRONG_EDGE ||
-        lineBuffer[topSlot][column + 1] == STRONG_EDGE ||
-        lineBuffer[centreSlot][column - 1] == STRONG_EDGE ||
-        lineBuffer[centreSlot][column + 1] == STRONG_EDGE ||
-        lineBuffer[bottomSlot][column - 1] == STRONG_EDGE ||
-        lineBuffer[bottomSlot][column] == STRONG_EDGE ||
-        lineBuffer[bottomSlot][column + 1] == STRONG_EDGE;
+        lineBuffer<Instance>[topSlot][column - 1] == STRONG_EDGE ||
+        lineBuffer<Instance>[topSlot][column] == STRONG_EDGE ||
+        lineBuffer<Instance>[topSlot][column + 1] == STRONG_EDGE ||
+        lineBuffer<Instance>[centreSlot][column - 1] == STRONG_EDGE ||
+        lineBuffer<Instance>[centreSlot][column + 1] == STRONG_EDGE ||
+        lineBuffer<Instance>[bottomSlot][column - 1] == STRONG_EDGE ||
+        lineBuffer<Instance>[bottomSlot][column] == STRONG_EDGE ||
+        lineBuffer<Instance>[bottomSlot][column + 1] == STRONG_EDGE;
 }
 
 }
 
+template <int Instance>
 void hysteresis_reset() {
-    rowsReceived = 0;
+    rowsReceived<Instance> = 0;
 
     for (int row = 0; row < WINDOW_SIZE; ++row) {
         for (int column = 0; column < WIDTH; ++column) {
-            lineBuffer[row][column] = NON_EDGE;
+            lineBuffer<Instance>[row][column] = NON_EDGE;
         }
     }
 }
 
+template <int Instance>
 void hysteresis(
     const std::uint8_t input[WIDTH],
     std::uint8_t output[WIDTH],
@@ -55,10 +61,10 @@ void hysteresis(
     }
 
     const int writeSlot =
-        rowsReceived % WINDOW_SIZE;
+        rowsReceived<Instance> % WINDOW_SIZE;
 
     for (int column = 0; column < WIDTH; ++column) {
-        lineBuffer[writeSlot][column] = input[column];
+        lineBuffer<Instance>[writeSlot][column] = input[column];
         output[column] = NON_EDGE;
     }
 
@@ -66,9 +72,9 @@ void hysteresis(
      * Three rows are required before a complete
      * 3x3 neighbourhood is available.
      */
-    if (rowsReceived < WINDOW_SIZE - 1) {
+    if (rowsReceived<Instance> < WINDOW_SIZE - 1) {
         *valid_out = false;
-        ++rowsReceived;
+        ++rowsReceived<Instance>;
         return;
     }
 
@@ -76,45 +82,45 @@ void hysteresis(
      * The newest row is rowsReceived, so the output belongs
      * to the previous row.
      */
-    const int outputRow = rowsReceived - 1;
+    const int outputRow = rowsReceived<Instance> - 1;
 
     /*
      * Force the outer image border to NON_EDGE.
      */
     if (outputRow < 1 || outputRow >= HEIGHT - 1) {
         *valid_out = false;
-        ++rowsReceived;
+        ++rowsReceived<Instance>;
         return;
     }
 
     const int topSlot =
         positive_modulo(
-            rowsReceived - 2,
+            rowsReceived<Instance> - 2,
             WINDOW_SIZE
         );
 
     const int centreSlot =
         positive_modulo(
-            rowsReceived - 1,
+            rowsReceived<Instance> - 1,
             WINDOW_SIZE
         );
 
     const int bottomSlot =
         positive_modulo(
-            rowsReceived,
+            rowsReceived<Instance>,
             WINDOW_SIZE
         );
 
     for (int column = 1; column < WIDTH - 1; ++column) {
         const std::uint8_t centre =
-            lineBuffer[centreSlot][column];
+            lineBuffer<Instance>[centreSlot][column];
 
         if (centre == STRONG_EDGE) {
             output[column] = STRONG_EDGE;
         }
         else if (
             centre == WEAK_EDGE &&
-            has_strong_neighbour(
+            has_strong_neighbour<Instance>(
                 topSlot,
                 centreSlot,
                 bottomSlot,
@@ -129,5 +135,15 @@ void hysteresis(
     }
 
     *valid_out = true;
-    ++rowsReceived;
+    ++rowsReceived<Instance>;
 }
+
+template void hysteresis<1>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
+template void hysteresis<2>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
+template void hysteresis<3>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
+template void hysteresis<4>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*);
+
+template void hysteresis_reset<1>();
+template void hysteresis_reset<2>();
+template void hysteresis_reset<3>();
+template void hysteresis_reset<4>();

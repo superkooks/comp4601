@@ -30,14 +30,14 @@ module canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1 (
         p_anonymous_namespace_lineBuffer_direction_ce0,
         p_anonymous_namespace_lineBuffer_direction_we0,
         p_anonymous_namespace_lineBuffer_direction_d0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_address0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_we0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_d0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_address0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_we0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_d0
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_d0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_d0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -64,14 +64,14 @@ output  [10:0] p_anonymous_namespace_lineBuffer_direction_address0;
 output   p_anonymous_namespace_lineBuffer_direction_ce0;
 output   p_anonymous_namespace_lineBuffer_direction_we0;
 output  [1:0] p_anonymous_namespace_lineBuffer_direction_d0;
-output  [9:0] p_anonymous_namespace_lineBuffer_11_magnitude_0_address0;
-output   p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0;
-output   p_anonymous_namespace_lineBuffer_11_magnitude_0_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_11_magnitude_0_d0;
-output  [9:0] p_anonymous_namespace_lineBuffer_11_magnitude_1_address0;
-output   p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0;
-output   p_anonymous_namespace_lineBuffer_11_magnitude_1_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_11_magnitude_1_d0;
+output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
+output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
+output   p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
+output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
+output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
+output   p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
+output  [7:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
 
 reg ap_idle;
 
@@ -101,10 +101,10 @@ reg    out_sobel_magnitude_ce0_local;
 reg    out_sobel_direction_ce0_local;
 reg    out_nonmax_we0_local;
 reg    out_nonmax_ce0_local;
-reg    p_anonymous_namespace_lineBuffer_11_magnitude_0_we0_local;
-reg    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local;
-reg    p_anonymous_namespace_lineBuffer_11_magnitude_1_we0_local;
-reg    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local;
+reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local;
+reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local;
+reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local;
+reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local;
 reg    p_anonymous_namespace_lineBuffer_direction_we0_local;
 reg    p_anonymous_namespace_lineBuffer_direction_ce0_local;
 wire   [10:0] zext_ln46_2_fu_188_p1;
@@ -275,33 +275,33 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((trunc_ln45_reg_249 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_we0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_we0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((trunc_ln45_reg_249 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_we0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_we0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local = 1'b0;
     end
 end
 
@@ -374,21 +374,21 @@ assign out_sobel_magnitude_address0 = zext_ln45_fu_172_p1;
 
 assign out_sobel_magnitude_ce0 = out_sobel_magnitude_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 = zext_ln46_1_fu_217_p1;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 = zext_ln46_1_fu_217_p1;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 = p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 = p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_0_d0 = out_sobel_magnitude_q0;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 = out_sobel_magnitude_q0;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_0_we0 = p_anonymous_namespace_lineBuffer_11_magnitude_0_we0_local;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 = p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 = zext_ln46_1_fu_217_p1;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 = zext_ln46_1_fu_217_p1;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 = p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 = p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_1_d0 = out_sobel_magnitude_q0;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = out_sobel_magnitude_q0;
 
-assign p_anonymous_namespace_lineBuffer_11_magnitude_1_we0 = p_anonymous_namespace_lineBuffer_11_magnitude_1_we0_local;
+assign p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local;
 
 assign p_anonymous_namespace_lineBuffer_direction_address0 = zext_ln46_3_fu_196_p1;
 

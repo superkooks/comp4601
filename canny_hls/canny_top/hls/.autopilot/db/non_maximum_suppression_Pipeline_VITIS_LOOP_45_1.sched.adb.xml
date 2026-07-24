@@ -399,7 +399,7 @@ for.inc.split.i:4 %p_anonymous_namespace_lineBuffer_direction_addr = getelementp
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc.split.i:6 %specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0
+for.inc.split.i:6 %specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln45"/></StgValue>
@@ -429,7 +429,7 @@ for.inc.split.i:7 %speclooptripcount_ln45 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="28" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:8 %specloopname_ln45 = specloopname void @_ssdm_op_SpecLoopName, void @empty_2
+for.inc.split.i:8 %specloopname_ln45 = specloopname void @_ssdm_op_SpecLoopName, void @empty_18
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln45"/></StgValue>
@@ -489,10 +489,10 @@ for.inc.split.i:11 %zext_ln46_1 = zext i10 %tmp_s
 
 <Node id="32" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split.i:12 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln46_1
+for.inc.split.i:12 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln46_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr"/></StgValue>
 </operation>
 
 <operation id="35" st_id="2" stage="1" lat="1">
@@ -504,10 +504,10 @@ for.inc.split.i:12 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr = getel
 
 <Node id="33" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.inc.split.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln46_1
+for.inc.split.i:13 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln46_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr"/></StgValue>
 </operation>
 
 <operation id="36" st_id="2" stage="1" lat="2">
@@ -550,7 +550,7 @@ for.inc.split.i:17 %out_sobel_direction_load = load i9 %out_sobel_direction_addr
 
 <Node id="40" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx418.03.case.0.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr
+arrayidx418.03.case.0.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln46"/></StgValue>
@@ -582,7 +582,7 @@ arrayidx418.03.case.0.i:1 %br_ln46 = br void %arrayidx418.03.exit.i
 
 <Node id="43" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx418.03.case.1.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr
+arrayidx418.03.case.1.i:0 %store_ln46 = store i8 %out_sobel_magnitude_load, i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln46"/></StgValue>

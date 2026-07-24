@@ -24,6 +24,25 @@ port (
     output_r_ce0 : OUT STD_LOGIC;
     output_r_we0 : OUT STD_LOGIC;
     output_r_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_rowsReceived_i : IN STD_LOGIC_VECTOR (31 downto 0);
+    p_anonymous_namespace_rowsReceived_o : OUT STD_LOGIC_VECTOR (31 downto 0);
+    p_anonymous_namespace_rowsReceived_o_ap_vld : OUT STD_LOGIC;
+    p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : OUT STD_LOGIC;
+    p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : OUT STD_LOGIC;
+    p_ZN12_GLOBAL_N_110lineBufferE_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_0_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : OUT STD_LOGIC;
+    p_ZN12_GLOBAL_N_110lineBufferE_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : OUT STD_LOGIC;
+    p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : OUT STD_LOGIC;
+    p_ZN12_GLOBAL_N_110lineBufferE_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_1_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : OUT STD_LOGIC;
+    p_ZN12_GLOBAL_N_110lineBufferE_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
     ap_return : OUT STD_LOGIC_VECTOR (0 downto 0) );
 end;
 
@@ -197,19 +216,6 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal p_anonymous_namespace_rowsReceived : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    signal p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : STD_LOGIC;
-    signal p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : STD_LOGIC;
-    signal p_ZN12_GLOBAL_N_110lineBufferE_0_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : STD_LOGIC;
-    signal p_ZN12_GLOBAL_N_110lineBufferE_0_q1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : STD_LOGIC;
-    signal p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : STD_LOGIC;
-    signal p_ZN12_GLOBAL_N_110lineBufferE_1_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : STD_LOGIC;
-    signal p_ZN12_GLOBAL_N_110lineBufferE_1_q1 : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_fu_86_p2 : STD_LOGIC_VECTOR (31 downto 0);
     signal writeSlot_reg_283 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_CS_fsm_state36 : STD_LOGIC;
@@ -626,61 +632,8 @@ attribute shreg_extract : string;
     end component;
 
 
-    component canny_top_gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W IS
-    generic (
-        DataWidth : INTEGER;
-        AddressRange : INTEGER;
-        AddressWidth : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (10 downto 0);
-        ce0 : IN STD_LOGIC;
-        we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        address1 : IN STD_LOGIC_VECTOR (10 downto 0);
-        ce1 : IN STD_LOGIC;
-        q1 : OUT STD_LOGIC_VECTOR (7 downto 0) );
-    end component;
-
-
 
 begin
-    p_ZN12_GLOBAL_N_110lineBufferE_0_U : component canny_top_gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 1280,
-        AddressWidth => 11)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        address0 => p_ZN12_GLOBAL_N_110lineBufferE_0_address0,
-        ce0 => p_ZN12_GLOBAL_N_110lineBufferE_0_ce0,
-        we0 => p_ZN12_GLOBAL_N_110lineBufferE_0_we0,
-        d0 => grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_0_d0,
-        q0 => p_ZN12_GLOBAL_N_110lineBufferE_0_q0,
-        address1 => grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_0_address1,
-        ce1 => p_ZN12_GLOBAL_N_110lineBufferE_0_ce1,
-        q1 => p_ZN12_GLOBAL_N_110lineBufferE_0_q1);
-
-    p_ZN12_GLOBAL_N_110lineBufferE_1_U : component canny_top_gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 1280,
-        AddressWidth => 11)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        address0 => p_ZN12_GLOBAL_N_110lineBufferE_1_address0,
-        ce0 => p_ZN12_GLOBAL_N_110lineBufferE_1_ce0,
-        we0 => p_ZN12_GLOBAL_N_110lineBufferE_1_we0,
-        d0 => grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_d0,
-        q0 => p_ZN12_GLOBAL_N_110lineBufferE_1_q0,
-        address1 => grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_1_address1,
-        ce1 => p_ZN12_GLOBAL_N_110lineBufferE_1_ce1,
-        q1 => p_ZN12_GLOBAL_N_110lineBufferE_1_q1);
-
     grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54 : component canny_top_gaussian_blur_Pipeline_VITIS_LOOP_46_1
     port map (
         ap_clk => ap_clk,
@@ -736,7 +689,7 @@ begin
         p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 => grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1,
         p_ZN12_GLOBAL_N_110lineBufferE_1_q1 => p_ZN12_GLOBAL_N_110lineBufferE_1_q1);
 
-    srem_32ns_4ns_32_36_seq_1_U30 : component canny_top_srem_32ns_4ns_32_36_seq_1
+    srem_32ns_4ns_32_36_seq_1_U43 : component canny_top_srem_32ns_4ns_32_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -748,12 +701,12 @@ begin
         reset => ap_rst,
         start => grp_fu_86_ap_start,
         done => grp_fu_86_ap_done,
-        din0 => p_anonymous_namespace_rowsReceived,
+        din0 => p_anonymous_namespace_rowsReceived_i,
         din1 => grp_fu_86_p1,
         ce => grp_fu_86_ce,
         dout => grp_fu_86_p2);
 
-    srem_32ns_4ns_32_36_seq_1_U31 : component canny_top_srem_32ns_4ns_32_36_seq_1
+    srem_32ns_4ns_32_36_seq_1_U44 : component canny_top_srem_32ns_4ns_32_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -770,7 +723,7 @@ begin
         ce => grp_fu_146_ce,
         dout => grp_fu_146_p2);
 
-    urem_32ns_4ns_3_36_seq_1_U32 : component canny_top_urem_32ns_4ns_3_36_seq_1
+    urem_32ns_4ns_3_36_seq_1_U45 : component canny_top_urem_32ns_4ns_3_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -787,7 +740,7 @@ begin
         ce => grp_fu_152_ce,
         dout => grp_fu_152_p2);
 
-    srem_32ns_4ns_32_36_seq_1_U33 : component canny_top_srem_32ns_4ns_32_36_seq_1
+    srem_32ns_4ns_32_36_seq_1_U46 : component canny_top_srem_32ns_4ns_32_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -804,7 +757,7 @@ begin
         ce => grp_fu_163_ce,
         dout => grp_fu_163_p2);
 
-    srem_32ns_4ns_32_36_seq_1_U34 : component canny_top_srem_32ns_4ns_32_36_seq_1
+    srem_32ns_4ns_32_36_seq_1_U47 : component canny_top_srem_32ns_4ns_32_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -900,7 +853,6 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state37) and (grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_done = ap_const_logic_1))) then
                 or_ln59_reg_305 <= or_ln59_fu_135_p2;
-                p_anonymous_namespace_rowsReceived <= add_ln50_fu_97_p2;
                 select_ln22_2_reg_319 <= select_ln22_2_fu_181_p3;
             end if;
         end if;
@@ -1097,7 +1049,7 @@ begin
     add_ln22_2_fu_176_p2 <= std_logic_vector(unsigned(trunc_ln42_reg_288) + unsigned(ap_const_lv3_5));
     add_ln22_3_fu_265_p2 <= std_logic_vector(unsigned(trunc_ln22_2_fu_253_p1) + unsigned(ap_const_lv3_5));
     add_ln22_fu_206_p2 <= std_logic_vector(unsigned(trunc_ln22_fu_194_p1) + unsigned(ap_const_lv3_5));
-    add_ln50_fu_97_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived) + unsigned(ap_const_lv32_1));
+    add_ln50_fu_97_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_i) + unsigned(ap_const_lv32_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
     ap_CS_fsm_state11 <= ap_CS_fsm(10);
@@ -1345,7 +1297,7 @@ begin
         end if; 
     end process;
 
-    grp_fu_146_p0 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived) + unsigned(ap_const_lv32_FFFFFFFD));
+    grp_fu_146_p0 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_i) + unsigned(ap_const_lv32_FFFFFFFD));
     grp_fu_146_p1 <= ap_const_lv32_5(4 - 1 downto 0);
 
     grp_fu_152_ap_start_assign_proc : process(ap_CS_fsm_state37, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_done, or_ln59_fu_135_p2)
@@ -1390,7 +1342,7 @@ begin
         end if; 
     end process;
 
-    grp_fu_163_p0 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived) + unsigned(ap_const_lv32_FFFFFFFF));
+    grp_fu_163_p0 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_i) + unsigned(ap_const_lv32_FFFFFFFF));
     grp_fu_163_p1 <= ap_const_lv32_5(4 - 1 downto 0);
 
     grp_fu_188_ap_start_assign_proc : process(ap_CS_fsm_state37, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_done, or_ln59_fu_135_p2)
@@ -1413,7 +1365,7 @@ begin
         end if; 
     end process;
 
-    grp_fu_188_p0 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived) + unsigned(ap_const_lv32_1));
+    grp_fu_188_p0 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_i) + unsigned(ap_const_lv32_1));
     grp_fu_188_p1 <= ap_const_lv32_5(4 - 1 downto 0);
 
     grp_fu_86_ap_start_assign_proc : process(ap_CS_fsm_state1, ap_block_state1)
@@ -1444,7 +1396,7 @@ begin
     input_r_address0 <= grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_input_r_address0;
     input_r_ce0 <= grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_input_r_ce0;
     or_ln59_fu_135_p2 <= (icmp_ln59_fu_123_p2 or icmp_ln59_1_fu_129_p2);
-    outputRow_fu_108_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived) + unsigned(ap_const_lv32_FFFFFFFE));
+    outputRow_fu_108_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_i) + unsigned(ap_const_lv32_FFFFFFFE));
 
     output_r_address0_assign_proc : process(ap_CS_fsm_state37, or_ln59_reg_305, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_output_r_address0, grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_output_r_address0, ap_CS_fsm_state73)
     begin
@@ -1505,6 +1457,7 @@ begin
         end if; 
     end process;
 
+    p_ZN12_GLOBAL_N_110lineBufferE_0_address1 <= grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
 
     p_ZN12_GLOBAL_N_110lineBufferE_0_ce0_assign_proc : process(ap_CS_fsm_state37, or_ln59_reg_305, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0, grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0, ap_CS_fsm_state73)
     begin
@@ -1527,6 +1480,7 @@ begin
         end if; 
     end process;
 
+    p_ZN12_GLOBAL_N_110lineBufferE_0_d0 <= grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
 
     p_ZN12_GLOBAL_N_110lineBufferE_0_we0_assign_proc : process(ap_CS_fsm_state37, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_0_we0)
     begin
@@ -1549,6 +1503,7 @@ begin
         end if; 
     end process;
 
+    p_ZN12_GLOBAL_N_110lineBufferE_1_address1 <= grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
 
     p_ZN12_GLOBAL_N_110lineBufferE_1_ce0_assign_proc : process(ap_CS_fsm_state37, or_ln59_reg_305, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0, grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0, ap_CS_fsm_state73)
     begin
@@ -1571,6 +1526,7 @@ begin
         end if; 
     end process;
 
+    p_ZN12_GLOBAL_N_110lineBufferE_1_d0 <= grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
 
     p_ZN12_GLOBAL_N_110lineBufferE_1_we0_assign_proc : process(ap_CS_fsm_state37, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_we0)
     begin
@@ -1578,6 +1534,26 @@ begin
             p_ZN12_GLOBAL_N_110lineBufferE_1_we0 <= grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
         else 
             p_ZN12_GLOBAL_N_110lineBufferE_1_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    p_anonymous_namespace_rowsReceived_o_assign_proc : process(p_anonymous_namespace_rowsReceived_i, add_ln50_fu_97_p2, ap_CS_fsm_state37)
+    begin
+        if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
+            p_anonymous_namespace_rowsReceived_o <= add_ln50_fu_97_p2;
+        else 
+            p_anonymous_namespace_rowsReceived_o <= p_anonymous_namespace_rowsReceived_i;
+        end if; 
+    end process;
+
+
+    p_anonymous_namespace_rowsReceived_o_ap_vld_assign_proc : process(ap_CS_fsm_state37, grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_done)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state37) and (grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_done = ap_const_logic_1))) then 
+            p_anonymous_namespace_rowsReceived_o_ap_vld <= ap_const_logic_1;
+        else 
+            p_anonymous_namespace_rowsReceived_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 

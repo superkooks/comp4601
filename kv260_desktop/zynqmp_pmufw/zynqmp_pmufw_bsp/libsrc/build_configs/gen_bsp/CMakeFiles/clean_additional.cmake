@@ -1,0 +1,40 @@
+# Additional clean files
+cmake_minimum_required(VERSION 3.16)
+
+if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
+  file(REMOVE_RECURSE
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/sleep.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xfpga_config.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilfpga.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilfpga_pcap.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilfpga_pcap_common.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilskey_bbramps_zynqmp_hw.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilskey_bsp_config.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilskey_eps_zynqmp.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilskey_eps_zynqmp_hw.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilskey_eps_zynqmp_puf.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xilskey_utils.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xiltimer.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_aes.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_aes_hw.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_aesalginfo.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_config.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_cryptochk.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_rsa.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_rsa_core.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_rsa_hw.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_rsaalginfo.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_sha.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_sha3alginfo.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_sha_hw.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_sss.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_utils.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xsecure_ver.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/include/xtimer_config.h"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/lib/libxilfpga.a"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/lib/libxilsecure.a"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/lib/libxilskey.a"
+  "/home/superkooks/Uni/COMP4601/assign/kv260_desktop/zynqmp_pmufw/zynqmp_pmufw_bsp/lib/libxiltimer.a"
+  )
+endif()

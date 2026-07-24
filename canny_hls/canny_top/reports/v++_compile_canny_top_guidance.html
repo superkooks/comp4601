@@ -3406,17 +3406,17 @@ window.onload = function () { addSorting(); }
 </head><body>
 <center><h1>Design Guidance Report</h1></center><center><table class="header" border="0">
 <tr><td><b>Copyright</b></td><td>Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.</td></tr>
-<tr><td><b>Tool Version</b></td><td>xcd v.2025.2 (win64) Build 0 </td></tr>
-<tr><td><b>Date</b></td><td>Thu Jul 23 23:06:41 2026</td></tr>
-<tr><td><b>Host</b></td><td>DESKTOP-TVJGRLA running 64-bit major release  (build 9200)</td></tr>
-<tr><td><b>Command</b></td><td>C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\Users\twhsaw\Projects\comp4601\canny_hls\hls_config.cfg --work_dir canny_top </td></tr>
+<tr><td><b>Tool Version</b></td><td>xcd v.2025.2 (lin64) Build 0 </td></tr>
+<tr><td><b>Date</b></td><td>Fri Jul 24 16:27:52 2026</td></tr>
+<tr><td><b>Host</b></td><td>palace running 64-bit Arch Linux</td></tr>
+<tr><td><b>Command</b></td><td>/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/v++  -c --mode hls --config /home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg --work_dir canny_top </td></tr>
 </table></center><br>
 <table class="toc" border="1"><tr><td><b>Table of Contents</b></td></tr>
 <tr><td><a href="#REPORT SUMMARY">1 REPORT SUMMARY</a></tr></td>
 <tr><td><a href="#VIOLATION DETAILS">2 VIOLATION DETAILS</a></tr></td>
 </table>
 <a name="REPORT SUMMARY"></a><h1>1 REPORT SUMMARY</h1>
-<pre>Violations found: 26
+<pre>Violations found: 39
 </pre>
 <pre>Rule Specs Violated: 3
 </pre>
@@ -3434,7 +3434,18 @@ window.onload = function () { addSorting(); }
 <th align="left" width="380">Resolution</th>
 </tr>
 <tr>
-<td align="left">3</td>
+<td align="left">15</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.canny_top.Kernel</td>
+<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_22', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">5</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3444,60 +3455,28 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">12</td>
+<td align="left">39</td>
 <td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_118_2' (loop 'VITIS_LOOP_118_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_16_0_load_7', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/sobel.cpp#line=143">sobel.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/canny_top.cpp#line=25">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_16_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_16_0'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">21</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'hysteresis_Pipeline_VITIS_LOOP_108_2' (loop 'VITIS_LOOP_108_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_6_0_load_3', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=26">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=117">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/canny_top.cpp#line=28">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_6_0' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_6_0'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">9</td>
-<td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Throughput Related</td>
-<td align="left">Accelerator.canny_top.Throughput</td>
-<td align="left">%s</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">6</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_9', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
-</td>
+<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">26</td>
 <td align="left">Kernel</td>
-<td align="left">ADVISORY</td>
+<td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">%s</td>
+<td align="left">The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_3', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=30">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=123">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/canny_top.cpp#line=33">canny_top.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.
+</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">14</td>
+<td align="left">16</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3507,18 +3486,28 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">8</td>
+<td align="left">14</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_22', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
+<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_12', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
 </td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">25</td>
+<td align="left">4</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">38</td>
 <td align="left">Kernel</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3528,7 +3517,39 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">24</td>
+<td align="left">25</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.canny_top.Kernel</td>
+<td align="left">The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_1', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=28">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=123">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/canny_top.cpp#line=33">canny_top.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.canny_top.Kernel</td>
+<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_9', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">37</td>
 <td align="left">Interface</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3538,7 +3559,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">2</td>
+<td align="left">24</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3558,18 +3579,18 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">7</td>
+<td align="left">12</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_12', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
+<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_5', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
 </td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">15</td>
+<td align="left">36</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3579,7 +3600,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">16</td>
+<td align="left">31</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3589,29 +3610,37 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">19</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
+<td align="left">21</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'hysteresis_Pipeline_VITIS_LOOP_108_2' (loop 'VITIS_LOOP_108_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_6_0_load_3', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=26">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=117">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/canny_top.cpp#line=28">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_6_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_6_0'.
-</td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
 <td align="left">20</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'hysteresis_Pipeline_VITIS_LOOP_108_2' (loop 'VITIS_LOOP_108_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_6_0_load_5', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=28">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=117">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/canny_top.cpp#line=28">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_6_0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_6_0'.
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">17</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3621,7 +3650,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">10</td>
+<td align="left">2</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3631,18 +3660,7 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">1</td>
-<td align="left">Interface</td>
-<td align="left">ADVISORY</td>
-<td align="left"><undefined></td>
-<td align="left">HLS Interface Related</td>
-<td align="left">Accelerator.canny_top.Interface</td>
-<td align="left">Multiple burst writes of length 8 and bit width 512 has been inferred on bundle 'gmem_out'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/output_row.cpp#line=20">output_row.cpp</a>)
-</td>
-<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
-</tr>
-<tr>
-<td align="left">13</td>
+<td align="left">29</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3658,23 +3676,23 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_118_2' (loop 'VITIS_LOOP_118_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_16_0_load_2', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/sobel.cpp#line=143">sobel.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/canny_top.cpp#line=25">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_16_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_16_0'.
+<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_2', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
 </td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">4</td>
-<td align="left">Kernel</td>
-<td align="left">WARNING</td>
+<td align="left">1</td>
+<td align="left">Interface</td>
+<td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
-<td align="left">HLS Kernel Related</td>
-<td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_2', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
+<td align="left">HLS Interface Related</td>
+<td align="left">Accelerator.canny_top.Interface</td>
+<td align="left">Multiple burst writes of length 8 and bit width 512 has been inferred on bundle 'gmem'. These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings. (<a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/output_row.cpp#line=20">output_row.cpp</a>)
 </td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">23</td>
+<td align="left">35</td>
 <td align="left">Throughput</td>
 <td align="left">ADVISORY</td>
 <td align="left"><undefined></td>
@@ -3684,14 +3702,75 @@ window.onload = function () { addSorting(); }
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
-<td align="left">5</td>
+<td align="left">28</td>
 <td align="left">Kernel</td>
 <td align="left">WARNING</td>
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_5', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/gaussian_blur.cpp#line=93">gaussian_blur.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.
+<td align="left">The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_3', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=30">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=123">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/canny_top.cpp#line=33">canny_top.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.
 </td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">34</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.canny_top.Kernel</td>
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_118_2' (loop 'VITIS_LOOP_118_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_32_0_load_7', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/sobel.cpp#line=143">sobel.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/canny_top.cpp#line=30">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_32_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_32_0'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">33</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 <tr>
@@ -3701,8 +3780,59 @@ window.onload = function () { addSorting(); }
 <td align="left"><undefined></td>
 <td align="left">HLS Kernel Related</td>
 <td align="left">Accelerator.canny_top.Kernel</td>
-<td align="left">The II Violation in module 'hysteresis_Pipeline_VITIS_LOOP_108_2' (loop 'VITIS_LOOP_108_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_6_0_load_1', <a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=24">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/hysteresis.cpp#line=117">hysteresis.cpp</a>-><a href="file:///C:/Users/twhsaw/Projects/comp4601/canny_hls\../src/canny_top.cpp#line=28">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_6_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_6_0'.
+<td align="left">The II Violation in module 'sobel_Pipeline_VITIS_LOOP_118_2' (loop 'VITIS_LOOP_118_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_32_0_load_2', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/sobel.cpp#line=143">sobel.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/canny_top.cpp#line=30">canny_top.cpp</a>) on array 'p_anonymous_namespace_lineBuffer_32_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_32_0'.
 </td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">32</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">Kernel</td>
+<td align="left">WARNING</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Kernel Related</td>
+<td align="left">Accelerator.canny_top.Kernel</td>
+<td align="left">The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_5', <a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=32">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/hysteresis.cpp#line=123">hysteresis.cpp</a>-><a href="file:///home/superkooks/Uni/COMP4601/assign/canny_hls/../src/canny_top.cpp#line=33">canny_top.cpp</a>) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.
+</td>
+<td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
+</tr>
+<tr>
+<td align="left">17</td>
+<td align="left">Throughput</td>
+<td align="left">ADVISORY</td>
+<td align="left"><undefined></td>
+<td align="left">HLS Throughput Related</td>
+<td align="left">Accelerator.canny_top.Throughput</td>
+<td align="left">%s</td>
 <td align="left"><a href="http:///docs.amd.com/access/sources/dita/map?Doc_Version=2025.2%20English&url=ug1399-vitis-hls">Vitis HLS User Guide (UG1399)</a></td>
 </tr>
 </table>

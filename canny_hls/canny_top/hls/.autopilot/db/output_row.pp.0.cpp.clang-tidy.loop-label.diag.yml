@@ -1,16 +1,16 @@
 ---
-MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/output_row.pp.0.cpp'
+MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/output_row.pp.0.cpp'
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_20_1:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\output_row.cpp'
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/output_row.cpp'
       FileOffset:      20
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\output_row.pp.0.cpp'
-          Offset:          21964
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/output_row.pp.0.cpp'
+          Offset:          20491
           Length:          0
           ReplacementText: 'VITIS_LOOP_20_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
 ...

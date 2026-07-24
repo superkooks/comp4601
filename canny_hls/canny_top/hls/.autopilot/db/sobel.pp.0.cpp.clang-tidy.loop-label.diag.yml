@@ -1,76 +1,76 @@
 ---
-MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
+MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_68_1:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\sobel.cpp'
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp'
       FileOffset:      68
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\sobel.pp.0.cpp'
-          Offset:          466989
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
+          Offset:          581367
           Length:          0
           ReplacementText: 'VITIS_LOOP_68_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_69_2:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\sobel.cpp'
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp'
       FileOffset:      69
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\sobel.pp.0.cpp'
-          Offset:          467043
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
+          Offset:          581421
           Length:          0
           ReplacementText: 'VITIS_LOOP_69_2: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_89_1:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\sobel.cpp'
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp'
       FileOffset:      89
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\sobel.pp.0.cpp'
-          Offset:          467416
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
+          Offset:          581794
           Length:          0
           ReplacementText: 'VITIS_LOOP_89_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_118_2:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\sobel.cpp'
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp'
       FileOffset:      118
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\sobel.pp.0.cpp'
-          Offset:          467939
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
+          Offset:          582317
           Length:          0
           ReplacementText: 'VITIS_LOOP_118_2: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_122_3:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\sobel.cpp'
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp'
       FileOffset:      122
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\sobel.pp.0.cpp'
-          Offset:          468055
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
+          Offset:          582433
           Length:          0
           ReplacementText: 'VITIS_LOOP_122_3: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
       Message:         'Added loop label VITIS_LOOP_135_4:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\sobel.cpp'
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp'
       FileOffset:      135
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\sobel.pp.0.cpp'
-          Offset:          468406
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp'
+          Offset:          582784
           Length:          0
           ReplacementText: 'VITIS_LOOP_135_4: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
 ...

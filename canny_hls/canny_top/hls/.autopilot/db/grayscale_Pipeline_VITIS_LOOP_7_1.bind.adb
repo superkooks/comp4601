@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>gmem_in</name>
+						<name>gmem</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -73,7 +73,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>4</if_type>
@@ -130,7 +130,7 @@
 						<id>4</id>
 						<name>column12</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -138,16 +138,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -236,7 +236,7 @@
 						<id>7</id>
 						<name>column12_write_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -244,16 +244,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -342,7 +342,7 @@
 						<id>10</id>
 						<name>column</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -350,16 +350,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -388,7 +388,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>85</item>
-					<item>280</item>
+					<item>279</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -406,7 +406,7 @@
 						<id>11</id>
 						<name>zext_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -414,16 +414,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -469,7 +469,7 @@
 						<id>12</id>
 						<name>zext_ln7_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -477,16 +477,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -532,7 +532,7 @@
 						<id>16</id>
 						<name>p_shl</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -540,16 +540,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -597,7 +597,7 @@
 						<id>17</id>
 						<name>sub_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -605,16 +605,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -661,7 +661,7 @@
 						<id>18</id>
 						<name>zext_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -669,16 +669,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -724,7 +724,7 @@
 						<id>19</id>
 						<name>add_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -732,16 +732,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -788,7 +788,7 @@
 						<id>20</id>
 						<name>trunc_ln9_6</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -796,16 +796,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -828,7 +828,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>62</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -854,7 +854,7 @@
 						<id>21</id>
 						<name>sext_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -862,16 +862,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -907,7 +907,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -915,9 +915,9 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>gmem_in_addr</name>
+						<name>gmem_addr</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -925,16 +925,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -957,7 +957,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -971,7 +971,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -979,9 +979,9 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>gmem_in_load_req</name>
+						<name>gmem_load_req</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -989,16 +989,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1044,9 +1044,9 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>gmem_in_addr_read</name>
+						<name>gmem_addr_read</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1054,16 +1054,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1086,14 +1086,14 @@
 						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
 					<item>114</item>
 					<item>115</item>
-					<item>277</item>
+					<item>276</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -1111,7 +1111,7 @@
 						<id>25</id>
 						<name>trunc_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1119,16 +1119,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1151,7 +1151,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1164,7 +1164,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_21">
@@ -1174,7 +1174,7 @@
 						<id>26</id>
 						<name>shl_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1182,16 +1182,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1214,7 +1214,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1239,7 +1239,7 @@
 						<id>27</id>
 						<name>zext_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1247,16 +1247,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1279,7 +1279,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1302,7 +1302,7 @@
 						<id>28</id>
 						<name>lshr_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1310,16 +1310,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1342,7 +1342,7 @@
 						<coreId>75</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1355,7 +1355,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.38</m_delay>
+				<m_delay>1.88</m_delay>
 				<m_topoIndex>39</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1366,7 +1366,7 @@
 						<id>29</id>
 						<name>trunc_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1374,16 +1374,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1429,7 +1429,7 @@
 						<id>30</id>
 						<name>add_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1437,16 +1437,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1493,7 +1493,7 @@
 						<id>31</id>
 						<name>zext_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1501,16 +1501,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1556,7 +1556,7 @@
 						<id>32</id>
 						<name>add_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1564,16 +1564,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1620,7 +1620,7 @@
 						<id>33</id>
 						<name>trunc_ln9_7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1628,16 +1628,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1660,7 +1660,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>62</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -1686,7 +1686,7 @@
 						<id>34</id>
 						<name>sext_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1694,16 +1694,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1739,7 +1739,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1747,9 +1747,9 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>gmem_in_addr_1</name>
+						<name>gmem_addr_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1757,16 +1757,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1789,7 +1789,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1803,7 +1803,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1811,9 +1811,9 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>gmem_in_load_1_req</name>
+						<name>gmem_load_1_req</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1821,16 +1821,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1861,7 +1861,7 @@
 					<item>139</item>
 					<item>140</item>
 					<item>141</item>
-					<item>278</item>
+					<item>277</item>
 				</oprand_edges>
 				<opcode>readreq</opcode>
 				<m_Display>0</m_Display>
@@ -1877,9 +1877,9 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>gmem_in_addr_1_read</name>
+						<name>gmem_addr_1_read</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1887,16 +1887,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1919,15 +1919,15 @@
 						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
 					<item>142</item>
 					<item>143</item>
-					<item>274</item>
-					<item>276</item>
+					<item>273</item>
+					<item>275</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -1945,7 +1945,7 @@
 						<id>38</id>
 						<name>trunc_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1953,16 +1953,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1985,7 +1985,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1998,7 +1998,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_34">
@@ -2008,7 +2008,7 @@
 						<id>39</id>
 						<name>shl_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2016,16 +2016,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2048,7 +2048,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2073,7 +2073,7 @@
 						<id>40</id>
 						<name>zext_ln9_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2081,16 +2081,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2113,7 +2113,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2136,7 +2136,7 @@
 						<id>41</id>
 						<name>lshr_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2144,16 +2144,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2176,7 +2176,7 @@
 						<coreId>75</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2189,7 +2189,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.38</m_delay>
+				<m_delay>1.88</m_delay>
 				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2200,7 +2200,7 @@
 						<id>42</id>
 						<name>trunc_ln9_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2208,16 +2208,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2263,7 +2263,7 @@
 						<id>43</id>
 						<name>add_ln9_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2271,16 +2271,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2327,7 +2327,7 @@
 						<id>44</id>
 						<name>zext_ln9_4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2335,16 +2335,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2390,7 +2390,7 @@
 						<id>45</id>
 						<name>add_ln9_4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2398,16 +2398,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2454,7 +2454,7 @@
 						<id>46</id>
 						<name>trunc_ln9_8</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2462,16 +2462,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2494,7 +2494,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>62</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -2520,7 +2520,7 @@
 						<id>47</id>
 						<name>sext_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2528,16 +2528,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2573,7 +2573,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_43">
@@ -2581,9 +2581,9 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>gmem_in_addr_2</name>
+						<name>gmem_addr_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2591,16 +2591,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2623,7 +2623,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2637,7 +2637,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_44">
@@ -2645,9 +2645,9 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>gmem_in_load_2_req</name>
+						<name>gmem_load_2_req</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2655,16 +2655,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2695,7 +2695,7 @@
 					<item>165</item>
 					<item>166</item>
 					<item>167</item>
-					<item>275</item>
+					<item>274</item>
 				</oprand_edges>
 				<opcode>readreq</opcode>
 				<m_Display>0</m_Display>
@@ -2711,9 +2711,9 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>gmem_in_addr_2_read</name>
+						<name>gmem_addr_2_read</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2721,16 +2721,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2753,15 +2753,15 @@
 						<coreId>119</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
 					<item>168</item>
 					<item>169</item>
+					<item>271</item>
 					<item>272</item>
-					<item>273</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -2779,7 +2779,7 @@
 						<id>51</id>
 						<name>trunc_ln9_4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2787,16 +2787,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2819,7 +2819,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2832,7 +2832,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_47">
@@ -2842,7 +2842,7 @@
 						<id>52</id>
 						<name>shl_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2850,16 +2850,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2882,7 +2882,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2897,7 +2897,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>47</m_topoIndex>
+				<m_topoIndex>49</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_48">
@@ -2907,7 +2907,7 @@
 						<id>53</id>
 						<name>zext_ln9_5</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2915,16 +2915,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2947,7 +2947,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2960,7 +2960,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>48</m_topoIndex>
+				<m_topoIndex>50</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_49">
@@ -2970,7 +2970,7 @@
 						<id>54</id>
 						<name>lshr_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2978,16 +2978,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3010,7 +3010,7 @@
 						<coreId>75</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3023,8 +3023,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.38</m_delay>
-				<m_topoIndex>49</m_topoIndex>
+				<m_delay>1.88</m_delay>
+				<m_topoIndex>51</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_50">
@@ -3034,7 +3034,7 @@
 						<id>55</id>
 						<name>trunc_ln9_5</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3042,16 +3042,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3087,7 +3087,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>50</m_topoIndex>
+				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_51">
@@ -3097,7 +3097,7 @@
 						<id>56</id>
 						<name>zext_ln10</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3105,16 +3105,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3160,7 +3160,7 @@
 						<id>57</id>
 						<name>zext_ln11</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>11</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3168,16 +3168,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3223,7 +3223,7 @@
 						<id>58</id>
 						<name>zext_ln10_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3231,16 +3231,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3276,7 +3276,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>51</m_topoIndex>
+				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_54">
@@ -3286,7 +3286,7 @@
 						<id>59</id>
 						<name>mul_ln10</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3294,16 +3294,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3350,7 +3350,7 @@
 						<id>60</id>
 						<name>mul_ln10_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3358,16 +3358,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3414,7 +3414,7 @@
 						<id>61</id>
 						<name>mul_ln10_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3422,16 +3422,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3468,7 +3468,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.99</m_delay>
-				<m_topoIndex>52</m_topoIndex>
+				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_57">
@@ -3478,7 +3478,7 @@
 						<id>62</id>
 						<name>zext_ln10_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3486,16 +3486,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3541,7 +3541,7 @@
 						<id>63</id>
 						<name>add_ln10</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3549,16 +3549,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3605,7 +3605,7 @@
 						<id>64</id>
 						<name>zext_ln10_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3613,16 +3613,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3668,7 +3668,7 @@
 						<id>65</id>
 						<name>gray</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3676,16 +3676,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3732,7 +3732,7 @@
 						<id>66</id>
 						<name>trunc_ln</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>14</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3740,16 +3740,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3798,7 +3798,7 @@
 						<id>67</id>
 						<name>out_grayscale_addr</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3806,16 +3806,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3863,7 +3863,7 @@
 						<id>68</id>
 						<name>out_grayscale_addr_write_ln13</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3871,16 +3871,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3925,9 +3925,9 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>column_6</name>
+						<name>column_9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3935,16 +3935,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3981,7 +3981,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.77</m_delay>
-				<m_topoIndex>33</m_topoIndex>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_65">
@@ -3991,7 +3991,7 @@
 						<id>70</id>
 						<name>icmp_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3999,16 +3999,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -4045,7 +4045,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.77</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_66">
@@ -4055,7 +4055,7 @@
 						<id>71</id>
 						<name>column12_write_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -4063,16 +4063,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -4102,8 +4102,8 @@
 					<item_version>0</item_version>
 					<item>215</item>
 					<item>216</item>
-					<item>279</item>
-					<item>281</item>
+					<item>278</item>
+					<item>280</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -4111,7 +4111,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.42</m_delay>
-				<m_topoIndex>34</m_topoIndex>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_67">
@@ -4121,7 +4121,7 @@
 						<id>72</id>
 						<name>br_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -4129,16 +4129,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -4176,7 +4176,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_68">
@@ -4346,7 +4346,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>2</content>
+				<content>6</content>
 			</item>
 			<item class_id_reference="16" object_id="_73">
 				<Value>
@@ -5428,7 +5428,7 @@
 			<item class_id_reference="20" object_id="_162">
 				<id>178</id>
 				<edge_type>1</edge_type>
-				<source_obj>29</source_obj>
+				<source_obj>55</source_obj>
 				<sink_obj>56</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -5442,7 +5442,7 @@
 			<item class_id_reference="20" object_id="_164">
 				<id>180</id>
 				<edge_type>1</edge_type>
-				<source_obj>55</source_obj>
+				<source_obj>29</source_obj>
 				<sink_obj>58</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -5650,91 +5650,91 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_194">
-				<id>269</id>
+				<id>268</id>
 				<edge_type>2</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>73</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_195">
-				<id>270</id>
+				<id>269</id>
 				<edge_type>2</edge_type>
 				<source_obj>73</source_obj>
 				<sink_obj>75</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_196">
-				<id>271</id>
+				<id>270</id>
 				<edge_type>2</edge_type>
 				<source_obj>73</source_obj>
 				<sink_obj>73</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_197">
-				<id>272</id>
+				<id>271</id>
 				<edge_type>4</edge_type>
 				<source_obj>49</source_obj>
 				<sink_obj>50</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_198">
-				<id>273</id>
+				<id>272</id>
 				<edge_type>4</edge_type>
 				<source_obj>37</source_obj>
 				<sink_obj>50</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_199">
-				<id>274</id>
+				<id>273</id>
 				<edge_type>4</edge_type>
 				<source_obj>36</source_obj>
 				<sink_obj>37</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_200">
-				<id>275</id>
+				<id>274</id>
 				<edge_type>4</edge_type>
 				<source_obj>36</source_obj>
 				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_201">
-				<id>276</id>
+				<id>275</id>
 				<edge_type>4</edge_type>
 				<source_obj>24</source_obj>
 				<sink_obj>37</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_202">
-				<id>277</id>
+				<id>276</id>
 				<edge_type>4</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_203">
-				<id>278</id>
+				<id>277</id>
 				<edge_type>4</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>36</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_204">
-				<id>279</id>
+				<id>278</id>
 				<edge_type>4</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>71</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_205">
-				<id>280</id>
+				<id>279</id>
 				<edge_type>4</edge_type>
 				<source_obj>7</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_206">
-				<id>281</id>
+				<id>280</id>
 				<edge_type>4</edge_type>
 				<source_obj>7</source_obj>
 				<sink_obj>71</sink_obj>
@@ -5765,8 +5765,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1614</mMinLatency>
-			<mMaxLatency>1614</mMaxLatency>
+			<mMinLatency>1613</mMinLatency>
+			<mMaxLatency>1613</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5808,11 +5808,11 @@
 				<item>73</item>
 			</basic_blocks>
 			<mII>3</mII>
-			<mDepth>80</mDepth>
+			<mDepth>79</mDepth>
 			<mMinTripCount>512</mMinTripCount>
 			<mMaxTripCount>512</mMaxTripCount>
-			<mMinLatency>1612</mMinLatency>
-			<mMaxLatency>1612</mMaxLatency>
+			<mMinLatency>1611</mMinLatency>
+			<mMaxLatency>1611</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5842,12 +5842,12 @@
 	</cdfg_regions>
 	<fsm class_id="24" tracking_level="1" version="0" object_id="_211">
 		<states class_id="25" tracking_level="0" version="0">
-			<count>80</count>
+			<count>79</count>
 			<item_version>0</item_version>
 			<item class_id="26" tracking_level="1" version="0" object_id="_212">
 				<id>1</id>
 				<operations class_id="27" tracking_level="0" version="0">
-					<count>17</count>
+					<count>15</count>
 					<item_version>0</item_version>
 					<item class_id="28" tracking_level="1" version="0" object_id="_213">
 						<id>4</id>
@@ -5910,37 +5910,37 @@
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_225">
-						<id>21</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_226">
-						<id>22</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_227">
 						<id>25</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_228">
+					<item class_id_reference="28" object_id="_226">
 						<id>70</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_229">
+					<item class_id_reference="28" object_id="_227">
 						<id>72</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_230">
+			<item class_id_reference="26" object_id="_228">
 				<id>2</id>
 				<operations>
 					<count>8</count>
 					<item_version>0</item_version>
+					<item class_id_reference="28" object_id="_229">
+						<id>21</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_230">
+						<id>22</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
 					<item class_id_reference="28" object_id="_231">
 						<id>23</id>
 						<stage>71</stage>
@@ -5967,31 +5967,31 @@
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_236">
-						<id>34</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_237">
-						<id>35</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_238">
 						<id>38</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_239">
+			<item class_id_reference="26" object_id="_237">
 				<id>3</id>
 				<operations>
 					<count>11</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_240">
+					<item class_id_reference="28" object_id="_238">
 						<id>23</id>
 						<stage>70</stage>
 						<latency>71</latency>
+					</item>
+					<item class_id_reference="28" object_id="_239">
+						<id>34</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_240">
+						<id>35</id>
+						<stage>1</stage>
+						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_241">
 						<id>36</id>
@@ -6019,46 +6019,46 @@
 						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_246">
-						<id>47</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_247">
-						<id>48</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_248">
 						<id>51</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_249">
+					<item class_id_reference="28" object_id="_247">
 						<id>69</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_250">
+					<item class_id_reference="28" object_id="_248">
 						<id>71</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_251">
+			<item class_id_reference="26" object_id="_249">
 				<id>4</id>
 				<operations>
-					<count>3</count>
+					<count>5</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_252">
+					<item class_id_reference="28" object_id="_250">
 						<id>23</id>
 						<stage>69</stage>
 						<latency>71</latency>
 					</item>
-					<item class_id_reference="28" object_id="_253">
+					<item class_id_reference="28" object_id="_251">
 						<id>36</id>
 						<stage>70</stage>
 						<latency>71</latency>
+					</item>
+					<item class_id_reference="28" object_id="_252">
+						<id>47</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_253">
+						<id>48</id>
+						<stage>1</stage>
+						<latency>1</latency>
 					</item>
 					<item class_id_reference="28" object_id="_254">
 						<id>49</id>
@@ -7625,7 +7625,7 @@
 			<item class_id_reference="26" object_id="_538">
 				<id>75</id>
 				<operations>
-					<count>5</count>
+					<count>7</count>
 					<item_version>0</item_version>
 					<item class_id_reference="28" object_id="_539">
 						<id>39</id>
@@ -7652,177 +7652,170 @@
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-				</operations>
-			</item>
-			<item class_id_reference="26" object_id="_544">
-				<id>76</id>
-				<operations>
-					<count>6</count>
-					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_545">
-						<id>52</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_546">
-						<id>53</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_547">
-						<id>54</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_548">
-						<id>55</id>
-						<stage>1</stage>
-						<latency>1</latency>
-					</item>
-					<item class_id_reference="28" object_id="_549">
+					<item class_id_reference="28" object_id="_544">
 						<id>58</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_550">
+					<item class_id_reference="28" object_id="_545">
 						<id>61</id>
 						<stage>3</stage>
 						<latency>3</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_551">
-				<id>77</id>
+			<item class_id_reference="26" object_id="_546">
+				<id>76</id>
 				<operations>
-					<count>3</count>
+					<count>7</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_552">
+					<item class_id_reference="28" object_id="_547">
+						<id>52</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_548">
+						<id>53</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_549">
+						<id>54</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_550">
+						<id>55</id>
+						<stage>1</stage>
+						<latency>1</latency>
+					</item>
+					<item class_id_reference="28" object_id="_551">
 						<id>57</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_553">
+					<item class_id_reference="28" object_id="_552">
 						<id>60</id>
 						<stage>3</stage>
 						<latency>3</latency>
 					</item>
-					<item class_id_reference="28" object_id="_554">
+					<item class_id_reference="28" object_id="_553">
 						<id>61</id>
 						<stage>2</stage>
 						<latency>3</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_555">
-				<id>78</id>
+			<item class_id_reference="26" object_id="_554">
+				<id>77</id>
 				<operations>
 					<count>6</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_556">
+					<item class_id_reference="28" object_id="_555">
 						<id>56</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_557">
+					<item class_id_reference="28" object_id="_556">
 						<id>59</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_558">
+					<item class_id_reference="28" object_id="_557">
 						<id>60</id>
 						<stage>2</stage>
 						<latency>3</latency>
 					</item>
-					<item class_id_reference="28" object_id="_559">
+					<item class_id_reference="28" object_id="_558">
 						<id>61</id>
 						<stage>1</stage>
 						<latency>3</latency>
 					</item>
-					<item class_id_reference="28" object_id="_560">
+					<item class_id_reference="28" object_id="_559">
 						<id>62</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_561">
+					<item class_id_reference="28" object_id="_560">
 						<id>63</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_562">
-				<id>79</id>
+			<item class_id_reference="26" object_id="_561">
+				<id>78</id>
 				<operations>
 					<count>4</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_563">
+					<item class_id_reference="28" object_id="_562">
 						<id>60</id>
 						<stage>1</stage>
 						<latency>3</latency>
 					</item>
-					<item class_id_reference="28" object_id="_564">
+					<item class_id_reference="28" object_id="_563">
 						<id>63</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_565">
+					<item class_id_reference="28" object_id="_564">
 						<id>64</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_566">
+					<item class_id_reference="28" object_id="_565">
 						<id>65</id>
 						<stage>2</stage>
 						<latency>2</latency>
 					</item>
 				</operations>
 			</item>
-			<item class_id_reference="26" object_id="_567">
-				<id>80</id>
+			<item class_id_reference="26" object_id="_566">
+				<id>79</id>
 				<operations>
 					<count>9</count>
 					<item_version>0</item_version>
-					<item class_id_reference="28" object_id="_568">
+					<item class_id_reference="28" object_id="_567">
 						<id>11</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_569">
+					<item class_id_reference="28" object_id="_568">
 						<id>13</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_570">
+					<item class_id_reference="28" object_id="_569">
 						<id>14</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_571">
+					<item class_id_reference="28" object_id="_570">
 						<id>15</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_572">
+					<item class_id_reference="28" object_id="_571">
 						<id>65</id>
 						<stage>1</stage>
 						<latency>2</latency>
 					</item>
-					<item class_id_reference="28" object_id="_573">
+					<item class_id_reference="28" object_id="_572">
 						<id>66</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_574">
+					<item class_id_reference="28" object_id="_573">
 						<id>67</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_575">
+					<item class_id_reference="28" object_id="_574">
 						<id>68</id>
 						<stage>1</stage>
 						<latency>1</latency>
 					</item>
-					<item class_id_reference="28" object_id="_576">
+					<item class_id_reference="28" object_id="_575">
 						<id>74</id>
 						<stage>1</stage>
 						<latency>1</latency>
@@ -7831,9 +7824,9 @@
 			</item>
 		</states>
 		<transitions class_id="29" tracking_level="0" version="0">
-			<count>79</count>
+			<count>78</count>
 			<item_version>0</item_version>
-			<item class_id="30" tracking_level="1" version="0" object_id="_577">
+			<item class_id="30" tracking_level="1" version="0" object_id="_576">
 				<inState>1</inState>
 				<outState>2</outState>
 				<condition class_id="31" tracking_level="0" version="0">
@@ -7848,7 +7841,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_578">
+			<item class_id_reference="30" object_id="_577">
 				<inState>2</inState>
 				<outState>3</outState>
 				<condition>
@@ -7863,7 +7856,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_579">
+			<item class_id_reference="30" object_id="_578">
 				<inState>3</inState>
 				<outState>4</outState>
 				<condition>
@@ -7878,7 +7871,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_580">
+			<item class_id_reference="30" object_id="_579">
 				<inState>4</inState>
 				<outState>5</outState>
 				<condition>
@@ -7893,7 +7886,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_581">
+			<item class_id_reference="30" object_id="_580">
 				<inState>5</inState>
 				<outState>6</outState>
 				<condition>
@@ -7908,7 +7901,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_582">
+			<item class_id_reference="30" object_id="_581">
 				<inState>6</inState>
 				<outState>7</outState>
 				<condition>
@@ -7923,7 +7916,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_583">
+			<item class_id_reference="30" object_id="_582">
 				<inState>7</inState>
 				<outState>8</outState>
 				<condition>
@@ -7938,7 +7931,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_584">
+			<item class_id_reference="30" object_id="_583">
 				<inState>8</inState>
 				<outState>9</outState>
 				<condition>
@@ -7953,7 +7946,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_585">
+			<item class_id_reference="30" object_id="_584">
 				<inState>9</inState>
 				<outState>10</outState>
 				<condition>
@@ -7968,7 +7961,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_586">
+			<item class_id_reference="30" object_id="_585">
 				<inState>10</inState>
 				<outState>11</outState>
 				<condition>
@@ -7983,7 +7976,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_587">
+			<item class_id_reference="30" object_id="_586">
 				<inState>11</inState>
 				<outState>12</outState>
 				<condition>
@@ -7998,7 +7991,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_588">
+			<item class_id_reference="30" object_id="_587">
 				<inState>12</inState>
 				<outState>13</outState>
 				<condition>
@@ -8013,7 +8006,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_589">
+			<item class_id_reference="30" object_id="_588">
 				<inState>13</inState>
 				<outState>14</outState>
 				<condition>
@@ -8028,7 +8021,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_590">
+			<item class_id_reference="30" object_id="_589">
 				<inState>14</inState>
 				<outState>15</outState>
 				<condition>
@@ -8043,7 +8036,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_591">
+			<item class_id_reference="30" object_id="_590">
 				<inState>15</inState>
 				<outState>16</outState>
 				<condition>
@@ -8058,7 +8051,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_592">
+			<item class_id_reference="30" object_id="_591">
 				<inState>16</inState>
 				<outState>17</outState>
 				<condition>
@@ -8073,7 +8066,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_593">
+			<item class_id_reference="30" object_id="_592">
 				<inState>17</inState>
 				<outState>18</outState>
 				<condition>
@@ -8088,7 +8081,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_594">
+			<item class_id_reference="30" object_id="_593">
 				<inState>18</inState>
 				<outState>19</outState>
 				<condition>
@@ -8103,7 +8096,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_595">
+			<item class_id_reference="30" object_id="_594">
 				<inState>19</inState>
 				<outState>20</outState>
 				<condition>
@@ -8118,7 +8111,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_596">
+			<item class_id_reference="30" object_id="_595">
 				<inState>20</inState>
 				<outState>21</outState>
 				<condition>
@@ -8133,7 +8126,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_597">
+			<item class_id_reference="30" object_id="_596">
 				<inState>21</inState>
 				<outState>22</outState>
 				<condition>
@@ -8148,7 +8141,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_598">
+			<item class_id_reference="30" object_id="_597">
 				<inState>22</inState>
 				<outState>23</outState>
 				<condition>
@@ -8163,7 +8156,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_599">
+			<item class_id_reference="30" object_id="_598">
 				<inState>23</inState>
 				<outState>24</outState>
 				<condition>
@@ -8178,7 +8171,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_600">
+			<item class_id_reference="30" object_id="_599">
 				<inState>24</inState>
 				<outState>25</outState>
 				<condition>
@@ -8193,7 +8186,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_601">
+			<item class_id_reference="30" object_id="_600">
 				<inState>25</inState>
 				<outState>26</outState>
 				<condition>
@@ -8208,7 +8201,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_602">
+			<item class_id_reference="30" object_id="_601">
 				<inState>26</inState>
 				<outState>27</outState>
 				<condition>
@@ -8223,7 +8216,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_603">
+			<item class_id_reference="30" object_id="_602">
 				<inState>27</inState>
 				<outState>28</outState>
 				<condition>
@@ -8238,7 +8231,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_604">
+			<item class_id_reference="30" object_id="_603">
 				<inState>28</inState>
 				<outState>29</outState>
 				<condition>
@@ -8253,7 +8246,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_605">
+			<item class_id_reference="30" object_id="_604">
 				<inState>29</inState>
 				<outState>30</outState>
 				<condition>
@@ -8268,7 +8261,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_606">
+			<item class_id_reference="30" object_id="_605">
 				<inState>30</inState>
 				<outState>31</outState>
 				<condition>
@@ -8283,7 +8276,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_607">
+			<item class_id_reference="30" object_id="_606">
 				<inState>31</inState>
 				<outState>32</outState>
 				<condition>
@@ -8298,7 +8291,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_608">
+			<item class_id_reference="30" object_id="_607">
 				<inState>32</inState>
 				<outState>33</outState>
 				<condition>
@@ -8313,7 +8306,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_609">
+			<item class_id_reference="30" object_id="_608">
 				<inState>33</inState>
 				<outState>34</outState>
 				<condition>
@@ -8328,7 +8321,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_610">
+			<item class_id_reference="30" object_id="_609">
 				<inState>34</inState>
 				<outState>35</outState>
 				<condition>
@@ -8343,7 +8336,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_611">
+			<item class_id_reference="30" object_id="_610">
 				<inState>35</inState>
 				<outState>36</outState>
 				<condition>
@@ -8358,7 +8351,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_612">
+			<item class_id_reference="30" object_id="_611">
 				<inState>36</inState>
 				<outState>37</outState>
 				<condition>
@@ -8373,7 +8366,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_613">
+			<item class_id_reference="30" object_id="_612">
 				<inState>37</inState>
 				<outState>38</outState>
 				<condition>
@@ -8388,7 +8381,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_614">
+			<item class_id_reference="30" object_id="_613">
 				<inState>38</inState>
 				<outState>39</outState>
 				<condition>
@@ -8403,7 +8396,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_615">
+			<item class_id_reference="30" object_id="_614">
 				<inState>39</inState>
 				<outState>40</outState>
 				<condition>
@@ -8418,7 +8411,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_616">
+			<item class_id_reference="30" object_id="_615">
 				<inState>40</inState>
 				<outState>41</outState>
 				<condition>
@@ -8433,7 +8426,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_617">
+			<item class_id_reference="30" object_id="_616">
 				<inState>41</inState>
 				<outState>42</outState>
 				<condition>
@@ -8448,7 +8441,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_618">
+			<item class_id_reference="30" object_id="_617">
 				<inState>42</inState>
 				<outState>43</outState>
 				<condition>
@@ -8463,7 +8456,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_619">
+			<item class_id_reference="30" object_id="_618">
 				<inState>43</inState>
 				<outState>44</outState>
 				<condition>
@@ -8478,7 +8471,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_620">
+			<item class_id_reference="30" object_id="_619">
 				<inState>44</inState>
 				<outState>45</outState>
 				<condition>
@@ -8493,7 +8486,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_621">
+			<item class_id_reference="30" object_id="_620">
 				<inState>45</inState>
 				<outState>46</outState>
 				<condition>
@@ -8508,7 +8501,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_622">
+			<item class_id_reference="30" object_id="_621">
 				<inState>46</inState>
 				<outState>47</outState>
 				<condition>
@@ -8523,7 +8516,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_623">
+			<item class_id_reference="30" object_id="_622">
 				<inState>47</inState>
 				<outState>48</outState>
 				<condition>
@@ -8538,7 +8531,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_624">
+			<item class_id_reference="30" object_id="_623">
 				<inState>48</inState>
 				<outState>49</outState>
 				<condition>
@@ -8553,7 +8546,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_625">
+			<item class_id_reference="30" object_id="_624">
 				<inState>49</inState>
 				<outState>50</outState>
 				<condition>
@@ -8568,7 +8561,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_626">
+			<item class_id_reference="30" object_id="_625">
 				<inState>50</inState>
 				<outState>51</outState>
 				<condition>
@@ -8583,7 +8576,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_627">
+			<item class_id_reference="30" object_id="_626">
 				<inState>51</inState>
 				<outState>52</outState>
 				<condition>
@@ -8598,7 +8591,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_628">
+			<item class_id_reference="30" object_id="_627">
 				<inState>52</inState>
 				<outState>53</outState>
 				<condition>
@@ -8613,7 +8606,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_629">
+			<item class_id_reference="30" object_id="_628">
 				<inState>53</inState>
 				<outState>54</outState>
 				<condition>
@@ -8628,7 +8621,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_630">
+			<item class_id_reference="30" object_id="_629">
 				<inState>54</inState>
 				<outState>55</outState>
 				<condition>
@@ -8643,7 +8636,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_631">
+			<item class_id_reference="30" object_id="_630">
 				<inState>55</inState>
 				<outState>56</outState>
 				<condition>
@@ -8658,7 +8651,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_632">
+			<item class_id_reference="30" object_id="_631">
 				<inState>56</inState>
 				<outState>57</outState>
 				<condition>
@@ -8673,7 +8666,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_633">
+			<item class_id_reference="30" object_id="_632">
 				<inState>57</inState>
 				<outState>58</outState>
 				<condition>
@@ -8688,7 +8681,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_634">
+			<item class_id_reference="30" object_id="_633">
 				<inState>58</inState>
 				<outState>59</outState>
 				<condition>
@@ -8703,7 +8696,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_635">
+			<item class_id_reference="30" object_id="_634">
 				<inState>59</inState>
 				<outState>60</outState>
 				<condition>
@@ -8718,7 +8711,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_636">
+			<item class_id_reference="30" object_id="_635">
 				<inState>60</inState>
 				<outState>61</outState>
 				<condition>
@@ -8733,7 +8726,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_637">
+			<item class_id_reference="30" object_id="_636">
 				<inState>61</inState>
 				<outState>62</outState>
 				<condition>
@@ -8748,7 +8741,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_638">
+			<item class_id_reference="30" object_id="_637">
 				<inState>62</inState>
 				<outState>63</outState>
 				<condition>
@@ -8763,7 +8756,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_639">
+			<item class_id_reference="30" object_id="_638">
 				<inState>63</inState>
 				<outState>64</outState>
 				<condition>
@@ -8778,7 +8771,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_640">
+			<item class_id_reference="30" object_id="_639">
 				<inState>64</inState>
 				<outState>65</outState>
 				<condition>
@@ -8793,7 +8786,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_641">
+			<item class_id_reference="30" object_id="_640">
 				<inState>65</inState>
 				<outState>66</outState>
 				<condition>
@@ -8808,7 +8801,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_642">
+			<item class_id_reference="30" object_id="_641">
 				<inState>66</inState>
 				<outState>67</outState>
 				<condition>
@@ -8823,7 +8816,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_643">
+			<item class_id_reference="30" object_id="_642">
 				<inState>67</inState>
 				<outState>68</outState>
 				<condition>
@@ -8838,7 +8831,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_644">
+			<item class_id_reference="30" object_id="_643">
 				<inState>68</inState>
 				<outState>69</outState>
 				<condition>
@@ -8853,7 +8846,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_645">
+			<item class_id_reference="30" object_id="_644">
 				<inState>69</inState>
 				<outState>70</outState>
 				<condition>
@@ -8868,7 +8861,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_646">
+			<item class_id_reference="30" object_id="_645">
 				<inState>70</inState>
 				<outState>71</outState>
 				<condition>
@@ -8883,7 +8876,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_647">
+			<item class_id_reference="30" object_id="_646">
 				<inState>71</inState>
 				<outState>72</outState>
 				<condition>
@@ -8898,7 +8891,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_648">
+			<item class_id_reference="30" object_id="_647">
 				<inState>72</inState>
 				<outState>73</outState>
 				<condition>
@@ -8913,7 +8906,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_649">
+			<item class_id_reference="30" object_id="_648">
 				<inState>73</inState>
 				<outState>74</outState>
 				<condition>
@@ -8928,7 +8921,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_650">
+			<item class_id_reference="30" object_id="_649">
 				<inState>74</inState>
 				<outState>75</outState>
 				<condition>
@@ -8943,7 +8936,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_651">
+			<item class_id_reference="30" object_id="_650">
 				<inState>75</inState>
 				<outState>76</outState>
 				<condition>
@@ -8958,7 +8951,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_652">
+			<item class_id_reference="30" object_id="_651">
 				<inState>76</inState>
 				<outState>77</outState>
 				<condition>
@@ -8973,7 +8966,7 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_653">
+			<item class_id_reference="30" object_id="_652">
 				<inState>77</inState>
 				<outState>78</outState>
 				<condition>
@@ -8988,24 +8981,9 @@
 					</sop>
 				</condition>
 			</item>
-			<item class_id_reference="30" object_id="_654">
+			<item class_id_reference="30" object_id="_653">
 				<inState>78</inState>
 				<outState>79</outState>
-				<condition>
-					<id>-1</id>
-					<sop>
-						<count>1</count>
-						<item_version>0</item_version>
-						<item>
-							<count>0</count>
-							<item_version>0</item_version>
-						</item>
-					</sop>
-				</condition>
-			</item>
-			<item class_id_reference="30" object_id="_655">
-				<inState>79</inState>
-				<outState>80</outState>
 				<condition>
 					<id>-1</id>
 					<sop>
@@ -9062,7 +9040,7 @@
 		<item>
 			<first>11</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9111,14 +9089,14 @@
 		<item>
 			<first>21</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9202,14 +9180,14 @@
 		<item>
 			<first>34</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9293,14 +9271,14 @@
 		<item>
 			<first>47</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9356,91 +9334,91 @@
 		<item>
 			<first>56</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>76</first>
+				<first>75</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>75</first>
+				<first>74</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>76</first>
+				<first>75</first>
 				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>75</first>
+				<first>74</first>
 				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>64</first>
 			<second>
-				<first>78</first>
+				<first>77</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>65</first>
 			<second>
-				<first>78</first>
+				<first>77</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>67</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9475,7 +9453,7 @@
 		<item>
 			<first>74</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -9494,21 +9472,21 @@
 			<first>73</first>
 			<second>
 				<first>1</first>
-				<second>80</second>
+				<second>79</second>
 			</second>
 		</item>
 		<item>
 			<first>75</first>
 			<second>
-				<first>81</first>
-				<second>81</second>
+				<first>80</first>
+				<second>80</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="41" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="42" tracking_level="1" version="0" object_id="_656">
+		<item class_id="42" tracking_level="1" version="0" object_id="_654">
 			<region_name>VITIS_LOOP_7_1</region_name>
 			<basic_blocks>
 				<count>1</count>
@@ -9522,7 +9500,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>3</interval>
-			<pipe_depth>80</pipe_depth>
+			<pipe_depth>79</pipe_depth>
 			<mDBIIViolationVec class_id="43" tracking_level="0" version="0">
 				<count>0</count>
 				<item_version>0</item_version>
@@ -9533,7 +9511,7 @@
 		<count>55</count>
 		<item_version>0</item_version>
 		<item class_id="45" tracking_level="0" version="0">
-			<first>84</first>
+			<first>82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9541,7 +9519,7 @@
 			</second>
 		</item>
 		<item>
-			<first>88</first>
+			<first>86</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9549,7 +9527,7 @@
 			</second>
 		</item>
 		<item>
-			<first>94</first>
+			<first>92</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9557,7 +9535,7 @@
 			</second>
 		</item>
 		<item>
-			<first>101</first>
+			<first>99</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9565,7 +9543,7 @@
 			</second>
 		</item>
 		<item>
-			<first>107</first>
+			<first>105</first>
 			<second>
 				<count>213</count>
 				<item_version>0</item_version>
@@ -9785,7 +9763,7 @@
 			</second>
 		</item>
 		<item>
-			<first>114</first>
+			<first>112</first>
 			<second>
 				<count>3</count>
 				<item_version>0</item_version>
@@ -9795,7 +9773,7 @@
 			</second>
 		</item>
 		<item>
-			<first>123</first>
+			<first>121</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9803,7 +9781,7 @@
 			</second>
 		</item>
 		<item>
-			<first>128</first>
+			<first>126</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9811,7 +9789,7 @@
 			</second>
 		</item>
 		<item>
-			<first>131</first>
+			<first>129</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9819,7 +9797,7 @@
 			</second>
 		</item>
 		<item>
-			<first>135</first>
+			<first>133</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9827,7 +9805,7 @@
 			</second>
 		</item>
 		<item>
-			<first>143</first>
+			<first>141</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9835,7 +9813,7 @@
 			</second>
 		</item>
 		<item>
-			<first>149</first>
+			<first>147</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9843,7 +9821,7 @@
 			</second>
 		</item>
 		<item>
-			<first>153</first>
+			<first>151</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9851,7 +9829,7 @@
 			</second>
 		</item>
 		<item>
-			<first>159</first>
+			<first>157</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9859,23 +9837,7 @@
 			</second>
 		</item>
 		<item>
-			<first>169</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>21</item>
-			</second>
-		</item>
-		<item>
-			<first>173</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>22</item>
-			</second>
-		</item>
-		<item>
-			<first>179</first>
+			<first>167</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9883,7 +9845,7 @@
 			</second>
 		</item>
 		<item>
-			<first>183</first>
+			<first>171</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9891,7 +9853,23 @@
 			</second>
 		</item>
 		<item>
-			<first>189</first>
+			<first>177</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>21</item>
+			</second>
+		</item>
+		<item>
+			<first>180</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>22</item>
+			</second>
+		</item>
+		<item>
+			<first>187</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9899,7 +9877,7 @@
 			</second>
 		</item>
 		<item>
-			<first>194</first>
+			<first>192</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9907,7 +9885,7 @@
 			</second>
 		</item>
 		<item>
-			<first>198</first>
+			<first>196</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9915,7 +9893,7 @@
 			</second>
 		</item>
 		<item>
-			<first>203</first>
+			<first>201</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9923,23 +9901,7 @@
 			</second>
 		</item>
 		<item>
-			<first>213</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>34</item>
-			</second>
-		</item>
-		<item>
-			<first>217</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>35</item>
-			</second>
-		</item>
-		<item>
-			<first>223</first>
+			<first>211</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9947,7 +9909,23 @@
 			</second>
 		</item>
 		<item>
-			<first>227</first>
+			<first>215</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>34</item>
+			</second>
+		</item>
+		<item>
+			<first>218</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>35</item>
+			</second>
+		</item>
+		<item>
+			<first>225</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9955,7 +9933,7 @@
 			</second>
 		</item>
 		<item>
-			<first>232</first>
+			<first>230</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9963,7 +9941,7 @@
 			</second>
 		</item>
 		<item>
-			<first>236</first>
+			<first>234</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9971,7 +9949,7 @@
 			</second>
 		</item>
 		<item>
-			<first>241</first>
+			<first>239</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -9979,23 +9957,7 @@
 			</second>
 		</item>
 		<item>
-			<first>251</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>47</item>
-			</second>
-		</item>
-		<item>
-			<first>255</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>48</item>
-			</second>
-		</item>
-		<item>
-			<first>261</first>
+			<first>249</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10003,7 +9965,7 @@
 			</second>
 		</item>
 		<item>
-			<first>265</first>
+			<first>253</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10011,7 +9973,7 @@
 			</second>
 		</item>
 		<item>
-			<first>270</first>
+			<first>258</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10019,7 +9981,23 @@
 			</second>
 		</item>
 		<item>
-			<first>275</first>
+			<first>263</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>47</item>
+			</second>
+		</item>
+		<item>
+			<first>266</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>48</item>
+			</second>
+		</item>
+		<item>
+			<first>273</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10027,7 +10005,7 @@
 			</second>
 		</item>
 		<item>
-			<first>282</first>
+			<first>280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10035,7 +10013,7 @@
 			</second>
 		</item>
 		<item>
-			<first>286</first>
+			<first>284</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10043,7 +10021,7 @@
 			</second>
 		</item>
 		<item>
-			<first>292</first>
+			<first>290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10051,7 +10029,7 @@
 			</second>
 		</item>
 		<item>
-			<first>296</first>
+			<first>294</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10059,7 +10037,7 @@
 			</second>
 		</item>
 		<item>
-			<first>303</first>
+			<first>301</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10067,7 +10045,7 @@
 			</second>
 		</item>
 		<item>
-			<first>307</first>
+			<first>305</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10075,7 +10053,7 @@
 			</second>
 		</item>
 		<item>
-			<first>313</first>
+			<first>311</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10083,39 +10061,7 @@
 			</second>
 		</item>
 		<item>
-			<first>317</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>52</item>
-			</second>
-		</item>
-		<item>
-			<first>324</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>53</item>
-			</second>
-		</item>
-		<item>
-			<first>328</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>54</item>
-			</second>
-		</item>
-		<item>
-			<first>334</first>
-			<second>
-				<count>1</count>
-				<item_version>0</item_version>
-				<item>55</item>
-			</second>
-		</item>
-		<item>
-			<first>338</first>
+			<first>315</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10123,7 +10069,39 @@
 			</second>
 		</item>
 		<item>
-			<first>342</first>
+			<first>318</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>52</item>
+			</second>
+		</item>
+		<item>
+			<first>325</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>53</item>
+			</second>
+		</item>
+		<item>
+			<first>329</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>54</item>
+			</second>
+		</item>
+		<item>
+			<first>335</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>55</item>
+			</second>
+		</item>
+		<item>
+			<first>339</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10131,7 +10109,7 @@
 			</second>
 		</item>
 		<item>
-			<first>345</first>
+			<first>342</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10139,7 +10117,7 @@
 			</second>
 		</item>
 		<item>
-			<first>348</first>
+			<first>345</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10147,7 +10125,7 @@
 			</second>
 		</item>
 		<item>
-			<first>354</first>
+			<first>351</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10155,7 +10133,7 @@
 			</second>
 		</item>
 		<item>
-			<first>357</first>
+			<first>354</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10163,7 +10141,7 @@
 			</second>
 		</item>
 		<item>
-			<first>361</first>
+			<first>358</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10171,7 +10149,7 @@
 			</second>
 		</item>
 		<item>
-			<first>371</first>
+			<first>368</first>
 			<second>
 				<count>6</count>
 				<item_version>0</item_version>
@@ -10184,7 +10162,7 @@
 			</second>
 		</item>
 		<item>
-			<first>380</first>
+			<first>377</first>
 			<second>
 				<count>5</count>
 				<item_version>0</item_version>
@@ -10200,7 +10178,7 @@
 		<count>46</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>add_ln9_1_fu_189</first>
+			<first>add_ln9_1_fu_187</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10208,7 +10186,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln9_2_fu_198</first>
+			<first>add_ln9_2_fu_196</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10216,7 +10194,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln9_3_fu_227</first>
+			<first>add_ln9_3_fu_225</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10224,7 +10202,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln9_4_fu_236</first>
+			<first>add_ln9_4_fu_234</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10232,7 +10210,7 @@
 			</second>
 		</item>
 		<item>
-			<first>add_ln9_fu_153</first>
+			<first>add_ln9_fu_151</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10240,7 +10218,7 @@
 			</second>
 		</item>
 		<item>
-			<first>column12_fu_84</first>
+			<first>column12_fu_82</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10248,7 +10226,7 @@
 			</second>
 		</item>
 		<item>
-			<first>column_6_fu_265</first>
+			<first>column_9_fu_253</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10256,7 +10234,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_in_addr_1_fu_217</first>
+			<first>gmem_addr_1_fu_218</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10264,7 +10242,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_in_addr_2_fu_255</first>
+			<first>gmem_addr_2_fu_266</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10272,7 +10250,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_in_addr_fu_173</first>
+			<first>gmem_addr_fu_180</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10280,7 +10258,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln7_fu_183</first>
+			<first>icmp_ln7_fu_171</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10288,7 +10266,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln9_1_fu_307</first>
+			<first>lshr_ln9_1_fu_305</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10296,7 +10274,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln9_2_fu_328</first>
+			<first>lshr_ln9_2_fu_329</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10304,7 +10282,7 @@
 			</second>
 		</item>
 		<item>
-			<first>lshr_ln9_fu_286</first>
+			<first>lshr_ln9_fu_284</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10312,7 +10290,7 @@
 			</second>
 		</item>
 		<item>
-			<first>mul_ln10_fu_348</first>
+			<first>mul_ln10_fu_345</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10320,7 +10298,7 @@
 			</second>
 		</item>
 		<item>
-			<first>out_grayscale_addr_gep_fu_94</first>
+			<first>out_grayscale_addr_gep_fu_92</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10328,7 +10306,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_shl_fu_135</first>
+			<first>p_shl_fu_133</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10336,7 +10314,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln9_1_fu_213</first>
+			<first>sext_ln9_1_fu_215</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10344,7 +10322,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln9_2_fu_251</first>
+			<first>sext_ln9_2_fu_263</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10352,7 +10330,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sext_ln9_fu_169</first>
+			<first>sext_ln9_fu_177</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10360,7 +10338,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln9_1_fu_296</first>
+			<first>shl_ln9_1_fu_294</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10368,7 +10346,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln9_2_fu_317</first>
+			<first>shl_ln9_2_fu_318</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10376,7 +10354,7 @@
 			</second>
 		</item>
 		<item>
-			<first>shl_ln9_fu_275</first>
+			<first>shl_ln9_fu_273</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10384,7 +10362,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sub_ln9_fu_143</first>
+			<first>sub_ln9_fu_141</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10392,7 +10370,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_1_fu_292</first>
+			<first>trunc_ln9_1_fu_290</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10400,7 +10378,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_2_fu_223</first>
+			<first>trunc_ln9_2_fu_211</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10408,7 +10386,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_3_fu_313</first>
+			<first>trunc_ln9_3_fu_311</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10416,7 +10394,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_4_fu_261</first>
+			<first>trunc_ln9_4_fu_249</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10424,7 +10402,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_5_fu_334</first>
+			<first>trunc_ln9_5_fu_335</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10432,7 +10410,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_6_fu_159</first>
+			<first>trunc_ln9_6_fu_157</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10440,7 +10418,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_7_fu_203</first>
+			<first>trunc_ln9_7_fu_201</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10448,7 +10426,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_8_fu_241</first>
+			<first>trunc_ln9_8_fu_239</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10456,7 +10434,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_fu_179</first>
+			<first>trunc_ln9_fu_167</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10464,7 +10442,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln_fu_361</first>
+			<first>trunc_ln_fu_358</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10472,7 +10450,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln10_1_fu_338</first>
+			<first>zext_ln10_1_fu_315</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10480,7 +10458,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln10_3_fu_354</first>
+			<first>zext_ln10_3_fu_351</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10488,7 +10466,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln10_fu_345</first>
+			<first>zext_ln10_fu_342</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10496,7 +10474,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln11_fu_342</first>
+			<first>zext_ln11_fu_339</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10504,7 +10482,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln7_1_fu_131</first>
+			<first>zext_ln7_1_fu_129</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10512,7 +10490,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln7_fu_357</first>
+			<first>zext_ln7_fu_354</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10520,7 +10498,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln9_1_fu_282</first>
+			<first>zext_ln9_1_fu_280</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10528,7 +10506,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln9_2_fu_194</first>
+			<first>zext_ln9_2_fu_192</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10536,7 +10514,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln9_3_fu_303</first>
+			<first>zext_ln9_3_fu_301</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10544,7 +10522,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln9_4_fu_232</first>
+			<first>zext_ln9_4_fu_230</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10552,7 +10530,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln9_5_fu_324</first>
+			<first>zext_ln9_5_fu_325</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10560,7 +10538,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln9_fu_149</first>
+			<first>zext_ln9_fu_147</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10572,7 +10550,7 @@
 		<count>2</count>
 		<item_version>0</item_version>
 		<item>
-			<first>grp_fu_371</first>
+			<first>grp_fu_368</first>
 			<second>
 				<count>6</count>
 				<item_version>0</item_version>
@@ -10585,7 +10563,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_fu_380</first>
+			<first>grp_fu_377</first>
 			<second>
 				<count>5</count>
 				<item_version>0</item_version>
@@ -10601,7 +10579,7 @@
 		<count>6</count>
 		<item_version>0</item_version>
 		<item>
-			<first>column_load_fu_128</first>
+			<first>column_load_fu_126</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10609,7 +10587,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_read_fu_114</first>
+			<first>grp_read_fu_112</first>
 			<second>
 				<count>3</count>
 				<item_version>0</item_version>
@@ -10619,7 +10597,7 @@
 			</second>
 		</item>
 		<item>
-			<first>grp_readreq_fu_107</first>
+			<first>grp_readreq_fu_105</first>
 			<second>
 				<count>213</count>
 				<item_version>0</item_version>
@@ -10839,7 +10817,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln7_store_fu_123</first>
+			<first>store_ln7_store_fu_121</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10847,7 +10825,7 @@
 			</second>
 		</item>
 		<item>
-			<first>store_ln7_store_fu_270</first>
+			<first>store_ln7_store_fu_258</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10855,7 +10833,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_read_fu_88</first>
+			<first>tmp_read_fu_86</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10883,10 +10861,10 @@
 		</item>
 	</dp_mem_port_nodes>
 	<dp_reg_nodes>
-		<count>18</count>
+		<count>22</count>
 		<item_version>0</item_version>
 		<item>
-			<first>119</first>
+			<first>117</first>
 			<second>
 				<count>3</count>
 				<item_version>0</item_version>
@@ -10896,7 +10874,7 @@
 			</second>
 		</item>
 		<item>
-			<first>389</first>
+			<first>386</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10904,7 +10882,7 @@
 			</second>
 		</item>
 		<item>
-			<first>396</first>
+			<first>393</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10912,7 +10890,7 @@
 			</second>
 		</item>
 		<item>
-			<first>402</first>
+			<first>399</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10920,7 +10898,7 @@
 			</second>
 		</item>
 		<item>
-			<first>408</first>
+			<first>405</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10928,15 +10906,15 @@
 			</second>
 		</item>
 		<item>
-			<first>414</first>
+			<first>411</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>22</item>
+				<item>20</item>
 			</second>
 		</item>
 		<item>
-			<first>420</first>
+			<first>416</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10944,7 +10922,7 @@
 			</second>
 		</item>
 		<item>
-			<first>425</first>
+			<first>421</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10952,15 +10930,23 @@
 			</second>
 		</item>
 		<item>
-			<first>429</first>
+			<first>425</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>35</item>
+				<item>22</item>
 			</second>
 		</item>
 		<item>
-			<first>435</first>
+			<first>431</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>33</item>
+			</second>
+		</item>
+		<item>
+			<first>436</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10968,15 +10954,23 @@
 			</second>
 		</item>
 		<item>
-			<first>440</first>
+			<first>441</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>48</item>
+				<item>35</item>
 			</second>
 		</item>
 		<item>
-			<first>446</first>
+			<first>447</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>46</item>
+			</second>
+		</item>
+		<item>
+			<first>452</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10984,7 +10978,15 @@
 			</second>
 		</item>
 		<item>
-			<first>451</first>
+			<first>457</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>48</item>
+			</second>
+		</item>
+		<item>
+			<first>463</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -10992,7 +10994,7 @@
 			</second>
 		</item>
 		<item>
-			<first>456</first>
+			<first>468</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11000,7 +11002,7 @@
 			</second>
 		</item>
 		<item>
-			<first>461</first>
+			<first>473</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11008,7 +11010,15 @@
 			</second>
 		</item>
 		<item>
-			<first>466</first>
+			<first>478</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>55</item>
+			</second>
+		</item>
+		<item>
+			<first>483</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11016,7 +11026,7 @@
 			</second>
 		</item>
 		<item>
-			<first>471</first>
+			<first>488</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11024,7 +11034,7 @@
 			</second>
 		</item>
 		<item>
-			<first>476</first>
+			<first>493</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11033,10 +11043,10 @@
 		</item>
 	</dp_reg_nodes>
 	<dp_regname_nodes>
-		<count>18</count>
+		<count>22</count>
 		<item_version>0</item_version>
 		<item>
-			<first>column12_reg_389</first>
+			<first>column12_reg_386</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11044,7 +11054,7 @@
 			</second>
 		</item>
 		<item>
-			<first>column_reg_402</first>
+			<first>column_reg_399</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11052,7 +11062,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_in_addr_1_reg_429</first>
+			<first>gmem_addr_1_reg_441</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11060,7 +11070,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_in_addr_2_reg_440</first>
+			<first>gmem_addr_2_reg_457</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11068,7 +11078,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_in_addr_reg_414</first>
+			<first>gmem_addr_reg_425</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11076,7 +11086,7 @@
 			</second>
 		</item>
 		<item>
-			<first>icmp_ln7_reg_425</first>
+			<first>icmp_ln7_reg_421</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11084,7 +11094,7 @@
 			</second>
 		</item>
 		<item>
-			<first>mul_ln10_reg_471</first>
+			<first>mul_ln10_reg_488</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11092,7 +11102,7 @@
 			</second>
 		</item>
 		<item>
-			<first>reg_119</first>
+			<first>reg_117</first>
 			<second>
 				<count>3</count>
 				<item_version>0</item_version>
@@ -11102,7 +11112,7 @@
 			</second>
 		</item>
 		<item>
-			<first>sub_ln9_reg_408</first>
+			<first>sub_ln9_reg_405</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11110,7 +11120,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_reg_396</first>
+			<first>tmp_reg_393</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11118,7 +11128,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_1_reg_451</first>
+			<first>trunc_ln9_1_reg_463</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11126,7 +11136,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_2_reg_435</first>
+			<first>trunc_ln9_2_reg_436</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11134,7 +11144,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_3_reg_456</first>
+			<first>trunc_ln9_3_reg_468</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11142,7 +11152,7 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_4_reg_446</first>
+			<first>trunc_ln9_4_reg_452</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11150,7 +11160,39 @@
 			</second>
 		</item>
 		<item>
-			<first>trunc_ln9_reg_420</first>
+			<first>trunc_ln9_5_reg_478</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>55</item>
+			</second>
+		</item>
+		<item>
+			<first>trunc_ln9_6_reg_411</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>20</item>
+			</second>
+		</item>
+		<item>
+			<first>trunc_ln9_7_reg_431</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>33</item>
+			</second>
+		</item>
+		<item>
+			<first>trunc_ln9_8_reg_447</first>
+			<second>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>46</item>
+			</second>
+		</item>
+		<item>
+			<first>trunc_ln9_reg_416</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11158,7 +11200,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln10_1_reg_461</first>
+			<first>zext_ln10_1_reg_473</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11166,7 +11208,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln10_3_reg_476</first>
+			<first>zext_ln10_3_reg_493</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11174,7 +11216,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln11_reg_466</first>
+			<first>zext_ln11_reg_483</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -11209,7 +11251,7 @@
 			</second>
 		</item>
 		<item>
-			<first>gmem_in</first>
+			<first>gmem</first>
 			<second>
 				<count>2</count>
 				<item_version>0</item_version>
@@ -11434,7 +11476,7 @@
 			</second>
 		</item>
 	</node2core>
-	<sched_res class_id="54" tracking_level="1" version="0" object_id="_657">
+	<sched_res class_id="54" tracking_level="1" version="0" object_id="_655">
 		<ResourceTableActual class_id="55" tracking_level="0" version="0">
 			<II>3</II>
 			<Resource class_id="56" tracking_level="0" version="0">
@@ -11447,7 +11489,7 @@
 					<Ops class_id="58" tracking_level="0" version="0">
 						<Op class_id="59" tracking_level="0" version="0">
 							<source_obj>68</source_obj>
-							<cycle>79</cycle>
+							<cycle>78</cycle>
 							<type>W</type>
 							<direction>in</direction>
 						</Op>

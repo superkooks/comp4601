@@ -1,0 +1,2453 @@
+[
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/include/config.h",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/config.h' see [hls] from hls_config.cfg(27)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/config.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/include/config.h",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/config.h' see [hls] from hls_config.cfg(27)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/config.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/include/canny_types.h",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_types.h' see [hls] from hls_config.cfg(28)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/canny_types.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/include/canny_types.h",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_types.h' see [hls] from hls_config.cfg(28)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/canny_types.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/include/canny_stages.h",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_stages.h' see [hls] from hls_config.cfg(29)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/canny_stages.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/include/canny_stages.h",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_stages.h' see [hls] from hls_config.cfg(29)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/canny_stages.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/sobel_reference.h",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/sobel_reference.h' see [hls] from hls_config.cfg(33)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/sobel_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/sobel_reference.h",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/sobel_reference.h' see [hls] from hls_config.cfg(33)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/sobel_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/sobel_reference.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/sobel_reference.cpp' see [hls] from hls_config.cfg(34)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/sobel_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/sobel_reference.cpp",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/sobel_reference.cpp' see [hls] from hls_config.cfg(34)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/sobel_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/nms_reference.h",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/nms_reference.h' see [hls] from hls_config.cfg(35)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/nms_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/nms_reference.h",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/nms_reference.h' see [hls] from hls_config.cfg(35)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/nms_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/nms_reference.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/nms_reference.cpp' see [hls] from hls_config.cfg(36)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/nms_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/nms_reference.cpp",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/nms_reference.cpp' see [hls] from hls_config.cfg(36)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/nms_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/gaussian_reference.h",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/gaussian_reference.h' see [hls] from hls_config.cfg(37)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/gaussian_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/gaussian_reference.h",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/gaussian_reference.h' see [hls] from hls_config.cfg(37)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/gaussian_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/gaussian_reference.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/gaussian_reference.cpp' see [hls] from hls_config.cfg(38)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/gaussian_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/reference/gaussian_reference.cpp",
+    "owner": "canny_hls::package",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/gaussian_reference.cpp' see [hls] from hls_config.cfg(38)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/gaussian_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::package"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/include/config.h",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/config.h' see [hls] from hls_config.cfg(16)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/config.h' see [hls] from hls_config.cfg(29)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find design file '../include/config.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/config.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/include/canny_types.h",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_types.h' see [hls] from hls_config.cfg(17)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_types.h' see [hls] from hls_config.cfg(30)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find design file '../include/canny_types.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/canny_types.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/include/canny_stages.h",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_stages.h' see [hls] from hls_config.cfg(18)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../include/canny_stages.h' see [hls] from hls_config.cfg(31)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find design file '../include/canny_stages.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../include/canny_stages.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/reference/sobel_reference.h",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/sobel_reference.h' see [hls] from hls_config.cfg(35)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/sobel_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/reference/sobel_reference.cpp",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/sobel_reference.cpp' see [hls] from hls_config.cfg(36)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/sobel_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/reference/nms_reference.h",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/nms_reference.h' see [hls] from hls_config.cfg(37)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/nms_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/reference/nms_reference.cpp",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/nms_reference.cpp' see [hls] from hls_config.cfg(38)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/nms_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/reference/gaussian_reference.h",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/gaussian_reference.h' see [hls] from hls_config.cfg(39)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/gaussian_reference.h'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_hls/workDir/hls/csim/reference/gaussian_reference.cpp",
+    "owner": "canny_hls::c-simulation",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-2001] file not found '../reference/gaussian_reference.cpp' see [hls] from hls_config.cfg(40)",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      },
+      {
+        "message": "WARNING: [HLS 200-40] Cannot find test bench file '../reference/gaussian_reference.cpp'",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::c-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_host/host.cpp",
+    "owner": "_generated_diagnostic_collection_name_#e51fb816-d8cc-42f3-9ce7-7051aa118fcb",
+    "data": [
+      {
+        "code": "pp_file_not_found",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 3,
+            "character": 9
+          },
+          "end": {
+            "line": 3,
+            "character": 23
+          }
+        },
+        "message": "'xrt/xrt_bo.h' file not found",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 20,
+            "character": 4
+          },
+          "end": {
+            "line": 20,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 21,
+            "character": 4
+          },
+          "end": {
+            "line": 21,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 22,
+            "character": 4
+          },
+          "end": {
+            "line": 22,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 25,
+            "character": 4
+          },
+          "end": {
+            "line": 25,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 26,
+            "character": 4
+          },
+          "end": {
+            "line": 26,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 34,
+            "character": 18
+          },
+          "end": {
+            "line": 34,
+            "character": 21
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 38,
+            "character": 11
+          },
+          "end": {
+            "line": 38,
+            "character": 14
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 41,
+            "character": 13
+          },
+          "end": {
+            "line": 41,
+            "character": 16
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 42,
+            "character": 14
+          },
+          "end": {
+            "line": 42,
+            "character": 17
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 44,
+            "character": 13
+          },
+          "end": {
+            "line": 44,
+            "character": 15
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 44,
+            "character": 36
+          },
+          "end": {
+            "line": 44,
+            "character": 43
+          }
+        },
+        "message": "Use of undeclared identifier 'CV_8UC3'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 45,
+            "character": 14
+          },
+          "end": {
+            "line": 45,
+            "character": 16
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 45,
+            "character": 37
+          },
+          "end": {
+            "line": 45,
+            "character": 42
+          }
+        },
+        "message": "Use of undeclared identifier 'CV_8U'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 49,
+            "character": 16
+          },
+          "end": {
+            "line": 49,
+            "character": 40
+          }
+        },
+        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_TO_DEVICE'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 54,
+            "character": 17
+          },
+          "end": {
+            "line": 54,
+            "character": 43
+          }
+        },
+        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_FROM_DEVICE'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 59,
+            "character": 4
+          },
+          "end": {
+            "line": 59,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 60,
+            "character": 4
+          },
+          "end": {
+            "line": 60,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 67,
+            "character": 13
+          },
+          "end": {
+            "line": 67,
+            "character": 15
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 67,
+            "character": 36
+          },
+          "end": {
+            "line": 67,
+            "character": 43
+          }
+        },
+        "message": "Use of undeclared identifier 'CV_8UC3'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "fatal_too_many_errors",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "message": "Too many errors emitted, stopping now",
+        "source": "clang",
+        "relatedInformation": []
+      }
+    ]
+  },
+  {
+    "uri": "file:///warnings_without_file",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-1449] Process grayscale has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process gaussian_blur has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1450] Process gaussian_blur has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process sobel has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1450] Process sobel has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process non_maximum_suppression has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1450] Process non_maximum_suppression has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process hysteresis<1> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1450] Process hysteresis<1> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process hysteresis<2> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1450] Process hysteresis<2> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process hysteresis<3> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1450] Process hysteresis<3> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process hysteresis<4> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1450] Process hysteresis<4> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-1449] Process dataflow_in_loop_VITIS_LOOP_11_1.1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_VITIS_LOOP_11_1.1_Block_newFuncRoot_proc' to 'dataflow_in_loop_VITIS_LOOP_11_1_1_Block_newFuncRoot_proc'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<1>_Pipeline_VITIS_LOOP_66_1' to 'hysteresis_1_Pipeline_VITIS_LOOP_66_1'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<1>_Pipeline_VITIS_LOOP_114_2' to 'hysteresis_1_Pipeline_VITIS_LOOP_114_2'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<1>' to 'hysteresis_1_s'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<2>_Pipeline_VITIS_LOOP_66_1' to 'hysteresis_2_Pipeline_VITIS_LOOP_66_1'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<2>_Pipeline_VITIS_LOOP_114_2' to 'hysteresis_2_Pipeline_VITIS_LOOP_114_2'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<2>' to 'hysteresis_2_s'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<3>_Pipeline_VITIS_LOOP_66_1' to 'hysteresis_3_Pipeline_VITIS_LOOP_66_1'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<3>_Pipeline_VITIS_LOOP_114_2' to 'hysteresis_3_Pipeline_VITIS_LOOP_114_2'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<3>' to 'hysteresis_3_s'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<4>_Pipeline_VITIS_LOOP_66_1' to 'hysteresis_4_Pipeline_VITIS_LOOP_66_1'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<4>_Pipeline_VITIS_LOOP_114_2' to 'hysteresis_4_Pipeline_VITIS_LOOP_114_2'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<4>' to 'hysteresis_4_s'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_VITIS_LOOP_11_1.1' to 'dataflow_in_loop_VITIS_LOOP_11_1_1'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWVALID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWADDR' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWLEN' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWSIZE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWBURST' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWLOCK' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWCACHE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWPROT' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWQOS' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWREGION' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWUSER' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_BREADY' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'rowsReceived' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_1' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_2' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_1_s' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_2_s' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_3_s' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_4_s' is power-on initialization.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-448] Lower bound of II is 3 due to multiple bus read operation ('gmem_addr_read', ../src/grayscale.cpp:9->../src/canny_top.cpp:27) on port 'gmem' (../src/grayscale.cpp:9->../src/canny_top.cpp:27), bus read operation ('gmem_addr_1_read', ../src/grayscale.cpp:9->../src/canny_top.cpp:27) on port 'gmem' (../src/grayscale.cpp:9->../src/canny_top.cpp:27), bus read operation ('gmem_addr_2_read', ../src/grayscale.cpp:9->../src/canny_top.cpp:27) on port 'gmem' (../src/grayscale.cpp:9->../src/canny_top.cpp:27) accessing 'gmem' m_axi read",
+        "range": {
+          "start": {
+            "line": 8,
+            "character": 0
+          },
+          "end": {
+            "line": 8,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_2', ../src/gaussian_blur.cpp:93) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.",
+        "range": {
+          "start": {
+            "line": 92,
+            "character": 0
+          },
+          "end": {
+            "line": 92,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_5', ../src/gaussian_blur.cpp:93) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.",
+        "range": {
+          "start": {
+            "line": 92,
+            "character": 0
+          },
+          "end": {
+            "line": 92,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_9', ../src/gaussian_blur.cpp:93) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.",
+        "range": {
+          "start": {
+            "line": 92,
+            "character": 0
+          },
+          "end": {
+            "line": 92,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_12', ../src/gaussian_blur.cpp:93) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.",
+        "range": {
+          "start": {
+            "line": 92,
+            "character": 0
+          },
+          "end": {
+            "line": 92,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'gaussian_blur_Pipeline_VITIS_LOOP_64_2' (loop 'VITIS_LOOP_64_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferE_0_load_22', ../src/gaussian_blur.cpp:93) on array 'p_ZN12_GLOBAL_N_110lineBufferE_0' due to limited memory ports (II = 7). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferE_0'.",
+        "range": {
+          "start": {
+            "line": 92,
+            "character": 0
+          },
+          "end": {
+            "line": 92,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'sobel_Pipeline_VITIS_LOOP_118_2' (loop 'VITIS_LOOP_118_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_32_0_load_2', ../src/sobel.cpp:143->../src/canny_top.cpp:30) on array 'p_anonymous_namespace_lineBuffer_32_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_32_0'.",
+        "range": {
+          "start": {
+            "line": 142,
+            "character": 0
+          },
+          "end": {
+            "line": 142,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'sobel_Pipeline_VITIS_LOOP_118_2' (loop 'VITIS_LOOP_118_2'): Unable to schedule 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_32_0_load_7', ../src/sobel.cpp:143->../src/canny_top.cpp:30) on array 'p_anonymous_namespace_lineBuffer_32_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_anonymous_namespace_lineBuffer_32_0'.",
+        "range": {
+          "start": {
+            "line": 142,
+            "character": 0
+          },
+          "end": {
+            "line": 142,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-448] Lower bound of II is 2 due to multiple 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_25_magnitude_0_load', ../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31) on array 'p_anonymous_namespace_lineBuffer_25_magnitude_0', 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5', ../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31) on array 'p_anonymous_namespace_lineBuffer_25_magnitude_0', 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6', ../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31) on array 'p_anonymous_namespace_lineBuffer_25_magnitude_0' accessing core:RAM:p_anonymous_namespace_lineBuffer_25_magnitude_0",
+        "range": {
+          "start": {
+            "line": 82,
+            "character": 0
+          },
+          "end": {
+            "line": 82,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-448] Lower bound of II is 2 due to multiple 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_25_magnitude_1_load', ../src/non_maximum_suppression.cpp:83->../src/canny_top.cpp:31) on array 'p_anonymous_namespace_lineBuffer_25_magnitude_1', 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5', ../src/non_maximum_suppression.cpp:107->../src/canny_top.cpp:31) on array 'p_anonymous_namespace_lineBuffer_25_magnitude_1', 'load' operation 8 bit ('p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6', ../src/non_maximum_suppression.cpp:110->../src/canny_top.cpp:31) on array 'p_anonymous_namespace_lineBuffer_25_magnitude_1' accessing core:RAM:p_anonymous_namespace_lineBuffer_25_magnitude_1",
+        "range": {
+          "start": {
+            "line": 82,
+            "character": 0
+          },
+          "end": {
+            "line": 82,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_1', ../src/hysteresis.cpp:28->../src/hysteresis.cpp:123->../src/canny_top.cpp:33) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 1). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.",
+        "range": {
+          "start": {
+            "line": 27,
+            "character": 0
+          },
+          "end": {
+            "line": 27,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_3', ../src/hysteresis.cpp:30->../src/hysteresis.cpp:123->../src/canny_top.cpp:33) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 2). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.",
+        "range": {
+          "start": {
+            "line": 29,
+            "character": 0
+          },
+          "end": {
+            "line": 29,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_5', ../src/hysteresis.cpp:32->../src/hysteresis.cpp:123->../src/canny_top.cpp:33) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 3). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.",
+        "range": {
+          "start": {
+            "line": 31,
+            "character": 0
+          },
+          "end": {
+            "line": 31,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [HLS 200-885] The II Violation in module 'hysteresis_1_Pipeline_VITIS_LOOP_114_2' (loop 'VITIS_LOOP_114_2'): Unable to schedule 'load' operation 8 bit ('p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_load_3', ../src/hysteresis.cpp:30->../src/hysteresis.cpp:123->../src/canny_top.cpp:33) on array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0' due to limited memory ports (II = 4). Please consider using a memory core with more ports or partitioning the array 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'.",
+        "range": {
+          "start": {
+            "line": 29,
+            "character": 0
+          },
+          "end": {
+            "line": 29,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  }
+]

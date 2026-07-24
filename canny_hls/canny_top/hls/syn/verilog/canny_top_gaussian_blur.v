@@ -22,6 +22,25 @@ module canny_top_gaussian_blur (
         output_r_ce0,
         output_r_we0,
         output_r_d0,
+        p_anonymous_namespace_rowsReceived_i,
+        p_anonymous_namespace_rowsReceived_o,
+        p_anonymous_namespace_rowsReceived_o_ap_vld,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_address0,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_ce0,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_we0,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_d0,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_q0,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_address1,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_ce1,
+        p_ZN12_GLOBAL_N_110lineBufferE_0_q1,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_address0,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_ce0,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_we0,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_d0,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_q0,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_address1,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_ce1,
+        p_ZN12_GLOBAL_N_110lineBufferE_1_q1,
         ap_return
 );
 
@@ -113,6 +132,25 @@ output  [8:0] output_r_address0;
 output   output_r_ce0;
 output   output_r_we0;
 output  [7:0] output_r_d0;
+input  [31:0] p_anonymous_namespace_rowsReceived_i;
+output  [31:0] p_anonymous_namespace_rowsReceived_o;
+output   p_anonymous_namespace_rowsReceived_o_ap_vld;
+output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
+output   p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
+output   p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_q0;
+output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
+output   p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_q1;
+output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
+output   p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
+output   p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_q0;
+output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
+output   p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_q1;
 output  [0:0] ap_return;
 
 reg ap_done;
@@ -122,23 +160,20 @@ reg[8:0] output_r_address0;
 reg output_r_ce0;
 reg output_r_we0;
 reg[7:0] output_r_d0;
+reg[31:0] p_anonymous_namespace_rowsReceived_o;
+reg p_anonymous_namespace_rowsReceived_o_ap_vld;
+reg[10:0] p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
+reg p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
+reg p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
+reg p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
+reg[10:0] p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
+reg p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
+reg p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
+reg p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
 
 reg    ap_done_reg;
 (* fsm_encoding = "none" *) reg   [72:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [31:0] p_anonymous_namespace_rowsReceived;
-reg   [10:0] p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
-reg    p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
-reg    p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
-wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_q0;
-reg    p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
-wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_q1;
-reg   [10:0] p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
-reg    p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
-reg    p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
-wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_q0;
-reg    p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
-wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_q1;
 wire   [31:0] grp_fu_86_p2;
 reg   [31:0] writeSlot_reg_283;
 wire    ap_CS_fsm_state36;
@@ -390,44 +425,9 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 73'd1;
-#0 p_anonymous_namespace_rowsReceived = 32'd0;
 #0 grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_start_reg = 1'b0;
 #0 grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_start_reg = 1'b0;
 end
-
-canny_top_gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W #(
-    .DataWidth( 8 ),
-    .AddressRange( 1280 ),
-    .AddressWidth( 11 ))
-p_ZN12_GLOBAL_N_110lineBufferE_0_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(p_ZN12_GLOBAL_N_110lineBufferE_0_address0),
-    .ce0(p_ZN12_GLOBAL_N_110lineBufferE_0_ce0),
-    .we0(p_ZN12_GLOBAL_N_110lineBufferE_0_we0),
-    .d0(grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_0_d0),
-    .q0(p_ZN12_GLOBAL_N_110lineBufferE_0_q0),
-    .address1(grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_0_address1),
-    .ce1(p_ZN12_GLOBAL_N_110lineBufferE_0_ce1),
-    .q1(p_ZN12_GLOBAL_N_110lineBufferE_0_q1)
-);
-
-canny_top_gaussian_blur_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W #(
-    .DataWidth( 8 ),
-    .AddressRange( 1280 ),
-    .AddressWidth( 11 ))
-p_ZN12_GLOBAL_N_110lineBufferE_1_U(
-    .clk(ap_clk),
-    .reset(ap_rst),
-    .address0(p_ZN12_GLOBAL_N_110lineBufferE_1_address0),
-    .ce0(p_ZN12_GLOBAL_N_110lineBufferE_1_ce0),
-    .we0(p_ZN12_GLOBAL_N_110lineBufferE_1_we0),
-    .d0(grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_d0),
-    .q0(p_ZN12_GLOBAL_N_110lineBufferE_1_q0),
-    .address1(grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_1_address1),
-    .ce1(p_ZN12_GLOBAL_N_110lineBufferE_1_ce1),
-    .q1(p_ZN12_GLOBAL_N_110lineBufferE_1_q1)
-);
 
 canny_top_gaussian_blur_Pipeline_VITIS_LOOP_46_1 grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54(
     .ap_clk(ap_clk),
@@ -490,12 +490,12 @@ canny_top_srem_32ns_4ns_32_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 32 ))
-srem_32ns_4ns_32_36_seq_1_U30(
+srem_32ns_4ns_32_36_seq_1_U43(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_86_ap_start),
     .done(grp_fu_86_ap_done),
-    .din0(p_anonymous_namespace_rowsReceived),
+    .din0(p_anonymous_namespace_rowsReceived_i),
     .din1(grp_fu_86_p1),
     .ce(grp_fu_86_ce),
     .dout(grp_fu_86_p2)
@@ -507,7 +507,7 @@ canny_top_srem_32ns_4ns_32_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 32 ))
-srem_32ns_4ns_32_36_seq_1_U31(
+srem_32ns_4ns_32_36_seq_1_U44(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_146_ap_start),
@@ -524,7 +524,7 @@ canny_top_urem_32ns_4ns_3_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 3 ))
-urem_32ns_4ns_3_36_seq_1_U32(
+urem_32ns_4ns_3_36_seq_1_U45(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_152_ap_start),
@@ -541,7 +541,7 @@ canny_top_srem_32ns_4ns_32_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 32 ))
-srem_32ns_4ns_32_36_seq_1_U33(
+srem_32ns_4ns_32_36_seq_1_U46(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_163_ap_start),
@@ -558,7 +558,7 @@ canny_top_srem_32ns_4ns_32_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 4 ),
     .dout_WIDTH( 32 ))
-srem_32ns_4ns_32_36_seq_1_U34(
+srem_32ns_4ns_32_36_seq_1_U47(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_188_ap_start),
@@ -624,7 +624,6 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state37) & (grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_done == 1'b1))) begin
         or_ln59_reg_305 <= or_ln59_fu_135_p2;
-        p_anonymous_namespace_rowsReceived <= add_ln50_fu_97_p2;
         select_ln22_2_reg_319 <= select_ln22_2_fu_181_p3;
     end
 end
@@ -1039,6 +1038,22 @@ always @ (*) begin
 end
 
 always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state37)) begin
+        p_anonymous_namespace_rowsReceived_o = add_ln50_fu_97_p2;
+    end else begin
+        p_anonymous_namespace_rowsReceived_o = p_anonymous_namespace_rowsReceived_i;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state37) & (grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_done == 1'b1))) begin
+        p_anonymous_namespace_rowsReceived_o_ap_vld = 1'b1;
+    end else begin
+        p_anonymous_namespace_rowsReceived_o_ap_vld = 1'b0;
+    end
+end
+
+always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
             if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
@@ -1287,7 +1302,7 @@ assign add_ln22_3_fu_265_p2 = ($signed(trunc_ln22_2_fu_253_p1) + $signed(3'd5));
 
 assign add_ln22_fu_206_p2 = ($signed(trunc_ln22_fu_194_p1) + $signed(3'd5));
 
-assign add_ln50_fu_97_p2 = (p_anonymous_namespace_rowsReceived + 32'd1);
+assign add_ln50_fu_97_p2 = (p_anonymous_namespace_rowsReceived_i + 32'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -1445,17 +1460,17 @@ end
 
 assign ap_return = ap_phi_mux_valid_out_write_assign_phi_fu_46_p4;
 
-assign grp_fu_146_p0 = ($signed(p_anonymous_namespace_rowsReceived) + $signed(32'd4294967293));
+assign grp_fu_146_p0 = ($signed(p_anonymous_namespace_rowsReceived_i) + $signed(32'd4294967293));
 
 assign grp_fu_146_p1 = 32'd5;
 
 assign grp_fu_152_p1 = 32'd5;
 
-assign grp_fu_163_p0 = ($signed(p_anonymous_namespace_rowsReceived) + $signed(32'd4294967295));
+assign grp_fu_163_p0 = ($signed(p_anonymous_namespace_rowsReceived_i) + $signed(32'd4294967295));
 
 assign grp_fu_163_p1 = 32'd5;
 
-assign grp_fu_188_p0 = (p_anonymous_namespace_rowsReceived + 32'd1);
+assign grp_fu_188_p0 = (p_anonymous_namespace_rowsReceived_i + 32'd1);
 
 assign grp_fu_188_p1 = 32'd5;
 
@@ -1475,7 +1490,15 @@ assign input_r_ce0 = grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_input_r_ce
 
 assign or_ln59_fu_135_p2 = (icmp_ln59_fu_123_p2 | icmp_ln59_1_fu_129_p2);
 
-assign outputRow_fu_108_p2 = ($signed(p_anonymous_namespace_rowsReceived) + $signed(32'd4294967294));
+assign outputRow_fu_108_p2 = ($signed(p_anonymous_namespace_rowsReceived_i) + $signed(32'd4294967294));
+
+assign p_ZN12_GLOBAL_N_110lineBufferE_0_address1 = grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferE_0_d0 = grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferE_1_address1 = grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferE_1_d0 = grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
 
 assign select_ln22_1_fu_244_p3 = ((tmp_24_fu_230_p3[0:0] == 1'b1) ? add_ln22_1_fu_238_p2 : trunc_ln22_1_fu_226_p1);
 

@@ -28,6 +28,30 @@ port (
     out_nonmax_ce0 : OUT STD_LOGIC;
     out_nonmax_we0 : OUT STD_LOGIC;
     out_nonmax_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_rowsReceived_2_i : IN STD_LOGIC_VECTOR (31 downto 0);
+    p_anonymous_namespace_rowsReceived_2_o : OUT STD_LOGIC_VECTOR (31 downto 0);
+    p_anonymous_namespace_rowsReceived_2_o_ap_vld : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    p_anonymous_namespace_lineBuffer_direction_ce0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_direction_we0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_direction_d0 : OUT STD_LOGIC_VECTOR (1 downto 0);
+    p_anonymous_namespace_lineBuffer_direction_q0 : IN STD_LOGIC_VECTOR (1 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
     ap_return : OUT STD_LOGIC_VECTOR (0 downto 0) );
 end;
 
@@ -199,23 +223,6 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal p_anonymous_namespace_rowsReceived_3 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    signal p_anonymous_namespace_lineBuffer_direction_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal p_anonymous_namespace_lineBuffer_direction_ce0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_direction_we0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_direction_q0 : STD_LOGIC_VECTOR (1 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_we0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_q1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_we0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_q1 : STD_LOGIC_VECTOR (7 downto 0);
     signal p_read_3_read_fu_48_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_read_3_reg_211 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_state1 : BOOLEAN;
@@ -255,14 +262,14 @@ attribute shreg_extract : string;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_ce0 : STD_LOGIC;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_we0 : STD_LOGIC;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_d0 : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 : STD_LOGIC;
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_we0 : STD_LOGIC;
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 : STD_LOGIC;
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_we0 : STD_LOGIC;
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_ap_start : STD_LOGIC;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_ap_done : STD_LOGIC;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_ap_idle : STD_LOGIC;
@@ -271,14 +278,14 @@ attribute shreg_extract : string;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_ce0 : STD_LOGIC;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_we0 : STD_LOGIC;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_out_nonmax_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 : STD_LOGIC;
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 : STD_LOGIC;
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 : STD_LOGIC;
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 : STD_LOGIC;
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 : STD_LOGIC;
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_direction_address0 : STD_LOGIC_VECTOR (10 downto 0);
     signal grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_direction_ce0 : STD_LOGIC;
     signal ap_phi_mux_nonmax_valid_2_phi_fu_58_p6 : STD_LOGIC_VECTOR (0 downto 0);
@@ -544,14 +551,14 @@ attribute shreg_extract : string;
         p_anonymous_namespace_lineBuffer_direction_ce0 : OUT STD_LOGIC;
         p_anonymous_namespace_lineBuffer_direction_we0 : OUT STD_LOGIC;
         p_anonymous_namespace_lineBuffer_direction_d0 : OUT STD_LOGIC_VECTOR (1 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0) );
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0) );
     end component;
 
 
@@ -570,18 +577,18 @@ attribute shreg_extract : string;
         result_9 : IN STD_LOGIC_VECTOR (1 downto 0);
         result : IN STD_LOGIC_VECTOR (1 downto 0);
         empty : IN STD_LOGIC_VECTOR (1 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
         p_anonymous_namespace_lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
         p_anonymous_namespace_lineBuffer_direction_ce0 : OUT STD_LOGIC;
         p_anonymous_namespace_lineBuffer_direction_q0 : IN STD_LOGIC_VECTOR (1 downto 0) );
@@ -626,91 +633,8 @@ attribute shreg_extract : string;
     end component;
 
 
-    component canny_top_non_maximum_suppression_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1bkb IS
-    generic (
-        DataWidth : INTEGER;
-        AddressRange : INTEGER;
-        AddressWidth : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (10 downto 0);
-        ce0 : IN STD_LOGIC;
-        we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (1 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (1 downto 0) );
-    end component;
-
-
-    component canny_top_non_maximum_suppression_p_anonymous_namespace_lineBuffer_11_magnitude_0_RAM_Acud IS
-    generic (
-        DataWidth : INTEGER;
-        AddressRange : INTEGER;
-        AddressWidth : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (9 downto 0);
-        ce0 : IN STD_LOGIC;
-        we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        address1 : IN STD_LOGIC_VECTOR (9 downto 0);
-        ce1 : IN STD_LOGIC;
-        q1 : OUT STD_LOGIC_VECTOR (7 downto 0) );
-    end component;
-
-
 
 begin
-    p_anonymous_namespace_lineBuffer_direction_U : component canny_top_non_maximum_suppression_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1bkb
-    generic map (
-        DataWidth => 2,
-        AddressRange => 1536,
-        AddressWidth => 11)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        address0 => p_anonymous_namespace_lineBuffer_direction_address0,
-        ce0 => p_anonymous_namespace_lineBuffer_direction_ce0,
-        we0 => p_anonymous_namespace_lineBuffer_direction_we0,
-        d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_d0,
-        q0 => p_anonymous_namespace_lineBuffer_direction_q0);
-
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_U : component canny_top_non_maximum_suppression_p_anonymous_namespace_lineBuffer_11_magnitude_0_RAM_Acud
-    generic map (
-        DataWidth => 8,
-        AddressRange => 768,
-        AddressWidth => 10)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        address0 => p_anonymous_namespace_lineBuffer_11_magnitude_0_address0,
-        ce0 => p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0,
-        we0 => p_anonymous_namespace_lineBuffer_11_magnitude_0_we0,
-        d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_d0,
-        q0 => p_anonymous_namespace_lineBuffer_11_magnitude_0_q0,
-        address1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_address1,
-        ce1 => p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1,
-        q1 => p_anonymous_namespace_lineBuffer_11_magnitude_0_q1);
-
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_U : component canny_top_non_maximum_suppression_p_anonymous_namespace_lineBuffer_11_magnitude_0_RAM_Acud
-    generic map (
-        DataWidth => 8,
-        AddressRange => 768,
-        AddressWidth => 10)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        address0 => p_anonymous_namespace_lineBuffer_11_magnitude_1_address0,
-        ce0 => p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0,
-        we0 => p_anonymous_namespace_lineBuffer_11_magnitude_1_we0,
-        d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_d0,
-        q0 => p_anonymous_namespace_lineBuffer_11_magnitude_1_q0,
-        address1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_address1,
-        ce1 => p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1,
-        q1 => p_anonymous_namespace_lineBuffer_11_magnitude_1_q1);
-
     grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81 : component canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1
     port map (
         ap_clk => ap_clk,
@@ -735,14 +659,14 @@ begin
         p_anonymous_namespace_lineBuffer_direction_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_ce0,
         p_anonymous_namespace_lineBuffer_direction_we0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_we0,
         p_anonymous_namespace_lineBuffer_direction_d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_d0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_we0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_we0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_d0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_we0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_we0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_d0);
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0);
 
     grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99 : component canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2
     port map (
@@ -759,23 +683,23 @@ begin
         result_9 => trunc_ln13_1_reg_257,
         result => trunc_ln13_reg_252,
         empty => trunc_ln46_reg_227,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q0 => p_anonymous_namespace_lineBuffer_11_magnitude_0_q0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_address1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_address1,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1,
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q1 => p_anonymous_namespace_lineBuffer_11_magnitude_0_q1,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q0 => p_anonymous_namespace_lineBuffer_11_magnitude_1_q0,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_address1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_address1,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1,
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q1 => p_anonymous_namespace_lineBuffer_11_magnitude_1_q1,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q0 => p_anonymous_namespace_lineBuffer_25_magnitude_0_q0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1,
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q1 => p_anonymous_namespace_lineBuffer_25_magnitude_0_q1,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q0 => p_anonymous_namespace_lineBuffer_25_magnitude_1_q0,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1,
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q1 => p_anonymous_namespace_lineBuffer_25_magnitude_1_q1,
         p_anonymous_namespace_lineBuffer_direction_address0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_direction_address0,
         p_anonymous_namespace_lineBuffer_direction_ce0 => grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_direction_ce0,
         p_anonymous_namespace_lineBuffer_direction_q0 => p_anonymous_namespace_lineBuffer_direction_q0);
 
-    srem_32ns_3ns_2_36_seq_1_U94 : component canny_top_srem_32ns_3ns_2_36_seq_1
+    srem_32ns_3ns_2_36_seq_1_U111 : component canny_top_srem_32ns_3ns_2_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -787,12 +711,12 @@ begin
         reset => ap_rst,
         start => grp_fu_122_ap_start,
         done => grp_fu_122_ap_done,
-        din0 => p_anonymous_namespace_rowsReceived_3,
+        din0 => p_anonymous_namespace_rowsReceived_2_i,
         din1 => grp_fu_122_p1,
         ce => grp_fu_122_ce,
         dout => grp_fu_122_p2);
 
-    urem_31ns_3ns_2_35_seq_1_U95 : component canny_top_urem_31ns_3ns_2_35_seq_1
+    urem_31ns_3ns_2_35_seq_1_U112 : component canny_top_urem_31ns_3ns_2_35_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 35,
@@ -809,7 +733,7 @@ begin
         ce => grp_fu_178_ce,
         dout => grp_fu_178_p2);
 
-    urem_31ns_3ns_2_35_seq_1_U96 : component canny_top_urem_31ns_3ns_2_35_seq_1
+    urem_31ns_3ns_2_35_seq_1_U113 : component canny_top_urem_31ns_3ns_2_35_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 35,
@@ -926,14 +850,6 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state37) and (grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_ap_done = ap_const_logic_1))) then
                 icmp_ln66_reg_243 <= icmp_ln66_fu_167_p2;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state72) and (ap_const_boolean_0 = ap_block_state72_on_subcall_done) and (p_read_3_reg_211 = ap_const_lv1_1))) then
-                p_anonymous_namespace_rowsReceived_3 <= add_ln55_fu_200_p2;
             end if;
         end if;
     end process;
@@ -1124,7 +1040,7 @@ begin
                 ap_NS_fsm <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end case;
     end process;
-    add_ln55_fu_200_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_3) + unsigned(ap_const_lv32_1));
+    add_ln55_fu_200_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_2_i) + unsigned(ap_const_lv32_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
     ap_CS_fsm_state11 <= ap_CS_fsm(10);
@@ -1489,92 +1405,96 @@ begin
     out_sobel_direction_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_sobel_direction_ce0;
     out_sobel_magnitude_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_sobel_magnitude_address0;
     out_sobel_magnitude_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_out_sobel_magnitude_ce0;
-    outputRow_fu_158_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_3) + unsigned(ap_const_lv32_FFFFFFFF));
+    outputRow_fu_158_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_2_i) + unsigned(ap_const_lv32_FFFFFFFF));
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
     begin
         if (((ap_predicate_op198_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_address0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 <= "XXXXXXXXXX";
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
     begin
         if (((ap_predicate_op198_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1_assign_proc : process(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1_assign_proc : process(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
     begin
         if (((ap_predicate_op198_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_we0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_we0)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_we0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_0_we0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_we0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
     begin
         if (((ap_predicate_op198_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_address0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 <= "XXXXXXXXXX";
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
     begin
         if (((ap_predicate_op198_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1_assign_proc : process(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1_assign_proc : process(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1, ap_CS_fsm_state72, ap_predicate_op198_call_state72)
     begin
         if (((ap_predicate_op198_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_we0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_we0)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_we0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_11_magnitude_1_we0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_we0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
@@ -1602,6 +1522,7 @@ begin
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_direction_d0 <= grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_d0;
 
     p_anonymous_namespace_lineBuffer_direction_we0_assign_proc : process(ap_CS_fsm_state37, grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81_p_anonymous_namespace_lineBuffer_direction_we0)
     begin
@@ -1612,11 +1533,31 @@ begin
         end if; 
     end process;
 
+
+    p_anonymous_namespace_rowsReceived_2_o_assign_proc : process(p_anonymous_namespace_rowsReceived_2_i, p_read_3_reg_211, ap_CS_fsm_state72, add_ln55_fu_200_p2)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state72) and (p_read_3_reg_211 = ap_const_lv1_1))) then 
+            p_anonymous_namespace_rowsReceived_2_o <= add_ln55_fu_200_p2;
+        else 
+            p_anonymous_namespace_rowsReceived_2_o <= p_anonymous_namespace_rowsReceived_2_i;
+        end if; 
+    end process;
+
+
+    p_anonymous_namespace_rowsReceived_2_o_ap_vld_assign_proc : process(p_read_3_reg_211, ap_CS_fsm_state72, ap_block_state72_on_subcall_done)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state72) and (ap_const_boolean_0 = ap_block_state72_on_subcall_done) and (p_read_3_reg_211 = ap_const_lv1_1))) then 
+            p_anonymous_namespace_rowsReceived_2_o_ap_vld <= ap_const_logic_1;
+        else 
+            p_anonymous_namespace_rowsReceived_2_o_ap_vld <= ap_const_logic_0;
+        end if; 
+    end process;
+
     p_read_3_read_fu_48_p2 <= p_read;
-    tmp_fu_128_p4 <= p_anonymous_namespace_rowsReceived_3(31 downto 1);
+    tmp_fu_128_p4 <= p_anonymous_namespace_rowsReceived_2_i(31 downto 1);
     tmp_s_fu_149_p3 <= (trunc_ln46_fu_144_p1 & ap_const_lv9_0);
     trunc_ln13_1_fu_195_p1 <= grp_fu_184_p2(2 - 1 downto 0);
     trunc_ln13_fu_190_p1 <= grp_fu_178_p2(2 - 1 downto 0);
-    trunc_ln43_fu_118_p1 <= p_anonymous_namespace_rowsReceived_3(31 - 1 downto 0);
+    trunc_ln43_fu_118_p1 <= p_anonymous_namespace_rowsReceived_2_i(31 - 1 downto 0);
     trunc_ln46_fu_144_p1 <= grp_fu_122_p2(2 - 1 downto 0);
 end behav;

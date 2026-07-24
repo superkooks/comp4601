@@ -35,7 +35,7 @@
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/double_threshold.cpp:6~../src/canny_top.cpp:27</SourceLocation>
+<SourceLocation>../src/double_threshold.cpp:6~../src/canny_top.cpp:32</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 

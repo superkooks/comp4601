@@ -196,7 +196,7 @@
 					<Obj>
 						<type>1</type>
 						<id>6</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -232,7 +232,7 @@
 					<Obj>
 						<type>1</type>
 						<id>7</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -274,7 +274,7 @@
 						<id>8</id>
 						<name>column_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -282,16 +282,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -466,7 +466,7 @@
 						<id>12</id>
 						<name>column_1_write_ln118</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -474,16 +474,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -572,7 +572,7 @@
 						<id>15</id>
 						<name>column</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>140</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -580,16 +580,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -636,7 +636,7 @@
 						<id>16</id>
 						<name>icmp_ln118</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -644,16 +644,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -700,7 +700,7 @@
 						<id>17</id>
 						<name>br_ln118</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -708,16 +708,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -765,7 +765,7 @@
 						<id>19</id>
 						<name>zext_ln118</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -773,16 +773,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -828,7 +828,7 @@
 						<id>20</id>
 						<name>trunc_ln118</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -836,16 +836,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -891,7 +891,7 @@
 						<id>24</id>
 						<name>lshr_ln1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -899,16 +899,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -957,7 +957,7 @@
 						<id>25</id>
 						<name>tmp_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -965,16 +965,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1022,7 +1022,7 @@
 						<id>26</id>
 						<name>zext_ln143</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1030,16 +1030,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1083,9 +1083,9 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1093,16 +1093,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1150,7 +1150,7 @@
 						<id>28</id>
 						<name>tmp_7</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1158,16 +1158,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1215,7 +1215,7 @@
 						<id>29</id>
 						<name>zext_ln143_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1223,16 +1223,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1276,9 +1276,9 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr_2</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1286,16 +1286,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1341,9 +1341,9 @@
 					<Obj>
 						<type>0</type>
 						<id>31</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1351,16 +1351,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1406,9 +1406,9 @@
 					<Obj>
 						<type>0</type>
 						<id>32</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr_2</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1416,16 +1416,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1473,7 +1473,7 @@
 						<id>33</id>
 						<name>add_ln140</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>140</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1481,16 +1481,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1537,7 +1537,7 @@
 						<id>34</id>
 						<name>lshr_ln2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1545,16 +1545,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1603,7 +1603,7 @@
 						<id>35</id>
 						<name>tmp_9</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1611,16 +1611,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1668,7 +1668,7 @@
 						<id>36</id>
 						<name>zext_ln143_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1676,16 +1676,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1729,9 +1729,9 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr_1</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1739,16 +1739,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1796,7 +1796,7 @@
 						<id>38</id>
 						<name>tmp_s</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1804,16 +1804,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1861,7 +1861,7 @@
 						<id>39</id>
 						<name>zext_ln143_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1869,16 +1869,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1922,9 +1922,9 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr_4</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr_4</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1932,16 +1932,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -1989,7 +1989,7 @@
 						<id>41</id>
 						<name>tmp_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -1997,16 +1997,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2054,7 +2054,7 @@
 						<id>42</id>
 						<name>zext_ln143_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2062,16 +2062,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2115,9 +2115,9 @@
 					<Obj>
 						<type>0</type>
 						<id>43</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr_6</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr_6</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2125,16 +2125,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2180,9 +2180,9 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr_1</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2190,16 +2190,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2245,9 +2245,9 @@
 					<Obj>
 						<type>0</type>
 						<id>45</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr_4</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr_4</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2255,16 +2255,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2310,9 +2310,9 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr_6</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr_6</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2320,16 +2320,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2375,9 +2375,9 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2385,16 +2385,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2438,9 +2438,9 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2448,16 +2448,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2503,7 +2503,7 @@
 						<id>49</id>
 						<name>pixel</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2511,16 +2511,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2568,7 +2568,7 @@
 						<id>50</id>
 						<name>zext_ln142</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2576,16 +2576,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2629,9 +2629,9 @@
 					<Obj>
 						<type>0</type>
 						<id>51</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load_1</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2639,16 +2639,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2692,9 +2692,9 @@
 					<Obj>
 						<type>0</type>
 						<id>52</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load_1</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2702,16 +2702,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2757,7 +2757,7 @@
 						<id>53</id>
 						<name>select_ln143</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2765,16 +2765,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2822,7 +2822,7 @@
 						<id>54</id>
 						<name>zext_ln140</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>140</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2830,16 +2830,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2885,7 +2885,7 @@
 						<id>55</id>
 						<name>add_ln140_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>140</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2893,16 +2893,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -2949,7 +2949,7 @@
 						<id>56</id>
 						<name>lshr_ln143_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -2957,16 +2957,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3015,7 +3015,7 @@
 						<id>57</id>
 						<name>tmp_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3023,16 +3023,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3080,7 +3080,7 @@
 						<id>58</id>
 						<name>zext_ln143_6</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3088,16 +3088,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3141,9 +3141,9 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr_3</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3151,16 +3151,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3208,7 +3208,7 @@
 						<id>60</id>
 						<name>tmp_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3216,16 +3216,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3273,7 +3273,7 @@
 						<id>61</id>
 						<name>zext_ln143_7</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3281,16 +3281,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3334,9 +3334,9 @@
 					<Obj>
 						<type>0</type>
 						<id>62</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr_5</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3344,16 +3344,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3401,7 +3401,7 @@
 						<id>63</id>
 						<name>tmp_4</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3409,16 +3409,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3466,7 +3466,7 @@
 						<id>64</id>
 						<name>zext_ln143_8</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3474,16 +3474,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3527,9 +3527,9 @@
 					<Obj>
 						<type>0</type>
 						<id>65</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_addr_7</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_addr_7</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3537,16 +3537,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3592,9 +3592,9 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr_3</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3602,16 +3602,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3657,9 +3657,9 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr_5</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3667,16 +3667,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3722,9 +3722,9 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_addr_7</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_addr_7</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3732,16 +3732,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3787,9 +3787,9 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load_2</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3797,16 +3797,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3850,9 +3850,9 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load_2</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3860,16 +3860,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3915,7 +3915,7 @@
 						<id>71</id>
 						<name>pixel_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3923,16 +3923,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -3980,7 +3980,7 @@
 						<id>72</id>
 						<name>zext_ln142_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -3988,16 +3988,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4041,9 +4041,9 @@
 					<Obj>
 						<type>0</type>
 						<id>73</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load_3</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4051,16 +4051,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4104,9 +4104,9 @@
 					<Obj>
 						<type>0</type>
 						<id>74</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load_3</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4114,16 +4114,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4169,7 +4169,7 @@
 						<id>75</id>
 						<name>select_ln143_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4177,16 +4177,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4234,7 +4234,7 @@
 						<id>76</id>
 						<name>zext_ln143_4</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4242,16 +4242,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4295,9 +4295,9 @@
 					<Obj>
 						<type>0</type>
 						<id>77</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load_4</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load_4</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4305,16 +4305,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4358,9 +4358,9 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load_4</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load_4</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4368,16 +4368,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4423,7 +4423,7 @@
 						<id>79</id>
 						<name>select_ln143_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4431,16 +4431,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4488,7 +4488,7 @@
 						<id>80</id>
 						<name>zext_ln25</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>25</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -4496,16 +4496,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4556,9 +4556,9 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load_5</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4566,16 +4566,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4619,9 +4619,9 @@
 					<Obj>
 						<type>0</type>
 						<id>82</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load_5</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4629,16 +4629,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4684,7 +4684,7 @@
 						<id>83</id>
 						<name>pixel_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4692,16 +4692,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4749,7 +4749,7 @@
 						<id>84</id>
 						<name>zext_ln142_4</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4757,16 +4757,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4812,7 +4812,7 @@
 						<id>85</id>
 						<name>zext_ln142_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4820,16 +4820,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4875,7 +4875,7 @@
 						<id>86</id>
 						<name>sub_ln145</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4883,16 +4883,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -4939,7 +4939,7 @@
 						<id>87</id>
 						<name>sub_ln145_cast1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -4947,16 +4947,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5002,7 +5002,7 @@
 						<id>88</id>
 						<name>tmp</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>25</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -5010,16 +5010,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5073,7 +5073,7 @@
 						<id>89</id>
 						<name>tmp_6</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>25</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -5081,16 +5081,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5145,7 +5145,7 @@
 						<id>90</id>
 						<name>sext_ln119</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>119</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5153,16 +5153,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5206,9 +5206,9 @@
 					<Obj>
 						<type>0</type>
 						<id>91</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load_6</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load_6</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5216,16 +5216,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5269,9 +5269,9 @@
 					<Obj>
 						<type>0</type>
 						<id>92</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load_6</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load_6</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5279,16 +5279,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5334,7 +5334,7 @@
 						<id>93</id>
 						<name>select_ln143_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5342,16 +5342,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5399,7 +5399,7 @@
 						<id>94</id>
 						<name>select_ln143_6_cast</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5407,16 +5407,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5462,7 +5462,7 @@
 						<id>95</id>
 						<name>tmp3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5470,16 +5470,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5526,7 +5526,7 @@
 						<id>96</id>
 						<name>tmp_8</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5534,16 +5534,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5591,7 +5591,7 @@
 						<id>97</id>
 						<name>sext_ln149</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5599,16 +5599,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5654,7 +5654,7 @@
 						<id>98</id>
 						<name>add_ln149</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5662,16 +5662,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5718,7 +5718,7 @@
 						<id>99</id>
 						<name>zext_ln149</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5726,16 +5726,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5781,7 +5781,7 @@
 						<id>100</id>
 						<name>sub_ln149</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5789,16 +5789,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5843,9 +5843,9 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>p_anonymous_namespace_lineBuffer_16_0_load_7</name>
+						<name>p_anonymous_namespace_lineBuffer_32_0_load_7</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5853,16 +5853,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5906,9 +5906,9 @@
 					<Obj>
 						<type>0</type>
 						<id>102</id>
-						<name>p_anonymous_namespace_lineBuffer_16_1_load_7</name>
+						<name>p_anonymous_namespace_lineBuffer_32_1_load_7</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5916,16 +5916,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -5971,7 +5971,7 @@
 						<id>103</id>
 						<name>pixel_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>143</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -5979,16 +5979,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6036,7 +6036,7 @@
 						<id>104</id>
 						<name>zext_ln142_5</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6044,16 +6044,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6099,7 +6099,7 @@
 						<id>105</id>
 						<name>zext_ln142_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>142</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6107,16 +6107,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6162,7 +6162,7 @@
 						<id>106</id>
 						<name>add_ln145</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6170,16 +6170,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6226,7 +6226,7 @@
 						<id>107</id>
 						<name>gradientX_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6234,16 +6234,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6290,7 +6290,7 @@
 						<id>108</id>
 						<name>gradientX</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>145</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6298,16 +6298,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6354,7 +6354,7 @@
 						<id>109</id>
 						<name>sext_ln149_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6362,16 +6362,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6417,7 +6417,7 @@
 						<id>110</id>
 						<name>trunc_ln149</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6425,16 +6425,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6480,7 +6480,7 @@
 						<id>111</id>
 						<name>sext_ln149_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6488,16 +6488,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6543,7 +6543,7 @@
 						<id>112</id>
 						<name>add_ln149_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6551,16 +6551,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6607,7 +6607,7 @@
 						<id>113</id>
 						<name>sext_ln149_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6615,16 +6615,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6670,7 +6670,7 @@
 						<id>114</id>
 						<name>add_ln149_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6678,16 +6678,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6734,7 +6734,7 @@
 						<id>115</id>
 						<name>gradientY</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>149</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6742,16 +6742,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6798,7 +6798,7 @@
 						<id>116</id>
 						<name>sext_ln120</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>120</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6806,16 +6806,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6861,7 +6861,7 @@
 						<id>117</id>
 						<name>sext_ln120_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>120</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6869,16 +6869,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6924,7 +6924,7 @@
 						<id>118</id>
 						<name>mul_ln156</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>156</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6932,16 +6932,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -6988,7 +6988,7 @@
 						<id>119</id>
 						<name>mul_ln156_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>156</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -6996,16 +6996,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7052,7 +7052,7 @@
 						<id>120</id>
 						<name>squaredMagnitude</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>156</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -7060,16 +7060,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7116,7 +7116,7 @@
 						<id>121</id>
 						<name>sext_ln162</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>162</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -7124,16 +7124,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7179,7 +7179,7 @@
 						<id>122</id>
 						<name>conv59_i</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>162</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -7187,16 +7187,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7242,7 +7242,7 @@
 						<id>123</id>
 						<name>dc</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>161</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -7250,16 +7250,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7305,8 +7305,8 @@
 						<type>0</type>
 						<id>124</id>
 						<name>data</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>459</lineNumber>
 						<contextFuncName>fp_struct</contextFuncName>
 						<contextNormFuncName>fp_struct</contextNormFuncName>
@@ -7314,16 +7314,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7335,37 +7335,37 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>13</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-											<second>fp_struct</second>
-										</first>
-										<second>459</second>
-									</item>
-									<item>
-										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
+									</item>
+									<item>
+										<first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</first>
+											<second>fp_struct</second>
+										</first>
+										<second>459</second>
 									</item>
 								</second>
 							</item>
@@ -7403,8 +7403,8 @@
 						<type>0</type>
 						<id>125</id>
 						<name>xs_sign</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>460</lineNumber>
 						<contextFuncName>fp_struct</contextFuncName>
 						<contextNormFuncName>fp_struct</contextNormFuncName>
@@ -7412,16 +7412,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7433,37 +7433,37 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>13</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-											<second>fp_struct</second>
-										</first>
-										<second>460</second>
-									</item>
-									<item>
-										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
+									</item>
+									<item>
+										<first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</first>
+											<second>fp_struct</second>
+										</first>
+										<second>460</second>
 									</item>
 								</second>
 							</item>
@@ -7503,8 +7503,8 @@
 						<type>0</type>
 						<id>126</id>
 						<name>xs_exp</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>461</lineNumber>
 						<contextFuncName>fp_struct</contextFuncName>
 						<contextNormFuncName>fp_struct</contextNormFuncName>
@@ -7512,16 +7512,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7533,37 +7533,37 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>13</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-											<second>fp_struct</second>
-										</first>
-										<second>461</second>
-									</item>
-									<item>
-										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
+									</item>
+									<item>
+										<first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</first>
+											<second>fp_struct</second>
+										</first>
+										<second>461</second>
 									</item>
 								</second>
 							</item>
@@ -7603,8 +7603,8 @@
 						<type>0</type>
 						<id>127</id>
 						<name>trunc_ln505</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>505</lineNumber>
 						<contextFuncName>mantissa</contextFuncName>
 						<contextNormFuncName>mantissa</contextNormFuncName>
@@ -7612,16 +7612,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7633,37 +7633,37 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>15</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-											<second>mantissa</second>
-										</first>
-										<second>505</second>
-									</item>
-									<item>
-										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
+									</item>
+									<item>
+										<first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</first>
+											<second>mantissa</second>
+										</first>
+										<second>505</second>
 									</item>
 								</second>
 							</item>
@@ -7701,8 +7701,8 @@
 						<type>0</type>
 						<id>128</id>
 						<name>mantissa</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -7710,16 +7710,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7731,27 +7731,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>15</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -7795,8 +7795,8 @@
 						<type>0</type>
 						<id>129</id>
 						<name>zext_ln15</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>15</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -7804,16 +7804,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7825,27 +7825,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>15</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -7886,8 +7886,8 @@
 						<type>0</type>
 						<id>130</id>
 						<name>zext_ln486</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>486</lineNumber>
 						<contextFuncName>expv</contextFuncName>
 						<contextNormFuncName>expv</contextNormFuncName>
@@ -7895,16 +7895,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -7916,37 +7916,37 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-											<second>expv</second>
-										</first>
-										<second>486</second>
-									</item>
-									<item>
-										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
+									</item>
+									<item>
+										<first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</first>
+											<second>expv</second>
+										</first>
+										<second>486</second>
 									</item>
 								</second>
 							</item>
@@ -7984,8 +7984,8 @@
 						<type>0</type>
 						<id>131</id>
 						<name>add_ln486</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>486</lineNumber>
 						<contextFuncName>expv</contextFuncName>
 						<contextNormFuncName>expv</contextNormFuncName>
@@ -7993,16 +7993,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8014,37 +8014,37 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/src/hls\utils/x_hls_utils.h</first>
-											<second>expv</second>
-										</first>
-										<second>486</second>
-									</item>
-									<item>
-										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
+									</item>
+									<item>
+										<first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/src/hls/utils/x_hls_utils.h</first>
+											<second>expv</second>
+										</first>
+										<second>486</second>
 									</item>
 								</second>
 							</item>
@@ -8083,8 +8083,8 @@
 						<type>0</type>
 						<id>132</id>
 						<name>tmp_11</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8092,16 +8092,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8113,27 +8113,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8176,8 +8176,8 @@
 						<type>0</type>
 						<id>133</id>
 						<name>sub_ln18</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8185,16 +8185,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8206,27 +8206,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8268,8 +8268,8 @@
 						<type>0</type>
 						<id>134</id>
 						<name>sext_ln18</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8277,16 +8277,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8298,27 +8298,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8359,8 +8359,8 @@
 						<type>0</type>
 						<id>135</id>
 						<name>select_ln18</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8368,16 +8368,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8389,27 +8389,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8452,8 +8452,8 @@
 						<type>0</type>
 						<id>136</id>
 						<name>sext_ln18_1</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8461,16 +8461,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8482,27 +8482,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8543,8 +8543,8 @@
 						<type>0</type>
 						<id>137</id>
 						<name>zext_ln18</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8552,16 +8552,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8573,27 +8573,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8634,8 +8634,8 @@
 						<type>0</type>
 						<id>138</id>
 						<name>lshr_ln18</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8643,16 +8643,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8664,27 +8664,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8726,8 +8726,8 @@
 						<type>0</type>
 						<id>139</id>
 						<name>shl_ln18</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8735,16 +8735,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8756,27 +8756,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8818,8 +8818,8 @@
 						<type>0</type>
 						<id>140</id>
 						<name>tmp_10</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8827,16 +8827,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8848,27 +8848,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>21</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -8912,8 +8912,8 @@
 						<type>0</type>
 						<id>141</id>
 						<name>tmp_12</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>21</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -8921,16 +8921,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -8942,27 +8942,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>21</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -9006,8 +9006,8 @@
 						<type>0</type>
 						<id>142</id>
 						<name>val</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>18</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -9015,16 +9015,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9036,27 +9036,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>18</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -9099,8 +9099,8 @@
 						<type>0</type>
 						<id>143</id>
 						<name>result_2</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>59</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -9108,16 +9108,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9129,27 +9129,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -9191,8 +9191,8 @@
 						<type>0</type>
 						<id>144</id>
 						<name>result_4</name>
-						<fileName>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</fileName>
-						<fileDirectory>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</fileDirectory>
+						<fileName>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</fileName>
+						<fileDirectory>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</fileDirectory>
 						<lineNumber>59</lineNumber>
 						<contextFuncName>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</contextFuncName>
 						<contextNormFuncName>generic_cast_IEEE754_int_AP_TRN_ZERO_double_s</contextNormFuncName>
@@ -9200,16 +9200,16 @@
 							<count>2</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9221,27 +9221,27 @@
 								</second>
 							</item>
 							<item>
-								<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath</first>
+								<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, AP_TRN_ZERO, double&amp;gt;</second>
 										</first>
 										<second>59</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/include/FloatingPoint/hls_case_IEEE754.h</first>
 											<second>generic_cast_IEEE754&amp;lt;int, double&amp;gt;</second>
 										</first>
 										<second>117</second>
 									</item>
 									<item>
 										<first>
-											<first>C:\scratch\2025.2\hls_product\666\2025.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp</first>
+											<first>/wrk/ci/prod/2025.2/hls_product/continuous/666/2025.2/src/shared/hls/clib/hlsmath/src/lib_floatconversion.cpp</first>
 											<second>__hls_fptosi_double_i32</second>
 										</first>
 										<second>55</second>
@@ -9285,7 +9285,7 @@
 						<id>145</id>
 						<name>tmp_13</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>166</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -9293,16 +9293,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9351,7 +9351,7 @@
 						<id>146</id>
 						<name>icmp_ln166</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>166</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -9359,16 +9359,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9415,7 +9415,7 @@
 						<id>147</id>
 						<name>trunc_ln171</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>171</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -9423,16 +9423,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9478,7 +9478,7 @@
 						<id>148</id>
 						<name>select_ln171</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>171</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -9486,16 +9486,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9543,7 +9543,7 @@
 						<id>149</id>
 						<name>out_sobel_magnitude_addr</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>170</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -9551,16 +9551,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9608,7 +9608,7 @@
 						<id>150</id>
 						<name>out_sobel_magnitude_addr_write_ln170</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>170</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -9616,16 +9616,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9672,7 +9672,7 @@
 						<id>151</id>
 						<name>tmp_14</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>absolute_value</contextFuncName>
 						<contextNormFuncName>absolute_value</contextNormFuncName>
@@ -9680,16 +9680,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9751,7 +9751,7 @@
 						<id>152</id>
 						<name>sub_ln31</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>absolute_value</contextFuncName>
 						<contextNormFuncName>absolute_value</contextNormFuncName>
@@ -9759,16 +9759,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9829,7 +9829,7 @@
 						<id>153</id>
 						<name>absoluteX</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>absolute_value</contextFuncName>
 						<contextNormFuncName>absolute_value</contextNormFuncName>
@@ -9837,16 +9837,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9908,7 +9908,7 @@
 						<id>154</id>
 						<name>zext_ln38</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -9916,16 +9916,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -9978,7 +9978,7 @@
 						<id>155</id>
 						<name>zext_ln38_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>38</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -9986,16 +9986,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10048,7 +10048,7 @@
 						<id>156</id>
 						<name>tmp_15</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>absolute_value</contextFuncName>
 						<contextNormFuncName>absolute_value</contextNormFuncName>
@@ -10056,16 +10056,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10127,7 +10127,7 @@
 						<id>157</id>
 						<name>sub_ln31_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>absolute_value</contextFuncName>
 						<contextNormFuncName>absolute_value</contextNormFuncName>
@@ -10135,16 +10135,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10205,7 +10205,7 @@
 						<id>158</id>
 						<name>absoluteY</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>31</lineNumber>
 						<contextFuncName>absolute_value</contextFuncName>
 						<contextNormFuncName>absolute_value</contextNormFuncName>
@@ -10213,16 +10213,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>4</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10284,7 +10284,7 @@
 						<id>159</id>
 						<name>zext_ln39</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>39</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10292,16 +10292,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10354,7 +10354,7 @@
 						<id>160</id>
 						<name>or_ln41</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10362,16 +10362,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10425,7 +10425,7 @@
 						<id>161</id>
 						<name>icmp_ln41</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10433,16 +10433,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10496,7 +10496,7 @@
 						<id>162</id>
 						<name>mul_ln45</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10504,16 +10504,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10567,7 +10567,7 @@
 						<id>163</id>
 						<name>zext_ln45</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10575,16 +10575,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10637,7 +10637,7 @@
 						<id>164</id>
 						<name>zext_ln45_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10645,16 +10645,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10707,7 +10707,7 @@
 						<id>165</id>
 						<name>mul_ln45_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10715,16 +10715,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10778,7 +10778,7 @@
 						<id>166</id>
 						<name>zext_ln45_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10786,16 +10786,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10848,7 +10848,7 @@
 						<id>167</id>
 						<name>icmp_ln45</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10856,16 +10856,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10919,7 +10919,7 @@
 						<id>168</id>
 						<name>mul_ln49</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>49</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10927,16 +10927,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -10990,7 +10990,7 @@
 						<id>169</id>
 						<name>zext_ln49</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>49</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -10998,16 +10998,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11060,7 +11060,7 @@
 						<id>170</id>
 						<name>icmp_ln49</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>49</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11068,16 +11068,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11131,7 +11131,7 @@
 						<id>171</id>
 						<name>or_ln54</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11139,16 +11139,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11202,7 +11202,7 @@
 						<id>172</id>
 						<name>sext_ln55</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11210,16 +11210,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11272,7 +11272,7 @@
 						<id>173</id>
 						<name>and_ln55</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11280,16 +11280,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11343,7 +11343,7 @@
 						<id>174</id>
 						<name>sext_ln45</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11351,16 +11351,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11413,7 +11413,7 @@
 						<id>175</id>
 						<name>xor_ln45</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11421,16 +11421,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11484,7 +11484,7 @@
 						<id>176</id>
 						<name>or_ln45</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11492,16 +11492,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11555,7 +11555,7 @@
 						<id>177</id>
 						<name>xor_ln41</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>41</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11563,16 +11563,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11626,7 +11626,7 @@
 						<id>178</id>
 						<name>and_ln45</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11634,16 +11634,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11697,7 +11697,7 @@
 						<id>179</id>
 						<name>xor_ln49</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>49</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11705,16 +11705,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11768,7 +11768,7 @@
 						<id>180</id>
 						<name>and_ln49</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>49</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11776,16 +11776,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11839,7 +11839,7 @@
 						<id>181</id>
 						<name>tmp_16</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>54</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11847,16 +11847,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11911,7 +11911,7 @@
 						<id>182</id>
 						<name>tmp_17</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11919,16 +11919,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -11983,7 +11983,7 @@
 						<id>183</id>
 						<name>xor_ln55</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -11991,16 +11991,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12054,7 +12054,7 @@
 						<id>184</id>
 						<name>and_ln55_1</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -12062,16 +12062,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12125,7 +12125,7 @@
 						<id>185</id>
 						<name>and_ln55_2</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -12133,16 +12133,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12196,7 +12196,7 @@
 						<id>186</id>
 						<name>and_ln55_3</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>55</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -12204,16 +12204,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12267,7 +12267,7 @@
 						<id>187</id>
 						<name>sel_tmp</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -12275,16 +12275,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12340,7 +12340,7 @@
 						<id>188</id>
 						<name>retval_0_i_i</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>45</lineNumber>
 						<contextFuncName>quantise_direction</contextFuncName>
 						<contextNormFuncName>quantise_direction</contextNormFuncName>
@@ -12348,16 +12348,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>3</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12420,7 +12420,7 @@
 						<id>189</id>
 						<name>out_sobel_direction_addr</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>173</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -12428,16 +12428,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12485,7 +12485,7 @@
 						<id>190</id>
 						<name>out_sobel_direction_addr_write_ln173</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>173</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -12493,16 +12493,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12549,7 +12549,7 @@
 						<id>191</id>
 						<name>column_1_write_ln118</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -12557,16 +12557,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -12615,7 +12615,7 @@
 						<id>192</id>
 						<name>br_ln118</name>
 						<fileName>../src/sobel.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>sobel</contextFuncName>
 						<contextNormFuncName>sobel</contextNormFuncName>
@@ -12623,16 +12623,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft</second>
 										</first>
-										<second>25</second>
+										<second>30</second>
 									</item>
 									<item>
 										<first>
@@ -20772,21 +20772,21 @@
 						<item class_id="47" tracking_level="0" version="0">
 							<first class_id="48" tracking_level="0" version="0">
 								<first class_id_reference="9" object_id_reference="_46"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>51</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_76"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>81</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_42"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>47</second>
 						</item>
@@ -20814,42 +20814,42 @@
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_46"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>51</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_64"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>69</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_68"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>73</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_86"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>91</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_42"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>47</second>
 						</item>
 						<item>
 							<first>
 								<first class_id_reference="9" object_id_reference="_76"></first>
-								<second>core:RAM:p_anonymous_namespace_lineBuffer_16_0::load:store</second>
+								<second>core:RAM:p_anonymous_namespace_lineBuffer_32_0::load:store</second>
 							</first>
 							<second>81</second>
 						</item>
@@ -22580,7 +22580,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_1_gep_fu_168</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_1_gep_fu_168</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22588,7 +22588,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_2_gep_fu_147</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_2_gep_fu_147</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22596,7 +22596,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_3_gep_fu_204</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_3_gep_fu_204</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22604,7 +22604,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_4_gep_fu_254</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_4_gep_fu_254</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22612,7 +22612,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_5_gep_fu_268</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_5_gep_fu_268</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22620,7 +22620,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_6_gep_fu_222</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_6_gep_fu_222</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22628,7 +22628,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_7_gep_fu_236</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_7_gep_fu_236</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22636,7 +22636,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_gep_fu_140</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_gep_fu_140</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22644,7 +22644,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_1_gep_fu_175</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_1_gep_fu_175</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22652,7 +22652,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_2_gep_fu_161</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_2_gep_fu_161</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22660,7 +22660,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_3_gep_fu_211</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_3_gep_fu_211</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22668,7 +22668,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_4_gep_fu_261</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_4_gep_fu_261</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22676,7 +22676,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_5_gep_fu_275</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_5_gep_fu_275</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22684,7 +22684,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_6_gep_fu_229</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_6_gep_fu_229</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22692,7 +22692,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_7_gep_fu_243</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_7_gep_fu_243</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -22700,7 +22700,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_gep_fu_154</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_gep_fu_154</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -23604,7 +23604,7 @@
 		</item>
 		<item>
 			<first>
-				<first>p_anonymous_namespace_lineBuffer_16_0</first>
+				<first>p_anonymous_namespace_lineBuffer_32_0</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -23622,7 +23622,7 @@
 		</item>
 		<item>
 			<first>
-				<first>p_anonymous_namespace_lineBuffer_16_0</first>
+				<first>p_anonymous_namespace_lineBuffer_32_0</first>
 				<second>1</second>
 			</first>
 			<second>
@@ -23640,7 +23640,7 @@
 		</item>
 		<item>
 			<first>
-				<first>p_anonymous_namespace_lineBuffer_16_1</first>
+				<first>p_anonymous_namespace_lineBuffer_32_1</first>
 				<second>0</second>
 			</first>
 			<second>
@@ -23658,7 +23658,7 @@
 		</item>
 		<item>
 			<first>
-				<first>p_anonymous_namespace_lineBuffer_16_1</first>
+				<first>p_anonymous_namespace_lineBuffer_32_1</first>
 				<second>1</second>
 			</first>
 			<second>
@@ -24267,7 +24267,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_1_reg_1158</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_1_reg_1158</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24275,7 +24275,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_2_reg_1137</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_2_reg_1137</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24283,7 +24283,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_3_reg_1174</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_3_reg_1174</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24291,7 +24291,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_4_reg_1219</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_4_reg_1219</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24299,7 +24299,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_5_reg_1229</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_5_reg_1229</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24307,7 +24307,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_6_reg_1184</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_6_reg_1184</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24315,7 +24315,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_7_reg_1199</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_7_reg_1199</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24323,7 +24323,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0_addr_reg_1132</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0_addr_reg_1132</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24331,7 +24331,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_1_reg_1163</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_1_reg_1163</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24339,7 +24339,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_2_reg_1147</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_2_reg_1147</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24347,7 +24347,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_3_reg_1179</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_3_reg_1179</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24355,7 +24355,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_4_reg_1224</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_4_reg_1224</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24363,7 +24363,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_5_reg_1234</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_5_reg_1234</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24371,7 +24371,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_6_reg_1189</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_6_reg_1189</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24379,7 +24379,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_7_reg_1204</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_7_reg_1204</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24387,7 +24387,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1_addr_reg_1142</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1_addr_reg_1142</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24605,7 +24605,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0(p0)</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24627,7 +24627,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_0(p1)</first>
+			<first>p_anonymous_namespace_lineBuffer_32_0(p1)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24649,7 +24649,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1(p0)</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1(p0)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -24671,7 +24671,7 @@
 			</second>
 		</item>
 		<item>
-			<first>p_anonymous_namespace_lineBuffer_16_1(p1)</first>
+			<first>p_anonymous_namespace_lineBuffer_32_1(p1)</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -25365,7 +25365,7 @@
 				</SubResources>
 			</Resource>
 			<Resource>
-				<Name>p_anonymous_namespace_lineBuffer_16_0</Name>
+				<Name>p_anonymous_namespace_lineBuffer_32_0</Name>
 				<Category>RAM</Category>
 				<ResourceType>RAM_2P</ResourceType>
 				<source_obj>6</source_obj>
@@ -25429,7 +25429,7 @@
 				</SubResources>
 			</Resource>
 			<Resource>
-				<Name>p_anonymous_namespace_lineBuffer_16_1</Name>
+				<Name>p_anonymous_namespace_lineBuffer_32_1</Name>
 				<Category>RAM</Category>
 				<ResourceType>RAM_2P</ResourceType>
 				<source_obj>7</source_obj>
@@ -25496,7 +25496,7 @@
 		<ResourceTableFailed class_id="65" tracking_level="0" version="0">
 			<II>1</II>
 			<Resource>
-				<Name>p_anonymous_namespace_lineBuffer_16_0</Name>
+				<Name>p_anonymous_namespace_lineBuffer_32_0</Name>
 				<Category>RAM</Category>
 				<ResourceType>RAM_2P</ResourceType>
 				<source_obj>6</source_obj>
@@ -25586,7 +25586,7 @@
 				</SubResources>
 			</Resource>
 			<Resource>
-				<Name>p_anonymous_namespace_lineBuffer_16_1</Name>
+				<Name>p_anonymous_namespace_lineBuffer_32_1</Name>
 				<Category>RAM</Category>
 				<ResourceType>RAM_2P</ResourceType>
 				<source_obj>7</source_obj>

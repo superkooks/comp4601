@@ -70,10 +70,10 @@ newFuncRoot:2 %br_ln0 = br void %for.body.i
 
 <Node id="7" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
-for.body.i:0 %column_8 = load i10 %column
+for.body.i:0 %column_11 = load i10 %column
 
 ]]></Node>
-<StgValue><ssdm name="column_8"/></StgValue>
+<StgValue><ssdm name="column_11"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -85,7 +85,7 @@ for.body.i:0 %column_8 = load i10 %column
 
 <Node id="8" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.body.i:1 %icmp_ln16 = icmp_eq  i10 %column_8, i10 512
+for.body.i:1 %icmp_ln16 = icmp_eq  i10 %column_11, i10 512
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln16"/></StgValue>
@@ -100,7 +100,7 @@ for.body.i:1 %icmp_ln16 = icmp_eq  i10 %column_8, i10 512
 
 <Node id="9" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.body.i:2 %add_ln16 = add i10 %column_8, i10 1
+for.body.i:2 %add_ln16 = add i10 %column_11, i10 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln16"/></StgValue>
@@ -131,7 +131,7 @@ for.body.i:3 %br_ln16 = br i1 %icmp_ln16, void %for.body.split.i, void %_Z16doub
 
 <Node id="12" bw="64" op_0_bw="10">
 <![CDATA[
-for.body.split.i:0 %zext_ln16 = zext i10 %column_8
+for.body.split.i:0 %zext_ln16 = zext i10 %column_11
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln16"/></StgValue>
@@ -213,7 +213,7 @@ _Z16double_thresholdPKhPhbPb.4.exit.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.body.split.i:1 %specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0
+for.body.split.i:1 %specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln16"/></StgValue>
@@ -243,7 +243,7 @@ for.body.split.i:2 %speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body.split.i:3 %specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3
+for.body.split.i:3 %specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_17
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln16"/></StgValue>

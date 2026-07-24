@@ -25,18 +25,18 @@ module canny_top_sobel_Pipeline_VITIS_LOOP_118_2 (
         out_sobel_direction_ce0,
         out_sobel_direction_we0,
         out_sobel_direction_d0,
-        p_anonymous_namespace_lineBuffer_16_0_address0,
-        p_anonymous_namespace_lineBuffer_16_0_ce0,
-        p_anonymous_namespace_lineBuffer_16_0_q0,
-        p_anonymous_namespace_lineBuffer_16_0_address1,
-        p_anonymous_namespace_lineBuffer_16_0_ce1,
-        p_anonymous_namespace_lineBuffer_16_0_q1,
-        p_anonymous_namespace_lineBuffer_16_1_address0,
-        p_anonymous_namespace_lineBuffer_16_1_ce0,
-        p_anonymous_namespace_lineBuffer_16_1_q0,
-        p_anonymous_namespace_lineBuffer_16_1_address1,
-        p_anonymous_namespace_lineBuffer_16_1_ce1,
-        p_anonymous_namespace_lineBuffer_16_1_q1
+        p_anonymous_namespace_lineBuffer_32_0_address0,
+        p_anonymous_namespace_lineBuffer_32_0_ce0,
+        p_anonymous_namespace_lineBuffer_32_0_q0,
+        p_anonymous_namespace_lineBuffer_32_0_address1,
+        p_anonymous_namespace_lineBuffer_32_0_ce1,
+        p_anonymous_namespace_lineBuffer_32_0_q1,
+        p_anonymous_namespace_lineBuffer_32_1_address0,
+        p_anonymous_namespace_lineBuffer_32_1_ce0,
+        p_anonymous_namespace_lineBuffer_32_1_q0,
+        p_anonymous_namespace_lineBuffer_32_1_address1,
+        p_anonymous_namespace_lineBuffer_32_1_ce1,
+        p_anonymous_namespace_lineBuffer_32_1_q1
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 3'd1;
@@ -60,18 +60,18 @@ output  [8:0] out_sobel_direction_address0;
 output   out_sobel_direction_ce0;
 output   out_sobel_direction_we0;
 output  [1:0] out_sobel_direction_d0;
-output  [9:0] p_anonymous_namespace_lineBuffer_16_0_address0;
-output   p_anonymous_namespace_lineBuffer_16_0_ce0;
-input  [7:0] p_anonymous_namespace_lineBuffer_16_0_q0;
-output  [9:0] p_anonymous_namespace_lineBuffer_16_0_address1;
-output   p_anonymous_namespace_lineBuffer_16_0_ce1;
-input  [7:0] p_anonymous_namespace_lineBuffer_16_0_q1;
-output  [9:0] p_anonymous_namespace_lineBuffer_16_1_address0;
-output   p_anonymous_namespace_lineBuffer_16_1_ce0;
-input  [7:0] p_anonymous_namespace_lineBuffer_16_1_q0;
-output  [9:0] p_anonymous_namespace_lineBuffer_16_1_address1;
-output   p_anonymous_namespace_lineBuffer_16_1_ce1;
-input  [7:0] p_anonymous_namespace_lineBuffer_16_1_q1;
+output  [9:0] p_anonymous_namespace_lineBuffer_32_0_address0;
+output   p_anonymous_namespace_lineBuffer_32_0_ce0;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_0_q0;
+output  [9:0] p_anonymous_namespace_lineBuffer_32_0_address1;
+output   p_anonymous_namespace_lineBuffer_32_0_ce1;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_0_q1;
+output  [9:0] p_anonymous_namespace_lineBuffer_32_1_address0;
+output   p_anonymous_namespace_lineBuffer_32_1_ce0;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_1_q0;
+output  [9:0] p_anonymous_namespace_lineBuffer_32_1_address1;
+output   p_anonymous_namespace_lineBuffer_32_1_ce1;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_1_q1;
 
 reg ap_idle;
 
@@ -240,14 +240,14 @@ reg   [8:0] column_1_fu_118;
 wire   [8:0] add_ln140_1_fu_415_p2;
 wire    ap_loop_init;
 reg   [8:0] ap_sig_allocacmp_column;
-reg    p_anonymous_namespace_lineBuffer_16_0_ce1_local;
-reg   [9:0] p_anonymous_namespace_lineBuffer_16_0_address1_local;
-reg    p_anonymous_namespace_lineBuffer_16_0_ce0_local;
-reg   [9:0] p_anonymous_namespace_lineBuffer_16_0_address0_local;
-reg    p_anonymous_namespace_lineBuffer_16_1_ce1_local;
-reg   [9:0] p_anonymous_namespace_lineBuffer_16_1_address1_local;
-reg    p_anonymous_namespace_lineBuffer_16_1_ce0_local;
-reg   [9:0] p_anonymous_namespace_lineBuffer_16_1_address0_local;
+reg    p_anonymous_namespace_lineBuffer_32_0_ce1_local;
+reg   [9:0] p_anonymous_namespace_lineBuffer_32_0_address1_local;
+reg    p_anonymous_namespace_lineBuffer_32_0_ce0_local;
+reg   [9:0] p_anonymous_namespace_lineBuffer_32_0_address0_local;
+reg    p_anonymous_namespace_lineBuffer_32_1_ce1_local;
+reg   [9:0] p_anonymous_namespace_lineBuffer_32_1_address1_local;
+reg    p_anonymous_namespace_lineBuffer_32_1_ce0_local;
+reg   [9:0] p_anonymous_namespace_lineBuffer_32_1_address0_local;
 reg    out_sobel_direction_we0_local;
 wire   [1:0] retval_0_i_i_fu_890_p11;
 reg    out_sobel_direction_ce0_local;
@@ -431,7 +431,7 @@ canny_top_sitodp_32s_64_6_no_dsp_1 #(
     .NUM_STAGE( 6 ),
     .din0_WIDTH( 32 ),
     .dout_WIDTH( 64 ))
-sitodp_32s_64_6_no_dsp_1_U46(
+sitodp_32s_64_6_no_dsp_1_U61(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_312_p0),
@@ -445,7 +445,7 @@ canny_top_dsqrt_64ns_64ns_64_57_no_dsp_1 #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 64 ),
     .dout_WIDTH( 64 ))
-dsqrt_64ns_64ns_64_57_no_dsp_1_U47(
+dsqrt_64ns_64ns_64_57_no_dsp_1_U62(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(64'd0),
@@ -460,7 +460,7 @@ canny_top_mul_10ns_11ns_20_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 20 ))
-mul_10ns_11ns_20_1_1_U48(
+mul_10ns_11ns_20_1_1_U63(
     .din0(mul_ln45_fu_672_p0),
     .din1(mul_ln45_fu_672_p1),
     .dout(mul_ln45_fu_672_p2)
@@ -472,7 +472,7 @@ canny_top_mul_11s_11s_22_1_1 #(
     .din0_WIDTH( 11 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 22 ))
-mul_11s_11s_22_1_1_U49(
+mul_11s_11s_22_1_1_U64(
     .din0(mul_ln156_fu_707_p0),
     .din1(mul_ln156_fu_707_p1),
     .dout(mul_ln156_fu_707_p2)
@@ -484,7 +484,7 @@ canny_top_mul_10ns_10ns_19_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 19 ))
-mul_10ns_10ns_19_1_1_U50(
+mul_10ns_10ns_19_1_1_U65(
     .din0(mul_ln45_1_fu_758_p0),
     .din1(mul_ln45_1_fu_758_p1),
     .dout(mul_ln45_1_fu_758_p2)
@@ -496,7 +496,7 @@ canny_top_mul_10ns_13ns_22_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 13 ),
     .dout_WIDTH( 22 ))
-mul_10ns_13ns_22_1_1_U51(
+mul_10ns_13ns_22_1_1_U66(
     .din0(mul_ln49_fu_774_p0),
     .din1(mul_ln49_fu_774_p1),
     .dout(mul_ln49_fu_774_p2)
@@ -516,7 +516,7 @@ mul_10ns_13ns_22_1_1_U51(
     .def_WIDTH( 2 ),
     .sel_WIDTH( 3 ),
     .dout_WIDTH( 2 ))
-sparsemux_9_3_2_1_1_U52(
+sparsemux_9_3_2_1_1_U67(
     .din0(2'd0),
     .din1(2'd2),
     .din2(2'd3),
@@ -533,7 +533,7 @@ canny_top_mac_muladd_11s_11s_22s_22_4_1 #(
     .din1_WIDTH( 11 ),
     .din2_WIDTH( 22 ),
     .dout_WIDTH( 22 ))
-mac_muladd_11s_11s_22s_22_4_1_U53(
+mac_muladd_11s_11s_22s_22_4_1_U68(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_1076_p0),
@@ -1264,89 +1264,89 @@ end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address0_local = zext_ln143_7_fu_535_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address0_local = zext_ln143_7_fu_535_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address0_local = zext_ln143_8_fu_484_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address0_local = zext_ln143_8_fu_484_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address0_local = zext_ln143_1_fu_381_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address0_local = zext_ln143_1_fu_381_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address0_local = zext_ln143_6_fu_437_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address0_local = zext_ln143_6_fu_437_p1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_0_address0_local = 'bx;
+        p_anonymous_namespace_lineBuffer_32_0_address0_local = 'bx;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address1_local = zext_ln143_3_fu_520_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address1_local = zext_ln143_3_fu_520_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address1_local = zext_ln143_5_fu_454_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address1_local = zext_ln143_5_fu_454_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address1_local = zext_ln143_fu_368_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address1_local = zext_ln143_fu_368_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_0_address1_local = zext_ln143_2_fu_409_p1;
+        p_anonymous_namespace_lineBuffer_32_0_address1_local = zext_ln143_2_fu_409_p1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_0_address1_local = 'bx;
+        p_anonymous_namespace_lineBuffer_32_0_address1_local = 'bx;
     end
 end
 
 always @ (*) begin
     if ((((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001)))) begin
-        p_anonymous_namespace_lineBuffer_16_0_ce0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_0_ce0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_0_ce0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_0_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001)))) begin
-        p_anonymous_namespace_lineBuffer_16_0_ce1_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_0_ce1_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_0_ce1_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_0_ce1_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address0_local = zext_ln143_7_fu_535_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address0_local = zext_ln143_7_fu_535_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address0_local = zext_ln143_8_fu_484_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address0_local = zext_ln143_8_fu_484_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address0_local = zext_ln143_1_fu_381_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address0_local = zext_ln143_1_fu_381_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address0_local = zext_ln143_6_fu_437_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address0_local = zext_ln143_6_fu_437_p1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_1_address0_local = 'bx;
+        p_anonymous_namespace_lineBuffer_32_1_address0_local = 'bx;
     end
 end
 
 always @ (*) begin
     if (((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address1_local = zext_ln143_3_fu_520_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address1_local = zext_ln143_3_fu_520_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address1_local = zext_ln143_5_fu_454_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address1_local = zext_ln143_5_fu_454_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address1_local = zext_ln143_fu_368_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address1_local = zext_ln143_fu_368_p1;
     end else if (((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1))) begin
-        p_anonymous_namespace_lineBuffer_16_1_address1_local = zext_ln143_2_fu_409_p1;
+        p_anonymous_namespace_lineBuffer_32_1_address1_local = zext_ln143_2_fu_409_p1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_1_address1_local = 'bx;
+        p_anonymous_namespace_lineBuffer_32_1_address1_local = 'bx;
     end
 end
 
 always @ (*) begin
     if ((((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001)))) begin
-        p_anonymous_namespace_lineBuffer_16_1_ce0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_1_ce0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_1_ce0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((((ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (1'b0 == ap_block_pp0_stage0_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd1) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage1) & (trunc_ln118_reg_1122 == 1'd0) & (icmp_ln118_reg_1118 == 1'd0) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage1_11001)) | ((1'b1 == ap_CS_fsm_pp0_stage2) & (ap_enable_reg_pp0_iter0_reg == 1'b1) & (1'b0 == ap_block_pp0_stage2_11001)))) begin
-        p_anonymous_namespace_lineBuffer_16_1_ce1_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_1_ce1_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_1_ce1_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_1_ce1_local = 1'b0;
     end
 end
 
@@ -1457,9 +1457,9 @@ assign grp_fu_1076_p1 = sext_ln120_1_fu_645_p1;
 
 assign grp_fu_312_p0 = squaredMagnitude_reg_1330;
 
-assign grp_fu_320_p3 = ((grp_fu_320_p0[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_16_0_q1 : p_anonymous_namespace_lineBuffer_16_1_q1);
+assign grp_fu_320_p3 = ((grp_fu_320_p0[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_32_0_q1 : p_anonymous_namespace_lineBuffer_32_1_q1);
 
-assign grp_fu_327_p3 = ((grp_fu_327_p0[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_16_0_q0 : p_anonymous_namespace_lineBuffer_16_1_q0);
+assign grp_fu_327_p3 = ((grp_fu_327_p0[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_32_0_q0 : p_anonymous_namespace_lineBuffer_32_1_q0);
 
 assign icmp_ln118_fu_342_p2 = ((ap_sig_allocacmp_column == 9'd511) ? 1'b1 : 1'b0);
 
@@ -1525,25 +1525,25 @@ assign out_sobel_magnitude_d0 = select_ln171_fu_1068_p3;
 
 assign out_sobel_magnitude_we0 = out_sobel_magnitude_we0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_0_address0 = p_anonymous_namespace_lineBuffer_16_0_address0_local;
+assign p_anonymous_namespace_lineBuffer_32_0_address0 = p_anonymous_namespace_lineBuffer_32_0_address0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_0_address1 = p_anonymous_namespace_lineBuffer_16_0_address1_local;
+assign p_anonymous_namespace_lineBuffer_32_0_address1 = p_anonymous_namespace_lineBuffer_32_0_address1_local;
 
-assign p_anonymous_namespace_lineBuffer_16_0_ce0 = p_anonymous_namespace_lineBuffer_16_0_ce0_local;
+assign p_anonymous_namespace_lineBuffer_32_0_ce0 = p_anonymous_namespace_lineBuffer_32_0_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_0_ce1 = p_anonymous_namespace_lineBuffer_16_0_ce1_local;
+assign p_anonymous_namespace_lineBuffer_32_0_ce1 = p_anonymous_namespace_lineBuffer_32_0_ce1_local;
 
-assign p_anonymous_namespace_lineBuffer_16_1_address0 = p_anonymous_namespace_lineBuffer_16_1_address0_local;
+assign p_anonymous_namespace_lineBuffer_32_1_address0 = p_anonymous_namespace_lineBuffer_32_1_address0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_1_address1 = p_anonymous_namespace_lineBuffer_16_1_address1_local;
+assign p_anonymous_namespace_lineBuffer_32_1_address1 = p_anonymous_namespace_lineBuffer_32_1_address1_local;
 
-assign p_anonymous_namespace_lineBuffer_16_1_ce0 = p_anonymous_namespace_lineBuffer_16_1_ce0_local;
+assign p_anonymous_namespace_lineBuffer_32_1_ce0 = p_anonymous_namespace_lineBuffer_32_1_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_1_ce1 = p_anonymous_namespace_lineBuffer_16_1_ce1_local;
+assign p_anonymous_namespace_lineBuffer_32_1_ce1 = p_anonymous_namespace_lineBuffer_32_1_ce1_local;
 
-assign pixel_1_fu_490_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_16_0_q0 : p_anonymous_namespace_lineBuffer_16_1_q0);
+assign pixel_1_fu_490_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_32_0_q0 : p_anonymous_namespace_lineBuffer_32_1_q0);
 
-assign pixel_fu_460_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_16_0_q1 : p_anonymous_namespace_lineBuffer_16_1_q1);
+assign pixel_fu_460_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_32_0_q1 : p_anonymous_namespace_lineBuffer_32_1_q1);
 
 assign result_2_fu_1036_p2 = (32'd0 - val_fu_1030_p3);
 
@@ -1553,11 +1553,11 @@ assign retval_0_i_i_fu_890_p10 = {{{or_ln45_fu_815_p2}, {and_ln49_fu_835_p2}}, {
 
 assign retval_0_i_i_fu_890_p9 = 'bx;
 
-assign select_ln143_5_fu_497_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_16_1_q0 : p_anonymous_namespace_lineBuffer_16_0_q0);
+assign select_ln143_5_fu_497_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_32_1_q0 : p_anonymous_namespace_lineBuffer_32_0_q0);
 
 assign select_ln143_6_cast_fu_504_p1 = select_ln143_5_fu_497_p3;
 
-assign select_ln143_fu_467_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_16_1_q1 : p_anonymous_namespace_lineBuffer_16_0_q1);
+assign select_ln143_fu_467_p3 = ((trunc_ln118_reg_1122[0:0] == 1'b1) ? p_anonymous_namespace_lineBuffer_32_1_q1 : p_anonymous_namespace_lineBuffer_32_0_q1);
 
 assign select_ln171_fu_1068_p3 = ((icmp_ln166_fu_1063_p2[0:0] == 1'b1) ? 8'd255 : trunc_ln171_reg_1380);
 

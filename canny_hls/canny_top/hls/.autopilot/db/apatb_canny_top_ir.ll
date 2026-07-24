@@ -1,4 +1,4 @@
-; ModuleID = 'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/a.g.ld.5.gdce.bc'
+; ModuleID = '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/a.g.ld.5.gdce.bc'
 source_filename = "llvm-link"
 target datalayout = "e-m:e-i64:64-i128:128-i256:256-i512:512-i1024:1024-i2048:2048-i4096:4096-n8:16:32:64-S128-v16:16-v24:32-v32:32-v48:64-v96:128-v192:256-v256:256-v512:512-v1024:1024"
 target triple = "fpga64-xilinx-none"
@@ -6,7 +6,7 @@ target triple = "fpga64-xilinx-none"
 %struct.RGBPixel = type { i8, i8, i8 }
 
 ; Function Attrs: noinline
-define void @apatb_canny_top_ir(%struct.RGBPixel* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="262144" "maxi" %in, i8* noalias nocapture nonnull "fpga.decayed.dim.hint"="262144" "maxi" %out) local_unnamed_addr #0 {
+define void @apatb_canny_top_ir(%struct.RGBPixel* noalias nocapture nonnull readonly "fpga.decayed.dim.hint"="262144" %in, i8* noalias nocapture nonnull "fpga.decayed.dim.hint"="262144" %out) local_unnamed_addr #0 {
 entry:
   %0 = bitcast %struct.RGBPixel* %in to [262144 x %struct.RGBPixel]*
   %1 = call i8* @malloc(i64 786432)

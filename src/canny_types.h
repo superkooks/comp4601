@@ -4,9 +4,9 @@
 #include <cstdint>
 
 struct RGBPixel {
-    std::uint8_t red;
-    std::uint8_t green;
     std::uint8_t blue;
+    std::uint8_t green;
+    std::uint8_t red;
 };
 
 enum class GradientDirection : std::uint8_t {

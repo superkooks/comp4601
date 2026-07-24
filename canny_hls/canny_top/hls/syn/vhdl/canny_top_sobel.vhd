@@ -29,6 +29,25 @@ port (
     out_sobel_direction_ce0 : OUT STD_LOGIC;
     out_sobel_direction_we0 : OUT STD_LOGIC;
     out_sobel_direction_d0 : OUT STD_LOGIC_VECTOR (1 downto 0);
+    p_anonymous_namespace_rowsReceived_1_i : IN STD_LOGIC_VECTOR (31 downto 0);
+    p_anonymous_namespace_rowsReceived_1_o : OUT STD_LOGIC_VECTOR (31 downto 0);
+    p_anonymous_namespace_rowsReceived_1_o_ap_vld : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_32_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_32_0_ce0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_32_0_we0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_32_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_32_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_32_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_32_0_ce1 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_32_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_32_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_32_1_ce0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_32_1_we0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_32_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_32_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_32_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_32_1_ce1 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_32_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
     ap_return : OUT STD_LOGIC_VECTOR (0 downto 0) );
 end;
 
@@ -199,19 +218,6 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal p_anonymous_namespace_rowsReceived_2 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
-    signal p_anonymous_namespace_lineBuffer_16_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal p_anonymous_namespace_lineBuffer_16_0_ce0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_16_0_we0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_16_0_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_anonymous_namespace_lineBuffer_16_0_ce1 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_16_0_q1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_anonymous_namespace_lineBuffer_16_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal p_anonymous_namespace_lineBuffer_16_1_ce0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_16_1_we0 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_16_1_q0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal p_anonymous_namespace_lineBuffer_16_1_ce1 : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_16_1_q1 : STD_LOGIC_VECTOR (7 downto 0);
     signal p_read_1_read_fu_42_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal p_read_1_reg_193 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_state1 : BOOLEAN;
@@ -247,14 +253,14 @@ attribute shreg_extract : string;
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_sobel_direction_d0 : STD_LOGIC_VECTOR (1 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_gaussian_address0 : STD_LOGIC_VECTOR (8 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_gaussian_ce0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_ce0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_we0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_ce0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_we0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_ce0 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_we0 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_ce0 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_we0 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_ap_start : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_ap_done : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_ap_idle : STD_LOGIC;
@@ -267,14 +273,14 @@ attribute shreg_extract : string;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_ce0 : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_we0 : STD_LOGIC;
     signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_d0 : STD_LOGIC_VECTOR (1 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce1 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce0 : STD_LOGIC;
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce1 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce0 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce1 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce0 : STD_LOGIC;
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
+    signal grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce1 : STD_LOGIC;
     signal ap_phi_mux_sobel_valid_2_phi_fu_52_p6 : STD_LOGIC_VECTOR (0 downto 0);
     signal sobel_valid_2_reg_48 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_CS_fsm_state72 : STD_LOGIC;
@@ -534,14 +540,14 @@ attribute shreg_extract : string;
         out_gaussian_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
         out_gaussian_ce0 : OUT STD_LOGIC;
         out_gaussian_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_16_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_16_0_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_0_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_16_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_16_1_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_1_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0) );
+        p_anonymous_namespace_lineBuffer_32_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_32_0_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_0_we0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_32_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_32_1_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_1_we0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0) );
     end component;
 
 
@@ -564,18 +570,18 @@ attribute shreg_extract : string;
         out_sobel_direction_ce0 : OUT STD_LOGIC;
         out_sobel_direction_we0 : OUT STD_LOGIC;
         out_sobel_direction_d0 : OUT STD_LOGIC_VECTOR (1 downto 0);
-        p_anonymous_namespace_lineBuffer_16_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_16_0_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_16_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_16_0_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_16_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_16_1_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_16_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_16_1_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_16_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0) );
+        p_anonymous_namespace_lineBuffer_32_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_32_0_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_32_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_32_0_ce1 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_32_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_32_1_ce0 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        p_anonymous_namespace_lineBuffer_32_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+        p_anonymous_namespace_lineBuffer_32_1_ce1 : OUT STD_LOGIC;
+        p_anonymous_namespace_lineBuffer_32_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0) );
     end component;
 
 
@@ -617,61 +623,8 @@ attribute shreg_extract : string;
     end component;
 
 
-    component canny_top_sobel_p_anonymous_namespace_lineBuffer_16_0_RAM_AUTO_1R1W IS
-    generic (
-        DataWidth : INTEGER;
-        AddressRange : INTEGER;
-        AddressWidth : INTEGER );
-    port (
-        clk : IN STD_LOGIC;
-        reset : IN STD_LOGIC;
-        address0 : IN STD_LOGIC_VECTOR (9 downto 0);
-        ce0 : IN STD_LOGIC;
-        we0 : IN STD_LOGIC;
-        d0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        q0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        address1 : IN STD_LOGIC_VECTOR (9 downto 0);
-        ce1 : IN STD_LOGIC;
-        q1 : OUT STD_LOGIC_VECTOR (7 downto 0) );
-    end component;
-
-
 
 begin
-    p_anonymous_namespace_lineBuffer_16_0_U : component canny_top_sobel_p_anonymous_namespace_lineBuffer_16_0_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 768,
-        AddressWidth => 10)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        address0 => p_anonymous_namespace_lineBuffer_16_0_address0,
-        ce0 => p_anonymous_namespace_lineBuffer_16_0_ce0,
-        we0 => p_anonymous_namespace_lineBuffer_16_0_we0,
-        d0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_d0,
-        q0 => p_anonymous_namespace_lineBuffer_16_0_q0,
-        address1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_address1,
-        ce1 => p_anonymous_namespace_lineBuffer_16_0_ce1,
-        q1 => p_anonymous_namespace_lineBuffer_16_0_q1);
-
-    p_anonymous_namespace_lineBuffer_16_1_U : component canny_top_sobel_p_anonymous_namespace_lineBuffer_16_0_RAM_AUTO_1R1W
-    generic map (
-        DataWidth => 8,
-        AddressRange => 768,
-        AddressWidth => 10)
-    port map (
-        clk => ap_clk,
-        reset => ap_rst,
-        address0 => p_anonymous_namespace_lineBuffer_16_1_address0,
-        ce0 => p_anonymous_namespace_lineBuffer_16_1_ce0,
-        we0 => p_anonymous_namespace_lineBuffer_16_1_we0,
-        d0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_d0,
-        q0 => p_anonymous_namespace_lineBuffer_16_1_q0,
-        address1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_address1,
-        ce1 => p_anonymous_namespace_lineBuffer_16_1_ce1,
-        q1 => p_anonymous_namespace_lineBuffer_16_1_q1);
-
     grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75 : component canny_top_sobel_Pipeline_VITIS_LOOP_89_1
     port map (
         ap_clk => ap_clk,
@@ -692,14 +645,14 @@ begin
         out_gaussian_address0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_gaussian_address0,
         out_gaussian_ce0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_out_gaussian_ce0,
         out_gaussian_q0 => out_gaussian_q0,
-        p_anonymous_namespace_lineBuffer_16_0_address0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_address0,
-        p_anonymous_namespace_lineBuffer_16_0_ce0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_ce0,
-        p_anonymous_namespace_lineBuffer_16_0_we0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_we0,
-        p_anonymous_namespace_lineBuffer_16_0_d0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_d0,
-        p_anonymous_namespace_lineBuffer_16_1_address0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_address0,
-        p_anonymous_namespace_lineBuffer_16_1_ce0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_ce0,
-        p_anonymous_namespace_lineBuffer_16_1_we0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_we0,
-        p_anonymous_namespace_lineBuffer_16_1_d0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_d0);
+        p_anonymous_namespace_lineBuffer_32_0_address0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_address0,
+        p_anonymous_namespace_lineBuffer_32_0_ce0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_ce0,
+        p_anonymous_namespace_lineBuffer_32_0_we0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_we0,
+        p_anonymous_namespace_lineBuffer_32_0_d0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_d0,
+        p_anonymous_namespace_lineBuffer_32_1_address0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_address0,
+        p_anonymous_namespace_lineBuffer_32_1_ce0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_ce0,
+        p_anonymous_namespace_lineBuffer_32_1_we0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_we0,
+        p_anonymous_namespace_lineBuffer_32_1_d0 => grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_d0);
 
     grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90 : component canny_top_sobel_Pipeline_VITIS_LOOP_118_2
     port map (
@@ -720,20 +673,20 @@ begin
         out_sobel_direction_ce0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_ce0,
         out_sobel_direction_we0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_we0,
         out_sobel_direction_d0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_out_sobel_direction_d0,
-        p_anonymous_namespace_lineBuffer_16_0_address0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_address0,
-        p_anonymous_namespace_lineBuffer_16_0_ce0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce0,
-        p_anonymous_namespace_lineBuffer_16_0_q0 => p_anonymous_namespace_lineBuffer_16_0_q0,
-        p_anonymous_namespace_lineBuffer_16_0_address1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_address1,
-        p_anonymous_namespace_lineBuffer_16_0_ce1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce1,
-        p_anonymous_namespace_lineBuffer_16_0_q1 => p_anonymous_namespace_lineBuffer_16_0_q1,
-        p_anonymous_namespace_lineBuffer_16_1_address0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_address0,
-        p_anonymous_namespace_lineBuffer_16_1_ce0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce0,
-        p_anonymous_namespace_lineBuffer_16_1_q0 => p_anonymous_namespace_lineBuffer_16_1_q0,
-        p_anonymous_namespace_lineBuffer_16_1_address1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_address1,
-        p_anonymous_namespace_lineBuffer_16_1_ce1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce1,
-        p_anonymous_namespace_lineBuffer_16_1_q1 => p_anonymous_namespace_lineBuffer_16_1_q1);
+        p_anonymous_namespace_lineBuffer_32_0_address0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_address0,
+        p_anonymous_namespace_lineBuffer_32_0_ce0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce0,
+        p_anonymous_namespace_lineBuffer_32_0_q0 => p_anonymous_namespace_lineBuffer_32_0_q0,
+        p_anonymous_namespace_lineBuffer_32_0_address1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_address1,
+        p_anonymous_namespace_lineBuffer_32_0_ce1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce1,
+        p_anonymous_namespace_lineBuffer_32_0_q1 => p_anonymous_namespace_lineBuffer_32_0_q1,
+        p_anonymous_namespace_lineBuffer_32_1_address0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_address0,
+        p_anonymous_namespace_lineBuffer_32_1_ce0 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce0,
+        p_anonymous_namespace_lineBuffer_32_1_q0 => p_anonymous_namespace_lineBuffer_32_1_q0,
+        p_anonymous_namespace_lineBuffer_32_1_address1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_address1,
+        p_anonymous_namespace_lineBuffer_32_1_ce1 => grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce1,
+        p_anonymous_namespace_lineBuffer_32_1_q1 => p_anonymous_namespace_lineBuffer_32_1_q1);
 
-    srem_32ns_3ns_2_36_seq_1_U69 : component canny_top_srem_32ns_3ns_2_36_seq_1
+    srem_32ns_3ns_2_36_seq_1_U84 : component canny_top_srem_32ns_3ns_2_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -745,12 +698,12 @@ begin
         reset => ap_rst,
         start => grp_fu_113_ap_start,
         done => grp_fu_113_ap_done,
-        din0 => p_anonymous_namespace_rowsReceived_2,
+        din0 => p_anonymous_namespace_rowsReceived_1_i,
         din1 => grp_fu_113_p1,
         ce => grp_fu_113_ce,
         dout => grp_fu_113_p2);
 
-    urem_31ns_3ns_2_35_seq_1_U70 : component canny_top_urem_31ns_3ns_2_35_seq_1
+    urem_31ns_3ns_2_35_seq_1_U85 : component canny_top_urem_31ns_3ns_2_35_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 35,
@@ -767,7 +720,7 @@ begin
         ce => grp_fu_160_ce,
         dout => grp_fu_160_p2);
 
-    urem_31ns_3ns_2_35_seq_1_U71 : component canny_top_urem_31ns_3ns_2_35_seq_1
+    urem_31ns_3ns_2_35_seq_1_U86 : component canny_top_urem_31ns_3ns_2_35_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 35,
@@ -893,14 +846,6 @@ begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state37) and (grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_ap_done = ap_const_logic_1))) then
                 icmp_ln112_reg_220 <= icmp_ln112_fu_149_p2;
-            end if;
-        end if;
-    end process;
-    process (ap_clk)
-    begin
-        if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_logic_1 = ap_CS_fsm_state72) and (ap_const_boolean_0 = ap_block_state72_on_subcall_done) and (p_read_1_reg_193 = ap_const_lv1_1))) then
-                p_anonymous_namespace_rowsReceived_2 <= add_ln102_fu_182_p2;
             end if;
         end if;
     end process;
@@ -1080,7 +1025,7 @@ begin
                 ap_NS_fsm <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end case;
     end process;
-    add_ln102_fu_182_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_2) + unsigned(ap_const_lv32_1));
+    add_ln102_fu_182_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_1_i) + unsigned(ap_const_lv32_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state10 <= ap_CS_fsm(9);
     ap_CS_fsm_state11 <= ap_CS_fsm(10);
@@ -1492,98 +1437,122 @@ begin
         end if; 
     end process;
 
-    outputRow_fu_140_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_2) + unsigned(ap_const_lv32_FFFFFFFF));
+    outputRow_fu_140_p2 <= std_logic_vector(unsigned(p_anonymous_namespace_rowsReceived_1_i) + unsigned(ap_const_lv32_FFFFFFFF));
 
-    p_anonymous_namespace_lineBuffer_16_0_address0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_address0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_address0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
+    p_anonymous_namespace_lineBuffer_32_0_address0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_address0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_address0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
     begin
         if (((ap_predicate_op197_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_16_0_address0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_address0;
+            p_anonymous_namespace_lineBuffer_32_0_address0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_16_0_address0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_address0;
+            p_anonymous_namespace_lineBuffer_32_0_address0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_address0;
         else 
-            p_anonymous_namespace_lineBuffer_16_0_address0 <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_32_0_address0 <= "XXXXXXXXXX";
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_32_0_address1 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_address1;
 
-    p_anonymous_namespace_lineBuffer_16_0_ce0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_ce0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
+    p_anonymous_namespace_lineBuffer_32_0_ce0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_ce0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
     begin
         if (((ap_predicate_op197_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_16_0_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce0;
+            p_anonymous_namespace_lineBuffer_32_0_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_16_0_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_ce0;
+            p_anonymous_namespace_lineBuffer_32_0_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_ce0;
         else 
-            p_anonymous_namespace_lineBuffer_16_0_ce0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_32_0_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    p_anonymous_namespace_lineBuffer_16_0_ce1_assign_proc : process(grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce1, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
+    p_anonymous_namespace_lineBuffer_32_0_ce1_assign_proc : process(grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce1, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
     begin
         if (((ap_predicate_op197_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_16_0_ce1 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_0_ce1;
+            p_anonymous_namespace_lineBuffer_32_0_ce1 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_0_ce1;
         else 
-            p_anonymous_namespace_lineBuffer_16_0_ce1 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_32_0_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_32_0_d0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_d0;
 
-    p_anonymous_namespace_lineBuffer_16_0_we0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_we0)
+    p_anonymous_namespace_lineBuffer_32_0_we0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_16_0_we0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_0_we0;
+            p_anonymous_namespace_lineBuffer_32_0_we0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_0_we0;
         else 
-            p_anonymous_namespace_lineBuffer_16_0_we0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_32_0_we0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    p_anonymous_namespace_lineBuffer_16_1_address0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_address0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_address0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
+    p_anonymous_namespace_lineBuffer_32_1_address0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_address0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_address0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
     begin
         if (((ap_predicate_op197_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_16_1_address0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_address0;
+            p_anonymous_namespace_lineBuffer_32_1_address0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_address0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_16_1_address0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_address0;
+            p_anonymous_namespace_lineBuffer_32_1_address0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_address0;
         else 
-            p_anonymous_namespace_lineBuffer_16_1_address0 <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_32_1_address0 <= "XXXXXXXXXX";
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_32_1_address1 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_address1;
 
-    p_anonymous_namespace_lineBuffer_16_1_ce0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_ce0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
+    p_anonymous_namespace_lineBuffer_32_1_ce0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_ce0, grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce0, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
     begin
         if (((ap_predicate_op197_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_16_1_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce0;
+            p_anonymous_namespace_lineBuffer_32_1_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce0;
         elsif ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_16_1_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_ce0;
+            p_anonymous_namespace_lineBuffer_32_1_ce0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_ce0;
         else 
-            p_anonymous_namespace_lineBuffer_16_1_ce0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_32_1_ce0 <= ap_const_logic_0;
         end if; 
     end process;
 
 
-    p_anonymous_namespace_lineBuffer_16_1_ce1_assign_proc : process(grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce1, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
+    p_anonymous_namespace_lineBuffer_32_1_ce1_assign_proc : process(grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce1, ap_CS_fsm_state72, ap_predicate_op197_call_state72)
     begin
         if (((ap_predicate_op197_call_state72 = ap_const_boolean_1) and (ap_const_logic_1 = ap_CS_fsm_state72))) then 
-            p_anonymous_namespace_lineBuffer_16_1_ce1 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_16_1_ce1;
+            p_anonymous_namespace_lineBuffer_32_1_ce1 <= grp_sobel_Pipeline_VITIS_LOOP_118_2_fu_90_p_anonymous_namespace_lineBuffer_32_1_ce1;
         else 
-            p_anonymous_namespace_lineBuffer_16_1_ce1 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_32_1_ce1 <= ap_const_logic_0;
         end if; 
     end process;
 
+    p_anonymous_namespace_lineBuffer_32_1_d0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_d0;
 
-    p_anonymous_namespace_lineBuffer_16_1_we0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_we0)
+    p_anonymous_namespace_lineBuffer_32_1_we0_assign_proc : process(ap_CS_fsm_state37, grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_we0)
     begin
         if ((ap_const_logic_1 = ap_CS_fsm_state37)) then 
-            p_anonymous_namespace_lineBuffer_16_1_we0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_16_1_we0;
+            p_anonymous_namespace_lineBuffer_32_1_we0 <= grp_sobel_Pipeline_VITIS_LOOP_89_1_fu_75_p_anonymous_namespace_lineBuffer_32_1_we0;
         else 
-            p_anonymous_namespace_lineBuffer_16_1_we0 <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_32_1_we0 <= ap_const_logic_0;
+        end if; 
+    end process;
+
+
+    p_anonymous_namespace_rowsReceived_1_o_assign_proc : process(p_anonymous_namespace_rowsReceived_1_i, p_read_1_reg_193, ap_CS_fsm_state72, add_ln102_fu_182_p2)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state72) and (p_read_1_reg_193 = ap_const_lv1_1))) then 
+            p_anonymous_namespace_rowsReceived_1_o <= add_ln102_fu_182_p2;
+        else 
+            p_anonymous_namespace_rowsReceived_1_o <= p_anonymous_namespace_rowsReceived_1_i;
+        end if; 
+    end process;
+
+
+    p_anonymous_namespace_rowsReceived_1_o_ap_vld_assign_proc : process(p_read_1_reg_193, ap_CS_fsm_state72, ap_block_state72_on_subcall_done)
+    begin
+        if (((ap_const_logic_1 = ap_CS_fsm_state72) and (ap_const_boolean_0 = ap_block_state72_on_subcall_done) and (p_read_1_reg_193 = ap_const_lv1_1))) then 
+            p_anonymous_namespace_rowsReceived_1_o_ap_vld <= ap_const_logic_1;
+        else 
+            p_anonymous_namespace_rowsReceived_1_o_ap_vld <= ap_const_logic_0;
         end if; 
     end process;
 
     p_read_1_read_fu_42_p2 <= p_read;
-    tmp_fu_119_p4 <= p_anonymous_namespace_rowsReceived_2(31 downto 1);
+    tmp_fu_119_p4 <= p_anonymous_namespace_rowsReceived_1_i(31 downto 1);
     trunc_ln118_fu_177_p1 <= grp_fu_166_p2(2 - 1 downto 0);
     trunc_ln86_fu_135_p1 <= grp_fu_113_p2(2 - 1 downto 0);
-    trunc_ln87_fu_109_p1 <= p_anonymous_namespace_rowsReceived_2(31 - 1 downto 0);
+    trunc_ln87_fu_109_p1 <= p_anonymous_namespace_rowsReceived_1_i(31 - 1 downto 0);
 end behav;

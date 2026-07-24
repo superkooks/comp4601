@@ -494,10 +494,10 @@ newFuncRoot:1 %br_ln81 = br i1 %p_read_1, void %newFuncRoot.aft.aft.aft.aft.exit
 
 <Node id="11" bw="32" op_0_bw="32">
 <![CDATA[
-if.end.i:0 %p_anonymous_namespace_rowsReceived_2_load = load i32 %p_anonymous_namespace_rowsReceived_2
+if.end.i:0 %p_anonymous_namespace_rowsReceived_1_load = load i32 %p_anonymous_namespace_rowsReceived_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_rowsReceived_2_load"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_rowsReceived_1_load"/></StgValue>
 </operation>
 
 <operation id="76" st_id="1" stage="1" lat="1">
@@ -510,7 +510,7 @@ if.end.i:0 %p_anonymous_namespace_rowsReceived_2_load = load i32 %p_anonymous_na
 
 <Node id="12" bw="31" op_0_bw="32">
 <![CDATA[
-if.end.i:1 %trunc_ln87 = trunc i32 %p_anonymous_namespace_rowsReceived_2_load
+if.end.i:1 %trunc_ln87 = trunc i32 %p_anonymous_namespace_rowsReceived_1_load
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln87"/></StgValue>
@@ -526,7 +526,7 @@ if.end.i:1 %trunc_ln87 = trunc i32 %p_anonymous_namespace_rowsReceived_2_load
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -542,7 +542,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="16" bw="31" op_0_bw="31" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-if.end.i:5 %tmp = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %p_anonymous_namespace_rowsReceived_2_load, i32 1, i32 31
+if.end.i:5 %tmp = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %p_anonymous_namespace_rowsReceived_1_load, i32 1, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -576,7 +576,7 @@ if.end.i:6 %icmp_ln101 = icmp_slt  i31 %tmp, i31 1
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -594,7 +594,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -612,7 +612,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -630,7 +630,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -648,7 +648,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -666,7 +666,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -684,7 +684,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -702,7 +702,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -720,7 +720,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -738,7 +738,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -756,7 +756,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -774,7 +774,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -792,7 +792,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -810,7 +810,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -828,7 +828,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -846,7 +846,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -864,7 +864,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -882,7 +882,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -900,7 +900,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -918,7 +918,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -936,7 +936,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -954,7 +954,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -972,7 +972,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -990,7 +990,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1008,7 +1008,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1026,7 +1026,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1044,7 +1044,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1062,7 +1062,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1080,7 +1080,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1098,7 +1098,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1116,7 +1116,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1134,7 +1134,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1152,7 +1152,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1170,7 +1170,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1188,7 +1188,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1218,7 +1218,7 @@ if.end.i:3 %trunc_ln86 = trunc i2 %writeSlot
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln86"/></StgValue>
@@ -1236,7 +1236,7 @@ if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln86"/></StgValue>
@@ -1267,7 +1267,7 @@ if.end.i:7 %br_ln101 = br i1 %icmp_ln101, void %if.end12.i, void %cleanup76.i
 
 <Node id="20" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end12.i:0 %outputRow = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 4294967295
+if.end12.i:0 %outputRow = add i32 %p_anonymous_namespace_rowsReceived_1_load, i32 4294967295
 
 ]]></Node>
 <StgValue><ssdm name="outputRow"/></StgValue>
@@ -2533,7 +2533,7 @@ VITIS_LOOP_118_2.i:4 %trunc_ln118 = trunc i2 %result_7
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln26"/></StgValue>
@@ -2554,7 +2554,7 @@ VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln26"/></StgValue>
@@ -2604,7 +2604,7 @@ cleanup76.i:0 %sobel_valid_2 = phi i1 0, void %if.end.i, i1 0, void %if.end12.i,
 
 <Node id="34" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 1
+cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_1_load, i32 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln102"/></StgValue>
@@ -2620,7 +2620,7 @@ cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_2_load, i
 
 <Node id="35" bw="0" op_0_bw="32" op_1_bw="32" op_2_bw="0">
 <![CDATA[
-cleanup76.i:2 %store_ln102 = store i32 %add_ln102, i32 %p_anonymous_namespace_rowsReceived_2
+cleanup76.i:2 %store_ln102 = store i32 %add_ln102, i32 %p_anonymous_namespace_rowsReceived_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln102"/></StgValue>
@@ -2691,15 +2691,15 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 <core>RAM</core><StgValue><ssdm name="out_sobel_direction"/><MemPortTyVec>0 3 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="285" name="p_anonymous_namespace_rowsReceived_2" dir="2" iftype="0">
-<core>NULL</core><StgValue><ssdm name="p_anonymous_namespace_rowsReceived_2"/></StgValue>
+<port id="285" name="p_anonymous_namespace_rowsReceived_1" dir="2" iftype="0">
+<core>NULL</core><StgValue><ssdm name="p_anonymous_namespace_rowsReceived_1"/></StgValue>
 </port>
-<port id="286" name="p_anonymous_namespace_lineBuffer_16_0" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_16_0"/><MemPortTyVec>2 1 </MemPortTyVec>
+<port id="286" name="p_anonymous_namespace_lineBuffer_32_0" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_32_0"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
-<port id="287" name="p_anonymous_namespace_lineBuffer_16_1" dir="2" iftype="1">
-<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_16_1"/><MemPortTyVec>2 1 </MemPortTyVec>
+<port id="287" name="p_anonymous_namespace_lineBuffer_32_1" dir="2" iftype="1">
+<core>RAM</core><StgValue><ssdm name="p_anonymous_namespace_lineBuffer_32_1"/><MemPortTyVec>2 1 </MemPortTyVec>
 </StgValue>
 </port>
 </ports>
@@ -2712,17 +2712,17 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 </dataflow>
 <dataflow id="291" from="p_read_1" to="br_ln81" fromId="73" toId="74">
 </dataflow>
-<dataflow id="292" from="p_anonymous_namespace_rowsReceived_2" to="p_anonymous_namespace_rowsReceived_2_load" fromId="285" toId="75">
+<dataflow id="292" from="p_anonymous_namespace_rowsReceived_1" to="p_anonymous_namespace_rowsReceived_1_load" fromId="285" toId="75">
 </dataflow>
-<dataflow id="293" from="p_anonymous_namespace_rowsReceived_2_load" to="trunc_ln87" fromId="75" toId="76">
+<dataflow id="293" from="p_anonymous_namespace_rowsReceived_1_load" to="trunc_ln87" fromId="75" toId="76">
 </dataflow>
-<dataflow id="294" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="77">
+<dataflow id="294" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="77">
 </dataflow>
 <dataflow id="296" from="StgValue_295" to="writeSlot" fromId="295" toId="77">
 </dataflow>
 <dataflow id="298" from="_ssdm_op_PartSelect.i31.i32.i32.i32" to="tmp" fromId="297" toId="78">
 </dataflow>
-<dataflow id="299" from="p_anonymous_namespace_rowsReceived_2_load" to="tmp" fromId="75" toId="78">
+<dataflow id="299" from="p_anonymous_namespace_rowsReceived_1_load" to="tmp" fromId="75" toId="78">
 </dataflow>
 <dataflow id="301" from="StgValue_300" to="tmp" fromId="300" toId="78">
 </dataflow>
@@ -2732,143 +2732,143 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 </dataflow>
 <dataflow id="306" from="StgValue_305" to="icmp_ln101" fromId="305" toId="79">
 </dataflow>
-<dataflow id="307" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="80">
+<dataflow id="307" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="80">
 </dataflow>
 <dataflow id="308" from="StgValue_295" to="writeSlot" fromId="295" toId="80">
 </dataflow>
-<dataflow id="309" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="81">
+<dataflow id="309" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="81">
 </dataflow>
 <dataflow id="310" from="StgValue_295" to="writeSlot" fromId="295" toId="81">
 </dataflow>
-<dataflow id="311" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="82">
+<dataflow id="311" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="82">
 </dataflow>
 <dataflow id="312" from="StgValue_295" to="writeSlot" fromId="295" toId="82">
 </dataflow>
-<dataflow id="313" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="83">
+<dataflow id="313" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="83">
 </dataflow>
 <dataflow id="314" from="StgValue_295" to="writeSlot" fromId="295" toId="83">
 </dataflow>
-<dataflow id="315" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="84">
+<dataflow id="315" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="84">
 </dataflow>
 <dataflow id="316" from="StgValue_295" to="writeSlot" fromId="295" toId="84">
 </dataflow>
-<dataflow id="317" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="85">
+<dataflow id="317" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="85">
 </dataflow>
 <dataflow id="318" from="StgValue_295" to="writeSlot" fromId="295" toId="85">
 </dataflow>
-<dataflow id="319" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="86">
+<dataflow id="319" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="86">
 </dataflow>
 <dataflow id="320" from="StgValue_295" to="writeSlot" fromId="295" toId="86">
 </dataflow>
-<dataflow id="321" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="87">
+<dataflow id="321" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="87">
 </dataflow>
 <dataflow id="322" from="StgValue_295" to="writeSlot" fromId="295" toId="87">
 </dataflow>
-<dataflow id="323" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="88">
+<dataflow id="323" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="88">
 </dataflow>
 <dataflow id="324" from="StgValue_295" to="writeSlot" fromId="295" toId="88">
 </dataflow>
-<dataflow id="325" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="89">
+<dataflow id="325" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="89">
 </dataflow>
 <dataflow id="326" from="StgValue_295" to="writeSlot" fromId="295" toId="89">
 </dataflow>
-<dataflow id="327" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="90">
+<dataflow id="327" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="90">
 </dataflow>
 <dataflow id="328" from="StgValue_295" to="writeSlot" fromId="295" toId="90">
 </dataflow>
-<dataflow id="329" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="91">
+<dataflow id="329" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="91">
 </dataflow>
 <dataflow id="330" from="StgValue_295" to="writeSlot" fromId="295" toId="91">
 </dataflow>
-<dataflow id="331" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="92">
+<dataflow id="331" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="92">
 </dataflow>
 <dataflow id="332" from="StgValue_295" to="writeSlot" fromId="295" toId="92">
 </dataflow>
-<dataflow id="333" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="93">
+<dataflow id="333" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="93">
 </dataflow>
 <dataflow id="334" from="StgValue_295" to="writeSlot" fromId="295" toId="93">
 </dataflow>
-<dataflow id="335" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="94">
+<dataflow id="335" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="94">
 </dataflow>
 <dataflow id="336" from="StgValue_295" to="writeSlot" fromId="295" toId="94">
 </dataflow>
-<dataflow id="337" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="95">
+<dataflow id="337" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="95">
 </dataflow>
 <dataflow id="338" from="StgValue_295" to="writeSlot" fromId="295" toId="95">
 </dataflow>
-<dataflow id="339" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="96">
+<dataflow id="339" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="96">
 </dataflow>
 <dataflow id="340" from="StgValue_295" to="writeSlot" fromId="295" toId="96">
 </dataflow>
-<dataflow id="341" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="97">
+<dataflow id="341" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="97">
 </dataflow>
 <dataflow id="342" from="StgValue_295" to="writeSlot" fromId="295" toId="97">
 </dataflow>
-<dataflow id="343" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="98">
+<dataflow id="343" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="98">
 </dataflow>
 <dataflow id="344" from="StgValue_295" to="writeSlot" fromId="295" toId="98">
 </dataflow>
-<dataflow id="345" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="99">
+<dataflow id="345" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="99">
 </dataflow>
 <dataflow id="346" from="StgValue_295" to="writeSlot" fromId="295" toId="99">
 </dataflow>
-<dataflow id="347" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="100">
+<dataflow id="347" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="100">
 </dataflow>
 <dataflow id="348" from="StgValue_295" to="writeSlot" fromId="295" toId="100">
 </dataflow>
-<dataflow id="349" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="101">
+<dataflow id="349" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="101">
 </dataflow>
 <dataflow id="350" from="StgValue_295" to="writeSlot" fromId="295" toId="101">
 </dataflow>
-<dataflow id="351" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="102">
+<dataflow id="351" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="102">
 </dataflow>
 <dataflow id="352" from="StgValue_295" to="writeSlot" fromId="295" toId="102">
 </dataflow>
-<dataflow id="353" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="103">
+<dataflow id="353" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="103">
 </dataflow>
 <dataflow id="354" from="StgValue_295" to="writeSlot" fromId="295" toId="103">
 </dataflow>
-<dataflow id="355" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="104">
+<dataflow id="355" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="104">
 </dataflow>
 <dataflow id="356" from="StgValue_295" to="writeSlot" fromId="295" toId="104">
 </dataflow>
-<dataflow id="357" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="105">
+<dataflow id="357" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="105">
 </dataflow>
 <dataflow id="358" from="StgValue_295" to="writeSlot" fromId="295" toId="105">
 </dataflow>
-<dataflow id="359" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="106">
+<dataflow id="359" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="106">
 </dataflow>
 <dataflow id="360" from="StgValue_295" to="writeSlot" fromId="295" toId="106">
 </dataflow>
-<dataflow id="361" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="107">
+<dataflow id="361" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="107">
 </dataflow>
 <dataflow id="362" from="StgValue_295" to="writeSlot" fromId="295" toId="107">
 </dataflow>
-<dataflow id="363" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="108">
+<dataflow id="363" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="108">
 </dataflow>
 <dataflow id="364" from="StgValue_295" to="writeSlot" fromId="295" toId="108">
 </dataflow>
-<dataflow id="365" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="109">
+<dataflow id="365" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="109">
 </dataflow>
 <dataflow id="366" from="StgValue_295" to="writeSlot" fromId="295" toId="109">
 </dataflow>
-<dataflow id="367" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="110">
+<dataflow id="367" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="110">
 </dataflow>
 <dataflow id="368" from="StgValue_295" to="writeSlot" fromId="295" toId="110">
 </dataflow>
-<dataflow id="369" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="111">
+<dataflow id="369" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="111">
 </dataflow>
 <dataflow id="370" from="StgValue_295" to="writeSlot" fromId="295" toId="111">
 </dataflow>
-<dataflow id="371" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="112">
+<dataflow id="371" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="112">
 </dataflow>
 <dataflow id="372" from="StgValue_295" to="writeSlot" fromId="295" toId="112">
 </dataflow>
-<dataflow id="373" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="113">
+<dataflow id="373" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="113">
 </dataflow>
 <dataflow id="374" from="StgValue_295" to="writeSlot" fromId="295" toId="113">
 </dataflow>
-<dataflow id="375" from="p_anonymous_namespace_rowsReceived_2_load" to="writeSlot" fromId="75" toId="114">
+<dataflow id="375" from="p_anonymous_namespace_rowsReceived_1_load" to="writeSlot" fromId="75" toId="114">
 </dataflow>
 <dataflow id="376" from="StgValue_295" to="writeSlot" fromId="295" toId="114">
 </dataflow>
@@ -2884,9 +2884,9 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 </dataflow>
 <dataflow id="383" from="out_gaussian" to="call_ln86" fromId="282" toId="116">
 </dataflow>
-<dataflow id="384" from="p_anonymous_namespace_lineBuffer_16_0" to="call_ln86" fromId="286" toId="116">
+<dataflow id="384" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln86" fromId="286" toId="116">
 </dataflow>
-<dataflow id="385" from="p_anonymous_namespace_lineBuffer_16_1" to="call_ln86" fromId="287" toId="116">
+<dataflow id="385" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln86" fromId="287" toId="116">
 </dataflow>
 <dataflow id="386" from="sobel_Pipeline_VITIS_LOOP_89_1" to="call_ln86" fromId="378" toId="117">
 </dataflow>
@@ -2898,13 +2898,13 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 </dataflow>
 <dataflow id="390" from="out_gaussian" to="call_ln86" fromId="282" toId="117">
 </dataflow>
-<dataflow id="391" from="p_anonymous_namespace_lineBuffer_16_0" to="call_ln86" fromId="286" toId="117">
+<dataflow id="391" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln86" fromId="286" toId="117">
 </dataflow>
-<dataflow id="392" from="p_anonymous_namespace_lineBuffer_16_1" to="call_ln86" fromId="287" toId="117">
+<dataflow id="392" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln86" fromId="287" toId="117">
 </dataflow>
 <dataflow id="393" from="icmp_ln101" to="br_ln101" fromId="79" toId="118">
 </dataflow>
-<dataflow id="394" from="p_anonymous_namespace_rowsReceived_2_load" to="outputRow" fromId="75" toId="119">
+<dataflow id="394" from="p_anonymous_namespace_rowsReceived_1_load" to="outputRow" fromId="75" toId="119">
 </dataflow>
 <dataflow id="396" from="StgValue_395" to="outputRow" fromId="395" toId="119">
 </dataflow>
@@ -3216,9 +3216,9 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 </dataflow>
 <dataflow id="554" from="out_sobel_direction" to="call_ln26" fromId="284" toId="196">
 </dataflow>
-<dataflow id="555" from="p_anonymous_namespace_lineBuffer_16_0" to="call_ln26" fromId="286" toId="196">
+<dataflow id="555" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln26" fromId="286" toId="196">
 </dataflow>
-<dataflow id="556" from="p_anonymous_namespace_lineBuffer_16_1" to="call_ln26" fromId="287" toId="196">
+<dataflow id="556" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln26" fromId="287" toId="196">
 </dataflow>
 <dataflow id="557" from="sobel_Pipeline_VITIS_LOOP_118_2" to="call_ln26" fromId="548" toId="197">
 </dataflow>
@@ -3232,9 +3232,9 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 </dataflow>
 <dataflow id="562" from="out_sobel_direction" to="call_ln26" fromId="284" toId="197">
 </dataflow>
-<dataflow id="563" from="p_anonymous_namespace_lineBuffer_16_0" to="call_ln26" fromId="286" toId="197">
+<dataflow id="563" from="p_anonymous_namespace_lineBuffer_32_0" to="call_ln26" fromId="286" toId="197">
 </dataflow>
-<dataflow id="564" from="p_anonymous_namespace_lineBuffer_16_1" to="call_ln26" fromId="287" toId="197">
+<dataflow id="564" from="p_anonymous_namespace_lineBuffer_32_1" to="call_ln26" fromId="287" toId="197">
 </dataflow>
 <dataflow id="566" from="StgValue_565" to="sobel_valid_2" fromId="565" toId="199">
 <condition id="-1">
@@ -3263,13 +3263,13 @@ newFuncRoot.aft.aft.aft.aft.exitStub:1 %ret_ln0 = ret i1 %valid_out_write_assign
 </dataflow>
 <dataflow id="572" from="br_ln0" to="sobel_valid_2" fromId="198" toId="199">
 </dataflow>
-<dataflow id="573" from="p_anonymous_namespace_rowsReceived_2_load" to="add_ln102" fromId="75" toId="200">
+<dataflow id="573" from="p_anonymous_namespace_rowsReceived_1_load" to="add_ln102" fromId="75" toId="200">
 </dataflow>
 <dataflow id="574" from="StgValue_300" to="add_ln102" fromId="300" toId="200">
 </dataflow>
 <dataflow id="575" from="add_ln102" to="store_ln102" fromId="200" toId="201">
 </dataflow>
-<dataflow id="576" from="p_anonymous_namespace_rowsReceived_2" to="store_ln102" fromId="285" toId="201">
+<dataflow id="576" from="p_anonymous_namespace_rowsReceived_1" to="store_ln102" fromId="285" toId="201">
 </dataflow>
 <dataflow id="577" from="sobel_valid_2" to="valid_out_write_assign" fromId="199" toId="203">
 <condition id="-1">

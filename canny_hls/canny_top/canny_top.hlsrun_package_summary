@@ -1,0 +1,166 @@
+<ENTRY>
+{
+ "thisFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/canny_top.hlsrun_package_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "Fri Jul 24 16:27:56 2026",
+ "timestampMillis": "1784874476127",
+ "buildStep": {
+  "cmdId": "12da6622-c3d9-4ec7-b94b-351867871fbd",
+  "name": "vitis-run",
+  "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/logs/canny_top.steps.log",
+  "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg --work_dir canny_top ",
+  "args": [
+   "--mode",
+   "hls",
+   "--package",
+   "--config",
+   "/home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg",
+   "--work_dir",
+   "canny_top"
+  ],
+  "iniFiles": [],
+  "cwd": "/home/superkooks/Uni/COMP4601/assign/canny_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 24 16:27:56 2026",
+ "timestampMillis": "1784874476127",
+ "status": {
+  "cmdId": "12da6622-c3d9-4ec7-b94b-351867871fbd",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "Fri Jul 24 16:27:58 2026",
+ "timestampMillis": "1784874478231",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_XO",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "canny_top",
+     "file": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/canny_top.xo",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/config.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_types.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
+     "/home/superkooks/Uni/COMP4601/assign/src/output_row.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.2"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "Fri Jul 24 16:27:58 2026",
+ "timestampMillis": "1784874478232",
+ "buildStep": {
+  "cmdId": "a337c9af-4911-4e86-92cb-83ef60321629",
+  "name": "",
+  "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "/home/superkooks/Uni/COMP4601/assign/canny_hls"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 24 16:27:58 2026",
+ "timestampMillis": "1784874478232",
+ "status": {
+  "cmdId": "a337c9af-4911-4e86-92cb-83ef60321629",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 24 16:28:05 2026",
+ "timestampMillis": "1784874485658",
+ "status": {
+  "cmdId": "a337c9af-4911-4e86-92cb-83ef60321629",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "Fri Jul 24 16:28:05 2026",
+ "timestampMillis": "1784874485718",
+ "status": {
+  "cmdId": "12da6622-c3d9-4ec7-b94b-351867871fbd",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 24 16:28:05 2026",
+ "timestampMillis": "1784874485718",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "Fri Jul 24 16:28:05 2026",
+ "timestampMillis": "1784874485718",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

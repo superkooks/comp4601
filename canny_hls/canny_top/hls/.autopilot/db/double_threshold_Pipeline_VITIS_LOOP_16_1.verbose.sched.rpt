@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold_Pipeline_VITIS_LOOP_16_1'
 ================================================================
-* Date:           Thu Jul 23 23:06:22 2026
+* Date:           Fri Jul 24 16:27:49 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -85,31 +85,31 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.66>
-ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 5 'alloca' 'column' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 0, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 6 'store' 'store_ln16' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 5 'alloca' 'column' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 0, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 6 'store' 'store_ln16' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.i"   --->   Operation 7 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%column_8 = load i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 8 'load' 'column_8' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.78ns)   --->   "%icmp_ln16 = icmp_eq  i10 %column_8, i10 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 9 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 10 [1/1] (0.78ns)   --->   "%add_ln16 = add i10 %column_8, i10 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 10 'add' 'add_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln16 = br i1 %icmp_ln16, void %for.body.split.i, void %_Z16double_thresholdPKhPhbPb.4.exit.loopexit.exitStub" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 11 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i10 %column_8" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 12 'zext' 'zext_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%out_nonmax_addr = getelementptr i8 %out_nonmax, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:17->../src/canny_top.cpp:27]   --->   Operation 13 'getelementptr' 'out_nonmax_addr' <Predicate = (!icmp_ln16)> <Delay = 0.00>
-ST_1 : Operation 14 [2/2] (1.23ns)   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:27]   --->   Operation 14 'load' 'magnitude' <Predicate = (!icmp_ln16)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 %add_ln16, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 15 'store' 'store_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.42>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%column_11 = load i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 8 'load' 'column_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.78ns)   --->   "%icmp_ln16 = icmp_eq  i10 %column_11, i10 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 9 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.78ns)   --->   "%add_ln16 = add i10 %column_11, i10 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 10 'add' 'add_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%br_ln16 = br i1 %icmp_ln16, void %for.body.split.i, void %_Z16double_thresholdPKhPhbPb.4.exit.loopexit.exitStub" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 11 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i10 %column_11" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 12 'zext' 'zext_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%out_nonmax_addr = getelementptr i8 %out_nonmax, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:17->../src/canny_top.cpp:32]   --->   Operation 13 'getelementptr' 'out_nonmax_addr' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 14 [2/2] (1.23ns)   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:32]   --->   Operation 14 'load' 'magnitude' <Predicate = (!icmp_ln16)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
+ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 %add_ln16, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 15 'store' 'store_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.42>
 ST_1 : Operation 27 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 27 'ret' 'ret_ln0' <Predicate = (icmp_ln16)> <Delay = 0.42>
 
 State 2 <SV = 1> <Delay = 3.63>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 16 'specpipeline' 'specpipeline_ln16' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln16' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_3" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 18 'specloopname' 'specloopname_ln16' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/2] ( I:1.23ns O:1.23ns )   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:27]   --->   Operation 19 'load' 'magnitude' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_2 : Operation 20 [1/1] (0.76ns)   --->   "%icmp_ln19 = icmp_ugt  i8 %magnitude, i8 79" [../src/double_threshold.cpp:19->../src/canny_top.cpp:27]   --->   Operation 20 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%out_double_addr = getelementptr i8 %out_double, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:23->../src/canny_top.cpp:27]   --->   Operation 21 'getelementptr' 'out_double_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.76ns)   --->   "%icmp_ln22 = icmp_ugt  i8 %magnitude, i8 19" [../src/double_threshold.cpp:22->../src/canny_top.cpp:27]   --->   Operation 22 'icmp' 'icmp_ln22' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node select_ln19)   --->   "%select_ln19_1 = select i1 %icmp_ln19, i8 255, i8 128" [../src/double_threshold.cpp:19->../src/canny_top.cpp:27]   --->   Operation 23 'select' 'select_ln19_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 24 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln19 = select i1 %icmp_ln22, i8 %select_ln19_1, i8 0" [../src/double_threshold.cpp:19->../src/canny_top.cpp:27]   --->   Operation 24 'select' 'select_ln19' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_2 : Operation 25 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln19 = store i8 %select_ln19, i9 %out_double_addr" [../src/double_threshold.cpp:19->../src/canny_top.cpp:27]   --->   Operation 25 'store' 'store_ln19' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln16 = br void %for.body.i" [../src/double_threshold.cpp:16->../src/canny_top.cpp:27]   --->   Operation 26 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 16 'specpipeline' 'specpipeline_ln16' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln16' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_17" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 18 'specloopname' 'specloopname_ln16' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/2] ( I:1.23ns O:1.23ns )   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:32]   --->   Operation 19 'load' 'magnitude' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
+ST_2 : Operation 20 [1/1] (0.76ns)   --->   "%icmp_ln19 = icmp_ugt  i8 %magnitude, i8 79" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 20 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%out_double_addr = getelementptr i8 %out_double, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:23->../src/canny_top.cpp:32]   --->   Operation 21 'getelementptr' 'out_double_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.76ns)   --->   "%icmp_ln22 = icmp_ugt  i8 %magnitude, i8 19" [../src/double_threshold.cpp:22->../src/canny_top.cpp:32]   --->   Operation 22 'icmp' 'icmp_ln22' <Predicate = true> <Delay = 0.76> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.76> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 23 [1/1] (0.00ns) (grouped into LUT with out node select_ln19)   --->   "%select_ln19_1 = select i1 %icmp_ln19, i8 255, i8 128" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 23 'select' 'select_ln19_1' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 24 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln19 = select i1 %icmp_ln22, i8 %select_ln19_1, i8 0" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 24 'select' 'select_ln19' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 25 [1/1] ( I:1.23ns O:1.23ns )   --->   "%store_ln19 = store i8 %select_ln19, i9 %out_double_addr" [../src/double_threshold.cpp:19->../src/canny_top.cpp:32]   --->   Operation 25 'store' 'store_ln19' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%br_ln16 = br void %for.body.i" [../src/double_threshold.cpp:16->../src/canny_top.cpp:32]   --->   Operation 26 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -119,18 +119,17 @@ Target clock period: 5.000ns, clock uncertainty: 1.350ns.
 
  <State 1>: 1.664ns
 The critical path consists of the following:
-	'store' operation ('store_ln16', ../src/double_threshold.cpp:16->../src/canny_top.cpp:27) of constant 0 10 bit on local variable 'column', ../src/double_threshold.cpp:16->../src/canny_top.cpp:27 [4]  (0.427 ns)
-	'load' operation 10 bit ('column', ../src/double_threshold.cpp:16->../src/canny_top.cpp:27) on local variable 'column', ../src/double_threshold.cpp:16->../src/canny_top.cpp:27 [7]  (0.000 ns)
-	'getelementptr' operation 9 bit ('out_nonmax_addr', ../src/double_threshold.cpp:17->../src/canny_top.cpp:27) [16]  (0.000 ns)
-	'load' operation 8 bit ('magnitude', ../src/double_threshold.cpp:17->../src/canny_top.cpp:27) on array 'out_nonmax' [17]  (1.237 ns)
+	'store' operation ('store_ln16', ../src/double_threshold.cpp:16->../src/canny_top.cpp:32) of constant 0 10 bit on local variable 'column', ../src/double_threshold.cpp:16->../src/canny_top.cpp:32 [4]  (0.427 ns)
+	'load' operation 10 bit ('column', ../src/double_threshold.cpp:16->../src/canny_top.cpp:32) on local variable 'column', ../src/double_threshold.cpp:16->../src/canny_top.cpp:32 [7]  (0.000 ns)
+	'getelementptr' operation 9 bit ('out_nonmax_addr', ../src/double_threshold.cpp:17->../src/canny_top.cpp:32) [16]  (0.000 ns)
+	'load' operation 8 bit ('magnitude', ../src/double_threshold.cpp:17->../src/canny_top.cpp:32) on array 'out_nonmax' [17]  (1.237 ns)
 
  <State 2>: 3.632ns
 The critical path consists of the following:
-	'load' operation 8 bit ('magnitude', ../src/double_threshold.cpp:17->../src/canny_top.cpp:27) on array 'out_nonmax' [17]  (1.237 ns)
-	'icmp' operation 1 bit ('icmp_ln19', ../src/double_threshold.cpp:19->../src/canny_top.cpp:27) [18]  (0.765 ns)
-	'select' operation 8 bit ('select_ln19_1', ../src/double_threshold.cpp:19->../src/canny_top.cpp:27) [21]  (0.000 ns)
-	'select' operation 8 bit ('select_ln19', ../src/double_threshold.cpp:19->../src/canny_top.cpp:27) [22]  (0.393 ns)
-	'store' operation ('store_ln19', ../src/double_threshold.cpp:19->../src/canny_top.cpp:27) of variable 'select_ln19', ../src/double_threshold.cpp:19->../src/canny_top.cpp:27 8 bit on array 'out_double' [23]  (1.237 ns)
+	'load' operation 8 bit ('magnitude', ../src/double_threshold.cpp:17->../src/canny_top.cpp:32) on array 'out_nonmax' [17]  (1.237 ns)
+	'icmp' operation 1 bit ('icmp_ln22', ../src/double_threshold.cpp:22->../src/canny_top.cpp:32) [20]  (0.765 ns)
+	'select' operation 8 bit ('select_ln19', ../src/double_threshold.cpp:19->../src/canny_top.cpp:32) [22]  (0.393 ns)
+	'store' operation ('store_ln19', ../src/double_threshold.cpp:19->../src/canny_top.cpp:32) of variable 'select_ln19', ../src/double_threshold.cpp:19->../src/canny_top.cpp:32 8 bit on array 'out_double' [23]  (1.237 ns)
 
 
 ============================================================

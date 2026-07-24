@@ -308,9 +308,9 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>column_4</name>
+						<name>column_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -318,7 +318,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>1</count>
 									<item_version>0</item_version>
@@ -579,9 +579,9 @@
 					<Obj>
 						<type>0</type>
 						<id>15</id>
-						<name>column_4_write_ln64</name>
+						<name>column_7_write_ln64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -589,7 +589,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -680,7 +680,7 @@
 						<id>18</id>
 						<name>column</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>89</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -688,7 +688,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -737,7 +737,7 @@
 						<id>19</id>
 						<name>icmp_ln64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -745,7 +745,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -794,7 +794,7 @@
 						<id>20</id>
 						<name>br_ln64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -802,7 +802,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -852,7 +852,7 @@
 						<id>22</id>
 						<name>zext_ln64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -860,7 +860,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -908,7 +908,7 @@
 						<id>23</id>
 						<name>trunc_ln64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -916,7 +916,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -964,7 +964,7 @@
 						<id>27</id>
 						<name>lshr_ln</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -972,7 +972,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1023,7 +1023,7 @@
 						<id>28</id>
 						<name>tmp_s</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1031,7 +1031,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1081,7 +1081,7 @@
 						<id>29</id>
 						<name>zext_ln93</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1089,7 +1089,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1137,7 +1137,7 @@
 						<id>30</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1145,7 +1145,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1195,7 +1195,7 @@
 						<id>31</id>
 						<name>tmp_30</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1203,7 +1203,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1253,7 +1253,7 @@
 						<id>32</id>
 						<name>zext_ln93_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1261,7 +1261,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1309,7 +1309,7 @@
 						<id>33</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1317,7 +1317,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1367,7 +1367,7 @@
 						<id>34</id>
 						<name>tmp_31</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1375,7 +1375,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1425,7 +1425,7 @@
 						<id>35</id>
 						<name>zext_ln93_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1433,7 +1433,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1481,7 +1481,7 @@
 						<id>36</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1489,7 +1489,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1539,7 +1539,7 @@
 						<id>37</id>
 						<name>tmp_32</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1547,7 +1547,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1597,7 +1597,7 @@
 						<id>38</id>
 						<name>zext_ln93_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1605,7 +1605,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1653,7 +1653,7 @@
 						<id>39</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_13</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1661,7 +1661,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1711,7 +1711,7 @@
 						<id>40</id>
 						<name>tmp_33</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1719,7 +1719,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1769,7 +1769,7 @@
 						<id>41</id>
 						<name>zext_ln93_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1777,7 +1777,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1825,7 +1825,7 @@
 						<id>42</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1833,7 +1833,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1883,7 +1883,7 @@
 						<id>43</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1891,7 +1891,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1941,7 +1941,7 @@
 						<id>44</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -1949,7 +1949,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -1999,7 +1999,7 @@
 						<id>45</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2007,7 +2007,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2057,7 +2057,7 @@
 						<id>46</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_13</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2065,7 +2065,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2115,7 +2115,7 @@
 						<id>47</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2123,7 +2123,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2173,7 +2173,7 @@
 						<id>48</id>
 						<name>add_ln89</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>89</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2181,7 +2181,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2230,7 +2230,7 @@
 						<id>49</id>
 						<name>lshr_ln3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2238,7 +2238,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2289,7 +2289,7 @@
 						<id>50</id>
 						<name>tmp_34</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2297,7 +2297,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2347,7 +2347,7 @@
 						<id>51</id>
 						<name>zext_ln93_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2355,7 +2355,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2403,7 +2403,7 @@
 						<id>52</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2411,7 +2411,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2461,7 +2461,7 @@
 						<id>53</id>
 						<name>tmp_35</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2469,7 +2469,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2519,7 +2519,7 @@
 						<id>54</id>
 						<name>zext_ln93_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2527,7 +2527,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2575,7 +2575,7 @@
 						<id>55</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2583,7 +2583,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2633,7 +2633,7 @@
 						<id>56</id>
 						<name>tmp_36</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2641,7 +2641,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2691,7 +2691,7 @@
 						<id>57</id>
 						<name>zext_ln93_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2699,7 +2699,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2747,7 +2747,7 @@
 						<id>58</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2755,7 +2755,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2805,7 +2805,7 @@
 						<id>59</id>
 						<name>tmp_37</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2813,7 +2813,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2863,7 +2863,7 @@
 						<id>60</id>
 						<name>zext_ln93_8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2871,7 +2871,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2919,7 +2919,7 @@
 						<id>61</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2927,7 +2927,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -2977,7 +2977,7 @@
 						<id>62</id>
 						<name>tmp_38</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -2985,7 +2985,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3035,7 +3035,7 @@
 						<id>63</id>
 						<name>zext_ln93_12</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3043,7 +3043,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3091,7 +3091,7 @@
 						<id>64</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3099,7 +3099,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3149,7 +3149,7 @@
 						<id>65</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3157,7 +3157,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3207,7 +3207,7 @@
 						<id>66</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3215,7 +3215,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3265,7 +3265,7 @@
 						<id>67</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3273,7 +3273,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3323,7 +3323,7 @@
 						<id>68</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3331,7 +3331,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3381,7 +3381,7 @@
 						<id>69</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3389,7 +3389,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3439,7 +3439,7 @@
 						<id>70</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3447,7 +3447,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3495,7 +3495,7 @@
 						<id>71</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3503,7 +3503,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3551,7 +3551,7 @@
 						<id>72</id>
 						<name>sum</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3559,7 +3559,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3609,7 +3609,7 @@
 						<id>73</id>
 						<name>zext_ln65</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>65</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3617,7 +3617,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3665,7 +3665,7 @@
 						<id>74</id>
 						<name>add_ln89_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>89</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3673,7 +3673,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3722,7 +3722,7 @@
 						<id>75</id>
 						<name>lshr_ln93_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3730,7 +3730,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3781,7 +3781,7 @@
 						<id>76</id>
 						<name>tmp_39</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3789,7 +3789,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3839,7 +3839,7 @@
 						<id>77</id>
 						<name>zext_ln93_17</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3847,7 +3847,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3895,7 +3895,7 @@
 						<id>78</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3903,7 +3903,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -3953,7 +3953,7 @@
 						<id>79</id>
 						<name>tmp_40</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -3961,7 +3961,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4011,7 +4011,7 @@
 						<id>80</id>
 						<name>zext_ln93_18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4019,7 +4019,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4067,7 +4067,7 @@
 						<id>81</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4075,7 +4075,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4125,7 +4125,7 @@
 						<id>82</id>
 						<name>tmp_41</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4133,7 +4133,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4183,7 +4183,7 @@
 						<id>83</id>
 						<name>zext_ln93_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4191,7 +4191,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4239,7 +4239,7 @@
 						<id>84</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_12</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4247,7 +4247,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4297,7 +4297,7 @@
 						<id>85</id>
 						<name>tmp_42</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4305,7 +4305,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4355,7 +4355,7 @@
 						<id>86</id>
 						<name>zext_ln93_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4363,7 +4363,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4411,7 +4411,7 @@
 						<id>87</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_17</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4419,7 +4419,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4469,7 +4469,7 @@
 						<id>88</id>
 						<name>tmp_43</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4477,7 +4477,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4527,7 +4527,7 @@
 						<id>89</id>
 						<name>zext_ln93_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4535,7 +4535,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4583,7 +4583,7 @@
 						<id>90</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4591,7 +4591,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4641,7 +4641,7 @@
 						<id>91</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4649,7 +4649,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4699,7 +4699,7 @@
 						<id>92</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4707,7 +4707,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4757,7 +4757,7 @@
 						<id>93</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_12</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4765,7 +4765,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4815,7 +4815,7 @@
 						<id>94</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_17</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4823,7 +4823,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4873,7 +4873,7 @@
 						<id>95</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4881,7 +4881,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4931,7 +4931,7 @@
 						<id>96</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4939,7 +4939,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -4987,7 +4987,7 @@
 						<id>97</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -4995,7 +4995,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5043,7 +5043,7 @@
 						<id>98</id>
 						<name>select_ln93</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5051,7 +5051,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5101,7 +5101,7 @@
 						<id>99</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5109,7 +5109,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5157,7 +5157,7 @@
 						<id>100</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5165,7 +5165,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5213,7 +5213,7 @@
 						<id>101</id>
 						<name>select_ln93_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5221,7 +5221,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5271,7 +5271,7 @@
 						<id>102</id>
 						<name>zext_ln89</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>89</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5279,7 +5279,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5327,7 +5327,7 @@
 						<id>103</id>
 						<name>add_ln89_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>89</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5335,7 +5335,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5384,7 +5384,7 @@
 						<id>104</id>
 						<name>lshr_ln93_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5392,7 +5392,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5443,7 +5443,7 @@
 						<id>105</id>
 						<name>tmp_44</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5451,7 +5451,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5501,7 +5501,7 @@
 						<id>106</id>
 						<name>zext_ln93_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5509,7 +5509,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5557,7 +5557,7 @@
 						<id>107</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5565,7 +5565,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5615,7 +5615,7 @@
 						<id>108</id>
 						<name>tmp_45</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5623,7 +5623,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5673,7 +5673,7 @@
 						<id>109</id>
 						<name>zext_ln93_23</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5681,7 +5681,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5729,7 +5729,7 @@
 						<id>110</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5737,7 +5737,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5787,7 +5787,7 @@
 						<id>111</id>
 						<name>tmp_46</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5795,7 +5795,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5845,7 +5845,7 @@
 						<id>112</id>
 						<name>zext_ln93_24</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5853,7 +5853,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5901,7 +5901,7 @@
 						<id>113</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_14</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5909,7 +5909,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -5959,7 +5959,7 @@
 						<id>114</id>
 						<name>tmp_47</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -5967,7 +5967,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6017,7 +6017,7 @@
 						<id>115</id>
 						<name>zext_ln93_25</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6025,7 +6025,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6073,7 +6073,7 @@
 						<id>116</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6081,7 +6081,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6131,7 +6131,7 @@
 						<id>117</id>
 						<name>tmp_48</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6139,7 +6139,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6189,7 +6189,7 @@
 						<id>118</id>
 						<name>zext_ln93_26</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6197,7 +6197,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6245,7 +6245,7 @@
 						<id>119</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_23</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6253,7 +6253,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6303,7 +6303,7 @@
 						<id>120</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6311,7 +6311,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6361,7 +6361,7 @@
 						<id>121</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6369,7 +6369,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6419,7 +6419,7 @@
 						<id>122</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_14</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6427,7 +6427,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6477,7 +6477,7 @@
 						<id>123</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6485,7 +6485,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6535,7 +6535,7 @@
 						<id>124</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_23</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6543,7 +6543,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6593,7 +6593,7 @@
 						<id>125</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6601,7 +6601,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6649,7 +6649,7 @@
 						<id>126</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6657,7 +6657,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6705,7 +6705,7 @@
 						<id>127</id>
 						<name>select_ln93_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6713,7 +6713,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6763,7 +6763,7 @@
 						<id>128</id>
 						<name>add_ln93</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6771,7 +6771,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6820,7 +6820,7 @@
 						<id>129</id>
 						<name>tmp_49</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6828,7 +6828,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6878,7 +6878,7 @@
 						<id>130</id>
 						<name>zext_ln93_27</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6886,7 +6886,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6934,7 +6934,7 @@
 						<id>131</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -6942,7 +6942,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -6992,7 +6992,7 @@
 						<id>132</id>
 						<name>tmp_50</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7000,7 +7000,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7050,7 +7050,7 @@
 						<id>133</id>
 						<name>zext_ln93_28</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7058,7 +7058,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7106,7 +7106,7 @@
 						<id>134</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7114,7 +7114,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7164,7 +7164,7 @@
 						<id>135</id>
 						<name>tmp_51</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7172,7 +7172,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7222,7 +7222,7 @@
 						<id>136</id>
 						<name>zext_ln93_29</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7230,7 +7230,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7278,7 +7278,7 @@
 						<id>137</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7286,7 +7286,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7336,7 +7336,7 @@
 						<id>138</id>
 						<name>tmp_52</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7344,7 +7344,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7394,7 +7394,7 @@
 						<id>139</id>
 						<name>zext_ln93_30</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7402,7 +7402,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7450,7 +7450,7 @@
 						<id>140</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7458,7 +7458,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7508,7 +7508,7 @@
 						<id>141</id>
 						<name>tmp_53</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7516,7 +7516,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7566,7 +7566,7 @@
 						<id>142</id>
 						<name>zext_ln93_31</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7574,7 +7574,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7622,7 +7622,7 @@
 						<id>143</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_addr_24</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7630,7 +7630,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7680,7 +7680,7 @@
 						<id>144</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7688,7 +7688,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7738,7 +7738,7 @@
 						<id>145</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7746,7 +7746,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7796,7 +7796,7 @@
 						<id>146</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7804,7 +7804,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7854,7 +7854,7 @@
 						<id>147</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7862,7 +7862,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7912,7 +7912,7 @@
 						<id>148</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_addr_24</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7920,7 +7920,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -7970,7 +7970,7 @@
 						<id>149</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -7978,7 +7978,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8026,7 +8026,7 @@
 						<id>150</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8034,7 +8034,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8082,7 +8082,7 @@
 						<id>151</id>
 						<name>select_ln93_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8090,7 +8090,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8140,7 +8140,7 @@
 						<id>152</id>
 						<name>zext_ln20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -8148,7 +8148,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -8203,7 +8203,7 @@
 						<id>153</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8211,7 +8211,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8259,7 +8259,7 @@
 						<id>154</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8267,7 +8267,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8315,7 +8315,7 @@
 						<id>155</id>
 						<name>select_ln93_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8323,7 +8323,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8373,7 +8373,7 @@
 						<id>156</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8381,7 +8381,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8429,7 +8429,7 @@
 						<id>157</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8437,7 +8437,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8485,7 +8485,7 @@
 						<id>158</id>
 						<name>select_ln93_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8493,7 +8493,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8543,7 +8543,7 @@
 						<id>159</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8551,7 +8551,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8599,7 +8599,7 @@
 						<id>160</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8607,7 +8607,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8655,7 +8655,7 @@
 						<id>161</id>
 						<name>select_ln93_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8663,7 +8663,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8713,7 +8713,7 @@
 						<id>162</id>
 						<name>zext_ln93_9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8721,7 +8721,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8769,7 +8769,7 @@
 						<id>163</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8777,7 +8777,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8825,7 +8825,7 @@
 						<id>164</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8833,7 +8833,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8881,7 +8881,7 @@
 						<id>165</id>
 						<name>select_ln93_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8889,7 +8889,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8939,7 +8939,7 @@
 						<id>166</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -8947,7 +8947,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -8995,7 +8995,7 @@
 						<id>167</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9003,7 +9003,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9051,7 +9051,7 @@
 						<id>168</id>
 						<name>select_ln93_8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9059,7 +9059,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9109,7 +9109,7 @@
 						<id>169</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9117,7 +9117,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9165,7 +9165,7 @@
 						<id>170</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9173,7 +9173,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9221,7 +9221,7 @@
 						<id>171</id>
 						<name>select_ln93_9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9229,7 +9229,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9279,7 +9279,7 @@
 						<id>172</id>
 						<name>zext_ln93_10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9287,7 +9287,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9335,7 +9335,7 @@
 						<id>173</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9343,7 +9343,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9391,7 +9391,7 @@
 						<id>174</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9399,7 +9399,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9447,7 +9447,7 @@
 						<id>175</id>
 						<name>select_ln93_10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9455,7 +9455,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9505,7 +9505,7 @@
 						<id>176</id>
 						<name>zext_ln93_11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9513,7 +9513,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9561,7 +9561,7 @@
 						<id>177</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_12</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9569,7 +9569,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9617,7 +9617,7 @@
 						<id>178</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_12</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9625,7 +9625,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9673,7 +9673,7 @@
 						<id>179</id>
 						<name>select_ln93_11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9681,7 +9681,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9731,7 +9731,7 @@
 						<id>180</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_13</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9739,7 +9739,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9787,7 +9787,7 @@
 						<id>181</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_13</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9795,7 +9795,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9843,7 +9843,7 @@
 						<id>182</id>
 						<name>select_ln93_12</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9851,7 +9851,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9901,7 +9901,7 @@
 						<id>183</id>
 						<name>zext_ln93_13</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9909,7 +9909,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -9957,7 +9957,7 @@
 						<id>184</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_14</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -9965,7 +9965,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10013,7 +10013,7 @@
 						<id>185</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_14</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10021,7 +10021,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10069,7 +10069,7 @@
 						<id>186</id>
 						<name>select_ln93_13</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10077,7 +10077,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10127,7 +10127,7 @@
 						<id>187</id>
 						<name>zext_ln20_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -10135,7 +10135,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -10190,7 +10190,7 @@
 						<id>188</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10198,7 +10198,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10246,7 +10246,7 @@
 						<id>189</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10254,7 +10254,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10302,7 +10302,7 @@
 						<id>190</id>
 						<name>select_ln93_14</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10310,7 +10310,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10360,7 +10360,7 @@
 						<id>191</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10368,7 +10368,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10416,7 +10416,7 @@
 						<id>192</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10424,7 +10424,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10472,7 +10472,7 @@
 						<id>193</id>
 						<name>select_ln93_15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10480,7 +10480,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10530,7 +10530,7 @@
 						<id>194</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_17</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10538,7 +10538,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10586,7 +10586,7 @@
 						<id>195</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_17</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10594,7 +10594,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10642,7 +10642,7 @@
 						<id>196</id>
 						<name>select_ln93_16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10650,7 +10650,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10700,7 +10700,7 @@
 						<id>197</id>
 						<name>zext_ln93_14</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10708,7 +10708,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10756,7 +10756,7 @@
 						<id>198</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10764,7 +10764,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10812,7 +10812,7 @@
 						<id>199</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10820,7 +10820,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10868,7 +10868,7 @@
 						<id>200</id>
 						<name>select_ln93_17</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10876,7 +10876,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10926,7 +10926,7 @@
 						<id>201</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10934,7 +10934,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -10982,7 +10982,7 @@
 						<id>202</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -10990,7 +10990,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11038,7 +11038,7 @@
 						<id>203</id>
 						<name>select_ln93_18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11046,7 +11046,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11096,7 +11096,7 @@
 						<id>204</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11104,7 +11104,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11152,7 +11152,7 @@
 						<id>205</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11160,7 +11160,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11208,7 +11208,7 @@
 						<id>206</id>
 						<name>select_ln93_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11216,7 +11216,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11266,7 +11266,7 @@
 						<id>207</id>
 						<name>zext_ln93_15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11274,7 +11274,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11322,7 +11322,7 @@
 						<id>208</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11330,7 +11330,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11378,7 +11378,7 @@
 						<id>209</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11386,7 +11386,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11434,7 +11434,7 @@
 						<id>210</id>
 						<name>select_ln93_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11442,7 +11442,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11492,7 +11492,7 @@
 						<id>211</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11500,7 +11500,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11548,7 +11548,7 @@
 						<id>212</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11556,7 +11556,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11604,7 +11604,7 @@
 						<id>213</id>
 						<name>select_ln93_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11612,7 +11612,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11662,7 +11662,7 @@
 						<id>214</id>
 						<name>zext_ln93_16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11670,7 +11670,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11718,7 +11718,7 @@
 						<id>215</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_23</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11726,7 +11726,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11774,7 +11774,7 @@
 						<id>216</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_23</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11782,7 +11782,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11830,7 +11830,7 @@
 						<id>217</id>
 						<name>select_ln93_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11838,7 +11838,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11888,7 +11888,7 @@
 						<id>218</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_0_load_24</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11896,7 +11896,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -11944,7 +11944,7 @@
 						<id>219</id>
 						<name>p_ZN12_GLOBAL_N_110lineBufferE_1_load_24</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -11952,7 +11952,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12000,7 +12000,7 @@
 						<id>220</id>
 						<name>select_ln93_23</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12008,7 +12008,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12058,7 +12058,7 @@
 						<id>221</id>
 						<name>zext_ln91</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12066,7 +12066,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12114,7 +12114,7 @@
 						<id>222</id>
 						<name>tmp_19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12122,7 +12122,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12172,7 +12172,7 @@
 						<id>223</id>
 						<name>zext_ln91_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12180,7 +12180,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12228,7 +12228,7 @@
 						<id>224</id>
 						<name>tmp_20</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12236,7 +12236,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12286,7 +12286,7 @@
 						<id>225</id>
 						<name>zext_ln91_8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12294,7 +12294,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12342,7 +12342,7 @@
 						<id>226</id>
 						<name>add_ln91_7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12350,7 +12350,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12399,7 +12399,7 @@
 						<id>227</id>
 						<name>select_ln93_1_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12407,7 +12407,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12455,7 +12455,7 @@
 						<id>228</id>
 						<name>select_ln93_3_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12463,7 +12463,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12511,7 +12511,7 @@
 						<id>229</id>
 						<name>select_ln93_4_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12519,7 +12519,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12567,7 +12567,7 @@
 						<id>230</id>
 						<name>empty</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12575,7 +12575,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12624,7 +12624,7 @@
 						<id>231</id>
 						<name>p_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12632,7 +12632,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12680,7 +12680,7 @@
 						<id>232</id>
 						<name>select_ln93_8_cast22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12688,7 +12688,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12736,7 +12736,7 @@
 						<id>233</id>
 						<name>select_ln93_15_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12744,7 +12744,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12792,7 +12792,7 @@
 						<id>234</id>
 						<name>tmp</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12800,7 +12800,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12849,7 +12849,7 @@
 						<id>235</id>
 						<name>tmp_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12857,7 +12857,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12903,9 +12903,9 @@
 					<Obj>
 						<type>0</type>
 						<id>236</id>
-						<name>empty_43</name>
+						<name>empty_42</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12913,7 +12913,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -12962,7 +12962,7 @@
 						<id>237</id>
 						<name>p_cast9</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -12970,7 +12970,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13018,7 +13018,7 @@
 						<id>238</id>
 						<name>select_ln93_18_cast23</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13026,7 +13026,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13074,7 +13074,7 @@
 						<id>239</id>
 						<name>select_ln93_20_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13082,7 +13082,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13130,7 +13130,7 @@
 						<id>240</id>
 						<name>select_ln93_22_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13138,7 +13138,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13186,7 +13186,7 @@
 						<id>241</id>
 						<name>tmp1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13194,7 +13194,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13243,7 +13243,7 @@
 						<id>242</id>
 						<name>tmp3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13251,7 +13251,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13300,7 +13300,7 @@
 						<id>243</id>
 						<name>tmp3_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13308,7 +13308,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13356,7 +13356,7 @@
 						<id>244</id>
 						<name>tmp2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13364,7 +13364,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13413,7 +13413,7 @@
 						<id>245</id>
 						<name>tmp2_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13421,7 +13421,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13469,7 +13469,7 @@
 						<id>246</id>
 						<name>tmp63</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13477,7 +13477,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13526,7 +13526,7 @@
 						<id>247</id>
 						<name>tmp7</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13534,7 +13534,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13584,7 +13584,7 @@
 						<id>248</id>
 						<name>tmp7_cast28</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13592,7 +13592,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13640,7 +13640,7 @@
 						<id>249</id>
 						<name>tmp8</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13648,7 +13648,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13697,7 +13697,7 @@
 						<id>250</id>
 						<name>tmp8_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13705,7 +13705,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13753,7 +13753,7 @@
 						<id>251</id>
 						<name>tmp4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13761,7 +13761,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13810,7 +13810,7 @@
 						<id>252</id>
 						<name>tmp4_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13818,7 +13818,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13866,7 +13866,7 @@
 						<id>253</id>
 						<name>tmp10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13874,7 +13874,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13923,7 +13923,7 @@
 						<id>254</id>
 						<name>p_shl1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13931,7 +13931,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -13981,7 +13981,7 @@
 						<id>255</id>
 						<name>tmp_21</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -13989,7 +13989,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14039,7 +14039,7 @@
 						<id>256</id>
 						<name>p_shl59</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14047,7 +14047,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14095,7 +14095,7 @@
 						<id>257</id>
 						<name>tmp11</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14103,7 +14103,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14152,7 +14152,7 @@
 						<id>258</id>
 						<name>tmp11_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14160,7 +14160,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14208,7 +14208,7 @@
 						<id>259</id>
 						<name>select_ln93_6_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14216,7 +14216,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14264,7 +14264,7 @@
 						<id>260</id>
 						<name>select_ln93_8_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14272,7 +14272,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14320,7 +14320,7 @@
 						<id>261</id>
 						<name>select_ln93_15_cast25</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14328,7 +14328,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14374,9 +14374,9 @@
 					<Obj>
 						<type>0</type>
 						<id>262</id>
-						<name>empty_44</name>
+						<name>empty_43</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14384,7 +14384,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14433,7 +14433,7 @@
 						<id>263</id>
 						<name>p_cast10</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14441,7 +14441,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14489,7 +14489,7 @@
 						<id>264</id>
 						<name>select_ln93_17_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14497,7 +14497,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14545,7 +14545,7 @@
 						<id>265</id>
 						<name>tmp5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14553,7 +14553,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14602,7 +14602,7 @@
 						<id>266</id>
 						<name>tmp5_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14610,7 +14610,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14658,7 +14658,7 @@
 						<id>267</id>
 						<name>tmp141</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14666,7 +14666,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14715,7 +14715,7 @@
 						<id>268</id>
 						<name>tmp15</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14723,7 +14723,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14773,7 +14773,7 @@
 						<id>269</id>
 						<name>tmp15_cast27</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14781,7 +14781,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14829,7 +14829,7 @@
 						<id>270</id>
 						<name>tmp16</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14837,7 +14837,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14886,7 +14886,7 @@
 						<id>271</id>
 						<name>tmp16_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>93</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -14894,7 +14894,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -14942,7 +14942,7 @@
 						<id>272</id>
 						<name>tmp6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -14950,7 +14950,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -15006,7 +15006,7 @@
 						<id>273</id>
 						<name>tmp6_cast</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -15014,7 +15014,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -15069,7 +15069,7 @@
 						<id>274</id>
 						<name>tmp18</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -15077,7 +15077,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -15133,7 +15133,7 @@
 						<id>275</id>
 						<name>p_shl</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -15141,7 +15141,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -15198,7 +15198,7 @@
 						<id>276</id>
 						<name>tmp_22</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -15206,7 +15206,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -15263,7 +15263,7 @@
 						<id>277</id>
 						<name>p_shl57</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -15271,7 +15271,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -15326,7 +15326,7 @@
 						<id>278</id>
 						<name>tmp19</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>
 						<contextFuncName>positive_modulo</contextFuncName>
 						<contextNormFuncName>positive_modulo</contextNormFuncName>
@@ -15334,7 +15334,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
@@ -15390,7 +15390,7 @@
 						<id>279</id>
 						<name>zext_ln91_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15398,7 +15398,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15446,7 +15446,7 @@
 						<id>280</id>
 						<name>add_ln91</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15454,7 +15454,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15503,7 +15503,7 @@
 						<id>281</id>
 						<name>zext_ln91_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15511,7 +15511,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15559,7 +15559,7 @@
 						<id>282</id>
 						<name>add_ln91_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15567,7 +15567,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15616,7 +15616,7 @@
 						<id>283</id>
 						<name>zext_ln91_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15624,7 +15624,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15672,7 +15672,7 @@
 						<id>284</id>
 						<name>add_ln91_2</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15680,7 +15680,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15729,7 +15729,7 @@
 						<id>285</id>
 						<name>zext_ln91_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15737,7 +15737,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15785,7 +15785,7 @@
 						<id>286</id>
 						<name>add_ln91_3</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15793,7 +15793,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15842,7 +15842,7 @@
 						<id>287</id>
 						<name>add_ln91_4</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15850,7 +15850,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15899,7 +15899,7 @@
 						<id>288</id>
 						<name>add_ln91_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15907,7 +15907,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -15956,7 +15956,7 @@
 						<id>289</id>
 						<name>zext_ln91_5</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -15964,7 +15964,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16012,7 +16012,7 @@
 						<id>290</id>
 						<name>add_ln91_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16020,7 +16020,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16069,7 +16069,7 @@
 						<id>291</id>
 						<name>zext_ln91_6</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16077,7 +16077,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16125,7 +16125,7 @@
 						<id>292</id>
 						<name>sum_1</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16133,7 +16133,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16182,7 +16182,7 @@
 						<id>293</id>
 						<name>trunc_ln</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>100</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16190,7 +16190,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16241,7 +16241,7 @@
 						<id>294</id>
 						<name>output_addr</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16249,7 +16249,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16299,7 +16299,7 @@
 						<id>295</id>
 						<name>output_addr_write_ln99</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16307,7 +16307,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16354,9 +16354,9 @@
 					<Obj>
 						<type>0</type>
 						<id>296</id>
-						<name>column_4_write_ln64</name>
+						<name>column_7_write_ln64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16364,7 +16364,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>
@@ -16415,7 +16415,7 @@
 						<id>297</id>
 						<name>br_ln64</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>64</lineNumber>
 						<contextFuncName>gaussian_blur</contextFuncName>
 						<contextNormFuncName>gaussian_blur</contextNormFuncName>
@@ -16423,7 +16423,7 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>1</count>
 									<item_version>0</item_version>

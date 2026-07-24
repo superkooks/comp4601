@@ -16,52 +16,52 @@ module canny_top_grayscale (
         ap_idle,
         ap_ready,
         p_read,
-        m_axi_gmem_in_0_AWVALID,
-        m_axi_gmem_in_0_AWREADY,
-        m_axi_gmem_in_0_AWADDR,
-        m_axi_gmem_in_0_AWID,
-        m_axi_gmem_in_0_AWLEN,
-        m_axi_gmem_in_0_AWSIZE,
-        m_axi_gmem_in_0_AWBURST,
-        m_axi_gmem_in_0_AWLOCK,
-        m_axi_gmem_in_0_AWCACHE,
-        m_axi_gmem_in_0_AWPROT,
-        m_axi_gmem_in_0_AWQOS,
-        m_axi_gmem_in_0_AWREGION,
-        m_axi_gmem_in_0_AWUSER,
-        m_axi_gmem_in_0_WVALID,
-        m_axi_gmem_in_0_WREADY,
-        m_axi_gmem_in_0_WDATA,
-        m_axi_gmem_in_0_WSTRB,
-        m_axi_gmem_in_0_WLAST,
-        m_axi_gmem_in_0_WID,
-        m_axi_gmem_in_0_WUSER,
-        m_axi_gmem_in_0_ARVALID,
-        m_axi_gmem_in_0_ARREADY,
-        m_axi_gmem_in_0_ARADDR,
-        m_axi_gmem_in_0_ARID,
-        m_axi_gmem_in_0_ARLEN,
-        m_axi_gmem_in_0_ARSIZE,
-        m_axi_gmem_in_0_ARBURST,
-        m_axi_gmem_in_0_ARLOCK,
-        m_axi_gmem_in_0_ARCACHE,
-        m_axi_gmem_in_0_ARPROT,
-        m_axi_gmem_in_0_ARQOS,
-        m_axi_gmem_in_0_ARREGION,
-        m_axi_gmem_in_0_ARUSER,
-        m_axi_gmem_in_0_RVALID,
-        m_axi_gmem_in_0_RREADY,
-        m_axi_gmem_in_0_RDATA,
-        m_axi_gmem_in_0_RLAST,
-        m_axi_gmem_in_0_RID,
-        m_axi_gmem_in_0_RFIFONUM,
-        m_axi_gmem_in_0_RUSER,
-        m_axi_gmem_in_0_RRESP,
-        m_axi_gmem_in_0_BVALID,
-        m_axi_gmem_in_0_BREADY,
-        m_axi_gmem_in_0_BRESP,
-        m_axi_gmem_in_0_BID,
-        m_axi_gmem_in_0_BUSER,
+        m_axi_gmem_0_AWVALID,
+        m_axi_gmem_0_AWREADY,
+        m_axi_gmem_0_AWADDR,
+        m_axi_gmem_0_AWID,
+        m_axi_gmem_0_AWLEN,
+        m_axi_gmem_0_AWSIZE,
+        m_axi_gmem_0_AWBURST,
+        m_axi_gmem_0_AWLOCK,
+        m_axi_gmem_0_AWCACHE,
+        m_axi_gmem_0_AWPROT,
+        m_axi_gmem_0_AWQOS,
+        m_axi_gmem_0_AWREGION,
+        m_axi_gmem_0_AWUSER,
+        m_axi_gmem_0_WVALID,
+        m_axi_gmem_0_WREADY,
+        m_axi_gmem_0_WDATA,
+        m_axi_gmem_0_WSTRB,
+        m_axi_gmem_0_WLAST,
+        m_axi_gmem_0_WID,
+        m_axi_gmem_0_WUSER,
+        m_axi_gmem_0_ARVALID,
+        m_axi_gmem_0_ARREADY,
+        m_axi_gmem_0_ARADDR,
+        m_axi_gmem_0_ARID,
+        m_axi_gmem_0_ARLEN,
+        m_axi_gmem_0_ARSIZE,
+        m_axi_gmem_0_ARBURST,
+        m_axi_gmem_0_ARLOCK,
+        m_axi_gmem_0_ARCACHE,
+        m_axi_gmem_0_ARPROT,
+        m_axi_gmem_0_ARQOS,
+        m_axi_gmem_0_ARREGION,
+        m_axi_gmem_0_ARUSER,
+        m_axi_gmem_0_RVALID,
+        m_axi_gmem_0_RREADY,
+        m_axi_gmem_0_RDATA,
+        m_axi_gmem_0_RLAST,
+        m_axi_gmem_0_RID,
+        m_axi_gmem_0_RFIFONUM,
+        m_axi_gmem_0_RUSER,
+        m_axi_gmem_0_RRESP,
+        m_axi_gmem_0_BVALID,
+        m_axi_gmem_0_BREADY,
+        m_axi_gmem_0_BRESP,
+        m_axi_gmem_0_BID,
+        m_axi_gmem_0_BUSER,
         in_r,
         out_grayscale_address0,
         out_grayscale_ce0,
@@ -81,52 +81,52 @@ input   ap_continue;
 output   ap_idle;
 output   ap_ready;
 input  [17:0] p_read;
-output   m_axi_gmem_in_0_AWVALID;
-input   m_axi_gmem_in_0_AWREADY;
-output  [63:0] m_axi_gmem_in_0_AWADDR;
-output  [0:0] m_axi_gmem_in_0_AWID;
-output  [31:0] m_axi_gmem_in_0_AWLEN;
-output  [2:0] m_axi_gmem_in_0_AWSIZE;
-output  [1:0] m_axi_gmem_in_0_AWBURST;
-output  [1:0] m_axi_gmem_in_0_AWLOCK;
-output  [3:0] m_axi_gmem_in_0_AWCACHE;
-output  [2:0] m_axi_gmem_in_0_AWPROT;
-output  [3:0] m_axi_gmem_in_0_AWQOS;
-output  [3:0] m_axi_gmem_in_0_AWREGION;
-output  [0:0] m_axi_gmem_in_0_AWUSER;
-output   m_axi_gmem_in_0_WVALID;
-input   m_axi_gmem_in_0_WREADY;
-output  [31:0] m_axi_gmem_in_0_WDATA;
-output  [3:0] m_axi_gmem_in_0_WSTRB;
-output   m_axi_gmem_in_0_WLAST;
-output  [0:0] m_axi_gmem_in_0_WID;
-output  [0:0] m_axi_gmem_in_0_WUSER;
-output   m_axi_gmem_in_0_ARVALID;
-input   m_axi_gmem_in_0_ARREADY;
-output  [63:0] m_axi_gmem_in_0_ARADDR;
-output  [0:0] m_axi_gmem_in_0_ARID;
-output  [31:0] m_axi_gmem_in_0_ARLEN;
-output  [2:0] m_axi_gmem_in_0_ARSIZE;
-output  [1:0] m_axi_gmem_in_0_ARBURST;
-output  [1:0] m_axi_gmem_in_0_ARLOCK;
-output  [3:0] m_axi_gmem_in_0_ARCACHE;
-output  [2:0] m_axi_gmem_in_0_ARPROT;
-output  [3:0] m_axi_gmem_in_0_ARQOS;
-output  [3:0] m_axi_gmem_in_0_ARREGION;
-output  [0:0] m_axi_gmem_in_0_ARUSER;
-input   m_axi_gmem_in_0_RVALID;
-output   m_axi_gmem_in_0_RREADY;
-input  [31:0] m_axi_gmem_in_0_RDATA;
-input   m_axi_gmem_in_0_RLAST;
-input  [0:0] m_axi_gmem_in_0_RID;
-input  [8:0] m_axi_gmem_in_0_RFIFONUM;
-input  [0:0] m_axi_gmem_in_0_RUSER;
-input  [1:0] m_axi_gmem_in_0_RRESP;
-input   m_axi_gmem_in_0_BVALID;
-output   m_axi_gmem_in_0_BREADY;
-input  [1:0] m_axi_gmem_in_0_BRESP;
-input  [0:0] m_axi_gmem_in_0_BID;
-input  [0:0] m_axi_gmem_in_0_BUSER;
+output   m_axi_gmem_0_AWVALID;
+input   m_axi_gmem_0_AWREADY;
+output  [63:0] m_axi_gmem_0_AWADDR;
+output  [0:0] m_axi_gmem_0_AWID;
+output  [31:0] m_axi_gmem_0_AWLEN;
+output  [2:0] m_axi_gmem_0_AWSIZE;
+output  [1:0] m_axi_gmem_0_AWBURST;
+output  [1:0] m_axi_gmem_0_AWLOCK;
+output  [3:0] m_axi_gmem_0_AWCACHE;
+output  [2:0] m_axi_gmem_0_AWPROT;
+output  [3:0] m_axi_gmem_0_AWQOS;
+output  [3:0] m_axi_gmem_0_AWREGION;
+output  [0:0] m_axi_gmem_0_AWUSER;
+output   m_axi_gmem_0_WVALID;
+input   m_axi_gmem_0_WREADY;
+output  [511:0] m_axi_gmem_0_WDATA;
+output  [63:0] m_axi_gmem_0_WSTRB;
+output   m_axi_gmem_0_WLAST;
+output  [0:0] m_axi_gmem_0_WID;
+output  [0:0] m_axi_gmem_0_WUSER;
+output   m_axi_gmem_0_ARVALID;
+input   m_axi_gmem_0_ARREADY;
+output  [63:0] m_axi_gmem_0_ARADDR;
+output  [0:0] m_axi_gmem_0_ARID;
+output  [31:0] m_axi_gmem_0_ARLEN;
+output  [2:0] m_axi_gmem_0_ARSIZE;
+output  [1:0] m_axi_gmem_0_ARBURST;
+output  [1:0] m_axi_gmem_0_ARLOCK;
+output  [3:0] m_axi_gmem_0_ARCACHE;
+output  [2:0] m_axi_gmem_0_ARPROT;
+output  [3:0] m_axi_gmem_0_ARQOS;
+output  [3:0] m_axi_gmem_0_ARREGION;
+output  [0:0] m_axi_gmem_0_ARUSER;
+input   m_axi_gmem_0_RVALID;
+output   m_axi_gmem_0_RREADY;
+input  [511:0] m_axi_gmem_0_RDATA;
+input   m_axi_gmem_0_RLAST;
+input  [0:0] m_axi_gmem_0_RID;
+input  [8:0] m_axi_gmem_0_RFIFONUM;
+input  [0:0] m_axi_gmem_0_RUSER;
+input  [1:0] m_axi_gmem_0_RRESP;
+input   m_axi_gmem_0_BVALID;
+output   m_axi_gmem_0_BREADY;
+input  [1:0] m_axi_gmem_0_BRESP;
+input  [0:0] m_axi_gmem_0_BID;
+input  [0:0] m_axi_gmem_0_BUSER;
 input  [63:0] in_r;
 output  [8:0] out_grayscale_address0;
 output   out_grayscale_ce0;
@@ -140,57 +140,57 @@ reg ap_ready;
 reg    ap_done_reg;
 (* fsm_encoding = "none" *) reg   [2:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [17:0] p_read_5_reg_86;
+reg   [17:0] p_read_5_reg_90;
 reg    ap_block_state1;
-wire   [63:0] empty_42_fu_79_p2;
-reg   [63:0] empty_42_reg_92;
+wire   [63:0] empty_41_fu_83_p2;
+reg   [63:0] empty_41_reg_96;
 wire    ap_CS_fsm_state2;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_done;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_idle;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_ready;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWVALID;
-wire   [63:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWADDR;
-wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWID;
-wire   [31:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWLEN;
-wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWSIZE;
-wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWBURST;
-wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWLOCK;
-wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWCACHE;
-wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWPROT;
-wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWQOS;
-wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWREGION;
-wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWUSER;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WVALID;
-wire   [31:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WDATA;
-wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WSTRB;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WLAST;
-wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WID;
-wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WUSER;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARVALID;
-wire   [63:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARADDR;
-wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARID;
-wire   [31:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARLEN;
-wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARSIZE;
-wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARBURST;
-wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARLOCK;
-wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARCACHE;
-wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARPROT;
-wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARQOS;
-wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARREGION;
-wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARUSER;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_RREADY;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_BREADY;
-wire   [8:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_address0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_ce0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_we0;
-wire   [7:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_d0;
-reg    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start_reg;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_idle;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_ready;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWVALID;
+wire   [63:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWADDR;
+wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWID;
+wire   [31:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWLEN;
+wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWSIZE;
+wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWBURST;
+wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWLOCK;
+wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWCACHE;
+wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWPROT;
+wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWQOS;
+wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWREGION;
+wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWUSER;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WVALID;
+wire   [511:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WDATA;
+wire   [63:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WSTRB;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WLAST;
+wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WID;
+wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WUSER;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARVALID;
+wire   [63:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARADDR;
+wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARID;
+wire   [31:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARLEN;
+wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARSIZE;
+wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARBURST;
+wire   [1:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARLOCK;
+wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARCACHE;
+wire   [2:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARPROT;
+wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARQOS;
+wire   [3:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARREGION;
+wire   [0:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARUSER;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_RREADY;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_BREADY;
+wire   [8:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_address0;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_ce0;
+wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_we0;
+wire   [7:0] grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_d0;
+reg    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg;
 wire    ap_CS_fsm_state3;
-wire   [19:0] p_shl_fu_62_p3;
-wire   [19:0] zext_ln4_fu_59_p1;
-wire   [19:0] empty_fu_69_p2;
-wire   [63:0] p_cast_fu_75_p1;
+wire   [19:0] p_shl_fu_66_p3;
+wire   [19:0] zext_ln4_fu_63_p1;
+wire   [19:0] empty_fu_73_p2;
+wire   [63:0] p_cast_fu_79_p1;
 reg   [2:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -201,67 +201,67 @@ wire    ap_ce_reg;
 initial begin
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 3'd1;
-#0 grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start_reg = 1'b0;
+#0 grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg = 1'b0;
 end
 
-canny_top_grayscale_Pipeline_VITIS_LOOP_7_1 grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50(
+canny_top_grayscale_Pipeline_VITIS_LOOP_7_1 grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start),
-    .ap_done(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_done),
-    .ap_idle(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_idle),
-    .ap_ready(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_ready),
-    .m_axi_gmem_in_0_AWVALID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWVALID),
-    .m_axi_gmem_in_0_AWREADY(1'b0),
-    .m_axi_gmem_in_0_AWADDR(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWADDR),
-    .m_axi_gmem_in_0_AWID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWID),
-    .m_axi_gmem_in_0_AWLEN(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWLEN),
-    .m_axi_gmem_in_0_AWSIZE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWSIZE),
-    .m_axi_gmem_in_0_AWBURST(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWBURST),
-    .m_axi_gmem_in_0_AWLOCK(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWLOCK),
-    .m_axi_gmem_in_0_AWCACHE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWCACHE),
-    .m_axi_gmem_in_0_AWPROT(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWPROT),
-    .m_axi_gmem_in_0_AWQOS(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWQOS),
-    .m_axi_gmem_in_0_AWREGION(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWREGION),
-    .m_axi_gmem_in_0_AWUSER(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_AWUSER),
-    .m_axi_gmem_in_0_WVALID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WVALID),
-    .m_axi_gmem_in_0_WREADY(1'b0),
-    .m_axi_gmem_in_0_WDATA(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WDATA),
-    .m_axi_gmem_in_0_WSTRB(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WSTRB),
-    .m_axi_gmem_in_0_WLAST(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WLAST),
-    .m_axi_gmem_in_0_WID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WID),
-    .m_axi_gmem_in_0_WUSER(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_WUSER),
-    .m_axi_gmem_in_0_ARVALID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARVALID),
-    .m_axi_gmem_in_0_ARREADY(m_axi_gmem_in_0_ARREADY),
-    .m_axi_gmem_in_0_ARADDR(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARADDR),
-    .m_axi_gmem_in_0_ARID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARID),
-    .m_axi_gmem_in_0_ARLEN(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARLEN),
-    .m_axi_gmem_in_0_ARSIZE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARSIZE),
-    .m_axi_gmem_in_0_ARBURST(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARBURST),
-    .m_axi_gmem_in_0_ARLOCK(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARLOCK),
-    .m_axi_gmem_in_0_ARCACHE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARCACHE),
-    .m_axi_gmem_in_0_ARPROT(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARPROT),
-    .m_axi_gmem_in_0_ARQOS(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARQOS),
-    .m_axi_gmem_in_0_ARREGION(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARREGION),
-    .m_axi_gmem_in_0_ARUSER(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARUSER),
-    .m_axi_gmem_in_0_RVALID(m_axi_gmem_in_0_RVALID),
-    .m_axi_gmem_in_0_RREADY(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_RREADY),
-    .m_axi_gmem_in_0_RDATA(m_axi_gmem_in_0_RDATA),
-    .m_axi_gmem_in_0_RLAST(m_axi_gmem_in_0_RLAST),
-    .m_axi_gmem_in_0_RID(m_axi_gmem_in_0_RID),
-    .m_axi_gmem_in_0_RFIFONUM(m_axi_gmem_in_0_RFIFONUM),
-    .m_axi_gmem_in_0_RUSER(m_axi_gmem_in_0_RUSER),
-    .m_axi_gmem_in_0_RRESP(m_axi_gmem_in_0_RRESP),
-    .m_axi_gmem_in_0_BVALID(1'b0),
-    .m_axi_gmem_in_0_BREADY(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_BREADY),
-    .m_axi_gmem_in_0_BRESP(2'd0),
-    .m_axi_gmem_in_0_BID(1'd0),
-    .m_axi_gmem_in_0_BUSER(1'd0),
-    .empty(empty_42_reg_92),
-    .out_grayscale_address0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_address0),
-    .out_grayscale_ce0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_ce0),
-    .out_grayscale_we0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_we0),
-    .out_grayscale_d0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_d0)
+    .ap_start(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start),
+    .ap_done(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done),
+    .ap_idle(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_idle),
+    .ap_ready(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_ready),
+    .m_axi_gmem_0_AWVALID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWVALID),
+    .m_axi_gmem_0_AWREADY(1'b0),
+    .m_axi_gmem_0_AWADDR(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWADDR),
+    .m_axi_gmem_0_AWID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWID),
+    .m_axi_gmem_0_AWLEN(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWLEN),
+    .m_axi_gmem_0_AWSIZE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWSIZE),
+    .m_axi_gmem_0_AWBURST(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWBURST),
+    .m_axi_gmem_0_AWLOCK(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWLOCK),
+    .m_axi_gmem_0_AWCACHE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWCACHE),
+    .m_axi_gmem_0_AWPROT(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWPROT),
+    .m_axi_gmem_0_AWQOS(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWQOS),
+    .m_axi_gmem_0_AWREGION(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWREGION),
+    .m_axi_gmem_0_AWUSER(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_AWUSER),
+    .m_axi_gmem_0_WVALID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WVALID),
+    .m_axi_gmem_0_WREADY(1'b0),
+    .m_axi_gmem_0_WDATA(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WDATA),
+    .m_axi_gmem_0_WSTRB(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WSTRB),
+    .m_axi_gmem_0_WLAST(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WLAST),
+    .m_axi_gmem_0_WID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WID),
+    .m_axi_gmem_0_WUSER(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_WUSER),
+    .m_axi_gmem_0_ARVALID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARVALID),
+    .m_axi_gmem_0_ARREADY(m_axi_gmem_0_ARREADY),
+    .m_axi_gmem_0_ARADDR(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARADDR),
+    .m_axi_gmem_0_ARID(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARID),
+    .m_axi_gmem_0_ARLEN(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARLEN),
+    .m_axi_gmem_0_ARSIZE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARSIZE),
+    .m_axi_gmem_0_ARBURST(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARBURST),
+    .m_axi_gmem_0_ARLOCK(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARLOCK),
+    .m_axi_gmem_0_ARCACHE(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARCACHE),
+    .m_axi_gmem_0_ARPROT(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARPROT),
+    .m_axi_gmem_0_ARQOS(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARQOS),
+    .m_axi_gmem_0_ARREGION(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARREGION),
+    .m_axi_gmem_0_ARUSER(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARUSER),
+    .m_axi_gmem_0_RVALID(m_axi_gmem_0_RVALID),
+    .m_axi_gmem_0_RREADY(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_RREADY),
+    .m_axi_gmem_0_RDATA(m_axi_gmem_0_RDATA),
+    .m_axi_gmem_0_RLAST(m_axi_gmem_0_RLAST),
+    .m_axi_gmem_0_RID(m_axi_gmem_0_RID),
+    .m_axi_gmem_0_RFIFONUM(m_axi_gmem_0_RFIFONUM),
+    .m_axi_gmem_0_RUSER(m_axi_gmem_0_RUSER),
+    .m_axi_gmem_0_RRESP(m_axi_gmem_0_RRESP),
+    .m_axi_gmem_0_BVALID(1'b0),
+    .m_axi_gmem_0_BREADY(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_BREADY),
+    .m_axi_gmem_0_BRESP(2'd0),
+    .m_axi_gmem_0_BID(1'd0),
+    .m_axi_gmem_0_BUSER(1'd0),
+    .empty(empty_41_reg_96),
+    .out_grayscale_address0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_address0),
+    .out_grayscale_ce0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_ce0),
+    .out_grayscale_we0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_we0),
+    .out_grayscale_d0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_d0)
 );
 
 always @ (posedge ap_clk) begin
@@ -278,7 +278,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_done == 1'b1))) begin
+        end else if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done == 1'b1))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -286,25 +286,25 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start_reg <= 1'b0;
+        grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state2)) begin
-            grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start_reg <= 1'b1;
-        end else if ((grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_ready == 1'b1)) begin
-            grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start_reg <= 1'b0;
+            grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg <= 1'b1;
+        end else if ((grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_ready == 1'b1)) begin
+            grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        empty_42_reg_92 <= empty_42_fu_79_p2;
+        empty_41_reg_96 <= empty_41_fu_83_p2;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        p_read_5_reg_86 <= p_read;
+        p_read_5_reg_90 <= p_read;
     end
 end
 
@@ -319,7 +319,7 @@ end
 assign ap_ST_fsm_state2_blk = 1'b0;
 
 always @ (*) begin
-    if ((grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_done == 1'b0)) begin
+    if ((grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
@@ -327,7 +327,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done == 1'b1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -343,7 +343,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_done == 1'b1))) begin
+    if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done == 1'b1))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -363,7 +363,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state3;
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -385,88 +385,88 @@ always @ (*) begin
     ap_block_state1 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
 end
 
-assign empty_42_fu_79_p2 = (p_cast_fu_75_p1 + in_r);
+assign empty_41_fu_83_p2 = (p_cast_fu_79_p1 + in_r);
 
-assign empty_fu_69_p2 = (p_shl_fu_62_p3 - zext_ln4_fu_59_p1);
+assign empty_fu_73_p2 = (p_shl_fu_66_p3 - zext_ln4_fu_63_p1);
 
-assign grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_ap_start_reg;
+assign grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg;
 
-assign m_axi_gmem_in_0_ARADDR = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARADDR;
+assign m_axi_gmem_0_ARADDR = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARADDR;
 
-assign m_axi_gmem_in_0_ARBURST = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARBURST;
+assign m_axi_gmem_0_ARBURST = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARBURST;
 
-assign m_axi_gmem_in_0_ARCACHE = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARCACHE;
+assign m_axi_gmem_0_ARCACHE = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARCACHE;
 
-assign m_axi_gmem_in_0_ARID = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARID;
+assign m_axi_gmem_0_ARID = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARID;
 
-assign m_axi_gmem_in_0_ARLEN = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARLEN;
+assign m_axi_gmem_0_ARLEN = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARLEN;
 
-assign m_axi_gmem_in_0_ARLOCK = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARLOCK;
+assign m_axi_gmem_0_ARLOCK = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARLOCK;
 
-assign m_axi_gmem_in_0_ARPROT = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARPROT;
+assign m_axi_gmem_0_ARPROT = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARPROT;
 
-assign m_axi_gmem_in_0_ARQOS = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARQOS;
+assign m_axi_gmem_0_ARQOS = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARQOS;
 
-assign m_axi_gmem_in_0_ARREGION = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARREGION;
+assign m_axi_gmem_0_ARREGION = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARREGION;
 
-assign m_axi_gmem_in_0_ARSIZE = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARSIZE;
+assign m_axi_gmem_0_ARSIZE = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARSIZE;
 
-assign m_axi_gmem_in_0_ARUSER = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARUSER;
+assign m_axi_gmem_0_ARUSER = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARUSER;
 
-assign m_axi_gmem_in_0_ARVALID = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_ARVALID;
+assign m_axi_gmem_0_ARVALID = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARVALID;
 
-assign m_axi_gmem_in_0_AWADDR = 64'd0;
+assign m_axi_gmem_0_AWADDR = 64'd0;
 
-assign m_axi_gmem_in_0_AWBURST = 2'd0;
+assign m_axi_gmem_0_AWBURST = 2'd0;
 
-assign m_axi_gmem_in_0_AWCACHE = 4'd0;
+assign m_axi_gmem_0_AWCACHE = 4'd0;
 
-assign m_axi_gmem_in_0_AWID = 1'd0;
+assign m_axi_gmem_0_AWID = 1'd0;
 
-assign m_axi_gmem_in_0_AWLEN = 32'd0;
+assign m_axi_gmem_0_AWLEN = 32'd0;
 
-assign m_axi_gmem_in_0_AWLOCK = 2'd0;
+assign m_axi_gmem_0_AWLOCK = 2'd0;
 
-assign m_axi_gmem_in_0_AWPROT = 3'd0;
+assign m_axi_gmem_0_AWPROT = 3'd0;
 
-assign m_axi_gmem_in_0_AWQOS = 4'd0;
+assign m_axi_gmem_0_AWQOS = 4'd0;
 
-assign m_axi_gmem_in_0_AWREGION = 4'd0;
+assign m_axi_gmem_0_AWREGION = 4'd0;
 
-assign m_axi_gmem_in_0_AWSIZE = 3'd0;
+assign m_axi_gmem_0_AWSIZE = 3'd0;
 
-assign m_axi_gmem_in_0_AWUSER = 1'd0;
+assign m_axi_gmem_0_AWUSER = 1'd0;
 
-assign m_axi_gmem_in_0_AWVALID = 1'b0;
+assign m_axi_gmem_0_AWVALID = 1'b0;
 
-assign m_axi_gmem_in_0_BREADY = 1'b0;
+assign m_axi_gmem_0_BREADY = 1'b0;
 
-assign m_axi_gmem_in_0_RREADY = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_m_axi_gmem_in_0_RREADY;
+assign m_axi_gmem_0_RREADY = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_RREADY;
 
-assign m_axi_gmem_in_0_WDATA = 32'd0;
+assign m_axi_gmem_0_WDATA = 512'd0;
 
-assign m_axi_gmem_in_0_WID = 1'd0;
+assign m_axi_gmem_0_WID = 1'd0;
 
-assign m_axi_gmem_in_0_WLAST = 1'b0;
+assign m_axi_gmem_0_WLAST = 1'b0;
 
-assign m_axi_gmem_in_0_WSTRB = 4'd0;
+assign m_axi_gmem_0_WSTRB = 64'd0;
 
-assign m_axi_gmem_in_0_WUSER = 1'd0;
+assign m_axi_gmem_0_WUSER = 1'd0;
 
-assign m_axi_gmem_in_0_WVALID = 1'b0;
+assign m_axi_gmem_0_WVALID = 1'b0;
 
-assign out_grayscale_address0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_address0;
+assign out_grayscale_address0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_address0;
 
-assign out_grayscale_ce0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_ce0;
+assign out_grayscale_ce0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_ce0;
 
-assign out_grayscale_d0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_d0;
+assign out_grayscale_d0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_d0;
 
-assign out_grayscale_we0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_50_out_grayscale_we0;
+assign out_grayscale_we0 = grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_we0;
 
-assign p_cast_fu_75_p1 = empty_fu_69_p2;
+assign p_cast_fu_79_p1 = empty_fu_73_p2;
 
-assign p_shl_fu_62_p3 = {{p_read_5_reg_86}, {2'd0}};
+assign p_shl_fu_66_p3 = {{p_read_5_reg_90}, {2'd0}};
 
-assign zext_ln4_fu_59_p1 = p_read_5_reg_86;
+assign zext_ln4_fu_63_p1 = p_read_5_reg_90;
 
 endmodule //canny_top_grayscale

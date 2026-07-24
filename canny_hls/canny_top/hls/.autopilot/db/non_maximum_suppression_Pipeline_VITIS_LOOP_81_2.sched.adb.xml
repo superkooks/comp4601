@@ -269,10 +269,10 @@ for.body24.split.i:10 %zext_ln83_1 = zext i10 %tmp_13
 
 <Node id="30" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.body24.split.i:11 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln83_1
+for.body24.split.i:11 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln83_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr"/></StgValue>
 </operation>
 
 <operation id="23" st_id="1" stage="1" lat="1">
@@ -285,10 +285,10 @@ for.body24.split.i:11 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr = ge
 
 <Node id="37" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.body24.split.i:18 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln83_1
+for.body24.split.i:18 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln83_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr"/></StgValue>
 </operation>
 
 <operation id="24" st_id="1" stage="2" lat="2">
@@ -301,10 +301,10 @@ for.body24.split.i:18 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr = ge
 
 <Node id="40" bw="8" op_0_bw="10">
 <![CDATA[
-for.body24.split.i:21 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr
+for.body24.split.i:21 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load"/></StgValue>
 </operation>
 
 <operation id="25" st_id="1" stage="2" lat="2">
@@ -317,10 +317,10 @@ for.body24.split.i:21 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load = lo
 
 <Node id="41" bw="8" op_0_bw="10">
 <![CDATA[
-for.body24.split.i:22 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr
+for.body24.split.i:22 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load"/></StgValue>
 </operation>
 
 <operation id="26" st_id="1" stage="2" lat="2">
@@ -400,10 +400,10 @@ for.body24.split.i:13 %zext_ln107 = zext i10 %tmp_14
 
 <Node id="33" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.body24.split.i:14 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_1 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln107
+for.body24.split.i:14 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln107
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_1"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1"/></StgValue>
 </operation>
 
 <operation id="31" st_id="2" stage="1" lat="1">
@@ -448,10 +448,10 @@ for.body24.split.i:16 %zext_ln110 = zext i10 %tmp_15
 
 <Node id="36" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.body24.split.i:17 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_6 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln110
+for.body24.split.i:17 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln110
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_6"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6"/></StgValue>
 </operation>
 
 <operation id="34" st_id="2" stage="1" lat="1">
@@ -464,10 +464,10 @@ for.body24.split.i:17 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_6 = 
 
 <Node id="38" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.body24.split.i:19 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_1 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln107
+for.body24.split.i:19 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln107
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_1"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1"/></StgValue>
 </operation>
 
 <operation id="35" st_id="2" stage="1" lat="1">
@@ -480,10 +480,10 @@ for.body24.split.i:19 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_1 = 
 
 <Node id="39" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-for.body24.split.i:20 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_6 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln110
+for.body24.split.i:20 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln110
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_6"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6"/></StgValue>
 </operation>
 
 <operation id="36" st_id="2" stage="1" lat="2">
@@ -496,10 +496,10 @@ for.body24.split.i:20 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_6 = 
 
 <Node id="40" bw="8" op_0_bw="10">
 <![CDATA[
-for.body24.split.i:21 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr
+for.body24.split.i:21 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load"/></StgValue>
 </operation>
 
 <operation id="37" st_id="2" stage="1" lat="2">
@@ -512,10 +512,10 @@ for.body24.split.i:21 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load = lo
 
 <Node id="41" bw="8" op_0_bw="10">
 <![CDATA[
-for.body24.split.i:22 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr
+for.body24.split.i:22 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load"/></StgValue>
 </operation>
 
 <operation id="38" st_id="2" stage="1" lat="1">
@@ -528,7 +528,7 @@ for.body24.split.i:22 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load = lo
 
 <Node id="42" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-for.body24.split.i:23 %centre_magnitude = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load
+for.body24.split.i:23 %centre_magnitude = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load
 
 ]]></Node>
 <StgValue><ssdm name="centre_magnitude"/></StgValue>
@@ -577,10 +577,10 @@ for.body24.split.i:25 %switch_ln88 = switch i2 %centre_direction, void %sw.bb.i,
 
 <Node id="46" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:0 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_1
+sw.bb52.i:0 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5"/></StgValue>
 </operation>
 
 <operation id="42" st_id="2" stage="2" lat="2">
@@ -594,10 +594,10 @@ sw.bb52.i:0 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5 = load i10 %
 
 <Node id="47" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:1 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_1
+sw.bb52.i:1 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5"/></StgValue>
 </operation>
 
 <operation id="43" st_id="2" stage="2" lat="2">
@@ -611,10 +611,10 @@ sw.bb52.i:1 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5 = load i10 %
 
 <Node id="49" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:3 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_6
+sw.bb52.i:3 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6"/></StgValue>
 </operation>
 
 <operation id="44" st_id="2" stage="2" lat="2">
@@ -628,10 +628,10 @@ sw.bb52.i:3 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6 = load i10 %
 
 <Node id="50" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_6
+sw.bb52.i:4 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_6"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6"/></StgValue>
 </operation>
 
 <operation id="45" st_id="2" stage="1" lat="1">
@@ -730,10 +730,10 @@ sw.bb39.i:3 %zext_ln99 = zext i10 %tmp_20
 
 <Node id="58" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb39.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_4 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln99
+sw.bb39.i:4 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln99
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_4"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4"/></StgValue>
 </operation>
 
 <operation id="51" st_id="2" stage="1" lat="1">
@@ -747,10 +747,10 @@ sw.bb39.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_4 = getelement
 
 <Node id="59" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb39.i:5 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_4 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln99
+sw.bb39.i:5 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln99
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_4"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4"/></StgValue>
 </operation>
 
 <operation id="52" st_id="2" stage="2" lat="2">
@@ -764,10 +764,10 @@ sw.bb39.i:5 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_4 = getelement
 
 <Node id="60" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_4
+sw.bb39.i:6 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3"/></StgValue>
 </operation>
 
 <operation id="53" st_id="2" stage="2" lat="2">
@@ -781,10 +781,10 @@ sw.bb39.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3 = load i10 %
 
 <Node id="61" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_4
+sw.bb39.i:7 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_3"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3"/></StgValue>
 </operation>
 
 <operation id="54" st_id="2" stage="1" lat="1">
@@ -866,10 +866,10 @@ sw.bb39.i:12 %zext_ln102 = zext i10 %tmp_21
 
 <Node id="67" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb39.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_5 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln102
+sw.bb39.i:13 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln102
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_5"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5"/></StgValue>
 </operation>
 
 <operation id="59" st_id="2" stage="1" lat="1">
@@ -883,10 +883,10 @@ sw.bb39.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_5 = getelemen
 
 <Node id="68" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb39.i:14 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_5 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln102
+sw.bb39.i:14 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln102
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_5"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5"/></StgValue>
 </operation>
 
 <operation id="60" st_id="2" stage="2" lat="2">
@@ -900,10 +900,10 @@ sw.bb39.i:14 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_5 = getelemen
 
 <Node id="69" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_5
+sw.bb39.i:15 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4"/></StgValue>
 </operation>
 
 <operation id="61" st_id="2" stage="2" lat="2">
@@ -917,10 +917,10 @@ sw.bb39.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4 = load i10 
 
 <Node id="70" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_5
+sw.bb39.i:16 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_4"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4"/></StgValue>
 </operation>
 
 <operation id="62" st_id="2" stage="1" lat="1">
@@ -1019,10 +1019,10 @@ sw.bb63.i:3 %zext_ln115 = zext i10 %tmp_18
 
 <Node id="78" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb63.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_7 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln115
+sw.bb63.i:4 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln115
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_7"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7"/></StgValue>
 </operation>
 
 <operation id="68" st_id="2" stage="1" lat="1">
@@ -1036,10 +1036,10 @@ sw.bb63.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_7 = getelement
 
 <Node id="79" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb63.i:5 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_7 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln115
+sw.bb63.i:5 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln115
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_7"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7"/></StgValue>
 </operation>
 
 <operation id="69" st_id="2" stage="2" lat="2">
@@ -1053,10 +1053,10 @@ sw.bb63.i:5 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_7 = getelement
 
 <Node id="80" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_7
+sw.bb63.i:6 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7"/></StgValue>
 </operation>
 
 <operation id="70" st_id="2" stage="2" lat="2">
@@ -1070,10 +1070,10 @@ sw.bb63.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7 = load i10 %
 
 <Node id="81" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_7
+sw.bb63.i:7 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_7"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7"/></StgValue>
 </operation>
 
 <operation id="71" st_id="2" stage="1" lat="1">
@@ -1155,10 +1155,10 @@ sw.bb63.i:12 %zext_ln118 = zext i10 %tmp_19
 
 <Node id="87" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb63.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_8 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln118
+sw.bb63.i:13 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln118
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_8"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8"/></StgValue>
 </operation>
 
 <operation id="76" st_id="2" stage="1" lat="1">
@@ -1172,10 +1172,10 @@ sw.bb63.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_8 = getelemen
 
 <Node id="88" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb63.i:14 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_8 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln118
+sw.bb63.i:14 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln118
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_8"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8"/></StgValue>
 </operation>
 
 <operation id="77" st_id="2" stage="2" lat="2">
@@ -1189,10 +1189,10 @@ sw.bb63.i:14 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_8 = getelemen
 
 <Node id="89" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_8
+sw.bb63.i:15 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8"/></StgValue>
 </operation>
 
 <operation id="78" st_id="2" stage="2" lat="2">
@@ -1206,10 +1206,10 @@ sw.bb63.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8 = load i10 
 
 <Node id="90" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_8
+sw.bb63.i:16 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_8"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8"/></StgValue>
 </operation>
 
 <operation id="79" st_id="2" stage="1" lat="1">
@@ -1308,10 +1308,10 @@ sw.bb.i:3 %zext_ln91 = zext i10 %tmp_16
 
 <Node id="98" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_2 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln91
+sw.bb.i:4 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln91
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_2"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2"/></StgValue>
 </operation>
 
 <operation id="85" st_id="2" stage="1" lat="1">
@@ -1325,10 +1325,10 @@ sw.bb.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_2 = getelementpt
 
 <Node id="99" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb.i:5 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_2 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln91
+sw.bb.i:5 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln91
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_2"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2"/></StgValue>
 </operation>
 
 <operation id="86" st_id="2" stage="2" lat="2">
@@ -1342,10 +1342,10 @@ sw.bb.i:5 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_2 = getelementpt
 
 <Node id="100" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_2
+sw.bb.i:6 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1"/></StgValue>
 </operation>
 
 <operation id="87" st_id="2" stage="2" lat="2">
@@ -1359,10 +1359,10 @@ sw.bb.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1 = load i10 %p_
 
 <Node id="101" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_2
+sw.bb.i:7 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_1"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1"/></StgValue>
 </operation>
 
 <operation id="88" st_id="2" stage="1" lat="1">
@@ -1444,10 +1444,10 @@ sw.bb.i:12 %zext_ln94 = zext i10 %tmp_17
 
 <Node id="107" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_3 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0, i64 0, i64 %zext_ln94
+sw.bb.i:13 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i64 0, i64 %zext_ln94
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_3"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3"/></StgValue>
 </operation>
 
 <operation id="93" st_id="2" stage="1" lat="1">
@@ -1461,10 +1461,10 @@ sw.bb.i:13 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_3 = getelementp
 
 <Node id="108" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
-sw.bb.i:14 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_3 = getelementptr i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1, i64 0, i64 %zext_ln94
+sw.bb.i:14 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3 = getelementptr i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i64 0, i64 %zext_ln94
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_3"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3"/></StgValue>
 </operation>
 
 <operation id="94" st_id="2" stage="2" lat="2">
@@ -1478,10 +1478,10 @@ sw.bb.i:14 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_3 = getelementp
 
 <Node id="109" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_3
+sw.bb.i:15 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2"/></StgValue>
 </operation>
 
 <operation id="95" st_id="2" stage="2" lat="2">
@@ -1495,10 +1495,10 @@ sw.bb.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2 = load i10 %p
 
 <Node id="110" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_3
+sw.bb.i:16 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_2"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2"/></StgValue>
 </operation>
 
 <operation id="96" st_id="2" stage="1" lat="1">
@@ -1580,10 +1580,10 @@ cleanup94.i.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="46" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:0 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_1
+sw.bb52.i:0 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5"/></StgValue>
 </operation>
 
 <operation id="100" st_id="3" stage="1" lat="2">
@@ -1597,10 +1597,10 @@ sw.bb52.i:0 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5 = load i10 %
 
 <Node id="47" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:1 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_1
+sw.bb52.i:1 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5"/></StgValue>
 </operation>
 
 <operation id="101" st_id="3" stage="1" lat="1">
@@ -1614,7 +1614,7 @@ sw.bb52.i:1 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5 = load i10 %
 
 <Node id="48" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb52.i:2 %neighbourOne_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5
+sw.bb52.i:2 %neighbourOne_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5
 
 ]]></Node>
 <StgValue><ssdm name="neighbourOne_3"/></StgValue>
@@ -1631,10 +1631,10 @@ sw.bb52.i:2 %neighbourOne_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_l
 
 <Node id="49" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:3 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_6
+sw.bb52.i:3 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6"/></StgValue>
 </operation>
 
 <operation id="103" st_id="3" stage="1" lat="2">
@@ -1648,10 +1648,10 @@ sw.bb52.i:3 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6 = load i10 %
 
 <Node id="50" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb52.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_6
+sw.bb52.i:4 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_6"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6"/></StgValue>
 </operation>
 
 <operation id="104" st_id="3" stage="1" lat="1">
@@ -1665,7 +1665,7 @@ sw.bb52.i:4 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_6 = load i10 %
 
 <Node id="51" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb52.i:5 %neighbourTwo_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_6, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6
+sw.bb52.i:5 %neighbourTwo_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6
 
 ]]></Node>
 <StgValue><ssdm name="neighbourTwo_3"/></StgValue>
@@ -1682,10 +1682,10 @@ sw.bb52.i:5 %neighbourTwo_3 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_l
 
 <Node id="60" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_4
+sw.bb39.i:6 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3"/></StgValue>
 </operation>
 
 <operation id="106" st_id="3" stage="1" lat="2">
@@ -1699,10 +1699,10 @@ sw.bb39.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3 = load i10 %
 
 <Node id="61" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_4
+sw.bb39.i:7 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_3"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3"/></StgValue>
 </operation>
 
 <operation id="107" st_id="3" stage="1" lat="1">
@@ -1716,7 +1716,7 @@ sw.bb39.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_3 = load i10 %
 
 <Node id="62" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb39.i:8 %neighbourOne_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_3
+sw.bb39.i:8 %neighbourOne_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3
 
 ]]></Node>
 <StgValue><ssdm name="neighbourOne_2"/></StgValue>
@@ -1733,10 +1733,10 @@ sw.bb39.i:8 %neighbourOne_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_l
 
 <Node id="69" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_5
+sw.bb39.i:15 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4"/></StgValue>
 </operation>
 
 <operation id="109" st_id="3" stage="1" lat="2">
@@ -1750,10 +1750,10 @@ sw.bb39.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4 = load i10 
 
 <Node id="70" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb39.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_5
+sw.bb39.i:16 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_4"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4"/></StgValue>
 </operation>
 
 <operation id="110" st_id="3" stage="1" lat="1">
@@ -1767,7 +1767,7 @@ sw.bb39.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_4 = load i10 
 
 <Node id="71" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb39.i:17 %neighbourTwo_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_4
+sw.bb39.i:17 %neighbourTwo_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4
 
 ]]></Node>
 <StgValue><ssdm name="neighbourTwo_2"/></StgValue>
@@ -1784,10 +1784,10 @@ sw.bb39.i:17 %neighbourTwo_2 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_
 
 <Node id="80" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_7
+sw.bb63.i:6 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7"/></StgValue>
 </operation>
 
 <operation id="112" st_id="3" stage="1" lat="2">
@@ -1801,10 +1801,10 @@ sw.bb63.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7 = load i10 %
 
 <Node id="81" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_7
+sw.bb63.i:7 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_7"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7"/></StgValue>
 </operation>
 
 <operation id="113" st_id="3" stage="1" lat="1">
@@ -1818,7 +1818,7 @@ sw.bb63.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_7 = load i10 %
 
 <Node id="82" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb63.i:8 %neighbourOne_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_7
+sw.bb63.i:8 %neighbourOne_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7
 
 ]]></Node>
 <StgValue><ssdm name="neighbourOne_1"/></StgValue>
@@ -1835,10 +1835,10 @@ sw.bb63.i:8 %neighbourOne_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_l
 
 <Node id="89" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_8
+sw.bb63.i:15 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8"/></StgValue>
 </operation>
 
 <operation id="115" st_id="3" stage="1" lat="2">
@@ -1852,10 +1852,10 @@ sw.bb63.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8 = load i10 
 
 <Node id="90" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb63.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_8
+sw.bb63.i:16 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_8"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8"/></StgValue>
 </operation>
 
 <operation id="116" st_id="3" stage="1" lat="1">
@@ -1869,7 +1869,7 @@ sw.bb63.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_8 = load i10 
 
 <Node id="91" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb63.i:17 %neighbourTwo_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_8
+sw.bb63.i:17 %neighbourTwo_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8
 
 ]]></Node>
 <StgValue><ssdm name="neighbourTwo_1"/></StgValue>
@@ -1886,10 +1886,10 @@ sw.bb63.i:17 %neighbourTwo_1 = select i1 %trunc_ln81, i8 %p_anonymous_namespace_
 
 <Node id="100" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_2
+sw.bb.i:6 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1"/></StgValue>
 </operation>
 
 <operation id="118" st_id="3" stage="1" lat="2">
@@ -1903,10 +1903,10 @@ sw.bb.i:6 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1 = load i10 %p_
 
 <Node id="101" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_2
+sw.bb.i:7 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_1"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1"/></StgValue>
 </operation>
 
 <operation id="119" st_id="3" stage="1" lat="1">
@@ -1920,7 +1920,7 @@ sw.bb.i:7 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_1 = load i10 %p_
 
 <Node id="102" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb.i:8 %neighbourOne = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_1
+sw.bb.i:8 %neighbourOne = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1
 
 ]]></Node>
 <StgValue><ssdm name="neighbourOne"/></StgValue>
@@ -1937,10 +1937,10 @@ sw.bb.i:8 %neighbourOne = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineB
 
 <Node id="109" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_3
+sw.bb.i:15 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2"/></StgValue>
 </operation>
 
 <operation id="121" st_id="3" stage="1" lat="2">
@@ -1954,10 +1954,10 @@ sw.bb.i:15 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2 = load i10 %p
 
 <Node id="110" bw="8" op_0_bw="10">
 <![CDATA[
-sw.bb.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_3
+sw.bb.i:16 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2 = load i10 %p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_11_magnitude_1_load_2"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2"/></StgValue>
 </operation>
 
 <operation id="122" st_id="3" stage="1" lat="1">
@@ -1971,7 +1971,7 @@ sw.bb.i:16 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_2 = load i10 %p
 
 <Node id="111" bw="8" op_0_bw="1" op_1_bw="8" op_2_bw="8">
 <![CDATA[
-sw.bb.i:17 %neighbourTwo = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2, i8 %p_anonymous_namespace_lineBuffer_11_magnitude_1_load_2
+sw.bb.i:17 %neighbourTwo = select i1 %trunc_ln81, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2, i8 %p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2
 
 ]]></Node>
 <StgValue><ssdm name="neighbourTwo"/></StgValue>
@@ -2126,7 +2126,7 @@ for.body24.split.i:0 %zext_ln81 = zext i9 %column_2
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.body24.split.i:5 %specpipeline_ln81 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0
+for.body24.split.i:5 %specpipeline_ln81 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_10
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln81"/></StgValue>
@@ -2158,7 +2158,7 @@ for.body24.split.i:6 %speclooptripcount_ln81 = speclooptripcount void @_ssdm_op_
 
 <Node id="26" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body24.split.i:7 %specloopname_ln81 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
+for.body24.split.i:7 %specloopname_ln81 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln81"/></StgValue>

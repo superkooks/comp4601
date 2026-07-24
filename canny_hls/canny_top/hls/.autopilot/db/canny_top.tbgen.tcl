@@ -2,7 +2,7 @@ set moduleName canny_top
 set isTopModule 1
 set isCombinational 0
 set isDatapathOnly 0
-set isPipelined 1
+set isPipelined 0
 set isPipelined_legacy 0
 set pipeline_type none
 set FunctionProtocol ap_ctrl_chain
@@ -15,13 +15,12 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 24
+set cdfgNum 40
 set C_modelName {canny_top}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 set C_modelArgList {
-	{ gmem_in int 32 regular {axi_master 0}  }
-	{ gmem_out int 512 regular {axi_master 1}  }
+	{ gmem int 512 regular {axi_master 2}  }
 	{ in_r int 64 regular {axi_slave 0}  }
 	{ out_r int 64 regular {axi_slave 0}  }
 }
@@ -29,13 +28,59 @@ set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "gmem_in", "interface" : "axi_master", "bitwidth" : 32, "direction" : "READONLY", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "in_r","offset": { "type": "dynamic","port_name": "in_r","bundle": "control"},"direction": "READONLY"}]}]} , 
- 	{ "Name" : "gmem_out", "interface" : "axi_master", "bitwidth" : 512, "direction" : "WRITEONLY", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "out_r","offset": { "type": "dynamic","port_name": "out_r","bundle": "control"},"direction": "WRITEONLY"}]}]} , 
+	{ "Name" : "gmem", "interface" : "axi_master", "bitwidth" : 512, "direction" : "READWRITE", "id_num" : 1, "bitSlice":[ {"cElement": [{"cName": "in_r","offset": { "type": "dynamic","port_name": "in_r","bundle": "control"},"direction": "READONLY"},{"cName": "out_r","offset": { "type": "dynamic","port_name": "out_r","bundle": "control"},"direction": "WRITEONLY"}]}]} , 
  	{ "Name" : "in_r", "interface" : "axi_slave", "bundle":"control","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":16}, "offset_end" : {"in":27}} , 
  	{ "Name" : "out_r", "interface" : "axi_slave", "bundle":"control","type":"ap_none","bitwidth" : 64, "direction" : "READONLY", "offset" : {"in":28}, "offset_end" : {"in":39}} ]}
 # RTL Port declarations: 
-set portNum 110
+set portNum 65
 set portList { 
+	{ ap_clk sc_in sc_logic 1 clock -1 } 
+	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
+	{ m_axi_gmem_AWVALID sc_out sc_logic 1 signal 0 } 
+	{ m_axi_gmem_AWREADY sc_in sc_logic 1 signal 0 } 
+	{ m_axi_gmem_AWADDR sc_out sc_lv 64 signal 0 } 
+	{ m_axi_gmem_AWID sc_out sc_lv 1 signal 0 } 
+	{ m_axi_gmem_AWLEN sc_out sc_lv 8 signal 0 } 
+	{ m_axi_gmem_AWSIZE sc_out sc_lv 3 signal 0 } 
+	{ m_axi_gmem_AWBURST sc_out sc_lv 2 signal 0 } 
+	{ m_axi_gmem_AWLOCK sc_out sc_lv 2 signal 0 } 
+	{ m_axi_gmem_AWCACHE sc_out sc_lv 4 signal 0 } 
+	{ m_axi_gmem_AWPROT sc_out sc_lv 3 signal 0 } 
+	{ m_axi_gmem_AWQOS sc_out sc_lv 4 signal 0 } 
+	{ m_axi_gmem_AWREGION sc_out sc_lv 4 signal 0 } 
+	{ m_axi_gmem_AWUSER sc_out sc_lv 1 signal 0 } 
+	{ m_axi_gmem_WVALID sc_out sc_logic 1 signal 0 } 
+	{ m_axi_gmem_WREADY sc_in sc_logic 1 signal 0 } 
+	{ m_axi_gmem_WDATA sc_out sc_lv 512 signal 0 } 
+	{ m_axi_gmem_WSTRB sc_out sc_lv 64 signal 0 } 
+	{ m_axi_gmem_WLAST sc_out sc_logic 1 signal 0 } 
+	{ m_axi_gmem_WID sc_out sc_lv 1 signal 0 } 
+	{ m_axi_gmem_WUSER sc_out sc_lv 1 signal 0 } 
+	{ m_axi_gmem_ARVALID sc_out sc_logic 1 signal 0 } 
+	{ m_axi_gmem_ARREADY sc_in sc_logic 1 signal 0 } 
+	{ m_axi_gmem_ARADDR sc_out sc_lv 64 signal 0 } 
+	{ m_axi_gmem_ARID sc_out sc_lv 1 signal 0 } 
+	{ m_axi_gmem_ARLEN sc_out sc_lv 8 signal 0 } 
+	{ m_axi_gmem_ARSIZE sc_out sc_lv 3 signal 0 } 
+	{ m_axi_gmem_ARBURST sc_out sc_lv 2 signal 0 } 
+	{ m_axi_gmem_ARLOCK sc_out sc_lv 2 signal 0 } 
+	{ m_axi_gmem_ARCACHE sc_out sc_lv 4 signal 0 } 
+	{ m_axi_gmem_ARPROT sc_out sc_lv 3 signal 0 } 
+	{ m_axi_gmem_ARQOS sc_out sc_lv 4 signal 0 } 
+	{ m_axi_gmem_ARREGION sc_out sc_lv 4 signal 0 } 
+	{ m_axi_gmem_ARUSER sc_out sc_lv 1 signal 0 } 
+	{ m_axi_gmem_RVALID sc_in sc_logic 1 signal 0 } 
+	{ m_axi_gmem_RREADY sc_out sc_logic 1 signal 0 } 
+	{ m_axi_gmem_RDATA sc_in sc_lv 512 signal 0 } 
+	{ m_axi_gmem_RLAST sc_in sc_logic 1 signal 0 } 
+	{ m_axi_gmem_RID sc_in sc_lv 1 signal 0 } 
+	{ m_axi_gmem_RUSER sc_in sc_lv 1 signal 0 } 
+	{ m_axi_gmem_RRESP sc_in sc_lv 2 signal 0 } 
+	{ m_axi_gmem_BVALID sc_in sc_logic 1 signal 0 } 
+	{ m_axi_gmem_BREADY sc_out sc_logic 1 signal 0 } 
+	{ m_axi_gmem_BRESP sc_in sc_lv 2 signal 0 } 
+	{ m_axi_gmem_BID sc_in sc_lv 1 signal 0 } 
+	{ m_axi_gmem_BUSER sc_in sc_lv 1 signal 0 } 
 	{ s_axi_control_AWVALID sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_AWREADY sc_out sc_logic 1 signal -1 } 
 	{ s_axi_control_AWADDR sc_in sc_lv 6 signal -1 } 
@@ -53,99 +98,7 @@ set portList {
 	{ s_axi_control_BVALID sc_out sc_logic 1 signal -1 } 
 	{ s_axi_control_BREADY sc_in sc_logic 1 signal -1 } 
 	{ s_axi_control_BRESP sc_out sc_lv 2 signal -1 } 
-	{ ap_clk sc_in sc_logic 1 clock -1 } 
-	{ ap_rst_n sc_in sc_logic 1 reset -1 active_low_sync } 
 	{ interrupt sc_out sc_logic 1 signal -1 } 
-	{ m_axi_gmem_in_AWVALID sc_out sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_AWREADY sc_in sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_AWADDR sc_out sc_lv 64 signal 0 } 
-	{ m_axi_gmem_in_AWID sc_out sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_AWLEN sc_out sc_lv 8 signal 0 } 
-	{ m_axi_gmem_in_AWSIZE sc_out sc_lv 3 signal 0 } 
-	{ m_axi_gmem_in_AWBURST sc_out sc_lv 2 signal 0 } 
-	{ m_axi_gmem_in_AWLOCK sc_out sc_lv 2 signal 0 } 
-	{ m_axi_gmem_in_AWCACHE sc_out sc_lv 4 signal 0 } 
-	{ m_axi_gmem_in_AWPROT sc_out sc_lv 3 signal 0 } 
-	{ m_axi_gmem_in_AWQOS sc_out sc_lv 4 signal 0 } 
-	{ m_axi_gmem_in_AWREGION sc_out sc_lv 4 signal 0 } 
-	{ m_axi_gmem_in_AWUSER sc_out sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_WVALID sc_out sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_WREADY sc_in sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_WDATA sc_out sc_lv 32 signal 0 } 
-	{ m_axi_gmem_in_WSTRB sc_out sc_lv 4 signal 0 } 
-	{ m_axi_gmem_in_WLAST sc_out sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_WID sc_out sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_WUSER sc_out sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_ARVALID sc_out sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_ARREADY sc_in sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_ARADDR sc_out sc_lv 64 signal 0 } 
-	{ m_axi_gmem_in_ARID sc_out sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_ARLEN sc_out sc_lv 8 signal 0 } 
-	{ m_axi_gmem_in_ARSIZE sc_out sc_lv 3 signal 0 } 
-	{ m_axi_gmem_in_ARBURST sc_out sc_lv 2 signal 0 } 
-	{ m_axi_gmem_in_ARLOCK sc_out sc_lv 2 signal 0 } 
-	{ m_axi_gmem_in_ARCACHE sc_out sc_lv 4 signal 0 } 
-	{ m_axi_gmem_in_ARPROT sc_out sc_lv 3 signal 0 } 
-	{ m_axi_gmem_in_ARQOS sc_out sc_lv 4 signal 0 } 
-	{ m_axi_gmem_in_ARREGION sc_out sc_lv 4 signal 0 } 
-	{ m_axi_gmem_in_ARUSER sc_out sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_RVALID sc_in sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_RREADY sc_out sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_RDATA sc_in sc_lv 32 signal 0 } 
-	{ m_axi_gmem_in_RLAST sc_in sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_RID sc_in sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_RUSER sc_in sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_RRESP sc_in sc_lv 2 signal 0 } 
-	{ m_axi_gmem_in_BVALID sc_in sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_BREADY sc_out sc_logic 1 signal 0 } 
-	{ m_axi_gmem_in_BRESP sc_in sc_lv 2 signal 0 } 
-	{ m_axi_gmem_in_BID sc_in sc_lv 1 signal 0 } 
-	{ m_axi_gmem_in_BUSER sc_in sc_lv 1 signal 0 } 
-	{ m_axi_gmem_out_AWVALID sc_out sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_AWREADY sc_in sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_AWADDR sc_out sc_lv 64 signal 1 } 
-	{ m_axi_gmem_out_AWID sc_out sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_AWLEN sc_out sc_lv 8 signal 1 } 
-	{ m_axi_gmem_out_AWSIZE sc_out sc_lv 3 signal 1 } 
-	{ m_axi_gmem_out_AWBURST sc_out sc_lv 2 signal 1 } 
-	{ m_axi_gmem_out_AWLOCK sc_out sc_lv 2 signal 1 } 
-	{ m_axi_gmem_out_AWCACHE sc_out sc_lv 4 signal 1 } 
-	{ m_axi_gmem_out_AWPROT sc_out sc_lv 3 signal 1 } 
-	{ m_axi_gmem_out_AWQOS sc_out sc_lv 4 signal 1 } 
-	{ m_axi_gmem_out_AWREGION sc_out sc_lv 4 signal 1 } 
-	{ m_axi_gmem_out_AWUSER sc_out sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_WVALID sc_out sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_WREADY sc_in sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_WDATA sc_out sc_lv 512 signal 1 } 
-	{ m_axi_gmem_out_WSTRB sc_out sc_lv 64 signal 1 } 
-	{ m_axi_gmem_out_WLAST sc_out sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_WID sc_out sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_WUSER sc_out sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_ARVALID sc_out sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_ARREADY sc_in sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_ARADDR sc_out sc_lv 64 signal 1 } 
-	{ m_axi_gmem_out_ARID sc_out sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_ARLEN sc_out sc_lv 8 signal 1 } 
-	{ m_axi_gmem_out_ARSIZE sc_out sc_lv 3 signal 1 } 
-	{ m_axi_gmem_out_ARBURST sc_out sc_lv 2 signal 1 } 
-	{ m_axi_gmem_out_ARLOCK sc_out sc_lv 2 signal 1 } 
-	{ m_axi_gmem_out_ARCACHE sc_out sc_lv 4 signal 1 } 
-	{ m_axi_gmem_out_ARPROT sc_out sc_lv 3 signal 1 } 
-	{ m_axi_gmem_out_ARQOS sc_out sc_lv 4 signal 1 } 
-	{ m_axi_gmem_out_ARREGION sc_out sc_lv 4 signal 1 } 
-	{ m_axi_gmem_out_ARUSER sc_out sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_RVALID sc_in sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_RREADY sc_out sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_RDATA sc_in sc_lv 512 signal 1 } 
-	{ m_axi_gmem_out_RLAST sc_in sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_RID sc_in sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_RUSER sc_in sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_RRESP sc_in sc_lv 2 signal 1 } 
-	{ m_axi_gmem_out_BVALID sc_in sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_BREADY sc_out sc_logic 1 signal 1 } 
-	{ m_axi_gmem_out_BRESP sc_in sc_lv 2 signal 1 } 
-	{ m_axi_gmem_out_BID sc_in sc_lv 1 signal 1 } 
-	{ m_axi_gmem_out_BUSER sc_in sc_lv 1 signal 1 } 
 }
 set NewPortList {[ 
 	{ "name": "s_axi_control_AWADDR", "direction": "in", "datatype": "sc_lv", "bitwidth":6, "type": "signal", "bundle":{"name": "control", "role": "AWADDR" },"address":[{"name":"canny_top","role":"start","value":"0","valid_bit":"0"},{"name":"canny_top","role":"continue","value":"0","valid_bit":"4"},{"name":"canny_top","role":"auto_start","value":"0","valid_bit":"7"},{"name":"in_r","role":"data","value":"16"},{"name":"out_r","role":"data","value":"28"}] },
@@ -168,157 +121,174 @@ set NewPortList {[
 	{ "name": "interrupt", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "control", "role": "interrupt" } }, 
  	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }} , 
- 	{ "name": "m_axi_gmem_in_AWVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWVALID" }} , 
- 	{ "name": "m_axi_gmem_in_AWREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWREADY" }} , 
- 	{ "name": "m_axi_gmem_in_AWADDR", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWADDR" }} , 
- 	{ "name": "m_axi_gmem_in_AWID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWID" }} , 
- 	{ "name": "m_axi_gmem_in_AWLEN", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWLEN" }} , 
- 	{ "name": "m_axi_gmem_in_AWSIZE", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWSIZE" }} , 
- 	{ "name": "m_axi_gmem_in_AWBURST", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWBURST" }} , 
- 	{ "name": "m_axi_gmem_in_AWLOCK", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWLOCK" }} , 
- 	{ "name": "m_axi_gmem_in_AWCACHE", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWCACHE" }} , 
- 	{ "name": "m_axi_gmem_in_AWPROT", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWPROT" }} , 
- 	{ "name": "m_axi_gmem_in_AWQOS", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWQOS" }} , 
- 	{ "name": "m_axi_gmem_in_AWREGION", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWREGION" }} , 
- 	{ "name": "m_axi_gmem_in_AWUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "AWUSER" }} , 
- 	{ "name": "m_axi_gmem_in_WVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "WVALID" }} , 
- 	{ "name": "m_axi_gmem_in_WREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "WREADY" }} , 
- 	{ "name": "m_axi_gmem_in_WDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "gmem_in", "role": "WDATA" }} , 
- 	{ "name": "m_axi_gmem_in_WSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_in", "role": "WSTRB" }} , 
- 	{ "name": "m_axi_gmem_in_WLAST", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "WLAST" }} , 
- 	{ "name": "m_axi_gmem_in_WID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "WID" }} , 
- 	{ "name": "m_axi_gmem_in_WUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "WUSER" }} , 
- 	{ "name": "m_axi_gmem_in_ARVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARVALID" }} , 
- 	{ "name": "m_axi_gmem_in_ARREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARREADY" }} , 
- 	{ "name": "m_axi_gmem_in_ARADDR", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARADDR" }} , 
- 	{ "name": "m_axi_gmem_in_ARID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARID" }} , 
- 	{ "name": "m_axi_gmem_in_ARLEN", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARLEN" }} , 
- 	{ "name": "m_axi_gmem_in_ARSIZE", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARSIZE" }} , 
- 	{ "name": "m_axi_gmem_in_ARBURST", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARBURST" }} , 
- 	{ "name": "m_axi_gmem_in_ARLOCK", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARLOCK" }} , 
- 	{ "name": "m_axi_gmem_in_ARCACHE", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARCACHE" }} , 
- 	{ "name": "m_axi_gmem_in_ARPROT", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARPROT" }} , 
- 	{ "name": "m_axi_gmem_in_ARQOS", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARQOS" }} , 
- 	{ "name": "m_axi_gmem_in_ARREGION", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARREGION" }} , 
- 	{ "name": "m_axi_gmem_in_ARUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "ARUSER" }} , 
- 	{ "name": "m_axi_gmem_in_RVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "RVALID" }} , 
- 	{ "name": "m_axi_gmem_in_RREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "RREADY" }} , 
- 	{ "name": "m_axi_gmem_in_RDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "gmem_in", "role": "RDATA" }} , 
- 	{ "name": "m_axi_gmem_in_RLAST", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "RLAST" }} , 
- 	{ "name": "m_axi_gmem_in_RID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "RID" }} , 
- 	{ "name": "m_axi_gmem_in_RUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "RUSER" }} , 
- 	{ "name": "m_axi_gmem_in_RRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_in", "role": "RRESP" }} , 
- 	{ "name": "m_axi_gmem_in_BVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "BVALID" }} , 
- 	{ "name": "m_axi_gmem_in_BREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "BREADY" }} , 
- 	{ "name": "m_axi_gmem_in_BRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_in", "role": "BRESP" }} , 
- 	{ "name": "m_axi_gmem_in_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "BID" }} , 
- 	{ "name": "m_axi_gmem_in_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_in", "role": "BUSER" }} , 
- 	{ "name": "m_axi_gmem_out_AWVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWVALID" }} , 
- 	{ "name": "m_axi_gmem_out_AWREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWREADY" }} , 
- 	{ "name": "m_axi_gmem_out_AWADDR", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWADDR" }} , 
- 	{ "name": "m_axi_gmem_out_AWID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWID" }} , 
- 	{ "name": "m_axi_gmem_out_AWLEN", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWLEN" }} , 
- 	{ "name": "m_axi_gmem_out_AWSIZE", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWSIZE" }} , 
- 	{ "name": "m_axi_gmem_out_AWBURST", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWBURST" }} , 
- 	{ "name": "m_axi_gmem_out_AWLOCK", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWLOCK" }} , 
- 	{ "name": "m_axi_gmem_out_AWCACHE", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWCACHE" }} , 
- 	{ "name": "m_axi_gmem_out_AWPROT", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWPROT" }} , 
- 	{ "name": "m_axi_gmem_out_AWQOS", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWQOS" }} , 
- 	{ "name": "m_axi_gmem_out_AWREGION", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWREGION" }} , 
- 	{ "name": "m_axi_gmem_out_AWUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "AWUSER" }} , 
- 	{ "name": "m_axi_gmem_out_WVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "WVALID" }} , 
- 	{ "name": "m_axi_gmem_out_WREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "WREADY" }} , 
- 	{ "name": "m_axi_gmem_out_WDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":512, "type": "signal", "bundle":{"name": "gmem_out", "role": "WDATA" }} , 
- 	{ "name": "m_axi_gmem_out_WSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem_out", "role": "WSTRB" }} , 
- 	{ "name": "m_axi_gmem_out_WLAST", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "WLAST" }} , 
- 	{ "name": "m_axi_gmem_out_WID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "WID" }} , 
- 	{ "name": "m_axi_gmem_out_WUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "WUSER" }} , 
- 	{ "name": "m_axi_gmem_out_ARVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARVALID" }} , 
- 	{ "name": "m_axi_gmem_out_ARREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARREADY" }} , 
- 	{ "name": "m_axi_gmem_out_ARADDR", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARADDR" }} , 
- 	{ "name": "m_axi_gmem_out_ARID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARID" }} , 
- 	{ "name": "m_axi_gmem_out_ARLEN", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARLEN" }} , 
- 	{ "name": "m_axi_gmem_out_ARSIZE", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARSIZE" }} , 
- 	{ "name": "m_axi_gmem_out_ARBURST", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARBURST" }} , 
- 	{ "name": "m_axi_gmem_out_ARLOCK", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARLOCK" }} , 
- 	{ "name": "m_axi_gmem_out_ARCACHE", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARCACHE" }} , 
- 	{ "name": "m_axi_gmem_out_ARPROT", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARPROT" }} , 
- 	{ "name": "m_axi_gmem_out_ARQOS", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARQOS" }} , 
- 	{ "name": "m_axi_gmem_out_ARREGION", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARREGION" }} , 
- 	{ "name": "m_axi_gmem_out_ARUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "ARUSER" }} , 
- 	{ "name": "m_axi_gmem_out_RVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "RVALID" }} , 
- 	{ "name": "m_axi_gmem_out_RREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "RREADY" }} , 
- 	{ "name": "m_axi_gmem_out_RDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":512, "type": "signal", "bundle":{"name": "gmem_out", "role": "RDATA" }} , 
- 	{ "name": "m_axi_gmem_out_RLAST", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "RLAST" }} , 
- 	{ "name": "m_axi_gmem_out_RID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "RID" }} , 
- 	{ "name": "m_axi_gmem_out_RUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "RUSER" }} , 
- 	{ "name": "m_axi_gmem_out_RRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_out", "role": "RRESP" }} , 
- 	{ "name": "m_axi_gmem_out_BVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "BVALID" }} , 
- 	{ "name": "m_axi_gmem_out_BREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "BREADY" }} , 
- 	{ "name": "m_axi_gmem_out_BRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem_out", "role": "BRESP" }} , 
- 	{ "name": "m_axi_gmem_out_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "BID" }} , 
- 	{ "name": "m_axi_gmem_out_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem_out", "role": "BUSER" }}  ]}
+ 	{ "name": "m_axi_gmem_AWVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "AWVALID" }} , 
+ 	{ "name": "m_axi_gmem_AWREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "AWREADY" }} , 
+ 	{ "name": "m_axi_gmem_AWADDR", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem", "role": "AWADDR" }} , 
+ 	{ "name": "m_axi_gmem_AWID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "AWID" }} , 
+ 	{ "name": "m_axi_gmem_AWLEN", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gmem", "role": "AWLEN" }} , 
+ 	{ "name": "m_axi_gmem_AWSIZE", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem", "role": "AWSIZE" }} , 
+ 	{ "name": "m_axi_gmem_AWBURST", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem", "role": "AWBURST" }} , 
+ 	{ "name": "m_axi_gmem_AWLOCK", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem", "role": "AWLOCK" }} , 
+ 	{ "name": "m_axi_gmem_AWCACHE", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem", "role": "AWCACHE" }} , 
+ 	{ "name": "m_axi_gmem_AWPROT", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem", "role": "AWPROT" }} , 
+ 	{ "name": "m_axi_gmem_AWQOS", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem", "role": "AWQOS" }} , 
+ 	{ "name": "m_axi_gmem_AWREGION", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem", "role": "AWREGION" }} , 
+ 	{ "name": "m_axi_gmem_AWUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "AWUSER" }} , 
+ 	{ "name": "m_axi_gmem_WVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WVALID" }} , 
+ 	{ "name": "m_axi_gmem_WREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WREADY" }} , 
+ 	{ "name": "m_axi_gmem_WDATA", "direction": "out", "datatype": "sc_lv", "bitwidth":512, "type": "signal", "bundle":{"name": "gmem", "role": "WDATA" }} , 
+ 	{ "name": "m_axi_gmem_WSTRB", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem", "role": "WSTRB" }} , 
+ 	{ "name": "m_axi_gmem_WLAST", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WLAST" }} , 
+ 	{ "name": "m_axi_gmem_WID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WID" }} , 
+ 	{ "name": "m_axi_gmem_WUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "WUSER" }} , 
+ 	{ "name": "m_axi_gmem_ARVALID", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "ARVALID" }} , 
+ 	{ "name": "m_axi_gmem_ARREADY", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "ARREADY" }} , 
+ 	{ "name": "m_axi_gmem_ARADDR", "direction": "out", "datatype": "sc_lv", "bitwidth":64, "type": "signal", "bundle":{"name": "gmem", "role": "ARADDR" }} , 
+ 	{ "name": "m_axi_gmem_ARID", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "ARID" }} , 
+ 	{ "name": "m_axi_gmem_ARLEN", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gmem", "role": "ARLEN" }} , 
+ 	{ "name": "m_axi_gmem_ARSIZE", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem", "role": "ARSIZE" }} , 
+ 	{ "name": "m_axi_gmem_ARBURST", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem", "role": "ARBURST" }} , 
+ 	{ "name": "m_axi_gmem_ARLOCK", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem", "role": "ARLOCK" }} , 
+ 	{ "name": "m_axi_gmem_ARCACHE", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem", "role": "ARCACHE" }} , 
+ 	{ "name": "m_axi_gmem_ARPROT", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "gmem", "role": "ARPROT" }} , 
+ 	{ "name": "m_axi_gmem_ARQOS", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem", "role": "ARQOS" }} , 
+ 	{ "name": "m_axi_gmem_ARREGION", "direction": "out", "datatype": "sc_lv", "bitwidth":4, "type": "signal", "bundle":{"name": "gmem", "role": "ARREGION" }} , 
+ 	{ "name": "m_axi_gmem_ARUSER", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "ARUSER" }} , 
+ 	{ "name": "m_axi_gmem_RVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RVALID" }} , 
+ 	{ "name": "m_axi_gmem_RREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RREADY" }} , 
+ 	{ "name": "m_axi_gmem_RDATA", "direction": "in", "datatype": "sc_lv", "bitwidth":512, "type": "signal", "bundle":{"name": "gmem", "role": "RDATA" }} , 
+ 	{ "name": "m_axi_gmem_RLAST", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RLAST" }} , 
+ 	{ "name": "m_axi_gmem_RID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RID" }} , 
+ 	{ "name": "m_axi_gmem_RUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "RUSER" }} , 
+ 	{ "name": "m_axi_gmem_RRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem", "role": "RRESP" }} , 
+ 	{ "name": "m_axi_gmem_BVALID", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BVALID" }} , 
+ 	{ "name": "m_axi_gmem_BREADY", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BREADY" }} , 
+ 	{ "name": "m_axi_gmem_BRESP", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "gmem", "role": "BRESP" }} , 
+ 	{ "name": "m_axi_gmem_BID", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BID" }} , 
+ 	{ "name": "m_axi_gmem_BUSER", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "gmem", "role": "BUSER" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	canny_top {
-		gmem_in {Type I LastRead 74 FirstWrite -1}
-		gmem_out {Type O LastRead 4 FirstWrite 2}
+		gmem {Type IO LastRead 74 FirstWrite -1}
+		in_r {Type I LastRead 2 FirstWrite -1}
+		out_r {Type I LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_1 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_32_0 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_32_1 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_1_s {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead -1 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_4_s {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead -1 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead -1 FirstWrite -1}
+		rowsReceived {Type IO LastRead -1 FirstWrite -1}}
+	canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2 {
+		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type O LastRead -1 FirstWrite 0}
+		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type O LastRead -1 FirstWrite 0}}
+	canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2 {
+		p_anonymous_namespace_lineBuffer_32_0 {Type O LastRead -1 FirstWrite 0}
+		p_anonymous_namespace_lineBuffer_32_1 {Type O LastRead -1 FirstWrite 0}}
+	canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2 {
+		p_anonymous_namespace_lineBuffer_direction {Type O LastRead -1 FirstWrite 1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type O LastRead -1 FirstWrite 0}
+		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type O LastRead -1 FirstWrite 0}}
+	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_2 {
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type O LastRead -1 FirstWrite 0}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type O LastRead -1 FirstWrite 0}}
+	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_21 {
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type O LastRead -1 FirstWrite 0}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type O LastRead -1 FirstWrite 0}}
+	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_22 {
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type O LastRead -1 FirstWrite 0}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type O LastRead -1 FirstWrite 0}}
+	canny_top_Pipeline_VITIS_LOOP_44_1_VITIS_LOOP_45_23 {
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type O LastRead -1 FirstWrite 0}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type O LastRead -1 FirstWrite 0}}
+	dataflow_parent_loop_proc {
+		gmem {Type IO LastRead 74 FirstWrite -1}
 		in_r {Type I LastRead 0 FirstWrite -1}
 		out_r {Type I LastRead 0 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived {Type IO LastRead -1 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type IO LastRead -1 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived_3 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_1 {Type IO LastRead -1 FirstWrite -1}
-		rowsReceived {Type IO LastRead -1 FirstWrite -1}}
-	dataflow_in_loop_VITIS_LOOP_7_1_1 {
+		p_anonymous_namespace_rowsReceived {Type IO LastRead 0 FirstWrite 36}
+		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type IO LastRead 9 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type IO LastRead 9 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_1 {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_lineBuffer_32_0 {Type IO LastRead 4 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_32_1 {Type IO LastRead 4 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead 0 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type IO LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type IO LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_1_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type IO LastRead 8 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_4_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		rowsReceived {Type IO LastRead 0 FirstWrite 0}}
+	dataflow_in_loop_VITIS_LOOP_11_1_1 {
 		i_0 {Type I LastRead 0 FirstWrite -1}
-		gmem_in {Type I LastRead 74 FirstWrite -1}
+		gmem {Type IO LastRead 74 FirstWrite -1}
 		in_r {Type I LastRead 1 FirstWrite -1}
-		gmem_out {Type O LastRead 4 FirstWrite 2}
-		out_r {Type I LastRead 0 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived {Type IO LastRead -1 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type IO LastRead -1 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived_3 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_rowsReceived_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_1 {Type IO LastRead -1 FirstWrite -1}
-		rowsReceived {Type IO LastRead -1 FirstWrite -1}}
-	entry_proc {
-		out_r {Type I LastRead 0 FirstWrite -1}
-		out_c {Type O LastRead -1 FirstWrite 0}}
-	dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc {
+		out_r {Type I LastRead 19 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived {Type IO LastRead 0 FirstWrite 36}
+		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type IO LastRead 9 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type IO LastRead 9 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_1 {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_lineBuffer_32_0 {Type IO LastRead 4 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_32_1 {Type IO LastRead 4 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead 0 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type IO LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type IO LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_1_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type IO LastRead 8 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		p_anonymous_namespace_rowsReceived_4_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 0 FirstWrite -1}
+		rowsReceived {Type IO LastRead 0 FirstWrite 0}}
+	dataflow_in_loop_VITIS_LOOP_11_1_1_Block_newFuncRoot_proc {
 		i_0 {Type I LastRead 0 FirstWrite -1}}
 	grayscale {
 		p_read {Type I LastRead 0 FirstWrite -1}
-		gmem_in {Type I LastRead 74 FirstWrite -1}
+		gmem {Type I LastRead 74 FirstWrite -1}
 		in_r {Type I LastRead 1 FirstWrite -1}
-		out_grayscale {Type O LastRead -1 FirstWrite 79}}
+		out_grayscale {Type O LastRead -1 FirstWrite 78}}
 	grayscale_Pipeline_VITIS_LOOP_7_1 {
 		empty {Type I LastRead 0 FirstWrite -1}
-		gmem_in {Type I LastRead 74 FirstWrite -1}
-		out_grayscale {Type O LastRead -1 FirstWrite 79}}
+		gmem {Type I LastRead 74 FirstWrite -1}
+		out_grayscale {Type O LastRead -1 FirstWrite 78}}
 	gaussian_blur {
 		input_r {Type I LastRead 0 FirstWrite -1}
 		output_r {Type O LastRead -1 FirstWrite 0}
-		p_anonymous_namespace_rowsReceived {Type IO LastRead -1 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type IO LastRead -1 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type IO LastRead -1 FirstWrite -1}}
+		p_anonymous_namespace_rowsReceived {Type IO LastRead 0 FirstWrite 36}
+		p_ZN12_GLOBAL_N_110lineBufferE_0 {Type IO LastRead 9 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferE_1 {Type IO LastRead 9 FirstWrite -1}}
 	gaussian_blur_Pipeline_VITIS_LOOP_46_1 {
 		output_r {Type O LastRead -1 FirstWrite 0}
 		empty {Type I LastRead 0 FirstWrite -1}
@@ -339,33 +309,33 @@ set ArgLastReadFirstWriteLatency {
 		out_gaussian {Type I LastRead 0 FirstWrite -1}
 		out_sobel_magnitude {Type O LastRead -1 FirstWrite 0}
 		out_sobel_direction {Type O LastRead -1 FirstWrite 0}
-		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_1 {Type IO LastRead -1 FirstWrite -1}}
+		p_anonymous_namespace_rowsReceived_1 {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_lineBuffer_32_0 {Type IO LastRead 4 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_32_1 {Type IO LastRead 4 FirstWrite -1}}
 	sobel_Pipeline_VITIS_LOOP_89_1 {
 		out_sobel_magnitude {Type O LastRead -1 FirstWrite 0}
 		out_sobel_direction {Type O LastRead -1 FirstWrite 0}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		out_gaussian {Type I LastRead 0 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_0 {Type O LastRead -1 FirstWrite 1}
-		p_anonymous_namespace_lineBuffer_16_1 {Type O LastRead -1 FirstWrite 1}}
+		p_anonymous_namespace_lineBuffer_32_0 {Type O LastRead -1 FirstWrite 1}
+		p_anonymous_namespace_lineBuffer_32_1 {Type O LastRead -1 FirstWrite 1}}
 	sobel_Pipeline_VITIS_LOOP_118_2 {
 		result {Type I LastRead 0 FirstWrite -1}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		result_7 {Type I LastRead 0 FirstWrite -1}
 		out_sobel_magnitude {Type O LastRead -1 FirstWrite 73}
 		out_sobel_direction {Type O LastRead -1 FirstWrite 7}
-		p_anonymous_namespace_lineBuffer_16_0 {Type I LastRead 4 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_1 {Type I LastRead 4 FirstWrite -1}}
+		p_anonymous_namespace_lineBuffer_32_0 {Type I LastRead 4 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_32_1 {Type I LastRead 4 FirstWrite -1}}
 	non_maximum_suppression {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_sobel_magnitude {Type I LastRead 0 FirstWrite -1}
 		out_sobel_direction {Type I LastRead 0 FirstWrite -1}
 		out_nonmax {Type O LastRead -1 FirstWrite 0}
-		p_anonymous_namespace_rowsReceived_3 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_1 {Type IO LastRead -1 FirstWrite -1}}
+		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead 0 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type IO LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type IO LastRead 2 FirstWrite -1}}
 	non_maximum_suppression_Pipeline_VITIS_LOOP_45_1 {
 		out_nonmax {Type O LastRead -1 FirstWrite 0}
 		zext_ln46 {Type I LastRead 0 FirstWrite -1}
@@ -373,15 +343,15 @@ set ArgLastReadFirstWriteLatency {
 		out_sobel_magnitude {Type I LastRead 0 FirstWrite -1}
 		out_sobel_direction {Type I LastRead 0 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_direction {Type O LastRead -1 FirstWrite 1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_0 {Type O LastRead -1 FirstWrite 1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_1 {Type O LastRead -1 FirstWrite 1}}
+		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type O LastRead -1 FirstWrite 1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type O LastRead -1 FirstWrite 1}}
 	non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 {
 		out_nonmax {Type O LastRead -1 FirstWrite 3}
 		result_9 {Type I LastRead 0 FirstWrite -1}
 		result {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_0 {Type I LastRead 2 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_11_magnitude_1 {Type I LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type I LastRead 2 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type I LastRead 2 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_direction {Type I LastRead 0 FirstWrite -1}}
 	double_threshold {
 		p_read {Type I LastRead 0 FirstWrite -1}
@@ -390,55 +360,107 @@ set ArgLastReadFirstWriteLatency {
 	double_threshold_Pipeline_VITIS_LOOP_16_1 {
 		out_nonmax {Type I LastRead 0 FirstWrite -1}
 		out_double {Type O LastRead -1 FirstWrite 1}}
-	hysteresis {
+	hysteresis_1_s {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_double {Type I LastRead 0 FirstWrite -1}
-		out_hysteresis {Type O LastRead -1 FirstWrite 0}
-		p_anonymous_namespace_rowsReceived_1 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_0 {Type IO LastRead -1 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_1 {Type IO LastRead -1 FirstWrite -1}}
-	hysteresis_Pipeline_VITIS_LOOP_60_1 {
-		out_hysteresis {Type O LastRead -1 FirstWrite 0}
+		out_hysteresis1 {Type O LastRead -1 FirstWrite 0}
+		p_anonymous_namespace_rowsReceived_1_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type IO LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type IO LastRead 8 FirstWrite -1}}
+	hysteresis_1_Pipeline_VITIS_LOOP_66_1 {
+		out_hysteresis1 {Type O LastRead -1 FirstWrite 0}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
 		out_double {Type I LastRead 0 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_0 {Type O LastRead -1 FirstWrite 1}
-		p_anonymous_namespace_lineBuffer_6_1 {Type O LastRead -1 FirstWrite 1}}
-	hysteresis_Pipeline_VITIS_LOOP_108_2 {
-		out_hysteresis {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type O LastRead -1 FirstWrite 1}}
+	hysteresis_1_Pipeline_VITIS_LOOP_114_2 {
+		out_hysteresis1 {Type O LastRead -1 FirstWrite 1}
 		result_10 {Type I LastRead 0 FirstWrite -1}
 		result {Type I LastRead 0 FirstWrite -1}
 		writeSlot {Type I LastRead 0 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_0 {Type I LastRead 8 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_6_1 {Type I LastRead 8 FirstWrite -1}}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 {Type I LastRead 8 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 {Type I LastRead 8 FirstWrite -1}}
+	hysteresis_2_s {
+		p_read {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis1 {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis2 {Type O LastRead -1 FirstWrite 0}
+		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 0 FirstWrite -1}}
+	hysteresis_2_Pipeline_VITIS_LOOP_66_1 {
+		out_hysteresis2 {Type O LastRead -1 FirstWrite 0}
+		writeSlot {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis1 {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type O LastRead -1 FirstWrite 1}}
+	hysteresis_2_Pipeline_VITIS_LOOP_114_2 {
+		result {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis2 {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type I LastRead 0 FirstWrite -1}}
+	hysteresis_3_s {
+		p_read {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis2 {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis3 {Type O LastRead -1 FirstWrite 0}
+		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 0 FirstWrite -1}}
+	hysteresis_3_Pipeline_VITIS_LOOP_66_1 {
+		out_hysteresis3 {Type O LastRead -1 FirstWrite 0}
+		writeSlot {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis2 {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type O LastRead -1 FirstWrite 1}}
+	hysteresis_3_Pipeline_VITIS_LOOP_114_2 {
+		result {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis3 {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type I LastRead 0 FirstWrite -1}}
+	hysteresis_4_s {
+		p_read {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis3 {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis4 {Type O LastRead -1 FirstWrite 0}
+		p_anonymous_namespace_rowsReceived_4_s {Type IO LastRead 0 FirstWrite 71}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type IO LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type IO LastRead 0 FirstWrite -1}}
+	hysteresis_4_Pipeline_VITIS_LOOP_66_1 {
+		out_hysteresis4 {Type O LastRead -1 FirstWrite 0}
+		writeSlot {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis3 {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type O LastRead -1 FirstWrite 1}}
+	hysteresis_4_Pipeline_VITIS_LOOP_114_2 {
+		result {Type I LastRead 0 FirstWrite -1}
+		out_hysteresis4 {Type O LastRead -1 FirstWrite 1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 {Type I LastRead 0 FirstWrite -1}
+		p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 {Type I LastRead 0 FirstWrite -1}}
 	output_row {
 		p_read {Type I LastRead 0 FirstWrite -1}
-		out_hysteresis {Type I LastRead 0 FirstWrite -1}
-		gmem_out {Type O LastRead 4 FirstWrite 2}
+		out_hysteresis4 {Type I LastRead 0 FirstWrite -1}
+		gmem {Type O LastRead 4 FirstWrite 2}
 		out_r {Type I LastRead 0 FirstWrite -1}
-		rowsReceived {Type IO LastRead -1 FirstWrite -1}}
+		rowsReceived {Type IO LastRead 0 FirstWrite 0}}
 	output_row_Pipeline_VITIS_LOOP_20_1 {
-		gmem_out {Type O LastRead -1 FirstWrite 2}
+		gmem {Type O LastRead -1 FirstWrite 2}
 		sext_ln20_1 {Type I LastRead 0 FirstWrite -1}
-		out_hysteresis {Type I LastRead 0 FirstWrite -1}}}
+		out_hysteresis4 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "831702", "Max" : "2402331"}
-	, {"Name" : "Interval", "Min" : "831703", "Max" : "2402332"}
+	{"Name" : "Latency", "Min" : "833759", "Max" : "2408189"}
+	, {"Name" : "Interval", "Min" : "833760", "Max" : "2408190"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	gmem_in { m_axi {  { m_axi_gmem_in_AWVALID VALID 1 1 }  { m_axi_gmem_in_AWREADY READY 0 1 }  { m_axi_gmem_in_AWADDR ADDR 1 64 }  { m_axi_gmem_in_AWID ID 1 1 }  { m_axi_gmem_in_AWLEN SIZE 1 8 }  { m_axi_gmem_in_AWSIZE BURST 1 3 }  { m_axi_gmem_in_AWBURST LOCK 1 2 }  { m_axi_gmem_in_AWLOCK CACHE 1 2 }  { m_axi_gmem_in_AWCACHE PROT 1 4 }  { m_axi_gmem_in_AWPROT QOS 1 3 }  { m_axi_gmem_in_AWQOS REGION 1 4 }  { m_axi_gmem_in_AWREGION USER 1 4 }  { m_axi_gmem_in_AWUSER DATA 1 1 }  { m_axi_gmem_in_WVALID VALID 1 1 }  { m_axi_gmem_in_WREADY READY 0 1 }  { m_axi_gmem_in_WDATA FIFONUM 1 32 }  { m_axi_gmem_in_WSTRB STRB 1 4 }  { m_axi_gmem_in_WLAST LAST 1 1 }  { m_axi_gmem_in_WID ID 1 1 }  { m_axi_gmem_in_WUSER DATA 1 1 }  { m_axi_gmem_in_ARVALID VALID 1 1 }  { m_axi_gmem_in_ARREADY READY 0 1 }  { m_axi_gmem_in_ARADDR ADDR 1 64 }  { m_axi_gmem_in_ARID ID 1 1 }  { m_axi_gmem_in_ARLEN SIZE 1 8 }  { m_axi_gmem_in_ARSIZE BURST 1 3 }  { m_axi_gmem_in_ARBURST LOCK 1 2 }  { m_axi_gmem_in_ARLOCK CACHE 1 2 }  { m_axi_gmem_in_ARCACHE PROT 1 4 }  { m_axi_gmem_in_ARPROT QOS 1 3 }  { m_axi_gmem_in_ARQOS REGION 1 4 }  { m_axi_gmem_in_ARREGION USER 1 4 }  { m_axi_gmem_in_ARUSER DATA 1 1 }  { m_axi_gmem_in_RVALID VALID 0 1 }  { m_axi_gmem_in_RREADY READY 1 1 }  { m_axi_gmem_in_RDATA FIFONUM 0 32 }  { m_axi_gmem_in_RLAST LAST 0 1 }  { m_axi_gmem_in_RID ID 0 1 }  { m_axi_gmem_in_RUSER DATA 0 1 }  { m_axi_gmem_in_RRESP RESP 0 2 }  { m_axi_gmem_in_BVALID VALID 0 1 }  { m_axi_gmem_in_BREADY READY 1 1 }  { m_axi_gmem_in_BRESP RESP 0 2 }  { m_axi_gmem_in_BID ID 0 1 }  { m_axi_gmem_in_BUSER DATA 0 1 } } }
-	gmem_out { m_axi {  { m_axi_gmem_out_AWVALID VALID 1 1 }  { m_axi_gmem_out_AWREADY READY 0 1 }  { m_axi_gmem_out_AWADDR ADDR 1 64 }  { m_axi_gmem_out_AWID ID 1 1 }  { m_axi_gmem_out_AWLEN SIZE 1 8 }  { m_axi_gmem_out_AWSIZE BURST 1 3 }  { m_axi_gmem_out_AWBURST LOCK 1 2 }  { m_axi_gmem_out_AWLOCK CACHE 1 2 }  { m_axi_gmem_out_AWCACHE PROT 1 4 }  { m_axi_gmem_out_AWPROT QOS 1 3 }  { m_axi_gmem_out_AWQOS REGION 1 4 }  { m_axi_gmem_out_AWREGION USER 1 4 }  { m_axi_gmem_out_AWUSER DATA 1 1 }  { m_axi_gmem_out_WVALID VALID 1 1 }  { m_axi_gmem_out_WREADY READY 0 1 }  { m_axi_gmem_out_WDATA FIFONUM 1 512 }  { m_axi_gmem_out_WSTRB STRB 1 64 }  { m_axi_gmem_out_WLAST LAST 1 1 }  { m_axi_gmem_out_WID ID 1 1 }  { m_axi_gmem_out_WUSER DATA 1 1 }  { m_axi_gmem_out_ARVALID VALID 1 1 }  { m_axi_gmem_out_ARREADY READY 0 1 }  { m_axi_gmem_out_ARADDR ADDR 1 64 }  { m_axi_gmem_out_ARID ID 1 1 }  { m_axi_gmem_out_ARLEN SIZE 1 8 }  { m_axi_gmem_out_ARSIZE BURST 1 3 }  { m_axi_gmem_out_ARBURST LOCK 1 2 }  { m_axi_gmem_out_ARLOCK CACHE 1 2 }  { m_axi_gmem_out_ARCACHE PROT 1 4 }  { m_axi_gmem_out_ARPROT QOS 1 3 }  { m_axi_gmem_out_ARQOS REGION 1 4 }  { m_axi_gmem_out_ARREGION USER 1 4 }  { m_axi_gmem_out_ARUSER DATA 1 1 }  { m_axi_gmem_out_RVALID VALID 0 1 }  { m_axi_gmem_out_RREADY READY 1 1 }  { m_axi_gmem_out_RDATA FIFONUM 0 512 }  { m_axi_gmem_out_RLAST LAST 0 1 }  { m_axi_gmem_out_RID ID 0 1 }  { m_axi_gmem_out_RUSER DATA 0 1 }  { m_axi_gmem_out_RRESP RESP 0 2 }  { m_axi_gmem_out_BVALID VALID 0 1 }  { m_axi_gmem_out_BREADY READY 1 1 }  { m_axi_gmem_out_BRESP RESP 0 2 }  { m_axi_gmem_out_BID ID 0 1 }  { m_axi_gmem_out_BUSER DATA 0 1 } } }
+	gmem { m_axi {  { m_axi_gmem_AWVALID VALID 1 1 }  { m_axi_gmem_AWREADY READY 0 1 }  { m_axi_gmem_AWADDR ADDR 1 64 }  { m_axi_gmem_AWID ID 1 1 }  { m_axi_gmem_AWLEN SIZE 1 8 }  { m_axi_gmem_AWSIZE BURST 1 3 }  { m_axi_gmem_AWBURST LOCK 1 2 }  { m_axi_gmem_AWLOCK CACHE 1 2 }  { m_axi_gmem_AWCACHE PROT 1 4 }  { m_axi_gmem_AWPROT QOS 1 3 }  { m_axi_gmem_AWQOS REGION 1 4 }  { m_axi_gmem_AWREGION USER 1 4 }  { m_axi_gmem_AWUSER DATA 1 1 }  { m_axi_gmem_WVALID VALID 1 1 }  { m_axi_gmem_WREADY READY 0 1 }  { m_axi_gmem_WDATA FIFONUM 1 512 }  { m_axi_gmem_WSTRB STRB 1 64 }  { m_axi_gmem_WLAST LAST 1 1 }  { m_axi_gmem_WID ID 1 1 }  { m_axi_gmem_WUSER DATA 1 1 }  { m_axi_gmem_ARVALID VALID 1 1 }  { m_axi_gmem_ARREADY READY 0 1 }  { m_axi_gmem_ARADDR ADDR 1 64 }  { m_axi_gmem_ARID ID 1 1 }  { m_axi_gmem_ARLEN SIZE 1 8 }  { m_axi_gmem_ARSIZE BURST 1 3 }  { m_axi_gmem_ARBURST LOCK 1 2 }  { m_axi_gmem_ARLOCK CACHE 1 2 }  { m_axi_gmem_ARCACHE PROT 1 4 }  { m_axi_gmem_ARPROT QOS 1 3 }  { m_axi_gmem_ARQOS REGION 1 4 }  { m_axi_gmem_ARREGION USER 1 4 }  { m_axi_gmem_ARUSER DATA 1 1 }  { m_axi_gmem_RVALID VALID 0 1 }  { m_axi_gmem_RREADY READY 1 1 }  { m_axi_gmem_RDATA FIFONUM 0 512 }  { m_axi_gmem_RLAST LAST 0 1 }  { m_axi_gmem_RID ID 0 1 }  { m_axi_gmem_RUSER DATA 0 1 }  { m_axi_gmem_RRESP RESP 0 2 }  { m_axi_gmem_BVALID VALID 0 1 }  { m_axi_gmem_BREADY READY 1 1 }  { m_axi_gmem_BRESP RESP 0 2 }  { m_axi_gmem_BID ID 0 1 }  { m_axi_gmem_BUSER DATA 0 1 } } }
 }
 
 set maxi_interface_dict [dict create]
-dict set maxi_interface_dict gmem_in { CHANNEL_NUM 0 BUNDLE gmem_in NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE READ_ONLY}
-dict set maxi_interface_dict gmem_out { CHANNEL_NUM 0 BUNDLE gmem_out NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE WRITE_ONLY}
+dict set maxi_interface_dict gmem { CHANNEL_NUM 0 BUNDLE gmem NUM_READ_OUTSTANDING 16 NUM_WRITE_OUTSTANDING 16 MAX_READ_BURST_LENGTH 16 MAX_WRITE_BURST_LENGTH 16 READ_WRITE_MODE READ_WRITE}
 
 # RTL port scheduling information:
 set fifoSchedulingInfoList { 
@@ -446,14 +468,12 @@ set fifoSchedulingInfoList {
 
 # RTL bus port read request latency information:
 set busReadReqLatencyList { 
-	{ gmem_in 64 }
-	{ gmem_out 64 }
+	{ gmem 64 }
 }
 
 # RTL bus port write response latency information:
 set busWriteResLatencyList { 
-	{ gmem_in 64 }
-	{ gmem_out 64 }
+	{ gmem 64 }
 }
 
 # RTL array port load latency information:

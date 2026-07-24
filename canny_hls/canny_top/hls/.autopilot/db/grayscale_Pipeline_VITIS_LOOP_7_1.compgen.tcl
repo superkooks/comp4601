@@ -27,7 +27,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 12 \
+    id 25 \
     name out_grayscale \
     reset_level 1 \
     sync_rst true \
@@ -45,7 +45,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 10 \
+    id 23 \
     name empty \
     type other \
     dir I \
@@ -60,15 +60,15 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 11 \
-    name gmem_in \
+    id 24 \
+    name gmem \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_gmem_in \
+    corename dc_gmem \
     op interface \
-    ports { m_axi_gmem_in_0_AWVALID { O 1 bit } m_axi_gmem_in_0_AWREADY { I 1 bit } m_axi_gmem_in_0_AWADDR { O 64 vector } m_axi_gmem_in_0_AWID { O 1 vector } m_axi_gmem_in_0_AWLEN { O 32 vector } m_axi_gmem_in_0_AWSIZE { O 3 vector } m_axi_gmem_in_0_AWBURST { O 2 vector } m_axi_gmem_in_0_AWLOCK { O 2 vector } m_axi_gmem_in_0_AWCACHE { O 4 vector } m_axi_gmem_in_0_AWPROT { O 3 vector } m_axi_gmem_in_0_AWQOS { O 4 vector } m_axi_gmem_in_0_AWREGION { O 4 vector } m_axi_gmem_in_0_AWUSER { O 1 vector } m_axi_gmem_in_0_WVALID { O 1 bit } m_axi_gmem_in_0_WREADY { I 1 bit } m_axi_gmem_in_0_WDATA { O 32 vector } m_axi_gmem_in_0_WSTRB { O 4 vector } m_axi_gmem_in_0_WLAST { O 1 bit } m_axi_gmem_in_0_WID { O 1 vector } m_axi_gmem_in_0_WUSER { O 1 vector } m_axi_gmem_in_0_ARVALID { O 1 bit } m_axi_gmem_in_0_ARREADY { I 1 bit } m_axi_gmem_in_0_ARADDR { O 64 vector } m_axi_gmem_in_0_ARID { O 1 vector } m_axi_gmem_in_0_ARLEN { O 32 vector } m_axi_gmem_in_0_ARSIZE { O 3 vector } m_axi_gmem_in_0_ARBURST { O 2 vector } m_axi_gmem_in_0_ARLOCK { O 2 vector } m_axi_gmem_in_0_ARCACHE { O 4 vector } m_axi_gmem_in_0_ARPROT { O 3 vector } m_axi_gmem_in_0_ARQOS { O 4 vector } m_axi_gmem_in_0_ARREGION { O 4 vector } m_axi_gmem_in_0_ARUSER { O 1 vector } m_axi_gmem_in_0_RVALID { I 1 bit } m_axi_gmem_in_0_RREADY { O 1 bit } m_axi_gmem_in_0_RDATA { I 32 vector } m_axi_gmem_in_0_RLAST { I 1 bit } m_axi_gmem_in_0_RID { I 1 vector } m_axi_gmem_in_0_RFIFONUM { I 9 vector } m_axi_gmem_in_0_RUSER { I 1 vector } m_axi_gmem_in_0_RRESP { I 2 vector } m_axi_gmem_in_0_BVALID { I 1 bit } m_axi_gmem_in_0_BREADY { O 1 bit } m_axi_gmem_in_0_BRESP { I 2 vector } m_axi_gmem_in_0_BID { I 1 vector } m_axi_gmem_in_0_BUSER { I 1 vector } } \
+    ports { m_axi_gmem_0_AWVALID { O 1 bit } m_axi_gmem_0_AWREADY { I 1 bit } m_axi_gmem_0_AWADDR { O 64 vector } m_axi_gmem_0_AWID { O 1 vector } m_axi_gmem_0_AWLEN { O 32 vector } m_axi_gmem_0_AWSIZE { O 3 vector } m_axi_gmem_0_AWBURST { O 2 vector } m_axi_gmem_0_AWLOCK { O 2 vector } m_axi_gmem_0_AWCACHE { O 4 vector } m_axi_gmem_0_AWPROT { O 3 vector } m_axi_gmem_0_AWQOS { O 4 vector } m_axi_gmem_0_AWREGION { O 4 vector } m_axi_gmem_0_AWUSER { O 1 vector } m_axi_gmem_0_WVALID { O 1 bit } m_axi_gmem_0_WREADY { I 1 bit } m_axi_gmem_0_WDATA { O 512 vector } m_axi_gmem_0_WSTRB { O 64 vector } m_axi_gmem_0_WLAST { O 1 bit } m_axi_gmem_0_WID { O 1 vector } m_axi_gmem_0_WUSER { O 1 vector } m_axi_gmem_0_ARVALID { O 1 bit } m_axi_gmem_0_ARREADY { I 1 bit } m_axi_gmem_0_ARADDR { O 64 vector } m_axi_gmem_0_ARID { O 1 vector } m_axi_gmem_0_ARLEN { O 32 vector } m_axi_gmem_0_ARSIZE { O 3 vector } m_axi_gmem_0_ARBURST { O 2 vector } m_axi_gmem_0_ARLOCK { O 2 vector } m_axi_gmem_0_ARCACHE { O 4 vector } m_axi_gmem_0_ARPROT { O 3 vector } m_axi_gmem_0_ARQOS { O 4 vector } m_axi_gmem_0_ARREGION { O 4 vector } m_axi_gmem_0_ARUSER { O 1 vector } m_axi_gmem_0_RVALID { I 1 bit } m_axi_gmem_0_RREADY { O 1 bit } m_axi_gmem_0_RDATA { I 512 vector } m_axi_gmem_0_RLAST { I 1 bit } m_axi_gmem_0_RID { I 1 vector } m_axi_gmem_0_RFIFONUM { I 9 vector } m_axi_gmem_0_RUSER { I 1 vector } m_axi_gmem_0_RRESP { I 2 vector } m_axi_gmem_0_BVALID { I 1 bit } m_axi_gmem_0_BREADY { O 1 bit } m_axi_gmem_0_BRESP { I 2 vector } m_axi_gmem_0_BID { I 1 vector } m_axi_gmem_0_BUSER { I 1 vector } } \
 } "
 }
 

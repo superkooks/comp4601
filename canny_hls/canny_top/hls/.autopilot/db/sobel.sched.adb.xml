@@ -494,10 +494,10 @@ newFuncRoot:1 %br_ln81 = br i1 %p_read_1, void %newFuncRoot.aft.aft.aft.aft.exit
 
 <Node id="11" bw="32" op_0_bw="32">
 <![CDATA[
-if.end.i:0 %p_anonymous_namespace_rowsReceived_2_load = load i32 %p_anonymous_namespace_rowsReceived_2
+if.end.i:0 %p_anonymous_namespace_rowsReceived_1_load = load i32 %p_anonymous_namespace_rowsReceived_1
 
 ]]></Node>
-<StgValue><ssdm name="p_anonymous_namespace_rowsReceived_2_load"/></StgValue>
+<StgValue><ssdm name="p_anonymous_namespace_rowsReceived_1_load"/></StgValue>
 </operation>
 
 <operation id="76" st_id="1" stage="1" lat="1">
@@ -510,7 +510,7 @@ if.end.i:0 %p_anonymous_namespace_rowsReceived_2_load = load i32 %p_anonymous_na
 
 <Node id="12" bw="31" op_0_bw="32">
 <![CDATA[
-if.end.i:1 %trunc_ln87 = trunc i32 %p_anonymous_namespace_rowsReceived_2_load
+if.end.i:1 %trunc_ln87 = trunc i32 %p_anonymous_namespace_rowsReceived_1_load
 
 ]]></Node>
 <StgValue><ssdm name="trunc_ln87"/></StgValue>
@@ -526,7 +526,7 @@ if.end.i:1 %trunc_ln87 = trunc i32 %p_anonymous_namespace_rowsReceived_2_load
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -542,7 +542,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="16" bw="31" op_0_bw="31" op_1_bw="32" op_2_bw="32" op_3_bw="32">
 <![CDATA[
-if.end.i:5 %tmp = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %p_anonymous_namespace_rowsReceived_2_load, i32 1, i32 31
+if.end.i:5 %tmp = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %p_anonymous_namespace_rowsReceived_1_load, i32 1, i32 31
 
 ]]></Node>
 <StgValue><ssdm name="tmp"/></StgValue>
@@ -576,7 +576,7 @@ if.end.i:6 %icmp_ln101 = icmp_slt  i31 %tmp, i31 1
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -594,7 +594,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -612,7 +612,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -630,7 +630,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -648,7 +648,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -666,7 +666,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -684,7 +684,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -702,7 +702,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -720,7 +720,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -738,7 +738,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -756,7 +756,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -774,7 +774,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -792,7 +792,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -810,7 +810,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -828,7 +828,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -846,7 +846,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -864,7 +864,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -882,7 +882,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -900,7 +900,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -918,7 +918,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -936,7 +936,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -954,7 +954,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -972,7 +972,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -990,7 +990,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1008,7 +1008,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1026,7 +1026,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1044,7 +1044,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1062,7 +1062,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1080,7 +1080,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1098,7 +1098,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1116,7 +1116,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1134,7 +1134,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1152,7 +1152,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1170,7 +1170,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1188,7 +1188,7 @@ if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32
 
 <Node id="13" bw="2" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3
+if.end.i:2 %writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_1_load, i32 3
 
 ]]></Node>
 <StgValue><ssdm name="writeSlot"/></StgValue>
@@ -1218,7 +1218,7 @@ if.end.i:3 %trunc_ln86 = trunc i2 %writeSlot
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln86"/></StgValue>
@@ -1236,7 +1236,7 @@ if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="8" op_6_bw="8">
 <![CDATA[
-if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+if.end.i:4 %call_ln86 = call void @sobel_Pipeline_VITIS_LOOP_89_1, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i2 %trunc_ln86, i8 %out_gaussian, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln86"/></StgValue>
@@ -1267,7 +1267,7 @@ if.end.i:7 %br_ln101 = br i1 %icmp_ln101, void %if.end12.i, void %cleanup76.i
 
 <Node id="20" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-if.end12.i:0 %outputRow = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 4294967295
+if.end12.i:0 %outputRow = add i32 %p_anonymous_namespace_rowsReceived_1_load, i32 4294967295
 
 ]]></Node>
 <StgValue><ssdm name="outputRow"/></StgValue>
@@ -2533,7 +2533,7 @@ VITIS_LOOP_118_2.i:4 %trunc_ln118 = trunc i2 %result_7
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln26"/></StgValue>
@@ -2554,7 +2554,7 @@ VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2
 
 <Node id="30" bw="0" op_0_bw="0" op_1_bw="2" op_2_bw="2" op_3_bw="2" op_4_bw="8" op_5_bw="2" op_6_bw="8" op_7_bw="8" op_8_bw="0" op_9_bw="0">
 <![CDATA[
-VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_16_0, i8 %p_anonymous_namespace_lineBuffer_16_1
+VITIS_LOOP_118_2.i:5 %call_ln26 = call void @sobel_Pipeline_VITIS_LOOP_118_2, i2 %empty, i2 %trunc_ln86, i2 %trunc_ln118, i8 %out_sobel_magnitude, i2 %out_sobel_direction, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
 
 ]]></Node>
 <StgValue><ssdm name="call_ln26"/></StgValue>
@@ -2604,7 +2604,7 @@ cleanup76.i:0 %sobel_valid_2 = phi i1 0, void %if.end.i, i1 0, void %if.end12.i,
 
 <Node id="34" bw="32" op_0_bw="32" op_1_bw="32">
 <![CDATA[
-cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 1
+cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_1_load, i32 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln102"/></StgValue>
@@ -2620,7 +2620,7 @@ cleanup76.i:1 %add_ln102 = add i32 %p_anonymous_namespace_rowsReceived_2_load, i
 
 <Node id="35" bw="0" op_0_bw="32" op_1_bw="32" op_2_bw="0">
 <![CDATA[
-cleanup76.i:2 %store_ln102 = store i32 %add_ln102, i32 %p_anonymous_namespace_rowsReceived_2
+cleanup76.i:2 %store_ln102 = store i32 %add_ln102, i32 %p_anonymous_namespace_rowsReceived_1
 
 ]]></Node>
 <StgValue><ssdm name="store_ln102"/></StgValue>

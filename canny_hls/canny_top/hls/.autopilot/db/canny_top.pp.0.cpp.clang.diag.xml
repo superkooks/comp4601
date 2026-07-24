@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/canny_top.pp.0.cpp</string>
+  <string>/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/canny_top.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -25,39 +25,7 @@
       <key>filename</key>
       <string>../src/canny_top.cpp</string>
       <key>line</key>
-      <integer>4</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=canny_top_XLX_SEP_ PragmaOptions=m_axi port=in bundle=gmem_in_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../src/canny_top.cpp</string>
-      <key>line</key>
-      <integer>5</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=interface_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=canny_top_XLX_SEP_ PragmaOptions=m_axi port=out bundle=gmem_out_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../src/canny_top.cpp</string>
-      <key>line</key>
-      <integer>8</integer>
+      <integer>12</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>

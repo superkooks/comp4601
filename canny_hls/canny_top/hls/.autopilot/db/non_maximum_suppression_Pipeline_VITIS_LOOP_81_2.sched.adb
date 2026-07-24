@@ -160,7 +160,7 @@
 					<Obj>
 						<type>1</type>
 						<id>5</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -196,7 +196,7 @@
 					<Obj>
 						<type>1</type>
 						<id>6</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -274,7 +274,7 @@
 						<id>8</id>
 						<name>column</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -282,16 +282,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -466,7 +466,7 @@
 						<id>12</id>
 						<name>column_write_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -474,16 +474,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -572,7 +572,7 @@
 						<id>15</id>
 						<name>column_2</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -580,16 +580,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -636,7 +636,7 @@
 						<id>16</id>
 						<name>icmp_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -644,16 +644,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -700,7 +700,7 @@
 						<id>17</id>
 						<name>br_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -708,16 +708,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -765,7 +765,7 @@
 						<id>19</id>
 						<name>zext_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -773,16 +773,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -828,7 +828,7 @@
 						<id>20</id>
 						<name>tmp_s</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -836,16 +836,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -893,7 +893,7 @@
 						<id>21</id>
 						<name>zext_ln83</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -901,16 +901,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -956,7 +956,7 @@
 						<id>22</id>
 						<name>p_anonymous_namespace_lineBuffer_direction_addr</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -964,16 +964,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1021,7 +1021,7 @@
 						<id>23</id>
 						<name>trunc_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1029,16 +1029,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1084,7 +1084,7 @@
 						<id>27</id>
 						<name>lshr_ln3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1092,16 +1092,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1150,7 +1150,7 @@
 						<id>28</id>
 						<name>tmp_13</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1158,16 +1158,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1215,7 +1215,7 @@
 						<id>29</id>
 						<name>zext_ln83_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1223,16 +1223,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1276,9 +1276,9 @@
 					<Obj>
 						<type>0</type>
 						<id>30</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1286,16 +1286,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1343,7 +1343,7 @@
 						<id>31</id>
 						<name>tmp_14</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>107</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1351,16 +1351,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1408,7 +1408,7 @@
 						<id>32</id>
 						<name>zext_ln107</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>107</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1416,16 +1416,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1469,9 +1469,9 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_1</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>107</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1479,16 +1479,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1536,7 +1536,7 @@
 						<id>34</id>
 						<name>tmp_15</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1544,16 +1544,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1601,7 +1601,7 @@
 						<id>35</id>
 						<name>zext_ln110</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1609,16 +1609,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1662,9 +1662,9 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_6</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_6</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1672,16 +1672,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1727,9 +1727,9 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1737,16 +1737,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1792,9 +1792,9 @@
 					<Obj>
 						<type>0</type>
 						<id>38</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_1</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>107</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1802,16 +1802,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1857,9 +1857,9 @@
 					<Obj>
 						<type>0</type>
 						<id>39</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_6</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_6</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1867,16 +1867,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1922,9 +1922,9 @@
 					<Obj>
 						<type>0</type>
 						<id>40</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1932,16 +1932,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -1985,9 +1985,9 @@
 					<Obj>
 						<type>0</type>
 						<id>41</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -1995,16 +1995,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2050,7 +2050,7 @@
 						<id>42</id>
 						<name>centre_magnitude</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2058,16 +2058,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2115,7 +2115,7 @@
 						<id>43</id>
 						<name>centre_direction</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>83</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2123,16 +2123,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2178,7 +2178,7 @@
 						<id>44</id>
 						<name>_ln88</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>88</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2186,16 +2186,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2246,9 +2246,9 @@
 					<Obj>
 						<type>0</type>
 						<id>46</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_5</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_5</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>107</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2256,16 +2256,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2309,9 +2309,9 @@
 					<Obj>
 						<type>0</type>
 						<id>47</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_5</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_5</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>107</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2319,16 +2319,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2374,7 +2374,7 @@
 						<id>48</id>
 						<name>neighbourOne_3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>107</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2382,16 +2382,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2437,9 +2437,9 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_6</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_6</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2447,16 +2447,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2500,9 +2500,9 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_6</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_6</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2510,16 +2510,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2565,7 +2565,7 @@
 						<id>51</id>
 						<name>neighbourTwo_3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>110</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2573,16 +2573,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2630,7 +2630,7 @@
 						<id>52</id>
 						<name>br_ln111</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>111</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2638,16 +2638,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2693,7 +2693,7 @@
 						<id>54</id>
 						<name>add_ln99</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2701,16 +2701,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2757,7 +2757,7 @@
 						<id>55</id>
 						<name>lshr_ln8</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2765,16 +2765,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2823,7 +2823,7 @@
 						<id>56</id>
 						<name>tmp_20</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2831,16 +2831,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2888,7 +2888,7 @@
 						<id>57</id>
 						<name>zext_ln99</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2896,16 +2896,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -2949,9 +2949,9 @@
 					<Obj>
 						<type>0</type>
 						<id>58</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_4</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_4</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -2959,16 +2959,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3014,9 +3014,9 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_4</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_4</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3024,16 +3024,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3079,9 +3079,9 @@
 					<Obj>
 						<type>0</type>
 						<id>60</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_3</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3089,16 +3089,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3142,9 +3142,9 @@
 					<Obj>
 						<type>0</type>
 						<id>61</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_3</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3152,16 +3152,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3207,7 +3207,7 @@
 						<id>62</id>
 						<name>neighbourOne_2</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>99</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3215,16 +3215,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3272,7 +3272,7 @@
 						<id>63</id>
 						<name>add_ln102</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3280,16 +3280,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3336,7 +3336,7 @@
 						<id>64</id>
 						<name>lshr_ln9</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3344,16 +3344,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3402,7 +3402,7 @@
 						<id>65</id>
 						<name>tmp_21</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3410,16 +3410,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3467,7 +3467,7 @@
 						<id>66</id>
 						<name>zext_ln102</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3475,16 +3475,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3528,9 +3528,9 @@
 					<Obj>
 						<type>0</type>
 						<id>67</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_5</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_5</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3538,16 +3538,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3593,9 +3593,9 @@
 					<Obj>
 						<type>0</type>
 						<id>68</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_5</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_5</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3603,16 +3603,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3658,9 +3658,9 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_4</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_4</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3668,16 +3668,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3721,9 +3721,9 @@
 					<Obj>
 						<type>0</type>
 						<id>70</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_4</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_4</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3731,16 +3731,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3786,7 +3786,7 @@
 						<id>71</id>
 						<name>neighbourTwo_2</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>102</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3794,16 +3794,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3851,7 +3851,7 @@
 						<id>72</id>
 						<name>br_ln103</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>103</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3859,16 +3859,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3914,7 +3914,7 @@
 						<id>74</id>
 						<name>add_ln115</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3922,16 +3922,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -3978,7 +3978,7 @@
 						<id>75</id>
 						<name>lshr_ln6</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -3986,16 +3986,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4044,7 +4044,7 @@
 						<id>76</id>
 						<name>tmp_18</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4052,16 +4052,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4109,7 +4109,7 @@
 						<id>77</id>
 						<name>zext_ln115</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4117,16 +4117,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4170,9 +4170,9 @@
 					<Obj>
 						<type>0</type>
 						<id>78</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_7</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_7</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4180,16 +4180,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4235,9 +4235,9 @@
 					<Obj>
 						<type>0</type>
 						<id>79</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_7</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_7</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4245,16 +4245,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4300,9 +4300,9 @@
 					<Obj>
 						<type>0</type>
 						<id>80</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_7</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_7</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4310,16 +4310,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4363,9 +4363,9 @@
 					<Obj>
 						<type>0</type>
 						<id>81</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_7</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_7</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4373,16 +4373,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4428,7 +4428,7 @@
 						<id>82</id>
 						<name>neighbourOne_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>115</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4436,16 +4436,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4493,7 +4493,7 @@
 						<id>83</id>
 						<name>add_ln118</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4501,16 +4501,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4557,7 +4557,7 @@
 						<id>84</id>
 						<name>lshr_ln7</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4565,16 +4565,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4623,7 +4623,7 @@
 						<id>85</id>
 						<name>tmp_19</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4631,16 +4631,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4688,7 +4688,7 @@
 						<id>86</id>
 						<name>zext_ln118</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4696,16 +4696,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4749,9 +4749,9 @@
 					<Obj>
 						<type>0</type>
 						<id>87</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_8</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_8</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4759,16 +4759,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4814,9 +4814,9 @@
 					<Obj>
 						<type>0</type>
 						<id>88</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_8</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_8</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4824,16 +4824,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4879,9 +4879,9 @@
 					<Obj>
 						<type>0</type>
 						<id>89</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_8</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_8</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4889,16 +4889,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -4942,9 +4942,9 @@
 					<Obj>
 						<type>0</type>
 						<id>90</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_8</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_8</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -4952,16 +4952,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5007,7 +5007,7 @@
 						<id>91</id>
 						<name>neighbourTwo_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>118</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5015,16 +5015,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5072,7 +5072,7 @@
 						<id>92</id>
 						<name>br_ln119</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>119</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5080,16 +5080,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5135,7 +5135,7 @@
 						<id>94</id>
 						<name>add_ln91</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5143,16 +5143,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5199,7 +5199,7 @@
 						<id>95</id>
 						<name>lshr_ln4</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5207,16 +5207,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5265,7 +5265,7 @@
 						<id>96</id>
 						<name>tmp_16</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5273,16 +5273,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5330,7 +5330,7 @@
 						<id>97</id>
 						<name>zext_ln91</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5338,16 +5338,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5391,9 +5391,9 @@
 					<Obj>
 						<type>0</type>
 						<id>98</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_2</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_2</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5401,16 +5401,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5456,9 +5456,9 @@
 					<Obj>
 						<type>0</type>
 						<id>99</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_2</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_2</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5466,16 +5466,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5521,9 +5521,9 @@
 					<Obj>
 						<type>0</type>
 						<id>100</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_1</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5531,16 +5531,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5584,9 +5584,9 @@
 					<Obj>
 						<type>0</type>
 						<id>101</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_1</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5594,16 +5594,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5649,7 +5649,7 @@
 						<id>102</id>
 						<name>neighbourOne</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>91</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5657,16 +5657,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5714,7 +5714,7 @@
 						<id>103</id>
 						<name>add_ln94</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5722,16 +5722,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5778,7 +5778,7 @@
 						<id>104</id>
 						<name>lshr_ln5</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5786,16 +5786,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5844,7 +5844,7 @@
 						<id>105</id>
 						<name>tmp_17</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5852,16 +5852,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5909,7 +5909,7 @@
 						<id>106</id>
 						<name>zext_ln94</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5917,16 +5917,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -5970,9 +5970,9 @@
 					<Obj>
 						<type>0</type>
 						<id>107</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_addr_3</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_addr_3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -5980,16 +5980,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6035,9 +6035,9 @@
 					<Obj>
 						<type>0</type>
 						<id>108</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_addr_3</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_addr_3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6045,16 +6045,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6100,9 +6100,9 @@
 					<Obj>
 						<type>0</type>
 						<id>109</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_0_load_2</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_0_load_2</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6110,16 +6110,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6163,9 +6163,9 @@
 					<Obj>
 						<type>0</type>
 						<id>110</id>
-						<name>p_anonymous_namespace_lineBuffer_11_magnitude_1_load_2</name>
+						<name>p_anonymous_namespace_lineBuffer_25_magnitude_1_load_2</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6173,16 +6173,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6228,7 +6228,7 @@
 						<id>111</id>
 						<name>neighbourTwo</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>94</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6236,16 +6236,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6293,7 +6293,7 @@
 						<id>112</id>
 						<name>br_ln95</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>95</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6301,16 +6301,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6454,7 +6454,7 @@
 						<id>116</id>
 						<name>icmp_ln123</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>123</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6462,16 +6462,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6518,7 +6518,7 @@
 						<id>117</id>
 						<name>xor_ln123</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>123</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6526,16 +6526,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6582,7 +6582,7 @@
 						<id>118</id>
 						<name>icmp_ln124</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>124</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6590,16 +6590,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6646,7 +6646,7 @@
 						<id>119</id>
 						<name>xor_ln124</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>124</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6654,16 +6654,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6710,7 +6710,7 @@
 						<id>120</id>
 						<name>and_ln123</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>123</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6718,16 +6718,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6774,7 +6774,7 @@
 						<id>121</id>
 						<name>out_nonmax_addr</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>129</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6782,16 +6782,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6839,7 +6839,7 @@
 						<id>122</id>
 						<name>select_ln123</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>123</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6847,16 +6847,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6904,7 +6904,7 @@
 						<id>123</id>
 						<name>out_nonmax_addr_write_ln123</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>123</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6912,16 +6912,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -6968,7 +6968,7 @@
 						<id>124</id>
 						<name>add_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -6976,16 +6976,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -7032,7 +7032,7 @@
 						<id>125</id>
 						<name>column_write_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -7040,16 +7040,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -7098,7 +7098,7 @@
 						<id>126</id>
 						<name>br_ln81</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>81</lineNumber>
 						<contextFuncName>non_maximum_suppression</contextFuncName>
 						<contextNormFuncName>non_maximum_suppression</contextNormFuncName>
@@ -7106,16 +7106,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft.aft.aft.aft.aft</second>
 										</first>
-										<second>26</second>
+										<second>31</second>
 									</item>
 									<item>
 										<first>
@@ -10678,7 +10678,7 @@
 				</SubResources>
 			</Resource>
 			<Resource>
-				<Name>p_anonymous_namespace_lineBuffer_11_magnitude_0</Name>
+				<Name>p_anonymous_namespace_lineBuffer_25_magnitude_0</Name>
 				<Category>RAM</Category>
 				<ResourceType>RAM_2P</ResourceType>
 				<source_obj>5</source_obj>
@@ -10748,7 +10748,7 @@
 				</SubResources>
 			</Resource>
 			<Resource>
-				<Name>p_anonymous_namespace_lineBuffer_11_magnitude_1</Name>
+				<Name>p_anonymous_namespace_lineBuffer_25_magnitude_1</Name>
 				<Category>RAM</Category>
 				<ResourceType>RAM_2P</ResourceType>
 				<source_obj>6</source_obj>

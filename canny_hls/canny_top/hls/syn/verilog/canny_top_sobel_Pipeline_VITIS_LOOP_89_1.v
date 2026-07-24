@@ -26,14 +26,14 @@ module canny_top_sobel_Pipeline_VITIS_LOOP_89_1 (
         out_gaussian_address0,
         out_gaussian_ce0,
         out_gaussian_q0,
-        p_anonymous_namespace_lineBuffer_16_0_address0,
-        p_anonymous_namespace_lineBuffer_16_0_ce0,
-        p_anonymous_namespace_lineBuffer_16_0_we0,
-        p_anonymous_namespace_lineBuffer_16_0_d0,
-        p_anonymous_namespace_lineBuffer_16_1_address0,
-        p_anonymous_namespace_lineBuffer_16_1_ce0,
-        p_anonymous_namespace_lineBuffer_16_1_we0,
-        p_anonymous_namespace_lineBuffer_16_1_d0
+        p_anonymous_namespace_lineBuffer_32_0_address0,
+        p_anonymous_namespace_lineBuffer_32_0_ce0,
+        p_anonymous_namespace_lineBuffer_32_0_we0,
+        p_anonymous_namespace_lineBuffer_32_0_d0,
+        p_anonymous_namespace_lineBuffer_32_1_address0,
+        p_anonymous_namespace_lineBuffer_32_1_ce0,
+        p_anonymous_namespace_lineBuffer_32_1_we0,
+        p_anonymous_namespace_lineBuffer_32_1_d0
 );
 
 parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
@@ -56,14 +56,14 @@ input  [1:0] writeSlot;
 output  [8:0] out_gaussian_address0;
 output   out_gaussian_ce0;
 input  [7:0] out_gaussian_q0;
-output  [9:0] p_anonymous_namespace_lineBuffer_16_0_address0;
-output   p_anonymous_namespace_lineBuffer_16_0_ce0;
-output   p_anonymous_namespace_lineBuffer_16_0_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_16_0_d0;
-output  [9:0] p_anonymous_namespace_lineBuffer_16_1_address0;
-output   p_anonymous_namespace_lineBuffer_16_1_ce0;
-output   p_anonymous_namespace_lineBuffer_16_1_we0;
-output  [7:0] p_anonymous_namespace_lineBuffer_16_1_d0;
+output  [9:0] p_anonymous_namespace_lineBuffer_32_0_address0;
+output   p_anonymous_namespace_lineBuffer_32_0_ce0;
+output   p_anonymous_namespace_lineBuffer_32_0_we0;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_0_d0;
+output  [9:0] p_anonymous_namespace_lineBuffer_32_1_address0;
+output   p_anonymous_namespace_lineBuffer_32_1_ce0;
+output   p_anonymous_namespace_lineBuffer_32_1_we0;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_1_d0;
 
 reg ap_idle;
 
@@ -93,10 +93,10 @@ reg    out_sobel_magnitude_we0_local;
 reg    out_sobel_magnitude_ce0_local;
 reg    out_sobel_direction_we0_local;
 reg    out_sobel_direction_ce0_local;
-reg    p_anonymous_namespace_lineBuffer_16_0_we0_local;
-reg    p_anonymous_namespace_lineBuffer_16_0_ce0_local;
-reg    p_anonymous_namespace_lineBuffer_16_1_we0_local;
-reg    p_anonymous_namespace_lineBuffer_16_1_ce0_local;
+reg    p_anonymous_namespace_lineBuffer_32_0_we0_local;
+reg    p_anonymous_namespace_lineBuffer_32_0_ce0_local;
+reg    p_anonymous_namespace_lineBuffer_32_1_we0_local;
+reg    p_anonymous_namespace_lineBuffer_32_1_ce0_local;
 wire   [9:0] tmp_3_fu_175_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
@@ -270,33 +270,33 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_0_ce0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_0_ce0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_0_ce0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_0_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((trunc_ln89_reg_202 == 1'd0) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_0_we0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_0_we0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_0_we0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_0_we0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_1_ce0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_1_ce0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_1_ce0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_1_ce0_local = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((trunc_ln89_reg_202 == 1'd1) & (1'b0 == ap_block_pp0_stage0_11001) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        p_anonymous_namespace_lineBuffer_16_1_we0_local = 1'b1;
+        p_anonymous_namespace_lineBuffer_32_1_we0_local = 1'b1;
     end else begin
-        p_anonymous_namespace_lineBuffer_16_1_we0_local = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_1_we0_local = 1'b0;
     end
 end
 
@@ -353,21 +353,21 @@ assign out_sobel_magnitude_d0 = 8'd0;
 
 assign out_sobel_magnitude_we0 = out_sobel_magnitude_we0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_0_address0 = zext_ln90_fu_181_p1;
+assign p_anonymous_namespace_lineBuffer_32_0_address0 = zext_ln90_fu_181_p1;
 
-assign p_anonymous_namespace_lineBuffer_16_0_ce0 = p_anonymous_namespace_lineBuffer_16_0_ce0_local;
+assign p_anonymous_namespace_lineBuffer_32_0_ce0 = p_anonymous_namespace_lineBuffer_32_0_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_0_d0 = out_gaussian_q0;
+assign p_anonymous_namespace_lineBuffer_32_0_d0 = out_gaussian_q0;
 
-assign p_anonymous_namespace_lineBuffer_16_0_we0 = p_anonymous_namespace_lineBuffer_16_0_we0_local;
+assign p_anonymous_namespace_lineBuffer_32_0_we0 = p_anonymous_namespace_lineBuffer_32_0_we0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_1_address0 = zext_ln90_fu_181_p1;
+assign p_anonymous_namespace_lineBuffer_32_1_address0 = zext_ln90_fu_181_p1;
 
-assign p_anonymous_namespace_lineBuffer_16_1_ce0 = p_anonymous_namespace_lineBuffer_16_1_ce0_local;
+assign p_anonymous_namespace_lineBuffer_32_1_ce0 = p_anonymous_namespace_lineBuffer_32_1_ce0_local;
 
-assign p_anonymous_namespace_lineBuffer_16_1_d0 = out_gaussian_q0;
+assign p_anonymous_namespace_lineBuffer_32_1_d0 = out_gaussian_q0;
 
-assign p_anonymous_namespace_lineBuffer_16_1_we0 = p_anonymous_namespace_lineBuffer_16_1_we0_local;
+assign p_anonymous_namespace_lineBuffer_32_1_we0 = p_anonymous_namespace_lineBuffer_32_1_we0_local;
 
 assign tmp_3_fu_175_p3 = {{writeSlot}, {lshr_ln_reg_206}};
 

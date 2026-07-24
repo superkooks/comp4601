@@ -15,22 +15,22 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 24
+set cdfgNum 40
 set C_modelName {sobel_Pipeline_VITIS_LOOP_118_2}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
 dict set ap_memory_interface_dict out_sobel_magnitude { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 dict set ap_memory_interface_dict out_sobel_direction { MEM_WIDTH 2 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_16_0 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_16_1 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_32_0 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict p_anonymous_namespace_lineBuffer_32_1 { MEM_WIDTH 8 MEM_SIZE 768 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
 	{ result int 2 regular  }
 	{ writeSlot int 2 regular  }
 	{ result_7 int 2 regular  }
 	{ out_sobel_magnitude int 8 regular {array 512 { 0 3 } 0 1 }  }
 	{ out_sobel_direction int 2 regular {array 512 { 0 3 } 0 1 }  }
-	{ p_anonymous_namespace_lineBuffer_16_0 int 8 regular {array 768 { 1 1 } 1 1 } {global 0}  }
-	{ p_anonymous_namespace_lineBuffer_16_1 int 8 regular {array 768 { 1 1 } 1 1 } {global 0}  }
+	{ p_anonymous_namespace_lineBuffer_32_0 int 8 regular {array 768 { 1 1 } 1 1 } {global 0}  }
+	{ p_anonymous_namespace_lineBuffer_32_1 int 8 regular {array 768 { 1 1 } 1 1 } {global 0}  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -41,8 +41,8 @@ set C_modelArgMapList {[
  	{ "Name" : "result_7", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
  	{ "Name" : "out_sobel_magnitude", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
  	{ "Name" : "out_sobel_direction", "interface" : "memory", "bitwidth" : 2, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "p_anonymous_namespace_lineBuffer_16_0", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY", "extern" : 0} , 
- 	{ "Name" : "p_anonymous_namespace_lineBuffer_16_1", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY", "extern" : 0} ]}
+ 	{ "Name" : "p_anonymous_namespace_lineBuffer_32_0", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY", "extern" : 0} , 
+ 	{ "Name" : "p_anonymous_namespace_lineBuffer_32_1", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY", "extern" : 0} ]}
 # RTL Port declarations: 
 set portNum 29
 set portList { 
@@ -63,18 +63,18 @@ set portList {
 	{ out_sobel_direction_ce0 sc_out sc_logic 1 signal 4 } 
 	{ out_sobel_direction_we0 sc_out sc_logic 1 signal 4 } 
 	{ out_sobel_direction_d0 sc_out sc_lv 2 signal 4 } 
-	{ p_anonymous_namespace_lineBuffer_16_0_address0 sc_out sc_lv 10 signal 5 } 
-	{ p_anonymous_namespace_lineBuffer_16_0_ce0 sc_out sc_logic 1 signal 5 } 
-	{ p_anonymous_namespace_lineBuffer_16_0_q0 sc_in sc_lv 8 signal 5 } 
-	{ p_anonymous_namespace_lineBuffer_16_0_address1 sc_out sc_lv 10 signal 5 } 
-	{ p_anonymous_namespace_lineBuffer_16_0_ce1 sc_out sc_logic 1 signal 5 } 
-	{ p_anonymous_namespace_lineBuffer_16_0_q1 sc_in sc_lv 8 signal 5 } 
-	{ p_anonymous_namespace_lineBuffer_16_1_address0 sc_out sc_lv 10 signal 6 } 
-	{ p_anonymous_namespace_lineBuffer_16_1_ce0 sc_out sc_logic 1 signal 6 } 
-	{ p_anonymous_namespace_lineBuffer_16_1_q0 sc_in sc_lv 8 signal 6 } 
-	{ p_anonymous_namespace_lineBuffer_16_1_address1 sc_out sc_lv 10 signal 6 } 
-	{ p_anonymous_namespace_lineBuffer_16_1_ce1 sc_out sc_logic 1 signal 6 } 
-	{ p_anonymous_namespace_lineBuffer_16_1_q1 sc_in sc_lv 8 signal 6 } 
+	{ p_anonymous_namespace_lineBuffer_32_0_address0 sc_out sc_lv 10 signal 5 } 
+	{ p_anonymous_namespace_lineBuffer_32_0_ce0 sc_out sc_logic 1 signal 5 } 
+	{ p_anonymous_namespace_lineBuffer_32_0_q0 sc_in sc_lv 8 signal 5 } 
+	{ p_anonymous_namespace_lineBuffer_32_0_address1 sc_out sc_lv 10 signal 5 } 
+	{ p_anonymous_namespace_lineBuffer_32_0_ce1 sc_out sc_logic 1 signal 5 } 
+	{ p_anonymous_namespace_lineBuffer_32_0_q1 sc_in sc_lv 8 signal 5 } 
+	{ p_anonymous_namespace_lineBuffer_32_1_address0 sc_out sc_lv 10 signal 6 } 
+	{ p_anonymous_namespace_lineBuffer_32_1_ce0 sc_out sc_logic 1 signal 6 } 
+	{ p_anonymous_namespace_lineBuffer_32_1_q0 sc_in sc_lv 8 signal 6 } 
+	{ p_anonymous_namespace_lineBuffer_32_1_address1 sc_out sc_lv 10 signal 6 } 
+	{ p_anonymous_namespace_lineBuffer_32_1_ce1 sc_out sc_logic 1 signal 6 } 
+	{ p_anonymous_namespace_lineBuffer_32_1_q1 sc_in sc_lv 8 signal 6 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
@@ -94,18 +94,18 @@ set NewPortList {[
  	{ "name": "out_sobel_direction_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_sobel_direction", "role": "ce0" }} , 
  	{ "name": "out_sobel_direction_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_sobel_direction", "role": "we0" }} , 
  	{ "name": "out_sobel_direction_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "out_sobel_direction", "role": "d0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_0", "role": "address0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_0", "role": "ce0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_0", "role": "q0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_0_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_0", "role": "address1" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_0_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_0", "role": "ce1" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_0_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_0", "role": "q1" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_1", "role": "address0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_1", "role": "ce0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_1", "role": "q0" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_1", "role": "address1" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_1_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_1", "role": "ce1" }} , 
- 	{ "name": "p_anonymous_namespace_lineBuffer_16_1_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_16_1", "role": "q1" }}  ]}
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_0", "role": "address0" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_0", "role": "ce0" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_0", "role": "q0" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_0_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_0", "role": "address1" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_0_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_0", "role": "ce1" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_0_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_0", "role": "q1" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_1", "role": "address0" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_1", "role": "ce0" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_1", "role": "q0" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":10, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_1", "role": "address1" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_1_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_1", "role": "ce1" }} , 
+ 	{ "name": "p_anonymous_namespace_lineBuffer_32_1_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_anonymous_namespace_lineBuffer_32_1", "role": "q1" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	sobel_Pipeline_VITIS_LOOP_118_2 {
@@ -114,8 +114,8 @@ set ArgLastReadFirstWriteLatency {
 		result_7 {Type I LastRead 0 FirstWrite -1}
 		out_sobel_magnitude {Type O LastRead -1 FirstWrite 73}
 		out_sobel_direction {Type O LastRead -1 FirstWrite 7}
-		p_anonymous_namespace_lineBuffer_16_0 {Type I LastRead 4 FirstWrite -1}
-		p_anonymous_namespace_lineBuffer_16_1 {Type I LastRead 4 FirstWrite -1}}}
+		p_anonymous_namespace_lineBuffer_32_0 {Type I LastRead 4 FirstWrite -1}
+		p_anonymous_namespace_lineBuffer_32_1 {Type I LastRead 4 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -134,6 +134,6 @@ set Spec2ImplPortList {
 	result_7 { ap_none {  { result_7 in_data 0 2 } } }
 	out_sobel_magnitude { ap_memory {  { out_sobel_magnitude_address0 mem_address 1 9 }  { out_sobel_magnitude_ce0 mem_ce 1 1 }  { out_sobel_magnitude_we0 mem_we 1 1 }  { out_sobel_magnitude_d0 mem_din 1 8 } } }
 	out_sobel_direction { ap_memory {  { out_sobel_direction_address0 mem_address 1 9 }  { out_sobel_direction_ce0 mem_ce 1 1 }  { out_sobel_direction_we0 mem_we 1 1 }  { out_sobel_direction_d0 mem_din 1 2 } } }
-	p_anonymous_namespace_lineBuffer_16_0 { ap_memory {  { p_anonymous_namespace_lineBuffer_16_0_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_16_0_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_16_0_q0 mem_dout 0 8 }  { p_anonymous_namespace_lineBuffer_16_0_address1 MemPortADDR2 1 10 }  { p_anonymous_namespace_lineBuffer_16_0_ce1 MemPortCE2 1 1 }  { p_anonymous_namespace_lineBuffer_16_0_q1 MemPortDOUT2 0 8 } } }
-	p_anonymous_namespace_lineBuffer_16_1 { ap_memory {  { p_anonymous_namespace_lineBuffer_16_1_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_16_1_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_16_1_q0 mem_dout 0 8 }  { p_anonymous_namespace_lineBuffer_16_1_address1 MemPortADDR2 1 10 }  { p_anonymous_namespace_lineBuffer_16_1_ce1 MemPortCE2 1 1 }  { p_anonymous_namespace_lineBuffer_16_1_q1 MemPortDOUT2 0 8 } } }
+	p_anonymous_namespace_lineBuffer_32_0 { ap_memory {  { p_anonymous_namespace_lineBuffer_32_0_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_32_0_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_32_0_q0 mem_dout 0 8 }  { p_anonymous_namespace_lineBuffer_32_0_address1 MemPortADDR2 1 10 }  { p_anonymous_namespace_lineBuffer_32_0_ce1 MemPortCE2 1 1 }  { p_anonymous_namespace_lineBuffer_32_0_q1 MemPortDOUT2 0 8 } } }
+	p_anonymous_namespace_lineBuffer_32_1 { ap_memory {  { p_anonymous_namespace_lineBuffer_32_1_address0 mem_address 1 10 }  { p_anonymous_namespace_lineBuffer_32_1_ce0 mem_ce 1 1 }  { p_anonymous_namespace_lineBuffer_32_1_q0 mem_dout 0 8 }  { p_anonymous_namespace_lineBuffer_32_1_address1 MemPortADDR2 1 10 }  { p_anonymous_namespace_lineBuffer_32_1_ce1 MemPortCE2 1 1 }  { p_anonymous_namespace_lineBuffer_32_1_q1 MemPortDOUT2 0 8 } } }
 }

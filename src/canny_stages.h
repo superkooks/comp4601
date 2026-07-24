@@ -38,6 +38,7 @@ void double_threshold(
     bool *valid_out
 );
 
+template <int Instance>
 void hysteresis(
     const std::uint8_t input[WIDTH],
     std::uint8_t output[WIDTH],
@@ -47,12 +48,15 @@ void hysteresis(
 
 void output_row(const uint8_t input[WIDTH], uint8_t out[WIDTH*HEIGHT], bool valid);
 
+void reset_canny_stages();
 void gaussian_blur_reset();
 void sobel_reset();
 void non_maximum_suppression_reset();
+
+template <int Instance>
 void hysteresis_reset();
-void reset_canny_stages();
 void output_row_reset();
 
+void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]);
 
 #endif

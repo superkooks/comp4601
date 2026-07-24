@@ -1,52 +1,52 @@
 ---
-MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
+MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_39_1:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
-      FileOffset:      39
+      Message:         'Added loop label VITIS_LOOP_44_1:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
+      FileOffset:      44
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
-          Offset:          22601
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
+          Offset:          21315
           Length:          0
-          ReplacementText: 'VITIS_LOOP_39_1: '
+          ReplacementText: 'VITIS_LOOP_44_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_40_2:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
-      FileOffset:      40
+      Message:         'Added loop label VITIS_LOOP_45_2:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
+      FileOffset:      45
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
-          Offset:          22655
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
+          Offset:          21369
           Length:          0
-          ReplacementText: 'VITIS_LOOP_40_2: '
+          ReplacementText: 'VITIS_LOOP_45_2: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_60_1:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
-      FileOffset:      60
+      Message:         'Added loop label VITIS_LOOP_66_1:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
+      FileOffset:      66
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
-          Offset:          23039
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
+          Offset:          21797
           Length:          0
-          ReplacementText: 'VITIS_LOOP_60_1: '
+          ReplacementText: 'VITIS_LOOP_66_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_108_2:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\hysteresis.cpp'
-      FileOffset:      108
+      Message:         'Added loop label VITIS_LOOP_114_2:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp'
+      FileOffset:      114
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\hysteresis.pp.0.cpp'
-          Offset:          23836
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp'
+          Offset:          22674
           Length:          0
-          ReplacementText: 'VITIS_LOOP_108_2: '
+          ReplacementText: 'VITIS_LOOP_114_2: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
 ...

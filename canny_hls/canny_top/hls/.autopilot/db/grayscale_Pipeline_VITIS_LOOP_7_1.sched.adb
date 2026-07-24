@@ -52,7 +52,7 @@
 					<Obj>
 						<type>1</type>
 						<id>2</id>
-						<name>gmem_in</name>
+						<name>gmem</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -73,7 +73,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<direction>0</direction>
 				<if_type>4</if_type>
@@ -130,7 +130,7 @@
 						<id>4</id>
 						<name>column12</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -138,16 +138,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second class_id="11" tracking_level="0" version="0">
 									<count>2</count>
 									<item_version>0</item_version>
 									<item class_id="12" tracking_level="0" version="0">
 										<first class_id="13" tracking_level="0" version="0">
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -236,7 +236,7 @@
 						<id>7</id>
 						<name>column12_write_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -244,16 +244,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -342,7 +342,7 @@
 						<id>10</id>
 						<name>column</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -350,16 +350,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -388,7 +388,7 @@
 					<count>2</count>
 					<item_version>0</item_version>
 					<item>85</item>
-					<item>280</item>
+					<item>279</item>
 				</oprand_edges>
 				<opcode>load</opcode>
 				<m_Display>0</m_Display>
@@ -406,7 +406,7 @@
 						<id>11</id>
 						<name>zext_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -414,16 +414,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -469,7 +469,7 @@
 						<id>12</id>
 						<name>zext_ln7_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -477,16 +477,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -532,7 +532,7 @@
 						<id>16</id>
 						<name>p_shl</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -540,16 +540,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -597,7 +597,7 @@
 						<id>17</id>
 						<name>sub_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -605,16 +605,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -661,7 +661,7 @@
 						<id>18</id>
 						<name>zext_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -669,16 +669,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -724,7 +724,7 @@
 						<id>19</id>
 						<name>add_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -732,16 +732,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -788,7 +788,7 @@
 						<id>20</id>
 						<name>trunc_ln9_6</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -796,16 +796,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -828,7 +828,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>62</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -854,7 +854,7 @@
 						<id>21</id>
 						<name>sext_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -862,16 +862,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -907,7 +907,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>12</m_topoIndex>
+				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_17">
@@ -915,9 +915,9 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>gmem_in_addr</name>
+						<name>gmem_addr</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -925,16 +925,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -957,7 +957,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -971,7 +971,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>13</m_topoIndex>
+				<m_topoIndex>16</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_18">
@@ -979,9 +979,9 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>gmem_in_load_req</name>
+						<name>gmem_load_req</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -989,16 +989,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1044,9 +1044,9 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>gmem_in_addr_read</name>
+						<name>gmem_addr_read</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1054,16 +1054,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1086,14 +1086,14 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
 					<item_version>0</item_version>
 					<item>114</item>
 					<item>115</item>
-					<item>277</item>
+					<item>276</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -1111,7 +1111,7 @@
 						<id>25</id>
 						<name>trunc_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1119,16 +1119,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1151,7 +1151,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1164,7 +1164,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>14</m_topoIndex>
+				<m_topoIndex>12</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_21">
@@ -1174,7 +1174,7 @@
 						<id>26</id>
 						<name>shl_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1182,16 +1182,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1214,7 +1214,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1239,7 +1239,7 @@
 						<id>27</id>
 						<name>zext_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1247,16 +1247,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1279,7 +1279,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1302,7 +1302,7 @@
 						<id>28</id>
 						<name>lshr_ln9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1310,16 +1310,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1342,7 +1342,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1355,7 +1355,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.38</m_delay>
+				<m_delay>1.88</m_delay>
 				<m_topoIndex>39</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1366,7 +1366,7 @@
 						<id>29</id>
 						<name>trunc_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1374,16 +1374,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1429,7 +1429,7 @@
 						<id>30</id>
 						<name>add_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1437,16 +1437,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1493,7 +1493,7 @@
 						<id>31</id>
 						<name>zext_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1501,16 +1501,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1556,7 +1556,7 @@
 						<id>32</id>
 						<name>add_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1564,16 +1564,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1620,7 +1620,7 @@
 						<id>33</id>
 						<name>trunc_ln9_7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1628,16 +1628,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1660,7 +1660,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>62</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -1686,7 +1686,7 @@
 						<id>34</id>
 						<name>sext_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1694,16 +1694,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1739,7 +1739,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>22</m_topoIndex>
+				<m_topoIndex>23</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_30">
@@ -1747,9 +1747,9 @@
 					<Obj>
 						<type>0</type>
 						<id>35</id>
-						<name>gmem_in_addr_1</name>
+						<name>gmem_addr_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1757,16 +1757,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1789,7 +1789,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1803,7 +1803,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>23</m_topoIndex>
+				<m_topoIndex>24</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_31">
@@ -1811,9 +1811,9 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>gmem_in_load_1_req</name>
+						<name>gmem_load_1_req</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1821,16 +1821,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1861,7 +1861,7 @@
 					<item>139</item>
 					<item>140</item>
 					<item>141</item>
-					<item>278</item>
+					<item>277</item>
 				</oprand_edges>
 				<opcode>readreq</opcode>
 				<m_Display>0</m_Display>
@@ -1877,9 +1877,9 @@
 					<Obj>
 						<type>0</type>
 						<id>37</id>
-						<name>gmem_in_addr_1_read</name>
+						<name>gmem_addr_1_read</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1887,16 +1887,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1919,15 +1919,15 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
 					<item>142</item>
 					<item>143</item>
-					<item>274</item>
-					<item>276</item>
+					<item>273</item>
+					<item>275</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -1945,7 +1945,7 @@
 						<id>38</id>
 						<name>trunc_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -1953,16 +1953,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -1985,7 +1985,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1998,7 +1998,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>24</m_topoIndex>
+				<m_topoIndex>22</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_34">
@@ -2008,7 +2008,7 @@
 						<id>39</id>
 						<name>shl_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2016,16 +2016,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2048,7 +2048,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2073,7 +2073,7 @@
 						<id>40</id>
 						<name>zext_ln9_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2081,16 +2081,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2113,7 +2113,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2136,7 +2136,7 @@
 						<id>41</id>
 						<name>lshr_ln9_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2144,16 +2144,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2176,7 +2176,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2189,7 +2189,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.38</m_delay>
+				<m_delay>1.88</m_delay>
 				<m_topoIndex>44</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2200,7 +2200,7 @@
 						<id>42</id>
 						<name>trunc_ln9_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2208,16 +2208,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2263,7 +2263,7 @@
 						<id>43</id>
 						<name>add_ln9_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2271,16 +2271,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2327,7 +2327,7 @@
 						<id>44</id>
 						<name>zext_ln9_4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2335,16 +2335,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2390,7 +2390,7 @@
 						<id>45</id>
 						<name>add_ln9_4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2398,16 +2398,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2454,7 +2454,7 @@
 						<id>46</id>
 						<name>trunc_ln9_8</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2462,16 +2462,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2494,7 +2494,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>62</bitwidth>
+					<bitwidth>58</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
@@ -2520,7 +2520,7 @@
 						<id>47</id>
 						<name>sext_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2528,16 +2528,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2573,7 +2573,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>30</m_topoIndex>
+				<m_topoIndex>33</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_43">
@@ -2581,9 +2581,9 @@
 					<Obj>
 						<type>0</type>
 						<id>48</id>
-						<name>gmem_in_addr_2</name>
+						<name>gmem_addr_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2591,16 +2591,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2623,7 +2623,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2637,7 +2637,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>31</m_topoIndex>
+				<m_topoIndex>34</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_44">
@@ -2645,9 +2645,9 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>gmem_in_load_2_req</name>
+						<name>gmem_load_2_req</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2655,16 +2655,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2695,7 +2695,7 @@
 					<item>165</item>
 					<item>166</item>
 					<item>167</item>
-					<item>275</item>
+					<item>274</item>
 				</oprand_edges>
 				<opcode>readreq</opcode>
 				<m_Display>0</m_Display>
@@ -2711,9 +2711,9 @@
 					<Obj>
 						<type>0</type>
 						<id>50</id>
-						<name>gmem_in_addr_2_read</name>
+						<name>gmem_addr_2_read</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2721,16 +2721,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2753,15 +2753,15 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>4</count>
 					<item_version>0</item_version>
 					<item>168</item>
 					<item>169</item>
+					<item>271</item>
 					<item>272</item>
-					<item>273</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -2779,7 +2779,7 @@
 						<id>51</id>
 						<name>trunc_ln9_4</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2787,16 +2787,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2819,7 +2819,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>2</bitwidth>
+					<bitwidth>6</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2832,7 +2832,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>32</m_topoIndex>
+				<m_topoIndex>30</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_47">
@@ -2842,7 +2842,7 @@
 						<id>52</id>
 						<name>shl_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2850,16 +2850,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2882,7 +2882,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>5</bitwidth>
+					<bitwidth>9</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2897,7 +2897,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>47</m_topoIndex>
+				<m_topoIndex>49</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_48">
@@ -2907,7 +2907,7 @@
 						<id>53</id>
 						<name>zext_ln9_5</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2915,16 +2915,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -2947,7 +2947,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -2960,7 +2960,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>48</m_topoIndex>
+				<m_topoIndex>50</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_49">
@@ -2970,7 +2970,7 @@
 						<id>54</id>
 						<name>lshr_ln9_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -2978,16 +2978,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3010,7 +3010,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>32</bitwidth>
+					<bitwidth>512</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -3023,8 +3023,8 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>1.38</m_delay>
-				<m_topoIndex>49</m_topoIndex>
+				<m_delay>1.88</m_delay>
+				<m_topoIndex>51</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_50">
@@ -3034,7 +3034,7 @@
 						<id>55</id>
 						<name>trunc_ln9_5</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>9</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3042,16 +3042,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3087,7 +3087,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>50</m_topoIndex>
+				<m_topoIndex>52</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_51">
@@ -3097,7 +3097,7 @@
 						<id>56</id>
 						<name>zext_ln10</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3105,16 +3105,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3160,7 +3160,7 @@
 						<id>57</id>
 						<name>zext_ln11</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>11</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3168,16 +3168,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3223,7 +3223,7 @@
 						<id>58</id>
 						<name>zext_ln10_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3231,16 +3231,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3276,7 +3276,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>51</m_topoIndex>
+				<m_topoIndex>47</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_54">
@@ -3286,7 +3286,7 @@
 						<id>59</id>
 						<name>mul_ln10</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3294,16 +3294,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3350,7 +3350,7 @@
 						<id>60</id>
 						<name>mul_ln10_1</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3358,16 +3358,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3414,7 +3414,7 @@
 						<id>61</id>
 						<name>mul_ln10_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3422,16 +3422,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3468,7 +3468,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.99</m_delay>
-				<m_topoIndex>52</m_topoIndex>
+				<m_topoIndex>48</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_57">
@@ -3478,7 +3478,7 @@
 						<id>62</id>
 						<name>zext_ln10_2</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3486,16 +3486,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3541,7 +3541,7 @@
 						<id>63</id>
 						<name>add_ln10</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3549,16 +3549,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3605,7 +3605,7 @@
 						<id>64</id>
 						<name>zext_ln10_3</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3613,16 +3613,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3668,7 +3668,7 @@
 						<id>65</id>
 						<name>gray</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>10</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3676,16 +3676,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3732,7 +3732,7 @@
 						<id>66</id>
 						<name>trunc_ln</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>14</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3740,16 +3740,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3798,7 +3798,7 @@
 						<id>67</id>
 						<name>out_grayscale_addr</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3806,16 +3806,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3863,7 +3863,7 @@
 						<id>68</id>
 						<name>out_grayscale_addr_write_ln13</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>13</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3871,16 +3871,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3925,9 +3925,9 @@
 					<Obj>
 						<type>0</type>
 						<id>69</id>
-						<name>column_6</name>
+						<name>column_9</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3935,16 +3935,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -3981,7 +3981,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.77</m_delay>
-				<m_topoIndex>33</m_topoIndex>
+				<m_topoIndex>31</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_65">
@@ -3991,7 +3991,7 @@
 						<id>70</id>
 						<name>icmp_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -3999,16 +3999,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -4045,7 +4045,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.77</m_delay>
-				<m_topoIndex>15</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_66">
@@ -4055,7 +4055,7 @@
 						<id>71</id>
 						<name>column12_write_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -4063,16 +4063,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -4102,8 +4102,8 @@
 					<item_version>0</item_version>
 					<item>215</item>
 					<item>216</item>
-					<item>279</item>
-					<item>281</item>
+					<item>278</item>
+					<item>280</item>
 				</oprand_edges>
 				<opcode>store</opcode>
 				<m_Display>0</m_Display>
@@ -4111,7 +4111,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.42</m_delay>
-				<m_topoIndex>34</m_topoIndex>
+				<m_topoIndex>32</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_67">
@@ -4121,7 +4121,7 @@
 						<id>72</id>
 						<name>br_ln7</name>
 						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>7</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
@@ -4129,16 +4129,16 @@
 							<count>1</count>
 							<item_version>0</item_version>
 							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
 								<second>
 									<count>2</count>
 									<item_version>0</item_version>
 									<item>
 										<first>
 											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_7_1.1_newFuncRoot.aft</second>
+											<second>dataflow_in_loop_VITIS_LOOP_11_1.1_newFuncRoot.aft</second>
 										</first>
-										<second>23</second>
+										<second>27</second>
 									</item>
 									<item>
 										<first>
@@ -4176,7 +4176,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>16</m_topoIndex>
+				<m_topoIndex>14</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_68">
@@ -4346,7 +4346,7 @@
 					<bitwidth>32</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>2</content>
+				<content>6</content>
 			</item>
 			<item class_id_reference="16" object_id="_73">
 				<Value>
@@ -5428,7 +5428,7 @@
 			<item class_id_reference="20" object_id="_162">
 				<id>178</id>
 				<edge_type>1</edge_type>
-				<source_obj>29</source_obj>
+				<source_obj>55</source_obj>
 				<sink_obj>56</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -5442,7 +5442,7 @@
 			<item class_id_reference="20" object_id="_164">
 				<id>180</id>
 				<edge_type>1</edge_type>
-				<source_obj>55</source_obj>
+				<source_obj>29</source_obj>
 				<sink_obj>58</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
@@ -5650,91 +5650,91 @@
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_194">
-				<id>269</id>
+				<id>268</id>
 				<edge_type>2</edge_type>
 				<source_obj>9</source_obj>
 				<sink_obj>73</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_195">
-				<id>270</id>
+				<id>269</id>
 				<edge_type>2</edge_type>
 				<source_obj>73</source_obj>
 				<sink_obj>75</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_196">
-				<id>271</id>
+				<id>270</id>
 				<edge_type>2</edge_type>
 				<source_obj>73</source_obj>
 				<sink_obj>73</sink_obj>
 				<is_back_edge>1</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_197">
-				<id>272</id>
+				<id>271</id>
 				<edge_type>4</edge_type>
 				<source_obj>49</source_obj>
 				<sink_obj>50</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_198">
-				<id>273</id>
+				<id>272</id>
 				<edge_type>4</edge_type>
 				<source_obj>37</source_obj>
 				<sink_obj>50</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_199">
-				<id>274</id>
+				<id>273</id>
 				<edge_type>4</edge_type>
 				<source_obj>36</source_obj>
 				<sink_obj>37</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_200">
-				<id>275</id>
+				<id>274</id>
 				<edge_type>4</edge_type>
 				<source_obj>36</source_obj>
 				<sink_obj>49</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_201">
-				<id>276</id>
+				<id>275</id>
 				<edge_type>4</edge_type>
 				<source_obj>24</source_obj>
 				<sink_obj>37</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_202">
-				<id>277</id>
+				<id>276</id>
 				<edge_type>4</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>24</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_203">
-				<id>278</id>
+				<id>277</id>
 				<edge_type>4</edge_type>
 				<source_obj>23</source_obj>
 				<sink_obj>36</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_204">
-				<id>279</id>
+				<id>278</id>
 				<edge_type>4</edge_type>
 				<source_obj>10</source_obj>
 				<sink_obj>71</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_205">
-				<id>280</id>
+				<id>279</id>
 				<edge_type>4</edge_type>
 				<source_obj>7</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_206">
-				<id>281</id>
+				<id>280</id>
 				<edge_type>4</edge_type>
 				<source_obj>7</source_obj>
 				<sink_obj>71</sink_obj>
@@ -5765,8 +5765,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1614</mMinLatency>
-			<mMaxLatency>1614</mMaxLatency>
+			<mMinLatency>1613</mMinLatency>
+			<mMaxLatency>1613</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5808,11 +5808,11 @@
 				<item>73</item>
 			</basic_blocks>
 			<mII>3</mII>
-			<mDepth>80</mDepth>
+			<mDepth>79</mDepth>
 			<mMinTripCount>512</mMinTripCount>
 			<mMaxTripCount>512</mMaxTripCount>
-			<mMinLatency>1612</mMinLatency>
-			<mMaxLatency>1612</mMaxLatency>
+			<mMinLatency>1611</mMinLatency>
+			<mMaxLatency>1611</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -5883,7 +5883,7 @@
 		<item>
 			<first>11</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -5932,14 +5932,14 @@
 		<item>
 			<first>21</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>22</first>
 			<second>
-				<first>0</first>
+				<first>1</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -6023,14 +6023,14 @@
 		<item>
 			<first>34</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>35</first>
 			<second>
-				<first>1</first>
+				<first>2</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -6114,14 +6114,14 @@
 		<item>
 			<first>47</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>48</first>
 			<second>
-				<first>2</first>
+				<first>3</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -6177,91 +6177,91 @@
 		<item>
 			<first>56</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>57</first>
 			<second>
-				<first>76</first>
+				<first>75</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>58</first>
 			<second>
-				<first>75</first>
+				<first>74</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>59</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>60</first>
 			<second>
-				<first>76</first>
+				<first>75</first>
 				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>61</first>
 			<second>
-				<first>75</first>
+				<first>74</first>
 				<second>2</second>
 			</second>
 		</item>
 		<item>
 			<first>62</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>63</first>
 			<second>
-				<first>77</first>
+				<first>76</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>64</first>
 			<second>
-				<first>78</first>
+				<first>77</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>65</first>
 			<second>
-				<first>78</first>
+				<first>77</first>
 				<second>1</second>
 			</second>
 		</item>
 		<item>
 			<first>66</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>67</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>68</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -6296,7 +6296,7 @@
 		<item>
 			<first>74</first>
 			<second>
-				<first>79</first>
+				<first>78</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -6315,14 +6315,14 @@
 			<first>73</first>
 			<second>
 				<first>1</first>
-				<second>80</second>
+				<second>79</second>
 			</second>
 		</item>
 		<item>
 			<first>75</first>
 			<second>
-				<first>81</first>
-				<second>81</second>
+				<first>80</first>
+				<second>80</second>
 			</second>
 		</item>
 	</bblk_ent_exit>
@@ -6343,7 +6343,7 @@
 			<anchor_node>-1</anchor_node>
 			<region_type>8</region_type>
 			<interval>3</interval>
-			<pipe_depth>80</pipe_depth>
+			<pipe_depth>79</pipe_depth>
 			<mDBIIViolationVec class_id="34" tracking_level="0" version="0">
 				<count>0</count>
 				<item_version>0</item_version>
@@ -6415,7 +6415,7 @@
 					<Ops class_id="43" tracking_level="0" version="0">
 						<Op class_id="44" tracking_level="0" version="0">
 							<source_obj>68</source_obj>
-							<cycle>79</cycle>
+							<cycle>78</cycle>
 							<type>W</type>
 							<direction>in</direction>
 						</Op>

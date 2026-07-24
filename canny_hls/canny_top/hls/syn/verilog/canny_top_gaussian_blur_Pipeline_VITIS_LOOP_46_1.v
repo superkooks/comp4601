@@ -79,7 +79,7 @@ wire   [63:0] zext_ln47_fu_162_p1;
 reg   [9:0] column_fu_46;
 wire   [9:0] add_ln46_fu_125_p2;
 wire    ap_loop_init;
-reg   [9:0] ap_sig_allocacmp_column_7;
+reg   [9:0] ap_sig_allocacmp_column_10;
 reg    input_r_ce0_local;
 reg    output_r_we0_local;
 reg    output_r_ce0_local;
@@ -165,7 +165,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        lshr_ln_reg_187 <= {{ap_sig_allocacmp_column_7[8:1]}};
+        lshr_ln_reg_187 <= {{ap_sig_allocacmp_column_10[8:1]}};
         trunc_ln46_reg_183 <= trunc_ln46_fu_137_p1;
     end
 end
@@ -212,9 +212,9 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_column_7 = 10'd0;
+        ap_sig_allocacmp_column_10 = 10'd0;
     end else begin
-        ap_sig_allocacmp_column_7 = column_fu_46;
+        ap_sig_allocacmp_column_10 = column_fu_46;
     end
 end
 
@@ -285,7 +285,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln46_fu_125_p2 = (ap_sig_allocacmp_column_7 + 10'd1);
+assign add_ln46_fu_125_p2 = (ap_sig_allocacmp_column_10 + 10'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -305,7 +305,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln46_fu_119_p2 = ((ap_sig_allocacmp_column_7 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln46_fu_119_p2 = ((ap_sig_allocacmp_column_10 == 10'd512) ? 1'b1 : 1'b0);
 
 assign input_r_address0 = zext_ln46_fu_131_p1;
 
@@ -337,9 +337,9 @@ assign p_ZN12_GLOBAL_N_110lineBufferE_1_we0 = p_ZN12_GLOBAL_N_110lineBufferE_1_w
 
 assign tmp_s_fu_156_p3 = {{empty}, {lshr_ln_reg_187}};
 
-assign trunc_ln46_fu_137_p1 = ap_sig_allocacmp_column_7[0:0];
+assign trunc_ln46_fu_137_p1 = ap_sig_allocacmp_column_10[0:0];
 
-assign zext_ln46_fu_131_p1 = ap_sig_allocacmp_column_7;
+assign zext_ln46_fu_131_p1 = ap_sig_allocacmp_column_10;
 
 assign zext_ln47_fu_162_p1 = tmp_s_fu_156_p3;
 

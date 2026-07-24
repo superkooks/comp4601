@@ -23,18 +23,18 @@ port (
     result_9 : IN STD_LOGIC_VECTOR (1 downto 0);
     result : IN STD_LOGIC_VECTOR (1 downto 0);
     empty : IN STD_LOGIC_VECTOR (1 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 : OUT STD_LOGIC;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
     p_anonymous_namespace_lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
     p_anonymous_namespace_lineBuffer_direction_ce0 : OUT STD_LOGIC;
     p_anonymous_namespace_lineBuffer_direction_q0 : IN STD_LOGIC_VECTOR (1 downto 0) );
@@ -120,14 +120,14 @@ attribute shreg_extract : string;
     signal add_ln81_fu_518_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal ap_loop_init : STD_LOGIC;
     signal ap_sig_allocacmp_column_2 : STD_LOGIC_VECTOR (8 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local : STD_LOGIC_VECTOR (9 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1_local : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local : STD_LOGIC_VECTOR (9 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local : STD_LOGIC_VECTOR (9 downto 0);
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1_local : STD_LOGIC;
-    signal p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local : STD_LOGIC_VECTOR (9 downto 0);
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local : STD_LOGIC;
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local : STD_LOGIC_VECTOR (9 downto 0);
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1_local : STD_LOGIC;
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local : STD_LOGIC_VECTOR (9 downto 0);
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local : STD_LOGIC;
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local : STD_LOGIC_VECTOR (9 downto 0);
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1_local : STD_LOGIC;
+    signal p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local : STD_LOGIC_VECTOR (9 downto 0);
     signal p_anonymous_namespace_lineBuffer_direction_ce0_local : STD_LOGIC;
     signal out_nonmax_we0_local : STD_LOGIC;
     signal out_nonmax_ce0_local : STD_LOGIC;
@@ -427,28 +427,28 @@ begin
     end process;
 
     centre_magnitude_fu_422_p3 <= 
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q0 when (trunc_ln81_fu_395_p1(0) = '1') else 
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q0;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q0 when (trunc_ln81_fu_395_p1(0) = '1') else 
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
     grp_fu_294_p2 <= std_logic_vector(unsigned(column_2_reg_610) + unsigned(ap_const_lv9_1FF));
     grp_fu_299_p4 <= grp_fu_294_p2(8 downto 1);
     grp_fu_309_p2 <= std_logic_vector(unsigned(column_2_reg_610) + unsigned(ap_const_lv9_1));
     grp_fu_314_p4 <= grp_fu_309_p2(8 downto 1);
     grp_fu_324_p3 <= 
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q1 when (trunc_ln81_reg_644(0) = '1') else 
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q1;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q1 when (trunc_ln81_reg_644(0) = '1') else 
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q1;
     grp_fu_334_p3 <= 
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q0 when (trunc_ln81_reg_644(0) = '1') else 
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q0;
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q0 when (trunc_ln81_reg_644(0) = '1') else 
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q0;
     icmp_ln123_fu_544_p2 <= "1" when (unsigned(centre_magnitude_reg_672) < unsigned(ap_phi_mux_neighbourOne_4_phi_fu_271_p8)) else "0";
     icmp_ln124_fu_555_p2 <= "1" when (unsigned(centre_magnitude_reg_672) < unsigned(ap_phi_mux_neighbourTwo_4_phi_fu_284_p8)) else "0";
     icmp_ln81_fu_352_p2 <= "1" when (ap_sig_allocacmp_column_2 = ap_const_lv9_1FF) else "0";
     lshr_ln3_fu_371_p4 <= ap_sig_allocacmp_column_2(8 downto 1);
     neighbourOne_3_fu_528_p3 <= 
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q1 when (trunc_ln81_reg_644(0) = '1') else 
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q1;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q1 when (trunc_ln81_reg_644(0) = '1') else 
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q1;
     neighbourTwo_3_fu_536_p3 <= 
-        p_anonymous_namespace_lineBuffer_11_magnitude_1_q0 when (trunc_ln81_reg_644(0) = '1') else 
-        p_anonymous_namespace_lineBuffer_11_magnitude_0_q0;
+        p_anonymous_namespace_lineBuffer_25_magnitude_1_q0 when (trunc_ln81_reg_644(0) = '1') else 
+        p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
     out_nonmax_address0 <= zext_ln81_fu_579_p1(9 - 1 downto 0);
     out_nonmax_ce0 <= out_nonmax_ce0_local;
 
@@ -473,131 +473,131 @@ begin
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_address0 <= p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 <= p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, p_anonymous_namespace_lineBuffer_direction_q0_local, ap_block_pp0_stage0, zext_ln83_1_fu_389_p1, ap_block_pp0_stage1, zext_ln110_fu_416_p1, zext_ln102_fu_460_p1, zext_ln118_fu_486_p1, zext_ln94_fu_512_p1)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, p_anonymous_namespace_lineBuffer_direction_q0_local, ap_block_pp0_stage0, zext_ln83_1_fu_389_p1, ap_block_pp0_stage1, zext_ln110_fu_416_p1, zext_ln102_fu_460_p1, zext_ln118_fu_486_p1, zext_ln94_fu_512_p1)
     begin
         if (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local <= zext_ln94_fu_512_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local <= zext_ln94_fu_512_p1(10 - 1 downto 0);
         elsif (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local <= zext_ln118_fu_486_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local <= zext_ln118_fu_486_p1(10 - 1 downto 0);
         elsif (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_1))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local <= zext_ln102_fu_460_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local <= zext_ln102_fu_460_p1(10 - 1 downto 0);
         elsif (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local <= zext_ln110_fu_416_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local <= zext_ln110_fu_416_p1(10 - 1 downto 0);
         elsif (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local <= zext_ln83_1_fu_389_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local <= zext_ln83_1_fu_389_p1(10 - 1 downto 0);
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address0_local <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address0_local <= "XXXXXXXXXX";
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_address1 <= p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 <= p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local_assign_proc : process(p_anonymous_namespace_lineBuffer_direction_q0_local, zext_ln107_fu_404_p1, zext_ln99_fu_447_p1, zext_ln115_fu_473_p1, zext_ln91_fu_499_p1, ap_condition_209)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local_assign_proc : process(p_anonymous_namespace_lineBuffer_direction_q0_local, zext_ln107_fu_404_p1, zext_ln99_fu_447_p1, zext_ln115_fu_473_p1, zext_ln91_fu_499_p1, ap_condition_209)
     begin
         if ((ap_const_boolean_1 = ap_condition_209)) then
             if ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local <= zext_ln91_fu_499_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local <= zext_ln91_fu_499_p1(10 - 1 downto 0);
             elsif ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local <= zext_ln115_fu_473_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local <= zext_ln115_fu_473_p1(10 - 1 downto 0);
             elsif ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_1)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local <= zext_ln99_fu_447_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local <= zext_ln99_fu_447_p1(10 - 1 downto 0);
             elsif ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local <= zext_ln107_fu_404_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local <= zext_ln107_fu_404_p1(10 - 1 downto 0);
             else 
-                p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local <= "XXXXXXXXXX";
+                p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local <= "XXXXXXXXXX";
             end if;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_address1_local <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_address1_local <= "XXXXXXXXXX";
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0 <= p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 <= p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage0_11001, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage0_11001, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
     begin
         if ((((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg 
     = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_1)))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local <= ap_const_logic_1;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local <= ap_const_logic_1;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce0_local <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0_local <= ap_const_logic_0;
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1 <= p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 <= p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1_local_assign_proc : process(ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
+    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1_local_assign_proc : process(ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
     begin
         if ((((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local 
     = ap_const_lv2_1)))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1_local <= ap_const_logic_1;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1_local <= ap_const_logic_1;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_0_ce1_local <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1_local <= ap_const_logic_0;
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_address0 <= p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 <= p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, p_anonymous_namespace_lineBuffer_direction_q0_local, ap_block_pp0_stage0, zext_ln83_1_fu_389_p1, ap_block_pp0_stage1, zext_ln110_fu_416_p1, zext_ln102_fu_460_p1, zext_ln118_fu_486_p1, zext_ln94_fu_512_p1)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, p_anonymous_namespace_lineBuffer_direction_q0_local, ap_block_pp0_stage0, zext_ln83_1_fu_389_p1, ap_block_pp0_stage1, zext_ln110_fu_416_p1, zext_ln102_fu_460_p1, zext_ln118_fu_486_p1, zext_ln94_fu_512_p1)
     begin
         if (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local <= zext_ln94_fu_512_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local <= zext_ln94_fu_512_p1(10 - 1 downto 0);
         elsif (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local <= zext_ln118_fu_486_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local <= zext_ln118_fu_486_p1(10 - 1 downto 0);
         elsif (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_1))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local <= zext_ln102_fu_460_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local <= zext_ln102_fu_460_p1(10 - 1 downto 0);
         elsif (((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local <= zext_ln110_fu_416_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local <= zext_ln110_fu_416_p1(10 - 1 downto 0);
         elsif (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local <= zext_ln83_1_fu_389_p1(10 - 1 downto 0);
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local <= zext_ln83_1_fu_389_p1(10 - 1 downto 0);
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address0_local <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address0_local <= "XXXXXXXXXX";
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_address1 <= p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 <= p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local_assign_proc : process(p_anonymous_namespace_lineBuffer_direction_q0_local, zext_ln107_fu_404_p1, zext_ln99_fu_447_p1, zext_ln115_fu_473_p1, zext_ln91_fu_499_p1, ap_condition_209)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local_assign_proc : process(p_anonymous_namespace_lineBuffer_direction_q0_local, zext_ln107_fu_404_p1, zext_ln99_fu_447_p1, zext_ln115_fu_473_p1, zext_ln91_fu_499_p1, ap_condition_209)
     begin
         if ((ap_const_boolean_1 = ap_condition_209)) then
             if ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local <= zext_ln91_fu_499_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local <= zext_ln91_fu_499_p1(10 - 1 downto 0);
             elsif ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local <= zext_ln115_fu_473_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local <= zext_ln115_fu_473_p1(10 - 1 downto 0);
             elsif ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_1)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local <= zext_ln99_fu_447_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local <= zext_ln99_fu_447_p1(10 - 1 downto 0);
             elsif ((p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2)) then 
-                p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local <= zext_ln107_fu_404_p1(10 - 1 downto 0);
+                p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local <= zext_ln107_fu_404_p1(10 - 1 downto 0);
             else 
-                p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local <= "XXXXXXXXXX";
+                p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local <= "XXXXXXXXXX";
             end if;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_address1_local <= "XXXXXXXXXX";
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_address1_local <= "XXXXXXXXXX";
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0 <= p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 <= p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage0_11001, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage0_11001, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
     begin
         if ((((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_enable_reg_pp0_iter0 = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg 
     = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_1)))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local <= ap_const_logic_1;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local <= ap_const_logic_1;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce0_local <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local <= ap_const_logic_0;
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1 <= p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1_local;
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 <= p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1_local;
 
-    p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1_local_assign_proc : process(ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
+    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1_local_assign_proc : process(ap_CS_fsm_pp0_stage1, ap_enable_reg_pp0_iter0_reg, icmp_ln81_reg_619, ap_block_pp0_stage1_11001, p_anonymous_namespace_lineBuffer_direction_q0_local)
     begin
         if ((((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_2)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_0)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local = ap_const_lv2_3)) or ((icmp_ln81_reg_619 = ap_const_lv1_0) and (ap_enable_reg_pp0_iter0_reg = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage1_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage1) and (p_anonymous_namespace_lineBuffer_direction_q0_local 
     = ap_const_lv2_1)))) then 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1_local <= ap_const_logic_1;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1_local <= ap_const_logic_1;
         else 
-            p_anonymous_namespace_lineBuffer_11_magnitude_1_ce1_local <= ap_const_logic_0;
+            p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1_local <= ap_const_logic_0;
         end if; 
     end process;
 
