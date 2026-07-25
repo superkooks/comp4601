@@ -455,107 +455,107 @@
     wire token_clear;
     reg [10:0] origin;
 
-    reg ap_done_reg_0;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0
+    reg ap_done_reg_0;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_0 <= 'b0;
         end
         else begin
-            ap_done_reg_0 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_continue;
+            ap_done_reg_0 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_1;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0
+    reg ap_done_reg_1;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_1 <= 'b0;
         end
         else begin
-            ap_done_reg_1 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_continue;
+            ap_done_reg_1 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_2;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0
+    reg ap_done_reg_2;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_2 <= 'b0;
         end
         else begin
-            ap_done_reg_2 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_continue;
+            ap_done_reg_2 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_3;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0
+    reg ap_done_reg_3;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_3 <= 'b0;
         end
         else begin
-            ap_done_reg_3 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_continue;
+            ap_done_reg_3 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_4;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0
+    reg ap_done_reg_4;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_4 <= 'b0;
         end
         else begin
-            ap_done_reg_4 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_continue;
+            ap_done_reg_4 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_5;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0
+    reg ap_done_reg_5;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_5 <= 'b0;
         end
         else begin
-            ap_done_reg_5 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_continue;
+            ap_done_reg_5 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_6;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0
+    reg ap_done_reg_6;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_6 <= 'b0;
         end
         else begin
-            ap_done_reg_6 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_continue;
+            ap_done_reg_6 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_7;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0
+    reg ap_done_reg_7;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_7 <= 'b0;
         end
         else begin
-            ap_done_reg_7 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_continue;
+            ap_done_reg_7 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_8;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0
+    reg ap_done_reg_8;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_8 <= 'b0;
         end
         else begin
-            ap_done_reg_8 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_continue;
+            ap_done_reg_8 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_continue;
         end
     end
 
-    reg ap_done_reg_9;// for module grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0
+    reg ap_done_reg_9;// for module grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
             ap_done_reg_9 <= 'b0;
         end
         else begin
-            ap_done_reg_9 <= grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_continue;
+            ap_done_reg_9 <= grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_continue;
         end
     end
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0
     canny_top_hls_deadlock_detect_unit #(11, 0, 9, 9) canny_top_hls_deadlock_detect_unit_0 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -575,63 +575,63 @@
     assign proc_0_data_PIPO_blk[0] = 1'b0;
     assign proc_0_start_FIFO_blk[0] = 1'b0;
     assign proc_0_TLF_FIFO_blk[0] = 1'b0;
-    assign proc_0_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_0_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_0_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_0[0] = dl_detect_out ? proc_dep_vld_vec_0_reg[0] : (proc_0_data_FIFO_blk[0] | proc_0_data_PIPO_blk[0] | proc_0_start_FIFO_blk[0] | proc_0_TLF_FIFO_blk[0] | proc_0_input_sync_blk[0] | proc_0_output_sync_blk[0]);
     assign proc_0_data_FIFO_blk[1] = 1'b0;
     assign proc_0_data_PIPO_blk[1] = 1'b0;
     assign proc_0_start_FIFO_blk[1] = 1'b0;
     assign proc_0_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_0_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_0_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
     assign proc_0_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_0[1] = dl_detect_out ? proc_dep_vld_vec_0_reg[1] : (proc_0_data_FIFO_blk[1] | proc_0_data_PIPO_blk[1] | proc_0_start_FIFO_blk[1] | proc_0_TLF_FIFO_blk[1] | proc_0_input_sync_blk[1] | proc_0_output_sync_blk[1]);
     assign proc_0_data_FIFO_blk[2] = 1'b0;
     assign proc_0_data_PIPO_blk[2] = 1'b0;
     assign proc_0_start_FIFO_blk[2] = 1'b0;
     assign proc_0_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_0_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_0_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
     assign proc_0_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_0[2] = dl_detect_out ? proc_dep_vld_vec_0_reg[2] : (proc_0_data_FIFO_blk[2] | proc_0_data_PIPO_blk[2] | proc_0_start_FIFO_blk[2] | proc_0_TLF_FIFO_blk[2] | proc_0_input_sync_blk[2] | proc_0_output_sync_blk[2]);
     assign proc_0_data_FIFO_blk[3] = 1'b0;
     assign proc_0_data_PIPO_blk[3] = 1'b0;
     assign proc_0_start_FIFO_blk[3] = 1'b0;
     assign proc_0_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_0_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_0_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
     assign proc_0_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_0[3] = dl_detect_out ? proc_dep_vld_vec_0_reg[3] : (proc_0_data_FIFO_blk[3] | proc_0_data_PIPO_blk[3] | proc_0_start_FIFO_blk[3] | proc_0_TLF_FIFO_blk[3] | proc_0_input_sync_blk[3] | proc_0_output_sync_blk[3]);
     assign proc_0_data_FIFO_blk[4] = 1'b0;
     assign proc_0_data_PIPO_blk[4] = 1'b0;
     assign proc_0_start_FIFO_blk[4] = 1'b0;
     assign proc_0_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_0_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_0_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
     assign proc_0_output_sync_blk[4] = 1'b0;
     assign proc_dep_vld_vec_0[4] = dl_detect_out ? proc_dep_vld_vec_0_reg[4] : (proc_0_data_FIFO_blk[4] | proc_0_data_PIPO_blk[4] | proc_0_start_FIFO_blk[4] | proc_0_TLF_FIFO_blk[4] | proc_0_input_sync_blk[4] | proc_0_output_sync_blk[4]);
     assign proc_0_data_FIFO_blk[5] = 1'b0;
     assign proc_0_data_PIPO_blk[5] = 1'b0;
     assign proc_0_start_FIFO_blk[5] = 1'b0;
     assign proc_0_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_0_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_0_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
     assign proc_0_output_sync_blk[5] = 1'b0;
     assign proc_dep_vld_vec_0[5] = dl_detect_out ? proc_dep_vld_vec_0_reg[5] : (proc_0_data_FIFO_blk[5] | proc_0_data_PIPO_blk[5] | proc_0_start_FIFO_blk[5] | proc_0_TLF_FIFO_blk[5] | proc_0_input_sync_blk[5] | proc_0_output_sync_blk[5]);
     assign proc_0_data_FIFO_blk[6] = 1'b0;
     assign proc_0_data_PIPO_blk[6] = 1'b0;
     assign proc_0_start_FIFO_blk[6] = 1'b0;
     assign proc_0_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_0_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_0_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
     assign proc_0_output_sync_blk[6] = 1'b0;
     assign proc_dep_vld_vec_0[6] = dl_detect_out ? proc_dep_vld_vec_0_reg[6] : (proc_0_data_FIFO_blk[6] | proc_0_data_PIPO_blk[6] | proc_0_start_FIFO_blk[6] | proc_0_TLF_FIFO_blk[6] | proc_0_input_sync_blk[6] | proc_0_output_sync_blk[6]);
     assign proc_0_data_FIFO_blk[7] = 1'b0;
     assign proc_0_data_PIPO_blk[7] = 1'b0;
     assign proc_0_start_FIFO_blk[7] = 1'b0;
     assign proc_0_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_0_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_0_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
     assign proc_0_output_sync_blk[7] = 1'b0;
     assign proc_dep_vld_vec_0[7] = dl_detect_out ? proc_dep_vld_vec_0_reg[7] : (proc_0_data_FIFO_blk[7] | proc_0_data_PIPO_blk[7] | proc_0_start_FIFO_blk[7] | proc_0_TLF_FIFO_blk[7] | proc_0_input_sync_blk[7] | proc_0_output_sync_blk[7]);
     assign proc_0_data_FIFO_blk[8] = 1'b0;
     assign proc_0_data_PIPO_blk[8] = 1'b0;
     assign proc_0_start_FIFO_blk[8] = 1'b0;
     assign proc_0_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_0_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_0_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
     assign proc_0_output_sync_blk[8] = 1'b0;
     assign proc_dep_vld_vec_0[8] = dl_detect_out ? proc_dep_vld_vec_0_reg[8] : (proc_0_data_FIFO_blk[8] | proc_0_data_PIPO_blk[8] | proc_0_start_FIFO_blk[8] | proc_0_TLF_FIFO_blk[8] | proc_0_input_sync_blk[8] | proc_0_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -697,7 +697,7 @@
     assign dep_chan_data_0_10 = out_chan_dep_data_0;
     assign token_0_10 = token_out_vec_0[8];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0
     canny_top_hls_deadlock_detect_unit #(11, 1, 9, 9) canny_top_hls_deadlock_detect_unit_1 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -716,64 +716,64 @@
     assign proc_1_data_FIFO_blk[0] = 1'b0;
     assign proc_1_data_PIPO_blk[0] = 1'b0;
     assign proc_1_start_FIFO_blk[0] = 1'b0;
-    assign proc_1_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.cond_loc_channel_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.cond_loc_channel_U.if_write);
-    assign proc_1_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_1_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.cond_loc_channel_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.cond_loc_channel_U.if_write);
+    assign proc_1_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_1_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_1[0] = dl_detect_out ? proc_dep_vld_vec_1_reg[0] : (proc_1_data_FIFO_blk[0] | proc_1_data_PIPO_blk[0] | proc_1_start_FIFO_blk[0] | proc_1_TLF_FIFO_blk[0] | proc_1_input_sync_blk[0] | proc_1_output_sync_blk[0]);
     assign proc_1_data_FIFO_blk[1] = 1'b0;
-    assign proc_1_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_done & ap_done_reg_0 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.t_read);
+    assign proc_1_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_done & ap_done_reg_0 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.t_read);
     assign proc_1_start_FIFO_blk[1] = 1'b0;
     assign proc_1_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_1_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_1_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
     assign proc_1_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_1[1] = dl_detect_out ? proc_dep_vld_vec_1_reg[1] : (proc_1_data_FIFO_blk[1] | proc_1_data_PIPO_blk[1] | proc_1_start_FIFO_blk[1] | proc_1_TLF_FIFO_blk[1] | proc_1_input_sync_blk[1] | proc_1_output_sync_blk[1]);
     assign proc_1_data_FIFO_blk[2] = 1'b0;
     assign proc_1_data_PIPO_blk[2] = 1'b0;
     assign proc_1_start_FIFO_blk[2] = 1'b0;
     assign proc_1_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_1_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_1_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
     assign proc_1_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_1[2] = dl_detect_out ? proc_dep_vld_vec_1_reg[2] : (proc_1_data_FIFO_blk[2] | proc_1_data_PIPO_blk[2] | proc_1_start_FIFO_blk[2] | proc_1_TLF_FIFO_blk[2] | proc_1_input_sync_blk[2] | proc_1_output_sync_blk[2]);
     assign proc_1_data_FIFO_blk[3] = 1'b0;
     assign proc_1_data_PIPO_blk[3] = 1'b0;
     assign proc_1_start_FIFO_blk[3] = 1'b0;
     assign proc_1_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_1_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_1_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
     assign proc_1_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_1[3] = dl_detect_out ? proc_dep_vld_vec_1_reg[3] : (proc_1_data_FIFO_blk[3] | proc_1_data_PIPO_blk[3] | proc_1_start_FIFO_blk[3] | proc_1_TLF_FIFO_blk[3] | proc_1_input_sync_blk[3] | proc_1_output_sync_blk[3]);
     assign proc_1_data_FIFO_blk[4] = 1'b0;
     assign proc_1_data_PIPO_blk[4] = 1'b0;
     assign proc_1_start_FIFO_blk[4] = 1'b0;
     assign proc_1_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_1_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_1_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
     assign proc_1_output_sync_blk[4] = 1'b0;
     assign proc_dep_vld_vec_1[4] = dl_detect_out ? proc_dep_vld_vec_1_reg[4] : (proc_1_data_FIFO_blk[4] | proc_1_data_PIPO_blk[4] | proc_1_start_FIFO_blk[4] | proc_1_TLF_FIFO_blk[4] | proc_1_input_sync_blk[4] | proc_1_output_sync_blk[4]);
     assign proc_1_data_FIFO_blk[5] = 1'b0;
     assign proc_1_data_PIPO_blk[5] = 1'b0;
     assign proc_1_start_FIFO_blk[5] = 1'b0;
     assign proc_1_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_1_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_1_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
     assign proc_1_output_sync_blk[5] = 1'b0;
     assign proc_dep_vld_vec_1[5] = dl_detect_out ? proc_dep_vld_vec_1_reg[5] : (proc_1_data_FIFO_blk[5] | proc_1_data_PIPO_blk[5] | proc_1_start_FIFO_blk[5] | proc_1_TLF_FIFO_blk[5] | proc_1_input_sync_blk[5] | proc_1_output_sync_blk[5]);
     assign proc_1_data_FIFO_blk[6] = 1'b0;
     assign proc_1_data_PIPO_blk[6] = 1'b0;
     assign proc_1_start_FIFO_blk[6] = 1'b0;
     assign proc_1_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_1_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_1_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
     assign proc_1_output_sync_blk[6] = 1'b0;
     assign proc_dep_vld_vec_1[6] = dl_detect_out ? proc_dep_vld_vec_1_reg[6] : (proc_1_data_FIFO_blk[6] | proc_1_data_PIPO_blk[6] | proc_1_start_FIFO_blk[6] | proc_1_TLF_FIFO_blk[6] | proc_1_input_sync_blk[6] | proc_1_output_sync_blk[6]);
     assign proc_1_data_FIFO_blk[7] = 1'b0;
     assign proc_1_data_PIPO_blk[7] = 1'b0;
     assign proc_1_start_FIFO_blk[7] = 1'b0;
     assign proc_1_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_1_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_1_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
     assign proc_1_output_sync_blk[7] = 1'b0;
     assign proc_dep_vld_vec_1[7] = dl_detect_out ? proc_dep_vld_vec_1_reg[7] : (proc_1_data_FIFO_blk[7] | proc_1_data_PIPO_blk[7] | proc_1_start_FIFO_blk[7] | proc_1_TLF_FIFO_blk[7] | proc_1_input_sync_blk[7] | proc_1_output_sync_blk[7]);
     assign proc_1_data_FIFO_blk[8] = 1'b0;
     assign proc_1_data_PIPO_blk[8] = 1'b0;
     assign proc_1_start_FIFO_blk[8] = 1'b0;
     assign proc_1_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_1_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_1_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.grayscale_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
     assign proc_1_output_sync_blk[8] = 1'b0;
     assign proc_dep_vld_vec_1[8] = dl_detect_out ? proc_dep_vld_vec_1_reg[8] : (proc_1_data_FIFO_blk[8] | proc_1_data_PIPO_blk[8] | proc_1_start_FIFO_blk[8] | proc_1_TLF_FIFO_blk[8] | proc_1_input_sync_blk[8] | proc_1_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
@@ -839,7 +839,7 @@
     assign dep_chan_data_1_10 = out_chan_dep_data_1;
     assign token_1_10 = token_out_vec_1[8];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0
     canny_top_hls_deadlock_detect_unit #(11, 2, 9, 9) canny_top_hls_deadlock_detect_unit_2 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -856,67 +856,67 @@
         .dl_detect_out(dl_in_vec[2]));
 
     assign proc_2_data_FIFO_blk[0] = 1'b0;
-    assign proc_2_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.i_write);
+    assign proc_2_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_grayscale_U.i_write);
     assign proc_2_start_FIFO_blk[0] = 1'b0;
     assign proc_2_TLF_FIFO_blk[0] = 1'b0;
-    assign proc_2_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_2_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_2_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_2[0] = dl_detect_out ? proc_dep_vld_vec_2_reg[0] : (proc_2_data_FIFO_blk[0] | proc_2_data_PIPO_blk[0] | proc_2_start_FIFO_blk[0] | proc_2_TLF_FIFO_blk[0] | proc_2_input_sync_blk[0] | proc_2_output_sync_blk[0]);
     assign proc_2_data_FIFO_blk[1] = 1'b0;
-    assign proc_2_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ap_done_reg_1 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.t_read);
+    assign proc_2_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ap_done_reg_1 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.t_read);
     assign proc_2_start_FIFO_blk[1] = 1'b0;
     assign proc_2_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_2_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
-    assign proc_2_output_sync_blk[1] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
+    assign proc_2_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_2_output_sync_blk[1] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
     assign proc_dep_vld_vec_2[1] = dl_detect_out ? proc_dep_vld_vec_2_reg[1] : (proc_2_data_FIFO_blk[1] | proc_2_data_PIPO_blk[1] | proc_2_start_FIFO_blk[1] | proc_2_TLF_FIFO_blk[1] | proc_2_input_sync_blk[1] | proc_2_output_sync_blk[1]);
     assign proc_2_data_FIFO_blk[2] = 1'b0;
     assign proc_2_data_PIPO_blk[2] = 1'b0;
     assign proc_2_start_FIFO_blk[2] = 1'b0;
     assign proc_2_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_2_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_2_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_2_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_2[2] = dl_detect_out ? proc_dep_vld_vec_2_reg[2] : (proc_2_data_FIFO_blk[2] | proc_2_data_PIPO_blk[2] | proc_2_start_FIFO_blk[2] | proc_2_TLF_FIFO_blk[2] | proc_2_input_sync_blk[2] | proc_2_output_sync_blk[2]);
     assign proc_2_data_FIFO_blk[3] = 1'b0;
     assign proc_2_data_PIPO_blk[3] = 1'b0;
     assign proc_2_start_FIFO_blk[3] = 1'b0;
     assign proc_2_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_2_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
-    assign proc_2_output_sync_blk[3] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
+    assign proc_2_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_2_output_sync_blk[3] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
     assign proc_dep_vld_vec_2[3] = dl_detect_out ? proc_dep_vld_vec_2_reg[3] : (proc_2_data_FIFO_blk[3] | proc_2_data_PIPO_blk[3] | proc_2_start_FIFO_blk[3] | proc_2_TLF_FIFO_blk[3] | proc_2_input_sync_blk[3] | proc_2_output_sync_blk[3]);
     assign proc_2_data_FIFO_blk[4] = 1'b0;
     assign proc_2_data_PIPO_blk[4] = 1'b0;
     assign proc_2_start_FIFO_blk[4] = 1'b0;
     assign proc_2_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_2_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
-    assign proc_2_output_sync_blk[4] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
+    assign proc_2_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_2_output_sync_blk[4] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
     assign proc_dep_vld_vec_2[4] = dl_detect_out ? proc_dep_vld_vec_2_reg[4] : (proc_2_data_FIFO_blk[4] | proc_2_data_PIPO_blk[4] | proc_2_start_FIFO_blk[4] | proc_2_TLF_FIFO_blk[4] | proc_2_input_sync_blk[4] | proc_2_output_sync_blk[4]);
     assign proc_2_data_FIFO_blk[5] = 1'b0;
     assign proc_2_data_PIPO_blk[5] = 1'b0;
     assign proc_2_start_FIFO_blk[5] = 1'b0;
     assign proc_2_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_2_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
-    assign proc_2_output_sync_blk[5] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
+    assign proc_2_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_2_output_sync_blk[5] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
     assign proc_dep_vld_vec_2[5] = dl_detect_out ? proc_dep_vld_vec_2_reg[5] : (proc_2_data_FIFO_blk[5] | proc_2_data_PIPO_blk[5] | proc_2_start_FIFO_blk[5] | proc_2_TLF_FIFO_blk[5] | proc_2_input_sync_blk[5] | proc_2_output_sync_blk[5]);
     assign proc_2_data_FIFO_blk[6] = 1'b0;
     assign proc_2_data_PIPO_blk[6] = 1'b0;
     assign proc_2_start_FIFO_blk[6] = 1'b0;
     assign proc_2_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_2_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
-    assign proc_2_output_sync_blk[6] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
+    assign proc_2_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_2_output_sync_blk[6] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
     assign proc_dep_vld_vec_2[6] = dl_detect_out ? proc_dep_vld_vec_2_reg[6] : (proc_2_data_FIFO_blk[6] | proc_2_data_PIPO_blk[6] | proc_2_start_FIFO_blk[6] | proc_2_TLF_FIFO_blk[6] | proc_2_input_sync_blk[6] | proc_2_output_sync_blk[6]);
     assign proc_2_data_FIFO_blk[7] = 1'b0;
     assign proc_2_data_PIPO_blk[7] = 1'b0;
     assign proc_2_start_FIFO_blk[7] = 1'b0;
     assign proc_2_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_2_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
-    assign proc_2_output_sync_blk[7] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
+    assign proc_2_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_2_output_sync_blk[7] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
     assign proc_dep_vld_vec_2[7] = dl_detect_out ? proc_dep_vld_vec_2_reg[7] : (proc_2_data_FIFO_blk[7] | proc_2_data_PIPO_blk[7] | proc_2_start_FIFO_blk[7] | proc_2_TLF_FIFO_blk[7] | proc_2_input_sync_blk[7] | proc_2_output_sync_blk[7]);
     assign proc_2_data_FIFO_blk[8] = 1'b0;
     assign proc_2_data_PIPO_blk[8] = 1'b0;
     assign proc_2_start_FIFO_blk[8] = 1'b0;
     assign proc_2_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_2_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
-    assign proc_2_output_sync_blk[8] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
+    assign proc_2_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_2_output_sync_blk[8] = 1'b0 | (ap_done_reg_1 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
     assign proc_dep_vld_vec_2[8] = dl_detect_out ? proc_dep_vld_vec_2_reg[8] : (proc_2_data_FIFO_blk[8] | proc_2_data_PIPO_blk[8] | proc_2_start_FIFO_blk[8] | proc_2_TLF_FIFO_blk[8] | proc_2_input_sync_blk[8] | proc_2_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -981,7 +981,7 @@
     assign dep_chan_data_2_10 = out_chan_dep_data_2;
     assign token_2_10 = token_out_vec_2[8];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0
     canny_top_hls_deadlock_detect_unit #(11, 3, 9, 9) canny_top_hls_deadlock_detect_unit_3 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -998,67 +998,67 @@
         .dl_detect_out(dl_in_vec[3]));
 
     assign proc_3_data_FIFO_blk[0] = 1'b0;
-    assign proc_3_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.i_write);
+    assign proc_3_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_gaussian_U.i_write);
     assign proc_3_start_FIFO_blk[0] = 1'b0;
-    assign proc_3_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_valid_U.if_write);
-    assign proc_3_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
-    assign proc_3_output_sync_blk[0] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
+    assign proc_3_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_valid_U.if_write);
+    assign proc_3_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_3_output_sync_blk[0] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
     assign proc_dep_vld_vec_3[0] = dl_detect_out ? proc_dep_vld_vec_3_reg[0] : (proc_3_data_FIFO_blk[0] | proc_3_data_PIPO_blk[0] | proc_3_start_FIFO_blk[0] | proc_3_TLF_FIFO_blk[0] | proc_3_input_sync_blk[0] | proc_3_output_sync_blk[0]);
     assign proc_3_data_FIFO_blk[1] = 1'b0;
-    assign proc_3_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ap_done_reg_2 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.t_read) | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ap_done_reg_2 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.t_read);
+    assign proc_3_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ap_done_reg_2 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.t_read) | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ap_done_reg_2 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.t_read);
     assign proc_3_start_FIFO_blk[1] = 1'b0;
     assign proc_3_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_3_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
-    assign proc_3_output_sync_blk[1] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
+    assign proc_3_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_3_output_sync_blk[1] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
     assign proc_dep_vld_vec_3[1] = dl_detect_out ? proc_dep_vld_vec_3_reg[1] : (proc_3_data_FIFO_blk[1] | proc_3_data_PIPO_blk[1] | proc_3_start_FIFO_blk[1] | proc_3_TLF_FIFO_blk[1] | proc_3_input_sync_blk[1] | proc_3_output_sync_blk[1]);
     assign proc_3_data_FIFO_blk[2] = 1'b0;
     assign proc_3_data_PIPO_blk[2] = 1'b0;
     assign proc_3_start_FIFO_blk[2] = 1'b0;
     assign proc_3_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_3_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_3_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_3_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_3[2] = dl_detect_out ? proc_dep_vld_vec_3_reg[2] : (proc_3_data_FIFO_blk[2] | proc_3_data_PIPO_blk[2] | proc_3_start_FIFO_blk[2] | proc_3_TLF_FIFO_blk[2] | proc_3_input_sync_blk[2] | proc_3_output_sync_blk[2]);
     assign proc_3_data_FIFO_blk[3] = 1'b0;
     assign proc_3_data_PIPO_blk[3] = 1'b0;
     assign proc_3_start_FIFO_blk[3] = 1'b0;
     assign proc_3_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_3_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_3_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_3_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_3[3] = dl_detect_out ? proc_dep_vld_vec_3_reg[3] : (proc_3_data_FIFO_blk[3] | proc_3_data_PIPO_blk[3] | proc_3_start_FIFO_blk[3] | proc_3_TLF_FIFO_blk[3] | proc_3_input_sync_blk[3] | proc_3_output_sync_blk[3]);
     assign proc_3_data_FIFO_blk[4] = 1'b0;
     assign proc_3_data_PIPO_blk[4] = 1'b0;
     assign proc_3_start_FIFO_blk[4] = 1'b0;
     assign proc_3_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_3_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
-    assign proc_3_output_sync_blk[4] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
+    assign proc_3_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_3_output_sync_blk[4] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
     assign proc_dep_vld_vec_3[4] = dl_detect_out ? proc_dep_vld_vec_3_reg[4] : (proc_3_data_FIFO_blk[4] | proc_3_data_PIPO_blk[4] | proc_3_start_FIFO_blk[4] | proc_3_TLF_FIFO_blk[4] | proc_3_input_sync_blk[4] | proc_3_output_sync_blk[4]);
     assign proc_3_data_FIFO_blk[5] = 1'b0;
     assign proc_3_data_PIPO_blk[5] = 1'b0;
     assign proc_3_start_FIFO_blk[5] = 1'b0;
     assign proc_3_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_3_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
-    assign proc_3_output_sync_blk[5] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
+    assign proc_3_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_3_output_sync_blk[5] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
     assign proc_dep_vld_vec_3[5] = dl_detect_out ? proc_dep_vld_vec_3_reg[5] : (proc_3_data_FIFO_blk[5] | proc_3_data_PIPO_blk[5] | proc_3_start_FIFO_blk[5] | proc_3_TLF_FIFO_blk[5] | proc_3_input_sync_blk[5] | proc_3_output_sync_blk[5]);
     assign proc_3_data_FIFO_blk[6] = 1'b0;
     assign proc_3_data_PIPO_blk[6] = 1'b0;
     assign proc_3_start_FIFO_blk[6] = 1'b0;
     assign proc_3_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_3_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
-    assign proc_3_output_sync_blk[6] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
+    assign proc_3_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_3_output_sync_blk[6] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
     assign proc_dep_vld_vec_3[6] = dl_detect_out ? proc_dep_vld_vec_3_reg[6] : (proc_3_data_FIFO_blk[6] | proc_3_data_PIPO_blk[6] | proc_3_start_FIFO_blk[6] | proc_3_TLF_FIFO_blk[6] | proc_3_input_sync_blk[6] | proc_3_output_sync_blk[6]);
     assign proc_3_data_FIFO_blk[7] = 1'b0;
     assign proc_3_data_PIPO_blk[7] = 1'b0;
     assign proc_3_start_FIFO_blk[7] = 1'b0;
     assign proc_3_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_3_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
-    assign proc_3_output_sync_blk[7] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
+    assign proc_3_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_3_output_sync_blk[7] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
     assign proc_dep_vld_vec_3[7] = dl_detect_out ? proc_dep_vld_vec_3_reg[7] : (proc_3_data_FIFO_blk[7] | proc_3_data_PIPO_blk[7] | proc_3_start_FIFO_blk[7] | proc_3_TLF_FIFO_blk[7] | proc_3_input_sync_blk[7] | proc_3_output_sync_blk[7]);
     assign proc_3_data_FIFO_blk[8] = 1'b0;
     assign proc_3_data_PIPO_blk[8] = 1'b0;
     assign proc_3_start_FIFO_blk[8] = 1'b0;
     assign proc_3_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_3_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
-    assign proc_3_output_sync_blk[8] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
+    assign proc_3_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_3_output_sync_blk[8] = 1'b0 | (ap_done_reg_2 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
     assign proc_dep_vld_vec_3[8] = dl_detect_out ? proc_dep_vld_vec_3_reg[8] : (proc_3_data_FIFO_blk[8] | proc_3_data_PIPO_blk[8] | proc_3_start_FIFO_blk[8] | proc_3_TLF_FIFO_blk[8] | proc_3_input_sync_blk[8] | proc_3_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -1123,7 +1123,7 @@
     assign dep_chan_data_3_10 = out_chan_dep_data_3;
     assign token_3_10 = token_out_vec_3[8];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0
     canny_top_hls_deadlock_detect_unit #(11, 4, 10, 10) canny_top_hls_deadlock_detect_unit_4 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1140,14 +1140,14 @@
         .dl_detect_out(dl_in_vec[4]));
 
     assign proc_4_data_FIFO_blk[0] = 1'b0;
-    assign proc_4_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.i_write) | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.i_write);
+    assign proc_4_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_magnitude_U.i_write) | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_sobel_direction_U.i_write);
     assign proc_4_start_FIFO_blk[0] = 1'b0;
-    assign proc_4_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_valid_U.if_write);
-    assign proc_4_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
-    assign proc_4_output_sync_blk[0] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
+    assign proc_4_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_valid_U.if_write);
+    assign proc_4_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_4_output_sync_blk[0] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
     assign proc_dep_vld_vec_4[0] = dl_detect_out ? proc_dep_vld_vec_4_reg[0] : (proc_4_data_FIFO_blk[0] | proc_4_data_PIPO_blk[0] | proc_4_start_FIFO_blk[0] | proc_4_TLF_FIFO_blk[0] | proc_4_input_sync_blk[0] | proc_4_output_sync_blk[0]);
     assign proc_4_data_FIFO_blk[1] = 1'b0;
-    assign proc_4_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ap_done_reg_3 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.t_read);
+    assign proc_4_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ap_done_reg_3 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.t_read);
     assign proc_4_start_FIFO_blk[1] = 1'b0;
     assign proc_4_TLF_FIFO_blk[1] = 1'b0;
     assign proc_4_input_sync_blk[1] = 1'b0;
@@ -1157,57 +1157,57 @@
     assign proc_4_data_PIPO_blk[2] = 1'b0;
     assign proc_4_start_FIFO_blk[2] = 1'b0;
     assign proc_4_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_4_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_4_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_4_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_4[2] = dl_detect_out ? proc_dep_vld_vec_4_reg[2] : (proc_4_data_FIFO_blk[2] | proc_4_data_PIPO_blk[2] | proc_4_start_FIFO_blk[2] | proc_4_TLF_FIFO_blk[2] | proc_4_input_sync_blk[2] | proc_4_output_sync_blk[2]);
     assign proc_4_data_FIFO_blk[3] = 1'b0;
     assign proc_4_data_PIPO_blk[3] = 1'b0;
     assign proc_4_start_FIFO_blk[3] = 1'b0;
     assign proc_4_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_4_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_4_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_4_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_4[3] = dl_detect_out ? proc_dep_vld_vec_4_reg[3] : (proc_4_data_FIFO_blk[3] | proc_4_data_PIPO_blk[3] | proc_4_start_FIFO_blk[3] | proc_4_TLF_FIFO_blk[3] | proc_4_input_sync_blk[3] | proc_4_output_sync_blk[3]);
     assign proc_4_data_FIFO_blk[4] = 1'b0;
     assign proc_4_data_PIPO_blk[4] = 1'b0;
     assign proc_4_start_FIFO_blk[4] = 1'b0;
     assign proc_4_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_4_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
-    assign proc_4_output_sync_blk[4] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
+    assign proc_4_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_4_output_sync_blk[4] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
     assign proc_dep_vld_vec_4[4] = dl_detect_out ? proc_dep_vld_vec_4_reg[4] : (proc_4_data_FIFO_blk[4] | proc_4_data_PIPO_blk[4] | proc_4_start_FIFO_blk[4] | proc_4_TLF_FIFO_blk[4] | proc_4_input_sync_blk[4] | proc_4_output_sync_blk[4]);
     assign proc_4_data_FIFO_blk[5] = 1'b0;
     assign proc_4_data_PIPO_blk[5] = 1'b0;
     assign proc_4_start_FIFO_blk[5] = 1'b0;
     assign proc_4_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_4_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
-    assign proc_4_output_sync_blk[5] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
+    assign proc_4_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_4_output_sync_blk[5] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
     assign proc_dep_vld_vec_4[5] = dl_detect_out ? proc_dep_vld_vec_4_reg[5] : (proc_4_data_FIFO_blk[5] | proc_4_data_PIPO_blk[5] | proc_4_start_FIFO_blk[5] | proc_4_TLF_FIFO_blk[5] | proc_4_input_sync_blk[5] | proc_4_output_sync_blk[5]);
     assign proc_4_data_FIFO_blk[6] = 1'b0;
     assign proc_4_data_PIPO_blk[6] = 1'b0;
     assign proc_4_start_FIFO_blk[6] = 1'b0;
     assign proc_4_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_4_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
-    assign proc_4_output_sync_blk[6] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
+    assign proc_4_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_4_output_sync_blk[6] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
     assign proc_dep_vld_vec_4[6] = dl_detect_out ? proc_dep_vld_vec_4_reg[6] : (proc_4_data_FIFO_blk[6] | proc_4_data_PIPO_blk[6] | proc_4_start_FIFO_blk[6] | proc_4_TLF_FIFO_blk[6] | proc_4_input_sync_blk[6] | proc_4_output_sync_blk[6]);
     assign proc_4_data_FIFO_blk[7] = 1'b0;
     assign proc_4_data_PIPO_blk[7] = 1'b0;
     assign proc_4_start_FIFO_blk[7] = 1'b0;
     assign proc_4_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_4_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
-    assign proc_4_output_sync_blk[7] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
+    assign proc_4_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_4_output_sync_blk[7] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
     assign proc_dep_vld_vec_4[7] = dl_detect_out ? proc_dep_vld_vec_4_reg[7] : (proc_4_data_FIFO_blk[7] | proc_4_data_PIPO_blk[7] | proc_4_start_FIFO_blk[7] | proc_4_TLF_FIFO_blk[7] | proc_4_input_sync_blk[7] | proc_4_output_sync_blk[7]);
     assign proc_4_data_FIFO_blk[8] = 1'b0;
     assign proc_4_data_PIPO_blk[8] = 1'b0;
     assign proc_4_start_FIFO_blk[8] = 1'b0;
     assign proc_4_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_4_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
-    assign proc_4_output_sync_blk[8] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
+    assign proc_4_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_4_output_sync_blk[8] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
     assign proc_dep_vld_vec_4[8] = dl_detect_out ? proc_dep_vld_vec_4_reg[8] : (proc_4_data_FIFO_blk[8] | proc_4_data_PIPO_blk[8] | proc_4_start_FIFO_blk[8] | proc_4_TLF_FIFO_blk[8] | proc_4_input_sync_blk[8] | proc_4_output_sync_blk[8]);
     assign proc_4_data_FIFO_blk[9] = 1'b0;
     assign proc_4_data_PIPO_blk[9] = 1'b0;
     assign proc_4_start_FIFO_blk[9] = 1'b0;
     assign proc_4_TLF_FIFO_blk[9] = 1'b0;
-    assign proc_4_input_sync_blk[9] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
-    assign proc_4_output_sync_blk[9] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
+    assign proc_4_input_sync_blk[9] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_4_output_sync_blk[9] = 1'b0 | (ap_done_reg_3 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
     assign proc_dep_vld_vec_4[9] = dl_detect_out ? proc_dep_vld_vec_4_reg[9] : (proc_4_data_FIFO_blk[9] | proc_4_data_PIPO_blk[9] | proc_4_start_FIFO_blk[9] | proc_4_TLF_FIFO_blk[9] | proc_4_input_sync_blk[9] | proc_4_output_sync_blk[9]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -1278,7 +1278,7 @@
     assign dep_chan_data_4_10 = out_chan_dep_data_4;
     assign token_4_10 = token_out_vec_4[9];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0
     canny_top_hls_deadlock_detect_unit #(11, 5, 2, 2) canny_top_hls_deadlock_detect_unit_5 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1295,14 +1295,14 @@
         .dl_detect_out(dl_in_vec[5]));
 
     assign proc_5_data_FIFO_blk[0] = 1'b0;
-    assign proc_5_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.i_write);
+    assign proc_5_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_nonmax_U.i_write);
     assign proc_5_start_FIFO_blk[0] = 1'b0;
-    assign proc_5_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.nonmax_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.nonmax_valid_U.if_write);
+    assign proc_5_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.nonmax_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.nonmax_valid_U.if_write);
     assign proc_5_input_sync_blk[0] = 1'b0;
     assign proc_5_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_5[0] = dl_detect_out ? proc_dep_vld_vec_5_reg[0] : (proc_5_data_FIFO_blk[0] | proc_5_data_PIPO_blk[0] | proc_5_start_FIFO_blk[0] | proc_5_TLF_FIFO_blk[0] | proc_5_input_sync_blk[0] | proc_5_output_sync_blk[0]);
     assign proc_5_data_FIFO_blk[1] = 1'b0;
-    assign proc_5_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_done & ap_done_reg_4 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.t_read);
+    assign proc_5_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_threshold_U0.ap_done & ap_done_reg_4 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.t_read);
     assign proc_5_start_FIFO_blk[1] = 1'b0;
     assign proc_5_TLF_FIFO_blk[1] = 1'b0;
     assign proc_5_input_sync_blk[1] = 1'b0;
@@ -1329,7 +1329,7 @@
     assign dep_chan_data_5_6 = out_chan_dep_data_5;
     assign token_5_6 = token_out_vec_5[1];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0
     canny_top_hls_deadlock_detect_unit #(11, 6, 10, 10) canny_top_hls_deadlock_detect_unit_6 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1346,74 +1346,74 @@
         .dl_detect_out(dl_in_vec[6]));
 
     assign proc_6_data_FIFO_blk[0] = 1'b0;
-    assign proc_6_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.i_write);
+    assign proc_6_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_double_U.i_write);
     assign proc_6_start_FIFO_blk[0] = 1'b0;
-    assign proc_6_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_valid_U.if_write);
+    assign proc_6_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.double_valid_U.if_write);
     assign proc_6_input_sync_blk[0] = 1'b0;
     assign proc_6_output_sync_blk[0] = 1'b0;
     assign proc_dep_vld_vec_6[0] = dl_detect_out ? proc_dep_vld_vec_6_reg[0] : (proc_6_data_FIFO_blk[0] | proc_6_data_PIPO_blk[0] | proc_6_start_FIFO_blk[0] | proc_6_TLF_FIFO_blk[0] | proc_6_input_sync_blk[0] | proc_6_output_sync_blk[0]);
     assign proc_6_data_FIFO_blk[1] = 1'b0;
-    assign proc_6_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ap_done_reg_5 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.t_read);
+    assign proc_6_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ap_done_reg_5 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.t_read);
     assign proc_6_start_FIFO_blk[1] = 1'b0;
     assign proc_6_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_6_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
-    assign proc_6_output_sync_blk[1] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
+    assign proc_6_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_6_output_sync_blk[1] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
     assign proc_dep_vld_vec_6[1] = dl_detect_out ? proc_dep_vld_vec_6_reg[1] : (proc_6_data_FIFO_blk[1] | proc_6_data_PIPO_blk[1] | proc_6_start_FIFO_blk[1] | proc_6_TLF_FIFO_blk[1] | proc_6_input_sync_blk[1] | proc_6_output_sync_blk[1]);
     assign proc_6_data_FIFO_blk[2] = 1'b0;
     assign proc_6_data_PIPO_blk[2] = 1'b0;
     assign proc_6_start_FIFO_blk[2] = 1'b0;
     assign proc_6_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_6_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_6_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_6_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_6[2] = dl_detect_out ? proc_dep_vld_vec_6_reg[2] : (proc_6_data_FIFO_blk[2] | proc_6_data_PIPO_blk[2] | proc_6_start_FIFO_blk[2] | proc_6_TLF_FIFO_blk[2] | proc_6_input_sync_blk[2] | proc_6_output_sync_blk[2]);
     assign proc_6_data_FIFO_blk[3] = 1'b0;
     assign proc_6_data_PIPO_blk[3] = 1'b0;
     assign proc_6_start_FIFO_blk[3] = 1'b0;
     assign proc_6_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_6_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_6_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_6_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_6[3] = dl_detect_out ? proc_dep_vld_vec_6_reg[3] : (proc_6_data_FIFO_blk[3] | proc_6_data_PIPO_blk[3] | proc_6_start_FIFO_blk[3] | proc_6_TLF_FIFO_blk[3] | proc_6_input_sync_blk[3] | proc_6_output_sync_blk[3]);
     assign proc_6_data_FIFO_blk[4] = 1'b0;
     assign proc_6_data_PIPO_blk[4] = 1'b0;
     assign proc_6_start_FIFO_blk[4] = 1'b0;
     assign proc_6_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_6_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
-    assign proc_6_output_sync_blk[4] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
+    assign proc_6_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_6_output_sync_blk[4] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
     assign proc_dep_vld_vec_6[4] = dl_detect_out ? proc_dep_vld_vec_6_reg[4] : (proc_6_data_FIFO_blk[4] | proc_6_data_PIPO_blk[4] | proc_6_start_FIFO_blk[4] | proc_6_TLF_FIFO_blk[4] | proc_6_input_sync_blk[4] | proc_6_output_sync_blk[4]);
     assign proc_6_data_FIFO_blk[5] = 1'b0;
     assign proc_6_data_PIPO_blk[5] = 1'b0;
     assign proc_6_start_FIFO_blk[5] = 1'b0;
     assign proc_6_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_6_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
-    assign proc_6_output_sync_blk[5] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
+    assign proc_6_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_6_output_sync_blk[5] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
     assign proc_dep_vld_vec_6[5] = dl_detect_out ? proc_dep_vld_vec_6_reg[5] : (proc_6_data_FIFO_blk[5] | proc_6_data_PIPO_blk[5] | proc_6_start_FIFO_blk[5] | proc_6_TLF_FIFO_blk[5] | proc_6_input_sync_blk[5] | proc_6_output_sync_blk[5]);
     assign proc_6_data_FIFO_blk[6] = 1'b0;
     assign proc_6_data_PIPO_blk[6] = 1'b0;
     assign proc_6_start_FIFO_blk[6] = 1'b0;
     assign proc_6_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_6_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
-    assign proc_6_output_sync_blk[6] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
+    assign proc_6_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_6_output_sync_blk[6] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
     assign proc_dep_vld_vec_6[6] = dl_detect_out ? proc_dep_vld_vec_6_reg[6] : (proc_6_data_FIFO_blk[6] | proc_6_data_PIPO_blk[6] | proc_6_start_FIFO_blk[6] | proc_6_TLF_FIFO_blk[6] | proc_6_input_sync_blk[6] | proc_6_output_sync_blk[6]);
     assign proc_6_data_FIFO_blk[7] = 1'b0;
     assign proc_6_data_PIPO_blk[7] = 1'b0;
     assign proc_6_start_FIFO_blk[7] = 1'b0;
     assign proc_6_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_6_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
-    assign proc_6_output_sync_blk[7] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
+    assign proc_6_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_6_output_sync_blk[7] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
     assign proc_dep_vld_vec_6[7] = dl_detect_out ? proc_dep_vld_vec_6_reg[7] : (proc_6_data_FIFO_blk[7] | proc_6_data_PIPO_blk[7] | proc_6_start_FIFO_blk[7] | proc_6_TLF_FIFO_blk[7] | proc_6_input_sync_blk[7] | proc_6_output_sync_blk[7]);
     assign proc_6_data_FIFO_blk[8] = 1'b0;
     assign proc_6_data_PIPO_blk[8] = 1'b0;
     assign proc_6_start_FIFO_blk[8] = 1'b0;
     assign proc_6_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_6_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
-    assign proc_6_output_sync_blk[8] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
+    assign proc_6_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_6_output_sync_blk[8] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
     assign proc_dep_vld_vec_6[8] = dl_detect_out ? proc_dep_vld_vec_6_reg[8] : (proc_6_data_FIFO_blk[8] | proc_6_data_PIPO_blk[8] | proc_6_start_FIFO_blk[8] | proc_6_TLF_FIFO_blk[8] | proc_6_input_sync_blk[8] | proc_6_output_sync_blk[8]);
     assign proc_6_data_FIFO_blk[9] = 1'b0;
     assign proc_6_data_PIPO_blk[9] = 1'b0;
     assign proc_6_start_FIFO_blk[9] = 1'b0;
     assign proc_6_TLF_FIFO_blk[9] = 1'b0;
-    assign proc_6_input_sync_blk[9] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
-    assign proc_6_output_sync_blk[9] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
+    assign proc_6_input_sync_blk[9] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_6_output_sync_blk[9] = 1'b0 | (ap_done_reg_5 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
     assign proc_dep_vld_vec_6[9] = dl_detect_out ? proc_dep_vld_vec_6_reg[9] : (proc_6_data_FIFO_blk[9] | proc_6_data_PIPO_blk[9] | proc_6_start_FIFO_blk[9] | proc_6_TLF_FIFO_blk[9] | proc_6_input_sync_blk[9] | proc_6_output_sync_blk[9]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -1484,7 +1484,7 @@
     assign dep_chan_data_6_10 = out_chan_dep_data_6;
     assign token_6_10 = token_out_vec_6[9];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0
     canny_top_hls_deadlock_detect_unit #(11, 7, 9, 9) canny_top_hls_deadlock_detect_unit_7 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1501,67 +1501,67 @@
         .dl_detect_out(dl_in_vec[7]));
 
     assign proc_7_data_FIFO_blk[0] = 1'b0;
-    assign proc_7_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.i_write);
+    assign proc_7_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis1_U.i_write);
     assign proc_7_start_FIFO_blk[0] = 1'b0;
-    assign proc_7_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis1_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis1_valid_U.if_write);
-    assign proc_7_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
-    assign proc_7_output_sync_blk[0] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
+    assign proc_7_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis1_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis1_valid_U.if_write);
+    assign proc_7_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_7_output_sync_blk[0] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
     assign proc_dep_vld_vec_7[0] = dl_detect_out ? proc_dep_vld_vec_7_reg[0] : (proc_7_data_FIFO_blk[0] | proc_7_data_PIPO_blk[0] | proc_7_start_FIFO_blk[0] | proc_7_TLF_FIFO_blk[0] | proc_7_input_sync_blk[0] | proc_7_output_sync_blk[0]);
     assign proc_7_data_FIFO_blk[1] = 1'b0;
-    assign proc_7_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ap_done_reg_6 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.t_read);
+    assign proc_7_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ap_done_reg_6 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.t_read);
     assign proc_7_start_FIFO_blk[1] = 1'b0;
     assign proc_7_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_7_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
-    assign proc_7_output_sync_blk[1] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
+    assign proc_7_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_7_output_sync_blk[1] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
     assign proc_dep_vld_vec_7[1] = dl_detect_out ? proc_dep_vld_vec_7_reg[1] : (proc_7_data_FIFO_blk[1] | proc_7_data_PIPO_blk[1] | proc_7_start_FIFO_blk[1] | proc_7_TLF_FIFO_blk[1] | proc_7_input_sync_blk[1] | proc_7_output_sync_blk[1]);
     assign proc_7_data_FIFO_blk[2] = 1'b0;
     assign proc_7_data_PIPO_blk[2] = 1'b0;
     assign proc_7_start_FIFO_blk[2] = 1'b0;
     assign proc_7_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_7_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_7_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_7_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_7[2] = dl_detect_out ? proc_dep_vld_vec_7_reg[2] : (proc_7_data_FIFO_blk[2] | proc_7_data_PIPO_blk[2] | proc_7_start_FIFO_blk[2] | proc_7_TLF_FIFO_blk[2] | proc_7_input_sync_blk[2] | proc_7_output_sync_blk[2]);
     assign proc_7_data_FIFO_blk[3] = 1'b0;
     assign proc_7_data_PIPO_blk[3] = 1'b0;
     assign proc_7_start_FIFO_blk[3] = 1'b0;
     assign proc_7_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_7_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_7_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_7_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_7[3] = dl_detect_out ? proc_dep_vld_vec_7_reg[3] : (proc_7_data_FIFO_blk[3] | proc_7_data_PIPO_blk[3] | proc_7_start_FIFO_blk[3] | proc_7_TLF_FIFO_blk[3] | proc_7_input_sync_blk[3] | proc_7_output_sync_blk[3]);
     assign proc_7_data_FIFO_blk[4] = 1'b0;
     assign proc_7_data_PIPO_blk[4] = 1'b0;
     assign proc_7_start_FIFO_blk[4] = 1'b0;
     assign proc_7_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_7_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
-    assign proc_7_output_sync_blk[4] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
+    assign proc_7_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_7_output_sync_blk[4] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
     assign proc_dep_vld_vec_7[4] = dl_detect_out ? proc_dep_vld_vec_7_reg[4] : (proc_7_data_FIFO_blk[4] | proc_7_data_PIPO_blk[4] | proc_7_start_FIFO_blk[4] | proc_7_TLF_FIFO_blk[4] | proc_7_input_sync_blk[4] | proc_7_output_sync_blk[4]);
     assign proc_7_data_FIFO_blk[5] = 1'b0;
     assign proc_7_data_PIPO_blk[5] = 1'b0;
     assign proc_7_start_FIFO_blk[5] = 1'b0;
     assign proc_7_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_7_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
-    assign proc_7_output_sync_blk[5] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
+    assign proc_7_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_7_output_sync_blk[5] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
     assign proc_dep_vld_vec_7[5] = dl_detect_out ? proc_dep_vld_vec_7_reg[5] : (proc_7_data_FIFO_blk[5] | proc_7_data_PIPO_blk[5] | proc_7_start_FIFO_blk[5] | proc_7_TLF_FIFO_blk[5] | proc_7_input_sync_blk[5] | proc_7_output_sync_blk[5]);
     assign proc_7_data_FIFO_blk[6] = 1'b0;
     assign proc_7_data_PIPO_blk[6] = 1'b0;
     assign proc_7_start_FIFO_blk[6] = 1'b0;
     assign proc_7_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_7_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
-    assign proc_7_output_sync_blk[6] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
+    assign proc_7_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_7_output_sync_blk[6] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
     assign proc_dep_vld_vec_7[6] = dl_detect_out ? proc_dep_vld_vec_7_reg[6] : (proc_7_data_FIFO_blk[6] | proc_7_data_PIPO_blk[6] | proc_7_start_FIFO_blk[6] | proc_7_TLF_FIFO_blk[6] | proc_7_input_sync_blk[6] | proc_7_output_sync_blk[6]);
     assign proc_7_data_FIFO_blk[7] = 1'b0;
     assign proc_7_data_PIPO_blk[7] = 1'b0;
     assign proc_7_start_FIFO_blk[7] = 1'b0;
     assign proc_7_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_7_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
-    assign proc_7_output_sync_blk[7] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
+    assign proc_7_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_7_output_sync_blk[7] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
     assign proc_dep_vld_vec_7[7] = dl_detect_out ? proc_dep_vld_vec_7_reg[7] : (proc_7_data_FIFO_blk[7] | proc_7_data_PIPO_blk[7] | proc_7_start_FIFO_blk[7] | proc_7_TLF_FIFO_blk[7] | proc_7_input_sync_blk[7] | proc_7_output_sync_blk[7]);
     assign proc_7_data_FIFO_blk[8] = 1'b0;
     assign proc_7_data_PIPO_blk[8] = 1'b0;
     assign proc_7_start_FIFO_blk[8] = 1'b0;
     assign proc_7_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_7_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
-    assign proc_7_output_sync_blk[8] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
+    assign proc_7_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_7_output_sync_blk[8] = 1'b0 | (ap_done_reg_6 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
     assign proc_dep_vld_vec_7[8] = dl_detect_out ? proc_dep_vld_vec_7_reg[8] : (proc_7_data_FIFO_blk[8] | proc_7_data_PIPO_blk[8] | proc_7_start_FIFO_blk[8] | proc_7_TLF_FIFO_blk[8] | proc_7_input_sync_blk[8] | proc_7_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -1626,7 +1626,7 @@
     assign dep_chan_data_7_10 = out_chan_dep_data_7;
     assign token_7_10 = token_out_vec_7[8];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0
     canny_top_hls_deadlock_detect_unit #(11, 8, 9, 9) canny_top_hls_deadlock_detect_unit_8 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1643,67 +1643,67 @@
         .dl_detect_out(dl_in_vec[8]));
 
     assign proc_8_data_FIFO_blk[0] = 1'b0;
-    assign proc_8_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.i_write);
+    assign proc_8_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis2_U.i_write);
     assign proc_8_start_FIFO_blk[0] = 1'b0;
-    assign proc_8_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis2_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis2_valid_U.if_write);
-    assign proc_8_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
-    assign proc_8_output_sync_blk[0] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
+    assign proc_8_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis2_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis2_valid_U.if_write);
+    assign proc_8_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_8_output_sync_blk[0] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
     assign proc_dep_vld_vec_8[0] = dl_detect_out ? proc_dep_vld_vec_8_reg[0] : (proc_8_data_FIFO_blk[0] | proc_8_data_PIPO_blk[0] | proc_8_start_FIFO_blk[0] | proc_8_TLF_FIFO_blk[0] | proc_8_input_sync_blk[0] | proc_8_output_sync_blk[0]);
     assign proc_8_data_FIFO_blk[1] = 1'b0;
-    assign proc_8_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ap_done_reg_7 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.t_read);
+    assign proc_8_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ap_done_reg_7 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.t_read);
     assign proc_8_start_FIFO_blk[1] = 1'b0;
     assign proc_8_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_8_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
-    assign proc_8_output_sync_blk[1] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
+    assign proc_8_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_8_output_sync_blk[1] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
     assign proc_dep_vld_vec_8[1] = dl_detect_out ? proc_dep_vld_vec_8_reg[1] : (proc_8_data_FIFO_blk[1] | proc_8_data_PIPO_blk[1] | proc_8_start_FIFO_blk[1] | proc_8_TLF_FIFO_blk[1] | proc_8_input_sync_blk[1] | proc_8_output_sync_blk[1]);
     assign proc_8_data_FIFO_blk[2] = 1'b0;
     assign proc_8_data_PIPO_blk[2] = 1'b0;
     assign proc_8_start_FIFO_blk[2] = 1'b0;
     assign proc_8_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_8_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_8_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_8_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_8[2] = dl_detect_out ? proc_dep_vld_vec_8_reg[2] : (proc_8_data_FIFO_blk[2] | proc_8_data_PIPO_blk[2] | proc_8_start_FIFO_blk[2] | proc_8_TLF_FIFO_blk[2] | proc_8_input_sync_blk[2] | proc_8_output_sync_blk[2]);
     assign proc_8_data_FIFO_blk[3] = 1'b0;
     assign proc_8_data_PIPO_blk[3] = 1'b0;
     assign proc_8_start_FIFO_blk[3] = 1'b0;
     assign proc_8_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_8_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_8_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_8_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_8[3] = dl_detect_out ? proc_dep_vld_vec_8_reg[3] : (proc_8_data_FIFO_blk[3] | proc_8_data_PIPO_blk[3] | proc_8_start_FIFO_blk[3] | proc_8_TLF_FIFO_blk[3] | proc_8_input_sync_blk[3] | proc_8_output_sync_blk[3]);
     assign proc_8_data_FIFO_blk[4] = 1'b0;
     assign proc_8_data_PIPO_blk[4] = 1'b0;
     assign proc_8_start_FIFO_blk[4] = 1'b0;
     assign proc_8_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_8_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
-    assign proc_8_output_sync_blk[4] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
+    assign proc_8_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_8_output_sync_blk[4] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
     assign proc_dep_vld_vec_8[4] = dl_detect_out ? proc_dep_vld_vec_8_reg[4] : (proc_8_data_FIFO_blk[4] | proc_8_data_PIPO_blk[4] | proc_8_start_FIFO_blk[4] | proc_8_TLF_FIFO_blk[4] | proc_8_input_sync_blk[4] | proc_8_output_sync_blk[4]);
     assign proc_8_data_FIFO_blk[5] = 1'b0;
     assign proc_8_data_PIPO_blk[5] = 1'b0;
     assign proc_8_start_FIFO_blk[5] = 1'b0;
     assign proc_8_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_8_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
-    assign proc_8_output_sync_blk[5] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
+    assign proc_8_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_8_output_sync_blk[5] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
     assign proc_dep_vld_vec_8[5] = dl_detect_out ? proc_dep_vld_vec_8_reg[5] : (proc_8_data_FIFO_blk[5] | proc_8_data_PIPO_blk[5] | proc_8_start_FIFO_blk[5] | proc_8_TLF_FIFO_blk[5] | proc_8_input_sync_blk[5] | proc_8_output_sync_blk[5]);
     assign proc_8_data_FIFO_blk[6] = 1'b0;
     assign proc_8_data_PIPO_blk[6] = 1'b0;
     assign proc_8_start_FIFO_blk[6] = 1'b0;
     assign proc_8_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_8_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
-    assign proc_8_output_sync_blk[6] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
+    assign proc_8_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_8_output_sync_blk[6] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
     assign proc_dep_vld_vec_8[6] = dl_detect_out ? proc_dep_vld_vec_8_reg[6] : (proc_8_data_FIFO_blk[6] | proc_8_data_PIPO_blk[6] | proc_8_start_FIFO_blk[6] | proc_8_TLF_FIFO_blk[6] | proc_8_input_sync_blk[6] | proc_8_output_sync_blk[6]);
     assign proc_8_data_FIFO_blk[7] = 1'b0;
     assign proc_8_data_PIPO_blk[7] = 1'b0;
     assign proc_8_start_FIFO_blk[7] = 1'b0;
     assign proc_8_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_8_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
-    assign proc_8_output_sync_blk[7] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
+    assign proc_8_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_8_output_sync_blk[7] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
     assign proc_dep_vld_vec_8[7] = dl_detect_out ? proc_dep_vld_vec_8_reg[7] : (proc_8_data_FIFO_blk[7] | proc_8_data_PIPO_blk[7] | proc_8_start_FIFO_blk[7] | proc_8_TLF_FIFO_blk[7] | proc_8_input_sync_blk[7] | proc_8_output_sync_blk[7]);
     assign proc_8_data_FIFO_blk[8] = 1'b0;
     assign proc_8_data_PIPO_blk[8] = 1'b0;
     assign proc_8_start_FIFO_blk[8] = 1'b0;
     assign proc_8_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_8_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
-    assign proc_8_output_sync_blk[8] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
+    assign proc_8_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_8_output_sync_blk[8] = 1'b0 | (ap_done_reg_7 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
     assign proc_dep_vld_vec_8[8] = dl_detect_out ? proc_dep_vld_vec_8_reg[8] : (proc_8_data_FIFO_blk[8] | proc_8_data_PIPO_blk[8] | proc_8_start_FIFO_blk[8] | proc_8_TLF_FIFO_blk[8] | proc_8_input_sync_blk[8] | proc_8_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -1768,7 +1768,7 @@
     assign dep_chan_data_8_10 = out_chan_dep_data_8;
     assign token_8_10 = token_out_vec_8[8];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0
     canny_top_hls_deadlock_detect_unit #(11, 9, 9, 9) canny_top_hls_deadlock_detect_unit_9 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1785,67 +1785,67 @@
         .dl_detect_out(dl_in_vec[9]));
 
     assign proc_9_data_FIFO_blk[0] = 1'b0;
-    assign proc_9_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.i_write);
+    assign proc_9_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis3_U.i_write);
     assign proc_9_start_FIFO_blk[0] = 1'b0;
-    assign proc_9_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis3_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis3_valid_U.if_write);
-    assign proc_9_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
-    assign proc_9_output_sync_blk[0] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
+    assign proc_9_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis3_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis3_valid_U.if_write);
+    assign proc_9_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_9_output_sync_blk[0] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
     assign proc_dep_vld_vec_9[0] = dl_detect_out ? proc_dep_vld_vec_9_reg[0] : (proc_9_data_FIFO_blk[0] | proc_9_data_PIPO_blk[0] | proc_9_start_FIFO_blk[0] | proc_9_TLF_FIFO_blk[0] | proc_9_input_sync_blk[0] | proc_9_output_sync_blk[0]);
     assign proc_9_data_FIFO_blk[1] = 1'b0;
-    assign proc_9_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.i_full_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ap_done_reg_8 & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.t_read);
+    assign proc_9_data_PIPO_blk[1] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.i_full_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ap_done_reg_8 & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.t_read);
     assign proc_9_start_FIFO_blk[1] = 1'b0;
     assign proc_9_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_9_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
-    assign proc_9_output_sync_blk[1] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
+    assign proc_9_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready);
+    assign proc_9_output_sync_blk[1] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done);
     assign proc_dep_vld_vec_9[1] = dl_detect_out ? proc_dep_vld_vec_9_reg[1] : (proc_9_data_FIFO_blk[1] | proc_9_data_PIPO_blk[1] | proc_9_start_FIFO_blk[1] | proc_9_TLF_FIFO_blk[1] | proc_9_input_sync_blk[1] | proc_9_output_sync_blk[1]);
     assign proc_9_data_FIFO_blk[2] = 1'b0;
     assign proc_9_data_PIPO_blk[2] = 1'b0;
     assign proc_9_start_FIFO_blk[2] = 1'b0;
     assign proc_9_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_9_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_9_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_9_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_9[2] = dl_detect_out ? proc_dep_vld_vec_9_reg[2] : (proc_9_data_FIFO_blk[2] | proc_9_data_PIPO_blk[2] | proc_9_start_FIFO_blk[2] | proc_9_TLF_FIFO_blk[2] | proc_9_input_sync_blk[2] | proc_9_output_sync_blk[2]);
     assign proc_9_data_FIFO_blk[3] = 1'b0;
     assign proc_9_data_PIPO_blk[3] = 1'b0;
     assign proc_9_start_FIFO_blk[3] = 1'b0;
     assign proc_9_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_9_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_9_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_9_output_sync_blk[3] = 1'b0;
     assign proc_dep_vld_vec_9[3] = dl_detect_out ? proc_dep_vld_vec_9_reg[3] : (proc_9_data_FIFO_blk[3] | proc_9_data_PIPO_blk[3] | proc_9_start_FIFO_blk[3] | proc_9_TLF_FIFO_blk[3] | proc_9_input_sync_blk[3] | proc_9_output_sync_blk[3]);
     assign proc_9_data_FIFO_blk[4] = 1'b0;
     assign proc_9_data_PIPO_blk[4] = 1'b0;
     assign proc_9_start_FIFO_blk[4] = 1'b0;
     assign proc_9_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_9_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
-    assign proc_9_output_sync_blk[4] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
+    assign proc_9_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_9_output_sync_blk[4] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
     assign proc_dep_vld_vec_9[4] = dl_detect_out ? proc_dep_vld_vec_9_reg[4] : (proc_9_data_FIFO_blk[4] | proc_9_data_PIPO_blk[4] | proc_9_start_FIFO_blk[4] | proc_9_TLF_FIFO_blk[4] | proc_9_input_sync_blk[4] | proc_9_output_sync_blk[4]);
     assign proc_9_data_FIFO_blk[5] = 1'b0;
     assign proc_9_data_PIPO_blk[5] = 1'b0;
     assign proc_9_start_FIFO_blk[5] = 1'b0;
     assign proc_9_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_9_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
-    assign proc_9_output_sync_blk[5] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
+    assign proc_9_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_9_output_sync_blk[5] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
     assign proc_dep_vld_vec_9[5] = dl_detect_out ? proc_dep_vld_vec_9_reg[5] : (proc_9_data_FIFO_blk[5] | proc_9_data_PIPO_blk[5] | proc_9_start_FIFO_blk[5] | proc_9_TLF_FIFO_blk[5] | proc_9_input_sync_blk[5] | proc_9_output_sync_blk[5]);
     assign proc_9_data_FIFO_blk[6] = 1'b0;
     assign proc_9_data_PIPO_blk[6] = 1'b0;
     assign proc_9_start_FIFO_blk[6] = 1'b0;
     assign proc_9_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_9_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
-    assign proc_9_output_sync_blk[6] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
+    assign proc_9_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_9_output_sync_blk[6] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
     assign proc_dep_vld_vec_9[6] = dl_detect_out ? proc_dep_vld_vec_9_reg[6] : (proc_9_data_FIFO_blk[6] | proc_9_data_PIPO_blk[6] | proc_9_start_FIFO_blk[6] | proc_9_TLF_FIFO_blk[6] | proc_9_input_sync_blk[6] | proc_9_output_sync_blk[6]);
     assign proc_9_data_FIFO_blk[7] = 1'b0;
     assign proc_9_data_PIPO_blk[7] = 1'b0;
     assign proc_9_start_FIFO_blk[7] = 1'b0;
     assign proc_9_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_9_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
-    assign proc_9_output_sync_blk[7] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
+    assign proc_9_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_9_output_sync_blk[7] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
     assign proc_dep_vld_vec_9[7] = dl_detect_out ? proc_dep_vld_vec_9_reg[7] : (proc_9_data_FIFO_blk[7] | proc_9_data_PIPO_blk[7] | proc_9_start_FIFO_blk[7] | proc_9_TLF_FIFO_blk[7] | proc_9_input_sync_blk[7] | proc_9_output_sync_blk[7]);
     assign proc_9_data_FIFO_blk[8] = 1'b0;
     assign proc_9_data_PIPO_blk[8] = 1'b0;
     assign proc_9_start_FIFO_blk[8] = 1'b0;
     assign proc_9_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_9_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
-    assign proc_9_output_sync_blk[8] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
+    assign proc_9_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_9_output_sync_blk[8] = 1'b0 | (ap_done_reg_8 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
     assign proc_dep_vld_vec_9[8] = dl_detect_out ? proc_dep_vld_vec_9_reg[8] : (proc_9_data_FIFO_blk[8] | proc_9_data_PIPO_blk[8] | proc_9_start_FIFO_blk[8] | proc_9_TLF_FIFO_blk[8] | proc_9_input_sync_blk[8] | proc_9_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin
@@ -1910,7 +1910,7 @@
     assign dep_chan_data_9_7 = out_chan_dep_data_9;
     assign token_9_7 = token_out_vec_9[8];
 
-    // Process: grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0
+    // Process: grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0
     canny_top_hls_deadlock_detect_unit #(11, 10, 9, 9) canny_top_hls_deadlock_detect_unit_10 (
         .reset(dl_reset),
         .clock(dl_clock),
@@ -1927,67 +1927,67 @@
         .dl_detect_out(dl_in_vec[10]));
 
     assign proc_10_data_FIFO_blk[0] = 1'b0;
-    assign proc_10_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.i_write);
+    assign proc_10_data_PIPO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.t_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.out_hysteresis4_U.i_write);
     assign proc_10_start_FIFO_blk[0] = 1'b0;
-    assign proc_10_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis4_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis4_valid_U.if_write);
-    assign proc_10_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
-    assign proc_10_output_sync_blk[0] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
+    assign proc_10_TLF_FIFO_blk[0] = 1'b0 | (~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis4_valid_U.if_empty_n & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis4_valid_U.if_write);
+    assign proc_10_input_sync_blk[0] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_4_U0_ap_ready);
+    assign proc_10_output_sync_blk[0] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_4_U0.ap_done);
     assign proc_dep_vld_vec_10[0] = dl_detect_out ? proc_dep_vld_vec_10_reg[0] : (proc_10_data_FIFO_blk[0] | proc_10_data_PIPO_blk[0] | proc_10_start_FIFO_blk[0] | proc_10_TLF_FIFO_blk[0] | proc_10_input_sync_blk[0] | proc_10_output_sync_blk[0]);
     assign proc_10_data_FIFO_blk[1] = 1'b0;
     assign proc_10_data_PIPO_blk[1] = 1'b0;
     assign proc_10_start_FIFO_blk[1] = 1'b0;
     assign proc_10_TLF_FIFO_blk[1] = 1'b0;
-    assign proc_10_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
+    assign proc_10_input_sync_blk[1] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc_U0_ap_ready);
     assign proc_10_output_sync_blk[1] = 1'b0;
     assign proc_dep_vld_vec_10[1] = dl_detect_out ? proc_dep_vld_vec_10_reg[1] : (proc_10_data_FIFO_blk[1] | proc_10_data_PIPO_blk[1] | proc_10_start_FIFO_blk[1] | proc_10_TLF_FIFO_blk[1] | proc_10_input_sync_blk[1] | proc_10_output_sync_blk[1]);
     assign proc_10_data_FIFO_blk[2] = 1'b0;
     assign proc_10_data_PIPO_blk[2] = 1'b0;
     assign proc_10_start_FIFO_blk[2] = 1'b0;
     assign proc_10_TLF_FIFO_blk[2] = 1'b0;
-    assign proc_10_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
+    assign proc_10_input_sync_blk[2] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_grayscale_U0_ap_ready);
     assign proc_10_output_sync_blk[2] = 1'b0;
     assign proc_dep_vld_vec_10[2] = dl_detect_out ? proc_dep_vld_vec_10_reg[2] : (proc_10_data_FIFO_blk[2] | proc_10_data_PIPO_blk[2] | proc_10_start_FIFO_blk[2] | proc_10_TLF_FIFO_blk[2] | proc_10_input_sync_blk[2] | proc_10_output_sync_blk[2]);
     assign proc_10_data_FIFO_blk[3] = 1'b0;
     assign proc_10_data_PIPO_blk[3] = 1'b0;
     assign proc_10_start_FIFO_blk[3] = 1'b0;
     assign proc_10_TLF_FIFO_blk[3] = 1'b0;
-    assign proc_10_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
-    assign proc_10_output_sync_blk[3] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
+    assign proc_10_input_sync_blk[3] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_gaussian_blur_U0_ap_ready);
+    assign proc_10_output_sync_blk[3] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.gaussian_blur_U0.ap_done);
     assign proc_dep_vld_vec_10[3] = dl_detect_out ? proc_dep_vld_vec_10_reg[3] : (proc_10_data_FIFO_blk[3] | proc_10_data_PIPO_blk[3] | proc_10_start_FIFO_blk[3] | proc_10_TLF_FIFO_blk[3] | proc_10_input_sync_blk[3] | proc_10_output_sync_blk[3]);
     assign proc_10_data_FIFO_blk[4] = 1'b0;
     assign proc_10_data_PIPO_blk[4] = 1'b0;
     assign proc_10_start_FIFO_blk[4] = 1'b0;
     assign proc_10_TLF_FIFO_blk[4] = 1'b0;
-    assign proc_10_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
-    assign proc_10_output_sync_blk[4] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
+    assign proc_10_input_sync_blk[4] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_sobel_U0_ap_ready);
+    assign proc_10_output_sync_blk[4] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.sobel_U0.ap_done);
     assign proc_dep_vld_vec_10[4] = dl_detect_out ? proc_dep_vld_vec_10_reg[4] : (proc_10_data_FIFO_blk[4] | proc_10_data_PIPO_blk[4] | proc_10_start_FIFO_blk[4] | proc_10_TLF_FIFO_blk[4] | proc_10_input_sync_blk[4] | proc_10_output_sync_blk[4]);
     assign proc_10_data_FIFO_blk[5] = 1'b0;
     assign proc_10_data_PIPO_blk[5] = 1'b0;
     assign proc_10_start_FIFO_blk[5] = 1'b0;
     assign proc_10_TLF_FIFO_blk[5] = 1'b0;
-    assign proc_10_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
-    assign proc_10_output_sync_blk[5] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
+    assign proc_10_input_sync_blk[5] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_non_maximum_suppression_U0_ap_ready);
+    assign proc_10_output_sync_blk[5] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.non_maximum_suppression_U0.ap_done);
     assign proc_dep_vld_vec_10[5] = dl_detect_out ? proc_dep_vld_vec_10_reg[5] : (proc_10_data_FIFO_blk[5] | proc_10_data_PIPO_blk[5] | proc_10_start_FIFO_blk[5] | proc_10_TLF_FIFO_blk[5] | proc_10_input_sync_blk[5] | proc_10_output_sync_blk[5]);
     assign proc_10_data_FIFO_blk[6] = 1'b0;
     assign proc_10_data_PIPO_blk[6] = 1'b0;
     assign proc_10_start_FIFO_blk[6] = 1'b0;
     assign proc_10_TLF_FIFO_blk[6] = 1'b0;
-    assign proc_10_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
-    assign proc_10_output_sync_blk[6] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
+    assign proc_10_input_sync_blk[6] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_1_U0_ap_ready);
+    assign proc_10_output_sync_blk[6] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_1_U0.ap_done);
     assign proc_dep_vld_vec_10[6] = dl_detect_out ? proc_dep_vld_vec_10_reg[6] : (proc_10_data_FIFO_blk[6] | proc_10_data_PIPO_blk[6] | proc_10_start_FIFO_blk[6] | proc_10_TLF_FIFO_blk[6] | proc_10_input_sync_blk[6] | proc_10_output_sync_blk[6]);
     assign proc_10_data_FIFO_blk[7] = 1'b0;
     assign proc_10_data_PIPO_blk[7] = 1'b0;
     assign proc_10_start_FIFO_blk[7] = 1'b0;
     assign proc_10_TLF_FIFO_blk[7] = 1'b0;
-    assign proc_10_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
-    assign proc_10_output_sync_blk[7] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
+    assign proc_10_input_sync_blk[7] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_2_U0_ap_ready);
+    assign proc_10_output_sync_blk[7] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_2_U0.ap_done);
     assign proc_dep_vld_vec_10[7] = dl_detect_out ? proc_dep_vld_vec_10_reg[7] : (proc_10_data_FIFO_blk[7] | proc_10_data_PIPO_blk[7] | proc_10_start_FIFO_blk[7] | proc_10_TLF_FIFO_blk[7] | proc_10_input_sync_blk[7] | proc_10_output_sync_blk[7]);
     assign proc_10_data_FIFO_blk[8] = 1'b0;
     assign proc_10_data_PIPO_blk[8] = 1'b0;
     assign proc_10_start_FIFO_blk[8] = 1'b0;
     assign proc_10_TLF_FIFO_blk[8] = 1'b0;
-    assign proc_10_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
-    assign proc_10_output_sync_blk[8] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_178.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
+    assign proc_10_input_sync_blk[8] = 1'b0 | (grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_output_row_U0_ap_ready & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_idle & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.ap_sync_hysteresis_3_U0_ap_ready);
+    assign proc_10_output_sync_blk[8] = 1'b0 | (ap_done_reg_9 & grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.output_row_U0.ap_done & ~grp_dataflow_parent_loop_proc_fu_170.dataflow_in_loop_VITIS_LOOP_12_1_1_U0.hysteresis_3_U0.ap_done);
     assign proc_dep_vld_vec_10[8] = dl_detect_out ? proc_dep_vld_vec_10_reg[8] : (proc_10_data_FIFO_blk[8] | proc_10_data_PIPO_blk[8] | proc_10_start_FIFO_blk[8] | proc_10_TLF_FIFO_blk[8] | proc_10_input_sync_blk[8] | proc_10_output_sync_blk[8]);
     always @ (negedge dl_reset or posedge dl_clock) begin
         if (~dl_reset) begin

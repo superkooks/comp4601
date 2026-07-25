@@ -124,10 +124,10 @@ newFuncRoot:7 %p_cast = zext i20 %empty
 
 <Node id="13" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-newFuncRoot:8 %empty_39 = add i64 %p_cast, i64 %in_read
+newFuncRoot:8 %empty_46 = add i64 %p_cast, i64 %in_read
 
 ]]></Node>
-<StgValue><ssdm name="empty_39"/></StgValue>
+<StgValue><ssdm name="empty_46"/></StgValue>
 </operation>
 
 <operation id="11" st_id="2" stage="2" lat="2">
@@ -139,7 +139,7 @@ newFuncRoot:8 %empty_39 = add i64 %p_cast, i64 %in_read
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="512" op_3_bw="8">
 <![CDATA[
-newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_39, i512 %gmem, i8 %out_grayscale
+newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_46, i512 %gmem, i8 %out_grayscale
 
 ]]></Node>
 <StgValue><ssdm name="call_ln4"/></StgValue>
@@ -172,7 +172,7 @@ newFuncRoot:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 
 <Node id="6" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_22, i32 64, i32 0, void @empty_10, void @empty_13, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_16, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_21, void @empty_8, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -187,7 +187,7 @@ newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 
 <Node id="14" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="512" op_3_bw="8">
 <![CDATA[
-newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_39, i512 %gmem, i8 %out_grayscale
+newFuncRoot:9 %call_ln4 = call void @grayscale_Pipeline_VITIS_LOOP_7_1, i64 %empty_46, i512 %gmem, i8 %out_grayscale
 
 ]]></Node>
 <StgValue><ssdm name="call_ln4"/></StgValue>
@@ -252,13 +252,13 @@ newFuncRoot:10 %ret_ln0 = ret
 </dataflow>
 <dataflow id="36" from="empty" to="p_cast" fromId="8" toId="9">
 </dataflow>
-<dataflow id="37" from="p_cast" to="empty_39" fromId="9" toId="10">
+<dataflow id="37" from="p_cast" to="empty_46" fromId="9" toId="10">
 </dataflow>
-<dataflow id="38" from="in_read" to="empty_39" fromId="5" toId="10">
+<dataflow id="38" from="in_read" to="empty_46" fromId="5" toId="10">
 </dataflow>
 <dataflow id="40" from="grayscale_Pipeline_VITIS_LOOP_7_1" to="call_ln4" fromId="39" toId="11">
 </dataflow>
-<dataflow id="41" from="empty_39" to="call_ln4" fromId="10" toId="11">
+<dataflow id="41" from="empty_46" to="call_ln4" fromId="10" toId="11">
 </dataflow>
 <dataflow id="42" from="gmem" to="call_ln4" fromId="19" toId="11">
 </dataflow>
@@ -276,23 +276,23 @@ newFuncRoot:10 %ret_ln0 = ret
 </dataflow>
 <dataflow id="53" from="gmem" to="specinterface_ln0" fromId="19" toId="13">
 </dataflow>
-<dataflow id="55" from="empty_0" to="specinterface_ln0" fromId="54" toId="13">
+<dataflow id="55" from="empty_16" to="specinterface_ln0" fromId="54" toId="13">
 </dataflow>
 <dataflow id="57" from="StgValue_56" to="specinterface_ln0" fromId="56" toId="13">
 </dataflow>
 <dataflow id="58" from="StgValue_56" to="specinterface_ln0" fromId="56" toId="13">
 </dataflow>
-<dataflow id="60" from="empty_22" to="specinterface_ln0" fromId="59" toId="13">
+<dataflow id="60" from="empty" to="specinterface_ln0" fromId="59" toId="13">
 </dataflow>
 <dataflow id="62" from="StgValue_61" to="specinterface_ln0" fromId="61" toId="13">
 </dataflow>
 <dataflow id="63" from="StgValue_56" to="specinterface_ln0" fromId="56" toId="13">
 </dataflow>
-<dataflow id="65" from="empty_10" to="specinterface_ln0" fromId="64" toId="13">
+<dataflow id="65" from="empty_21" to="specinterface_ln0" fromId="64" toId="13">
 </dataflow>
-<dataflow id="67" from="empty_13" to="specinterface_ln0" fromId="66" toId="13">
+<dataflow id="67" from="empty_8" to="specinterface_ln0" fromId="66" toId="13">
 </dataflow>
-<dataflow id="68" from="empty_22" to="specinterface_ln0" fromId="59" toId="13">
+<dataflow id="68" from="empty" to="specinterface_ln0" fromId="59" toId="13">
 </dataflow>
 <dataflow id="70" from="StgValue_69" to="specinterface_ln0" fromId="69" toId="13">
 </dataflow>
@@ -302,9 +302,9 @@ newFuncRoot:10 %ret_ln0 = ret
 </dataflow>
 <dataflow id="73" from="StgValue_69" to="specinterface_ln0" fromId="69" toId="13">
 </dataflow>
-<dataflow id="74" from="empty_22" to="specinterface_ln0" fromId="59" toId="13">
+<dataflow id="74" from="empty" to="specinterface_ln0" fromId="59" toId="13">
 </dataflow>
-<dataflow id="75" from="empty_22" to="specinterface_ln0" fromId="59" toId="13">
+<dataflow id="75" from="empty" to="specinterface_ln0" fromId="59" toId="13">
 </dataflow>
 <dataflow id="77" from="StgValue_76" to="specinterface_ln0" fromId="76" toId="13">
 </dataflow>
@@ -316,7 +316,7 @@ newFuncRoot:10 %ret_ln0 = ret
 </dataflow>
 <dataflow id="81" from="grayscale_Pipeline_VITIS_LOOP_7_1" to="call_ln4" fromId="39" toId="14">
 </dataflow>
-<dataflow id="82" from="empty_39" to="call_ln4" fromId="10" toId="14">
+<dataflow id="82" from="empty_46" to="call_ln4" fromId="10" toId="14">
 </dataflow>
 <dataflow id="83" from="gmem" to="call_ln4" fromId="19" toId="14">
 </dataflow>

@@ -1,14 +1,14 @@
 # This script segment is generated automatically by AutoPilot
 
-set name canny_top_srem_32ns_4ns_32_36_seq_1
+set name canny_top_srem_32ns_4ns_3_36_seq_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {srem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
 }
 
 
-set name canny_top_urem_32ns_4ns_3_36_seq_1
+set name canny_top_srem_32ns_4ns_32_36_seq_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {srem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
 }
 
 
@@ -23,7 +23,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 50 \
+    id 65 \
     name input_r \
     reset_level 1 \
     sync_rst true \
@@ -42,7 +42,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 51 \
+    id 66 \
     name output_r \
     reset_level 1 \
     sync_rst true \
@@ -61,36 +61,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 53 \
-    name p_ZN12_GLOBAL_N_110lineBufferE_0 \
+    id 68 \
+    name lineBuffer_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename p_ZN12_GLOBAL_N_110lineBufferE_0 \
+    corename lineBuffer_1 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferE_0_address0 { O 11 vector } p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferE_0_address1 { O 11 vector } p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferE_0_q1 { I 8 vector } } \
+    ports { lineBuffer_1_address0 { O 12 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_we0 { O 1 bit } lineBuffer_1_d0 { O 8 vector } lineBuffer_1_q0 { I 8 vector } lineBuffer_1_address1 { O 12 vector } lineBuffer_1_ce1 { O 1 bit } lineBuffer_1_q1 { I 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferE_0'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 54 \
-    name p_ZN12_GLOBAL_N_110lineBufferE_1 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename p_ZN12_GLOBAL_N_110lineBufferE_1 \
-    op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferE_1_address0 { O 11 vector } p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferE_1_address1 { O 11 vector } p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferE_1_q1 { I 8 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferE_1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_1'"
 }
 }
 
@@ -98,7 +79,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 52 \
+    id 67 \
     name p_anonymous_namespace_rowsReceived \
     type other \
     dir IO \

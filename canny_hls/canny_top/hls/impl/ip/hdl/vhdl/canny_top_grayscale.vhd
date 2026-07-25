@@ -101,8 +101,8 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
     signal p_read15_reg_90 : STD_LOGIC_VECTOR (17 downto 0);
     signal ap_block_state1 : BOOLEAN;
-    signal empty_39_fu_83_p2 : STD_LOGIC_VECTOR (63 downto 0);
-    signal empty_39_reg_96 : STD_LOGIC_VECTOR (63 downto 0);
+    signal empty_46_fu_83_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal empty_46_reg_96 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start : STD_LOGIC;
@@ -276,7 +276,7 @@ begin
         m_axi_gmem_0_BRESP => ap_const_lv2_0,
         m_axi_gmem_0_BID => ap_const_lv1_0,
         m_axi_gmem_0_BUSER => ap_const_lv1_0,
-        empty => empty_39_reg_96,
+        empty => empty_46_reg_96,
         out_grayscale_address0 => grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_address0,
         out_grayscale_ce0 => grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_ce0,
         out_grayscale_we0 => grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_we0,
@@ -333,7 +333,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                empty_39_reg_96 <= empty_39_fu_83_p2;
+                empty_46_reg_96 <= empty_46_fu_83_p2;
             end if;
         end if;
     end process;
@@ -427,7 +427,7 @@ begin
         end if; 
     end process;
 
-    empty_39_fu_83_p2 <= std_logic_vector(unsigned(p_cast_fu_79_p1) + unsigned(in_r));
+    empty_46_fu_83_p2 <= std_logic_vector(unsigned(p_cast_fu_79_p1) + unsigned(in_r));
     empty_fu_73_p2 <= std_logic_vector(unsigned(p_shl_fu_66_p3) - unsigned(zext_ln4_fu_63_p1));
     grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start <= grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg;
     m_axi_gmem_0_ARADDR <= grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_m_axi_gmem_0_ARADDR;

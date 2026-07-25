@@ -576,6 +576,7 @@ void hysteresis_reset();
 void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]);
 # 4 "../src/gaussian_blur.cpp" 2
 
+
 namespace {
 
 constexpr int KERNEL_SIZE = 5;
@@ -596,13 +597,23 @@ int positive_modulo(int value, int divisor) {
     return result < 0 ? result + divisor : result;
 }
 
+int reflect_101(int v, int max) {
+    if (v < 0) {
+        return -v;
+    } else if (v >= max) {
+        return -(v - max) - 2 + max;
+    } else {
+        return v;
+    }
+}
+
 }
 
 void gaussian_blur_reset() {
     rowsReceived = 0;
 
-    VITIS_LOOP_30_1: for (int row = 0; row < KERNEL_SIZE; ++row) {
-        VITIS_LOOP_31_2: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_41_1: for (int row = 0; row < KERNEL_SIZE; ++row) {
+        VITIS_LOOP_42_2: for (int column = 0; column < WIDTH; ++column) {
             lineBuffer[row][column] = 0;
         }
     }
@@ -617,37 +628,28 @@ void gaussian_blur(
         rowsReceived % KERNEL_SIZE;
 
 
-    VITIS_LOOP_46_1: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_57_1: for (int column = 0; column < WIDTH; ++column) {
         lineBuffer[writeSlot][column] = input[column];
         output[column] = 0;
     }
     ++rowsReceived;
 
-
-
-
-
     const int outputRow = rowsReceived - 3;
 
-
-    if (outputRow < 2 || outputRow >= HEIGHT - 2) {
+    if (outputRow < 0) {
         *valid_out = false;
         return;
     }
 
-    VITIS_LOOP_64_2: for (int column = 2; column < WIDTH - 2; ++column) {
+    VITIS_LOOP_70_2: for (int column = 0; column < WIDTH; ++column) {
         std::uint32_t sum = 0;
 
-        VITIS_LOOP_67_3: for (int kernelRow = 0;
+        VITIS_LOOP_73_3: for (int kernelRow = 0;
              kernelRow < KERNEL_SIZE;
              ++kernelRow) {
 
-
-
-
-
             const int absoluteSourceRow =
-                rowsReceived - 4 + kernelRow;
+                reflect_101(rowsReceived - 5 + kernelRow, HEIGHT);
 
             const int bufferSlot =
                 positive_modulo(
@@ -655,12 +657,12 @@ void gaussian_blur(
                     KERNEL_SIZE
                 );
 
-            VITIS_LOOP_84_4: for (int kernelColumn = 0;
+            VITIS_LOOP_86_4: for (int kernelColumn = 0;
                  kernelColumn < KERNEL_SIZE;
                  ++kernelColumn) {
 
                 const int sourceColumn =
-                    column + kernelColumn - 2;
+                    reflect_101(column + kernelColumn - 2, WIDTH);
 
                 sum +=
                     static_cast<std::uint32_t>(

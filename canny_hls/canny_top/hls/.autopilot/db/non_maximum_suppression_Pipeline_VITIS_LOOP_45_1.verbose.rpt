@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_45_1'
 ================================================================
-* Date:           Fri Jul 24 22:33:47 2026
+* Date:           Sat Jul 25 12:05:04 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -223,13 +223,13 @@ ST_1 : Operation 23 [1/1] (0.42ns)   --->   "%store_ln45 = store i10 %add_ln45, 
 ST_1 : Operation 44 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 44 'ret' 'ret_ln0' <Predicate = (icmp_ln45)> <Delay = 0.42>
 
 State 2 <SV = 1> <Delay = 2.47>
-ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln46_2 = zext i10 %column_3" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 24 'zext' 'zext_ln46_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (0.79ns)   --->   "%add_ln46 = add i11 %zext_ln46_read, i11 %zext_ln46_2" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 25 'add' 'add_ln46' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln46_3 = zext i11 %add_ln46" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 26 'zext' 'zext_ln46_3' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_direction_addr = getelementptr i2 %p_anonymous_namespace_lineBuffer_direction, i64 0, i64 %zext_ln46_3" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 27 'getelementptr' 'p_anonymous_namespace_lineBuffer_direction_addr' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22" [../src/non_maximum_suppression.cpp:45->../src/canny_top.cpp:32]   --->   Operation 28 'specpipeline' 'specpipeline_ln45' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln46_3 = zext i10 %column_3" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 24 'zext' 'zext_ln46_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.79ns)   --->   "%add_ln46 = add i11 %zext_ln46_read, i11 %zext_ln46_3" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 25 'add' 'add_ln46' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%zext_ln46_4 = zext i11 %add_ln46" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 26 'zext' 'zext_ln46_4' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_lineBuffer_direction_addr = getelementptr i2 %p_anonymous_namespace_lineBuffer_direction, i64 0, i64 %zext_ln46_4" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 27 'getelementptr' 'p_anonymous_namespace_lineBuffer_direction_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%specpipeline_ln45 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty" [../src/non_maximum_suppression.cpp:45->../src/canny_top.cpp:32]   --->   Operation 28 'specpipeline' 'specpipeline_ln45' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%speclooptripcount_ln45 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/non_maximum_suppression.cpp:45->../src/canny_top.cpp:32]   --->   Operation 29 'speclooptripcount' 'speclooptripcount_ln45' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln45 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [../src/non_maximum_suppression.cpp:45->../src/canny_top.cpp:32]   --->   Operation 30 'specloopname' 'specloopname_ln45' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln45 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [../src/non_maximum_suppression.cpp:45->../src/canny_top.cpp:32]   --->   Operation 30 'specloopname' 'specloopname_ln45' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%lshr_ln = partselect i8 @_ssdm_op_PartSelect.i8.i10.i32.i32, i10 %column_3, i32 1, i32 8" [../src/non_maximum_suppression.cpp:45->../src/canny_top.cpp:32]   --->   Operation 31 'partselect' 'lshr_ln' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %tmp, i8 %lshr_ln" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 32 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%zext_ln46_1 = zext i10 %tmp_s" [../src/non_maximum_suppression.cpp:46->../src/canny_top.cpp:32]   --->   Operation 33 'zext' 'zext_ln46_1' <Predicate = true> <Delay = 0.00>
@@ -287,9 +287,9 @@ br_ln46                                              (br               ) [ 000]
 out_nonmax_addr                                      (getelementptr    ) [ 000]
 store_ln47                                           (store            ) [ 000]
 store_ln45                                           (store            ) [ 000]
-zext_ln46_2                                          (zext             ) [ 000]
-add_ln46                                             (add              ) [ 000]
 zext_ln46_3                                          (zext             ) [ 000]
+add_ln46                                             (add              ) [ 000]
+zext_ln46_4                                          (zext             ) [ 000]
 p_anonymous_namespace_lineBuffer_direction_addr      (getelementptr    ) [ 000]
 specpipeline_ln45                                    (specpipeline     ) [ 000]
 speclooptripcount_ln45                               (speclooptripcount) [ 000]
@@ -495,7 +495,7 @@ ret_ln0                                              (ret              ) [ 000]
 <pin id="39" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_22"/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </bind>
 </comp>
 
@@ -531,7 +531,7 @@ ret_ln0                                              (ret              ) [ 000]
 <pin id="47" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_11"/></StgValue>
+<StgValue><ssdm name="empty_20"/></StgValue>
 </bind>
 </comp>
 
@@ -834,14 +834,14 @@ ret_ln0                                              (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="188" class="1004" name="zext_ln46_2_fu_188">
+<comp id="188" class="1004" name="zext_ln46_3_fu_188">
 <pin_list>
 <pin id="189" dir="0" index="0" bw="10" slack="1"/>
 <pin id="190" dir="1" index="1" bw="11" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln46_2/2 "/>
+<opset="zext_ln46_3/2 "/>
 </bind>
 </comp>
 
@@ -857,14 +857,14 @@ ret_ln0                                              (ret              ) [ 000]
 </bind>
 </comp>
 
-<comp id="196" class="1004" name="zext_ln46_3_fu_196">
+<comp id="196" class="1004" name="zext_ln46_4_fu_196">
 <pin_list>
 <pin id="197" dir="0" index="0" bw="11" slack="0"/>
 <pin id="198" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln46_3/2 "/>
+<opset="zext_ln46_4/2 "/>
 </bind>
 </comp>
 
@@ -1150,7 +1150,7 @@ ret_ln0                                              (ret              ) [ 000]
 		store_ln45 : 3
 	State 2
 		add_ln46 : 1
-		zext_ln46_3 : 2
+		zext_ln46_4 : 2
 		p_anonymous_namespace_lineBuffer_direction_addr : 3
 		tmp_s : 1
 		zext_ln46_1 : 2
@@ -1178,8 +1178,8 @@ ret_ln0                                              (ret              ) [ 000]
 |          | zext_ln46_read_read_fu_64 |    0    |    0    |
 |----------|---------------------------|---------|---------|
 |          |      zext_ln45_fu_172     |    0    |    0    |
-|   zext   |     zext_ln46_2_fu_188    |    0    |    0    |
-|          |     zext_ln46_3_fu_196    |    0    |    0    |
+|   zext   |     zext_ln46_3_fu_188    |    0    |    0    |
+|          |     zext_ln46_4_fu_196    |    0    |    0    |
 |          |     zext_ln46_1_fu_217    |    0    |    0    |
 |----------|---------------------------|---------|---------|
 |   trunc  |     trunc_ln45_fu_179     |    0    |    0    |

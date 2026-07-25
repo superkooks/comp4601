@@ -547,7 +547,7 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>empty_39</name>
+						<name>empty_46</name>
 						<fileName>../src/grayscale.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>4</lineNumber>

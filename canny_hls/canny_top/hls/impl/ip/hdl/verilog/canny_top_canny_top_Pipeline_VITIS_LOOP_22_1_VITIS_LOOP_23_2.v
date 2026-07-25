@@ -71,10 +71,10 @@ wire   [9:0] add_ln23_fu_220_p2;
 wire    ap_loop_init;
 reg   [9:0] ap_sig_allocacmp_column_9_load;
 reg   [1:0] row_fu_56;
-wire   [1:0] select_ln22_4_fu_161_p3;
+wire   [1:0] select_ln22_1_fu_161_p3;
 reg   [1:0] ap_sig_allocacmp_row_load;
 reg   [10:0] indvar_flatten13_fu_60;
-wire   [10:0] add_ln22_4_fu_129_p2;
+wire   [10:0] add_ln22_1_fu_129_p2;
 reg   [10:0] ap_sig_allocacmp_indvar_flatten13_load;
 reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_we0_local;
 wire   [0:0] trunc_ln23_fu_192_p1;
@@ -90,7 +90,7 @@ wire   [10:0] tmp_s_fu_169_p3;
 wire   [10:0] zext_ln25_fu_177_p1;
 wire   [10:0] add_ln25_fu_181_p2;
 wire   [7:0] lshr_ln_fu_196_p4;
-wire   [9:0] tmp_74_fu_206_p3;
+wire   [9:0] tmp_60_fu_206_p3;
 reg    ap_done_reg;
 wire    ap_continue_int;
 reg    ap_done_int;
@@ -171,7 +171,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln22_fu_123_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            indvar_flatten13_fu_60 <= add_ln22_4_fu_129_p2;
+            indvar_flatten13_fu_60 <= add_ln22_1_fu_129_p2;
         end else if ((ap_loop_init == 1'b1)) begin
             indvar_flatten13_fu_60 <= 11'd0;
         end
@@ -181,7 +181,7 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if (((icmp_ln22_fu_123_p2 == 1'd0) & (ap_enable_reg_pp0_iter0 == 1'b1))) begin
-            row_fu_56 <= select_ln22_4_fu_161_p3;
+            row_fu_56 <= select_ln22_1_fu_161_p3;
         end else if ((ap_loop_init == 1'b1)) begin
             row_fu_56 <= 2'd0;
         end
@@ -317,7 +317,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln22_4_fu_129_p2 = (ap_sig_allocacmp_indvar_flatten13_load + 11'd1);
+assign add_ln22_1_fu_129_p2 = (ap_sig_allocacmp_indvar_flatten13_load + 11'd1);
 
 assign add_ln22_fu_141_p2 = (ap_sig_allocacmp_row_load + 2'd1);
 
@@ -373,17 +373,17 @@ assign p_anonymous_namespace_lineBuffer_direction_d0 = 2'd0;
 
 assign p_anonymous_namespace_lineBuffer_direction_we0 = p_anonymous_namespace_lineBuffer_direction_we0_local;
 
-assign select_ln22_4_fu_161_p3 = ((icmp_ln23_fu_147_p2[0:0] == 1'b1) ? add_ln22_fu_141_p2 : ap_sig_allocacmp_row_load);
+assign select_ln22_1_fu_161_p3 = ((icmp_ln23_fu_147_p2[0:0] == 1'b1) ? add_ln22_fu_141_p2 : ap_sig_allocacmp_row_load);
 
 assign select_ln22_fu_153_p3 = ((icmp_ln23_fu_147_p2[0:0] == 1'b1) ? 10'd0 : ap_sig_allocacmp_column_9_load);
 
-assign tmp_74_fu_206_p3 = {{select_ln22_4_fu_161_p3}, {lshr_ln_fu_196_p4}};
+assign tmp_60_fu_206_p3 = {{select_ln22_1_fu_161_p3}, {lshr_ln_fu_196_p4}};
 
-assign tmp_s_fu_169_p3 = {{select_ln22_4_fu_161_p3}, {9'd0}};
+assign tmp_s_fu_169_p3 = {{select_ln22_1_fu_161_p3}, {9'd0}};
 
 assign trunc_ln23_fu_192_p1 = select_ln22_fu_153_p3[0:0];
 
-assign zext_ln24_fu_214_p1 = tmp_74_fu_206_p3;
+assign zext_ln24_fu_214_p1 = tmp_60_fu_206_p3;
 
 assign zext_ln25_1_fu_187_p1 = add_ln25_fu_181_p2;
 

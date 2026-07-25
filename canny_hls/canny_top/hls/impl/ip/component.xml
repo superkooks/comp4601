@@ -1078,7 +1078,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>1f77cd2d</spirit:value>
+            <spirit:value>d6d04122</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1094,7 +1094,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>a7f43a7e</spirit:value>
+            <spirit:value>66d3758a</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1110,7 +1110,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6da651d7</spirit:value>
+            <spirit:value>8544d66d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1126,7 +1126,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>eefe1b3f</spirit:value>
+            <spirit:value>4707c851</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2406,27 +2406,27 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2494,11 +2494,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_46_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_57_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_64_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_70_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2526,11 +2526,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2538,11 +2538,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2550,11 +2550,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2562,15 +2562,31 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/canny_top_hysteresis_4_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_1_RAM_AUTO_1R1W.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_1_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_RAM_AUTO_1R1W.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2606,7 +2622,7 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2626,14 +2642,6 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/canny_top_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
@@ -2642,11 +2650,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W.dat</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2654,11 +2662,11 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_89_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_100_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_118_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2670,15 +2678,23 @@
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_srem_32ns_3ns_32_36_seq_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_srem_32ns_4ns_3_36_seq_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_srem_32ns_4ns_32_36_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/canny_top_srem_32ns_4ns_32_36_seq_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_urem_31ns_3ns_2_35_seq_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_urem_32ns_4ns_3_36_seq_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_urem_32ns_3ns_2_36_seq_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -2694,32 +2710,32 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2804,12 +2820,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_46_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_57_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_64_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_70_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2844,12 +2860,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2859,12 +2875,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2874,12 +2890,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2889,17 +2905,35 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_68_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_72_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_110_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/verilog/canny_top_hysteresis_4_s.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_1_RAM_AUTO_1R1W.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_1_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_RAM_AUTO_1R1W.dat</spirit:name>
+        <spirit:userFileType>mif</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_lineBuffer_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2944,7 +2978,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -2968,15 +3002,6 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W.dat</spirit:name>
-        <spirit:userFileType>mif</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/verilog/canny_top_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
@@ -2986,11 +3011,11 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W.dat</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W.dat</spirit:name>
         <spirit:userFileType>mif</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3000,12 +3025,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_89_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_100_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_118_2.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_sobel_Pipeline_VITIS_LOOP_116_2.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3020,17 +3045,27 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_srem_32ns_3ns_32_36_seq_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_srem_32ns_4ns_3_36_seq_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/verilog/canny_top_srem_32ns_4ns_32_36_1.v</spirit:name>
+        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/verilog/canny_top_srem_32ns_4ns_32_36_seq_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_urem_31ns_3ns_2_35_seq_1.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/verilog/canny_top_urem_32ns_4ns_3_36_seq_1.v</spirit:name>
+        <spirit:name>hdl/verilog/canny_top_urem_32ns_3ns_2_36_seq_1.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3052,27 +3087,27 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3140,11 +3175,11 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_46_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_57_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_64_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_70_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3160,11 +3195,11 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3172,11 +3207,11 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3184,11 +3219,11 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3196,15 +3231,23 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/canny_top_hysteresis_4_s.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_lineBuffer_1_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_lineBuffer_RAM_AUTO_1R1W.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3240,7 +3283,7 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3256,15 +3299,11 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/canny_top_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3272,11 +3311,11 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_89_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_100_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_118_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
@@ -3288,21 +3327,29 @@
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_srem_32ns_3ns_32_36_seq_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_srem_32ns_4ns_3_36_seq_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_srem_32ns_4ns_32_36_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/canny_top_srem_32ns_4ns_32_36_seq_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_urem_31ns_3ns_2_35_seq_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_urem_32ns_4ns_3_36_seq_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_urem_32ns_3ns_2_36_seq_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/canny_top.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_d4fce4eb</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_d4e8e356</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -3313,32 +3360,32 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3423,12 +3470,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_46_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_57_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_64_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_gaussian_blur_Pipeline_VITIS_LOOP_70_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3448,12 +3495,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_1_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3463,12 +3510,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_2_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3478,12 +3525,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_3_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3493,17 +3540,27 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_68_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_72_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_hysteresis_4_Pipeline_VITIS_LOOP_110_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
         <spirit:name>hdl/vhdl/canny_top_hysteresis_4_s.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_lineBuffer_1_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_lineBuffer_RAM_AUTO_1R1W.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3548,7 +3605,7 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3568,17 +3625,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
         <spirit:name>hdl/vhdl/canny_top_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3588,12 +3640,12 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_89_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_100_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_118_2.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_sobel_Pipeline_VITIS_LOOP_116_2.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3608,17 +3660,27 @@
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_srem_32ns_3ns_32_36_seq_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_srem_32ns_4ns_3_36_seq_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/vhdl/canny_top_srem_32ns_4ns_32_36_1.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
+      </spirit:file>
+      <spirit:file>
         <spirit:name>hdl/vhdl/canny_top_srem_32ns_4ns_32_36_seq_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_urem_31ns_3ns_2_35_seq_1.vhd</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>hdl/vhdl/canny_top_urem_32ns_4ns_3_36_seq_1.vhd</spirit:name>
+        <spirit:name>hdl/vhdl/canny_top_urem_32ns_3ns_2_36_seq_1.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
       </spirit:file>
@@ -3832,11 +3894,11 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>latency</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="16">833759</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.latency" spirit:order="16">843455</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>II</spirit:name>
-      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="17">833760 ~ 2414258</spirit:value>
+      <spirit:value spirit:id="PARAM_VALUE.II" spirit:order="17">843456 ~ 3808796</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>
@@ -3849,8 +3911,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Canny_top</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2114711373</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2026-07-24T12:34:01Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2114712185</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2026-07-25T02:05:17Z</xilinx:coreCreationDateTime>
       <xilinx:sdxKernelAttributes>
         <xilinx:sdx_kernel>true</xilinx:sdx_kernel>
         <xilinx:sdx_kernel_type>hls</xilinx:sdx_kernel_type>
@@ -3861,10 +3923,10 @@
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="84019199"/>
       <xilinx:checksum xilinx:scope="addressSpaces" xilinx:value="2c1df7e3"/>
       <xilinx:checksum xilinx:scope="memoryMaps" xilinx:value="c789e091"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="029590e1"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="a118eeba"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="32533eff"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="64dddfce"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="31339636"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="92054f98"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hysteresis_4_s'" level="0">
-<item name = "Date">Fri Jul 24 22:33:46 2026
+<item name = "Date">Sat Jul 25 12:05:03 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 3141, 5.000 ns, 15.705 us, 1, 3141, no</column>
+<column name="">1, 3152, 5.000 ns, 15.760 us, 1, 3152, no</column>
 </table>
 </item>
 <item name = "Detail">

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale'" level="0">
-<item name = "Date">Fri Jul 24 22:33:46 2026
+<item name = "Date">Sat Jul 25 12:05:03 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -79,7 +79,7 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="empty_39_fu_83_p2">+, 0, 0, 71, 64, 64</column>
+<column name="empty_46_fu_83_p2">+, 0, 0, 71, 64, 64</column>
 <column name="empty_fu_73_p2">-, 0, 0, 27, 20, 20</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
 </table>
@@ -94,7 +94,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">3, 0, 3, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="empty_39_reg_96">64, 0, 64, 0</column>
+<column name="empty_46_reg_96">64, 0, 64, 0</column>
 <column name="grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start_reg">1, 0, 1, 0</column>
 <column name="p_read15_reg_90">18, 0, 18, 0</column>
 </table>

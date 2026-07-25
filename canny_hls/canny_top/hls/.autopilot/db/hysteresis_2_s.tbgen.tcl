@@ -123,28 +123,33 @@ set ArgLastReadFirstWriteLatency {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis1 {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis2 {Type O LastRead -1 FirstWrite 0}
-		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_rowsReceived_2_s {Type IO LastRead 0 FirstWrite 36}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type IO LastRead 8 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type IO LastRead 8 FirstWrite -1}}
-	hysteresis_2_Pipeline_VITIS_LOOP_68_1 {
+	hysteresis_2_Pipeline_VITIS_LOOP_72_1 {
 		out_hysteresis2 {Type O LastRead -1 FirstWrite 0}
-		writeSlot {Type I LastRead 0 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis1 {Type I LastRead 0 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type O LastRead -1 FirstWrite 1}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type O LastRead -1 FirstWrite 1}}
-	hysteresis_2_Pipeline_VITIS_LOOP_116_2 {
+	hysteresis_2_Pipeline_VITIS_LOOP_110_2 {
+		outputRow {Type I LastRead 0 FirstWrite -1}
 		out_hysteresis2 {Type O LastRead -1 FirstWrite 1}
-		result_5 {Type I LastRead 0 FirstWrite -1}
+		select_ln18 {Type I LastRead 0 FirstWrite -1}
 		result {Type I LastRead 0 FirstWrite -1}
-		writeSlot {Type I LastRead 0 FirstWrite -1}
+		select_ln18_3 {Type I LastRead 0 FirstWrite -1}
+		zext_ln38_3 {Type I LastRead 0 FirstWrite -1}
+		xor_ln38 {Type I LastRead 0 FirstWrite -1}
+		xor_ln33 {Type I LastRead 0 FirstWrite -1}
+		zext_ln33 {Type I LastRead 0 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 {Type I LastRead 8 FirstWrite -1}
 		p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 {Type I LastRead 8 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "3141"}
-	, {"Name" : "Interval", "Min" : "1", "Max" : "3141"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "3152"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "3152"}
 ]}
 
 set PipelineEnableSignalInfo {[

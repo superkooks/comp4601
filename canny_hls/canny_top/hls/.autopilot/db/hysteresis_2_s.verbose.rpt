@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hysteresis_2_s'
 ================================================================
-* Date:           Fri Jul 24 22:33:47 2026
+* Date:           Sat Jul 25 12:05:04 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
     |   min   |   max   |    min   |    max    | min |  max |   Type  |
     +---------+---------+----------+-----------+-----+------+---------+
-    |        1|     3141|  5.000 ns|  15.705 us|    1|  3141|       no|
+    |        1|     3152|  5.000 ns|  15.760 us|    1|  3152|       no|
     +---------+---------+----------+-----------+-----+------+---------+
 
     + Detail: 
@@ -38,8 +38,8 @@
         |                                                  |                                        |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
         |                     Instance                     |                 Module                 |   min   |   max   |    min    |    max    | min | max |        Type       |
         +--------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
-        |grp_hysteresis_2_Pipeline_VITIS_LOOP_68_1_fu_73   |hysteresis_2_Pipeline_VITIS_LOOP_68_1   |      514|      514|   2.570 us|   2.570 us|    0|    0|  loop pipeline stp|
-        |grp_hysteresis_2_Pipeline_VITIS_LOOP_116_2_fu_86  |hysteresis_2_Pipeline_VITIS_LOOP_116_2  |     2556|     2556|  12.780 us|  12.780 us|    0|    0|  loop pipeline stp|
+        |grp_hysteresis_2_Pipeline_VITIS_LOOP_72_1_fu_63   |hysteresis_2_Pipeline_VITIS_LOOP_72_1   |      514|      514|   2.570 us|   2.570 us|    0|    0|  loop pipeline stp|
+        |grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76  |hysteresis_2_Pipeline_VITIS_LOOP_110_2  |     2566|     2566|  12.830 us|  12.830 us|    0|    0|  loop pipeline stp|
         +--------------------------------------------------+----------------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
 
         * Loop: 
@@ -55,14 +55,14 @@
 |       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
 +-----------------+---------+------+--------+--------+-----+
 |DSP              |        -|     -|       -|       -|    -|
-|Expression       |        -|     -|       0|     199|    -|
+|Expression       |        -|     -|       0|     184|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        -|     -|    1284|    1183|    -|
+|Instance         |        -|     -|    1334|    1444|    -|
 |Memory           |        -|     -|       -|       -|    -|
-|Multiplexer      |        -|     -|       0|     570|    -|
-|Register         |        -|     -|     117|       -|    -|
+|Multiplexer      |        -|     -|       0|     564|    -|
+|Register         |        -|     -|     156|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     0|    1401|    1952|    0|
+|Total            |        0|     0|    1490|    2192|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -74,13 +74,13 @@
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
     |                     Instance                     |                 Module                 | BRAM_18K| DSP|  FF | LUT | URAM|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
-    |grp_hysteresis_2_Pipeline_VITIS_LOOP_116_2_fu_86  |hysteresis_2_Pipeline_VITIS_LOOP_116_2  |        0|   0|  104|  416|    0|
-    |grp_hysteresis_2_Pipeline_VITIS_LOOP_68_1_fu_73   |hysteresis_2_Pipeline_VITIS_LOOP_68_1   |        0|   0|   22|   73|    0|
-    |srem_32ns_3ns_2_36_seq_1_U150                     |srem_32ns_3ns_2_36_seq_1                |        0|   0|  394|  238|    0|
-    |urem_31ns_3ns_2_35_seq_1_U151                     |urem_31ns_3ns_2_35_seq_1                |        0|   0|  382|  228|    0|
-    |urem_31ns_3ns_2_35_seq_1_U152                     |urem_31ns_3ns_2_35_seq_1                |        0|   0|  382|  228|    0|
+    |grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76  |hysteresis_2_Pipeline_VITIS_LOOP_110_2  |        0|   0|  130|  657|    0|
+    |grp_hysteresis_2_Pipeline_VITIS_LOOP_72_1_fu_63   |hysteresis_2_Pipeline_VITIS_LOOP_72_1   |        0|   0|   22|   73|    0|
+    |srem_32ns_3ns_32_36_seq_1_U174                    |srem_32ns_3ns_32_36_seq_1               |        0|   0|  394|  238|    0|
+    |srem_32ns_3ns_32_36_seq_1_U176                    |srem_32ns_3ns_32_36_seq_1               |        0|   0|  394|  238|    0|
+    |urem_32ns_3ns_2_36_seq_1_U175                     |urem_32ns_3ns_2_36_seq_1                |        0|   0|  394|  238|    0|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
-    |Total                                             |                                        |        0|   0| 1284| 1183|    0|
+    |Total                                             |                                        |        0|   0| 1334| 1444|    0|
     +--------------------------------------------------+----------------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
@@ -96,26 +96,28 @@
     +----------------------------------+----------+----+---+----+------------+------------+
     |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+----+---+----+------------+------------+
-    |add_ln94_fu_176_p2                |         +|   0|  0|  39|          32|           1|
-    |grp_fu_154_p0                     |         +|   0|  0|  38|          31|           3|
-    |outputRow_fu_134_p2               |         +|   0|  0|  39|          32|           2|
-    |ap_block_state72_on_subcall_done  |       and|   0|  0|   2|           1|           1|
-    |ap_predicate_op197_call_state72   |       and|   0|  0|   2|           1|           1|
-    |icmp_ln77_fu_123_p2               |      icmp|   0|  0|  38|          31|           1|
-    |icmp_ln92_fu_143_p2               |      icmp|   0|  0|  39|          32|           9|
+    |add_ln18_3_fu_197_p2              |         +|   0|  0|   9|           2|           2|
+    |add_ln18_fu_150_p2                |         +|   0|  0|   9|           2|           2|
+    |add_ln76_fu_109_p2                |         +|   0|  0|  39|          32|           1|
+    |outputRow_fu_120_p2               |         +|   0|  0|  39|          32|           2|
+    |ap_block_state73_on_subcall_done  |       and|   0|  0|   2|           1|           1|
+    |ap_predicate_op207_call_state73   |       and|   0|  0|   2|           1|           1|
+    |icmp_ln33_fu_168_p2               |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln38_fu_174_p2               |      icmp|   0|  0|  39|          32|           9|
     |ap_block_state1                   |        or|   0|  0|   2|           1|           1|
+    |select_ln18_3_fu_212_p3           |    select|   0|  0|   2|           1|           2|
+    |select_ln18_fu_161_p3             |    select|   0|  0|   2|           1|           2|
     +----------------------------------+----------+----+---+----+------------+------------+
-    |Total                             |          |   0|  0| 199|         161|          19|
+    |Total                             |          |   0|  0| 184|         137|          24|
     +----------------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
     +-------------------------------------------------+-----+-----------+-----+-----------+
     |                       Name                      | LUT | Input Size| Bits| Total Bits|
     +-------------------------------------------------+-----+-----------+-----+-----------+
-    |ap_NS_fsm                                        |  377|         73|    1|         73|
+    |ap_NS_fsm                                        |  389|         74|    1|         74|
     |ap_done                                          |    9|          2|    1|          2|
-    |ap_phi_mux_hysteresis2_valid_1_phi_fu_50_p6      |    9|          2|    1|          2|
-    |ap_phi_mux_valid_out_write_assign_phi_fu_65_p4   |    9|          2|    1|          2|
+    |ap_phi_mux_valid_out_write_assign_phi_fu_52_p6   |    9|          2|    1|          2|
     |out_hysteresis2_address0                         |   14|          3|    9|         27|
     |out_hysteresis2_ce0                              |   14|          3|    1|          3|
     |out_hysteresis2_d0                               |   14|          3|    8|         24|
@@ -129,30 +131,33 @@
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1       |    9|          2|    1|          2|
     |p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0       |    9|          2|    1|          2|
     |p_anonymous_namespace_rowsReceived_2_s_o         |    9|          2|   32|         64|
-    |valid_out_write_assign_reg_61                    |    9|          2|    1|          2|
     +-------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                            |  570|        115|   82|        276|
+    |Total                                            |  564|        112|   80|        273|
     +-------------------------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
     +---------------------------------------------------------------+----+----+-----+-----------+
     |                              Name                             | FF | LUT| Bits| Const Bits|
     +---------------------------------------------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                                                      |  72|   0|   72|          0|
+    |ap_CS_fsm                                                      |  73|   0|   73|          0|
     |ap_done_reg                                                    |   1|   0|    1|          0|
-    |grp_hysteresis_2_Pipeline_VITIS_LOOP_116_2_fu_86_ap_start_reg  |   1|   0|    1|          0|
-    |grp_hysteresis_2_Pipeline_VITIS_LOOP_68_1_fu_73_ap_start_reg   |   1|   0|    1|          0|
-    |hysteresis2_valid_1_reg_46                                     |   1|   0|    1|          0|
-    |icmp_ln77_reg_199                                              |   1|   0|    1|          0|
-    |icmp_ln92_reg_214                                              |   1|   0|    1|          0|
-    |p_read_6_reg_187                                               |   1|   0|    1|          0|
-    |trunc_ln17_3_reg_228                                           |   2|   0|    2|          0|
-    |trunc_ln17_reg_223                                             |   2|   0|    2|          0|
-    |trunc_ln65_reg_203                                             |   2|   0|    2|          0|
-    |trunc_ln66_reg_194                                             |  31|   0|   31|          0|
-    |valid_out_write_assign_reg_61                                  |   1|   0|    1|          0|
+    |grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76_ap_start_reg  |   1|   0|    1|          0|
+    |grp_hysteresis_2_Pipeline_VITIS_LOOP_72_1_fu_63_ap_start_reg   |   1|   0|    1|          0|
+    |icmp_ln33_reg_273                                              |   1|   0|    1|          0|
+    |icmp_ln38_reg_278                                              |   1|   0|    1|          0|
+    |p_read_6_reg_230                                               |   1|   0|    1|          0|
+    |select_ln18_3_reg_293                                          |   2|   0|    2|          0|
+    |select_ln18_reg_268                                            |   2|   0|    2|          0|
+    |tmp_39_reg_298                                                 |   2|   0|   10|          8|
+    |tmp_reg_264                                                    |   1|   0|    1|          0|
+    |tmp_s_reg_288                                                  |   2|   0|   10|          8|
+    |trunc_ln17_reg_283                                             |   2|   0|    2|          0|
+    |trunc_ln69_reg_242                                             |   2|   0|    2|          0|
+    |trunc_ln82_reg_259                                             |  31|   0|   31|          0|
+    |valid_out_write_assign_reg_48                                  |   1|   0|    1|          0|
+    |writeSlot_reg_237                                              |  32|   0|   32|          0|
     +---------------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                          | 117|   0|  117|          0|
+    |Total                                                          | 156|   0|  172|         16|
     +---------------------------------------------------------------+----+----+-----+-----------+
 
 
@@ -227,12 +232,12 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 72
+* Number of FSM states : 73
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
 * FSM state transitions: 
-1 --> 2 72 
+1 --> 2 73 
 2 --> 3 
 3 --> 4 
 4 --> 5 
@@ -268,7 +273,7 @@ IsGatedGlobalClock: 0
 34 --> 35 
 35 --> 36 
 36 --> 37 
-37 --> 72 38 
+37 --> 38 73 
 38 --> 39 
 39 --> 40 
 40 --> 41 
@@ -303,285 +308,293 @@ IsGatedGlobalClock: 0
 69 --> 70 
 70 --> 71 
 71 --> 72 
-72 --> 
+72 --> 73 
+73 --> 
 
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.25>
-ST_1 : Operation 73 [1/1] (1.82ns)   --->   "%p_read_6 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read" [../src/hysteresis.cpp:54->../src/canny_top.cpp:35]   --->   Operation 73 'read' 'p_read_6' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
-ST_1 : Operation 74 [1/1] (0.42ns)   --->   "%br_ln60 = br i1 %p_read_6, void %newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.exitStub, void %if.end.i" [../src/hysteresis.cpp:60->../src/canny_top.cpp:35]   --->   Operation 74 'br' 'br_ln60' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 75 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_rowsReceived_2_load = load i32 %p_anonymous_namespace_rowsReceived_2_s" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 75 'load' 'p_anonymous_namespace_rowsReceived_2_load' <Predicate = (p_read_6)> <Delay = 0.00>
-ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%trunc_ln66 = trunc i32 %p_anonymous_namespace_rowsReceived_2_load" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 76 'trunc' 'trunc_ln66' <Predicate = (p_read_6)> <Delay = 0.00>
-ST_1 : Operation 77 [36/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 77 'srem' 'writeSlot' <Predicate = (p_read_6)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 78 [1/1] (0.00ns)   --->   "%tmp = partselect i31 @_ssdm_op_PartSelect.i31.i32.i32.i32, i32 %p_anonymous_namespace_rowsReceived_2_load, i32 1, i32 31" [../src/hysteresis.cpp:77->../src/canny_top.cpp:35]   --->   Operation 78 'partselect' 'tmp' <Predicate = (p_read_6)> <Delay = 0.00>
-ST_1 : Operation 79 [1/1] (1.00ns)   --->   "%icmp_ln77 = icmp_slt  i31 %tmp, i31 1" [../src/hysteresis.cpp:77->../src/canny_top.cpp:35]   --->   Operation 79 'icmp' 'icmp_ln77' <Predicate = (p_read_6)> <Delay = 1.00> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 74 [1/1] (1.82ns)   --->   "%p_read_6 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read" [../src/hysteresis.cpp:58->../src/canny_top.cpp:35]   --->   Operation 74 'read' 'p_read_6' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_1 : Operation 75 [1/1] (0.42ns)   --->   "%br_ln64 = br i1 %p_read_6, void %_Z10hysteresisILi2EEvPKhPhbPbh.6.exit, void %if.end.i" [../src/hysteresis.cpp:64->../src/canny_top.cpp:35]   --->   Operation 75 'br' 'br_ln64' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 76 [1/1] (0.00ns)   --->   "%p_anonymous_namespace_rowsReceived_2_load = load i32 %p_anonymous_namespace_rowsReceived_2_s" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 76 'load' 'p_anonymous_namespace_rowsReceived_2_load' <Predicate = (p_read_6)> <Delay = 0.00>
+ST_1 : Operation 77 [36/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 77 'srem' 'writeSlot' <Predicate = (p_read_6)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 2 <SV = 1> <Delay = 1.47>
-ST_2 : Operation 80 [35/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 80 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 78 [35/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 78 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 3 <SV = 2> <Delay = 1.47>
-ST_3 : Operation 81 [34/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 81 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 79 [34/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 79 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 1.47>
-ST_4 : Operation 82 [33/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 82 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 80 [33/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 80 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 5 <SV = 4> <Delay = 1.47>
-ST_5 : Operation 83 [32/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 83 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 81 [32/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 81 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 1.47>
-ST_6 : Operation 84 [31/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 84 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 82 [31/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 82 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 1.47>
-ST_7 : Operation 85 [30/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 85 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 83 [30/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 83 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 1.47>
-ST_8 : Operation 86 [29/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 86 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 84 [29/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 84 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 9 <SV = 8> <Delay = 1.47>
-ST_9 : Operation 87 [28/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 87 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 85 [28/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 85 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 1.47>
-ST_10 : Operation 88 [27/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 88 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 86 [27/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 86 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 11 <SV = 10> <Delay = 1.47>
-ST_11 : Operation 89 [26/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 89 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 87 [26/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 87 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 12 <SV = 11> <Delay = 1.47>
-ST_12 : Operation 90 [25/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 90 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 88 [25/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 88 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 13 <SV = 12> <Delay = 1.47>
-ST_13 : Operation 91 [24/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 91 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 89 [24/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 89 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 14 <SV = 13> <Delay = 1.47>
-ST_14 : Operation 92 [23/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 92 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 90 [23/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 90 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 15 <SV = 14> <Delay = 1.47>
-ST_15 : Operation 93 [22/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 93 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 91 [22/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 91 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 16 <SV = 15> <Delay = 1.47>
-ST_16 : Operation 94 [21/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 94 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 92 [21/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 92 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 17 <SV = 16> <Delay = 1.47>
-ST_17 : Operation 95 [20/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 95 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 93 [20/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 93 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 18 <SV = 17> <Delay = 1.47>
-ST_18 : Operation 96 [19/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 96 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_18 : Operation 94 [19/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 94 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 19 <SV = 18> <Delay = 1.47>
-ST_19 : Operation 97 [18/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 97 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_19 : Operation 95 [18/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 95 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 20 <SV = 19> <Delay = 1.47>
-ST_20 : Operation 98 [17/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 98 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_20 : Operation 96 [17/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 96 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 21 <SV = 20> <Delay = 1.47>
-ST_21 : Operation 99 [16/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 99 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_21 : Operation 97 [16/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 97 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 22 <SV = 21> <Delay = 1.47>
-ST_22 : Operation 100 [15/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 100 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_22 : Operation 98 [15/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 98 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 23 <SV = 22> <Delay = 1.47>
-ST_23 : Operation 101 [14/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 101 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_23 : Operation 99 [14/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 99 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 24 <SV = 23> <Delay = 1.47>
-ST_24 : Operation 102 [13/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 102 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_24 : Operation 100 [13/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 100 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 25 <SV = 24> <Delay = 1.47>
-ST_25 : Operation 103 [12/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 103 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_25 : Operation 101 [12/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 101 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 26 <SV = 25> <Delay = 1.47>
-ST_26 : Operation 104 [11/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 104 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_26 : Operation 102 [11/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 102 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 27 <SV = 26> <Delay = 1.47>
-ST_27 : Operation 105 [10/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 105 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_27 : Operation 103 [10/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 103 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 28 <SV = 27> <Delay = 1.47>
-ST_28 : Operation 106 [9/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 106 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 104 [9/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 104 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 29 <SV = 28> <Delay = 1.47>
-ST_29 : Operation 107 [8/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 107 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_29 : Operation 105 [8/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 105 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 30 <SV = 29> <Delay = 1.47>
-ST_30 : Operation 108 [7/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 108 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_30 : Operation 106 [7/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 106 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 31 <SV = 30> <Delay = 1.47>
-ST_31 : Operation 109 [6/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 109 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_31 : Operation 107 [6/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 107 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 32 <SV = 31> <Delay = 1.47>
-ST_32 : Operation 110 [5/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 110 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_32 : Operation 108 [5/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 108 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 33 <SV = 32> <Delay = 1.47>
-ST_33 : Operation 111 [4/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 111 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_33 : Operation 109 [4/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 109 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 34 <SV = 33> <Delay = 1.47>
-ST_34 : Operation 112 [3/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 112 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_34 : Operation 110 [3/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 110 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 35 <SV = 34> <Delay = 1.47>
-ST_35 : Operation 113 [2/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 113 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_35 : Operation 111 [2/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 111 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 36 <SV = 35> <Delay = 1.47>
-ST_36 : Operation 114 [1/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:66->../src/canny_top.cpp:35]   --->   Operation 114 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_36 : Operation 115 [1/1] (0.00ns)   --->   "%trunc_ln65 = trunc i2 %writeSlot" [../src/hysteresis.cpp:65->../src/canny_top.cpp:35]   --->   Operation 115 'trunc' 'trunc_ln65' <Predicate = true> <Delay = 0.00>
-ST_36 : Operation 116 [2/2] (0.00ns)   --->   "%call_ln65 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_68_1, i8 %out_hysteresis2, i2 %trunc_ln65, i8 %out_hysteresis1, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:65->../src/canny_top.cpp:35]   --->   Operation 116 'call' 'call_ln65' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_36 : Operation 112 [1/36] (1.47ns)   --->   "%writeSlot = srem i32 %p_anonymous_namespace_rowsReceived_2_load, i32 3" [../src/hysteresis.cpp:70->../src/canny_top.cpp:35]   --->   Operation 112 'srem' 'writeSlot' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_36 : Operation 113 [1/1] (0.00ns)   --->   "%trunc_ln69 = trunc i32 %writeSlot" [../src/hysteresis.cpp:69->../src/canny_top.cpp:35]   --->   Operation 113 'trunc' 'trunc_ln69' <Predicate = true> <Delay = 0.00>
+ST_36 : Operation 114 [2/2] (0.00ns)   --->   "%call_ln69 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_72_1, i8 %out_hysteresis2, i2 %trunc_ln69, i8 %out_hysteresis1, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:69->../src/canny_top.cpp:35]   --->   Operation 114 'call' 'call_ln69' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 37 <SV = 36> <Delay = 2.48>
-ST_37 : Operation 117 [1/2] (1.64ns)   --->   "%call_ln65 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_68_1, i8 %out_hysteresis2, i2 %trunc_ln65, i8 %out_hysteresis1, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:65->../src/canny_top.cpp:35]   --->   Operation 117 'call' 'call_ln65' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
-ST_37 : Operation 118 [1/1] (0.42ns)   --->   "%br_ln77 = br i1 %icmp_ln77, void %if.end10.i, void %cleanup55.i" [../src/hysteresis.cpp:77->../src/canny_top.cpp:35]   --->   Operation 118 'br' 'br_ln77' <Predicate = true> <Delay = 0.42>
-ST_37 : Operation 119 [1/1] (1.01ns)   --->   "%outputRow = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 4294967295" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 119 'add' 'outputRow' <Predicate = (!icmp_ln77)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 120 [1/1] (0.00ns)   --->   "%trunc_ln87 = trunc i32 %outputRow" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 120 'trunc' 'trunc_ln87' <Predicate = (!icmp_ln77)> <Delay = 0.00>
-ST_37 : Operation 121 [1/1] (1.01ns)   --->   "%icmp_ln92 = icmp_sgt  i32 %outputRow, i32 510" [../src/hysteresis.cpp:92->../src/canny_top.cpp:35]   --->   Operation 121 'icmp' 'icmp_ln92' <Predicate = (!icmp_ln77)> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 122 [1/1] (0.42ns)   --->   "%br_ln92 = br i1 %icmp_ln92, void %if.end15.i, void %cleanup55.i" [../src/hysteresis.cpp:92->../src/canny_top.cpp:35]   --->   Operation 122 'br' 'br_ln92' <Predicate = (!icmp_ln77)> <Delay = 0.42>
-ST_37 : Operation 123 [1/1] (1.00ns)   --->   "%add_ln16 = add i31 %trunc_ln66, i31 2147483646" [../src/hysteresis.cpp:16->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 123 'add' 'add_ln16' <Predicate = (!icmp_ln77 & !icmp_ln92)> <Delay = 1.00> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 124 [35/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 124 'urem' 'result' <Predicate = (!icmp_ln77 & !icmp_ln92)> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_37 : Operation 125 [35/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 125 'urem' 'result_4' <Predicate = (!icmp_ln77 & !icmp_ln92)> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 37 <SV = 36> <Delay = 2.49>
+ST_37 : Operation 115 [1/2] (1.64ns)   --->   "%call_ln69 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_72_1, i8 %out_hysteresis2, i2 %trunc_ln69, i8 %out_hysteresis1, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:69->../src/canny_top.cpp:35]   --->   Operation 115 'call' 'call_ln69' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
+ST_37 : Operation 116 [1/1] (1.01ns)   --->   "%add_ln76 = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 1" [../src/hysteresis.cpp:76->../src/canny_top.cpp:35]   --->   Operation 116 'add' 'add_ln76' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 117 [1/1] (0.00ns)   --->   "%store_ln76 = store i32 %add_ln76, i32 %p_anonymous_namespace_rowsReceived_2_s" [../src/hysteresis.cpp:76->../src/canny_top.cpp:35]   --->   Operation 117 'store' 'store_ln76' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 118 [1/1] (1.01ns)   --->   "%outputRow = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 4294967295" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 118 'add' 'outputRow' <Predicate = true> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 119 [1/1] (0.00ns)   --->   "%trunc_ln82 = trunc i32 %outputRow" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 119 'trunc' 'trunc_ln82' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 120 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %outputRow, i32 31" [../src/hysteresis.cpp:84->../src/canny_top.cpp:35]   --->   Operation 120 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_37 : Operation 121 [1/1] (0.42ns)   --->   "%br_ln84 = br i1 %tmp, void %if.end10.i, void %_Z10hysteresisILi2EEvPKhPhbPbh.6.exit" [../src/hysteresis.cpp:84->../src/canny_top.cpp:35]   --->   Operation 121 'br' 'br_ln84' <Predicate = true> <Delay = 0.42>
+ST_37 : Operation 122 [36/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 122 'urem' 'result' <Predicate = (!tmp)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 123 [1/1] (0.00ns)   --->   "%tmp_29 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %writeSlot, i32 2" [../src/hysteresis.cpp:18->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 123 'bitselect' 'tmp_29' <Predicate = (!tmp)> <Delay = 0.00>
+ST_37 : Operation 124 [1/1] (0.54ns)   --->   "%add_ln18 = add i2 %trunc_ln69, i2 3" [../src/hysteresis.cpp:18->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 124 'add' 'add_ln18' <Predicate = (!tmp)> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 125 [36/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 125 'srem' 'result_6' <Predicate = (!tmp)> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 126 [1/1] (0.17ns)   --->   "%select_ln18 = select i1 %tmp_29, i2 %add_ln18, i2 %trunc_ln69" [../src/hysteresis.cpp:18->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 126 'select' 'select_ln18' <Predicate = (!tmp)> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_37 : Operation 127 [1/1] (1.01ns)   --->   "%icmp_ln33 = icmp_slt  i32 %outputRow, i32 1" [../src/hysteresis.cpp:33->../src/hysteresis.cpp:122->../src/canny_top.cpp:35]   --->   Operation 127 'icmp' 'icmp_ln33' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_37 : Operation 128 [1/1] (1.01ns)   --->   "%icmp_ln38 = icmp_sgt  i32 %outputRow, i32 510" [../src/hysteresis.cpp:38->../src/hysteresis.cpp:122->../src/canny_top.cpp:35]   --->   Operation 128 'icmp' 'icmp_ln38' <Predicate = (!tmp)> <Delay = 1.01> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 
-State 38 <SV = 37> <Delay = 1.46>
-ST_38 : Operation 126 [34/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 126 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_38 : Operation 127 [34/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 127 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 38 <SV = 37> <Delay = 1.47>
+ST_38 : Operation 129 [35/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 129 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_38 : Operation 130 [35/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 130 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 39 <SV = 38> <Delay = 1.46>
-ST_39 : Operation 128 [33/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 128 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_39 : Operation 129 [33/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 129 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 39 <SV = 38> <Delay = 1.47>
+ST_39 : Operation 131 [34/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 131 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_39 : Operation 132 [34/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 132 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 40 <SV = 39> <Delay = 1.46>
-ST_40 : Operation 130 [32/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 130 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_40 : Operation 131 [32/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 131 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 40 <SV = 39> <Delay = 1.47>
+ST_40 : Operation 133 [33/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 133 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_40 : Operation 134 [33/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 134 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 41 <SV = 40> <Delay = 1.46>
-ST_41 : Operation 132 [31/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 132 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_41 : Operation 133 [31/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 133 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 41 <SV = 40> <Delay = 1.47>
+ST_41 : Operation 135 [32/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 135 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_41 : Operation 136 [32/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 136 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 42 <SV = 41> <Delay = 1.46>
-ST_42 : Operation 134 [30/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 134 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_42 : Operation 135 [30/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 135 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 42 <SV = 41> <Delay = 1.47>
+ST_42 : Operation 137 [31/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 137 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_42 : Operation 138 [31/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 138 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 43 <SV = 42> <Delay = 1.46>
-ST_43 : Operation 136 [29/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 136 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_43 : Operation 137 [29/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 137 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 43 <SV = 42> <Delay = 1.47>
+ST_43 : Operation 139 [30/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 139 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_43 : Operation 140 [30/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 140 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 44 <SV = 43> <Delay = 1.46>
-ST_44 : Operation 138 [28/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 138 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_44 : Operation 139 [28/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 139 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 44 <SV = 43> <Delay = 1.47>
+ST_44 : Operation 141 [29/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 141 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_44 : Operation 142 [29/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 142 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 45 <SV = 44> <Delay = 1.46>
-ST_45 : Operation 140 [27/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 140 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_45 : Operation 141 [27/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 141 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 45 <SV = 44> <Delay = 1.47>
+ST_45 : Operation 143 [28/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 143 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_45 : Operation 144 [28/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 144 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 46 <SV = 45> <Delay = 1.46>
-ST_46 : Operation 142 [26/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 142 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_46 : Operation 143 [26/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 143 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 46 <SV = 45> <Delay = 1.47>
+ST_46 : Operation 145 [27/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 145 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_46 : Operation 146 [27/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 146 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 47 <SV = 46> <Delay = 1.46>
-ST_47 : Operation 144 [25/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 144 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_47 : Operation 145 [25/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 145 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 47 <SV = 46> <Delay = 1.47>
+ST_47 : Operation 147 [26/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 147 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_47 : Operation 148 [26/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 148 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 48 <SV = 47> <Delay = 1.46>
-ST_48 : Operation 146 [24/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 146 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_48 : Operation 147 [24/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 147 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 48 <SV = 47> <Delay = 1.47>
+ST_48 : Operation 149 [25/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 149 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_48 : Operation 150 [25/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 150 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 49 <SV = 48> <Delay = 1.46>
-ST_49 : Operation 148 [23/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 148 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_49 : Operation 149 [23/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 149 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 49 <SV = 48> <Delay = 1.47>
+ST_49 : Operation 151 [24/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 151 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_49 : Operation 152 [24/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 152 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 50 <SV = 49> <Delay = 1.46>
-ST_50 : Operation 150 [22/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 150 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_50 : Operation 151 [22/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 151 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 50 <SV = 49> <Delay = 1.47>
+ST_50 : Operation 153 [23/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 153 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 154 [23/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 154 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 51 <SV = 50> <Delay = 1.46>
-ST_51 : Operation 152 [21/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 152 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_51 : Operation 153 [21/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 153 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 51 <SV = 50> <Delay = 1.47>
+ST_51 : Operation 155 [22/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 155 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 156 [22/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 156 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 52 <SV = 51> <Delay = 1.46>
-ST_52 : Operation 154 [20/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 154 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_52 : Operation 155 [20/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 155 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 52 <SV = 51> <Delay = 1.47>
+ST_52 : Operation 157 [21/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 157 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 158 [21/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 158 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 53 <SV = 52> <Delay = 1.46>
-ST_53 : Operation 156 [19/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 156 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_53 : Operation 157 [19/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 157 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 53 <SV = 52> <Delay = 1.47>
+ST_53 : Operation 159 [20/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 159 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 160 [20/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 160 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 54 <SV = 53> <Delay = 1.46>
-ST_54 : Operation 158 [18/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 158 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_54 : Operation 159 [18/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 159 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 54 <SV = 53> <Delay = 1.47>
+ST_54 : Operation 161 [19/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 161 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_54 : Operation 162 [19/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 162 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 55 <SV = 54> <Delay = 1.46>
-ST_55 : Operation 160 [17/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 160 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_55 : Operation 161 [17/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 161 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 55 <SV = 54> <Delay = 1.47>
+ST_55 : Operation 163 [18/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 163 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_55 : Operation 164 [18/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 164 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 56 <SV = 55> <Delay = 1.46>
-ST_56 : Operation 162 [16/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 162 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_56 : Operation 163 [16/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 163 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 56 <SV = 55> <Delay = 1.47>
+ST_56 : Operation 165 [17/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 165 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_56 : Operation 166 [17/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 166 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 57 <SV = 56> <Delay = 1.46>
-ST_57 : Operation 164 [15/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 164 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_57 : Operation 165 [15/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 165 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 57 <SV = 56> <Delay = 1.47>
+ST_57 : Operation 167 [16/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 167 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_57 : Operation 168 [16/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 168 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 58 <SV = 57> <Delay = 1.46>
-ST_58 : Operation 166 [14/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 166 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_58 : Operation 167 [14/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 167 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 58 <SV = 57> <Delay = 1.47>
+ST_58 : Operation 169 [15/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 169 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_58 : Operation 170 [15/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 170 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 59 <SV = 58> <Delay = 1.46>
-ST_59 : Operation 168 [13/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 168 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_59 : Operation 169 [13/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 169 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 59 <SV = 58> <Delay = 1.47>
+ST_59 : Operation 171 [14/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 171 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_59 : Operation 172 [14/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 172 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 60 <SV = 59> <Delay = 1.46>
-ST_60 : Operation 170 [12/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 170 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_60 : Operation 171 [12/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 171 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 60 <SV = 59> <Delay = 1.47>
+ST_60 : Operation 173 [13/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 173 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_60 : Operation 174 [13/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 174 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 61 <SV = 60> <Delay = 1.46>
-ST_61 : Operation 172 [11/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 172 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_61 : Operation 173 [11/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 173 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 61 <SV = 60> <Delay = 1.47>
+ST_61 : Operation 175 [12/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 175 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_61 : Operation 176 [12/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 176 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 62 <SV = 61> <Delay = 1.46>
-ST_62 : Operation 174 [10/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 174 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_62 : Operation 175 [10/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 175 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 62 <SV = 61> <Delay = 1.47>
+ST_62 : Operation 177 [11/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 177 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_62 : Operation 178 [11/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 178 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 63 <SV = 62> <Delay = 1.46>
-ST_63 : Operation 176 [9/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 176 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_63 : Operation 177 [9/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 177 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 63 <SV = 62> <Delay = 1.47>
+ST_63 : Operation 179 [10/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 179 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 180 [10/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 180 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 64 <SV = 63> <Delay = 1.46>
-ST_64 : Operation 178 [8/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 178 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_64 : Operation 179 [8/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 179 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 64 <SV = 63> <Delay = 1.47>
+ST_64 : Operation 181 [9/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 181 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_64 : Operation 182 [9/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 182 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 65 <SV = 64> <Delay = 1.46>
-ST_65 : Operation 180 [7/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 180 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_65 : Operation 181 [7/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 181 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 65 <SV = 64> <Delay = 1.47>
+ST_65 : Operation 183 [8/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 183 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 184 [8/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 184 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 66 <SV = 65> <Delay = 1.46>
-ST_66 : Operation 182 [6/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 182 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_66 : Operation 183 [6/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 183 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 66 <SV = 65> <Delay = 1.47>
+ST_66 : Operation 185 [7/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 185 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 186 [7/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 186 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 67 <SV = 66> <Delay = 1.46>
-ST_67 : Operation 184 [5/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 184 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_67 : Operation 185 [5/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 185 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 67 <SV = 66> <Delay = 1.47>
+ST_67 : Operation 187 [6/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 187 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 188 [6/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 188 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 68 <SV = 67> <Delay = 1.46>
-ST_68 : Operation 186 [4/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 186 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_68 : Operation 187 [4/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 187 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 68 <SV = 67> <Delay = 1.47>
+ST_68 : Operation 189 [5/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 189 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_68 : Operation 190 [5/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 190 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 69 <SV = 68> <Delay = 1.46>
-ST_69 : Operation 188 [3/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 188 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_69 : Operation 189 [3/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 189 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 69 <SV = 68> <Delay = 1.47>
+ST_69 : Operation 191 [4/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 191 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_69 : Operation 192 [4/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 192 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 70 <SV = 69> <Delay = 1.46>
-ST_70 : Operation 190 [2/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 190 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_70 : Operation 191 [2/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 191 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 70 <SV = 69> <Delay = 1.47>
+ST_70 : Operation 193 [3/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 193 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_70 : Operation 194 [3/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 194 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 71 <SV = 70> <Delay = 2.70>
-ST_71 : Operation 192 [1/35] (1.46ns)   --->   "%result = urem i31 %add_ln16, i31 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 192 'urem' 'result' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_71 : Operation 193 [1/1] (0.00ns)   --->   "%trunc_ln17 = trunc i2 %result" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:99->../src/canny_top.cpp:35]   --->   Operation 193 'trunc' 'trunc_ln17' <Predicate = true> <Delay = 0.00>
-ST_71 : Operation 194 [1/35] (1.46ns)   --->   "%result_4 = urem i31 %trunc_ln87, i31 3" [../src/hysteresis.cpp:87->../src/canny_top.cpp:35]   --->   Operation 194 'urem' 'result_4' <Predicate = true> <Delay = 1.46> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 34> <II = 2> <Delay = 1.46> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_71 : Operation 195 [1/1] (0.00ns)   --->   "%trunc_ln17_3 = trunc i2 %result_4" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 195 'trunc' 'trunc_ln17_3' <Predicate = true> <Delay = 0.00>
-ST_71 : Operation 196 [2/2] (1.23ns)   --->   "%call_ln17 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_116_2, i8 %out_hysteresis2, i2 %trunc_ln17_3, i2 %trunc_ln17, i2 %trunc_ln65, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 196 'call' 'call_ln17' <Predicate = true> <Delay = 1.23> <CoreType = "Generic">   --->   Generic Core
+State 71 <SV = 70> <Delay = 1.47>
+ST_71 : Operation 195 [2/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 195 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_71 : Operation 196 [2/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 196 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
-State 72 <SV = 71> <Delay = 1.01>
-ST_72 : Operation 197 [1/2] (0.00ns)   --->   "%call_ln17 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_116_2, i8 %out_hysteresis2, i2 %trunc_ln17_3, i2 %trunc_ln17, i2 %trunc_ln65, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 197 'call' 'call_ln17' <Predicate = (p_read_6 & !icmp_ln77 & !icmp_ln92)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_72 : Operation 198 [1/1] (0.42ns)   --->   "%br_ln0 = br void %cleanup55.i"   --->   Operation 198 'br' 'br_ln0' <Predicate = (p_read_6 & !icmp_ln77 & !icmp_ln92)> <Delay = 0.42>
-ST_72 : Operation 199 [1/1] (0.00ns)   --->   "%hysteresis2_valid_1 = phi i1 0, void %if.end.i, i1 0, void %if.end10.i, i1 1, void %if.end15.i"   --->   Operation 199 'phi' 'hysteresis2_valid_1' <Predicate = (p_read_6)> <Delay = 0.00>
-ST_72 : Operation 200 [1/1] (1.01ns)   --->   "%add_ln94 = add i32 %p_anonymous_namespace_rowsReceived_2_load, i32 1" [../src/hysteresis.cpp:94->../src/canny_top.cpp:35]   --->   Operation 200 'add' 'add_ln94' <Predicate = (p_read_6)> <Delay = 1.01> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_72 : Operation 201 [1/1] (0.00ns)   --->   "%store_ln94 = store i32 %add_ln94, i32 %p_anonymous_namespace_rowsReceived_2_s" [../src/hysteresis.cpp:94->../src/canny_top.cpp:35]   --->   Operation 201 'store' 'store_ln94' <Predicate = (p_read_6)> <Delay = 0.00>
-ST_72 : Operation 202 [1/1] (0.42ns)   --->   "%br_ln0 = br void %newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.exitStub"   --->   Operation 202 'br' 'br_ln0' <Predicate = (p_read_6)> <Delay = 0.42>
-ST_72 : Operation 203 [1/1] (0.00ns)   --->   "%valid_out_write_assign = phi i1 %hysteresis2_valid_1, void %cleanup55.i, i1 0, void %newFuncRoot"   --->   Operation 203 'phi' 'valid_out_write_assign' <Predicate = true> <Delay = 0.00>
-ST_72 : Operation 204 [1/1] (0.00ns)   --->   "%ret_ln0 = ret i1 %valid_out_write_assign"   --->   Operation 204 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+State 72 <SV = 71> <Delay = 3.44>
+ST_72 : Operation 197 [1/36] (1.47ns)   --->   "%result = urem i32 %outputRow, i32 3" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 197 'urem' 'result' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 2> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 198 [1/1] (0.00ns)   --->   "%trunc_ln17 = trunc i2 %result" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:93->../src/canny_top.cpp:35]   --->   Operation 198 'trunc' 'trunc_ln17' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 199 [1/36] (1.47ns)   --->   "%result_6 = srem i32 %add_ln76, i32 3" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 199 'srem' 'result_6' <Predicate = true> <Delay = 1.47> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 35> <II = 32> <Delay = 1.47> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 200 [1/1] (0.00ns)   --->   "%trunc_ln17_3 = trunc i32 %result_6" [../src/hysteresis.cpp:17->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 200 'trunc' 'trunc_ln17_3' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 201 [1/1] (0.00ns)   --->   "%tmp_30 = bitselect i1 @_ssdm_op_BitSelect.i1.i32.i32, i32 %result_6, i32 2" [../src/hysteresis.cpp:18->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 201 'bitselect' 'tmp_30' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 202 [1/1] (0.54ns)   --->   "%add_ln18_3 = add i2 %trunc_ln17_3, i2 3" [../src/hysteresis.cpp:18->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 202 'add' 'add_ln18_3' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_72 : Operation 203 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %trunc_ln17, i8 0" [../src/hysteresis.cpp:33->../src/hysteresis.cpp:122->../src/canny_top.cpp:35]   --->   Operation 203 'bitconcatenate' 'tmp_s' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 204 [1/1] (0.17ns)   --->   "%select_ln18_3 = select i1 %tmp_30, i2 %add_ln18_3, i2 %trunc_ln17_3" [../src/hysteresis.cpp:18->../src/hysteresis.cpp:105->../src/canny_top.cpp:35]   --->   Operation 204 'select' 'select_ln18_3' <Predicate = true> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_72 : Operation 205 [1/1] (0.00ns)   --->   "%tmp_39 = bitconcatenate i10 @_ssdm_op_BitConcatenate.i10.i2.i8, i2 %select_ln18_3, i8 0" [../src/hysteresis.cpp:38->../src/hysteresis.cpp:122->../src/canny_top.cpp:35]   --->   Operation 205 'bitconcatenate' 'tmp_39' <Predicate = true> <Delay = 0.00>
+ST_72 : Operation 206 [2/2] (1.23ns)   --->   "%call_ln82 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_110_2, i31 %trunc_ln82, i8 %out_hysteresis2, i2 %select_ln18, i2 %trunc_ln17, i2 %select_ln18_3, i10 %tmp_39, i1 %icmp_ln38, i1 %icmp_ln33, i10 %tmp_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 206 'call' 'call_ln82' <Predicate = true> <Delay = 1.23> <CoreType = "Generic">   --->   Generic Core
+
+State 73 <SV = 72> <Delay = 0.42>
+ST_73 : Operation 207 [1/2] (0.00ns)   --->   "%call_ln82 = call void @hysteresis<2>_Pipeline_VITIS_LOOP_110_2, i31 %trunc_ln82, i8 %out_hysteresis2, i2 %select_ln18, i2 %trunc_ln17, i2 %select_ln18_3, i10 %tmp_39, i1 %icmp_ln38, i1 %icmp_ln33, i10 %tmp_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1" [../src/hysteresis.cpp:82->../src/canny_top.cpp:35]   --->   Operation 207 'call' 'call_ln82' <Predicate = (p_read_6 & !tmp)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_73 : Operation 208 [1/1] (0.42ns)   --->   "%br_ln0 = br void %_Z10hysteresisILi2EEvPKhPhbPbh.6.exit"   --->   Operation 208 'br' 'br_ln0' <Predicate = (p_read_6 & !tmp)> <Delay = 0.42>
+ST_73 : Operation 209 [1/1] (0.00ns)   --->   "%valid_out_write_assign = phi i1 0, void %newFuncRoot, i1 0, void %if.end.i, i1 1, void %if.end10.i"   --->   Operation 209 'phi' 'valid_out_write_assign' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 210 [1/1] (0.00ns)   --->   "%ret_ln0 = ret i1 %valid_out_write_assign"   --->   Operation 210 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -607,33 +620,36 @@ Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1]:  wired=1; compound=1; hidden=0; 
 
 <LifeTime>
 <method=bitvector/>
-p_read_6                                  (read      ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111]
-br_ln60                                   (br        ) [ 0111111111111111111111111111111111111111111111111111111111111111111111111]
-p_anonymous_namespace_rowsReceived_2_load (load      ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111]
-trunc_ln66                                (trunc     ) [ 0011111111111111111111111111111111111100000000000000000000000000000000000]
-tmp                                       (partselect) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-icmp_ln77                                 (icmp      ) [ 0011111111111111111111111111111111111111111111111111111111111111111111111]
-writeSlot                                 (srem      ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-trunc_ln65                                (trunc     ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111]
-call_ln65                                 (call      ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln77                                   (br        ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111]
-outputRow                                 (add       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-trunc_ln87                                (trunc     ) [ 0000000000000000000000000000000000000011111111111111111111111111111111110]
-icmp_ln92                                 (icmp      ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111]
-br_ln92                                   (br        ) [ 0000000000000000000000000000000000000111111111111111111111111111111111111]
-add_ln16                                  (add       ) [ 0000000000000000000000000000000000000011111111111111111111111111111111110]
-result                                    (urem      ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-trunc_ln17                                (trunc     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000001]
-result_4                                  (urem      ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-trunc_ln17_3                              (trunc     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000001]
-call_ln17                                 (call      ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln0                                    (br        ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-hysteresis2_valid_1                       (phi       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000001]
-add_ln94                                  (add       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-store_ln94                                (store     ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-br_ln0                                    (br        ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
-valid_out_write_assign                    (phi       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000001]
-ret_ln0                                   (ret       ) [ 0000000000000000000000000000000000000000000000000000000000000000000000000]
+p_read_6                                  (read          ) [ 01111111111111111111111111111111111111111111111111111111111111111111111111]
+br_ln64                                   (br            ) [ 01111111111111111111111111111111111111111111111111111111111111111111111111]
+p_anonymous_namespace_rowsReceived_2_load (load          ) [ 00111111111111111111111111111111111111000000000000000000000000000000000000]
+writeSlot                                 (srem          ) [ 00000000000000000000000000000000000001000000000000000000000000000000000000]
+trunc_ln69                                (trunc         ) [ 00000000000000000000000000000000000001000000000000000000000000000000000000]
+call_ln69                                 (call          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln76                                  (add           ) [ 00000000000000000000000000000000000000111111111111111111111111111111111110]
+store_ln76                                (store         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+outputRow                                 (add           ) [ 00000000000000000000000000000000000000111111111111111111111111111111111110]
+trunc_ln82                                (trunc         ) [ 00000000000000000000000000000000000000111111111111111111111111111111111111]
+tmp                                       (bitselect     ) [ 00000000000000000000000000000000000001111111111111111111111111111111111111]
+br_ln84                                   (br            ) [ 01000000000000000000000000000000000001111111111111111111111111111111111111]
+tmp_29                                    (bitselect     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln18                                  (add           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+select_ln18                               (select        ) [ 00000000000000000000000000000000000000111111111111111111111111111111111111]
+icmp_ln33                                 (icmp          ) [ 00000000000000000000000000000000000000111111111111111111111111111111111111]
+icmp_ln38                                 (icmp          ) [ 00000000000000000000000000000000000000111111111111111111111111111111111111]
+result                                    (urem          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln17                                (trunc         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+result_6                                  (srem          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+trunc_ln17_3                              (trunc         ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_30                                    (bitselect     ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+add_ln18_3                                (add           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+tmp_s                                     (bitconcatenate) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+select_ln18_3                             (select        ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+tmp_39                                    (bitconcatenate) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+call_ln82                                 (call          ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+br_ln0                                    (br            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
+valid_out_write_assign                    (phi           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000001]
+ret_ln0                                   (ret           ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000]
 </LifeTime>
 
 <model>
@@ -720,7 +736,7 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 <pin id="17" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_PartSelect.i31.i32.i32.i32"/></StgValue>
+<StgValue><ssdm name="hysteresis<2>_Pipeline_VITIS_LOOP_72_1"/></StgValue>
 </bind>
 </comp>
 
@@ -747,7 +763,7 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 <pin id="23" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_BitSelect.i1.i32.i32"/></StgValue>
 </bind>
 </comp>
 
@@ -756,7 +772,7 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 <pin id="25" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="hysteresis<2>_Pipeline_VITIS_LOOP_68_1"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
@@ -792,7 +808,7 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 <pin id="33" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i10.i2.i8"/></StgValue>
 </bind>
 </comp>
 
@@ -801,33 +817,42 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 <pin id="35" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="hysteresis<2>_Pipeline_VITIS_LOOP_116_2"/></StgValue>
+<StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
 <comp id="36" class="1001" name="const_36">
 <pin_list>
-<pin id="37" dir="1" index="0" bw="1" slack="35"/>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name=""/></StgValue>
+<StgValue><ssdm name="hysteresis<2>_Pipeline_VITIS_LOOP_110_2"/></StgValue>
 </bind>
 </comp>
 
 <comp id="38" class="1001" name="const_38">
 <pin_list>
-<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+<pin id="39" dir="1" index="0" bw="1" slack="36"/>
 </pin_list>
 <bind>
 <StgValue><ssdm name=""/></StgValue>
 </bind>
 </comp>
 
-<comp id="40" class="1004" name="p_read_6_read_fu_40">
+<comp id="40" class="1001" name="const_40">
 <pin_list>
-<pin id="41" dir="0" index="0" bw="1" slack="0"/>
-<pin id="42" dir="0" index="1" bw="1" slack="0"/>
-<pin id="43" dir="1" index="2" bw="1" slack="71"/>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1004" name="p_read_6_read_fu_42">
+<pin_list>
+<pin id="43" dir="0" index="0" bw="1" slack="0"/>
+<pin id="44" dir="0" index="1" bw="1" slack="0"/>
+<pin id="45" dir="1" index="2" bw="1" slack="72"/>
 </pin_list>
 <bind>
 <opcode="read(1150) " fcode="read"/>
@@ -835,93 +860,74 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 </bind>
 </comp>
 
-<comp id="46" class="1005" name="hysteresis2_valid_1_reg_46">
+<comp id="48" class="1005" name="valid_out_write_assign_reg_48">
 <pin_list>
-<pin id="47" dir="0" index="0" bw="1" slack="35"/>
-<pin id="48" dir="1" index="1" bw="1" slack="35"/>
-</pin_list>
-<bind>
-<opset="hysteresis2_valid_1 (phireg) "/>
-</bind>
-</comp>
-
-<comp id="50" class="1004" name="hysteresis2_valid_1_phi_fu_50">
-<pin_list>
-<pin id="51" dir="0" index="0" bw="1" slack="35"/>
-<pin id="52" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="53" dir="0" index="2" bw="1" slack="35"/>
-<pin id="54" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="55" dir="0" index="4" bw="1" slack="0"/>
-<pin id="56" dir="0" index="5" bw="0" slack="2147483647"/>
-<pin id="57" dir="1" index="6" bw="1" slack="0"/>
-</pin_list>
-<bind>
-<opcode="phi(47) " fcode="phi"/>
-<opset="hysteresis2_valid_1/72 "/>
-</bind>
-</comp>
-
-<comp id="61" class="1005" name="valid_out_write_assign_reg_61">
-<pin_list>
-<pin id="62" dir="0" index="0" bw="1" slack="71"/>
-<pin id="63" dir="1" index="1" bw="1" slack="71"/>
+<pin id="49" dir="0" index="0" bw="1" slack="36"/>
+<pin id="50" dir="1" index="1" bw="1" slack="36"/>
 </pin_list>
 <bind>
 <opset="valid_out_write_assign (phireg) "/>
 </bind>
 </comp>
 
-<comp id="65" class="1004" name="valid_out_write_assign_phi_fu_65">
+<comp id="52" class="1004" name="valid_out_write_assign_phi_fu_52">
 <pin_list>
-<pin id="66" dir="0" index="0" bw="1" slack="0"/>
-<pin id="67" dir="0" index="1" bw="0" slack="2147483647"/>
-<pin id="68" dir="0" index="2" bw="1" slack="71"/>
-<pin id="69" dir="0" index="3" bw="0" slack="2147483647"/>
-<pin id="70" dir="1" index="4" bw="1" slack="2147483647"/>
+<pin id="53" dir="0" index="0" bw="1" slack="72"/>
+<pin id="54" dir="0" index="1" bw="0" slack="2147483647"/>
+<pin id="55" dir="0" index="2" bw="1" slack="36"/>
+<pin id="56" dir="0" index="3" bw="0" slack="2147483647"/>
+<pin id="57" dir="0" index="4" bw="1" slack="0"/>
+<pin id="58" dir="0" index="5" bw="0" slack="2147483647"/>
+<pin id="59" dir="1" index="6" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="phi(47) " fcode="phi"/>
-<opset="valid_out_write_assign/72 "/>
+<opset="valid_out_write_assign/73 "/>
 </bind>
 </comp>
 
-<comp id="73" class="1004" name="grp_hysteresis_2_Pipeline_VITIS_LOOP_68_1_fu_73">
+<comp id="63" class="1004" name="grp_hysteresis_2_Pipeline_VITIS_LOOP_72_1_fu_63">
 <pin_list>
-<pin id="74" dir="0" index="0" bw="0" slack="0"/>
-<pin id="75" dir="0" index="1" bw="8" slack="0"/>
-<pin id="76" dir="0" index="2" bw="2" slack="0"/>
-<pin id="77" dir="0" index="3" bw="8" slack="0"/>
-<pin id="78" dir="0" index="4" bw="8" slack="0"/>
-<pin id="79" dir="0" index="5" bw="8" slack="0"/>
-<pin id="80" dir="1" index="6" bw="0" slack="2147483647"/>
+<pin id="64" dir="0" index="0" bw="0" slack="0"/>
+<pin id="65" dir="0" index="1" bw="8" slack="0"/>
+<pin id="66" dir="0" index="2" bw="2" slack="0"/>
+<pin id="67" dir="0" index="3" bw="8" slack="0"/>
+<pin id="68" dir="0" index="4" bw="8" slack="0"/>
+<pin id="69" dir="0" index="5" bw="8" slack="0"/>
+<pin id="70" dir="1" index="6" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln65/36 "/>
+<opset="call_ln69/36 "/>
 </bind>
 </comp>
 
-<comp id="86" class="1004" name="grp_hysteresis_2_Pipeline_VITIS_LOOP_116_2_fu_86">
+<comp id="76" class="1004" name="grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76">
 <pin_list>
-<pin id="87" dir="0" index="0" bw="0" slack="0"/>
-<pin id="88" dir="0" index="1" bw="8" slack="0"/>
-<pin id="89" dir="0" index="2" bw="2" slack="0"/>
-<pin id="90" dir="0" index="3" bw="2" slack="0"/>
-<pin id="91" dir="0" index="4" bw="2" slack="35"/>
-<pin id="92" dir="0" index="5" bw="8" slack="0"/>
-<pin id="93" dir="0" index="6" bw="8" slack="0"/>
-<pin id="94" dir="1" index="7" bw="0" slack="2147483647"/>
+<pin id="77" dir="0" index="0" bw="0" slack="0"/>
+<pin id="78" dir="0" index="1" bw="31" slack="35"/>
+<pin id="79" dir="0" index="2" bw="8" slack="0"/>
+<pin id="80" dir="0" index="3" bw="2" slack="35"/>
+<pin id="81" dir="0" index="4" bw="2" slack="0"/>
+<pin id="82" dir="0" index="5" bw="2" slack="0"/>
+<pin id="83" dir="0" index="6" bw="10" slack="0"/>
+<pin id="84" dir="0" index="7" bw="1" slack="35"/>
+<pin id="85" dir="0" index="8" bw="1" slack="35"/>
+<pin id="86" dir="0" index="9" bw="10" slack="0"/>
+<pin id="87" dir="0" index="10" bw="8" slack="0"/>
+<pin id="88" dir="0" index="11" bw="8" slack="0"/>
+<pin id="89" dir="1" index="12" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="call(48) " fcode="call"/>
-<opset="call_ln17/71 "/>
+<opset="call_ln82/72 "/>
 </bind>
 </comp>
 
-<comp id="99" class="1004" name="p_anonymous_namespace_rowsReceived_2_load_load_fu_99">
+<comp id="94" class="1004" name="p_anonymous_namespace_rowsReceived_2_load_load_fu_94">
 <pin_list>
-<pin id="100" dir="0" index="0" bw="32" slack="0"/>
-<pin id="101" dir="1" index="1" bw="32" slack="0"/>
+<pin id="95" dir="0" index="0" bw="32" slack="0"/>
+<pin id="96" dir="1" index="1" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -929,22 +935,11 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 </bind>
 </comp>
 
-<comp id="103" class="1004" name="trunc_ln66_fu_103">
+<comp id="98" class="1004" name="grp_fu_98">
 <pin_list>
-<pin id="104" dir="0" index="0" bw="32" slack="0"/>
-<pin id="105" dir="1" index="1" bw="31" slack="36"/>
-</pin_list>
-<bind>
-<opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln66/1 "/>
-</bind>
-</comp>
-
-<comp id="107" class="1004" name="grp_fu_107">
-<pin_list>
-<pin id="108" dir="0" index="0" bw="32" slack="0"/>
-<pin id="109" dir="0" index="1" bw="3" slack="0"/>
-<pin id="110" dir="1" index="2" bw="2" slack="0"/>
+<pin id="99" dir="0" index="0" bw="32" slack="0"/>
+<pin id="100" dir="0" index="1" bw="3" slack="0"/>
+<pin id="101" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="srem(18) " fcode="srem"/>
@@ -952,48 +947,46 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 </bind>
 </comp>
 
-<comp id="113" class="1004" name="tmp_fu_113">
+<comp id="104" class="1004" name="trunc_ln69_fu_104">
 <pin_list>
-<pin id="114" dir="0" index="0" bw="31" slack="0"/>
-<pin id="115" dir="0" index="1" bw="32" slack="0"/>
-<pin id="116" dir="0" index="2" bw="1" slack="0"/>
-<pin id="117" dir="0" index="3" bw="6" slack="0"/>
-<pin id="118" dir="1" index="4" bw="31" slack="0"/>
-</pin_list>
-<bind>
-<opcode="partselect(1002) " fcode="partselect"/>
-<opset="tmp/1 "/>
-</bind>
-</comp>
-
-<comp id="123" class="1004" name="icmp_ln77_fu_123">
-<pin_list>
-<pin id="124" dir="0" index="0" bw="31" slack="0"/>
-<pin id="125" dir="0" index="1" bw="31" slack="0"/>
-<pin id="126" dir="1" index="2" bw="1" slack="36"/>
-</pin_list>
-<bind>
-<opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln77/1 "/>
-</bind>
-</comp>
-
-<comp id="129" class="1004" name="trunc_ln65_fu_129">
-<pin_list>
-<pin id="130" dir="0" index="0" bw="2" slack="0"/>
-<pin id="131" dir="1" index="1" bw="2" slack="0"/>
+<pin id="105" dir="0" index="0" bw="3" slack="0"/>
+<pin id="106" dir="1" index="1" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln65/36 "/>
+<opset="trunc_ln69/36 "/>
 </bind>
 </comp>
 
-<comp id="134" class="1004" name="outputRow_fu_134">
+<comp id="109" class="1004" name="add_ln76_fu_109">
 <pin_list>
-<pin id="135" dir="0" index="0" bw="32" slack="2147483647"/>
-<pin id="136" dir="0" index="1" bw="1" slack="0"/>
-<pin id="137" dir="1" index="2" bw="32" slack="0"/>
+<pin id="110" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="111" dir="0" index="1" bw="1" slack="0"/>
+<pin id="112" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln76/37 "/>
+</bind>
+</comp>
+
+<comp id="114" class="1004" name="store_ln76_store_fu_114">
+<pin_list>
+<pin id="115" dir="0" index="0" bw="32" slack="0"/>
+<pin id="116" dir="0" index="1" bw="32" slack="0"/>
+<pin id="117" dir="1" index="2" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="store(28) " fcode="store"/>
+<opset="store_ln76/37 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1004" name="outputRow_fu_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="32" slack="2147483647"/>
+<pin id="122" dir="0" index="1" bw="1" slack="0"/>
+<pin id="123" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -1001,46 +994,35 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 </bind>
 </comp>
 
-<comp id="139" class="1004" name="trunc_ln87_fu_139">
+<comp id="125" class="1004" name="trunc_ln82_fu_125">
 <pin_list>
-<pin id="140" dir="0" index="0" bw="32" slack="0"/>
-<pin id="141" dir="1" index="1" bw="31" slack="0"/>
+<pin id="126" dir="0" index="0" bw="32" slack="0"/>
+<pin id="127" dir="1" index="1" bw="31" slack="35"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln87/37 "/>
+<opset="trunc_ln82/37 "/>
 </bind>
 </comp>
 
-<comp id="143" class="1004" name="icmp_ln92_fu_143">
+<comp id="129" class="1004" name="tmp_fu_129">
 <pin_list>
-<pin id="144" dir="0" index="0" bw="32" slack="0"/>
-<pin id="145" dir="0" index="1" bw="32" slack="0"/>
-<pin id="146" dir="1" index="2" bw="1" slack="35"/>
+<pin id="130" dir="0" index="0" bw="1" slack="0"/>
+<pin id="131" dir="0" index="1" bw="32" slack="0"/>
+<pin id="132" dir="0" index="2" bw="6" slack="0"/>
+<pin id="133" dir="1" index="3" bw="1" slack="36"/>
 </pin_list>
 <bind>
-<opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln92/37 "/>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp/37 "/>
 </bind>
 </comp>
 
-<comp id="149" class="1004" name="add_ln16_fu_149">
+<comp id="137" class="1004" name="grp_fu_137">
 <pin_list>
-<pin id="150" dir="0" index="0" bw="31" slack="36"/>
-<pin id="151" dir="0" index="1" bw="2" slack="0"/>
-<pin id="152" dir="1" index="2" bw="31" slack="0"/>
-</pin_list>
-<bind>
-<opcode="add(8) " fcode="add"/>
-<opset="add_ln16/37 "/>
-</bind>
-</comp>
-
-<comp id="154" class="1004" name="grp_fu_154">
-<pin_list>
-<pin id="155" dir="0" index="0" bw="31" slack="0"/>
-<pin id="156" dir="0" index="1" bw="3" slack="0"/>
-<pin id="157" dir="1" index="2" bw="2" slack="0"/>
+<pin id="138" dir="0" index="0" bw="32" slack="0"/>
+<pin id="139" dir="0" index="1" bw="3" slack="0"/>
+<pin id="140" dir="1" index="2" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="urem(17) " fcode="urem"/>
@@ -1048,280 +1030,486 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 </bind>
 </comp>
 
-<comp id="160" class="1004" name="grp_fu_160">
+<comp id="143" class="1004" name="tmp_29_fu_143">
 <pin_list>
-<pin id="161" dir="0" index="0" bw="31" slack="0"/>
-<pin id="162" dir="0" index="1" bw="3" slack="0"/>
-<pin id="163" dir="1" index="2" bw="2" slack="0"/>
+<pin id="144" dir="0" index="0" bw="1" slack="0"/>
+<pin id="145" dir="0" index="1" bw="3" slack="1"/>
+<pin id="146" dir="0" index="2" bw="3" slack="0"/>
+<pin id="147" dir="1" index="3" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<opcode="urem(17) " fcode="urem"/>
-<opset="result_4/37 "/>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp_29/37 "/>
 </bind>
 </comp>
 
-<comp id="166" class="1004" name="trunc_ln17_fu_166">
+<comp id="150" class="1004" name="add_ln18_fu_150">
 <pin_list>
-<pin id="167" dir="0" index="0" bw="2" slack="0"/>
-<pin id="168" dir="1" index="1" bw="2" slack="0"/>
-</pin_list>
-<bind>
-<opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln17/71 "/>
-</bind>
-</comp>
-
-<comp id="171" class="1004" name="trunc_ln17_3_fu_171">
-<pin_list>
-<pin id="172" dir="0" index="0" bw="2" slack="0"/>
-<pin id="173" dir="1" index="1" bw="2" slack="0"/>
-</pin_list>
-<bind>
-<opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln17_3/71 "/>
-</bind>
-</comp>
-
-<comp id="176" class="1004" name="add_ln94_fu_176">
-<pin_list>
-<pin id="177" dir="0" index="0" bw="32" slack="2147483647"/>
-<pin id="178" dir="0" index="1" bw="1" slack="0"/>
-<pin id="179" dir="1" index="2" bw="32" slack="0"/>
+<pin id="151" dir="0" index="0" bw="2" slack="1"/>
+<pin id="152" dir="0" index="1" bw="1" slack="0"/>
+<pin id="153" dir="1" index="2" bw="2" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
-<opset="add_ln94/72 "/>
+<opset="add_ln18/37 "/>
 </bind>
 </comp>
 
-<comp id="181" class="1004" name="store_ln94_store_fu_181">
+<comp id="155" class="1004" name="grp_fu_155">
 <pin_list>
-<pin id="182" dir="0" index="0" bw="32" slack="0"/>
-<pin id="183" dir="0" index="1" bw="32" slack="0"/>
-<pin id="184" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="156" dir="0" index="0" bw="32" slack="0"/>
+<pin id="157" dir="0" index="1" bw="3" slack="0"/>
+<pin id="158" dir="1" index="2" bw="32" slack="0"/>
 </pin_list>
 <bind>
-<opcode="store(28) " fcode="store"/>
-<opset="store_ln94/72 "/>
+<opcode="srem(18) " fcode="srem"/>
+<opset="result_6/37 "/>
 </bind>
 </comp>
 
-<comp id="187" class="1005" name="p_read_6_reg_187">
+<comp id="161" class="1004" name="select_ln18_fu_161">
 <pin_list>
-<pin id="188" dir="0" index="0" bw="1" slack="71"/>
-<pin id="189" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="162" dir="0" index="0" bw="1" slack="0"/>
+<pin id="163" dir="0" index="1" bw="2" slack="0"/>
+<pin id="164" dir="0" index="2" bw="2" slack="1"/>
+<pin id="165" dir="1" index="3" bw="2" slack="35"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln18/37 "/>
+</bind>
+</comp>
+
+<comp id="168" class="1004" name="icmp_ln33_fu_168">
+<pin_list>
+<pin id="169" dir="0" index="0" bw="32" slack="0"/>
+<pin id="170" dir="0" index="1" bw="32" slack="0"/>
+<pin id="171" dir="1" index="2" bw="1" slack="35"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln33/37 "/>
+</bind>
+</comp>
+
+<comp id="174" class="1004" name="icmp_ln38_fu_174">
+<pin_list>
+<pin id="175" dir="0" index="0" bw="32" slack="0"/>
+<pin id="176" dir="0" index="1" bw="32" slack="0"/>
+<pin id="177" dir="1" index="2" bw="1" slack="35"/>
+</pin_list>
+<bind>
+<opcode="icmp(45) " fcode="icmp"/>
+<opset="icmp_ln38/37 "/>
+</bind>
+</comp>
+
+<comp id="180" class="1004" name="trunc_ln17_fu_180">
+<pin_list>
+<pin id="181" dir="0" index="0" bw="2" slack="0"/>
+<pin id="182" dir="1" index="1" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln17/72 "/>
+</bind>
+</comp>
+
+<comp id="185" class="1004" name="trunc_ln17_3_fu_185">
+<pin_list>
+<pin id="186" dir="0" index="0" bw="3" slack="0"/>
+<pin id="187" dir="1" index="1" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="trunc(33) " fcode="trunc"/>
+<opset="trunc_ln17_3/72 "/>
+</bind>
+</comp>
+
+<comp id="189" class="1004" name="tmp_30_fu_189">
+<pin_list>
+<pin id="190" dir="0" index="0" bw="1" slack="0"/>
+<pin id="191" dir="0" index="1" bw="3" slack="0"/>
+<pin id="192" dir="0" index="2" bw="3" slack="0"/>
+<pin id="193" dir="1" index="3" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitselect(1000) " fcode="bitselect"/>
+<opset="tmp_30/72 "/>
+</bind>
+</comp>
+
+<comp id="197" class="1004" name="add_ln18_3_fu_197">
+<pin_list>
+<pin id="198" dir="0" index="0" bw="2" slack="0"/>
+<pin id="199" dir="0" index="1" bw="1" slack="0"/>
+<pin id="200" dir="1" index="2" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="add(8) " fcode="add"/>
+<opset="add_ln18_3/72 "/>
+</bind>
+</comp>
+
+<comp id="203" class="1004" name="tmp_s_fu_203">
+<pin_list>
+<pin id="204" dir="0" index="0" bw="10" slack="0"/>
+<pin id="205" dir="0" index="1" bw="2" slack="0"/>
+<pin id="206" dir="0" index="2" bw="1" slack="0"/>
+<pin id="207" dir="1" index="3" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="tmp_s/72 "/>
+</bind>
+</comp>
+
+<comp id="212" class="1004" name="select_ln18_3_fu_212">
+<pin_list>
+<pin id="213" dir="0" index="0" bw="1" slack="0"/>
+<pin id="214" dir="0" index="1" bw="2" slack="0"/>
+<pin id="215" dir="0" index="2" bw="2" slack="0"/>
+<pin id="216" dir="1" index="3" bw="2" slack="0"/>
+</pin_list>
+<bind>
+<opcode="select(49) " fcode="select"/>
+<opset="select_ln18_3/72 "/>
+</bind>
+</comp>
+
+<comp id="221" class="1004" name="tmp_39_fu_221">
+<pin_list>
+<pin id="222" dir="0" index="0" bw="10" slack="0"/>
+<pin id="223" dir="0" index="1" bw="2" slack="0"/>
+<pin id="224" dir="0" index="2" bw="1" slack="0"/>
+<pin id="225" dir="1" index="3" bw="10" slack="0"/>
+</pin_list>
+<bind>
+<opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
+<opset="tmp_39/72 "/>
+</bind>
+</comp>
+
+<comp id="230" class="1005" name="p_read_6_reg_230">
+<pin_list>
+<pin id="231" dir="0" index="0" bw="1" slack="72"/>
+<pin id="232" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
 <opset="p_read_6 "/>
 </bind>
 </comp>
 
-<comp id="194" class="1005" name="trunc_ln66_reg_194">
+<comp id="237" class="1005" name="writeSlot_reg_237">
 <pin_list>
-<pin id="195" dir="0" index="0" bw="31" slack="36"/>
-<pin id="196" dir="1" index="1" bw="31" slack="36"/>
+<pin id="238" dir="0" index="0" bw="32" slack="1"/>
+<pin id="239" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="trunc_ln66 "/>
+<opset="writeSlot "/>
 </bind>
 </comp>
 
-<comp id="199" class="1005" name="icmp_ln77_reg_199">
+<comp id="242" class="1005" name="trunc_ln69_reg_242">
 <pin_list>
-<pin id="200" dir="0" index="0" bw="1" slack="36"/>
-<pin id="201" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="243" dir="0" index="0" bw="2" slack="1"/>
+<pin id="244" dir="1" index="1" bw="2" slack="1"/>
 </pin_list>
 <bind>
-<opset="icmp_ln77 "/>
+<opset="trunc_ln69 "/>
 </bind>
 </comp>
 
-<comp id="203" class="1005" name="trunc_ln65_reg_203">
+<comp id="249" class="1005" name="add_ln76_reg_249">
 <pin_list>
-<pin id="204" dir="0" index="0" bw="2" slack="1"/>
-<pin id="205" dir="1" index="1" bw="2" slack="1"/>
+<pin id="250" dir="0" index="0" bw="32" slack="1"/>
+<pin id="251" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="trunc_ln65 "/>
+<opset="add_ln76 "/>
 </bind>
 </comp>
 
-<comp id="209" class="1005" name="trunc_ln87_reg_209">
+<comp id="254" class="1005" name="outputRow_reg_254">
 <pin_list>
-<pin id="210" dir="0" index="0" bw="31" slack="1"/>
-<pin id="211" dir="1" index="1" bw="31" slack="1"/>
+<pin id="255" dir="0" index="0" bw="32" slack="1"/>
+<pin id="256" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="trunc_ln87 "/>
+<opset="outputRow "/>
 </bind>
 </comp>
 
-<comp id="214" class="1005" name="icmp_ln92_reg_214">
+<comp id="259" class="1005" name="trunc_ln82_reg_259">
 <pin_list>
-<pin id="215" dir="0" index="0" bw="1" slack="35"/>
-<pin id="216" dir="1" index="1" bw="1" slack="2147483647"/>
+<pin id="260" dir="0" index="0" bw="31" slack="35"/>
+<pin id="261" dir="1" index="1" bw="31" slack="35"/>
 </pin_list>
 <bind>
-<opset="icmp_ln92 "/>
+<opset="trunc_ln82 "/>
 </bind>
 </comp>
 
-<comp id="218" class="1005" name="add_ln16_reg_218">
+<comp id="264" class="1005" name="tmp_reg_264">
 <pin_list>
-<pin id="219" dir="0" index="0" bw="31" slack="1"/>
-<pin id="220" dir="1" index="1" bw="31" slack="1"/>
+<pin id="265" dir="0" index="0" bw="1" slack="36"/>
+<pin id="266" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="add_ln16 "/>
+<opset="tmp "/>
 </bind>
 </comp>
 
-<comp id="223" class="1005" name="trunc_ln17_reg_223">
+<comp id="268" class="1005" name="select_ln18_reg_268">
 <pin_list>
-<pin id="224" dir="0" index="0" bw="2" slack="1"/>
-<pin id="225" dir="1" index="1" bw="2" slack="1"/>
+<pin id="269" dir="0" index="0" bw="2" slack="35"/>
+<pin id="270" dir="1" index="1" bw="2" slack="35"/>
+</pin_list>
+<bind>
+<opset="select_ln18 "/>
+</bind>
+</comp>
+
+<comp id="273" class="1005" name="icmp_ln33_reg_273">
+<pin_list>
+<pin id="274" dir="0" index="0" bw="1" slack="35"/>
+<pin id="275" dir="1" index="1" bw="1" slack="35"/>
+</pin_list>
+<bind>
+<opset="icmp_ln33 "/>
+</bind>
+</comp>
+
+<comp id="278" class="1005" name="icmp_ln38_reg_278">
+<pin_list>
+<pin id="279" dir="0" index="0" bw="1" slack="35"/>
+<pin id="280" dir="1" index="1" bw="1" slack="35"/>
+</pin_list>
+<bind>
+<opset="icmp_ln38 "/>
+</bind>
+</comp>
+
+<comp id="283" class="1005" name="trunc_ln17_reg_283">
+<pin_list>
+<pin id="284" dir="0" index="0" bw="2" slack="1"/>
+<pin id="285" dir="1" index="1" bw="2" slack="1"/>
 </pin_list>
 <bind>
 <opset="trunc_ln17 "/>
 </bind>
 </comp>
 
-<comp id="228" class="1005" name="trunc_ln17_3_reg_228">
+<comp id="288" class="1005" name="tmp_s_reg_288">
 <pin_list>
-<pin id="229" dir="0" index="0" bw="2" slack="1"/>
-<pin id="230" dir="1" index="1" bw="2" slack="1"/>
+<pin id="289" dir="0" index="0" bw="10" slack="1"/>
+<pin id="290" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
-<opset="trunc_ln17_3 "/>
+<opset="tmp_s "/>
+</bind>
+</comp>
+
+<comp id="293" class="1005" name="select_ln18_3_reg_293">
+<pin_list>
+<pin id="294" dir="0" index="0" bw="2" slack="1"/>
+<pin id="295" dir="1" index="1" bw="2" slack="1"/>
+</pin_list>
+<bind>
+<opset="select_ln18_3 "/>
+</bind>
+</comp>
+
+<comp id="298" class="1005" name="tmp_39_reg_298">
+<pin_list>
+<pin id="299" dir="0" index="0" bw="10" slack="1"/>
+<pin id="300" dir="1" index="1" bw="10" slack="1"/>
+</pin_list>
+<bind>
+<opset="tmp_39 "/>
 </bind>
 </comp>
 
 </comp_list>
 
 <net_list>
-<net id="44"><net_src comp="12" pin="0"/><net_sink comp="40" pin=0"/></net>
+<net id="46"><net_src comp="12" pin="0"/><net_sink comp="42" pin=0"/></net>
 
-<net id="45"><net_src comp="0" pin="0"/><net_sink comp="40" pin=1"/></net>
+<net id="47"><net_src comp="0" pin="0"/><net_sink comp="42" pin=1"/></net>
 
-<net id="49"><net_src comp="36" pin="0"/><net_sink comp="46" pin=0"/></net>
+<net id="51"><net_src comp="38" pin="0"/><net_sink comp="48" pin=0"/></net>
 
-<net id="58"><net_src comp="46" pin="1"/><net_sink comp="50" pin=0"/></net>
+<net id="60"><net_src comp="48" pin="1"/><net_sink comp="52" pin=0"/></net>
 
-<net id="59"><net_src comp="46" pin="1"/><net_sink comp="50" pin=2"/></net>
+<net id="61"><net_src comp="48" pin="1"/><net_sink comp="52" pin=2"/></net>
 
-<net id="60"><net_src comp="38" pin="0"/><net_sink comp="50" pin=4"/></net>
+<net id="62"><net_src comp="40" pin="0"/><net_sink comp="52" pin=4"/></net>
 
-<net id="64"><net_src comp="36" pin="0"/><net_sink comp="61" pin=0"/></net>
+<net id="71"><net_src comp="16" pin="0"/><net_sink comp="63" pin=0"/></net>
 
-<net id="71"><net_src comp="50" pin="6"/><net_sink comp="65" pin=0"/></net>
+<net id="72"><net_src comp="4" pin="0"/><net_sink comp="63" pin=1"/></net>
 
-<net id="72"><net_src comp="61" pin="1"/><net_sink comp="65" pin=2"/></net>
+<net id="73"><net_src comp="2" pin="0"/><net_sink comp="63" pin=3"/></net>
 
-<net id="81"><net_src comp="24" pin="0"/><net_sink comp="73" pin=0"/></net>
+<net id="74"><net_src comp="8" pin="0"/><net_sink comp="63" pin=4"/></net>
 
-<net id="82"><net_src comp="4" pin="0"/><net_sink comp="73" pin=1"/></net>
+<net id="75"><net_src comp="10" pin="0"/><net_sink comp="63" pin=5"/></net>
 
-<net id="83"><net_src comp="2" pin="0"/><net_sink comp="73" pin=3"/></net>
+<net id="90"><net_src comp="36" pin="0"/><net_sink comp="76" pin=0"/></net>
 
-<net id="84"><net_src comp="8" pin="0"/><net_sink comp="73" pin=4"/></net>
+<net id="91"><net_src comp="4" pin="0"/><net_sink comp="76" pin=2"/></net>
 
-<net id="85"><net_src comp="10" pin="0"/><net_sink comp="73" pin=5"/></net>
+<net id="92"><net_src comp="8" pin="0"/><net_sink comp="76" pin=10"/></net>
 
-<net id="95"><net_src comp="34" pin="0"/><net_sink comp="86" pin=0"/></net>
+<net id="93"><net_src comp="10" pin="0"/><net_sink comp="76" pin=11"/></net>
 
-<net id="96"><net_src comp="4" pin="0"/><net_sink comp="86" pin=1"/></net>
+<net id="97"><net_src comp="6" pin="0"/><net_sink comp="94" pin=0"/></net>
 
-<net id="97"><net_src comp="8" pin="0"/><net_sink comp="86" pin=5"/></net>
+<net id="102"><net_src comp="94" pin="1"/><net_sink comp="98" pin=0"/></net>
 
-<net id="98"><net_src comp="10" pin="0"/><net_sink comp="86" pin=6"/></net>
+<net id="103"><net_src comp="14" pin="0"/><net_sink comp="98" pin=1"/></net>
 
-<net id="102"><net_src comp="6" pin="0"/><net_sink comp="99" pin=0"/></net>
+<net id="107"><net_src comp="98" pin="2"/><net_sink comp="104" pin=0"/></net>
 
-<net id="106"><net_src comp="99" pin="1"/><net_sink comp="103" pin=0"/></net>
+<net id="108"><net_src comp="104" pin="1"/><net_sink comp="63" pin=2"/></net>
 
-<net id="111"><net_src comp="99" pin="1"/><net_sink comp="107" pin=0"/></net>
+<net id="113"><net_src comp="18" pin="0"/><net_sink comp="109" pin=1"/></net>
 
-<net id="112"><net_src comp="14" pin="0"/><net_sink comp="107" pin=1"/></net>
+<net id="118"><net_src comp="109" pin="2"/><net_sink comp="114" pin=0"/></net>
 
-<net id="119"><net_src comp="16" pin="0"/><net_sink comp="113" pin=0"/></net>
+<net id="119"><net_src comp="6" pin="0"/><net_sink comp="114" pin=1"/></net>
 
-<net id="120"><net_src comp="99" pin="1"/><net_sink comp="113" pin=1"/></net>
+<net id="124"><net_src comp="20" pin="0"/><net_sink comp="120" pin=1"/></net>
 
-<net id="121"><net_src comp="18" pin="0"/><net_sink comp="113" pin=2"/></net>
+<net id="128"><net_src comp="120" pin="2"/><net_sink comp="125" pin=0"/></net>
 
-<net id="122"><net_src comp="20" pin="0"/><net_sink comp="113" pin=3"/></net>
+<net id="134"><net_src comp="22" pin="0"/><net_sink comp="129" pin=0"/></net>
 
-<net id="127"><net_src comp="113" pin="4"/><net_sink comp="123" pin=0"/></net>
+<net id="135"><net_src comp="120" pin="2"/><net_sink comp="129" pin=1"/></net>
 
-<net id="128"><net_src comp="22" pin="0"/><net_sink comp="123" pin=1"/></net>
+<net id="136"><net_src comp="24" pin="0"/><net_sink comp="129" pin=2"/></net>
 
-<net id="132"><net_src comp="107" pin="2"/><net_sink comp="129" pin=0"/></net>
+<net id="141"><net_src comp="120" pin="2"/><net_sink comp="137" pin=0"/></net>
 
-<net id="133"><net_src comp="129" pin="1"/><net_sink comp="73" pin=2"/></net>
+<net id="142"><net_src comp="14" pin="0"/><net_sink comp="137" pin=1"/></net>
 
-<net id="138"><net_src comp="26" pin="0"/><net_sink comp="134" pin=1"/></net>
+<net id="148"><net_src comp="22" pin="0"/><net_sink comp="143" pin=0"/></net>
 
-<net id="142"><net_src comp="134" pin="2"/><net_sink comp="139" pin=0"/></net>
+<net id="149"><net_src comp="26" pin="0"/><net_sink comp="143" pin=2"/></net>
 
-<net id="147"><net_src comp="134" pin="2"/><net_sink comp="143" pin=0"/></net>
+<net id="154"><net_src comp="28" pin="0"/><net_sink comp="150" pin=1"/></net>
 
-<net id="148"><net_src comp="28" pin="0"/><net_sink comp="143" pin=1"/></net>
+<net id="159"><net_src comp="109" pin="2"/><net_sink comp="155" pin=0"/></net>
 
-<net id="153"><net_src comp="30" pin="0"/><net_sink comp="149" pin=1"/></net>
+<net id="160"><net_src comp="14" pin="0"/><net_sink comp="155" pin=1"/></net>
 
-<net id="158"><net_src comp="149" pin="2"/><net_sink comp="154" pin=0"/></net>
+<net id="166"><net_src comp="143" pin="3"/><net_sink comp="161" pin=0"/></net>
 
-<net id="159"><net_src comp="32" pin="0"/><net_sink comp="154" pin=1"/></net>
+<net id="167"><net_src comp="150" pin="2"/><net_sink comp="161" pin=1"/></net>
 
-<net id="164"><net_src comp="139" pin="1"/><net_sink comp="160" pin=0"/></net>
+<net id="172"><net_src comp="120" pin="2"/><net_sink comp="168" pin=0"/></net>
 
-<net id="165"><net_src comp="32" pin="0"/><net_sink comp="160" pin=1"/></net>
+<net id="173"><net_src comp="18" pin="0"/><net_sink comp="168" pin=1"/></net>
 
-<net id="169"><net_src comp="154" pin="2"/><net_sink comp="166" pin=0"/></net>
+<net id="178"><net_src comp="120" pin="2"/><net_sink comp="174" pin=0"/></net>
 
-<net id="170"><net_src comp="166" pin="1"/><net_sink comp="86" pin=3"/></net>
+<net id="179"><net_src comp="30" pin="0"/><net_sink comp="174" pin=1"/></net>
 
-<net id="174"><net_src comp="160" pin="2"/><net_sink comp="171" pin=0"/></net>
+<net id="183"><net_src comp="137" pin="2"/><net_sink comp="180" pin=0"/></net>
 
-<net id="175"><net_src comp="171" pin="1"/><net_sink comp="86" pin=2"/></net>
+<net id="184"><net_src comp="180" pin="1"/><net_sink comp="76" pin=4"/></net>
 
-<net id="180"><net_src comp="18" pin="0"/><net_sink comp="176" pin=1"/></net>
+<net id="188"><net_src comp="155" pin="2"/><net_sink comp="185" pin=0"/></net>
 
-<net id="185"><net_src comp="176" pin="2"/><net_sink comp="181" pin=0"/></net>
+<net id="194"><net_src comp="22" pin="0"/><net_sink comp="189" pin=0"/></net>
 
-<net id="186"><net_src comp="6" pin="0"/><net_sink comp="181" pin=1"/></net>
+<net id="195"><net_src comp="155" pin="2"/><net_sink comp="189" pin=1"/></net>
 
-<net id="190"><net_src comp="40" pin="2"/><net_sink comp="187" pin=0"/></net>
+<net id="196"><net_src comp="26" pin="0"/><net_sink comp="189" pin=2"/></net>
 
-<net id="197"><net_src comp="103" pin="1"/><net_sink comp="194" pin=0"/></net>
+<net id="201"><net_src comp="185" pin="1"/><net_sink comp="197" pin=0"/></net>
 
-<net id="198"><net_src comp="194" pin="1"/><net_sink comp="149" pin=0"/></net>
+<net id="202"><net_src comp="28" pin="0"/><net_sink comp="197" pin=1"/></net>
 
-<net id="202"><net_src comp="123" pin="2"/><net_sink comp="199" pin=0"/></net>
+<net id="208"><net_src comp="32" pin="0"/><net_sink comp="203" pin=0"/></net>
 
-<net id="206"><net_src comp="129" pin="1"/><net_sink comp="203" pin=0"/></net>
+<net id="209"><net_src comp="180" pin="1"/><net_sink comp="203" pin=1"/></net>
 
-<net id="207"><net_src comp="203" pin="1"/><net_sink comp="73" pin=2"/></net>
+<net id="210"><net_src comp="34" pin="0"/><net_sink comp="203" pin=2"/></net>
 
-<net id="208"><net_src comp="203" pin="1"/><net_sink comp="86" pin=4"/></net>
+<net id="211"><net_src comp="203" pin="3"/><net_sink comp="76" pin=9"/></net>
 
-<net id="212"><net_src comp="139" pin="1"/><net_sink comp="209" pin=0"/></net>
+<net id="217"><net_src comp="189" pin="3"/><net_sink comp="212" pin=0"/></net>
 
-<net id="213"><net_src comp="209" pin="1"/><net_sink comp="160" pin=0"/></net>
+<net id="218"><net_src comp="197" pin="2"/><net_sink comp="212" pin=1"/></net>
 
-<net id="217"><net_src comp="143" pin="2"/><net_sink comp="214" pin=0"/></net>
+<net id="219"><net_src comp="185" pin="1"/><net_sink comp="212" pin=2"/></net>
 
-<net id="221"><net_src comp="149" pin="2"/><net_sink comp="218" pin=0"/></net>
+<net id="220"><net_src comp="212" pin="3"/><net_sink comp="76" pin=5"/></net>
 
-<net id="222"><net_src comp="218" pin="1"/><net_sink comp="154" pin=0"/></net>
+<net id="226"><net_src comp="32" pin="0"/><net_sink comp="221" pin=0"/></net>
 
-<net id="226"><net_src comp="166" pin="1"/><net_sink comp="223" pin=0"/></net>
+<net id="227"><net_src comp="212" pin="3"/><net_sink comp="221" pin=1"/></net>
 
-<net id="227"><net_src comp="223" pin="1"/><net_sink comp="86" pin=3"/></net>
+<net id="228"><net_src comp="34" pin="0"/><net_sink comp="221" pin=2"/></net>
 
-<net id="231"><net_src comp="171" pin="1"/><net_sink comp="228" pin=0"/></net>
+<net id="229"><net_src comp="221" pin="3"/><net_sink comp="76" pin=6"/></net>
 
-<net id="232"><net_src comp="228" pin="1"/><net_sink comp="86" pin=2"/></net>
+<net id="233"><net_src comp="42" pin="2"/><net_sink comp="230" pin=0"/></net>
+
+<net id="240"><net_src comp="98" pin="2"/><net_sink comp="237" pin=0"/></net>
+
+<net id="241"><net_src comp="237" pin="1"/><net_sink comp="143" pin=1"/></net>
+
+<net id="245"><net_src comp="104" pin="1"/><net_sink comp="242" pin=0"/></net>
+
+<net id="246"><net_src comp="242" pin="1"/><net_sink comp="63" pin=2"/></net>
+
+<net id="247"><net_src comp="242" pin="1"/><net_sink comp="150" pin=0"/></net>
+
+<net id="248"><net_src comp="242" pin="1"/><net_sink comp="161" pin=2"/></net>
+
+<net id="252"><net_src comp="109" pin="2"/><net_sink comp="249" pin=0"/></net>
+
+<net id="253"><net_src comp="249" pin="1"/><net_sink comp="155" pin=0"/></net>
+
+<net id="257"><net_src comp="120" pin="2"/><net_sink comp="254" pin=0"/></net>
+
+<net id="258"><net_src comp="254" pin="1"/><net_sink comp="137" pin=0"/></net>
+
+<net id="262"><net_src comp="125" pin="1"/><net_sink comp="259" pin=0"/></net>
+
+<net id="263"><net_src comp="259" pin="1"/><net_sink comp="76" pin=1"/></net>
+
+<net id="267"><net_src comp="129" pin="3"/><net_sink comp="264" pin=0"/></net>
+
+<net id="271"><net_src comp="161" pin="3"/><net_sink comp="268" pin=0"/></net>
+
+<net id="272"><net_src comp="268" pin="1"/><net_sink comp="76" pin=3"/></net>
+
+<net id="276"><net_src comp="168" pin="2"/><net_sink comp="273" pin=0"/></net>
+
+<net id="277"><net_src comp="273" pin="1"/><net_sink comp="76" pin=8"/></net>
+
+<net id="281"><net_src comp="174" pin="2"/><net_sink comp="278" pin=0"/></net>
+
+<net id="282"><net_src comp="278" pin="1"/><net_sink comp="76" pin=7"/></net>
+
+<net id="286"><net_src comp="180" pin="1"/><net_sink comp="283" pin=0"/></net>
+
+<net id="287"><net_src comp="283" pin="1"/><net_sink comp="76" pin=4"/></net>
+
+<net id="291"><net_src comp="203" pin="3"/><net_sink comp="288" pin=0"/></net>
+
+<net id="292"><net_src comp="288" pin="1"/><net_sink comp="76" pin=9"/></net>
+
+<net id="296"><net_src comp="212" pin="3"/><net_sink comp="293" pin=0"/></net>
+
+<net id="297"><net_src comp="293" pin="1"/><net_sink comp="76" pin=5"/></net>
+
+<net id="301"><net_src comp="221" pin="3"/><net_sink comp="298" pin=0"/></net>
+
+<net id="302"><net_src comp="298" pin="1"/><net_sink comp="76" pin=6"/></net>
 
 </net_list>
 
@@ -1330,22 +1518,19 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 
 * FSMD analyzer results:
   - Output states:
-	Port: out_hysteresis2 | {36 37 71 72 }
-	Port: p_anonymous_namespace_rowsReceived_2_s | {72 }
+	Port: out_hysteresis2 | {36 37 72 73 }
+	Port: p_anonymous_namespace_rowsReceived_2_s | {37 }
 	Port: p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 | {36 37 }
 	Port: p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 | {36 37 }
  - Input state : 
 	Port: hysteresis<2> : p_read | {1 }
 	Port: hysteresis<2> : out_hysteresis1 | {36 37 }
 	Port: hysteresis<2> : p_anonymous_namespace_rowsReceived_2_s | {1 }
-	Port: hysteresis<2> : p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 | {71 72 }
-	Port: hysteresis<2> : p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 | {71 72 }
+	Port: hysteresis<2> : p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 | {72 73 }
+	Port: hysteresis<2> : p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 | {72 73 }
   - Chain level:
 	State 1
-		trunc_ln66 : 1
 		writeSlot : 1
-		tmp : 1
-		icmp_ln77 : 2
 	State 2
 	State 3
 	State 4
@@ -1381,14 +1566,18 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 	State 34
 	State 35
 	State 36
-		trunc_ln65 : 1
-		call_ln65 : 2
+		trunc_ln69 : 1
+		call_ln69 : 2
 	State 37
-		trunc_ln87 : 1
-		icmp_ln92 : 1
-		br_ln92 : 2
+		store_ln76 : 1
+		trunc_ln82 : 1
+		tmp : 1
+		br_ln84 : 2
 		result : 1
-		result_4 : 2
+		result_6 : 1
+		select_ln18 : 1
+		icmp_ln33 : 1
+		icmp_ln38 : 1
 	State 38
 	State 39
 	State 40
@@ -1423,14 +1612,18 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 	State 69
 	State 70
 	State 71
+	State 72
 		trunc_ln17 : 1
 		trunc_ln17_3 : 1
-		call_ln17 : 2
-	State 72
-		hysteresis2_valid_1 : 1
-		store_ln94 : 1
-		valid_out_write_assign : 2
-		ret_ln0 : 3
+		tmp_30 : 1
+		add_ln18_3 : 2
+		tmp_s : 2
+		select_ln18_3 : 3
+		tmp_39 : 4
+		call_ln82 : 5
+	State 73
+		valid_out_write_assign : 1
+		ret_ln0 : 2
 
 
 ============================================================
@@ -1441,32 +1634,40 @@ ret_ln0                                   (ret       ) [ 00000000000000000000000
 |----------|--------------------------------------------------|---------|---------|---------|
 | Operation|                  Functional Unit                 |  Delay  |    FF   |   LUT   |
 |----------|--------------------------------------------------|---------|---------|---------|
-|   urem   |                    grp_fu_154                    |    0    |   382   |   228   |
-|          |                    grp_fu_160                    |    0    |   382   |   228   |
+|   srem   |                     grp_fu_98                    |    0    |   394   |   238   |
+|          |                    grp_fu_155                    |    0    |   394   |   238   |
 |----------|--------------------------------------------------|---------|---------|---------|
-|   call   |  grp_hysteresis_2_Pipeline_VITIS_LOOP_68_1_fu_73 |  0.427  |    30   |    43   |
-|          | grp_hysteresis_2_Pipeline_VITIS_LOOP_116_2_fu_86 | 3.95167 |   309   |   378   |
+|   call   |  grp_hysteresis_2_Pipeline_VITIS_LOOP_72_1_fu_63 |  0.427  |    30   |    43   |
+|          | grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76 | 3.95167 |   344   |   615   |
 |----------|--------------------------------------------------|---------|---------|---------|
-|   srem   |                    grp_fu_107                    |    0    |   394   |   238   |
+|   urem   |                    grp_fu_137                    |    0    |   394   |   238   |
 |----------|--------------------------------------------------|---------|---------|---------|
-|          |                 outputRow_fu_134                 |    0    |    0    |    39   |
-|    add   |                  add_ln16_fu_149                 |    0    |    0    |    38   |
-|          |                  add_ln94_fu_176                 |    0    |    0    |    39   |
+|          |                  add_ln76_fu_109                 |    0    |    0    |    39   |
+|    add   |                 outputRow_fu_120                 |    0    |    0    |    39   |
+|          |                  add_ln18_fu_150                 |    0    |    0    |    9    |
+|          |                 add_ln18_3_fu_197                |    0    |    0    |    9    |
 |----------|--------------------------------------------------|---------|---------|---------|
-|   icmp   |                 icmp_ln77_fu_123                 |    0    |    0    |    38   |
-|          |                 icmp_ln92_fu_143                 |    0    |    0    |    39   |
+|   icmp   |                 icmp_ln33_fu_168                 |    0    |    0    |    39   |
+|          |                 icmp_ln38_fu_174                 |    0    |    0    |    39   |
 |----------|--------------------------------------------------|---------|---------|---------|
-|   read   |                p_read_6_read_fu_40               |    0    |    0    |    0    |
+|  select  |                select_ln18_fu_161                |    0    |    0    |    2    |
+|          |               select_ln18_3_fu_212               |    0    |    0    |    2    |
 |----------|--------------------------------------------------|---------|---------|---------|
-|          |                 trunc_ln66_fu_103                |    0    |    0    |    0    |
-|          |                 trunc_ln65_fu_129                |    0    |    0    |    0    |
-|   trunc  |                 trunc_ln87_fu_139                |    0    |    0    |    0    |
-|          |                 trunc_ln17_fu_166                |    0    |    0    |    0    |
-|          |                trunc_ln17_3_fu_171               |    0    |    0    |    0    |
+|   read   |                p_read_6_read_fu_42               |    0    |    0    |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|
-|partselect|                    tmp_fu_113                    |    0    |    0    |    0    |
+|          |                 trunc_ln69_fu_104                |    0    |    0    |    0    |
+|   trunc  |                 trunc_ln82_fu_125                |    0    |    0    |    0    |
+|          |                 trunc_ln17_fu_180                |    0    |    0    |    0    |
+|          |                trunc_ln17_3_fu_185               |    0    |    0    |    0    |
 |----------|--------------------------------------------------|---------|---------|---------|
-|   Total  |                                                  | 4.37867 |   1497  |   1308  |
+|          |                    tmp_fu_129                    |    0    |    0    |    0    |
+| bitselect|                   tmp_29_fu_143                  |    0    |    0    |    0    |
+|          |                   tmp_30_fu_189                  |    0    |    0    |    0    |
+|----------|--------------------------------------------------|---------|---------|---------|
+|bitconcatenate|                   tmp_s_fu_203                   |    0    |    0    |    0    |
+|          |                   tmp_39_fu_221                  |    0    |    0    |    0    |
+|----------|--------------------------------------------------|---------|---------|---------|
+|   Total  |                                                  | 4.37867 |   1556  |   1550  |
 |----------|--------------------------------------------------|---------|---------|---------|
 
 Memories:
@@ -1476,32 +1677,38 @@ N/A
 +-----------------------------+--------+
 |                             |   FF   |
 +-----------------------------+--------+
-|       add_ln16_reg_218      |   31   |
-|  hysteresis2_valid_1_reg_46 |    1   |
-|      icmp_ln77_reg_199      |    1   |
-|      icmp_ln92_reg_214      |    1   |
-|       p_read_6_reg_187      |    1   |
-|     trunc_ln17_3_reg_228    |    2   |
-|      trunc_ln17_reg_223     |    2   |
-|      trunc_ln65_reg_203     |    2   |
-|      trunc_ln66_reg_194     |   31   |
-|      trunc_ln87_reg_209     |   31   |
-|valid_out_write_assign_reg_61|    1   |
+|       add_ln76_reg_249      |   32   |
+|      icmp_ln33_reg_273      |    1   |
+|      icmp_ln38_reg_278      |    1   |
+|      outputRow_reg_254      |   32   |
+|       p_read_6_reg_230      |    1   |
+|    select_ln18_3_reg_293    |    2   |
+|     select_ln18_reg_268     |    2   |
+|        tmp_39_reg_298       |   10   |
+|         tmp_reg_264         |    1   |
+|        tmp_s_reg_288        |   10   |
+|      trunc_ln17_reg_283     |    2   |
+|      trunc_ln69_reg_242     |    2   |
+|      trunc_ln82_reg_259     |   31   |
+|valid_out_write_assign_reg_48|    1   |
+|      writeSlot_reg_237      |   32   |
 +-----------------------------+--------+
-|            Total            |   104  |
+|            Total            |   160  |
 +-----------------------------+--------+
 
 * Multiplexer (MUX) list: 
 |--------------------------------------------------|------|------|------|--------||---------||---------||---------|
 |                       Comp                       |  Pin | Size |  BW  | S x BW ||  Delay  ||    FF   ||   LUT   |
 |--------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|  grp_hysteresis_2_Pipeline_VITIS_LOOP_68_1_fu_73 |  p2  |   2  |   2  |    4   ||    0    ||    9    |
-| grp_hysteresis_2_Pipeline_VITIS_LOOP_116_2_fu_86 |  p2  |   2  |   2  |    4   ||    0    ||    9    |
-| grp_hysteresis_2_Pipeline_VITIS_LOOP_116_2_fu_86 |  p3  |   2  |   2  |    4   ||    0    ||    9    |
-|                    grp_fu_154                    |  p0  |   2  |  31  |   62   ||    0    ||    9    |
-|                    grp_fu_160                    |  p0  |   2  |  31  |   62   ||    0    ||    9    |
+|  grp_hysteresis_2_Pipeline_VITIS_LOOP_72_1_fu_63 |  p2  |   2  |   2  |    4   ||    0    ||    9    |
+| grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76 |  p4  |   2  |   2  |    4   ||    0    ||    9    |
+| grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76 |  p5  |   2  |   2  |    4   ||    0    ||    9    |
+| grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76 |  p6  |   2  |  10  |   20   ||    0    ||    9    |
+| grp_hysteresis_2_Pipeline_VITIS_LOOP_110_2_fu_76 |  p9  |   2  |  10  |   20   ||    0    ||    9    |
+|                    grp_fu_137                    |  p0  |   2  |  32  |   64   ||    0    ||    9    |
+|                    grp_fu_155                    |  p0  |   2  |  32  |   64   ||    0    ||    9    |
 |--------------------------------------------------|------|------|------|--------||---------||---------||---------|
-|                       Total                      |      |      |      |   136  ||  2.135  ||    0    ||    45   |
+|                       Total                      |      |      |      |   180  ||  2.989  ||    0    ||    63   |
 |--------------------------------------------------|------|------|------|--------||---------||---------||---------|
 
 
@@ -1510,10 +1717,10 @@ N/A
 +-----------+--------+--------+--------+
 |           |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+
-|  Function |    4   |  1497  |  1308  |
+|  Function |    4   |  1556  |  1550  |
 |   Memory  |    -   |    -   |    -   |
-|Multiplexer|    2   |    0   |   45   |
-|  Register |    -   |   104  |    -   |
+|Multiplexer|    2   |    0   |   63   |
+|  Register |    -   |   160  |    -   |
 +-----------+--------+--------+--------+
-|   Total   |    6   |  1601  |  1353  |
+|   Total   |    7   |  1716  |  1613  |
 +-----------+--------+--------+--------+

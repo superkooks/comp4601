@@ -5,7 +5,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 43, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'gaussian_blur_reset()'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 27, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 38, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -18,7 +18,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 44, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'sobel_reset()'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 76, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -45,7 +45,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 46, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<1>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -58,7 +58,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 47, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<2>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -71,7 +71,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 48, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<3>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -84,7 +84,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 49, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<4>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -106,72 +106,98 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 79, Column: 17 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 78, Column: 17 }
+Function:        _Z13gaussian_blurPKhPhPb
+Args:            
+  - Callee:          '(anonymous namespace)::reflect_101(int, int)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 26, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 81, Column: 17 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 20, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 21, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 27 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 39, Column: 27 }
 Function:        _ZN12_GLOBAL__N_118quantise_directionEii
 Args:            
   - Callee:          '(anonymous namespace)::absolute_value(int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          '(anonymous namespace)::quantise_direction(int, int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 37, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 130, Column: 17 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 125, Column: 17 }
+Function:        _Z5sobelPKhP13GradientPixelbPb
+Args:            
+  - Callee:          '(anonymous namespace)::border_replicate(int, int)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 64, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/sobel.cpp, Line: 128, Column: 17 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.35)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 25, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 26, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 156, Column: 36 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 154, Column: 36 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::absolute_value(int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 159, Column: 13 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 157, Column: 13 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::quantise_direction(int, int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 37, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 73, 
+DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 66, 
                    Column: 9 }
 Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
@@ -187,105 +213,105 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -321,7 +347,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 30, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -334,7 +360,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 31, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -374,7 +400,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 34, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -387,7 +413,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 35, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -400,7 +426,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 36, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -413,7 +439,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 37, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -439,7 +465,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 43, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'gaussian_blur_reset()'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 27, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 38, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -452,7 +478,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 44, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'sobel_reset()'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 76, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -479,7 +505,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 46, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<1>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -492,7 +518,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 47, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<2>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -505,7 +531,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 48, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<3>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -518,7 +544,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 49, Column: 5 }
 Function:        _Z18reset_canny_stagesv
 Args:            
   - Callee:          'void hysteresis_reset<4>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -540,72 +566,98 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 79, Column: 17 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 78, Column: 17 }
+Function:        _Z13gaussian_blurPKhPhPb
+Args:            
+  - Callee:          '(anonymous namespace)::reflect_101(int, int)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 26, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 81, Column: 17 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 20, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 21, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 27 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 39, Column: 27 }
 Function:        _ZN12_GLOBAL__N_118quantise_directionEii
 Args:            
   - Callee:          '(anonymous namespace)::absolute_value(int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          '(anonymous namespace)::quantise_direction(int, int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 37, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 130, Column: 17 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 125, Column: 17 }
+Function:        _Z5sobelPKhP13GradientPixelbPb
+Args:            
+  - Callee:          '(anonymous namespace)::border_replicate(int, int)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 64, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../src/sobel.cpp, Line: 128, Column: 17 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.35)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 25, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 26, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 156, Column: 36 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 154, Column: 36 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::absolute_value(int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 159, Column: 13 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 157, Column: 13 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - Callee:          '(anonymous namespace)::quantise_direction(int, int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 37, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 73, 
+DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 66, 
                    Column: 9 }
 Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
@@ -621,105 +673,105 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 99, Column: 9 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 93, Column: 9 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.7)'
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 125, Column: 13 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 122, Column: 13 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
@@ -755,7 +807,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 30, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -768,7 +820,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 31, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -808,7 +860,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 34, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -821,7 +873,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 35, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -834,7 +886,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 36, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -847,7 +899,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 37, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -885,7 +937,7 @@ Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'gaussian_blur_reset()'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 27, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 38, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -899,7 +951,7 @@ Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'sobel_reset()'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 65, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 76, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -928,7 +980,7 @@ Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<1>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -942,7 +994,7 @@ Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<2>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -956,7 +1008,7 @@ Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<3>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -970,7 +1022,7 @@ Function:        _Z18reset_canny_stagesv
 Args:            
   - String:          'Inlining function '''
   - Callee:          'void hysteresis_reset<4>()'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 42, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 0 }
   - String:          ''' into '''
   - Caller:          'reset_canny_stages()'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 42, Column: 0 }
@@ -993,71 +1045,99 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
+Function:        _Z13gaussian_blurPKhPhPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          '(anonymous namespace)::reflect_101(int, int)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 26, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 20, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 21, Column: 0 }
   - String:          ''' into '''
   - Caller:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 37, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 0 }
 Function:        _ZN12_GLOBAL__N_118quantise_directionEii
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::absolute_value(int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 31, Column: 0 }
   - String:          ''' into '''
   - Caller:          '(anonymous namespace)::quantise_direction(int, int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 37, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
+Function:        _Z5sobelPKhP13GradientPixelbPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          '(anonymous namespace)::border_replicate(int, int)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 64, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.35)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 25, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 26, Column: 0 }
   - String:          ''' into '''
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::absolute_value(int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 30, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 31, Column: 0 }
   - String:          ''' into '''
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::quantise_direction(int, int)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 37, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 38, Column: 0 }
   - String:          ''' into '''
   - Caller:          'sobel(unsigned char const*, GradientPixel*, bool, bool*)'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -1080,7 +1160,7 @@ Args:
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
@@ -1088,27 +1168,27 @@ Args:
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<1>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<1>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
@@ -1116,27 +1196,27 @@ Args:
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<2>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<2>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
@@ -1144,27 +1224,27 @@ Args:
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<3>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<3>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
@@ -1172,21 +1252,21 @@ Args:
     DebugLoc:        { File: ../src/hysteresis.cpp, Line: 16, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            reflow-inliner
 Name:            Inline
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 27, Column: 0 }
+  - Callee:          'bool (anonymous namespace)::has_strong_neighbour<4>(int, int, int, int, bool, bool, bool, bool)'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 31, Column: 0 }
   - String:          ''' into '''
   - Caller:          'void hysteresis<4>(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 59, Column: 0 }
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 63, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
@@ -1373,15 +1453,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1393,10 +1473,10 @@ Args:
   - PragmaFunction:  'hysteresis<4>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1404,15 +1484,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
 Function:        _Z10hysteresisILi4EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1424,10 +1504,10 @@ Args:
   - PragmaFunction:  'hysteresis<4>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1435,15 +1515,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1455,10 +1535,10 @@ Args:
   - PragmaFunction:  'hysteresis<3>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1466,15 +1546,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
 Function:        _Z10hysteresisILi3EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1486,10 +1566,10 @@ Args:
   - PragmaFunction:  'hysteresis<3>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1497,15 +1577,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1517,10 +1597,10 @@ Args:
   - PragmaFunction:  'hysteresis<2>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1528,15 +1608,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
 Function:        _Z10hysteresisILi2EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1548,10 +1628,10 @@ Args:
   - PragmaFunction:  'hysteresis<2>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1559,15 +1639,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1579,10 +1659,10 @@ Args:
   - PragmaFunction:  'hysteresis<1>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_68_1
+  - LoopName:        VITIS_LOOP_72_1
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:68:22'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 68, Column: 22 }
+  - LoopLoc:         '../src/hysteresis.cpp:72:22'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 72, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1590,15 +1670,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
 Function:        _Z10hysteresisILi1EEvPKhPhbPbh
 Args:            
   - PragmaType:      pipeline
@@ -1610,10 +1690,10 @@ Args:
   - PragmaFunction:  'hysteresis<1>'
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_116_2
+  - LoopName:        VITIS_LOOP_110_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:116:23'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 116, Column: 23 }
+  - LoopLoc:         '../src/hysteresis.cpp:110:23'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 110, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1685,15 +1765,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_81_2
+  - LoopName:        VITIS_LOOP_74_2
   - String:          '> at '
-  - LoopLoc:         '../src/non_maximum_suppression.cpp:81:22'
+  - LoopLoc:         '../src/non_maximum_suppression.cpp:74:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 81, 
+DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 74, 
                    Column: 22 }
 Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
@@ -1706,10 +1786,10 @@ Args:
   - PragmaFunction:  non_maximum_suppression
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_81_2
+  - LoopName:        VITIS_LOOP_74_2
   - String:          ' '
-  - LoopLoc:         '../src/non_maximum_suppression.cpp:81:22'
-    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 81, 
+  - LoopLoc:         '../src/non_maximum_suppression.cpp:74:22'
+    DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 74, 
                        Column: 22 }
   - String:          ' '
 ...
@@ -1718,15 +1798,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_89_1
+  - LoopName:        VITIS_LOOP_100_1
   - String:          '> at '
-  - LoopLoc:         '../src/sobel.cpp:89:22'
+  - LoopLoc:         '../src/sobel.cpp:100:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/sobel.cpp, Line: 89, Column: 22 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 100, Column: 23 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - PragmaType:      pipeline
@@ -1738,10 +1818,10 @@ Args:
   - PragmaFunction:  sobel
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_89_1
+  - LoopName:        VITIS_LOOP_100_1
   - String:          ' '
-  - LoopLoc:         '../src/sobel.cpp:89:22'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 89, Column: 22 }
+  - LoopLoc:         '../src/sobel.cpp:100:23'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 100, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1749,15 +1829,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_118_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          '> at '
-  - LoopLoc:         '../src/sobel.cpp:118:23'
+  - LoopLoc:         '../src/sobel.cpp:116:23'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/sobel.cpp, Line: 118, Column: 23 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 116, Column: 23 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - PragmaType:      pipeline
@@ -1769,10 +1849,10 @@ Args:
   - PragmaFunction:  sobel
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_118_2
+  - LoopName:        VITIS_LOOP_116_2
   - String:          ' '
-  - LoopLoc:         '../src/sobel.cpp:118:23'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 118, Column: 23 }
+  - LoopLoc:         '../src/sobel.cpp:116:23'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 116, Column: 23 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1780,15 +1860,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_46_1
+  - LoopName:        VITIS_LOOP_57_1
   - String:          '> at '
-  - LoopLoc:         '../src/gaussian_blur.cpp:46:22'
+  - LoopLoc:         '../src/gaussian_blur.cpp:57:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 46, Column: 22 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 57, Column: 22 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - PragmaType:      pipeline
@@ -1800,10 +1880,10 @@ Args:
   - PragmaFunction:  gaussian_blur
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_46_1
+  - LoopName:        VITIS_LOOP_57_1
   - String:          ' '
-  - LoopLoc:         '../src/gaussian_blur.cpp:46:22'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 46, Column: 22 }
+  - LoopLoc:         '../src/gaussian_blur.cpp:57:22'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 57, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1811,15 +1891,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_64_2
+  - LoopName:        VITIS_LOOP_70_2
   - String:          '> at '
-  - LoopLoc:         '../src/gaussian_blur.cpp:64:22'
+  - LoopLoc:         '../src/gaussian_blur.cpp:70:22'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 64, Column: 22 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 70, Column: 22 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - PragmaType:      pipeline
@@ -1831,10 +1911,10 @@ Args:
   - PragmaFunction:  gaussian_blur
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_64_2
+  - LoopName:        VITIS_LOOP_70_2
   - String:          ' '
-  - LoopLoc:         '../src/gaussian_blur.cpp:64:22'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 64, Column: 22 }
+  - LoopLoc:         '../src/gaussian_blur.cpp:70:22'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 70, Column: 22 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1873,15 +1953,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_31_2
+  - LoopName:        VITIS_LOOP_42_2
   - String:          '> at '
-  - LoopLoc:         '../src/gaussian_blur.cpp:31:26'
+  - LoopLoc:         '../src/gaussian_blur.cpp:42:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 31, Column: 26 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 42, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -1893,10 +1973,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_31_2
+  - LoopName:        VITIS_LOOP_42_2
   - String:          ' '
-  - LoopLoc:         '../src/gaussian_blur.cpp:31:26'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 31, Column: 26 }
+  - LoopLoc:         '../src/gaussian_blur.cpp:42:26'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 42, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1904,15 +1984,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_69_2
+  - LoopName:        VITIS_LOOP_80_2
   - String:          '> at '
-  - LoopLoc:         '../src/sobel.cpp:69:26'
+  - LoopLoc:         '../src/sobel.cpp:80:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/sobel.cpp, Line: 69, Column: 26 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -1924,10 +2004,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_69_2
+  - LoopName:        VITIS_LOOP_80_2
   - String:          ' '
-  - LoopLoc:         '../src/sobel.cpp:69:26'
-    DebugLoc:        { File: ../src/sobel.cpp, Line: 69, Column: 26 }
+  - LoopLoc:         '../src/sobel.cpp:80:26'
+    DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1968,15 +2048,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -1988,10 +2068,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -1999,15 +2079,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2019,10 +2099,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -2030,15 +2110,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2050,10 +2130,10 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -2061,15 +2141,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          '> at '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2081,62 +2161,62 @@ Args:
   - PragmaFunction:  canny_top
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_46_2
+  - LoopName:        VITIS_LOOP_50_2
   - String:          ' '
-  - LoopLoc:         '../src/hysteresis.cpp:46:26'
-    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 46, Column: 26 }
+  - LoopLoc:         '../src/hysteresis.cpp:50:26'
+    DebugLoc:        { File: ../src/hysteresis.cpp, Line: 50, Column: 26 }
   - String:          ' '
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/sobel.cpp, Line: 122, Column: 27 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 120, Column: 27 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_122_3
+  - LoopName:        VITIS_LOOP_120_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/sobel.cpp, Line: 135, Column: 31 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 133, Column: 31 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_135_4
+  - LoopName:        VITIS_LOOP_133_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 67, Column: 26 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 73, Column: 26 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_67_3
+  - LoopName:        VITIS_LOOP_73_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 84, Column: 30 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 86, Column: 30 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_84_4
+  - LoopName:        VITIS_LOOP_86_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_122_3
+  - LoopName:        VITIS_LOOP_120_3
   - String:          ''' ('
-  - LoopLoc:         '../src/sobel.cpp:122:27'
+  - LoopLoc:         '../src/sobel.cpp:120:27'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -2146,13 +2226,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_135_4
+  - LoopName:        VITIS_LOOP_133_4
   - String:          ''' ('
-  - LoopLoc:         '../src/sobel.cpp:135:31'
+  - LoopLoc:         '../src/sobel.cpp:133:31'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -2162,13 +2242,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_135_4
+  - LoopName:        VITIS_LOOP_133_4
   - String:          ''' ('
-  - LoopLoc:         '../src/sobel.cpp:135:31'
+  - LoopLoc:         '../src/sobel.cpp:133:31'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -2178,13 +2258,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/sobel.cpp, Line: 80, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 91, Column: 0 }
 Function:        _Z5sobelPKhP13GradientPixelbPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_135_4
+  - LoopName:        VITIS_LOOP_133_4
   - String:          ''' ('
-  - LoopLoc:         '../src/sobel.cpp:135:31'
+  - LoopLoc:         '../src/sobel.cpp:133:31'
   - String:          ') '
   - String:          'in function '''
   - String:          sobel
@@ -2194,13 +2274,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_67_3
+  - LoopName:        VITIS_LOOP_73_3
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:67:26'
+  - LoopLoc:         '../src/gaussian_blur.cpp:73:26'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -2210,13 +2290,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_84_4
+  - LoopName:        VITIS_LOOP_86_4
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:84:30'
+  - LoopLoc:         '../src/gaussian_blur.cpp:86:30'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -2226,13 +2306,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_84_4
+  - LoopName:        VITIS_LOOP_86_4
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:84:30'
+  - LoopLoc:         '../src/gaussian_blur.cpp:86:30'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -2242,13 +2322,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_84_4
+  - LoopName:        VITIS_LOOP_86_4
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:84:30'
+  - LoopLoc:         '../src/gaussian_blur.cpp:86:30'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -2258,13 +2338,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_84_4
+  - LoopName:        VITIS_LOOP_86_4
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:84:30'
+  - LoopLoc:         '../src/gaussian_blur.cpp:86:30'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -2274,13 +2354,13 @@ Args:
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
 Name:            PragmaFullyUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
 Function:        _Z13gaussian_blurPKhPhPb
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_84_4
+  - LoopName:        VITIS_LOOP_86_4
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:84:30'
+  - LoopLoc:         '../src/gaussian_blur.cpp:86:30'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -2290,7 +2370,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayPromotion
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 9, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 10, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Partitioning array '''
@@ -2302,7 +2382,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayPromotion
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 9, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 10, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Partitioning array '''
@@ -2314,7 +2394,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayPromotion
-DebugLoc:        { File: ../src/sobel.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Partitioning array '''
@@ -2326,7 +2406,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayPromotion
-DebugLoc:        { File: ../src/sobel.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Partitioning array '''
@@ -2338,7 +2418,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayPromotion
-DebugLoc:        { File: ../src/sobel.cpp, Line: 16, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 17, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Partitioning array '''
@@ -2350,7 +2430,7 @@ Args:
 --- !Passed
 Pass:            reflow-auto-array-partition
 Name:            AutoArrayPromotion
-DebugLoc:        { File: ../src/sobel.cpp, Line: 16, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 17, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Partitioning array '''
@@ -2358,46 +2438,6 @@ Args:
   - String:          ''' dimension '
   - Dim:             '2'
   - String:          ' due to constant index.'
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 17, Column: 0 }
-Function:        _Z9canny_topP8RGBPixelPh
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=2 type=cyclic factor=2 variable=(anonymous namespace)::lineBuffer'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  canny_top
-  - String:          ' '
-  - VarLoc:          '../src/gaussian_blur.cpp:17:0'
-  - String:          ' '
-  - VarName:         '(anonymous namespace)::lineBuffer'
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 17, Column: 0 }
-Function:        _Z9canny_topP8RGBPixelPh
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            cyclic
-  - String:          ' factor='
-  - Factor:          '2'
-  - String:          ' dim='
-  - Dim:             '2'
-  - String:          ''' for array '''
-  - Name:            '(anonymous namespace)::lineBuffer'
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
 ...
 --- !Passed
 Pass:            reflow-auto-array-partition
@@ -2434,46 +2474,6 @@ Args:
   - Dim:             '2'
   - String:          ''' for array '''
   - Name:            '(anonymous namespace)::lineBuffer (.25.magnitude)'
-  - String:          ''''
-  - String:          ' due to '
-  - String:          pipeline
-  - String:          ' pragma'
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/sobel.cpp, Line: 22, Column: 0 }
-Function:        _Z9canny_topP8RGBPixelPh
-Args:            
-  - PragmaType:      array_partition
-  - String:          ' '
-  - PragmaOptions:   'dim=2 type=cyclic factor=2 variable=(anonymous namespace)::lineBuffer (.32)'
-  - String:          ' '
-  - PragmaIsAuto:    '1'
-  - String:          ' '
-  - PragmaFunction:  canny_top
-  - String:          ' '
-  - VarLoc:          '../src/sobel.cpp:22:0'
-  - String:          ' '
-  - VarName:         '(anonymous namespace)::lineBuffer (.32)'
-  - String:          ' '
-...
---- !Passed
-Pass:            reflow-auto-array-partition
-Name:            AutoArrayXform
-DebugLoc:        { File: ../src/sobel.cpp, Line: 22, Column: 0 }
-Function:        _Z9canny_topP8RGBPixelPh
-Args:            
-  - String:          'Inferring pragma '''
-  - PragmaType:      array_partition
-  - String:          ' type='
-  - Mode:            cyclic
-  - String:          ' factor='
-  - Factor:          '2'
-  - String:          ' dim='
-  - Dim:             '2'
-  - String:          ''' for array '''
-  - Name:            '(anonymous namespace)::lineBuffer (.32)'
   - String:          ''''
   - String:          ' due to '
   - String:          pipeline
@@ -2642,7 +2642,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/sobel.cpp, Line: 16, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 17, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Applying '
@@ -2666,7 +2666,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/sobel.cpp, Line: 10, Column: 0 }
+DebugLoc:        { File: ../src/sobel.cpp, Line: 11, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Applying '
@@ -2690,7 +2690,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 9, Column: 0 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 10, Column: 0 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - String:          'Applying '
@@ -2794,26 +2794,6 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/sobel.cpp, Line: 22, Column: 0 }
-Function:        _Z5sobelPKhP13GradientPixelbPb
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          _ZN12_GLOBAL__N_110lineBufferE.32
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '2'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
 DebugLoc:        { File: ../src/non_maximum_suppression.cpp, Line: 9, Column: 0 }
 Function:        _Z23non_maximum_suppressionPK13GradientPixelPtbPb
 Args:            
@@ -2821,26 +2801,6 @@ Args:
   - String:          array_partition
   - String:          ' to '''
   - UOName:          _ZN12_GLOBAL__N_110lineBufferE.25.magnitude
-  - String:          ''':'
-  - String:          ' '
-  - Mode:            Cyclic
-  - String:          ' partitioning'
-  - String:          ' with factor '
-  - Factor:          '2'
-  - String:          ' on dimension '
-  - Dim:             '2'
-  - String:          .
-...
---- !Passed
-Pass:            reflow-array-partition
-Name:            ArrayXform
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 17, Column: 0 }
-Function:        _Z13gaussian_blurPKhPhPb
-Args:            
-  - String:          'Applying '
-  - String:          array_partition
-  - String:          ' to '''
-  - UOName:          _ZN12_GLOBAL__N_110lineBufferE
   - String:          ''':'
   - String:          ' '
   - Mode:            Cyclic
@@ -2945,7 +2905,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 30, Column: 9 }
 Function:        dataflow_in_loop_VITIS_LOOP_12_1.1
 Args:            
   - Callee:          'gaussian_blur(unsigned char const*, unsigned char*, bool*)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 41, Column: 0 }
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 52, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          dataflow_in_loop_VITIS_LOOP_12_1.1
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 0, Column: 0 }

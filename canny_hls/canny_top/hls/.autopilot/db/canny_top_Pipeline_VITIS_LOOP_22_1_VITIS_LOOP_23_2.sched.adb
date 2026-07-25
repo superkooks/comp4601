@@ -679,7 +679,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>add_ln22_4</name>
+						<name>add_ln22_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -1178,7 +1178,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>select_ln22_4</name>
+						<name>select_ln22_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -1748,7 +1748,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>tmp_74</name>
+						<name>tmp_60</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>24</lineNumber>

@@ -60,48 +60,28 @@ port (
     out_r : IN STD_LOGIC_VECTOR (63 downto 0);
     p_anonymous_namespace_rowsReceived_i : IN STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_rowsReceived_o : OUT STD_LOGIC_VECTOR (31 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we1 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we1 : OUT STD_LOGIC;
+    lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
+    lineBuffer_1_ce0 : OUT STD_LOGIC;
+    lineBuffer_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_we0 : OUT STD_LOGIC;
+    lineBuffer_1_address1 : OUT STD_LOGIC_VECTOR (11 downto 0);
+    lineBuffer_1_ce1 : OUT STD_LOGIC;
+    lineBuffer_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_we1 : OUT STD_LOGIC;
     p_anonymous_namespace_rowsReceived_1_i : IN STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_rowsReceived_1_o : OUT STD_LOGIC_VECTOR (31 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_ce0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_we0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_ce1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_0_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_we1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_ce0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_we0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_ce1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_we1 : OUT STD_LOGIC;
+    lineBuffer_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    lineBuffer_ce0 : OUT STD_LOGIC;
+    lineBuffer_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_we0 : OUT STD_LOGIC;
+    lineBuffer_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    lineBuffer_ce1 : OUT STD_LOGIC;
+    lineBuffer_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_we1 : OUT STD_LOGIC;
     p_anonymous_namespace_rowsReceived_2_i : IN STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_rowsReceived_2_o : OUT STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
@@ -255,13 +235,13 @@ end;
 architecture behav of canny_top_dataflow_parent_loop_proc is 
     attribute DowngradeIPIdentifiedWarnings : STRING;
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
-    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
-    constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
+    constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     constant ap_const_logic_1 : STD_LOGIC := '1';
-    constant ap_const_lv10_202 : STD_LOGIC_VECTOR (9 downto 0) := "1000000010";
+    constant ap_const_lv10_208 : STD_LOGIC_VECTOR (9 downto 0) := "1000001000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_boolean_1 : BOOLEAN := true;
 
@@ -299,39 +279,23 @@ attribute shreg_extract : string;
     signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_RREADY : STD_LOGIC;
     signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_BREADY : STD_LOGIC;
     signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o : STD_LOGIC_VECTOR (31 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we1 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we1 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address0 : STD_LOGIC_VECTOR (11 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce0 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we0 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce1 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we1 : STD_LOGIC;
     signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_o : STD_LOGIC_VECTOR (31 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce1 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we1 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we0 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce1 : STD_LOGIC;
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d1 : STD_LOGIC_VECTOR (7 downto 0);
-    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we1 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address0 : STD_LOGIC_VECTOR (10 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce0 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we0 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce1 : STD_LOGIC;
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d1 : STD_LOGIC_VECTOR (7 downto 0);
+    signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we1 : STD_LOGIC;
     signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_o : STD_LOGIC_VECTOR (31 downto 0);
     signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address0 : STD_LOGIC_VECTOR (10 downto 0);
     signal dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_ce0 : STD_LOGIC;
@@ -500,48 +464,28 @@ attribute shreg_extract : string;
         out_r : IN STD_LOGIC_VECTOR (63 downto 0);
         p_anonymous_namespace_rowsReceived_i : IN STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_rowsReceived_o : OUT STD_LOGIC_VECTOR (31 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we1 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we1 : OUT STD_LOGIC;
+        lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
+        lineBuffer_1_ce0 : OUT STD_LOGIC;
+        lineBuffer_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_1_we0 : OUT STD_LOGIC;
+        lineBuffer_1_address1 : OUT STD_LOGIC_VECTOR (11 downto 0);
+        lineBuffer_1_ce1 : OUT STD_LOGIC;
+        lineBuffer_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_1_we1 : OUT STD_LOGIC;
         p_anonymous_namespace_rowsReceived_1_i : IN STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_rowsReceived_1_o : OUT STD_LOGIC_VECTOR (31 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_0_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_we1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_we1 : OUT STD_LOGIC;
+        lineBuffer_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        lineBuffer_ce0 : OUT STD_LOGIC;
+        lineBuffer_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_we0 : OUT STD_LOGIC;
+        lineBuffer_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        lineBuffer_ce1 : OUT STD_LOGIC;
+        lineBuffer_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_we1 : OUT STD_LOGIC;
         p_anonymous_namespace_rowsReceived_2_i : IN STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_rowsReceived_2_o : OUT STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
@@ -748,48 +692,28 @@ begin
         out_r => out_r,
         p_anonymous_namespace_rowsReceived_i => p_anonymous_namespace_rowsReceived_i,
         p_anonymous_namespace_rowsReceived_o => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q0 => p_ZN12_GLOBAL_N_110lineBufferE_0_q0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q1 => p_ZN12_GLOBAL_N_110lineBufferE_0_q1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q0 => p_ZN12_GLOBAL_N_110lineBufferE_1_q0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q1 => p_ZN12_GLOBAL_N_110lineBufferE_1_q1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we1,
+        lineBuffer_1_address0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address0,
+        lineBuffer_1_ce0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce0,
+        lineBuffer_1_d0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d0,
+        lineBuffer_1_q0 => lineBuffer_1_q0,
+        lineBuffer_1_we0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we0,
+        lineBuffer_1_address1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address1,
+        lineBuffer_1_ce1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce1,
+        lineBuffer_1_d1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d1,
+        lineBuffer_1_q1 => lineBuffer_1_q1,
+        lineBuffer_1_we1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we1,
         p_anonymous_namespace_rowsReceived_1_i => p_anonymous_namespace_rowsReceived_1_i,
         p_anonymous_namespace_rowsReceived_1_o => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_o,
-        p_anonymous_namespace_lineBuffer_32_0_address0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address0,
-        p_anonymous_namespace_lineBuffer_32_0_ce0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce0,
-        p_anonymous_namespace_lineBuffer_32_0_d0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d0,
-        p_anonymous_namespace_lineBuffer_32_0_q0 => p_anonymous_namespace_lineBuffer_32_0_q0,
-        p_anonymous_namespace_lineBuffer_32_0_we0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we0,
-        p_anonymous_namespace_lineBuffer_32_0_address1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address1,
-        p_anonymous_namespace_lineBuffer_32_0_ce1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce1,
-        p_anonymous_namespace_lineBuffer_32_0_d1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d1,
-        p_anonymous_namespace_lineBuffer_32_0_q1 => p_anonymous_namespace_lineBuffer_32_0_q1,
-        p_anonymous_namespace_lineBuffer_32_0_we1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we1,
-        p_anonymous_namespace_lineBuffer_32_1_address0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address0,
-        p_anonymous_namespace_lineBuffer_32_1_ce0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce0,
-        p_anonymous_namespace_lineBuffer_32_1_d0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d0,
-        p_anonymous_namespace_lineBuffer_32_1_q0 => p_anonymous_namespace_lineBuffer_32_1_q0,
-        p_anonymous_namespace_lineBuffer_32_1_we0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we0,
-        p_anonymous_namespace_lineBuffer_32_1_address1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address1,
-        p_anonymous_namespace_lineBuffer_32_1_ce1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce1,
-        p_anonymous_namespace_lineBuffer_32_1_d1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d1,
-        p_anonymous_namespace_lineBuffer_32_1_q1 => p_anonymous_namespace_lineBuffer_32_1_q1,
-        p_anonymous_namespace_lineBuffer_32_1_we1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we1,
+        lineBuffer_address0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address0,
+        lineBuffer_ce0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce0,
+        lineBuffer_d0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d0,
+        lineBuffer_q0 => lineBuffer_q0,
+        lineBuffer_we0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we0,
+        lineBuffer_address1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address1,
+        lineBuffer_ce1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce1,
+        lineBuffer_d1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d1,
+        lineBuffer_q1 => lineBuffer_q1,
+        lineBuffer_we1 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we1,
         p_anonymous_namespace_rowsReceived_2_i => p_anonymous_namespace_rowsReceived_2_i,
         p_anonymous_namespace_rowsReceived_2_o => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_o,
         p_anonymous_namespace_lineBuffer_direction_address0 => dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address0,
@@ -947,9 +871,9 @@ begin
             if (ap_rst = '1') then
                 loop_dataflow_input_count <= ap_const_lv10_0;
             else
-                if ((not((ap_input_count_plus_step = ap_const_lv10_202)) and (ap_start = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_ready = ap_const_logic_1))) then 
+                if ((not((ap_input_count_plus_step = ap_const_lv10_208)) and (ap_start = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_ready = ap_const_logic_1))) then 
                     loop_dataflow_input_count <= ap_input_count_plus_step;
-                elsif (((ap_input_count_plus_step = ap_const_lv10_202) and (ap_start = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_ready = ap_const_logic_1))) then 
+                elsif (((ap_input_count_plus_step = ap_const_lv10_208) and (ap_start = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_ready = ap_const_logic_1))) then 
                     loop_dataflow_input_count <= ap_const_lv10_0;
                 end if; 
             end if;
@@ -963,9 +887,9 @@ begin
             if (ap_rst = '1') then
                 loop_dataflow_output_count <= ap_const_lv10_0;
             else
-                if ((not((ap_output_count_plus_step = ap_const_lv10_202)) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_continue = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done = ap_const_logic_1))) then 
+                if ((not((ap_output_count_plus_step = ap_const_lv10_208)) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_continue = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done = ap_const_logic_1))) then 
                     loop_dataflow_output_count <= ap_output_count_plus_step;
-                elsif (((ap_output_count_plus_step = ap_const_lv10_202) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_continue = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done = ap_const_logic_1))) then 
+                elsif (((ap_output_count_plus_step = ap_const_lv10_208) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_continue = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done = ap_const_logic_1))) then 
                     loop_dataflow_output_count <= ap_const_lv10_0;
                 end if; 
             end if;
@@ -975,7 +899,7 @@ begin
 
     ap_done_assign_proc : process(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done, ap_output_count_plus_step)
     begin
-        if (((ap_output_count_plus_step = ap_const_lv10_202) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done = ap_const_logic_1))) then 
+        if (((ap_output_count_plus_step = ap_const_lv10_208) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done = ap_const_logic_1))) then 
             ap_done <= ap_const_logic_1;
         else 
             ap_done <= ap_const_logic_0;
@@ -997,7 +921,7 @@ begin
 
     ap_ready_assign_proc : process(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_ready, ap_start, ap_input_count_plus_step)
     begin
-        if (((ap_input_count_plus_step = ap_const_lv10_202) and (ap_start = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_ready = ap_const_logic_1))) then 
+        if (((ap_input_count_plus_step = ap_const_lv10_208) and (ap_start = ap_const_logic_1) and (dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_ready = ap_const_logic_1))) then 
             ap_ready <= ap_const_logic_1;
         else 
             ap_ready <= ap_const_logic_0;
@@ -1007,7 +931,7 @@ begin
 
     dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_continue_assign_proc : process(ap_continue, ap_output_count_plus_step)
     begin
-        if ((not((ap_output_count_plus_step = ap_const_lv10_202)) or (ap_continue = ap_const_logic_1))) then 
+        if ((not((ap_output_count_plus_step = ap_const_lv10_208)) or (ap_continue = ap_const_logic_1))) then 
             dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_continue <= ap_const_logic_1;
         else 
             dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_continue <= ap_const_logic_0;
@@ -1015,6 +939,22 @@ begin
     end process;
 
     dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_start <= ap_start;
+    lineBuffer_1_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address0;
+    lineBuffer_1_address1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address1;
+    lineBuffer_1_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce0;
+    lineBuffer_1_ce1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce1;
+    lineBuffer_1_d0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d0;
+    lineBuffer_1_d1 <= ap_const_lv8_0;
+    lineBuffer_1_we0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we0;
+    lineBuffer_1_we1 <= ap_const_logic_0;
+    lineBuffer_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address0;
+    lineBuffer_address1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address1;
+    lineBuffer_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce0;
+    lineBuffer_ce1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce1;
+    lineBuffer_d0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d0;
+    lineBuffer_d1 <= ap_const_lv8_0;
+    lineBuffer_we0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we0;
+    lineBuffer_we1 <= ap_const_logic_0;
     m_axi_gmem_0_ARADDR <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_ARADDR;
     m_axi_gmem_0_ARBURST <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_ARBURST;
     m_axi_gmem_0_ARCACHE <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_ARCACHE;
@@ -1047,22 +987,6 @@ begin
     m_axi_gmem_0_WSTRB <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_WSTRB;
     m_axi_gmem_0_WUSER <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_WUSER;
     m_axi_gmem_0_WVALID <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_WVALID;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d1 <= ap_const_lv8_0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we1 <= ap_const_logic_0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d1 <= ap_const_lv8_0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we1 <= ap_const_logic_0;
     p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
     p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
     p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
@@ -1143,22 +1067,6 @@ begin
     p_anonymous_namespace_lineBuffer_25_magnitude_1_d1 <= ap_const_lv11_0;
     p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
     p_anonymous_namespace_lineBuffer_25_magnitude_1_we1 <= ap_const_logic_0;
-    p_anonymous_namespace_lineBuffer_32_0_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address0;
-    p_anonymous_namespace_lineBuffer_32_0_address1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address1;
-    p_anonymous_namespace_lineBuffer_32_0_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce0;
-    p_anonymous_namespace_lineBuffer_32_0_ce1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce1;
-    p_anonymous_namespace_lineBuffer_32_0_d0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d0;
-    p_anonymous_namespace_lineBuffer_32_0_d1 <= ap_const_lv8_0;
-    p_anonymous_namespace_lineBuffer_32_0_we0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we0;
-    p_anonymous_namespace_lineBuffer_32_0_we1 <= ap_const_logic_0;
-    p_anonymous_namespace_lineBuffer_32_1_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address0;
-    p_anonymous_namespace_lineBuffer_32_1_address1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address1;
-    p_anonymous_namespace_lineBuffer_32_1_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce0;
-    p_anonymous_namespace_lineBuffer_32_1_ce1 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce1;
-    p_anonymous_namespace_lineBuffer_32_1_d0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d0;
-    p_anonymous_namespace_lineBuffer_32_1_d1 <= ap_const_lv8_0;
-    p_anonymous_namespace_lineBuffer_32_1_we0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we0;
-    p_anonymous_namespace_lineBuffer_32_1_we1 <= ap_const_logic_0;
     p_anonymous_namespace_lineBuffer_direction_address0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address0;
     p_anonymous_namespace_lineBuffer_direction_address1 <= ap_const_lv11_0;
     p_anonymous_namespace_lineBuffer_direction_ce0 <= dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_ce0;

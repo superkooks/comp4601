@@ -81,7 +81,7 @@ attribute shreg_extract : string;
     signal trunc_ln45_reg_249 : STD_LOGIC_VECTOR (0 downto 0);
     signal zext_ln45_fu_172_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_pp0_stage0 : BOOLEAN;
-    signal zext_ln46_3_fu_196_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal zext_ln46_4_fu_196_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal zext_ln46_1_fu_217_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal column_fu_54 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     signal add_ln45_fu_166_p2 : STD_LOGIC_VECTOR (9 downto 0);
@@ -97,7 +97,7 @@ attribute shreg_extract : string;
     signal p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local : STD_LOGIC;
     signal p_anonymous_namespace_lineBuffer_direction_we0_local : STD_LOGIC;
     signal p_anonymous_namespace_lineBuffer_direction_ce0_local : STD_LOGIC;
-    signal zext_ln46_2_fu_188_p1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal zext_ln46_3_fu_188_p1 : STD_LOGIC_VECTOR (10 downto 0);
     signal add_ln46_fu_191_p2 : STD_LOGIC_VECTOR (10 downto 0);
     signal lshr_ln_fu_201_p4 : STD_LOGIC_VECTOR (7 downto 0);
     signal tmp_s_fu_210_p3 : STD_LOGIC_VECTOR (9 downto 0);
@@ -225,7 +225,7 @@ begin
         end case;
     end process;
     add_ln45_fu_166_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_column_3) + unsigned(ap_const_lv10_1));
-    add_ln46_fu_191_p2 <= std_logic_vector(unsigned(zext_ln46) + unsigned(zext_ln46_2_fu_188_p1));
+    add_ln46_fu_191_p2 <= std_logic_vector(unsigned(zext_ln46) + unsigned(zext_ln46_3_fu_188_p1));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
         ap_block_pp0_stage0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
         ap_block_pp0_stage0_11001 <= not((ap_const_boolean_1 = ap_const_boolean_1));
@@ -393,7 +393,7 @@ begin
         end if; 
     end process;
 
-    p_anonymous_namespace_lineBuffer_direction_address0 <= zext_ln46_3_fu_196_p1(11 - 1 downto 0);
+    p_anonymous_namespace_lineBuffer_direction_address0 <= zext_ln46_4_fu_196_p1(11 - 1 downto 0);
     p_anonymous_namespace_lineBuffer_direction_ce0 <= p_anonymous_namespace_lineBuffer_direction_ce0_local;
 
     p_anonymous_namespace_lineBuffer_direction_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001)
@@ -421,6 +421,6 @@ begin
     trunc_ln45_fu_179_p1 <= ap_sig_allocacmp_column_3(1 - 1 downto 0);
     zext_ln45_fu_172_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_column_3),64));
     zext_ln46_1_fu_217_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_s_fu_210_p3),64));
-    zext_ln46_2_fu_188_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(column_3_reg_240),11));
-    zext_ln46_3_fu_196_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln46_fu_191_p2),64));
+    zext_ln46_3_fu_188_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(column_3_reg_240),11));
+    zext_ln46_4_fu_196_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln46_fu_191_p2),64));
 end behav;

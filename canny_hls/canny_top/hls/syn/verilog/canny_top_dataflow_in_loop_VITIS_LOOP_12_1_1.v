@@ -61,48 +61,28 @@ module canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1 (
         out_r,
         p_anonymous_namespace_rowsReceived_i,
         p_anonymous_namespace_rowsReceived_o,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we1,
+        lineBuffer_1_address0,
+        lineBuffer_1_ce0,
+        lineBuffer_1_d0,
+        lineBuffer_1_q0,
+        lineBuffer_1_we0,
+        lineBuffer_1_address1,
+        lineBuffer_1_ce1,
+        lineBuffer_1_d1,
+        lineBuffer_1_q1,
+        lineBuffer_1_we1,
         p_anonymous_namespace_rowsReceived_1_i,
         p_anonymous_namespace_rowsReceived_1_o,
-        p_anonymous_namespace_lineBuffer_32_0_address0,
-        p_anonymous_namespace_lineBuffer_32_0_ce0,
-        p_anonymous_namespace_lineBuffer_32_0_d0,
-        p_anonymous_namespace_lineBuffer_32_0_q0,
-        p_anonymous_namespace_lineBuffer_32_0_we0,
-        p_anonymous_namespace_lineBuffer_32_0_address1,
-        p_anonymous_namespace_lineBuffer_32_0_ce1,
-        p_anonymous_namespace_lineBuffer_32_0_d1,
-        p_anonymous_namespace_lineBuffer_32_0_q1,
-        p_anonymous_namespace_lineBuffer_32_0_we1,
-        p_anonymous_namespace_lineBuffer_32_1_address0,
-        p_anonymous_namespace_lineBuffer_32_1_ce0,
-        p_anonymous_namespace_lineBuffer_32_1_d0,
-        p_anonymous_namespace_lineBuffer_32_1_q0,
-        p_anonymous_namespace_lineBuffer_32_1_we0,
-        p_anonymous_namespace_lineBuffer_32_1_address1,
-        p_anonymous_namespace_lineBuffer_32_1_ce1,
-        p_anonymous_namespace_lineBuffer_32_1_d1,
-        p_anonymous_namespace_lineBuffer_32_1_q1,
-        p_anonymous_namespace_lineBuffer_32_1_we1,
+        lineBuffer_address0,
+        lineBuffer_ce0,
+        lineBuffer_d0,
+        lineBuffer_q0,
+        lineBuffer_we0,
+        lineBuffer_address1,
+        lineBuffer_ce1,
+        lineBuffer_d1,
+        lineBuffer_q1,
+        lineBuffer_we1,
         p_anonymous_namespace_rowsReceived_2_i,
         p_anonymous_namespace_rowsReceived_2_o,
         p_anonymous_namespace_lineBuffer_direction_address0,
@@ -305,48 +285,28 @@ input  [63:0] in_r;
 input  [63:0] out_r;
 input  [31:0] p_anonymous_namespace_rowsReceived_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_o;
-output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
-output   p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
-output  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
-input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_q0;
-output   p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
-output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
-output   p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
-output  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_d1;
-input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_0_q1;
-output   p_ZN12_GLOBAL_N_110lineBufferE_0_we1;
-output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
-output   p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
-output  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
-input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_q0;
-output   p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
-output  [10:0] p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
-output   p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
-output  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_d1;
-input  [7:0] p_ZN12_GLOBAL_N_110lineBufferE_1_q1;
-output   p_ZN12_GLOBAL_N_110lineBufferE_1_we1;
+output  [11:0] lineBuffer_1_address0;
+output   lineBuffer_1_ce0;
+output  [7:0] lineBuffer_1_d0;
+input  [7:0] lineBuffer_1_q0;
+output   lineBuffer_1_we0;
+output  [11:0] lineBuffer_1_address1;
+output   lineBuffer_1_ce1;
+output  [7:0] lineBuffer_1_d1;
+input  [7:0] lineBuffer_1_q1;
+output   lineBuffer_1_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_1_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_1_o;
-output  [9:0] p_anonymous_namespace_lineBuffer_32_0_address0;
-output   p_anonymous_namespace_lineBuffer_32_0_ce0;
-output  [7:0] p_anonymous_namespace_lineBuffer_32_0_d0;
-input  [7:0] p_anonymous_namespace_lineBuffer_32_0_q0;
-output   p_anonymous_namespace_lineBuffer_32_0_we0;
-output  [9:0] p_anonymous_namespace_lineBuffer_32_0_address1;
-output   p_anonymous_namespace_lineBuffer_32_0_ce1;
-output  [7:0] p_anonymous_namespace_lineBuffer_32_0_d1;
-input  [7:0] p_anonymous_namespace_lineBuffer_32_0_q1;
-output   p_anonymous_namespace_lineBuffer_32_0_we1;
-output  [9:0] p_anonymous_namespace_lineBuffer_32_1_address0;
-output   p_anonymous_namespace_lineBuffer_32_1_ce0;
-output  [7:0] p_anonymous_namespace_lineBuffer_32_1_d0;
-input  [7:0] p_anonymous_namespace_lineBuffer_32_1_q0;
-output   p_anonymous_namespace_lineBuffer_32_1_we0;
-output  [9:0] p_anonymous_namespace_lineBuffer_32_1_address1;
-output   p_anonymous_namespace_lineBuffer_32_1_ce1;
-output  [7:0] p_anonymous_namespace_lineBuffer_32_1_d1;
-input  [7:0] p_anonymous_namespace_lineBuffer_32_1_q1;
-output   p_anonymous_namespace_lineBuffer_32_1_we1;
+output  [10:0] lineBuffer_address0;
+output   lineBuffer_ce0;
+output  [7:0] lineBuffer_d0;
+input  [7:0] lineBuffer_q0;
+output   lineBuffer_we0;
+output  [10:0] lineBuffer_address1;
+output   lineBuffer_ce1;
+output  [7:0] lineBuffer_d1;
+input  [7:0] lineBuffer_q1;
+output   lineBuffer_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_2_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_2_o;
 output  [10:0] p_anonymous_namespace_lineBuffer_direction_address0;
@@ -575,18 +535,12 @@ wire    gaussian_blur_U0_output_r_we0;
 wire   [7:0] gaussian_blur_U0_output_r_d0;
 wire   [31:0] gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o;
 wire    gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o_ap_vld;
-wire   [10:0] gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
-wire    gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
-wire    gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
-wire   [7:0] gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
-wire   [10:0] gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
-wire    gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
-wire   [10:0] gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
-wire    gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
-wire    gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
-wire   [7:0] gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
-wire   [10:0] gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
-wire    gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
+wire   [11:0] gaussian_blur_U0_lineBuffer_1_address0;
+wire    gaussian_blur_U0_lineBuffer_1_ce0;
+wire    gaussian_blur_U0_lineBuffer_1_we0;
+wire   [7:0] gaussian_blur_U0_lineBuffer_1_d0;
+wire   [11:0] gaussian_blur_U0_lineBuffer_1_address1;
+wire    gaussian_blur_U0_lineBuffer_1_ce1;
 wire   [0:0] gaussian_blur_U0_ap_return;
 wire    ap_channel_done_gaussian_valid;
 wire    gaussian_valid_full_n;
@@ -614,18 +568,12 @@ wire    sobel_U0_out_sobel_direction_we0;
 wire   [1:0] sobel_U0_out_sobel_direction_d0;
 wire   [31:0] sobel_U0_p_anonymous_namespace_rowsReceived_1_o;
 wire    sobel_U0_p_anonymous_namespace_rowsReceived_1_o_ap_vld;
-wire   [9:0] sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address0;
-wire    sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce0;
-wire    sobel_U0_p_anonymous_namespace_lineBuffer_32_0_we0;
-wire   [7:0] sobel_U0_p_anonymous_namespace_lineBuffer_32_0_d0;
-wire   [9:0] sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address1;
-wire    sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce1;
-wire   [9:0] sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address0;
-wire    sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce0;
-wire    sobel_U0_p_anonymous_namespace_lineBuffer_32_1_we0;
-wire   [7:0] sobel_U0_p_anonymous_namespace_lineBuffer_32_1_d0;
-wire   [9:0] sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address1;
-wire    sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce1;
+wire   [10:0] sobel_U0_lineBuffer_address0;
+wire    sobel_U0_lineBuffer_ce0;
+wire    sobel_U0_lineBuffer_we0;
+wire   [7:0] sobel_U0_lineBuffer_d0;
+wire   [10:0] sobel_U0_lineBuffer_address1;
+wire    sobel_U0_lineBuffer_ce1;
 wire   [0:0] sobel_U0_ap_return;
 wire    ap_channel_done_sobel_valid;
 wire    sobel_valid_full_n;
@@ -1324,22 +1272,14 @@ canny_top_gaussian_blur gaussian_blur_U0(
     .p_anonymous_namespace_rowsReceived_i(p_anonymous_namespace_rowsReceived_i),
     .p_anonymous_namespace_rowsReceived_o(gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o),
     .p_anonymous_namespace_rowsReceived_o_ap_vld(gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o_ap_vld),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_address0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_ce0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_we0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_d0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_q0(p_ZN12_GLOBAL_N_110lineBufferE_0_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_address1(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_ce1(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferE_0_q1(p_ZN12_GLOBAL_N_110lineBufferE_0_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_address0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_ce0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_we0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_d0(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_q0(p_ZN12_GLOBAL_N_110lineBufferE_1_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_address1(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_ce1(gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferE_1_q1(p_ZN12_GLOBAL_N_110lineBufferE_1_q1),
+    .lineBuffer_1_address0(gaussian_blur_U0_lineBuffer_1_address0),
+    .lineBuffer_1_ce0(gaussian_blur_U0_lineBuffer_1_ce0),
+    .lineBuffer_1_we0(gaussian_blur_U0_lineBuffer_1_we0),
+    .lineBuffer_1_d0(gaussian_blur_U0_lineBuffer_1_d0),
+    .lineBuffer_1_q0(lineBuffer_1_q0),
+    .lineBuffer_1_address1(gaussian_blur_U0_lineBuffer_1_address1),
+    .lineBuffer_1_ce1(gaussian_blur_U0_lineBuffer_1_ce1),
+    .lineBuffer_1_q1(lineBuffer_1_q1),
     .ap_return(gaussian_blur_U0_ap_return)
 );
 
@@ -1366,22 +1306,14 @@ canny_top_sobel sobel_U0(
     .p_anonymous_namespace_rowsReceived_1_i(p_anonymous_namespace_rowsReceived_1_i),
     .p_anonymous_namespace_rowsReceived_1_o(sobel_U0_p_anonymous_namespace_rowsReceived_1_o),
     .p_anonymous_namespace_rowsReceived_1_o_ap_vld(sobel_U0_p_anonymous_namespace_rowsReceived_1_o_ap_vld),
-    .p_anonymous_namespace_lineBuffer_32_0_address0(sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address0),
-    .p_anonymous_namespace_lineBuffer_32_0_ce0(sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce0),
-    .p_anonymous_namespace_lineBuffer_32_0_we0(sobel_U0_p_anonymous_namespace_lineBuffer_32_0_we0),
-    .p_anonymous_namespace_lineBuffer_32_0_d0(sobel_U0_p_anonymous_namespace_lineBuffer_32_0_d0),
-    .p_anonymous_namespace_lineBuffer_32_0_q0(p_anonymous_namespace_lineBuffer_32_0_q0),
-    .p_anonymous_namespace_lineBuffer_32_0_address1(sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address1),
-    .p_anonymous_namespace_lineBuffer_32_0_ce1(sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce1),
-    .p_anonymous_namespace_lineBuffer_32_0_q1(p_anonymous_namespace_lineBuffer_32_0_q1),
-    .p_anonymous_namespace_lineBuffer_32_1_address0(sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address0),
-    .p_anonymous_namespace_lineBuffer_32_1_ce0(sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce0),
-    .p_anonymous_namespace_lineBuffer_32_1_we0(sobel_U0_p_anonymous_namespace_lineBuffer_32_1_we0),
-    .p_anonymous_namespace_lineBuffer_32_1_d0(sobel_U0_p_anonymous_namespace_lineBuffer_32_1_d0),
-    .p_anonymous_namespace_lineBuffer_32_1_q0(p_anonymous_namespace_lineBuffer_32_1_q0),
-    .p_anonymous_namespace_lineBuffer_32_1_address1(sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address1),
-    .p_anonymous_namespace_lineBuffer_32_1_ce1(sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce1),
-    .p_anonymous_namespace_lineBuffer_32_1_q1(p_anonymous_namespace_lineBuffer_32_1_q1),
+    .lineBuffer_address0(sobel_U0_lineBuffer_address0),
+    .lineBuffer_ce0(sobel_U0_lineBuffer_ce0),
+    .lineBuffer_we0(sobel_U0_lineBuffer_we0),
+    .lineBuffer_d0(sobel_U0_lineBuffer_d0),
+    .lineBuffer_q0(lineBuffer_q0),
+    .lineBuffer_address1(sobel_U0_lineBuffer_address1),
+    .lineBuffer_ce1(sobel_U0_lineBuffer_ce1),
+    .lineBuffer_q1(lineBuffer_q1),
     .ap_return(sobel_U0_ap_return)
 );
 
@@ -2253,6 +2185,38 @@ assign hysteresis_4_U0_ap_start = (hysteresis3_valid_empty_n & (ap_sync_reg_hyst
 
 assign hysteresis_4_U0_out_hysteresis4_full_n = out_hysteresis4_i_full_n;
 
+assign lineBuffer_1_address0 = gaussian_blur_U0_lineBuffer_1_address0;
+
+assign lineBuffer_1_address1 = gaussian_blur_U0_lineBuffer_1_address1;
+
+assign lineBuffer_1_ce0 = gaussian_blur_U0_lineBuffer_1_ce0;
+
+assign lineBuffer_1_ce1 = gaussian_blur_U0_lineBuffer_1_ce1;
+
+assign lineBuffer_1_d0 = gaussian_blur_U0_lineBuffer_1_d0;
+
+assign lineBuffer_1_d1 = 8'd0;
+
+assign lineBuffer_1_we0 = gaussian_blur_U0_lineBuffer_1_we0;
+
+assign lineBuffer_1_we1 = 1'b0;
+
+assign lineBuffer_address0 = sobel_U0_lineBuffer_address0;
+
+assign lineBuffer_address1 = sobel_U0_lineBuffer_address1;
+
+assign lineBuffer_ce0 = sobel_U0_lineBuffer_ce0;
+
+assign lineBuffer_ce1 = sobel_U0_lineBuffer_ce1;
+
+assign lineBuffer_d0 = sobel_U0_lineBuffer_d0;
+
+assign lineBuffer_d1 = 8'd0;
+
+assign lineBuffer_we0 = sobel_U0_lineBuffer_we0;
+
+assign lineBuffer_we1 = 1'b0;
+
 assign m_axi_gmem_0_ARADDR = grayscale_U0_m_axi_gmem_0_ARADDR;
 
 assign m_axi_gmem_0_ARBURST = grayscale_U0_m_axi_gmem_0_ARBURST;
@@ -2326,38 +2290,6 @@ assign non_maximum_suppression_U0_out_nonmax_full_n = out_nonmax_i_full_n;
 assign output_row_U0_ap_continue = ap_sync_continue;
 
 assign output_row_U0_ap_start = (hysteresis4_valid_empty_n & (ap_sync_reg_output_row_U0_ap_ready ^ 1'b1) & ap_start & 1'b1);
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_address0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_address1 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_d0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_d1 = 8'd0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_we0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_0_we1 = 1'b0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_address0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_address1 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_d0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_d1 = 8'd0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_we0 = gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
-
-assign p_ZN12_GLOBAL_N_110lineBufferE_1_we1 = 1'b0;
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 = hysteresis_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
 
@@ -2518,38 +2450,6 @@ assign p_anonymous_namespace_lineBuffer_25_magnitude_1_d1 = 11'd0;
 assign p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = non_maximum_suppression_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
 
 assign p_anonymous_namespace_lineBuffer_25_magnitude_1_we1 = 1'b0;
-
-assign p_anonymous_namespace_lineBuffer_32_0_address0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address0;
-
-assign p_anonymous_namespace_lineBuffer_32_0_address1 = sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address1;
-
-assign p_anonymous_namespace_lineBuffer_32_0_ce0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce0;
-
-assign p_anonymous_namespace_lineBuffer_32_0_ce1 = sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce1;
-
-assign p_anonymous_namespace_lineBuffer_32_0_d0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_0_d0;
-
-assign p_anonymous_namespace_lineBuffer_32_0_d1 = 8'd0;
-
-assign p_anonymous_namespace_lineBuffer_32_0_we0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_0_we0;
-
-assign p_anonymous_namespace_lineBuffer_32_0_we1 = 1'b0;
-
-assign p_anonymous_namespace_lineBuffer_32_1_address0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address0;
-
-assign p_anonymous_namespace_lineBuffer_32_1_address1 = sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address1;
-
-assign p_anonymous_namespace_lineBuffer_32_1_ce0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce0;
-
-assign p_anonymous_namespace_lineBuffer_32_1_ce1 = sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce1;
-
-assign p_anonymous_namespace_lineBuffer_32_1_d0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_1_d0;
-
-assign p_anonymous_namespace_lineBuffer_32_1_d1 = 8'd0;
-
-assign p_anonymous_namespace_lineBuffer_32_1_we0 = sobel_U0_p_anonymous_namespace_lineBuffer_32_1_we0;
-
-assign p_anonymous_namespace_lineBuffer_32_1_we1 = 1'b0;
 
 assign p_anonymous_namespace_lineBuffer_direction_address0 = non_maximum_suppression_U0_p_anonymous_namespace_lineBuffer_direction_address0;
 

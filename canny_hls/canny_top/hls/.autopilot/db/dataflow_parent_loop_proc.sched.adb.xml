@@ -37,7 +37,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
+<Node id="25" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
 <![CDATA[
 newFuncRoot:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i64 %out_r, i1 1, void @p_str
 
@@ -52,7 +52,7 @@ newFuncRoot:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
 <![CDATA[
 newFuncRoot:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i64 %in_r, i1 1, void @p_str
 
@@ -67,9 +67,9 @@ newFuncRoot:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_22, i32 64, i32 0, void @empty_10, void @empty_13, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_16, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_21, void @empty_8, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -82,7 +82,7 @@ newFuncRoot:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="28" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
 newFuncRoot:3 %out_r_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %out_r
 
@@ -97,7 +97,7 @@ newFuncRoot:3 %out_r_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %out_r
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="29" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
 newFuncRoot:4 %in_r_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %in_r
 
@@ -112,7 +112,7 @@ newFuncRoot:4 %in_r_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %in_r
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="0" op_0_bw="0">
+<Node id="30" bw="0" op_0_bw="0">
 <![CDATA[
 newFuncRoot:5 %br_ln0 = br void %for.cond
 
@@ -130,7 +130,7 @@ newFuncRoot:5 %br_ln0 = br void %for.cond
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="10" op_0_bw="10" op_1_bw="0" op_2_bw="10" op_3_bw="0">
+<Node id="32" bw="10" op_0_bw="10" op_1_bw="0" op_2_bw="10" op_3_bw="0">
 <![CDATA[
 for.cond:0 %i = phi i10 0, void %newFuncRoot, i10 %add_ln12, void %codeRepl
 
@@ -145,9 +145,9 @@ for.cond:0 %i = phi i10 0, void %newFuncRoot, i10 %add_ln12, void %codeRepl
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="1" op_0_bw="10" op_1_bw="10">
+<Node id="33" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.cond:1 %icmp_ln12 = icmp_eq  i10 %i, i10 514
+for.cond:1 %icmp_ln12 = icmp_eq  i10 %i, i10 520
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln12"/></StgValue>
@@ -160,7 +160,7 @@ for.cond:1 %icmp_ln12 = icmp_eq  i10 %i, i10 514
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="10" op_0_bw="10" op_1_bw="10">
+<Node id="34" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 for.cond:2 %add_ln12 = add i10 %i, i10 1
 
@@ -175,9 +175,9 @@ for.cond:2 %add_ln12 = add i10 %i, i10 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="10" op_5_bw="10" op_6_bw="32" op_7_bw="10" op_8_bw="10" op_9_bw="32">
+<Node id="35" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0" op_4_bw="10" op_5_bw="10" op_6_bw="32" op_7_bw="10" op_8_bw="10" op_9_bw="32">
 <![CDATA[
-for.cond:3 %specdataflowpipeline_ln12 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i10 %i, i10 514, i32 0, i10 0, i10 1, i32 1
+for.cond:3 %specdataflowpipeline_ln12 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @dataflow_parent_loop_str, i10 %i, i10 520, i32 0, i10 0, i10 1, i32 1
 
 ]]></Node>
 <StgValue><ssdm name="specdataflowpipeline_ln12"/></StgValue>
@@ -190,7 +190,7 @@ for.cond:3 %specdataflowpipeline_ln12 = specdataflowpipeline void @_ssdm_op_Spec
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
+<Node id="36" bw="0" op_0_bw="1" op_1_bw="0" op_2_bw="0">
 <![CDATA[
 for.cond:4 %br_ln12 = br i1 %icmp_ln12, void %codeRepl, void %for.end.exitStub
 
@@ -206,9 +206,9 @@ for.cond:4 %br_ln12 = br i1 %icmp_ln12, void %codeRepl, void %for.end.exitStub
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="32" op_9_bw="8" op_10_bw="8" op_11_bw="32" op_12_bw="2" op_13_bw="11" op_14_bw="11" op_15_bw="32" op_16_bw="8" op_17_bw="8" op_18_bw="32" op_19_bw="8" op_20_bw="8" op_21_bw="32" op_22_bw="8" op_23_bw="8" op_24_bw="32" op_25_bw="8" op_26_bw="8" op_27_bw="32">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="32" op_8_bw="8" op_9_bw="32" op_10_bw="2" op_11_bw="11" op_12_bw="11" op_13_bw="32" op_14_bw="8" op_15_bw="8" op_16_bw="32" op_17_bw="8" op_18_bw="8" op_19_bw="32" op_20_bw="8" op_21_bw="8" op_22_bw="32" op_23_bw="8" op_24_bw="8" op_25_bw="32">
 <![CDATA[
-codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
+codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %lineBuffer_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %lineBuffer, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
 
 ]]></Node>
 <StgValue><ssdm name="call_ln24"/></StgValue>
@@ -222,7 +222,7 @@ codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i
 </and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="0">
+<Node id="43" bw="0">
 <![CDATA[
 for.end.exitStub:0 %ret_ln0 = ret
 
@@ -241,9 +241,9 @@ for.end.exitStub:0 %ret_ln0 = ret
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
+<Node id="38" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-codeRepl:0 %speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 514, i64 514, i64 514
+codeRepl:0 %speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 520, i64 520, i64 520
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln24"/></StgValue>
@@ -257,9 +257,9 @@ codeRepl:0 %speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTr
 </and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="0" op_1_bw="0">
+<Node id="39" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-codeRepl:1 %specloopname_ln12 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1
+codeRepl:1 %specloopname_ln12 = specloopname void @_ssdm_op_SpecLoopName, void @empty_0
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln12"/></StgValue>
@@ -273,9 +273,9 @@ codeRepl:1 %specloopname_ln12 = specloopname void @_ssdm_op_SpecLoopName, void @
 </and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="32" op_9_bw="8" op_10_bw="8" op_11_bw="32" op_12_bw="2" op_13_bw="11" op_14_bw="11" op_15_bw="32" op_16_bw="8" op_17_bw="8" op_18_bw="32" op_19_bw="8" op_20_bw="8" op_21_bw="32" op_22_bw="8" op_23_bw="8" op_24_bw="32" op_25_bw="8" op_26_bw="8" op_27_bw="32">
+<Node id="40" bw="0" op_0_bw="0" op_1_bw="10" op_2_bw="512" op_3_bw="64" op_4_bw="64" op_5_bw="32" op_6_bw="8" op_7_bw="32" op_8_bw="8" op_9_bw="32" op_10_bw="2" op_11_bw="11" op_12_bw="11" op_13_bw="32" op_14_bw="8" op_15_bw="8" op_16_bw="32" op_17_bw="8" op_18_bw="8" op_19_bw="32" op_20_bw="8" op_21_bw="8" op_22_bw="32" op_23_bw="8" op_24_bw="8" op_25_bw="32">
 <![CDATA[
-codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
+codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i512 %gmem, i64 %in_r_read, i64 %out_r_read, i32 %p_anonymous_namespace_rowsReceived, i8 %lineBuffer_1, i32 %p_anonymous_namespace_rowsReceived_1, i8 %lineBuffer, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1, i32 %rowsReceived
 
 ]]></Node>
 <StgValue><ssdm name="call_ln24"/></StgValue>
@@ -289,7 +289,7 @@ codeRepl:2 %call_ln24 = call void @dataflow_in_loop_VITIS_LOOP_12_1.1, i10 %i, i
 </and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="0" op_0_bw="0">
+<Node id="41" bw="0" op_0_bw="0">
 <![CDATA[
 codeRepl:3 %br_ln12 = br void %for.cond
 

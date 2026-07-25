@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'non_maximum_suppression'" level="0">
-<item name = "Date">Fri Jul 24 22:33:45 2026
+<item name = "Date">Sat Jul 25 12:05:02 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 1608, 5.000 ns, 8.040 us, 1, 1608, no</column>
+<column name="">1, 1614, 5.000 ns, 8.070 us, 1, 1614, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_81">non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2_fu_99">non_maximum_suppression_Pipeline_VITIS_LOOP_81_2, 1023, 1023, 5.115 us, 5.115 us, 0, 0, loop pipeline stp</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_67">non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2_fu_85">non_maximum_suppression_Pipeline_VITIS_LOOP_74_2, 1027, 1027, 5.135 us, 5.135 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

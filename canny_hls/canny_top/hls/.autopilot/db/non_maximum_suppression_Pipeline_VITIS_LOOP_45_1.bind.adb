@@ -883,7 +883,7 @@
 					<Obj>
 						<type>0</type>
 						<id>21</id>
-						<name>zext_ln46_2</name>
+						<name>zext_ln46_3</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>46</lineNumber>
@@ -1010,7 +1010,7 @@
 					<Obj>
 						<type>0</type>
 						<id>23</id>
-						<name>zext_ln46_3</name>
+						<name>zext_ln46_4</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>46</lineNumber>
@@ -4471,7 +4471,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln46_2_fu_188</first>
+			<first>zext_ln46_3_fu_188</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -4479,7 +4479,7 @@
 			</second>
 		</item>
 		<item>
-			<first>zext_ln46_3_fu_196</first>
+			<first>zext_ln46_4_fu_196</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

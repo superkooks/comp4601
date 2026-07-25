@@ -1555,7 +1555,7 @@
 					<Obj>
 						<type>0</type>
 						<id>36</id>
-						<name>tmp_14</name>
+						<name>tmp_21</name>
 						<fileName>../src/output_row.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>20</lineNumber>

@@ -63,48 +63,28 @@ port (
     out_r : IN STD_LOGIC_VECTOR (63 downto 0);
     p_anonymous_namespace_rowsReceived_i : IN STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_rowsReceived_o : OUT STD_LOGIC_VECTOR (31 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we1 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : OUT STD_LOGIC;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we1 : OUT STD_LOGIC;
+    lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
+    lineBuffer_1_ce0 : OUT STD_LOGIC;
+    lineBuffer_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_we0 : OUT STD_LOGIC;
+    lineBuffer_1_address1 : OUT STD_LOGIC_VECTOR (11 downto 0);
+    lineBuffer_1_ce1 : OUT STD_LOGIC;
+    lineBuffer_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_1_we1 : OUT STD_LOGIC;
     p_anonymous_namespace_rowsReceived_1_i : IN STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_rowsReceived_1_o : OUT STD_LOGIC_VECTOR (31 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_ce0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_we0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_ce1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_0_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_0_we1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_ce0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_we0 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_ce1 : OUT STD_LOGIC;
-    p_anonymous_namespace_lineBuffer_32_1_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-    p_anonymous_namespace_lineBuffer_32_1_we1 : OUT STD_LOGIC;
+    lineBuffer_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    lineBuffer_ce0 : OUT STD_LOGIC;
+    lineBuffer_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_we0 : OUT STD_LOGIC;
+    lineBuffer_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+    lineBuffer_ce1 : OUT STD_LOGIC;
+    lineBuffer_d1 : OUT STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+    lineBuffer_we1 : OUT STD_LOGIC;
     p_anonymous_namespace_rowsReceived_2_i : IN STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_rowsReceived_2_o : OUT STD_LOGIC_VECTOR (31 downto 0);
     p_anonymous_namespace_lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
@@ -258,9 +238,9 @@ architecture behav of canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1 is
     attribute DowngradeIPIdentifiedWarnings : STRING;
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     constant ap_const_logic_1 : STD_LOGIC := '1';
-    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv512_lc_1 : STD_LOGIC_VECTOR (511 downto 0) := "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
@@ -349,18 +329,12 @@ attribute shreg_extract : string;
     signal gaussian_blur_U0_output_r_d0 : STD_LOGIC_VECTOR (7 downto 0);
     signal gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o : STD_LOGIC_VECTOR (31 downto 0);
     signal gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o_ap_vld : STD_LOGIC;
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : STD_LOGIC;
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : STD_LOGIC;
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : STD_LOGIC;
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : STD_LOGIC_VECTOR (10 downto 0);
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : STD_LOGIC;
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : STD_LOGIC;
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1 : STD_LOGIC_VECTOR (10 downto 0);
-    signal gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : STD_LOGIC;
+    signal gaussian_blur_U0_lineBuffer_1_address0 : STD_LOGIC_VECTOR (11 downto 0);
+    signal gaussian_blur_U0_lineBuffer_1_ce0 : STD_LOGIC;
+    signal gaussian_blur_U0_lineBuffer_1_we0 : STD_LOGIC;
+    signal gaussian_blur_U0_lineBuffer_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal gaussian_blur_U0_lineBuffer_1_address1 : STD_LOGIC_VECTOR (11 downto 0);
+    signal gaussian_blur_U0_lineBuffer_1_ce1 : STD_LOGIC;
     signal gaussian_blur_U0_ap_return : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_channel_done_gaussian_valid : STD_LOGIC;
     signal gaussian_valid_full_n : STD_LOGIC;
@@ -388,18 +362,12 @@ attribute shreg_extract : string;
     signal sobel_U0_out_sobel_direction_d0 : STD_LOGIC_VECTOR (1 downto 0);
     signal sobel_U0_p_anonymous_namespace_rowsReceived_1_o : STD_LOGIC_VECTOR (31 downto 0);
     signal sobel_U0_p_anonymous_namespace_rowsReceived_1_o_ap_vld : STD_LOGIC;
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce0 : STD_LOGIC;
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_0_we0 : STD_LOGIC;
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_0_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce1 : STD_LOGIC;
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address0 : STD_LOGIC_VECTOR (9 downto 0);
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce0 : STD_LOGIC;
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_1_we0 : STD_LOGIC;
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_1_d0 : STD_LOGIC_VECTOR (7 downto 0);
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address1 : STD_LOGIC_VECTOR (9 downto 0);
-    signal sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce1 : STD_LOGIC;
+    signal sobel_U0_lineBuffer_address0 : STD_LOGIC_VECTOR (10 downto 0);
+    signal sobel_U0_lineBuffer_ce0 : STD_LOGIC;
+    signal sobel_U0_lineBuffer_we0 : STD_LOGIC;
+    signal sobel_U0_lineBuffer_d0 : STD_LOGIC_VECTOR (7 downto 0);
+    signal sobel_U0_lineBuffer_address1 : STD_LOGIC_VECTOR (10 downto 0);
+    signal sobel_U0_lineBuffer_ce1 : STD_LOGIC;
     signal sobel_U0_ap_return : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_channel_done_sobel_valid : STD_LOGIC;
     signal sobel_valid_full_n : STD_LOGIC;
@@ -823,22 +791,14 @@ attribute shreg_extract : string;
         p_anonymous_namespace_rowsReceived_i : IN STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_rowsReceived_o : OUT STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_rowsReceived_o_ap_vld : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we0 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 : OUT STD_LOGIC;
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (11 downto 0);
+        lineBuffer_1_ce0 : OUT STD_LOGIC;
+        lineBuffer_1_we0 : OUT STD_LOGIC;
+        lineBuffer_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_1_address1 : OUT STD_LOGIC_VECTOR (11 downto 0);
+        lineBuffer_1_ce1 : OUT STD_LOGIC;
+        lineBuffer_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
         ap_return : OUT STD_LOGIC_VECTOR (0 downto 0) );
     end component;
 
@@ -867,22 +827,14 @@ attribute shreg_extract : string;
         p_anonymous_namespace_rowsReceived_1_i : IN STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_rowsReceived_1_o : OUT STD_LOGIC_VECTOR (31 downto 0);
         p_anonymous_namespace_rowsReceived_1_o_ap_vld : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_0_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_0_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_0_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_0_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_0_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_ce0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_1_we0 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_address1 : OUT STD_LOGIC_VECTOR (9 downto 0);
-        p_anonymous_namespace_lineBuffer_32_1_ce1 : OUT STD_LOGIC;
-        p_anonymous_namespace_lineBuffer_32_1_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_address0 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        lineBuffer_ce0 : OUT STD_LOGIC;
+        lineBuffer_we0 : OUT STD_LOGIC;
+        lineBuffer_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_q0 : IN STD_LOGIC_VECTOR (7 downto 0);
+        lineBuffer_address1 : OUT STD_LOGIC_VECTOR (10 downto 0);
+        lineBuffer_ce1 : OUT STD_LOGIC;
+        lineBuffer_q1 : IN STD_LOGIC_VECTOR (7 downto 0);
         ap_return : OUT STD_LOGIC_VECTOR (0 downto 0) );
     end component;
 
@@ -1642,22 +1594,14 @@ begin
         p_anonymous_namespace_rowsReceived_i => p_anonymous_namespace_rowsReceived_i,
         p_anonymous_namespace_rowsReceived_o => gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o,
         p_anonymous_namespace_rowsReceived_o_ap_vld => gaussian_blur_U0_p_anonymous_namespace_rowsReceived_o_ap_vld,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_we0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_d0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q0 => p_ZN12_GLOBAL_N_110lineBufferE_0_q0,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_address1 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1,
-        p_ZN12_GLOBAL_N_110lineBufferE_0_q1 => p_ZN12_GLOBAL_N_110lineBufferE_0_q1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_we0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_d0 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q0 => p_ZN12_GLOBAL_N_110lineBufferE_1_q0,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_address1 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 => gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1,
-        p_ZN12_GLOBAL_N_110lineBufferE_1_q1 => p_ZN12_GLOBAL_N_110lineBufferE_1_q1,
+        lineBuffer_1_address0 => gaussian_blur_U0_lineBuffer_1_address0,
+        lineBuffer_1_ce0 => gaussian_blur_U0_lineBuffer_1_ce0,
+        lineBuffer_1_we0 => gaussian_blur_U0_lineBuffer_1_we0,
+        lineBuffer_1_d0 => gaussian_blur_U0_lineBuffer_1_d0,
+        lineBuffer_1_q0 => lineBuffer_1_q0,
+        lineBuffer_1_address1 => gaussian_blur_U0_lineBuffer_1_address1,
+        lineBuffer_1_ce1 => gaussian_blur_U0_lineBuffer_1_ce1,
+        lineBuffer_1_q1 => lineBuffer_1_q1,
         ap_return => gaussian_blur_U0_ap_return);
 
     sobel_U0 : component canny_top_sobel
@@ -1684,22 +1628,14 @@ begin
         p_anonymous_namespace_rowsReceived_1_i => p_anonymous_namespace_rowsReceived_1_i,
         p_anonymous_namespace_rowsReceived_1_o => sobel_U0_p_anonymous_namespace_rowsReceived_1_o,
         p_anonymous_namespace_rowsReceived_1_o_ap_vld => sobel_U0_p_anonymous_namespace_rowsReceived_1_o_ap_vld,
-        p_anonymous_namespace_lineBuffer_32_0_address0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address0,
-        p_anonymous_namespace_lineBuffer_32_0_ce0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce0,
-        p_anonymous_namespace_lineBuffer_32_0_we0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_0_we0,
-        p_anonymous_namespace_lineBuffer_32_0_d0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_0_d0,
-        p_anonymous_namespace_lineBuffer_32_0_q0 => p_anonymous_namespace_lineBuffer_32_0_q0,
-        p_anonymous_namespace_lineBuffer_32_0_address1 => sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address1,
-        p_anonymous_namespace_lineBuffer_32_0_ce1 => sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce1,
-        p_anonymous_namespace_lineBuffer_32_0_q1 => p_anonymous_namespace_lineBuffer_32_0_q1,
-        p_anonymous_namespace_lineBuffer_32_1_address0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address0,
-        p_anonymous_namespace_lineBuffer_32_1_ce0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce0,
-        p_anonymous_namespace_lineBuffer_32_1_we0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_1_we0,
-        p_anonymous_namespace_lineBuffer_32_1_d0 => sobel_U0_p_anonymous_namespace_lineBuffer_32_1_d0,
-        p_anonymous_namespace_lineBuffer_32_1_q0 => p_anonymous_namespace_lineBuffer_32_1_q0,
-        p_anonymous_namespace_lineBuffer_32_1_address1 => sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address1,
-        p_anonymous_namespace_lineBuffer_32_1_ce1 => sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce1,
-        p_anonymous_namespace_lineBuffer_32_1_q1 => p_anonymous_namespace_lineBuffer_32_1_q1,
+        lineBuffer_address0 => sobel_U0_lineBuffer_address0,
+        lineBuffer_ce0 => sobel_U0_lineBuffer_ce0,
+        lineBuffer_we0 => sobel_U0_lineBuffer_we0,
+        lineBuffer_d0 => sobel_U0_lineBuffer_d0,
+        lineBuffer_q0 => lineBuffer_q0,
+        lineBuffer_address1 => sobel_U0_lineBuffer_address1,
+        lineBuffer_ce1 => sobel_U0_lineBuffer_ce1,
+        lineBuffer_q1 => lineBuffer_q1,
         ap_return => sobel_U0_ap_return);
 
     non_maximum_suppression_U0 : component canny_top_non_maximum_suppression
@@ -2607,6 +2543,22 @@ begin
     hysteresis_4_U0_ap_continue <= (ap_sync_continue and ap_sync_channel_write_out_hysteresis4);
     hysteresis_4_U0_ap_start <= (hysteresis3_valid_empty_n and (ap_sync_reg_hysteresis_4_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
     hysteresis_4_U0_out_hysteresis4_full_n <= out_hysteresis4_i_full_n;
+    lineBuffer_1_address0 <= gaussian_blur_U0_lineBuffer_1_address0;
+    lineBuffer_1_address1 <= gaussian_blur_U0_lineBuffer_1_address1;
+    lineBuffer_1_ce0 <= gaussian_blur_U0_lineBuffer_1_ce0;
+    lineBuffer_1_ce1 <= gaussian_blur_U0_lineBuffer_1_ce1;
+    lineBuffer_1_d0 <= gaussian_blur_U0_lineBuffer_1_d0;
+    lineBuffer_1_d1 <= ap_const_lv8_0;
+    lineBuffer_1_we0 <= gaussian_blur_U0_lineBuffer_1_we0;
+    lineBuffer_1_we1 <= ap_const_logic_0;
+    lineBuffer_address0 <= sobel_U0_lineBuffer_address0;
+    lineBuffer_address1 <= sobel_U0_lineBuffer_address1;
+    lineBuffer_ce0 <= sobel_U0_lineBuffer_ce0;
+    lineBuffer_ce1 <= sobel_U0_lineBuffer_ce1;
+    lineBuffer_d0 <= sobel_U0_lineBuffer_d0;
+    lineBuffer_d1 <= ap_const_lv8_0;
+    lineBuffer_we0 <= sobel_U0_lineBuffer_we0;
+    lineBuffer_we1 <= ap_const_logic_0;
     m_axi_gmem_0_ARADDR <= grayscale_U0_m_axi_gmem_0_ARADDR;
     m_axi_gmem_0_ARBURST <= grayscale_U0_m_axi_gmem_0_ARBURST;
     m_axi_gmem_0_ARCACHE <= grayscale_U0_m_axi_gmem_0_ARCACHE;
@@ -2644,22 +2596,6 @@ begin
     non_maximum_suppression_U0_out_nonmax_full_n <= out_nonmax_i_full_n;
     output_row_U0_ap_continue <= ap_sync_continue;
     output_row_U0_ap_start <= (hysteresis4_valid_empty_n and (ap_sync_reg_output_row_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_address1 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_address1;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_ce1 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_ce1;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_d0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_d1 <= ap_const_lv8_0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_0_we0;
-    p_ZN12_GLOBAL_N_110lineBufferE_0_we1 <= ap_const_logic_0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_address1 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_address1;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_ce1 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_ce1;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_d0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_d1 <= ap_const_lv8_0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we0 <= gaussian_blur_U0_p_ZN12_GLOBAL_N_110lineBufferE_1_we0;
-    p_ZN12_GLOBAL_N_110lineBufferE_1_we1 <= ap_const_logic_0;
     p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 <= hysteresis_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
     p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1 <= hysteresis_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
     p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 <= hysteresis_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
@@ -2740,22 +2676,6 @@ begin
     p_anonymous_namespace_lineBuffer_25_magnitude_1_d1 <= ap_const_lv11_0;
     p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 <= non_maximum_suppression_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
     p_anonymous_namespace_lineBuffer_25_magnitude_1_we1 <= ap_const_logic_0;
-    p_anonymous_namespace_lineBuffer_32_0_address0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address0;
-    p_anonymous_namespace_lineBuffer_32_0_address1 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_0_address1;
-    p_anonymous_namespace_lineBuffer_32_0_ce0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce0;
-    p_anonymous_namespace_lineBuffer_32_0_ce1 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_0_ce1;
-    p_anonymous_namespace_lineBuffer_32_0_d0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_0_d0;
-    p_anonymous_namespace_lineBuffer_32_0_d1 <= ap_const_lv8_0;
-    p_anonymous_namespace_lineBuffer_32_0_we0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_0_we0;
-    p_anonymous_namespace_lineBuffer_32_0_we1 <= ap_const_logic_0;
-    p_anonymous_namespace_lineBuffer_32_1_address0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address0;
-    p_anonymous_namespace_lineBuffer_32_1_address1 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_1_address1;
-    p_anonymous_namespace_lineBuffer_32_1_ce0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce0;
-    p_anonymous_namespace_lineBuffer_32_1_ce1 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_1_ce1;
-    p_anonymous_namespace_lineBuffer_32_1_d0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_1_d0;
-    p_anonymous_namespace_lineBuffer_32_1_d1 <= ap_const_lv8_0;
-    p_anonymous_namespace_lineBuffer_32_1_we0 <= sobel_U0_p_anonymous_namespace_lineBuffer_32_1_we0;
-    p_anonymous_namespace_lineBuffer_32_1_we1 <= ap_const_logic_0;
     p_anonymous_namespace_lineBuffer_direction_address0 <= non_maximum_suppression_U0_p_anonymous_namespace_lineBuffer_direction_address0;
     p_anonymous_namespace_lineBuffer_direction_address1 <= ap_const_lv11_0;
     p_anonymous_namespace_lineBuffer_direction_ce0 <= non_maximum_suppression_U0_p_anonymous_namespace_lineBuffer_direction_ce0;

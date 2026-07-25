@@ -597,17 +597,21 @@ bool has_strong_neighbour(
     int topSlot,
     int centreSlot,
     int bottomSlot,
-    int column
+    int column,
+    bool hasTop,
+    bool hasBottom,
+    bool hasLeft,
+    bool hasRight
 ) {
     return
-        lineBuffer<Instance>[topSlot][column - 1] == STRONG_EDGE ||
-        lineBuffer<Instance>[topSlot][column] == STRONG_EDGE ||
-        lineBuffer<Instance>[topSlot][column + 1] == STRONG_EDGE ||
-        lineBuffer<Instance>[centreSlot][column - 1] == STRONG_EDGE ||
-        lineBuffer<Instance>[centreSlot][column + 1] == STRONG_EDGE ||
-        lineBuffer<Instance>[bottomSlot][column - 1] == STRONG_EDGE ||
-        lineBuffer<Instance>[bottomSlot][column] == STRONG_EDGE ||
-        lineBuffer<Instance>[bottomSlot][column + 1] == STRONG_EDGE;
+        (hasTop && hasLeft && lineBuffer<Instance>[topSlot][column - 1] == STRONG_EDGE) ||
+        (hasTop && lineBuffer<Instance>[topSlot][column] == STRONG_EDGE) ||
+        (hasTop && hasRight && lineBuffer<Instance>[topSlot][column + 1] == STRONG_EDGE) ||
+        (hasLeft && lineBuffer<Instance>[centreSlot][column - 1] == STRONG_EDGE) ||
+        (hasRight && lineBuffer<Instance>[centreSlot][column + 1] == STRONG_EDGE) ||
+        (hasBottom && hasLeft && lineBuffer<Instance>[bottomSlot][column - 1] == STRONG_EDGE) ||
+        (hasBottom && lineBuffer<Instance>[bottomSlot][column] == STRONG_EDGE) ||
+        (hasBottom && hasRight && lineBuffer<Instance>[bottomSlot][column + 1] == STRONG_EDGE);
 }
 
 }
@@ -616,8 +620,8 @@ template <int Instance>
 void hysteresis_reset() {
     rowsReceived<Instance> = 0;
 
-    VITIS_LOOP_45_1: for (int row = 0; row < WINDOW_SIZE; ++row) {
-        VITIS_LOOP_46_2: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_49_1: for (int row = 0; row < WINDOW_SIZE; ++row) {
+        VITIS_LOOP_50_2: for (int column = 0; column < WIDTH; ++column) {
             lineBuffer<Instance>[row][column] = NON_EDGE;
         }
     }
@@ -639,35 +643,25 @@ void hysteresis(
     const int writeSlot =
         rowsReceived<Instance> % WINDOW_SIZE;
 
-    VITIS_LOOP_68_1: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_72_1: for (int column = 0; column < WIDTH; ++column) {
         lineBuffer<Instance>[writeSlot][column] = input[column];
         output[column] = NON_EDGE;
     }
+    rowsReceived<Instance>++;
 
 
 
 
 
-    if (rowsReceived<Instance> < WINDOW_SIZE - 1) {
+    const int outputRow = rowsReceived<Instance> - 2;
+
+    if (outputRow < 0) {
         *valid_out = false;
-        ++rowsReceived<Instance>;
         return;
     }
 
-
-
-
-
-    const int outputRow = rowsReceived<Instance> - 1;
-
-
-
-
-    if (outputRow < 1 || outputRow >= HEIGHT - 1) {
-        *valid_out = false;
-        ++rowsReceived<Instance>;
-        return;
-    }
+    const bool hasTop = outputRow > 0;
+    const bool hasBottom = outputRow < HEIGHT - 1;
 
     const int topSlot =
         positive_modulo(
@@ -687,9 +681,12 @@ void hysteresis(
             WINDOW_SIZE
         );
 
-    VITIS_LOOP_116_2: for (int column = 1; column < WIDTH - 1; ++column) {
+    VITIS_LOOP_110_2: for (int column = 0; column < WIDTH; ++column) {
         const std::uint8_t centre =
             lineBuffer<Instance>[centreSlot][column];
+
+        const bool hasLeft = column > 0;
+        const bool hasRight = column < WIDTH - 1;
 
         if (centre == STRONG_EDGE) {
             output[column] = STRONG_EDGE;
@@ -700,7 +697,11 @@ void hysteresis(
                 topSlot,
                 centreSlot,
                 bottomSlot,
-                column
+                column,
+                hasTop,
+                hasBottom,
+                hasLeft,
+                hasRight
             )
         ) {
             output[column] = STRONG_EDGE;
@@ -714,7 +715,6 @@ void hysteresis(
     }
 
     *valid_out = true;
-    ++rowsReceived<Instance>;
 }
 
 template void hysteresis<1>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);

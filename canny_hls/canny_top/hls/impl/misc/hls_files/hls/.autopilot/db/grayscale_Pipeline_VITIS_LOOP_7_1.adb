@@ -3316,7 +3316,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_8ns_8ns_15_1_1_U17</rtlName>
+              <rtlName>mul_8ns_8ns_15_1_1_U15</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -3380,7 +3380,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U19</rtlName>
+              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U17</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3444,7 +3444,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U18</rtlName>
+              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U16</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3508,7 +3508,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U18</rtlName>
+              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U16</rtlName>
               <control>auto</control>
               <opType>zext</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3571,7 +3571,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U18</rtlName>
+              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U16</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3698,7 +3698,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>gray</originalName>
-              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U19</rtlName>
+              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U17</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>dsp_slice</implIndex>
@@ -9010,7 +9010,7 @@
           </second>
         </item>
         <item>
-          <first>mul_8ns_8ns_15_1_1_U17 (mul_8ns_8ns_15_1_1)</first>
+          <first>mul_8ns_8ns_15_1_1_U15 (mul_8ns_8ns_15_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -11970,7 +11970,7 @@
           </second>
         </item>
         <item>
-          <first>mac_muladd_8ns_5ns_15s_15_4_1_U18</first>
+          <first>mac_muladd_8ns_5ns_15s_15_4_1_U16</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11981,7 +11981,7 @@
           </second>
         </item>
         <item>
-          <first>mac_muladd_8ns_8ns_15ns_16_4_1_U19</first>
+          <first>mac_muladd_8ns_8ns_15ns_16_4_1_U17</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11992,7 +11992,7 @@
           </second>
         </item>
         <item>
-          <first>mul_8ns_8ns_15_1_1_U17</first>
+          <first>mul_8ns_8ns_15_1_1_U15</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -12003,7 +12003,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>mul_8ns_8ns_15_1_1_U17 (mul_8ns_8ns_15_1_1)</first>
+          <first>mul_8ns_8ns_15_1_1_U15 (mul_8ns_8ns_15_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

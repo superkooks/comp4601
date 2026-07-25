@@ -1,6 +1,7 @@
 #include <cstdint>
 
 #include "canny_stages.h"
+#include "config.h"
 
 namespace {
 
@@ -20,6 +21,16 @@ int rowsReceived = 0;
 int positive_modulo(int value, int divisor) {
     const int result = value % divisor;
     return result < 0 ? result + divisor : result;
+}
+
+int reflect_101(int v, int max) {
+    if (v < 0) {
+        return -v;
+    } else if (v >= max) {
+        return -(v - max) - 2 + max;
+    } else {
+        return v;
+    }
 }
 
 }
@@ -49,31 +60,22 @@ void gaussian_blur(
     }
     ++rowsReceived;
 
-    /*
-     * When the newest received row is r, the output belongs
-     * to row r - 2.
-     */
     const int outputRow = rowsReceived - 3;
 
-    // Preserve zero-valued top and bottom borders.
-    if (outputRow < 2 || outputRow >= HEIGHT - 2) {
+    if (outputRow < 0) {
         *valid_out = false;
         return;
     }
 
-    for (int column = 2; column < WIDTH - 2; ++column) {
+    for (int column = 0; column < WIDTH; ++column) {
         std::uint32_t sum = 0;
 
         for (int kernelRow = 0;
              kernelRow < KERNEL_SIZE;
              ++kernelRow) {
-
-            /*
-             * The five rows needed are:
-             * rowsReceived - 4 through rowsReceived.
-             */
+                
             const int absoluteSourceRow =
-                rowsReceived - 4 + kernelRow;
+                reflect_101(rowsReceived - 5 + kernelRow, HEIGHT);
 
             const int bufferSlot =
                 positive_modulo(
@@ -86,7 +88,7 @@ void gaussian_blur(
                  ++kernelColumn) {
 
                 const int sourceColumn =
-                    column + kernelColumn - 2;
+                    reflect_101(column + kernelColumn - 2, WIDTH);
 
                 sum +=
                     static_cast<std::uint32_t>(

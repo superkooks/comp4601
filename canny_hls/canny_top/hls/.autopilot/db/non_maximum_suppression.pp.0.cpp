@@ -620,76 +620,72 @@ void non_maximum_suppression(
         lineBuffer[writeSlot][column] = input[column];
         output[column] = 0;
     }
+    ++rowsReceived;
 
 
 
 
 
-    if (rowsReceived < WINDOW_SIZE - 1) {
-        ++rowsReceived;
+    const int outputRow = rowsReceived - 2;
+
+    if (outputRow < 0) {
         *valid_out = false;
         return;
     }
 
-
-
-
-
-    const int outputRow = rowsReceived - 1;
-
-    if (outputRow < 1 || outputRow >= HEIGHT - 1) {
-        ++rowsReceived;
-        *valid_out = false;
-        return;
-    }
+    const bool hasTop = outputRow > 0;
+    const bool hasBottom = outputRow < HEIGHT - 1;
 
     const int topSlot =
-        positive_modulo(rowsReceived - 2, WINDOW_SIZE);
+        positive_modulo(rowsReceived - 3, WINDOW_SIZE);
 
     const int centreSlot =
-        positive_modulo(rowsReceived - 1, WINDOW_SIZE);
+        positive_modulo(rowsReceived - 2, WINDOW_SIZE);
 
     const int bottomSlot =
-        positive_modulo(rowsReceived, WINDOW_SIZE);
+        positive_modulo(rowsReceived - 1, WINDOW_SIZE);
 
-    VITIS_LOOP_81_2: for (int column = 1; column < WIDTH - 1; ++column) {
+    VITIS_LOOP_74_2: for (int column = 0; column < WIDTH; ++column) {
         const GradientPixel centre =
             lineBuffer[centreSlot][column];
+
+        const bool hasLeft = column > 0;
+        const bool hasRight = column < WIDTH - 1;
 
         std::uint16_t neighbourOne = 0;
         std::uint16_t neighbourTwo = 0;
 
         switch (centre.direction) {
             case GradientDirection::DEG_0:
-                neighbourOne =
-                    lineBuffer[centreSlot][column - 1].magnitude;
+                neighbourOne = hasLeft ?
+                    lineBuffer[centreSlot][column - 1].magnitude : 0;
 
-                neighbourTwo =
-                    lineBuffer[centreSlot][column + 1].magnitude;
+                neighbourTwo = hasRight ?
+                    lineBuffer[centreSlot][column + 1].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_45:
-                neighbourOne =
-                    lineBuffer[topSlot][column - 1].magnitude;
+                neighbourOne = (hasTop && hasLeft) ?
+                    lineBuffer[topSlot][column - 1].magnitude : 0;
 
-                neighbourTwo =
-                    lineBuffer[bottomSlot][column + 1].magnitude;
+                neighbourTwo = (hasBottom && hasRight) ?
+                    lineBuffer[bottomSlot][column + 1].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_90:
-                neighbourOne =
-                    lineBuffer[topSlot][column].magnitude;
+                neighbourOne = hasTop ?
+                    lineBuffer[topSlot][column].magnitude : 0;
 
-                neighbourTwo =
-                    lineBuffer[bottomSlot][column].magnitude;
+                neighbourTwo = hasBottom ?
+                    lineBuffer[bottomSlot][column].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_135:
-                neighbourOne =
-                    lineBuffer[topSlot][column + 1].magnitude;
+                neighbourOne = (hasTop && hasRight) ?
+                    lineBuffer[topSlot][column + 1].magnitude : 0;
 
-                neighbourTwo =
-                    lineBuffer[bottomSlot][column - 1].magnitude;
+                neighbourTwo = (hasBottom && hasLeft) ?
+                    lineBuffer[bottomSlot][column - 1].magnitude : 0;
                 break;
         }
 
@@ -705,6 +701,4 @@ void non_maximum_suppression(
     }
 
     *valid_out = true;
-
-    ++rowsReceived;
 }

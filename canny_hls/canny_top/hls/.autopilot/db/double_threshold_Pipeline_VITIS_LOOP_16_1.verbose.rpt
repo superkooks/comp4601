@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold_Pipeline_VITIS_LOOP_16_1'
 ================================================================
-* Date:           Fri Jul 24 22:33:47 2026
+* Date:           Sat Jul 25 12:05:04 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -211,9 +211,9 @@ ST_2 : Operation 19 [1/1] (0.79ns)   --->   "%icmp_ln22 = icmp_ugt  i11 %magnitu
 ST_2 : Operation 28 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 28 'ret' 'ret_ln0' <Predicate = (icmp_ln16)> <Delay = 0.42>
 
 State 3 <SV = 2> <Delay = 1.63>
-ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 20 'specpipeline' 'specpipeline_ln16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 20 'specpipeline' 'specpipeline_ln16' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 21 'speclooptripcount' 'speclooptripcount_ln16' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 22 'specloopname' 'specloopname_ln16' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 22 'specloopname' 'specloopname_ln16' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%out_double_addr = getelementptr i8 %out_double, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:23->../src/canny_top.cpp:33]   --->   Operation 23 'getelementptr' 'out_double_addr' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node select_ln19)   --->   "%select_ln19_1 = select i1 %icmp_ln19, i8 255, i8 128" [../src/double_threshold.cpp:19->../src/canny_top.cpp:33]   --->   Operation 24 'select' 'select_ln19_1' <Predicate = (icmp_ln22)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_3 : Operation 25 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln19 = select i1 %icmp_ln22, i8 %select_ln19_1, i8 0" [../src/double_threshold.cpp:19->../src/canny_top.cpp:33]   --->   Operation 25 'select' 'select_ln19' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -382,7 +382,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="25" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_22"/></StgValue>
+<StgValue><ssdm name="empty"/></StgValue>
 </bind>
 </comp>
 
@@ -418,7 +418,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_16"/></StgValue>
+<StgValue><ssdm name="empty_19"/></StgValue>
 </bind>
 </comp>
 

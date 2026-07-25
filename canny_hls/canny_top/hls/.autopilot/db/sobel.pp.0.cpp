@@ -19314,6 +19314,7 @@ void hysteresis_reset();
 void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]);
 # 5 "../src/sobel.cpp" 2
 
+
 namespace {
 
 constexpr int KERNEL_SIZE = 3;
@@ -19371,13 +19372,23 @@ GradientDirection quantise_direction(
     return GradientDirection::DEG_135;
 }
 
+int border_replicate(int v, int max) {
+    if (v < 0) {
+        return 0;
+    } else if (v >= max) {
+        return max - 1;
+    } else {
+        return v;
+    }
+}
+
 }
 
 void sobel_reset() {
     rowsReceived = 0;
 
-    VITIS_LOOP_68_1: for (int row = 0; row < KERNEL_SIZE; ++row) {
-        VITIS_LOOP_69_2: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_79_1: for (int row = 0; row < KERNEL_SIZE; ++row) {
+        VITIS_LOOP_80_2: for (int column = 0; column < WIDTH; ++column) {
             lineBuffer[row][column] = 0;
         }
     }
@@ -19397,45 +19408,32 @@ void sobel(
     const int writeSlot =
         rowsReceived % KERNEL_SIZE;
 
-    VITIS_LOOP_89_1: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_100_1: for (int column = 0; column < WIDTH; ++column) {
         lineBuffer[writeSlot][column] = input[column];
 
         output[column].magnitude = 0;
         output[column].direction =
             GradientDirection::DEG_0;
     }
+    ++rowsReceived;
 
+    const int outputRow = rowsReceived - 2;
 
-
-
-
-    if (rowsReceived < KERNEL_SIZE - 1) {
-        ++rowsReceived;
+    if (outputRow < 0) {
         *valid_out = false;
         return;
     }
 
-    const int outputRow = rowsReceived - 1;
-
-
-
-
-    if (outputRow < 1 || outputRow >= HEIGHT - 1) {
-        ++rowsReceived;
-        *valid_out = false;
-        return;
-    }
-
-    VITIS_LOOP_118_2: for (int column = 1; column < WIDTH - 1; ++column) {
+    VITIS_LOOP_116_2: for (int column = 0; column < WIDTH; ++column) {
         int gradientX = 0;
         int gradientY = 0;
 
-        VITIS_LOOP_122_3: for (int kernelRow = 0;
+        VITIS_LOOP_120_3: for (int kernelRow = 0;
              kernelRow < KERNEL_SIZE;
              ++kernelRow) {
 
             const int absoluteSourceRow =
-                rowsReceived - 2 + kernelRow;
+                border_replicate(rowsReceived - 3 + kernelRow, HEIGHT);
 
             const int bufferSlot =
                 positive_modulo(
@@ -19443,12 +19441,12 @@ void sobel(
                     KERNEL_SIZE
                 );
 
-            VITIS_LOOP_135_4: for (int kernelColumn = 0;
+            VITIS_LOOP_133_4: for (int kernelColumn = 0;
                  kernelColumn < KERNEL_SIZE;
                  ++kernelColumn) {
 
                 const int sourceColumn =
-                    column + kernelColumn - 1;
+                    border_replicate(column + kernelColumn - 1, WIDTH);
 
                 const int pixel =
                     lineBuffer[bufferSlot][sourceColumn];
@@ -19474,6 +19472,4 @@ void sobel(
     }
 
     *valid_out = true;
-
-    ++rowsReceived;
 }

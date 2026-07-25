@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale_Pipeline_VITIS_LOOP_7_1'" level="0">
-<item name = "Date">Fri Jul 24 22:33:46 2026
+<item name = "Date">Sat Jul 25 12:05:03 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -62,13 +62,13 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_8ns_8ns_15_1_1_U17">mul_8ns_8ns_15_1_1, 0, 0, 0, 40, 0</column>
+<column name="mul_8ns_8ns_15_1_1_U15">mul_8ns_8ns_15_1_1, 0, 0, 0, 40, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
 <keys size="3">Instance, Module, Expression</keys>
-<column name="mac_muladd_8ns_5ns_15s_15_4_1_U18">mac_muladd_8ns_5ns_15s_15_4_1, i0 + i1 * i2</column>
-<column name="mac_muladd_8ns_8ns_15ns_16_4_1_U19">mac_muladd_8ns_8ns_15ns_16_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_5ns_15s_15_4_1_U16">mac_muladd_8ns_5ns_15s_15_4_1, i0 + i1 * i2</column>
+<column name="mac_muladd_8ns_8ns_15ns_16_4_1_U17">mac_muladd_8ns_8ns_15ns_16_4_1, i0 + i1 * i2</column>
 </table>
 </item>
 <item name = "Memory"><table name="" hasTotal="1">

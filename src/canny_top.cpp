@@ -9,7 +9,7 @@
 void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
     reset_canny_stages();
 
-    for (int i = 0; i < HEIGHT+2; i++) {
+    for (int i = 0; i < HEIGHT+8; i++) {
         #pragma HLS DATAFLOW
         uint8_t out_grayscale[WIDTH];
         uint8_t out_gaussian[WIDTH];

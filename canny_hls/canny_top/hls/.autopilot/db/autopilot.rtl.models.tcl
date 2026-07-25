@@ -1,15 +1,15 @@
 set SynModuleInfo {
-  {SRCNAME canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2 MODELNAME canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_30_1_VITIS_LOOP_31_2
+  {SRCNAME canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2 MODELNAME canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2
     SUBMODULES {
       {MODELNAME canny_top_flow_control_loop_pipe_sequential_init RTLNAME canny_top_flow_control_loop_pipe_sequential_init BINDTYPE interface TYPE internal_upc_flow_control INSTNAME canny_top_flow_control_loop_pipe_sequential_init_U}
     }
   }
-  {SRCNAME canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2 MODELNAME canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_68_1_VITIS_LOOP_69_2}
+  {SRCNAME canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2 MODELNAME canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2}
   {SRCNAME canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2 MODELNAME canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2}
-  {SRCNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2 MODELNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_2}
-  {SRCNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21 MODELNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_21}
-  {SRCNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22 MODELNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_22}
-  {SRCNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23 MODELNAME canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_45_1_VITIS_LOOP_46_23}
+  {SRCNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2 MODELNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2}
+  {SRCNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21 MODELNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21}
+  {SRCNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22 MODELNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22}
+  {SRCNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23 MODELNAME canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23}
   {SRCNAME dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc MODELNAME dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc RTLNAME canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc}
   {SRCNAME grayscale_Pipeline_VITIS_LOOP_7_1 MODELNAME grayscale_Pipeline_VITIS_LOOP_7_1 RTLNAME canny_top_grayscale_Pipeline_VITIS_LOOP_7_1
     SUBMODULES {
@@ -19,16 +19,20 @@ set SynModuleInfo {
     }
   }
   {SRCNAME grayscale MODELNAME grayscale RTLNAME canny_top_grayscale}
-  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_46_1 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_46_1 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_46_1}
-  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_64_2 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_64_2 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_64_2}
-  {SRCNAME gaussian_blur MODELNAME gaussian_blur RTLNAME canny_top_gaussian_blur
+  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_57_1 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_57_1 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_57_1}
+  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_70_2 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_70_2 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_70_2
     SUBMODULES {
-      {MODELNAME canny_top_srem_32ns_4ns_32_36_seq_1 RTLNAME canny_top_srem_32ns_4ns_32_36_seq_1 BINDTYPE op TYPE srem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
-      {MODELNAME canny_top_urem_32ns_4ns_3_36_seq_1 RTLNAME canny_top_urem_32ns_4ns_3_36_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_srem_32ns_4ns_32_36_1 RTLNAME canny_top_srem_32ns_4ns_32_36_1 BINDTYPE op TYPE srem IMPL auto LATENCY 35 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME sobel_Pipeline_VITIS_LOOP_89_1 MODELNAME sobel_Pipeline_VITIS_LOOP_89_1 RTLNAME canny_top_sobel_Pipeline_VITIS_LOOP_89_1}
-  {SRCNAME sobel_Pipeline_VITIS_LOOP_118_2 MODELNAME sobel_Pipeline_VITIS_LOOP_118_2 RTLNAME canny_top_sobel_Pipeline_VITIS_LOOP_118_2
+  {SRCNAME gaussian_blur MODELNAME gaussian_blur RTLNAME canny_top_gaussian_blur
+    SUBMODULES {
+      {MODELNAME canny_top_srem_32ns_4ns_3_36_seq_1 RTLNAME canny_top_srem_32ns_4ns_3_36_seq_1 BINDTYPE op TYPE srem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_srem_32ns_4ns_32_36_seq_1 RTLNAME canny_top_srem_32ns_4ns_32_36_seq_1 BINDTYPE op TYPE srem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
+    }
+  }
+  {SRCNAME sobel_Pipeline_VITIS_LOOP_100_1 MODELNAME sobel_Pipeline_VITIS_LOOP_100_1 RTLNAME canny_top_sobel_Pipeline_VITIS_LOOP_100_1}
+  {SRCNAME sobel_Pipeline_VITIS_LOOP_116_2 MODELNAME sobel_Pipeline_VITIS_LOOP_116_2 RTLNAME canny_top_sobel_Pipeline_VITIS_LOOP_116_2
     SUBMODULES {
       {MODELNAME canny_top_mul_10ns_11ns_20_1_1 RTLNAME canny_top_mul_10ns_11ns_20_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME canny_top_mul_10ns_10ns_19_1_1 RTLNAME canny_top_mul_10ns_10ns_19_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
@@ -39,25 +43,29 @@ set SynModuleInfo {
   {SRCNAME sobel MODELNAME sobel RTLNAME canny_top_sobel
     SUBMODULES {
       {MODELNAME canny_top_srem_32ns_3ns_2_36_seq_1 RTLNAME canny_top_srem_32ns_3ns_2_36_seq_1 BINDTYPE op TYPE srem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
-      {MODELNAME canny_top_urem_31ns_3ns_2_35_seq_1 RTLNAME canny_top_urem_31ns_3ns_2_35_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 34 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_urem_32ns_3ns_2_36_seq_1 RTLNAME canny_top_urem_32ns_3ns_2_36_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME non_maximum_suppression_Pipeline_VITIS_LOOP_45_1 MODELNAME non_maximum_suppression_Pipeline_VITIS_LOOP_45_1 RTLNAME canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1}
-  {SRCNAME non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 MODELNAME non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 RTLNAME canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_81_2}
-  {SRCNAME non_maximum_suppression MODELNAME non_maximum_suppression RTLNAME canny_top_non_maximum_suppression}
+  {SRCNAME non_maximum_suppression_Pipeline_VITIS_LOOP_74_2 MODELNAME non_maximum_suppression_Pipeline_VITIS_LOOP_74_2 RTLNAME canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2}
+  {SRCNAME non_maximum_suppression MODELNAME non_maximum_suppression RTLNAME canny_top_non_maximum_suppression
+    SUBMODULES {
+      {MODELNAME canny_top_srem_32ns_3ns_32_36_seq_1 RTLNAME canny_top_srem_32ns_3ns_32_36_seq_1 BINDTYPE op TYPE srem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
+    }
+  }
   {SRCNAME double_threshold_Pipeline_VITIS_LOOP_16_1 MODELNAME double_threshold_Pipeline_VITIS_LOOP_16_1 RTLNAME canny_top_double_threshold_Pipeline_VITIS_LOOP_16_1}
   {SRCNAME double_threshold MODELNAME double_threshold RTLNAME canny_top_double_threshold}
-  {SRCNAME hysteresis<1>_Pipeline_VITIS_LOOP_68_1 MODELNAME hysteresis_1_Pipeline_VITIS_LOOP_68_1 RTLNAME canny_top_hysteresis_1_Pipeline_VITIS_LOOP_68_1}
-  {SRCNAME hysteresis<1>_Pipeline_VITIS_LOOP_116_2 MODELNAME hysteresis_1_Pipeline_VITIS_LOOP_116_2 RTLNAME canny_top_hysteresis_1_Pipeline_VITIS_LOOP_116_2}
+  {SRCNAME hysteresis<1>_Pipeline_VITIS_LOOP_72_1 MODELNAME hysteresis_1_Pipeline_VITIS_LOOP_72_1 RTLNAME canny_top_hysteresis_1_Pipeline_VITIS_LOOP_72_1}
+  {SRCNAME hysteresis<1>_Pipeline_VITIS_LOOP_110_2 MODELNAME hysteresis_1_Pipeline_VITIS_LOOP_110_2 RTLNAME canny_top_hysteresis_1_Pipeline_VITIS_LOOP_110_2}
   {SRCNAME hysteresis<1> MODELNAME hysteresis_1_s RTLNAME canny_top_hysteresis_1_s}
-  {SRCNAME hysteresis<2>_Pipeline_VITIS_LOOP_68_1 MODELNAME hysteresis_2_Pipeline_VITIS_LOOP_68_1 RTLNAME canny_top_hysteresis_2_Pipeline_VITIS_LOOP_68_1}
-  {SRCNAME hysteresis<2>_Pipeline_VITIS_LOOP_116_2 MODELNAME hysteresis_2_Pipeline_VITIS_LOOP_116_2 RTLNAME canny_top_hysteresis_2_Pipeline_VITIS_LOOP_116_2}
+  {SRCNAME hysteresis<2>_Pipeline_VITIS_LOOP_72_1 MODELNAME hysteresis_2_Pipeline_VITIS_LOOP_72_1 RTLNAME canny_top_hysteresis_2_Pipeline_VITIS_LOOP_72_1}
+  {SRCNAME hysteresis<2>_Pipeline_VITIS_LOOP_110_2 MODELNAME hysteresis_2_Pipeline_VITIS_LOOP_110_2 RTLNAME canny_top_hysteresis_2_Pipeline_VITIS_LOOP_110_2}
   {SRCNAME hysteresis<2> MODELNAME hysteresis_2_s RTLNAME canny_top_hysteresis_2_s}
-  {SRCNAME hysteresis<3>_Pipeline_VITIS_LOOP_68_1 MODELNAME hysteresis_3_Pipeline_VITIS_LOOP_68_1 RTLNAME canny_top_hysteresis_3_Pipeline_VITIS_LOOP_68_1}
-  {SRCNAME hysteresis<3>_Pipeline_VITIS_LOOP_116_2 MODELNAME hysteresis_3_Pipeline_VITIS_LOOP_116_2 RTLNAME canny_top_hysteresis_3_Pipeline_VITIS_LOOP_116_2}
+  {SRCNAME hysteresis<3>_Pipeline_VITIS_LOOP_72_1 MODELNAME hysteresis_3_Pipeline_VITIS_LOOP_72_1 RTLNAME canny_top_hysteresis_3_Pipeline_VITIS_LOOP_72_1}
+  {SRCNAME hysteresis<3>_Pipeline_VITIS_LOOP_110_2 MODELNAME hysteresis_3_Pipeline_VITIS_LOOP_110_2 RTLNAME canny_top_hysteresis_3_Pipeline_VITIS_LOOP_110_2}
   {SRCNAME hysteresis<3> MODELNAME hysteresis_3_s RTLNAME canny_top_hysteresis_3_s}
-  {SRCNAME hysteresis<4>_Pipeline_VITIS_LOOP_68_1 MODELNAME hysteresis_4_Pipeline_VITIS_LOOP_68_1 RTLNAME canny_top_hysteresis_4_Pipeline_VITIS_LOOP_68_1}
-  {SRCNAME hysteresis<4>_Pipeline_VITIS_LOOP_116_2 MODELNAME hysteresis_4_Pipeline_VITIS_LOOP_116_2 RTLNAME canny_top_hysteresis_4_Pipeline_VITIS_LOOP_116_2}
+  {SRCNAME hysteresis<4>_Pipeline_VITIS_LOOP_72_1 MODELNAME hysteresis_4_Pipeline_VITIS_LOOP_72_1 RTLNAME canny_top_hysteresis_4_Pipeline_VITIS_LOOP_72_1}
+  {SRCNAME hysteresis<4>_Pipeline_VITIS_LOOP_110_2 MODELNAME hysteresis_4_Pipeline_VITIS_LOOP_110_2 RTLNAME canny_top_hysteresis_4_Pipeline_VITIS_LOOP_110_2}
   {SRCNAME hysteresis<4> MODELNAME hysteresis_4_s RTLNAME canny_top_hysteresis_4_s}
   {SRCNAME output_row_Pipeline_VITIS_LOOP_20_1 MODELNAME output_row_Pipeline_VITIS_LOOP_20_1 RTLNAME canny_top_output_row_Pipeline_VITIS_LOOP_20_1}
   {SRCNAME output_row MODELNAME output_row RTLNAME canny_top_output_row}
@@ -83,10 +91,11 @@ set SynModuleInfo {
   {SRCNAME dataflow_parent_loop_proc MODELNAME dataflow_parent_loop_proc RTLNAME canny_top_dataflow_parent_loop_proc}
   {SRCNAME canny_top MODELNAME canny_top RTLNAME canny_top IS_TOP 1
     SUBMODULES {
-      {MODELNAME canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W RTLNAME canny_top_p_ZN12_GLOBAL_N_110lineBufferE_0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
-      {MODELNAME canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W RTLNAME canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_lineBuffer_1_RAM_AUTO_1R1W RTLNAME canny_top_lineBuffer_1_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_lineBuffer_RAM_AUTO_1R1W RTLNAME canny_top_lineBuffer_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME canny_top_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W RTLNAME canny_top_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME canny_top_p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W RTLNAME canny_top_p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W RTLNAME canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
       {MODELNAME canny_top_gmem_m_axi RTLNAME canny_top_gmem_m_axi BINDTYPE interface TYPE adapter IMPL m_axi}
       {MODELNAME canny_top_control_s_axi RTLNAME canny_top_control_s_axi BINDTYPE interface TYPE interface_s_axilite}
     }

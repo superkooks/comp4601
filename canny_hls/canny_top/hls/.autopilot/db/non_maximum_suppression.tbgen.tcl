@@ -146,7 +146,7 @@ set ArgLastReadFirstWriteLatency {
 		out_sobel_magnitude {Type I LastRead 0 FirstWrite -1}
 		out_sobel_direction {Type I LastRead 0 FirstWrite -1}
 		out_nonmax {Type O LastRead -1 FirstWrite 0}
-		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead 0 FirstWrite 71}
+		p_anonymous_namespace_rowsReceived_2 {Type IO LastRead 0 FirstWrite 0}
 		p_anonymous_namespace_lineBuffer_direction {Type IO LastRead 0 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type IO LastRead 2 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type IO LastRead 2 FirstWrite -1}}
@@ -159,11 +159,13 @@ set ArgLastReadFirstWriteLatency {
 		p_anonymous_namespace_lineBuffer_direction {Type O LastRead -1 FirstWrite 1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type O LastRead -1 FirstWrite 1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type O LastRead -1 FirstWrite 1}}
-	non_maximum_suppression_Pipeline_VITIS_LOOP_81_2 {
+	non_maximum_suppression_Pipeline_VITIS_LOOP_74_2 {
+		outputRow {Type I LastRead 0 FirstWrite -1}
 		out_nonmax {Type O LastRead -1 FirstWrite 3}
-		result_2 {Type I LastRead 0 FirstWrite -1}
-		result {Type I LastRead 0 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}
+		result_3 {Type I LastRead 0 FirstWrite -1}
+		zext_ln76 {Type I LastRead 0 FirstWrite -1}
+		select_ln14 {Type I LastRead 0 FirstWrite -1}
+		select_ln14_1 {Type I LastRead 0 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_0 {Type I LastRead 2 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_25_magnitude_1 {Type I LastRead 2 FirstWrite -1}
 		p_anonymous_namespace_lineBuffer_direction {Type I LastRead 0 FirstWrite -1}}}
@@ -171,8 +173,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "1608"}
-	, {"Name" : "Interval", "Min" : "1", "Max" : "1608"}
+	{"Name" : "Latency", "Min" : "1", "Max" : "1614"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "1614"}
 ]}
 
 set PipelineEnableSignalInfo {[

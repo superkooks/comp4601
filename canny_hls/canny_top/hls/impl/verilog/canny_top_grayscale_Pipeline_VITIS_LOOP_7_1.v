@@ -490,7 +490,7 @@ canny_top_mul_8ns_8ns_15_1_1 #(
     .din0_WIDTH( 8 ),
     .din1_WIDTH( 8 ),
     .dout_WIDTH( 15 ))
-mul_8ns_8ns_15_1_1_U17(
+mul_8ns_8ns_15_1_1_U15(
     .din0(mul_ln10_fu_345_p0),
     .din1(mul_ln10_fu_345_p1),
     .dout(mul_ln10_fu_345_p2)
@@ -503,7 +503,7 @@ canny_top_mac_muladd_8ns_5ns_15s_15_4_1 #(
     .din1_WIDTH( 5 ),
     .din2_WIDTH( 15 ),
     .dout_WIDTH( 15 ))
-mac_muladd_8ns_5ns_15s_15_4_1_U18(
+mac_muladd_8ns_5ns_15s_15_4_1_U16(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_368_p0),
@@ -520,7 +520,7 @@ canny_top_mac_muladd_8ns_8ns_15ns_16_4_1 #(
     .din1_WIDTH( 8 ),
     .din2_WIDTH( 15 ),
     .dout_WIDTH( 16 ))
-mac_muladd_8ns_8ns_15ns_16_4_1_U19(
+mac_muladd_8ns_8ns_15ns_16_4_1_U17(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_377_p0),

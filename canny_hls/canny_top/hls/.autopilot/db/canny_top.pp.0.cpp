@@ -587,7 +587,7 @@ __attribute__((sdx_kernel("canny_top", 0))) void canny_top(struct RGBPixel in[WI
 
     reset_canny_stages();
 
-    VITIS_LOOP_12_1: for (int i = 0; i < HEIGHT+2; i++) {
+    VITIS_LOOP_12_1: for (int i = 0; i < HEIGHT+8; i++) {
 #pragma HLS DATAFLOW
         uint8_t out_grayscale[WIDTH];
         uint8_t out_gaussian[WIDTH];

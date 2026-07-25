@@ -39,14 +39,14 @@ Diagnostics:
     BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_81_2:  '
+      Message:         'Added loop label VITIS_LOOP_74_2:  '
       FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
-      FileOffset:      81
+      FileOffset:      74
       Replacements:
         - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          21873
+          Offset:          21816
           Length:          0
-          ReplacementText: 'VITIS_LOOP_81_2: '
+          ReplacementText: 'VITIS_LOOP_74_2: '
     Level:           Remark
     BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
 ...

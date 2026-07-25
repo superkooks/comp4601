@@ -679,7 +679,7 @@
             <Obj>
               <type>0</type>
               <id>14</id>
-              <name>add_ln22_4</name>
+              <name>add_ln22_1</name>
               <fileName>../src/non_maximum_suppression.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>22</lineNumber>
@@ -718,7 +718,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>add_ln22_4_fu_129_p2</rtlName>
+              <rtlName>add_ln22_1_fu_129_p2</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>fabric</implIndex>
@@ -1178,7 +1178,7 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>select_ln22_4</name>
+              <name>select_ln22_1</name>
               <fileName>../src/non_maximum_suppression.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>22</lineNumber>
@@ -1217,7 +1217,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>select_ln22_4_fu_161_p3</rtlName>
+              <rtlName>select_ln22_1_fu_161_p3</rtlName>
               <control>auto</control>
               <opType>select</opType>
               <implIndex>auto_sel</implIndex>
@@ -1748,7 +1748,7 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>tmp_74</name>
+              <name>tmp_60</name>
               <fileName>../src/non_maximum_suppression.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>24</lineNumber>
@@ -1787,7 +1787,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>tmp_74_fu_206_p3</rtlName>
+              <rtlName>tmp_60_fu_206_p3</rtlName>
               <control></control>
               <opType></opType>
               <implIndex></implIndex>
@@ -4486,7 +4486,7 @@
         <count>9</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln22_4_fu_129_p2 ( + ) </first>
+          <first>add_ln22_1_fu_129_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -4647,7 +4647,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln22_4_fu_161_p3 ( select ) </first>
+          <first>select_ln22_1_fu_161_p3 ( select ) </first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -5085,7 +5085,7 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>add_ln22_4_fu_129_p2 ( + ) </first>
+          <first>add_ln22_1_fu_129_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5133,7 +5133,7 @@
           </second>
         </item>
         <item>
-          <first>select_ln22_4_fu_161_p3 ( select ) </first>
+          <first>select_ln22_1_fu_161_p3 ( select ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -5795,7 +5795,7 @@
       <count>21</count>
       <item_version>0</item_version>
       <item class_id="54" tracking_level="0" version="0">
-        <first>add_ln22_4_fu_129</first>
+        <first>add_ln22_1_fu_129</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5899,7 +5899,7 @@
         </second>
       </item>
       <item>
-        <first>select_ln22_4_fu_161</first>
+        <first>select_ln22_1_fu_161</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -5915,7 +5915,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_74_fu_206</first>
+        <first>tmp_60_fu_206</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

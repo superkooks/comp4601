@@ -82,7 +82,7 @@ void CannyCV::process_frame() {
 }
 
 int main(int argc, char** argv) {
-    auto processor = CannyFPGA();
+    auto processor = CannyCV();
 
     // BENCHMARK SINGLE IMAGE
     auto img_mat = cv::imread("test.jpg");

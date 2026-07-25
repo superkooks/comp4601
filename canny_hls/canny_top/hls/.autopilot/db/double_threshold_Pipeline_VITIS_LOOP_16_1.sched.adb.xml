@@ -267,7 +267,7 @@ _Z16double_thresholdPKtPhbPb.4.exit.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.body.split.i:1 %specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_22
+for.body.split.i:1 %specpipeline_ln16 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln16"/></StgValue>
@@ -297,7 +297,7 @@ for.body.split.i:2 %speclooptripcount_ln16 = speclooptripcount void @_ssdm_op_Sp
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body.split.i:3 %specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16
+for.body.split.i:3 %specloopname_ln16 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln16"/></StgValue>

@@ -91,7 +91,7 @@ wire   [0:0] trunc_ln45_fu_179_p1;
 reg   [0:0] trunc_ln45_reg_249;
 wire   [63:0] zext_ln45_fu_172_p1;
 wire    ap_block_pp0_stage0;
-wire   [63:0] zext_ln46_3_fu_196_p1;
+wire   [63:0] zext_ln46_4_fu_196_p1;
 wire   [63:0] zext_ln46_1_fu_217_p1;
 reg   [9:0] column_fu_54;
 wire   [9:0] add_ln45_fu_166_p2;
@@ -107,7 +107,7 @@ reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local;
 reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0_local;
 reg    p_anonymous_namespace_lineBuffer_direction_we0_local;
 reg    p_anonymous_namespace_lineBuffer_direction_ce0_local;
-wire   [10:0] zext_ln46_2_fu_188_p1;
+wire   [10:0] zext_ln46_3_fu_188_p1;
 wire   [10:0] add_ln46_fu_191_p2;
 wire   [7:0] lshr_ln_fu_201_p4;
 wire   [9:0] tmp_s_fu_210_p3;
@@ -334,7 +334,7 @@ end
 
 assign add_ln45_fu_166_p2 = (ap_sig_allocacmp_column_3 + 10'd1);
 
-assign add_ln46_fu_191_p2 = (zext_ln46 + zext_ln46_2_fu_188_p1);
+assign add_ln46_fu_191_p2 = (zext_ln46 + zext_ln46_3_fu_188_p1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -390,7 +390,7 @@ assign p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = out_sobel_magnitude_
 
 assign p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = p_anonymous_namespace_lineBuffer_25_magnitude_1_we0_local;
 
-assign p_anonymous_namespace_lineBuffer_direction_address0 = zext_ln46_3_fu_196_p1;
+assign p_anonymous_namespace_lineBuffer_direction_address0 = zext_ln46_4_fu_196_p1;
 
 assign p_anonymous_namespace_lineBuffer_direction_ce0 = p_anonymous_namespace_lineBuffer_direction_ce0_local;
 
@@ -406,8 +406,8 @@ assign zext_ln45_fu_172_p1 = ap_sig_allocacmp_column_3;
 
 assign zext_ln46_1_fu_217_p1 = tmp_s_fu_210_p3;
 
-assign zext_ln46_2_fu_188_p1 = column_3_reg_240;
+assign zext_ln46_3_fu_188_p1 = column_3_reg_240;
 
-assign zext_ln46_3_fu_196_p1 = add_ln46_fu_191_p2;
+assign zext_ln46_4_fu_196_p1 = add_ln46_fu_191_p2;
 
 endmodule //canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1

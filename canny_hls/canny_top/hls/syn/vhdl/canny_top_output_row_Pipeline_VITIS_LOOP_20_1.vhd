@@ -133,8 +133,8 @@ attribute shreg_extract : string;
     signal out_hysteresis4_ce0_local : STD_LOGIC;
     signal trunc_ln20_fu_133_p1 : STD_LOGIC_VECTOR (5 downto 0);
     signal sext_ln20_fu_151_p0 : STD_LOGIC_VECTOR (497 downto 0);
-    signal tmp_14_fu_155_p1 : STD_LOGIC_VECTOR (497 downto 0);
-    signal tmp_14_fu_155_p4 : STD_LOGIC_VECTOR (489 downto 0);
+    signal tmp_21_fu_155_p1 : STD_LOGIC_VECTOR (497 downto 0);
+    signal tmp_21_fu_155_p4 : STD_LOGIC_VECTOR (489 downto 0);
     signal sext_ln20_2_fu_165_p1 : STD_LOGIC_VECTOR (495 downto 0);
     signal tmp_s_fu_169_p3 : STD_LOGIC_VECTOR (497 downto 0);
     signal tmp_fu_195_p3 : STD_LOGIC_VECTOR (505 downto 0);
@@ -466,13 +466,13 @@ begin
     select_ln21_fu_177_p3 <= 
         ap_const_lv498_lc_1 when (icmp_ln21_reg_234(0) = '1') else 
         tmp_s_fu_169_p3;
-        sext_ln20_2_fu_165_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_14_fu_155_p4),496));
+        sext_ln20_2_fu_165_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(tmp_21_fu_155_p4),496));
 
     sext_ln20_fu_151_p0 <= phi_ln21_fu_64;
         sext_ln20_fu_151_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(sext_ln20_fu_151_p0),504));
 
-    tmp_14_fu_155_p1 <= phi_ln21_fu_64;
-    tmp_14_fu_155_p4 <= tmp_14_fu_155_p1(497 downto 8);
+    tmp_21_fu_155_p1 <= phi_ln21_fu_64;
+    tmp_21_fu_155_p4 <= tmp_21_fu_155_p1(497 downto 8);
     tmp_fu_195_p3 <= (out_hysteresis4_load_reg_244 & sext_ln20_reg_239);
     tmp_s_fu_169_p3 <= (out_hysteresis4_q0 & sext_ln20_2_fu_165_p1);
     trunc_ln20_fu_133_p1 <= ap_sig_allocacmp_i_1(6 - 1 downto 0);

@@ -137,7 +137,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="10" op_0_bw="10" op_1_bw="10">
+<Node id="31" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
 newFuncRoot:5 %i_0_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %i_0
 
@@ -152,7 +152,7 @@ newFuncRoot:5 %i_0_read = read i10 @_ssdm_op_Read.ap_auto.i10, i10 %i_0
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="2" op_0_bw="64">
+<Node id="33" bw="2" op_0_bw="64">
 <![CDATA[
 newFuncRoot:7 %out_hysteresis4 = alloca i64 1
 
@@ -167,7 +167,7 @@ newFuncRoot:7 %out_hysteresis4 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="8" op_0_bw="64">
+<Node id="34" bw="8" op_0_bw="64">
 <![CDATA[
 newFuncRoot:8 %out_hysteresis3 = alloca i64 1
 
@@ -182,7 +182,7 @@ newFuncRoot:8 %out_hysteresis3 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="8" op_0_bw="64">
+<Node id="35" bw="8" op_0_bw="64">
 <![CDATA[
 newFuncRoot:9 %out_hysteresis2 = alloca i64 1
 
@@ -197,7 +197,7 @@ newFuncRoot:9 %out_hysteresis2 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="8" op_0_bw="64">
+<Node id="36" bw="8" op_0_bw="64">
 <![CDATA[
 newFuncRoot:10 %out_hysteresis1 = alloca i64 1
 
@@ -212,7 +212,7 @@ newFuncRoot:10 %out_hysteresis1 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="8" op_0_bw="64">
+<Node id="37" bw="8" op_0_bw="64">
 <![CDATA[
 newFuncRoot:11 %out_double = alloca i64 1
 
@@ -227,7 +227,7 @@ newFuncRoot:11 %out_double = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="11" op_0_bw="64">
+<Node id="38" bw="11" op_0_bw="64">
 <![CDATA[
 newFuncRoot:12 %out_nonmax = alloca i64 1
 
@@ -242,7 +242,7 @@ newFuncRoot:12 %out_nonmax = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="2" op_0_bw="64">
+<Node id="39" bw="2" op_0_bw="64">
 <![CDATA[
 newFuncRoot:13 %out_sobel_direction = alloca i64 1
 
@@ -257,7 +257,7 @@ newFuncRoot:13 %out_sobel_direction = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="42" bw="11" op_0_bw="64">
+<Node id="40" bw="11" op_0_bw="64">
 <![CDATA[
 newFuncRoot:14 %out_sobel_magnitude = alloca i64 1
 
@@ -272,7 +272,7 @@ newFuncRoot:14 %out_sobel_magnitude = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="8" op_0_bw="64">
+<Node id="41" bw="8" op_0_bw="64">
 <![CDATA[
 newFuncRoot:15 %out_gaussian = alloca i64 1
 
@@ -287,7 +287,7 @@ newFuncRoot:15 %out_gaussian = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="8" op_0_bw="64">
+<Node id="42" bw="8" op_0_bw="64">
 <![CDATA[
 newFuncRoot:16 %out_grayscale = alloca i64 1
 
@@ -302,7 +302,7 @@ newFuncRoot:16 %out_grayscale = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="18" op_0_bw="18" op_1_bw="10">
+<Node id="43" bw="18" op_0_bw="18" op_1_bw="10">
 <![CDATA[
 newFuncRoot:17 %cond_loc_channel = call i18 @dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc, i10 %i_0_read
 
@@ -320,7 +320,7 @@ newFuncRoot:17 %cond_loc_channel = call i18 @dataflow_in_loop_VITIS_LOOP_12_1.1_
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="30" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
 newFuncRoot:4 %in_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %in_r
 
@@ -335,7 +335,7 @@ newFuncRoot:4 %in_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %in_r
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="0" op_0_bw="0" op_1_bw="18" op_2_bw="512" op_3_bw="64" op_4_bw="8">
+<Node id="44" bw="0" op_0_bw="0" op_1_bw="18" op_2_bw="512" op_3_bw="64" op_4_bw="8">
 <![CDATA[
 newFuncRoot:18 %call_ln28 = call void @grayscale, i18 %cond_loc_channel, i512 %gmem, i64 %in_read, i8 %out_grayscale
 
@@ -353,7 +353,7 @@ newFuncRoot:18 %call_ln28 = call void @grayscale, i18 %cond_loc_channel, i512 %g
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="0" op_0_bw="0" op_1_bw="18" op_2_bw="512" op_3_bw="64" op_4_bw="8">
+<Node id="44" bw="0" op_0_bw="0" op_1_bw="18" op_2_bw="512" op_3_bw="64" op_4_bw="8">
 <![CDATA[
 newFuncRoot:18 %call_ln28 = call void @grayscale, i18 %cond_loc_channel, i512 %gmem, i64 %in_read, i8 %out_grayscale
 
@@ -371,9 +371,9 @@ newFuncRoot:18 %call_ln28 = call void @grayscale, i18 %cond_loc_channel, i512 %g
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="8" op_5_bw="8" op_6_bw="0">
+<Node id="45" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="8" op_5_bw="0">
 <![CDATA[
-newFuncRoot:19 %gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %out_gaussian, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1
+newFuncRoot:19 %gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %out_gaussian, i32 %p_anonymous_namespace_rowsReceived, i8 %lineBuffer_1
 
 ]]></Node>
 <StgValue><ssdm name="gaussian_valid"/></StgValue>
@@ -389,9 +389,9 @@ newFuncRoot:19 %gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="47" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="8" op_5_bw="8" op_6_bw="0">
+<Node id="45" bw="1" op_0_bw="1" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="8" op_5_bw="0">
 <![CDATA[
-newFuncRoot:19 %gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %out_gaussian, i32 %p_anonymous_namespace_rowsReceived, i8 %p_ZN12_GLOBAL_N_110lineBufferE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferE_1
+newFuncRoot:19 %gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %out_gaussian, i32 %p_anonymous_namespace_rowsReceived, i8 %lineBuffer_1
 
 ]]></Node>
 <StgValue><ssdm name="gaussian_valid"/></StgValue>
@@ -407,9 +407,9 @@ newFuncRoot:19 %gaussian_valid = call i1 @gaussian_blur, i8 %out_grayscale, i8 %
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="48" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="11" op_4_bw="2" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="0">
+<Node id="46" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="11" op_4_bw="2" op_5_bw="32" op_6_bw="8" op_7_bw="0">
 <![CDATA[
-newFuncRoot:20 %sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussian, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
+newFuncRoot:20 %sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussian, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i32 %p_anonymous_namespace_rowsReceived_1, i8 %lineBuffer
 
 ]]></Node>
 <StgValue><ssdm name="sobel_valid"/></StgValue>
@@ -425,9 +425,9 @@ newFuncRoot:20 %sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussi
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="48" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="11" op_4_bw="2" op_5_bw="32" op_6_bw="8" op_7_bw="8" op_8_bw="0">
+<Node id="46" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="11" op_4_bw="2" op_5_bw="32" op_6_bw="8" op_7_bw="0">
 <![CDATA[
-newFuncRoot:20 %sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussian, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i32 %p_anonymous_namespace_rowsReceived_1, i8 %p_anonymous_namespace_lineBuffer_32_0, i8 %p_anonymous_namespace_lineBuffer_32_1
+newFuncRoot:20 %sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussian, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i32 %p_anonymous_namespace_rowsReceived_1, i8 %lineBuffer
 
 ]]></Node>
 <StgValue><ssdm name="sobel_valid"/></StgValue>
@@ -443,7 +443,7 @@ newFuncRoot:20 %sobel_valid = call i1 @sobel, i1 %gaussian_valid, i8 %out_gaussi
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="32" op_6_bw="2" op_7_bw="11" op_8_bw="11" op_9_bw="0">
+<Node id="47" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="32" op_6_bw="2" op_7_bw="11" op_8_bw="11" op_9_bw="0">
 <![CDATA[
 newFuncRoot:21 %nonmax_valid = call i1 @non_maximum_suppression, i1 %sobel_valid, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i11 %out_nonmax, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1
 
@@ -461,7 +461,7 @@ newFuncRoot:21 %nonmax_valid = call i1 @non_maximum_suppression, i1 %sobel_valid
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="49" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="32" op_6_bw="2" op_7_bw="11" op_8_bw="11" op_9_bw="0">
+<Node id="47" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="2" op_4_bw="11" op_5_bw="32" op_6_bw="2" op_7_bw="11" op_8_bw="11" op_9_bw="0">
 <![CDATA[
 newFuncRoot:21 %nonmax_valid = call i1 @non_maximum_suppression, i1 %sobel_valid, i11 %out_sobel_magnitude, i2 %out_sobel_direction, i11 %out_nonmax, i32 %p_anonymous_namespace_rowsReceived_2, i2 %p_anonymous_namespace_lineBuffer_direction, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_0, i11 %p_anonymous_namespace_lineBuffer_25_magnitude_1
 
@@ -479,7 +479,7 @@ newFuncRoot:21 %nonmax_valid = call i1 @non_maximum_suppression, i1 %sobel_valid
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="8" op_4_bw="0">
+<Node id="48" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="8" op_4_bw="0">
 <![CDATA[
 newFuncRoot:22 %double_valid = call i1 @double_threshold, i1 %nonmax_valid, i11 %out_nonmax, i8 %out_double
 
@@ -497,7 +497,7 @@ newFuncRoot:22 %double_valid = call i1 @double_threshold, i1 %nonmax_valid, i11 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="50" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="8" op_4_bw="0">
+<Node id="48" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="11" op_3_bw="8" op_4_bw="0">
 <![CDATA[
 newFuncRoot:22 %double_valid = call i1 @double_threshold, i1 %nonmax_valid, i11 %out_nonmax, i8 %out_double
 
@@ -515,7 +515,7 @@ newFuncRoot:22 %double_valid = call i1 @double_threshold, i1 %nonmax_valid, i11 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="49" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:23 %hysteresis1_valid = call i1 @hysteresis<1>, i1 %double_valid, i8 %out_double, i8 %out_hysteresis1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1
 
@@ -533,7 +533,7 @@ newFuncRoot:23 %hysteresis1_valid = call i1 @hysteresis<1>, i1 %double_valid, i8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="49" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:23 %hysteresis1_valid = call i1 @hysteresis<1>, i1 %double_valid, i8 %out_double, i8 %out_hysteresis1, i32 %p_anonymous_namespace_rowsReceived_1_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1
 
@@ -551,7 +551,7 @@ newFuncRoot:23 %hysteresis1_valid = call i1 @hysteresis<1>, i1 %double_valid, i8
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="50" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:24 %hysteresis2_valid = call i1 @hysteresis<2>, i1 %hysteresis1_valid, i8 %out_hysteresis1, i8 %out_hysteresis2, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1
 
@@ -569,7 +569,7 @@ newFuncRoot:24 %hysteresis2_valid = call i1 @hysteresis<2>, i1 %hysteresis1_vali
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="50" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:24 %hysteresis2_valid = call i1 @hysteresis<2>, i1 %hysteresis1_valid, i8 %out_hysteresis1, i8 %out_hysteresis2, i32 %p_anonymous_namespace_rowsReceived_2_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1
 
@@ -587,7 +587,7 @@ newFuncRoot:24 %hysteresis2_valid = call i1 @hysteresis<2>, i1 %hysteresis1_vali
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="51" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:25 %hysteresis3_valid = call i1 @hysteresis<3>, i1 %hysteresis2_valid, i8 %out_hysteresis2, i8 %out_hysteresis3, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1
 
@@ -605,7 +605,7 @@ newFuncRoot:25 %hysteresis3_valid = call i1 @hysteresis<3>, i1 %hysteresis2_vali
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="51" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="8" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:25 %hysteresis3_valid = call i1 @hysteresis<3>, i1 %hysteresis2_valid, i8 %out_hysteresis2, i8 %out_hysteresis3, i32 %p_anonymous_namespace_rowsReceived_3_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1
 
@@ -623,7 +623,7 @@ newFuncRoot:25 %hysteresis3_valid = call i1 @hysteresis<3>, i1 %hysteresis2_vali
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="2" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="52" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="2" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:26 %hysteresis4_valid = call i1 @hysteresis<4>, i1 %hysteresis3_valid, i8 %out_hysteresis3, i2 %out_hysteresis4, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1
 
@@ -641,7 +641,7 @@ newFuncRoot:26 %hysteresis4_valid = call i1 @hysteresis<4>, i1 %hysteresis3_vali
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="54" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="2" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
+<Node id="52" bw="1" op_0_bw="1" op_1_bw="1" op_2_bw="8" op_3_bw="2" op_4_bw="32" op_5_bw="8" op_6_bw="8" op_7_bw="0">
 <![CDATA[
 newFuncRoot:26 %hysteresis4_valid = call i1 @hysteresis<4>, i1 %hysteresis3_valid, i8 %out_hysteresis3, i2 %out_hysteresis4, i32 %p_anonymous_namespace_rowsReceived_4_s, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0, i8 %p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1
 
@@ -659,7 +659,7 @@ newFuncRoot:26 %hysteresis4_valid = call i1 @hysteresis<4>, i1 %hysteresis3_vali
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="29" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
 newFuncRoot:3 %out_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %out_r
 
@@ -674,7 +674,7 @@ newFuncRoot:3 %out_read = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %out_r
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="2" op_3_bw="512" op_4_bw="64" op_5_bw="32" op_6_bw="0" op_7_bw="0">
+<Node id="53" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="2" op_3_bw="512" op_4_bw="64" op_5_bw="32" op_6_bw="0" op_7_bw="0">
 <![CDATA[
 newFuncRoot:27 %call_ln38 = call void @output_row, i1 %hysteresis4_valid, i2 %out_hysteresis4, i512 %gmem, i64 %out_read, i32 %rowsReceived
 
@@ -692,7 +692,7 @@ newFuncRoot:27 %call_ln38 = call void @output_row, i1 %hysteresis4_valid, i2 %ou
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
+<Node id="26" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
 <![CDATA[
 newFuncRoot:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i64 %out_r, i1 1, void @p_str
 
@@ -707,7 +707,7 @@ newFuncRoot:0 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
+<Node id="27" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="1" op_3_bw="0">
 <![CDATA[
 newFuncRoot:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStableContent, i64 %in_r, i1 1, void @p_str
 
@@ -722,9 +722,9 @@ newFuncRoot:1 %specstablecontent_ln0 = specstablecontent void @_ssdm_op_SpecStab
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
+<Node id="28" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="0">
 <![CDATA[
-newFuncRoot:2 %specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty_22
+newFuncRoot:2 %specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_SpecDataflowPipeline, i32 4294967295, i32 0, void @empty
 
 ]]></Node>
 <StgValue><ssdm name="specdataflowpipeline_ln0"/></StgValue>
@@ -737,9 +737,9 @@ newFuncRoot:2 %specdataflowpipeline_ln0 = specdataflowpipeline void @_ssdm_op_Sp
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
+<Node id="32" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_0, i32 0, i32 0, void @empty_22, i32 64, i32 0, void @empty_10, void @empty_13, void @empty_22, i32 16, i32 16, i32 16, i32 16, void @empty_22, void @empty_22, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_16, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_21, void @empty_8, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -752,7 +752,7 @@ newFuncRoot:6 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="2" op_3_bw="512" op_4_bw="64" op_5_bw="32" op_6_bw="0" op_7_bw="0">
+<Node id="53" bw="0" op_0_bw="0" op_1_bw="1" op_2_bw="2" op_3_bw="512" op_4_bw="64" op_5_bw="32" op_6_bw="0" op_7_bw="0">
 <![CDATA[
 newFuncRoot:27 %call_ln38 = call void @output_row, i1 %hysteresis4_valid, i2 %out_hysteresis4, i512 %gmem, i64 %out_read, i32 %rowsReceived
 
@@ -767,7 +767,7 @@ newFuncRoot:27 %call_ln38 = call void @output_row, i1 %hysteresis4_valid, i2 %ou
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="56" bw="0">
+<Node id="54" bw="0">
 <![CDATA[
 newFuncRoot:28 %ret_ln0 = ret
 

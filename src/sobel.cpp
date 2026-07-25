@@ -2,6 +2,7 @@
 #include <cstdint>
 
 #include "canny_stages.h"
+#include "config.h"
 
 namespace {
 
@@ -60,6 +61,16 @@ GradientDirection quantise_direction(
     return GradientDirection::DEG_135;
 }
 
+int border_replicate(int v, int max) {
+    if (v < 0) {
+        return 0;
+    } else if (v >= max) {
+        return max - 1;
+    } else {
+        return v;
+    }
+}
+
 }
 
 void sobel_reset() {
@@ -93,29 +104,16 @@ void sobel(
         output[column].direction =
             GradientDirection::DEG_0;
     }
+    ++rowsReceived;
 
-    /*
-     * Three rows are required before the first valid
-     * Sobel result can be produced.
-     */
-    if (rowsReceived < KERNEL_SIZE - 1) {
-        ++rowsReceived;
+    const int outputRow = rowsReceived - 2;
+
+    if (outputRow < 0) {
         *valid_out = false;
         return;
     }
 
-    const int outputRow = rowsReceived - 1;
-
-    /*
-     * The first and last image rows are defined as zero.
-     */
-    if (outputRow < 1 || outputRow >= HEIGHT - 1) {
-        ++rowsReceived;
-        *valid_out = false;
-        return;
-    }
-
-    for (int column = 1; column < WIDTH - 1; ++column) {
+    for (int column = 0; column < WIDTH; ++column) {
         int gradientX = 0;
         int gradientY = 0;
 
@@ -124,7 +122,7 @@ void sobel(
              ++kernelRow) {
 
             const int absoluteSourceRow =
-                rowsReceived - 2 + kernelRow;
+                border_replicate(rowsReceived - 3 + kernelRow, HEIGHT);
 
             const int bufferSlot =
                 positive_modulo(
@@ -137,7 +135,7 @@ void sobel(
                  ++kernelColumn) {
 
                 const int sourceColumn =
-                    column + kernelColumn - 1;
+                    border_replicate(column + kernelColumn - 1, WIDTH);
 
                 const int pixel =
                     lineBuffer[bufferSlot][sourceColumn];
@@ -163,6 +161,4 @@ void sobel(
     }
 
     *valid_out = true;
-
-    ++rowsReceived;
 }

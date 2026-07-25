@@ -679,7 +679,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>add_ln22_4</name>
+						<name>add_ln22_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -1178,7 +1178,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>select_ln22_4</name>
+						<name>select_ln22_1</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>22</lineNumber>
@@ -1748,7 +1748,7 @@
 					<Obj>
 						<type>0</type>
 						<id>33</id>
-						<name>tmp_74</name>
+						<name>tmp_60</name>
 						<fileName>../src/non_maximum_suppression.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>24</lineNumber>
@@ -5108,7 +5108,7 @@
 		<count>21</count>
 		<item_version>0</item_version>
 		<item class_id="48" tracking_level="0" version="0">
-			<first>add_ln22_4_fu_129</first>
+			<first>add_ln22_1_fu_129</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5212,7 +5212,7 @@
 			</second>
 		</item>
 		<item>
-			<first>select_ln22_4_fu_161</first>
+			<first>select_ln22_1_fu_161</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -5228,7 +5228,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_74_fu_206</first>
+			<first>tmp_60_fu_206</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

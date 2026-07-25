@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'gaussian_blur'" level="0">
-<item name = "Date">Fri Jul 24 22:33:46 2026
+<item name = "Date">Sat Jul 25 12:05:03 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.321 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.617 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">551, 4654, 2.755 us, 23.270 us, 551, 4654, no</column>
+<column name="">551, 7281, 2.755 us, 36.405 us, 551, 7281, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54">gaussian_blur_Pipeline_VITIS_LOOP_46_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67">gaussian_blur_Pipeline_VITIS_LOOP_64_2, 4068, 4068, 20.340 us, 20.340 us, 0, 0, loop pipeline stp</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_57_1_fu_72">gaussian_blur_Pipeline_VITIS_LOOP_57_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_70_2_fu_83">gaussian_blur_Pipeline_VITIS_LOOP_70_2, 6694, 6694, 33.470 us, 33.470 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -49,27 +49,24 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 291, -</column>
+<column name="Expression">-, -, 0, 625, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 2253, 2244, -</column>
+<column name="Instance">-, -, 10402, 9345, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 564, -</column>
-<column name="Register">-, -, 128, -, -</column>
+<column name="Multiplexer">-, -, 0, 530, -</column>
+<column name="Register">-, -, 600, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, 1, 2, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 4, 8, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54">gaussian_blur_Pipeline_VITIS_LOOP_46_1, 0, 0, 22, 73, 0</column>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67">gaussian_blur_Pipeline_VITIS_LOOP_64_2, 0, 0, 261, 981, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U43">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U44">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U46">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U47">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="urem_32ns_4ns_3_36_seq_1_U45">urem_32ns_4ns_3_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_57_1_fu_72">gaussian_blur_Pipeline_VITIS_LOOP_57_1, 0, 0, 25, 92, 0</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_70_2_fu_83">gaussian_blur_Pipeline_VITIS_LOOP_70_2, 0, 0, 9589, 8777, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U62">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_3_36_seq_1_U61">srem_32ns_4ns_3_36_seq_1, 0, 0, 394, 238, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -86,60 +83,76 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln22_1_fu_238_p2">+, 0, 0, 10, 3, 3</column>
-<column name="add_ln22_2_fu_176_p2">+, 0, 0, 10, 3, 3</column>
-<column name="add_ln22_3_fu_265_p2">+, 0, 0, 10, 3, 3</column>
-<column name="add_ln22_fu_206_p2">+, 0, 0, 10, 3, 3</column>
-<column name="add_ln50_fu_97_p2">+, 0, 0, 39, 32, 1</column>
-<column name="grp_fu_146_p0">+, 0, 0, 39, 32, 3</column>
-<column name="grp_fu_163_p0">+, 0, 0, 39, 32, 2</column>
-<column name="outputRow_fu_108_p2">+, 0, 0, 39, 32, 3</column>
-<column name="ap_block_state73_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln59_1_fu_129_p2">icmp, 0, 0, 39, 32, 9</column>
-<column name="icmp_ln59_fu_123_p2">icmp, 0, 0, 38, 31, 1</column>
+<column name="add_ln23_fu_277_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln61_fu_123_p2">+, 0, 0, 39, 32, 1</column>
+<column name="add_ln78_1_fu_232_p2">+, 0, 0, 39, 32, 3</column>
+<column name="add_ln78_2_fu_291_p2">+, 0, 0, 39, 32, 2</column>
+<column name="add_ln78_fu_199_p2">+, 0, 0, 39, 32, 4</column>
+<column name="outputRow_fu_148_p2">+, 0, 0, 39, 32, 3</column>
+<column name="sub_ln28_1_fu_212_p2">-, 0, 0, 39, 3, 32</column>
+<column name="sub_ln28_2_fu_245_p2">-, 0, 0, 39, 2, 32</column>
+<column name="sub_ln28_3_fu_304_p2">-, 0, 0, 39, 1, 32</column>
+<column name="sub_ln28_fu_161_p2">-, 0, 0, 39, 1, 32</column>
+<column name="sub_ln30_1_fu_260_p2">-, 0, 0, 39, 11, 32</column>
+<column name="sub_ln30_2_fu_181_p2">-, 0, 0, 39, 11, 32</column>
+<column name="sub_ln30_3_fu_319_p2">-, 0, 0, 39, 10, 32</column>
+<column name="sub_ln30_4_fu_324_p2">-, 0, 0, 39, 10, 32</column>
+<column name="sub_ln30_fu_227_p2">-, 0, 0, 39, 11, 32</column>
+<column name="ap_block_state74_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln29_fu_175_p2">icmp, 0, 0, 30, 23, 1</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln59_fu_135_p2">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln22_1_fu_244_p3">select, 0, 0, 3, 1, 3</column>
-<column name="select_ln22_2_fu_181_p3">select, 0, 0, 3, 1, 3</column>
-<column name="select_ln22_3_fu_271_p3">select, 0, 0, 3, 1, 3</column>
-<column name="select_ln22_fu_212_p3">select, 0, 0, 3, 1, 3</column>
+<column name="grp_fu_193_p0">select, 0, 0, 32, 1, 32</column>
+<column name="select_ln23_fu_283_p3">select, 0, 0, 3, 1, 3</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">389, 74, 1, 74</column>
+<column name="ap_NS_fsm">401, 75, 1, 75</column>
 <column name="ap_done">9, 2, 1, 2</column>
-<column name="ap_phi_mux_valid_out_write_assign_phi_fu_46_p4">9, 2, 1, 2</column>
+<column name="ap_phi_mux_valid_out_write_assign_phi_fu_64_p4">9, 2, 1, 2</column>
+<column name="lineBuffer_1_address0">14, 3, 12, 36</column>
+<column name="lineBuffer_1_ce0">14, 3, 1, 3</column>
+<column name="lineBuffer_1_ce1">9, 2, 1, 2</column>
+<column name="lineBuffer_1_we0">9, 2, 1, 2</column>
 <column name="output_r_address0">14, 3, 9, 27</column>
 <column name="output_r_ce0">14, 3, 1, 3</column>
 <column name="output_r_d0">14, 3, 8, 24</column>
 <column name="output_r_we0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_address0">14, 3, 11, 33</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_ce1">9, 2, 1, 2</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_we0">9, 2, 1, 2</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_address0">14, 3, 11, 33</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_ce0">14, 3, 1, 3</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_ce1">9, 2, 1, 2</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_we0">9, 2, 1, 2</column>
 <column name="p_anonymous_namespace_rowsReceived_o">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">73, 0, 73, 0</column>
+<column name="add_ln78_1_reg_426">32, 0, 32, 0</column>
+<column name="add_ln78_2_reg_457">32, 0, 32, 0</column>
+<column name="add_ln78_reg_401">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">74, 0, 74, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_46_1_fu_54_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_64_2_fu_67_ap_start_reg">1, 0, 1, 0</column>
-<column name="or_ln59_reg_305">1, 0, 1, 0</column>
-<column name="select_ln22_1_reg_334">3, 0, 3, 0</column>
-<column name="select_ln22_2_reg_319">3, 0, 3, 0</column>
-<column name="select_ln22_3_reg_339">3, 0, 3, 0</column>
-<column name="select_ln22_reg_324">3, 0, 3, 0</column>
-<column name="trunc_ln42_reg_288">3, 0, 3, 0</column>
-<column name="trunc_ln79_reg_329">3, 0, 3, 0</column>
-<column name="valid_out_write_assign_reg_42">1, 0, 1, 0</column>
-<column name="writeSlot_reg_283">32, 0, 32, 0</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_57_1_fu_72_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_70_2_fu_83_ap_start_reg">1, 0, 1, 0</column>
+<column name="outputRow_reg_381">32, 0, 32, 0</column>
+<column name="p_anonymous_namespace_rowsReceived_load_reg_355">32, 0, 32, 0</column>
+<column name="select_ln23_reg_451">3, 0, 3, 0</column>
+<column name="sub_ln28_1_reg_411">32, 0, 32, 0</column>
+<column name="sub_ln28_2_reg_436">32, 0, 32, 0</column>
+<column name="sub_ln28_3_reg_467">32, 0, 32, 0</column>
+<column name="sub_ln28_reg_391">32, 0, 32, 0</column>
+<column name="sub_ln30_1_reg_446">32, 0, 32, 0</column>
+<column name="sub_ln30_3_reg_477">32, 0, 32, 0</column>
+<column name="sub_ln30_4_reg_482">32, 0, 32, 0</column>
+<column name="sub_ln30_reg_421">32, 0, 32, 0</column>
+<column name="tmp_59_reg_487">3, 0, 12, 9</column>
+<column name="tmp_61_reg_406">1, 0, 1, 0</column>
+<column name="tmp_62_reg_416">23, 0, 23, 0</column>
+<column name="tmp_63_reg_431">1, 0, 1, 0</column>
+<column name="tmp_64_reg_441">23, 0, 23, 0</column>
+<column name="tmp_67_reg_462">1, 0, 1, 0</column>
+<column name="tmp_68_reg_472">23, 0, 23, 0</column>
+<column name="tmp_69_reg_492">1, 0, 1, 0</column>
+<column name="tmp_70_reg_497">23, 0, 23, 0</column>
+<column name="tmp_reg_387">1, 0, 1, 0</column>
+<column name="tmp_s_reg_376">3, 0, 12, 9</column>
+<column name="valid_out_write_assign_reg_60">1, 0, 1, 0</column>
 </table>
 </item>
 </section>
@@ -167,22 +180,14 @@
 <column name="p_anonymous_namespace_rowsReceived_i">in, 32, ap_ovld, p_anonymous_namespace_rowsReceived, pointer</column>
 <column name="p_anonymous_namespace_rowsReceived_o">out, 32, ap_ovld, p_anonymous_namespace_rowsReceived, pointer</column>
 <column name="p_anonymous_namespace_rowsReceived_o_ap_vld">out, 1, ap_ovld, p_anonymous_namespace_rowsReceived, pointer</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_address0">out, 11, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_ce0">out, 1, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_we0">out, 1, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_d0">out, 8, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_q0">in, 8, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_address1">out, 11, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_ce1">out, 1, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_0_q1">in, 8, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_0, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_address0">out, 11, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_ce0">out, 1, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_we0">out, 1, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_d0">out, 8, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_q0">in, 8, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_address1">out, 11, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_ce1">out, 1, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
-<column name="p_ZN12_GLOBAL_N_110lineBufferE_1_q1">in, 8, ap_memory, p_ZN12_GLOBAL_N_110lineBufferE_1, array</column>
+<column name="lineBuffer_1_address0">out, 12, ap_memory, lineBuffer_1, array</column>
+<column name="lineBuffer_1_ce0">out, 1, ap_memory, lineBuffer_1, array</column>
+<column name="lineBuffer_1_we0">out, 1, ap_memory, lineBuffer_1, array</column>
+<column name="lineBuffer_1_d0">out, 8, ap_memory, lineBuffer_1, array</column>
+<column name="lineBuffer_1_q0">in, 8, ap_memory, lineBuffer_1, array</column>
+<column name="lineBuffer_1_address1">out, 12, ap_memory, lineBuffer_1, array</column>
+<column name="lineBuffer_1_ce1">out, 1, ap_memory, lineBuffer_1, array</column>
+<column name="lineBuffer_1_q1">in, 8, ap_memory, lineBuffer_1, array</column>
 </table>
 </item>
 </section>

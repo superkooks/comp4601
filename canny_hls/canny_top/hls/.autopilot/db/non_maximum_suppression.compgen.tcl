@@ -1,5 +1,11 @@
 # This script segment is generated automatically by AutoPilot
 
+set name canny_top_srem_32ns_3ns_32_36_seq_1
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {srem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
+}
+
+
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -11,7 +17,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 107 \
+    id 121 \
     name out_sobel_magnitude \
     reset_level 1 \
     sync_rst true \
@@ -30,7 +36,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 108 \
+    id 122 \
     name out_sobel_direction \
     reset_level 1 \
     sync_rst true \
@@ -49,7 +55,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 109 \
+    id 123 \
     name out_nonmax \
     reset_level 1 \
     sync_rst true \
@@ -68,7 +74,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 111 \
+    id 125 \
     name p_anonymous_namespace_lineBuffer_direction \
     reset_level 1 \
     sync_rst true \
@@ -87,7 +93,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 112 \
+    id 126 \
     name p_anonymous_namespace_lineBuffer_25_magnitude_0 \
     reset_level 1 \
     sync_rst true \
@@ -106,7 +112,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 113 \
+    id 127 \
     name p_anonymous_namespace_lineBuffer_25_magnitude_1 \
     reset_level 1 \
     sync_rst true \
@@ -124,7 +130,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 106 \
+    id 120 \
     name p_read \
     type other \
     dir I \
@@ -139,7 +145,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 110 \
+    id 124 \
     name p_anonymous_namespace_rowsReceived_2 \
     type other \
     dir IO \
