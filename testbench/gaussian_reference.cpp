@@ -1,3 +1,4 @@
+#include <cstdint>
 #include "gaussian_reference.h"
 
 namespace {
@@ -12,6 +13,18 @@ constexpr int GAUSSIAN_KERNEL[KERNEL_SIZE][KERNEL_SIZE] = {
     {1,  4,  6,  4, 1}
 };
 
+int reflect_101(int value, int limit) {
+    if (value < 0) {
+        return -value;
+    }
+
+    if (value >= limit) {
+        return 2 * limit - value - 2;
+    }
+
+    return value;
+}
+
 }
 
 void gaussian_reference(
@@ -20,34 +33,17 @@ void gaussian_reference(
 ) {
     for (int row = 0; row < HEIGHT; ++row) {
         for (int column = 0; column < WIDTH; ++column) {
-            const int outputIndex = row * WIDTH + column;
-
-            // Zero padding at image boundaries.
-            if (
-                row < 2 ||
-                row >= HEIGHT - 2 ||
-                column < 2 ||
-                column >= WIDTH - 2
-            ) {
-                output[outputIndex] = 0;
-                continue;
-            }
-
             std::uint32_t sum = 0;
 
-            for (int kernelRow = 0;
-                 kernelRow < KERNEL_SIZE;
-                 ++kernelRow) {
+            for (int kernelRow = 0; kernelRow < KERNEL_SIZE; ++kernelRow) {
+                const int sourceRow =
+                    reflect_101(row + kernelRow - 2, HEIGHT);
 
                 for (int kernelColumn = 0;
                      kernelColumn < KERNEL_SIZE;
                      ++kernelColumn) {
-
-                    const int sourceRow =
-                        row + kernelRow - 2;
-
                     const int sourceColumn =
-                        column + kernelColumn - 2;
+                        reflect_101(column + kernelColumn - 2, WIDTH);
 
                     sum +=
                         static_cast<std::uint32_t>(
@@ -57,8 +53,7 @@ void gaussian_reference(
                 }
             }
 
-            // Kernel coefficients add to 256.
-            output[outputIndex] =
+            output[row * WIDTH + column] =
                 static_cast<std::uint8_t>(sum >> 8);
         }
     }

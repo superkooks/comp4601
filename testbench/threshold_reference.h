@@ -2,11 +2,10 @@
 #define THRESHOLD_REFERENCE_H
 
 #include <cstdint>
-
-#include "config.h"
+#include "canny_stages.h"
 
 void double_threshold_reference(
-    const std::uint8_t input[HEIGHT * WIDTH],
+    const std::uint16_t input[HEIGHT * WIDTH],
     std::uint8_t output[HEIGHT * WIDTH]
 );
 

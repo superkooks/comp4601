@@ -2,8 +2,7 @@
 #define GAUSSIAN_REFERENCE_H
 
 #include <cstdint>
-
-#include "config.h"
+#include "canny_stages.h"
 
 void gaussian_reference(
     const std::uint8_t input[HEIGHT * WIDTH],

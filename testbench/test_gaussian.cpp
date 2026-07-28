@@ -14,76 +14,51 @@ int test_gaussian() {
     std::vector<std::uint8_t> expected(pixelCount, 0);
     std::vector<std::uint8_t> actual(pixelCount, 0);
 
-    /*
-     * Deterministic test image containing variation in both
-     * horizontal and vertical directions.
-     */
     for (int row = 0; row < HEIGHT; ++row) {
         for (int column = 0; column < WIDTH; ++column) {
             input[row * WIDTH + column] =
                 static_cast<std::uint8_t>(
-                    (row * 5 + column * 3) % 256
+                    (row * 5 + column * 3 + (row ^ column)) % 256
                 );
         }
     }
 
-    // Add an impulse near the centre.
     input[(HEIGHT / 2) * WIDTH + (WIDTH / 2)] = 255;
 
-    gaussian_reference(
-        input.data(),
-        expected.data()
-    );
-
+    gaussian_reference(input.data(), expected.data());
     gaussian_blur_reset();
 
-    std::uint8_t outputRowBuffer[WIDTH] = {};
-    std::uint8_t zeroRow[WIDTH] = {};
+    std::uint8_t producedRow[WIDTH] = {};
+    std::uint8_t flushRow[WIDTH] = {};
+    int outputRows = 0;
+    int validFailures = 0;
 
-    /*
-     * Feed one real row per invocation.
-     */
-    for (int inputRow = 0;
-         inputRow < HEIGHT;
-         ++inputRow) {
+    for (int call = 0; call < HEIGHT + 2; ++call) {
+        bool valid = true;
+        const std::uint8_t* inputRow =
+            call < HEIGHT
+                ? input.data() + call * WIDTH
+                : flushRow;
 
-        gaussian_blur(
-            input.data() + inputRow * WIDTH,
-            outputRowBuffer
-        );
+        gaussian_blur(inputRow, producedRow, &valid);
 
-        const int outputRow = inputRow - 2;
-
-        if (outputRow >= 0 && outputRow < HEIGHT) {
-            std::copy(
-                outputRowBuffer,
-                outputRowBuffer + WIDTH,
-                actual.data() + outputRow * WIDTH
-            );
+        const bool expectedValid = call >= 2;
+        if (valid != expectedValid) {
+            ++validFailures;
         }
-    }
 
-    /*
-     * Flush the two delayed bottom rows.
-     */
-    for (int flushIndex = 0;
-         flushIndex < 2;
-         ++flushIndex) {
+        if (valid) {
+            if (outputRows >= HEIGHT) {
+                ++validFailures;
+                continue;
+            }
 
-        gaussian_blur(
-            zeroRow,
-            outputRowBuffer
-        );
-
-        const int outputRow =
-            HEIGHT + flushIndex - 2;
-
-        if (outputRow >= 0 && outputRow < HEIGHT) {
             std::copy(
-                outputRowBuffer,
-                outputRowBuffer + WIDTH,
-                actual.data() + outputRow * WIDTH
+                producedRow,
+                producedRow + WIDTH,
+                actual.data() + outputRows * WIDTH
             );
+            ++outputRows;
         }
     }
 
@@ -91,54 +66,36 @@ int test_gaussian() {
     int maximumError = 0;
 
     for (int index = 0; index < pixelCount; ++index) {
-        const int expectedValue =
-            static_cast<int>(expected[index]);
-
-        const int actualValue =
-            static_cast<int>(actual[index]);
-
-        const int error =
-            std::abs(expectedValue - actualValue);
+        const int error = std::abs(
+            static_cast<int>(expected[index]) -
+            static_cast<int>(actual[index])
+        );
 
         if (error != 0) {
             if (mismatchCount < 10) {
-                const int row = index / WIDTH;
-                const int column = index % WIDTH;
-
                 std::cerr
-                    << "Mismatch at row "
-                    << row
-                    << ", column "
-                    << column
-                    << ": expected "
-                    << expectedValue
-                    << ", received "
-                    << actualValue
+                    << "Mismatch at row " << index / WIDTH
+                    << ", column " << index % WIDTH
+                    << ": expected " << static_cast<int>(expected[index])
+                    << ", received " << static_cast<int>(actual[index])
                     << '\n';
             }
 
             ++mismatchCount;
-            maximumError =
-                std::max(maximumError, error);
+            maximumError = std::max(maximumError, error);
         }
     }
 
-    std::cout
-        << "Pixels tested: "
-        << pixelCount
-        << '\n';
+    if (outputRows != HEIGHT) {
+        ++validFailures;
+    }
 
-    std::cout
-        << "Mismatches: "
-        << mismatchCount
-        << '\n';
+    std::cout << "Pixels tested: " << pixelCount << '\n';
+    std::cout << "Mismatches: " << mismatchCount << '\n';
+    std::cout << "Maximum absolute error: " << maximumError << '\n';
+    std::cout << "Valid-timing failures: " << validFailures << '\n';
 
-    std::cout
-        << "Maximum absolute error: "
-        << maximumError
-        << '\n';
-
-    if (mismatchCount != 0) {
+    if (mismatchCount != 0 || validFailures != 0) {
         std::cerr << "Gaussian blur test FAILED.\n";
         return 1;
     }

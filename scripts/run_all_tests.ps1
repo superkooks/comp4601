@@ -9,7 +9,8 @@ $tests = @(
     ".\scripts\run_sobel_test.ps1",
     ".\scripts\run_nms_test.ps1",
     ".\scripts\run_threshold_test.ps1",
-    ".\scripts\run_hysteresis_test.ps1"
+    ".\scripts\run_hysteresis_test.ps1",
+    ".\scripts\run_pipeline_test.ps1"
 )
 
 foreach ($test in $tests) {
@@ -25,4 +26,4 @@ foreach ($test in $tests) {
 }
 
 Write-Host ""
-Write-Host "All completed Canny stage tests PASSED."
+Write-Host "All Canny stage and pipeline tests PASSED."

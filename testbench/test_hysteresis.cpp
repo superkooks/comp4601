@@ -13,255 +13,198 @@ int image_index(int row, int column) {
     return row * WIDTH + column;
 }
 
+template <int Instance>
+int run_hysteresis(
+    const std::vector<std::uint8_t>& input,
+    std::vector<std::uint8_t>& output,
+    std::uint8_t resolveWeak
+) {
+    hysteresis_reset<Instance>();
+
+    std::uint8_t flushRow[WIDTH] = {};
+    std::uint8_t producedRow[WIDTH] = {};
+    bool invalidResult = true;
+
+    hysteresis<Instance>(
+        flushRow,
+        producedRow,
+        false,
+        &invalidResult,
+        resolveWeak
+    );
+
+    int validFailures = invalidResult ? 1 : 0;
+    int outputRows = 0;
+
+    for (int call = 0; call < HEIGHT + 1; ++call) {
+        bool valid = true;
+        const std::uint8_t* inputRow =
+            call < HEIGHT
+                ? input.data() + call * WIDTH
+                : flushRow;
+
+        hysteresis<Instance>(
+            inputRow,
+            producedRow,
+            true,
+            &valid,
+            resolveWeak
+        );
+
+        const bool expectedValid = call >= 1;
+        if (valid != expectedValid) {
+            ++validFailures;
+        }
+
+        if (valid) {
+            if (outputRows >= HEIGHT) {
+                ++validFailures;
+                continue;
+            }
+
+            std::copy(
+                producedRow,
+                producedRow + WIDTH,
+                output.data() + outputRows * WIDTH
+            );
+            ++outputRows;
+        }
+    }
+
+    if (outputRows != HEIGHT) {
+        ++validFailures;
+    }
+
+    return validFailures;
+}
+
+int compare_images(
+    const std::vector<std::uint8_t>& expected,
+    const std::vector<std::uint8_t>& actual,
+    const char* label
+) {
+    int mismatches = 0;
+
+    for (int index = 0; index < HEIGHT * WIDTH; ++index) {
+        if (expected[index] != actual[index]) {
+            if (mismatches < 10) {
+                std::cerr
+                    << label << " mismatch at row " << index / WIDTH
+                    << ", column " << index % WIDTH
+                    << ": expected " << static_cast<int>(expected[index])
+                    << ", received " << static_cast<int>(actual[index])
+                    << '\n';
+            }
+            ++mismatches;
+        }
+    }
+
+    return mismatches;
+}
+
 }
 
 int test_hysteresis() {
     const int pixelCount = HEIGHT * WIDTH;
 
-    std::vector<std::uint8_t> input(
-        pixelCount,
-        NON_EDGE
-    );
+    std::vector<std::uint8_t> input(pixelCount, NON_EDGE);
+    std::vector<std::uint8_t> expectedResolve(pixelCount, NON_EDGE);
+    std::vector<std::uint8_t> actualResolve(pixelCount, NON_EDGE);
+    std::vector<std::uint8_t> expectedPreserve(pixelCount, NON_EDGE);
+    std::vector<std::uint8_t> actualPreserve(pixelCount, NON_EDGE);
 
-    std::vector<std::uint8_t> expected(
-        pixelCount,
-        NON_EDGE
-    );
-
-    std::vector<std::uint8_t> actual(
-        pixelCount,
-        NON_EDGE
-    );
-
-    // Strong edge must remain strong.
     input[image_index(50, 50)] = STRONG_EDGE;
 
-    // Horizontal weak edge connected to a strong edge.
     input[image_index(100, 100)] = STRONG_EDGE;
     input[image_index(100, 101)] = WEAK_EDGE;
 
-    // Vertical weak edge connected to a strong edge.
     input[image_index(150, 150)] = STRONG_EDGE;
     input[image_index(151, 150)] = WEAK_EDGE;
 
-    // Diagonal weak edge connected to a strong edge.
     input[image_index(200, 200)] = STRONG_EDGE;
     input[image_index(201, 201)] = WEAK_EDGE;
 
-    // Isolated weak edge must be removed.
     input[image_index(250, 250)] = WEAK_EDGE;
 
-    /*
-     * Local hysteresis chain:
-     *
-     * Pixel 301 directly touches the original strong edge,
-     * so it is retained.
-     *
-     * Pixel 302 only touches a weak edge and is removed by
-     * this single-pass local hysteresis implementation.
-     */
     input[image_index(300, 300)] = STRONG_EDGE;
     input[image_index(300, 301)] = WEAK_EDGE;
     input[image_index(300, 302)] = WEAK_EDGE;
 
-    /*
-     * Additional deterministic values for broader testing.
-     */
     for (int row = 350; row < 400; ++row) {
         for (int column = 50; column < 150; ++column) {
-            const int selector =
-                (row * 7 + column * 11) % 12;
-
+            const int selector = (row * 7 + column * 11) % 12;
             if (selector == 0) {
-                input[image_index(row, column)] =
-                    STRONG_EDGE;
+                input[image_index(row, column)] = STRONG_EDGE;
             }
             else if (selector <= 3) {
-                input[image_index(row, column)] =
-                    WEAK_EDGE;
+                input[image_index(row, column)] = WEAK_EDGE;
             }
         }
     }
 
     hysteresis_reference(
         input.data(),
-        expected.data()
-    );
-
-    hysteresis_reset();
-
-    std::uint8_t producedRow[WIDTH] = {};
-    std::uint8_t zeroRow[WIDTH] = {};
-
-    /*
-     * Feed one thresholded image row at a time.
-     */
-    for (int inputRow = 0;
-         inputRow < HEIGHT;
-         ++inputRow) {
-
-        hysteresis(
-            input.data() + inputRow * WIDTH,
-            producedRow
-        );
-
-        /*
-         * Hysteresis has a one-row delay because it needs
-         * the row below the centre row.
-         */
-        const int outputRow = inputRow - 1;
-
-        if (outputRow >= 0 && outputRow < HEIGHT) {
-            std::copy(
-                producedRow,
-                producedRow + WIDTH,
-                actual.data() + outputRow * WIDTH
-            );
-        }
-    }
-
-    /*
-     * Flush the final delayed output row.
-     */
-    hysteresis(
-        zeroRow,
-        producedRow
-    );
-
-    std::copy(
-        producedRow,
-        producedRow + WIDTH,
-        actual.data() + (HEIGHT - 1) * WIDTH
-    );
-
-    int mismatchCount = 0;
-    int maximumError = 0;
-
-    for (int index = 0; index < pixelCount; ++index) {
-        const int expectedValue =
-            static_cast<int>(expected[index]);
-
-        const int actualValue =
-            static_cast<int>(actual[index]);
-
-        const int error =
-            std::abs(expectedValue - actualValue);
-
-        if (error != 0) {
-            if (mismatchCount < 10) {
-                std::cerr
-                    << "Mismatch at row "
-                    << index / WIDTH
-                    << ", column "
-                    << index % WIDTH
-                    << ": expected "
-                    << expectedValue
-                    << ", received "
-                    << actualValue
-                    << '\n';
-            }
-
-            ++mismatchCount;
-            maximumError =
-                std::max(maximumError, error);
-        }
-    }
-
-    int manualCheckFailures = 0;
-
-    if (
-        actual[image_index(50, 50)] !=
-        STRONG_EDGE
-    ) {
-        std::cerr
-            << "Strong-edge preservation check failed.\n";
-
-        ++manualCheckFailures;
-    }
-
-    if (
-        actual[image_index(100, 101)] !=
-        STRONG_EDGE
-    ) {
-        std::cerr
-            << "Horizontal connection check failed.\n";
-
-        ++manualCheckFailures;
-    }
-
-    if (
-        actual[image_index(151, 150)] !=
-        STRONG_EDGE
-    ) {
-        std::cerr
-            << "Vertical connection check failed.\n";
-
-        ++manualCheckFailures;
-    }
-
-    if (
-        actual[image_index(201, 201)] !=
-        STRONG_EDGE
-    ) {
-        std::cerr
-            << "Diagonal connection check failed.\n";
-
-        ++manualCheckFailures;
-    }
-
-    if (
-        actual[image_index(250, 250)] !=
+        expectedResolve.data(),
         NON_EDGE
-    ) {
-        std::cerr
-            << "Isolated weak-edge check failed.\n";
+    );
+    hysteresis_reference(
+        input.data(),
+        expectedPreserve.data(),
+        WEAK_EDGE
+    );
 
-        ++manualCheckFailures;
-    }
-
-    if (
-        actual[image_index(300, 301)] !=
-        STRONG_EDGE
-    ) {
-        std::cerr
-            << "First chain-pixel check failed.\n";
-
-        ++manualCheckFailures;
-    }
-
-    if (
-        actual[image_index(300, 302)] !=
+    int validFailures = 0;
+    validFailures += run_hysteresis<1>(
+        input,
+        actualResolve,
         NON_EDGE
-    ) {
-        std::cerr
-            << "Local chain-limitation check failed.\n";
+    );
+    validFailures += run_hysteresis<2>(
+        input,
+        actualPreserve,
+        WEAK_EDGE
+    );
 
-        ++manualCheckFailures;
-    }
+    const int resolveMismatches = compare_images(
+        expectedResolve,
+        actualResolve,
+        "resolve"
+    );
+    const int preserveMismatches = compare_images(
+        expectedPreserve,
+        actualPreserve,
+        "preserve"
+    );
 
-    std::cout
-        << "Pixels tested: "
-        << pixelCount
-        << '\n';
+    int manualFailures = 0;
+    manualFailures +=
+        actualResolve[image_index(50, 50)] == STRONG_EDGE ? 0 : 1;
+    manualFailures +=
+        actualResolve[image_index(100, 101)] == STRONG_EDGE ? 0 : 1;
+    manualFailures +=
+        actualResolve[image_index(151, 150)] == STRONG_EDGE ? 0 : 1;
+    manualFailures +=
+        actualResolve[image_index(201, 201)] == STRONG_EDGE ? 0 : 1;
+    manualFailures +=
+        actualResolve[image_index(250, 250)] == NON_EDGE ? 0 : 1;
+    manualFailures +=
+        actualResolve[image_index(300, 301)] == STRONG_EDGE ? 0 : 1;
+    manualFailures +=
+        actualResolve[image_index(300, 302)] == NON_EDGE ? 0 : 1;
+    manualFailures +=
+        actualPreserve[image_index(300, 302)] == WEAK_EDGE ? 0 : 1;
 
-    std::cout
-        << "Mismatches: "
-        << mismatchCount
-        << '\n';
-
-    std::cout
-        << "Maximum absolute error: "
-        << maximumError
-        << '\n';
-
-    std::cout
-        << "Manual-check failures: "
-        << manualCheckFailures
-        << '\n';
+    std::cout << "Pixels tested per mode: " << pixelCount << '\n';
+    std::cout << "Resolve-mode mismatches: " << resolveMismatches << '\n';
+    std::cout << "Preserve-mode mismatches: " << preserveMismatches << '\n';
+    std::cout << "Manual-check failures: " << manualFailures << '\n';
+    std::cout << "Valid-timing failures: " << validFailures << '\n';
 
     if (
-        mismatchCount != 0 ||
-        manualCheckFailures != 0
+        resolveMismatches != 0 ||
+        preserveMismatches != 0 ||
+        manualFailures != 0 ||
+        validFailures != 0
     ) {
         std::cerr << "Hysteresis test FAILED.\n";
         return 1;

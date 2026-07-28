@@ -75,10 +75,6 @@ void hysteresis(
     }
     rowsReceived<Instance>++;
 
-    /*
-     * The newest row is rowsReceived, so the output belongs
-     * to the previous row.
-     */
     const int outputRow = rowsReceived<Instance> - 2;
 
     if (outputRow < 0) {
@@ -91,19 +87,19 @@ void hysteresis(
 
     const int topSlot =
         positive_modulo(
-            rowsReceived<Instance> - 2,
+            rowsReceived<Instance> - 3,
             WINDOW_SIZE
         );
 
     const int centreSlot =
         positive_modulo(
-            rowsReceived<Instance> - 1,
+            rowsReceived<Instance> - 2,
             WINDOW_SIZE
         );
 
     const int bottomSlot =
         positive_modulo(
-            rowsReceived<Instance>,
+            rowsReceived<Instance> - 1,
             WINDOW_SIZE
         );
 

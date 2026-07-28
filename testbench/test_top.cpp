@@ -4,6 +4,7 @@ int test_sobel();
 int test_nms();
 int test_threshold();
 int test_hysteresis();
+int test_pipeline();
 
 int main() {
     int result = 0;
@@ -14,6 +15,7 @@ int main() {
     result |= test_nms();
     result |= test_threshold();
     result |= test_hysteresis();
+    result |= test_pipeline();
 
     return result;
 }

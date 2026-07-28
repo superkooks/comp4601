@@ -1,6 +1,4 @@
-#include <cmath>
 #include <cstdint>
-
 #include "sobel_reference.h"
 
 namespace {
@@ -21,10 +19,19 @@ int absolute_value(int value) {
     return value < 0 ? -value : value;
 }
 
-GradientDirection quantise_direction(
-    int gradientX,
-    int gradientY
-) {
+int border_replicate(int value, int limit) {
+    if (value < 0) {
+        return 0;
+    }
+
+    if (value >= limit) {
+        return limit - 1;
+    }
+
+    return value;
+}
+
+GradientDirection quantise_direction(int gradientX, int gradientY) {
     const int absoluteX = absolute_value(gradientX);
     const int absoluteY = absolute_value(gradientY);
 
@@ -58,73 +65,32 @@ void sobel_reference(
 ) {
     for (int row = 0; row < HEIGHT; ++row) {
         for (int column = 0; column < WIDTH; ++column) {
-            const int outputIndex = row * WIDTH + column;
-
-            if (
-                row == 0 ||
-                row == HEIGHT - 1 ||
-                column == 0 ||
-                column == WIDTH - 1
-            ) {
-                output[outputIndex].magnitude = 0;
-                output[outputIndex].direction =
-                    GradientDirection::DEG_0;
-                continue;
-            }
-
             int gradientX = 0;
             int gradientY = 0;
 
-            for (int kernelRow = 0;
-                 kernelRow < 3;
-                 ++kernelRow) {
+            for (int kernelRow = 0; kernelRow < 3; ++kernelRow) {
+                const int sourceRow =
+                    border_replicate(row + kernelRow - 1, HEIGHT);
 
                 for (int kernelColumn = 0;
                      kernelColumn < 3;
                      ++kernelColumn) {
-
-                    const int sourceRow =
-                        row + kernelRow - 1;
-
                     const int sourceColumn =
-                        column + kernelColumn - 1;
+                        border_replicate(column + kernelColumn - 1, WIDTH);
 
                     const int pixel =
                         input[sourceRow * WIDTH + sourceColumn];
 
-                    gradientX +=
-                        pixel *
-                        SOBEL_X[kernelRow][kernelColumn];
-
-                    gradientY +=
-                        pixel *
-                        SOBEL_Y[kernelRow][kernelColumn];
+                    gradientX += pixel * SOBEL_X[kernelRow][kernelColumn];
+                    gradientY += pixel * SOBEL_Y[kernelRow][kernelColumn];
                 }
             }
 
-            const int squaredMagnitude =
-                gradientX * gradientX +
-                gradientY * gradientY;
-
-            int magnitude =
-                static_cast<int>(
-                    std::sqrt(
-                        static_cast<double>(squaredMagnitude)
-                    )
-                );
-
-            if (magnitude > 255) {
-                magnitude = 255;
-            }
-
-            output[outputIndex].magnitude =
-                static_cast<std::uint8_t>(magnitude);
-
-            output[outputIndex].direction =
-                quantise_direction(
-                    gradientX,
-                    gradientY
-                );
+            GradientPixel& result = output[row * WIDTH + column];
+            result.magnitude = static_cast<std::uint16_t>(
+                absolute_value(gradientX) + absolute_value(gradientY)
+            );
+            result.direction = quantise_direction(gradientX, gradientY);
         }
     }
 }

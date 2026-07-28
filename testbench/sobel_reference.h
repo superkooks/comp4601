@@ -2,9 +2,7 @@
 #define SOBEL_REFERENCE_H
 
 #include <cstdint>
-
-#include "config.h"
-#include "canny_types.h"
+#include "canny_stages.h"
 
 void sobel_reference(
     const std::uint8_t input[HEIGHT * WIDTH],
