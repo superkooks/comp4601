@@ -94,15 +94,14 @@ void sobel(
         return;
     }
 
+    #pragma HLS ARRAY_PARTITION variable=lineBuffer type=complete dim=1
+
     const int writeSlot =
         rowsReceived % KERNEL_SIZE;
 
     for (int column = 0; column < WIDTH; ++column) {
+        #pragma HLS PIPELINE II=1
         lineBuffer[writeSlot][column] = input[column];
-
-        output[column].magnitude = 0;
-        output[column].direction =
-            GradientDirection::DEG_0;
     }
     ++rowsReceived;
 
@@ -113,32 +112,64 @@ void sobel(
         return;
     }
 
+    /*
+     * The three source rows are fixed for the whole output row, so resolve
+     * their buffer slots once rather than once per pixel.
+     */
+    int slot[KERNEL_SIZE];
+    #pragma HLS ARRAY_PARTITION variable=slot type=complete
+
+    for (int kernelRow = 0; kernelRow < KERNEL_SIZE; ++kernelRow) {
+        #pragma HLS UNROLL
+        slot[kernelRow] =
+            positive_modulo(
+                border_replicate(rowsReceived - 3 + kernelRow, HEIGHT),
+                KERNEL_SIZE
+            );
+    }
+
+    /*
+     * A 3x3 register window slides across the row, so each column is fetched
+     * from the line buffer once instead of once per kernel tap.  Every bank is
+     * read at a fixed index and selected in registers, because replicated
+     * border rows can name the same slot twice.
+     */
+    std::uint8_t window[KERNEL_SIZE][KERNEL_SIZE];
+    #pragma HLS ARRAY_PARTITION variable=window type=complete dim=0
+
+    for (int windowColumn = 0;
+         windowColumn < KERNEL_SIZE;
+         ++windowColumn) {
+        #pragma HLS UNROLL
+
+        const int sourceColumn =
+            border_replicate(windowColumn - 1, WIDTH);
+
+        for (int kernelRow = 0; kernelRow < KERNEL_SIZE; ++kernelRow) {
+            #pragma HLS UNROLL
+            window[kernelRow][windowColumn] =
+                lineBuffer[slot[kernelRow]][sourceColumn];
+        }
+    }
+
     for (int column = 0; column < WIDTH; ++column) {
+        #pragma HLS PIPELINE II=1
+
         int gradientX = 0;
         int gradientY = 0;
 
         for (int kernelRow = 0;
              kernelRow < KERNEL_SIZE;
              ++kernelRow) {
-
-            const int absoluteSourceRow =
-                border_replicate(rowsReceived - 3 + kernelRow, HEIGHT);
-
-            const int bufferSlot =
-                positive_modulo(
-                    absoluteSourceRow,
-                    KERNEL_SIZE
-                );
+            #pragma HLS UNROLL
 
             for (int kernelColumn = 0;
                  kernelColumn < KERNEL_SIZE;
                  ++kernelColumn) {
-
-                const int sourceColumn =
-                    border_replicate(column + kernelColumn - 1, WIDTH);
+                #pragma HLS UNROLL
 
                 const int pixel =
-                    lineBuffer[bufferSlot][sourceColumn];
+                    window[kernelRow][kernelColumn];
 
                 gradientX +=
                     pixel *
@@ -158,6 +189,24 @@ void sobel(
                 gradientX,
                 gradientY
             );
+
+        const int nextColumn =
+            border_replicate(column + 2, WIDTH);
+
+        std::uint8_t banked[KERNEL_SIZE];
+        #pragma HLS ARRAY_PARTITION variable=banked type=complete
+
+        for (int bank = 0; bank < KERNEL_SIZE; ++bank) {
+            #pragma HLS UNROLL
+            banked[bank] = lineBuffer[bank][nextColumn];
+        }
+
+        for (int kernelRow = 0; kernelRow < KERNEL_SIZE; ++kernelRow) {
+            #pragma HLS UNROLL
+            window[kernelRow][0] = window[kernelRow][1];
+            window[kernelRow][1] = window[kernelRow][2];
+            window[kernelRow][2] = banked[slot[kernelRow]];
+        }
     }
 
     *valid_out = true;

@@ -14,6 +14,16 @@ int positive_modulo(int value, int divisor) {
     return result < 0 ? result + divisor : result;
 }
 
+int clamp_column(int v) {
+    if (v < 0) {
+        return 0;
+    } else if (v >= WIDTH) {
+        return WIDTH - 1;
+    } else {
+        return v;
+    }
+}
+
 }
 
 void non_maximum_suppression_reset() {
@@ -34,6 +44,8 @@ void non_maximum_suppression(
     bool valid_in,
     bool *valid_out
 ) {
+    #pragma HLS ARRAY_PARTITION variable=lineBuffer type=complete dim=1
+
     if (!valid_in) {
         *valid_out = false;
         return;
@@ -43,8 +55,8 @@ void non_maximum_suppression(
         rowsReceived % WINDOW_SIZE;
 
     for (int column = 0; column < WIDTH; ++column) {
+        #pragma HLS PIPELINE II=1
         lineBuffer[writeSlot][column] = input[column];
-        output[column] = 0;
     }
     ++rowsReceived;
 
@@ -62,18 +74,45 @@ void non_maximum_suppression(
     const bool hasTop = outputRow > 0;
     const bool hasBottom = outputRow < HEIGHT - 1;
 
-    const int topSlot =
-        positive_modulo(rowsReceived - 3, WINDOW_SIZE);
+    /*
+     * Row slots are fixed for the whole output row.  Window row 0 is the row
+     * above, row 1 the centre row and row 2 the row below.
+     */
+    int slot[WINDOW_SIZE];
+    #pragma HLS ARRAY_PARTITION variable=slot type=complete
 
-    const int centreSlot =
-        positive_modulo(rowsReceived - 2, WINDOW_SIZE);
+    slot[0] = positive_modulo(rowsReceived - 3, WINDOW_SIZE);
+    slot[1] = positive_modulo(rowsReceived - 2, WINDOW_SIZE);
+    slot[2] = positive_modulo(rowsReceived - 1, WINDOW_SIZE);
 
-    const int bottomSlot =
-        positive_modulo(rowsReceived - 1, WINDOW_SIZE);
+    /*
+     * A 3x3 register window slides across the row so the line buffer is read
+     * once per column rather than once per neighbour.  Every bank is read at a
+     * fixed index and selected in registers, because the slots are dynamic.
+     * Columns outside the image are clamped when loaded and then discarded by
+     * the hasLeft and hasRight guards below.
+     */
+    GradientPixel window[WINDOW_SIZE][WINDOW_SIZE];
+    #pragma HLS ARRAY_PARTITION variable=window type=complete dim=0
+
+    for (int windowColumn = 0;
+         windowColumn < WINDOW_SIZE;
+         ++windowColumn) {
+        #pragma HLS UNROLL
+
+        const int sourceColumn = clamp_column(windowColumn - 1);
+
+        for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
+            #pragma HLS UNROLL
+            window[windowRow][windowColumn] =
+                lineBuffer[slot[windowRow]][sourceColumn];
+        }
+    }
 
     for (int column = 0; column < WIDTH; ++column) {
-        const GradientPixel centre =
-            lineBuffer[centreSlot][column];
+        #pragma HLS PIPELINE II=1
+
+        const GradientPixel centre = window[1][1];
 
         const bool hasLeft = column > 0;
         const bool hasRight = column < WIDTH - 1;
@@ -84,34 +123,34 @@ void non_maximum_suppression(
         switch (centre.direction) {
             case GradientDirection::DEG_0:
                 neighbourOne = hasLeft ?
-                    lineBuffer[centreSlot][column - 1].magnitude : 0;
+                    window[1][0].magnitude : 0;
 
                 neighbourTwo = hasRight ?
-                    lineBuffer[centreSlot][column + 1].magnitude : 0;
+                    window[1][2].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_45:
                 neighbourOne = (hasTop && hasLeft) ?
-                    lineBuffer[topSlot][column - 1].magnitude : 0;
+                    window[0][0].magnitude : 0;
 
                 neighbourTwo = (hasBottom && hasRight) ?
-                    lineBuffer[bottomSlot][column + 1].magnitude : 0;
+                    window[2][2].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_90:
                 neighbourOne = hasTop ?
-                    lineBuffer[topSlot][column].magnitude : 0;
+                    window[0][1].magnitude : 0;
 
                 neighbourTwo = hasBottom ?
-                    lineBuffer[bottomSlot][column].magnitude : 0;
+                    window[2][1].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_135:
                 neighbourOne = (hasTop && hasRight) ?
-                    lineBuffer[topSlot][column + 1].magnitude : 0;
+                    window[0][2].magnitude : 0;
 
                 neighbourTwo = (hasBottom && hasLeft) ?
-                    lineBuffer[bottomSlot][column - 1].magnitude : 0;
+                    window[2][0].magnitude : 0;
                 break;
         }
 
@@ -123,6 +162,23 @@ void non_maximum_suppression(
         }
         else {
             output[column] = 0;
+        }
+
+        const int nextColumn = clamp_column(column + 2);
+
+        GradientPixel banked[WINDOW_SIZE];
+        #pragma HLS ARRAY_PARTITION variable=banked type=complete
+
+        for (int bank = 0; bank < WINDOW_SIZE; ++bank) {
+            #pragma HLS UNROLL
+            banked[bank] = lineBuffer[bank][nextColumn];
+        }
+
+        for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
+            #pragma HLS UNROLL
+            window[windowRow][0] = window[windowRow][1];
+            window[windowRow][1] = window[windowRow][2];
+            window[windowRow][2] = banked[slot[windowRow]];
         }
     }
 
