@@ -7,14 +7,6 @@
 // static void hysteresis4(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
 
 void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
-    /*
-     * Pack the pixel struct into a single interface word so each pixel is one
-     * transfer rather than one transfer per colour channel.  compact=none is
-     * the only mode an m_axi port accepts; since every member is a byte it
-     * still yields three contiguous bytes, so the host layout is unchanged.
-     */
-    #pragma HLS AGGREGATE variable=in compact=none
-
     reset_canny_stages();
 
     for (int i = 0; i < HEIGHT+8; i++) {
