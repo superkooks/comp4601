@@ -9,10 +9,11 @@
 void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
     /*
      * Pack the pixel struct into a single interface word so each pixel is one
-     * transfer rather than one transfer per colour channel.  compact=byte
-     * keeps the three bytes contiguous, so the host side layout is unchanged.
+     * transfer rather than one transfer per colour channel.  compact=none is
+     * the only mode an m_axi port accepts; since every member is a byte it
+     * still yields three contiguous bytes, so the host layout is unchanged.
      */
-    #pragma HLS AGGREGATE variable=in compact=byte
+    #pragma HLS AGGREGATE variable=in compact=none
 
     reset_canny_stages();
 
