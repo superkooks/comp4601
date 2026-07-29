@@ -91,7 +91,7 @@ newFuncRoot:3 %sext_ln20_1_cast = sext i58 %sext_ln20_1_read
 
 <Node id="8" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_16, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_21, void @empty_8, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:4 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_17, i32 0, i32 0, void @empty_14, i32 64, i32 0, void @empty_21, void @empty_13, void @empty_14, i32 16, i32 16, i32 16, i32 16, void @empty_14, void @empty_14, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -505,7 +505,7 @@ for.inc.split.i:0 %gmem_addr = getelementptr i512 %gmem, i64 %sext_ln20_1_cast
 
 <Node id="23" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc.split.i:3 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty
+for.inc.split.i:3 %specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_14
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln20"/></StgValue>
@@ -535,7 +535,7 @@ for.inc.split.i:4 %speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_Spe
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:5 %specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11
+for.inc.split.i:5 %specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln20"/></StgValue>

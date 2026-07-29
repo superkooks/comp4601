@@ -142,8 +142,8 @@ reg    ap_done_reg;
 wire    ap_CS_fsm_state1;
 reg   [17:0] p_read15_reg_90;
 reg    ap_block_state1;
-wire   [63:0] empty_46_fu_83_p2;
-reg   [63:0] empty_46_reg_96;
+wire   [63:0] empty_82_fu_83_p2;
+reg   [63:0] empty_82_reg_96;
 wire    ap_CS_fsm_state2;
 wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_start;
 wire    grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_ap_done;
@@ -257,7 +257,7 @@ canny_top_grayscale_Pipeline_VITIS_LOOP_7_1 grp_grayscale_Pipeline_VITIS_LOOP_7_
     .m_axi_gmem_0_BRESP(2'd0),
     .m_axi_gmem_0_BID(1'd0),
     .m_axi_gmem_0_BUSER(1'd0),
-    .empty(empty_46_reg_96),
+    .empty(empty_82_reg_96),
     .out_grayscale_address0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_address0),
     .out_grayscale_ce0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_ce0),
     .out_grayscale_we0(grp_grayscale_Pipeline_VITIS_LOOP_7_1_fu_54_out_grayscale_we0),
@@ -298,7 +298,7 @@ end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        empty_46_reg_96 <= empty_46_fu_83_p2;
+        empty_82_reg_96 <= empty_82_fu_83_p2;
     end
 end
 
@@ -385,7 +385,7 @@ always @ (*) begin
     ap_block_state1 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
 end
 
-assign empty_46_fu_83_p2 = (p_cast_fu_79_p1 + in_r);
+assign empty_82_fu_83_p2 = (p_cast_fu_79_p1 + in_r);
 
 assign empty_fu_73_p2 = (p_shl_fu_66_p3 - zext_ln4_fu_63_p1);
 

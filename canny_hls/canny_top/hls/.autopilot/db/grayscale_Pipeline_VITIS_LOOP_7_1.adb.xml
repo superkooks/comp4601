@@ -502,7 +502,7 @@ newFuncRoot:0 %column12 = alloca i32 1
 
 <Node id="5" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_16, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_21, void @empty_8, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0, i32 64
+newFuncRoot:1 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_17, i32 0, i32 0, void @empty_14, i32 64, i32 0, void @empty_21, void @empty_13, void @empty_14, i32 16, i32 16, i32 16, i32 16, void @empty_14, void @empty_14, i32 4294967295, i32 0, i32 0, i32 64
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -4876,7 +4876,7 @@ for.inc.split.i:1 %zext_ln7 = zext i9 %column
 
 <Node id="13" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.inc.split.i:3 %specpipeline_ln7 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty
+for.inc.split.i:3 %specpipeline_ln7 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_14
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln7"/></StgValue>
@@ -4906,7 +4906,7 @@ for.inc.split.i:4 %speclooptripcount_ln7 = speclooptripcount void @_ssdm_op_Spec
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.inc.split.i:5 %specloopname_ln7 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15
+for.inc.split.i:5 %specloopname_ln7 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln7"/></StgValue>
@@ -5013,13 +5013,13 @@ newFuncRoot.aft.aft.exitStub.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="536" from="gmem" to="specinterface_ln0" fromId="530" toId="83">
 </dataflow>
-<dataflow id="538" from="empty_16" to="specinterface_ln0" fromId="537" toId="83">
+<dataflow id="538" from="empty_17" to="specinterface_ln0" fromId="537" toId="83">
 </dataflow>
 <dataflow id="540" from="StgValue_539" to="specinterface_ln0" fromId="539" toId="83">
 </dataflow>
 <dataflow id="541" from="StgValue_539" to="specinterface_ln0" fromId="539" toId="83">
 </dataflow>
-<dataflow id="543" from="empty" to="specinterface_ln0" fromId="542" toId="83">
+<dataflow id="543" from="empty_14" to="specinterface_ln0" fromId="542" toId="83">
 </dataflow>
 <dataflow id="545" from="StgValue_544" to="specinterface_ln0" fromId="544" toId="83">
 </dataflow>
@@ -5027,9 +5027,9 @@ newFuncRoot.aft.aft.exitStub.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="548" from="empty_21" to="specinterface_ln0" fromId="547" toId="83">
 </dataflow>
-<dataflow id="550" from="empty_8" to="specinterface_ln0" fromId="549" toId="83">
+<dataflow id="550" from="empty_13" to="specinterface_ln0" fromId="549" toId="83">
 </dataflow>
-<dataflow id="551" from="empty" to="specinterface_ln0" fromId="542" toId="83">
+<dataflow id="551" from="empty_14" to="specinterface_ln0" fromId="542" toId="83">
 </dataflow>
 <dataflow id="553" from="StgValue_552" to="specinterface_ln0" fromId="552" toId="83">
 </dataflow>
@@ -5039,9 +5039,9 @@ newFuncRoot.aft.aft.exitStub.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="556" from="StgValue_552" to="specinterface_ln0" fromId="552" toId="83">
 </dataflow>
-<dataflow id="557" from="empty" to="specinterface_ln0" fromId="542" toId="83">
+<dataflow id="557" from="empty_14" to="specinterface_ln0" fromId="542" toId="83">
 </dataflow>
-<dataflow id="558" from="empty" to="specinterface_ln0" fromId="542" toId="83">
+<dataflow id="558" from="empty_14" to="specinterface_ln0" fromId="542" toId="83">
 </dataflow>
 <dataflow id="560" from="StgValue_559" to="specinterface_ln0" fromId="559" toId="83">
 </dataflow>
@@ -6557,7 +6557,7 @@ newFuncRoot.aft.aft.exitStub.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1336" from="StgValue_559" to="specpipeline_ln7" fromId="559" toId="359">
 </dataflow>
-<dataflow id="1337" from="empty" to="specpipeline_ln7" fromId="542" toId="359">
+<dataflow id="1337" from="empty_14" to="specpipeline_ln7" fromId="542" toId="359">
 </dataflow>
 <dataflow id="1339" from="_ssdm_op_SpecLoopTripCount" to="speclooptripcount_ln7" fromId="1338" toId="360">
 </dataflow>
@@ -6569,7 +6569,7 @@ newFuncRoot.aft.aft.exitStub.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="1345" from="_ssdm_op_SpecLoopName" to="specloopname_ln7" fromId="1344" toId="361">
 </dataflow>
-<dataflow id="1347" from="empty_15" to="specloopname_ln7" fromId="1346" toId="361">
+<dataflow id="1347" from="empty_22" to="specloopname_ln7" fromId="1346" toId="361">
 </dataflow>
 <dataflow id="1348" from="zext_ln10_3" to="gray" fromId="356" toId="362">
 </dataflow>

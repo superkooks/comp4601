@@ -1,11 +1,11 @@
 # 1 "../src/non_maximum_suppression.cpp"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 405 "<built-in>" 3
+# 422 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 105 "/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
+# 105 "C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -153,15 +153,15 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "../src/non_maximum_suppression.cpp" 2
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
-# 33 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdint" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdint" 3
 
 
 
 
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
-# 236 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 1 3
+# 236 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
 namespace std
 {
   typedef long unsigned int size_t;
@@ -171,7 +171,7 @@ namespace std
   typedef decltype(nullptr) nullptr_t;
 
 }
-# 258 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 258 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
 namespace std
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
@@ -180,256 +180,247 @@ namespace __gnu_cxx
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
 }
-# 508 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
-# 39 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
-# 1 "/usr/include/features.h" 1 3 4
-# 431 "/usr/include/features.h" 3 4
-# 1 "/usr/include/features-time64.h" 1 3 4
-# 20 "/usr/include/features-time64.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 21 "/usr/include/features-time64.h" 2 3 4
-# 1 "/usr/include/bits/timesize.h" 1 3 4
-# 19 "/usr/include/bits/timesize.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/bits/timesize.h" 2 3 4
-# 22 "/usr/include/features-time64.h" 2 3 4
-# 432 "/usr/include/features.h" 2 3 4
-# 518 "/usr/include/features.h" 3 4
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 519 "/usr/include/features.h" 2 3 4
-# 540 "/usr/include/features.h" 3 4
-# 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 730 "/usr/include/sys/cdefs.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 731 "/usr/include/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/bits/long-double.h" 1 3 4
-# 732 "/usr/include/sys/cdefs.h" 2 3 4
-# 541 "/usr/include/features.h" 2 3 4
-# 564 "/usr/include/features.h" 3 4
-# 1 "/usr/include/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/gnu/stubs.h" 3 4
-# 1 "/usr/include/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/gnu/stubs.h" 2 3 4
-# 565 "/usr/include/features.h" 2 3 4
-# 40 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
-# 509 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
-
-
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/cpu_defines.h" 1 3
-# 512 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
-# 39 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
-
+# 508 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/os_defines.h" 1 3
+# 509 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 2 3
 
-# 1 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 1 3
-# 52 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 3
-# 1 "/usr/include/stdint.h" 1 3 4
-# 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/bits/types.h" 1 3 4
-# 27 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/bits/types.h" 2 3 4
-# 1 "/usr/include/bits/timesize.h" 1 3 4
-# 19 "/usr/include/bits/timesize.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/bits/timesize.h" 2 3 4
-# 29 "/usr/include/bits/types.h" 2 3 4
 
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/cpu_defines.h" 1 3
+# 512 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 2 3
+# 39 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdint" 2 3
 
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
 
+# 1 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stdint.h" 1 3
+# 52 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stdint.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 1 3
+# 28 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 1 3
+# 10 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 12 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_mac.h" 1 3
+# 13 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 1 3
+# 44 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 3
+extern "C++" {
+template <bool __test, typename __dsttype>
+  struct __if_array;
+template <typename __dsttype>
+  struct __if_array <true, __dsttype> {
+    typedef __dsttype __type;
+};
+}
+# 14 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 282 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\vadefs.h" 1 3
+# 12 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\vadefs.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 1 3
 
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
 
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
 
 
 
 
 
 
-typedef __int8_t __int_least8_t;
-typedef __uint8_t __uint_least8_t;
-typedef __int16_t __int_least16_t;
-typedef __uint16_t __uint_least16_t;
-typedef __int32_t __int_least32_t;
-typedef __uint32_t __uint_least32_t;
-typedef __int64_t __int_least64_t;
-typedef __uint64_t __uint_least64_t;
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 595 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_directx.h" 1 3
+# 596 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_ddk.h" 1 3
+# 597 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 10 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 2 3
 
 
 
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
 
+#pragma pack(push,_CRT_PACKING)
 
 
 
+extern "C" {
 
 
 
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-# 141 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/typesizes.h" 1 3 4
-# 142 "/usr/include/bits/types.h" 2 3 4
-# 1 "/usr/include/bits/time64.h" 1 3 4
-# 143 "/usr/include/bits/types.h" 2 3 4
 
 
-typedef unsigned long int __dev_t;
-typedef unsigned int __uid_t;
-typedef unsigned int __gid_t;
-typedef unsigned long int __ino_t;
-typedef unsigned long int __ino64_t;
-typedef unsigned int __mode_t;
-typedef unsigned long int __nlink_t;
-typedef long int __off_t;
-typedef long int __off64_t;
-typedef int __pid_t;
-typedef struct { int __val[2]; } __fsid_t;
-typedef long int __clock_t;
-typedef unsigned long int __rlim_t;
-typedef unsigned long int __rlim64_t;
-typedef unsigned int __id_t;
-typedef long int __time_t;
-typedef unsigned int __useconds_t;
-typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
+  typedef __builtin_va_list __gnuc_va_list;
 
-typedef int __daddr_t;
-typedef int __key_t;
 
 
-typedef int __clockid_t;
 
 
-typedef void * __timer_t;
 
+  typedef __gnuc_va_list va_list;
+# 99 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 3
+}
 
-typedef long int __blksize_t;
 
 
+#pragma pack(pop)
+# 13 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\vadefs.h" 2 3
+# 283 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 558 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+extern "C" {
+# 569 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+void __attribute__((__cdecl__)) __debugbreak(void);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) void __attribute__((__cdecl__)) __debugbreak(void)
+{
+  __asm__ __volatile__("int {$}3":);
+}
 
 
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
 
 
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
+const char *__mingw_get_crt_info (void);
 
 
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
+}
+# 11 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 2 3
 
 
-typedef long int __fsword_t;
 
-typedef long int __ssize_t;
 
+#pragma pack(push,_CRT_PACKING)
+# 35 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long size_t;
+# 45 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ssize_t;
 
-typedef long int __syscall_slong_t;
 
-typedef unsigned long int __syscall_ulong_t;
 
 
 
-typedef __off64_t __loff_t;
-typedef char *__caddr_t;
 
+typedef size_t rsize_t;
+# 62 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long intptr_t;
+# 75 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long uintptr_t;
+# 88 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ptrdiff_t;
+# 106 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef unsigned short wint_t;
+typedef unsigned short wctype_t;
 
-typedef long int __intptr_t;
 
 
-typedef unsigned int __socklen_t;
 
 
+typedef int errno_t;
 
 
-typedef int __sig_atomic_t;
-# 28 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/bits/wchar.h" 1 3 4
-# 29 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 30 "/usr/include/stdint.h" 2 3 4
 
 
+typedef long __time32_t;
 
 
 
 
+__extension__ typedef long __time64_t;
+# 138 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef __time64_t time_t;
+# 422 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+struct threadlocaleinfostruct;
+struct threadmbcinfostruct;
+typedef struct threadlocaleinfostruct *pthreadlocinfo;
+typedef struct threadmbcinfostruct *pthreadmbcinfo;
+struct __lc_time_data;
 
+typedef struct localeinfo_struct {
+  pthreadlocinfo locinfo;
+  pthreadmbcinfo mbcinfo;
+} _locale_tstruct,*_locale_t;
 
-# 1 "/usr/include/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/bits/stdint-intn.h" 3 4
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-# 39 "/usr/include/stdint.h" 2 3 4
 
 
-# 1 "/usr/include/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/bits/stdint-uintn.h" 3 4
-typedef __uint8_t uint8_t;
-typedef __uint16_t uint16_t;
-typedef __uint32_t uint32_t;
-typedef __uint64_t uint64_t;
-# 42 "/usr/include/stdint.h" 2 3 4
+typedef struct tagLC_ID {
+  unsigned short wLanguage;
+  unsigned short wCountry;
+  unsigned short wCodePage;
+} LC_ID,*LPLC_ID;
 
 
 
-# 1 "/usr/include/bits/stdint-least.h" 1 3 4
-# 25 "/usr/include/bits/stdint-least.h" 3 4
-typedef __int_least8_t int_least8_t;
-typedef __int_least16_t int_least16_t;
-typedef __int_least32_t int_least32_t;
-typedef __int_least64_t int_least64_t;
 
+typedef struct threadlocaleinfostruct {
+  int refcount;
+  unsigned int lc_codepage;
+  unsigned int lc_collate_cp;
+  unsigned long lc_handle[6];
+  LC_ID lc_id[6];
+  struct {
+    char *locale;
+    wchar_t *wlocale;
+    int *refcount;
+    int *wrefcount;
+  } lc_category[6];
+  int lc_clike;
+  int mb_cur_max;
+  int *lconv_intl_refcount;
+  int *lconv_num_refcount;
+  int *lconv_mon_refcount;
+  struct lconv *lconv;
+  int *ctype1_refcount;
+  unsigned short *ctype1;
+  const unsigned short *pctype;
+  const unsigned char *pclmap;
+  const unsigned char *pcumap;
+  struct __lc_time_data *lc_time_curr;
+} threadlocinfo;
 
-typedef __uint_least8_t uint_least8_t;
-typedef __uint_least16_t uint_least16_t;
-typedef __uint_least32_t uint_least32_t;
-typedef __uint_least64_t uint_least64_t;
-# 46 "/usr/include/stdint.h" 2 3 4
+
+
+
+
+
+
+#pragma pack(pop)
+# 29 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 2 3
+
+
+
+# 1 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stddef.h" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 2 3
+
+
+typedef signed char int8_t;
+typedef unsigned char uint8_t;
+typedef short int16_t;
+typedef unsigned short uint16_t;
+typedef int int32_t;
+typedef unsigned uint32_t;
+__extension__ typedef long long int64_t;
+__extension__ typedef unsigned long long uint64_t;
+
+
+typedef signed char int_least8_t;
+typedef unsigned char uint_least8_t;
+typedef short int_least16_t;
+typedef unsigned short uint_least16_t;
+typedef int int_least32_t;
+typedef unsigned uint_least32_t;
+__extension__ typedef long long int_least64_t;
+__extension__ typedef unsigned long long uint_least64_t;
 
 
 
 
 
 typedef signed char int_fast8_t;
-
-typedef long int int_fast16_t;
-typedef long int int_fast32_t;
-typedef long int int_fast64_t;
-# 64 "/usr/include/stdint.h" 3 4
 typedef unsigned char uint_fast8_t;
+typedef short int_fast16_t;
+typedef unsigned short uint_fast16_t;
+typedef int int_fast32_t;
+typedef unsigned int uint_fast32_t;
+__extension__ typedef long long int_fast64_t;
+__extension__ typedef unsigned long long uint_fast64_t;
 
-typedef unsigned long int uint_fast16_t;
-typedef unsigned long int uint_fast32_t;
-typedef unsigned long int uint_fast64_t;
-# 80 "/usr/include/stdint.h" 3 4
-typedef long int intptr_t;
 
-
-typedef unsigned long int uintptr_t;
-# 94 "/usr/include/stdint.h" 3 4
-typedef __intmax_t intmax_t;
-typedef __uintmax_t uintmax_t;
-# 53 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 2 3
-# 42 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
+__extension__ typedef long long intmax_t;
+__extension__ typedef unsigned long long uintmax_t;
+# 53 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stdint.h" 2 3
+# 42 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdint" 2 3
 
 
 
@@ -474,13 +465,13 @@ namespace std
 }
 # 2 "../src/non_maximum_suppression.cpp" 2
 
-# 1 "../src/canny_stages.h" 1
+# 1 "C:/Users/twhsaw/Projects/comp4601/src/canny_stages.h" 1
 
 
 
 
 
-# 1 "../src/config.h" 1
+# 1 "C:/Users/twhsaw/Projects/comp4601/src/config.h" 1
 
 
 
@@ -495,8 +486,8 @@ constexpr std::uint8_t HIGH_THRESHOLD = 80;
 constexpr std::uint8_t NON_EDGE = 0;
 constexpr std::uint8_t WEAK_EDGE = 128;
 constexpr std::uint8_t STRONG_EDGE = 255;
-# 7 "../src/canny_stages.h" 2
-# 1 "../src/canny_types.h" 1
+# 7 "C:/Users/twhsaw/Projects/comp4601/src/canny_stages.h" 2
+# 1 "C:/Users/twhsaw/Projects/comp4601/src/canny_types.h" 1
 
 
 
@@ -519,7 +510,7 @@ struct GradientPixel {
     std::uint16_t magnitude;
     GradientDirection direction;
 };
-# 8 "../src/canny_stages.h" 2
+# 8 "C:/Users/twhsaw/Projects/comp4601/src/canny_stages.h" 2
 
 void grayscale(
     const RGBPixel input[WIDTH],
@@ -588,13 +579,23 @@ int positive_modulo(int value, int divisor) {
     return result < 0 ? result + divisor : result;
 }
 
+int clamp_column(int v) {
+    if (v < 0) {
+        return 0;
+    } else if (v >= WIDTH) {
+        return WIDTH - 1;
+    } else {
+        return v;
+    }
+}
+
 }
 
 void non_maximum_suppression_reset() {
     rowsReceived = 0;
 
-    VITIS_LOOP_22_1: for (int row = 0; row < WINDOW_SIZE; ++row) {
-        VITIS_LOOP_23_2: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_32_1: for (int row = 0; row < WINDOW_SIZE; ++row) {
+        VITIS_LOOP_33_2: for (int column = 0; column < WIDTH; ++column) {
             lineBuffer[row][column].magnitude = 0;
             lineBuffer[row][column].direction =
                 GradientDirection::DEG_0;
@@ -608,6 +609,8 @@ void non_maximum_suppression(
     bool valid_in,
     bool *valid_out
 ) {
+#pragma HLS ARRAY_PARTITION variable=lineBuffer type=complete dim=1
+
     if (!valid_in) {
         *valid_out = false;
         return;
@@ -616,9 +619,9 @@ void non_maximum_suppression(
     const int writeSlot =
         rowsReceived % WINDOW_SIZE;
 
-    VITIS_LOOP_45_1: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_57_1: for (int column = 0; column < WIDTH; ++column) {
+#pragma HLS PIPELINE II=1
         lineBuffer[writeSlot][column] = input[column];
-        output[column] = 0;
     }
     ++rowsReceived;
 
@@ -636,18 +639,38 @@ void non_maximum_suppression(
     const bool hasTop = outputRow > 0;
     const bool hasBottom = outputRow < HEIGHT - 1;
 
-    const int topSlot =
-        positive_modulo(rowsReceived - 3, WINDOW_SIZE);
 
-    const int centreSlot =
-        positive_modulo(rowsReceived - 2, WINDOW_SIZE);
 
-    const int bottomSlot =
-        positive_modulo(rowsReceived - 1, WINDOW_SIZE);
 
-    VITIS_LOOP_74_2: for (int column = 0; column < WIDTH; ++column) {
-        const GradientPixel centre =
-            lineBuffer[centreSlot][column];
+
+    int slot[WINDOW_SIZE];
+#pragma HLS ARRAY_PARTITION variable=slot type=complete
+
+    slot[0] = positive_modulo(rowsReceived - 3, WINDOW_SIZE);
+    slot[1] = positive_modulo(rowsReceived - 2, WINDOW_SIZE);
+    slot[2] = positive_modulo(rowsReceived - 1, WINDOW_SIZE);
+# 95 "../src/non_maximum_suppression.cpp"
+    GradientPixel window[WINDOW_SIZE][WINDOW_SIZE];
+#pragma HLS ARRAY_PARTITION variable=window type=complete dim=0
+
+    VITIS_LOOP_98_2: for (int windowColumn = 0;
+         windowColumn < WINDOW_SIZE;
+         ++windowColumn) {
+#pragma HLS UNROLL
+
+        const int sourceColumn = clamp_column(windowColumn - 1);
+
+        VITIS_LOOP_105_3: for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
+#pragma HLS UNROLL
+            window[windowRow][windowColumn] =
+                lineBuffer[slot[windowRow]][sourceColumn];
+        }
+    }
+
+    VITIS_LOOP_112_4: for (int column = 0; column < WIDTH; ++column) {
+#pragma HLS PIPELINE II=1
+
+        const GradientPixel centre = window[1][1];
 
         const bool hasLeft = column > 0;
         const bool hasRight = column < WIDTH - 1;
@@ -658,34 +681,34 @@ void non_maximum_suppression(
         switch (centre.direction) {
             case GradientDirection::DEG_0:
                 neighbourOne = hasLeft ?
-                    lineBuffer[centreSlot][column - 1].magnitude : 0;
+                    window[1][0].magnitude : 0;
 
                 neighbourTwo = hasRight ?
-                    lineBuffer[centreSlot][column + 1].magnitude : 0;
+                    window[1][2].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_45:
                 neighbourOne = (hasTop && hasLeft) ?
-                    lineBuffer[topSlot][column - 1].magnitude : 0;
+                    window[0][0].magnitude : 0;
 
                 neighbourTwo = (hasBottom && hasRight) ?
-                    lineBuffer[bottomSlot][column + 1].magnitude : 0;
+                    window[2][2].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_90:
                 neighbourOne = hasTop ?
-                    lineBuffer[topSlot][column].magnitude : 0;
+                    window[0][1].magnitude : 0;
 
                 neighbourTwo = hasBottom ?
-                    lineBuffer[bottomSlot][column].magnitude : 0;
+                    window[2][1].magnitude : 0;
                 break;
 
             case GradientDirection::DEG_135:
                 neighbourOne = (hasTop && hasRight) ?
-                    lineBuffer[topSlot][column + 1].magnitude : 0;
+                    window[0][2].magnitude : 0;
 
                 neighbourTwo = (hasBottom && hasLeft) ?
-                    lineBuffer[bottomSlot][column - 1].magnitude : 0;
+                    window[2][0].magnitude : 0;
                 break;
         }
 
@@ -697,6 +720,23 @@ void non_maximum_suppression(
         }
         else {
             output[column] = 0;
+        }
+
+        const int nextColumn = clamp_column(column + 2);
+
+        GradientPixel banked[WINDOW_SIZE];
+#pragma HLS ARRAY_PARTITION variable=banked type=complete
+
+        VITIS_LOOP_172_5: for (int bank = 0; bank < WINDOW_SIZE; ++bank) {
+#pragma HLS UNROLL
+            banked[bank] = lineBuffer[bank][nextColumn];
+        }
+
+        VITIS_LOOP_177_6: for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
+#pragma HLS UNROLL
+            window[windowRow][0] = window[windowRow][1];
+            window[windowRow][1] = window[windowRow][2];
+            window[windowRow][2] = banked[slot[windowRow]];
         }
     }
 

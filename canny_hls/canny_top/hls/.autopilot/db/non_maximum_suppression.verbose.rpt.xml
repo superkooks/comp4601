@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'non_maximum_suppression'" level="0">
-<item name = "Date">Sat Jul 25 12:05:04 2026
+<item name = "Date">Wed Jul 29 23:33:26 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 2.813 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.636 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 1614, 5.000 ns, 8.070 us, 1, 1614, no</column>
+<column name="">1, 1101, 5.000 ns, 5.505 us, 1, 1101, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_67">non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2_fu_85">non_maximum_suppression_Pipeline_VITIS_LOOP_74_2, 1027, 1027, 5.135 us, 5.135 us, 0, 0, loop pipeline stp</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_57_1_fu_175">non_maximum_suppression_Pipeline_VITIS_LOOP_57_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_112_4_fu_196">non_maximum_suppression_Pipeline_VITIS_LOOP_112_4, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -49,12 +49,12 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 145, -</column>
+<column name="Expression">-, -, 0, 191, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 1283, 1376, -</column>
+<column name="Instance">-, -, 1381, 1395, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, 0, 613, -</column>
-<column name="Register">-, -, 189, -, -</column>
+<column name="Multiplexer">-, -, 0, 638, -</column>
+<column name="Register">-, -, 334, -, -</column>
 <specialColumn name="Available">288, 1248, 234240, 117120, 64</specialColumn>
 <specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
 </table>
@@ -63,11 +63,19 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_67">non_maximum_suppression_Pipeline_VITIS_LOOP_45_1, 0, 0, 24, 91, 0</column>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2_fu_85">non_maximum_suppression_Pipeline_VITIS_LOOP_74_2, 0, 0, 77, 571, 0</column>
-<column name="srem_32ns_3ns_32_36_seq_1_U116">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_3ns_32_36_seq_1_U117">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="urem_32ns_3ns_2_36_seq_1_U118">urem_32ns_3ns_2_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_112_4_fu_196">non_maximum_suppression_Pipeline_VITIS_LOOP_112_4, 0, 0, 132, 536, 0</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_57_1_fu_175">non_maximum_suppression_Pipeline_VITIS_LOOP_57_1, 0, 0, 67, 73, 0</column>
+<column name="sparsemux_7_2_11_1_1_U173">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U174">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U176">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U177">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U178">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U180">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_2_1_1_U175">sparsemux_7_2_2_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_2_1_1_U179">sparsemux_7_2_2_1_1, 0, 0, 0, 9, 0</column>
+<column name="srem_32ns_3ns_32_36_seq_1_U170">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_3ns_32_36_seq_1_U171">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="urem_32ns_3ns_2_36_seq_1_U172">urem_32ns_3ns_2_36_seq_1, 0, 0, 394, 238, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -84,60 +92,86 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln14_1_fu_179_p2">+, 0, 0, 9, 2, 2</column>
-<column name="add_ln14_fu_203_p2">+, 0, 0, 9, 2, 2</column>
-<column name="add_ln49_fu_112_p2">+, 0, 0, 39, 32, 1</column>
-<column name="grp_fu_160_p0">+, 0, 0, 39, 32, 3</column>
-<column name="outputRow_fu_138_p2">+, 0, 0, 39, 32, 2</column>
-<column name="ap_block_state74_on_subcall_done">and, 0, 0, 2, 1, 1</column>
-<column name="ap_predicate_op207_call_state74">and, 0, 0, 2, 1, 1</column>
+<column name="add_ln14_1_fu_318_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln14_fu_342_p2">+, 0, 0, 9, 2, 2</column>
+<column name="add_ln61_fu_236_p2">+, 0, 0, 39, 32, 1</column>
+<column name="grp_fu_279_p0">+, 0, 0, 39, 32, 3</column>
+<column name="outputRow_fu_257_p2">+, 0, 0, 39, 32, 2</column>
+<column name="empty_41_fu_361_p2">-, 0, 0, 10, 3, 2</column>
+<column name="ap_block_state73_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op242_call_state73">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
-<column name="select_ln14_1_fu_184_p3">select, 0, 0, 2, 1, 2</column>
-<column name="select_ln14_fu_209_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_cast6_fu_292_p3">select, 0, 0, 2, 1, 2</column>
+<column name="p_smodpost_fu_367_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln14_1_fu_323_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln14_fu_348_p3">select, 0, 0, 2, 1, 2</column>
+<column name="grp_fu_305_p0">xor, 0, 0, 32, 32, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">401, 75, 1, 75</column>
+<column name="ap_NS_fsm">389, 74, 1, 74</column>
 <column name="ap_done">9, 2, 1, 2</column>
-<column name="ap_phi_mux_valid_out_write_assign_phi_fu_56_p6">9, 2, 1, 2</column>
-<column name="out_nonmax_address0">14, 3, 9, 27</column>
-<column name="out_nonmax_ce0">14, 3, 1, 3</column>
-<column name="out_nonmax_d0">14, 3, 11, 33</column>
-<column name="out_nonmax_we0">14, 3, 1, 3</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_address0">14, 3, 10, 30</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0">14, 3, 1, 3</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1">9, 2, 1, 2</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_we0">9, 2, 1, 2</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_address0">14, 3, 10, 30</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0">14, 3, 1, 3</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1">9, 2, 1, 2</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_we0">9, 2, 1, 2</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_address0">14, 3, 11, 33</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_ce0">14, 3, 1, 3</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_we0">9, 2, 1, 2</column>
-<column name="p_anonymous_namespace_rowsReceived_2_o">9, 2, 32, 64</column>
+<column name="ap_phi_mux_valid_out_write_assign_phi_fu_164_p6">9, 2, 1, 2</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_address0">14, 3, 9, 27</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_ce0">14, 3, 1, 3</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_we0">9, 2, 1, 2</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_address0">14, 3, 9, 27</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_ce0">14, 3, 1, 3</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_we0">9, 2, 1, 2</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_address0">14, 3, 9, 27</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_ce0">14, 3, 1, 3</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_we0">9, 2, 1, 2</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_address0">14, 3, 9, 27</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_ce0">14, 3, 1, 3</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_we0">9, 2, 1, 2</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_address0">14, 3, 9, 27</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_ce0">14, 3, 1, 3</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_we0">9, 2, 1, 2</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_address0">14, 3, 9, 27</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_ce0">14, 3, 1, 3</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_we0">9, 2, 1, 2</column>
+<column name="p_anonymous_namespace_rowsReceived_o">9, 2, 32, 64</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">74, 0, 74, 0</column>
+<column name="ap_CS_fsm">73, 0, 73, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_45_1_fu_67_ap_start_reg">1, 0, 1, 0</column>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_74_2_fu_85_ap_start_reg">1, 0, 1, 0</column>
-<column name="p_anonymous_namespace_rowsReceived_2_load_reg_234">32, 0, 32, 0</column>
-<column name="p_read_3_reg_230">1, 0, 1, 0</column>
-<column name="result_3_reg_282">2, 0, 2, 0</column>
-<column name="select_ln14_1_reg_277">2, 0, 2, 0</column>
-<column name="select_ln14_reg_287">2, 0, 2, 0</column>
-<column name="tmp_19_reg_253">2, 0, 11, 9</column>
-<column name="tmp_reg_268">1, 0, 1, 0</column>
-<column name="tmp_s_reg_297">2, 0, 11, 9</column>
-<column name="trunc_ln13_1_reg_292">2, 0, 2, 0</column>
-<column name="trunc_ln42_reg_246">2, 0, 2, 0</column>
-<column name="trunc_ln55_reg_263">31, 0, 31, 0</column>
-<column name="valid_out_write_assign_reg_52">1, 0, 1, 0</column>
-<column name="writeSlot_reg_241">32, 0, 32, 0</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_112_4_fu_196_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_57_1_fu_175_ap_start_reg">1, 0, 1, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_load_1_reg_634">2, 0, 2, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_load_reg_598">2, 0, 2, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_load_1_reg_639">2, 0, 2, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_load_reg_603">2, 0, 2, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_load_1_reg_644">2, 0, 2, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_load_reg_608">2, 0, 2, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_load_1_reg_613">11, 0, 11, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_load_reg_577">11, 0, 11, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_load_1_reg_620">11, 0, 11, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_load_reg_584">11, 0, 11, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_load_1_reg_627">11, 0, 11, 0</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_load_reg_591">11, 0, 11, 0</column>
+<column name="p_anonymous_namespace_rowsReceived_load_reg_521">32, 0, 32, 0</column>
+<column name="p_read_3_reg_517">1, 0, 1, 0</column>
+<column name="p_smodpost_reg_654">2, 0, 2, 0</column>
+<column name="select_ln14_1_reg_570">2, 0, 2, 0</column>
+<column name="select_ln14_reg_649">2, 0, 2, 0</column>
+<column name="tmp_1_reg_669">2, 0, 2, 0</column>
+<column name="tmp_23_reg_551">1, 0, 1, 0</column>
+<column name="tmp_25_reg_560">1, 0, 1, 0</column>
+<column name="tmp_2_reg_674">11, 0, 11, 0</column>
+<column name="tmp_3_reg_679">11, 0, 11, 0</column>
+<column name="tmp_4_reg_684">11, 0, 11, 0</column>
+<column name="tmp_5_reg_689">2, 0, 2, 0</column>
+<column name="tmp_6_reg_694">11, 0, 11, 0</column>
+<column name="tmp_reg_659">11, 0, 11, 0</column>
+<column name="tmp_s_reg_664">11, 0, 11, 0</column>
+<column name="trunc_ln54_1_reg_541">3, 0, 3, 0</column>
+<column name="trunc_ln54_reg_535">2, 0, 2, 0</column>
+<column name="trunc_ln67_reg_546">31, 0, 31, 0</column>
+<column name="valid_out_write_assign_reg_160">1, 0, 1, 0</column>
+<column name="writeSlot_reg_530">32, 0, 32, 0</column>
 </table>
 </item>
 </section>
@@ -166,30 +200,57 @@
 <column name="out_nonmax_ce0">out, 1, ap_memory, out_nonmax, array</column>
 <column name="out_nonmax_we0">out, 1, ap_memory, out_nonmax, array</column>
 <column name="out_nonmax_d0">out, 11, ap_memory, out_nonmax, array</column>
-<column name="p_anonymous_namespace_rowsReceived_2_i">in, 32, ap_ovld, p_anonymous_namespace_rowsReceived_2, pointer</column>
-<column name="p_anonymous_namespace_rowsReceived_2_o">out, 32, ap_ovld, p_anonymous_namespace_rowsReceived_2, pointer</column>
-<column name="p_anonymous_namespace_rowsReceived_2_o_ap_vld">out, 1, ap_ovld, p_anonymous_namespace_rowsReceived_2, pointer</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_address0">out, 11, ap_memory, p_anonymous_namespace_lineBuffer_direction, array</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction, array</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction, array</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_d0">out, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction, array</column>
-<column name="p_anonymous_namespace_lineBuffer_direction_q0">in, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_address0">out, 10, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_d0">out, 11, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_q0">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_address1">out, 10, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_0_q1">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_0, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_address0">out, 10, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_d0">out, 11, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_q0">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_address1">out, 10, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
-<column name="p_anonymous_namespace_lineBuffer_25_magnitude_1_q1">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_25_magnitude_1, array</column>
+<column name="p_anonymous_namespace_rowsReceived_i">in, 32, ap_ovld, p_anonymous_namespace_rowsReceived, pointer</column>
+<column name="p_anonymous_namespace_rowsReceived_o">out, 32, ap_ovld, p_anonymous_namespace_rowsReceived, pointer</column>
+<column name="p_anonymous_namespace_rowsReceived_o_ap_vld">out, 1, ap_ovld, p_anonymous_namespace_rowsReceived, pointer</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_address0">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_d0">out, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_q0">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_address1">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_0_q1">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_address0">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_d0">out, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_q0">in, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_address1">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_0_q1">in, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_0, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_address0">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_d0">out, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_q0">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_address1">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_1_q1">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_address0">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_d0">out, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_q0">in, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_address1">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_1_q1">in, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_1, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_address0">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_d0">out, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_q0">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_address1">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_magnitude_2_q1">in, 11, ap_memory, p_anonymous_namespace_lineBuffer_magnitude_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_address0">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_ce0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_we0">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_d0">out, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_q0">in, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_address1">out, 9, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_ce1">out, 1, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
+<column name="p_anonymous_namespace_lineBuffer_direction_2_q1">in, 2, ap_memory, p_anonymous_namespace_lineBuffer_direction_2, array</column>
 </table>
 </item>
 </section>

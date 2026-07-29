@@ -56,62 +56,152 @@ module canny_top_dataflow_parent_loop_proc (
         m_axi_gmem_0_BUSER,
         in_r,
         out_r,
-        p_anonymous_namespace_rowsReceived_i,
-        p_anonymous_namespace_rowsReceived_o,
-        lineBuffer_1_address0,
-        lineBuffer_1_ce0,
-        lineBuffer_1_d0,
-        lineBuffer_1_q0,
-        lineBuffer_1_we0,
-        lineBuffer_1_address1,
-        lineBuffer_1_ce1,
-        lineBuffer_1_d1,
-        lineBuffer_1_q1,
-        lineBuffer_1_we1,
         p_anonymous_namespace_rowsReceived_1_i,
         p_anonymous_namespace_rowsReceived_1_o,
-        lineBuffer_address0,
-        lineBuffer_ce0,
-        lineBuffer_d0,
-        lineBuffer_q0,
-        lineBuffer_we0,
-        lineBuffer_address1,
-        lineBuffer_ce1,
-        lineBuffer_d1,
-        lineBuffer_q1,
-        lineBuffer_we1,
+        p_anonymous_namespace_lineBuffer_39_0_address0,
+        p_anonymous_namespace_lineBuffer_39_0_ce0,
+        p_anonymous_namespace_lineBuffer_39_0_d0,
+        p_anonymous_namespace_lineBuffer_39_0_q0,
+        p_anonymous_namespace_lineBuffer_39_0_we0,
+        p_anonymous_namespace_lineBuffer_39_0_address1,
+        p_anonymous_namespace_lineBuffer_39_0_ce1,
+        p_anonymous_namespace_lineBuffer_39_0_d1,
+        p_anonymous_namespace_lineBuffer_39_0_q1,
+        p_anonymous_namespace_lineBuffer_39_0_we1,
+        p_anonymous_namespace_lineBuffer_39_1_address0,
+        p_anonymous_namespace_lineBuffer_39_1_ce0,
+        p_anonymous_namespace_lineBuffer_39_1_d0,
+        p_anonymous_namespace_lineBuffer_39_1_q0,
+        p_anonymous_namespace_lineBuffer_39_1_we0,
+        p_anonymous_namespace_lineBuffer_39_1_address1,
+        p_anonymous_namespace_lineBuffer_39_1_ce1,
+        p_anonymous_namespace_lineBuffer_39_1_d1,
+        p_anonymous_namespace_lineBuffer_39_1_q1,
+        p_anonymous_namespace_lineBuffer_39_1_we1,
+        p_anonymous_namespace_lineBuffer_39_2_address0,
+        p_anonymous_namespace_lineBuffer_39_2_ce0,
+        p_anonymous_namespace_lineBuffer_39_2_d0,
+        p_anonymous_namespace_lineBuffer_39_2_q0,
+        p_anonymous_namespace_lineBuffer_39_2_we0,
+        p_anonymous_namespace_lineBuffer_39_2_address1,
+        p_anonymous_namespace_lineBuffer_39_2_ce1,
+        p_anonymous_namespace_lineBuffer_39_2_d1,
+        p_anonymous_namespace_lineBuffer_39_2_q1,
+        p_anonymous_namespace_lineBuffer_39_2_we1,
+        p_anonymous_namespace_lineBuffer_39_3_address0,
+        p_anonymous_namespace_lineBuffer_39_3_ce0,
+        p_anonymous_namespace_lineBuffer_39_3_d0,
+        p_anonymous_namespace_lineBuffer_39_3_q0,
+        p_anonymous_namespace_lineBuffer_39_3_we0,
+        p_anonymous_namespace_lineBuffer_39_3_address1,
+        p_anonymous_namespace_lineBuffer_39_3_ce1,
+        p_anonymous_namespace_lineBuffer_39_3_d1,
+        p_anonymous_namespace_lineBuffer_39_3_q1,
+        p_anonymous_namespace_lineBuffer_39_3_we1,
+        p_anonymous_namespace_lineBuffer_39_4_address0,
+        p_anonymous_namespace_lineBuffer_39_4_ce0,
+        p_anonymous_namespace_lineBuffer_39_4_d0,
+        p_anonymous_namespace_lineBuffer_39_4_q0,
+        p_anonymous_namespace_lineBuffer_39_4_we0,
+        p_anonymous_namespace_lineBuffer_39_4_address1,
+        p_anonymous_namespace_lineBuffer_39_4_ce1,
+        p_anonymous_namespace_lineBuffer_39_4_d1,
+        p_anonymous_namespace_lineBuffer_39_4_q1,
+        p_anonymous_namespace_lineBuffer_39_4_we1,
         p_anonymous_namespace_rowsReceived_2_i,
         p_anonymous_namespace_rowsReceived_2_o,
-        p_anonymous_namespace_lineBuffer_direction_address0,
-        p_anonymous_namespace_lineBuffer_direction_ce0,
-        p_anonymous_namespace_lineBuffer_direction_d0,
-        p_anonymous_namespace_lineBuffer_direction_q0,
-        p_anonymous_namespace_lineBuffer_direction_we0,
-        p_anonymous_namespace_lineBuffer_direction_address1,
-        p_anonymous_namespace_lineBuffer_direction_ce1,
-        p_anonymous_namespace_lineBuffer_direction_d1,
-        p_anonymous_namespace_lineBuffer_direction_q1,
-        p_anonymous_namespace_lineBuffer_direction_we1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_d0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_q0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_address1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_d1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_q1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_we1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_d0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_q0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_address1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_d1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_q1,
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_we1,
+        p_anonymous_namespace_lineBuffer_32_0_address0,
+        p_anonymous_namespace_lineBuffer_32_0_ce0,
+        p_anonymous_namespace_lineBuffer_32_0_d0,
+        p_anonymous_namespace_lineBuffer_32_0_q0,
+        p_anonymous_namespace_lineBuffer_32_0_we0,
+        p_anonymous_namespace_lineBuffer_32_0_address1,
+        p_anonymous_namespace_lineBuffer_32_0_ce1,
+        p_anonymous_namespace_lineBuffer_32_0_d1,
+        p_anonymous_namespace_lineBuffer_32_0_q1,
+        p_anonymous_namespace_lineBuffer_32_0_we1,
+        p_anonymous_namespace_lineBuffer_32_1_address0,
+        p_anonymous_namespace_lineBuffer_32_1_ce0,
+        p_anonymous_namespace_lineBuffer_32_1_d0,
+        p_anonymous_namespace_lineBuffer_32_1_q0,
+        p_anonymous_namespace_lineBuffer_32_1_we0,
+        p_anonymous_namespace_lineBuffer_32_1_address1,
+        p_anonymous_namespace_lineBuffer_32_1_ce1,
+        p_anonymous_namespace_lineBuffer_32_1_d1,
+        p_anonymous_namespace_lineBuffer_32_1_q1,
+        p_anonymous_namespace_lineBuffer_32_1_we1,
+        p_anonymous_namespace_lineBuffer_32_2_address0,
+        p_anonymous_namespace_lineBuffer_32_2_ce0,
+        p_anonymous_namespace_lineBuffer_32_2_d0,
+        p_anonymous_namespace_lineBuffer_32_2_q0,
+        p_anonymous_namespace_lineBuffer_32_2_we0,
+        p_anonymous_namespace_lineBuffer_32_2_address1,
+        p_anonymous_namespace_lineBuffer_32_2_ce1,
+        p_anonymous_namespace_lineBuffer_32_2_d1,
+        p_anonymous_namespace_lineBuffer_32_2_q1,
+        p_anonymous_namespace_lineBuffer_32_2_we1,
+        p_anonymous_namespace_rowsReceived_i,
+        p_anonymous_namespace_rowsReceived_o,
+        p_anonymous_namespace_lineBuffer_magnitude_0_address0,
+        p_anonymous_namespace_lineBuffer_magnitude_0_ce0,
+        p_anonymous_namespace_lineBuffer_magnitude_0_d0,
+        p_anonymous_namespace_lineBuffer_magnitude_0_q0,
+        p_anonymous_namespace_lineBuffer_magnitude_0_we0,
+        p_anonymous_namespace_lineBuffer_magnitude_0_address1,
+        p_anonymous_namespace_lineBuffer_magnitude_0_ce1,
+        p_anonymous_namespace_lineBuffer_magnitude_0_d1,
+        p_anonymous_namespace_lineBuffer_magnitude_0_q1,
+        p_anonymous_namespace_lineBuffer_magnitude_0_we1,
+        p_anonymous_namespace_lineBuffer_direction_0_address0,
+        p_anonymous_namespace_lineBuffer_direction_0_ce0,
+        p_anonymous_namespace_lineBuffer_direction_0_d0,
+        p_anonymous_namespace_lineBuffer_direction_0_q0,
+        p_anonymous_namespace_lineBuffer_direction_0_we0,
+        p_anonymous_namespace_lineBuffer_direction_0_address1,
+        p_anonymous_namespace_lineBuffer_direction_0_ce1,
+        p_anonymous_namespace_lineBuffer_direction_0_d1,
+        p_anonymous_namespace_lineBuffer_direction_0_q1,
+        p_anonymous_namespace_lineBuffer_direction_0_we1,
+        p_anonymous_namespace_lineBuffer_magnitude_1_address0,
+        p_anonymous_namespace_lineBuffer_magnitude_1_ce0,
+        p_anonymous_namespace_lineBuffer_magnitude_1_d0,
+        p_anonymous_namespace_lineBuffer_magnitude_1_q0,
+        p_anonymous_namespace_lineBuffer_magnitude_1_we0,
+        p_anonymous_namespace_lineBuffer_magnitude_1_address1,
+        p_anonymous_namespace_lineBuffer_magnitude_1_ce1,
+        p_anonymous_namespace_lineBuffer_magnitude_1_d1,
+        p_anonymous_namespace_lineBuffer_magnitude_1_q1,
+        p_anonymous_namespace_lineBuffer_magnitude_1_we1,
+        p_anonymous_namespace_lineBuffer_direction_1_address0,
+        p_anonymous_namespace_lineBuffer_direction_1_ce0,
+        p_anonymous_namespace_lineBuffer_direction_1_d0,
+        p_anonymous_namespace_lineBuffer_direction_1_q0,
+        p_anonymous_namespace_lineBuffer_direction_1_we0,
+        p_anonymous_namespace_lineBuffer_direction_1_address1,
+        p_anonymous_namespace_lineBuffer_direction_1_ce1,
+        p_anonymous_namespace_lineBuffer_direction_1_d1,
+        p_anonymous_namespace_lineBuffer_direction_1_q1,
+        p_anonymous_namespace_lineBuffer_direction_1_we1,
+        p_anonymous_namespace_lineBuffer_magnitude_2_address0,
+        p_anonymous_namespace_lineBuffer_magnitude_2_ce0,
+        p_anonymous_namespace_lineBuffer_magnitude_2_d0,
+        p_anonymous_namespace_lineBuffer_magnitude_2_q0,
+        p_anonymous_namespace_lineBuffer_magnitude_2_we0,
+        p_anonymous_namespace_lineBuffer_magnitude_2_address1,
+        p_anonymous_namespace_lineBuffer_magnitude_2_ce1,
+        p_anonymous_namespace_lineBuffer_magnitude_2_d1,
+        p_anonymous_namespace_lineBuffer_magnitude_2_q1,
+        p_anonymous_namespace_lineBuffer_magnitude_2_we1,
+        p_anonymous_namespace_lineBuffer_direction_2_address0,
+        p_anonymous_namespace_lineBuffer_direction_2_ce0,
+        p_anonymous_namespace_lineBuffer_direction_2_d0,
+        p_anonymous_namespace_lineBuffer_direction_2_q0,
+        p_anonymous_namespace_lineBuffer_direction_2_we0,
+        p_anonymous_namespace_lineBuffer_direction_2_address1,
+        p_anonymous_namespace_lineBuffer_direction_2_ce1,
+        p_anonymous_namespace_lineBuffer_direction_2_d1,
+        p_anonymous_namespace_lineBuffer_direction_2_q1,
+        p_anonymous_namespace_lineBuffer_direction_2_we1,
         p_anonymous_namespace_rowsReceived_1_s_i,
         p_anonymous_namespace_rowsReceived_1_s_o,
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0,
@@ -134,6 +224,16 @@ module canny_top_dataflow_parent_loop_proc (
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1,
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1,
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1,
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1,
         p_anonymous_namespace_rowsReceived_2_s_i,
         p_anonymous_namespace_rowsReceived_2_s_o,
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0,
@@ -156,6 +256,16 @@ module canny_top_dataflow_parent_loop_proc (
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1,
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1,
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1,
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1,
         p_anonymous_namespace_rowsReceived_3_s_i,
         p_anonymous_namespace_rowsReceived_3_s_o,
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0,
@@ -178,6 +288,16 @@ module canny_top_dataflow_parent_loop_proc (
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1,
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1,
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1,
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1,
         p_anonymous_namespace_rowsReceived_4_s_i,
         p_anonymous_namespace_rowsReceived_4_s_o,
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0,
@@ -200,18 +320,28 @@ module canny_top_dataflow_parent_loop_proc (
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1,
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1,
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1,
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1,
         rowsReceived_i,
         rowsReceived_o,
         ap_clk,
         ap_rst,
         in_r_ap_vld,
         out_r_ap_vld,
-        p_anonymous_namespace_rowsReceived_i_ap_vld,
-        p_anonymous_namespace_rowsReceived_o_ap_vld,
         p_anonymous_namespace_rowsReceived_1_i_ap_vld,
         p_anonymous_namespace_rowsReceived_1_o_ap_vld,
         p_anonymous_namespace_rowsReceived_2_i_ap_vld,
         p_anonymous_namespace_rowsReceived_2_o_ap_vld,
+        p_anonymous_namespace_rowsReceived_i_ap_vld,
+        p_anonymous_namespace_rowsReceived_o_ap_vld,
         p_anonymous_namespace_rowsReceived_1_s_i_ap_vld,
         p_anonymous_namespace_rowsReceived_1_s_o_ap_vld,
         p_anonymous_namespace_rowsReceived_2_s_i_ap_vld,
@@ -278,162 +408,292 @@ input  [0:0] m_axi_gmem_0_BID;
 input  [0:0] m_axi_gmem_0_BUSER;
 input  [63:0] in_r;
 input  [63:0] out_r;
-input  [31:0] p_anonymous_namespace_rowsReceived_i;
-output  [31:0] p_anonymous_namespace_rowsReceived_o;
-output  [11:0] lineBuffer_1_address0;
-output   lineBuffer_1_ce0;
-output  [7:0] lineBuffer_1_d0;
-input  [7:0] lineBuffer_1_q0;
-output   lineBuffer_1_we0;
-output  [11:0] lineBuffer_1_address1;
-output   lineBuffer_1_ce1;
-output  [7:0] lineBuffer_1_d1;
-input  [7:0] lineBuffer_1_q1;
-output   lineBuffer_1_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_1_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_1_o;
-output  [10:0] lineBuffer_address0;
-output   lineBuffer_ce0;
-output  [7:0] lineBuffer_d0;
-input  [7:0] lineBuffer_q0;
-output   lineBuffer_we0;
-output  [10:0] lineBuffer_address1;
-output   lineBuffer_ce1;
-output  [7:0] lineBuffer_d1;
-input  [7:0] lineBuffer_q1;
-output   lineBuffer_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_0_address0;
+output   p_anonymous_namespace_lineBuffer_39_0_ce0;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_0_d0;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_0_q0;
+output   p_anonymous_namespace_lineBuffer_39_0_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_0_address1;
+output   p_anonymous_namespace_lineBuffer_39_0_ce1;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_0_d1;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_0_q1;
+output   p_anonymous_namespace_lineBuffer_39_0_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_1_address0;
+output   p_anonymous_namespace_lineBuffer_39_1_ce0;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_1_d0;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_1_q0;
+output   p_anonymous_namespace_lineBuffer_39_1_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_1_address1;
+output   p_anonymous_namespace_lineBuffer_39_1_ce1;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_1_d1;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_1_q1;
+output   p_anonymous_namespace_lineBuffer_39_1_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_2_address0;
+output   p_anonymous_namespace_lineBuffer_39_2_ce0;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_2_d0;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_2_q0;
+output   p_anonymous_namespace_lineBuffer_39_2_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_2_address1;
+output   p_anonymous_namespace_lineBuffer_39_2_ce1;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_2_d1;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_2_q1;
+output   p_anonymous_namespace_lineBuffer_39_2_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_3_address0;
+output   p_anonymous_namespace_lineBuffer_39_3_ce0;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_3_d0;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_3_q0;
+output   p_anonymous_namespace_lineBuffer_39_3_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_3_address1;
+output   p_anonymous_namespace_lineBuffer_39_3_ce1;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_3_d1;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_3_q1;
+output   p_anonymous_namespace_lineBuffer_39_3_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_4_address0;
+output   p_anonymous_namespace_lineBuffer_39_4_ce0;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_4_d0;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_4_q0;
+output   p_anonymous_namespace_lineBuffer_39_4_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_39_4_address1;
+output   p_anonymous_namespace_lineBuffer_39_4_ce1;
+output  [11:0] p_anonymous_namespace_lineBuffer_39_4_d1;
+input  [11:0] p_anonymous_namespace_lineBuffer_39_4_q1;
+output   p_anonymous_namespace_lineBuffer_39_4_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_2_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_2_o;
-output  [10:0] p_anonymous_namespace_lineBuffer_direction_address0;
-output   p_anonymous_namespace_lineBuffer_direction_ce0;
-output  [1:0] p_anonymous_namespace_lineBuffer_direction_d0;
-input  [1:0] p_anonymous_namespace_lineBuffer_direction_q0;
-output   p_anonymous_namespace_lineBuffer_direction_we0;
-output  [10:0] p_anonymous_namespace_lineBuffer_direction_address1;
-output   p_anonymous_namespace_lineBuffer_direction_ce1;
-output  [1:0] p_anonymous_namespace_lineBuffer_direction_d1;
-input  [1:0] p_anonymous_namespace_lineBuffer_direction_q1;
-output   p_anonymous_namespace_lineBuffer_direction_we1;
-output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
-output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
-input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
-output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d1;
-input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q1;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_0_we1;
-output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
-output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
-input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q0;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-output  [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address1;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
-output  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d1;
-input  [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q1;
-output   p_anonymous_namespace_lineBuffer_25_magnitude_1_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_32_0_address0;
+output   p_anonymous_namespace_lineBuffer_32_0_ce0;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_0_d0;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_0_q0;
+output   p_anonymous_namespace_lineBuffer_32_0_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_32_0_address1;
+output   p_anonymous_namespace_lineBuffer_32_0_ce1;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_0_d1;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_0_q1;
+output   p_anonymous_namespace_lineBuffer_32_0_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_32_1_address0;
+output   p_anonymous_namespace_lineBuffer_32_1_ce0;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_1_d0;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_1_q0;
+output   p_anonymous_namespace_lineBuffer_32_1_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_32_1_address1;
+output   p_anonymous_namespace_lineBuffer_32_1_ce1;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_1_d1;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_1_q1;
+output   p_anonymous_namespace_lineBuffer_32_1_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_32_2_address0;
+output   p_anonymous_namespace_lineBuffer_32_2_ce0;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_2_d0;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_2_q0;
+output   p_anonymous_namespace_lineBuffer_32_2_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_32_2_address1;
+output   p_anonymous_namespace_lineBuffer_32_2_ce1;
+output  [7:0] p_anonymous_namespace_lineBuffer_32_2_d1;
+input  [7:0] p_anonymous_namespace_lineBuffer_32_2_q1;
+output   p_anonymous_namespace_lineBuffer_32_2_we1;
+input  [31:0] p_anonymous_namespace_rowsReceived_i;
+output  [31:0] p_anonymous_namespace_rowsReceived_o;
+output  [8:0] p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+output   p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+output  [10:0] p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+input  [10:0] p_anonymous_namespace_lineBuffer_magnitude_0_q0;
+output   p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_magnitude_0_address1;
+output   p_anonymous_namespace_lineBuffer_magnitude_0_ce1;
+output  [10:0] p_anonymous_namespace_lineBuffer_magnitude_0_d1;
+input  [10:0] p_anonymous_namespace_lineBuffer_magnitude_0_q1;
+output   p_anonymous_namespace_lineBuffer_magnitude_0_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_direction_0_address0;
+output   p_anonymous_namespace_lineBuffer_direction_0_ce0;
+output  [1:0] p_anonymous_namespace_lineBuffer_direction_0_d0;
+input  [1:0] p_anonymous_namespace_lineBuffer_direction_0_q0;
+output   p_anonymous_namespace_lineBuffer_direction_0_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_direction_0_address1;
+output   p_anonymous_namespace_lineBuffer_direction_0_ce1;
+output  [1:0] p_anonymous_namespace_lineBuffer_direction_0_d1;
+input  [1:0] p_anonymous_namespace_lineBuffer_direction_0_q1;
+output   p_anonymous_namespace_lineBuffer_direction_0_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+output   p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+output  [10:0] p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+input  [10:0] p_anonymous_namespace_lineBuffer_magnitude_1_q0;
+output   p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_magnitude_1_address1;
+output   p_anonymous_namespace_lineBuffer_magnitude_1_ce1;
+output  [10:0] p_anonymous_namespace_lineBuffer_magnitude_1_d1;
+input  [10:0] p_anonymous_namespace_lineBuffer_magnitude_1_q1;
+output   p_anonymous_namespace_lineBuffer_magnitude_1_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_direction_1_address0;
+output   p_anonymous_namespace_lineBuffer_direction_1_ce0;
+output  [1:0] p_anonymous_namespace_lineBuffer_direction_1_d0;
+input  [1:0] p_anonymous_namespace_lineBuffer_direction_1_q0;
+output   p_anonymous_namespace_lineBuffer_direction_1_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_direction_1_address1;
+output   p_anonymous_namespace_lineBuffer_direction_1_ce1;
+output  [1:0] p_anonymous_namespace_lineBuffer_direction_1_d1;
+input  [1:0] p_anonymous_namespace_lineBuffer_direction_1_q1;
+output   p_anonymous_namespace_lineBuffer_direction_1_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+output   p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+output  [10:0] p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+input  [10:0] p_anonymous_namespace_lineBuffer_magnitude_2_q0;
+output   p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_magnitude_2_address1;
+output   p_anonymous_namespace_lineBuffer_magnitude_2_ce1;
+output  [10:0] p_anonymous_namespace_lineBuffer_magnitude_2_d1;
+input  [10:0] p_anonymous_namespace_lineBuffer_magnitude_2_q1;
+output   p_anonymous_namespace_lineBuffer_magnitude_2_we1;
+output  [8:0] p_anonymous_namespace_lineBuffer_direction_2_address0;
+output   p_anonymous_namespace_lineBuffer_direction_2_ce0;
+output  [1:0] p_anonymous_namespace_lineBuffer_direction_2_d0;
+input  [1:0] p_anonymous_namespace_lineBuffer_direction_2_q0;
+output   p_anonymous_namespace_lineBuffer_direction_2_we0;
+output  [8:0] p_anonymous_namespace_lineBuffer_direction_2_address1;
+output   p_anonymous_namespace_lineBuffer_direction_2_ce1;
+output  [1:0] p_anonymous_namespace_lineBuffer_direction_2_d1;
+input  [1:0] p_anonymous_namespace_lineBuffer_direction_2_q1;
+output   p_anonymous_namespace_lineBuffer_direction_2_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_1_s_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_1_s_o;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_2_s_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_2_s_o;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_3_s_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_3_s_o;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1;
 input  [31:0] p_anonymous_namespace_rowsReceived_4_s_i;
 output  [31:0] p_anonymous_namespace_rowsReceived_4_s_o;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
-output  [9:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1;
 output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1;
 input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1;
 output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0;
+output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
+output  [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1;
+output  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1;
+input  [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1;
+output   p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1;
 input  [31:0] rowsReceived_i;
 output  [31:0] rowsReceived_o;
 input   ap_clk;
 input   ap_rst;
 input   in_r_ap_vld;
 input   out_r_ap_vld;
-input   p_anonymous_namespace_rowsReceived_i_ap_vld;
-output   p_anonymous_namespace_rowsReceived_o_ap_vld;
 input   p_anonymous_namespace_rowsReceived_1_i_ap_vld;
 output   p_anonymous_namespace_rowsReceived_1_o_ap_vld;
 input   p_anonymous_namespace_rowsReceived_2_i_ap_vld;
 output   p_anonymous_namespace_rowsReceived_2_o_ap_vld;
+input   p_anonymous_namespace_rowsReceived_i_ap_vld;
+output   p_anonymous_namespace_rowsReceived_o_ap_vld;
 input   p_anonymous_namespace_rowsReceived_1_s_i_ap_vld;
 output   p_anonymous_namespace_rowsReceived_1_s_o_ap_vld;
 input   p_anonymous_namespace_rowsReceived_2_s_i_ap_vld;
@@ -486,123 +746,227 @@ wire   [3:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_ARREGION;
 wire   [0:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_ARUSER;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_RREADY;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_BREADY;
-wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o;
-wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce0;
-wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we0;
-wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce1;
-wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we1;
 wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_o;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce0;
-wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we0;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce1;
-wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_ce0;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_ce1;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_ce0;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_ce1;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_ce0;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_ce1;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_ce0;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_ce1;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_ce0;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_ce1;
+wire   [11:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_we1;
 wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_o;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_ce0;
-wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_d0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_we0;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_ce1;
-wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_d1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_we1;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_d1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_we1;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
-wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_d1;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce0;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce1;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce0;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce1;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_ce0;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_ce1;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_we1;
+wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_ce1;
+wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_ce0;
+wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_ce1;
+wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_ce1;
+wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_ce0;
+wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_ce1;
+wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_ce1;
+wire   [10:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_ce0;
+wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_ce1;
+wire   [1:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_we1;
 wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_s_o;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1;
 wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_s_o;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1;
 wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_3_s_o;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1;
 wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_4_s_o;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
-wire   [9:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1;
 wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
+wire   [8:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1;
+wire   [7:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1;
 wire   [31:0] dataflow_in_loop_VITIS_LOOP_12_1_1_U0_rowsReceived_o;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_start;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o_ap_vld;
-wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_o_ap_vld;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_o_ap_vld;
+wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o_ap_vld;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_s_o_ap_vld;
 wire    dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_3_s_o_ap_vld;
@@ -675,62 +1039,152 @@ canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1 dataflow_in_loop_VITIS_LOOP_12_1_1_
     .m_axi_gmem_0_BUSER(m_axi_gmem_0_BUSER),
     .in_r(in_r),
     .out_r(out_r),
-    .p_anonymous_namespace_rowsReceived_i(p_anonymous_namespace_rowsReceived_i),
-    .p_anonymous_namespace_rowsReceived_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o),
-    .lineBuffer_1_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address0),
-    .lineBuffer_1_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce0),
-    .lineBuffer_1_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d0),
-    .lineBuffer_1_q0(lineBuffer_1_q0),
-    .lineBuffer_1_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we0),
-    .lineBuffer_1_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address1),
-    .lineBuffer_1_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce1),
-    .lineBuffer_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d1),
-    .lineBuffer_1_q1(lineBuffer_1_q1),
-    .lineBuffer_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we1),
     .p_anonymous_namespace_rowsReceived_1_i(p_anonymous_namespace_rowsReceived_1_i),
     .p_anonymous_namespace_rowsReceived_1_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_o),
-    .lineBuffer_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address0),
-    .lineBuffer_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce0),
-    .lineBuffer_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d0),
-    .lineBuffer_q0(lineBuffer_q0),
-    .lineBuffer_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we0),
-    .lineBuffer_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address1),
-    .lineBuffer_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce1),
-    .lineBuffer_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d1),
-    .lineBuffer_q1(lineBuffer_q1),
-    .lineBuffer_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we1),
+    .p_anonymous_namespace_lineBuffer_39_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_address0),
+    .p_anonymous_namespace_lineBuffer_39_0_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_ce0),
+    .p_anonymous_namespace_lineBuffer_39_0_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_d0),
+    .p_anonymous_namespace_lineBuffer_39_0_q0(p_anonymous_namespace_lineBuffer_39_0_q0),
+    .p_anonymous_namespace_lineBuffer_39_0_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_we0),
+    .p_anonymous_namespace_lineBuffer_39_0_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_address1),
+    .p_anonymous_namespace_lineBuffer_39_0_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_ce1),
+    .p_anonymous_namespace_lineBuffer_39_0_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_d1),
+    .p_anonymous_namespace_lineBuffer_39_0_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_0_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_we1),
+    .p_anonymous_namespace_lineBuffer_39_1_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_address0),
+    .p_anonymous_namespace_lineBuffer_39_1_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_ce0),
+    .p_anonymous_namespace_lineBuffer_39_1_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_d0),
+    .p_anonymous_namespace_lineBuffer_39_1_q0(p_anonymous_namespace_lineBuffer_39_1_q0),
+    .p_anonymous_namespace_lineBuffer_39_1_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_we0),
+    .p_anonymous_namespace_lineBuffer_39_1_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_address1),
+    .p_anonymous_namespace_lineBuffer_39_1_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_ce1),
+    .p_anonymous_namespace_lineBuffer_39_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_d1),
+    .p_anonymous_namespace_lineBuffer_39_1_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_we1),
+    .p_anonymous_namespace_lineBuffer_39_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_address0),
+    .p_anonymous_namespace_lineBuffer_39_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_ce0),
+    .p_anonymous_namespace_lineBuffer_39_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_d0),
+    .p_anonymous_namespace_lineBuffer_39_2_q0(p_anonymous_namespace_lineBuffer_39_2_q0),
+    .p_anonymous_namespace_lineBuffer_39_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_we0),
+    .p_anonymous_namespace_lineBuffer_39_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_address1),
+    .p_anonymous_namespace_lineBuffer_39_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_ce1),
+    .p_anonymous_namespace_lineBuffer_39_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_d1),
+    .p_anonymous_namespace_lineBuffer_39_2_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_we1),
+    .p_anonymous_namespace_lineBuffer_39_3_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_address0),
+    .p_anonymous_namespace_lineBuffer_39_3_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_ce0),
+    .p_anonymous_namespace_lineBuffer_39_3_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_d0),
+    .p_anonymous_namespace_lineBuffer_39_3_q0(p_anonymous_namespace_lineBuffer_39_3_q0),
+    .p_anonymous_namespace_lineBuffer_39_3_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_we0),
+    .p_anonymous_namespace_lineBuffer_39_3_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_address1),
+    .p_anonymous_namespace_lineBuffer_39_3_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_ce1),
+    .p_anonymous_namespace_lineBuffer_39_3_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_d1),
+    .p_anonymous_namespace_lineBuffer_39_3_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_3_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_we1),
+    .p_anonymous_namespace_lineBuffer_39_4_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_address0),
+    .p_anonymous_namespace_lineBuffer_39_4_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_ce0),
+    .p_anonymous_namespace_lineBuffer_39_4_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_d0),
+    .p_anonymous_namespace_lineBuffer_39_4_q0(p_anonymous_namespace_lineBuffer_39_4_q0),
+    .p_anonymous_namespace_lineBuffer_39_4_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_we0),
+    .p_anonymous_namespace_lineBuffer_39_4_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_address1),
+    .p_anonymous_namespace_lineBuffer_39_4_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_ce1),
+    .p_anonymous_namespace_lineBuffer_39_4_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_d1),
+    .p_anonymous_namespace_lineBuffer_39_4_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_4_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_we1),
     .p_anonymous_namespace_rowsReceived_2_i(p_anonymous_namespace_rowsReceived_2_i),
     .p_anonymous_namespace_rowsReceived_2_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_o),
-    .p_anonymous_namespace_lineBuffer_direction_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address0),
-    .p_anonymous_namespace_lineBuffer_direction_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_ce0),
-    .p_anonymous_namespace_lineBuffer_direction_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_d0),
-    .p_anonymous_namespace_lineBuffer_direction_q0(p_anonymous_namespace_lineBuffer_direction_q0),
-    .p_anonymous_namespace_lineBuffer_direction_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_we0),
-    .p_anonymous_namespace_lineBuffer_direction_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address1),
-    .p_anonymous_namespace_lineBuffer_direction_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_ce1),
-    .p_anonymous_namespace_lineBuffer_direction_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_d1),
-    .p_anonymous_namespace_lineBuffer_direction_q1(2'd0),
-    .p_anonymous_namespace_lineBuffer_direction_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_we1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_q0(p_anonymous_namespace_lineBuffer_25_magnitude_0_q0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_d1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_q1(p_anonymous_namespace_lineBuffer_25_magnitude_0_q1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_we1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_q0(p_anonymous_namespace_lineBuffer_25_magnitude_1_q0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_d1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_q1(p_anonymous_namespace_lineBuffer_25_magnitude_1_q1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we1),
+    .p_anonymous_namespace_lineBuffer_32_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address0),
+    .p_anonymous_namespace_lineBuffer_32_0_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce0),
+    .p_anonymous_namespace_lineBuffer_32_0_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d0),
+    .p_anonymous_namespace_lineBuffer_32_0_q0(p_anonymous_namespace_lineBuffer_32_0_q0),
+    .p_anonymous_namespace_lineBuffer_32_0_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we0),
+    .p_anonymous_namespace_lineBuffer_32_0_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address1),
+    .p_anonymous_namespace_lineBuffer_32_0_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce1),
+    .p_anonymous_namespace_lineBuffer_32_0_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d1),
+    .p_anonymous_namespace_lineBuffer_32_0_q1(p_anonymous_namespace_lineBuffer_32_0_q1),
+    .p_anonymous_namespace_lineBuffer_32_0_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we1),
+    .p_anonymous_namespace_lineBuffer_32_1_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address0),
+    .p_anonymous_namespace_lineBuffer_32_1_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce0),
+    .p_anonymous_namespace_lineBuffer_32_1_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d0),
+    .p_anonymous_namespace_lineBuffer_32_1_q0(p_anonymous_namespace_lineBuffer_32_1_q0),
+    .p_anonymous_namespace_lineBuffer_32_1_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we0),
+    .p_anonymous_namespace_lineBuffer_32_1_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address1),
+    .p_anonymous_namespace_lineBuffer_32_1_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce1),
+    .p_anonymous_namespace_lineBuffer_32_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d1),
+    .p_anonymous_namespace_lineBuffer_32_1_q1(p_anonymous_namespace_lineBuffer_32_1_q1),
+    .p_anonymous_namespace_lineBuffer_32_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we1),
+    .p_anonymous_namespace_lineBuffer_32_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_address0),
+    .p_anonymous_namespace_lineBuffer_32_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_ce0),
+    .p_anonymous_namespace_lineBuffer_32_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_d0),
+    .p_anonymous_namespace_lineBuffer_32_2_q0(p_anonymous_namespace_lineBuffer_32_2_q0),
+    .p_anonymous_namespace_lineBuffer_32_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_we0),
+    .p_anonymous_namespace_lineBuffer_32_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_address1),
+    .p_anonymous_namespace_lineBuffer_32_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_ce1),
+    .p_anonymous_namespace_lineBuffer_32_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_d1),
+    .p_anonymous_namespace_lineBuffer_32_2_q1(p_anonymous_namespace_lineBuffer_32_2_q1),
+    .p_anonymous_namespace_lineBuffer_32_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_we1),
+    .p_anonymous_namespace_rowsReceived_i(p_anonymous_namespace_rowsReceived_i),
+    .p_anonymous_namespace_rowsReceived_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_q0(p_anonymous_namespace_lineBuffer_magnitude_0_q0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_address1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_ce1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_d1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_q1(p_anonymous_namespace_lineBuffer_magnitude_0_q1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_we1),
+    .p_anonymous_namespace_lineBuffer_direction_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_address0),
+    .p_anonymous_namespace_lineBuffer_direction_0_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_0_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_d0),
+    .p_anonymous_namespace_lineBuffer_direction_0_q0(p_anonymous_namespace_lineBuffer_direction_0_q0),
+    .p_anonymous_namespace_lineBuffer_direction_0_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_we0),
+    .p_anonymous_namespace_lineBuffer_direction_0_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_address1),
+    .p_anonymous_namespace_lineBuffer_direction_0_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_ce1),
+    .p_anonymous_namespace_lineBuffer_direction_0_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_d1),
+    .p_anonymous_namespace_lineBuffer_direction_0_q1(p_anonymous_namespace_lineBuffer_direction_0_q1),
+    .p_anonymous_namespace_lineBuffer_direction_0_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_we1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_q0(p_anonymous_namespace_lineBuffer_magnitude_1_q0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_address1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_ce1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_d1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_q1(p_anonymous_namespace_lineBuffer_magnitude_1_q1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_we1),
+    .p_anonymous_namespace_lineBuffer_direction_1_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_address0),
+    .p_anonymous_namespace_lineBuffer_direction_1_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_1_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_d0),
+    .p_anonymous_namespace_lineBuffer_direction_1_q0(p_anonymous_namespace_lineBuffer_direction_1_q0),
+    .p_anonymous_namespace_lineBuffer_direction_1_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_we0),
+    .p_anonymous_namespace_lineBuffer_direction_1_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_address1),
+    .p_anonymous_namespace_lineBuffer_direction_1_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_ce1),
+    .p_anonymous_namespace_lineBuffer_direction_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_d1),
+    .p_anonymous_namespace_lineBuffer_direction_1_q1(p_anonymous_namespace_lineBuffer_direction_1_q1),
+    .p_anonymous_namespace_lineBuffer_direction_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_we1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_q0(p_anonymous_namespace_lineBuffer_magnitude_2_q0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_address1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_ce1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_d1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_q1(p_anonymous_namespace_lineBuffer_magnitude_2_q1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_we1),
+    .p_anonymous_namespace_lineBuffer_direction_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_address0),
+    .p_anonymous_namespace_lineBuffer_direction_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_d0),
+    .p_anonymous_namespace_lineBuffer_direction_2_q0(p_anonymous_namespace_lineBuffer_direction_2_q0),
+    .p_anonymous_namespace_lineBuffer_direction_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_we0),
+    .p_anonymous_namespace_lineBuffer_direction_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_address1),
+    .p_anonymous_namespace_lineBuffer_direction_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_ce1),
+    .p_anonymous_namespace_lineBuffer_direction_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_d1),
+    .p_anonymous_namespace_lineBuffer_direction_2_q1(p_anonymous_namespace_lineBuffer_direction_2_q1),
+    .p_anonymous_namespace_lineBuffer_direction_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_we1),
     .p_anonymous_namespace_rowsReceived_1_s_i(p_anonymous_namespace_rowsReceived_1_s_i),
     .p_anonymous_namespace_rowsReceived_1_s_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_s_o),
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0),
@@ -753,6 +1207,16 @@ canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1 dataflow_in_loop_VITIS_LOOP_12_1_1_
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1),
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1),
     .p_anonymous_namespace_rowsReceived_2_s_i(p_anonymous_namespace_rowsReceived_2_s_i),
     .p_anonymous_namespace_rowsReceived_2_s_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_s_o),
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0),
@@ -775,6 +1239,16 @@ canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1 dataflow_in_loop_VITIS_LOOP_12_1_1_
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1),
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1),
     .p_anonymous_namespace_rowsReceived_3_s_i(p_anonymous_namespace_rowsReceived_3_s_i),
     .p_anonymous_namespace_rowsReceived_3_s_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_3_s_o),
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0),
@@ -797,6 +1271,16 @@ canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1 dataflow_in_loop_VITIS_LOOP_12_1_1_
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1),
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1),
     .p_anonymous_namespace_rowsReceived_4_s_i(p_anonymous_namespace_rowsReceived_4_s_i),
     .p_anonymous_namespace_rowsReceived_4_s_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_4_s_o),
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0),
@@ -819,18 +1303,28 @@ canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1 dataflow_in_loop_VITIS_LOOP_12_1_1_
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1),
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1),
     .rowsReceived_i(rowsReceived_i),
     .rowsReceived_o(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_rowsReceived_o),
     .i_0_ap_vld(1'b0),
     .ap_start(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_start),
     .in_r_ap_vld(in_r_ap_vld),
-    .p_anonymous_namespace_rowsReceived_i_ap_vld(p_anonymous_namespace_rowsReceived_i_ap_vld),
-    .p_anonymous_namespace_rowsReceived_o_ap_vld(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o_ap_vld),
-    .ap_done(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done),
     .p_anonymous_namespace_rowsReceived_1_i_ap_vld(p_anonymous_namespace_rowsReceived_1_i_ap_vld),
     .p_anonymous_namespace_rowsReceived_1_o_ap_vld(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_o_ap_vld),
+    .ap_done(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_done),
     .p_anonymous_namespace_rowsReceived_2_i_ap_vld(p_anonymous_namespace_rowsReceived_2_i_ap_vld),
     .p_anonymous_namespace_rowsReceived_2_o_ap_vld(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_2_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_i_ap_vld(p_anonymous_namespace_rowsReceived_i_ap_vld),
+    .p_anonymous_namespace_rowsReceived_o_ap_vld(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_1_s_i_ap_vld(p_anonymous_namespace_rowsReceived_1_s_i_ap_vld),
     .p_anonymous_namespace_rowsReceived_1_s_o_ap_vld(dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_2_s_i_ap_vld(p_anonymous_namespace_rowsReceived_2_s_i_ap_vld),
@@ -908,38 +1402,6 @@ assign ap_input_count_plus_step = (loop_dataflow_input_count + 10'd1);
 assign ap_output_count_plus_step = (loop_dataflow_output_count + 10'd1);
 
 assign dataflow_in_loop_VITIS_LOOP_12_1_1_U0_ap_start = ap_start;
-
-assign lineBuffer_1_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address0;
-
-assign lineBuffer_1_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_address1;
-
-assign lineBuffer_1_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce0;
-
-assign lineBuffer_1_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_ce1;
-
-assign lineBuffer_1_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_d0;
-
-assign lineBuffer_1_d1 = 8'd0;
-
-assign lineBuffer_1_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_1_we0;
-
-assign lineBuffer_1_we1 = 1'b0;
-
-assign lineBuffer_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address0;
-
-assign lineBuffer_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_address1;
-
-assign lineBuffer_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce0;
-
-assign lineBuffer_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_ce1;
-
-assign lineBuffer_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_d0;
-
-assign lineBuffer_d1 = 8'd0;
-
-assign lineBuffer_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_lineBuffer_we0;
-
-assign lineBuffer_we1 = 1'b0;
 
 assign m_axi_gmem_0_ARADDR = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_m_axi_gmem_0_ARADDR;
 
@@ -1037,6 +1499,22 @@ assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 = dataflow_in_loop_VITIS_LOOP_
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1 = 1'b0;
 
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1 = 8'd0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1 = 1'b0;
+
 assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1;
@@ -1068,6 +1546,22 @@ assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1 = 8'd0;
 assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1 = 1'b0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1 = 8'd0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1 = 1'b0;
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
 
@@ -1101,6 +1595,22 @@ assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 = dataflow_in_loop_VITIS_LOOP_
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1 = 1'b0;
 
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1 = 8'd0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+
+assign p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1 = 1'b0;
+
 assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1;
@@ -1133,53 +1643,245 @@ assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 = dataflow_in_loop_VITIS_LOOP_
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1 = 1'b0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_d1 = 11'd0;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1 = 8'd0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_0_we1 = 1'b0;
+assign p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1 = 1'b0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
+assign p_anonymous_namespace_lineBuffer_32_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1;
+assign p_anonymous_namespace_lineBuffer_32_0_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_address1;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
+assign p_anonymous_namespace_lineBuffer_32_0_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
+assign p_anonymous_namespace_lineBuffer_32_0_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_ce1;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
+assign p_anonymous_namespace_lineBuffer_32_0_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_d0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_d1 = 11'd0;
+assign p_anonymous_namespace_lineBuffer_32_0_d1 = 8'd0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
+assign p_anonymous_namespace_lineBuffer_32_0_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_0_we0;
 
-assign p_anonymous_namespace_lineBuffer_25_magnitude_1_we1 = 1'b0;
+assign p_anonymous_namespace_lineBuffer_32_0_we1 = 1'b0;
 
-assign p_anonymous_namespace_lineBuffer_direction_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_address0;
+assign p_anonymous_namespace_lineBuffer_32_1_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address0;
 
-assign p_anonymous_namespace_lineBuffer_direction_address1 = 11'd0;
+assign p_anonymous_namespace_lineBuffer_32_1_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_address1;
 
-assign p_anonymous_namespace_lineBuffer_direction_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_ce0;
+assign p_anonymous_namespace_lineBuffer_32_1_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce0;
 
-assign p_anonymous_namespace_lineBuffer_direction_ce1 = 1'b0;
+assign p_anonymous_namespace_lineBuffer_32_1_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_ce1;
 
-assign p_anonymous_namespace_lineBuffer_direction_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_d0;
+assign p_anonymous_namespace_lineBuffer_32_1_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_d0;
 
-assign p_anonymous_namespace_lineBuffer_direction_d1 = 2'd0;
+assign p_anonymous_namespace_lineBuffer_32_1_d1 = 8'd0;
 
-assign p_anonymous_namespace_lineBuffer_direction_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_we0;
+assign p_anonymous_namespace_lineBuffer_32_1_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_1_we0;
 
-assign p_anonymous_namespace_lineBuffer_direction_we1 = 1'b0;
+assign p_anonymous_namespace_lineBuffer_32_1_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_32_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_address0;
+
+assign p_anonymous_namespace_lineBuffer_32_2_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_address1;
+
+assign p_anonymous_namespace_lineBuffer_32_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_ce0;
+
+assign p_anonymous_namespace_lineBuffer_32_2_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_ce1;
+
+assign p_anonymous_namespace_lineBuffer_32_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_d0;
+
+assign p_anonymous_namespace_lineBuffer_32_2_d1 = 8'd0;
+
+assign p_anonymous_namespace_lineBuffer_32_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_32_2_we0;
+
+assign p_anonymous_namespace_lineBuffer_32_2_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_address0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_address1 = 9'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_ce0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_ce1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_d0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_d1 = 12'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_0_we0;
+
+assign p_anonymous_namespace_lineBuffer_39_0_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_address0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_address1 = 9'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_ce0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_ce1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_d0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_d1 = 12'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_1_we0;
+
+assign p_anonymous_namespace_lineBuffer_39_1_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_address0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_address1 = 9'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_ce0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_ce1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_d0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_d1 = 12'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_2_we0;
+
+assign p_anonymous_namespace_lineBuffer_39_2_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_address0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_address1 = 9'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_ce0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_ce1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_d0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_d1 = 12'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_3_we0;
+
+assign p_anonymous_namespace_lineBuffer_39_3_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_address0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_address1 = 9'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_ce0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_ce1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_d0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_d1 = 12'd0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_39_4_we0;
+
+assign p_anonymous_namespace_lineBuffer_39_4_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_address0;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_address1;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_ce0;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_ce1;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_d0;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_d1 = 2'd0;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_0_we0;
+
+assign p_anonymous_namespace_lineBuffer_direction_0_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_address0;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_address1;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_ce0;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_ce1;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_d0;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_d1 = 2'd0;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_1_we0;
+
+assign p_anonymous_namespace_lineBuffer_direction_1_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_address0;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_address1;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_ce0;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_ce1;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_d0;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_d1 = 2'd0;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_direction_2_we0;
+
+assign p_anonymous_namespace_lineBuffer_direction_2_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_address1;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_ce1;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_d1 = 11'd0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_0_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_address1;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_ce1;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_d1 = 11'd0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_1_we1 = 1'b0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_address0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_address1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_address1;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_ce0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_ce1 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_ce1;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_d0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_d1 = 11'd0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_we0 = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+
+assign p_anonymous_namespace_lineBuffer_magnitude_2_we1 = 1'b0;
 
 assign p_anonymous_namespace_rowsReceived_1_o = dataflow_in_loop_VITIS_LOOP_12_1_1_U0_p_anonymous_namespace_rowsReceived_1_o;
 

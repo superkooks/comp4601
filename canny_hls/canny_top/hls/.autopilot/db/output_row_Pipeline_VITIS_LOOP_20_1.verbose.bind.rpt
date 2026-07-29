@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'output_row_Pipeline_VITIS_LOOP_20_1'
 ================================================================
-* Date:           Sat Jul 25 12:05:03 2026
+* Date:           Wed Jul 29 23:33:18 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -90,7 +90,7 @@ ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%phi_ln21 = alloca i32 1"   --->   O
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%i = alloca i32 1" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 7 'alloca' 'i' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sext_ln20_1_read = read i58 @_ssdm_op_Read.ap_auto.i58, i58 %sext_ln20_1"   --->   Operation 8 'read' 'sext_ln20_1_read' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sext_ln20_1_cast = sext i58 %sext_ln20_1_read"   --->   Operation 9 'sext' 'sext_ln20_1_cast' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_16, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_21, void @empty_8, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_17, i32 0, i32 0, void @empty_14, i32 64, i32 0, void @empty_21, void @empty_13, void @empty_14, i32 16, i32 16, i32 16, i32 16, void @empty_14, void @empty_14, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.42ns)   --->   "%store_ln20 = store i10 0, i10 %i" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 11 'store' 'store_ln20' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 12 [1/1] (0.42ns)   --->   "%store_ln0 = store i498 0, i498 %phi_ln21"   --->   Operation 12 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
@@ -120,9 +120,9 @@ ST_2 : Operation 42 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 
 State 3 <SV = 2> <Delay = 3.65>
 ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%gmem_addr = getelementptr i512 %gmem, i64 %sext_ln20_1_cast" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 34 'getelementptr' 'gmem_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 35 'specpipeline' 'specpipeline_ln20' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%specpipeline_ln20 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_14" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 35 'specpipeline' 'specpipeline_ln20' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%speclooptripcount_ln20 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 36 'speclooptripcount' 'speclooptripcount_ln20' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty_11" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 37 'specloopname' 'specloopname_ln20' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%specloopname_ln20 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [../src/output_row.cpp:20->../src/canny_top.cpp:38]   --->   Operation 37 'specloopname' 'specloopname_ln20' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i506 @_ssdm_op_BitConcatenate.i506.i2.i504, i2 %out_hysteresis4_load, i504 %sext_ln20" [../src/output_row.cpp:21->../src/canny_top.cpp:38]   --->   Operation 38 'bitconcatenate' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln21 = sext i506 %tmp" [../src/output_row.cpp:21->../src/canny_top.cpp:38]   --->   Operation 39 'sext' 'sext_ln21' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 40 [1/1] ( I:3.65ns O:3.65ns )   --->   "%write_ln21 = write void @_ssdm_op_Write.m_axi.p1i512.i512, i512 %gmem_addr, i512 %sext_ln21, i64 18446744073709551615" [../src/output_row.cpp:21->../src/canny_top.cpp:38]   --->   Operation 40 'write' 'write_ln21' <Predicate = (icmp_ln21)> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 5> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
@@ -251,7 +251,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_16"/></StgValue>
+<StgValue><ssdm name="empty_17"/></StgValue>
 </bind>
 </comp>
 
@@ -269,7 +269,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="17" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_14"/></StgValue>
 </bind>
 </comp>
 
@@ -296,7 +296,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="23" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -449,7 +449,7 @@ ret_ln0                (ret              ) [ 0000]
 <pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_11"/></StgValue>
+<StgValue><ssdm name="empty_16"/></StgValue>
 </bind>
 </comp>
 

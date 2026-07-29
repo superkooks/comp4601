@@ -11,17 +11,55 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 2 \
-    name lineBuffer \
+    id 6 \
+    name p_anonymous_namespace_lineBuffer_32_0 \
     reset_level 1 \
     sync_rst true \
     dir O \
-    corename lineBuffer \
+    corename p_anonymous_namespace_lineBuffer_32_0 \
     op interface \
-    ports { lineBuffer_address0 { O 11 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_we0 { O 1 bit } lineBuffer_d0 { O 8 vector } } \
+    ports { p_anonymous_namespace_lineBuffer_32_0_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_d0 { O 8 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 7 \
+    name p_anonymous_namespace_lineBuffer_32_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename p_anonymous_namespace_lineBuffer_32_1 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_32_1_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 8 \
+    name p_anonymous_namespace_lineBuffer_32_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir O \
+    corename p_anonymous_namespace_lineBuffer_32_2 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_32_2_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_2_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_d0 { O 8 vector } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_2'"
 }
 }
 

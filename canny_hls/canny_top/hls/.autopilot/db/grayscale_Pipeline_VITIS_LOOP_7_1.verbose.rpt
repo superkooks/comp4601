@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'grayscale_Pipeline_VITIS_LOOP_7_1'
 ================================================================
-* Date:           Sat Jul 25 12:05:03 2026
+* Date:           Wed Jul 29 23:33:22 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -73,7 +73,7 @@
     +------------------------+--------------------+---------+----+---+----+-----+
     |        Instance        |       Module       | BRAM_18K| DSP| FF| LUT| URAM|
     +------------------------+--------------------+---------+----+---+----+-----+
-    |mul_8ns_8ns_15_1_1_U15  |mul_8ns_8ns_15_1_1  |        0|   0|  0|  40|    0|
+    |mul_8ns_8ns_15_1_1_U28  |mul_8ns_8ns_15_1_1  |        0|   0|  0|  40|    0|
     +------------------------+--------------------+---------+----+---+----+-----+
     |Total                   |                    |        0|   0|  0|  40|    0|
     +------------------------+--------------------+---------+----+---+----+-----+
@@ -82,8 +82,8 @@
     +------------------------------------+--------------------------------+--------------+
     |              Instance              |             Module             |  Expression  |
     +------------------------------------+--------------------------------+--------------+
-    |mac_muladd_8ns_5ns_15s_15_4_1_U16   |mac_muladd_8ns_5ns_15s_15_4_1   |  i0 + i1 * i2|
-    |mac_muladd_8ns_8ns_15ns_16_4_1_U17  |mac_muladd_8ns_8ns_15ns_16_4_1  |  i0 + i1 * i2|
+    |mac_muladd_8ns_5ns_15s_15_4_1_U29   |mac_muladd_8ns_5ns_15s_15_4_1   |  i0 + i1 * i2|
+    |mac_muladd_8ns_8ns_15ns_16_4_1_U30  |mac_muladd_8ns_8ns_15ns_16_4_1  |  i0 + i1 * i2|
     +------------------------------------+--------------------------------+--------------+
 
     * Memory: 
@@ -442,7 +442,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 2.31>
 ST_1 : Operation 82 [1/1] (0.00ns)   --->   "%column12 = alloca i32 1" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 82 'alloca' 'column12' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_16, i32 0, i32 0, void @empty, i32 64, i32 0, void @empty_21, void @empty_8, void @empty, i32 16, i32 16, i32 16, i32 16, void @empty, void @empty, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 83 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 83 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i512 %gmem, void @empty_17, i32 0, i32 0, void @empty_14, i32 64, i32 0, void @empty_21, void @empty_13, void @empty_14, i32 16, i32 16, i32 16, i32 16, void @empty_14, void @empty_14, i32 4294967295, i32 0, i32 0, i32 64"   --->   Operation 83 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 84 [1/1] (0.00ns)   --->   "%tmp = read i64 @_ssdm_op_Read.ap_auto.i64, i64 %empty"   --->   Operation 84 'read' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 85 [1/1] (0.42ns)   --->   "%store_ln7 = store i9 0, i9 %column12" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 85 'store' 'store_ln7' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 86 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.split.i"   --->   Operation 86 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
@@ -874,9 +874,9 @@ ST_78 : Operation 357 [2/2] (0.64ns) (root node of the DSP)   --->   "%gray = ad
 
 State 79 <SV = 78> <Delay = 1.88>
 ST_79 : Operation 358 [1/1] (0.00ns)   --->   "%zext_ln7 = zext i9 %column" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 358 'zext' 'zext_ln7' <Predicate = true> <Delay = 0.00>
-ST_79 : Operation 359 [1/1] (0.00ns)   --->   "%specpipeline_ln7 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 359 'specpipeline' 'specpipeline_ln7' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 359 [1/1] (0.00ns)   --->   "%specpipeline_ln7 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_14" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 359 'specpipeline' 'specpipeline_ln7' <Predicate = true> <Delay = 0.00>
 ST_79 : Operation 360 [1/1] (0.00ns)   --->   "%speclooptripcount_ln7 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 360 'speclooptripcount' 'speclooptripcount_ln7' <Predicate = true> <Delay = 0.00>
-ST_79 : Operation 361 [1/1] (0.00ns)   --->   "%specloopname_ln7 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 361 'specloopname' 'specloopname_ln7' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 361 [1/1] (0.00ns)   --->   "%specloopname_ln7 = specloopname void @_ssdm_op_SpecLoopName, void @empty_22" [../src/grayscale.cpp:7->../src/canny_top.cpp:28]   --->   Operation 361 'specloopname' 'specloopname_ln7' <Predicate = true> <Delay = 0.00>
 ST_79 : Operation 362 [1/2] (0.64ns) (root node of the DSP)   --->   "%gray = add i16 %zext_ln10_3, i16 %mul_ln10_1" [../src/grayscale.cpp:10->../src/canny_top.cpp:28]   --->   Operation 362 'add' 'gray' <Predicate = true> <Delay = 0.64> <CoreInst = "DSP48">   --->   Core 124 'DSP48' <Latency = 3> <II = 1> <Delay = 0.53> <IPBlock> <Opcode : 'add' 'sub' 'mul' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
 ST_79 : Operation 363 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i8 @_ssdm_op_PartSelect.i8.i16.i32.i32, i16 %gray, i32 8, i32 15" [../src/grayscale.cpp:14->../src/canny_top.cpp:28]   --->   Operation 363 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
 ST_79 : Operation 364 [1/1] (0.00ns)   --->   "%out_grayscale_addr = getelementptr i8 %out_grayscale, i64 0, i64 %zext_ln7" [../src/grayscale.cpp:13->../src/canny_top.cpp:28]   --->   Operation 364 'getelementptr' 'out_grayscale_addr' <Predicate = true> <Delay = 0.00>
@@ -1030,7 +1030,7 @@ ret_ln0               (ret              ) [ 000000000000000000000000000000000000
 <pin id="11" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_16"/></StgValue>
+<StgValue><ssdm name="empty_17"/></StgValue>
 </bind>
 </comp>
 
@@ -1048,7 +1048,7 @@ ret_ln0               (ret              ) [ 000000000000000000000000000000000000
 <pin id="15" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty"/></StgValue>
+<StgValue><ssdm name="empty_14"/></StgValue>
 </bind>
 </comp>
 
@@ -1075,7 +1075,7 @@ ret_ln0               (ret              ) [ 000000000000000000000000000000000000
 <pin id="21" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_8"/></StgValue>
+<StgValue><ssdm name="empty_13"/></StgValue>
 </bind>
 </comp>
 
@@ -1309,7 +1309,7 @@ ret_ln0               (ret              ) [ 000000000000000000000000000000000000
 <pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_15"/></StgValue>
+<StgValue><ssdm name="empty_22"/></StgValue>
 </bind>
 </comp>
 

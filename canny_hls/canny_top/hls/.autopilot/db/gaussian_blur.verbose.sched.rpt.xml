@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'gaussian_blur'" level="0">
-<item name = "Date">Sat Jul 25 12:05:02 2026
+<item name = "Date">Wed Jul 29 23:33:06 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.617 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.614 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">551, 7281, 2.755 us, 36.405 us, 551, 7281, no</column>
+<column name="">552, 1103, 2.760 us, 5.515 us, 552, 1103, no</column>
 </table>
 </item>
 <item name = "Detail">

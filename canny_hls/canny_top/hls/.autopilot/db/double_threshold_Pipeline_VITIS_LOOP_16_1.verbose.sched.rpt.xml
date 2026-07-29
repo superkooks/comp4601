@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'double_threshold_Pipeline_VITIS_LOOP_16_1'" level="0">
-<item name = "Date">Sat Jul 25 12:05:02 2026
+<item name = "Date">Wed Jul 29 23:33:10 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>

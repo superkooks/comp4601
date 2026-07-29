@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel'" level="0">
-<item name = "Date">Sat Jul 25 12:05:02 2026
+<item name = "Date">Wed Jul 29 23:33:08 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.626 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.645 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,15 +24,15 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 2640, 5.000 ns, 13.200 us, 1, 2640, no</column>
+<column name="">1, 1102, 5.000 ns, 5.510 us, 1, 1102, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_sobel_Pipeline_VITIS_LOOP_100_1_fu_67">sobel_Pipeline_VITIS_LOOP_100_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_sobel_Pipeline_VITIS_LOOP_116_2_fu_80">sobel_Pipeline_VITIS_LOOP_116_2, 2054, 2054, 10.270 us, 10.270 us, 0, 0, loop pipeline stp</column>
+<column name="grp_sobel_Pipeline_VITIS_LOOP_102_1_fu_120">sobel_Pipeline_VITIS_LOOP_102_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_sobel_Pipeline_VITIS_LOOP_155_5_fu_133">sobel_Pipeline_VITIS_LOOP_155_5, 516, 516, 2.580 us, 2.580 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

@@ -31,6 +31,16 @@ if {${::AESL::PGuard_rtl_comp_handler}} {
 
 
 if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1_out_grayscale_RAM_AUTO_1R1W_memcore BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1_out_grayscale_RAM_AUTO_1R1W BINDTYPE {storage} TYPE {ram} IMPL {auto} LATENCY 2 ALLOW_PRAGMA 1
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler canny_top_fifo_w18_d2_S BINDTYPE {storage} TYPE {fifo} IMPL {srl} ALLOW_PRAGMA 1 INSTNAME {cond_loc_channel_U}
 }
 
@@ -86,17 +96,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 258 \
-    name lineBuffer_1 \
+    id 377 \
+    name p_anonymous_namespace_lineBuffer_39_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename lineBuffer_1 \
+    corename p_anonymous_namespace_lineBuffer_39_0 \
     op interface \
-    ports { lineBuffer_1_address0 { O 12 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_d0 { O 8 vector } lineBuffer_1_q0 { I 8 vector } lineBuffer_1_we0 { O 1 bit } lineBuffer_1_address1 { O 12 vector } lineBuffer_1_ce1 { O 1 bit } lineBuffer_1_d1 { O 8 vector } lineBuffer_1_q1 { I 8 vector } lineBuffer_1_we1 { O 1 bit } } \
+    ports { p_anonymous_namespace_lineBuffer_39_0_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_39_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_0_d0 { O 12 vector } p_anonymous_namespace_lineBuffer_39_0_q0 { I 12 vector } p_anonymous_namespace_lineBuffer_39_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_0_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_39_0_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_39_0_d1 { O 12 vector } p_anonymous_namespace_lineBuffer_39_0_q1 { I 12 vector } p_anonymous_namespace_lineBuffer_39_0_we1 { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_39_0'"
 }
 }
 
@@ -105,17 +115,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 260 \
-    name lineBuffer \
+    id 378 \
+    name p_anonymous_namespace_lineBuffer_39_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename lineBuffer \
+    corename p_anonymous_namespace_lineBuffer_39_1 \
     op interface \
-    ports { lineBuffer_address0 { O 11 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_d0 { O 8 vector } lineBuffer_q0 { I 8 vector } lineBuffer_we0 { O 1 bit } lineBuffer_address1 { O 11 vector } lineBuffer_ce1 { O 1 bit } lineBuffer_d1 { O 8 vector } lineBuffer_q1 { I 8 vector } lineBuffer_we1 { O 1 bit } } \
+    ports { p_anonymous_namespace_lineBuffer_39_1_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_39_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_1_d0 { O 12 vector } p_anonymous_namespace_lineBuffer_39_1_q0 { I 12 vector } p_anonymous_namespace_lineBuffer_39_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_1_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_39_1_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_39_1_d1 { O 12 vector } p_anonymous_namespace_lineBuffer_39_1_q1 { I 12 vector } p_anonymous_namespace_lineBuffer_39_1_we1 { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_39_1'"
 }
 }
 
@@ -124,17 +134,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 262 \
-    name p_anonymous_namespace_lineBuffer_direction \
+    id 379 \
+    name p_anonymous_namespace_lineBuffer_39_2 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename p_anonymous_namespace_lineBuffer_direction \
+    corename p_anonymous_namespace_lineBuffer_39_2 \
     op interface \
-    ports { p_anonymous_namespace_lineBuffer_direction_address0 { O 11 vector } p_anonymous_namespace_lineBuffer_direction_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_d0 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_q0 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_address1 { O 11 vector } p_anonymous_namespace_lineBuffer_direction_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_d1 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_q1 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_we1 { O 1 bit } } \
+    ports { p_anonymous_namespace_lineBuffer_39_2_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_39_2_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_2_d0 { O 12 vector } p_anonymous_namespace_lineBuffer_39_2_q0 { I 12 vector } p_anonymous_namespace_lineBuffer_39_2_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_2_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_39_2_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_39_2_d1 { O 12 vector } p_anonymous_namespace_lineBuffer_39_2_q1 { I 12 vector } p_anonymous_namespace_lineBuffer_39_2_we1 { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_direction'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_39_2'"
 }
 }
 
@@ -143,17 +153,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 263 \
-    name p_anonymous_namespace_lineBuffer_25_magnitude_0 \
+    id 380 \
+    name p_anonymous_namespace_lineBuffer_39_3 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename p_anonymous_namespace_lineBuffer_25_magnitude_0 \
+    corename p_anonymous_namespace_lineBuffer_39_3 \
     op interface \
-    ports { p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 { O 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_q0 { I 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_0_address1 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_0_d1 { O 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_q1 { I 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_0_we1 { O 1 bit } } \
+    ports { p_anonymous_namespace_lineBuffer_39_3_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_39_3_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_3_d0 { O 12 vector } p_anonymous_namespace_lineBuffer_39_3_q0 { I 12 vector } p_anonymous_namespace_lineBuffer_39_3_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_3_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_39_3_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_39_3_d1 { O 12 vector } p_anonymous_namespace_lineBuffer_39_3_q1 { I 12 vector } p_anonymous_namespace_lineBuffer_39_3_we1 { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_25_magnitude_0'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_39_3'"
 }
 }
 
@@ -162,17 +172,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 264 \
-    name p_anonymous_namespace_lineBuffer_25_magnitude_1 \
+    id 381 \
+    name p_anonymous_namespace_lineBuffer_39_4 \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename p_anonymous_namespace_lineBuffer_25_magnitude_1 \
+    corename p_anonymous_namespace_lineBuffer_39_4 \
     op interface \
-    ports { p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 { O 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_q0 { I 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_1_address1 { O 10 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_25_magnitude_1_d1 { O 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_q1 { I 11 vector } p_anonymous_namespace_lineBuffer_25_magnitude_1_we1 { O 1 bit } } \
+    ports { p_anonymous_namespace_lineBuffer_39_4_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_39_4_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_4_d0 { O 12 vector } p_anonymous_namespace_lineBuffer_39_4_q0 { I 12 vector } p_anonymous_namespace_lineBuffer_39_4_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_39_4_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_39_4_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_39_4_d1 { O 12 vector } p_anonymous_namespace_lineBuffer_39_4_q1 { I 12 vector } p_anonymous_namespace_lineBuffer_39_4_we1 { O 1 bit } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_25_magnitude_1'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_39_4'"
 }
 }
 
@@ -181,14 +191,185 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 266 \
+    id 383 \
+    name p_anonymous_namespace_lineBuffer_32_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_32_0 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_32_0_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_d0 { O 8 vector } p_anonymous_namespace_lineBuffer_32_0_q0 { I 8 vector } p_anonymous_namespace_lineBuffer_32_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_32_0_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_d1 { O 8 vector } p_anonymous_namespace_lineBuffer_32_0_q1 { I 8 vector } p_anonymous_namespace_lineBuffer_32_0_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 384 \
+    name p_anonymous_namespace_lineBuffer_32_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_32_1 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_32_1_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_d0 { O 8 vector } p_anonymous_namespace_lineBuffer_32_1_q0 { I 8 vector } p_anonymous_namespace_lineBuffer_32_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_32_1_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_d1 { O 8 vector } p_anonymous_namespace_lineBuffer_32_1_q1 { I 8 vector } p_anonymous_namespace_lineBuffer_32_1_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 385 \
+    name p_anonymous_namespace_lineBuffer_32_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_32_2 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_32_2_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_2_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_d0 { O 8 vector } p_anonymous_namespace_lineBuffer_32_2_q0 { I 8 vector } p_anonymous_namespace_lineBuffer_32_2_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_32_2_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_d1 { O 8 vector } p_anonymous_namespace_lineBuffer_32_2_q1 { I 8 vector } p_anonymous_namespace_lineBuffer_32_2_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 387 \
+    name p_anonymous_namespace_lineBuffer_magnitude_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_magnitude_0 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_magnitude_0_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_magnitude_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_0_d0 { O 11 vector } p_anonymous_namespace_lineBuffer_magnitude_0_q0 { I 11 vector } p_anonymous_namespace_lineBuffer_magnitude_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_0_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_magnitude_0_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_0_d1 { O 11 vector } p_anonymous_namespace_lineBuffer_magnitude_0_q1 { I 11 vector } p_anonymous_namespace_lineBuffer_magnitude_0_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_magnitude_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 388 \
+    name p_anonymous_namespace_lineBuffer_direction_0 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_direction_0 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_direction_0_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_direction_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_0_d0 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_0_q0 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_0_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_direction_0_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_0_d1 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_0_q1 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_0_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_direction_0'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 389 \
+    name p_anonymous_namespace_lineBuffer_magnitude_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_magnitude_1 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_magnitude_1_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_magnitude_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_1_d0 { O 11 vector } p_anonymous_namespace_lineBuffer_magnitude_1_q0 { I 11 vector } p_anonymous_namespace_lineBuffer_magnitude_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_1_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_magnitude_1_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_1_d1 { O 11 vector } p_anonymous_namespace_lineBuffer_magnitude_1_q1 { I 11 vector } p_anonymous_namespace_lineBuffer_magnitude_1_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_magnitude_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 390 \
+    name p_anonymous_namespace_lineBuffer_direction_1 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_direction_1 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_direction_1_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_direction_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_1_d0 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_1_q0 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_1_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_direction_1_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_1_d1 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_1_q1 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_1_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_direction_1'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 391 \
+    name p_anonymous_namespace_lineBuffer_magnitude_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_magnitude_2 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_magnitude_2_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_magnitude_2_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_2_d0 { O 11 vector } p_anonymous_namespace_lineBuffer_magnitude_2_q0 { I 11 vector } p_anonymous_namespace_lineBuffer_magnitude_2_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_2_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_magnitude_2_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_magnitude_2_d1 { O 11 vector } p_anonymous_namespace_lineBuffer_magnitude_2_q1 { I 11 vector } p_anonymous_namespace_lineBuffer_magnitude_2_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_magnitude_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 392 \
+    name p_anonymous_namespace_lineBuffer_direction_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_anonymous_namespace_lineBuffer_direction_2 \
+    op interface \
+    ports { p_anonymous_namespace_lineBuffer_direction_2_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_direction_2_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_2_d0 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_2_q0 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_2_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_2_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_direction_2_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_direction_2_d1 { O 2 vector } p_anonymous_namespace_lineBuffer_direction_2_q1 { I 2 vector } p_anonymous_namespace_lineBuffer_direction_2_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_direction_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 394 \
     name p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0'"
@@ -200,14 +381,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 267 \
+    id 395 \
     name p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1'"
@@ -219,14 +400,33 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 269 \
+    id 396 \
+    name p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2 \
+    op interface \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 398 \
     name p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0'"
@@ -238,14 +438,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 270 \
+    id 399 \
     name p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1'"
@@ -257,14 +457,33 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 272 \
+    id 400 \
+    name p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2 \
+    op interface \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 402 \
     name p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0'"
@@ -276,14 +495,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 273 \
+    id 403 \
     name p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1'"
@@ -295,14 +514,33 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 275 \
+    id 404 \
+    name p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 \
+    op interface \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2'"
+}
+}
+
+
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 406 \
     name p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0'"
@@ -314,14 +552,14 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 276 \
+    id 407 \
     name p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 \
     reset_level 1 \
     sync_rst true \
     dir IO \
     corename p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1 \
     op interface \
-    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1 { O 10 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1 { O 1 bit } } \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1 { O 1 bit } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1'"
@@ -329,10 +567,29 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 }
 
 
+# XIL_BRAM:
+if {${::AESL::PGuard_autoexp_gen}} {
+if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
+eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
+    id 408 \
+    name p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2 \
+    reset_level 1 \
+    sync_rst true \
+    dir IO \
+    corename p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2 \
+    op interface \
+    ports { p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1 { O 9 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1 { O 1 bit } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1 { O 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1 { I 8 vector } p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1 { O 1 bit } } \
+} "
+} else {
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2'"
+}
+}
+
+
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 253 \
+    id 372 \
     name i_0 \
     type other \
     dir I \
@@ -347,7 +604,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 254 \
+    id 373 \
     name gmem \
     type other \
     dir IO \
@@ -362,7 +619,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 255 \
+    id 374 \
     name in_r \
     type other \
     dir I \
@@ -377,7 +634,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 256 \
+    id 375 \
     name out_r \
     type other \
     dir I \
@@ -392,22 +649,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 257 \
-    name p_anonymous_namespace_rowsReceived \
-    type other \
-    dir IO \
-    reset_level 1 \
-    sync_rst true \
-    corename dc_p_anonymous_namespace_rowsReceived \
-    op interface \
-    ports { p_anonymous_namespace_rowsReceived_i { I 32 vector } p_anonymous_namespace_rowsReceived_o { O 32 vector } p_anonymous_namespace_rowsReceived_i_ap_vld { I 1 bit } p_anonymous_namespace_rowsReceived_o_ap_vld { O 1 bit } } \
-} "
-}
-
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id 259 \
+    id 376 \
     name p_anonymous_namespace_rowsReceived_1 \
     type other \
     dir IO \
@@ -422,7 +664,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 261 \
+    id 382 \
     name p_anonymous_namespace_rowsReceived_2 \
     type other \
     dir IO \
@@ -437,7 +679,22 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 265 \
+    id 386 \
+    name p_anonymous_namespace_rowsReceived \
+    type other \
+    dir IO \
+    reset_level 1 \
+    sync_rst true \
+    corename dc_p_anonymous_namespace_rowsReceived \
+    op interface \
+    ports { p_anonymous_namespace_rowsReceived_i { I 32 vector } p_anonymous_namespace_rowsReceived_o { O 32 vector } p_anonymous_namespace_rowsReceived_i_ap_vld { I 1 bit } p_anonymous_namespace_rowsReceived_o_ap_vld { O 1 bit } } \
+} "
+}
+
+# Direct connection:
+if {${::AESL::PGuard_autoexp_gen}} {
+eval "cg_default_interface_gen_dc { \
+    id 393 \
     name p_anonymous_namespace_rowsReceived_1_s \
     type other \
     dir IO \
@@ -452,7 +709,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 268 \
+    id 397 \
     name p_anonymous_namespace_rowsReceived_2_s \
     type other \
     dir IO \
@@ -467,7 +724,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 271 \
+    id 401 \
     name p_anonymous_namespace_rowsReceived_3_s \
     type other \
     dir IO \
@@ -482,7 +739,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 274 \
+    id 405 \
     name p_anonymous_namespace_rowsReceived_4_s \
     type other \
     dir IO \
@@ -497,7 +754,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 277 \
+    id 409 \
     name rowsReceived \
     type other \
     dir IO \

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sobel'
 ================================================================
-* Date:           Sat Jul 25 12:05:04 2026
+* Date:           Wed Jul 29 23:33:24 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,27 +20,27 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  3.626 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  3.645 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+-----------+-----+------+---------+
-    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
-    |   min   |   max   |    min   |    max    | min |  max |   Type  |
-    +---------+---------+----------+-----------+-----+------+---------+
-    |        1|     2640|  5.000 ns|  13.200 us|    1|  2640|       no|
-    +---------+---------+----------+-----------+-----+------+---------+
+    +---------+---------+----------+----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval  | Pipeline|
+    |   min   |   max   |    min   |    max   | min |  max |   Type  |
+    +---------+---------+----------+----------+-----+------+---------+
+    |        1|     1102|  5.000 ns|  5.510 us|    1|  1102|       no|
+    +---------+---------+----------+----------+-----+------+---------+
 
     + Detail: 
         * Instance: 
-        +-------------------------------------------+---------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
-        |                                           |                                 |  Latency (cycles) |   Latency (absolute)  |  Interval |      Pipeline     |
-        |                  Instance                 |              Module             |   min   |   max   |    min    |    max    | min | max |        Type       |
-        +-------------------------------------------+---------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
-        |grp_sobel_Pipeline_VITIS_LOOP_100_1_fu_67  |sobel_Pipeline_VITIS_LOOP_100_1  |      514|      514|   2.570 us|   2.570 us|    0|    0|  loop pipeline stp|
-        |grp_sobel_Pipeline_VITIS_LOOP_116_2_fu_80  |sobel_Pipeline_VITIS_LOOP_116_2  |     2054|     2054|  10.270 us|  10.270 us|    0|    0|  loop pipeline stp|
-        +-------------------------------------------+---------------------------------+---------+---------+-----------+-----------+-----+-----+-------------------+
+        +--------------------------------------------+---------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |                                            |                                 |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+        |                  Instance                  |              Module             |   min   |   max   |    min   |    max   | min | max |        Type       |
+        +--------------------------------------------+---------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
+        |grp_sobel_Pipeline_VITIS_LOOP_102_1_fu_120  |sobel_Pipeline_VITIS_LOOP_102_1  |      514|      514|  2.570 us|  2.570 us|    0|    0|  loop pipeline stp|
+        |grp_sobel_Pipeline_VITIS_LOOP_155_5_fu_133  |sobel_Pipeline_VITIS_LOOP_155_5  |      516|      516|  2.580 us|  2.580 us|    0|    0|  loop pipeline stp|
+        +--------------------------------------------+---------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
 
         * Loop: 
         N/A
@@ -57,12 +57,12 @@
 |DSP              |        -|     -|       -|       -|    -|
 |Expression       |        -|     -|       0|     227|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        -|     2|    1400|    1526|    -|
+|Instance         |        -|     2|    1419|    1519|    -|
 |Memory           |        -|     -|       -|       -|    -|
-|Multiplexer      |        -|     -|       0|     574|    -|
-|Register         |        -|     -|     124|       -|    -|
+|Multiplexer      |        -|     -|       0|     527|    -|
+|Register         |        -|     -|     221|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |        0|     2|    1524|    2327|    0|
+|Total            |        0|     2|    1640|    2273|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -71,17 +71,23 @@
 
 + Detail: 
     * Instance: 
-    +-------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
-    |                  Instance                 |              Module             | BRAM_18K| DSP|  FF | LUT | URAM|
-    +-------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
-    |grp_sobel_Pipeline_VITIS_LOOP_100_1_fu_67  |sobel_Pipeline_VITIS_LOOP_100_1  |        0|   0|   24|   91|    0|
-    |grp_sobel_Pipeline_VITIS_LOOP_116_2_fu_80  |sobel_Pipeline_VITIS_LOOP_116_2  |        0|   2|  194|  721|    0|
-    |srem_32ns_3ns_2_36_seq_1_U88               |srem_32ns_3ns_2_36_seq_1         |        0|   0|  394|  238|    0|
-    |srem_32ns_3ns_2_36_seq_1_U89               |srem_32ns_3ns_2_36_seq_1         |        0|   0|  394|  238|    0|
-    |urem_32ns_3ns_2_36_seq_1_U90               |urem_32ns_3ns_2_36_seq_1         |        0|   0|  394|  238|    0|
-    +-------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
-    |Total                                      |                                 |        0|   2| 1400| 1526|    0|
-    +-------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
+    +--------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
+    |                  Instance                  |              Module             | BRAM_18K| DSP|  FF | LUT | URAM|
+    +--------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
+    |grp_sobel_Pipeline_VITIS_LOOP_102_1_fu_120  |sobel_Pipeline_VITIS_LOOP_102_1  |        0|   0|   40|   73|    0|
+    |grp_sobel_Pipeline_VITIS_LOOP_155_5_fu_133  |sobel_Pipeline_VITIS_LOOP_155_5  |        0|   2|  197|  678|    0|
+    |sparsemux_7_2_8_1_1_U118                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_8_1_1_U119                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_8_1_1_U120                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_8_1_1_U121                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_8_1_1_U122                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_8_1_1_U123                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
+    |srem_32ns_3ns_2_36_seq_1_U116               |srem_32ns_3ns_2_36_seq_1         |        0|   0|  394|  238|    0|
+    |srem_32ns_3ns_3_36_seq_1_U115               |srem_32ns_3ns_3_36_seq_1         |        0|   0|  394|  238|    0|
+    |urem_32ns_3ns_2_36_seq_1_U117               |urem_32ns_3ns_2_36_seq_1         |        0|   0|  394|  238|    0|
+    +--------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
+    |Total                                       |                                 |        0|   2| 1419| 1519|    0|
+    +--------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
 
     * DSP: 
     N/A
@@ -96,73 +102,82 @@
     +----------------------------------+----------+----+---+----+------------+------------+
     |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +----------------------------------+----------+----+---+----+------------+------------+
-    |add_ln107_fu_103_p2               |         +|   0|  0|  39|          32|           1|
-    |add_ln125_fu_141_p2               |         +|   0|  0|  39|          32|           3|
-    |outputRow_fu_128_p2               |         +|   0|  0|  39|          32|           2|
+    |add_ln106_fu_166_p2               |         +|   0|  0|  39|          32|           1|
+    |add_ln126_fu_200_p2               |         +|   0|  0|  39|          32|           3|
+    |outputRow_fu_187_p2               |         +|   0|  0|  39|          32|           2|
     |ap_block_state73_on_subcall_done  |       and|   0|  0|   2|           1|           1|
-    |ap_predicate_op215_call_state73   |       and|   0|  0|   2|           1|           1|
-    |icmp_ln67_1_fu_186_p2             |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln67_2_fu_214_p2             |      icmp|   0|  0|  30|          23|           1|
-    |icmp_ln67_fu_164_p2               |      icmp|   0|  0|  30|          23|           1|
+    |ap_predicate_op233_call_state73   |       and|   0|  0|   2|           1|           1|
+    |icmp_ln67_1_fu_245_p2             |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln67_2_fu_273_p2             |      icmp|   0|  0|  30|          23|           1|
+    |icmp_ln67_fu_223_p2               |      icmp|   0|  0|  30|          23|           1|
     |ap_block_state1                   |        or|   0|  0|   2|           1|           1|
-    |or_ln27_1_fu_230_p2               |        or|   0|  0|   2|           1|           1|
-    |or_ln27_fu_252_p2                 |        or|   0|  0|   2|           1|           1|
-    |select_ln27_1_fu_273_p3           |    select|   0|  0|   2|           1|           1|
-    |select_ln27_2_fu_236_p3           |    select|   0|  0|   2|           1|           2|
-    |select_ln27_fu_260_p3             |    select|   0|  0|   2|           1|           2|
-    |xor_ln27_1_fu_220_p2              |       xor|   0|  0|   2|           1|           2|
-    |xor_ln27_fu_243_p2                |       xor|   0|  0|   2|           1|           2|
+    |or_ln27_1_fu_289_p2               |        or|   0|  0|   2|           1|           1|
+    |or_ln27_fu_315_p2                 |        or|   0|  0|   2|           1|           1|
+    |result_1_fu_332_p3                |    select|   0|  0|   2|           1|           1|
+    |result_2_fu_295_p3                |    select|   0|  0|   2|           1|           2|
+    |result_fu_319_p3                  |    select|   0|  0|   2|           1|           2|
+    |xor_ln27_1_fu_279_p2              |       xor|   0|  0|   2|           1|           2|
+    |xor_ln27_fu_306_p2                |       xor|   0|  0|   2|           1|           2|
     +----------------------------------+----------+----+---+----+------------+------------+
     |Total                             |          |   0|  0| 227|         175|          23|
     +----------------------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
-    +------------------------------------------------+-----+-----------+-----+-----------+
-    |                      Name                      | LUT | Input Size| Bits| Total Bits|
-    +------------------------------------------------+-----+-----------+-----+-----------+
-    |ap_NS_fsm                                       |  389|         74|    1|         74|
-    |ap_done                                         |    9|          2|    1|          2|
-    |ap_phi_mux_valid_out_write_assign_phi_fu_56_p6  |    9|          2|    1|          2|
-    |lineBuffer_address0                             |   14|          3|   11|         33|
-    |lineBuffer_ce0                                  |   14|          3|    1|          3|
-    |lineBuffer_ce1                                  |    9|          2|    1|          2|
-    |lineBuffer_we0                                  |    9|          2|    1|          2|
-    |out_sobel_direction_address0                    |   14|          3|    9|         27|
-    |out_sobel_direction_ce0                         |   14|          3|    1|          3|
-    |out_sobel_direction_d0                          |   14|          3|    2|          6|
-    |out_sobel_direction_we0                         |   14|          3|    1|          3|
-    |out_sobel_magnitude_address0                    |   14|          3|    9|         27|
-    |out_sobel_magnitude_ce0                         |   14|          3|    1|          3|
-    |out_sobel_magnitude_d0                          |   14|          3|   11|         33|
-    |out_sobel_magnitude_we0                         |   14|          3|    1|          3|
-    |p_anonymous_namespace_rowsReceived_1_o          |    9|          2|   32|         64|
-    +------------------------------------------------+-----+-----------+-----+-----------+
-    |Total                                           |  574|        114|   84|        287|
-    +------------------------------------------------+-----+-----------+-----+-----------+
+    +-------------------------------------------------+-----+-----------+-----+-----------+
+    |                       Name                      | LUT | Input Size| Bits| Total Bits|
+    +-------------------------------------------------+-----+-----------+-----+-----------+
+    |ap_NS_fsm                                        |  389|         74|    1|         74|
+    |ap_done                                          |    9|          2|    1|          2|
+    |ap_phi_mux_valid_out_write_assign_phi_fu_109_p6  |    9|          2|    1|          2|
+    |p_anonymous_namespace_lineBuffer_32_0_address0   |   14|          3|    9|         27|
+    |p_anonymous_namespace_lineBuffer_32_0_ce0        |   14|          3|    1|          3|
+    |p_anonymous_namespace_lineBuffer_32_0_we0        |    9|          2|    1|          2|
+    |p_anonymous_namespace_lineBuffer_32_1_address0   |   14|          3|    9|         27|
+    |p_anonymous_namespace_lineBuffer_32_1_ce0        |   14|          3|    1|          3|
+    |p_anonymous_namespace_lineBuffer_32_1_we0        |    9|          2|    1|          2|
+    |p_anonymous_namespace_lineBuffer_32_2_address0   |   14|          3|    9|         27|
+    |p_anonymous_namespace_lineBuffer_32_2_ce0        |   14|          3|    1|          3|
+    |p_anonymous_namespace_lineBuffer_32_2_we0        |    9|          2|    1|          2|
+    |p_anonymous_namespace_rowsReceived_2_o           |    9|          2|   32|         64|
+    +-------------------------------------------------+-----+-----------+-----+-----------+
+    |Total                                            |  527|        104|   68|        238|
+    +-------------------------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
-    +--------------------------------------------------------+----+----+-----+-----------+
-    |                          Name                          | FF | LUT| Bits| Const Bits|
-    +--------------------------------------------------------+----+----+-----+-----------+
-    |ap_CS_fsm                                               |  73|   0|   73|          0|
-    |ap_done_reg                                             |   1|   0|    1|          0|
-    |grp_sobel_Pipeline_VITIS_LOOP_100_1_fu_67_ap_start_reg  |   1|   0|    1|          0|
-    |grp_sobel_Pipeline_VITIS_LOOP_116_2_fu_80_ap_start_reg  |   1|   0|    1|          0|
-    |icmp_ln67_1_reg_329                                     |   1|   0|    1|          0|
-    |icmp_ln67_reg_324                                       |   1|   0|    1|          0|
-    |p_anonymous_namespace_rowsReceived_1_load_reg_285       |  32|   0|   32|          0|
-    |p_read_1_reg_281                                        |   1|   0|    1|          0|
-    |select_ln27_1_reg_344                                   |   2|   0|    2|          0|
-    |select_ln27_2_reg_334                                   |   2|   0|    2|          0|
-    |select_ln27_reg_339                                     |   2|   0|    2|          0|
-    |tmp_16_reg_318                                          |   1|   0|    1|          0|
-    |tmp_2_reg_299                                           |   2|   0|   11|          9|
-    |tmp_reg_309                                             |   1|   0|    1|          0|
-    |trunc_ln101_reg_294                                     |   2|   0|    2|          0|
-    |valid_out_write_assign_reg_52                           |   1|   0|    1|          0|
-    +--------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                   | 124|   0|  133|          9|
-    +--------------------------------------------------------+----+----+-----+-----------+
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |                           Name                          | FF | LUT| Bits| Const Bits|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                                |  73|   0|   73|          0|
+    |ap_done_reg                                              |   1|   0|    1|          0|
+    |grp_sobel_Pipeline_VITIS_LOOP_102_1_fu_120_ap_start_reg  |   1|   0|    1|          0|
+    |grp_sobel_Pipeline_VITIS_LOOP_155_5_fu_133_ap_start_reg  |   1|   0|    1|          0|
+    |icmp_ln67_1_reg_494                                      |   1|   0|    1|          0|
+    |icmp_ln67_reg_489                                        |   1|   0|    1|          0|
+    |p_anonymous_namespace_lineBuffer_32_0_load_1_reg_527     |   8|   0|    8|          0|
+    |p_anonymous_namespace_lineBuffer_32_0_load_reg_506       |   8|   0|    8|          0|
+    |p_anonymous_namespace_lineBuffer_32_1_load_1_reg_534     |   8|   0|    8|          0|
+    |p_anonymous_namespace_lineBuffer_32_1_load_reg_513       |   8|   0|    8|          0|
+    |p_anonymous_namespace_lineBuffer_32_2_load_1_reg_541     |   8|   0|    8|          0|
+    |p_anonymous_namespace_lineBuffer_32_2_load_reg_520       |   8|   0|    8|          0|
+    |p_anonymous_namespace_rowsReceived_2_load_reg_450        |  32|   0|   32|          0|
+    |p_read_1_reg_446                                         |   1|   0|    1|          0|
+    |result_1_reg_553                                         |   2|   0|    2|          0|
+    |result_2_reg_499                                         |   2|   0|    2|          0|
+    |result_reg_548                                           |   2|   0|    2|          0|
+    |tmp_16_reg_483                                           |   1|   0|    1|          0|
+    |tmp_1_reg_558                                            |   8|   0|    8|          0|
+    |tmp_2_reg_563                                            |   8|   0|    8|          0|
+    |tmp_3_reg_568                                            |   8|   0|    8|          0|
+    |tmp_4_reg_573                                            |   8|   0|    8|          0|
+    |tmp_5_reg_578                                            |   8|   0|    8|          0|
+    |tmp_6_reg_583                                            |   8|   0|    8|          0|
+    |tmp_reg_474                                              |   1|   0|    1|          0|
+    |trunc_ln99_1_reg_464                                     |   3|   0|    3|          0|
+    |trunc_ln99_reg_459                                       |   2|   0|    2|          0|
+    |valid_out_write_assign_reg_105                           |   1|   0|    1|          0|
+    +---------------------------------------------------------+----+----+-----+-----------+
+    |Total                                                    | 221|   0|  221|          0|
+    +---------------------------------------------------------+----+----+-----+-----------+
 
 
 
@@ -170,39 +185,55 @@
 == Interface
 ================================================================
 * Summary: 
-+-----------------------------------------------+-----+-----+------------+--------------------------------------+--------------+
-|                   RTL Ports                   | Dir | Bits|  Protocol  |             Source Object            |    C Type    |
-+-----------------------------------------------+-----+-----+------------+--------------------------------------+--------------+
-|ap_clk                                         |   in|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|ap_rst                                         |   in|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|ap_start                                       |   in|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|ap_done                                        |  out|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|ap_continue                                    |   in|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|ap_idle                                        |  out|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|ap_ready                                       |  out|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|ap_return                                      |  out|    1|  ap_ctrl_hs|                                 sobel|  return value|
-|p_read                                         |   in|    1|     ap_none|                                p_read|        scalar|
-|out_gaussian_address0                          |  out|    9|   ap_memory|                          out_gaussian|         array|
-|out_gaussian_ce0                               |  out|    1|   ap_memory|                          out_gaussian|         array|
-|out_gaussian_q0                                |   in|    8|   ap_memory|                          out_gaussian|         array|
-|out_sobel_magnitude_address0                   |  out|    9|   ap_memory|                   out_sobel_magnitude|         array|
-|out_sobel_magnitude_ce0                        |  out|    1|   ap_memory|                   out_sobel_magnitude|         array|
-|out_sobel_magnitude_we0                        |  out|    1|   ap_memory|                   out_sobel_magnitude|         array|
-|out_sobel_magnitude_d0                         |  out|   11|   ap_memory|                   out_sobel_magnitude|         array|
-|out_sobel_direction_address0                   |  out|    9|   ap_memory|                   out_sobel_direction|         array|
-|out_sobel_direction_ce0                        |  out|    1|   ap_memory|                   out_sobel_direction|         array|
-|out_sobel_direction_we0                        |  out|    1|   ap_memory|                   out_sobel_direction|         array|
-|out_sobel_direction_d0                         |  out|    2|   ap_memory|                   out_sobel_direction|         array|
-|p_anonymous_namespace_rowsReceived_1_i         |   in|   32|     ap_ovld|  p_anonymous_namespace_rowsReceived_1|       pointer|
-|p_anonymous_namespace_rowsReceived_1_o         |  out|   32|     ap_ovld|  p_anonymous_namespace_rowsReceived_1|       pointer|
-|p_anonymous_namespace_rowsReceived_1_o_ap_vld  |  out|    1|     ap_ovld|  p_anonymous_namespace_rowsReceived_1|       pointer|
-|lineBuffer_address0                            |  out|   11|   ap_memory|                            lineBuffer|         array|
-|lineBuffer_ce0                                 |  out|    1|   ap_memory|                            lineBuffer|         array|
-|lineBuffer_we0                                 |  out|    1|   ap_memory|                            lineBuffer|         array|
-|lineBuffer_d0                                  |  out|    8|   ap_memory|                            lineBuffer|         array|
-|lineBuffer_q0                                  |   in|    8|   ap_memory|                            lineBuffer|         array|
-|lineBuffer_address1                            |  out|   11|   ap_memory|                            lineBuffer|         array|
-|lineBuffer_ce1                                 |  out|    1|   ap_memory|                            lineBuffer|         array|
-|lineBuffer_q1                                  |   in|    8|   ap_memory|                            lineBuffer|         array|
-+-----------------------------------------------+-----+-----+------------+--------------------------------------+--------------+
++------------------------------------------------+-----+-----+------------+---------------------------------------+--------------+
+|                    RTL Ports                   | Dir | Bits|  Protocol  |             Source Object             |    C Type    |
++------------------------------------------------+-----+-----+------------+---------------------------------------+--------------+
+|ap_clk                                          |   in|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|ap_rst                                          |   in|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|ap_start                                        |   in|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|ap_done                                         |  out|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|ap_continue                                     |   in|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|ap_idle                                         |  out|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|ap_ready                                        |  out|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|ap_return                                       |  out|    1|  ap_ctrl_hs|                                  sobel|  return value|
+|p_read                                          |   in|    1|     ap_none|                                 p_read|        scalar|
+|out_gaussian_address0                           |  out|    9|   ap_memory|                           out_gaussian|         array|
+|out_gaussian_ce0                                |  out|    1|   ap_memory|                           out_gaussian|         array|
+|out_gaussian_q0                                 |   in|    8|   ap_memory|                           out_gaussian|         array|
+|out_sobel_magnitude_address0                    |  out|    9|   ap_memory|                    out_sobel_magnitude|         array|
+|out_sobel_magnitude_ce0                         |  out|    1|   ap_memory|                    out_sobel_magnitude|         array|
+|out_sobel_magnitude_we0                         |  out|    1|   ap_memory|                    out_sobel_magnitude|         array|
+|out_sobel_magnitude_d0                          |  out|   11|   ap_memory|                    out_sobel_magnitude|         array|
+|out_sobel_direction_address0                    |  out|    9|   ap_memory|                    out_sobel_direction|         array|
+|out_sobel_direction_ce0                         |  out|    1|   ap_memory|                    out_sobel_direction|         array|
+|out_sobel_direction_we0                         |  out|    1|   ap_memory|                    out_sobel_direction|         array|
+|out_sobel_direction_d0                          |  out|    2|   ap_memory|                    out_sobel_direction|         array|
+|p_anonymous_namespace_rowsReceived_2_i          |   in|   32|     ap_ovld|   p_anonymous_namespace_rowsReceived_2|       pointer|
+|p_anonymous_namespace_rowsReceived_2_o          |  out|   32|     ap_ovld|   p_anonymous_namespace_rowsReceived_2|       pointer|
+|p_anonymous_namespace_rowsReceived_2_o_ap_vld   |  out|    1|     ap_ovld|   p_anonymous_namespace_rowsReceived_2|       pointer|
+|p_anonymous_namespace_lineBuffer_32_0_address0  |  out|    9|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_0_ce0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_0_we0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_0_d0        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_0_q0        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_0_address1  |  out|    9|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_0_ce1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_0_q1        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_0|         array|
+|p_anonymous_namespace_lineBuffer_32_1_address0  |  out|    9|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_1_ce0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_1_we0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_1_d0        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_1_q0        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_1_address1  |  out|    9|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_1_ce1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_1_q1        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_1|         array|
+|p_anonymous_namespace_lineBuffer_32_2_address0  |  out|    9|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
+|p_anonymous_namespace_lineBuffer_32_2_ce0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
+|p_anonymous_namespace_lineBuffer_32_2_we0       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
+|p_anonymous_namespace_lineBuffer_32_2_d0        |  out|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
+|p_anonymous_namespace_lineBuffer_32_2_q0        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
+|p_anonymous_namespace_lineBuffer_32_2_address1  |  out|    9|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
+|p_anonymous_namespace_lineBuffer_32_2_ce1       |  out|    1|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
+|p_anonymous_namespace_lineBuffer_32_2_q1        |   in|    8|   ap_memory|  p_anonymous_namespace_lineBuffer_32_2|         array|
++------------------------------------------------+-----+-----+------------+---------------------------------------+--------------+
 

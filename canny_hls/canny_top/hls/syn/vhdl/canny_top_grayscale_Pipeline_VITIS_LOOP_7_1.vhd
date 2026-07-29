@@ -488,7 +488,7 @@ attribute shreg_extract : string;
 
 
 begin
-    mul_8ns_8ns_15_1_1_U15 : component canny_top_mul_8ns_8ns_15_1_1
+    mul_8ns_8ns_15_1_1_U28 : component canny_top_mul_8ns_8ns_15_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -500,7 +500,7 @@ begin
         din1 => mul_ln10_fu_345_p1,
         dout => mul_ln10_fu_345_p2);
 
-    mac_muladd_8ns_5ns_15s_15_4_1_U16 : component canny_top_mac_muladd_8ns_5ns_15s_15_4_1
+    mac_muladd_8ns_5ns_15s_15_4_1_U29 : component canny_top_mac_muladd_8ns_5ns_15s_15_4_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -517,7 +517,7 @@ begin
         ce => grp_fu_368_ce,
         dout => grp_fu_368_p3);
 
-    mac_muladd_8ns_8ns_15ns_16_4_1_U17 : component canny_top_mac_muladd_8ns_8ns_15ns_16_4_1
+    mac_muladd_8ns_8ns_15ns_16_4_1_U30 : component canny_top_mac_muladd_8ns_8ns_15ns_16_4_1
     generic map (
         ID => 1,
         NUM_STAGE => 4,

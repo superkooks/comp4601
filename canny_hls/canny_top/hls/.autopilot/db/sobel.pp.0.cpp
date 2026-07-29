@@ -1,11 +1,11 @@
 # 1 "../src/sobel.cpp"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
-# 405 "<built-in>" 3
+# 422 "<built-in>" 3
 # 1 "<command line>" 1
 # 1 "<built-in>" 2
-# 1 "/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/autopilot_ssdm_op.h" 1
-# 105 "/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/autopilot_ssdm_op.h"
+# 1 "C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\\etc/autopilot_ssdm_op.h" 1
+# 105 "C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\\etc/autopilot_ssdm_op.h"
 extern "C" {
 
 
@@ -153,11 +153,11 @@ extern "C" {
 }
 # 2 "<built-in>" 2
 # 1 "../src/sobel.cpp" 2
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 1 3
-# 40 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 1 3
+# 40 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 3
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 1 3
-# 236 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 1 3
+# 236 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
 namespace std
 {
   typedef long unsigned int size_t;
@@ -167,7 +167,7 @@ namespace std
   typedef decltype(nullptr) nullptr_t;
 
 }
-# 258 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
+# 258 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
 namespace std
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
@@ -176,51 +176,20 @@ namespace __gnu_cxx
 {
   inline namespace __cxx11 __attribute__((__abi_tag__ ("cxx11"))) { }
 }
-# 508 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 1 3
-# 39 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 3
-# 1 "/usr/include/features.h" 1 3 4
-# 431 "/usr/include/features.h" 3 4
-# 1 "/usr/include/features-time64.h" 1 3 4
-# 20 "/usr/include/features-time64.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 21 "/usr/include/features-time64.h" 2 3 4
-# 1 "/usr/include/bits/timesize.h" 1 3 4
-# 19 "/usr/include/bits/timesize.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/bits/timesize.h" 2 3 4
-# 22 "/usr/include/features-time64.h" 2 3 4
-# 432 "/usr/include/features.h" 2 3 4
-# 518 "/usr/include/features.h" 3 4
-# 1 "/usr/include/stdc-predef.h" 1 3 4
-# 519 "/usr/include/features.h" 2 3 4
-# 540 "/usr/include/features.h" 3 4
-# 1 "/usr/include/sys/cdefs.h" 1 3 4
-# 730 "/usr/include/sys/cdefs.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 731 "/usr/include/sys/cdefs.h" 2 3 4
-# 1 "/usr/include/bits/long-double.h" 1 3 4
-# 732 "/usr/include/sys/cdefs.h" 2 3 4
-# 541 "/usr/include/features.h" 2 3 4
-# 564 "/usr/include/features.h" 3 4
-# 1 "/usr/include/gnu/stubs.h" 1 3 4
-# 10 "/usr/include/gnu/stubs.h" 3 4
-# 1 "/usr/include/gnu/stubs-64.h" 1 3 4
-# 11 "/usr/include/gnu/stubs.h" 2 3 4
-# 565 "/usr/include/features.h" 2 3 4
-# 40 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/os_defines.h" 2 3
-# 509 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
+# 508 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/os_defines.h" 1 3
+# 509 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 2 3
 
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/cpu_defines.h" 1 3
-# 512 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/x86_64-pc-linux-gnu/bits/c++config.h" 2 3
-# 42 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cpp_type_traits.h" 1 3
-# 36 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cpp_type_traits.h" 3
-# 67 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cpp_type_traits.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/cpu_defines.h" 1 3
+# 512 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\x86_64-w64-mingw32\\bits/c++config.h" 2 3
+# 42 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/cpp_type_traits.h" 1 3
+# 36 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/cpp_type_traits.h" 3
+# 67 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/cpp_type_traits.h" 3
 extern "C++" {
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
 
 
@@ -396,9 +365,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
       enum { __value = 1 };
       typedef __true_type __type;
     };
-# 261 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cpp_type_traits.h" 3
+# 261 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/cpp_type_traits.h" 3
 template<> struct __is_integer<__int128> { enum { __value = 1 }; typedef __true_type __type; }; template<> struct __is_integer<unsigned __int128> { enum { __value = 1 }; typedef __true_type __type; };
-# 278 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/cpp_type_traits.h" 3
+# 278 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/cpp_type_traits.h" 3
   template<typename _Tp>
     struct __is_floating
     {
@@ -546,16 +515,16 @@ template<> struct __is_integer<__int128> { enum { __value = 1 }; typedef __true_
 
 }
 }
-# 43 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ext/type_traits.h" 1 3
-# 33 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ext/type_traits.h" 3
+# 43 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\ext/type_traits.h" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\ext/type_traits.h" 3
 
 
 
 
 extern "C++" {
 
-namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
+namespace __gnu_cxx
 {
 
 
@@ -736,4411 +705,956 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 }
 }
-# 44 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 2 3
+# 44 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 2 3
 
-# 1 "/usr/include/math.h" 1 3 4
-# 27 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
-# 28 "/usr/include/math.h" 2 3 4
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 1 3
+# 11 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
 
 
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 1 3
+# 10 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 12 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_mac.h" 1 3
+# 13 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 1 3
+# 44 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/_mingw_secapi.h" 3
+extern "C++" {
+template <bool __test, typename __dsttype>
+  struct __if_array;
+template <typename __dsttype>
+  struct __if_array <true, __dsttype> {
+    typedef __dsttype __type;
+};
+}
+# 14 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 282 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\vadefs.h" 1 3
+# 12 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\vadefs.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 1 3
 
+
+
+
+
+
+
+
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 1 3
+# 595 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_directx.h" 1 3
+# 596 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include/sdks/_mingw_ddk.h" 1 3
+# 597 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 10 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 2 3
+
+
+
+
+#pragma pack(push,_CRT_PACKING)
 
 
 
 extern "C" {
 
 
-# 1 "/usr/include/bits/math-vector.h" 1 3 4
-# 25 "/usr/include/bits/math-vector.h" 3 4
-# 1 "/usr/include/bits/libm-simd-decl-stubs.h" 1 3 4
-# 26 "/usr/include/bits/math-vector.h" 2 3 4
-# 38 "/usr/include/math.h" 2 3 4
 
 
-# 1 "/usr/include/bits/floatn.h" 1 3 4
-# 83 "/usr/include/bits/floatn.h" 3 4
-typedef _Complex float __cfloat128 __attribute__ ((__mode__ (__TC__)));
-# 97 "/usr/include/bits/floatn.h" 3 4
-typedef __float128 _Float128;
-# 131 "/usr/include/bits/floatn.h" 3 4
-# 1 "/usr/include/bits/floatn-common.h" 1 3 4
-# 24 "/usr/include/bits/floatn-common.h" 3 4
-# 1 "/usr/include/bits/long-double.h" 1 3 4
-# 25 "/usr/include/bits/floatn-common.h" 2 3 4
-# 214 "/usr/include/bits/floatn-common.h" 3 4
-typedef float _Float32;
-# 251 "/usr/include/bits/floatn-common.h" 3 4
-typedef double _Float64;
-# 268 "/usr/include/bits/floatn-common.h" 3 4
-typedef double _Float32x;
-# 285 "/usr/include/bits/floatn-common.h" 3 4
-typedef long double _Float64x;
-# 132 "/usr/include/bits/floatn.h" 2 3 4
-# 41 "/usr/include/math.h" 2 3 4
-# 157 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/flt-eval-method.h" 1 3 4
-# 158 "/usr/include/math.h" 2 3 4
-# 170 "/usr/include/math.h" 3 4
+
+  typedef __builtin_va_list __gnuc_va_list;
+
+
+
+
+
+
+  typedef __gnuc_va_list va_list;
+# 99 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\vadefs.h" 3
+}
+
+
+
+#pragma pack(pop)
+# 13 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\vadefs.h" 2 3
+# 283 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 2 3
+# 558 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+extern "C" {
+# 569 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\_mingw.h" 3
+void __attribute__((__cdecl__)) __debugbreak(void);
+extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) void __attribute__((__cdecl__)) __debugbreak(void)
+{
+  __asm__ __volatile__("int {$}3":);
+}
+
+
+
+
+const char *__mingw_get_crt_info (void);
+
+
+}
+# 11 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 2 3
+
+
+
+
+#pragma pack(push,_CRT_PACKING)
+# 35 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long size_t;
+# 45 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ssize_t;
+
+
+
+
+
+
+typedef size_t rsize_t;
+# 62 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long intptr_t;
+# 75 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef unsigned long uintptr_t;
+# 88 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+__extension__ typedef long ptrdiff_t;
+# 106 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef unsigned short wint_t;
+typedef unsigned short wctype_t;
+
+
+
+
+
+typedef int errno_t;
+
+
+
+
+typedef long __time32_t;
+
+
+
+
+__extension__ typedef long __time64_t;
+# 138 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+typedef __time64_t time_t;
+# 422 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\crtdefs.h" 3
+struct threadlocaleinfostruct;
+struct threadmbcinfostruct;
+typedef struct threadlocaleinfostruct *pthreadlocinfo;
+typedef struct threadmbcinfostruct *pthreadmbcinfo;
+struct __lc_time_data;
+
+typedef struct localeinfo_struct {
+  pthreadlocinfo locinfo;
+  pthreadmbcinfo mbcinfo;
+} _locale_tstruct,*_locale_t;
+
+
+
+typedef struct tagLC_ID {
+  unsigned short wLanguage;
+  unsigned short wCountry;
+  unsigned short wCodePage;
+} LC_ID,*LPLC_ID;
+
+
+
+
+typedef struct threadlocaleinfostruct {
+  int refcount;
+  unsigned int lc_codepage;
+  unsigned int lc_collate_cp;
+  unsigned long lc_handle[6];
+  LC_ID lc_id[6];
+  struct {
+    char *locale;
+    wchar_t *wlocale;
+    int *refcount;
+    int *wrefcount;
+  } lc_category[6];
+  int lc_clike;
+  int mb_cur_max;
+  int *lconv_intl_refcount;
+  int *lconv_num_refcount;
+  int *lconv_mon_refcount;
+  struct lconv *lconv;
+  int *ctype1_refcount;
+  unsigned short *ctype1;
+  const unsigned short *pctype;
+  const unsigned char *pclmap;
+  const unsigned char *pcumap;
+  struct __lc_time_data *lc_time_curr;
+} threadlocinfo;
+
+
+
+
+
+
+
+#pragma pack(pop)
+# 14 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 2 3
+
+struct _exception;
+
+#pragma pack(push,_CRT_PACKING)
+# 77 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+extern "C++" {
+template <typename type1, typename type2> struct __mingw_types_compatible_p {
+  static const bool result = false;
+};
+
+template <typename type1> struct __mingw_types_compatible_p<type1, type1> {
+ static const bool result = true;
+};
+
+template <typename type1> struct __mingw_types_compatible_p<const type1, type1> {
+  static const bool result = true;
+};
+
+template <typename type1> struct __mingw_types_compatible_p<type1, const type1> {
+  static const bool result = true;
+};
+}
+# 111 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+extern "C" {
+
+
+
+
+
+
+
+  typedef union __mingw_dbl_type_t {
+    double x;
+    unsigned long long val;
+    __extension__ struct {
+      unsigned int low, high;
+    } lh;
+  } __mingw_dbl_type_t;
+
+  typedef union __mingw_flt_type_t {
+    float x;
+    unsigned int val;
+  } __mingw_flt_type_t;
+
+  typedef union __mingw_ldbl_type_t
+  {
+    long double x;
+    __extension__ struct {
+      unsigned int low, high;
+      int sign_exponent : 16;
+      int res1 : 16;
+      int res0 : 32;
+    } lh;
+  } __mingw_ldbl_type_t;
+
+  typedef union __mingw_fp_types_t
+  {
+    long double *ld;
+    double *d;
+    float *f;
+    __mingw_ldbl_type_t *ldt;
+    __mingw_dbl_type_t *dt;
+    __mingw_flt_type_t *ft;
+  } __mingw_fp_types_t;
+
+
+
+
+  extern double * __imp__HUGE;
+# 168 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  struct _exception {
+    int type;
+    const char *name;
+    double arg1;
+    double arg2;
+    double retval;
+  };
+
+  void __mingw_raise_matherr (int typ, const char *name, double a1, double a2,
+         double rslt);
+  void __mingw_setusermatherr (int (__attribute__((__cdecl__)) *)(struct _exception *));
+  __attribute__ ((__dllimport__)) void __setusermatherr(int (__attribute__((__cdecl__)) *)(struct _exception *));
+
+
+
+  double __attribute__((__cdecl__)) sin(double _X);
+  double __attribute__((__cdecl__)) cos(double _X);
+  double __attribute__((__cdecl__)) tan(double _X);
+  double __attribute__((__cdecl__)) sinh(double _X);
+  double __attribute__((__cdecl__)) cosh(double _X);
+  double __attribute__((__cdecl__)) tanh(double _X);
+  double __attribute__((__cdecl__)) asin(double _X);
+  double __attribute__((__cdecl__)) acos(double _X);
+  double __attribute__((__cdecl__)) atan(double _X);
+  double __attribute__((__cdecl__)) atan2(double _Y,double _X);
+  double __attribute__((__cdecl__)) exp(double _X);
+  double __attribute__((__cdecl__)) log(double _X);
+  double __attribute__((__cdecl__)) log10(double _X);
+  double __attribute__((__cdecl__)) pow(double _X,double _Y);
+  double __attribute__((__cdecl__)) sqrt(double _X);
+  double __attribute__((__cdecl__)) ceil(double _X);
+  double __attribute__((__cdecl__)) floor(double _X);
+
+
+  extern float __attribute__((__cdecl__)) fabsf (float x);
+  extern long double __attribute__((__cdecl__)) fabsl (long double);
+  extern double __attribute__((__cdecl__)) fabs (double _X);
+# 243 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  double __attribute__((__cdecl__)) ldexp(double _X,int _Y);
+  double __attribute__((__cdecl__)) frexp(double _X,int *_Y);
+  double __attribute__((__cdecl__)) modf(double _X,double *_Y);
+  double __attribute__((__cdecl__)) fmod(double _X,double _Y);
+
+  void __attribute__((__cdecl__)) sincos (double __x, double *p_sin, double *p_cos);
+  void __attribute__((__cdecl__)) sincosl (long double __x, long double *p_sin, long double *p_cos);
+  void __attribute__((__cdecl__)) sincosf (float __x, float *p_sin, float *p_cos);
+
+
+
+  int __attribute__((__cdecl__)) abs(int _X);
+  long __attribute__((__cdecl__)) labs(long _X);
+
+
+
+  double __attribute__((__cdecl__)) atof(const char *_String);
+  double __attribute__((__cdecl__)) _atof_l(const char *_String,_locale_t _Locale);
+# 270 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  struct _complex {
+    double x;
+    double y;
+  };
+
+
+  double __attribute__((__cdecl__)) _cabs(struct _complex _ComplexA);
+  double __attribute__((__cdecl__)) _hypot(double _X,double _Y);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _j0(double _X);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _j1(double _X);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _jn(int _X,double _Y);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _y0(double _X);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _y1(double _X);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _yn(int _X,double _Y);
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _matherr (struct _exception *);
+# 297 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _chgsign (double _X);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _copysign (double _Number,double _Sign);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _logb (double);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _nextafter (double, double);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _scalb (double, long);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _finite (double);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fpclass (double);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _isnan (double);
+
+
+
+
+
+
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) j0 (double) ;
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) j1 (double) ;
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) jn (int, double) ;
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) y0 (double) ;
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) y1 (double) ;
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) yn (int, double) ;
+
+__attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) chgsign (double);
+# 327 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) finite (double);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) fpclass (double);
+# 372 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
 typedef float float_t;
 typedef double double_t;
+# 407 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern int __attribute__((__cdecl__)) __fpclassifyl (long double);
+  extern int __attribute__((__cdecl__)) __fpclassifyf (float);
+  extern int __attribute__((__cdecl__)) __fpclassify (double);
+# 520 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern int __attribute__((__cdecl__)) __isnan (double);
+  extern int __attribute__((__cdecl__)) __isnanf (float);
+  extern int __attribute__((__cdecl__)) __isnanl (long double);
+# 607 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern int __attribute__((__cdecl__)) __signbit (double);
+  extern int __attribute__((__cdecl__)) __signbitf (float);
+  extern int __attribute__((__cdecl__)) __signbitl (long double);
+# 664 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern float __attribute__((__cdecl__)) sinf(float _X);
+  extern long double __attribute__((__cdecl__)) sinl(long double);
 
-typedef long double long_double_t;
+  extern float __attribute__((__cdecl__)) cosf(float _X);
+  extern long double __attribute__((__cdecl__)) cosl(long double);
 
+  extern float __attribute__((__cdecl__)) tanf(float _X);
+  extern long double __attribute__((__cdecl__)) tanl(long double);
+  extern float __attribute__((__cdecl__)) asinf(float _X);
+  extern long double __attribute__((__cdecl__)) asinl(long double);
 
+  extern float __attribute__((__cdecl__)) acosf (float);
+  extern long double __attribute__((__cdecl__)) acosl (long double);
 
+  extern float __attribute__((__cdecl__)) atanf (float);
+  extern long double __attribute__((__cdecl__)) atanl (long double);
 
-typedef _Float32 _Float32_t;
+  extern float __attribute__((__cdecl__)) atan2f (float, float);
+  extern long double __attribute__((__cdecl__)) atan2l (long double, long double);
 
 
-typedef _Float64 _Float64_t;
+  extern float __attribute__((__cdecl__)) sinhf(float _X);
 
 
-typedef _Float128 _Float128_t;
-# 376 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/fp-logb.h" 1 3 4
-# 377 "/usr/include/math.h" 2 3 4
-# 419 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/fp-fast.h" 1 3 4
-# 420 "/usr/include/math.h" 2 3 4
 
+  extern long double __attribute__((__cdecl__)) sinhl(long double);
 
+  extern float __attribute__((__cdecl__)) coshf(float _X);
 
-enum
-  {
-    FP_INT_UPWARD =
 
-      0,
-    FP_INT_DOWNWARD =
 
-      1,
-    FP_INT_TOWARDZERO =
+  extern long double __attribute__((__cdecl__)) coshl(long double);
 
-      2,
-    FP_INT_TONEARESTFROMZERO =
+  extern float __attribute__((__cdecl__)) tanhf(float _X);
 
-      3,
-    FP_INT_TONEAREST =
 
-      4,
-  };
 
+  extern long double __attribute__((__cdecl__)) tanhl(long double);
 
-# 1 "/usr/include/bits/mathcalls-macros.h" 1 3 4
-# 444 "/usr/include/math.h" 2 3 4
 
 
+  extern double __attribute__((__cdecl__)) acosh (double);
+  extern float __attribute__((__cdecl__)) acoshf (float);
+  extern long double __attribute__((__cdecl__)) acoshl (long double);
 
 
+  extern double __attribute__((__cdecl__)) asinh (double);
+  extern float __attribute__((__cdecl__)) asinhf (float);
+  extern long double __attribute__((__cdecl__)) asinhl (long double);
 
-# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
-# 20 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
-extern int __fpclassify (double __value) noexcept (true)
-     __attribute__ ((__const__));
 
+  extern double __attribute__((__cdecl__)) atanh (double);
+  extern float __attribute__((__cdecl__)) atanhf (float);
+  extern long double __attribute__((__cdecl__)) atanhl (long double);
 
-extern int __signbit (double __value) noexcept (true)
-     __attribute__ ((__const__));
 
 
+  extern float __attribute__((__cdecl__)) expf(float _X);
 
-extern int __isinf (double __value) noexcept (true)
-  __attribute__ ((__const__));
 
 
-extern int __finite (double __value) noexcept (true)
-  __attribute__ ((__const__));
+  extern long double __attribute__((__cdecl__)) expl(long double);
 
 
-extern int __isnan (double __value) noexcept (true)
-  __attribute__ ((__const__));
+  extern double __attribute__((__cdecl__)) exp2(double);
+  extern float __attribute__((__cdecl__)) exp2f(float);
+  extern long double __attribute__((__cdecl__)) exp2l(long double);
 
 
-extern int __iseqsig (double __x, double __y) noexcept (true);
 
+  extern double __attribute__((__cdecl__)) expm1(double);
+  extern float __attribute__((__cdecl__)) expm1f(float);
+  extern long double __attribute__((__cdecl__)) expm1l(long double);
 
-extern int __issignaling (double __value) noexcept (true)
-     __attribute__ ((__const__));
-# 450 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern double acos (double __x) noexcept (true); extern double __acos (double __x) noexcept (true);
 
- extern double asin (double __x) noexcept (true); extern double __asin (double __x) noexcept (true);
+  extern float frexpf(float _X,int *_Y);
 
- extern double atan (double __x) noexcept (true); extern double __atan (double __x) noexcept (true);
 
- extern double atan2 (double __y, double __x) noexcept (true); extern double __atan2 (double __y, double __x) noexcept (true);
 
+  extern long double __attribute__((__cdecl__)) frexpl(long double,int *);
 
- extern double cos (double __x) noexcept (true); extern double __cos (double __x) noexcept (true);
 
- extern double sin (double __x) noexcept (true); extern double __sin (double __x) noexcept (true);
 
- extern double tan (double __x) noexcept (true); extern double __tan (double __x) noexcept (true);
 
+  extern int __attribute__((__cdecl__)) ilogb (double);
+  extern int __attribute__((__cdecl__)) ilogbf (float);
+  extern int __attribute__((__cdecl__)) ilogbl (long double);
 
 
-extern double acospi (double __x) noexcept (true); extern double __acospi (double __x) noexcept (true);
- extern double acospi (double __x) noexcept (true); extern double __acospi (double __x) noexcept (true);
+  extern float __attribute__((__cdecl__)) ldexpf(float _X,int _Y);
 
-extern double asinpi (double __x) noexcept (true); extern double __asinpi (double __x) noexcept (true);
- extern double asinpi (double __x) noexcept (true); extern double __asinpi (double __x) noexcept (true);
 
-extern double atanpi (double __x) noexcept (true); extern double __atanpi (double __x) noexcept (true);
- extern double atanpi (double __x) noexcept (true); extern double __atanpi (double __x) noexcept (true);
 
-extern double atan2pi (double __y, double __x) noexcept (true); extern double __atan2pi (double __y, double __x) noexcept (true);
- extern double atan2pi (double __y, double __x) noexcept (true); extern double __atan2pi (double __y, double __x) noexcept (true);
+  extern long double __attribute__((__cdecl__)) ldexpl (long double, int);
 
 
- extern double cospi (double __x) noexcept (true); extern double __cospi (double __x) noexcept (true);
+  extern float __attribute__((__cdecl__)) logf (float);
+  extern long double __attribute__((__cdecl__)) logl(long double);
 
- extern double sinpi (double __x) noexcept (true); extern double __sinpi (double __x) noexcept (true);
 
- extern double tanpi (double __x) noexcept (true); extern double __tanpi (double __x) noexcept (true);
+  extern float __attribute__((__cdecl__)) log10f (float);
+  extern long double __attribute__((__cdecl__)) log10l(long double);
 
 
+  extern double __attribute__((__cdecl__)) log1p(double);
+  extern float __attribute__((__cdecl__)) log1pf(float);
+  extern long double __attribute__((__cdecl__)) log1pl(long double);
 
 
+  extern double __attribute__((__cdecl__)) log2 (double);
+  extern float __attribute__((__cdecl__)) log2f (float);
+  extern long double __attribute__((__cdecl__)) log2l (long double);
 
- extern double cosh (double __x) noexcept (true); extern double __cosh (double __x) noexcept (true);
 
- extern double sinh (double __x) noexcept (true); extern double __sinh (double __x) noexcept (true);
+  extern double __attribute__((__cdecl__)) logb (double);
+  extern float __attribute__((__cdecl__)) logbf (float);
+  extern long double __attribute__((__cdecl__)) logbl (long double);
+# 863 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern float __attribute__((__cdecl__)) modff (float, float*);
+  extern long double __attribute__((__cdecl__)) modfl (long double, long double*);
 
- extern double tanh (double __x) noexcept (true); extern double __tanh (double __x) noexcept (true);
 
+  extern double __attribute__((__cdecl__)) scalbn (double, int);
+  extern float __attribute__((__cdecl__)) scalbnf (float, int);
+  extern long double __attribute__((__cdecl__)) scalbnl (long double, int);
 
+  extern double __attribute__((__cdecl__)) scalbln (double, long);
+  extern float __attribute__((__cdecl__)) scalblnf (float, long);
+  extern long double __attribute__((__cdecl__)) scalblnl (long double, long);
 
- extern void sincos (double __x, double *__sinx, double *__cosx) noexcept (true); extern void __sincos (double __x, double *__sinx, double *__cosx) noexcept (true);
 
 
+  extern double __attribute__((__cdecl__)) cbrt (double);
+  extern float __attribute__((__cdecl__)) cbrtf (float);
+  extern long double __attribute__((__cdecl__)) cbrtl (long double);
 
 
+  extern double __attribute__((__cdecl__)) hypot (double, double) ;
+  extern float __attribute__((__cdecl__)) hypotf (float x, float y);
 
- extern double acosh (double __x) noexcept (true); extern double __acosh (double __x) noexcept (true);
 
- extern double asinh (double __x) noexcept (true); extern double __asinh (double __x) noexcept (true);
 
- extern double atanh (double __x) noexcept (true); extern double __atanh (double __x) noexcept (true);
+  extern long double __attribute__((__cdecl__)) hypotl (long double, long double);
 
 
+  extern float __attribute__((__cdecl__)) powf(float _X,float _Y);
 
 
 
- extern double exp (double __x) noexcept (true); extern double __exp (double __x) noexcept (true);
+  extern long double __attribute__((__cdecl__)) powl (long double, long double);
 
 
-extern double frexp (double __x, int *__exponent) noexcept (true); extern double __frexp (double __x, int *__exponent) noexcept (true);
+  extern float __attribute__((__cdecl__)) sqrtf (float);
+  extern long double sqrtl(long double);
 
 
-extern double ldexp (double __x, int __exponent) noexcept (true); extern double __ldexp (double __x, int __exponent) noexcept (true);
+  extern double __attribute__((__cdecl__)) erf (double);
+  extern float __attribute__((__cdecl__)) erff (float);
+  extern long double __attribute__((__cdecl__)) erfl (long double);
 
 
- extern double log (double __x) noexcept (true); extern double __log (double __x) noexcept (true);
+  extern double __attribute__((__cdecl__)) erfc (double);
+  extern float __attribute__((__cdecl__)) erfcf (float);
+  extern long double __attribute__((__cdecl__)) erfcl (long double);
 
 
- extern double log10 (double __x) noexcept (true); extern double __log10 (double __x) noexcept (true);
+  extern double __attribute__((__cdecl__)) lgamma (double);
+  extern float __attribute__((__cdecl__)) lgammaf (float);
+  extern long double __attribute__((__cdecl__)) lgammal (long double);
 
+  extern int signgam;
 
-extern double modf (double __x, double *__iptr) noexcept (true); extern double __modf (double __x, double *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
 
+  extern double __attribute__((__cdecl__)) tgamma (double);
+  extern float __attribute__((__cdecl__)) tgammaf (float);
+  extern long double __attribute__((__cdecl__)) tgammal (long double);
 
 
- extern double exp10 (double __x) noexcept (true); extern double __exp10 (double __x) noexcept (true);
+  extern float __attribute__((__cdecl__)) ceilf (float);
+  extern long double __attribute__((__cdecl__)) ceill (long double);
 
 
- extern double exp2m1 (double __x) noexcept (true); extern double __exp2m1 (double __x) noexcept (true);
+  extern float __attribute__((__cdecl__)) floorf (float);
+  extern long double __attribute__((__cdecl__)) floorl (long double);
 
 
- extern double exp10m1 (double __x) noexcept (true); extern double __exp10m1 (double __x) noexcept (true);
+  extern double __attribute__((__cdecl__)) nearbyint ( double);
+  extern float __attribute__((__cdecl__)) nearbyintf (float);
+  extern long double __attribute__((__cdecl__)) nearbyintl (long double);
 
 
- extern double log2p1 (double __x) noexcept (true); extern double __log2p1 (double __x) noexcept (true);
 
+extern double __attribute__((__cdecl__)) rint (double);
+extern float __attribute__((__cdecl__)) rintf (float);
+extern long double __attribute__((__cdecl__)) rintl (long double);
 
- extern double log10p1 (double __x) noexcept (true); extern double __log10p1 (double __x) noexcept (true);
 
+extern long __attribute__((__cdecl__)) lrint (double);
+extern long __attribute__((__cdecl__)) lrintf (float);
+extern long __attribute__((__cdecl__)) lrintl (long double);
 
- extern double logp1 (double __x) noexcept (true); extern double __logp1 (double __x) noexcept (true);
+__extension__ long long __attribute__((__cdecl__)) llrint (double);
+__extension__ long long __attribute__((__cdecl__)) llrintf (float);
+__extension__ long long __attribute__((__cdecl__)) llrintl (long double);
+# 1030 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern double __attribute__((__cdecl__)) round (double);
+  extern float __attribute__((__cdecl__)) roundf (float);
+  extern long double __attribute__((__cdecl__)) roundl (long double);
 
 
+  extern long __attribute__((__cdecl__)) lround (double);
+  extern long __attribute__((__cdecl__)) lroundf (float);
+  extern long __attribute__((__cdecl__)) lroundl (long double);
+  __extension__ long long __attribute__((__cdecl__)) llround (double);
+  __extension__ long long __attribute__((__cdecl__)) llroundf (float);
+  __extension__ long long __attribute__((__cdecl__)) llroundl (long double);
 
 
- extern double expm1 (double __x) noexcept (true); extern double __expm1 (double __x) noexcept (true);
 
+  extern double __attribute__((__cdecl__)) trunc (double);
+  extern float __attribute__((__cdecl__)) truncf (float);
+  extern long double __attribute__((__cdecl__)) truncl (long double);
 
- extern double log1p (double __x) noexcept (true); extern double __log1p (double __x) noexcept (true);
 
+  extern float __attribute__((__cdecl__)) fmodf (float, float);
+  extern long double __attribute__((__cdecl__)) fmodl (long double, long double);
 
-extern double logb (double __x) noexcept (true); extern double __logb (double __x) noexcept (true);
 
+  extern double __attribute__((__cdecl__)) remainder (double, double);
+  extern float __attribute__((__cdecl__)) remainderf (float, float);
+  extern long double __attribute__((__cdecl__)) remainderl (long double, long double);
 
 
+  extern double __attribute__((__cdecl__)) remquo(double, double, int *);
+  extern float __attribute__((__cdecl__)) remquof(float, float, int *);
+  extern long double __attribute__((__cdecl__)) remquol(long double, long double, int *);
 
- extern double exp2 (double __x) noexcept (true); extern double __exp2 (double __x) noexcept (true);
 
+  extern double __attribute__((__cdecl__)) copysign (double, double);
+  extern float __attribute__((__cdecl__)) copysignf (float, float);
+  extern long double __attribute__((__cdecl__)) copysignl (long double, long double);
+# 1087 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern double __attribute__((__cdecl__)) nan(const char *tagp);
+  extern float __attribute__((__cdecl__)) nanf(const char *tagp);
+  extern long double __attribute__((__cdecl__)) nanl(const char *tagp);
+# 1098 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+  extern double __attribute__((__cdecl__)) nextafter (double, double);
+  extern float __attribute__((__cdecl__)) nextafterf (float, float);
+  extern long double __attribute__((__cdecl__)) nextafterl (long double, long double);
 
- extern double log2 (double __x) noexcept (true); extern double __log2 (double __x) noexcept (true);
 
+  extern double __attribute__((__cdecl__)) nexttoward (double, long double);
+  extern float __attribute__((__cdecl__)) nexttowardf (float, long double);
+  extern long double __attribute__((__cdecl__)) nexttowardl (long double, long double);
 
 
 
+  extern double __attribute__((__cdecl__)) fdim (double x, double y);
+  extern float __attribute__((__cdecl__)) fdimf (float x, float y);
+  extern long double __attribute__((__cdecl__)) fdiml (long double x, long double y);
 
 
- extern double pow (double __x, double __y) noexcept (true); extern double __pow (double __x, double __y) noexcept (true);
 
 
-extern double sqrt (double __x) noexcept (true); extern double __sqrt (double __x) noexcept (true);
 
 
 
- extern double hypot (double __x, double __y) noexcept (true); extern double __hypot (double __x, double __y) noexcept (true);
+  extern double __attribute__((__cdecl__)) fmax (double, double);
+  extern float __attribute__((__cdecl__)) fmaxf (float, float);
+  extern long double __attribute__((__cdecl__)) fmaxl (long double, long double);
 
 
+  extern double __attribute__((__cdecl__)) fmin (double, double);
+  extern float __attribute__((__cdecl__)) fminf (float, float);
+  extern long double __attribute__((__cdecl__)) fminl (long double, long double);
 
 
- extern double cbrt (double __x) noexcept (true); extern double __cbrt (double __x) noexcept (true);
 
+  extern double __attribute__((__cdecl__)) fma (double, double, double);
+  extern float __attribute__((__cdecl__)) fmaf (float, float, float);
+  extern long double __attribute__((__cdecl__)) fmal (long double, long double, long double);
+# 1181 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
+   __attribute__ ((__dllimport__)) float __attribute__((__cdecl__)) _copysignf (float _Number,float _Sign);
+   __attribute__ ((__dllimport__)) float __attribute__((__cdecl__)) _chgsignf (float _X);
+   __attribute__ ((__dllimport__)) float __attribute__((__cdecl__)) _logbf(float _X);
+   __attribute__ ((__dllimport__)) float __attribute__((__cdecl__)) _nextafterf(float _X,float _Y);
+   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _finitef(float _X);
+   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _isnanf(float _X);
+   __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _fpclassf(float _X);
 
 
 
-extern double compoundn (double __x, long long int __y) noexcept (true); extern double __compoundn (double __x, long long int __y) noexcept (true);
-
-
-extern double pown (double __x, long long int __y) noexcept (true); extern double __pown (double __x, long long int __y) noexcept (true);
-
-
-extern double powr (double __x, double __y) noexcept (true); extern double __powr (double __x, double __y) noexcept (true);
-
-
-extern double rootn (double __x, long long int __y) noexcept (true); extern double __rootn (double __x, long long int __y) noexcept (true);
-
-
- extern double rsqrt (double __x) noexcept (true); extern double __rsqrt (double __x) noexcept (true);
-
-
-
-
-
-
-extern double ceil (double __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fabs (double __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern double floor (double __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmod (double __x, double __y) noexcept (true); extern double __fmod (double __x, double __y) noexcept (true);
-# 237 "/usr/include/bits/mathcalls.h" 3 4
-extern int finite (double __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern double drem (double __x, double __y) noexcept (true); extern double __drem (double __x, double __y) noexcept (true);
-
-
-
-extern double significand (double __x) noexcept (true); extern double __significand (double __x) noexcept (true);
-
-
-
-
-
-
-extern double copysign (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern double nan (const char *__tagb) noexcept (true); extern double __nan (const char *__tagb) noexcept (true);
-# 274 "/usr/include/bits/mathcalls.h" 3 4
-extern double j0 (double) noexcept (true); extern double __j0 (double) noexcept (true);
-extern double j1 (double) noexcept (true); extern double __j1 (double) noexcept (true);
-extern double jn (int, double) noexcept (true); extern double __jn (int, double) noexcept (true);
-extern double y0 (double) noexcept (true); extern double __y0 (double) noexcept (true);
-extern double y1 (double) noexcept (true); extern double __y1 (double) noexcept (true);
-extern double yn (int, double) noexcept (true); extern double __yn (int, double) noexcept (true);
-
-
-
-
-
- extern double erf (double) noexcept (true); extern double __erf (double) noexcept (true);
- extern double erfc (double) noexcept (true); extern double __erfc (double) noexcept (true);
-extern double lgamma (double) noexcept (true); extern double __lgamma (double) noexcept (true);
-
-
-
-
-extern double tgamma (double) noexcept (true); extern double __tgamma (double) noexcept (true);
-
-
-
-
-
-extern double gamma (double) noexcept (true); extern double __gamma (double) noexcept (true);
-
-
-
-
-
-
-
-extern double lgamma_r (double, int *__signgamp) noexcept (true); extern double __lgamma_r (double, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern double rint (double __x) noexcept (true); extern double __rint (double __x) noexcept (true);
-
-
-extern double nextafter (double __x, double __y) noexcept (true); extern double __nextafter (double __x, double __y) noexcept (true);
-
-extern double nexttoward (double __x, long double __y) noexcept (true); extern double __nexttoward (double __x, long double __y) noexcept (true);
-
-
-
-
-extern double nextdown (double __x) noexcept (true); extern double __nextdown (double __x) noexcept (true);
-
-extern double nextup (double __x) noexcept (true); extern double __nextup (double __x) noexcept (true);
-
-
-
-extern double remainder (double __x, double __y) noexcept (true); extern double __remainder (double __x, double __y) noexcept (true);
-
-
-
-extern double scalbn (double __x, int __n) noexcept (true); extern double __scalbn (double __x, int __n) noexcept (true);
-
-
-
-extern int ilogb (double __x) noexcept (true); extern int __ilogb (double __x) noexcept (true);
-
-
-
-
-extern long int llogb (double __x) noexcept (true); extern long int __llogb (double __x) noexcept (true);
-
-
-
-
-extern double scalbln (double __x, long int __n) noexcept (true); extern double __scalbln (double __x, long int __n) noexcept (true);
-
-
-
-extern double nearbyint (double __x) noexcept (true); extern double __nearbyint (double __x) noexcept (true);
-
-
-
-extern double round (double __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern double trunc (double __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern double remquo (double __x, double __y, int *__quo) noexcept (true); extern double __remquo (double __x, double __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrint (double __x) noexcept (true); extern long int __lrint (double __x) noexcept (true);
-__extension__
-extern long long int llrint (double __x) noexcept (true); extern long long int __llrint (double __x) noexcept (true);
-
-
-
-extern long int lround (double __x) noexcept (true); extern long int __lround (double __x) noexcept (true);
-__extension__
-extern long long int llround (double __x) noexcept (true); extern long long int __llround (double __x) noexcept (true);
-
-
-
-extern double fdim (double __x, double __y) noexcept (true); extern double __fdim (double __x, double __y) noexcept (true);
-
-
-
-extern double fmax (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmin (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern double fma (double __x, double __y, double __z) noexcept (true); extern double __fma (double __x, double __y, double __z) noexcept (true);
-
-
-
-
-extern double roundeven (double __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern double fromfp (double __x, int __round, unsigned int __width) noexcept (true); extern double __fromfp (double __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern double ufromfp (double __x, int __round, unsigned int __width) noexcept (true); extern double __ufromfp (double __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern double fromfpx (double __x, int __round, unsigned int __width) noexcept (true); extern double __fromfpx (double __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern double ufromfpx (double __x, int __round, unsigned int __width) noexcept (true); extern double __ufromfpx (double __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalize (double *__cx, const double *__x) noexcept (true);
-
-
-
-
-
-
-extern double fmaxmag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminmag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern double fmaximum (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmaximum_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmaximum_mag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum_mag (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fmaximum_mag_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern double fminimum_mag_num (double __x, double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorder (const double *__x, const double *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermag (const double *__x, const double *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern double getpayload (const double *__x) noexcept (true); extern double __getpayload (const double *__x) noexcept (true);
-
-
-extern int setpayload (double *__x, double __payload) noexcept (true);
-
-
-extern int setpayloadsig (double *__x, double __payload) noexcept (true);
-
-
-
-
-
-
-
-extern double scalb (double __x, double __n) noexcept (true); extern double __scalb (double __x, double __n) noexcept (true);
-# 451 "/usr/include/math.h" 2 3 4
-# 466 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
-# 20 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
-extern int __fpclassifyf (float __value) noexcept (true)
-     __attribute__ ((__const__));
-
-
-extern int __signbitf (float __value) noexcept (true)
-     __attribute__ ((__const__));
-
-
-
-extern int __isinff (float __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __finitef (float __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __isnanf (float __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __iseqsigf (float __x, float __y) noexcept (true);
-
-
-extern int __issignalingf (float __value) noexcept (true)
-     __attribute__ ((__const__));
-# 467 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern float acosf (float __x) noexcept (true); extern float __acosf (float __x) noexcept (true);
-
- extern float asinf (float __x) noexcept (true); extern float __asinf (float __x) noexcept (true);
-
- extern float atanf (float __x) noexcept (true); extern float __atanf (float __x) noexcept (true);
-
- extern float atan2f (float __y, float __x) noexcept (true); extern float __atan2f (float __y, float __x) noexcept (true);
-
-
- extern float cosf (float __x) noexcept (true); extern float __cosf (float __x) noexcept (true);
-
- extern float sinf (float __x) noexcept (true); extern float __sinf (float __x) noexcept (true);
-
- extern float tanf (float __x) noexcept (true); extern float __tanf (float __x) noexcept (true);
-
-
-
-extern float acospif (float __x) noexcept (true); extern float __acospif (float __x) noexcept (true);
- extern float acospif (float __x) noexcept (true); extern float __acospif (float __x) noexcept (true);
-
-extern float asinpif (float __x) noexcept (true); extern float __asinpif (float __x) noexcept (true);
- extern float asinpif (float __x) noexcept (true); extern float __asinpif (float __x) noexcept (true);
-
-extern float atanpif (float __x) noexcept (true); extern float __atanpif (float __x) noexcept (true);
- extern float atanpif (float __x) noexcept (true); extern float __atanpif (float __x) noexcept (true);
-
-extern float atan2pif (float __y, float __x) noexcept (true); extern float __atan2pif (float __y, float __x) noexcept (true);
- extern float atan2pif (float __y, float __x) noexcept (true); extern float __atan2pif (float __y, float __x) noexcept (true);
-
-
- extern float cospif (float __x) noexcept (true); extern float __cospif (float __x) noexcept (true);
-
- extern float sinpif (float __x) noexcept (true); extern float __sinpif (float __x) noexcept (true);
-
- extern float tanpif (float __x) noexcept (true); extern float __tanpif (float __x) noexcept (true);
-
-
-
-
-
- extern float coshf (float __x) noexcept (true); extern float __coshf (float __x) noexcept (true);
-
- extern float sinhf (float __x) noexcept (true); extern float __sinhf (float __x) noexcept (true);
-
- extern float tanhf (float __x) noexcept (true); extern float __tanhf (float __x) noexcept (true);
-
-
-
- extern void sincosf (float __x, float *__sinx, float *__cosx) noexcept (true); extern void __sincosf (float __x, float *__sinx, float *__cosx) noexcept (true);
-
-
-
-
-
- extern float acoshf (float __x) noexcept (true); extern float __acoshf (float __x) noexcept (true);
-
- extern float asinhf (float __x) noexcept (true); extern float __asinhf (float __x) noexcept (true);
-
- extern float atanhf (float __x) noexcept (true); extern float __atanhf (float __x) noexcept (true);
-
-
-
-
-
- extern float expf (float __x) noexcept (true); extern float __expf (float __x) noexcept (true);
-
-
-extern float frexpf (float __x, int *__exponent) noexcept (true); extern float __frexpf (float __x, int *__exponent) noexcept (true);
-
-
-extern float ldexpf (float __x, int __exponent) noexcept (true); extern float __ldexpf (float __x, int __exponent) noexcept (true);
-
-
- extern float logf (float __x) noexcept (true); extern float __logf (float __x) noexcept (true);
-
-
- extern float log10f (float __x) noexcept (true); extern float __log10f (float __x) noexcept (true);
-
-
-extern float modff (float __x, float *__iptr) noexcept (true); extern float __modff (float __x, float *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
- extern float exp10f (float __x) noexcept (true); extern float __exp10f (float __x) noexcept (true);
-
-
- extern float exp2m1f (float __x) noexcept (true); extern float __exp2m1f (float __x) noexcept (true);
-
-
- extern float exp10m1f (float __x) noexcept (true); extern float __exp10m1f (float __x) noexcept (true);
-
-
- extern float log2p1f (float __x) noexcept (true); extern float __log2p1f (float __x) noexcept (true);
-
-
- extern float log10p1f (float __x) noexcept (true); extern float __log10p1f (float __x) noexcept (true);
-
-
- extern float logp1f (float __x) noexcept (true); extern float __logp1f (float __x) noexcept (true);
-
-
-
-
- extern float expm1f (float __x) noexcept (true); extern float __expm1f (float __x) noexcept (true);
-
-
- extern float log1pf (float __x) noexcept (true); extern float __log1pf (float __x) noexcept (true);
-
-
-extern float logbf (float __x) noexcept (true); extern float __logbf (float __x) noexcept (true);
-
-
-
-
- extern float exp2f (float __x) noexcept (true); extern float __exp2f (float __x) noexcept (true);
-
-
- extern float log2f (float __x) noexcept (true); extern float __log2f (float __x) noexcept (true);
-
-
-
-
-
-
- extern float powf (float __x, float __y) noexcept (true); extern float __powf (float __x, float __y) noexcept (true);
-
-
-extern float sqrtf (float __x) noexcept (true); extern float __sqrtf (float __x) noexcept (true);
-
-
-
- extern float hypotf (float __x, float __y) noexcept (true); extern float __hypotf (float __x, float __y) noexcept (true);
-
-
-
-
- extern float cbrtf (float __x) noexcept (true); extern float __cbrtf (float __x) noexcept (true);
-
-
-
-
-extern float compoundnf (float __x, long long int __y) noexcept (true); extern float __compoundnf (float __x, long long int __y) noexcept (true);
-
-
-extern float pownf (float __x, long long int __y) noexcept (true); extern float __pownf (float __x, long long int __y) noexcept (true);
-
-
-extern float powrf (float __x, float __y) noexcept (true); extern float __powrf (float __x, float __y) noexcept (true);
-
-
-extern float rootnf (float __x, long long int __y) noexcept (true); extern float __rootnf (float __x, long long int __y) noexcept (true);
-
-
- extern float rsqrtf (float __x) noexcept (true); extern float __rsqrtf (float __x) noexcept (true);
-
-
-
-
-
-
-extern float ceilf (float __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fabsf (float __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern float floorf (float __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fmodf (float __x, float __y) noexcept (true); extern float __fmodf (float __x, float __y) noexcept (true);
-# 231 "/usr/include/bits/mathcalls.h" 3 4
-extern int isinff (float __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-
-
-extern int finitef (float __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern float dremf (float __x, float __y) noexcept (true); extern float __dremf (float __x, float __y) noexcept (true);
-
-
-
-extern float significandf (float __x) noexcept (true); extern float __significandf (float __x) noexcept (true);
-
-
-
-
-
-
-extern float copysignf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern float nanf (const char *__tagb) noexcept (true); extern float __nanf (const char *__tagb) noexcept (true);
-# 267 "/usr/include/bits/mathcalls.h" 3 4
-extern int isnanf (float __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-
-
-
-extern float j0f (float) noexcept (true); extern float __j0f (float) noexcept (true);
-extern float j1f (float) noexcept (true); extern float __j1f (float) noexcept (true);
-extern float jnf (int, float) noexcept (true); extern float __jnf (int, float) noexcept (true);
-extern float y0f (float) noexcept (true); extern float __y0f (float) noexcept (true);
-extern float y1f (float) noexcept (true); extern float __y1f (float) noexcept (true);
-extern float ynf (int, float) noexcept (true); extern float __ynf (int, float) noexcept (true);
-
-
-
-
-
- extern float erff (float) noexcept (true); extern float __erff (float) noexcept (true);
- extern float erfcf (float) noexcept (true); extern float __erfcf (float) noexcept (true);
-extern float lgammaf (float) noexcept (true); extern float __lgammaf (float) noexcept (true);
-
-
-
-
-extern float tgammaf (float) noexcept (true); extern float __tgammaf (float) noexcept (true);
-
-
-
-
-
-extern float gammaf (float) noexcept (true); extern float __gammaf (float) noexcept (true);
-
-
-
-
-
-
-
-extern float lgammaf_r (float, int *__signgamp) noexcept (true); extern float __lgammaf_r (float, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern float rintf (float __x) noexcept (true); extern float __rintf (float __x) noexcept (true);
-
-
-extern float nextafterf (float __x, float __y) noexcept (true); extern float __nextafterf (float __x, float __y) noexcept (true);
-
-extern float nexttowardf (float __x, long double __y) noexcept (true); extern float __nexttowardf (float __x, long double __y) noexcept (true);
-
-
-
-
-extern float nextdownf (float __x) noexcept (true); extern float __nextdownf (float __x) noexcept (true);
-
-extern float nextupf (float __x) noexcept (true); extern float __nextupf (float __x) noexcept (true);
-
-
-
-extern float remainderf (float __x, float __y) noexcept (true); extern float __remainderf (float __x, float __y) noexcept (true);
-
-
-
-extern float scalbnf (float __x, int __n) noexcept (true); extern float __scalbnf (float __x, int __n) noexcept (true);
-
-
-
-extern int ilogbf (float __x) noexcept (true); extern int __ilogbf (float __x) noexcept (true);
-
-
-
-
-extern long int llogbf (float __x) noexcept (true); extern long int __llogbf (float __x) noexcept (true);
-
-
-
-
-extern float scalblnf (float __x, long int __n) noexcept (true); extern float __scalblnf (float __x, long int __n) noexcept (true);
-
-
-
-extern float nearbyintf (float __x) noexcept (true); extern float __nearbyintf (float __x) noexcept (true);
-
-
-
-extern float roundf (float __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern float truncf (float __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern float remquof (float __x, float __y, int *__quo) noexcept (true); extern float __remquof (float __x, float __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrintf (float __x) noexcept (true); extern long int __lrintf (float __x) noexcept (true);
-__extension__
-extern long long int llrintf (float __x) noexcept (true); extern long long int __llrintf (float __x) noexcept (true);
-
-
-
-extern long int lroundf (float __x) noexcept (true); extern long int __lroundf (float __x) noexcept (true);
-__extension__
-extern long long int llroundf (float __x) noexcept (true); extern long long int __llroundf (float __x) noexcept (true);
-
-
-
-extern float fdimf (float __x, float __y) noexcept (true); extern float __fdimf (float __x, float __y) noexcept (true);
-
-
-
-extern float fmaxf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern float fmaf (float __x, float __y, float __z) noexcept (true); extern float __fmaf (float __x, float __y, float __z) noexcept (true);
-
-
-
-
-extern float roundevenf (float __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern float fromfpf (float __x, int __round, unsigned int __width) noexcept (true); extern float __fromfpf (float __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern float ufromfpf (float __x, int __round, unsigned int __width) noexcept (true); extern float __ufromfpf (float __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern float fromfpxf (float __x, int __round, unsigned int __width) noexcept (true); extern float __fromfpxf (float __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern float ufromfpxf (float __x, int __round, unsigned int __width) noexcept (true); extern float __ufromfpxf (float __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalizef (float *__cx, const float *__x) noexcept (true);
-
-
-
-
-
-
-extern float fmaxmagf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminmagf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern float fmaximumf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimumf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fmaximum_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimum_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fmaximum_magf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimum_magf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fmaximum_mag_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern float fminimum_mag_numf (float __x, float __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf (const float *__x, const float *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermagf (const float *__x, const float *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern float getpayloadf (const float *__x) noexcept (true); extern float __getpayloadf (const float *__x) noexcept (true);
-
-
-extern int setpayloadf (float *__x, float __payload) noexcept (true);
-
-
-extern int setpayloadsigf (float *__x, float __payload) noexcept (true);
-
-
-
-
-
-
-
-extern float scalbf (float __x, float __n) noexcept (true); extern float __scalbf (float __x, float __n) noexcept (true);
-# 468 "/usr/include/math.h" 2 3 4
-# 535 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
-# 20 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
-extern int __fpclassifyl (long double __value) noexcept (true)
-     __attribute__ ((__const__));
-
-
-extern int __signbitl (long double __value) noexcept (true)
-     __attribute__ ((__const__));
-
-
-
-extern int __isinfl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __finitel (long double __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __isnanl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __iseqsigl (long double __x, long double __y) noexcept (true);
-
-
-extern int __issignalingl (long double __value) noexcept (true)
-     __attribute__ ((__const__));
-# 536 "/usr/include/math.h" 2 3 4
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern long double acosl (long double __x) noexcept (true); extern long double __acosl (long double __x) noexcept (true);
-
- extern long double asinl (long double __x) noexcept (true); extern long double __asinl (long double __x) noexcept (true);
-
- extern long double atanl (long double __x) noexcept (true); extern long double __atanl (long double __x) noexcept (true);
-
- extern long double atan2l (long double __y, long double __x) noexcept (true); extern long double __atan2l (long double __y, long double __x) noexcept (true);
-
-
- extern long double cosl (long double __x) noexcept (true); extern long double __cosl (long double __x) noexcept (true);
-
- extern long double sinl (long double __x) noexcept (true); extern long double __sinl (long double __x) noexcept (true);
-
- extern long double tanl (long double __x) noexcept (true); extern long double __tanl (long double __x) noexcept (true);
-
-
-
-extern long double acospil (long double __x) noexcept (true); extern long double __acospil (long double __x) noexcept (true);
- extern long double acospil (long double __x) noexcept (true); extern long double __acospil (long double __x) noexcept (true);
-
-extern long double asinpil (long double __x) noexcept (true); extern long double __asinpil (long double __x) noexcept (true);
- extern long double asinpil (long double __x) noexcept (true); extern long double __asinpil (long double __x) noexcept (true);
-
-extern long double atanpil (long double __x) noexcept (true); extern long double __atanpil (long double __x) noexcept (true);
- extern long double atanpil (long double __x) noexcept (true); extern long double __atanpil (long double __x) noexcept (true);
-
-extern long double atan2pil (long double __y, long double __x) noexcept (true); extern long double __atan2pil (long double __y, long double __x) noexcept (true);
- extern long double atan2pil (long double __y, long double __x) noexcept (true); extern long double __atan2pil (long double __y, long double __x) noexcept (true);
-
-
- extern long double cospil (long double __x) noexcept (true); extern long double __cospil (long double __x) noexcept (true);
-
- extern long double sinpil (long double __x) noexcept (true); extern long double __sinpil (long double __x) noexcept (true);
-
- extern long double tanpil (long double __x) noexcept (true); extern long double __tanpil (long double __x) noexcept (true);
-
-
-
-
-
- extern long double coshl (long double __x) noexcept (true); extern long double __coshl (long double __x) noexcept (true);
-
- extern long double sinhl (long double __x) noexcept (true); extern long double __sinhl (long double __x) noexcept (true);
-
- extern long double tanhl (long double __x) noexcept (true); extern long double __tanhl (long double __x) noexcept (true);
-
-
-
- extern void sincosl (long double __x, long double *__sinx, long double *__cosx) noexcept (true); extern void __sincosl (long double __x, long double *__sinx, long double *__cosx) noexcept (true);
-
-
-
-
-
- extern long double acoshl (long double __x) noexcept (true); extern long double __acoshl (long double __x) noexcept (true);
-
- extern long double asinhl (long double __x) noexcept (true); extern long double __asinhl (long double __x) noexcept (true);
-
- extern long double atanhl (long double __x) noexcept (true); extern long double __atanhl (long double __x) noexcept (true);
-
-
-
-
-
- extern long double expl (long double __x) noexcept (true); extern long double __expl (long double __x) noexcept (true);
-
-
-extern long double frexpl (long double __x, int *__exponent) noexcept (true); extern long double __frexpl (long double __x, int *__exponent) noexcept (true);
-
-
-extern long double ldexpl (long double __x, int __exponent) noexcept (true); extern long double __ldexpl (long double __x, int __exponent) noexcept (true);
-
-
- extern long double logl (long double __x) noexcept (true); extern long double __logl (long double __x) noexcept (true);
-
-
- extern long double log10l (long double __x) noexcept (true); extern long double __log10l (long double __x) noexcept (true);
-
-
-extern long double modfl (long double __x, long double *__iptr) noexcept (true); extern long double __modfl (long double __x, long double *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
- extern long double exp10l (long double __x) noexcept (true); extern long double __exp10l (long double __x) noexcept (true);
-
-
- extern long double exp2m1l (long double __x) noexcept (true); extern long double __exp2m1l (long double __x) noexcept (true);
-
-
- extern long double exp10m1l (long double __x) noexcept (true); extern long double __exp10m1l (long double __x) noexcept (true);
-
-
- extern long double log2p1l (long double __x) noexcept (true); extern long double __log2p1l (long double __x) noexcept (true);
-
-
- extern long double log10p1l (long double __x) noexcept (true); extern long double __log10p1l (long double __x) noexcept (true);
-
-
- extern long double logp1l (long double __x) noexcept (true); extern long double __logp1l (long double __x) noexcept (true);
-
-
-
-
- extern long double expm1l (long double __x) noexcept (true); extern long double __expm1l (long double __x) noexcept (true);
-
-
- extern long double log1pl (long double __x) noexcept (true); extern long double __log1pl (long double __x) noexcept (true);
-
-
-extern long double logbl (long double __x) noexcept (true); extern long double __logbl (long double __x) noexcept (true);
-
-
-
-
- extern long double exp2l (long double __x) noexcept (true); extern long double __exp2l (long double __x) noexcept (true);
-
-
- extern long double log2l (long double __x) noexcept (true); extern long double __log2l (long double __x) noexcept (true);
-
-
-
-
-
-
- extern long double powl (long double __x, long double __y) noexcept (true); extern long double __powl (long double __x, long double __y) noexcept (true);
-
-
-extern long double sqrtl (long double __x) noexcept (true); extern long double __sqrtl (long double __x) noexcept (true);
-
-
-
- extern long double hypotl (long double __x, long double __y) noexcept (true); extern long double __hypotl (long double __x, long double __y) noexcept (true);
-
-
-
-
- extern long double cbrtl (long double __x) noexcept (true); extern long double __cbrtl (long double __x) noexcept (true);
-
-
-
-
-extern long double compoundnl (long double __x, long long int __y) noexcept (true); extern long double __compoundnl (long double __x, long long int __y) noexcept (true);
-
-
-extern long double pownl (long double __x, long long int __y) noexcept (true); extern long double __pownl (long double __x, long long int __y) noexcept (true);
-
-
-extern long double powrl (long double __x, long double __y) noexcept (true); extern long double __powrl (long double __x, long double __y) noexcept (true);
-
-
-extern long double rootnl (long double __x, long long int __y) noexcept (true); extern long double __rootnl (long double __x, long long int __y) noexcept (true);
-
-
- extern long double rsqrtl (long double __x) noexcept (true); extern long double __rsqrtl (long double __x) noexcept (true);
-
-
-
-
-
-
-extern long double ceill (long double __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fabsl (long double __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double floorl (long double __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fmodl (long double __x, long double __y) noexcept (true); extern long double __fmodl (long double __x, long double __y) noexcept (true);
-# 231 "/usr/include/bits/mathcalls.h" 3 4
-extern int isinfl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-
-
-extern int finitel (long double __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern long double dreml (long double __x, long double __y) noexcept (true); extern long double __dreml (long double __x, long double __y) noexcept (true);
-
-
-
-extern long double significandl (long double __x) noexcept (true); extern long double __significandl (long double __x) noexcept (true);
-
-
-
-
-
-
-extern long double copysignl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern long double nanl (const char *__tagb) noexcept (true); extern long double __nanl (const char *__tagb) noexcept (true);
-# 267 "/usr/include/bits/mathcalls.h" 3 4
-extern int isnanl (long double __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-
-
-
-extern long double j0l (long double) noexcept (true); extern long double __j0l (long double) noexcept (true);
-extern long double j1l (long double) noexcept (true); extern long double __j1l (long double) noexcept (true);
-extern long double jnl (int, long double) noexcept (true); extern long double __jnl (int, long double) noexcept (true);
-extern long double y0l (long double) noexcept (true); extern long double __y0l (long double) noexcept (true);
-extern long double y1l (long double) noexcept (true); extern long double __y1l (long double) noexcept (true);
-extern long double ynl (int, long double) noexcept (true); extern long double __ynl (int, long double) noexcept (true);
-
-
-
-
-
- extern long double erfl (long double) noexcept (true); extern long double __erfl (long double) noexcept (true);
- extern long double erfcl (long double) noexcept (true); extern long double __erfcl (long double) noexcept (true);
-extern long double lgammal (long double) noexcept (true); extern long double __lgammal (long double) noexcept (true);
-
-
-
-
-extern long double tgammal (long double) noexcept (true); extern long double __tgammal (long double) noexcept (true);
-
-
-
-
-
-extern long double gammal (long double) noexcept (true); extern long double __gammal (long double) noexcept (true);
-
-
-
-
-
-
-
-extern long double lgammal_r (long double, int *__signgamp) noexcept (true); extern long double __lgammal_r (long double, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern long double rintl (long double __x) noexcept (true); extern long double __rintl (long double __x) noexcept (true);
-
-
-extern long double nextafterl (long double __x, long double __y) noexcept (true); extern long double __nextafterl (long double __x, long double __y) noexcept (true);
-
-extern long double nexttowardl (long double __x, long double __y) noexcept (true); extern long double __nexttowardl (long double __x, long double __y) noexcept (true);
-
-
-
-
-extern long double nextdownl (long double __x) noexcept (true); extern long double __nextdownl (long double __x) noexcept (true);
-
-extern long double nextupl (long double __x) noexcept (true); extern long double __nextupl (long double __x) noexcept (true);
-
-
-
-extern long double remainderl (long double __x, long double __y) noexcept (true); extern long double __remainderl (long double __x, long double __y) noexcept (true);
-
-
-
-extern long double scalbnl (long double __x, int __n) noexcept (true); extern long double __scalbnl (long double __x, int __n) noexcept (true);
-
-
-
-extern int ilogbl (long double __x) noexcept (true); extern int __ilogbl (long double __x) noexcept (true);
-
-
-
-
-extern long int llogbl (long double __x) noexcept (true); extern long int __llogbl (long double __x) noexcept (true);
-
-
-
-
-extern long double scalblnl (long double __x, long int __n) noexcept (true); extern long double __scalblnl (long double __x, long int __n) noexcept (true);
-
-
-
-extern long double nearbyintl (long double __x) noexcept (true); extern long double __nearbyintl (long double __x) noexcept (true);
-
-
-
-extern long double roundl (long double __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern long double truncl (long double __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern long double remquol (long double __x, long double __y, int *__quo) noexcept (true); extern long double __remquol (long double __x, long double __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrintl (long double __x) noexcept (true); extern long int __lrintl (long double __x) noexcept (true);
-__extension__
-extern long long int llrintl (long double __x) noexcept (true); extern long long int __llrintl (long double __x) noexcept (true);
-
-
-
-extern long int lroundl (long double __x) noexcept (true); extern long int __lroundl (long double __x) noexcept (true);
-__extension__
-extern long long int llroundl (long double __x) noexcept (true); extern long long int __llroundl (long double __x) noexcept (true);
-
-
-
-extern long double fdiml (long double __x, long double __y) noexcept (true); extern long double __fdiml (long double __x, long double __y) noexcept (true);
-
-
-
-extern long double fmaxl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern long double fmal (long double __x, long double __y, long double __z) noexcept (true); extern long double __fmal (long double __x, long double __y, long double __z) noexcept (true);
-
-
-
-
-extern long double roundevenl (long double __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern long double fromfpl (long double __x, int __round, unsigned int __width) noexcept (true); extern long double __fromfpl (long double __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern long double ufromfpl (long double __x, int __round, unsigned int __width) noexcept (true); extern long double __ufromfpl (long double __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern long double fromfpxl (long double __x, int __round, unsigned int __width) noexcept (true); extern long double __fromfpxl (long double __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern long double ufromfpxl (long double __x, int __round, unsigned int __width) noexcept (true); extern long double __ufromfpxl (long double __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalizel (long double *__cx, const long double *__x) noexcept (true);
-
-
-
-
-
-
-extern long double fmaxmagl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminmagl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern long double fmaximuml (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimuml (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fmaximum_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimum_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fmaximum_magl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimum_magl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fmaximum_mag_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern long double fminimum_mag_numl (long double __x, long double __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderl (const long double *__x, const long double *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermagl (const long double *__x, const long double *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern long double getpayloadl (const long double *__x) noexcept (true); extern long double __getpayloadl (const long double *__x) noexcept (true);
-
-
-extern int setpayloadl (long double *__x, long double __payload) noexcept (true);
-
-
-extern int setpayloadsigl (long double *__x, long double __payload) noexcept (true);
-
-
-
-
-
-
-
-extern long double scalbl (long double __x, long double __n) noexcept (true); extern long double __scalbl (long double __x, long double __n) noexcept (true);
-# 537 "/usr/include/math.h" 2 3 4
-# 587 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern _Float32 acosf32 (_Float32 __x) noexcept (true); extern _Float32 __acosf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 asinf32 (_Float32 __x) noexcept (true); extern _Float32 __asinf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 atanf32 (_Float32 __x) noexcept (true); extern _Float32 __atanf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 atan2f32 (_Float32 __y, _Float32 __x) noexcept (true); extern _Float32 __atan2f32 (_Float32 __y, _Float32 __x) noexcept (true);
-
-
- extern _Float32 cosf32 (_Float32 __x) noexcept (true); extern _Float32 __cosf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 sinf32 (_Float32 __x) noexcept (true); extern _Float32 __sinf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 tanf32 (_Float32 __x) noexcept (true); extern _Float32 __tanf32 (_Float32 __x) noexcept (true);
-
-
-
-extern _Float32 acospif32 (_Float32 __x) noexcept (true); extern _Float32 __acospif32 (_Float32 __x) noexcept (true);
- extern _Float32 acospif32 (_Float32 __x) noexcept (true); extern _Float32 __acospif32 (_Float32 __x) noexcept (true);
-
-extern _Float32 asinpif32 (_Float32 __x) noexcept (true); extern _Float32 __asinpif32 (_Float32 __x) noexcept (true);
- extern _Float32 asinpif32 (_Float32 __x) noexcept (true); extern _Float32 __asinpif32 (_Float32 __x) noexcept (true);
-
-extern _Float32 atanpif32 (_Float32 __x) noexcept (true); extern _Float32 __atanpif32 (_Float32 __x) noexcept (true);
- extern _Float32 atanpif32 (_Float32 __x) noexcept (true); extern _Float32 __atanpif32 (_Float32 __x) noexcept (true);
-
-extern _Float32 atan2pif32 (_Float32 __y, _Float32 __x) noexcept (true); extern _Float32 __atan2pif32 (_Float32 __y, _Float32 __x) noexcept (true);
- extern _Float32 atan2pif32 (_Float32 __y, _Float32 __x) noexcept (true); extern _Float32 __atan2pif32 (_Float32 __y, _Float32 __x) noexcept (true);
-
-
- extern _Float32 cospif32 (_Float32 __x) noexcept (true); extern _Float32 __cospif32 (_Float32 __x) noexcept (true);
-
- extern _Float32 sinpif32 (_Float32 __x) noexcept (true); extern _Float32 __sinpif32 (_Float32 __x) noexcept (true);
-
- extern _Float32 tanpif32 (_Float32 __x) noexcept (true); extern _Float32 __tanpif32 (_Float32 __x) noexcept (true);
-
-
-
-
-
- extern _Float32 coshf32 (_Float32 __x) noexcept (true); extern _Float32 __coshf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 sinhf32 (_Float32 __x) noexcept (true); extern _Float32 __sinhf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 tanhf32 (_Float32 __x) noexcept (true); extern _Float32 __tanhf32 (_Float32 __x) noexcept (true);
-
-
-
- extern void sincosf32 (_Float32 __x, _Float32 *__sinx, _Float32 *__cosx) noexcept (true); extern void __sincosf32 (_Float32 __x, _Float32 *__sinx, _Float32 *__cosx) noexcept (true);
-
-
-
-
-
- extern _Float32 acoshf32 (_Float32 __x) noexcept (true); extern _Float32 __acoshf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 asinhf32 (_Float32 __x) noexcept (true); extern _Float32 __asinhf32 (_Float32 __x) noexcept (true);
-
- extern _Float32 atanhf32 (_Float32 __x) noexcept (true); extern _Float32 __atanhf32 (_Float32 __x) noexcept (true);
-
-
-
-
-
- extern _Float32 expf32 (_Float32 __x) noexcept (true); extern _Float32 __expf32 (_Float32 __x) noexcept (true);
-
-
-extern _Float32 frexpf32 (_Float32 __x, int *__exponent) noexcept (true); extern _Float32 __frexpf32 (_Float32 __x, int *__exponent) noexcept (true);
-
-
-extern _Float32 ldexpf32 (_Float32 __x, int __exponent) noexcept (true); extern _Float32 __ldexpf32 (_Float32 __x, int __exponent) noexcept (true);
-
-
- extern _Float32 logf32 (_Float32 __x) noexcept (true); extern _Float32 __logf32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 log10f32 (_Float32 __x) noexcept (true); extern _Float32 __log10f32 (_Float32 __x) noexcept (true);
-
-
-extern _Float32 modff32 (_Float32 __x, _Float32 *__iptr) noexcept (true); extern _Float32 __modff32 (_Float32 __x, _Float32 *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
- extern _Float32 exp10f32 (_Float32 __x) noexcept (true); extern _Float32 __exp10f32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 exp2m1f32 (_Float32 __x) noexcept (true); extern _Float32 __exp2m1f32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 exp10m1f32 (_Float32 __x) noexcept (true); extern _Float32 __exp10m1f32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 log2p1f32 (_Float32 __x) noexcept (true); extern _Float32 __log2p1f32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 log10p1f32 (_Float32 __x) noexcept (true); extern _Float32 __log10p1f32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 logp1f32 (_Float32 __x) noexcept (true); extern _Float32 __logp1f32 (_Float32 __x) noexcept (true);
-
-
-
-
- extern _Float32 expm1f32 (_Float32 __x) noexcept (true); extern _Float32 __expm1f32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 log1pf32 (_Float32 __x) noexcept (true); extern _Float32 __log1pf32 (_Float32 __x) noexcept (true);
-
-
-extern _Float32 logbf32 (_Float32 __x) noexcept (true); extern _Float32 __logbf32 (_Float32 __x) noexcept (true);
-
-
-
-
- extern _Float32 exp2f32 (_Float32 __x) noexcept (true); extern _Float32 __exp2f32 (_Float32 __x) noexcept (true);
-
-
- extern _Float32 log2f32 (_Float32 __x) noexcept (true); extern _Float32 __log2f32 (_Float32 __x) noexcept (true);
-
-
-
-
-
-
- extern _Float32 powf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __powf32 (_Float32 __x, _Float32 __y) noexcept (true);
-
-
-extern _Float32 sqrtf32 (_Float32 __x) noexcept (true); extern _Float32 __sqrtf32 (_Float32 __x) noexcept (true);
-
-
-
- extern _Float32 hypotf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __hypotf32 (_Float32 __x, _Float32 __y) noexcept (true);
-
-
-
-
- extern _Float32 cbrtf32 (_Float32 __x) noexcept (true); extern _Float32 __cbrtf32 (_Float32 __x) noexcept (true);
-
-
-
-
-extern _Float32 compoundnf32 (_Float32 __x, long long int __y) noexcept (true); extern _Float32 __compoundnf32 (_Float32 __x, long long int __y) noexcept (true);
-
-
-extern _Float32 pownf32 (_Float32 __x, long long int __y) noexcept (true); extern _Float32 __pownf32 (_Float32 __x, long long int __y) noexcept (true);
-
-
-extern _Float32 powrf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __powrf32 (_Float32 __x, _Float32 __y) noexcept (true);
-
-
-extern _Float32 rootnf32 (_Float32 __x, long long int __y) noexcept (true); extern _Float32 __rootnf32 (_Float32 __x, long long int __y) noexcept (true);
-
-
- extern _Float32 rsqrtf32 (_Float32 __x) noexcept (true); extern _Float32 __rsqrtf32 (_Float32 __x) noexcept (true);
-
-
-
-
-
-
-extern _Float32 ceilf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fabsf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 floorf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fmodf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __fmodf32 (_Float32 __x, _Float32 __y) noexcept (true);
-# 252 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float32 copysignf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32 nanf32 (const char *__tagb) noexcept (true); extern _Float32 __nanf32 (const char *__tagb) noexcept (true);
-# 274 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float32 j0f32 (_Float32) noexcept (true); extern _Float32 __j0f32 (_Float32) noexcept (true);
-extern _Float32 j1f32 (_Float32) noexcept (true); extern _Float32 __j1f32 (_Float32) noexcept (true);
-extern _Float32 jnf32 (int, _Float32) noexcept (true); extern _Float32 __jnf32 (int, _Float32) noexcept (true);
-extern _Float32 y0f32 (_Float32) noexcept (true); extern _Float32 __y0f32 (_Float32) noexcept (true);
-extern _Float32 y1f32 (_Float32) noexcept (true); extern _Float32 __y1f32 (_Float32) noexcept (true);
-extern _Float32 ynf32 (int, _Float32) noexcept (true); extern _Float32 __ynf32 (int, _Float32) noexcept (true);
-
-
-
-
-
- extern _Float32 erff32 (_Float32) noexcept (true); extern _Float32 __erff32 (_Float32) noexcept (true);
- extern _Float32 erfcf32 (_Float32) noexcept (true); extern _Float32 __erfcf32 (_Float32) noexcept (true);
-extern _Float32 lgammaf32 (_Float32) noexcept (true); extern _Float32 __lgammaf32 (_Float32) noexcept (true);
-
-
-
-
-extern _Float32 tgammaf32 (_Float32) noexcept (true); extern _Float32 __tgammaf32 (_Float32) noexcept (true);
-# 306 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float32 lgammaf32_r (_Float32, int *__signgamp) noexcept (true); extern _Float32 __lgammaf32_r (_Float32, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern _Float32 rintf32 (_Float32 __x) noexcept (true); extern _Float32 __rintf32 (_Float32 __x) noexcept (true);
-
-
-extern _Float32 nextafterf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __nextafterf32 (_Float32 __x, _Float32 __y) noexcept (true);
-
-
-
-
-
-
-extern _Float32 nextdownf32 (_Float32 __x) noexcept (true); extern _Float32 __nextdownf32 (_Float32 __x) noexcept (true);
-
-extern _Float32 nextupf32 (_Float32 __x) noexcept (true); extern _Float32 __nextupf32 (_Float32 __x) noexcept (true);
-
-
-
-extern _Float32 remainderf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __remainderf32 (_Float32 __x, _Float32 __y) noexcept (true);
-
-
-
-extern _Float32 scalbnf32 (_Float32 __x, int __n) noexcept (true); extern _Float32 __scalbnf32 (_Float32 __x, int __n) noexcept (true);
-
-
-
-extern int ilogbf32 (_Float32 __x) noexcept (true); extern int __ilogbf32 (_Float32 __x) noexcept (true);
-
-
-
-
-extern long int llogbf32 (_Float32 __x) noexcept (true); extern long int __llogbf32 (_Float32 __x) noexcept (true);
-
-
-
-
-extern _Float32 scalblnf32 (_Float32 __x, long int __n) noexcept (true); extern _Float32 __scalblnf32 (_Float32 __x, long int __n) noexcept (true);
-
-
-
-extern _Float32 nearbyintf32 (_Float32 __x) noexcept (true); extern _Float32 __nearbyintf32 (_Float32 __x) noexcept (true);
-
-
-
-extern _Float32 roundf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float32 truncf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32 remquof32 (_Float32 __x, _Float32 __y, int *__quo) noexcept (true); extern _Float32 __remquof32 (_Float32 __x, _Float32 __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrintf32 (_Float32 __x) noexcept (true); extern long int __lrintf32 (_Float32 __x) noexcept (true);
-__extension__
-extern long long int llrintf32 (_Float32 __x) noexcept (true); extern long long int __llrintf32 (_Float32 __x) noexcept (true);
-
-
-
-extern long int lroundf32 (_Float32 __x) noexcept (true); extern long int __lroundf32 (_Float32 __x) noexcept (true);
-__extension__
-extern long long int llroundf32 (_Float32 __x) noexcept (true); extern long long int __llroundf32 (_Float32 __x) noexcept (true);
-
-
-
-extern _Float32 fdimf32 (_Float32 __x, _Float32 __y) noexcept (true); extern _Float32 __fdimf32 (_Float32 __x, _Float32 __y) noexcept (true);
-
-
-
-extern _Float32 fmaxf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float32 fmaf32 (_Float32 __x, _Float32 __y, _Float32 __z) noexcept (true); extern _Float32 __fmaf32 (_Float32 __x, _Float32 __y, _Float32 __z) noexcept (true);
-
-
-
-
-extern _Float32 roundevenf32 (_Float32 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float32 fromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern _Float32 __fromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern _Float32 ufromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern _Float32 __ufromfpf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float32 fromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern _Float32 __fromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float32 ufromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true); extern _Float32 __ufromfpxf32 (_Float32 __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalizef32 (_Float32 *__cx, const _Float32 *__x) noexcept (true);
-
-
-
-
-
-
-extern _Float32 fmaxmagf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminmagf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32 fmaximumf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimumf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fmaximum_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimum_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fmaximum_magf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimum_magf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fmaximum_mag_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32 fminimum_mag_numf32 (_Float32 __x, _Float32 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf32 (const _Float32 *__x, const _Float32 *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermagf32 (const _Float32 *__x, const _Float32 *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern _Float32 getpayloadf32 (const _Float32 *__x) noexcept (true); extern _Float32 __getpayloadf32 (const _Float32 *__x) noexcept (true);
-
-
-extern int setpayloadf32 (_Float32 *__x, _Float32 __payload) noexcept (true);
-
-
-extern int setpayloadsigf32 (_Float32 *__x, _Float32 __payload) noexcept (true);
-# 588 "/usr/include/math.h" 2 3 4
-# 604 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern _Float64 acosf64 (_Float64 __x) noexcept (true); extern _Float64 __acosf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 asinf64 (_Float64 __x) noexcept (true); extern _Float64 __asinf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 atanf64 (_Float64 __x) noexcept (true); extern _Float64 __atanf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 atan2f64 (_Float64 __y, _Float64 __x) noexcept (true); extern _Float64 __atan2f64 (_Float64 __y, _Float64 __x) noexcept (true);
-
-
- extern _Float64 cosf64 (_Float64 __x) noexcept (true); extern _Float64 __cosf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 sinf64 (_Float64 __x) noexcept (true); extern _Float64 __sinf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 tanf64 (_Float64 __x) noexcept (true); extern _Float64 __tanf64 (_Float64 __x) noexcept (true);
-
-
-
-extern _Float64 acospif64 (_Float64 __x) noexcept (true); extern _Float64 __acospif64 (_Float64 __x) noexcept (true);
- extern _Float64 acospif64 (_Float64 __x) noexcept (true); extern _Float64 __acospif64 (_Float64 __x) noexcept (true);
-
-extern _Float64 asinpif64 (_Float64 __x) noexcept (true); extern _Float64 __asinpif64 (_Float64 __x) noexcept (true);
- extern _Float64 asinpif64 (_Float64 __x) noexcept (true); extern _Float64 __asinpif64 (_Float64 __x) noexcept (true);
-
-extern _Float64 atanpif64 (_Float64 __x) noexcept (true); extern _Float64 __atanpif64 (_Float64 __x) noexcept (true);
- extern _Float64 atanpif64 (_Float64 __x) noexcept (true); extern _Float64 __atanpif64 (_Float64 __x) noexcept (true);
-
-extern _Float64 atan2pif64 (_Float64 __y, _Float64 __x) noexcept (true); extern _Float64 __atan2pif64 (_Float64 __y, _Float64 __x) noexcept (true);
- extern _Float64 atan2pif64 (_Float64 __y, _Float64 __x) noexcept (true); extern _Float64 __atan2pif64 (_Float64 __y, _Float64 __x) noexcept (true);
-
-
- extern _Float64 cospif64 (_Float64 __x) noexcept (true); extern _Float64 __cospif64 (_Float64 __x) noexcept (true);
-
- extern _Float64 sinpif64 (_Float64 __x) noexcept (true); extern _Float64 __sinpif64 (_Float64 __x) noexcept (true);
-
- extern _Float64 tanpif64 (_Float64 __x) noexcept (true); extern _Float64 __tanpif64 (_Float64 __x) noexcept (true);
-
-
-
-
-
- extern _Float64 coshf64 (_Float64 __x) noexcept (true); extern _Float64 __coshf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 sinhf64 (_Float64 __x) noexcept (true); extern _Float64 __sinhf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 tanhf64 (_Float64 __x) noexcept (true); extern _Float64 __tanhf64 (_Float64 __x) noexcept (true);
-
-
-
- extern void sincosf64 (_Float64 __x, _Float64 *__sinx, _Float64 *__cosx) noexcept (true); extern void __sincosf64 (_Float64 __x, _Float64 *__sinx, _Float64 *__cosx) noexcept (true);
-
-
-
-
-
- extern _Float64 acoshf64 (_Float64 __x) noexcept (true); extern _Float64 __acoshf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 asinhf64 (_Float64 __x) noexcept (true); extern _Float64 __asinhf64 (_Float64 __x) noexcept (true);
-
- extern _Float64 atanhf64 (_Float64 __x) noexcept (true); extern _Float64 __atanhf64 (_Float64 __x) noexcept (true);
-
-
-
-
-
- extern _Float64 expf64 (_Float64 __x) noexcept (true); extern _Float64 __expf64 (_Float64 __x) noexcept (true);
-
-
-extern _Float64 frexpf64 (_Float64 __x, int *__exponent) noexcept (true); extern _Float64 __frexpf64 (_Float64 __x, int *__exponent) noexcept (true);
-
-
-extern _Float64 ldexpf64 (_Float64 __x, int __exponent) noexcept (true); extern _Float64 __ldexpf64 (_Float64 __x, int __exponent) noexcept (true);
-
-
- extern _Float64 logf64 (_Float64 __x) noexcept (true); extern _Float64 __logf64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 log10f64 (_Float64 __x) noexcept (true); extern _Float64 __log10f64 (_Float64 __x) noexcept (true);
-
-
-extern _Float64 modff64 (_Float64 __x, _Float64 *__iptr) noexcept (true); extern _Float64 __modff64 (_Float64 __x, _Float64 *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
- extern _Float64 exp10f64 (_Float64 __x) noexcept (true); extern _Float64 __exp10f64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 exp2m1f64 (_Float64 __x) noexcept (true); extern _Float64 __exp2m1f64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 exp10m1f64 (_Float64 __x) noexcept (true); extern _Float64 __exp10m1f64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 log2p1f64 (_Float64 __x) noexcept (true); extern _Float64 __log2p1f64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 log10p1f64 (_Float64 __x) noexcept (true); extern _Float64 __log10p1f64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 logp1f64 (_Float64 __x) noexcept (true); extern _Float64 __logp1f64 (_Float64 __x) noexcept (true);
-
-
-
-
- extern _Float64 expm1f64 (_Float64 __x) noexcept (true); extern _Float64 __expm1f64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 log1pf64 (_Float64 __x) noexcept (true); extern _Float64 __log1pf64 (_Float64 __x) noexcept (true);
-
-
-extern _Float64 logbf64 (_Float64 __x) noexcept (true); extern _Float64 __logbf64 (_Float64 __x) noexcept (true);
-
-
-
-
- extern _Float64 exp2f64 (_Float64 __x) noexcept (true); extern _Float64 __exp2f64 (_Float64 __x) noexcept (true);
-
-
- extern _Float64 log2f64 (_Float64 __x) noexcept (true); extern _Float64 __log2f64 (_Float64 __x) noexcept (true);
-
-
-
-
-
-
- extern _Float64 powf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __powf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float64 sqrtf64 (_Float64 __x) noexcept (true); extern _Float64 __sqrtf64 (_Float64 __x) noexcept (true);
-
-
-
- extern _Float64 hypotf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __hypotf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-
-
- extern _Float64 cbrtf64 (_Float64 __x) noexcept (true); extern _Float64 __cbrtf64 (_Float64 __x) noexcept (true);
-
-
-
-
-extern _Float64 compoundnf64 (_Float64 __x, long long int __y) noexcept (true); extern _Float64 __compoundnf64 (_Float64 __x, long long int __y) noexcept (true);
-
-
-extern _Float64 pownf64 (_Float64 __x, long long int __y) noexcept (true); extern _Float64 __pownf64 (_Float64 __x, long long int __y) noexcept (true);
-
-
-extern _Float64 powrf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __powrf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float64 rootnf64 (_Float64 __x, long long int __y) noexcept (true); extern _Float64 __rootnf64 (_Float64 __x, long long int __y) noexcept (true);
-
-
- extern _Float64 rsqrtf64 (_Float64 __x) noexcept (true); extern _Float64 __rsqrtf64 (_Float64 __x) noexcept (true);
-
-
-
-
-
-
-extern _Float64 ceilf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fabsf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 floorf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fmodf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __fmodf64 (_Float64 __x, _Float64 __y) noexcept (true);
-# 252 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float64 copysignf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64 nanf64 (const char *__tagb) noexcept (true); extern _Float64 __nanf64 (const char *__tagb) noexcept (true);
-# 274 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float64 j0f64 (_Float64) noexcept (true); extern _Float64 __j0f64 (_Float64) noexcept (true);
-extern _Float64 j1f64 (_Float64) noexcept (true); extern _Float64 __j1f64 (_Float64) noexcept (true);
-extern _Float64 jnf64 (int, _Float64) noexcept (true); extern _Float64 __jnf64 (int, _Float64) noexcept (true);
-extern _Float64 y0f64 (_Float64) noexcept (true); extern _Float64 __y0f64 (_Float64) noexcept (true);
-extern _Float64 y1f64 (_Float64) noexcept (true); extern _Float64 __y1f64 (_Float64) noexcept (true);
-extern _Float64 ynf64 (int, _Float64) noexcept (true); extern _Float64 __ynf64 (int, _Float64) noexcept (true);
-
-
-
-
-
- extern _Float64 erff64 (_Float64) noexcept (true); extern _Float64 __erff64 (_Float64) noexcept (true);
- extern _Float64 erfcf64 (_Float64) noexcept (true); extern _Float64 __erfcf64 (_Float64) noexcept (true);
-extern _Float64 lgammaf64 (_Float64) noexcept (true); extern _Float64 __lgammaf64 (_Float64) noexcept (true);
-
-
-
-
-extern _Float64 tgammaf64 (_Float64) noexcept (true); extern _Float64 __tgammaf64 (_Float64) noexcept (true);
-# 306 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float64 lgammaf64_r (_Float64, int *__signgamp) noexcept (true); extern _Float64 __lgammaf64_r (_Float64, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern _Float64 rintf64 (_Float64 __x) noexcept (true); extern _Float64 __rintf64 (_Float64 __x) noexcept (true);
-
-
-extern _Float64 nextafterf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __nextafterf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-
-
-
-
-extern _Float64 nextdownf64 (_Float64 __x) noexcept (true); extern _Float64 __nextdownf64 (_Float64 __x) noexcept (true);
-
-extern _Float64 nextupf64 (_Float64 __x) noexcept (true); extern _Float64 __nextupf64 (_Float64 __x) noexcept (true);
-
-
-
-extern _Float64 remainderf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __remainderf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-
-extern _Float64 scalbnf64 (_Float64 __x, int __n) noexcept (true); extern _Float64 __scalbnf64 (_Float64 __x, int __n) noexcept (true);
-
-
-
-extern int ilogbf64 (_Float64 __x) noexcept (true); extern int __ilogbf64 (_Float64 __x) noexcept (true);
-
-
-
-
-extern long int llogbf64 (_Float64 __x) noexcept (true); extern long int __llogbf64 (_Float64 __x) noexcept (true);
-
-
-
-
-extern _Float64 scalblnf64 (_Float64 __x, long int __n) noexcept (true); extern _Float64 __scalblnf64 (_Float64 __x, long int __n) noexcept (true);
-
-
-
-extern _Float64 nearbyintf64 (_Float64 __x) noexcept (true); extern _Float64 __nearbyintf64 (_Float64 __x) noexcept (true);
-
-
-
-extern _Float64 roundf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float64 truncf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64 remquof64 (_Float64 __x, _Float64 __y, int *__quo) noexcept (true); extern _Float64 __remquof64 (_Float64 __x, _Float64 __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrintf64 (_Float64 __x) noexcept (true); extern long int __lrintf64 (_Float64 __x) noexcept (true);
-__extension__
-extern long long int llrintf64 (_Float64 __x) noexcept (true); extern long long int __llrintf64 (_Float64 __x) noexcept (true);
-
-
-
-extern long int lroundf64 (_Float64 __x) noexcept (true); extern long int __lroundf64 (_Float64 __x) noexcept (true);
-__extension__
-extern long long int llroundf64 (_Float64 __x) noexcept (true); extern long long int __llroundf64 (_Float64 __x) noexcept (true);
-
-
-
-extern _Float64 fdimf64 (_Float64 __x, _Float64 __y) noexcept (true); extern _Float64 __fdimf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-
-extern _Float64 fmaxf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float64 fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true); extern _Float64 __fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true);
-
-
-
-
-extern _Float64 roundevenf64 (_Float64 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float64 fromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern _Float64 __fromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern _Float64 ufromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern _Float64 __ufromfpf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float64 fromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern _Float64 __fromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float64 ufromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true); extern _Float64 __ufromfpxf64 (_Float64 __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalizef64 (_Float64 *__cx, const _Float64 *__x) noexcept (true);
-
-
-
-
-
-
-extern _Float64 fmaxmagf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminmagf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64 fmaximumf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimumf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fmaximum_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimum_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fmaximum_magf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimum_magf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fmaximum_mag_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64 fminimum_mag_numf64 (_Float64 __x, _Float64 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf64 (const _Float64 *__x, const _Float64 *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermagf64 (const _Float64 *__x, const _Float64 *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern _Float64 getpayloadf64 (const _Float64 *__x) noexcept (true); extern _Float64 __getpayloadf64 (const _Float64 *__x) noexcept (true);
-
-
-extern int setpayloadf64 (_Float64 *__x, _Float64 __payload) noexcept (true);
-
-
-extern int setpayloadsigf64 (_Float64 *__x, _Float64 __payload) noexcept (true);
-# 605 "/usr/include/math.h" 2 3 4
-# 618 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-helper-functions.h" 1 3 4
-# 20 "/usr/include/bits/mathcalls-helper-functions.h" 3 4
-extern int __fpclassifyf128 (_Float128 __value) noexcept (true)
-     __attribute__ ((__const__));
-
-
-extern int __signbitf128 (_Float128 __value) noexcept (true)
-     __attribute__ ((__const__));
-
-
-
-extern int __isinff128 (_Float128 __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __finitef128 (_Float128 __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __isnanf128 (_Float128 __value) noexcept (true)
-  __attribute__ ((__const__));
-
-
-extern int __iseqsigf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern int __issignalingf128 (_Float128 __value) noexcept (true)
-     __attribute__ ((__const__));
-# 619 "/usr/include/math.h" 2 3 4
-
-
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern _Float128 acosf128 (_Float128 __x) noexcept (true); extern _Float128 __acosf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 asinf128 (_Float128 __x) noexcept (true); extern _Float128 __asinf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 atanf128 (_Float128 __x) noexcept (true); extern _Float128 __atanf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 atan2f128 (_Float128 __y, _Float128 __x) noexcept (true); extern _Float128 __atan2f128 (_Float128 __y, _Float128 __x) noexcept (true);
-
-
- extern _Float128 cosf128 (_Float128 __x) noexcept (true); extern _Float128 __cosf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 sinf128 (_Float128 __x) noexcept (true); extern _Float128 __sinf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 tanf128 (_Float128 __x) noexcept (true); extern _Float128 __tanf128 (_Float128 __x) noexcept (true);
-
-
-
-extern _Float128 acospif128 (_Float128 __x) noexcept (true); extern _Float128 __acospif128 (_Float128 __x) noexcept (true);
- extern _Float128 acospif128 (_Float128 __x) noexcept (true); extern _Float128 __acospif128 (_Float128 __x) noexcept (true);
-
-extern _Float128 asinpif128 (_Float128 __x) noexcept (true); extern _Float128 __asinpif128 (_Float128 __x) noexcept (true);
- extern _Float128 asinpif128 (_Float128 __x) noexcept (true); extern _Float128 __asinpif128 (_Float128 __x) noexcept (true);
-
-extern _Float128 atanpif128 (_Float128 __x) noexcept (true); extern _Float128 __atanpif128 (_Float128 __x) noexcept (true);
- extern _Float128 atanpif128 (_Float128 __x) noexcept (true); extern _Float128 __atanpif128 (_Float128 __x) noexcept (true);
-
-extern _Float128 atan2pif128 (_Float128 __y, _Float128 __x) noexcept (true); extern _Float128 __atan2pif128 (_Float128 __y, _Float128 __x) noexcept (true);
- extern _Float128 atan2pif128 (_Float128 __y, _Float128 __x) noexcept (true); extern _Float128 __atan2pif128 (_Float128 __y, _Float128 __x) noexcept (true);
-
-
- extern _Float128 cospif128 (_Float128 __x) noexcept (true); extern _Float128 __cospif128 (_Float128 __x) noexcept (true);
-
- extern _Float128 sinpif128 (_Float128 __x) noexcept (true); extern _Float128 __sinpif128 (_Float128 __x) noexcept (true);
-
- extern _Float128 tanpif128 (_Float128 __x) noexcept (true); extern _Float128 __tanpif128 (_Float128 __x) noexcept (true);
-
-
-
-
-
- extern _Float128 coshf128 (_Float128 __x) noexcept (true); extern _Float128 __coshf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 sinhf128 (_Float128 __x) noexcept (true); extern _Float128 __sinhf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 tanhf128 (_Float128 __x) noexcept (true); extern _Float128 __tanhf128 (_Float128 __x) noexcept (true);
-
-
-
- extern void sincosf128 (_Float128 __x, _Float128 *__sinx, _Float128 *__cosx) noexcept (true); extern void __sincosf128 (_Float128 __x, _Float128 *__sinx, _Float128 *__cosx) noexcept (true);
-
-
-
-
-
- extern _Float128 acoshf128 (_Float128 __x) noexcept (true); extern _Float128 __acoshf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 asinhf128 (_Float128 __x) noexcept (true); extern _Float128 __asinhf128 (_Float128 __x) noexcept (true);
-
- extern _Float128 atanhf128 (_Float128 __x) noexcept (true); extern _Float128 __atanhf128 (_Float128 __x) noexcept (true);
-
-
-
-
-
- extern _Float128 expf128 (_Float128 __x) noexcept (true); extern _Float128 __expf128 (_Float128 __x) noexcept (true);
-
-
-extern _Float128 frexpf128 (_Float128 __x, int *__exponent) noexcept (true); extern _Float128 __frexpf128 (_Float128 __x, int *__exponent) noexcept (true);
-
-
-extern _Float128 ldexpf128 (_Float128 __x, int __exponent) noexcept (true); extern _Float128 __ldexpf128 (_Float128 __x, int __exponent) noexcept (true);
-
-
- extern _Float128 logf128 (_Float128 __x) noexcept (true); extern _Float128 __logf128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 log10f128 (_Float128 __x) noexcept (true); extern _Float128 __log10f128 (_Float128 __x) noexcept (true);
-
-
-extern _Float128 modff128 (_Float128 __x, _Float128 *__iptr) noexcept (true); extern _Float128 __modff128 (_Float128 __x, _Float128 *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
- extern _Float128 exp10f128 (_Float128 __x) noexcept (true); extern _Float128 __exp10f128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 exp2m1f128 (_Float128 __x) noexcept (true); extern _Float128 __exp2m1f128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 exp10m1f128 (_Float128 __x) noexcept (true); extern _Float128 __exp10m1f128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 log2p1f128 (_Float128 __x) noexcept (true); extern _Float128 __log2p1f128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 log10p1f128 (_Float128 __x) noexcept (true); extern _Float128 __log10p1f128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 logp1f128 (_Float128 __x) noexcept (true); extern _Float128 __logp1f128 (_Float128 __x) noexcept (true);
-
-
-
-
- extern _Float128 expm1f128 (_Float128 __x) noexcept (true); extern _Float128 __expm1f128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 log1pf128 (_Float128 __x) noexcept (true); extern _Float128 __log1pf128 (_Float128 __x) noexcept (true);
-
-
-extern _Float128 logbf128 (_Float128 __x) noexcept (true); extern _Float128 __logbf128 (_Float128 __x) noexcept (true);
-
-
-
-
- extern _Float128 exp2f128 (_Float128 __x) noexcept (true); extern _Float128 __exp2f128 (_Float128 __x) noexcept (true);
-
-
- extern _Float128 log2f128 (_Float128 __x) noexcept (true); extern _Float128 __log2f128 (_Float128 __x) noexcept (true);
-
-
-
-
-
-
- extern _Float128 powf128 (_Float128 __x, _Float128 __y) noexcept (true); extern _Float128 __powf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float128 sqrtf128 (_Float128 __x) noexcept (true); extern _Float128 __sqrtf128 (_Float128 __x) noexcept (true);
-
-
-
- extern _Float128 hypotf128 (_Float128 __x, _Float128 __y) noexcept (true); extern _Float128 __hypotf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-
-
- extern _Float128 cbrtf128 (_Float128 __x) noexcept (true); extern _Float128 __cbrtf128 (_Float128 __x) noexcept (true);
-
-
-
-
-extern _Float128 compoundnf128 (_Float128 __x, long long int __y) noexcept (true); extern _Float128 __compoundnf128 (_Float128 __x, long long int __y) noexcept (true);
-
-
-extern _Float128 pownf128 (_Float128 __x, long long int __y) noexcept (true); extern _Float128 __pownf128 (_Float128 __x, long long int __y) noexcept (true);
-
-
-extern _Float128 powrf128 (_Float128 __x, _Float128 __y) noexcept (true); extern _Float128 __powrf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float128 rootnf128 (_Float128 __x, long long int __y) noexcept (true); extern _Float128 __rootnf128 (_Float128 __x, long long int __y) noexcept (true);
-
-
- extern _Float128 rsqrtf128 (_Float128 __x) noexcept (true); extern _Float128 __rsqrtf128 (_Float128 __x) noexcept (true);
-
-
-
-
-
-
-extern _Float128 ceilf128 (_Float128 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fabsf128 (_Float128 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 floorf128 (_Float128 __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fmodf128 (_Float128 __x, _Float128 __y) noexcept (true); extern _Float128 __fmodf128 (_Float128 __x, _Float128 __y) noexcept (true);
-# 252 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float128 copysignf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float128 nanf128 (const char *__tagb) noexcept (true); extern _Float128 __nanf128 (const char *__tagb) noexcept (true);
-# 274 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float128 j0f128 (_Float128) noexcept (true); extern _Float128 __j0f128 (_Float128) noexcept (true);
-extern _Float128 j1f128 (_Float128) noexcept (true); extern _Float128 __j1f128 (_Float128) noexcept (true);
-extern _Float128 jnf128 (int, _Float128) noexcept (true); extern _Float128 __jnf128 (int, _Float128) noexcept (true);
-extern _Float128 y0f128 (_Float128) noexcept (true); extern _Float128 __y0f128 (_Float128) noexcept (true);
-extern _Float128 y1f128 (_Float128) noexcept (true); extern _Float128 __y1f128 (_Float128) noexcept (true);
-extern _Float128 ynf128 (int, _Float128) noexcept (true); extern _Float128 __ynf128 (int, _Float128) noexcept (true);
-
-
-
-
-
- extern _Float128 erff128 (_Float128) noexcept (true); extern _Float128 __erff128 (_Float128) noexcept (true);
- extern _Float128 erfcf128 (_Float128) noexcept (true); extern _Float128 __erfcf128 (_Float128) noexcept (true);
-extern _Float128 lgammaf128 (_Float128) noexcept (true); extern _Float128 __lgammaf128 (_Float128) noexcept (true);
-
-
-
-
-extern _Float128 tgammaf128 (_Float128) noexcept (true); extern _Float128 __tgammaf128 (_Float128) noexcept (true);
-# 306 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float128 lgammaf128_r (_Float128, int *__signgamp) noexcept (true); extern _Float128 __lgammaf128_r (_Float128, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern _Float128 rintf128 (_Float128 __x) noexcept (true); extern _Float128 __rintf128 (_Float128 __x) noexcept (true);
-
-
-extern _Float128 nextafterf128 (_Float128 __x, _Float128 __y) noexcept (true); extern _Float128 __nextafterf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-
-
-
-
-extern _Float128 nextdownf128 (_Float128 __x) noexcept (true); extern _Float128 __nextdownf128 (_Float128 __x) noexcept (true);
-
-extern _Float128 nextupf128 (_Float128 __x) noexcept (true); extern _Float128 __nextupf128 (_Float128 __x) noexcept (true);
-
-
-
-extern _Float128 remainderf128 (_Float128 __x, _Float128 __y) noexcept (true); extern _Float128 __remainderf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-
-extern _Float128 scalbnf128 (_Float128 __x, int __n) noexcept (true); extern _Float128 __scalbnf128 (_Float128 __x, int __n) noexcept (true);
-
-
-
-extern int ilogbf128 (_Float128 __x) noexcept (true); extern int __ilogbf128 (_Float128 __x) noexcept (true);
-
-
-
-
-extern long int llogbf128 (_Float128 __x) noexcept (true); extern long int __llogbf128 (_Float128 __x) noexcept (true);
-
-
-
-
-extern _Float128 scalblnf128 (_Float128 __x, long int __n) noexcept (true); extern _Float128 __scalblnf128 (_Float128 __x, long int __n) noexcept (true);
-
-
-
-extern _Float128 nearbyintf128 (_Float128 __x) noexcept (true); extern _Float128 __nearbyintf128 (_Float128 __x) noexcept (true);
-
-
-
-extern _Float128 roundf128 (_Float128 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float128 truncf128 (_Float128 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float128 remquof128 (_Float128 __x, _Float128 __y, int *__quo) noexcept (true); extern _Float128 __remquof128 (_Float128 __x, _Float128 __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrintf128 (_Float128 __x) noexcept (true); extern long int __lrintf128 (_Float128 __x) noexcept (true);
-__extension__
-extern long long int llrintf128 (_Float128 __x) noexcept (true); extern long long int __llrintf128 (_Float128 __x) noexcept (true);
-
-
-
-extern long int lroundf128 (_Float128 __x) noexcept (true); extern long int __lroundf128 (_Float128 __x) noexcept (true);
-__extension__
-extern long long int llroundf128 (_Float128 __x) noexcept (true); extern long long int __llroundf128 (_Float128 __x) noexcept (true);
-
-
-
-extern _Float128 fdimf128 (_Float128 __x, _Float128 __y) noexcept (true); extern _Float128 __fdimf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-
-extern _Float128 fmaxf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fminf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float128 fmaf128 (_Float128 __x, _Float128 __y, _Float128 __z) noexcept (true); extern _Float128 __fmaf128 (_Float128 __x, _Float128 __y, _Float128 __z) noexcept (true);
-
-
-
-
-extern _Float128 roundevenf128 (_Float128 __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float128 fromfpf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true); extern _Float128 __fromfpf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern _Float128 ufromfpf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true); extern _Float128 __ufromfpf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float128 fromfpxf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true); extern _Float128 __fromfpxf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float128 ufromfpxf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true); extern _Float128 __ufromfpxf128 (_Float128 __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalizef128 (_Float128 *__cx, const _Float128 *__x) noexcept (true);
-
-
-
-
-
-
-extern _Float128 fmaxmagf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fminmagf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float128 fmaximumf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fminimumf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fmaximum_numf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fminimum_numf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fmaximum_magf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fminimum_magf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fmaximum_mag_numf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float128 fminimum_mag_numf128 (_Float128 __x, _Float128 __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf128 (const _Float128 *__x, const _Float128 *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermagf128 (const _Float128 *__x, const _Float128 *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern _Float128 getpayloadf128 (const _Float128 *__x) noexcept (true); extern _Float128 __getpayloadf128 (const _Float128 *__x) noexcept (true);
-
-
-extern int setpayloadf128 (_Float128 *__x, _Float128 __payload) noexcept (true);
-
-
-extern int setpayloadsigf128 (_Float128 *__x, _Float128 __payload) noexcept (true);
-# 622 "/usr/include/math.h" 2 3 4
-# 638 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern _Float32x acosf32x (_Float32x __x) noexcept (true); extern _Float32x __acosf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x asinf32x (_Float32x __x) noexcept (true); extern _Float32x __asinf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x atanf32x (_Float32x __x) noexcept (true); extern _Float32x __atanf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x atan2f32x (_Float32x __y, _Float32x __x) noexcept (true); extern _Float32x __atan2f32x (_Float32x __y, _Float32x __x) noexcept (true);
-
-
- extern _Float32x cosf32x (_Float32x __x) noexcept (true); extern _Float32x __cosf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x sinf32x (_Float32x __x) noexcept (true); extern _Float32x __sinf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x tanf32x (_Float32x __x) noexcept (true); extern _Float32x __tanf32x (_Float32x __x) noexcept (true);
-
-
-
-extern _Float32x acospif32x (_Float32x __x) noexcept (true); extern _Float32x __acospif32x (_Float32x __x) noexcept (true);
- extern _Float32x acospif32x (_Float32x __x) noexcept (true); extern _Float32x __acospif32x (_Float32x __x) noexcept (true);
-
-extern _Float32x asinpif32x (_Float32x __x) noexcept (true); extern _Float32x __asinpif32x (_Float32x __x) noexcept (true);
- extern _Float32x asinpif32x (_Float32x __x) noexcept (true); extern _Float32x __asinpif32x (_Float32x __x) noexcept (true);
-
-extern _Float32x atanpif32x (_Float32x __x) noexcept (true); extern _Float32x __atanpif32x (_Float32x __x) noexcept (true);
- extern _Float32x atanpif32x (_Float32x __x) noexcept (true); extern _Float32x __atanpif32x (_Float32x __x) noexcept (true);
-
-extern _Float32x atan2pif32x (_Float32x __y, _Float32x __x) noexcept (true); extern _Float32x __atan2pif32x (_Float32x __y, _Float32x __x) noexcept (true);
- extern _Float32x atan2pif32x (_Float32x __y, _Float32x __x) noexcept (true); extern _Float32x __atan2pif32x (_Float32x __y, _Float32x __x) noexcept (true);
-
-
- extern _Float32x cospif32x (_Float32x __x) noexcept (true); extern _Float32x __cospif32x (_Float32x __x) noexcept (true);
-
- extern _Float32x sinpif32x (_Float32x __x) noexcept (true); extern _Float32x __sinpif32x (_Float32x __x) noexcept (true);
-
- extern _Float32x tanpif32x (_Float32x __x) noexcept (true); extern _Float32x __tanpif32x (_Float32x __x) noexcept (true);
-
-
-
-
-
- extern _Float32x coshf32x (_Float32x __x) noexcept (true); extern _Float32x __coshf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x sinhf32x (_Float32x __x) noexcept (true); extern _Float32x __sinhf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x tanhf32x (_Float32x __x) noexcept (true); extern _Float32x __tanhf32x (_Float32x __x) noexcept (true);
-
-
-
- extern void sincosf32x (_Float32x __x, _Float32x *__sinx, _Float32x *__cosx) noexcept (true); extern void __sincosf32x (_Float32x __x, _Float32x *__sinx, _Float32x *__cosx) noexcept (true);
-
-
-
-
-
- extern _Float32x acoshf32x (_Float32x __x) noexcept (true); extern _Float32x __acoshf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x asinhf32x (_Float32x __x) noexcept (true); extern _Float32x __asinhf32x (_Float32x __x) noexcept (true);
-
- extern _Float32x atanhf32x (_Float32x __x) noexcept (true); extern _Float32x __atanhf32x (_Float32x __x) noexcept (true);
-
-
-
-
-
- extern _Float32x expf32x (_Float32x __x) noexcept (true); extern _Float32x __expf32x (_Float32x __x) noexcept (true);
-
-
-extern _Float32x frexpf32x (_Float32x __x, int *__exponent) noexcept (true); extern _Float32x __frexpf32x (_Float32x __x, int *__exponent) noexcept (true);
-
-
-extern _Float32x ldexpf32x (_Float32x __x, int __exponent) noexcept (true); extern _Float32x __ldexpf32x (_Float32x __x, int __exponent) noexcept (true);
-
-
- extern _Float32x logf32x (_Float32x __x) noexcept (true); extern _Float32x __logf32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x log10f32x (_Float32x __x) noexcept (true); extern _Float32x __log10f32x (_Float32x __x) noexcept (true);
-
-
-extern _Float32x modff32x (_Float32x __x, _Float32x *__iptr) noexcept (true); extern _Float32x __modff32x (_Float32x __x, _Float32x *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
- extern _Float32x exp10f32x (_Float32x __x) noexcept (true); extern _Float32x __exp10f32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x exp2m1f32x (_Float32x __x) noexcept (true); extern _Float32x __exp2m1f32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x exp10m1f32x (_Float32x __x) noexcept (true); extern _Float32x __exp10m1f32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x log2p1f32x (_Float32x __x) noexcept (true); extern _Float32x __log2p1f32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x log10p1f32x (_Float32x __x) noexcept (true); extern _Float32x __log10p1f32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x logp1f32x (_Float32x __x) noexcept (true); extern _Float32x __logp1f32x (_Float32x __x) noexcept (true);
-
-
-
-
- extern _Float32x expm1f32x (_Float32x __x) noexcept (true); extern _Float32x __expm1f32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x log1pf32x (_Float32x __x) noexcept (true); extern _Float32x __log1pf32x (_Float32x __x) noexcept (true);
-
-
-extern _Float32x logbf32x (_Float32x __x) noexcept (true); extern _Float32x __logbf32x (_Float32x __x) noexcept (true);
-
-
-
-
- extern _Float32x exp2f32x (_Float32x __x) noexcept (true); extern _Float32x __exp2f32x (_Float32x __x) noexcept (true);
-
-
- extern _Float32x log2f32x (_Float32x __x) noexcept (true); extern _Float32x __log2f32x (_Float32x __x) noexcept (true);
-
-
-
-
-
-
- extern _Float32x powf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __powf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-extern _Float32x sqrtf32x (_Float32x __x) noexcept (true); extern _Float32x __sqrtf32x (_Float32x __x) noexcept (true);
-
-
-
- extern _Float32x hypotf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __hypotf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-
-
- extern _Float32x cbrtf32x (_Float32x __x) noexcept (true); extern _Float32x __cbrtf32x (_Float32x __x) noexcept (true);
-
-
-
-
-extern _Float32x compoundnf32x (_Float32x __x, long long int __y) noexcept (true); extern _Float32x __compoundnf32x (_Float32x __x, long long int __y) noexcept (true);
-
-
-extern _Float32x pownf32x (_Float32x __x, long long int __y) noexcept (true); extern _Float32x __pownf32x (_Float32x __x, long long int __y) noexcept (true);
-
-
-extern _Float32x powrf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __powrf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-extern _Float32x rootnf32x (_Float32x __x, long long int __y) noexcept (true); extern _Float32x __rootnf32x (_Float32x __x, long long int __y) noexcept (true);
-
-
- extern _Float32x rsqrtf32x (_Float32x __x) noexcept (true); extern _Float32x __rsqrtf32x (_Float32x __x) noexcept (true);
-
-
-
-
-
-
-extern _Float32x ceilf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fabsf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x floorf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fmodf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __fmodf32x (_Float32x __x, _Float32x __y) noexcept (true);
-# 252 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float32x copysignf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32x nanf32x (const char *__tagb) noexcept (true); extern _Float32x __nanf32x (const char *__tagb) noexcept (true);
-# 274 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float32x j0f32x (_Float32x) noexcept (true); extern _Float32x __j0f32x (_Float32x) noexcept (true);
-extern _Float32x j1f32x (_Float32x) noexcept (true); extern _Float32x __j1f32x (_Float32x) noexcept (true);
-extern _Float32x jnf32x (int, _Float32x) noexcept (true); extern _Float32x __jnf32x (int, _Float32x) noexcept (true);
-extern _Float32x y0f32x (_Float32x) noexcept (true); extern _Float32x __y0f32x (_Float32x) noexcept (true);
-extern _Float32x y1f32x (_Float32x) noexcept (true); extern _Float32x __y1f32x (_Float32x) noexcept (true);
-extern _Float32x ynf32x (int, _Float32x) noexcept (true); extern _Float32x __ynf32x (int, _Float32x) noexcept (true);
-
-
-
-
-
- extern _Float32x erff32x (_Float32x) noexcept (true); extern _Float32x __erff32x (_Float32x) noexcept (true);
- extern _Float32x erfcf32x (_Float32x) noexcept (true); extern _Float32x __erfcf32x (_Float32x) noexcept (true);
-extern _Float32x lgammaf32x (_Float32x) noexcept (true); extern _Float32x __lgammaf32x (_Float32x) noexcept (true);
-
-
-
-
-extern _Float32x tgammaf32x (_Float32x) noexcept (true); extern _Float32x __tgammaf32x (_Float32x) noexcept (true);
-# 306 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float32x lgammaf32x_r (_Float32x, int *__signgamp) noexcept (true); extern _Float32x __lgammaf32x_r (_Float32x, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern _Float32x rintf32x (_Float32x __x) noexcept (true); extern _Float32x __rintf32x (_Float32x __x) noexcept (true);
-
-
-extern _Float32x nextafterf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __nextafterf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-
-
-
-
-extern _Float32x nextdownf32x (_Float32x __x) noexcept (true); extern _Float32x __nextdownf32x (_Float32x __x) noexcept (true);
-
-extern _Float32x nextupf32x (_Float32x __x) noexcept (true); extern _Float32x __nextupf32x (_Float32x __x) noexcept (true);
-
-
-
-extern _Float32x remainderf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __remainderf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-
-extern _Float32x scalbnf32x (_Float32x __x, int __n) noexcept (true); extern _Float32x __scalbnf32x (_Float32x __x, int __n) noexcept (true);
-
-
-
-extern int ilogbf32x (_Float32x __x) noexcept (true); extern int __ilogbf32x (_Float32x __x) noexcept (true);
-
-
-
-
-extern long int llogbf32x (_Float32x __x) noexcept (true); extern long int __llogbf32x (_Float32x __x) noexcept (true);
-
-
-
-
-extern _Float32x scalblnf32x (_Float32x __x, long int __n) noexcept (true); extern _Float32x __scalblnf32x (_Float32x __x, long int __n) noexcept (true);
-
-
-
-extern _Float32x nearbyintf32x (_Float32x __x) noexcept (true); extern _Float32x __nearbyintf32x (_Float32x __x) noexcept (true);
-
-
-
-extern _Float32x roundf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float32x truncf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32x remquof32x (_Float32x __x, _Float32x __y, int *__quo) noexcept (true); extern _Float32x __remquof32x (_Float32x __x, _Float32x __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrintf32x (_Float32x __x) noexcept (true); extern long int __lrintf32x (_Float32x __x) noexcept (true);
-__extension__
-extern long long int llrintf32x (_Float32x __x) noexcept (true); extern long long int __llrintf32x (_Float32x __x) noexcept (true);
-
-
-
-extern long int lroundf32x (_Float32x __x) noexcept (true); extern long int __lroundf32x (_Float32x __x) noexcept (true);
-__extension__
-extern long long int llroundf32x (_Float32x __x) noexcept (true); extern long long int __llroundf32x (_Float32x __x) noexcept (true);
-
-
-
-extern _Float32x fdimf32x (_Float32x __x, _Float32x __y) noexcept (true); extern _Float32x __fdimf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-
-extern _Float32x fmaxf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float32x fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) noexcept (true); extern _Float32x __fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) noexcept (true);
-
-
-
-
-extern _Float32x roundevenf32x (_Float32x __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float32x fromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern _Float32x __fromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern _Float32x ufromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern _Float32x __ufromfpf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float32x fromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern _Float32x __fromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float32x ufromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true); extern _Float32x __ufromfpxf32x (_Float32x __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalizef32x (_Float32x *__cx, const _Float32x *__x) noexcept (true);
-
-
-
-
-
-
-extern _Float32x fmaxmagf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminmagf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float32x fmaximumf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimumf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fmaximum_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimum_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fmaximum_magf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimum_magf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fmaximum_mag_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float32x fminimum_mag_numf32x (_Float32x __x, _Float32x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf32x (const _Float32x *__x, const _Float32x *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermagf32x (const _Float32x *__x, const _Float32x *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern _Float32x getpayloadf32x (const _Float32x *__x) noexcept (true); extern _Float32x __getpayloadf32x (const _Float32x *__x) noexcept (true);
-
-
-extern int setpayloadf32x (_Float32x *__x, _Float32x __payload) noexcept (true);
-
-
-extern int setpayloadsigf32x (_Float32x *__x, _Float32x __payload) noexcept (true);
-# 639 "/usr/include/math.h" 2 3 4
-# 655 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls.h" 1 3 4
-# 53 "/usr/include/bits/mathcalls.h" 3 4
- extern _Float64x acosf64x (_Float64x __x) noexcept (true); extern _Float64x __acosf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x asinf64x (_Float64x __x) noexcept (true); extern _Float64x __asinf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x atanf64x (_Float64x __x) noexcept (true); extern _Float64x __atanf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x atan2f64x (_Float64x __y, _Float64x __x) noexcept (true); extern _Float64x __atan2f64x (_Float64x __y, _Float64x __x) noexcept (true);
-
-
- extern _Float64x cosf64x (_Float64x __x) noexcept (true); extern _Float64x __cosf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x sinf64x (_Float64x __x) noexcept (true); extern _Float64x __sinf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x tanf64x (_Float64x __x) noexcept (true); extern _Float64x __tanf64x (_Float64x __x) noexcept (true);
-
-
-
-extern _Float64x acospif64x (_Float64x __x) noexcept (true); extern _Float64x __acospif64x (_Float64x __x) noexcept (true);
- extern _Float64x acospif64x (_Float64x __x) noexcept (true); extern _Float64x __acospif64x (_Float64x __x) noexcept (true);
-
-extern _Float64x asinpif64x (_Float64x __x) noexcept (true); extern _Float64x __asinpif64x (_Float64x __x) noexcept (true);
- extern _Float64x asinpif64x (_Float64x __x) noexcept (true); extern _Float64x __asinpif64x (_Float64x __x) noexcept (true);
-
-extern _Float64x atanpif64x (_Float64x __x) noexcept (true); extern _Float64x __atanpif64x (_Float64x __x) noexcept (true);
- extern _Float64x atanpif64x (_Float64x __x) noexcept (true); extern _Float64x __atanpif64x (_Float64x __x) noexcept (true);
-
-extern _Float64x atan2pif64x (_Float64x __y, _Float64x __x) noexcept (true); extern _Float64x __atan2pif64x (_Float64x __y, _Float64x __x) noexcept (true);
- extern _Float64x atan2pif64x (_Float64x __y, _Float64x __x) noexcept (true); extern _Float64x __atan2pif64x (_Float64x __y, _Float64x __x) noexcept (true);
-
-
- extern _Float64x cospif64x (_Float64x __x) noexcept (true); extern _Float64x __cospif64x (_Float64x __x) noexcept (true);
-
- extern _Float64x sinpif64x (_Float64x __x) noexcept (true); extern _Float64x __sinpif64x (_Float64x __x) noexcept (true);
-
- extern _Float64x tanpif64x (_Float64x __x) noexcept (true); extern _Float64x __tanpif64x (_Float64x __x) noexcept (true);
-
-
-
-
-
- extern _Float64x coshf64x (_Float64x __x) noexcept (true); extern _Float64x __coshf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x sinhf64x (_Float64x __x) noexcept (true); extern _Float64x __sinhf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x tanhf64x (_Float64x __x) noexcept (true); extern _Float64x __tanhf64x (_Float64x __x) noexcept (true);
-
-
-
- extern void sincosf64x (_Float64x __x, _Float64x *__sinx, _Float64x *__cosx) noexcept (true); extern void __sincosf64x (_Float64x __x, _Float64x *__sinx, _Float64x *__cosx) noexcept (true);
-
-
-
-
-
- extern _Float64x acoshf64x (_Float64x __x) noexcept (true); extern _Float64x __acoshf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x asinhf64x (_Float64x __x) noexcept (true); extern _Float64x __asinhf64x (_Float64x __x) noexcept (true);
-
- extern _Float64x atanhf64x (_Float64x __x) noexcept (true); extern _Float64x __atanhf64x (_Float64x __x) noexcept (true);
-
-
-
-
-
- extern _Float64x expf64x (_Float64x __x) noexcept (true); extern _Float64x __expf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float64x frexpf64x (_Float64x __x, int *__exponent) noexcept (true); extern _Float64x __frexpf64x (_Float64x __x, int *__exponent) noexcept (true);
-
-
-extern _Float64x ldexpf64x (_Float64x __x, int __exponent) noexcept (true); extern _Float64x __ldexpf64x (_Float64x __x, int __exponent) noexcept (true);
-
-
- extern _Float64x logf64x (_Float64x __x) noexcept (true); extern _Float64x __logf64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x log10f64x (_Float64x __x) noexcept (true); extern _Float64x __log10f64x (_Float64x __x) noexcept (true);
-
-
-extern _Float64x modff64x (_Float64x __x, _Float64x *__iptr) noexcept (true); extern _Float64x __modff64x (_Float64x __x, _Float64x *__iptr) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
- extern _Float64x exp10f64x (_Float64x __x) noexcept (true); extern _Float64x __exp10f64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x exp2m1f64x (_Float64x __x) noexcept (true); extern _Float64x __exp2m1f64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x exp10m1f64x (_Float64x __x) noexcept (true); extern _Float64x __exp10m1f64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x log2p1f64x (_Float64x __x) noexcept (true); extern _Float64x __log2p1f64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x log10p1f64x (_Float64x __x) noexcept (true); extern _Float64x __log10p1f64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x logp1f64x (_Float64x __x) noexcept (true); extern _Float64x __logp1f64x (_Float64x __x) noexcept (true);
-
-
-
-
- extern _Float64x expm1f64x (_Float64x __x) noexcept (true); extern _Float64x __expm1f64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x log1pf64x (_Float64x __x) noexcept (true); extern _Float64x __log1pf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float64x logbf64x (_Float64x __x) noexcept (true); extern _Float64x __logbf64x (_Float64x __x) noexcept (true);
-
-
-
-
- extern _Float64x exp2f64x (_Float64x __x) noexcept (true); extern _Float64x __exp2f64x (_Float64x __x) noexcept (true);
-
-
- extern _Float64x log2f64x (_Float64x __x) noexcept (true); extern _Float64x __log2f64x (_Float64x __x) noexcept (true);
-
-
-
-
-
-
- extern _Float64x powf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __powf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64x sqrtf64x (_Float64x __x) noexcept (true); extern _Float64x __sqrtf64x (_Float64x __x) noexcept (true);
-
-
-
- extern _Float64x hypotf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __hypotf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-
-
- extern _Float64x cbrtf64x (_Float64x __x) noexcept (true); extern _Float64x __cbrtf64x (_Float64x __x) noexcept (true);
-
-
-
-
-extern _Float64x compoundnf64x (_Float64x __x, long long int __y) noexcept (true); extern _Float64x __compoundnf64x (_Float64x __x, long long int __y) noexcept (true);
-
-
-extern _Float64x pownf64x (_Float64x __x, long long int __y) noexcept (true); extern _Float64x __pownf64x (_Float64x __x, long long int __y) noexcept (true);
-
-
-extern _Float64x powrf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __powrf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64x rootnf64x (_Float64x __x, long long int __y) noexcept (true); extern _Float64x __rootnf64x (_Float64x __x, long long int __y) noexcept (true);
-
-
- extern _Float64x rsqrtf64x (_Float64x __x) noexcept (true); extern _Float64x __rsqrtf64x (_Float64x __x) noexcept (true);
-
-
-
-
-
-
-extern _Float64x ceilf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fabsf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x floorf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fmodf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __fmodf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 252 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float64x copysignf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64x nanf64x (const char *__tagb) noexcept (true); extern _Float64x __nanf64x (const char *__tagb) noexcept (true);
-# 274 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float64x j0f64x (_Float64x) noexcept (true); extern _Float64x __j0f64x (_Float64x) noexcept (true);
-extern _Float64x j1f64x (_Float64x) noexcept (true); extern _Float64x __j1f64x (_Float64x) noexcept (true);
-extern _Float64x jnf64x (int, _Float64x) noexcept (true); extern _Float64x __jnf64x (int, _Float64x) noexcept (true);
-extern _Float64x y0f64x (_Float64x) noexcept (true); extern _Float64x __y0f64x (_Float64x) noexcept (true);
-extern _Float64x y1f64x (_Float64x) noexcept (true); extern _Float64x __y1f64x (_Float64x) noexcept (true);
-extern _Float64x ynf64x (int, _Float64x) noexcept (true); extern _Float64x __ynf64x (int, _Float64x) noexcept (true);
-
-
-
-
-
- extern _Float64x erff64x (_Float64x) noexcept (true); extern _Float64x __erff64x (_Float64x) noexcept (true);
- extern _Float64x erfcf64x (_Float64x) noexcept (true); extern _Float64x __erfcf64x (_Float64x) noexcept (true);
-extern _Float64x lgammaf64x (_Float64x) noexcept (true); extern _Float64x __lgammaf64x (_Float64x) noexcept (true);
-
-
-
-
-extern _Float64x tgammaf64x (_Float64x) noexcept (true); extern _Float64x __tgammaf64x (_Float64x) noexcept (true);
-# 306 "/usr/include/bits/mathcalls.h" 3 4
-extern _Float64x lgammaf64x_r (_Float64x, int *__signgamp) noexcept (true); extern _Float64x __lgammaf64x_r (_Float64x, int *__signgamp) noexcept (true);
-
-
-
-
-
-
-extern _Float64x rintf64x (_Float64x __x) noexcept (true); extern _Float64x __rintf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float64x nextafterf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __nextafterf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-
-
-
-
-extern _Float64x nextdownf64x (_Float64x __x) noexcept (true); extern _Float64x __nextdownf64x (_Float64x __x) noexcept (true);
-
-extern _Float64x nextupf64x (_Float64x __x) noexcept (true); extern _Float64x __nextupf64x (_Float64x __x) noexcept (true);
-
-
-
-extern _Float64x remainderf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __remainderf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-
-extern _Float64x scalbnf64x (_Float64x __x, int __n) noexcept (true); extern _Float64x __scalbnf64x (_Float64x __x, int __n) noexcept (true);
-
-
-
-extern int ilogbf64x (_Float64x __x) noexcept (true); extern int __ilogbf64x (_Float64x __x) noexcept (true);
-
-
-
-
-extern long int llogbf64x (_Float64x __x) noexcept (true); extern long int __llogbf64x (_Float64x __x) noexcept (true);
-
-
-
-
-extern _Float64x scalblnf64x (_Float64x __x, long int __n) noexcept (true); extern _Float64x __scalblnf64x (_Float64x __x, long int __n) noexcept (true);
-
-
-
-extern _Float64x nearbyintf64x (_Float64x __x) noexcept (true); extern _Float64x __nearbyintf64x (_Float64x __x) noexcept (true);
-
-
-
-extern _Float64x roundf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float64x truncf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64x remquof64x (_Float64x __x, _Float64x __y, int *__quo) noexcept (true); extern _Float64x __remquof64x (_Float64x __x, _Float64x __y, int *__quo) noexcept (true);
-
-
-
-
-
-
-extern long int lrintf64x (_Float64x __x) noexcept (true); extern long int __lrintf64x (_Float64x __x) noexcept (true);
-__extension__
-extern long long int llrintf64x (_Float64x __x) noexcept (true); extern long long int __llrintf64x (_Float64x __x) noexcept (true);
-
-
-
-extern long int lroundf64x (_Float64x __x) noexcept (true); extern long int __lroundf64x (_Float64x __x) noexcept (true);
-__extension__
-extern long long int llroundf64x (_Float64x __x) noexcept (true); extern long long int __llroundf64x (_Float64x __x) noexcept (true);
-
-
-
-extern _Float64x fdimf64x (_Float64x __x, _Float64x __y) noexcept (true); extern _Float64x __fdimf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-
-extern _Float64x fmaxf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float64x fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true); extern _Float64x __fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
-
-
-
-
-extern _Float64x roundevenf64x (_Float64x __x) noexcept (true) __attribute__ ((__const__));
-
-
-
-extern _Float64x fromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern _Float64x __fromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-extern _Float64x ufromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern _Float64x __ufromfpf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float64x fromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern _Float64x __fromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
-
-
-
-
-extern _Float64x ufromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true); extern _Float64x __ufromfpxf64x (_Float64x __x, int __round, unsigned int __width) noexcept (true);
-
-
-extern int canonicalizef64x (_Float64x *__cx, const _Float64x *__x) noexcept (true);
-
-
-
-
-
-
-extern _Float64x fmaxmagf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminmagf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern _Float64x fmaximumf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimumf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fmaximum_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimum_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fmaximum_magf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimum_magf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fmaximum_mag_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-extern _Float64x fminimum_mag_numf64x (_Float64x __x, _Float64x __y) noexcept (true) __attribute__ ((__const__));
-
-
-
-
-extern int totalorderf64x (const _Float64x *__x, const _Float64x *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern int totalordermagf64x (const _Float64x *__x, const _Float64x *__y) noexcept (true)
-
-     __attribute__ ((__pure__));
-
-
-extern _Float64x getpayloadf64x (const _Float64x *__x) noexcept (true); extern _Float64x __getpayloadf64x (const _Float64x *__x) noexcept (true);
-
-
-extern int setpayloadf64x (_Float64x *__x, _Float64x __payload) noexcept (true);
-
-
-extern int setpayloadsigf64x (_Float64x *__x, _Float64x __payload) noexcept (true);
-# 656 "/usr/include/math.h" 2 3 4
-# 703 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern float fadd (double __x, double __y) noexcept (true);
-
-
-extern float fdiv (double __x, double __y) noexcept (true);
-
-
-extern float ffma (double __x, double __y, double __z) noexcept (true);
-
-
-extern float fmul (double __x, double __y) noexcept (true);
-
-
-extern float fsqrt (double __x) noexcept (true);
-
-
-extern float fsub (double __x, double __y) noexcept (true);
-# 704 "/usr/include/math.h" 2 3 4
-# 724 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern float faddl (long double __x, long double __y) noexcept (true);
-
-
-extern float fdivl (long double __x, long double __y) noexcept (true);
-
-
-extern float ffmal (long double __x, long double __y, long double __z) noexcept (true);
-
-
-extern float fmull (long double __x, long double __y) noexcept (true);
-
-
-extern float fsqrtl (long double __x) noexcept (true);
-
-
-extern float fsubl (long double __x, long double __y) noexcept (true);
-# 725 "/usr/include/math.h" 2 3 4
-# 753 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern double daddl (long double __x, long double __y) noexcept (true);
-
-
-extern double ddivl (long double __x, long double __y) noexcept (true);
-
-
-extern double dfmal (long double __x, long double __y, long double __z) noexcept (true);
-
-
-extern double dmull (long double __x, long double __y) noexcept (true);
-
-
-extern double dsqrtl (long double __x) noexcept (true);
-
-
-extern double dsubl (long double __x, long double __y) noexcept (true);
-# 754 "/usr/include/math.h" 2 3 4
-# 834 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float32 f32addf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-extern _Float32 f32divf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-extern _Float32 f32fmaf32x (_Float32x __x, _Float32x __y, _Float32x __z) noexcept (true);
-
-
-extern _Float32 f32mulf32x (_Float32x __x, _Float32x __y) noexcept (true);
-
-
-extern _Float32 f32sqrtf32x (_Float32x __x) noexcept (true);
-
-
-extern _Float32 f32subf32x (_Float32x __x, _Float32x __y) noexcept (true);
-# 835 "/usr/include/math.h" 2 3 4
-# 844 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float32 f32addf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32 f32divf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32 f32fmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true);
-
-
-extern _Float32 f32mulf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32 f32sqrtf64 (_Float64 __x) noexcept (true);
-
-
-extern _Float32 f32subf64 (_Float64 __x, _Float64 __y) noexcept (true);
-# 845 "/usr/include/math.h" 2 3 4
-# 854 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float32 f32addf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32 f32divf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32 f32fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
-
-
-extern _Float32 f32mulf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32 f32sqrtf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float32 f32subf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 855 "/usr/include/math.h" 2 3 4
-# 864 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float32 f32addf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float32 f32divf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float32 f32fmaf128 (_Float128 __x, _Float128 __y, _Float128 __z) noexcept (true);
-
-
-extern _Float32 f32mulf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float32 f32sqrtf128 (_Float128 __x) noexcept (true);
-
-
-extern _Float32 f32subf128 (_Float128 __x, _Float128 __y) noexcept (true);
-# 865 "/usr/include/math.h" 2 3 4
-# 884 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float32x f32xaddf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32x f32xdivf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32x f32xfmaf64 (_Float64 __x, _Float64 __y, _Float64 __z) noexcept (true);
-
-
-extern _Float32x f32xmulf64 (_Float64 __x, _Float64 __y) noexcept (true);
-
-
-extern _Float32x f32xsqrtf64 (_Float64 __x) noexcept (true);
-
-
-extern _Float32x f32xsubf64 (_Float64 __x, _Float64 __y) noexcept (true);
-# 885 "/usr/include/math.h" 2 3 4
-# 894 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float32x f32xaddf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32x f32xdivf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32x f32xfmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
-
-
-extern _Float32x f32xmulf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float32x f32xsqrtf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float32x f32xsubf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 895 "/usr/include/math.h" 2 3 4
-# 904 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float32x f32xaddf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float32x f32xdivf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float32x f32xfmaf128 (_Float128 __x, _Float128 __y, _Float128 __z) noexcept (true);
-
-
-extern _Float32x f32xmulf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float32x f32xsqrtf128 (_Float128 __x) noexcept (true);
-
-
-extern _Float32x f32xsubf128 (_Float128 __x, _Float128 __y) noexcept (true);
-# 905 "/usr/include/math.h" 2 3 4
-# 924 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float64 f64addf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64 f64divf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64 f64fmaf64x (_Float64x __x, _Float64x __y, _Float64x __z) noexcept (true);
-
-
-extern _Float64 f64mulf64x (_Float64x __x, _Float64x __y) noexcept (true);
-
-
-extern _Float64 f64sqrtf64x (_Float64x __x) noexcept (true);
-
-
-extern _Float64 f64subf64x (_Float64x __x, _Float64x __y) noexcept (true);
-# 925 "/usr/include/math.h" 2 3 4
-# 934 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float64 f64addf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float64 f64divf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float64 f64fmaf128 (_Float128 __x, _Float128 __y, _Float128 __z) noexcept (true);
-
-
-extern _Float64 f64mulf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float64 f64sqrtf128 (_Float128 __x) noexcept (true);
-
-
-extern _Float64 f64subf128 (_Float128 __x, _Float128 __y) noexcept (true);
-# 935 "/usr/include/math.h" 2 3 4
-# 954 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/mathcalls-narrow.h" 1 3 4
-# 24 "/usr/include/bits/mathcalls-narrow.h" 3 4
-extern _Float64x f64xaddf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float64x f64xdivf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float64x f64xfmaf128 (_Float128 __x, _Float128 __y, _Float128 __z) noexcept (true);
-
-
-extern _Float64x f64xmulf128 (_Float128 __x, _Float128 __y) noexcept (true);
-
-
-extern _Float64x f64xsqrtf128 (_Float128 __x) noexcept (true);
-
-
-extern _Float64x f64xsubf128 (_Float128 __x, _Float128 __y) noexcept (true);
-# 955 "/usr/include/math.h" 2 3 4
-# 991 "/usr/include/math.h" 3 4
-extern int signgam;
-# 1071 "/usr/include/math.h" 3 4
-enum
-  {
-    FP_NAN =
-
-      0,
-    FP_INFINITE =
-
-      1,
-    FP_ZERO =
-
-      2,
-    FP_SUBNORMAL =
-
-      3,
-    FP_NORMAL =
-
-      4
-  };
-# 1192 "/usr/include/math.h" 3 4
-# 1 "/usr/include/bits/iscanonical.h" 1 3 4
-# 23 "/usr/include/bits/iscanonical.h" 3 4
-extern int __iscanonicall (long double __x)
-     noexcept (true) __attribute__ ((__const__));
-# 46 "/usr/include/bits/iscanonical.h" 3 4
-extern "C++" {
-inline int iscanonical (float __val) { return ((void) (__typeof (__val)) (__val), 1); }
-inline int iscanonical (double __val) { return ((void) (__typeof (__val)) (__val), 1); }
-inline int iscanonical (long double __val) { return __iscanonicall (__val); }
-
-inline int iscanonical (_Float128 __val) { return ((void) (__typeof (__val)) (__val), 1); }
-
-}
-# 1193 "/usr/include/math.h" 2 3 4
-# 1204 "/usr/include/math.h" 3 4
-extern "C++" {
-inline int issignaling (float __val) { return __issignalingf (__val); }
-inline int issignaling (double __val) { return __issignaling (__val); }
-inline int
-issignaling (long double __val)
-{
-
-
-
-  return __issignalingl (__val);
-
-}
-
-
-
-inline int issignaling (_Float128 __val) { return __issignalingf128 (__val); }
-
-}
-# 1235 "/usr/include/math.h" 3 4
-extern "C++" {
-# 1266 "/usr/include/math.h" 3 4
-template <class __T> inline bool
-iszero (__T __val)
-{
-  return __val == 0;
-}
-
-}
-# 1501 "/usr/include/math.h" 3 4
-extern "C++" {
-template<typename> struct __iseqsig_type;
-
-template<> struct __iseqsig_type<float>
-{
-  static int __call (float __x, float __y) throw ()
-  {
-    return __iseqsigf (__x, __y);
-  }
-};
-
-template<> struct __iseqsig_type<double>
-{
-  static int __call (double __x, double __y) throw ()
-  {
-    return __iseqsig (__x, __y);
-  }
-};
-
-template<> struct __iseqsig_type<long double>
-{
-  static int __call (long double __x, long double __y) throw ()
-  {
-
-    return __iseqsigl (__x, __y);
-
-
-
-  }
-};
-# 1555 "/usr/include/math.h" 3 4
-template<> struct __iseqsig_type<_Float128>
-{
-  static int __call (_Float128 __x, _Float128 __y) throw ()
-  {
-
-    return __iseqsigf128 (__x, __y);
-
-
-
-  }
-};
-# 1592 "/usr/include/math.h" 3 4
-template<typename _T1, typename _T2>
-inline int
-iseqsig (_T1 __x, _T2 __y) throw ()
-{
-
-  typedef decltype (((__x) + (__y) + 0.0f)) _T3;
-
-
-
-  return __iseqsig_type<_T3>::__call (__x, __y);
-}
-
+   extern long double __attribute__((__cdecl__)) _chgsignl (long double);
+# 1576 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\math.h" 3
 }
 
 
 
 
-}
-# 46 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 2 3
+#pragma pack(pop)
+# 46 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 2 3
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h" 1 3
-# 34 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h" 3
-
-
-
-
-# 1 "/usr/include/stdlib.h" 1 3 4
-# 26 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdlib.h" 2 3 4
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/std_abs.h" 1 3
+# 34 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/std_abs.h" 3
 
 
 
 
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 1 3
+# 10 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+# 1 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\limits.h" 1 3
+# 21 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\limits.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\limits.h" 1 3
+# 22 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\limits.h" 2 3
+# 11 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 2 3
+# 25 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+#pragma pack(push,_CRT_PACKING)
 
-# 1 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stddef.h" 1 3 4
-# 46 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stddef.h" 3 4
-typedef long unsigned int size_t;
-# 33 "/usr/include/stdlib.h" 2 3 4
 
 extern "C" {
-# 44 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/bits/waitflags.h" 1 3 4
-# 45 "/usr/include/stdlib.h" 2 3 4
-# 1 "/usr/include/bits/waitstatus.h" 1 3 4
-# 46 "/usr/include/stdlib.h" 2 3 4
-# 63 "/usr/include/stdlib.h" 3 4
-typedef struct
-  {
+# 49 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  typedef int (__attribute__((__cdecl__)) *_onexit_t)(void);
+# 59 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  typedef struct _div_t {
     int quot;
     int rem;
   } div_t;
 
-
-
-typedef struct
-  {
-    long int quot;
-    long int rem;
+  typedef struct _ldiv_t {
+    long quot;
+    long rem;
   } ldiv_t;
 
 
 
 
 
-__extension__ typedef struct
-  {
-    long long int quot;
-    long long int rem;
-  } lldiv_t;
-# 102 "/usr/include/stdlib.h" 3 4
-extern size_t __ctype_get_mb_cur_max (void) noexcept (true) ;
+#pragma pack(4)
+  typedef struct {
+    unsigned char ld[10];
+  } _LDOUBLE;
+#pragma pack()
 
 
 
-extern double atof (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+  typedef struct {
+    double x;
+  } _CRT_DOUBLE;
 
-extern int atoi (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+  typedef struct {
+    float f;
+  } _CRT_FLOAT;
 
-extern long int atol (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
 
 
 
-__extension__ extern long long int atoll (const char *__nptr)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
+  typedef struct {
+    long double x;
+  } _LONGDOUBLE;
 
 
 
-extern double strtod (const char *__restrict __nptr,
-        char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+#pragma pack(4)
+  typedef struct {
+    unsigned char ld12[12];
+  } _LDBL12;
+#pragma pack()
+# 115 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  extern int * __imp___mb_cur_max;
 
 
 
-extern float strtof (const char *__restrict __nptr,
-       char **__restrict __endptr) noexcept (true) __attribute__ ((__nonnull__ (1)));
 
-extern long double strtold (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 145 "/usr/include/stdlib.h" 3 4
-extern _Float32 strtof32 (const char *__restrict __nptr,
-     char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+__attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) ___mb_cur_max_func(void);
+# 142 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  typedef void (__attribute__((__cdecl__)) *_purecall_handler)(void);
 
+  __attribute__ ((__dllimport__)) _purecall_handler __attribute__((__cdecl__)) _set_purecall_handler(_purecall_handler _Handler);
+  __attribute__ ((__dllimport__)) _purecall_handler __attribute__((__cdecl__)) _get_purecall_handler(void);
 
+  typedef void (__attribute__((__cdecl__)) *_invalid_parameter_handler)(const wchar_t *,const wchar_t *,const wchar_t *,unsigned int,uintptr_t);
+  __attribute__ ((__dllimport__)) _invalid_parameter_handler __attribute__((__cdecl__)) _set_invalid_parameter_handler(_invalid_parameter_handler _Handler);
+  __attribute__ ((__dllimport__)) _invalid_parameter_handler __attribute__((__cdecl__)) _get_invalid_parameter_handler(void);
 
-extern _Float64 strtof64 (const char *__restrict __nptr,
-     char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
+  __attribute__ ((__dllimport__)) extern int *__attribute__((__cdecl__)) _errno(void);
 
-extern _Float128 strtof128 (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+  errno_t __attribute__((__cdecl__)) _set_errno(int _Value);
+  errno_t __attribute__((__cdecl__)) _get_errno(int *_Value);
 
+  __attribute__ ((__dllimport__)) unsigned long *__attribute__((__cdecl__)) __doserrno(void);
 
+  errno_t __attribute__((__cdecl__)) _set_doserrno(unsigned long _Value);
+  errno_t __attribute__((__cdecl__)) _get_doserrno(unsigned long *_Value);
+# 172 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  extern __attribute__((dllimport)) char *_sys_errlist[1];
+  extern __attribute__((dllimport)) int _sys_nerr;
 
-extern _Float32x strtof32x (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
 
-extern _Float64x strtof64x (const char *__restrict __nptr,
-       char **__restrict __endptr)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 181 "/usr/include/stdlib.h" 3 4
-extern long int strtol (const char *__restrict __nptr,
-   char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
 
-extern unsigned long int strtoul (const char *__restrict __nptr,
-      char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+  __attribute__ ((__dllimport__)) char ***__attribute__((__cdecl__)) __p___argv(void);
+  __attribute__ ((__dllimport__)) int *__attribute__((__cdecl__)) __p__fmode(void);
+# 190 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  errno_t __attribute__((__cdecl__)) _get_pgmptr(char **_Value);
+  errno_t __attribute__((__cdecl__)) _get_wpgmptr(wchar_t **_Value);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _set_fmode(int _Mode);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_fmode(int *_PMode);
+# 281 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  extern int * __imp___argc;
 
 
 
-__extension__
-extern long long int strtoq (const char *__restrict __nptr,
-        char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
+  extern char *** __imp___argv;
 
-__extension__
-extern unsigned long long int strtouq (const char *__restrict __nptr,
-           char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
+  extern wchar_t *** __imp___wargv;
 
 
-__extension__
-extern long long int strtoll (const char *__restrict __nptr,
-         char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
 
-__extension__
-extern unsigned long long int strtoull (const char *__restrict __nptr,
-     char **__restrict __endptr, int __base)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
 
 
+  extern char *** __imp__environ;
 
 
 
 
-extern long int strtol (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtol")
+  extern wchar_t *** __imp__wenviron;
 
 
-     __attribute__ ((__nonnull__ (1)));
-extern unsigned long int strtoul (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoul")
 
 
 
-     __attribute__ ((__nonnull__ (1)));
+  extern char ** __imp__pgmptr;
 
-__extension__
-extern long long int strtoq (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoll")
 
 
-     __attribute__ ((__nonnull__ (1)));
-__extension__
-extern unsigned long long int strtouq (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoull")
 
+  extern wchar_t ** __imp__wpgmptr;
 
 
-     __attribute__ ((__nonnull__ (1)));
 
-__extension__
-extern long long int strtoll (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoll")
 
+  extern unsigned int * __imp__osplatform;
 
-     __attribute__ ((__nonnull__ (1)));
-__extension__
-extern unsigned long long int strtoull (const char *__restrict __nptr, char **__restrict __endptr, int __base) noexcept (true) __asm__ ("" "__isoc23_strtoull")
 
 
 
-     __attribute__ ((__nonnull__ (1)));
-# 282 "/usr/include/stdlib.h" 3 4
-extern int strfromd (char *__dest, size_t __size, const char *__format,
-       double __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+  extern unsigned int * __imp__osver;
 
-extern int strfromf (char *__dest, size_t __size, const char *__format,
-       float __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
 
-extern int strfroml (char *__dest, size_t __size, const char *__format,
-       long double __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 302 "/usr/include/stdlib.h" 3 4
-extern int strfromf32 (char *__dest, size_t __size, const char * __format,
-         _Float32 __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
 
 
+  extern unsigned int * __imp__winver;
 
-extern int strfromf64 (char *__dest, size_t __size, const char * __format,
-         _Float64 __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
 
 
 
-extern int strfromf128 (char *__dest, size_t __size, const char * __format,
-   _Float128 __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
+  extern unsigned int * __imp__winmajor;
 
 
 
-extern int strfromf32x (char *__dest, size_t __size, const char * __format,
-   _Float32x __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
 
+  extern unsigned int * __imp__winminor;
 
 
-extern int strfromf64x (char *__dest, size_t __size, const char * __format,
-   _Float64x __f)
-     noexcept (true) __attribute__ ((__nonnull__ (3)));
-# 342 "/usr/include/stdlib.h" 3 4
-# 1 "/usr/include/bits/types/locale_t.h" 1 3 4
-# 22 "/usr/include/bits/types/locale_t.h" 3 4
-# 1 "/usr/include/bits/types/__locale_t.h" 1 3 4
-# 27 "/usr/include/bits/types/__locale_t.h" 3 4
-struct __locale_struct
+
+
+
+  errno_t __attribute__((__cdecl__)) _get_osplatform(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_osver(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_winver(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_winmajor(unsigned int *_Value);
+  errno_t __attribute__((__cdecl__)) _get_winminor(unsigned int *_Value);
+
+
+
+
+  extern "C++" {
+    template <typename _CountofType,size_t _SizeOfArray> char (*__countof_helper( _CountofType (&_Array)[_SizeOfArray]))[_SizeOfArray];
+
+  }
+
+
+
+
+
+  void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) exit(int _Code) __attribute__ ((__noreturn__));
+  void __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) _exit(int _Code) __attribute__ ((__noreturn__));
+
+
+
+  void __attribute__((__cdecl__)) _Exit(int) __attribute__ ((__noreturn__));
+# 374 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  void __attribute__((__cdecl__)) __attribute__ ((__noreturn__)) abort(void);
+
+
+
+
+  __attribute__ ((__dllimport__)) unsigned int __attribute__((__cdecl__)) _set_abort_behavior(unsigned int _Flags,unsigned int _Mask);
+
+
+
+
+
+
+
+  __extension__ long __attribute__((__cdecl__)) _abs64(long);
+
+  extern __inline__ __attribute__((__always_inline__,__gnu_inline__)) long __attribute__((__cdecl__)) _abs64(long x) {
+    return __builtin_llabs(x);
+  }
+
+
+  int __attribute__((__cdecl__)) atexit(void (__attribute__((__cdecl__)) *)(void));
+
+
+
+
+
+  int __attribute__((__cdecl__)) atoi(const char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoi_l(const char *_Str,_locale_t _Locale);
+  long __attribute__((__cdecl__)) atol(const char *_Str);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _atol_l(const char *_Str,_locale_t _Locale);
+
+
+  void *__attribute__((__cdecl__)) bsearch(const void *_Key,const void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(const void *,const void *));
+  void __attribute__((__cdecl__)) qsort(void *_Base,size_t _NumOfElements,size_t _SizeOfElements,int (__attribute__((__cdecl__)) *_PtFuncCompare)(const void *,const void *));
+
+  unsigned short __attribute__((__cdecl__)) _byteswap_ushort(unsigned short _Short);
+  unsigned long __attribute__((__cdecl__)) _byteswap_ulong (unsigned long _Long);
+  __extension__ unsigned long __attribute__((__cdecl__)) _byteswap_uint64(unsigned long _Int64);
+  div_t __attribute__((__cdecl__)) div(int _Numerator,int _Denominator);
+  char *__attribute__((__cdecl__)) getenv(const char *_VarName) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _itoa(int _Value,char *_Dest,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _i64toa(long _Val,char *_DstBuf,int _Radix) ;
+  __extension__ __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ui64toa(unsigned long _Val,char *_DstBuf,int _Radix) ;
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _atoi64(const char *_String);
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _atoi64_l(const char *_String,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _strtoi64(const char *_String,char **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _strtoi64_l(const char *_String,char **_EndPtr,int _Radix,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _strtoui64(const char *_String,char **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _strtoui64_l(const char *_String,char **_EndPtr,int _Radix,_locale_t _Locale);
+  ldiv_t __attribute__((__cdecl__)) ldiv(long _Numerator,long _Denominator);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ltoa(long _Value,char *_Dest,int _Radix) ;
+  int __attribute__((__cdecl__)) mblen(const char *_Ch,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _mblen_l(const char *_Ch,size_t _MaxCount,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrlen(const char *_Str);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrlen_l(const char *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrnlen(const char *_Str,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstrnlen_l(const char *_Str,size_t _MaxCount,_locale_t _Locale);
+  int __attribute__((__cdecl__)) mbtowc(wchar_t * __restrict__ _DstCh,const char * __restrict__ _SrcCh,size_t _SrcSizeInBytes);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _mbtowc_l(wchar_t * __restrict__ _DstCh,const char * __restrict__ _SrcCh,size_t _SrcSizeInBytes,_locale_t _Locale);
+  size_t __attribute__((__cdecl__)) mbstowcs(wchar_t * __restrict__ _Dest,const char * __restrict__ _Source,size_t _MaxCount);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _mbstowcs_l(wchar_t * __restrict__ _Dest,const char * __restrict__ _Source,size_t _MaxCount,_locale_t _Locale);
+  int __attribute__((__cdecl__)) mkstemp(char *template_name);
+  int __attribute__((__cdecl__)) rand(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _set_error_mode(int _Mode);
+  void __attribute__((__cdecl__)) srand(unsigned int _Seed);
+# 449 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+inline __attribute__((__cdecl__))
+double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtod(const char * __restrict__ _Str,char ** __restrict__ _EndPtr)
 {
-
-  struct __locale_data *__locales[13];
-
-
-  const unsigned short int *__ctype_b;
-  const int *__ctype_tolower;
-  const int *__ctype_toupper;
-
-
-  const char *__names[13];
-};
-
-typedef struct __locale_struct *__locale_t;
-# 23 "/usr/include/bits/types/locale_t.h" 2 3 4
-
-typedef __locale_t locale_t;
-# 343 "/usr/include/stdlib.h" 2 3 4
-
-extern long int strtol_l (const char *__restrict __nptr,
-     char **__restrict __endptr, int __base,
-     locale_t __loc) noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
-
-extern unsigned long int strtoul_l (const char *__restrict __nptr,
-        char **__restrict __endptr,
-        int __base, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
-
-__extension__
-extern long long int strtoll_l (const char *__restrict __nptr,
-    char **__restrict __endptr, int __base,
-    locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
-
-__extension__
-extern unsigned long long int strtoull_l (const char *__restrict __nptr,
-       char **__restrict __endptr,
-       int __base, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 4)));
-
-
-
-
-
-extern long int strtol_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtol_l")
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-extern unsigned long int strtoul_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtoul_l")
-
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-__extension__
-extern long long int strtoll_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtoll_l")
-
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-__extension__
-extern unsigned long long int strtoull_l (const char *__restrict __nptr, char **__restrict __endptr, int __base, locale_t __loc) noexcept (true) __asm__ ("" "__isoc23_strtoull_l")
-
-
-
-
-     __attribute__ ((__nonnull__ (1, 4)));
-# 419 "/usr/include/stdlib.h" 3 4
-extern double strtod_l (const char *__restrict __nptr,
-   char **__restrict __endptr, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-
-extern float strtof_l (const char *__restrict __nptr,
-         char **__restrict __endptr, locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-
-extern long double strtold_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 440 "/usr/include/stdlib.h" 3 4
-extern _Float32 strtof32_l (const char *__restrict __nptr,
-       char **__restrict __endptr,
-       locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float64 strtof64_l (const char *__restrict __nptr,
-       char **__restrict __endptr,
-       locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float128 strtof128_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float32x strtof32x_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-
-
-
-extern _Float64x strtof64x_l (const char *__restrict __nptr,
-         char **__restrict __endptr,
-         locale_t __loc)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 3)));
-# 509 "/usr/include/stdlib.h" 3 4
-extern char *l64a (long int __n) noexcept (true) ;
-
-
-extern long int a64l (const char *__s)
-     noexcept (true) __attribute__ ((__pure__)) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-# 1 "/usr/include/sys/types.h" 1 3 4
-# 27 "/usr/include/sys/types.h" 3 4
-extern "C" {
-
-# 1 "/usr/include/bits/types.h" 1 3 4
-# 27 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 28 "/usr/include/bits/types.h" 2 3 4
-# 1 "/usr/include/bits/timesize.h" 1 3 4
-# 19 "/usr/include/bits/timesize.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 20 "/usr/include/bits/timesize.h" 2 3 4
-# 29 "/usr/include/bits/types.h" 2 3 4
-
-
-typedef unsigned char __u_char;
-typedef unsigned short int __u_short;
-typedef unsigned int __u_int;
-typedef unsigned long int __u_long;
-
-
-typedef signed char __int8_t;
-typedef unsigned char __uint8_t;
-typedef signed short int __int16_t;
-typedef unsigned short int __uint16_t;
-typedef signed int __int32_t;
-typedef unsigned int __uint32_t;
-
-typedef signed long int __int64_t;
-typedef unsigned long int __uint64_t;
-
-
-
-
-
-
-typedef __int8_t __int_least8_t;
-typedef __uint8_t __uint_least8_t;
-typedef __int16_t __int_least16_t;
-typedef __uint16_t __uint_least16_t;
-typedef __int32_t __int_least32_t;
-typedef __uint32_t __uint_least32_t;
-typedef __int64_t __int_least64_t;
-typedef __uint64_t __uint_least64_t;
-
-
-
-typedef long int __quad_t;
-typedef unsigned long int __u_quad_t;
-
-
-
-
-
-
-
-typedef long int __intmax_t;
-typedef unsigned long int __uintmax_t;
-# 141 "/usr/include/bits/types.h" 3 4
-# 1 "/usr/include/bits/typesizes.h" 1 3 4
-# 142 "/usr/include/bits/types.h" 2 3 4
-# 1 "/usr/include/bits/time64.h" 1 3 4
-# 143 "/usr/include/bits/types.h" 2 3 4
-
-
-typedef unsigned long int __dev_t;
-typedef unsigned int __uid_t;
-typedef unsigned int __gid_t;
-typedef unsigned long int __ino_t;
-typedef unsigned long int __ino64_t;
-typedef unsigned int __mode_t;
-typedef unsigned long int __nlink_t;
-typedef long int __off_t;
-typedef long int __off64_t;
-typedef int __pid_t;
-typedef struct { int __val[2]; } __fsid_t;
-typedef long int __clock_t;
-typedef unsigned long int __rlim_t;
-typedef unsigned long int __rlim64_t;
-typedef unsigned int __id_t;
-typedef long int __time_t;
-typedef unsigned int __useconds_t;
-typedef long int __suseconds_t;
-typedef long int __suseconds64_t;
-
-typedef int __daddr_t;
-typedef int __key_t;
-
-
-typedef int __clockid_t;
-
-
-typedef void * __timer_t;
-
-
-typedef long int __blksize_t;
-
-
-
-
-typedef long int __blkcnt_t;
-typedef long int __blkcnt64_t;
-
-
-typedef unsigned long int __fsblkcnt_t;
-typedef unsigned long int __fsblkcnt64_t;
-
-
-typedef unsigned long int __fsfilcnt_t;
-typedef unsigned long int __fsfilcnt64_t;
-
-
-typedef long int __fsword_t;
-
-typedef long int __ssize_t;
-
-
-typedef long int __syscall_slong_t;
-
-typedef unsigned long int __syscall_ulong_t;
-
-
-
-typedef __off64_t __loff_t;
-typedef char *__caddr_t;
-
-
-typedef long int __intptr_t;
-
-
-typedef unsigned int __socklen_t;
-
-
-
-
-typedef int __sig_atomic_t;
-# 30 "/usr/include/sys/types.h" 2 3 4
-
-
-
-typedef __u_char u_char;
-typedef __u_short u_short;
-typedef __u_int u_int;
-typedef __u_long u_long;
-typedef __quad_t quad_t;
-typedef __u_quad_t u_quad_t;
-typedef __fsid_t fsid_t;
-
-
-typedef __loff_t loff_t;
-
-
-
-
-typedef __ino_t ino_t;
-
-
-
-
-
-
-typedef __ino64_t ino64_t;
-
-
-
-
-typedef __dev_t dev_t;
-
-
-
-
-typedef __gid_t gid_t;
-
-
-
-
-typedef __mode_t mode_t;
-
-
-
-
-typedef __nlink_t nlink_t;
-
-
-
-
-typedef __uid_t uid_t;
-
-
-
-
-
-typedef __off_t off_t;
-
-
-
-
-
-
-typedef __off64_t off64_t;
-
-
-
-
-typedef __pid_t pid_t;
-
-
-
-
-
-typedef __id_t id_t;
-
-
-
-
-typedef __ssize_t ssize_t;
-
-
-
-
-
-typedef __daddr_t daddr_t;
-typedef __caddr_t caddr_t;
-
-
-
-
-
-typedef __key_t key_t;
-
-
-
-
-# 1 "/usr/include/bits/types/clock_t.h" 1 3 4
-
-
-
-
-
-
-typedef __clock_t clock_t;
-# 127 "/usr/include/sys/types.h" 2 3 4
-
-# 1 "/usr/include/bits/types/clockid_t.h" 1 3 4
-
-
-
-
-
-
-typedef __clockid_t clockid_t;
-# 129 "/usr/include/sys/types.h" 2 3 4
-# 1 "/usr/include/bits/types/time_t.h" 1 3 4
-# 10 "/usr/include/bits/types/time_t.h" 3 4
-typedef __time_t time_t;
-# 130 "/usr/include/sys/types.h" 2 3 4
-# 1 "/usr/include/bits/types/timer_t.h" 1 3 4
-
-
-
-
-
-
-typedef __timer_t timer_t;
-# 131 "/usr/include/sys/types.h" 2 3 4
-
-
-
-typedef __useconds_t useconds_t;
-
-
-
-typedef __suseconds_t suseconds_t;
-
-
-
-
-
-# 1 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stddef.h" 1 3 4
-# 145 "/usr/include/sys/types.h" 2 3 4
-
-
-
-typedef unsigned long int ulong;
-typedef unsigned short int ushort;
-typedef unsigned int uint;
-
-
-
-
-# 1 "/usr/include/bits/stdint-intn.h" 1 3 4
-# 24 "/usr/include/bits/stdint-intn.h" 3 4
-typedef __int8_t int8_t;
-typedef __int16_t int16_t;
-typedef __int32_t int32_t;
-typedef __int64_t int64_t;
-# 156 "/usr/include/sys/types.h" 2 3 4
-
-
-typedef __uint8_t u_int8_t;
-typedef __uint16_t u_int16_t;
-typedef __uint32_t u_int32_t;
-typedef __uint64_t u_int64_t;
-
-
-typedef int register_t __attribute__ ((__mode__ (__word__)));
-# 176 "/usr/include/sys/types.h" 3 4
-# 1 "/usr/include/endian.h" 1 3 4
-# 24 "/usr/include/endian.h" 3 4
-# 1 "/usr/include/bits/endian.h" 1 3 4
-# 35 "/usr/include/bits/endian.h" 3 4
-# 1 "/usr/include/bits/endianness.h" 1 3 4
-# 36 "/usr/include/bits/endian.h" 2 3 4
-# 25 "/usr/include/endian.h" 2 3 4
-# 35 "/usr/include/endian.h" 3 4
-# 1 "/usr/include/bits/byteswap.h" 1 3 4
-# 33 "/usr/include/bits/byteswap.h" 3 4
-static __inline __uint16_t
-__bswap_16 (__uint16_t __bsx)
+  double __attribute__((__cdecl__)) __mingw_strtod (const char * __restrict__, char ** __restrict__);
+  return __mingw_strtod( _Str, _EndPtr);
+}
+
+inline __attribute__((__cdecl__))
+float __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtof(const char * __restrict__ _Str,char ** __restrict__ _EndPtr)
 {
-
-
-
-  return ((__uint16_t) ((((__bsx) >> 8) & 0xff) | (((__bsx) & 0xff) << 8)));
-
+  float __attribute__((__cdecl__)) __mingw_strtof (const char * __restrict__, char ** __restrict__);
+  return __mingw_strtof( _Str, _EndPtr);
 }
 
 
@@ -5148,916 +1662,322 @@ __bswap_16 (__uint16_t __bsx)
 
 
 
-static __inline __uint32_t
-__bswap_32 (__uint32_t __bsx)
-{
+  long double __attribute__((__cdecl__)) __attribute__ ((__nothrow__)) strtold(const char * __restrict__ , char ** __restrict__ );
+
+
+  extern double __attribute__((__cdecl__)) __attribute__ ((__nothrow__))
+  __strtod (const char * __restrict__ , char ** __restrict__);
 
 
 
-  return ((((__bsx) & 0xff000000u) >> 24) | (((__bsx) & 0x00ff0000u) >> 8) | (((__bsx) & 0x0000ff00u) << 8) | (((__bsx) & 0x000000ffu) << 24));
 
+
+
+
+  float __attribute__((__cdecl__)) __mingw_strtof (const char * __restrict__, char ** __restrict__);
+  double __attribute__((__cdecl__)) __mingw_strtod (const char * __restrict__, char ** __restrict__);
+  long double __attribute__((__cdecl__)) __mingw_strtold(const char * __restrict__, char ** __restrict__);
+
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _strtod_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,_locale_t _Locale);
+  long __attribute__((__cdecl__)) strtol(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _strtol_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+  unsigned long __attribute__((__cdecl__)) strtoul(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _strtoul_l(const char * __restrict__ _Str,char ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+
+
+  int __attribute__((__cdecl__)) system(const char *_Command);
+
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ultoa(unsigned long _Value,char *_Dest,int _Radix) ;
+  int __attribute__((__cdecl__)) wctomb(char *_MbCh,wchar_t _WCh) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wctomb_l(char *_MbCh,wchar_t _WCh,_locale_t _Locale) ;
+  size_t __attribute__((__cdecl__)) wcstombs(char * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _MaxCount) ;
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _wcstombs_l(char * __restrict__ _Dest,const wchar_t * __restrict__ _Source,size_t _MaxCount,_locale_t _Locale) ;
+
+
+
+  void *__attribute__((__cdecl__)) calloc(size_t _NumOfElements,size_t _SizeOfElements);
+  void __attribute__((__cdecl__)) free(void *_Memory);
+  void *__attribute__((__cdecl__)) malloc(size_t _Size);
+  void *__attribute__((__cdecl__)) realloc(void *_Memory,size_t _NewSize);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _recalloc(void *_Memory,size_t _Count,size_t _Size);
+
+
+
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _aligned_free(void *_Memory);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_malloc(size_t _Size,size_t _Alignment);
+
+
+
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_malloc(size_t _Size,size_t _Alignment,size_t _Offset);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_realloc(void *_Memory,size_t _Size,size_t _Alignment);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_recalloc(void *_Memory,size_t _Count,size_t _Size,size_t _Alignment);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_realloc(void *_Memory,size_t _Size,size_t _Alignment,size_t _Offset);
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _aligned_offset_recalloc(void *_Memory,size_t _Count,size_t _Size,size_t _Alignment,size_t _Offset);
+
+
+
+
+
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _itow(int _Value,wchar_t *_Dest,int _Radix) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ltow(long _Value,wchar_t *_Dest,int _Radix) ;
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ultow(unsigned long _Value,wchar_t *_Dest,int _Radix) ;
+
+  double __attribute__((__cdecl__)) __mingw_wcstod(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr);
+  float __attribute__((__cdecl__)) __mingw_wcstof(const wchar_t * __restrict__ nptr, wchar_t ** __restrict__ endptr);
+  long double __attribute__((__cdecl__)) __mingw_wcstold(const wchar_t * __restrict__, wchar_t ** __restrict__);
+
+
+  inline __attribute__((__cdecl__))
+  double __attribute__((__cdecl__)) wcstod(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr){
+    return __mingw_wcstod(_Str,_EndPtr);
+  }
+  inline __attribute__((__cdecl__))
+  float __attribute__((__cdecl__)) wcstof(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr){
+    return __mingw_wcstof(_Str,_EndPtr);
+  }
+
+
+
+
+
+
+  long double __attribute__((__cdecl__)) wcstold(const wchar_t * __restrict__, wchar_t ** __restrict__);
+
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wcstod_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,_locale_t _Locale);
+  long __attribute__((__cdecl__)) wcstol(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wcstol_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+  unsigned long __attribute__((__cdecl__)) wcstoul(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix);
+  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _wcstoul_l(const wchar_t * __restrict__ _Str,wchar_t ** __restrict__ _EndPtr,int _Radix,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wgetenv(const wchar_t *_VarName) ;
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wsystem(const wchar_t *_Command);
+
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wtof(const wchar_t *_Str);
+  __attribute__ ((__dllimport__)) double __attribute__((__cdecl__)) _wtof_l(const wchar_t *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wtoi(const wchar_t *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wtoi_l(const wchar_t *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtol(const wchar_t *_Str);
+  __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtol_l(const wchar_t *_Str,_locale_t _Locale);
+
+  __extension__ __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _i64tow(long _Val,wchar_t *_DstBuf,int _Radix) ;
+  __extension__ __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _ui64tow(unsigned long _Val,wchar_t *_DstBuf,int _Radix) ;
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtoi64(const wchar_t *_Str);
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wtoi64_l(const wchar_t *_Str,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wcstoi64(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) long __attribute__((__cdecl__)) _wcstoi64_l(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix,_locale_t _Locale);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _wcstoui64(const wchar_t *_Str,wchar_t **_EndPtr,int _Radix);
+  __extension__ __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _wcstoui64_l(const wchar_t *_Str ,wchar_t **_EndPtr,int _Radix,_locale_t _Locale);
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _putenv(const char *_EnvString);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _wputenv(const wchar_t *_EnvString);
+
+
+
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _fullpath(char *_FullPath,const char *_Path,size_t _SizeInBytes);
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _ecvt(double _Val,int _NumOfDigits,int *_PtDec,int *_PtSign) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _fcvt(double _Val,int _NumOfDec,int *_PtDec,int *_PtSign) ;
+  __attribute__ ((__dllimport__)) char *__attribute__((__cdecl__)) _gcvt(double _Val,int _NumOfDigits,char *_DstBuf) ;
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atodbl(_CRT_DOUBLE *_Result,char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoldbl(_LDOUBLE *_Result,char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoflt(_CRT_FLOAT *_Result,char *_Str);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atodbl_l(_CRT_DOUBLE *_Result,char *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoldbl_l(_LDOUBLE *_Result,char *_Str,_locale_t _Locale);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _atoflt_l(_CRT_FLOAT *_Result,char *_Str,_locale_t _Locale);
+# 609 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+unsigned long __attribute__((__cdecl__)) _lrotl(unsigned long,int);
+unsigned long __attribute__((__cdecl__)) _lrotr(unsigned long,int);
+
+
+
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _makepath(char *_Path,const char *_Drive,const char *_Dir,const char *_Filename,const char *_Ext);
+  _onexit_t __attribute__((__cdecl__)) _onexit(_onexit_t _Func);
+
+
+
+  void __attribute__((__cdecl__)) perror(const char *_ErrMsg);
+
+
+
+
+
+  __extension__ unsigned long __attribute__((__cdecl__)) _rotl64(unsigned long _Val,int _Shift);
+  __extension__ unsigned long __attribute__((__cdecl__)) _rotr64(unsigned long Value,int Shift);
+
+
+
+
+
+
+  unsigned int __attribute__((__cdecl__)) _rotr(unsigned int _Val,int _Shift);
+  unsigned int __attribute__((__cdecl__)) _rotl(unsigned int _Val,int _Shift);
+
+
+  __extension__ unsigned long __attribute__((__cdecl__)) _rotr64(unsigned long _Val,int _Shift);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _searchenv(const char *_Filename,const char *_EnvVar,char *_ResultPath) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _splitpath(const char *_FullPath,char *_Drive,char *_Dir,char *_Filename,char *_Ext) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _swab(char *_Buf1,char *_Buf2,int _SizeInBytes);
+
+
+
+  __attribute__ ((__dllimport__)) wchar_t *__attribute__((__cdecl__)) _wfullpath(wchar_t *_FullPath,const wchar_t *_Path,size_t _SizeInWords);
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wmakepath(wchar_t *_ResultPath,const wchar_t *_Drive,const wchar_t *_Dir,const wchar_t *_Filename,const wchar_t *_Ext);
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wperror(const wchar_t *_ErrMsg);
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wsearchenv(const wchar_t *_Filename,const wchar_t *_EnvVar,wchar_t *_ResultPath) ;
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _wsplitpath(const wchar_t *_FullPath,wchar_t *_Drive,wchar_t *_Dir,wchar_t *_Filename,wchar_t *_Ext) ;
+
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _beep(unsigned _Frequency,unsigned _Duration) __attribute__ ((__deprecated__));
+
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _seterrormode(int _Mode) __attribute__ ((__deprecated__));
+  __attribute__ ((__dllimport__)) void __attribute__((__cdecl__)) _sleep(unsigned long _Duration) __attribute__ ((__deprecated__));
+# 680 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
+  char *__attribute__((__cdecl__)) ecvt(double _Val,int _NumOfDigits,int *_PtDec,int *_PtSign) ;
+  char *__attribute__((__cdecl__)) fcvt(double _Val,int _NumOfDec,int *_PtDec,int *_PtSign) ;
+  char *__attribute__((__cdecl__)) gcvt(double _Val,int _NumOfDigits,char *_DstBuf) ;
+  char *__attribute__((__cdecl__)) itoa(int _Val,char *_DstBuf,int _Radix) ;
+  char *__attribute__((__cdecl__)) ltoa(long _Val,char *_DstBuf,int _Radix) ;
+  int __attribute__((__cdecl__)) putenv(const char *_EnvString) ;
+
+
+
+  void __attribute__((__cdecl__)) swab(char *_Buf1,char *_Buf2,int _SizeInBytes) ;
+
+
+  char *__attribute__((__cdecl__)) ultoa(unsigned long _Val,char *_Dstbuf,int _Radix) ;
+  _onexit_t __attribute__((__cdecl__)) onexit(_onexit_t _Func);
+
+
+
+
+
+  typedef struct { __extension__ long long quot, rem; } lldiv_t;
+
+  __extension__ lldiv_t __attribute__((__cdecl__)) lldiv(long long, long long);
+
+  __extension__ long long __attribute__((__cdecl__)) llabs(long long);
+
+
+
+
+  __extension__ long long __attribute__((__cdecl__)) strtoll(const char * __restrict__, char ** __restrict, int);
+  __extension__ unsigned long long __attribute__((__cdecl__)) strtoull(const char * __restrict__, char ** __restrict__, int);
+
+
+  __extension__ long long __attribute__((__cdecl__)) atoll (const char *);
+
+
+  __extension__ long long __attribute__((__cdecl__)) wtoll (const wchar_t *);
+  __extension__ char *__attribute__((__cdecl__)) lltoa (long long, char *, int);
+  __extension__ char *__attribute__((__cdecl__)) ulltoa (unsigned long long , char *, int);
+  __extension__ wchar_t *__attribute__((__cdecl__)) lltow (long long, wchar_t *, int);
+  __extension__ wchar_t *__attribute__((__cdecl__)) ulltow (unsigned long long, wchar_t *, int);
+# 735 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 3
 }
-# 69 "/usr/include/bits/byteswap.h" 3 4
-__extension__ static __inline __uint64_t
-__bswap_64 (__uint64_t __bsx)
-{
 
 
+#pragma pack(pop)
 
-  return ((((__bsx) & 0xff00000000000000ull) >> 56) | (((__bsx) & 0x00ff000000000000ull) >> 40) | (((__bsx) & 0x0000ff0000000000ull) >> 24) | (((__bsx) & 0x000000ff00000000ull) >> 8) | (((__bsx) & 0x00000000ff000000ull) << 8) | (((__bsx) & 0x0000000000ff0000ull) << 24) | (((__bsx) & 0x000000000000ff00ull) << 40) | (((__bsx) & 0x00000000000000ffull) << 56));
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/stdlib_s.h" 1 3
 
-}
-# 36 "/usr/include/endian.h" 2 3 4
-# 1 "/usr/include/bits/uintn-identity.h" 1 3 4
-# 32 "/usr/include/bits/uintn-identity.h" 3 4
-static __inline __uint16_t
-__uint16_identity (__uint16_t __x)
-{
-  return __x;
-}
 
-static __inline __uint32_t
-__uint32_identity (__uint32_t __x)
-{
-  return __x;
-}
 
-static __inline __uint64_t
-__uint64_identity (__uint64_t __x)
-{
-  return __x;
-}
-# 37 "/usr/include/endian.h" 2 3 4
-# 177 "/usr/include/sys/types.h" 2 3 4
 
 
-# 1 "/usr/include/sys/select.h" 1 3 4
-# 30 "/usr/include/sys/select.h" 3 4
-# 1 "/usr/include/bits/select.h" 1 3 4
-# 31 "/usr/include/sys/select.h" 2 3 4
 
 
-# 1 "/usr/include/bits/types/sigset_t.h" 1 3 4
 
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\stdlib.h" 1 3
+# 30 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\stdlib.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 1 3
+# 31 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\stdlib.h" 2 3
+# 10 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\sec_api/stdlib_s.h" 2 3
+# 741 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\malloc.h" 1 3
+# 11 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\malloc.h" 3
+#pragma pack(push,_CRT_PACKING)
 
-
-# 1 "/usr/include/bits/types/__sigset_t.h" 1 3 4
-
-
-
-
-typedef struct
-{
-  unsigned long int __val[(1024 / (8 * sizeof (unsigned long int)))];
-} __sigset_t;
-# 5 "/usr/include/bits/types/sigset_t.h" 2 3 4
-
-
-typedef __sigset_t sigset_t;
-# 34 "/usr/include/sys/select.h" 2 3 4
-
-
-
-# 1 "/usr/include/bits/types/struct_timeval.h" 1 3 4
-
-
-
-
-
-
-
-struct timeval
-{
-
-
-
-
-  __time_t tv_sec;
-  __suseconds_t tv_usec;
-
-};
-# 38 "/usr/include/sys/select.h" 2 3 4
-
-# 1 "/usr/include/bits/types/struct_timespec.h" 1 3 4
-# 11 "/usr/include/bits/types/struct_timespec.h" 3 4
-struct timespec
-{
-
-
-
-  __time_t tv_sec;
-
-
-
-
-  __syscall_slong_t tv_nsec;
-# 31 "/usr/include/bits/types/struct_timespec.h" 3 4
-};
-# 40 "/usr/include/sys/select.h" 2 3 4
-# 49 "/usr/include/sys/select.h" 3 4
-typedef long int __fd_mask;
-# 59 "/usr/include/sys/select.h" 3 4
-typedef struct
-  {
-
-
-
-    __fd_mask fds_bits[1024 / (8 * (int) sizeof (__fd_mask))];
-
-
-
-
-
-  } fd_set;
-
-
-
-
-
-
-typedef __fd_mask fd_mask;
-# 91 "/usr/include/sys/select.h" 3 4
-extern "C" {
-# 102 "/usr/include/sys/select.h" 3 4
-extern int select (int __nfds, fd_set *__restrict __readfds,
-     fd_set *__restrict __writefds,
-     fd_set *__restrict __exceptfds,
-     struct timeval *__restrict __timeout);
-# 127 "/usr/include/sys/select.h" 3 4
-extern int pselect (int __nfds, fd_set *__restrict __readfds,
-      fd_set *__restrict __writefds,
-      fd_set *__restrict __exceptfds,
-      const struct timespec *__restrict __timeout,
-      const __sigset_t *__restrict __sigmask);
-# 153 "/usr/include/sys/select.h" 3 4
-}
-# 180 "/usr/include/sys/types.h" 2 3 4
-
-
-
-
-
-typedef __blksize_t blksize_t;
-
-
-
-
-
-
-typedef __blkcnt_t blkcnt_t;
-
-
-
-typedef __fsblkcnt_t fsblkcnt_t;
-
-
-
-typedef __fsfilcnt_t fsfilcnt_t;
-# 219 "/usr/include/sys/types.h" 3 4
-typedef __blkcnt64_t blkcnt64_t;
-typedef __fsblkcnt64_t fsblkcnt64_t;
-typedef __fsfilcnt64_t fsfilcnt64_t;
-
-
-
-
-
-# 1 "/usr/include/bits/pthreadtypes.h" 1 3 4
-# 23 "/usr/include/bits/pthreadtypes.h" 3 4
-# 1 "/usr/include/bits/thread-shared-types.h" 1 3 4
-# 44 "/usr/include/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/bits/pthreadtypes-arch.h" 1 3 4
-# 21 "/usr/include/bits/pthreadtypes-arch.h" 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 22 "/usr/include/bits/pthreadtypes-arch.h" 2 3 4
-# 45 "/usr/include/bits/thread-shared-types.h" 2 3 4
-
-# 1 "/usr/include/bits/atomic_wide_counter.h" 1 3 4
-# 25 "/usr/include/bits/atomic_wide_counter.h" 3 4
-typedef union
-{
-  __extension__ unsigned long long int __value64;
-  struct
-  {
-    unsigned int __low;
-    unsigned int __high;
-  } __value32;
-} __atomic_wide_counter;
-# 47 "/usr/include/bits/thread-shared-types.h" 2 3 4
-
-
-
-
-typedef struct __pthread_internal_list
-{
-  struct __pthread_internal_list *__prev;
-  struct __pthread_internal_list *__next;
-} __pthread_list_t;
-
-typedef struct __pthread_internal_slist
-{
-  struct __pthread_internal_slist *__next;
-} __pthread_slist_t;
-# 76 "/usr/include/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/bits/struct_mutex.h" 1 3 4
-# 22 "/usr/include/bits/struct_mutex.h" 3 4
-struct __pthread_mutex_s
-{
-  int __lock;
-  unsigned int __count;
-  int __owner;
-
-  unsigned int __nusers;
-
-
-
-  int __kind;
-
-  short __spins;
-  short __glibc_reserved;
-  __pthread_list_t __list;
-# 52 "/usr/include/bits/struct_mutex.h" 3 4
-};
-# 77 "/usr/include/bits/thread-shared-types.h" 2 3 4
-# 89 "/usr/include/bits/thread-shared-types.h" 3 4
-# 1 "/usr/include/bits/struct_rwlock.h" 1 3 4
-# 23 "/usr/include/bits/struct_rwlock.h" 3 4
-struct __pthread_rwlock_arch_t
-{
-  unsigned int __readers;
-  unsigned int __writers;
-  unsigned int __wrphase_futex;
-  unsigned int __writers_futex;
-  unsigned int __pad3;
-  unsigned int __pad4;
-
-  int __cur_writer;
-  int __shared;
-  unsigned long int __pad1;
-  unsigned long int __pad2;
-
-
-  unsigned int __flags;
-# 48 "/usr/include/bits/struct_rwlock.h" 3 4
-};
-# 90 "/usr/include/bits/thread-shared-types.h" 2 3 4
-
-
-
-
-struct __pthread_cond_s
-{
-  __atomic_wide_counter __wseq;
-  __atomic_wide_counter __g1_start;
-  unsigned int __g_size[2] ;
-  unsigned int __g1_orig_size;
-  unsigned int __wrefs;
-  unsigned int __g_signals[2];
-  unsigned int __unused_initialized_1;
-  unsigned int __unused_initialized_2;
-};
-
-typedef unsigned int __tss_t;
-typedef unsigned long int __thrd_t;
-
-typedef struct
-{
-  int __data ;
-} __once_flag;
-# 24 "/usr/include/bits/pthreadtypes.h" 2 3 4
-
-
-
-typedef unsigned long int pthread_t;
-
-
-
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_mutexattr_t;
-
-
-
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_condattr_t;
-
-
-
-typedef unsigned int pthread_key_t;
-
-
-
-typedef int pthread_once_t;
-
-
-union pthread_attr_t
-{
-  char __size[56];
-  long int __align;
-};
-
-typedef union pthread_attr_t pthread_attr_t;
-
-
-
-
-typedef union
-{
-  struct __pthread_mutex_s __data;
-  char __size[40];
-  long int __align;
-} pthread_mutex_t;
-
-
-typedef union
-{
-  struct __pthread_cond_s __data;
-  char __size[48];
-  __extension__ long long int __align;
-} pthread_cond_t;
-
-
-
-
-
-typedef union
-{
-  struct __pthread_rwlock_arch_t __data;
-  char __size[56];
-  long int __align;
-} pthread_rwlock_t;
-
-typedef union
-{
-  char __size[8];
-  long int __align;
-} pthread_rwlockattr_t;
-
-
-
-
-
-typedef volatile int pthread_spinlock_t;
-
-
-
-
-typedef union
-{
-  char __size[32];
-  long int __align;
-} pthread_barrier_t;
-
-typedef union
-{
-  char __size[4];
-  int __align;
-} pthread_barrierattr_t;
-# 228 "/usr/include/sys/types.h" 2 3 4
-
-
-}
-# 519 "/usr/include/stdlib.h" 2 3 4
-
-
-
-
-
-
-extern long int random (void) noexcept (true);
-
-
-extern void srandom (unsigned int __seed) noexcept (true);
-
-
-
-
-
-extern char *initstate (unsigned int __seed, char *__statebuf,
-   size_t __statelen) noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-
-extern char *setstate (char *__statebuf) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-
-struct random_data
-  {
-    int32_t *fptr;
-    int32_t *rptr;
-    int32_t *state;
-    int rand_type;
-    int rand_deg;
-    int rand_sep;
-    int32_t *end_ptr;
-  };
-
-extern int random_r (struct random_data *__restrict __buf,
-       int32_t *__restrict __result) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-extern int srandom_r (unsigned int __seed, struct random_data *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-extern int initstate_r (unsigned int __seed, char *__restrict __statebuf,
-   size_t __statelen,
-   struct random_data *__restrict __buf)
-     noexcept (true) __attribute__ ((__nonnull__ (2, 4)));
-
-extern int setstate_r (char *__restrict __statebuf,
-         struct random_data *__restrict __buf)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-
-
-
-extern int rand (void) noexcept (true);
-
-extern void srand (unsigned int __seed) noexcept (true);
-
-
-
-extern int rand_r (unsigned int *__seed) noexcept (true);
-
-
-
-
-
-
-
-extern double drand48 (void) noexcept (true);
-extern double erand48 (unsigned short int __xsubi[3]) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-extern long int lrand48 (void) noexcept (true);
-extern long int nrand48 (unsigned short int __xsubi[3])
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-extern long int mrand48 (void) noexcept (true);
-extern long int jrand48 (unsigned short int __xsubi[3])
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-extern void srand48 (long int __seedval) noexcept (true);
-extern unsigned short int *seed48 (unsigned short int __seed16v[3])
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-extern void lcong48 (unsigned short int __param[7]) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-struct drand48_data
-  {
-    unsigned short int __x[3];
-    unsigned short int __old_x[3];
-    unsigned short int __c;
-    unsigned short int __init;
-    __extension__ unsigned long long int __a;
-
-  };
-
-
-extern int drand48_r (struct drand48_data *__restrict __buffer,
-        double *__restrict __result) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-extern int erand48_r (unsigned short int __xsubi[3],
-        struct drand48_data *__restrict __buffer,
-        double *__restrict __result) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int lrand48_r (struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-extern int nrand48_r (unsigned short int __xsubi[3],
-        struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int mrand48_r (struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-extern int jrand48_r (unsigned short int __xsubi[3],
-        struct drand48_data *__restrict __buffer,
-        long int *__restrict __result)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern int srand48_r (long int __seedval, struct drand48_data *__buffer)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-extern int seed48_r (unsigned short int __seed16v[3],
-       struct drand48_data *__buffer) noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-extern int lcong48_r (unsigned short int __param[7],
-        struct drand48_data *__buffer)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2)));
-
-
-extern __uint32_t arc4random (void)
-     noexcept (true) ;
-
-
-extern void arc4random_buf (void *__buf, size_t __size)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-extern __uint32_t arc4random_uniform (__uint32_t __upper_bound)
-     noexcept (true) ;
-
-
-
-
-extern void *malloc (size_t __size) noexcept (true) __attribute__ ((__malloc__))
-                                         ;
-
-extern void *calloc (size_t __nmemb, size_t __size)
-     noexcept (true) __attribute__ ((__malloc__)) ;
-
-
-
-
-
-
-extern void *realloc (void *__ptr, size_t __size)
-     noexcept (true) __attribute__ ((__warn_unused_result__)) ;
-
-
-extern void free (void *__ptr) noexcept (true);
-# 702 "/usr/include/stdlib.h" 3 4
-extern void free_sized (void *__ptr, size_t __size) noexcept (true);
-
-
-
-
-extern void free_aligned_sized (void *__ptr, size_t __alignment, size_t __size)
-     noexcept (true);
-# 717 "/usr/include/stdlib.h" 3 4
-extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-     noexcept (true) __attribute__ ((__warn_unused_result__))
-
-                       ;
-
-
-extern void *reallocarray (void *__ptr, size_t __nmemb, size_t __size)
-     noexcept (true) ;
-
-
-
-# 1 "/usr/include/alloca.h" 1 3 4
-# 24 "/usr/include/alloca.h" 3 4
-# 1 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stddef.h" 1 3 4
-# 25 "/usr/include/alloca.h" 2 3 4
 
 extern "C" {
+# 46 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\malloc.h" 3
+  typedef struct _heapinfo {
+    int *_pentry;
+    size_t _size;
+    int _useflag;
+  } _HEAPINFO;
+
+
+  extern unsigned int _amblksiz;
+# 103 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\malloc.h" 3
+void * __mingw_aligned_malloc (size_t _Size, size_t _Alignment);
+void __mingw_aligned_free (void *_Memory);
+void * __mingw_aligned_offset_realloc (void *_Memory, size_t _Size, size_t _Alignment, size_t _Offset);
+void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
+
+
+
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _resetstkoflw (void);
+  __attribute__ ((__dllimport__)) unsigned long __attribute__((__cdecl__)) _set_malloc_crt_max_wait(unsigned long _NewValue);
+
+  __attribute__ ((__dllimport__)) void *__attribute__((__cdecl__)) _expand(void *_Memory,size_t _NewSize);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _msize(void *_Memory);
 
 
 
 
 
-extern void *alloca (size_t __size) noexcept (true);
+
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _get_sbh_threshold(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _set_sbh_threshold(size_t _NewValue);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _set_amblksiz(size_t _Value);
+  __attribute__ ((__dllimport__)) errno_t __attribute__((__cdecl__)) _get_amblksiz(size_t *_Value);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapadd(void *_Memory,size_t _Size);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapchk(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapmin(void);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapset(unsigned int _Fill);
+  __attribute__ ((__dllimport__)) int __attribute__((__cdecl__)) _heapwalk(_HEAPINFO *_EntryInfo);
+  __attribute__ ((__dllimport__)) size_t __attribute__((__cdecl__)) _heapused(size_t *_Used,size_t *_Commit);
+  __attribute__ ((__dllimport__)) intptr_t __attribute__((__cdecl__)) _get_heap_handle(void);
+# 144 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\malloc.h" 3
+  static __inline void *_MarkAllocaS(void *_Ptr,unsigned int _Marker) {
+    if(_Ptr) {
+      *((unsigned int*)_Ptr) = _Marker;
+      _Ptr = (char*)_Ptr + 16;
+    }
+    return _Ptr;
+  }
+# 163 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\malloc.h" 3
+  static __inline void __attribute__((__cdecl__)) _freea(void *_Memory) {
+    unsigned int _Marker;
+    if(_Memory) {
+      _Memory = (char*)_Memory - 16;
+      _Marker = *(unsigned int *)_Memory;
+      if(_Marker==0xDDDD) {
+ free(_Memory);
+      }
 
 
 
 
 
+    }
+  }
+# 206 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\malloc.h" 3
 }
-# 729 "/usr/include/stdlib.h" 2 3 4
 
 
-
-
-
-extern void *valloc (size_t __size) noexcept (true) __attribute__ ((__malloc__))
-                                         ;
-
-
-
-
-extern int posix_memalign (void **__memptr, size_t __alignment, size_t __size)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-extern void *aligned_alloc (size_t __alignment, size_t __size)
-     noexcept (true) __attribute__ ((__malloc__)) __attribute__ ((__alloc_align__ (1)))
-                                         ;
-
-
-
-extern void abort (void) noexcept (true) __attribute__ ((__noreturn__)) __attribute__ ((__cold__));
-
-
-
-extern int atexit (void (*__func) (void)) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-extern "C++" int at_quick_exit (void (*__func) (void))
-     noexcept (true) __asm ("at_quick_exit") __attribute__ ((__nonnull__ (1)));
-# 771 "/usr/include/stdlib.h" 3 4
-extern int on_exit (void (*__func) (int __status, void *__arg), void *__arg)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-extern void exit (int __status) noexcept (true) __attribute__ ((__noreturn__));
-
-
-
-
-
-extern void quick_exit (int __status) noexcept (true) __attribute__ ((__noreturn__));
-
-
-
-
-
-extern void _Exit (int __status) noexcept (true) __attribute__ ((__noreturn__));
-
-
-
-
-extern char *getenv (const char *__name) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-extern char *secure_getenv (const char *__name)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-
-
-
-
-
-
-extern int putenv (char *__string) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-extern int setenv (const char *__name, const char *__value, int __replace)
-     noexcept (true) __attribute__ ((__nonnull__ (2)));
-
-
-extern int unsetenv (const char *__name) noexcept (true) __attribute__ ((__nonnull__ (1)));
-
-
-
-
-
-
-extern int clearenv (void) noexcept (true);
-# 836 "/usr/include/stdlib.h" 3 4
-extern char *mktemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 849 "/usr/include/stdlib.h" 3 4
-extern int mkstemp (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 859 "/usr/include/stdlib.h" 3 4
-extern int mkstemp64 (char *__template) __attribute__ ((__nonnull__ (1))) ;
-# 871 "/usr/include/stdlib.h" 3 4
-extern int mkstemps (char *__template, int __suffixlen) __attribute__ ((__nonnull__ (1))) ;
-# 881 "/usr/include/stdlib.h" 3 4
-extern int mkstemps64 (char *__template, int __suffixlen)
-     __attribute__ ((__nonnull__ (1))) ;
-# 892 "/usr/include/stdlib.h" 3 4
-extern char *mkdtemp (char *__template) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-# 903 "/usr/include/stdlib.h" 3 4
-extern int mkostemp (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 913 "/usr/include/stdlib.h" 3 4
-extern int mkostemp64 (char *__template, int __flags) __attribute__ ((__nonnull__ (1))) ;
-# 923 "/usr/include/stdlib.h" 3 4
-extern int mkostemps (char *__template, int __suffixlen, int __flags)
-     __attribute__ ((__nonnull__ (1))) ;
-# 935 "/usr/include/stdlib.h" 3 4
-extern int mkostemps64 (char *__template, int __suffixlen, int __flags)
-     __attribute__ ((__nonnull__ (1))) ;
-# 945 "/usr/include/stdlib.h" 3 4
-extern int system (const char *__command) ;
-
-
-
-
-
-extern char *canonicalize_file_name (const char *__name)
-     noexcept (true) __attribute__ ((__nonnull__ (1))) __attribute__ ((__malloc__))
-                              ;
-# 962 "/usr/include/stdlib.h" 3 4
-extern char *realpath (const char *__restrict __name,
-         char *__restrict __resolved) noexcept (true) ;
-
-
-
-
-
-
-typedef int (*__compar_fn_t) (const void *, const void *);
-
-
-typedef __compar_fn_t comparison_fn_t;
-
-
-
-typedef int (*__compar_d_fn_t) (const void *, const void *, void *);
-
-
-
-
-extern void *bsearch (const void *__key, const void *__base,
-        size_t __nmemb, size_t __size, __compar_fn_t __compar)
-     __attribute__ ((__nonnull__ (1, 2, 5))) ;
-# 998 "/usr/include/stdlib.h" 3 4
-extern void qsort (void *__base, size_t __nmemb, size_t __size,
-     __compar_fn_t __compar) __attribute__ ((__nonnull__ (1, 4)));
-
-extern void qsort_r (void *__base, size_t __nmemb, size_t __size,
-       __compar_d_fn_t __compar, void *__arg)
-  __attribute__ ((__nonnull__ (1, 4)));
-
-
-
-
-extern int abs (int __x) noexcept (true) __attribute__ ((__const__)) ;
-extern long int labs (long int __x) noexcept (true) __attribute__ ((__const__)) ;
-
-
-__extension__ extern long long int llabs (long long int __x)
-     noexcept (true) __attribute__ ((__const__)) ;
-
-
-
-extern unsigned int uabs (int __x) noexcept (true) __attribute__ ((__const__)) ;
-extern unsigned long int ulabs (long int __x) noexcept (true) __attribute__ ((__const__)) ;
-__extension__ extern unsigned long long int ullabs (long long int __x)
-     noexcept (true) __attribute__ ((__const__)) ;
-
-
-
-
-
-extern div_t div (int __numer, int __denom)
-     noexcept (true) __attribute__ ((__const__)) ;
-extern ldiv_t ldiv (long int __numer, long int __denom)
-     noexcept (true) __attribute__ ((__const__)) ;
-
-
-__extension__ extern lldiv_t lldiv (long long int __numer,
-        long long int __denom)
-     noexcept (true) __attribute__ ((__const__)) ;
-# 1046 "/usr/include/stdlib.h" 3 4
-extern char *ecvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
-
-
-
-
-extern char *fcvt (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign) noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
-
-
-
-
-extern char *gcvt (double __value, int __ndigit, char *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (3))) ;
-
-
-
-
-extern char *qecvt (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
-extern char *qfcvt (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4))) ;
-extern char *qgcvt (long double __value, int __ndigit, char *__buf)
-     noexcept (true) __attribute__ ((__nonnull__ (3))) ;
-
-
-
-
-extern int ecvt_r (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign, char *__restrict __buf,
-     size_t __len) noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
-extern int fcvt_r (double __value, int __ndigit, int *__restrict __decpt,
-     int *__restrict __sign, char *__restrict __buf,
-     size_t __len) noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
-
-extern int qecvt_r (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign,
-      char *__restrict __buf, size_t __len)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
-extern int qfcvt_r (long double __value, int __ndigit,
-      int *__restrict __decpt, int *__restrict __sign,
-      char *__restrict __buf, size_t __len)
-     noexcept (true) __attribute__ ((__nonnull__ (3, 4, 5)));
-
-
-
-
-
-extern int mblen (const char *__s, size_t __n) noexcept (true);
-
-
-extern int mbtowc (wchar_t *__restrict __pwc,
-     const char *__restrict __s, size_t __n) noexcept (true);
-
-
-extern int wctomb (char *__s, wchar_t __wchar) noexcept (true);
-
-
-
-extern size_t mbstowcs (wchar_t *__restrict __pwcs,
-   const char *__restrict __s, size_t __n) noexcept (true)
-                                      ;
-
-extern size_t wcstombs (char *__restrict __s,
-   const wchar_t *__restrict __pwcs, size_t __n)
-     noexcept (true)
-
-                                    ;
-
-
-
-
-
-
-extern int rpmatch (const char *__response) noexcept (true) __attribute__ ((__nonnull__ (1))) ;
-# 1133 "/usr/include/stdlib.h" 3 4
-extern int getsubopt (char **__restrict __optionp,
-        char *const *__restrict __tokens,
-        char **__restrict __valuep)
-     noexcept (true) __attribute__ ((__nonnull__ (1, 2, 3))) ;
-
-
-
-
-
-
-
-extern int posix_openpt (int __oflag) ;
-
-
-
-
-
-
-
-extern int grantpt (int __fd) noexcept (true);
-
-
-
-extern int unlockpt (int __fd) noexcept (true);
-
-
-
-
-extern char *ptsname (int __fd) noexcept (true) ;
-
-
-
-
-
-
-extern int ptsname_r (int __fd, char *__buf, size_t __buflen)
-     noexcept (true) __attribute__ ((__nonnull__ (2))) ;
-
-
-extern int getpt (void);
-
-
-
-
-
-
-extern int getloadavg (double __loadavg[], int __nelem)
-     noexcept (true) __attribute__ ((__nonnull__ (1)));
-# 1199 "/usr/include/stdlib.h" 3 4
-extern size_t memalignment (const void *__p);
-
-
-# 1 "/usr/include/bits/stdlib-float.h" 1 3 4
-# 1203 "/usr/include/stdlib.h" 2 3 4
-# 1214 "/usr/include/stdlib.h" 3 4
-}
-# 39 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h" 2 3
+#pragma pack(pop)
+# 742 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdlib.h" 2 3
+# 39 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/std_abs.h" 2 3
 
 
 
@@ -6067,7 +1987,7 @@ extern size_t memalignment (const void *__p);
 
 extern "C++"
 {
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
 
 
@@ -6104,21 +2024,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   inline constexpr __int128
   abs(__int128 __x) { return __x >= 0 ? __x : -__x; }
-# 100 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/std_abs.h" 3
-  inline constexpr
-  __float128
-  abs(__float128 __x)
-  { return __x < 0 ? -__x : __x; }
-
-
-
+# 107 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/std_abs.h" 3
 }
 }
-# 48 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 2 3
-# 77 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 3
+# 48 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 2 3
+# 77 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 3
 extern "C++"
 {
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
 
 
@@ -6433,7 +2346,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline constexpr long double
   pow(long double __x, long double __y)
   { return __builtin_powl(__x, __y); }
-# 412 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 3
+# 412 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 3
   template<typename _Tp, typename _Up>
     inline constexpr
     typename __gnu_cxx::__promote_2<_Tp, _Up>::__type
@@ -6537,21 +2450,21 @@ namespace std __attribute__ ((__visibility__ ("default")))
                                     double>::__type
     tanh(_Tp __x)
     { return __builtin_tanh(__x); }
-# 536 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 3
+# 536 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 3
   constexpr int
   fpclassify(float __x)
-  { return __builtin_fpclassify(0, 1, 4,
-    3, 2, __x); }
+  { return __builtin_fpclassify(0x0100, (0x0100 | 0x0400), 0x0400,
+    (0x0400 | 0x4000), 0x4000, __x); }
 
   constexpr int
   fpclassify(double __x)
-  { return __builtin_fpclassify(0, 1, 4,
-    3, 2, __x); }
+  { return __builtin_fpclassify(0x0100, (0x0100 | 0x0400), 0x0400,
+    (0x0400 | 0x4000), 0x4000, __x); }
 
   constexpr int
   fpclassify(long double __x)
-  { return __builtin_fpclassify(0, 1, 4,
-    3, 2, __x); }
+  { return __builtin_fpclassify(0x0100, (0x0100 | 0x0400), 0x0400,
+    (0x0400 | 0x4000), 0x4000, __x); }
 
 
 
@@ -6559,7 +2472,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     constexpr typename __gnu_cxx::__enable_if<__is_integer<_Tp>::__value,
                                               int>::__type
     fpclassify(_Tp __x)
-    { return __x != 0 ? 4 : 2; }
+    { return __x != 0 ? 0x0400 : 0x4000; }
 
 
 
@@ -6837,7 +2750,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Up>::__type __type;
       return __builtin_isunordered(__type(__x), __type(__y));
     }
-# 1065 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 3
+# 1065 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 3
   using ::double_t;
   using ::float_t;
 
@@ -7615,7 +3528,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                                               double>::__type
     trunc(_Tp __x)
     { return __builtin_trunc(__x); }
-# 1852 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 3
+# 1852 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 3
   template<typename _Tp>
     inline _Tp
     __hypot3(_Tp __x, _Tp __y, _Tp __z)
@@ -7656,18 +3569,18 @@ namespace std __attribute__ ((__visibility__ ("default")))
 }
 
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 1 3
-# 33 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
 #pragma GCC visibility push(default)
-# 45 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 1 3
-# 60 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/functexcept.h" 1 3
-# 40 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/functexcept.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/exception_defines.h" 1 3
-# 41 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/functexcept.h" 2 3
+# 45 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 1 3
+# 60 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/functexcept.h" 1 3
+# 40 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/functexcept.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/exception_defines.h" 1 3
+# 41 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/functexcept.h" 2 3
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
 
 
@@ -7734,18 +3647,18 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 61 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 61 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
 
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ext/numeric_traits.h" 1 3
-# 33 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ext/numeric_traits.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\ext/numeric_traits.h" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\ext/numeric_traits.h" 3
 
 
 
 
-namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
+namespace __gnu_cxx
 {
-# 54 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ext/numeric_traits.h" 3
+# 54 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\ext/numeric_traits.h" 3
   template<typename _Value>
     struct __numeric_traits_integer
     {
@@ -7770,7 +3683,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
   template<typename _Value>
     const int __numeric_traits_integer<_Value>::__digits;
-# 99 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/ext/numeric_traits.h" 3
+# 99 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\ext/numeric_traits.h" 3
   template<typename _Value>
     struct __numeric_traits_floating
     {
@@ -7804,16 +3717,16 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 64 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 1 3
-# 59 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 1 3
-# 34 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/concept_check.h" 1 3
-# 34 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/concept_check.h" 3
-# 35 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 2 3
+# 64 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 1 3
+# 59 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 1 3
+# 34 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/concept_check.h" 1 3
+# 34 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/concept_check.h" 3
+# 35 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 2 3
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
 
 
@@ -7832,8 +3745,8 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 1 3
-# 33 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
 
 
 
@@ -7841,9 +3754,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 56 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 56 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp, _Tp __v>
     struct integral_constant
     {
@@ -7960,7 +3873,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
   template<typename _Pp>
     inline constexpr bool negation_v = negation<_Pp>::value;
-# 180 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 180 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp>
     struct __success_type
     { typedef _Tp type; };
@@ -8063,7 +3976,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __is_integral_helper<unsigned __int128>
     : public true_type { };
-# 312 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 312 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp>
     struct is_integral
     : public __is_integral_helper<typename remove_cv<_Tp>::type>::type
@@ -8084,14 +3997,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __is_floating_point_helper<long double>
     : public true_type { };
-
-
-  template<>
-    struct __is_floating_point_helper<__float128>
-    : public true_type { };
-
-
-
+# 340 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp>
     struct is_floating_point
     : public __is_floating_point_helper<typename remove_cv<_Tp>::type>::type
@@ -8490,7 +4396,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct is_unsigned
     : public __and_<is_arithmetic<_Tp>, __not_<is_signed<_Tp>>>
     { };
-# 747 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 747 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp, typename _Up = _Tp&&>
     _Up
     __declval(int);
@@ -9316,7 +5222,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __make_unsigned<__int128>
     { typedef unsigned __int128 __type; };
-# 1590 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 1590 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp,
     bool _IsInt = is_integral<_Tp>::value,
     bool _IsEnum = is_enum<_Tp>::value>
@@ -9403,7 +5309,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<>
     struct __make_signed<unsigned __int128>
     { typedef __int128 __type; };
-# 1694 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 1694 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp,
     bool _IsInt = is_integral<_Tp>::value,
     bool _IsEnum = is_enum<_Tp>::value>
@@ -9539,7 +5445,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  struct __attribute__((__aligned__)) { } __align;
       };
     };
-# 1840 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 1840 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<std::size_t _Len, std::size_t _Align =
     __alignof__(typename __aligned_storage_msa<_Len>::__type)>
     struct aligned_storage
@@ -9568,7 +5474,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
         sizeof(_Tp) > __strictest_alignment<_Types...>::_S_size
  ? sizeof(_Tp) : __strictest_alignment<_Types...>::_S_size;
     };
-# 1879 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 1879 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template <size_t _Len, typename... _Types>
     struct aligned_union
     {
@@ -9752,7 +5658,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       "declval() must not be used!");
       return __declval<_Tp>(0);
     }
-# 2072 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 2072 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<>
     struct __make_unsigned<wchar_t>
     {
@@ -10072,7 +5978,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename... _Args>
     using __detected_or_t
       = typename __detected_or<_Default, _Op, _Args...>::type;
-# 2408 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 2408 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template <typename _Tp>
     struct __is_swappable;
 
@@ -10578,7 +6484,7 @@ template <typename _Base, typename _Derived>
   inline constexpr bool is_base_of_v = is_base_of<_Base, _Derived>::value;
 template <typename _From, typename _To>
   inline constexpr bool is_convertible_v = is_convertible<_From, _To>::value;
-# 2926 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 2926 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp>
     struct has_unique_object_representations
     : bool_constant<__has_unique_object_representations(
@@ -10589,7 +6495,7 @@ template <typename _From, typename _To>
   template<typename _Tp>
     inline constexpr bool has_unique_object_representations_v
       = has_unique_object_representations<_Tp>::value;
-# 2951 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 2951 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
   template<typename _Tp>
     struct is_aggregate
     : bool_constant<__is_aggregate(remove_cv_t<_Tp>)> { };
@@ -10597,13 +6503,13 @@ template <typename _From, typename _To>
 
   template<typename _Tp>
     inline constexpr bool is_aggregate_v = is_aggregate<_Tp>::value;
-# 2974 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/type_traits" 3
+# 2974 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\type_traits" 3
 }
-# 56 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 2 3
+# 56 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 2 3
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 72 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 3
+# 72 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 3
   template<typename _Tp>
     constexpr _Tp&&
     forward(typename std::remove_reference<_Tp>::type& __t) noexcept
@@ -10639,13 +6545,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
     struct __move_if_noexcept_cond
     : public __and_<__not_<is_nothrow_move_constructible<_Tp>>,
                     is_copy_constructible<_Tp>>::type { };
-# 116 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 3
+# 116 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 3
   template<typename _Tp>
     constexpr typename
     conditional<__move_if_noexcept_cond<_Tp>::value, const _Tp&, _Tp&&>::type
     move_if_noexcept(_Tp& __x) noexcept
     { return std::move(__x); }
-# 136 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 3
+# 136 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 3
   template<typename _Tp>
     inline constexpr _Tp*
     addressof(_Tp& __r) noexcept
@@ -10665,7 +6571,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       __obj = std::forward<_Up>(__new_val);
       return __old_val;
     }
-# 176 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/move.h" 3
+# 176 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/move.h" 3
   template<typename _Tp>
     inline
 
@@ -10709,15 +6615,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 60 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 2 3
+# 60 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 2 3
 
 
 
 
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 76 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 3
+# 76 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 3
   struct piecewise_construct_t { explicit piecewise_construct_t() = default; };
 
 
@@ -10886,7 +6792,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                                    ::value, bool>::type = false>
       explicit constexpr pair()
       : first(), second() { }
-# 252 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 3
+# 252 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 3
       using _PCCP = _PCC<true, _T1, _T2>;
 
       template<typename _U1 = _T1, typename _U2=_T2, typename
@@ -10906,7 +6812,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                          bool>::type=false>
       explicit constexpr pair(const _T1& __a, const _T2& __b)
       : first(__a), second(__b) { }
-# 280 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 3
+# 280 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 3
       template <typename _U1, typename _U2>
         using _PCCFP = _PCC<!is_same<_T1, _U1>::value
        || !is_same<_T2, _U2>::value,
@@ -11131,7 +7037,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename enable_if<!__and_<__is_swappable<_T1>,
           __is_swappable<_T2>>::value>::type
     swap(pair<_T1, _T2>&, pair<_T1, _T2>&) = delete;
-# 521 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 3
+# 521 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 3
   template<typename _T1, typename _T2>
     constexpr pair<typename __decay_and_strip<_T1>::__type,
                    typename __decay_and_strip<_T2>::__type>
@@ -11142,11 +7048,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef pair<__ds_type1, __ds_type2> __pair_type;
       return __pair_type(std::forward<_T1>(__x), std::forward<_T2>(__y));
     }
-# 541 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_pair.h" 3
+# 541 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_pair.h" 3
 }
-# 65 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_types.h" 1 3
-# 63 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
+# 65 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_types.h" 1 3
+# 63 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_types.h" 3
 
 
 
@@ -11154,9 +7060,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 89 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
+# 89 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_types.h" 3
   struct input_iterator_tag { };
 
 
@@ -11172,7 +7078,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
   struct random_access_iterator_tag : public bidirectional_iterator_tag { };
-# 116 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
+# 116 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_types.h" 3
   template<typename _Category, typename _Tp, typename _Distance = ptrdiff_t,
            typename _Pointer = _Tp*, typename _Reference = _Tp&>
     struct iterator
@@ -11188,7 +7094,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       typedef _Reference reference;
     };
-# 143 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
+# 143 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_types.h" 3
   template<typename _Iterator, typename = __void_t<>>
     struct __iterator_traits { };
 
@@ -11210,7 +7116,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<typename _Iterator>
     struct iterator_traits
     : public __iterator_traits<_Iterator> { };
-# 177 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
+# 177 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_types.h" 3
   template<typename _Tp>
     struct iterator_traits<_Tp*>
     {
@@ -11241,7 +7147,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     typename iterator_traits<_Iter>::iterator_category
     __iterator_category(const _Iter&)
     { return typename iterator_traits<_Iter>::iterator_category(); }
-# 231 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_types.h" 3
+# 231 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_types.h" 3
   template<typename _InIter>
     using _RequireInputIter = typename
       enable_if<is_convertible<typename
@@ -11251,15 +7157,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 66 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 1 3
-# 63 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 3
+# 66 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_funcs.h" 1 3
+# 63 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_funcs.h" 3
 
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/debug/assertions.h" 1 3
-# 66 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\debug/assertions.h" 1 3
+# 66 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_funcs.h" 2 3
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
 
 
@@ -11312,7 +7218,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     __distance(std::_List_const_iterator<_Tp>,
         std::_List_const_iterator<_Tp>,
         input_iterator_tag);
-# 135 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 3
+# 135 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_funcs.h" 3
   template<typename _InputIterator>
     inline constexpr
     typename iterator_traits<_InputIterator>::difference_type
@@ -11365,7 +7271,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
  __i += __n;
     }
-# 200 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator_base_funcs.h" 3
+# 200 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator_base_funcs.h" 3
   template<typename _InputIterator, typename _Distance>
     inline constexpr void
     advance(_InputIterator& __i, _Distance __n)
@@ -11404,12 +7310,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 67 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 1 3
-# 66 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/ptr_traits.h" 1 3
-# 37 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/ptr_traits.h" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 67 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 1 3
+# 66 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/ptr_traits.h" 1 3
+# 37 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/ptr_traits.h" 3
+namespace std
 {
 
 
@@ -11534,17 +7440,17 @@ namespace std __attribute__ ((__visibility__ ("default")))
     constexpr typename std::pointer_traits<_Ptr>::element_type*
     __to_address(const _Ptr& __ptr)
     { return std::__to_address(__ptr.operator->()); }
-# 199 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/ptr_traits.h" 3
+# 199 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/ptr_traits.h" 3
 }
-# 67 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 2 3
+# 67 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 2 3
 
 
 
 
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 100 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 100 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Iterator>
     class reverse_iterator
     : public iterator<typename iterator_traits<_Iterator>::iterator_category,
@@ -11563,7 +7469,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __traits_type::difference_type difference_type;
       typedef typename __traits_type::pointer pointer;
       typedef typename __traits_type::reference reference;
-# 126 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 126 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
       constexpr
       reverse_iterator() : current() { }
 
@@ -11595,14 +7501,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
       constexpr iterator_type
       base() const
       { return current; }
-# 168 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 168 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
       constexpr reference
       operator*() const
       {
  _Iterator __tmp = current;
  return *--__tmp;
       }
-# 182 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 182 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
       constexpr pointer
       operator->() const
       { return std::__addressof(operator*()); }
@@ -11710,7 +7616,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator[](difference_type __n) const
       { return *(*this + __n); }
     };
-# 300 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 300 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Iterator>
     inline constexpr bool
     operator==(const reverse_iterator<_Iterator>& __x,
@@ -11784,7 +7690,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     operator>=(const reverse_iterator<_IteratorL>& __x,
         const reverse_iterator<_IteratorR>& __y)
     { return !(__x < __y); }
-# 390 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 390 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _IteratorL, typename _IteratorR>
     inline constexpr auto
     operator-(const reverse_iterator<_IteratorL>& __x,
@@ -11836,7 +7742,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     __miter_base(reverse_iterator<_Iterator> __it)
     -> decltype(__make_reverse_iterator(__miter_base(__it.base())))
     { return __make_reverse_iterator(__miter_base(__it.base())); }
-# 454 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 454 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Container>
     class back_insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -11852,7 +7758,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       explicit
       back_insert_iterator(_Container& __x)
       : container(std::__addressof(__x)) { }
-# 489 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 489 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
       back_insert_iterator&
       operator=(const typename _Container::value_type& __value)
       {
@@ -11883,12 +7789,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator++(int)
       { return *this; }
     };
-# 531 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 531 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Container>
     inline back_insert_iterator<_Container>
     back_inserter(_Container& __x)
     { return back_insert_iterator<_Container>(__x); }
-# 546 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 546 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Container>
     class front_insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -11903,7 +7809,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       explicit front_insert_iterator(_Container& __x)
       : container(std::__addressof(__x)) { }
-# 580 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 580 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
       front_insert_iterator&
       operator=(const typename _Container::value_type& __value)
       {
@@ -11934,12 +7840,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator++(int)
       { return *this; }
     };
-# 622 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 622 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Container>
     inline front_insert_iterator<_Container>
     front_inserter(_Container& __x)
     { return front_insert_iterator<_Container>(__x); }
-# 641 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 641 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Container>
     class insert_iterator
     : public iterator<output_iterator_tag, void, void, void, void>
@@ -11958,7 +7864,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       insert_iterator(_Container& __x, typename _Container::iterator __i)
       : container(std::__addressof(__x)), iter(__i) {}
-# 692 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 692 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
       insert_iterator&
       operator=(const typename _Container::value_type& __value)
       {
@@ -11991,7 +7897,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       operator++(int)
       { return *this; }
     };
-# 737 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 737 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Container, typename _Iterator>
     inline insert_iterator<_Container>
     inserter(_Container& __x, _Iterator __i)
@@ -12005,9 +7911,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 }
 
-namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
+namespace __gnu_cxx
 {
-# 761 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 761 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   using std::iterator_traits;
   using std::iterator;
   template<typename _Iterator, typename _Container>
@@ -12098,7 +8004,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       base() const noexcept
       { return _M_current; }
     };
-# 861 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 861 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _IteratorL, typename _IteratorR, typename _Container>
     inline bool
     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
@@ -12219,7 +8125,7 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 }
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
 
 
@@ -12227,7 +8133,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     _Iterator
     __niter_base(__gnu_cxx::__normal_iterator<_Iterator, _Container> __it)
     { return __it.base(); }
-# 1006 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 1006 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _Iterator>
     class move_iterator
     {
@@ -12463,7 +8369,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     __miter_base(move_iterator<_Iterator> __it)
     -> decltype(__miter_base(__it.base()))
     { return __miter_base(__it.base()); }
-# 1253 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_iterator.h" 3
+# 1253 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_iterator.h" 3
   template<typename _InputIterator>
     using __iter_key_t = remove_const_t<
     typename iterator_traits<_InputIterator>::value_type::first_type>;
@@ -12484,10 +8390,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 68 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 68 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/debug/debug.h" 1 3
-# 48 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/debug/debug.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\debug/debug.h" 1 3
+# 48 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\debug/debug.h" 3
 namespace std
 {
   namespace __debug { }
@@ -12500,10 +8406,10 @@ namespace __gnu_debug
 {
   using namespace std::__debug;
 }
-# 70 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 70 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/predefined_ops.h" 1 3
-# 33 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/predefined_ops.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/predefined_ops.h" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/predefined_ops.h" 3
 namespace __gnu_cxx
 {
 namespace __ops
@@ -12832,20 +8738,20 @@ namespace __ops
 
 }
 }
-# 72 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 2 3
+# 72 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 2 3
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 118 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 118 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2>
     inline void
     iter_swap(_ForwardIterator1 __a, _ForwardIterator2 __b)
     {
-# 148 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 148 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
       swap(*__a, *__b);
 
     }
-# 164 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 164 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _ForwardIterator1, typename _ForwardIterator2>
     _ForwardIterator2
     swap_ranges(_ForwardIterator1 __first1, _ForwardIterator1 __last1,
@@ -12862,7 +8768,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  std::iter_swap(__first1, __first2);
       return __first2;
     }
-# 192 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 192 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _Tp>
     constexpr
     inline const _Tp&
@@ -12875,7 +8781,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  return __b;
       return __a;
     }
-# 216 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 216 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _Tp>
     constexpr
     inline const _Tp&
@@ -12888,7 +8794,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  return __b;
       return __a;
     }
-# 240 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 240 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _Tp, typename _Compare>
     constexpr
     inline const _Tp&
@@ -12899,7 +8805,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  return __b;
       return __a;
     }
-# 262 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 262 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _Tp, typename _Compare>
     constexpr
     inline const _Tp&
@@ -13064,7 +8970,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           std::__niter_base(__last),
           std::__niter_base(__result)));
     }
-# 444 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 444 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _II, typename _OI>
     inline _OI
     copy(_II __first, _II __last, _OI __result)
@@ -13079,7 +8985,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
        (std::__miter_base(__first), std::__miter_base(__last),
         __result));
     }
-# 477 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 477 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _II, typename _OI>
     inline _OI
     move(_II __first, _II __last, _OI __result)
@@ -13204,7 +9110,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     (std::__niter_base(__first), std::__niter_base(__last),
      std::__niter_base(__result)));
     }
-# 620 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 620 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _BI1, typename _BI2>
     inline _BI2
     copy_backward(_BI1 __first, _BI1 __last, _BI2 __result)
@@ -13221,7 +9127,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
        (std::__miter_base(__first), std::__miter_base(__last),
         __result));
     }
-# 656 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 656 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _BI1, typename _BI2>
     inline _BI2
     move_backward(_BI1 __first, _BI1 __last, _BI2 __result)
@@ -13275,7 +9181,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       if (const size_t __len = __last - __first)
  __builtin_memset(__first, static_cast<unsigned char>(__tmp), __len);
     }
-# 722 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 722 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _ForwardIterator, typename _Tp>
     inline void
     fill(_ForwardIterator __first, _ForwardIterator __last, const _Tp& __value)
@@ -13320,7 +9226,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       std::__fill_a(__first, __first + __n, __c);
       return __first + __n;
     }
-# 782 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 782 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _OI, typename _Size, typename _Tp>
     inline _OI
     fill_n(_OI __first, _Size __n, const _Tp& __value)
@@ -13509,7 +9415,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  }
       return __first;
     }
-# 982 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 982 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _ForwardIterator, typename _Tp>
     inline _ForwardIterator
     lower_bound(_ForwardIterator __first, _ForwardIterator __last,
@@ -13550,7 +9456,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline constexpr unsigned long long
   __lg(unsigned long long __n)
   { return sizeof(long long) * 8 - 1 - __builtin_clzll(__n); }
-# 1037 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1037 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     inline bool
     equal(_II1 __first1, _II1 __last1, _II2 __first2)
@@ -13567,7 +9473,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
          std::__niter_base(__last1),
          std::__niter_base(__first2));
     }
-# 1069 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1069 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
     inline bool
     equal(_IIter1 __first1, _IIter1 __last1,
@@ -13636,7 +9542,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
    return false;
       return __first1 == __last1 && __first2 == __last2;
     }
-# 1156 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1156 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     inline bool
     equal(_II1 __first1, _II1 __last1, _II2 __first2, _II2 __last2)
@@ -13652,7 +9558,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return std::__equal4(__first1, __last1, __first2, __last2);
     }
-# 1188 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1188 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _IIter1, typename _IIter2, typename _BinaryPredicate>
     inline bool
     equal(_IIter1 __first1, _IIter1 __last1,
@@ -13667,13 +9573,13 @@ namespace std __attribute__ ((__visibility__ ("default")))
       return std::__equal4(__first1, __last1, __first2, __last2,
           __binary_pred);
     }
-# 1219 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1219 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _II1, typename _II2>
     inline bool
     lexicographical_compare(_II1 __first1, _II1 __last1,
        _II2 __first2, _II2 __last2)
     {
-# 1233 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1233 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
                                                        ;
                                                        ;
 
@@ -13682,7 +9588,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       std::__niter_base(__first2),
       std::__niter_base(__last2));
     }
-# 1255 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1255 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _II1, typename _II2, typename _Compare>
     inline bool
     lexicographical_compare(_II1 __first1, _II1 __last1,
@@ -13712,7 +9618,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  }
       return pair<_InputIterator1, _InputIterator2>(__first1, __first2);
     }
-# 1298 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1298 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2>
     inline pair<_InputIterator1, _InputIterator2>
     mismatch(_InputIterator1 __first1, _InputIterator1 __last1,
@@ -13729,7 +9635,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       return std::__mismatch(__first1, __last1, __first2,
         __gnu_cxx::__ops::__iter_equal_to_iter());
     }
-# 1331 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1331 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2,
     typename _BinaryPredicate>
     inline pair<_InputIterator1, _InputIterator2>
@@ -13762,7 +9668,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
  }
       return pair<_InputIterator1, _InputIterator2>(__first1, __first2);
     }
-# 1378 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1378 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2>
     inline pair<_InputIterator1, _InputIterator2>
     mismatch(_InputIterator1 __first1, _InputIterator1 __last1,
@@ -13780,7 +9686,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       return std::__mismatch(__first1, __last1, __first2, __last2,
         __gnu_cxx::__ops::__iter_equal_to_iter());
     }
-# 1413 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/stl_algobase.h" 3
+# 1413 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/stl_algobase.h" 3
   template<typename _InputIterator1, typename _InputIterator2,
     typename _BinaryPredicate>
     inline pair<_InputIterator1, _InputIterator2>
@@ -13802,11 +9708,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 46 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 1 3
-# 41 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
-# 158 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 46 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 1 3
+# 41 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
+# 158 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
+namespace std
 {
 
 
@@ -13839,7 +9745,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
     denorm_present = 1
   };
-# 202 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
+# 202 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
   struct __numeric_limits_base
   {
 
@@ -13918,7 +9824,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
     static constexpr bool is_bounded = false;
-# 288 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
+# 288 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
     static constexpr bool is_modulo = false;
 
 
@@ -13933,7 +9839,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
     static constexpr float_round_style round_style =
           round_toward_zero;
   };
-# 311 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
+# 311 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
   template<typename _Tp>
     struct numeric_limits : public __numeric_limits_base
     {
@@ -13997,7 +9903,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   template<typename _Tp>
     struct numeric_limits<const volatile _Tp>
     : public numeric_limits<_Tp> { };
-# 382 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
+# 382 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
   template<>
     struct numeric_limits<bool>
     {
@@ -15029,9 +10935,9 @@ namespace std __attribute__ ((__visibility__ ("default")))
       static constexpr float_round_style round_style
        = round_toward_zero;
     };
-# 1570 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
+# 1570 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
   template<> struct numeric_limits<__int128> { static constexpr bool is_specialized = true; static constexpr __int128 min() noexcept { return (((__int128)(-1) < 0) ? -(((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0) - 1 : (__int128)0); } static constexpr __int128 max() noexcept { return (((__int128)(-1) < 0) ? (((((__int128)1 << ((128 - ((__int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(__int128)0); } static constexpr int digits = 128 - 1; static constexpr int digits10 = (128 - 1) * 643L / 2136; static constexpr bool is_signed = true; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr __int128 epsilon() noexcept { return 0; } static constexpr __int128 round_error() noexcept { return 0; } static constexpr __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr __int128 infinity() noexcept { return static_cast<__int128>(0); } static constexpr __int128 quiet_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 signaling_NaN() noexcept { return static_cast<__int128>(0); } static constexpr __int128 denorm_min() noexcept { return static_cast<__int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = false; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; }; template<> struct numeric_limits<unsigned __int128> { static constexpr bool is_specialized = true; static constexpr unsigned __int128 min() noexcept { return 0; } static constexpr unsigned __int128 max() noexcept { return (((unsigned __int128)(-1) < 0) ? (((((unsigned __int128)1 << ((128 - ((unsigned __int128)(-1) < 0)) - 1)) - 1) << 1) + 1) : ~(unsigned __int128)0); } static constexpr unsigned __int128 lowest() noexcept { return min(); } static constexpr int max_digits10 = 0; static constexpr int digits = 128; static constexpr int digits10 = 128 * 643L / 2136; static constexpr bool is_signed = false; static constexpr bool is_integer = true; static constexpr bool is_exact = true; static constexpr int radix = 2; static constexpr unsigned __int128 epsilon() noexcept { return 0; } static constexpr unsigned __int128 round_error() noexcept { return 0; } static constexpr int min_exponent = 0; static constexpr int min_exponent10 = 0; static constexpr int max_exponent = 0; static constexpr int max_exponent10 = 0; static constexpr bool has_infinity = false; static constexpr bool has_quiet_NaN = false; static constexpr bool has_signaling_NaN = false; static constexpr float_denorm_style has_denorm = denorm_absent; static constexpr bool has_denorm_loss = false; static constexpr unsigned __int128 infinity() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 quiet_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 signaling_NaN() noexcept { return static_cast<unsigned __int128>(0); } static constexpr unsigned __int128 denorm_min() noexcept { return static_cast<unsigned __int128>(0); } static constexpr bool is_iec559 = false; static constexpr bool is_bounded = true; static constexpr bool is_modulo = true; static constexpr bool traps = true; static constexpr bool tinyness_before = false; static constexpr float_round_style round_style = round_toward_zero; };
-# 1593 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/limits" 3
+# 1593 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\limits" 3
   template<>
     struct numeric_limits<float>
     {
@@ -15258,16 +11164,16 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 47 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
+# 47 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
 
 
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 1 3
-# 49 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/special_function_util.h" 1 3
-# 39 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/special_function_util.h" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 1 3
+# 49 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/special_function_util.h" 1 3
+# 39 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/special_function_util.h" 3
+namespace std
 {
-# 50 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/special_function_util.h" 3
+# 50 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/special_function_util.h" 3
   namespace __detail
   {
 
@@ -15324,11 +11230,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
         static _Tp __euler() throw()
         { return static_cast<_Tp>(2.7182818284590452353602874713526625L); }
       };
-# 114 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/special_function_util.h" 3
+# 114 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/special_function_util.h" 3
     template<typename _Tp>
     inline bool __isnan(_Tp __x)
     { return std::isnan(__x); }
-# 133 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/special_function_util.h" 3
+# 133 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/special_function_util.h" 3
   }
 
 
@@ -15336,14 +11242,14 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 50 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 2 3
+# 50 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 2 3
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 65 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 65 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
   namespace __detail
   {
-# 76 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 76 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template <typename _Tp>
     _Tp
     __bernoulli_series(unsigned int __n)
@@ -15399,12 +11305,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __fact * __sum;
     }
-# 139 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 139 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     inline _Tp
     __bernoulli(int __n)
     { return __bernoulli_series<_Tp>(__n); }
-# 153 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 153 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __log_gamma_bernoulli(_Tp __x)
@@ -15424,7 +11330,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __lg;
     }
-# 181 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 181 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __log_gamma_lanczos(_Tp __x)
@@ -15458,7 +11364,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __result;
     }
-# 225 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 225 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __log_gamma(_Tp __x)
@@ -15477,7 +11383,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                      - __log_gamma_lanczos(_Tp(1) - __x);
         }
     }
-# 252 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 252 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __log_gamma_sign(_Tp __x)
@@ -15496,7 +11402,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
             return _Tp(0);
         }
     }
-# 283 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 283 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __log_bincoef(unsigned int __n, unsigned int __k)
@@ -15515,7 +11421,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
     }
-# 314 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 314 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __bincoef(unsigned int __n, unsigned int __k)
@@ -15531,12 +11437,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return std::exp(__log_coeff);
     }
-# 337 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 337 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     inline _Tp
     __gamma(_Tp __x)
     { return std::exp(__log_gamma(__x)); }
-# 356 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 356 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __psi_series(_Tp __x)
@@ -15552,7 +11458,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
         }
       return __sum;
     }
-# 386 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 386 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __psi_asymp(_Tp __x)
@@ -15571,7 +11477,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
         }
       return __sum;
     }
-# 417 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 417 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __psi(_Tp __x)
@@ -15591,7 +11497,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return __psi_series(__x);
     }
-# 446 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/gamma.tcc" 3
+# 446 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/gamma.tcc" 3
     template<typename _Tp>
     _Tp
     __psi(unsigned int __n, _Tp __x)
@@ -15623,15 +11529,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 50 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 1 3
-# 51 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 50 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 1 3
+# 51 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
+namespace std
 {
-# 67 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 67 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
   namespace __detail
   {
-# 94 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 94 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template <typename _Tp>
     void
     __gamma_temme(_Tp __mu,
@@ -15654,7 +11560,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return;
     }
-# 132 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 132 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template <typename _Tp>
     void
     __bessel_jn(_Tp __nu, _Tp __x,
@@ -15862,7 +11768,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return;
     }
-# 357 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 357 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template <typename _Tp>
     void
     __cyl_bessel_jn_asymp(_Tp __nu, _Tp __x, _Tp & __Jnu, _Tp & __Nnu)
@@ -15890,7 +11796,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return;
     }
-# 413 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 413 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template <typename _Tp>
     _Tp
     __cyl_bessel_ij_series(_Tp __nu, _Tp __x, _Tp __sgn,
@@ -15921,7 +11827,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __fact * __Jn;
     }
-# 459 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 459 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template<typename _Tp>
     _Tp
     __cyl_bessel_j(_Tp __nu, _Tp __x)
@@ -15946,7 +11852,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __J_nu;
         }
     }
-# 501 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 501 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template<typename _Tp>
     _Tp
     __cyl_neumann_n(_Tp __nu, _Tp __x)
@@ -15969,7 +11875,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __N_nu;
         }
     }
-# 538 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 538 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template <typename _Tp>
     void
     __sph_bessel_jn(unsigned int __n, _Tp __x,
@@ -15990,7 +11896,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return;
     }
-# 573 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 573 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template <typename _Tp>
     _Tp
     __sph_bessel(unsigned int __n, _Tp __x)
@@ -16014,7 +11920,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __j_n;
         }
     }
-# 611 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/bessel_function.tcc" 3
+# 611 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/bessel_function.tcc" 3
     template <typename _Tp>
     _Tp
     __sph_neumann(unsigned int __n, _Tp __x)
@@ -16041,15 +11947,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 51 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 1 3
-# 49 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 51 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 1 3
+# 49 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 3
+namespace std
 {
-# 65 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 3
+# 65 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 3
   namespace __detail
   {
-# 79 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 3
+# 79 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 3
     template<typename _Tp>
     _Tp
     __beta_gamma(_Tp __x, _Tp __y)
@@ -16069,10 +11975,10 @@ namespace std __attribute__ ((__visibility__ ("default")))
                 / ::std::tgamma(__x + __y);
           __bet *= ::std::tgamma(__x);
         }
-# 111 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 3
+# 111 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 3
       return __bet;
     }
-# 127 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 3
+# 127 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 3
     template<typename _Tp>
     _Tp
     __beta_lgamma(_Tp __x, _Tp __y)
@@ -16089,7 +11995,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       __bet = std::exp(__bet);
       return __bet;
     }
-# 158 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 3
+# 158 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 3
     template<typename _Tp>
     _Tp
     __beta_product(_Tp __x, _Tp __y)
@@ -16107,7 +12013,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __bet;
     }
-# 189 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/beta_function.tcc" 3
+# 189 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/beta_function.tcc" 3
     template<typename _Tp>
     inline _Tp
     __beta(_Tp __x, _Tp __y)
@@ -16125,15 +12031,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 52 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 1 3
-# 45 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 52 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 1 3
+# 45 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
+namespace std
 {
-# 59 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 59 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
   namespace __detail
   {
-# 76 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 76 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __ellint_rf(_Tp __x, _Tp __y, _Tp __z)
@@ -16195,7 +12101,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __s / std::sqrt(__mu);
         }
     }
-# 155 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 155 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __comp_ellint_1_series(_Tp __k)
@@ -16217,7 +12123,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __numeric_constants<_Tp>::__pi_2() * __sum;
     }
-# 193 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 193 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __comp_ellint_1(_Tp __k)
@@ -16230,7 +12136,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return __ellint_rf(_Tp(0), _Tp(1) - __k * __k, _Tp(1));
     }
-# 221 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 221 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __ellint_1(_Tp __k, _Tp __phi)
@@ -16261,7 +12167,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
             return __F + _Tp(2) * __n * __comp_ellint_1(__k);
         }
     }
-# 268 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 268 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __comp_ellint_2_series(_Tp __k)
@@ -16285,7 +12191,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __numeric_constants<_Tp>::__pi_2() * (_Tp(1) - __sum);
     }
-# 316 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 316 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __ellint_rd(_Tp __x, _Tp __y, _Tp __z)
@@ -16360,7 +12266,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                                         / (__mu * std::sqrt(__mu));
         }
     }
-# 404 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 404 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __comp_ellint_2(_Tp __k)
@@ -16380,7 +12286,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                - __kk * __ellint_rd(_Tp(0), _Tp(1) - __kk, _Tp(1)) / _Tp(3);
         }
     }
-# 438 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 438 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __ellint_2(_Tp __k, _Tp __phi)
@@ -16417,7 +12323,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
             return __E + _Tp(2) * __n * __comp_ellint_2(__k);
         }
     }
-# 497 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 497 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __ellint_rc(_Tp __x, _Tp __y)
@@ -16465,7 +12371,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return (_Tp(1) + __s) / std::sqrt(__mu);
         }
     }
-# 568 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 568 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __ellint_rj(_Tp __x, _Tp __y, _Tp __z, _Tp __p)
@@ -16552,7 +12458,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                                              / (__mu * std::sqrt(__mu));
         }
     }
-# 672 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 672 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __comp_ellint_3(_Tp __k, _Tp __nu)
@@ -16574,7 +12480,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
                / _Tp(3);
         }
     }
-# 712 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/ell_integral.tcc" 3
+# 712 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/ell_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __ellint_3(_Tp __k, _Tp __nu, _Tp __phi)
@@ -16618,16 +12524,16 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 53 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 1 3
-# 50 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 53 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 1 3
+# 50 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
+namespace std
 {
-# 64 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 64 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
   namespace __detail
   {
     template<typename _Tp> _Tp __expint_E1(_Tp);
-# 81 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 81 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_E1_series(_Tp __x)
@@ -16651,7 +12557,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       return - __esum - __osum
              - __numeric_constants<_Tp>::__gamma_e() - std::log(__x);
     }
-# 118 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 118 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_E1_asymp(_Tp __x)
@@ -16674,7 +12580,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return std::exp(- __x) * (__esum + __osum) / __x;
     }
-# 155 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 155 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_En_series(unsigned int __n, _Tp __x)
@@ -16706,7 +12612,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       std::__throw_runtime_error(("Series summation failed " "in __expint_En_series."));
 
     }
-# 201 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 201 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_En_cont_frac(unsigned int __n, _Tp __x)
@@ -16736,7 +12642,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       std::__throw_runtime_error(("Continued fraction failed " "in __expint_En_cont_frac."));
 
     }
-# 246 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 246 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_En_recursion(unsigned int __n, _Tp __x)
@@ -16768,7 +12674,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __En;
     }
-# 290 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 290 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_Ei_series(_Tp __x)
@@ -16786,7 +12692,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __numeric_constants<_Tp>::__gamma_e() + __sum + std::log(__x);
     }
-# 321 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 321 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_Ei_asymp(_Tp __x)
@@ -16807,7 +12713,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return std::exp(__x) * __sum / __x;
     }
-# 354 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 354 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_Ei(_Tp __x)
@@ -16819,7 +12725,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return __expint_Ei_asymp(__x);
     }
-# 378 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 378 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_E1(_Tp __x)
@@ -16833,7 +12739,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return __expint_E1_asymp(__x);
     }
-# 408 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 408 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_asymp(unsigned int __n, _Tp __x)
@@ -16851,7 +12757,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return std::exp(-__x) * __sum / __x;
     }
-# 442 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 442 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint_large_n(unsigned int __n, _Tp __x)
@@ -16871,7 +12777,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return std::exp(-__x) * __sum / __xpn;
     }
-# 476 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 476 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     _Tp
     __expint(unsigned int __n, _Tp __x)
@@ -16899,7 +12805,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __En;
         }
     }
-# 516 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/exp_integral.tcc" 3
+# 516 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/exp_integral.tcc" 3
     template<typename _Tp>
     inline _Tp
     __expint(_Tp __x)
@@ -16916,15 +12822,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 54 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 1 3
-# 44 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 54 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 1 3
+# 44 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
+namespace std
 {
-# 60 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
+# 60 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
   namespace __detail
   {
-# 83 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
+# 83 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
     template<typename _Tp>
     _Tp
     __conf_hyperg_series(_Tp __a, _Tp __c, _Tp __x)
@@ -16951,7 +12857,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __Fac;
     }
-# 120 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
+# 120 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
     template<typename _Tp>
     _Tp
     __conf_hyperg_luke(_Tp __a, _Tp __c, _Tp __xin)
@@ -17046,7 +12952,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __F;
     }
-# 227 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
+# 227 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
     template<typename _Tp>
     _Tp
     __conf_hyperg(_Tp __a, _Tp __c, _Tp __x)
@@ -17069,7 +12975,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return __conf_hyperg_series(__a, __c, __x);
     }
-# 271 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
+# 271 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
     template<typename _Tp>
     _Tp
     __hyperg_series(_Tp __a, _Tp __b, _Tp __c, _Tp __x)
@@ -17205,7 +13111,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __F;
     }
-# 438 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
+# 438 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
     template<typename _Tp>
     _Tp
     __hyperg_reflect(_Tp __a, _Tp __b, _Tp __c, _Tp __x)
@@ -17477,7 +13383,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __F;
         }
     }
-# 728 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/hypergeometric.tcc" 3
+# 728 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/hypergeometric.tcc" 3
     template<typename _Tp>
     _Tp
     __hyperg(_Tp __a, _Tp __b, _Tp __c, _Tp __x)
@@ -17534,15 +13440,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 55 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/legendre_function.tcc" 1 3
-# 49 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/legendre_function.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 55 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/legendre_function.tcc" 1 3
+# 49 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/legendre_function.tcc" 3
+namespace std
 {
-# 65 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/legendre_function.tcc" 3
+# 65 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/legendre_function.tcc" 3
   namespace __detail
   {
-# 80 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/legendre_function.tcc" 3
+# 80 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/legendre_function.tcc" 3
     template<typename _Tp>
     _Tp
     __poly_legendre_p(unsigned int __l, _Tp __x)
@@ -17581,7 +13487,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __p_l;
         }
     }
-# 137 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/legendre_function.tcc" 3
+# 137 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/legendre_function.tcc" 3
     template<typename _Tp>
     _Tp
     __assoc_legendre_p(unsigned int __l, unsigned int __m, _Tp __x)
@@ -17633,7 +13539,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __p_lm;
         }
     }
-# 216 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/legendre_function.tcc" 3
+# 216 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/legendre_function.tcc" 3
     template <typename _Tp>
     _Tp
     __sph_legendre(unsigned int __l, unsigned int __m, _Tp __theta)
@@ -17730,15 +13636,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 56 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 1 3
-# 51 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 56 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 1 3
+# 51 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 3
+namespace std
 {
-# 65 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 3
+# 65 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 3
   namespace __detail
   {
-# 83 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 3
+# 83 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 3
     template <typename _Tp>
     void
     __bessel_ik(_Tp __nu, _Tp __x,
@@ -17907,7 +13813,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return;
     }
-# 267 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 3
+# 267 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 3
     template<typename _Tp>
     _Tp
     __cyl_bessel_i(_Tp __nu, _Tp __x)
@@ -17926,7 +13832,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __I_nu;
         }
     }
-# 303 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 3
+# 303 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 3
     template<typename _Tp>
     _Tp
     __cyl_bessel_k(_Tp __nu, _Tp __x)
@@ -17943,7 +13849,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
           return __K_nu;
         }
     }
-# 337 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 3
+# 337 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 3
     template <typename _Tp>
     void
     __sph_bessel_ik(unsigned int __n, _Tp __x,
@@ -17964,7 +13870,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return;
     }
-# 373 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/modified_bessel_func.tcc" 3
+# 373 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/modified_bessel_func.tcc" 3
     template <typename _Tp>
     void
     __airy(_Tp __x, _Tp & __Ai, _Tp & __Bi, _Tp & __Aip, _Tp & __Bip)
@@ -18043,15 +13949,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 57 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_hermite.tcc" 1 3
-# 42 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_hermite.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 57 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_hermite.tcc" 1 3
+# 42 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_hermite.tcc" 3
+namespace std
 {
-# 56 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_hermite.tcc" 3
+# 56 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_hermite.tcc" 3
   namespace __detail
   {
-# 72 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_hermite.tcc" 3
+# 72 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_hermite.tcc" 3
     template<typename _Tp>
     _Tp
     __poly_hermite_recursion(unsigned int __n, _Tp __x)
@@ -18078,7 +13984,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __H_n;
     }
-# 114 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_hermite.tcc" 3
+# 114 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_hermite.tcc" 3
     template<typename _Tp>
     inline _Tp
     __poly_hermite(unsigned int __n, _Tp __x)
@@ -18095,15 +14001,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 58 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 1 3
-# 44 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 58 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 1 3
+# 44 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
+namespace std
 {
-# 60 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
+# 60 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
   namespace __detail
   {
-# 75 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
+# 75 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
     template<typename _Tpa, typename _Tp>
     _Tp
     __poly_laguerre_large_n(unsigned __n, _Tpa __alpha1, _Tp __x)
@@ -18140,7 +14046,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return std::exp(__lnpre) * __ser;
     }
-# 129 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
+# 129 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
     template<typename _Tpa, typename _Tp>
     _Tp
     __poly_laguerre_hyperg(unsigned int __n, _Tpa __alpha1, _Tp __x)
@@ -18166,7 +14072,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __sum;
     }
-# 185 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
+# 185 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
     template<typename _Tpa, typename _Tp>
     _Tp
     __poly_laguerre_recursion(unsigned int __n, _Tpa __alpha1, _Tp __x)
@@ -18196,7 +14102,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __l_n;
     }
-# 244 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
+# 244 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
     template<typename _Tpa, typename _Tp>
     _Tp
     __poly_laguerre(unsigned int __n, _Tpa __alpha1, _Tp __x)
@@ -18227,12 +14133,12 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return __poly_laguerre_hyperg(__n, __alpha1, __x);
     }
-# 296 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
+# 296 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
     template<typename _Tp>
     inline _Tp
     __assoc_laguerre(unsigned int __n, unsigned int __m, _Tp __x)
     { return __poly_laguerre<unsigned int, _Tp>(__n, __m, __x); }
-# 316 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/poly_laguerre.tcc" 3
+# 316 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/poly_laguerre.tcc" 3
     template<typename _Tp>
     inline _Tp
     __laguerre(unsigned int __n, _Tp __x)
@@ -18245,15 +14151,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 59 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 1 3
-# 47 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
-namespace std __attribute__ ((__visibility__ ("default")))
+# 59 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 1 3
+# 47 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
+namespace std
 {
-# 63 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 63 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
   namespace __detail
   {
-# 78 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 78 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
     template<typename _Tp>
     _Tp
     __riemann_zeta_sum(_Tp __s)
@@ -18276,7 +14182,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __zeta;
     }
-# 115 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 115 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
     template<typename _Tp>
     _Tp
     __riemann_zeta_alt(_Tp __s)
@@ -18295,7 +14201,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __zeta;
     }
-# 157 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 157 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
     template<typename _Tp>
     _Tp
     __riemann_zeta_glob(_Tp __s)
@@ -18372,7 +14278,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __zeta;
     }
-# 252 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 252 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
     template<typename _Tp>
     _Tp
     __riemann_zeta_product(_Tp __s)
@@ -18398,7 +14304,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __zeta;
     }
-# 293 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 293 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
     template<typename _Tp>
     _Tp
     __riemann_zeta(_Tp __s)
@@ -18448,7 +14354,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       else
         return __riemann_zeta_product(__s);
     }
-# 365 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 365 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
     template<typename _Tp>
     _Tp
     __hurwitz_zeta_glob(_Tp __a, _Tp __s)
@@ -18499,7 +14405,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
       return __zeta;
     }
-# 430 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/tr1/riemann_zeta.tcc" 3
+# 430 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\tr1/riemann_zeta.tcc" 3
     template<typename _Tp>
     inline _Tp
     __hurwitz_zeta(_Tp __a, _Tp __s)
@@ -18512,11 +14418,11 @@ namespace std __attribute__ ((__visibility__ ("default")))
 
 
 }
-# 60 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 2 3
+# 60 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 2 3
 
-namespace std __attribute__ ((__visibility__ ("default")))
+namespace std
 {
-# 205 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 205 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   assoc_laguerref(unsigned int __n, unsigned int __m, float __x)
   { return __detail::__assoc_laguerre<float>(__n, __m, __x); }
@@ -18530,7 +14436,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   assoc_laguerrel(unsigned int __n, unsigned int __m, long double __x)
   { return __detail::__assoc_laguerre<long double>(__n, __m, __x); }
-# 250 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 250 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     assoc_laguerre(unsigned int __n, unsigned int __m, _Tp __x)
@@ -18538,7 +14444,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__assoc_laguerre<__type>(__n, __m, __x);
     }
-# 266 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 266 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   assoc_legendref(unsigned int __l, unsigned int __m, float __x)
   { return __detail::__assoc_legendre_p<float>(__l, __m, __x); }
@@ -18551,7 +14457,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   assoc_legendrel(unsigned int __l, unsigned int __m, long double __x)
   { return __detail::__assoc_legendre_p<long double>(__l, __m, __x); }
-# 296 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 296 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     assoc_legendre(unsigned int __l, unsigned int __m, _Tp __x)
@@ -18559,7 +14465,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__assoc_legendre_p<__type>(__l, __m, __x);
     }
-# 311 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 311 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   betaf(float __a, float __b)
   { return __detail::__beta<float>(__a, __b); }
@@ -18573,7 +14479,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   betal(long double __a, long double __b)
   { return __detail::__beta<long double>(__a, __b); }
-# 341 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 341 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tpa, typename _Tpb>
     inline typename __gnu_cxx::__promote_2<_Tpa, _Tpb>::__type
     beta(_Tpa __a, _Tpb __b)
@@ -18581,7 +14487,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tpa, _Tpb>::__type __type;
       return __detail::__beta<__type>(__a, __b);
     }
-# 357 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 357 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   comp_ellint_1f(float __k)
   { return __detail::__comp_ellint_1<float>(__k); }
@@ -18595,7 +14501,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   comp_ellint_1l(long double __k)
   { return __detail::__comp_ellint_1<long double>(__k); }
-# 389 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 389 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     comp_ellint_1(_Tp __k)
@@ -18603,7 +14509,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__comp_ellint_1<__type>(__k);
     }
-# 405 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 405 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   comp_ellint_2f(float __k)
   { return __detail::__comp_ellint_2<float>(__k); }
@@ -18617,7 +14523,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   comp_ellint_2l(long double __k)
   { return __detail::__comp_ellint_2<long double>(__k); }
-# 436 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 436 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     comp_ellint_2(_Tp __k)
@@ -18625,7 +14531,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__comp_ellint_2<__type>(__k);
     }
-# 452 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 452 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   comp_ellint_3f(float __k, float __nu)
   { return __detail::__comp_ellint_3<float>(__k, __nu); }
@@ -18639,7 +14545,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   comp_ellint_3l(long double __k, long double __nu)
   { return __detail::__comp_ellint_3<long double>(__k, __nu); }
-# 487 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 487 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp, typename _Tpn>
     inline typename __gnu_cxx::__promote_2<_Tp, _Tpn>::__type
     comp_ellint_3(_Tp __k, _Tpn __nu)
@@ -18647,7 +14553,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Tpn>::__type __type;
       return __detail::__comp_ellint_3<__type>(__k, __nu);
     }
-# 503 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 503 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   cyl_bessel_if(float __nu, float __x)
   { return __detail::__cyl_bessel_i<float>(__nu, __x); }
@@ -18661,7 +14567,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   cyl_bessel_il(long double __nu, long double __x)
   { return __detail::__cyl_bessel_i<long double>(__nu, __x); }
-# 533 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 533 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tpnu, typename _Tp>
     inline typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type
     cyl_bessel_i(_Tpnu __nu, _Tp __x)
@@ -18669,7 +14575,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type __type;
       return __detail::__cyl_bessel_i<__type>(__nu, __x);
     }
-# 549 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 549 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   cyl_bessel_jf(float __nu, float __x)
   { return __detail::__cyl_bessel_j<float>(__nu, __x); }
@@ -18683,7 +14589,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   cyl_bessel_jl(long double __nu, long double __x)
   { return __detail::__cyl_bessel_j<long double>(__nu, __x); }
-# 579 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 579 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tpnu, typename _Tp>
     inline typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type
     cyl_bessel_j(_Tpnu __nu, _Tp __x)
@@ -18691,7 +14597,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type __type;
       return __detail::__cyl_bessel_j<__type>(__nu, __x);
     }
-# 595 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 595 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   cyl_bessel_kf(float __nu, float __x)
   { return __detail::__cyl_bessel_k<float>(__nu, __x); }
@@ -18705,7 +14611,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   cyl_bessel_kl(long double __nu, long double __x)
   { return __detail::__cyl_bessel_k<long double>(__nu, __x); }
-# 631 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 631 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tpnu, typename _Tp>
     inline typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type
     cyl_bessel_k(_Tpnu __nu, _Tp __x)
@@ -18713,7 +14619,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type __type;
       return __detail::__cyl_bessel_k<__type>(__nu, __x);
     }
-# 647 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 647 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   cyl_neumannf(float __nu, float __x)
   { return __detail::__cyl_neumann_n<float>(__nu, __x); }
@@ -18727,7 +14633,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   cyl_neumannl(long double __nu, long double __x)
   { return __detail::__cyl_neumann_n<long double>(__nu, __x); }
-# 679 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 679 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tpnu, typename _Tp>
     inline typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type
     cyl_neumann(_Tpnu __nu, _Tp __x)
@@ -18735,7 +14641,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tpnu, _Tp>::__type __type;
       return __detail::__cyl_neumann_n<__type>(__nu, __x);
     }
-# 695 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 695 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   ellint_1f(float __k, float __phi)
   { return __detail::__ellint_1<float>(__k, __phi); }
@@ -18749,7 +14655,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   ellint_1l(long double __k, long double __phi)
   { return __detail::__ellint_1<long double>(__k, __phi); }
-# 727 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 727 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp, typename _Tpp>
     inline typename __gnu_cxx::__promote_2<_Tp, _Tpp>::__type
     ellint_1(_Tp __k, _Tpp __phi)
@@ -18757,7 +14663,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Tpp>::__type __type;
       return __detail::__ellint_1<__type>(__k, __phi);
     }
-# 743 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 743 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   ellint_2f(float __k, float __phi)
   { return __detail::__ellint_2<float>(__k, __phi); }
@@ -18771,7 +14677,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   ellint_2l(long double __k, long double __phi)
   { return __detail::__ellint_2<long double>(__k, __phi); }
-# 775 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 775 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp, typename _Tpp>
     inline typename __gnu_cxx::__promote_2<_Tp, _Tpp>::__type
     ellint_2(_Tp __k, _Tpp __phi)
@@ -18779,7 +14685,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_2<_Tp, _Tpp>::__type __type;
       return __detail::__ellint_2<__type>(__k, __phi);
     }
-# 791 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 791 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   ellint_3f(float __k, float __nu, float __phi)
   { return __detail::__ellint_3<float>(__k, __nu, __phi); }
@@ -18793,7 +14699,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   ellint_3l(long double __k, long double __nu, long double __phi)
   { return __detail::__ellint_3<long double>(__k, __nu, __phi); }
-# 828 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 828 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp, typename _Tpn, typename _Tpp>
     inline typename __gnu_cxx::__promote_3<_Tp, _Tpn, _Tpp>::__type
     ellint_3(_Tp __k, _Tpn __nu, _Tpp __phi)
@@ -18801,7 +14707,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_3<_Tp, _Tpn, _Tpp>::__type __type;
       return __detail::__ellint_3<__type>(__k, __nu, __phi);
     }
-# 843 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 843 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   expintf(float __x)
   { return __detail::__expint<float>(__x); }
@@ -18815,7 +14721,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   expintl(long double __x)
   { return __detail::__expint<long double>(__x); }
-# 868 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 868 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     expint(_Tp __x)
@@ -18823,7 +14729,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__expint<__type>(__x);
     }
-# 884 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 884 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   hermitef(unsigned int __n, float __x)
   { return __detail::__poly_hermite<float>(__n, __x); }
@@ -18837,7 +14743,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   hermitel(unsigned int __n, long double __x)
   { return __detail::__poly_hermite<long double>(__n, __x); }
-# 916 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 916 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     hermite(unsigned int __n, _Tp __x)
@@ -18845,7 +14751,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__poly_hermite<__type>(__n, __x);
     }
-# 932 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 932 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   laguerref(unsigned int __n, float __x)
   { return __detail::__laguerre<float>(__n, __x); }
@@ -18859,7 +14765,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   laguerrel(unsigned int __n, long double __x)
   { return __detail::__laguerre<long double>(__n, __x); }
-# 960 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 960 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     laguerre(unsigned int __n, _Tp __x)
@@ -18867,7 +14773,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__laguerre<__type>(__n, __x);
     }
-# 976 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 976 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   legendref(unsigned int __l, float __x)
   { return __detail::__poly_legendre_p<float>(__l, __x); }
@@ -18881,7 +14787,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   legendrel(unsigned int __l, long double __x)
   { return __detail::__poly_legendre_p<long double>(__l, __x); }
-# 1005 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1005 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     legendre(unsigned int __l, _Tp __x)
@@ -18889,7 +14795,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__poly_legendre_p<__type>(__l, __x);
     }
-# 1021 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1021 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   riemann_zetaf(float __s)
   { return __detail::__riemann_zeta<float>(__s); }
@@ -18903,7 +14809,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   riemann_zetal(long double __s)
   { return __detail::__riemann_zeta<long double>(__s); }
-# 1056 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1056 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     riemann_zeta(_Tp __s)
@@ -18911,7 +14817,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__riemann_zeta<__type>(__s);
     }
-# 1072 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1072 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   sph_besself(unsigned int __n, float __x)
   { return __detail::__sph_bessel<float>(__n, __x); }
@@ -18925,7 +14831,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   sph_bessell(unsigned int __n, long double __x)
   { return __detail::__sph_bessel<long double>(__n, __x); }
-# 1100 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1100 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     sph_bessel(unsigned int __n, _Tp __x)
@@ -18933,15 +14839,15 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__sph_bessel<__type>(__n, __x);
     }
-# 1116 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1116 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   sph_legendref(unsigned int __l, unsigned int __m, float __theta)
   { return __detail::__sph_legendre<float>(__l, __m, __theta); }
-# 1127 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1127 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline long double
   sph_legendrel(unsigned int __l, unsigned int __m, long double __theta)
   { return __detail::__sph_legendre<long double>(__l, __m, __theta); }
-# 1147 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1147 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     sph_legendre(unsigned int __l, unsigned int __m, _Tp __theta)
@@ -18949,7 +14855,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote<_Tp>::__type __type;
       return __detail::__sph_legendre<__type>(__l, __m, __theta);
     }
-# 1163 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1163 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   sph_neumannf(unsigned int __n, float __x)
   { return __detail::__sph_neumann<float>(__n, __x); }
@@ -18963,7 +14869,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
   inline long double
   sph_neumannl(unsigned int __n, long double __x)
   { return __detail::__sph_neumann<long double>(__n, __x); }
-# 1191 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1191 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tp>
     inline typename __gnu_cxx::__promote<_Tp>::__type
     sph_neumann(unsigned int __n, _Tp __x)
@@ -18978,7 +14884,7 @@ namespace std __attribute__ ((__visibility__ ("default")))
 }
 
 
-namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
+namespace __gnu_cxx
 {
 
 
@@ -19053,15 +14959,15 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       std::__detail::__airy<__type>(__x, __Ai, __Bi, __Aip, __Bip);
       return __Bi;
     }
-# 1290 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1290 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   conf_hypergf(float __a, float __c, float __x)
   { return std::__detail::__conf_hyperg<float>(__a, __c, __x); }
-# 1301 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1301 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline long double
   conf_hypergl(long double __a, long double __c, long double __x)
   { return std::__detail::__conf_hyperg<long double>(__a, __c, __x); }
-# 1321 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1321 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tpa, typename _Tpc, typename _Tp>
     inline typename __gnu_cxx::__promote_3<_Tpa, _Tpc, _Tp>::__type
     conf_hyperg(_Tpa __a, _Tpc __c, _Tp __x)
@@ -19069,15 +14975,15 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
       typedef typename __gnu_cxx::__promote_3<_Tpa, _Tpc, _Tp>::__type __type;
       return std::__detail::__conf_hyperg<__type>(__a, __c, __x);
     }
-# 1338 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1338 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline float
   hypergf(float __a, float __b, float __c, float __x)
   { return std::__detail::__hyperg<float>(__a, __b, __c, __x); }
-# 1349 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1349 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   inline long double
   hypergl(long double __a, long double __b, long double __c, long double __x)
   { return std::__detail::__hyperg<long double>(__a, __b, __c, __x); }
-# 1370 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/bits/specfun.h" 3
+# 1370 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\bits/specfun.h" 3
   template<typename _Tpa, typename _Tpb, typename _Tpc, typename _Tp>
     inline typename __gnu_cxx::__promote_4<_Tpa, _Tpb, _Tpc, _Tp>::__type
     hyperg(_Tpa __a, _Tpb __b, _Tpc __c, _Tp __x)
@@ -19092,13 +14998,13 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 #pragma GCC visibility pop
-# 1893 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cmath" 2 3
+# 1893 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cmath" 2 3
 
 
 }
 # 2 "../src/sobel.cpp" 2
-# 1 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 1 3
-# 33 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdint" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdint" 3
 
 
 
@@ -19107,67 +15013,51 @@ namespace __gnu_cxx __attribute__ ((__visibility__ ("default")))
 
 
 
-# 1 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 1 3
-# 52 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 3
-# 1 "/usr/include/stdint.h" 1 3 4
-# 26 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/bits/libc-header-start.h" 1 3 4
-# 27 "/usr/include/stdint.h" 2 3 4
-
-# 1 "/usr/include/bits/wchar.h" 1 3 4
-# 29 "/usr/include/stdint.h" 2 3 4
-# 1 "/usr/include/bits/wordsize.h" 1 3 4
-# 30 "/usr/include/stdint.h" 2 3 4
-# 41 "/usr/include/stdint.h" 3 4
-# 1 "/usr/include/bits/stdint-uintn.h" 1 3 4
-# 24 "/usr/include/bits/stdint-uintn.h" 3 4
-typedef __uint8_t uint8_t;
-typedef __uint16_t uint16_t;
-typedef __uint32_t uint32_t;
-typedef __uint64_t uint64_t;
-# 42 "/usr/include/stdint.h" 2 3 4
+# 1 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stdint.h" 1 3
+# 52 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stdint.h" 3
+# 1 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 1 3
+# 32 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 3
+# 1 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stddef.h" 1 3
+# 33 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\x86_64-w64-mingw32\\include\\stdint.h" 2 3
 
 
+typedef signed char int8_t;
+typedef unsigned char uint8_t;
+typedef short int16_t;
+typedef unsigned short uint16_t;
+typedef int int32_t;
+typedef unsigned uint32_t;
+__extension__ typedef long long int64_t;
+__extension__ typedef unsigned long long uint64_t;
 
-# 1 "/usr/include/bits/stdint-least.h" 1 3 4
-# 25 "/usr/include/bits/stdint-least.h" 3 4
-typedef __int_least8_t int_least8_t;
-typedef __int_least16_t int_least16_t;
-typedef __int_least32_t int_least32_t;
-typedef __int_least64_t int_least64_t;
 
-
-typedef __uint_least8_t uint_least8_t;
-typedef __uint_least16_t uint_least16_t;
-typedef __uint_least32_t uint_least32_t;
-typedef __uint_least64_t uint_least64_t;
-# 46 "/usr/include/stdint.h" 2 3 4
+typedef signed char int_least8_t;
+typedef unsigned char uint_least8_t;
+typedef short int_least16_t;
+typedef unsigned short uint_least16_t;
+typedef int int_least32_t;
+typedef unsigned uint_least32_t;
+__extension__ typedef long long int_least64_t;
+__extension__ typedef unsigned long long uint_least64_t;
 
 
 
 
 
 typedef signed char int_fast8_t;
-
-typedef long int int_fast16_t;
-typedef long int int_fast32_t;
-typedef long int int_fast64_t;
-# 64 "/usr/include/stdint.h" 3 4
 typedef unsigned char uint_fast8_t;
+typedef short int_fast16_t;
+typedef unsigned short uint_fast16_t;
+typedef int int_fast32_t;
+typedef unsigned int uint_fast32_t;
+__extension__ typedef long long int_fast64_t;
+__extension__ typedef unsigned long long uint_fast64_t;
 
-typedef unsigned long int uint_fast16_t;
-typedef unsigned long int uint_fast32_t;
-typedef unsigned long int uint_fast64_t;
-# 80 "/usr/include/stdint.h" 3 4
-typedef long int intptr_t;
 
-
-typedef unsigned long int uintptr_t;
-# 94 "/usr/include/stdint.h" 3 4
-typedef __intmax_t intmax_t;
-typedef __uintmax_t uintmax_t;
-# 53 "/opt/Xilinx/2025.2/lnx64/tools/clang-16/lib/clang/16/include/stdint.h" 2 3
-# 42 "/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0/lib/gcc/x86_64-pc-linux-gnu/8.3.0/../../../../include/c++/8.3.0/cstdint" 2 3
+__extension__ typedef long long intmax_t;
+__extension__ typedef unsigned long long uintmax_t;
+# 53 "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\clang-16\\lib\\clang\\16\\include\\stdint.h" 2 3
+# 42 "C:/AMDDesignTools/2025.2/Vitis/tps/mingw/8.3.0/win64.o/nt\\lib\\gcc\\x86_64-w64-mingw32\\8.3.0\\include\\c++\\cstdint" 2 3
 
 
 
@@ -19212,13 +15102,13 @@ namespace std
 }
 # 3 "../src/sobel.cpp" 2
 
-# 1 "../src/canny_stages.h" 1
+# 1 "C:/Users/twhsaw/Projects/comp4601/src/canny_stages.h" 1
 
 
 
 
 
-# 1 "../src/config.h" 1
+# 1 "C:/Users/twhsaw/Projects/comp4601/src/config.h" 1
 
 
 
@@ -19233,8 +15123,8 @@ constexpr std::uint8_t HIGH_THRESHOLD = 80;
 constexpr std::uint8_t NON_EDGE = 0;
 constexpr std::uint8_t WEAK_EDGE = 128;
 constexpr std::uint8_t STRONG_EDGE = 255;
-# 7 "../src/canny_stages.h" 2
-# 1 "../src/canny_types.h" 1
+# 7 "C:/Users/twhsaw/Projects/comp4601/src/canny_stages.h" 2
+# 1 "C:/Users/twhsaw/Projects/comp4601/src/canny_types.h" 1
 
 
 
@@ -19257,7 +15147,7 @@ struct GradientPixel {
     std::uint16_t magnitude;
     GradientDirection direction;
 };
-# 8 "../src/canny_stages.h" 2
+# 8 "C:/Users/twhsaw/Projects/comp4601/src/canny_stages.h" 2
 
 void grayscale(
     const RGBPixel input[WIDTH],
@@ -19405,15 +15295,14 @@ void sobel(
         return;
     }
 
+#pragma HLS ARRAY_PARTITION variable=lineBuffer type=complete dim=1
+
     const int writeSlot =
         rowsReceived % KERNEL_SIZE;
 
-    VITIS_LOOP_100_1: for (int column = 0; column < WIDTH; ++column) {
+    VITIS_LOOP_102_1: for (int column = 0; column < WIDTH; ++column) {
+#pragma HLS PIPELINE II=1
         lineBuffer[writeSlot][column] = input[column];
-
-        output[column].magnitude = 0;
-        output[column].direction =
-            GradientDirection::DEG_0;
     }
     ++rowsReceived;
 
@@ -19424,32 +15313,64 @@ void sobel(
         return;
     }
 
-    VITIS_LOOP_116_2: for (int column = 0; column < WIDTH; ++column) {
+
+
+
+
+    int slot[KERNEL_SIZE];
+#pragma HLS ARRAY_PARTITION variable=slot type=complete
+
+    VITIS_LOOP_122_2: for (int kernelRow = 0; kernelRow < KERNEL_SIZE; ++kernelRow) {
+#pragma HLS UNROLL
+        slot[kernelRow] =
+            positive_modulo(
+                border_replicate(rowsReceived - 3 + kernelRow, HEIGHT),
+                KERNEL_SIZE
+            );
+    }
+
+
+
+
+
+
+
+    std::uint8_t window[KERNEL_SIZE][KERNEL_SIZE];
+#pragma HLS ARRAY_PARTITION variable=window type=complete dim=0
+
+    VITIS_LOOP_140_3: for (int windowColumn = 0;
+         windowColumn < KERNEL_SIZE;
+         ++windowColumn) {
+#pragma HLS UNROLL
+
+        const int sourceColumn =
+            border_replicate(windowColumn - 1, WIDTH);
+
+        VITIS_LOOP_148_4: for (int kernelRow = 0; kernelRow < KERNEL_SIZE; ++kernelRow) {
+#pragma HLS UNROLL
+            window[kernelRow][windowColumn] =
+                lineBuffer[slot[kernelRow]][sourceColumn];
+        }
+    }
+
+    VITIS_LOOP_155_5: for (int column = 0; column < WIDTH; ++column) {
+#pragma HLS PIPELINE II=1
+
         int gradientX = 0;
         int gradientY = 0;
 
-        VITIS_LOOP_120_3: for (int kernelRow = 0;
+        VITIS_LOOP_161_6: for (int kernelRow = 0;
              kernelRow < KERNEL_SIZE;
              ++kernelRow) {
+#pragma HLS UNROLL
 
-            const int absoluteSourceRow =
-                border_replicate(rowsReceived - 3 + kernelRow, HEIGHT);
-
-            const int bufferSlot =
-                positive_modulo(
-                    absoluteSourceRow,
-                    KERNEL_SIZE
-                );
-
-            VITIS_LOOP_133_4: for (int kernelColumn = 0;
+            VITIS_LOOP_166_7: for (int kernelColumn = 0;
                  kernelColumn < KERNEL_SIZE;
                  ++kernelColumn) {
-
-                const int sourceColumn =
-                    border_replicate(column + kernelColumn - 1, WIDTH);
+#pragma HLS UNROLL
 
                 const int pixel =
-                    lineBuffer[bufferSlot][sourceColumn];
+                    window[kernelRow][kernelColumn];
 
                 gradientX +=
                     pixel *
@@ -19469,6 +15390,24 @@ void sobel(
                 gradientX,
                 gradientY
             );
+
+        const int nextColumn =
+            border_replicate(column + 2, WIDTH);
+
+        std::uint8_t banked[KERNEL_SIZE];
+#pragma HLS ARRAY_PARTITION variable=banked type=complete
+
+        VITIS_LOOP_199_8: for (int bank = 0; bank < KERNEL_SIZE; ++bank) {
+#pragma HLS UNROLL
+            banked[bank] = lineBuffer[bank][nextColumn];
+        }
+
+        VITIS_LOOP_204_9: for (int kernelRow = 0; kernelRow < KERNEL_SIZE; ++kernelRow) {
+#pragma HLS UNROLL
+            window[kernelRow][0] = window[kernelRow][1];
+            window[kernelRow][1] = window[kernelRow][2];
+            window[kernelRow][2] = banked[slot[kernelRow]];
+        }
     }
 
     *valid_out = true;

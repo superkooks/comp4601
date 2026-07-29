@@ -138,7 +138,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item class_id="10" tracking_level="0" version="0">
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second class_id="11" tracking_level="0" version="0">
                     <count>2</count>
                     <item_version>0</item_version>
@@ -244,7 +244,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -350,7 +350,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -414,7 +414,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -477,7 +477,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -540,7 +540,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -605,7 +605,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -669,7 +669,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -732,7 +732,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -796,7 +796,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -862,7 +862,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -925,7 +925,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -989,7 +989,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1054,7 +1054,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1119,7 +1119,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1182,7 +1182,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1247,7 +1247,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1310,7 +1310,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1374,7 +1374,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1437,7 +1437,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1501,7 +1501,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1564,7 +1564,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1628,7 +1628,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1694,7 +1694,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1757,7 +1757,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1821,7 +1821,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1887,7 +1887,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -1953,7 +1953,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2016,7 +2016,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2081,7 +2081,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2144,7 +2144,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2208,7 +2208,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2271,7 +2271,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2335,7 +2335,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2398,7 +2398,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2462,7 +2462,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2528,7 +2528,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2591,7 +2591,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2655,7 +2655,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2721,7 +2721,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2787,7 +2787,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2850,7 +2850,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2915,7 +2915,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -2978,7 +2978,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3042,7 +3042,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3105,7 +3105,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3168,7 +3168,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3231,7 +3231,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3294,7 +3294,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3316,7 +3316,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mul_8ns_8ns_15_1_1_U15</rtlName>
+              <rtlName>mul_8ns_8ns_15_1_1_U28</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>auto</implIndex>
@@ -3358,7 +3358,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3380,7 +3380,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U17</rtlName>
+              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U30</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3422,7 +3422,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3444,7 +3444,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U16</rtlName>
+              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U29</rtlName>
               <control>auto</control>
               <opType>mul</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3486,7 +3486,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3508,7 +3508,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U16</rtlName>
+              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U29</rtlName>
               <control>auto</control>
               <opType>zext</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3549,7 +3549,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3571,7 +3571,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U16</rtlName>
+              <rtlName>mac_muladd_8ns_5ns_15s_15_4_1_U29</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3613,7 +3613,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3676,7 +3676,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3698,7 +3698,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>gray</originalName>
-              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U17</rtlName>
+              <rtlName>mac_muladd_8ns_8ns_15ns_16_4_1_U30</rtlName>
               <control>auto</control>
               <opType>add</opType>
               <implIndex>dsp_slice</implIndex>
@@ -3740,7 +3740,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3806,7 +3806,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3871,7 +3871,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3935,7 +3935,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -3999,7 +3999,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -4063,7 +4063,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -4129,7 +4129,7 @@
                 <count>1</count>
                 <item_version>0</item_version>
                 <item>
-                  <first>/home/superkooks/Uni/COMP4601/assign/canny_hls</first>
+                  <first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
                   <second>
                     <count>2</count>
                     <item_version>0</item_version>
@@ -9010,7 +9010,7 @@
           </second>
         </item>
         <item>
-          <first>mul_8ns_8ns_15_1_1_U15 (mul_8ns_8ns_15_1_1)</first>
+          <first>mul_8ns_8ns_15_1_1_U28 (mul_8ns_8ns_15_1_1)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -11970,7 +11970,7 @@
           </second>
         </item>
         <item>
-          <first>mac_muladd_8ns_5ns_15s_15_4_1_U16</first>
+          <first>mac_muladd_8ns_5ns_15s_15_4_1_U29</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11981,7 +11981,7 @@
           </second>
         </item>
         <item>
-          <first>mac_muladd_8ns_8ns_15ns_16_4_1_U17</first>
+          <first>mac_muladd_8ns_8ns_15ns_16_4_1_U30</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -11992,7 +11992,7 @@
           </second>
         </item>
         <item>
-          <first>mul_8ns_8ns_15_1_1_U15</first>
+          <first>mul_8ns_8ns_15_1_1_U28</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -12003,7 +12003,7 @@
         <count>1</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>mul_8ns_8ns_15_1_1_U15 (mul_8ns_8ns_15_1_1)</first>
+          <first>mul_8ns_8ns_15_1_1_U28 (mul_8ns_8ns_15_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

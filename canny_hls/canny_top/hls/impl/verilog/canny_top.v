@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=2048310,HLS_SYN_TPT=none,HLS_SYN_MEM=53,HLS_SYN_DSP=0,HLS_SYN_FF=25777,HLS_SYN_LUT=37905,HLS_VERSION=2025_2}" *)
+(* CORE_GENERATION_INFO="canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=847583,HLS_SYN_TPT=none,HLS_SYN_MEM=66,HLS_SYN_DSP=0,HLS_SYN_FF=18369,HLS_SYN_LUT=31395,HLS_VERSION=2025_2}" *)
 
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module canny_top (
@@ -181,343 +181,582 @@ wire    ap_CS_fsm_state1;
 reg    ap_ready;
 wire   [63:0] in_r;
 wire   [63:0] out_r;
-reg   [31:0] p_anonymous_namespace_rowsReceived;
-reg   [11:0] lineBuffer_1_address0;
-reg    lineBuffer_1_ce0;
-reg    lineBuffer_1_we0;
-reg   [7:0] lineBuffer_1_d0;
-wire   [7:0] lineBuffer_1_q0;
-reg    lineBuffer_1_ce1;
-wire   [7:0] lineBuffer_1_q1;
 reg   [31:0] p_anonymous_namespace_rowsReceived_1;
-reg   [10:0] lineBuffer_address0;
-reg    lineBuffer_ce0;
-reg    lineBuffer_we0;
-reg   [7:0] lineBuffer_d0;
-wire   [7:0] lineBuffer_q0;
-reg    lineBuffer_ce1;
-wire   [7:0] lineBuffer_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_39_0_address0;
+reg    p_anonymous_namespace_lineBuffer_39_0_ce0;
+reg    p_anonymous_namespace_lineBuffer_39_0_we0;
+reg   [11:0] p_anonymous_namespace_lineBuffer_39_0_d0;
+wire   [11:0] p_anonymous_namespace_lineBuffer_39_0_q0;
+reg   [8:0] p_anonymous_namespace_lineBuffer_39_1_address0;
+reg    p_anonymous_namespace_lineBuffer_39_1_ce0;
+reg    p_anonymous_namespace_lineBuffer_39_1_we0;
+reg   [11:0] p_anonymous_namespace_lineBuffer_39_1_d0;
+wire   [11:0] p_anonymous_namespace_lineBuffer_39_1_q0;
+reg   [8:0] p_anonymous_namespace_lineBuffer_39_2_address0;
+reg    p_anonymous_namespace_lineBuffer_39_2_ce0;
+reg    p_anonymous_namespace_lineBuffer_39_2_we0;
+reg   [11:0] p_anonymous_namespace_lineBuffer_39_2_d0;
+wire   [11:0] p_anonymous_namespace_lineBuffer_39_2_q0;
+reg   [8:0] p_anonymous_namespace_lineBuffer_39_3_address0;
+reg    p_anonymous_namespace_lineBuffer_39_3_ce0;
+reg    p_anonymous_namespace_lineBuffer_39_3_we0;
+reg   [11:0] p_anonymous_namespace_lineBuffer_39_3_d0;
+wire   [11:0] p_anonymous_namespace_lineBuffer_39_3_q0;
+reg   [8:0] p_anonymous_namespace_lineBuffer_39_4_address0;
+reg    p_anonymous_namespace_lineBuffer_39_4_ce0;
+reg    p_anonymous_namespace_lineBuffer_39_4_we0;
+reg   [11:0] p_anonymous_namespace_lineBuffer_39_4_d0;
+wire   [11:0] p_anonymous_namespace_lineBuffer_39_4_q0;
 reg   [31:0] p_anonymous_namespace_rowsReceived_2;
-reg   [10:0] p_anonymous_namespace_lineBuffer_direction_address0;
-reg    p_anonymous_namespace_lineBuffer_direction_ce0;
-reg    p_anonymous_namespace_lineBuffer_direction_we0;
-reg   [1:0] p_anonymous_namespace_lineBuffer_direction_d0;
-wire   [1:0] p_anonymous_namespace_lineBuffer_direction_q0;
-reg   [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
-reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
-reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-reg   [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
-wire   [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q0;
-reg    p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
-wire   [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_0_q1;
-reg   [9:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
-reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
-reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-reg   [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
-wire   [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q0;
-reg    p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
-wire   [10:0] p_anonymous_namespace_lineBuffer_25_magnitude_1_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_32_0_address0;
+reg    p_anonymous_namespace_lineBuffer_32_0_ce0;
+reg    p_anonymous_namespace_lineBuffer_32_0_we0;
+reg   [7:0] p_anonymous_namespace_lineBuffer_32_0_d0;
+wire   [7:0] p_anonymous_namespace_lineBuffer_32_0_q0;
+reg    p_anonymous_namespace_lineBuffer_32_0_ce1;
+wire   [7:0] p_anonymous_namespace_lineBuffer_32_0_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_32_1_address0;
+reg    p_anonymous_namespace_lineBuffer_32_1_ce0;
+reg    p_anonymous_namespace_lineBuffer_32_1_we0;
+reg   [7:0] p_anonymous_namespace_lineBuffer_32_1_d0;
+wire   [7:0] p_anonymous_namespace_lineBuffer_32_1_q0;
+reg    p_anonymous_namespace_lineBuffer_32_1_ce1;
+wire   [7:0] p_anonymous_namespace_lineBuffer_32_1_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_32_2_address0;
+reg    p_anonymous_namespace_lineBuffer_32_2_ce0;
+reg    p_anonymous_namespace_lineBuffer_32_2_we0;
+reg   [7:0] p_anonymous_namespace_lineBuffer_32_2_d0;
+wire   [7:0] p_anonymous_namespace_lineBuffer_32_2_q0;
+reg    p_anonymous_namespace_lineBuffer_32_2_ce1;
+wire   [7:0] p_anonymous_namespace_lineBuffer_32_2_q1;
+reg   [31:0] p_anonymous_namespace_rowsReceived;
+reg   [8:0] p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+reg   [10:0] p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+wire   [10:0] p_anonymous_namespace_lineBuffer_magnitude_0_q0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_0_ce1;
+wire   [10:0] p_anonymous_namespace_lineBuffer_magnitude_0_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_direction_0_address0;
+reg    p_anonymous_namespace_lineBuffer_direction_0_ce0;
+reg    p_anonymous_namespace_lineBuffer_direction_0_we0;
+reg   [1:0] p_anonymous_namespace_lineBuffer_direction_0_d0;
+wire   [1:0] p_anonymous_namespace_lineBuffer_direction_0_q0;
+reg    p_anonymous_namespace_lineBuffer_direction_0_ce1;
+wire   [1:0] p_anonymous_namespace_lineBuffer_direction_0_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+reg   [10:0] p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+wire   [10:0] p_anonymous_namespace_lineBuffer_magnitude_1_q0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_1_ce1;
+wire   [10:0] p_anonymous_namespace_lineBuffer_magnitude_1_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_direction_1_address0;
+reg    p_anonymous_namespace_lineBuffer_direction_1_ce0;
+reg    p_anonymous_namespace_lineBuffer_direction_1_we0;
+reg   [1:0] p_anonymous_namespace_lineBuffer_direction_1_d0;
+wire   [1:0] p_anonymous_namespace_lineBuffer_direction_1_q0;
+reg    p_anonymous_namespace_lineBuffer_direction_1_ce1;
+wire   [1:0] p_anonymous_namespace_lineBuffer_direction_1_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+reg   [10:0] p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+wire   [10:0] p_anonymous_namespace_lineBuffer_magnitude_2_q0;
+reg    p_anonymous_namespace_lineBuffer_magnitude_2_ce1;
+wire   [10:0] p_anonymous_namespace_lineBuffer_magnitude_2_q1;
+reg   [8:0] p_anonymous_namespace_lineBuffer_direction_2_address0;
+reg    p_anonymous_namespace_lineBuffer_direction_2_ce0;
+reg    p_anonymous_namespace_lineBuffer_direction_2_we0;
+reg   [1:0] p_anonymous_namespace_lineBuffer_direction_2_d0;
+wire   [1:0] p_anonymous_namespace_lineBuffer_direction_2_q0;
+reg    p_anonymous_namespace_lineBuffer_direction_2_ce1;
+wire   [1:0] p_anonymous_namespace_lineBuffer_direction_2_q1;
 reg   [31:0] p_anonymous_namespace_rowsReceived_1_s;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q1;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1;
 reg   [31:0] p_anonymous_namespace_rowsReceived_2_s;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1;
 reg   [31:0] p_anonymous_namespace_rowsReceived_3_s;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1;
 reg   [31:0] p_anonymous_namespace_rowsReceived_4_s;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1;
-reg   [9:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
 reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0;
 reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1;
 wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1;
+reg   [8:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
+reg   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0;
+reg    p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1;
+wire   [7:0] p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1;
 reg   [31:0] rowsReceived;
-reg   [63:0] out_r_read_reg_270;
+reg   [63:0] out_r_read_reg_348;
 wire    ap_CS_fsm_state3;
-reg   [63:0] in_r_read_reg_275;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_done;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_idle;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_ready;
-wire   [11:0] grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_d0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_done;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_idle;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_ready;
-wire   [10:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_d0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_done;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_idle;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_ready;
-wire   [10:0] grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_we0;
-wire   [1:0] grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_d0;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-wire   [10:0] grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-wire   [10:0] grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_done;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_idle;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_ready;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_done;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_idle;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_ready;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_done;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_idle;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_ready;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_done;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_idle;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_ready;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
-wire   [9:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
-wire    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
-wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWVALID;
-wire   [63:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWADDR;
-wire   [0:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWID;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWLEN;
-wire   [2:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWSIZE;
-wire   [1:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWBURST;
-wire   [1:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWLOCK;
-wire   [3:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWCACHE;
-wire   [2:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWPROT;
-wire   [3:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWQOS;
-wire   [3:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWREGION;
-wire   [0:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWUSER;
-wire    grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WVALID;
-wire   [511:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WDATA;
-wire   [63:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WSTRB;
-wire    grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WLAST;
-wire   [0:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WID;
-wire   [0:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WUSER;
-wire    grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARVALID;
-wire   [63:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARADDR;
-wire   [0:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARID;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARLEN;
-wire   [2:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARSIZE;
-wire   [1:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARBURST;
-wire   [1:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARLOCK;
-wire   [3:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARCACHE;
-wire   [2:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARPROT;
-wire   [3:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARQOS;
-wire   [3:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARREGION;
-wire   [0:0] grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARUSER;
-wire    grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_RREADY;
-wire    grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_BREADY;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_o;
-wire   [11:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_we0;
-wire   [11:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_we1;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_o;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_we0;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_lineBuffer_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_lineBuffer_we1;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_o;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_ce0;
-wire   [1:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_we0;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_ce1;
-wire   [1:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_we1;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_we1;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
-wire   [10:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_we1;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_s_o;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_s_o;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_3_s_o;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_4_s_o;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
-wire   [9:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1;
-wire   [7:0] grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1;
-wire   [31:0] grp_dataflow_parent_loop_proc_fu_170_rowsReceived_o;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_s_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_3_s_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_4_s_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_rowsReceived_o_ap_vld;
-wire    grp_dataflow_parent_loop_proc_fu_170_ap_start;
-wire    grp_dataflow_parent_loop_proc_fu_170_ap_done;
-wire    grp_dataflow_parent_loop_proc_fu_170_ap_ready;
-wire    grp_dataflow_parent_loop_proc_fu_170_ap_idle;
-reg    grp_dataflow_parent_loop_proc_fu_170_ap_continue;
+reg   [63:0] in_r_read_reg_353;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_done;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_idle;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_ready;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_we0;
+wire   [11:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_we0;
+wire   [11:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_we0;
+wire   [11:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_we0;
+wire   [11:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_we0;
+wire   [11:0] grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_d0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_done;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_idle;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_ready;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_d0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_done;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_idle;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_ready;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+wire   [10:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_we0;
+wire   [1:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+wire   [10:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_we0;
+wire   [1:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+wire   [10:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_we0;
+wire   [1:0] grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_d0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_done;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_idle;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_ready;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_done;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_idle;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_ready;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_done;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_idle;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_ready;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_done;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_idle;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_ready;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
+wire   [8:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
+wire    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
+wire   [7:0] grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWVALID;
+wire   [63:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWADDR;
+wire   [0:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWID;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWLEN;
+wire   [2:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWSIZE;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWBURST;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWLOCK;
+wire   [3:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWCACHE;
+wire   [2:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWPROT;
+wire   [3:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWQOS;
+wire   [3:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWREGION;
+wire   [0:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWUSER;
+wire    grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WVALID;
+wire   [511:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WDATA;
+wire   [63:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WSTRB;
+wire    grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WLAST;
+wire   [0:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WID;
+wire   [0:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WUSER;
+wire    grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARVALID;
+wire   [63:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARADDR;
+wire   [0:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARID;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARLEN;
+wire   [2:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARSIZE;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARBURST;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARLOCK;
+wire   [3:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARCACHE;
+wire   [2:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARPROT;
+wire   [3:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARQOS;
+wire   [3:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARREGION;
+wire   [0:0] grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARUSER;
+wire    grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_RREADY;
+wire    grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_BREADY;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_o;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_ce0;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_ce1;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_ce0;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_ce1;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_ce0;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_ce1;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_ce0;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_ce1;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_ce0;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_ce1;
+wire   [11:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_we1;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_o;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_we1;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_o;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+wire   [10:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_ce1;
+wire   [10:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_ce0;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_ce1;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+wire   [10:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_ce1;
+wire   [10:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_ce0;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_ce1;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+wire   [10:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_ce1;
+wire   [10:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_ce0;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_ce1;
+wire   [1:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_we1;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_s_o;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_s_o;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_3_s_o;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_4_s_o;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
+wire   [8:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1;
+wire   [7:0] grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1;
+wire   [31:0] grp_dataflow_parent_loop_proc_fu_222_rowsReceived_o;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_s_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_3_s_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_4_s_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_rowsReceived_o_ap_vld;
+wire    grp_dataflow_parent_loop_proc_fu_222_ap_start;
+wire    grp_dataflow_parent_loop_proc_fu_222_ap_done;
+wire    grp_dataflow_parent_loop_proc_fu_222_ap_ready;
+wire    grp_dataflow_parent_loop_proc_fu_222_ap_idle;
+reg    grp_dataflow_parent_loop_proc_fu_222_ap_continue;
 reg    gmem_0_AWVALID;
 wire    gmem_0_AWREADY;
 reg    gmem_0_WVALID;
@@ -530,27 +769,27 @@ wire   [511:0] gmem_0_RDATA;
 wire   [8:0] gmem_0_RFIFONUM;
 wire    gmem_0_BVALID;
 reg    gmem_0_BREADY;
-reg    grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start_reg;
+reg    grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start_reg;
 reg    ap_block_state1_ignore_call12;
 wire    ap_CS_fsm_state2;
-reg    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start_reg;
+reg    grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start_reg;
 reg    ap_block_state1_ignore_call14;
-reg    grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start_reg;
+reg    grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start_reg;
 reg    ap_block_state1_ignore_call16;
-reg    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start_reg;
+reg    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start_reg;
 reg    ap_block_state1_ignore_call18;
-reg    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start_reg;
+reg    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start_reg;
 reg    ap_block_state1_ignore_call20;
-reg    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start_reg;
+reg    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start_reg;
 reg    ap_block_state1_ignore_call22;
-reg    grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start_reg;
+reg    grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start_reg;
 reg    ap_block_state1_ignore_call24;
-reg    grp_dataflow_parent_loop_proc_fu_170_ap_start_reg;
+reg    grp_dataflow_parent_loop_proc_fu_222_ap_start_reg;
 wire    ap_CS_fsm_state4;
-reg    ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_ready;
-reg    ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_done;
+reg    ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_ready;
+reg    ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_done;
 reg    ap_block_state4_on_subcall_done;
-wire    ap_sync_grp_dataflow_parent_loop_proc_fu_170_ap_ready;
+wire    ap_sync_grp_dataflow_parent_loop_proc_fu_222_ap_ready;
 reg    ap_block_state2_on_subcall_done;
 reg   [3:0] ap_NS_fsm;
 reg    ap_block_state1;
@@ -567,112 +806,253 @@ initial begin
 #0 ap_rst_n_inv = 1'b1;
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 4'd1;
-#0 p_anonymous_namespace_rowsReceived = 32'd0;
 #0 p_anonymous_namespace_rowsReceived_1 = 32'd0;
 #0 p_anonymous_namespace_rowsReceived_2 = 32'd0;
+#0 p_anonymous_namespace_rowsReceived = 32'd0;
 #0 p_anonymous_namespace_rowsReceived_1_s = 32'd0;
 #0 p_anonymous_namespace_rowsReceived_2_s = 32'd0;
 #0 p_anonymous_namespace_rowsReceived_3_s = 32'd0;
 #0 p_anonymous_namespace_rowsReceived_4_s = 32'd0;
 #0 rowsReceived = 32'd0;
-#0 grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start_reg = 1'b0;
-#0 grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start_reg = 1'b0;
-#0 grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start_reg = 1'b0;
-#0 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start_reg = 1'b0;
-#0 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start_reg = 1'b0;
-#0 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start_reg = 1'b0;
-#0 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start_reg = 1'b0;
-#0 grp_dataflow_parent_loop_proc_fu_170_ap_start_reg = 1'b0;
-#0 ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_ready = 1'b0;
-#0 ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_done = 1'b0;
+#0 grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start_reg = 1'b0;
+#0 grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start_reg = 1'b0;
+#0 grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start_reg = 1'b0;
+#0 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start_reg = 1'b0;
+#0 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start_reg = 1'b0;
+#0 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start_reg = 1'b0;
+#0 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start_reg = 1'b0;
+#0 grp_dataflow_parent_loop_proc_fu_222_ap_start_reg = 1'b0;
+#0 ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_ready = 1'b0;
+#0 ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_done = 1'b0;
 end
 
-canny_top_lineBuffer_1_RAM_AUTO_1R1W #(
-    .DataWidth( 8 ),
-    .AddressRange( 2560 ),
-    .AddressWidth( 12 ))
-lineBuffer_1_U(
+canny_top_p_anonymous_namespace_lineBuffer_39_0_RAM_AUTO_1R1W #(
+    .DataWidth( 12 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_39_0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
-    .address0(lineBuffer_1_address0),
-    .ce0(lineBuffer_1_ce0),
-    .we0(lineBuffer_1_we0),
-    .d0(lineBuffer_1_d0),
-    .q0(lineBuffer_1_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_address1),
-    .ce1(lineBuffer_1_ce1),
-    .q1(lineBuffer_1_q1)
+    .address0(p_anonymous_namespace_lineBuffer_39_0_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_39_0_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_39_0_we0),
+    .d0(p_anonymous_namespace_lineBuffer_39_0_d0),
+    .q0(p_anonymous_namespace_lineBuffer_39_0_q0)
 );
 
-canny_top_lineBuffer_RAM_AUTO_1R1W #(
-    .DataWidth( 8 ),
-    .AddressRange( 1536 ),
-    .AddressWidth( 11 ))
-lineBuffer_U(
+canny_top_p_anonymous_namespace_lineBuffer_39_0_RAM_AUTO_1R1W #(
+    .DataWidth( 12 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_39_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
-    .address0(lineBuffer_address0),
-    .ce0(lineBuffer_ce0),
-    .we0(lineBuffer_we0),
-    .d0(lineBuffer_d0),
-    .q0(lineBuffer_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_address1),
-    .ce1(lineBuffer_ce1),
-    .q1(lineBuffer_q1)
+    .address0(p_anonymous_namespace_lineBuffer_39_1_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_39_1_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_39_1_we0),
+    .d0(p_anonymous_namespace_lineBuffer_39_1_d0),
+    .q0(p_anonymous_namespace_lineBuffer_39_1_q0)
 );
 
-canny_top_p_anonymous_namespace_lineBuffer_direction_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_39_0_RAM_AUTO_1R1W #(
+    .DataWidth( 12 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_39_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_39_2_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_39_2_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_39_2_we0),
+    .d0(p_anonymous_namespace_lineBuffer_39_2_d0),
+    .q0(p_anonymous_namespace_lineBuffer_39_2_q0)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_39_0_RAM_AUTO_1R1W #(
+    .DataWidth( 12 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_39_3_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_39_3_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_39_3_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_39_3_we0),
+    .d0(p_anonymous_namespace_lineBuffer_39_3_d0),
+    .q0(p_anonymous_namespace_lineBuffer_39_3_q0)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_39_0_RAM_AUTO_1R1W #(
+    .DataWidth( 12 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_39_4_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_39_4_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_39_4_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_39_4_we0),
+    .d0(p_anonymous_namespace_lineBuffer_39_4_d0),
+    .q0(p_anonymous_namespace_lineBuffer_39_4_q0)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_32_0_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_32_0_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_32_0_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_32_0_we0),
+    .d0(p_anonymous_namespace_lineBuffer_32_0_d0),
+    .q0(p_anonymous_namespace_lineBuffer_32_0_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_32_0_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_32_0_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_32_1_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_32_1_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_32_1_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_32_1_we0),
+    .d0(p_anonymous_namespace_lineBuffer_32_1_d0),
+    .q0(p_anonymous_namespace_lineBuffer_32_1_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_32_1_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_32_1_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_32_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_32_2_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_32_2_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_32_2_we0),
+    .d0(p_anonymous_namespace_lineBuffer_32_2_d0),
+    .q0(p_anonymous_namespace_lineBuffer_32_2_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_32_2_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_32_2_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_magnitude_0_RAM_AUTO_1R1W #(
+    .DataWidth( 11 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_magnitude_0_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_magnitude_0_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_magnitude_0_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_magnitude_0_we0),
+    .d0(p_anonymous_namespace_lineBuffer_magnitude_0_d0),
+    .q0(p_anonymous_namespace_lineBuffer_magnitude_0_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_magnitude_0_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_magnitude_0_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_direction_0_RAM_AUTO_1R1W #(
     .DataWidth( 2 ),
-    .AddressRange( 1536 ),
-    .AddressWidth( 11 ))
-p_anonymous_namespace_lineBuffer_direction_U(
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_direction_0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
-    .address0(p_anonymous_namespace_lineBuffer_direction_address0),
-    .ce0(p_anonymous_namespace_lineBuffer_direction_ce0),
-    .we0(p_anonymous_namespace_lineBuffer_direction_we0),
-    .d0(p_anonymous_namespace_lineBuffer_direction_d0),
-    .q0(p_anonymous_namespace_lineBuffer_direction_q0)
+    .address0(p_anonymous_namespace_lineBuffer_direction_0_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_direction_0_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_direction_0_we0),
+    .d0(p_anonymous_namespace_lineBuffer_direction_0_d0),
+    .q0(p_anonymous_namespace_lineBuffer_direction_0_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_direction_0_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_direction_0_q1)
 );
 
-canny_top_p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_magnitude_0_RAM_AUTO_1R1W #(
     .DataWidth( 11 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
-p_anonymous_namespace_lineBuffer_25_magnitude_0_U(
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_magnitude_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
-    .address0(p_anonymous_namespace_lineBuffer_25_magnitude_0_address0),
-    .ce0(p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0),
-    .we0(p_anonymous_namespace_lineBuffer_25_magnitude_0_we0),
-    .d0(p_anonymous_namespace_lineBuffer_25_magnitude_0_d0),
-    .q0(p_anonymous_namespace_lineBuffer_25_magnitude_0_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1),
-    .ce1(p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1),
-    .q1(p_anonymous_namespace_lineBuffer_25_magnitude_0_q1)
+    .address0(p_anonymous_namespace_lineBuffer_magnitude_1_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_magnitude_1_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_magnitude_1_we0),
+    .d0(p_anonymous_namespace_lineBuffer_magnitude_1_d0),
+    .q0(p_anonymous_namespace_lineBuffer_magnitude_1_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_magnitude_1_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_magnitude_1_q1)
 );
 
-canny_top_p_anonymous_namespace_lineBuffer_25_magnitude_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_direction_0_RAM_AUTO_1R1W #(
+    .DataWidth( 2 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_direction_1_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_direction_1_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_direction_1_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_direction_1_we0),
+    .d0(p_anonymous_namespace_lineBuffer_direction_1_d0),
+    .q0(p_anonymous_namespace_lineBuffer_direction_1_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_direction_1_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_direction_1_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_magnitude_0_RAM_AUTO_1R1W #(
     .DataWidth( 11 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
-p_anonymous_namespace_lineBuffer_25_magnitude_1_U(
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_magnitude_2_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
-    .address0(p_anonymous_namespace_lineBuffer_25_magnitude_1_address0),
-    .ce0(p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0),
-    .we0(p_anonymous_namespace_lineBuffer_25_magnitude_1_we0),
-    .d0(p_anonymous_namespace_lineBuffer_25_magnitude_1_d0),
-    .q0(p_anonymous_namespace_lineBuffer_25_magnitude_1_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1),
-    .ce1(p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1),
-    .q1(p_anonymous_namespace_lineBuffer_25_magnitude_1_q1)
+    .address0(p_anonymous_namespace_lineBuffer_magnitude_2_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_magnitude_2_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_magnitude_2_we0),
+    .d0(p_anonymous_namespace_lineBuffer_magnitude_2_d0),
+    .q0(p_anonymous_namespace_lineBuffer_magnitude_2_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_magnitude_2_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_magnitude_2_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_direction_0_RAM_AUTO_1R1W #(
+    .DataWidth( 2 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_anonymous_namespace_lineBuffer_direction_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_anonymous_namespace_lineBuffer_direction_2_address0),
+    .ce0(p_anonymous_namespace_lineBuffer_direction_2_ce0),
+    .we0(p_anonymous_namespace_lineBuffer_direction_2_we0),
+    .d0(p_anonymous_namespace_lineBuffer_direction_2_d0),
+    .q0(p_anonymous_namespace_lineBuffer_direction_2_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_address1),
+    .ce1(p_anonymous_namespace_lineBuffer_direction_2_ce1),
+    .q1(p_anonymous_namespace_lineBuffer_direction_2_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -681,15 +1061,15 @@ p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -698,15 +1078,32 @@ p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0),
+    .ce0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0),
+    .we0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0),
+    .d0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0),
+    .q0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1),
+    .ce1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1),
+    .q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -715,15 +1112,15 @@ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -732,15 +1129,32 @@ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0),
+    .ce0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0),
+    .we0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0),
+    .d0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0),
+    .q0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1),
+    .ce1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1),
+    .q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -749,15 +1163,15 @@ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -766,15 +1180,32 @@ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0),
+    .ce0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0),
+    .we0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0),
+    .d0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0),
+    .q0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1),
+    .ce1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1),
+    .q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1)
+);
+
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -783,15 +1214,15 @@ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1)
 );
 
-canny_top_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_RAM_AUTO_1R1W #(
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 768 ),
-    .AddressWidth( 10 ))
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
 p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
@@ -800,162 +1231,231 @@ p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_U(
     .we0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0),
     .d0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0),
     .q0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0),
-    .address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1),
     .ce1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1),
     .q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1)
 );
 
-canny_top_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2 grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116(
-    .ap_clk(ap_clk),
-    .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start),
-    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_done),
-    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_idle),
-    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_ready),
-    .lineBuffer_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_address0),
-    .lineBuffer_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_ce0),
-    .lineBuffer_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_we0),
-    .lineBuffer_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_d0)
+canny_top_p_anonymous_namespace_lineBuffer_32_0_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 512 ),
+    .AddressWidth( 9 ))
+p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst_n_inv),
+    .address0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0),
+    .ce0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0),
+    .we0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0),
+    .d0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0),
+    .q0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0),
+    .address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1),
+    .ce1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1),
+    .q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1)
 );
 
-canny_top_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2 grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122(
+canny_top_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2 grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start),
-    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_done),
-    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_idle),
-    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_ready),
-    .lineBuffer_address0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_address0),
-    .lineBuffer_ce0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_ce0),
-    .lineBuffer_we0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_we0),
-    .lineBuffer_d0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_d0)
+    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start),
+    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_done),
+    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_idle),
+    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_ready),
+    .p_anonymous_namespace_lineBuffer_39_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_address0),
+    .p_anonymous_namespace_lineBuffer_39_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_ce0),
+    .p_anonymous_namespace_lineBuffer_39_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_we0),
+    .p_anonymous_namespace_lineBuffer_39_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_d0),
+    .p_anonymous_namespace_lineBuffer_39_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_address0),
+    .p_anonymous_namespace_lineBuffer_39_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_ce0),
+    .p_anonymous_namespace_lineBuffer_39_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_we0),
+    .p_anonymous_namespace_lineBuffer_39_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_d0),
+    .p_anonymous_namespace_lineBuffer_39_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_address0),
+    .p_anonymous_namespace_lineBuffer_39_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_ce0),
+    .p_anonymous_namespace_lineBuffer_39_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_we0),
+    .p_anonymous_namespace_lineBuffer_39_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_d0),
+    .p_anonymous_namespace_lineBuffer_39_3_address0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_address0),
+    .p_anonymous_namespace_lineBuffer_39_3_ce0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_ce0),
+    .p_anonymous_namespace_lineBuffer_39_3_we0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_we0),
+    .p_anonymous_namespace_lineBuffer_39_3_d0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_d0),
+    .p_anonymous_namespace_lineBuffer_39_4_address0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_address0),
+    .p_anonymous_namespace_lineBuffer_39_4_ce0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_ce0),
+    .p_anonymous_namespace_lineBuffer_39_4_we0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_we0),
+    .p_anonymous_namespace_lineBuffer_39_4_d0(grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_d0)
 );
 
-canny_top_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2 grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128(
+canny_top_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2 grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start),
-    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_done),
-    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_idle),
-    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_ready),
-    .p_anonymous_namespace_lineBuffer_direction_address0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_address0),
-    .p_anonymous_namespace_lineBuffer_direction_ce0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_ce0),
-    .p_anonymous_namespace_lineBuffer_direction_we0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_we0),
-    .p_anonymous_namespace_lineBuffer_direction_d0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_d0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0)
+    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start),
+    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_done),
+    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_idle),
+    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_ready),
+    .p_anonymous_namespace_lineBuffer_32_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_address0),
+    .p_anonymous_namespace_lineBuffer_32_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_ce0),
+    .p_anonymous_namespace_lineBuffer_32_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_we0),
+    .p_anonymous_namespace_lineBuffer_32_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_d0),
+    .p_anonymous_namespace_lineBuffer_32_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_address0),
+    .p_anonymous_namespace_lineBuffer_32_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_ce0),
+    .p_anonymous_namespace_lineBuffer_32_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_we0),
+    .p_anonymous_namespace_lineBuffer_32_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_d0),
+    .p_anonymous_namespace_lineBuffer_32_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_address0),
+    .p_anonymous_namespace_lineBuffer_32_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_ce0),
+    .p_anonymous_namespace_lineBuffer_32_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_we0),
+    .p_anonymous_namespace_lineBuffer_32_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_d0)
 );
 
-canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138(
+canny_top_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2 grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start),
-    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_done),
-    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_idle),
-    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_ready),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0)
+    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start),
+    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_done),
+    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_idle),
+    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_ready),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_d0),
+    .p_anonymous_namespace_lineBuffer_direction_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_address0),
+    .p_anonymous_namespace_lineBuffer_direction_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_we0),
+    .p_anonymous_namespace_lineBuffer_direction_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_d0),
+    .p_anonymous_namespace_lineBuffer_direction_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_address0),
+    .p_anonymous_namespace_lineBuffer_direction_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_we0),
+    .p_anonymous_namespace_lineBuffer_direction_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_d0),
+    .p_anonymous_namespace_lineBuffer_direction_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_address0),
+    .p_anonymous_namespace_lineBuffer_direction_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_we0),
+    .p_anonymous_namespace_lineBuffer_direction_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_d0)
 );
 
-canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146(
+canny_top_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start),
-    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_done),
-    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_idle),
-    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_ready),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0)
+    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start),
+    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_done),
+    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_idle),
+    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_ready),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0)
 );
 
-canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154(
+canny_top_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start),
-    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_done),
-    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_idle),
-    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_ready),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0)
+    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start),
+    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_done),
+    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_idle),
+    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_ready),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0)
 );
 
-canny_top_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23 grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162(
+canny_top_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
-    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start),
-    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_done),
-    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_idle),
-    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_ready),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0)
+    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start),
+    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_done),
+    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_idle),
+    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_ready),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0)
 );
 
-canny_top_dataflow_parent_loop_proc grp_dataflow_parent_loop_proc_fu_170(
-    .m_axi_gmem_0_AWVALID(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWVALID),
+canny_top_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23 grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst_n_inv),
+    .ap_start(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start),
+    .ap_done(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_done),
+    .ap_idle(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_idle),
+    .ap_ready(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_ready),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0(grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0)
+);
+
+canny_top_dataflow_parent_loop_proc grp_dataflow_parent_loop_proc_fu_222(
+    .m_axi_gmem_0_AWVALID(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWVALID),
     .m_axi_gmem_0_AWREADY(gmem_0_AWREADY),
-    .m_axi_gmem_0_AWADDR(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWADDR),
-    .m_axi_gmem_0_AWID(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWID),
-    .m_axi_gmem_0_AWLEN(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWLEN),
-    .m_axi_gmem_0_AWSIZE(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWSIZE),
-    .m_axi_gmem_0_AWBURST(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWBURST),
-    .m_axi_gmem_0_AWLOCK(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWLOCK),
-    .m_axi_gmem_0_AWCACHE(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWCACHE),
-    .m_axi_gmem_0_AWPROT(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWPROT),
-    .m_axi_gmem_0_AWQOS(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWQOS),
-    .m_axi_gmem_0_AWREGION(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWREGION),
-    .m_axi_gmem_0_AWUSER(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWUSER),
-    .m_axi_gmem_0_WVALID(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WVALID),
+    .m_axi_gmem_0_AWADDR(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWADDR),
+    .m_axi_gmem_0_AWID(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWID),
+    .m_axi_gmem_0_AWLEN(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWLEN),
+    .m_axi_gmem_0_AWSIZE(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWSIZE),
+    .m_axi_gmem_0_AWBURST(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWBURST),
+    .m_axi_gmem_0_AWLOCK(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWLOCK),
+    .m_axi_gmem_0_AWCACHE(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWCACHE),
+    .m_axi_gmem_0_AWPROT(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWPROT),
+    .m_axi_gmem_0_AWQOS(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWQOS),
+    .m_axi_gmem_0_AWREGION(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWREGION),
+    .m_axi_gmem_0_AWUSER(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWUSER),
+    .m_axi_gmem_0_WVALID(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WVALID),
     .m_axi_gmem_0_WREADY(gmem_0_WREADY),
-    .m_axi_gmem_0_WDATA(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WDATA),
-    .m_axi_gmem_0_WSTRB(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WSTRB),
-    .m_axi_gmem_0_WLAST(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WLAST),
-    .m_axi_gmem_0_WID(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WID),
-    .m_axi_gmem_0_WUSER(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WUSER),
-    .m_axi_gmem_0_ARVALID(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARVALID),
+    .m_axi_gmem_0_WDATA(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WDATA),
+    .m_axi_gmem_0_WSTRB(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WSTRB),
+    .m_axi_gmem_0_WLAST(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WLAST),
+    .m_axi_gmem_0_WID(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WID),
+    .m_axi_gmem_0_WUSER(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WUSER),
+    .m_axi_gmem_0_ARVALID(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARVALID),
     .m_axi_gmem_0_ARREADY(gmem_0_ARREADY),
-    .m_axi_gmem_0_ARADDR(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARADDR),
-    .m_axi_gmem_0_ARID(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARID),
-    .m_axi_gmem_0_ARLEN(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARLEN),
-    .m_axi_gmem_0_ARSIZE(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARSIZE),
-    .m_axi_gmem_0_ARBURST(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARBURST),
-    .m_axi_gmem_0_ARLOCK(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARLOCK),
-    .m_axi_gmem_0_ARCACHE(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARCACHE),
-    .m_axi_gmem_0_ARPROT(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARPROT),
-    .m_axi_gmem_0_ARQOS(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARQOS),
-    .m_axi_gmem_0_ARREGION(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARREGION),
-    .m_axi_gmem_0_ARUSER(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARUSER),
+    .m_axi_gmem_0_ARADDR(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARADDR),
+    .m_axi_gmem_0_ARID(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARID),
+    .m_axi_gmem_0_ARLEN(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARLEN),
+    .m_axi_gmem_0_ARSIZE(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARSIZE),
+    .m_axi_gmem_0_ARBURST(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARBURST),
+    .m_axi_gmem_0_ARLOCK(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARLOCK),
+    .m_axi_gmem_0_ARCACHE(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARCACHE),
+    .m_axi_gmem_0_ARPROT(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARPROT),
+    .m_axi_gmem_0_ARQOS(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARQOS),
+    .m_axi_gmem_0_ARREGION(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARREGION),
+    .m_axi_gmem_0_ARUSER(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARUSER),
     .m_axi_gmem_0_RVALID(gmem_0_RVALID),
-    .m_axi_gmem_0_RREADY(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_RREADY),
+    .m_axi_gmem_0_RREADY(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_RREADY),
     .m_axi_gmem_0_RDATA(gmem_0_RDATA),
     .m_axi_gmem_0_RLAST(1'b0),
     .m_axi_gmem_0_RID(1'd0),
@@ -963,183 +1463,313 @@ canny_top_dataflow_parent_loop_proc grp_dataflow_parent_loop_proc_fu_170(
     .m_axi_gmem_0_RUSER(1'd0),
     .m_axi_gmem_0_RRESP(2'd0),
     .m_axi_gmem_0_BVALID(gmem_0_BVALID),
-    .m_axi_gmem_0_BREADY(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_BREADY),
+    .m_axi_gmem_0_BREADY(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_BREADY),
     .m_axi_gmem_0_BRESP(2'd0),
     .m_axi_gmem_0_BID(1'd0),
     .m_axi_gmem_0_BUSER(1'd0),
-    .in_r(in_r_read_reg_275),
-    .out_r(out_r_read_reg_270),
-    .p_anonymous_namespace_rowsReceived_i(p_anonymous_namespace_rowsReceived),
-    .p_anonymous_namespace_rowsReceived_o(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_o),
-    .lineBuffer_1_address0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_address0),
-    .lineBuffer_1_ce0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_ce0),
-    .lineBuffer_1_d0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_d0),
-    .lineBuffer_1_q0(lineBuffer_1_q0),
-    .lineBuffer_1_we0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_we0),
-    .lineBuffer_1_address1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_address1),
-    .lineBuffer_1_ce1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_ce1),
-    .lineBuffer_1_d1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_d1),
-    .lineBuffer_1_q1(lineBuffer_1_q1),
-    .lineBuffer_1_we1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_we1),
+    .in_r(in_r_read_reg_353),
+    .out_r(out_r_read_reg_348),
     .p_anonymous_namespace_rowsReceived_1_i(p_anonymous_namespace_rowsReceived_1),
-    .p_anonymous_namespace_rowsReceived_1_o(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_o),
-    .lineBuffer_address0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_address0),
-    .lineBuffer_ce0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_ce0),
-    .lineBuffer_d0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_d0),
-    .lineBuffer_q0(lineBuffer_q0),
-    .lineBuffer_we0(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_we0),
-    .lineBuffer_address1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_address1),
-    .lineBuffer_ce1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_ce1),
-    .lineBuffer_d1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_d1),
-    .lineBuffer_q1(lineBuffer_q1),
-    .lineBuffer_we1(grp_dataflow_parent_loop_proc_fu_170_lineBuffer_we1),
+    .p_anonymous_namespace_rowsReceived_1_o(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_o),
+    .p_anonymous_namespace_lineBuffer_39_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_address0),
+    .p_anonymous_namespace_lineBuffer_39_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_ce0),
+    .p_anonymous_namespace_lineBuffer_39_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_d0),
+    .p_anonymous_namespace_lineBuffer_39_0_q0(p_anonymous_namespace_lineBuffer_39_0_q0),
+    .p_anonymous_namespace_lineBuffer_39_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_we0),
+    .p_anonymous_namespace_lineBuffer_39_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_address1),
+    .p_anonymous_namespace_lineBuffer_39_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_ce1),
+    .p_anonymous_namespace_lineBuffer_39_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_d1),
+    .p_anonymous_namespace_lineBuffer_39_0_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_we1),
+    .p_anonymous_namespace_lineBuffer_39_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_address0),
+    .p_anonymous_namespace_lineBuffer_39_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_ce0),
+    .p_anonymous_namespace_lineBuffer_39_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_d0),
+    .p_anonymous_namespace_lineBuffer_39_1_q0(p_anonymous_namespace_lineBuffer_39_1_q0),
+    .p_anonymous_namespace_lineBuffer_39_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_we0),
+    .p_anonymous_namespace_lineBuffer_39_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_address1),
+    .p_anonymous_namespace_lineBuffer_39_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_ce1),
+    .p_anonymous_namespace_lineBuffer_39_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_d1),
+    .p_anonymous_namespace_lineBuffer_39_1_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_we1),
+    .p_anonymous_namespace_lineBuffer_39_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_address0),
+    .p_anonymous_namespace_lineBuffer_39_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_ce0),
+    .p_anonymous_namespace_lineBuffer_39_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_d0),
+    .p_anonymous_namespace_lineBuffer_39_2_q0(p_anonymous_namespace_lineBuffer_39_2_q0),
+    .p_anonymous_namespace_lineBuffer_39_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_we0),
+    .p_anonymous_namespace_lineBuffer_39_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_address1),
+    .p_anonymous_namespace_lineBuffer_39_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_ce1),
+    .p_anonymous_namespace_lineBuffer_39_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_d1),
+    .p_anonymous_namespace_lineBuffer_39_2_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_we1),
+    .p_anonymous_namespace_lineBuffer_39_3_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_address0),
+    .p_anonymous_namespace_lineBuffer_39_3_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_ce0),
+    .p_anonymous_namespace_lineBuffer_39_3_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_d0),
+    .p_anonymous_namespace_lineBuffer_39_3_q0(p_anonymous_namespace_lineBuffer_39_3_q0),
+    .p_anonymous_namespace_lineBuffer_39_3_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_we0),
+    .p_anonymous_namespace_lineBuffer_39_3_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_address1),
+    .p_anonymous_namespace_lineBuffer_39_3_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_ce1),
+    .p_anonymous_namespace_lineBuffer_39_3_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_d1),
+    .p_anonymous_namespace_lineBuffer_39_3_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_3_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_we1),
+    .p_anonymous_namespace_lineBuffer_39_4_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_address0),
+    .p_anonymous_namespace_lineBuffer_39_4_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_ce0),
+    .p_anonymous_namespace_lineBuffer_39_4_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_d0),
+    .p_anonymous_namespace_lineBuffer_39_4_q0(p_anonymous_namespace_lineBuffer_39_4_q0),
+    .p_anonymous_namespace_lineBuffer_39_4_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_we0),
+    .p_anonymous_namespace_lineBuffer_39_4_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_address1),
+    .p_anonymous_namespace_lineBuffer_39_4_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_ce1),
+    .p_anonymous_namespace_lineBuffer_39_4_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_d1),
+    .p_anonymous_namespace_lineBuffer_39_4_q1(12'd0),
+    .p_anonymous_namespace_lineBuffer_39_4_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_we1),
     .p_anonymous_namespace_rowsReceived_2_i(p_anonymous_namespace_rowsReceived_2),
-    .p_anonymous_namespace_rowsReceived_2_o(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_o),
-    .p_anonymous_namespace_lineBuffer_direction_address0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_address0),
-    .p_anonymous_namespace_lineBuffer_direction_ce0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_ce0),
-    .p_anonymous_namespace_lineBuffer_direction_d0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_d0),
-    .p_anonymous_namespace_lineBuffer_direction_q0(p_anonymous_namespace_lineBuffer_direction_q0),
-    .p_anonymous_namespace_lineBuffer_direction_we0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_we0),
-    .p_anonymous_namespace_lineBuffer_direction_address1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_address1),
-    .p_anonymous_namespace_lineBuffer_direction_ce1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_ce1),
-    .p_anonymous_namespace_lineBuffer_direction_d1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_d1),
-    .p_anonymous_namespace_lineBuffer_direction_q1(2'd0),
-    .p_anonymous_namespace_lineBuffer_direction_we1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_we1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_address0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_d0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_q0(p_anonymous_namespace_lineBuffer_25_magnitude_0_q0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_we0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_address1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_address1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_d1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_d1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_q1(p_anonymous_namespace_lineBuffer_25_magnitude_0_q1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_0_we1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_we1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_address0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_d0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_q0(p_anonymous_namespace_lineBuffer_25_magnitude_1_q0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_we0(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_address1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_address1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_d1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_d1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_q1(p_anonymous_namespace_lineBuffer_25_magnitude_1_q1),
-    .p_anonymous_namespace_lineBuffer_25_magnitude_1_we1(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_we1),
+    .p_anonymous_namespace_rowsReceived_2_o(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_o),
+    .p_anonymous_namespace_lineBuffer_32_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_address0),
+    .p_anonymous_namespace_lineBuffer_32_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_ce0),
+    .p_anonymous_namespace_lineBuffer_32_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_d0),
+    .p_anonymous_namespace_lineBuffer_32_0_q0(p_anonymous_namespace_lineBuffer_32_0_q0),
+    .p_anonymous_namespace_lineBuffer_32_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_we0),
+    .p_anonymous_namespace_lineBuffer_32_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_address1),
+    .p_anonymous_namespace_lineBuffer_32_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_ce1),
+    .p_anonymous_namespace_lineBuffer_32_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_d1),
+    .p_anonymous_namespace_lineBuffer_32_0_q1(p_anonymous_namespace_lineBuffer_32_0_q1),
+    .p_anonymous_namespace_lineBuffer_32_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_we1),
+    .p_anonymous_namespace_lineBuffer_32_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_address0),
+    .p_anonymous_namespace_lineBuffer_32_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_ce0),
+    .p_anonymous_namespace_lineBuffer_32_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_d0),
+    .p_anonymous_namespace_lineBuffer_32_1_q0(p_anonymous_namespace_lineBuffer_32_1_q0),
+    .p_anonymous_namespace_lineBuffer_32_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_we0),
+    .p_anonymous_namespace_lineBuffer_32_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_address1),
+    .p_anonymous_namespace_lineBuffer_32_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_ce1),
+    .p_anonymous_namespace_lineBuffer_32_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_d1),
+    .p_anonymous_namespace_lineBuffer_32_1_q1(p_anonymous_namespace_lineBuffer_32_1_q1),
+    .p_anonymous_namespace_lineBuffer_32_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_we1),
+    .p_anonymous_namespace_lineBuffer_32_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_address0),
+    .p_anonymous_namespace_lineBuffer_32_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_ce0),
+    .p_anonymous_namespace_lineBuffer_32_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_d0),
+    .p_anonymous_namespace_lineBuffer_32_2_q0(p_anonymous_namespace_lineBuffer_32_2_q0),
+    .p_anonymous_namespace_lineBuffer_32_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_we0),
+    .p_anonymous_namespace_lineBuffer_32_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_address1),
+    .p_anonymous_namespace_lineBuffer_32_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_ce1),
+    .p_anonymous_namespace_lineBuffer_32_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_d1),
+    .p_anonymous_namespace_lineBuffer_32_2_q1(p_anonymous_namespace_lineBuffer_32_2_q1),
+    .p_anonymous_namespace_lineBuffer_32_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_we1),
+    .p_anonymous_namespace_rowsReceived_i(p_anonymous_namespace_rowsReceived),
+    .p_anonymous_namespace_rowsReceived_o(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_o),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_q0(p_anonymous_namespace_lineBuffer_magnitude_0_q0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_address1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_ce1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_d1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_q1(p_anonymous_namespace_lineBuffer_magnitude_0_q1),
+    .p_anonymous_namespace_lineBuffer_magnitude_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_we1),
+    .p_anonymous_namespace_lineBuffer_direction_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_address0),
+    .p_anonymous_namespace_lineBuffer_direction_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_d0),
+    .p_anonymous_namespace_lineBuffer_direction_0_q0(p_anonymous_namespace_lineBuffer_direction_0_q0),
+    .p_anonymous_namespace_lineBuffer_direction_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_we0),
+    .p_anonymous_namespace_lineBuffer_direction_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_address1),
+    .p_anonymous_namespace_lineBuffer_direction_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_ce1),
+    .p_anonymous_namespace_lineBuffer_direction_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_d1),
+    .p_anonymous_namespace_lineBuffer_direction_0_q1(p_anonymous_namespace_lineBuffer_direction_0_q1),
+    .p_anonymous_namespace_lineBuffer_direction_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_we1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_q0(p_anonymous_namespace_lineBuffer_magnitude_1_q0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_address1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_ce1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_d1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_q1(p_anonymous_namespace_lineBuffer_magnitude_1_q1),
+    .p_anonymous_namespace_lineBuffer_magnitude_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_we1),
+    .p_anonymous_namespace_lineBuffer_direction_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_address0),
+    .p_anonymous_namespace_lineBuffer_direction_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_d0),
+    .p_anonymous_namespace_lineBuffer_direction_1_q0(p_anonymous_namespace_lineBuffer_direction_1_q0),
+    .p_anonymous_namespace_lineBuffer_direction_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_we0),
+    .p_anonymous_namespace_lineBuffer_direction_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_address1),
+    .p_anonymous_namespace_lineBuffer_direction_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_ce1),
+    .p_anonymous_namespace_lineBuffer_direction_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_d1),
+    .p_anonymous_namespace_lineBuffer_direction_1_q1(p_anonymous_namespace_lineBuffer_direction_1_q1),
+    .p_anonymous_namespace_lineBuffer_direction_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_we1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_address0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_ce0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_d0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_q0(p_anonymous_namespace_lineBuffer_magnitude_2_q0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_we0),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_address1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_ce1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_d1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_q1(p_anonymous_namespace_lineBuffer_magnitude_2_q1),
+    .p_anonymous_namespace_lineBuffer_magnitude_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_we1),
+    .p_anonymous_namespace_lineBuffer_direction_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_address0),
+    .p_anonymous_namespace_lineBuffer_direction_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_ce0),
+    .p_anonymous_namespace_lineBuffer_direction_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_d0),
+    .p_anonymous_namespace_lineBuffer_direction_2_q0(p_anonymous_namespace_lineBuffer_direction_2_q0),
+    .p_anonymous_namespace_lineBuffer_direction_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_we0),
+    .p_anonymous_namespace_lineBuffer_direction_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_address1),
+    .p_anonymous_namespace_lineBuffer_direction_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_ce1),
+    .p_anonymous_namespace_lineBuffer_direction_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_d1),
+    .p_anonymous_namespace_lineBuffer_direction_2_q1(p_anonymous_namespace_lineBuffer_direction_2_q1),
+    .p_anonymous_namespace_lineBuffer_direction_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_we1),
     .p_anonymous_namespace_rowsReceived_1_s_i(p_anonymous_namespace_rowsReceived_1_s),
-    .p_anonymous_namespace_rowsReceived_1_s_o(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_s_o),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0),
+    .p_anonymous_namespace_rowsReceived_1_s_o(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_s_o),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we1),
     .p_anonymous_namespace_rowsReceived_2_s_i(p_anonymous_namespace_rowsReceived_2_s),
-    .p_anonymous_namespace_rowsReceived_2_s_o(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_s_o),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0),
+    .p_anonymous_namespace_rowsReceived_2_s_o(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_s_o),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we1),
     .p_anonymous_namespace_rowsReceived_3_s_i(p_anonymous_namespace_rowsReceived_3_s),
-    .p_anonymous_namespace_rowsReceived_3_s_o(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_3_s_o),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0),
+    .p_anonymous_namespace_rowsReceived_3_s_o(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_3_s_o),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we1),
     .p_anonymous_namespace_rowsReceived_4_s_i(p_anonymous_namespace_rowsReceived_4_s),
-    .p_anonymous_namespace_rowsReceived_4_s_o(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_4_s_o),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0),
+    .p_anonymous_namespace_rowsReceived_4_s_o(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_4_s_o),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0),
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d1),
     .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_q1),
-    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1(grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1(p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_q1),
+    .p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1(grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we1),
     .rowsReceived_i(rowsReceived),
-    .rowsReceived_o(grp_dataflow_parent_loop_proc_fu_170_rowsReceived_o),
+    .rowsReceived_o(grp_dataflow_parent_loop_proc_fu_222_rowsReceived_o),
     .ap_clk(ap_clk),
     .ap_rst(ap_rst_n_inv),
     .in_r_ap_vld(1'b1),
     .out_r_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_i_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_1_i_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_1_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_1_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_2_i_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_2_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_2_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_i_ap_vld(1'b1),
+    .p_anonymous_namespace_rowsReceived_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_1_s_i_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_1_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_1_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_2_s_i_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_2_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_s_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_2_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_s_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_3_s_i_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_3_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_3_s_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_3_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_3_s_o_ap_vld),
     .p_anonymous_namespace_rowsReceived_4_s_i_ap_vld(1'b1),
-    .p_anonymous_namespace_rowsReceived_4_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_4_s_o_ap_vld),
+    .p_anonymous_namespace_rowsReceived_4_s_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_4_s_o_ap_vld),
     .rowsReceived_i_ap_vld(1'b1),
-    .rowsReceived_o_ap_vld(grp_dataflow_parent_loop_proc_fu_170_rowsReceived_o_ap_vld),
-    .ap_start(grp_dataflow_parent_loop_proc_fu_170_ap_start),
-    .ap_done(grp_dataflow_parent_loop_proc_fu_170_ap_done),
-    .ap_ready(grp_dataflow_parent_loop_proc_fu_170_ap_ready),
-    .ap_idle(grp_dataflow_parent_loop_proc_fu_170_ap_idle),
-    .ap_continue(grp_dataflow_parent_loop_proc_fu_170_ap_continue)
+    .rowsReceived_o_ap_vld(grp_dataflow_parent_loop_proc_fu_222_rowsReceived_o_ap_vld),
+    .ap_start(grp_dataflow_parent_loop_proc_fu_222_ap_start),
+    .ap_done(grp_dataflow_parent_loop_proc_fu_222_ap_done),
+    .ap_ready(grp_dataflow_parent_loop_proc_fu_222_ap_ready),
+    .ap_idle(grp_dataflow_parent_loop_proc_fu_222_ap_idle),
+    .ap_continue(grp_dataflow_parent_loop_proc_fu_222_ap_continue)
 );
 
 canny_top_control_s_axi #(
@@ -1250,20 +1880,20 @@ gmem_m_axi_U(
     .ACLK_EN(1'b1),
     .I_CH0_ARVALID(gmem_0_ARVALID),
     .I_CH0_ARREADY(gmem_0_ARREADY),
-    .I_CH0_ARADDR(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARADDR),
-    .I_CH0_ARLEN(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARLEN),
+    .I_CH0_ARADDR(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARADDR),
+    .I_CH0_ARLEN(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARLEN),
     .I_CH0_RVALID(gmem_0_RVALID),
     .I_CH0_RREADY(gmem_0_RREADY),
     .I_CH0_RDATA(gmem_0_RDATA),
     .I_CH0_RFIFONUM(gmem_0_RFIFONUM),
     .I_CH0_AWVALID(gmem_0_AWVALID),
     .I_CH0_AWREADY(gmem_0_AWREADY),
-    .I_CH0_AWADDR(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWADDR),
-    .I_CH0_AWLEN(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWLEN),
+    .I_CH0_AWADDR(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWADDR),
+    .I_CH0_AWLEN(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWLEN),
     .I_CH0_WVALID(gmem_0_WVALID),
     .I_CH0_WREADY(gmem_0_WREADY),
-    .I_CH0_WDATA(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WDATA),
-    .I_CH0_WSTRB(grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WSTRB),
+    .I_CH0_WDATA(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WDATA),
+    .I_CH0_WSTRB(grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WSTRB),
     .I_CH0_BVALID(gmem_0_BVALID),
     .I_CH0_BREADY(gmem_0_BREADY)
 );
@@ -1282,7 +1912,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
+        end else if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -1290,120 +1920,120 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_done <= 1'b0;
+        ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_done <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
-            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_done <= 1'b0;
-        end else if ((grp_dataflow_parent_loop_proc_fu_170_ap_done == 1'b1)) begin
-            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_done <= 1'b1;
+        if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
+            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_done <= 1'b0;
+        end else if ((grp_dataflow_parent_loop_proc_fu_222_ap_done == 1'b1)) begin
+            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_done <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_ready <= 1'b0;
+        ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_ready <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
-            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_ready <= 1'b0;
-        end else if ((grp_dataflow_parent_loop_proc_fu_170_ap_ready == 1'b1)) begin
-            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_ready <= 1'b1;
+        if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
+            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_ready <= 1'b0;
+        end else if ((grp_dataflow_parent_loop_proc_fu_222_ap_ready == 1'b1)) begin
+            ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_ready <= 1'b1;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start_reg <= 1'b0;
+        grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call16) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start_reg <= 1'b1;
-        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_ready == 1'b1)) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1_ignore_call16))) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start_reg <= 1'b1;
+        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_ready == 1'b1)) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start_reg <= 1'b0;
+        grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call12) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start_reg <= 1'b1;
-        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_ready == 1'b1)) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1_ignore_call12))) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start_reg <= 1'b1;
+        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_ready == 1'b1)) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start_reg <= 1'b0;
+        grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call20) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start_reg <= 1'b1;
-        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_ready == 1'b1)) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1_ignore_call20))) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start_reg <= 1'b1;
+        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_ready == 1'b1)) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start_reg <= 1'b0;
+        grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call22) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start_reg <= 1'b1;
-        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_ready == 1'b1)) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1_ignore_call22))) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start_reg <= 1'b1;
+        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_ready == 1'b1)) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start_reg <= 1'b0;
+        grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call24) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start_reg <= 1'b1;
-        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_ready == 1'b1)) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1_ignore_call24))) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start_reg <= 1'b1;
+        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_ready == 1'b1)) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start_reg <= 1'b0;
+        grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call18) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start_reg <= 1'b1;
-        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_ready == 1'b1)) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1_ignore_call18))) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start_reg <= 1'b1;
+        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_ready == 1'b1)) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start_reg <= 1'b0;
+        grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call14) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start_reg <= 1'b1;
-        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_ready == 1'b1)) begin
-            grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1_ignore_call14))) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start_reg <= 1'b1;
+        end else if ((grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_ready == 1'b1)) begin
+            grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst_n_inv == 1'b1) begin
-        grp_dataflow_parent_loop_proc_fu_170_ap_start_reg <= 1'b0;
+        grp_dataflow_parent_loop_proc_fu_222_ap_start_reg <= 1'b0;
     end else begin
-        if (((1'b1 == ap_CS_fsm_state3) | ((ap_sync_grp_dataflow_parent_loop_proc_fu_170_ap_ready == 1'b0) & (1'b1 == ap_CS_fsm_state4)))) begin
-            grp_dataflow_parent_loop_proc_fu_170_ap_start_reg <= 1'b1;
-        end else if ((grp_dataflow_parent_loop_proc_fu_170_ap_ready == 1'b1)) begin
-            grp_dataflow_parent_loop_proc_fu_170_ap_start_reg <= 1'b0;
+        if (((1'b1 == ap_CS_fsm_state3) | ((1'b1 == ap_CS_fsm_state4) & (ap_sync_grp_dataflow_parent_loop_proc_fu_222_ap_ready == 1'b0)))) begin
+            grp_dataflow_parent_loop_proc_fu_222_ap_start_reg <= 1'b1;
+        end else if ((grp_dataflow_parent_loop_proc_fu_222_ap_ready == 1'b1)) begin
+            grp_dataflow_parent_loop_proc_fu_222_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -1421,73 +2051,73 @@ always @ (posedge ap_clk) begin
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         p_anonymous_namespace_rowsReceived <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_anonymous_namespace_rowsReceived <= grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_anonymous_namespace_rowsReceived <= grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_o;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         p_anonymous_namespace_rowsReceived_1 <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_anonymous_namespace_rowsReceived_1 <= grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_anonymous_namespace_rowsReceived_1 <= grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_o;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         p_anonymous_namespace_rowsReceived_1_s <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_anonymous_namespace_rowsReceived_1_s <= grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_1_s_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_anonymous_namespace_rowsReceived_1_s <= grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_1_s_o;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         p_anonymous_namespace_rowsReceived_2 <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_anonymous_namespace_rowsReceived_2 <= grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_anonymous_namespace_rowsReceived_2 <= grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_o;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         p_anonymous_namespace_rowsReceived_2_s <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_anonymous_namespace_rowsReceived_2_s <= grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_2_s_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_anonymous_namespace_rowsReceived_2_s <= grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_2_s_o;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         p_anonymous_namespace_rowsReceived_3_s <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_3_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_anonymous_namespace_rowsReceived_3_s <= grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_3_s_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_3_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_anonymous_namespace_rowsReceived_3_s <= grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_3_s_o;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         p_anonymous_namespace_rowsReceived_4_s <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_4_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        p_anonymous_namespace_rowsReceived_4_s <= grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_rowsReceived_4_s_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_4_s_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        p_anonymous_namespace_rowsReceived_4_s <= grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_rowsReceived_4_s_o;
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
         rowsReceived <= 32'd0;
-    end else if (((grp_dataflow_parent_loop_proc_fu_170_rowsReceived_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
-        rowsReceived <= grp_dataflow_parent_loop_proc_fu_170_rowsReceived_o;
+    end else if (((grp_dataflow_parent_loop_proc_fu_222_rowsReceived_o_ap_vld == 1'b1) & (1'b1 == ap_CS_fsm_state4))) begin
+        rowsReceived <= grp_dataflow_parent_loop_proc_fu_222_rowsReceived_o;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        in_r_read_reg_275 <= in_r;
-        out_r_read_reg_270 <= out_r;
+        in_r_read_reg_353 <= in_r;
+        out_r_read_reg_348 <= out_r;
     end
 end
 
@@ -1518,7 +2148,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
+    if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -1534,7 +2164,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
+    if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
         ap_ready = 1'b1;
     end else begin
         ap_ready = 1'b0;
@@ -1542,154 +2172,58 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3))) begin
-        gmem_0_ARVALID = grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_ARVALID;
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state4))) begin
+        gmem_0_ARVALID = grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_ARVALID;
     end else begin
         gmem_0_ARVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3))) begin
-        gmem_0_AWVALID = grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_AWVALID;
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state4))) begin
+        gmem_0_AWVALID = grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_AWVALID;
     end else begin
         gmem_0_AWVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3))) begin
-        gmem_0_BREADY = grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_BREADY;
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state4))) begin
+        gmem_0_BREADY = grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_BREADY;
     end else begin
         gmem_0_BREADY = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3))) begin
-        gmem_0_RREADY = grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_RREADY;
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state4))) begin
+        gmem_0_RREADY = grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_RREADY;
     end else begin
         gmem_0_RREADY = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state4) | (1'b1 == ap_CS_fsm_state3))) begin
-        gmem_0_WVALID = grp_dataflow_parent_loop_proc_fu_170_m_axi_gmem_0_WVALID;
+    if (((1'b1 == ap_CS_fsm_state3) | (1'b1 == ap_CS_fsm_state4))) begin
+        gmem_0_WVALID = grp_dataflow_parent_loop_proc_fu_222_m_axi_gmem_0_WVALID;
     end else begin
         gmem_0_WVALID = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
-        grp_dataflow_parent_loop_proc_fu_170_ap_continue = 1'b1;
+    if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
+        grp_dataflow_parent_loop_proc_fu_222_ap_continue = 1'b1;
     end else begin
-        grp_dataflow_parent_loop_proc_fu_170_ap_continue = 1'b0;
+        grp_dataflow_parent_loop_proc_fu_222_ap_continue = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_1_address0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_address0;
-    end else begin
-        lineBuffer_1_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_1_ce0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_ce0;
-    end else begin
-        lineBuffer_1_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_1_ce1 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_ce1;
-    end else begin
-        lineBuffer_1_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_1_d0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_d0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_d0;
-    end else begin
-        lineBuffer_1_d0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_1_we0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_1_we0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_lineBuffer_1_we0;
-    end else begin
-        lineBuffer_1_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_address0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_address0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_address0;
-    end else begin
-        lineBuffer_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_ce0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_ce0;
-    end else begin
-        lineBuffer_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_ce1 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_ce1;
-    end else begin
-        lineBuffer_ce1 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_d0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_d0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_d0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_d0;
-    end else begin
-        lineBuffer_d0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        lineBuffer_we0 = grp_dataflow_parent_loop_proc_fu_170_lineBuffer_we0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        lineBuffer_we0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_lineBuffer_we0;
-    end else begin
-        lineBuffer_we0 = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_address0 = 'bx;
     end
@@ -1697,9 +2231,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce0 = 1'b0;
     end
@@ -1707,7 +2241,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_ce1 = 1'b0;
     end
@@ -1715,9 +2249,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_d0 = 'bx;
     end
@@ -1725,9 +2259,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_0_we0 = 1'b0;
     end
@@ -1735,9 +2269,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_address0 = 'bx;
     end
@@ -1745,9 +2279,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce0 = 1'b0;
     end
@@ -1755,7 +2289,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_ce1 = 1'b0;
     end
@@ -1763,9 +2297,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_d0 = 'bx;
     end
@@ -1773,9 +2307,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi1EEE_1_we0 = 1'b0;
     end
@@ -1783,9 +2317,57 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi1EEE_2_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 = 'bx;
     end
@@ -1793,9 +2375,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce0 = 1'b0;
     end
@@ -1803,7 +2385,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_ce1 = 1'b0;
     end
@@ -1811,9 +2393,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_d0 = 'bx;
     end
@@ -1821,9 +2403,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_we0 = 1'b0;
     end
@@ -1831,9 +2413,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_address0 = 'bx;
     end
@@ -1841,9 +2423,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce0 = 1'b0;
     end
@@ -1851,7 +2433,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_ce1 = 1'b0;
     end
@@ -1859,9 +2441,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_d0 = 'bx;
     end
@@ -1869,9 +2451,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi2EEE_1_we0 = 1'b0;
     end
@@ -1879,9 +2461,57 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 = 'bx;
     end
@@ -1889,9 +2519,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 = 1'b0;
     end
@@ -1899,7 +2529,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1 = 1'b0;
     end
@@ -1907,9 +2537,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 = 'bx;
     end
@@ -1917,9 +2547,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 = 1'b0;
     end
@@ -1927,9 +2557,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 = 'bx;
     end
@@ -1937,9 +2567,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 = 1'b0;
     end
@@ -1947,7 +2577,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1 = 1'b0;
     end
@@ -1955,9 +2585,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 = 'bx;
     end
@@ -1965,9 +2595,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 = 1'b0;
     end
@@ -1975,9 +2605,57 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0;
+    end else begin
+        p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_address0 = 'bx;
     end
@@ -1985,9 +2663,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce0 = 1'b0;
     end
@@ -1995,7 +2673,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_ce1 = 1'b0;
     end
@@ -2003,9 +2681,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_d0 = 'bx;
     end
@@ -2013,9 +2691,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_0_we0 = 1'b0;
     end
@@ -2023,9 +2701,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_address0 = 'bx;
     end
@@ -2033,9 +2711,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce0 = 1'b0;
     end
@@ -2043,7 +2721,7 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_ce1 = 1'b0;
     end
@@ -2051,9 +2729,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_d0 = 'bx;
     end
@@ -2061,9 +2739,9 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_170_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0;
     end else begin
         p_ZN12_GLOBAL_N_110lineBufferILi4EEE_1_we0 = 1'b0;
     end
@@ -2071,151 +2749,695 @@ end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_address0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_address0 = 'bx;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce0 = 1'b0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_ce1 = 1'b0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_d0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_d0 = 'bx;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_d0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_0_we0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_0_we0 = 1'b0;
+        p_ZN12_GLOBAL_N_110lineBufferILi4EEE_2_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
+        p_anonymous_namespace_lineBuffer_32_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_address0;
+        p_anonymous_namespace_lineBuffer_32_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_address0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_address0 = 'bx;
+        p_anonymous_namespace_lineBuffer_32_0_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
+        p_anonymous_namespace_lineBuffer_32_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0;
+        p_anonymous_namespace_lineBuffer_32_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_ce0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce0 = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_0_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1;
+        p_anonymous_namespace_lineBuffer_32_0_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_ce1;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_ce1 = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_0_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
+        p_anonymous_namespace_lineBuffer_32_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_d0;
+        p_anonymous_namespace_lineBuffer_32_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_d0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_d0 = 'bx;
+        p_anonymous_namespace_lineBuffer_32_0_d0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
+        p_anonymous_namespace_lineBuffer_32_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_0_we0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_25_magnitude_1_we0;
+        p_anonymous_namespace_lineBuffer_32_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_0_we0;
     end else begin
-        p_anonymous_namespace_lineBuffer_25_magnitude_1_we0 = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_0_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_direction_address0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_address0;
+        p_anonymous_namespace_lineBuffer_32_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_address0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_direction_address0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_address0;
+        p_anonymous_namespace_lineBuffer_32_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_address0;
     end else begin
-        p_anonymous_namespace_lineBuffer_direction_address0 = 'bx;
+        p_anonymous_namespace_lineBuffer_32_1_address0 = 'bx;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_direction_ce0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_ce0;
+        p_anonymous_namespace_lineBuffer_32_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_ce0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_direction_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_ce0;
+        p_anonymous_namespace_lineBuffer_32_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_ce0;
     end else begin
-        p_anonymous_namespace_lineBuffer_direction_ce0 = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_1_ce0 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_direction_d0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_d0;
-    end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_direction_d0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_d0;
+        p_anonymous_namespace_lineBuffer_32_1_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_ce1;
     end else begin
-        p_anonymous_namespace_lineBuffer_direction_d0 = 'bx;
+        p_anonymous_namespace_lineBuffer_32_1_ce1 = 1'b0;
     end
 end
 
 always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state4)) begin
-        p_anonymous_namespace_lineBuffer_direction_we0 = grp_dataflow_parent_loop_proc_fu_170_p_anonymous_namespace_lineBuffer_direction_we0;
+        p_anonymous_namespace_lineBuffer_32_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_d0;
     end else if ((1'b1 == ap_CS_fsm_state2)) begin
-        p_anonymous_namespace_lineBuffer_direction_we0 = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_p_anonymous_namespace_lineBuffer_direction_we0;
+        p_anonymous_namespace_lineBuffer_32_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_d0;
     end else begin
-        p_anonymous_namespace_lineBuffer_direction_we0 = 1'b0;
+        p_anonymous_namespace_lineBuffer_32_1_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_32_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_1_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_32_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_1_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_32_1_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_32_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_32_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_32_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_32_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_32_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_32_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_32_2_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_ce1;
+    end else begin
+        p_anonymous_namespace_lineBuffer_32_2_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_32_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_32_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_32_2_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_32_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_32_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_32_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_p_anonymous_namespace_lineBuffer_32_2_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_32_2_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_0_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_0_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_0_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_0_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_0_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_0_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_1_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_1_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_1_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_1_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_1_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_1_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_2_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_2_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_2_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_3_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_3_address0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_3_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_3_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_3_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_3_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_3_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_3_d0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_3_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_3_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_3_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_3_we0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_3_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_3_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_4_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_4_address0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_4_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_4_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_4_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_4_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_4_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_4_d0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_4_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_39_4_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_39_4_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_39_4_we0 = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_p_anonymous_namespace_lineBuffer_39_4_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_39_4_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_0_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_0_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_ce1;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_0_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_0_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_0_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_0_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_0_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_1_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_1_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_ce1;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_1_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_1_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_1_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_1_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_1_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_ce1;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_2_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_2_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_direction_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_direction_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_direction_2_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_direction_2_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_address0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_ce1;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_d0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_we0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_0_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_0_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_address0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_ce1;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_d0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_we0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_1_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_1_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_address0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_address0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_address0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_ce0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_ce0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_ce0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_ce1 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_ce1;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_d0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_d0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_d0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_d0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state4)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_we0 = grp_dataflow_parent_loop_proc_fu_222_p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+    end else if ((1'b1 == ap_CS_fsm_state2)) begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_we0 = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_p_anonymous_namespace_lineBuffer_magnitude_2_we0;
+    end else begin
+        p_anonymous_namespace_lineBuffer_magnitude_2_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
     case (ap_CS_fsm)
         ap_ST_fsm_state1 : begin
-            if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
+            if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
                 ap_NS_fsm = ap_ST_fsm_state2;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((1'b1 == ap_CS_fsm_state2) & (1'b0 == ap_block_state2_on_subcall_done))) begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state2;
@@ -2225,7 +3447,7 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state4;
         end
         ap_ST_fsm_state4 : begin
-            if (((1'b0 == ap_block_state4_on_subcall_done) & (1'b1 == ap_CS_fsm_state4))) begin
+            if (((1'b1 == ap_CS_fsm_state4) & (1'b0 == ap_block_state4_on_subcall_done))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state4;
@@ -2278,36 +3500,29 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state2_on_subcall_done = ((grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_done == 1'b0));
+    ap_block_state2_on_subcall_done = ((grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_done == 1'b0) | (grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_done == 1'b0));
 end
 
 always @ (*) begin
-    ap_block_state4_on_subcall_done = ((ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_ready & ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_done) == 1'b0);
+    ap_block_state4_on_subcall_done = ((ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_ready & ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_done) == 1'b0);
 end
 
-assign ap_sync_grp_dataflow_parent_loop_proc_fu_170_ap_ready = (grp_dataflow_parent_loop_proc_fu_170_ap_ready | ap_sync_reg_grp_dataflow_parent_loop_proc_fu_170_ap_ready);
+assign ap_sync_grp_dataflow_parent_loop_proc_fu_222_ap_ready = (grp_dataflow_parent_loop_proc_fu_222_ap_ready | ap_sync_reg_grp_dataflow_parent_loop_proc_fu_222_ap_ready);
 
-assign grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_22_1_VITIS_LOOP_23_2_fu_128_ap_start_reg;
+assign grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166_ap_start_reg;
 
-assign grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_41_1_VITIS_LOOP_42_2_fu_116_ap_start_reg;
+assign grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142_ap_start_reg;
 
-assign grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_21_fu_146_ap_start_reg;
+assign grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192_ap_start_reg;
 
-assign grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_22_fu_154_ap_start_reg;
+assign grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202_ap_start_reg;
 
-assign grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_23_fu_162_ap_start_reg;
+assign grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212_ap_start_reg;
 
-assign grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_49_1_VITIS_LOOP_50_2_fu_138_ap_start_reg;
+assign grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182_ap_start_reg;
 
-assign grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_122_ap_start_reg;
+assign grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start = grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156_ap_start_reg;
 
-assign grp_dataflow_parent_loop_proc_fu_170_ap_start = grp_dataflow_parent_loop_proc_fu_170_ap_start_reg;
-
-
-reg find_df_deadlock = 0;
-// synthesis translate_off
-`include "canny_top_hls_deadlock_detector.vh"
-// synthesis translate_on
+assign grp_dataflow_parent_loop_proc_fu_222_ap_start = grp_dataflow_parent_loop_proc_fu_222_ap_start_reg;
 
 endmodule //canny_top
-

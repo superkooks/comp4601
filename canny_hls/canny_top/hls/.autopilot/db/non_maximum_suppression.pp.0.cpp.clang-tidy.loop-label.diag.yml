@@ -1,52 +1,100 @@
 ---
-MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
+MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_22_1:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
-      FileOffset:      22
+      Message:         'Added loop label VITIS_LOOP_32_1:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      32
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          20642
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          22475
           Length:          0
-          ReplacementText: 'VITIS_LOOP_22_1: '
+          ReplacementText: 'VITIS_LOOP_32_1: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_23_2:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
-      FileOffset:      23
+      Message:         'Added loop label VITIS_LOOP_33_2:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      33
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          20696
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          22529
           Length:          0
-          ReplacementText: 'VITIS_LOOP_23_2: '
+          ReplacementText: 'VITIS_LOOP_33_2: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_45_1:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
-      FileOffset:      45
+      Message:         'Added loop label VITIS_LOOP_57_1:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      57
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          21188
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          23090
           Length:          0
-          ReplacementText: 'VITIS_LOOP_45_1: '
+          ReplacementText: 'VITIS_LOOP_57_1: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_74_2:  '
-      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp'
-      FileOffset:      74
+      Message:         'Added loop label VITIS_LOOP_98_2:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      98
       Replacements:
-        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/non_maximum_suppression.pp.0.cpp'
-          Offset:          21816
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          23900
           Length:          0
-          ReplacementText: 'VITIS_LOOP_74_2: '
+          ReplacementText: 'VITIS_LOOP_98_2: '
     Level:           Remark
-    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_105_3:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      105
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          24085
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_105_3: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_112_4:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      112
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          24294
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_112_4: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_172_5:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      172
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          26088
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_172_5: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_177_6:  '
+      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\non_maximum_suppression.cpp'
+      FileOffset:      177
+      Replacements:
+        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\non_maximum_suppression.pp.0.cpp'
+          Offset:          26232
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_177_6: '
+    Level:           Remark
+    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
 ...

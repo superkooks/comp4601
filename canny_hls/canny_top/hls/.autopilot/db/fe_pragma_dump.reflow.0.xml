@@ -1,3 +1,78 @@
 <pragmas>
 <pragma file="../src/canny_top.cpp" line="13" pragmaType="dataflow" parentfunction="canny_top" disable_start_propagation="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="126" pragmaType="pipeline" parentfunction="gaussian_blur" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/gaussian_blur.cpp" line="137" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="144" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="117" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="77" pragmaType="pipeline" parentfunction="gaussian_blur" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/gaussian_blur.cpp" line="82" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="91" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="72" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="59" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZN12_GLOBAL__N_110lineBufferE.39"/>
+<pragma file="../src/gaussian_blur.cpp" line="69" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/gaussian_blur.cpp" line="114" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/gaussian_blur.cpp" line="134" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="113" pragmaType="pipeline" parentfunction="non_maximum_suppression" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/non_maximum_suppression.cpp" line="173" pragmaType="unroll" parentfunction="non_maximum_suppression" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="178" pragmaType="unroll" parentfunction="non_maximum_suppression" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="101" pragmaType="unroll" parentfunction="non_maximum_suppression" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="106" pragmaType="unroll" parentfunction="non_maximum_suppression" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="58" pragmaType="pipeline" parentfunction="non_maximum_suppression" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/non_maximum_suppression.cpp" line="47" pragmaType="array_partition" parentfunction="non_maximum_suppression" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZN12_GLOBAL__N_110lineBufferE"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="82" pragmaType="array_partition" parentfunction="non_maximum_suppression" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="96" pragmaType="array_partition" parentfunction="non_maximum_suppression" dim="0" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/non_maximum_suppression.cpp" line="170" pragmaType="array_partition" parentfunction="non_maximum_suppression" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
+<pragma file="../src/hysteresis.cpp" line="155" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="190" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="195" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="143" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="148" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="90" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="79" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZN12_GLOBAL__N_110lineBufferILi3EEE"/>
+<pragma file="../src/hysteresis.cpp" line="110" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/hysteresis.cpp" line="138" pragmaType="array_partition" parentfunction="hysteresis" dim="0" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/hysteresis.cpp" line="187" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
+<pragma file="../src/hysteresis.cpp" line="155" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="190" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="195" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="143" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="148" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="90" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="79" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZN12_GLOBAL__N_110lineBufferILi1EEE"/>
+<pragma file="../src/hysteresis.cpp" line="110" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/hysteresis.cpp" line="138" pragmaType="array_partition" parentfunction="hysteresis" dim="0" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/hysteresis.cpp" line="187" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
+<pragma file="../src/hysteresis.cpp" line="155" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="190" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="195" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="143" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="148" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="90" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="79" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZN12_GLOBAL__N_110lineBufferILi4EEE"/>
+<pragma file="../src/hysteresis.cpp" line="110" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/hysteresis.cpp" line="138" pragmaType="array_partition" parentfunction="hysteresis" dim="0" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/hysteresis.cpp" line="187" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
+<pragma file="../src/sobel.cpp" line="156" pragmaType="pipeline" parentfunction="sobel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/sobel.cpp" line="164" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel.cpp" line="200" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel.cpp" line="205" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel.cpp" line="169" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel.cpp" line="143" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel.cpp" line="149" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel.cpp" line="123" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/sobel.cpp" line="103" pragmaType="pipeline" parentfunction="sobel" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/sobel.cpp" line="97" pragmaType="array_partition" parentfunction="sobel" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZN12_GLOBAL__N_110lineBufferE.32"/>
+<pragma file="../src/sobel.cpp" line="120" pragmaType="array_partition" parentfunction="sobel" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/sobel.cpp" line="138" pragmaType="array_partition" parentfunction="sobel" dim="0" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/sobel.cpp" line="197" pragmaType="array_partition" parentfunction="sobel" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
+<pragma file="../src/hysteresis.cpp" line="155" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="190" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="195" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="143" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="148" pragmaType="unroll" parentfunction="hysteresis" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/hysteresis.cpp" line="90" pragmaType="pipeline" parentfunction="hysteresis" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/hysteresis.cpp" line="79" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZN12_GLOBAL__N_110lineBufferILi2EEE"/>
+<pragma file="../src/hysteresis.cpp" line="110" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/hysteresis.cpp" line="138" pragmaType="array_partition" parentfunction="hysteresis" dim="0" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/hysteresis.cpp" line="187" pragmaType="array_partition" parentfunction="hysteresis" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
 </pragmas>
