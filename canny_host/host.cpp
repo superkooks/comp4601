@@ -39,10 +39,11 @@ CannyFPGA::CannyFPGA() {
     krnl = xrt::kernel(device, uuid, "canny_top");
 
     std::cout << "Allocate buffers in Global Memory\n";
-    in_buf = xrt::bo(device, WIDTH*HEIGHT*3, krnl.group_id(0));
+    in_buf = xrt::bo(device, WIDTH*HEIGHT*BYTES_PER_PIXEL, krnl.group_id(0));
     out_buf = xrt::bo(device, WIDTH*HEIGHT, krnl.group_id(1));
 
-    in_mat = cv::Mat(HEIGHT, WIDTH, CV_8UC3, in_buf.map<uint8_t*>());
+    // Four channel to match RGBPixel: the kernel reads BGR and ignores alpha.
+    in_mat = cv::Mat(HEIGHT, WIDTH, CV_8UC4, in_buf.map<uint8_t*>());
     out_mat = cv::Mat(HEIGHT, WIDTH, CV_8U, out_buf.map<uint8_t*>());
 }
 
@@ -88,6 +89,9 @@ int main(int argc, char** argv) {
     auto img_mat = cv::imread("test.jpg");
     cv::imshow("Input", img_mat);
     img_mat.copyTo(processor.in_mat);
+    // For the FPGA path this must be a BGR to BGRA conversion instead, since
+    // its input buffer is four channel:
+    //   cv::cvtColor(img_mat, processor.in_mat, cv::COLOR_BGR2BGRA);
     processor.process_frame();
     cv::imshow("Output", processor.out_mat);
     cv::imwrite("out.jpg", processor.out_mat);

@@ -30,18 +30,18 @@ int test_pipeline() {
                 row >= 80 && row < 220 &&
                 column >= 70 && column < 250
             ) {
-                pixel = {20, 220, 240};
+                pixel = {20, 220, 240, 255};
             }
 
             if (
                 row >= 280 && row < 430 &&
                 column >= 300 && column < 450
             ) {
-                pixel = {240, 30, 20};
+                pixel = {240, 30, 20, 255};
             }
 
             if (column > row - 3 && column < row + 3) {
-                pixel = {255, 255, 255};
+                pixel = {255, 255, 255, 255};
             }
 
             input[row * WIDTH + column] = pixel;

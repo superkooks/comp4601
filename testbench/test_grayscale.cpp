@@ -8,12 +8,14 @@ int test_grayscale() {
     std::array<RGBPixel, WIDTH> input{};
     std::array<std::uint8_t, WIDTH> output{};
 
-    input[0] = {0, 0, 0};
-    input[1] = {255, 255, 255};
-    input[2] = {0, 0, 255};
-    input[3] = {0, 255, 0};
-    input[4] = {255, 0, 0};
-    input[5] = {10, 20, 30};
+    // Alpha is set opaque rather than zero so that a stage accidentally
+    // folding it into the luma sum would change the result and fail the test.
+    input[0] = {0, 0, 0, 255};
+    input[1] = {255, 255, 255, 255};
+    input[2] = {0, 0, 255, 255};
+    input[3] = {0, 255, 0, 255};
+    input[4] = {255, 0, 0, 255};
+    input[5] = {10, 20, 30, 255};
 
     grayscale(input.data(), output.data());
 
