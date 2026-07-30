@@ -1,23 +1,30 @@
 #include "canny_stages.h"
 
-static int rowsReceived = 0;
+namespace {
+
+int rowsWritten = 0;
+
+}
 
 void output_row_reset() {
-    rowsReceived = 0;
+    rowsWritten = 0;
 }
 
 void output_row(
     const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH*HEIGHT],
+    std::uint8_t output[WIDTH * HEIGHT],
     bool valid_in
 ) {
-    if (!valid_in) {
+    if (!valid_in || rowsWritten >= HEIGHT) {
         return;
     }
 
-    rowsReceived++;
-    
-    for (int i = 0; i < WIDTH; i++) {
-        output[i+(rowsReceived-1)*WIDTH] = input[i];
+    const int rowOffset = rowsWritten * WIDTH;
+
+    for (int column = 0; column < WIDTH; ++column) {
+#pragma HLS PIPELINE II=1
+        output[rowOffset + column] = input[column];
     }
+
+    ++rowsWritten;
 }

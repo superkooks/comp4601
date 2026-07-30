@@ -39,6 +39,7 @@ cd "${PROJECT_ROOT}"
     testbench/test_threshold.cpp \
     testbench/test_hysteresis.cpp \
     testbench/test_pipeline.cpp \
+    testbench/test_optimized_pipeline.cpp \
     testbench/test_top.cpp \
     -o "${BUILD_DIR}/canny_tests"
 

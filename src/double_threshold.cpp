@@ -14,6 +14,7 @@ void double_threshold(
     }
 
     for (int column = 0; column < WIDTH; ++column) {
+#pragma HLS PIPELINE II=1
         const std::uint16_t magnitude = input[column];
 
         if (magnitude >= HIGH_THRESHOLD) {

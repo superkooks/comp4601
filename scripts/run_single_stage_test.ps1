@@ -35,8 +35,10 @@ Write-Host "Using compiler: $compiler"
 
 $compilerArguments = @(
     "-std=c++17",
+    "-O2",
     "-Wall",
     "-Wextra",
+    "-Wno-unknown-pragmas",
     "-Isrc",
     "-Itestbench",
     "-DTEST_FUNCTION=$TestFunction"

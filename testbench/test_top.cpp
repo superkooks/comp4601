@@ -5,6 +5,7 @@ int test_nms();
 int test_threshold();
 int test_hysteresis();
 int test_pipeline();
+int test_optimized_pipeline();
 
 int main() {
     int result = 0;
@@ -16,6 +17,7 @@ int main() {
     result |= test_threshold();
     result |= test_hysteresis();
     result |= test_pipeline();
+    result |= test_optimized_pipeline();
 
     return result;
 }

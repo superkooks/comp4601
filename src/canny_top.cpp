@@ -1,41 +1,83 @@
 #include "canny_stages.h"
 #include "config.h"
 
-// static void hysteresis1(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
-// static void hysteresis2(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
-// static void hysteresis3(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
-// static void hysteresis4(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
+void canny_top(
+    RGBPixel input[WIDTH * HEIGHT],
+    std::uint8_t output[WIDTH * HEIGHT]
+) {
+#pragma HLS INTERFACE m_axi port=input offset=slave bundle=gmem0 max_read_burst_length=64 num_read_outstanding=16
+#pragma HLS INTERFACE m_axi port=output offset=slave bundle=gmem1 max_write_burst_length=64 num_write_outstanding=16
+#pragma HLS INTERFACE s_axilite port=input bundle=control
+#pragma HLS INTERFACE s_axilite port=output bundle=control
+#pragma HLS INTERFACE s_axilite port=return bundle=control
 
-void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
     reset_canny_stages();
 
-    for (int i = 0; i < HEIGHT+8; i++) {
-        #pragma HLS DATAFLOW
-        uint8_t out_grayscale[WIDTH];
-        uint8_t out_gaussian[WIDTH];
-        struct GradientPixel out_sobel[WIDTH];
-        uint16_t out_nonmax[WIDTH];
-        uint8_t out_double[WIDTH];
-        uint8_t out_hysteresis1[WIDTH], out_hysteresis2[WIDTH], out_hysteresis3[WIDTH], out_hysteresis4[WIDTH];
-        bool gaussian_valid;
-        bool sobel_valid;
-        bool nonmax_valid;
-        bool double_valid;
-        bool hysteresis1_valid, hysteresis2_valid, hysteresis3_valid, hysteresis4_valid;
+    // Eight additional row calls flush the accumulated two-row Gaussian
+    // delay and one-row delays in Sobel, NMS and each hysteresis pass.
+    for (int row = 0; row < HEIGHT + 8; ++row) {
+#pragma HLS DATAFLOW
+#pragma HLS LOOP_TRIPCOUNT min=520 max=520
+        std::uint8_t grayscaleRow[WIDTH];
+        std::uint8_t gaussianRow[WIDTH];
+        GradientPixel sobelRow[WIDTH];
+        std::uint16_t nmsRow[WIDTH];
+        std::uint8_t thresholdRow[WIDTH];
+        std::uint8_t hysteresisRow1[WIDTH];
+        std::uint8_t hysteresisRow2[WIDTH];
+        std::uint8_t hysteresisRow3[WIDTH];
+        std::uint8_t hysteresisRow4[WIDTH];
 
-        int pix_idx = i < HEIGHT ? i*WIDTH : 0;
+        bool gaussianValid = false;
+        bool sobelValid = false;
+        bool nmsValid = false;
+        bool thresholdValid = false;
+        bool hysteresisValid1 = false;
+        bool hysteresisValid2 = false;
+        bool hysteresisValid3 = false;
+        bool hysteresisValid4 = false;
 
-        grayscale(&in[pix_idx], out_grayscale);
-        // output_row(out_grayscale, out, true);
-        gaussian_blur(out_grayscale, out_gaussian, &gaussian_valid);
-        sobel(out_gaussian, out_sobel, gaussian_valid, &sobel_valid);
-        non_maximum_suppression(out_sobel, out_nonmax, sobel_valid, &nonmax_valid);
-        double_threshold(out_nonmax, out_double, nonmax_valid, &double_valid);
-        hysteresis<1>(out_double, out_hysteresis1, double_valid, &hysteresis1_valid, WEAK_EDGE);
-        hysteresis<2>(out_hysteresis1, out_hysteresis2, hysteresis1_valid, &hysteresis2_valid, WEAK_EDGE);
-        hysteresis<3>(out_hysteresis2, out_hysteresis3, hysteresis2_valid, &hysteresis3_valid, WEAK_EDGE);
-        hysteresis<4>(out_hysteresis3, out_hysteresis4, hysteresis3_valid, &hysteresis4_valid, NON_EDGE);
-        output_row(out_hysteresis4, out, hysteresis4_valid);
+        const int inputOffset = row < HEIGHT ? row * WIDTH : 0;
+
+        grayscale(&input[inputOffset], grayscaleRow);
+        gaussian_blur(grayscaleRow, gaussianRow, &gaussianValid);
+        sobel(gaussianRow, sobelRow, gaussianValid, &sobelValid);
+        non_maximum_suppression(sobelRow, nmsRow, sobelValid, &nmsValid);
+        double_threshold(nmsRow, thresholdRow, nmsValid, &thresholdValid);
+
+        hysteresis<1>(
+            thresholdRow,
+            hysteresisRow1,
+            thresholdValid,
+            &hysteresisValid1,
+            WEAK_EDGE
+        );
+
+        hysteresis<2>(
+            hysteresisRow1,
+            hysteresisRow2,
+            hysteresisValid1,
+            &hysteresisValid2,
+            WEAK_EDGE
+        );
+
+        hysteresis<3>(
+            hysteresisRow2,
+            hysteresisRow3,
+            hysteresisValid2,
+            &hysteresisValid3,
+            WEAK_EDGE
+        );
+
+        hysteresis<4>(
+            hysteresisRow3,
+            hysteresisRow4,
+            hysteresisValid3,
+            &hysteresisValid4,
+            NON_EDGE
+        );
+
+        output_row(hysteresisRow4, output, hysteresisValid4);
     }
 }
 
