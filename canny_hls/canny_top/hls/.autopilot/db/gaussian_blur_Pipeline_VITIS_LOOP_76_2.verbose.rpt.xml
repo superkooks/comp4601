@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'gaussian_blur_Pipeline_VITIS_LOOP_76_2'" level="0">
-<item name = "Date">Wed Jul 29 23:33:22 2026
+<item name = "Date">Thu Jul 30 19:40:41 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -95,13 +95,13 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_column_10">9, 2, 10, 20</column>
+<column name="ap_sig_allocacmp_column_9">9, 2, 10, 20</column>
 <column name="column_fu_84">9, 2, 10, 20</column>
-<column name="empty_83_fu_80">9, 2, 8, 16</column>
-<column name="empty_84_fu_88">9, 2, 8, 16</column>
-<column name="empty_85_fu_92">9, 2, 8, 16</column>
-<column name="empty_86_fu_96">9, 2, 8, 16</column>
-<column name="empty_87_fu_100">9, 2, 8, 16</column>
+<column name="empty_100_fu_92">9, 2, 8, 16</column>
+<column name="empty_101_fu_96">9, 2, 8, 16</column>
+<column name="empty_102_fu_100">9, 2, 8, 16</column>
+<column name="empty_98_fu_80">9, 2, 8, 16</column>
+<column name="empty_99_fu_88">9, 2, 8, 16</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
@@ -112,14 +112,14 @@
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
-<column name="column_10_reg_495">10, 0, 10, 0</column>
-<column name="column_10_reg_495_pp0_iter1_reg">10, 0, 10, 0</column>
+<column name="column_9_reg_495">10, 0, 10, 0</column>
+<column name="column_9_reg_495_pp0_iter1_reg">10, 0, 10, 0</column>
 <column name="column_fu_84">10, 0, 10, 0</column>
-<column name="empty_83_fu_80">8, 0, 8, 0</column>
-<column name="empty_84_fu_88">8, 0, 8, 0</column>
-<column name="empty_85_fu_92">8, 0, 8, 0</column>
-<column name="empty_86_fu_96">8, 0, 8, 0</column>
-<column name="empty_87_fu_100">8, 0, 8, 0</column>
+<column name="empty_100_fu_92">8, 0, 8, 0</column>
+<column name="empty_101_fu_96">8, 0, 8, 0</column>
+<column name="empty_102_fu_100">8, 0, 8, 0</column>
+<column name="empty_98_fu_80">8, 0, 8, 0</column>
+<column name="empty_99_fu_88">8, 0, 8, 0</column>
 <column name="icmp_ln76_reg_500">1, 0, 1, 0</column>
 </table>
 </item>

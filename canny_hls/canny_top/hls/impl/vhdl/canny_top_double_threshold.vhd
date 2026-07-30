@@ -50,8 +50,8 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm : signal is "none";
     signal ap_CS_fsm_state1 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state1 : signal is "none";
-    signal p_read_8_read_fu_14_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal p_read_8_reg_40 : STD_LOGIC_VECTOR (0 downto 0);
+    signal p_read_9_read_fu_14_p2 : STD_LOGIC_VECTOR (0 downto 0);
+    signal p_read_9_reg_40 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_state1 : BOOLEAN;
     signal grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start : STD_LOGIC;
     signal grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done : STD_LOGIC;
@@ -149,7 +149,7 @@ begin
             if (ap_rst = '1') then
                 grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= ap_const_logic_0;
             else
-                if (((ap_const_boolean_0 = ap_block_state1_ignore_call0) and (p_read_8_read_fu_14_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+                if (((ap_const_boolean_0 = ap_block_state1_ignore_call0) and (p_read_9_read_fu_14_p2 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
                     grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= ap_const_logic_1;
                 elsif ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_ready = ap_const_logic_1)) then 
                     grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= ap_const_logic_0;
@@ -162,9 +162,9 @@ begin
     valid_out_write_assign_reg_20_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
-            if (((ap_const_boolean_0 = ap_block_state2_on_subcall_done) and (p_read_8_reg_40 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+            if (((ap_const_boolean_0 = ap_block_state2_on_subcall_done) and (p_read_9_reg_40 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 valid_out_write_assign_reg_20 <= ap_const_lv1_1;
-            elsif (((ap_const_boolean_0 = ap_block_state1) and (p_read_8_read_fu_14_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
+            elsif (((ap_const_boolean_0 = ap_block_state1) and (p_read_9_read_fu_14_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
                 valid_out_write_assign_reg_20 <= ap_const_lv1_0;
             end if; 
         end if;
@@ -173,7 +173,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_state1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then
-                p_read_8_reg_40 <= p_read;
+                p_read_9_reg_40 <= p_read;
             end if;
         end if;
     end process;
@@ -232,9 +232,9 @@ begin
     end process;
 
 
-    ap_block_state2_on_subcall_done_assign_proc : process(p_read_8_reg_40, grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done)
+    ap_block_state2_on_subcall_done_assign_proc : process(p_read_9_reg_40, grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done)
     begin
-                ap_block_state2_on_subcall_done <= ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done = ap_const_logic_0) and (p_read_8_reg_40 = ap_const_lv1_1));
+                ap_block_state2_on_subcall_done <= ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done = ap_const_logic_0) and (p_read_9_reg_40 = ap_const_lv1_1));
     end process;
 
 
@@ -258,9 +258,9 @@ begin
     end process;
 
 
-    ap_phi_mux_valid_out_write_assign_phi_fu_24_p4_assign_proc : process(p_read_8_reg_40, valid_out_write_assign_reg_20, ap_CS_fsm_state2)
+    ap_phi_mux_valid_out_write_assign_phi_fu_24_p4_assign_proc : process(p_read_9_reg_40, valid_out_write_assign_reg_20, ap_CS_fsm_state2)
     begin
-        if (((p_read_8_reg_40 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
+        if (((p_read_9_reg_40 = ap_const_lv1_1) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
             ap_phi_mux_valid_out_write_assign_phi_fu_24_p4 <= ap_const_lv1_1;
         else 
             ap_phi_mux_valid_out_write_assign_phi_fu_24_p4 <= valid_out_write_assign_reg_20;
@@ -285,5 +285,5 @@ begin
     out_double_we0 <= grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_we0;
     out_nonmax_address0 <= grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_address0;
     out_nonmax_ce0 <= grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_ce0;
-    p_read_8_read_fu_14_p2 <= p_read;
+    p_read_9_read_fu_14_p2 <= p_read;
 end behav;

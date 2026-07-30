@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sobel_Pipeline_VITIS_LOOP_102_1'
 ================================================================
-* Date:           Wed Jul 29 23:33:08 2026
+* Date:           Thu Jul 30 19:40:25 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -132,7 +132,7 @@ The critical path consists of the following:
  <State 2>: 2.474ns
 The critical path consists of the following:
 	'load' operation 8 bit ('out_gaussian_load', ../src/sobel.cpp:104->../src/canny_top.cpp:31) on array 'out_gaussian' [21]  (1.237 ns)
-	'store' operation ('store_ln104', ../src/sobel.cpp:104->../src/canny_top.cpp:31) of variable 'out_gaussian_load', ../src/sobel.cpp:104->../src/canny_top.cpp:31 8 bit on array 'p_anonymous_namespace_lineBuffer_32_0' [33]  (1.237 ns)
+	'store' operation ('store_ln104', ../src/sobel.cpp:104->../src/canny_top.cpp:31) of variable 'out_gaussian_load', ../src/sobel.cpp:104->../src/canny_top.cpp:31 8 bit on array 'p_anonymous_namespace_lineBuffer_32_2' [27]  (1.237 ns)
 
 
 ============================================================

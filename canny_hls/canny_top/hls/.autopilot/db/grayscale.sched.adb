@@ -157,7 +157,7 @@
 			</item>
 		</ports>
 		<nodes class_id="8" tracking_level="0" version="0">
-			<count>9</count>
+			<count>13</count>
 			<item_version>0</item_version>
 			<item class_id="9" tracking_level="1" version="0" object_id="_5">
 				<Value>
@@ -165,35 +165,14 @@
 						<type>0</type>
 						<id>7</id>
 						<name>in_read</name>
-						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
-						<contextFuncName>grayscale</contextFuncName>
-						<contextNormFuncName>grayscale</contextNormFuncName>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item class_id="10" tracking_level="0" version="0">
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
-								<second class_id="11" tracking_level="0" version="0">
-									<count>2</count>
-									<item_version>0</item_version>
-									<item class_id="12" tracking_level="0" version="0">
-										<first class_id="13" tracking_level="0" version="0">
-											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft</second>
-										</first>
-										<second>28</second>
-									</item>
-									<item>
-										<first>
-											<first>../src/grayscale.cpp</first>
-											<second>grayscale</second>
-										</first>
-										<second>4</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
@@ -211,8 +190,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>18</item>
-					<item>19</item>
+					<item>22</item>
+					<item>23</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -220,7 +199,7 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>2</m_topoIndex>
+				<m_topoIndex>5</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 			<item class_id_reference="9" object_id="_6">
@@ -228,36 +207,15 @@
 					<Obj>
 						<type>0</type>
 						<id>8</id>
-						<name>p_read15</name>
-						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
-						<contextFuncName>grayscale</contextFuncName>
-						<contextNormFuncName>grayscale</contextNormFuncName>
+						<name>p_read_8</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
 						<inlineStackInfo>
-							<count>1</count>
+							<count>0</count>
 							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft</second>
-										</first>
-										<second>28</second>
-									</item>
-									<item>
-										<first>
-											<first>../src/grayscale.cpp</first>
-											<second>grayscale</second>
-										</first>
-										<second>4</second>
-									</item>
-								</second>
-							</item>
 						</inlineStackInfo>
 						<originalName></originalName>
 						<rtlName></rtlName>
@@ -275,8 +233,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>21</item>
-					<item>22</item>
+					<item>25</item>
+					<item>26</item>
 				</oprand_edges>
 				<opcode>read</opcode>
 				<m_Display>0</m_Display>
@@ -292,10 +250,73 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>zext_ln4</name>
+						<name>local_blue</name>
 						<fileName>../src/grayscale.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
+						<lineNumber>18</lineNumber>
+						<contextFuncName>grayscale</contextFuncName>
+						<contextNormFuncName>grayscale</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item class_id="11" tracking_level="0" version="0">
+								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<second class_id="12" tracking_level="0" version="0">
+									<count>2</count>
+									<item_version>0</item_version>
+									<item class_id="13" tracking_level="0" version="0">
+										<first class_id="14" tracking_level="0" version="0">
+											<first>../src/canny_top.cpp</first>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft</second>
+										</first>
+										<second>28</second>
+									</item>
+									<item>
+										<first>
+											<first>../src/grayscale.cpp</first>
+											<second>grayscale</second>
+										</first>
+										<second>18</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName>local.blue</originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>8</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>28</item>
+				</oprand_edges>
+				<opcode>alloca</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>2</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_8">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>10</id>
+						<name>local_green</name>
+						<fileName>../src/grayscale.cpp</fileName>
+						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
 						<inlineStackInfo>
@@ -318,12 +339,12 @@
 											<first>../src/grayscale.cpp</first>
 											<second>grayscale</second>
 										</first>
-										<second>4</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>local.green</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -334,14 +355,14 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>20</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
 					<item_version>0</item_version>
-					<item>23</item>
+					<item>29</item>
 				</oprand_edges>
-				<opcode>zext</opcode>
+				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -350,15 +371,15 @@
 				<m_topoIndex>3</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_8">
+			<item class_id_reference="9" object_id="_9">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>10</id>
-						<name>p_shl</name>
+						<id>11</id>
+						<name>local_red</name>
 						<fileName>../src/grayscale.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
+						<lineNumber>18</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
 						<inlineStackInfo>
@@ -381,12 +402,12 @@
 											<first>../src/grayscale.cpp</first>
 											<second>grayscale</second>
 										</first>
-										<second>4</second>
+										<second>18</second>
 									</item>
 								</second>
 							</item>
 						</inlineStackInfo>
-						<originalName></originalName>
+						<originalName>local.red</originalName>
 						<rtlName></rtlName>
 						<control></control>
 						<opType></opType>
@@ -397,16 +418,14 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>20</bitwidth>
+					<bitwidth>8</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>3</count>
+					<count>1</count>
 					<item_version>0</item_version>
-					<item>25</item>
-					<item>26</item>
-					<item>28</item>
+					<item>30</item>
 				</oprand_edges>
-				<opcode>bitconcatenate</opcode>
+				<opcode>alloca</opcode>
 				<m_Display>0</m_Display>
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
@@ -415,15 +434,15 @@
 				<m_topoIndex>4</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_9">
+			<item class_id_reference="9" object_id="_10">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>11</id>
-						<name>empty</name>
+						<id>12</id>
+						<name>zext_ln6</name>
 						<fileName>../src/grayscale.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
+						<lineNumber>6</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
 						<inlineStackInfo>
@@ -446,7 +465,7 @@
 											<first>../src/grayscale.cpp</first>
 											<second>grayscale</second>
 										</first>
-										<second>4</second>
+										<second>6</second>
 									</item>
 								</second>
 							</item>
@@ -463,70 +482,6 @@
 						<rtlModuleName></rtlModuleName>
 					</Obj>
 					<bitwidth>20</bitwidth>
-				</Value>
-				<oprand_edges>
-					<count>2</count>
-					<item_version>0</item_version>
-					<item>29</item>
-					<item>30</item>
-				</oprand_edges>
-				<opcode>sub</opcode>
-				<m_Display>0</m_Display>
-				<m_isOnCriticalPath>0</m_isOnCriticalPath>
-				<m_isLCDNode>0</m_isLCDNode>
-				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.89</m_delay>
-				<m_topoIndex>5</m_topoIndex>
-				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
-			</item>
-			<item class_id_reference="9" object_id="_10">
-				<Value>
-					<Obj>
-						<type>0</type>
-						<id>12</id>
-						<name>p_cast</name>
-						<fileName>../src/grayscale.cpp</fileName>
-						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
-						<contextFuncName>grayscale</contextFuncName>
-						<contextNormFuncName>grayscale</contextNormFuncName>
-						<inlineStackInfo>
-							<count>1</count>
-							<item_version>0</item_version>
-							<item>
-								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
-								<second>
-									<count>2</count>
-									<item_version>0</item_version>
-									<item>
-										<first>
-											<first>../src/canny_top.cpp</first>
-											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft</second>
-										</first>
-										<second>28</second>
-									</item>
-									<item>
-										<first>
-											<first>../src/grayscale.cpp</first>
-											<second>grayscale</second>
-										</first>
-										<second>4</second>
-									</item>
-								</second>
-							</item>
-						</inlineStackInfo>
-						<originalName></originalName>
-						<rtlName></rtlName>
-						<control></control>
-						<opType></opType>
-						<implIndex></implIndex>
-						<coreName></coreName>
-						<isStorage>0</isStorage>
-						<storageDepth>0</storageDepth>
-						<coreId>4294967295</coreId>
-						<rtlModuleName></rtlModuleName>
-					</Obj>
-					<bitwidth>64</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -547,10 +502,54 @@
 					<Obj>
 						<type>0</type>
 						<id>13</id>
-						<name>empty_82</name>
+						<name>p_shl</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>20</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>3</count>
+					<item_version>0</item_version>
+					<item>33</item>
+					<item>34</item>
+					<item>36</item>
+				</oprand_edges>
+				<opcode>bitconcatenate</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>7</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_12">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>14</id>
+						<name>empty</name>
 						<fileName>../src/grayscale.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
+						<lineNumber>6</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
 						<inlineStackInfo>
@@ -573,7 +572,134 @@
 											<first>../src/grayscale.cpp</first>
 											<second>grayscale</second>
 										</first>
-										<second>4</second>
+										<second>6</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>20</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>2</count>
+					<item_version>0</item_version>
+					<item>37</item>
+					<item>38</item>
+				</oprand_edges>
+				<opcode>sub</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.89</m_delay>
+				<m_topoIndex>8</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_13">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>15</id>
+						<name>p_cast9</name>
+						<fileName>../src/grayscale.cpp</fileName>
+						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<lineNumber>6</lineNumber>
+						<contextFuncName>grayscale</contextFuncName>
+						<contextNormFuncName>grayscale</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/canny_top.cpp</first>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft</second>
+										</first>
+										<second>28</second>
+									</item>
+									<item>
+										<first>
+											<first>../src/grayscale.cpp</first>
+											<second>grayscale</second>
+										</first>
+										<second>6</second>
+									</item>
+								</second>
+							</item>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>1</count>
+					<item_version>0</item_version>
+					<item>39</item>
+				</oprand_edges>
+				<opcode>zext</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>9</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_14">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>16</id>
+						<name>empty_97</name>
+						<fileName>../src/grayscale.cpp</fileName>
+						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
+						<lineNumber>6</lineNumber>
+						<contextFuncName>grayscale</contextFuncName>
+						<contextNormFuncName>grayscale</contextNormFuncName>
+						<inlineStackInfo>
+							<count>1</count>
+							<item_version>0</item_version>
+							<item>
+								<first>C:\Users\twhsaw\Projects\comp4601\canny_hls</first>
+								<second>
+									<count>2</count>
+									<item_version>0</item_version>
+									<item>
+										<first>
+											<first>../src/canny_top.cpp</first>
+											<second>dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft</second>
+										</first>
+										<second>28</second>
+									</item>
+									<item>
+										<first>
+											<first>../src/grayscale.cpp</first>
+											<second>grayscale</second>
+										</first>
+										<second>6</second>
 									</item>
 								</second>
 							</item>
@@ -594,8 +720,8 @@
 				<oprand_edges>
 					<count>2</count>
 					<item_version>0</item_version>
-					<item>32</item>
-					<item>33</item>
+					<item>40</item>
+					<item>41</item>
 				</oprand_edges>
 				<opcode>add</opcode>
 				<m_Display>0</m_Display>
@@ -603,18 +729,18 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.08</m_delay>
-				<m_topoIndex>7</m_topoIndex>
+				<m_topoIndex>10</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_12">
+			<item class_id_reference="9" object_id="_15">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>14</id>
-						<name>_ln4</name>
+						<id>17</id>
+						<name>_ln6</name>
 						<fileName>../src/grayscale.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
-						<lineNumber>4</lineNumber>
+						<lineNumber>6</lineNumber>
 						<contextFuncName>grayscale</contextFuncName>
 						<contextNormFuncName>grayscale</contextNormFuncName>
 						<inlineStackInfo>
@@ -637,7 +763,7 @@
 											<first>../src/grayscale.cpp</first>
 											<second>grayscale</second>
 										</first>
-										<second>4</second>
+										<second>6</second>
 									</item>
 								</second>
 							</item>
@@ -656,12 +782,14 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<oprand_edges>
-					<count>4</count>
+					<count>6</count>
 					<item_version>0</item_version>
-					<item>35</item>
-					<item>36</item>
-					<item>37</item>
-					<item>38</item>
+					<item>43</item>
+					<item>44</item>
+					<item>45</item>
+					<item>46</item>
+					<item>47</item>
+					<item>48</item>
 				</oprand_edges>
 				<opcode>call</opcode>
 				<m_Display>0</m_Display>
@@ -669,14 +797,62 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>1.08</m_delay>
-				<m_topoIndex>8</m_topoIndex>
+				<m_topoIndex>11</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
-			<item class_id_reference="9" object_id="_13">
+			<item class_id_reference="9" object_id="_16">
 				<Value>
 					<Obj>
 						<type>0</type>
-						<id>15</id>
+						<id>18</id>
+						<name>_ln0</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<oprand_edges>
+					<count>7</count>
+					<item_version>0</item_version>
+					<item>50</item>
+					<item>51</item>
+					<item>52</item>
+					<item>53</item>
+					<item>54</item>
+					<item>92</item>
+					<item>93</item>
+				</oprand_edges>
+				<opcode>call</opcode>
+				<m_Display>0</m_Display>
+				<m_isOnCriticalPath>0</m_isOnCriticalPath>
+				<m_isLCDNode>0</m_isLCDNode>
+				<m_isStartOfPath>0</m_isStartOfPath>
+				<m_delay>0.00</m_delay>
+				<m_topoIndex>12</m_topoIndex>
+				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
+			</item>
+			<item class_id_reference="9" object_id="_17">
+				<Value>
+					<Obj>
+						<type>0</type>
+						<id>19</id>
 						<name>_ln0</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -710,18 +886,49 @@
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
 				<m_delay>0.00</m_delay>
-				<m_topoIndex>9</m_topoIndex>
+				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
 		</nodes>
 		<consts class_id="15" tracking_level="0" version="0">
-			<count>2</count>
+			<count>4</count>
 			<item_version>0</item_version>
-			<item class_id="16" tracking_level="1" version="0" object_id="_14">
+			<item class_id="16" tracking_level="1" version="0" object_id="_18">
 				<Value>
 					<Obj>
 						<type>2</type>
 						<id>27</id>
+						<name>empty</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>64</bitwidth>
+				</Value>
+				<const_type>0</const_type>
+				<content>1</content>
+			</item>
+			<item class_id_reference="16" object_id="_19">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>35</id>
 						<name>empty</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
@@ -748,12 +955,12 @@
 				<const_type>0</const_type>
 				<content>0</content>
 			</item>
-			<item class_id_reference="16" object_id="_15">
+			<item class_id_reference="16" object_id="_20">
 				<Value>
 					<Obj>
 						<type>2</type>
-						<id>34</id>
-						<name>grayscale_Pipeline_VITIS_LOOP_7_1</name>
+						<id>42</id>
+						<name>grayscale_Pipeline_1</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -777,16 +984,47 @@
 					<bitwidth>0</bitwidth>
 				</Value>
 				<const_type>6</const_type>
-				<content>&lt;constant:grayscale_Pipeline_VITIS_LOOP_7_1&gt;</content>
+				<content>&lt;constant:grayscale_Pipeline_1&gt;</content>
+			</item>
+			<item class_id_reference="16" object_id="_21">
+				<Value>
+					<Obj>
+						<type>2</type>
+						<id>49</id>
+						<name>grayscale_Pipeline_VITIS_LOOP_22_1</name>
+						<fileName></fileName>
+						<fileDirectory></fileDirectory>
+						<lineNumber>0</lineNumber>
+						<contextFuncName></contextFuncName>
+						<contextNormFuncName></contextNormFuncName>
+						<inlineStackInfo>
+							<count>0</count>
+							<item_version>0</item_version>
+						</inlineStackInfo>
+						<originalName></originalName>
+						<rtlName></rtlName>
+						<control></control>
+						<opType></opType>
+						<implIndex></implIndex>
+						<coreName></coreName>
+						<isStorage>0</isStorage>
+						<storageDepth>0</storageDepth>
+						<coreId>4294967295</coreId>
+						<rtlModuleName></rtlModuleName>
+					</Obj>
+					<bitwidth>0</bitwidth>
+				</Value>
+				<const_type>6</const_type>
+				<content>&lt;constant:grayscale_Pipeline_VITIS_LOOP_22_1&gt;</content>
 			</item>
 		</consts>
 		<blocks class_id="17" tracking_level="0" version="0">
 			<count>1</count>
 			<item_version>0</item_version>
-			<item class_id="18" tracking_level="1" version="0" object_id="_16">
+			<item class_id="18" tracking_level="1" version="0" object_id="_22">
 				<Obj>
 					<type>3</type>
-					<id>16</id>
+					<id>20</id>
 					<name>grayscale</name>
 					<fileName></fileName>
 					<fileDirectory></fileDirectory>
@@ -809,7 +1047,7 @@
 					<rtlModuleName></rtlModuleName>
 				</Obj>
 				<node_objs>
-					<count>9</count>
+					<count>13</count>
 					<item_version>0</item_version>
 					<item>7</item>
 					<item>8</item>
@@ -820,108 +1058,196 @@
 					<item>13</item>
 					<item>14</item>
 					<item>15</item>
+					<item>16</item>
+					<item>17</item>
+					<item>18</item>
+					<item>19</item>
 				</node_objs>
 			</item>
 		</blocks>
 		<edges class_id="19" tracking_level="0" version="0">
-			<count>14</count>
+			<count>26</count>
 			<item_version>0</item_version>
-			<item class_id="20" tracking_level="1" version="0" object_id="_17">
-				<id>19</id>
+			<item class_id="20" tracking_level="1" version="0" object_id="_23">
+				<id>23</id>
 				<edge_type>1</edge_type>
 				<source_obj>3</source_obj>
 				<sink_obj>7</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_18">
-				<id>22</id>
+			<item class_id_reference="20" object_id="_24">
+				<id>26</id>
 				<edge_type>1</edge_type>
 				<source_obj>1</source_obj>
 				<sink_obj>8</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_19">
-				<id>23</id>
+			<item class_id_reference="20" object_id="_25">
+				<id>28</id>
 				<edge_type>1</edge_type>
-				<source_obj>8</source_obj>
+				<source_obj>27</source_obj>
 				<sink_obj>9</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_20">
-				<id>26</id>
-				<edge_type>1</edge_type>
-				<source_obj>8</source_obj>
-				<sink_obj>10</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_21">
-				<id>28</id>
+			<item class_id_reference="20" object_id="_26">
+				<id>29</id>
 				<edge_type>1</edge_type>
 				<source_obj>27</source_obj>
 				<sink_obj>10</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_22">
-				<id>29</id>
-				<edge_type>1</edge_type>
-				<source_obj>10</source_obj>
-				<sink_obj>11</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_23">
+			<item class_id_reference="20" object_id="_27">
 				<id>30</id>
 				<edge_type>1</edge_type>
-				<source_obj>9</source_obj>
+				<source_obj>27</source_obj>
 				<sink_obj>11</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_24">
-				<id>31</id>
-				<edge_type>1</edge_type>
-				<source_obj>11</source_obj>
-				<sink_obj>12</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_25">
-				<id>32</id>
-				<edge_type>1</edge_type>
-				<source_obj>12</source_obj>
-				<sink_obj>13</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_26">
-				<id>33</id>
-				<edge_type>1</edge_type>
-				<source_obj>7</source_obj>
-				<sink_obj>13</sink_obj>
-				<is_back_edge>0</is_back_edge>
-			</item>
-			<item class_id_reference="20" object_id="_27">
-				<id>35</id>
-				<edge_type>1</edge_type>
-				<source_obj>34</source_obj>
-				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 			<item class_id_reference="20" object_id="_28">
+				<id>31</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>12</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_29">
+				<id>34</id>
+				<edge_type>1</edge_type>
+				<source_obj>8</source_obj>
+				<sink_obj>13</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_30">
 				<id>36</id>
+				<edge_type>1</edge_type>
+				<source_obj>35</source_obj>
+				<sink_obj>13</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_31">
+				<id>37</id>
 				<edge_type>1</edge_type>
 				<source_obj>13</source_obj>
 				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_29">
-				<id>37</id>
+			<item class_id_reference="20" object_id="_32">
+				<id>38</id>
 				<edge_type>1</edge_type>
-				<source_obj>2</source_obj>
+				<source_obj>12</source_obj>
 				<sink_obj>14</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
-			<item class_id_reference="20" object_id="_30">
-				<id>38</id>
+			<item class_id_reference="20" object_id="_33">
+				<id>39</id>
+				<edge_type>1</edge_type>
+				<source_obj>14</source_obj>
+				<sink_obj>15</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_34">
+				<id>40</id>
+				<edge_type>1</edge_type>
+				<source_obj>15</source_obj>
+				<sink_obj>16</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_35">
+				<id>41</id>
+				<edge_type>1</edge_type>
+				<source_obj>7</source_obj>
+				<sink_obj>16</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_36">
+				<id>43</id>
+				<edge_type>1</edge_type>
+				<source_obj>42</source_obj>
+				<sink_obj>17</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_37">
+				<id>44</id>
+				<edge_type>1</edge_type>
+				<source_obj>16</source_obj>
+				<sink_obj>17</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_38">
+				<id>45</id>
+				<edge_type>1</edge_type>
+				<source_obj>2</source_obj>
+				<sink_obj>17</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_39">
+				<id>46</id>
+				<edge_type>1</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>17</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_40">
+				<id>47</id>
+				<edge_type>1</edge_type>
+				<source_obj>10</source_obj>
+				<sink_obj>17</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_41">
+				<id>48</id>
+				<edge_type>1</edge_type>
+				<source_obj>11</source_obj>
+				<sink_obj>17</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_42">
+				<id>50</id>
+				<edge_type>1</edge_type>
+				<source_obj>49</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_43">
+				<id>51</id>
+				<edge_type>1</edge_type>
+				<source_obj>9</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_44">
+				<id>52</id>
+				<edge_type>1</edge_type>
+				<source_obj>10</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_45">
+				<id>53</id>
+				<edge_type>1</edge_type>
+				<source_obj>11</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_46">
+				<id>54</id>
 				<edge_type>1</edge_type>
 				<source_obj>4</source_obj>
-				<sink_obj>14</sink_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_47">
+				<id>92</id>
+				<edge_type>4</edge_type>
+				<source_obj>17</source_obj>
+				<sink_obj>18</sink_obj>
+				<is_back_edge>0</is_back_edge>
+			</item>
+			<item class_id_reference="20" object_id="_48">
+				<id>93</id>
+				<edge_type>4</edge_type>
+				<source_obj>17</source_obj>
+				<sink_obj>18</sink_obj>
 				<is_back_edge>0</is_back_edge>
 			</item>
 		</edges>
@@ -929,7 +1255,7 @@
 	<cdfg_regions class_id="21" tracking_level="0" version="0">
 		<count>1</count>
 		<item_version>0</item_version>
-		<item class_id="22" tracking_level="1" version="0" object_id="_31">
+		<item class_id="22" tracking_level="1" version="0" object_id="_49">
 			<mId>1</mId>
 			<mTag>grayscale</mTag>
 			<mNormTag>grayscale</mNormTag>
@@ -941,14 +1267,14 @@
 			<basic_blocks>
 				<count>1</count>
 				<item_version>0</item_version>
-				<item>16</item>
+				<item>20</item>
 			</basic_blocks>
 			<mII>-1</mII>
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>1615</mMinLatency>
-			<mMaxLatency>1615</mMaxLatency>
+			<mMinLatency>2132</mMinLatency>
+			<mMaxLatency>2132</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -956,7 +1282,7 @@
 	<fsm class_id="-1"></fsm>
 	<res class_id="-1"></res>
 	<node_label_latency class_id="26" tracking_level="0" version="0">
-		<count>9</count>
+		<count>13</count>
 		<item_version>0</item_version>
 		<item class_id="27" tracking_level="0" version="0">
 			<first>7</first>
@@ -975,21 +1301,21 @@
 		<item>
 			<first>9</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>10</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>11</first>
 			<second>
-				<first>1</first>
+				<first>0</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1011,13 +1337,41 @@
 			<first>14</first>
 			<second>
 				<first>1</first>
-				<second>1</second>
+				<second>0</second>
 			</second>
 		</item>
 		<item>
 			<first>15</first>
 			<second>
-				<first>2</first>
+				<first>1</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>16</first>
+			<second>
+				<first>1</first>
+				<second>0</second>
+			</second>
+		</item>
+		<item>
+			<first>17</first>
+			<second>
+				<first>1</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>18</first>
+			<second>
+				<first>3</first>
+				<second>1</second>
+			</second>
+		</item>
+		<item>
+			<first>19</first>
+			<second>
+				<first>4</first>
 				<second>0</second>
 			</second>
 		</item>
@@ -1026,10 +1380,10 @@
 		<count>1</count>
 		<item_version>0</item_version>
 		<item class_id="30" tracking_level="0" version="0">
-			<first>16</first>
+			<first>20</first>
 			<second class_id="31" tracking_level="0" version="0">
 				<first>0</first>
-				<second>2</second>
+				<second>4</second>
 			</second>
 		</item>
 	</bblk_ent_exit>

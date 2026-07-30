@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_112_4'
 ================================================================
-* Date:           Wed Jul 29 23:33:10 2026
+* Date:           Thu Jul 30 19:40:27 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -238,7 +238,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'load' operation 2 bit ('centre_direction_load', ../src/non_maximum_suppression.cpp:123->../src/canny_top.cpp:32) on local variable 'centre.direction', ../src/non_maximum_suppression.cpp:115->../src/canny_top.cpp:32 [71]  (0.000 ns)
 	multiplexor before 'phi' operation 11 bit ('neighbourTwo') with incoming values : ('neighbourTwo', ../src/non_maximum_suppression.cpp:144->../src/canny_top.cpp:32) ('neighbourTwo', ../src/non_maximum_suppression.cpp:136->../src/canny_top.cpp:32) ('neighbourTwo', ../src/non_maximum_suppression.cpp:152->../src/canny_top.cpp:32) ('neighbourTwo', ../src/non_maximum_suppression.cpp:128->../src/canny_top.cpp:32) [105]  (0.525 ns)
-	'br' operation ('br_ln138', ../src/non_maximum_suppression.cpp:138->../src/canny_top.cpp:32) [89]  (0.525 ns)
+	'br' operation ('br_ln130', ../src/non_maximum_suppression.cpp:130->../src/canny_top.cpp:32) [102]  (0.525 ns)
 	'phi' operation 11 bit ('neighbourTwo') with incoming values : ('neighbourTwo', ../src/non_maximum_suppression.cpp:144->../src/canny_top.cpp:32) ('neighbourTwo', ../src/non_maximum_suppression.cpp:136->../src/canny_top.cpp:32) ('neighbourTwo', ../src/non_maximum_suppression.cpp:152->../src/canny_top.cpp:32) ('neighbourTwo', ../src/non_maximum_suppression.cpp:128->../src/canny_top.cpp:32) [105]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln159', ../src/non_maximum_suppression.cpp:159->../src/canny_top.cpp:32) [109]  (0.798 ns)
 	'xor' operation 1 bit ('xor_ln159', ../src/non_maximum_suppression.cpp:159->../src/canny_top.cpp:32) [110]  (0.000 ns)

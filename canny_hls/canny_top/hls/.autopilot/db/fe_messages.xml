@@ -140,6 +140,9 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:144:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/grayscale.cpp:23:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="grayscale" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:189:27" msg_body="Loop 'VITIS_LOOP_189_5' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_189_5"/>
     </msg>
@@ -407,8 +410,8 @@
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/double_threshold.cpp:16:22" msg_body="pipeline   1 double_threshold config_compile -pipeline_loops 64VITIS_LOOP_16_1 ../src/double_threshold.cpp:16:22">
         <args LoopLoc="../src/double_threshold.cpp:16:22" LoopLoc-DebugLoc="File ../src/double_threshold.cpp Line 16 Column 22" LoopName="VITIS_LOOP_16_1" PragmaFunction="double_threshold" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/grayscale.cpp:7:21" msg_body="pipeline   1 grayscale config_compile -pipeline_loops 64VITIS_LOOP_7_1 ../src/grayscale.cpp:7:21">
-        <args LoopLoc="../src/grayscale.cpp:7:21" LoopLoc-DebugLoc="File ../src/grayscale.cpp Line 7 Column 21" LoopName="VITIS_LOOP_7_1" PragmaFunction="grayscale" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/grayscale.cpp:20:5" msg_body="pipeline   1 grayscale config_compile -pipeline_loops 64anonymous ../src/grayscale.cpp:20:5">
+        <args LoopLoc="../src/grayscale.cpp:20:5" LoopLoc-DebugLoc="File ../src/grayscale.cpp Line 20 Column 5" LoopName="anonymous" PragmaFunction="grayscale" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
     </msg>
     <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:48:26" msg_body="pipeline   1 canny_top config_compile -pipeline_loops 64VITIS_LOOP_48_2 ../src/gaussian_blur.cpp:48:26">
         <args LoopLoc="../src/gaussian_blur.cpp:48:26" LoopLoc-DebugLoc="File ../src/gaussian_blur.cpp Line 48 Column 26" LoopName="VITIS_LOOP_48_2" PragmaFunction="canny_top" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>

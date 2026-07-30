@@ -22,29 +22,29 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1615</Best-caseLatency>
-<Average-caseLatency>1615</Average-caseLatency>
-<Worst-caseLatency>1615</Worst-caseLatency>
-<Best-caseRealTimeLatency>8.075 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>8.075 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>8.075 us</Worst-caseRealTimeLatency>
-<Interval-min>1615</Interval-min>
-<Interval-max>1615</Interval-max>
+<Best-caseLatency>2132</Best-caseLatency>
+<Average-caseLatency>2132</Average-caseLatency>
+<Worst-caseLatency>2132</Worst-caseLatency>
+<Best-caseRealTimeLatency>10.660 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>10.660 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>10.660 us</Worst-caseRealTimeLatency>
+<Interval-min>2132</Interval-min>
+<Interval-max>2132</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/grayscale.cpp:4~../src/canny_top.cpp:28</SourceLocation>
+<SourceLocation>../src/grayscale.cpp:18~../src/canny_top.cpp:28</SourceLocation>
 </SummaryOfViolations>
 </PerformanceEstimates>
 
 <AreaEstimates>
 <Resources>
+<BRAM_18K>3</BRAM_18K>
 <DSP>2</DSP>
-<FF>1231</FF>
-<LUT>7498</LUT>
-<BRAM_18K>0</BRAM_18K>
+<FF>1314</FF>
+<LUT>7721</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

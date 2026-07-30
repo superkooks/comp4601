@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 40
+set cdfgNum 41
 set C_modelName {dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc}
 set C_modelType { int 18 }
 set ap_memory_interface_dict [dict create]

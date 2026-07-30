@@ -277,7 +277,7 @@ end
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U89(
+sparsemux_7_2_8_1_1_U96(
     .din0(p_anonymous_namespace_lineBuffer_32_0_q0),
     .din1(p_anonymous_namespace_lineBuffer_32_1_q0),
     .din2(p_anonymous_namespace_lineBuffer_32_2_q0),
@@ -298,7 +298,7 @@ sparsemux_7_2_8_1_1_U89(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U90(
+sparsemux_7_2_8_1_1_U97(
     .din0(p_anonymous_namespace_lineBuffer_32_0_q0),
     .din1(p_anonymous_namespace_lineBuffer_32_1_q0),
     .din2(p_anonymous_namespace_lineBuffer_32_2_q0),
@@ -319,7 +319,7 @@ sparsemux_7_2_8_1_1_U90(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U91(
+sparsemux_7_2_8_1_1_U98(
     .din0(p_anonymous_namespace_lineBuffer_32_0_q0),
     .din1(p_anonymous_namespace_lineBuffer_32_1_q0),
     .din2(p_anonymous_namespace_lineBuffer_32_2_q0),
@@ -334,7 +334,7 @@ canny_top_mul_10ns_11ns_20_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 20 ))
-mul_10ns_11ns_20_1_1_U92(
+mul_10ns_11ns_20_1_1_U99(
     .din0(mul_ln46_fu_741_p0),
     .din1(mul_ln46_fu_741_p1),
     .dout(mul_ln46_fu_741_p2)
@@ -346,7 +346,7 @@ canny_top_mul_10ns_10ns_19_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 19 ))
-mul_10ns_10ns_19_1_1_U93(
+mul_10ns_10ns_19_1_1_U100(
     .din0(mul_ln46_1_fu_755_p0),
     .din1(mul_ln46_1_fu_755_p1),
     .dout(mul_ln46_1_fu_755_p2)
@@ -358,7 +358,7 @@ canny_top_mul_10ns_13ns_22_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 13 ),
     .dout_WIDTH( 22 ))
-mul_10ns_13ns_22_1_1_U94(
+mul_10ns_13ns_22_1_1_U101(
     .din0(mul_ln50_fu_771_p0),
     .din1(mul_ln50_fu_771_p1),
     .dout(mul_ln50_fu_771_p2)
@@ -378,7 +378,7 @@ mul_10ns_13ns_22_1_1_U94(
     .def_WIDTH( 2 ),
     .sel_WIDTH( 3 ),
     .dout_WIDTH( 2 ))
-sparsemux_9_3_2_1_1_U95(
+sparsemux_9_3_2_1_1_U102(
     .din0(2'd0),
     .din1(2'd2),
     .din2(2'd3),

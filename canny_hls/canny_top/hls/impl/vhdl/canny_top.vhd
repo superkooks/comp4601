@@ -97,7 +97,7 @@ architecture behav of canny_top is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=847583,HLS_SYN_TPT=none,HLS_SYN_MEM=66,HLS_SYN_DSP=0,HLS_SYN_FF=18369,HLS_SYN_LUT=31395,HLS_VERSION=2025_2}";
+    "canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=1116423,HLS_SYN_TPT=none,HLS_SYN_MEM=69,HLS_SYN_DSP=0,HLS_SYN_FF=18452,HLS_SYN_LUT=31618,HLS_VERSION=2025_2}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (3 downto 0) := "0001";

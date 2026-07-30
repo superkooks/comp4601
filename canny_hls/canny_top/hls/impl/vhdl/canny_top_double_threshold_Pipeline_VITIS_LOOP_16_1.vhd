@@ -73,7 +73,7 @@ attribute shreg_extract : string;
     signal column_fu_40 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     signal add_ln16_fu_84_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_column_11 : STD_LOGIC_VECTOR (9 downto 0);
+    signal ap_sig_allocacmp_column_10 : STD_LOGIC_VECTOR (9 downto 0);
     signal out_nonmax_ce0_local : STD_LOGIC;
     signal out_double_we0_local : STD_LOGIC;
     signal select_ln19_fu_119_p3 : STD_LOGIC_VECTOR (7 downto 0);
@@ -222,7 +222,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    add_ln16_fu_84_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_column_11) + unsigned(ap_const_lv10_1));
+    add_ln16_fu_84_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_column_10) + unsigned(ap_const_lv10_1));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
         ap_block_pp0_stage0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
         ap_block_pp0_stage0_11001 <= not((ap_const_boolean_1 = ap_const_boolean_1));
@@ -283,16 +283,16 @@ begin
     end process;
 
 
-    ap_sig_allocacmp_column_11_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, column_fu_40, ap_loop_init)
+    ap_sig_allocacmp_column_10_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, column_fu_40, ap_loop_init)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            ap_sig_allocacmp_column_11 <= ap_const_lv10_0;
+            ap_sig_allocacmp_column_10 <= ap_const_lv10_0;
         else 
-            ap_sig_allocacmp_column_11 <= column_fu_40;
+            ap_sig_allocacmp_column_10 <= column_fu_40;
         end if; 
     end process;
 
-    icmp_ln16_fu_78_p2 <= "1" when (ap_sig_allocacmp_column_11 = ap_const_lv10_200) else "0";
+    icmp_ln16_fu_78_p2 <= "1" when (ap_sig_allocacmp_column_10 = ap_const_lv10_200) else "0";
     icmp_ln19_fu_100_p2 <= "1" when (unsigned(out_nonmax_q0) > unsigned(ap_const_lv11_4F)) else "0";
     icmp_ln22_fu_106_p2 <= "1" when (unsigned(out_nonmax_q0) > unsigned(ap_const_lv11_13)) else "0";
     out_double_address0 <= zext_ln16_reg_138_pp0_iter1_reg(9 - 1 downto 0);
@@ -337,5 +337,5 @@ begin
     select_ln19_fu_119_p3 <= 
         select_ln19_1_fu_112_p3 when (icmp_ln22_reg_153(0) = '1') else 
         ap_const_lv8_0;
-    zext_ln16_fu_90_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_column_11),64));
+    zext_ln16_fu_90_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_column_10),64));
 end behav;

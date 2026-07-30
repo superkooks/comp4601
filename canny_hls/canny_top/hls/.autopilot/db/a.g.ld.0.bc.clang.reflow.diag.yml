@@ -402,7 +402,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 28, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'grayscale(RGBPixel const*, unsigned char*)'
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 6, Column: 0 }
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 8, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -1870,7 +1870,7 @@ DebugLoc:        { File: ../src/canny_top.cpp, Line: 28, Column: 9 }
 Function:        _Z9canny_topP8RGBPixelPh
 Args:            
   - Callee:          'grayscale(RGBPixel const*, unsigned char*)'
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 6, Column: 0 }
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 8, Column: 0 }
   - String:          ' not inlined into '
   - Caller:          'canny_top(RGBPixel*, unsigned char*)'
     DebugLoc:        { File: ../src/canny_top.cpp, Line: 9, Column: 0 }
@@ -2711,7 +2711,7 @@ Args:
 --- !Passed
 Pass:            reflow-burst-inference
 Name:            BurstInferred
-DebugLoc:        { File: ../src/grayscale.cpp, Line: 7, Column: 21 }
+DebugLoc:        { File: ../src/grayscale.cpp, Line: 20, Column: 5 }
 Function:        _Z9grayscalePK8RGBPixelPh
 Args:            
   - String:          'Sequential '
@@ -2725,26 +2725,23 @@ Args:
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_7_1
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         '../src/grayscale.cpp:7:21'
+  - LoopLoc:         '../src/grayscale.cpp:20:5'
   - String:          ' '
   - Function:        'grayscale(RGBPixel const*, unsigned char*)'
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 6, Column: 0 }
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 8, Column: 0 }
   - String:          ' '
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      load
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 11, Column: 33 }
   - OrigDirection:   read
-  - OrigID:          for.inc.load.19
+  - OrigID:          load-store-loop.load.9
   - OrigAccess:      load
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 10, Column: 34 }
   - OrigDirection:   read
-  - OrigID:          for.inc.load.14
+  - OrigID:          load-store-loop.load.11
   - OrigAccess:      load
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 9, Column: 33 }
   - OrigDirection:   read
-  - OrigID:          for.inc.load.10
+  - OrigID:          load-store-loop.load.13
 ...
 --- !Passed
 Pass:            reflow-burst-inference
@@ -2779,7 +2776,7 @@ Args:
 --- !Missed
 Pass:            reflow-burst-widen
 Name:            GreaterOrEqualAlignment
-DebugLoc:        { File: ../src/grayscale.cpp, Line: 7, Column: 21 }
+DebugLoc:        { File: ../src/grayscale.cpp, Line: 20, Column: 5 }
 Function:        _Z9grayscalePK8RGBPixelPh
 Args:            
   - String:          'Could not widen since type '
@@ -2789,19 +2786,19 @@ Args:
   - String:          '(bytes)'
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 7, Column: 21 }
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 20, Column: 5 }
   - OrigDirection:   read
   - OrigID:          scevgep7seq
   - ArrayName:       input
   - String:          ' '
   - BundleName:      gmem
   - String:          ' '
-  - LoopName:        VITIS_LOOP_7_1
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         '../src/grayscale.cpp:7:21'
+  - LoopLoc:         '../src/grayscale.cpp:20:5'
   - String:          ' '
   - Function:        'grayscale(RGBPixel const*, unsigned char*)'
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 6, Column: 0 }
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 8, Column: 0 }
   - String:          ' '
 ...
 --- !Passed
@@ -2909,15 +2906,15 @@ Pass:            reflow-auto-loop-pipeline
 Name:            AutoLoopPipeline
 Args:            
   - String:          'Pipelining loop< '
-  - LoopName:        VITIS_LOOP_7_1
+  - LoopName:        unknown
   - String:          '> at '
-  - LoopLoc:         '../src/grayscale.cpp:7:21'
+  - LoopLoc:         '../src/grayscale.cpp:20:5'
   - String:          ' due to pipeline_loops threshold'
 ...
 --- !Passed
 Pass:            reflow-auto-loop-pipeline
 Name:            AutoParallelPerformanceDrivenVerbosePassed
-DebugLoc:        { File: ../src/grayscale.cpp, Line: 7, Column: 21 }
+DebugLoc:        { File: ../src/grayscale.cpp, Line: 20, Column: 5 }
 Function:        _Z9grayscalePK8RGBPixelPh
 Args:            
   - PragmaType:      pipeline
@@ -2929,10 +2926,10 @@ Args:
   - PragmaFunction:  grayscale
   - String:          ' '
   - PragmaInferReason: config_compile -pipeline_loops 64
-  - LoopName:        VITIS_LOOP_7_1
+  - LoopName:        anonymous
   - String:          ' '
-  - LoopLoc:         '../src/grayscale.cpp:7:21'
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 7, Column: 21 }
+  - LoopLoc:         '../src/grayscale.cpp:20:5'
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 20, Column: 5 }
   - String:          ' '
 ...
 --- !HLSReportInfo
@@ -3157,13 +3154,13 @@ Args:
 --- !Missed
 Pass:            reflow-burst-inference
 Name:            MismatchPortAndBurstAccessWidth
-DebugLoc:        { File: ../src/grayscale.cpp, Line: 7, Column: 21 }
+DebugLoc:        { File: ../src/grayscale.cpp, Line: 20, Column: 5 }
 Function:        _Z9grayscalePK8RGBPixelPh
 Args:            
   - String:          Inferred burst reverted due to burst accesses data width is different from m_axi port width
   - String:          ' _XLX_SEP_ '
   - OrigAccess:      call
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 7, Column: 21 }
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 20, Column: 5 }
   - OrigDirection:   read
   - OrigID:          scevgep7seq
   - ArrayName:       input
@@ -3171,7 +3168,7 @@ Args:
   - BundleName:      gmem
   - String:          ' '
   - Function:        'grayscale(RGBPixel const*, unsigned char*)'
-    DebugLoc:        { File: ../src/grayscale.cpp, Line: 6, Column: 0 }
+    DebugLoc:        { File: ../src/grayscale.cpp, Line: 8, Column: 0 }
   - String:          ' '
 ...
 --- !Passed

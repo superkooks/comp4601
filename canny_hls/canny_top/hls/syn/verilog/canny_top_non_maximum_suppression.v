@@ -675,7 +675,7 @@ canny_top_srem_32ns_3ns_32_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 32 ))
-srem_32ns_3ns_32_36_seq_1_U170(
+srem_32ns_3ns_32_36_seq_1_U177(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_230_ap_start),
@@ -692,7 +692,7 @@ canny_top_srem_32ns_3ns_32_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 32 ))
-srem_32ns_3ns_32_36_seq_1_U171(
+srem_32ns_3ns_32_36_seq_1_U178(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_279_ap_start),
@@ -709,7 +709,7 @@ canny_top_urem_32ns_3ns_2_36_seq_1 #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 2 ))
-urem_32ns_3ns_2_36_seq_1_U172(
+urem_32ns_3ns_2_36_seq_1_U179(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_305_ap_start),
@@ -732,7 +732,7 @@ urem_32ns_3ns_2_36_seq_1_U172(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U173(
+sparsemux_7_2_11_1_1_U180(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_load_reg_577),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_load_reg_584),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_load_reg_591),
@@ -753,7 +753,7 @@ sparsemux_7_2_11_1_1_U173(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U174(
+sparsemux_7_2_11_1_1_U181(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_load_reg_577),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_load_reg_584),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_load_reg_591),
@@ -774,7 +774,7 @@ sparsemux_7_2_11_1_1_U174(
     .def_WIDTH( 2 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 2 ))
-sparsemux_7_2_2_1_1_U175(
+sparsemux_7_2_2_1_1_U182(
     .din0(p_anonymous_namespace_lineBuffer_direction_0_load_reg_598),
     .din1(p_anonymous_namespace_lineBuffer_direction_1_load_reg_603),
     .din2(p_anonymous_namespace_lineBuffer_direction_2_load_reg_608),
@@ -795,7 +795,7 @@ sparsemux_7_2_2_1_1_U175(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U176(
+sparsemux_7_2_11_1_1_U183(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_load_reg_577),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_load_reg_584),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_load_reg_591),
@@ -816,7 +816,7 @@ sparsemux_7_2_11_1_1_U176(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U177(
+sparsemux_7_2_11_1_1_U184(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_load_1_reg_613),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_load_1_reg_620),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_load_1_reg_627),
@@ -837,7 +837,7 @@ sparsemux_7_2_11_1_1_U177(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U178(
+sparsemux_7_2_11_1_1_U185(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_load_1_reg_613),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_load_1_reg_620),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_load_1_reg_627),
@@ -858,7 +858,7 @@ sparsemux_7_2_11_1_1_U178(
     .def_WIDTH( 2 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 2 ))
-sparsemux_7_2_2_1_1_U179(
+sparsemux_7_2_2_1_1_U186(
     .din0(p_anonymous_namespace_lineBuffer_direction_0_load_1_reg_634),
     .din1(p_anonymous_namespace_lineBuffer_direction_1_load_1_reg_639),
     .din2(p_anonymous_namespace_lineBuffer_direction_2_load_1_reg_644),
@@ -879,7 +879,7 @@ sparsemux_7_2_2_1_1_U179(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U180(
+sparsemux_7_2_11_1_1_U187(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_load_1_reg_613),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_load_1_reg_620),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_load_1_reg_627),

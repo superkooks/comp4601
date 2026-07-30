@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_57_1'" level="0">
-<item name = "Date">Wed Jul 29 23:33:24 2026
+<item name = "Date">Thu Jul 30 19:40:44 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>

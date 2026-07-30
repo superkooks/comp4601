@@ -26,7 +26,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 160 \
+    id 167 \
     name out_nonmax \
     reset_level 1 \
     sync_rst true \
@@ -45,7 +45,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 164 \
+    id 171 \
     name p_anonymous_namespace_lineBuffer_magnitude_0 \
     reset_level 1 \
     sync_rst true \
@@ -64,7 +64,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 165 \
+    id 172 \
     name p_anonymous_namespace_lineBuffer_direction_0 \
     reset_level 1 \
     sync_rst true \
@@ -83,7 +83,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 166 \
+    id 173 \
     name p_anonymous_namespace_lineBuffer_magnitude_1 \
     reset_level 1 \
     sync_rst true \
@@ -102,7 +102,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 167 \
+    id 174 \
     name p_anonymous_namespace_lineBuffer_magnitude_2 \
     reset_level 1 \
     sync_rst true \
@@ -121,7 +121,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 168 \
+    id 175 \
     name p_anonymous_namespace_lineBuffer_direction_1 \
     reset_level 1 \
     sync_rst true \
@@ -140,7 +140,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 169 \
+    id 176 \
     name p_anonymous_namespace_lineBuffer_direction_2 \
     reset_level 1 \
     sync_rst true \
@@ -158,7 +158,7 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 151 \
+    id 158 \
     name tmp_5 \
     type other \
     dir I \
@@ -173,7 +173,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 152 \
+    id 159 \
     name tmp_4 \
     type other \
     dir I \
@@ -188,7 +188,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 153 \
+    id 160 \
     name tmp_s \
     type other \
     dir I \
@@ -203,7 +203,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 154 \
+    id 161 \
     name tmp_6 \
     type other \
     dir I \
@@ -218,7 +218,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 155 \
+    id 162 \
     name tmp \
     type other \
     dir I \
@@ -233,7 +233,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 156 \
+    id 163 \
     name tmp_2 \
     type other \
     dir I \
@@ -248,7 +248,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 157 \
+    id 164 \
     name tmp_3 \
     type other \
     dir I \
@@ -263,7 +263,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 158 \
+    id 165 \
     name tmp_1 \
     type other \
     dir I \
@@ -278,7 +278,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 159 \
+    id 166 \
     name outputRow \
     type other \
     dir I \
@@ -293,7 +293,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 161 \
+    id 168 \
     name select_ln14 \
     type other \
     dir I \
@@ -308,7 +308,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 162 \
+    id 169 \
     name p_smodpost \
     type other \
     dir I \
@@ -323,7 +323,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 163 \
+    id 170 \
     name select_ln14_1 \
     type other \
     dir I \

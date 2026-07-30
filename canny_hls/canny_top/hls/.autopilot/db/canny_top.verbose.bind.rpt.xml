@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'canny_top'" level="0">
-<item name = "Date">Wed Jul 29 23:33:20 2026
+<item name = "Date">Thu Jul 30 19:40:37 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">843456, 851708, 4.217 ms, 4.259 ms, 843457, 851709, no</column>
+<column name="">1112296, 1120548, 5.561 ms, 5.603 ms, 1112297, 1120549, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -38,7 +38,7 @@
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192">canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202">canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
 <column name="grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212">canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_dataflow_parent_loop_proc_fu_222">dataflow_parent_loop_proc, 840891, 849143, 4.204 ms, 4.246 ms, 840891, 849143, no</column>
+<column name="grp_dataflow_parent_loop_proc_fu_222">dataflow_parent_loop_proc, 1109731, 1117983, 5.549 ms, 5.590 ms, 1109731, 1117983, no</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

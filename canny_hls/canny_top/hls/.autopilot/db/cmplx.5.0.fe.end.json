@@ -1,175 +1,5 @@
 {
     "1": {
-        "name": "hysteresis<2>",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "35",
-        "instructions": "45",
-        "total_instructions": "198",
-        "calls": "14 23",
-        "basicblocks": "4",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "7",
-        "loads": {
-            "G": "7"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "2": {
-        "name": "double_threshold_Pipeline_VITIS_LOOP_16_1",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "33",
-        "instructions": "22",
-        "total_instructions": "22",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "4",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "2"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "3": {
-        "name": "hysteresis<1>",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "34",
-        "instructions": "45",
-        "total_instructions": "198",
-        "calls": "15 35",
-        "basicblocks": "4",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "7",
-        "loads": {
-            "G": "7"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "4": {
-        "name": "gaussian_blur_Pipeline_VITIS_LOOP_76_2",
-        "file": "..\/src\/gaussian_blur.cpp",
-        "fileloc": "76",
-        "instructions": "80",
-        "total_instructions": "80",
-        "calls": "",
-        "basicblocks": "10",
-        "memory_accesses": "18",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "7"
-        },
-        "stores": {
-            "G": "5",
-            "L": "12"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "5": {
-        "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "26",
-        "instructions": "6",
-        "total_instructions": "6",
-        "calls": "",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "3"
-    },
-    "6": {
-        "name": "grayscale_Pipeline_VITIS_LOOP_7_1",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "28",
-        "instructions": "69",
-        "total_instructions": "69",
-        "calls": "",
-        "basicblocks": "3",
-        "memory_accesses": "9",
-        "control_depth": "0",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "3"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "7": {
-        "name": "sobel",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "31",
-        "instructions": "50",
-        "total_instructions": "228",
-        "calls": "34 27",
-        "basicblocks": "4",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "6",
-        "loads": {
-            "G": "7"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "8": {
-        "name": "output_row",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "38",
-        "instructions": "20",
-        "total_instructions": "56",
-        "calls": "21",
-        "basicblocks": "3",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "6",
-        "loads": {
-            "G": "1"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "9": {
-        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_154_4",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "36",
-        "instructions": "126",
-        "total_instructions": "126",
-        "calls": "",
-        "basicblocks": "21",
-        "memory_accesses": "27",
-        "control_depth": "11",
-        "def_use_depth": "2",
-        "loads": {
-            "G": "3",
-            "L": "10"
-        },
-        "stores": {
-            "L": "24"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "10": {
         "name": "canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2",
         "file": "..\/src\/canny_top.cpp",
         "fileloc": "10",
@@ -191,28 +21,13 @@
             "L": "1"
         }
     },
-    "0": {
-        "name": "canny_top",
-        "file": "canny_top.cpp",
-        "fileloc": "9",
-        "instructions": "28",
-        "total_instructions": "1959",
-        "calls": "28 10 29 20 19 16 37 13",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1",
-        "stores": {
-            "G": "8"
-        }
-    },
-    "11": {
-        "name": "hysteresis<4>",
+    "2": {
+        "name": "hysteresis<1>",
         "file": "..\/src\/canny_top.cpp",
-        "fileloc": "37",
+        "fileloc": "34",
         "instructions": "45",
         "total_instructions": "198",
-        "calls": "26 17",
+        "calls": "3 27",
         "basicblocks": "4",
         "memory_accesses": "0",
         "control_depth": "0",
@@ -224,56 +39,7 @@
             "G": "1"
         }
     },
-    "12": {
-        "name": "_Z9canny_topP8RGBPixelPh_for.body",
-        "file": "canny_top.cpp",
-        "fileloc": "0",
-        "instructions": "29",
-        "total_instructions": "1644",
-        "calls": "5 30 22 7 18 31 3 1 25 11 8",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "9"
-    },
-    "13": {
-        "name": "dataflow_parent_loop_proc",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "12",
-        "instructions": "16",
-        "total_instructions": "1660",
-        "calls": "12",
-        "basicblocks": "4",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "0",
-        "loops": {
-            "L": "1"
-        }
-    },
-    "14": {
-        "name": "hysteresis<2>_Pipeline_VITIS_LOOP_89_1",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "35",
-        "instructions": "27",
-        "total_instructions": "27",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "6",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "2"
-        },
-        "stores": {
-            "G": "3",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
+    "3": {
         "name": "hysteresis<1>_Pipeline_VITIS_LOOP_89_1",
         "file": "..\/src\/canny_top.cpp",
         "fileloc": "34",
@@ -295,113 +61,7 @@
             "L": "1"
         }
     },
-    "16": {
-        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "10",
-        "instructions": "37",
-        "total_instructions": "37",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "9",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "3",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "17": {
-        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_154_4",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "37",
-        "instructions": "126",
-        "total_instructions": "126",
-        "calls": "",
-        "basicblocks": "21",
-        "memory_accesses": "27",
-        "control_depth": "11",
-        "def_use_depth": "2",
-        "loads": {
-            "G": "3",
-            "L": "10"
-        },
-        "stores": {
-            "L": "24"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "18": {
-        "name": "non_maximum_suppression",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "32",
-        "instructions": "53",
-        "total_instructions": "213",
-        "calls": "36 32",
-        "basicblocks": "4",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "7",
-        "loads": {
-            "G": "13"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "19": {
-        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "10",
-        "instructions": "37",
-        "total_instructions": "37",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "9",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "3",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "20": {
-        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "10",
-        "instructions": "37",
-        "total_instructions": "37",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "9",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "3",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "21": {
+    "4": {
         "name": "output_row_Pipeline_VITIS_LOOP_20_1",
         "file": "..\/src\/canny_top.cpp",
         "fileloc": "38",
@@ -422,48 +82,55 @@
             "L": "1"
         }
     },
-    "22": {
-        "name": "gaussian_blur",
-        "file": "..\/src\/gaussian_blur.cpp",
-        "fileloc": "55",
-        "instructions": "79",
-        "total_instructions": "212",
-        "calls": "4 24",
-        "basicblocks": "3",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "8",
-        "loads": {
-            "G": "1",
-            "L": "3"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "23": {
-        "name": "hysteresis<2>_Pipeline_VITIS_LOOP_154_4",
+    "5": {
+        "name": "grayscale_Pipeline_1",
         "file": "..\/src\/canny_top.cpp",
-        "fileloc": "35",
-        "instructions": "126",
-        "total_instructions": "126",
+        "fileloc": "0",
+        "instructions": "63",
+        "total_instructions": "63",
         "calls": "",
-        "basicblocks": "21",
-        "memory_accesses": "27",
-        "control_depth": "11",
-        "def_use_depth": "2",
+        "basicblocks": "4",
+        "memory_accesses": "11",
+        "control_depth": "1",
+        "def_use_depth": "1",
         "loads": {
-            "G": "3",
-            "L": "10"
+            "L": "1"
         },
         "stores": {
-            "L": "24"
+            "L": "5"
         },
         "loops": {
             "L": "1"
         }
     },
-    "24": {
+    "6": {
+        "name": "grayscale",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "28",
+        "instructions": "15",
+        "total_instructions": "111",
+        "calls": "5 35",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "4"
+    },
+    "7": {
+        "name": "dataflow_parent_loop_proc",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "12",
+        "instructions": "16",
+        "total_instructions": "1691",
+        "calls": "20",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "0",
+        "loops": {
+            "L": "1"
+        }
+    },
+    "8": {
         "name": "gaussian_blur_Pipeline_VITIS_LOOP_125_6",
         "file": "..\/src\/gaussian_blur.cpp",
         "fileloc": "125",
@@ -485,181 +152,7 @@
             "L": "1"
         }
     },
-    "25": {
-        "name": "hysteresis<3>",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "36",
-        "instructions": "45",
-        "total_instructions": "198",
-        "calls": "33 9",
-        "basicblocks": "4",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "7",
-        "loads": {
-            "G": "7"
-        },
-        "stores": {
-            "G": "1"
-        }
-    },
-    "26": {
-        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_89_1",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "37",
-        "instructions": "27",
-        "total_instructions": "27",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "6",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "2"
-        },
-        "stores": {
-            "G": "3",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "27": {
-        "name": "sobel_Pipeline_VITIS_LOOP_155_5",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "31",
-        "instructions": "151",
-        "total_instructions": "151",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "25",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "G": "3",
-            "L": "10"
-        },
-        "stores": {
-            "L": "22"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "28": {
-        "name": "canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "10",
-        "instructions": "43",
-        "total_instructions": "43",
-        "calls": "",
-        "basicblocks": "10",
-        "memory_accesses": "11",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "5",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "29": {
-        "name": "canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "10",
-        "instructions": "43",
-        "total_instructions": "43",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "12",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "3"
-        },
-        "stores": {
-            "G": "6",
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "30": {
-        "name": "grayscale",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "28",
-        "instructions": "11",
-        "total_instructions": "80",
-        "calls": "6",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "4"
-    },
-    "31": {
-        "name": "double_threshold",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "33",
-        "instructions": "6",
-        "total_instructions": "28",
-        "calls": "2",
-        "basicblocks": "3",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1"
-    },
-    "32": {
-        "name": "non_maximum_suppression_Pipeline_VITIS_LOOP_112_4",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "32",
-        "instructions": "125",
-        "total_instructions": "125",
-        "calls": "",
-        "basicblocks": "9",
-        "memory_accesses": "32",
-        "control_depth": "2",
-        "def_use_depth": "3",
-        "loads": {
-            "G": "6",
-            "L": "13"
-        },
-        "stores": {
-            "L": "25"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "33": {
-        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_89_1",
-        "file": "..\/src\/canny_top.cpp",
-        "fileloc": "36",
-        "instructions": "27",
-        "total_instructions": "27",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "6",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "2"
-        },
-        "stores": {
-            "G": "3",
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "34": {
+    "9": {
         "name": "sobel_Pipeline_VITIS_LOOP_102_1",
         "file": "..\/src\/canny_top.cpp",
         "fileloc": "31",
@@ -681,10 +174,195 @@
             "L": "1"
         }
     },
-    "35": {
-        "name": "hysteresis<1>_Pipeline_VITIS_LOOP_154_4",
+    "10": {
+        "name": "non_maximum_suppression",
         "file": "..\/src\/canny_top.cpp",
-        "fileloc": "34",
+        "fileloc": "32",
+        "instructions": "53",
+        "total_instructions": "213",
+        "calls": "23 11",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "7",
+        "loads": {
+            "G": "13"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "11": {
+        "name": "non_maximum_suppression_Pipeline_VITIS_LOOP_112_4",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "32",
+        "instructions": "125",
+        "total_instructions": "125",
+        "calls": "",
+        "basicblocks": "9",
+        "memory_accesses": "32",
+        "control_depth": "2",
+        "def_use_depth": "3",
+        "loads": {
+            "G": "6",
+            "L": "13"
+        },
+        "stores": {
+            "L": "25"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "double_threshold_Pipeline_VITIS_LOOP_16_1",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "33",
+        "instructions": "22",
+        "total_instructions": "22",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "4",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
+        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "10",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "9",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "3",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "14": {
+        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "10",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "9",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "3",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "15": {
+        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_89_1",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "37",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "6",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "G": "3",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "sobel",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "31",
+        "instructions": "50",
+        "total_instructions": "228",
+        "calls": "9 22",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "6",
+        "loads": {
+            "G": "7"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "17": {
+        "name": "gaussian_blur_Pipeline_VITIS_LOOP_76_2",
+        "file": "..\/src\/gaussian_blur.cpp",
+        "fileloc": "76",
+        "instructions": "80",
+        "total_instructions": "80",
+        "calls": "",
+        "basicblocks": "10",
+        "memory_accesses": "18",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "7"
+        },
+        "stores": {
+            "G": "5",
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "18": {
+        "name": "hysteresis<2>",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "35",
+        "instructions": "45",
+        "total_instructions": "198",
+        "calls": "32 26",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "7",
+        "loads": {
+            "G": "7"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "19": {
+        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_154_4",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "36",
         "instructions": "126",
         "total_instructions": "126",
         "calls": "",
@@ -703,7 +381,78 @@
             "L": "1"
         }
     },
-    "36": {
+    "20": {
+        "name": "_Z9canny_topP8RGBPixelPh_for.body",
+        "file": "canny_top.cpp",
+        "fileloc": "0",
+        "instructions": "29",
+        "total_instructions": "1675",
+        "calls": "28 6 29 16 10 31 2 18 37 36 33",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "9"
+    },
+    "0": {
+        "name": "canny_top",
+        "file": "canny_top.cpp",
+        "fileloc": "9",
+        "instructions": "28",
+        "total_instructions": "1990",
+        "calls": "24 1 25 13 38 14 21 7",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "stores": {
+            "G": "8"
+        }
+    },
+    "21": {
+        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "10",
+        "instructions": "37",
+        "total_instructions": "37",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "9",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "3",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "22": {
+        "name": "sobel_Pipeline_VITIS_LOOP_155_5",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "31",
+        "instructions": "151",
+        "total_instructions": "151",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "25",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "G": "3",
+            "L": "10"
+        },
+        "stores": {
+            "L": "22"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "23": {
         "name": "non_maximum_suppression_Pipeline_VITIS_LOOP_57_1",
         "file": "..\/src\/canny_top.cpp",
         "fileloc": "32",
@@ -725,8 +474,280 @@
             "L": "1"
         }
     },
+    "24": {
+        "name": "canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "10",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "10",
+        "memory_accesses": "11",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "5",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "10",
+        "instructions": "43",
+        "total_instructions": "43",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "12",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "3"
+        },
+        "stores": {
+            "G": "6",
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "hysteresis<2>_Pipeline_VITIS_LOOP_154_4",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "35",
+        "instructions": "126",
+        "total_instructions": "126",
+        "calls": "",
+        "basicblocks": "21",
+        "memory_accesses": "27",
+        "control_depth": "11",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "3",
+            "L": "10"
+        },
+        "stores": {
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
+        "name": "hysteresis<1>_Pipeline_VITIS_LOOP_154_4",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "34",
+        "instructions": "126",
+        "total_instructions": "126",
+        "calls": "",
+        "basicblocks": "21",
+        "memory_accesses": "27",
+        "control_depth": "11",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "3",
+            "L": "10"
+        },
+        "stores": {
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "28": {
+        "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "26",
+        "instructions": "6",
+        "total_instructions": "6",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "3"
+    },
+    "29": {
+        "name": "gaussian_blur",
+        "file": "..\/src\/gaussian_blur.cpp",
+        "fileloc": "55",
+        "instructions": "79",
+        "total_instructions": "212",
+        "calls": "17 8",
+        "basicblocks": "3",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "8",
+        "loads": {
+            "G": "1",
+            "L": "3"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "30": {
+        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_154_4",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "37",
+        "instructions": "126",
+        "total_instructions": "126",
+        "calls": "",
+        "basicblocks": "21",
+        "memory_accesses": "27",
+        "control_depth": "11",
+        "def_use_depth": "2",
+        "loads": {
+            "G": "3",
+            "L": "10"
+        },
+        "stores": {
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "31": {
+        "name": "double_threshold",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "33",
+        "instructions": "6",
+        "total_instructions": "28",
+        "calls": "12",
+        "basicblocks": "3",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "32": {
+        "name": "hysteresis<2>_Pipeline_VITIS_LOOP_89_1",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "35",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "6",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "G": "3",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "33": {
+        "name": "output_row",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "38",
+        "instructions": "20",
+        "total_instructions": "56",
+        "calls": "4",
+        "basicblocks": "3",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "6",
+        "loads": {
+            "G": "1"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "34": {
+        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_89_1",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "36",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "6",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "2"
+        },
+        "stores": {
+            "G": "3",
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "35": {
+        "name": "grayscale_Pipeline_VITIS_LOOP_22_1",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "28",
+        "instructions": "33",
+        "total_instructions": "33",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "6",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "4"
+        },
+        "stores": {
+            "L": "3"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "36": {
+        "name": "hysteresis<4>",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "37",
+        "instructions": "45",
+        "total_instructions": "198",
+        "calls": "15 30",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "7",
+        "loads": {
+            "G": "7"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
     "37": {
-        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23",
+        "name": "hysteresis<3>",
+        "file": "..\/src\/canny_top.cpp",
+        "fileloc": "36",
+        "instructions": "45",
+        "total_instructions": "198",
+        "calls": "34 19",
+        "basicblocks": "4",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "7",
+        "loads": {
+            "G": "7"
+        },
+        "stores": {
+            "G": "1"
+        }
+    },
+    "38": {
+        "name": "canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21",
         "file": "..\/src\/canny_top.cpp",
         "fileloc": "10",
         "instructions": "37",

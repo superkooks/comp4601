@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "07/29/26 23:32:12",
- "timestampMillis": "1785331932572",
+ "dateTimestamp": "07/30/26 19:39:26",
+ "timestampMillis": "1785404366150",
  "buildStep": {
-  "cmdId": "cdaa5943-f874-48e1-8a3b-2b16669698aa",
+  "cmdId": "7d68e9ac-66d1-412e-8bf6-ef6474e7c13d",
   "name": "v++",
   "logFile": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\logs\\canny_top.steps.log",
   "commandLine": "C:/AMDDesignTools/2025.2/Vitis/bin/unwrapped/win64.o/v++.exe  -c --mode hls --config C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls\\hls_config.cfg --work_dir canny_top ",
@@ -38,10 +38,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/29/26 23:32:12",
- "timestampMillis": "1785331932574",
+ "dateTimestamp": "07/30/26 19:39:26",
+ "timestampMillis": "1785404366151",
  "status": {
-  "cmdId": "cdaa5943-f874-48e1-8a3b-2b16669698aa",
+  "cmdId": "7d68e9ac-66d1-412e-8bf6-ef6474e7c13d",
   "state": "CS_RUNNING"
  }
 }
@@ -49,8 +49,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "07/29/26 23:32:26",
- "timestampMillis": "1785331946197",
+ "dateTimestamp": "07/30/26 19:39:44",
+ "timestampMillis": "1785404384957",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -95,10 +95,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "07/29/26 23:32:26",
- "timestampMillis": "1785331946201",
+ "dateTimestamp": "07/30/26 19:39:44",
+ "timestampMillis": "1785404384961",
  "buildStep": {
-  "cmdId": "64a6cfeb-4fb8-489e-84a6-1dd3d1b12c1f",
+  "cmdId": "862ad647-b907-4092-b655-f565bcf21ff0",
   "name": "",
   "logFile": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\hls.log",
   "commandLine": "",
@@ -111,10 +111,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/29/26 23:32:26",
- "timestampMillis": "1785331946202",
+ "dateTimestamp": "07/30/26 19:39:44",
+ "timestampMillis": "1785404384962",
  "status": {
-  "cmdId": "64a6cfeb-4fb8-489e-84a6-1dd3d1b12c1f",
+  "cmdId": "862ad647-b907-4092-b655-f565bcf21ff0",
   "state": "CS_RUNNING"
  }
 }
@@ -122,8 +122,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:32:26",
- "timestampMillis": "1785331946203",
+ "dateTimestamp": "07/30/26 19:39:44",
+ "timestampMillis": "1785404384962",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\hls_data.json",
   "name": "",
@@ -136,8 +136,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:32:26",
- "timestampMillis": "1785331946203",
+ "dateTimestamp": "07/30/26 19:39:44",
+ "timestampMillis": "1785404384963",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\syn\\report\\csynth.rpt",
   "name": "",
@@ -150,8 +150,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:32:26",
- "timestampMillis": "1785331946204",
+ "dateTimestamp": "07/30/26 19:39:44",
+ "timestampMillis": "1785404384963",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls\\syn\\report\\csynth.xml",
   "name": "",
@@ -164,8 +164,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:33:37",
- "timestampMillis": "1785332017888",
+ "dateTimestamp": "07/30/26 19:40:58",
+ "timestampMillis": "1785404458485",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls",
   "name": "",
@@ -178,8 +178,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:33:37",
- "timestampMillis": "1785332017888",
+ "dateTimestamp": "07/30/26 19:40:58",
+ "timestampMillis": "1785404458487",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls",
   "name": "",
@@ -192,8 +192,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:33:37",
- "timestampMillis": "1785332017889",
+ "dateTimestamp": "07/30/26 19:40:58",
+ "timestampMillis": "1785404458488",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\hls",
   "name": "",
@@ -206,10 +206,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/29/26 23:33:37",
- "timestampMillis": "1785332017890",
+ "dateTimestamp": "07/30/26 19:40:58",
+ "timestampMillis": "1785404458488",
  "status": {
-  "cmdId": "64a6cfeb-4fb8-489e-84a6-1dd3d1b12c1f",
+  "cmdId": "862ad647-b907-4092-b655-f565bcf21ff0",
   "state": "CS_PASSED"
  }
 }
@@ -217,10 +217,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "07/29/26 23:33:38",
- "timestampMillis": "1785332018189",
+ "dateTimestamp": "07/30/26 19:40:58",
+ "timestampMillis": "1785404458923",
  "status": {
-  "cmdId": "cdaa5943-f874-48e1-8a3b-2b16669698aa",
+  "cmdId": "7d68e9ac-66d1-412e-8bf6-ef6474e7c13d",
   "state": "CS_PASSED"
  }
 }
@@ -228,8 +228,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:33:38",
- "timestampMillis": "1785332018214",
+ "dateTimestamp": "07/30/26 19:40:58",
+ "timestampMillis": "1785404458960",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\reports\\v++_compile_canny_top_guidance.html",
   "name": "",
@@ -242,8 +242,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "07/29/26 23:33:38",
- "timestampMillis": "1785332018215",
+ "dateTimestamp": "07/30/26 19:40:58",
+ "timestampMillis": "1785404458961",
  "report": {
   "path": "C:/Users\\twhsaw\\Projects\\comp4601\\canny_hls\\canny_top\\reports\\.db\\v++_compile_canny_top_guidance.pb3",
   "name": "",

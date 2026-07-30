@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_57_1'
 ================================================================
-* Date:           Wed Jul 29 23:33:08 2026
+* Date:           Thu Jul 30 19:40:27 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -141,7 +141,7 @@ The critical path consists of the following:
  <State 2>: 2.474ns
 The critical path consists of the following:
 	'load' operation 11 bit ('out_sobel_magnitude_load', ../src/non_maximum_suppression.cpp:59->../src/canny_top.cpp:32) on array 'out_sobel_magnitude' [32]  (1.237 ns)
-	'store' operation ('store_ln59', ../src/non_maximum_suppression.cpp:59->../src/canny_top.cpp:32) of variable 'out_sobel_magnitude_load', ../src/non_maximum_suppression.cpp:59->../src/canny_top.cpp:32 11 bit on array 'p_anonymous_namespace_lineBuffer_magnitude_2' [36]  (1.237 ns)
+	'store' operation ('store_ln59', ../src/non_maximum_suppression.cpp:59->../src/canny_top.cpp:32) of variable 'out_sobel_magnitude_load', ../src/non_maximum_suppression.cpp:59->../src/canny_top.cpp:32 11 bit on array 'p_anonymous_namespace_lineBuffer_magnitude_1' [40]  (1.237 ns)
 
 
 ============================================================

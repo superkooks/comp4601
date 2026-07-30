@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 40
+set cdfgNum 41
 set C_modelName {canny_top}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -322,11 +322,18 @@ set ArgLastReadFirstWriteLatency {
 		p_read {Type I LastRead 0 FirstWrite -1}
 		gmem {Type I LastRead 74 FirstWrite -1}
 		in_r {Type I LastRead 1 FirstWrite -1}
-		out_grayscale {Type O LastRead -1 FirstWrite 78}}
-	grayscale_Pipeline_VITIS_LOOP_7_1 {
+		out_grayscale {Type O LastRead -1 FirstWrite 5}}
+	grayscale_Pipeline_1 {
 		empty {Type I LastRead 0 FirstWrite -1}
 		gmem {Type I LastRead 74 FirstWrite -1}
-		out_grayscale {Type O LastRead -1 FirstWrite 78}}
+		local_blue {Type O LastRead -1 FirstWrite 73}
+		local_green {Type O LastRead -1 FirstWrite 74}
+		local_red {Type O LastRead -1 FirstWrite 75}}
+	grayscale_Pipeline_VITIS_LOOP_22_1 {
+		local_blue {Type I LastRead 0 FirstWrite -1}
+		local_green {Type I LastRead 1 FirstWrite -1}
+		local_red {Type I LastRead 2 FirstWrite -1}
+		out_grayscale {Type O LastRead -1 FirstWrite 5}}
 	gaussian_blur {
 		input_r {Type I LastRead 34 FirstWrite -1}
 		output_r {Type O LastRead -1 FirstWrite 2}
@@ -568,8 +575,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "843456", "Max" : "851708"}
-	, {"Name" : "Interval", "Min" : "843457", "Max" : "851709"}
+	{"Name" : "Latency", "Min" : "1112296", "Max" : "1120548"}
+	, {"Name" : "Interval", "Min" : "1112297", "Max" : "1120549"}
 ]}
 
 set PipelineEnableSignalInfo {[

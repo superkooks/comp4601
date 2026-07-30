@@ -5,6 +5,8 @@
         "-I/opt/Xilinx/2025.2/Vitis/lnx64/tools/auto_cc/include",
         "-IC:\\AMDDesignTools\\2025.2\\Vitis\\include",
         "-IC:\\AMDDesignTools\\2025.2\\Vitis\\include\\etc",
-        "-IC:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\auto_cc\\include"
+        "-IC:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\auto_cc\\include",
+        "-IC:\\Users\\twhsaw\\Projects\\comp4601\\src",
+        "-IC:\\Users\\twhsaw\\Projects\\comp4601\\testbench"
     ]
 }

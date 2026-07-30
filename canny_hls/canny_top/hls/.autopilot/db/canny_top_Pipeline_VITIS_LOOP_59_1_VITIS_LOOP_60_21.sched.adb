@@ -128,7 +128,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>column_11</name>
+						<name>column</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -424,7 +424,7 @@
 					<Obj>
 						<type>0</type>
 						<id>9</id>
-						<name>column_11_write_ln60</name>
+						<name>column_write_ln60</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -822,7 +822,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>column_11_load</name>
+						<name>column_load</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
 						<lineNumber>60</lineNumber>
@@ -2251,7 +2251,7 @@
 					<Obj>
 						<type>0</type>
 						<id>44</id>
-						<name>column_11_write_ln60</name>
+						<name>column_write_ln60</name>
 						<fileName>../src/hysteresis.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
 						<lineNumber>60</lineNumber>

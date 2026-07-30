@@ -76,10 +76,10 @@ newFuncRoot:2 %br_ln0 = br void %for.body.i
 
 <Node id="7" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
-for.body.i:0 %column_11 = load i10 %column
+for.body.i:0 %column_10 = load i10 %column
 
 ]]></Node>
-<StgValue><ssdm name="column_11"/></StgValue>
+<StgValue><ssdm name="column_10"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -91,7 +91,7 @@ for.body.i:0 %column_11 = load i10 %column
 
 <Node id="8" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.body.i:1 %icmp_ln16 = icmp_eq  i10 %column_11, i10 512
+for.body.i:1 %icmp_ln16 = icmp_eq  i10 %column_10, i10 512
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln16"/></StgValue>
@@ -106,7 +106,7 @@ for.body.i:1 %icmp_ln16 = icmp_eq  i10 %column_11, i10 512
 
 <Node id="9" bw="10" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.body.i:2 %add_ln16 = add i10 %column_11, i10 1
+for.body.i:2 %add_ln16 = add i10 %column_10, i10 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln16"/></StgValue>
@@ -137,7 +137,7 @@ for.body.i:3 %br_ln16 = br i1 %icmp_ln16, void %for.body.split.i, void %_Z16doub
 
 <Node id="12" bw="64" op_0_bw="10">
 <![CDATA[
-for.body.split.i:0 %zext_ln16 = zext i10 %column_11
+for.body.split.i:0 %zext_ln16 = zext i10 %column_10
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln16"/></StgValue>
@@ -401,19 +401,19 @@ for.body.split.i:13 %br_ln16 = br void %for.body.i
 </dataflow>
 <dataflow id="46" from="column" to="store_ln16" fromId="6" toId="7">
 </dataflow>
-<dataflow id="47" from="column" to="column_11" fromId="6" toId="9">
+<dataflow id="47" from="column" to="column_10" fromId="6" toId="9">
 </dataflow>
-<dataflow id="48" from="column_11" to="icmp_ln16" fromId="9" toId="10">
+<dataflow id="48" from="column_10" to="icmp_ln16" fromId="9" toId="10">
 </dataflow>
 <dataflow id="50" from="StgValue_49" to="icmp_ln16" fromId="49" toId="10">
 </dataflow>
-<dataflow id="51" from="column_11" to="add_ln16" fromId="9" toId="11">
+<dataflow id="51" from="column_10" to="add_ln16" fromId="9" toId="11">
 </dataflow>
 <dataflow id="53" from="StgValue_52" to="add_ln16" fromId="52" toId="11">
 </dataflow>
 <dataflow id="54" from="icmp_ln16" to="br_ln16" fromId="10" toId="12">
 </dataflow>
-<dataflow id="55" from="column_11" to="zext_ln16" fromId="9" toId="13">
+<dataflow id="55" from="column_10" to="zext_ln16" fromId="9" toId="13">
 </dataflow>
 <dataflow id="56" from="out_nonmax" to="out_nonmax_addr" fromId="40" toId="14">
 </dataflow>

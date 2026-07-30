@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 40
+set cdfgNum 41
 set C_modelName {hysteresis<1>_Pipeline_VITIS_LOOP_89_1}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]

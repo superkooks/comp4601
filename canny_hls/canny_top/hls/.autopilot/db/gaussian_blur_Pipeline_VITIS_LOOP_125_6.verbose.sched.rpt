@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'gaussian_blur_Pipeline_VITIS_LOOP_125_6'
 ================================================================
-* Date:           Wed Jul 29 23:33:06 2026
+* Date:           Thu Jul 30 19:40:25 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -165,7 +165,7 @@ The critical path consists of the following:
  <State 2>: 3.353ns
 The critical path consists of the following:
 	'load' operation 12 bit ('banked', ../src/gaussian_blur.cpp:138) on array 'p_anonymous_namespace_lineBuffer_39_0' [31]  (1.237 ns)
-	'sparsemux' operation 12 bit ('tmp_41', ../src/gaussian_blur.cpp:146) [47]  (0.574 ns)
+	'sparsemux' operation 12 bit ('sum_1', ../src/gaussian_blur.cpp:146) [40]  (0.574 ns)
 	'add' operation 13 bit ('add_ln145', ../src/gaussian_blur.cpp:145) [56]  (0.809 ns)
 	'add' operation 15 bit ('add_ln145_1', ../src/gaussian_blur.cpp:145) [58]  (0.733 ns)
 

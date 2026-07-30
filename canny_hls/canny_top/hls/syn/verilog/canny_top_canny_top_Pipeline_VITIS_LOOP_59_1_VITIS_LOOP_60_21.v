@@ -59,10 +59,10 @@ reg    ap_condition_exit_pp0_iter0_stage0;
 wire    ap_loop_exit_ready;
 reg    ap_ready_int;
 wire   [63:0] zext_ln60_fu_162_p1;
-reg   [9:0] column_11_fu_44;
+reg   [9:0] column_fu_44;
 wire   [9:0] add_ln60_fu_177_p2;
 wire    ap_loop_init;
-reg   [9:0] ap_sig_allocacmp_column_11_load;
+reg   [9:0] ap_sig_allocacmp_column_load;
 reg   [1:0] row_fu_48;
 wire   [1:0] select_ln59_fu_154_p3;
 reg   [1:0] ap_sig_allocacmp_row_load;
@@ -91,7 +91,7 @@ wire    ap_ce_reg;
 // power-on initialization
 initial begin
 #0 ap_CS_fsm = 1'd1;
-#0 column_11_fu_44 = 10'd0;
+#0 column_fu_44 = 10'd0;
 #0 row_fu_48 = 2'd0;
 #0 indvar_flatten27_fu_52 = 11'd0;
 #0 ap_done_reg = 1'b0;
@@ -135,9 +135,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1_pp0_stage0_iter0) & (1'b1 == ap_CS_fsm_state1))) begin
         if ((icmp_ln59_fu_116_p2 == 1'd0)) begin
-            column_11_fu_44 <= add_ln60_fu_177_p2;
+            column_fu_44 <= add_ln60_fu_177_p2;
         end else if ((ap_loop_init == 1'b1)) begin
-            column_11_fu_44 <= 10'd0;
+            column_fu_44 <= 10'd0;
         end
     end
 end
@@ -204,9 +204,9 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        ap_sig_allocacmp_column_11_load = 10'd0;
+        ap_sig_allocacmp_column_load = 10'd0;
     end else begin
-        ap_sig_allocacmp_column_11_load = column_11_fu_44;
+        ap_sig_allocacmp_column_load = column_fu_44;
     end
 end
 
@@ -305,7 +305,7 @@ assign ap_ready = ap_ready_sig;
 
 assign icmp_ln59_fu_116_p2 = ((ap_sig_allocacmp_indvar_flatten27_load == 11'd1536) ? 1'b1 : 1'b0);
 
-assign icmp_ln60_fu_134_p2 = ((ap_sig_allocacmp_column_11_load == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln60_fu_134_p2 = ((ap_sig_allocacmp_column_load == 10'd512) ? 1'b1 : 1'b0);
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_0_address0 = zext_ln60_fu_162_p1;
 
@@ -331,7 +331,7 @@ assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_d0 = 8'd0;
 
 assign p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0 = p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2_we0_local;
 
-assign select_ln59_2_fu_140_p3 = ((icmp_ln60_fu_134_p2[0:0] == 1'b1) ? 10'd0 : ap_sig_allocacmp_column_11_load);
+assign select_ln59_2_fu_140_p3 = ((icmp_ln60_fu_134_p2[0:0] == 1'b1) ? 10'd0 : ap_sig_allocacmp_column_load);
 
 assign select_ln59_fu_154_p3 = ((icmp_ln60_fu_134_p2[0:0] == 1'b1) ? add_ln59_3_fu_148_p2 : ap_sig_allocacmp_row_load);
 

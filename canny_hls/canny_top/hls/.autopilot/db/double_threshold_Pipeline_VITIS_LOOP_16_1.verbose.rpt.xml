@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'double_threshold_Pipeline_VITIS_LOOP_16_1'" level="0">
-<item name = "Date">Wed Jul 29 23:33:26 2026
+<item name = "Date">Thu Jul 30 19:40:44 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -91,7 +91,7 @@
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_column_11">9, 2, 10, 20</column>
+<column name="ap_sig_allocacmp_column_10">9, 2, 10, 20</column>
 <column name="column_fu_40">9, 2, 10, 20</column>
 </table>
 </item>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2'
 ================================================================
-* Date:           Wed Jul 29 23:33:02 2026
+* Date:           Thu Jul 30 19:40:19 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -140,7 +140,7 @@ The critical path consists of the following:
 	'load' operation 10 bit ('column_9_load', ../src/non_maximum_suppression.cpp:33->../src/canny_top.cpp:45->../src/canny_top.cpp:10) on local variable 'column', ../src/non_maximum_suppression.cpp:33->../src/canny_top.cpp:45->../src/canny_top.cpp:10 [20]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln33', ../src/non_maximum_suppression.cpp:33->../src/canny_top.cpp:45->../src/canny_top.cpp:10) [24]  (0.787 ns)
 	'select' operation 2 bit ('select_ln32_2', ../src/non_maximum_suppression.cpp:32->../src/canny_top.cpp:45->../src/canny_top.cpp:10) [27]  (0.179 ns)
-	'store' operation ('store_ln34', ../src/non_maximum_suppression.cpp:34->../src/canny_top.cpp:45->../src/canny_top.cpp:10) of constant 0 11 bit on array 'p_anonymous_namespace_lineBuffer_magnitude_1' [38]  (1.237 ns)
+	'store' operation ('store_ln34', ../src/non_maximum_suppression.cpp:34->../src/canny_top.cpp:45->../src/canny_top.cpp:10) of constant 0 11 bit on array 'p_anonymous_namespace_lineBuffer_magnitude_2' [46]  (1.237 ns)
 	blocking operation 0.548 ns on control path)
 
 

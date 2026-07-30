@@ -19,10 +19,10 @@
 
 <Node id="4" bw="10" op_0_bw="32">
 <![CDATA[
-newFuncRoot:0 %column_11 = alloca i32 1
+newFuncRoot:0 %column = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="column_11"/></StgValue>
+<StgValue><ssdm name="column"/></StgValue>
 </operation>
 
 <operation id="5" st_id="1" stage="1" lat="1">
@@ -94,7 +94,7 @@ newFuncRoot:4 %store_ln59 = store i2 0, i2 %row
 
 <Node id="9" bw="0" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-newFuncRoot:5 %store_ln60 = store i10 0, i10 %column_11
+newFuncRoot:5 %store_ln60 = store i10 0, i10 %column
 
 ]]></Node>
 <StgValue><ssdm name="store_ln60"/></StgValue>
@@ -185,10 +185,10 @@ for.inc.i29.i:3 %br_ln59 = br i1 %icmp_ln59, void %for.inc7.i32.i, void %_Z16hys
 
 <Node id="17" bw="10" op_0_bw="10" op_1_bw="0">
 <![CDATA[
-for.inc7.i32.i:0 %column_11_load = load i10 %column_11
+for.inc7.i32.i:0 %column_load = load i10 %column
 
 ]]></Node>
-<StgValue><ssdm name="column_11_load"/></StgValue>
+<StgValue><ssdm name="column_load"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -249,7 +249,7 @@ for.inc7.i32.i:3 %speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecL
 
 <Node id="21" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.inc7.i32.i:4 %icmp_ln60 = icmp_eq  i10 %column_11_load, i10 512
+for.inc7.i32.i:4 %icmp_ln60 = icmp_eq  i10 %column_load, i10 512
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln60"/></StgValue>
@@ -265,7 +265,7 @@ for.inc7.i32.i:4 %icmp_ln60 = icmp_eq  i10 %column_11_load, i10 512
 
 <Node id="22" bw="10" op_0_bw="1" op_1_bw="10" op_2_bw="10">
 <![CDATA[
-for.inc7.i32.i:5 %select_ln59_2 = select i1 %icmp_ln60, i10 0, i10 %column_11_load
+for.inc7.i32.i:5 %select_ln59_2 = select i1 %icmp_ln60, i10 0, i10 %column_load
 
 ]]></Node>
 <StgValue><ssdm name="select_ln59_2"/></StgValue>
@@ -561,7 +561,7 @@ arrayidx61.i26.i.exit:2 %store_ln59 = store i2 %select_ln59, i2 %row
 
 <Node id="44" bw="0" op_0_bw="10" op_1_bw="10" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-arrayidx61.i26.i.exit:3 %store_ln60 = store i10 %add_ln60, i10 %column_11
+arrayidx61.i26.i.exit:3 %store_ln60 = store i10 %add_ln60, i10 %column
 
 ]]></Node>
 <StgValue><ssdm name="store_ln60"/></StgValue>
@@ -619,7 +619,7 @@ _Z16hysteresis_resetILi2EEvv.exit.i.exitStub:0 %ret_ln0 = ret
 
 
 <dataflows>
-<dataflow id="51" from="StgValue_50" to="column_11" fromId="50" toId="4">
+<dataflow id="51" from="StgValue_50" to="column" fromId="50" toId="4">
 </dataflow>
 <dataflow id="52" from="StgValue_50" to="row" fromId="50" toId="5">
 </dataflow>
@@ -635,7 +635,7 @@ _Z16hysteresis_resetILi2EEvv.exit.i.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="61" from="StgValue_60" to="store_ln60" fromId="60" toId="9">
 </dataflow>
-<dataflow id="62" from="column_11" to="store_ln60" fromId="4" toId="9">
+<dataflow id="62" from="column" to="store_ln60" fromId="4" toId="9">
 </dataflow>
 <dataflow id="63" from="indvar_flatten27" to="indvar_flatten27_load" fromId="6" toId="11">
 </dataflow>
@@ -649,7 +649,7 @@ _Z16hysteresis_resetILi2EEvv.exit.i.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="70" from="icmp_ln59" to="br_ln59" fromId="12" toId="14">
 </dataflow>
-<dataflow id="71" from="column_11" to="column_11_load" fromId="4" toId="15">
+<dataflow id="71" from="column" to="column_load" fromId="4" toId="15">
 </dataflow>
 <dataflow id="72" from="row" to="row_load" fromId="5" toId="16">
 </dataflow>
@@ -665,7 +665,7 @@ _Z16hysteresis_resetILi2EEvv.exit.i.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="82" from="StgValue_79" to="speclooptripcount_ln0" fromId="79" toId="18">
 </dataflow>
-<dataflow id="83" from="column_11_load" to="icmp_ln60" fromId="15" toId="19">
+<dataflow id="83" from="column_load" to="icmp_ln60" fromId="15" toId="19">
 </dataflow>
 <dataflow id="85" from="StgValue_84" to="icmp_ln60" fromId="84" toId="19">
 </dataflow>
@@ -673,7 +673,7 @@ _Z16hysteresis_resetILi2EEvv.exit.i.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="87" from="StgValue_60" to="select_ln59_2" fromId="60" toId="20">
 </dataflow>
-<dataflow id="88" from="column_11_load" to="select_ln59_2" fromId="15" toId="20">
+<dataflow id="88" from="column_load" to="select_ln59_2" fromId="15" toId="20">
 </dataflow>
 <dataflow id="89" from="row_load" to="add_ln59_3" fromId="16" toId="21">
 </dataflow>
@@ -751,7 +751,7 @@ _Z16hysteresis_resetILi2EEvv.exit.i.exitStub:0 %ret_ln0 = ret
 </dataflow>
 <dataflow id="134" from="add_ln60" to="store_ln60" fromId="35" toId="38">
 </dataflow>
-<dataflow id="135" from="column_11" to="store_ln60" fromId="4" toId="38">
+<dataflow id="135" from="column" to="store_ln60" fromId="4" toId="38">
 </dataflow>
 <dataflow id="136" from="icmp_ln59" to="StgValue_2" fromId="12" toId="2">
 </dataflow>

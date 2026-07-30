@@ -261,7 +261,7 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>column_11</name>
+              <name>column_10</name>
               <fileName>../src/double_threshold.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>16</lineNumber>
@@ -2544,7 +2544,7 @@
           </second>
         </item>
         <item>
-          <first>ap_sig_allocacmp_column_11</first>
+          <first>ap_sig_allocacmp_column_10</first>
           <second>
             <count>5</count>
             <item_version>0</item_version>
@@ -3279,7 +3279,7 @@
       <count>3</count>
       <item_version>0</item_version>
       <item>
-        <first>column_11_load_fu_75</first>
+        <first>column_10_load_fu_75</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

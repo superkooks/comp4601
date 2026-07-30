@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21'" level="0">
-<item name = "Date">Wed Jul 29 23:33:20 2026
+<item name = "Date">Thu Jul 30 19:40:39 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -90,10 +90,10 @@
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
 <column name="ap_done_int">9, 2, 1, 2</column>
-<column name="ap_sig_allocacmp_column_11_load">9, 2, 10, 20</column>
+<column name="ap_sig_allocacmp_column_load">9, 2, 10, 20</column>
 <column name="ap_sig_allocacmp_indvar_flatten27_load">9, 2, 11, 22</column>
 <column name="ap_sig_allocacmp_row_load">9, 2, 2, 4</column>
-<column name="column_11_fu_44">9, 2, 10, 20</column>
+<column name="column_fu_44">9, 2, 10, 20</column>
 <column name="indvar_flatten27_fu_52">9, 2, 11, 22</column>
 <column name="row_fu_48">9, 2, 2, 4</column>
 </table>
@@ -102,7 +102,7 @@
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
 <column name="ap_CS_fsm">1, 0, 1, 0</column>
 <column name="ap_done_reg">1, 0, 1, 0</column>
-<column name="column_11_fu_44">10, 0, 10, 0</column>
+<column name="column_fu_44">10, 0, 10, 0</column>
 <column name="indvar_flatten27_fu_52">11, 0, 11, 0</column>
 <column name="row_fu_48">2, 0, 2, 0</column>
 </table>

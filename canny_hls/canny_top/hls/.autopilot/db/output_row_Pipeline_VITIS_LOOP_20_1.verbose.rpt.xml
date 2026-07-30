@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'output_row_Pipeline_VITIS_LOOP_20_1'" level="0">
-<item name = "Date">Wed Jul 29 23:33:32 2026
+<item name = "Date">Thu Jul 30 19:40:50 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>

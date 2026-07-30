@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold_Pipeline_VITIS_LOOP_16_1'
 ================================================================
-* Date:           Wed Jul 29 23:33:26 2026
+* Date:           Thu Jul 30 19:40:44 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -102,7 +102,7 @@
     +----------------------------+----+-----------+-----+-----------+
     |ap_done_int                 |   9|          2|    1|          2|
     |ap_enable_reg_pp0_iter1     |   9|          2|    1|          2|
-    |ap_sig_allocacmp_column_11  |   9|          2|   10|         20|
+    |ap_sig_allocacmp_column_10  |   9|          2|   10|         20|
     |column_fu_40                |   9|          2|   10|         20|
     +----------------------------+----+-----------+-----+-----------+
     |Total                       |  36|          8|   22|         44|
@@ -195,11 +195,11 @@ State 1 <SV = 0> <Delay = 1.66>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 6 'alloca' 'column' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 0, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 7 'store' 'store_ln16' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.body.i"   --->   Operation 8 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%column_11 = load i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 9 'load' 'column_11' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.78ns)   --->   "%icmp_ln16 = icmp_eq  i10 %column_11, i10 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 10 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 11 [1/1] (0.78ns)   --->   "%add_ln16 = add i10 %column_11, i10 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 11 'add' 'add_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%column_10 = load i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 9 'load' 'column_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.78ns)   --->   "%icmp_ln16 = icmp_eq  i10 %column_10, i10 512" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 10 'icmp' 'icmp_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.78ns)   --->   "%add_ln16 = add i10 %column_10, i10 1" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 11 'add' 'add_ln16' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%br_ln16 = br i1 %icmp_ln16, void %for.body.split.i, void %_Z16double_thresholdPKtPhbPb.4.exit.loopexit.exitStub" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 12 'br' 'br_ln16' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i10 %column_11" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 13 'zext' 'zext_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln16 = zext i10 %column_10" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 13 'zext' 'zext_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.00>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%out_nonmax_addr = getelementptr i11 %out_nonmax, i64 0, i64 %zext_ln16" [../src/double_threshold.cpp:17->../src/canny_top.cpp:33]   --->   Operation 14 'getelementptr' 'out_nonmax_addr' <Predicate = (!icmp_ln16)> <Delay = 0.00>
 ST_1 : Operation 15 [2/2] (1.23ns)   --->   "%magnitude = load i9 %out_nonmax_addr" [../src/double_threshold.cpp:17->../src/canny_top.cpp:33]   --->   Operation 15 'load' 'magnitude' <Predicate = (!icmp_ln16)> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 11> <Depth = 512> <RAM>
 ST_1 : Operation 16 [1/1] (0.42ns)   --->   "%store_ln16 = store i10 %add_ln16, i10 %column" [../src/double_threshold.cpp:16->../src/canny_top.cpp:33]   --->   Operation 16 'store' 'store_ln16' <Predicate = (!icmp_ln16)> <Delay = 0.42>
@@ -243,7 +243,7 @@ Port [ out_double]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0;
 column                 (alloca           ) [ 0100]
 store_ln16             (store            ) [ 0000]
 br_ln0                 (br               ) [ 0000]
-column_11              (load             ) [ 0000]
+column_10              (load             ) [ 0000]
 icmp_ln16              (icmp             ) [ 0110]
 add_ln16               (add              ) [ 0000]
 br_ln16                (br               ) [ 0000]
@@ -524,14 +524,14 @@ ret_ln0                (ret              ) [ 0000]
 </bind>
 </comp>
 
-<comp id="75" class="1004" name="column_11_load_fu_75">
+<comp id="75" class="1004" name="column_10_load_fu_75">
 <pin_list>
 <pin id="76" dir="0" index="0" bw="10" slack="0"/>
 <pin id="77" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="column_11/1 "/>
+<opset="column_10/1 "/>
 </bind>
 </comp>
 
@@ -784,7 +784,7 @@ ret_ln0                (ret              ) [ 0000]
   - Chain level:
 	State 1
 		store_ln16 : 1
-		column_11 : 1
+		column_10 : 1
 		icmp_ln16 : 2
 		add_ln16 : 2
 		br_ln16 : 3

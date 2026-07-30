@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22'
 ================================================================
-* Date:           Wed Jul 29 23:33:04 2026
+* Date:           Thu Jul 30 19:40:21 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -134,7 +134,7 @@ The critical path consists of the following:
 	'load' operation 10 bit ('column_load', ../src/hysteresis.cpp:60->../src/canny_top.cpp:48->../src/canny_top.cpp:10) on local variable 'column', ../src/hysteresis.cpp:60->../src/canny_top.cpp:48->../src/canny_top.cpp:10 [17]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln60', ../src/hysteresis.cpp:60->../src/canny_top.cpp:48->../src/canny_top.cpp:10) [21]  (0.787 ns)
 	'select' operation 2 bit ('select_ln59_2', ../src/hysteresis.cpp:59->../src/canny_top.cpp:48->../src/canny_top.cpp:10) [24]  (0.179 ns)
-	'store' operation ('store_ln61', ../src/hysteresis.cpp:61->../src/canny_top.cpp:48->../src/canny_top.cpp:10) of constant 0 8 bit on array 'p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1' [32]  (1.237 ns)
+	'store' operation ('store_ln61', ../src/hysteresis.cpp:61->../src/canny_top.cpp:48->../src/canny_top.cpp:10) of constant 0 8 bit on array 'p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2' [38]  (1.237 ns)
 	blocking operation 0.548 ns on control path)
 
 

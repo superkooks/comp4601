@@ -233,7 +233,7 @@ end
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U144(
+sparsemux_7_2_11_1_1_U151(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_q0),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_q0),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_q0),
@@ -254,7 +254,7 @@ sparsemux_7_2_11_1_1_U144(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U145(
+sparsemux_7_2_11_1_1_U152(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_q0),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_q0),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_q0),
@@ -275,7 +275,7 @@ sparsemux_7_2_11_1_1_U145(
     .def_WIDTH( 11 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 11 ))
-sparsemux_7_2_11_1_1_U146(
+sparsemux_7_2_11_1_1_U153(
     .din0(p_anonymous_namespace_lineBuffer_magnitude_0_q0),
     .din1(p_anonymous_namespace_lineBuffer_magnitude_1_q0),
     .din2(p_anonymous_namespace_lineBuffer_magnitude_2_q0),
@@ -296,7 +296,7 @@ sparsemux_7_2_11_1_1_U146(
     .def_WIDTH( 2 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 2 ))
-sparsemux_7_2_2_1_1_U147(
+sparsemux_7_2_2_1_1_U154(
     .din0(p_anonymous_namespace_lineBuffer_direction_0_q0),
     .din1(p_anonymous_namespace_lineBuffer_direction_1_q0),
     .din2(p_anonymous_namespace_lineBuffer_direction_2_q0),

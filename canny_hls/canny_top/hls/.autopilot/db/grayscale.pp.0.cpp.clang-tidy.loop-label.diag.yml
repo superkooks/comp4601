@@ -3,14 +3,14 @@ MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.aut
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_7_1:  '
+      Message:         'Added loop label VITIS_LOOP_22_1:  '
       FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\grayscale.cpp'
-      FileOffset:      7
+      FileOffset:      22
       Replacements:
         - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\grayscale.pp.0.cpp'
-          Offset:          22053
+          Offset:          36236
           Length:          0
-          ReplacementText: 'VITIS_LOOP_7_1: '
+          ReplacementText: 'VITIS_LOOP_22_1: '
     Level:           Remark
     BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
 ...

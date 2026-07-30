@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale'" level="0">
-<item name = "Date">Wed Jul 29 23:33:06 2026
+<item name = "Date">Thu Jul 30 19:40:23 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1615, 1615, 8.075 us, 8.075 us, 1615, 1615, no</column>
+<column name="">2132, 2132, 10.660 us, 10.660 us, 2132, 2132, no</column>
 </table>
 </item>
 <item name = "Detail">

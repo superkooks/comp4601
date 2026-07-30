@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2'
 ================================================================
-* Date:           Wed Jul 29 23:33:00 2026
+* Date:           Thu Jul 30 19:40:19 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -140,7 +140,7 @@ The critical path consists of the following:
 	'load' operation 10 bit ('column_load', ../src/gaussian_blur.cpp:48->../src/canny_top.cpp:43->../src/canny_top.cpp:10) on local variable 'column', ../src/gaussian_blur.cpp:48->../src/canny_top.cpp:43->../src/canny_top.cpp:10 [19]  (0.000 ns)
 	'icmp' operation 1 bit ('icmp_ln48', ../src/gaussian_blur.cpp:48->../src/canny_top.cpp:43->../src/canny_top.cpp:10) [23]  (0.787 ns)
 	'select' operation 3 bit ('select_ln47_1', ../src/gaussian_blur.cpp:47->../src/canny_top.cpp:43->../src/canny_top.cpp:10) [26]  (0.208 ns)
-	'store' operation ('store_ln49', ../src/gaussian_blur.cpp:49->../src/canny_top.cpp:43->../src/canny_top.cpp:10) of constant 0 12 bit on array 'p_anonymous_namespace_lineBuffer_39_0' [45]  (1.237 ns)
+	'store' operation ('store_ln49', ../src/gaussian_blur.cpp:49->../src/canny_top.cpp:43->../src/canny_top.cpp:10) of constant 0 12 bit on array 'p_anonymous_namespace_lineBuffer_39_4' [48]  (1.237 ns)
 	blocking operation 0.6725 ns on control path)
 
 

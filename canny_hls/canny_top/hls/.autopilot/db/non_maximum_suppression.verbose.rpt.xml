@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'non_maximum_suppression'" level="0">
-<item name = "Date">Wed Jul 29 23:33:26 2026
+<item name = "Date">Thu Jul 30 19:40:44 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -65,17 +65,17 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_112_4_fu_196">non_maximum_suppression_Pipeline_VITIS_LOOP_112_4, 0, 0, 132, 536, 0</column>
 <column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_57_1_fu_175">non_maximum_suppression_Pipeline_VITIS_LOOP_57_1, 0, 0, 67, 73, 0</column>
-<column name="sparsemux_7_2_11_1_1_U173">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_11_1_1_U174">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_11_1_1_U176">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_11_1_1_U177">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_11_1_1_U178">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
 <column name="sparsemux_7_2_11_1_1_U180">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_2_1_1_U175">sparsemux_7_2_2_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_2_1_1_U179">sparsemux_7_2_2_1_1, 0, 0, 0, 9, 0</column>
-<column name="srem_32ns_3ns_32_36_seq_1_U170">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_3ns_32_36_seq_1_U171">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="urem_32ns_3ns_2_36_seq_1_U172">urem_32ns_3ns_2_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="sparsemux_7_2_11_1_1_U181">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U183">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U184">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U185">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_11_1_1_U187">sparsemux_7_2_11_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_2_1_1_U182">sparsemux_7_2_2_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_2_1_1_U186">sparsemux_7_2_2_1_1, 0, 0, 0, 9, 0</column>
+<column name="srem_32ns_3ns_32_36_seq_1_U177">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_3ns_32_36_seq_1_U178">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="urem_32ns_3ns_2_36_seq_1_U179">urem_32ns_3ns_2_36_seq_1, 0, 0, 394, 238, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

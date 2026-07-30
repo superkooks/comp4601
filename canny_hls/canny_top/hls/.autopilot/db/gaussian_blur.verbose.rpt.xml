@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'gaussian_blur'" level="0">
-<item name = "Date">Wed Jul 29 23:33:23 2026
+<item name = "Date">Thu Jul 30 19:40:42 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -65,12 +65,12 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_125_6_fu_138">gaussian_blur_Pipeline_VITIS_LOOP_125_6, 0, 0, 63, 298, 0</column>
 <column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_76_2_fu_118">gaussian_blur_Pipeline_VITIS_LOOP_76_2, 0, 0, 88, 245, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U69">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U70">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U71">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U72">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_32_36_seq_1_U73">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_4ns_4_36_seq_1_U68">srem_32ns_4ns_4_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U76">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U77">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U78">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U79">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_32_36_seq_1_U80">srem_32ns_4ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_4ns_4_36_seq_1_U75">srem_32ns_4ns_4_36_seq_1, 0, 0, 394, 238, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -90,10 +90,10 @@
 <column name="add_ln120_1_fu_254_p2">+, 0, 0, 39, 32, 3</column>
 <column name="add_ln120_2_fu_338_p2">+, 0, 0, 39, 32, 2</column>
 <column name="add_ln120_fu_199_p2">+, 0, 0, 39, 32, 4</column>
-<column name="add_ln29_1_fu_531_p2">+, 0, 0, 10, 3, 3</column>
-<column name="add_ln29_2_fu_558_p2">+, 0, 0, 10, 3, 3</column>
-<column name="add_ln29_3_fu_585_p2">+, 0, 0, 10, 3, 3</column>
-<column name="add_ln29_4_fu_478_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln29_2_fu_531_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln29_3_fu_558_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln29_4_fu_585_p2">+, 0, 0, 10, 3, 3</column>
+<column name="add_ln29_5_fu_478_p2">+, 0, 0, 10, 3, 3</column>
 <column name="add_ln29_fu_504_p2">+, 0, 0, 10, 3, 3</column>
 <column name="add_ln99_fu_169_p2">+, 0, 0, 39, 32, 1</column>
 <column name="outputRow_fu_186_p2">+, 0, 0, 39, 32, 3</column>

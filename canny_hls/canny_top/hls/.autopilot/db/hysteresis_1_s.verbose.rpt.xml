@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hysteresis_1_s'" level="0">
-<item name = "Date">Wed Jul 29 23:33:26 2026
+<item name = "Date">Thu Jul 30 19:40:46 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -65,15 +65,15 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_hysteresis_1_Pipeline_VITIS_LOOP_154_4_fu_131">hysteresis_1_Pipeline_VITIS_LOOP_154_4, 0, 0, 99, 515, 0</column>
 <column name="grp_hysteresis_1_Pipeline_VITIS_LOOP_89_1_fu_118">hysteresis_1_Pipeline_VITIS_LOOP_89_1, 0, 0, 40, 73, 0</column>
-<column name="sparsemux_7_2_8_1_1_U224">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U226">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U227">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U229">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_x_U225">sparsemux_7_2_8_1_1_x, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_x_U228">sparsemux_7_2_8_1_1_x, 0, 0, 0, 9, 0</column>
-<column name="srem_32ns_3ns_32_36_seq_1_U221">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="srem_32ns_3ns_32_36_seq_1_U222">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
-<column name="urem_32ns_3ns_2_36_seq_1_U223">urem_32ns_3ns_2_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="sparsemux_7_2_8_1_1_U231">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U233">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U234">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U236">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_x_U232">sparsemux_7_2_8_1_1_x, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_x_U235">sparsemux_7_2_8_1_1_x, 0, 0, 0, 9, 0</column>
+<column name="srem_32ns_3ns_32_36_seq_1_U228">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="srem_32ns_3ns_32_36_seq_1_U229">srem_32ns_3ns_32_36_seq_1, 0, 0, 394, 238, 0</column>
+<column name="urem_32ns_3ns_2_36_seq_1_U230">urem_32ns_3ns_2_36_seq_1, 0, 0, 394, 238, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

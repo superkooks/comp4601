@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hysteresis_3_Pipeline_VITIS_LOOP_89_1'
 ================================================================
-* Date:           Wed Jul 29 23:33:14 2026
+* Date:           Thu Jul 30 19:40:33 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -132,7 +132,7 @@ The critical path consists of the following:
  <State 2>: 2.474ns
 The critical path consists of the following:
 	'load' operation 8 bit ('out_hysteresis2_load', ../src/hysteresis.cpp:91->../src/canny_top.cpp:36) on array 'out_hysteresis2' [21]  (1.237 ns)
-	'store' operation ('store_ln91', ../src/hysteresis.cpp:91->../src/canny_top.cpp:36) of variable 'out_hysteresis2_load', ../src/hysteresis.cpp:91->../src/canny_top.cpp:36 8 bit on array 'p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1' [30]  (1.237 ns)
+	'store' operation ('store_ln91', ../src/hysteresis.cpp:91->../src/canny_top.cpp:36) of variable 'out_hysteresis2_load', ../src/hysteresis.cpp:91->../src/canny_top.cpp:36 8 bit on array 'p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2' [27]  (1.237 ns)
 
 
 ============================================================

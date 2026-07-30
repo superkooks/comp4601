@@ -3983,8 +3983,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>2185</mMinLatency>
-        <mMaxLatency>10437</mMaxLatency>
+        <mMinLatency>2702</mMinLatency>
+        <mMaxLatency>10954</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_180">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -6436,19 +6436,27 @@
         <item>
           <first>grayscale_U0 (grayscale)</first>
           <second>
-            <count>3</count>
+            <count>5</count>
             <item_version>0</item_version>
+            <item>
+              <first>BRAM</first>
+              <second>3</second>
+            </item>
             <item>
               <first>DSP</first>
               <second>2</second>
             </item>
             <item>
               <first>FF</first>
-              <second>1231</second>
+              <second>1314</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>7498</second>
+              <second>7721</second>
+            </item>
+            <item>
+              <first>URAM</first>
+              <second>0</second>
             </item>
           </second>
         </item>

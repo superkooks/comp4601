@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold'
 ================================================================
-* Date:           Wed Jul 29 23:33:10 2026
+* Date:           Thu Jul 30 19:40:29 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -76,13 +76,13 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 2.25>
-ST_1 : Operation 3 [1/1] (1.82ns)   --->   "%p_read_8 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read" [../src/double_threshold.cpp:6->../src/canny_top.cpp:33]   --->   Operation 3 'read' 'p_read_8' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
-ST_1 : Operation 4 [1/1] (0.42ns)   --->   "%br_ln11 = br i1 %p_read_8, void %_Z16double_thresholdPKtPhbPb.4.exit, void %for.body.i.preheader" [../src/double_threshold.cpp:11->../src/canny_top.cpp:33]   --->   Operation 4 'br' 'br_ln11' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i11 %out_nonmax, i8 %out_double"   --->   Operation 5 'call' 'call_ln0' <Predicate = (p_read_8)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_1 : Operation 3 [1/1] (1.82ns)   --->   "%p_read_9 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %p_read" [../src/double_threshold.cpp:6->../src/canny_top.cpp:33]   --->   Operation 3 'read' 'p_read_9' <Predicate = true> <Delay = 1.82> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 1> <Depth = 2> <FIFO>
+ST_1 : Operation 4 [1/1] (0.42ns)   --->   "%br_ln11 = br i1 %p_read_9, void %_Z16double_thresholdPKtPhbPb.4.exit, void %for.body.i.preheader" [../src/double_threshold.cpp:11->../src/canny_top.cpp:33]   --->   Operation 4 'br' 'br_ln11' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 5 [2/2] (0.00ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i11 %out_nonmax, i8 %out_double"   --->   Operation 5 'call' 'call_ln0' <Predicate = (p_read_9)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 2 <SV = 1> <Delay = 0.42>
-ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i11 %out_nonmax, i8 %out_double"   --->   Operation 6 'call' 'call_ln0' <Predicate = (p_read_8)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 7 [1/1] (0.42ns)   --->   "%br_ln0 = br void %_Z16double_thresholdPKtPhbPb.4.exit"   --->   Operation 7 'br' 'br_ln0' <Predicate = (p_read_8)> <Delay = 0.42>
+ST_2 : Operation 6 [1/2] (0.00ns)   --->   "%call_ln0 = call void @double_threshold_Pipeline_VITIS_LOOP_16_1, i11 %out_nonmax, i8 %out_double"   --->   Operation 6 'call' 'call_ln0' <Predicate = (p_read_9)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 7 [1/1] (0.42ns)   --->   "%br_ln0 = br void %_Z16double_thresholdPKtPhbPb.4.exit"   --->   Operation 7 'br' 'br_ln0' <Predicate = (p_read_9)> <Delay = 0.42>
 ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%valid_out_write_assign = phi i1 0, void %newFuncRoot, i1 1, void %for.body.i.preheader"   --->   Operation 8 'phi' 'valid_out_write_assign' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%ret_ln0 = ret i1 %valid_out_write_assign"   --->   Operation 9 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
 
@@ -94,7 +94,7 @@ Target clock period: 5.000ns, clock uncertainty: 1.350ns.
 
  <State 1>: 2.252ns
 The critical path consists of the following:
-	wire read operation ('p_read_8', ../src/double_threshold.cpp:6->../src/canny_top.cpp:33) on port 'p_read' (../src/double_threshold.cpp:6->../src/canny_top.cpp:33) [4]  (1.825 ns)
+	wire read operation ('p_read_9', ../src/double_threshold.cpp:6->../src/canny_top.cpp:33) on port 'p_read' (../src/double_threshold.cpp:6->../src/canny_top.cpp:33) [4]  (1.825 ns)
 	multiplexor before 'phi' operation 1 bit ('valid_out') [10]  (0.427 ns)
 	'br' operation ('br_ln11', ../src/double_threshold.cpp:11->../src/canny_top.cpp:33) [5]  (0.427 ns)
 

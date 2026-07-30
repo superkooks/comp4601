@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'double_threshold'
 ================================================================
-* Date:           Wed Jul 29 23:33:26 2026
+* Date:           Thu Jul 30 19:40:44 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -115,7 +115,7 @@
     |ap_CS_fsm                                                         |  2|   0|    2|          0|
     |ap_done_reg                                                       |  1|   0|    1|          0|
     |grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg  |  1|   0|    1|          0|
-    |p_read_8_reg_40                                                   |  1|   0|    1|          0|
+    |p_read_9_reg_40                                                   |  1|   0|    1|          0|
     |valid_out_write_assign_reg_20                                     |  1|   0|    1|          0|
     +------------------------------------------------------------------+---+----+-----+-----------+
     |Total                                                             |  6|   0|    6|          0|

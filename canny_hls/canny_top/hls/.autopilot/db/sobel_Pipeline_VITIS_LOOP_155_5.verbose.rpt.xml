@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel_Pipeline_VITIS_LOOP_155_5'" level="0">
-<item name = "Date">Wed Jul 29 23:33:24 2026
+<item name = "Date">Thu Jul 30 19:40:42 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -62,13 +62,13 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_10ns_10ns_19_1_1_U93">mul_10ns_10ns_19_1_1, 0, 0, 0, 62, 0</column>
-<column name="mul_10ns_11ns_20_1_1_U92">mul_10ns_11ns_20_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_10ns_13ns_22_1_1_U94">mul_10ns_13ns_22_1_1, 0, 1, 0, 5, 0</column>
-<column name="sparsemux_7_2_8_1_1_U89">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U90">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U91">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_9_3_2_1_1_U95">sparsemux_9_3_2_1_1, 0, 0, 0, 14, 0</column>
+<column name="mul_10ns_10ns_19_1_1_U100">mul_10ns_10ns_19_1_1, 0, 0, 0, 62, 0</column>
+<column name="mul_10ns_11ns_20_1_1_U99">mul_10ns_11ns_20_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_10ns_13ns_22_1_1_U101">mul_10ns_13ns_22_1_1, 0, 1, 0, 5, 0</column>
+<column name="sparsemux_7_2_8_1_1_U96">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U97">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U98">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_9_3_2_1_1_U102">sparsemux_9_3_2_1_1, 0, 0, 0, 14, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

@@ -128,7 +128,7 @@
             <Obj>
               <type>0</type>
               <id>4</id>
-              <name>p_read_8</name>
+              <name>p_read_9</name>
               <fileName>../src/double_threshold.cpp</fileName>
               <fileDirectory>../.</fileDirectory>
               <lineNumber>6</lineNumber>
@@ -1067,7 +1067,7 @@
           </second>
         </item>
         <item>
-          <first>p_read_8_reg_40</first>
+          <first>p_read_9_reg_40</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -1274,7 +1274,7 @@
       <count>1</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read_8_read_fu_14</first>
+        <first>p_read_9_read_fu_14</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -1322,7 +1322,7 @@
       <count>2</count>
       <item_version>0</item_version>
       <item>
-        <first>p_read_8_reg_40</first>
+        <first>p_read_9_reg_40</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

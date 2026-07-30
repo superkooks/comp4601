@@ -128,7 +128,7 @@
 					<Obj>
 						<type>0</type>
 						<id>4</id>
-						<name>p_read_8</name>
+						<name>p_read_9</name>
 						<fileName>../src/double_threshold.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
 						<lineNumber>6</lineNumber>

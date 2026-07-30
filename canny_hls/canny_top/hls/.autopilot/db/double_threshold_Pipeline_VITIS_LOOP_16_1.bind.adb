@@ -261,7 +261,7 @@
 					<Obj>
 						<type>0</type>
 						<id>7</id>
-						<name>column_11</name>
+						<name>column_10</name>
 						<fileName>../src/double_threshold.cpp</fileName>
 						<fileDirectory>C:\Users\twhsaw\Projects\comp4601\canny_hls</fileDirectory>
 						<lineNumber>16</lineNumber>
@@ -2705,7 +2705,7 @@
 		<count>3</count>
 		<item_version>0</item_version>
 		<item>
-			<first>column_11_load_fu_75</first>
+			<first>column_10_load_fu_75</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

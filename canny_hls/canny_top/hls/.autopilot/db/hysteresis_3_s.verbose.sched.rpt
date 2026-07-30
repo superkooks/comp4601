@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hysteresis_3_s'
 ================================================================
-* Date:           Wed Jul 29 23:33:16 2026
+* Date:           Thu Jul 30 19:40:33 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -749,7 +749,7 @@ The critical path consists of the following:
 	'srem' operation 32 bit ('result', ../src/hysteresis.cpp:17->../src/hysteresis.cpp:113->../src/canny_top.cpp:36) [24]  (1.476 ns)
 	'add' operation 2 bit ('add_ln18', ../src/hysteresis.cpp:18->../src/hysteresis.cpp:113->../src/canny_top.cpp:36) [27]  (0.548 ns)
 	'select' operation 2 bit ('select_ln18', ../src/hysteresis.cpp:18->../src/hysteresis.cpp:113->../src/canny_top.cpp:36) [28]  (0.179 ns)
-	'sparsemux' operation 8 bit ('tmp_19', ../src/hysteresis.cpp:150->../src/canny_top.cpp:36) [48]  (0.427 ns)
+	'sparsemux' operation 8 bit ('tmp', ../src/hysteresis.cpp:150->../src/canny_top.cpp:36) [42]  (0.427 ns)
 	'call' operation ('call_ln150', ../src/hysteresis.cpp:150->../src/canny_top.cpp:36) to 'hysteresis<3>_Pipeline_VITIS_LOOP_154_4' [51]  (1.006 ns)
 
  <State 73>: 0.427ns

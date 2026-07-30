@@ -11,14 +11,19 @@ set SynModuleInfo {
   {SRCNAME canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22 MODELNAME canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22}
   {SRCNAME canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23 MODELNAME canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23 RTLNAME canny_top_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23}
   {SRCNAME dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc MODELNAME dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc RTLNAME canny_top_dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc}
-  {SRCNAME grayscale_Pipeline_VITIS_LOOP_7_1 MODELNAME grayscale_Pipeline_VITIS_LOOP_7_1 RTLNAME canny_top_grayscale_Pipeline_VITIS_LOOP_7_1
+  {SRCNAME grayscale_Pipeline_1 MODELNAME grayscale_Pipeline_1 RTLNAME canny_top_grayscale_Pipeline_1}
+  {SRCNAME grayscale_Pipeline_VITIS_LOOP_22_1 MODELNAME grayscale_Pipeline_VITIS_LOOP_22_1 RTLNAME canny_top_grayscale_Pipeline_VITIS_LOOP_22_1
     SUBMODULES {
       {MODELNAME canny_top_mul_8ns_8ns_15_1_1 RTLNAME canny_top_mul_8ns_8ns_15_1_1 BINDTYPE op TYPE mul IMPL auto LATENCY 0 ALLOW_PRAGMA 1}
       {MODELNAME canny_top_mac_muladd_8ns_5ns_15s_15_4_1 RTLNAME canny_top_mac_muladd_8ns_5ns_15s_15_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
       {MODELNAME canny_top_mac_muladd_8ns_8ns_15ns_16_4_1 RTLNAME canny_top_mac_muladd_8ns_8ns_15ns_16_4_1 BINDTYPE op TYPE all IMPL dsp_slice LATENCY 3}
     }
   }
-  {SRCNAME grayscale MODELNAME grayscale RTLNAME canny_top_grayscale}
+  {SRCNAME grayscale MODELNAME grayscale RTLNAME canny_top_grayscale
+    SUBMODULES {
+      {MODELNAME canny_top_grayscale_local_blue_RAM_AUTO_1R1W RTLNAME canny_top_grayscale_local_blue_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
+    }
+  }
   {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_76_2 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_76_2 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_76_2}
   {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_125_6 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_125_6 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_125_6
     SUBMODULES {

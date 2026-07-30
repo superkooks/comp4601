@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21'
 ================================================================
-* Date:           Wed Jul 29 23:33:20 2026
+* Date:           Thu Jul 30 19:40:39 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -101,10 +101,10 @@
     |                  Name                  | LUT| Input Size| Bits| Total Bits|
     +----------------------------------------+----+-----------+-----+-----------+
     |ap_done_int                             |   9|          2|    1|          2|
-    |ap_sig_allocacmp_column_11_load         |   9|          2|   10|         20|
+    |ap_sig_allocacmp_column_load            |   9|          2|   10|         20|
     |ap_sig_allocacmp_indvar_flatten27_load  |   9|          2|   11|         22|
     |ap_sig_allocacmp_row_load               |   9|          2|    2|          4|
-    |column_11_fu_44                         |   9|          2|   10|         20|
+    |column_fu_44                            |   9|          2|   10|         20|
     |indvar_flatten27_fu_52                  |   9|          2|   11|         22|
     |row_fu_48                               |   9|          2|    2|          4|
     +----------------------------------------+----+-----------+-----+-----------+
@@ -117,7 +117,7 @@
     +------------------------+----+----+-----+-----------+
     |ap_CS_fsm               |   1|   0|    1|          0|
     |ap_done_reg             |   1|   0|    1|          0|
-    |column_11_fu_44         |  10|   0|   10|          0|
+    |column_fu_44            |  10|   0|   10|          0|
     |indvar_flatten27_fu_52  |  11|   0|   11|          0|
     |row_fu_48               |   2|   0|    2|          0|
     +------------------------+----+----+-----+-----------+
@@ -193,23 +193,23 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 3.17>
-ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%column_11 = alloca i32 1" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 4 'alloca' 'column_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 4 'alloca' 'column' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%row = alloca i32 1" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 5 'alloca' 'row' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%indvar_flatten27 = alloca i32 1"   --->   Operation 6 'alloca' 'indvar_flatten27' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.42ns)   --->   "%store_ln0 = store i11 0, i11 %indvar_flatten27"   --->   Operation 7 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 8 [1/1] (0.42ns)   --->   "%store_ln59 = store i2 0, i2 %row" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 8 'store' 'store_ln59' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 9 [1/1] (0.42ns)   --->   "%store_ln60 = store i10 0, i10 %column_11" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 9 'store' 'store_ln60' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 9 [1/1] (0.42ns)   --->   "%store_ln60 = store i10 0, i10 %column" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 9 'store' 'store_ln60' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc.i29.i"   --->   Operation 10 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%indvar_flatten27_load = load i11 %indvar_flatten27" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 11 'load' 'indvar_flatten27_load' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 12 [1/1] (0.79ns)   --->   "%icmp_ln59 = icmp_eq  i11 %indvar_flatten27_load, i11 1536" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 12 'icmp' 'icmp_ln59' <Predicate = true> <Delay = 0.79> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 13 [1/1] (0.79ns)   --->   "%add_ln59 = add i11 %indvar_flatten27_load, i11 1" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 13 'add' 'add_ln59' <Predicate = true> <Delay = 0.79> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%br_ln59 = br i1 %icmp_ln59, void %for.inc7.i32.i, void %_Z16hysteresis_resetILi2EEvv.exit.i.exitStub" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 14 'br' 'br_ln59' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%column_11_load = load i10 %column_11" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 15 'load' 'column_11_load' <Predicate = (!icmp_ln59)> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%column_load = load i10 %column" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 15 'load' 'column_load' <Predicate = (!icmp_ln59)> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%row_load = load i2 %row" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 16 'load' 'row_load' <Predicate = (!icmp_ln59)> <Delay = 0.00>
 ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specloopname_ln0 = specloopname void @_ssdm_op_SpecLoopName, void @VITIS_LOOP_59_1_VITIS_LOOP_60_2_str"   --->   Operation 17 'specloopname' 'specloopname_ln0' <Predicate = (!icmp_ln59)> <Delay = 0.00>
 ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1536, i64 1536, i64 1536"   --->   Operation 18 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = (!icmp_ln59)> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.78ns)   --->   "%icmp_ln60 = icmp_eq  i10 %column_11_load, i10 512" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 19 'icmp' 'icmp_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_1 : Operation 20 [1/1] (0.40ns)   --->   "%select_ln59_2 = select i1 %icmp_ln60, i10 0, i10 %column_11_load" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 20 'select' 'select_ln59_2' <Predicate = (!icmp_ln59)> <Delay = 0.40> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.78ns)   --->   "%icmp_ln60 = icmp_eq  i10 %column_load, i10 512" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 19 'icmp' 'icmp_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (0.40ns)   --->   "%select_ln59_2 = select i1 %icmp_ln60, i10 0, i10 %column_load" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 20 'select' 'select_ln59_2' <Predicate = (!icmp_ln59)> <Delay = 0.40> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_1 : Operation 21 [1/1] (0.54ns)   --->   "%add_ln59_3 = add i2 %row_load, i2 1" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 21 'add' 'add_ln59_3' <Predicate = (!icmp_ln59)> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 22 [1/1] (0.17ns)   --->   "%select_ln59 = select i1 %icmp_ln60, i2 %add_ln59_3, i2 %row_load" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 22 'select' 'select_ln59' <Predicate = (!icmp_ln59)> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%zext_ln60 = zext i10 %select_ln59_2" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 23 'zext' 'zext_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.00>
@@ -227,7 +227,7 @@ ST_1 : Operation 34 [1/1] (0.00ns)   --->   "%br_ln61 = br void %arrayidx61.i26.
 ST_1 : Operation 35 [1/1] (0.78ns)   --->   "%add_ln60 = add i10 %select_ln59_2, i10 1" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 35 'add' 'add_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_1 : Operation 36 [1/1] (0.42ns)   --->   "%store_ln59 = store i11 %add_ln59, i11 %indvar_flatten27" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 36 'store' 'store_ln59' <Predicate = (!icmp_ln59)> <Delay = 0.42>
 ST_1 : Operation 37 [1/1] (0.42ns)   --->   "%store_ln59 = store i2 %select_ln59, i2 %row" [../src/hysteresis.cpp:59->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 37 'store' 'store_ln59' <Predicate = (!icmp_ln59)> <Delay = 0.42>
-ST_1 : Operation 38 [1/1] (0.42ns)   --->   "%store_ln60 = store i10 %add_ln60, i10 %column_11" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 38 'store' 'store_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.42>
+ST_1 : Operation 38 [1/1] (0.42ns)   --->   "%store_ln60 = store i10 %add_ln60, i10 %column" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 38 'store' 'store_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.42>
 ST_1 : Operation 39 [1/1] (0.00ns)   --->   "%br_ln60 = br void %for.inc.i29.i" [../src/hysteresis.cpp:60->../src/canny_top.cpp:47->../src/canny_top.cpp:10]   --->   Operation 39 'br' 'br_ln60' <Predicate = (!icmp_ln59)> <Delay = 0.00>
 ST_1 : Operation 40 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 40 'ret' 'ret_ln0' <Predicate = (icmp_ln59)> <Delay = 0.42>
 
@@ -252,7 +252,7 @@ Port [ p_ZN12_GLOBAL_N_110lineBufferILi2EEE_2]:  wired=1; compound=1; hidden=0; 
 
 <LifeTime>
 <method=bitvector/>
-column_11                                   (alloca           ) [ 01]
+column                                      (alloca           ) [ 01]
 row                                         (alloca           ) [ 01]
 indvar_flatten27                            (alloca           ) [ 01]
 store_ln0                                   (store            ) [ 00]
@@ -263,7 +263,7 @@ indvar_flatten27_load                       (load             ) [ 00]
 icmp_ln59                                   (icmp             ) [ 01]
 add_ln59                                    (add              ) [ 00]
 br_ln59                                     (br               ) [ 00]
-column_11_load                              (load             ) [ 00]
+column_load                                 (load             ) [ 00]
 row_load                                    (load             ) [ 00]
 specloopname_ln0                            (specloopname     ) [ 00]
 speclooptripcount_ln0                       (speclooptripcount) [ 00]
@@ -495,14 +495,14 @@ ret_ln0                                     (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="44" class="1004" name="column_11_fu_44">
+<comp id="44" class="1004" name="column_fu_44">
 <pin_list>
 <pin id="45" dir="0" index="0" bw="1" slack="0"/>
 <pin id="46" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
-<opset="column_11/1 "/>
+<opset="column/1 "/>
 </bind>
 </comp>
 
@@ -677,14 +677,14 @@ ret_ln0                                     (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="128" class="1004" name="column_11_load_load_fu_128">
+<comp id="128" class="1004" name="column_load_load_fu_128">
 <pin_list>
 <pin id="129" dir="0" index="0" bw="10" slack="0"/>
 <pin id="130" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
-<opset="column_11_load/1 "/>
+<opset="column_load/1 "/>
 </bind>
 </comp>
 
@@ -821,13 +821,13 @@ ret_ln0                                     (ret              ) [ 00]
 </bind>
 </comp>
 
-<comp id="198" class="1005" name="column_11_reg_198">
+<comp id="198" class="1005" name="column_reg_198">
 <pin_list>
 <pin id="199" dir="0" index="0" bw="10" slack="0"/>
 <pin id="200" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
-<opset="column_11 "/>
+<opset="column "/>
 </bind>
 </comp>
 
@@ -989,7 +989,7 @@ ret_ln0                                     (ret              ) [ 00]
 		icmp_ln59 : 2
 		add_ln59 : 2
 		br_ln59 : 3
-		column_11_load : 1
+		column_load : 1
 		row_load : 1
 		icmp_ln60 : 2
 		select_ln59_2 : 3
@@ -1041,7 +1041,7 @@ N/A
 +------------------------+--------+
 |                        |   FF   |
 +------------------------+--------+
-|    column_11_reg_198   |   10   |
+|     column_reg_198     |   10   |
 |indvar_flatten27_reg_212|   11   |
 |       row_reg_205      |    2   |
 +------------------------+--------+

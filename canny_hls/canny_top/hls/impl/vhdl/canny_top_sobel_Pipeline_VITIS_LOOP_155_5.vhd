@@ -352,7 +352,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_7_2_8_1_1_U89 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U96 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -373,7 +373,7 @@ begin
         sel => result,
         dout => tmp_7_fu_583_p9);
 
-    sparsemux_7_2_8_1_1_U90 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U97 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -394,7 +394,7 @@ begin
         sel => result_1,
         dout => tmp_8_fu_602_p9);
 
-    sparsemux_7_2_8_1_1_U91 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U98 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -415,7 +415,7 @@ begin
         sel => result_2,
         dout => tmp_9_fu_621_p9);
 
-    mul_10ns_11ns_20_1_1_U92 : component canny_top_mul_10ns_11ns_20_1_1
+    mul_10ns_11ns_20_1_1_U99 : component canny_top_mul_10ns_11ns_20_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -427,7 +427,7 @@ begin
         din1 => mul_ln46_fu_741_p1,
         dout => mul_ln46_fu_741_p2);
 
-    mul_10ns_10ns_19_1_1_U93 : component canny_top_mul_10ns_10ns_19_1_1
+    mul_10ns_10ns_19_1_1_U100 : component canny_top_mul_10ns_10ns_19_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -439,7 +439,7 @@ begin
         din1 => mul_ln46_1_fu_755_p1,
         dout => mul_ln46_1_fu_755_p2);
 
-    mul_10ns_13ns_22_1_1_U94 : component canny_top_mul_10ns_13ns_22_1_1
+    mul_10ns_13ns_22_1_1_U101 : component canny_top_mul_10ns_13ns_22_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -451,7 +451,7 @@ begin
         din1 => mul_ln50_fu_771_p1,
         dout => mul_ln50_fu_771_p2);
 
-    sparsemux_9_3_2_1_1_U95 : component canny_top_sparsemux_9_3_2_1_1
+    sparsemux_9_3_2_1_1_U102 : component canny_top_sparsemux_9_3_2_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

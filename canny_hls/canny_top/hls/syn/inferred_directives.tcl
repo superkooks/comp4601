@@ -1,7 +1,7 @@
 # Inferred from syn.compile.pipeline_loops=64
 set_directive_pipeline output_row/VITIS_LOOP_20_1
 set_directive_pipeline double_threshold/VITIS_LOOP_16_1
-set_directive_pipeline grayscale/VITIS_LOOP_7_1
+set_directive_pipeline grayscale/anonymous
 set_directive_pipeline canny_top/VITIS_LOOP_48_2
 set_directive_pipeline canny_top/VITIS_LOOP_80_2
 set_directive_pipeline canny_top/VITIS_LOOP_33_2

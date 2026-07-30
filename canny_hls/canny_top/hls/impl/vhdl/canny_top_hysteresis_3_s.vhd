@@ -783,7 +783,7 @@ begin
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 => grp_hysteresis_3_Pipeline_VITIS_LOOP_154_4_fu_131_p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0,
         p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0 => p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0);
 
-    srem_32ns_3ns_32_36_seq_1_U297 : component canny_top_srem_32ns_3ns_32_36_seq_1
+    srem_32ns_3ns_32_36_seq_1_U304 : component canny_top_srem_32ns_3ns_32_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -800,7 +800,7 @@ begin
         ce => grp_fu_157_ce,
         dout => grp_fu_157_p2);
 
-    srem_32ns_3ns_32_36_seq_1_U298 : component canny_top_srem_32ns_3ns_32_36_seq_1
+    srem_32ns_3ns_32_36_seq_1_U305 : component canny_top_srem_32ns_3ns_32_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -817,7 +817,7 @@ begin
         ce => grp_fu_206_ce,
         dout => grp_fu_206_p2);
 
-    urem_32ns_3ns_2_36_seq_1_U299 : component canny_top_urem_32ns_3ns_2_36_seq_1
+    urem_32ns_3ns_2_36_seq_1_U306 : component canny_top_urem_32ns_3ns_2_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -834,7 +834,7 @@ begin
         ce => grp_fu_232_ce,
         dout => grp_fu_232_p2);
 
-    sparsemux_7_2_8_1_1_U300 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U307 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -855,7 +855,7 @@ begin
         sel => select_ln18_fu_275_p3,
         dout => tmp_fu_302_p9);
 
-    sparsemux_7_2_8_1_1_x_U301 : component canny_top_sparsemux_7_2_8_1_1_x
+    sparsemux_7_2_8_1_1_x_U308 : component canny_top_sparsemux_7_2_8_1_1_x
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -876,7 +876,7 @@ begin
         sel => p_smodpost_fu_294_p3,
         dout => tmp_s_fu_320_p9);
 
-    sparsemux_7_2_8_1_1_U302 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U309 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -897,7 +897,7 @@ begin
         sel => select_ln18_2_reg_461,
         dout => tmp_18_fu_338_p9);
 
-    sparsemux_7_2_8_1_1_U303 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U310 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -918,7 +918,7 @@ begin
         sel => select_ln18_fu_275_p3,
         dout => tmp_19_fu_355_p9);
 
-    sparsemux_7_2_8_1_1_x_U304 : component canny_top_sparsemux_7_2_8_1_1_x
+    sparsemux_7_2_8_1_1_x_U311 : component canny_top_sparsemux_7_2_8_1_1_x
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -939,7 +939,7 @@ begin
         sel => p_smodpost_fu_294_p3,
         dout => tmp_20_fu_373_p9);
 
-    sparsemux_7_2_8_1_1_U305 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U312 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

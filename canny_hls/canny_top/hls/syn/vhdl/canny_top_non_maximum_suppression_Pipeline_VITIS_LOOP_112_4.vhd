@@ -255,7 +255,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_7_2_11_1_1_U144 : component canny_top_sparsemux_7_2_11_1_1
+    sparsemux_7_2_11_1_1_U151 : component canny_top_sparsemux_7_2_11_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -276,7 +276,7 @@ begin
         sel => select_ln14,
         dout => tmp_7_fu_662_p9);
 
-    sparsemux_7_2_11_1_1_U145 : component canny_top_sparsemux_7_2_11_1_1
+    sparsemux_7_2_11_1_1_U152 : component canny_top_sparsemux_7_2_11_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -297,7 +297,7 @@ begin
         sel => p_smodpost,
         dout => tmp_8_fu_681_p9);
 
-    sparsemux_7_2_11_1_1_U146 : component canny_top_sparsemux_7_2_11_1_1
+    sparsemux_7_2_11_1_1_U153 : component canny_top_sparsemux_7_2_11_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -318,7 +318,7 @@ begin
         sel => select_ln14_1,
         dout => tmp_9_fu_700_p9);
 
-    sparsemux_7_2_2_1_1_U147 : component canny_top_sparsemux_7_2_2_1_1
+    sparsemux_7_2_2_1_1_U154 : component canny_top_sparsemux_7_2_2_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
