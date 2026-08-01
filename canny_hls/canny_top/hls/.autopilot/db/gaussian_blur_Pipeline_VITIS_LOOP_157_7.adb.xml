@@ -91,10 +91,10 @@ newFuncRoot:3 %select_ln21_2_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %selec
 
 <Node id="16" bw="3" op_0_bw="3" op_1_bw="3">
 <![CDATA[
-newFuncRoot:4 %tmp_47 = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %empty_45
+newFuncRoot:4 %tmp_44 = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %empty_46
 
 ]]></Node>
-<StgValue><ssdm name="tmp_47"/></StgValue>
+<StgValue><ssdm name="tmp_44"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -181,7 +181,7 @@ VITIS_LOOP_168_8:0 %column = load i10 %column_13
 
 <Node id="23" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8:1 %icmp_ln157 = icmp_eq  i10 %column, i10 512
+VITIS_LOOP_168_8:1 %icmp_ln157 = icmp_eq  i10 %column, i10 640
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln157"/></StgValue>
@@ -241,7 +241,7 @@ VITIS_LOOP_168_8.split:0 %zext_ln157 = zext i10 %column
 </and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="9" op_0_bw="12" op_1_bw="64" op_2_bw="64">
+<Node id="31" bw="10" op_0_bw="12" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 VITIS_LOOP_168_8.split:4 %lineBuffer_addr = getelementptr i12 %lineBuffer, i64 0, i64 %zext_ln157
 
@@ -257,9 +257,9 @@ VITIS_LOOP_168_8.split:4 %lineBuffer_addr = getelementptr i12 %lineBuffer, i64 0
 </and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="12" op_0_bw="9">
+<Node id="32" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:5 %banked = load i9 %lineBuffer_addr
+VITIS_LOOP_168_8.split:5 %banked = load i10 %lineBuffer_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked"/></StgValue>
@@ -273,7 +273,7 @@ VITIS_LOOP_168_8.split:5 %banked = load i9 %lineBuffer_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="9" op_0_bw="12" op_1_bw="64" op_2_bw="64">
+<Node id="33" bw="10" op_0_bw="12" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 VITIS_LOOP_168_8.split:6 %lineBuffer_1_addr = getelementptr i12 %lineBuffer_1, i64 0, i64 %zext_ln157
 
@@ -289,7 +289,7 @@ VITIS_LOOP_168_8.split:6 %lineBuffer_1_addr = getelementptr i12 %lineBuffer_1, i
 </and_exp></or_exp>
 </condition>
 
-<Node id="34" bw="9" op_0_bw="12" op_1_bw="64" op_2_bw="64">
+<Node id="34" bw="10" op_0_bw="12" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 VITIS_LOOP_168_8.split:7 %lineBuffer_2_addr = getelementptr i12 %lineBuffer_2, i64 0, i64 %zext_ln157
 
@@ -305,7 +305,7 @@ VITIS_LOOP_168_8.split:7 %lineBuffer_2_addr = getelementptr i12 %lineBuffer_2, i
 </and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="9" op_0_bw="12" op_1_bw="64" op_2_bw="64">
+<Node id="35" bw="10" op_0_bw="12" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 VITIS_LOOP_168_8.split:8 %lineBuffer_3_addr = getelementptr i12 %lineBuffer_3, i64 0, i64 %zext_ln157
 
@@ -321,7 +321,7 @@ VITIS_LOOP_168_8.split:8 %lineBuffer_3_addr = getelementptr i12 %lineBuffer_3, i
 </and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="9" op_0_bw="12" op_1_bw="64" op_2_bw="64">
+<Node id="36" bw="10" op_0_bw="12" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 VITIS_LOOP_168_8.split:9 %lineBuffer_4_addr = getelementptr i12 %lineBuffer_4, i64 0, i64 %zext_ln157
 
@@ -337,9 +337,9 @@ VITIS_LOOP_168_8.split:9 %lineBuffer_4_addr = getelementptr i12 %lineBuffer_4, i
 </and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="12" op_0_bw="9">
+<Node id="37" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:10 %banked_11 = load i9 %lineBuffer_1_addr
+VITIS_LOOP_168_8.split:10 %banked_11 = load i10 %lineBuffer_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_11"/></StgValue>
@@ -353,9 +353,9 @@ VITIS_LOOP_168_8.split:10 %banked_11 = load i9 %lineBuffer_1_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="12" op_0_bw="9">
+<Node id="38" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:11 %banked_12 = load i9 %lineBuffer_2_addr
+VITIS_LOOP_168_8.split:11 %banked_12 = load i10 %lineBuffer_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_12"/></StgValue>
@@ -369,9 +369,9 @@ VITIS_LOOP_168_8.split:11 %banked_12 = load i9 %lineBuffer_2_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="12" op_0_bw="9">
+<Node id="39" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:12 %banked_13 = load i9 %lineBuffer_3_addr
+VITIS_LOOP_168_8.split:12 %banked_13 = load i10 %lineBuffer_3_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_13"/></StgValue>
@@ -385,9 +385,9 @@ VITIS_LOOP_168_8.split:12 %banked_13 = load i9 %lineBuffer_3_addr
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="12" op_0_bw="9">
+<Node id="40" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:13 %banked_14 = load i9 %lineBuffer_4_addr
+VITIS_LOOP_168_8.split:13 %banked_14 = load i10 %lineBuffer_4_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_14"/></StgValue>
@@ -419,9 +419,9 @@ VITIS_LOOP_168_8.split:37 %store_ln157 = store i10 %add_ln157, i10 %column_13
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="12" op_0_bw="9">
+<Node id="32" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:5 %banked = load i9 %lineBuffer_addr
+VITIS_LOOP_168_8.split:5 %banked = load i10 %lineBuffer_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked"/></StgValue>
@@ -434,9 +434,9 @@ VITIS_LOOP_168_8.split:5 %banked = load i9 %lineBuffer_addr
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="37" bw="12" op_0_bw="9">
+<Node id="37" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:10 %banked_11 = load i9 %lineBuffer_1_addr
+VITIS_LOOP_168_8.split:10 %banked_11 = load i10 %lineBuffer_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_11"/></StgValue>
@@ -449,9 +449,9 @@ VITIS_LOOP_168_8.split:10 %banked_11 = load i9 %lineBuffer_1_addr
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="38" bw="12" op_0_bw="9">
+<Node id="38" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:11 %banked_12 = load i9 %lineBuffer_2_addr
+VITIS_LOOP_168_8.split:11 %banked_12 = load i10 %lineBuffer_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_12"/></StgValue>
@@ -464,9 +464,9 @@ VITIS_LOOP_168_8.split:11 %banked_12 = load i9 %lineBuffer_2_addr
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="12" op_0_bw="9">
+<Node id="39" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:12 %banked_13 = load i9 %lineBuffer_3_addr
+VITIS_LOOP_168_8.split:12 %banked_13 = load i10 %lineBuffer_3_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_13"/></StgValue>
@@ -479,9 +479,9 @@ VITIS_LOOP_168_8.split:12 %banked_13 = load i9 %lineBuffer_3_addr
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="12" op_0_bw="9">
+<Node id="40" bw="12" op_0_bw="10">
 <![CDATA[
-VITIS_LOOP_168_8.split:13 %banked_14 = load i9 %lineBuffer_4_addr
+VITIS_LOOP_168_8.split:13 %banked_14 = load i10 %lineBuffer_4_addr
 
 ]]></Node>
 <StgValue><ssdm name="banked_14"/></StgValue>
@@ -541,7 +541,7 @@ VITIS_LOOP_168_8.split:16 %tmp_s = sparsemux i12 @_ssdm_op_SparseMux.ap_auto.5i1
 
 <Node id="44" bw="12" op_0_bw="12" op_1_bw="3" op_2_bw="12" op_3_bw="3" op_4_bw="12" op_5_bw="3" op_6_bw="12" op_7_bw="3" op_8_bw="12" op_9_bw="3" op_10_bw="12" op_11_bw="12" op_12_bw="3">
 <![CDATA[
-VITIS_LOOP_168_8.split:17 %tmp_102 = sparsemux i12 @_ssdm_op_SparseMux.ap_auto.5i12.i12.i3, i3 2, i12 %banked, i3 3, i12 %banked_11, i3 4, i12 %banked_12, i3 0, i12 %banked_13, i3 1, i12 %banked_14, i12 0, i3 %tmp_47
+VITIS_LOOP_168_8.split:17 %tmp_102 = sparsemux i12 @_ssdm_op_SparseMux.ap_auto.5i12.i12.i3, i3 2, i12 %banked, i3 3, i12 %banked_11, i3 4, i12 %banked_12, i3 0, i12 %banked_13, i3 1, i12 %banked_14, i12 0, i3 %tmp_44
 
 ]]></Node>
 <StgValue><ssdm name="tmp_102"/></StgValue>
@@ -616,10 +616,10 @@ VITIS_LOOP_168_8.split:21 %p_shl = bitconcatenate i15 @_ssdm_op_BitConcatenate.i
 
 <Node id="49" bw="13" op_0_bw="13" op_1_bw="12" op_2_bw="1">
 <![CDATA[
-VITIS_LOOP_168_8.split:22 %tmp_48 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i12.i1, i12 %tmp_102, i1 0
+VITIS_LOOP_168_8.split:22 %tmp_45 = bitconcatenate i13 @_ssdm_op_BitConcatenate.i13.i12.i1, i12 %tmp_102, i1 0
 
 ]]></Node>
-<StgValue><ssdm name="tmp_48"/></StgValue>
+<StgValue><ssdm name="tmp_45"/></StgValue>
 </operation>
 
 <operation id="45" st_id="2" stage="1" lat="1">
@@ -631,7 +631,7 @@ VITIS_LOOP_168_8.split:22 %tmp_48 = bitconcatenate i13 @_ssdm_op_BitConcatenate.
 
 <Node id="50" bw="15" op_0_bw="13">
 <![CDATA[
-VITIS_LOOP_168_8.split:23 %zext_ln177_4 = zext i13 %tmp_48
+VITIS_LOOP_168_8.split:23 %zext_ln177_4 = zext i13 %tmp_45
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln177_4"/></StgValue>
@@ -785,7 +785,7 @@ VITIS_LOOP_168_8.split:1 %specpipeline_ln158 = specpipeline void @_ssdm_op_SpecP
 
 <Node id="29" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-VITIS_LOOP_168_8.split:2 %speclooptripcount_ln157 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512
+VITIS_LOOP_168_8.split:2 %speclooptripcount_ln157 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 640, i64 640, i64 640
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln157"/></StgValue>
@@ -941,8 +941,8 @@ VITIS_LOOP_168_8.split:38 %br_ln157 = br void %VITIS_LOOP_168_8
 <port id="81" name="select_ln21_1" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="select_ln21_1"/></StgValue>
 </port>
-<port id="82" name="empty_45" dir="0" iftype="0">
-<core>NULL</core><StgValue><ssdm name="empty_45"/></StgValue>
+<port id="82" name="empty_46" dir="0" iftype="0">
+<core>NULL</core><StgValue><ssdm name="empty_46"/></StgValue>
 </port>
 <port id="83" name="select_ln21_2" dir="0" iftype="0">
 <core>NULL</core><StgValue><ssdm name="select_ln21_2"/></StgValue>
@@ -1009,9 +1009,9 @@ VITIS_LOOP_168_8.split:38 %br_ln157 = br void %VITIS_LOOP_168_8
 </dataflow>
 <dataflow id="118" from="select_ln21_2" to="select_ln21_2_read" fromId="83" toId="9">
 </dataflow>
-<dataflow id="119" from="_ssdm_op_Read.ap_auto.i3" to="tmp_47" fromId="114" toId="10">
+<dataflow id="119" from="_ssdm_op_Read.ap_auto.i3" to="tmp_44" fromId="114" toId="10">
 </dataflow>
-<dataflow id="120" from="empty_45" to="tmp_47" fromId="82" toId="10">
+<dataflow id="120" from="empty_46" to="tmp_44" fromId="82" toId="10">
 </dataflow>
 <dataflow id="121" from="_ssdm_op_Read.ap_auto.i3" to="select_ln21_1_read" fromId="114" toId="11">
 </dataflow>
@@ -1171,7 +1171,7 @@ VITIS_LOOP_168_8.split:38 %br_ln157 = br void %VITIS_LOOP_168_8
 </dataflow>
 <dataflow id="210" from="StgValue_182" to="tmp_102" fromId="182" toId="39">
 </dataflow>
-<dataflow id="211" from="tmp_47" to="tmp_102" fromId="10" toId="39">
+<dataflow id="211" from="tmp_44" to="tmp_102" fromId="10" toId="39">
 </dataflow>
 <dataflow id="212" from="_ssdm_op_SparseMux.ap_auto.5i12.i12.i3" to="tmp_103" fromId="165" toId="40">
 </dataflow>
@@ -1233,13 +1233,13 @@ VITIS_LOOP_168_8.split:38 %br_ln157 = br void %VITIS_LOOP_168_8
 </dataflow>
 <dataflow id="242" from="StgValue_167" to="p_shl" fromId="167" toId="43">
 </dataflow>
-<dataflow id="244" from="_ssdm_op_BitConcatenate.i13.i12.i1" to="tmp_48" fromId="243" toId="44">
+<dataflow id="244" from="_ssdm_op_BitConcatenate.i13.i12.i1" to="tmp_45" fromId="243" toId="44">
 </dataflow>
-<dataflow id="245" from="tmp_102" to="tmp_48" fromId="39" toId="44">
+<dataflow id="245" from="tmp_102" to="tmp_45" fromId="39" toId="44">
 </dataflow>
-<dataflow id="247" from="StgValue_246" to="tmp_48" fromId="246" toId="44">
+<dataflow id="247" from="StgValue_246" to="tmp_45" fromId="246" toId="44">
 </dataflow>
-<dataflow id="248" from="tmp_48" to="zext_ln177_4" fromId="44" toId="45">
+<dataflow id="248" from="tmp_45" to="zext_ln177_4" fromId="44" toId="45">
 </dataflow>
 <dataflow id="249" from="p_shl" to="sub_ln177" fromId="43" toId="46">
 </dataflow>

@@ -130,7 +130,7 @@ for.inc60:0 %column_13 = load i10 %column
 
 <Node id="40" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.inc60:1 %icmp_ln32 = icmp_eq  i10 %column_13, i10 512
+for.inc60:1 %icmp_ln32 = icmp_eq  i10 %column_13, i10 640
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln32"/></StgValue>
@@ -5314,7 +5314,7 @@ for.inc60.split:2 %specpipeline_ln33 = specpipeline void @_ssdm_op_SpecPipeline,
 
 <Node id="47" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc60.split:3 %speclooptripcount_ln32 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512
+for.inc60.split:3 %speclooptripcount_ln32 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 640, i64 640, i64 640
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln32"/></StgValue>

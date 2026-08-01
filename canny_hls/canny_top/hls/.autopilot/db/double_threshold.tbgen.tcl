@@ -43,8 +43,8 @@ set portList {
 	{ nms_out_dout sc_in sc_lv 16 signal 0 } 
 	{ nms_out_empty_n sc_in sc_logic 1 signal 0 } 
 	{ nms_out_read sc_out sc_logic 1 signal 0 } 
-	{ nms_out_num_data_valid sc_in sc_lv 11 signal 0 } 
-	{ nms_out_fifo_cap sc_in sc_lv 11 signal 0 } 
+	{ nms_out_num_data_valid sc_in sc_lv 12 signal 0 } 
+	{ nms_out_fifo_cap sc_in sc_lv 12 signal 0 } 
 	{ thresh_out_din sc_out sc_lv 8 signal 1 } 
 	{ thresh_out_full_n sc_in sc_logic 1 signal 1 } 
 	{ thresh_out_write sc_out sc_logic 1 signal 1 } 
@@ -65,8 +65,8 @@ set NewPortList {[
  	{ "name": "nms_out_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":16, "type": "signal", "bundle":{"name": "nms_out", "role": "dout" }} , 
  	{ "name": "nms_out_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nms_out", "role": "empty_n" }} , 
  	{ "name": "nms_out_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "nms_out", "role": "read" }} , 
- 	{ "name": "nms_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "nms_out", "role": "num_data_valid" }} , 
- 	{ "name": "nms_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "nms_out", "role": "fifo_cap" }} , 
+ 	{ "name": "nms_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "nms_out", "role": "num_data_valid" }} , 
+ 	{ "name": "nms_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "nms_out", "role": "fifo_cap" }} , 
  	{ "name": "thresh_out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "thresh_out", "role": "din" }} , 
  	{ "name": "thresh_out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "thresh_out", "role": "full_n" }} , 
  	{ "name": "thresh_out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "thresh_out", "role": "write" }} , 
@@ -83,8 +83,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "262146", "Max" : "262146"}
-	, {"Name" : "Interval", "Min" : "262144", "Max" : "262144"}
+	{"Name" : "Latency", "Min" : "307202", "Max" : "307202"}
+	, {"Name" : "Interval", "Min" : "307200", "Max" : "307200"}
 ]}
 
 set PipelineEnableSignalInfo {[
@@ -92,6 +92,6 @@ set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	nms_out { ap_fifo {  { nms_out_dout fifo_data_out 0 16 }  { nms_out_empty_n fifo_status_empty 0 1 }  { nms_out_read fifo_data_in 1 1 }  { nms_out_num_data_valid fifo_update 0 11 }  { nms_out_fifo_cap fifo_data 0 11 } } }
+	nms_out { ap_fifo {  { nms_out_dout fifo_data_out 0 16 }  { nms_out_empty_n fifo_status_empty 0 1 }  { nms_out_read fifo_data_in 1 1 }  { nms_out_num_data_valid fifo_update 0 12 }  { nms_out_fifo_cap fifo_data 0 12 } } }
 	thresh_out { ap_fifo {  { thresh_out_din fifo_data_out 1 8 }  { thresh_out_full_n fifo_status_empty 0 1 }  { thresh_out_write fifo_data_in 1 1 }  { thresh_out_num_data_valid fifo_update 0 32 }  { thresh_out_fifo_cap fifo_data 0 32 } } }
 }

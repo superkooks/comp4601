@@ -51,7 +51,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer \
     op interface \
-    ports { lineBuffer_address0 { O 9 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_q0 { I 8 vector } } \
+    ports { lineBuffer_address0 { O 10 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer'"
@@ -70,7 +70,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer_1 \
     op interface \
-    ports { lineBuffer_1_address0 { O 9 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_q0 { I 8 vector } } \
+    ports { lineBuffer_1_address0 { O 10 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_1'"
@@ -89,7 +89,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer_2 \
     op interface \
-    ports { lineBuffer_2_address0 { O 9 vector } lineBuffer_2_ce0 { O 1 bit } lineBuffer_2_q0 { I 8 vector } } \
+    ports { lineBuffer_2_address0 { O 10 vector } lineBuffer_2_ce0 { O 1 bit } lineBuffer_2_q0 { I 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_2'"
@@ -206,14 +206,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 156 \
-    name select_ln23 \
+    name empty_30 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_select_ln23 \
+    corename dc_empty_30 \
     op interface \
-    ports { select_ln23 { I 2 vector } } \
+    ports { empty_30 { I 2 vector } } \
 } "
 }
 
@@ -236,14 +236,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 158 \
-    name select_ln23_1 \
+    name select_ln23 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_select_ln23_1 \
+    corename dc_select_ln23 \
     op interface \
-    ports { select_ln23_1 { I 2 vector } } \
+    ports { select_ln23 { I 2 vector } } \
 } "
 }
 

@@ -18,7 +18,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_hyst3_out \
     op interface \
-    ports { hyst3_out_dout { I 8 vector } hyst3_out_empty_n { I 1 bit } hyst3_out_read { O 1 bit } hyst3_out_num_data_valid { I 11 vector } hyst3_out_fifo_cap { I 11 vector } } \
+    ports { hyst3_out_dout { I 8 vector } hyst3_out_empty_n { I 1 bit } hyst3_out_read { O 1 bit } hyst3_out_num_data_valid { I 12 vector } hyst3_out_fifo_cap { I 12 vector } } \
 } "
 }
 

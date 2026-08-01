@@ -290,7 +290,7 @@ architecture behav of canny_top_grayscale_Pipeline_unpack_bytes is
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv5_0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
-    constant ap_const_lv5_18 : STD_LOGIC_VECTOR (4 downto 0) := "11000";
+    constant ap_const_lv5_1E : STD_LOGIC_VECTOR (4 downto 0) := "11110";
     constant ap_const_lv5_1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
     constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
@@ -704,7 +704,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln24_fu_1051_p2 <= "1" when (ap_sig_allocacmp_w_1 = ap_const_lv5_18) else "0";
+    icmp_ln24_fu_1051_p2 <= "1" when (ap_sig_allocacmp_w_1 = ap_const_lv5_1E) else "0";
     or_ln_fu_1409_p3 <= (w_1_reg_1738 & ap_const_lv1_1);
     row_bytes_10_address0 <= zext_ln28_1_fu_1416_p1(6 - 1 downto 0);
     row_bytes_10_address1 <= zext_ln28_fu_1080_p1(6 - 1 downto 0);

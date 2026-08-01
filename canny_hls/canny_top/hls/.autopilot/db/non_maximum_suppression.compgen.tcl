@@ -29,7 +29,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sobel_out \
     op interface \
-    ports { sobel_out_dout { I 24 vector } sobel_out_empty_n { I 1 bit } sobel_out_read { O 1 bit } sobel_out_num_data_valid { I 11 vector } sobel_out_fifo_cap { I 11 vector } } \
+    ports { sobel_out_dout { I 24 vector } sobel_out_empty_n { I 1 bit } sobel_out_read { O 1 bit } sobel_out_num_data_valid { I 12 vector } sobel_out_fifo_cap { I 12 vector } } \
 } "
 }
 

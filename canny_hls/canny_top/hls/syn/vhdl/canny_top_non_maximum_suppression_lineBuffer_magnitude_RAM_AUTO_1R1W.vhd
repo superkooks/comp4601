@@ -12,8 +12,8 @@ entity canny_top_non_maximum_suppression_lineBuffer_magnitude_RAM_AUTO_1R1W is
     generic(
         MEM_TYPE        : string    := "auto";
         DataWidth       : integer   := 16;
-        AddressWidth    : integer   := 9;
-        AddressRange    : integer   := 512
+        AddressWidth    : integer   := 10;
+        AddressRange    : integer   := 640
     );
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0);

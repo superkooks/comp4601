@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hysteresis_2_s'" level="0">
-<item name = "Date">Sat Aug  1 15:48:51 2026
+<item name = "Date">Sat Aug  1 17:30:25 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 2.987 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.641 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,20 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
+<column name="">1444, 625782, 7.220 us, 3.129 ms, 1444, 625782, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_hysteresis_2_Pipeline_VITIS_LOOP_78_2_fu_165">hysteresis_2_Pipeline_VITIS_LOOP_78_2, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_hysteresis_2_Pipeline_VITIS_LOOP_143_5_fu_175">hysteresis_2_Pipeline_VITIS_LOOP_143_5, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
+<column name="grp_hysteresis_2_Pipeline_VITIS_LOOP_78_2_fu_169">hysteresis_2_Pipeline_VITIS_LOOP_78_2, 642, 642, 3.210 us, 3.210 us, 0, 0, loop pipeline stp</column>
+<column name="grp_hysteresis_2_Pipeline_VITIS_LOOP_143_5_fu_179">hysteresis_2_Pipeline_VITIS_LOOP_143_5, 643, 643, 3.215 us, 3.215 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_74_1">1539, 536085, 3 ~ 1045, -, -, 513, no</column>
+<column name="- VITIS_LOOP_74_1">1443, 625781, 3 ~ 1301, -, -, 481, no</column>
 </table>
 </item>
 </section>

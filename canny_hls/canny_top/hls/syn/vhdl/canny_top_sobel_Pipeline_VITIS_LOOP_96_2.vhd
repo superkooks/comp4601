@@ -19,17 +19,17 @@ port (
     gauss_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
     gauss_out_empty_n : IN STD_LOGIC;
     gauss_out_read : OUT STD_LOGIC;
-    gauss_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-    gauss_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
-    lineBuffer_2_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    gauss_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+    gauss_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
+    lineBuffer_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_2_ce0 : OUT STD_LOGIC;
     lineBuffer_2_we0 : OUT STD_LOGIC;
     lineBuffer_2_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_1_ce0 : OUT STD_LOGIC;
     lineBuffer_1_we0 : OUT STD_LOGIC;
     lineBuffer_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    lineBuffer_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_ce0 : OUT STD_LOGIC;
     lineBuffer_we0 : OUT STD_LOGIC;
     lineBuffer_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
@@ -51,7 +51,7 @@ architecture behav of canny_top_sobel_Pipeline_VITIS_LOOP_96_2 is
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv2_1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_const_lv10_280 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
 
 attribute shreg_extract : string;
@@ -315,8 +315,8 @@ begin
         end if; 
     end process;
 
-    icmp_ln96_fu_114_p2 <= "1" when (ap_sig_allocacmp_column_1 = ap_const_lv10_200) else "0";
-    lineBuffer_1_address0 <= zext_ln96_fu_139_p1(9 - 1 downto 0);
+    icmp_ln96_fu_114_p2 <= "1" when (ap_sig_allocacmp_column_1 = ap_const_lv10_280) else "0";
+    lineBuffer_1_address0 <= zext_ln96_fu_139_p1(10 - 1 downto 0);
     lineBuffer_1_ce0 <= lineBuffer_1_ce0_local;
 
     lineBuffer_1_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -340,7 +340,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_2_address0 <= zext_ln96_fu_139_p1(9 - 1 downto 0);
+    lineBuffer_2_address0 <= zext_ln96_fu_139_p1(10 - 1 downto 0);
     lineBuffer_2_ce0 <= lineBuffer_2_ce0_local;
 
     lineBuffer_2_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -364,7 +364,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_address0 <= zext_ln96_fu_139_p1(9 - 1 downto 0);
+    lineBuffer_address0 <= zext_ln96_fu_139_p1(10 - 1 downto 0);
     lineBuffer_ce0 <= lineBuffer_ce0_local;
 
     lineBuffer_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)

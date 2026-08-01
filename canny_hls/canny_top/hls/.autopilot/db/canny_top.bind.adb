@@ -2406,8 +2406,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>547115</mMinLatency>
-			<mMaxLatency>548071</mMaxLatency>
+			<mMinLatency>635819</mMinLatency>
+			<mMaxLatency>637031</mMaxLatency>
 			<mIsDfPipe>1</mIsDfPipe>
 			<mDfPipe class_id="23" tracking_level="1" version="0" object_id="_101">
 				<port_list class_id="24" tracking_level="0" version="0">
@@ -2689,10 +2689,10 @@
 						<name>gray_out</name>
 						<ssdmobj_id>22</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2729,17 +2729,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 1024 1</storage_size>
+						<storage_size>8 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_139">
 						<type>1</type>
 						<name>gauss_out</name>
 						<ssdmobj_id>25</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2776,17 +2776,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 1024 1</storage_size>
+						<storage_size>8 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_145">
 						<type>1</type>
 						<name>sobel_out</name>
 						<ssdmobj_id>28</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>24</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2823,17 +2823,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>24 1024 1</storage_size>
+						<storage_size>24 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_151">
 						<type>1</type>
 						<name>nms_out</name>
 						<ssdmobj_id>31</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>16</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2870,17 +2870,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>16 1024 1</storage_size>
+						<storage_size>16 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_157">
 						<type>1</type>
 						<name>thresh_out</name>
 						<ssdmobj_id>34</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2917,17 +2917,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 1024 1</storage_size>
+						<storage_size>8 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_163">
 						<type>1</type>
 						<name>hyst1_out</name>
 						<ssdmobj_id>37</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -2964,17 +2964,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 1024 1</storage_size>
+						<storage_size>8 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_169">
 						<type>1</type>
 						<name>hyst2_out</name>
 						<ssdmobj_id>40</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -3011,17 +3011,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 1024 1</storage_size>
+						<storage_size>8 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_175">
 						<type>1</type>
 						<name>hyst3_out</name>
 						<ssdmobj_id>43</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -3058,17 +3058,17 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 1024 1</storage_size>
+						<storage_size>8 1280 1</storage_size>
 					</item>
 					<item class_id_reference="26" object_id="_181">
 						<type>1</type>
 						<name>hyst4_out</name>
 						<ssdmobj_id>46</ssdmobj_id>
 						<ctype>0</ctype>
-						<depth>1024</depth>
+						<depth>1280</depth>
 						<bitwidth>8</bitwidth>
 						<suggested_type>0</suggested_type>
-						<suggested_depth>1024</suggested_depth>
+						<suggested_depth>1280</suggested_depth>
 						<source_list>
 							<count>1</count>
 							<item_version>0</item_version>
@@ -3101,7 +3101,7 @@
 						</sink_list>
 						<bram_cost>0</bram_cost>
 						<uram_cost>0</uram_cost>
-						<storage_size>8 1024 1</storage_size>
+						<storage_size>8 1280 1</storage_size>
 					</item>
 				</channel_list>
 				<net_list class_id="33" tracking_level="0" version="0">

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'hysteresis_1_s'
 ================================================================
-* Date:           Sat Aug  1 15:48:51 2026
+* Date:           Sat Aug  1 17:30:25 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -20,7 +20,7 @@
     +--------+---------+----------+------------+
     |  Clock |  Target | Estimated| Uncertainty|
     +--------+---------+----------+------------+
-    |ap_clk  |  5.00 ns|  2.987 ns|     1.35 ns|
+    |ap_clk  |  5.00 ns|  3.641 ns|     1.35 ns|
     +--------+---------+----------+------------+
 
 + Latency: 
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
     |   min   |   max   |    min   |    max   |  min |   max  |   Type  |
     +---------+---------+----------+----------+------+--------+---------+
-    |     1540|   536086|  7.700 us|  2.680 ms|  1540|  536086|       no|
+    |     1444|   625782|  7.220 us|  3.129 ms|  1444|  625782|       no|
     +---------+---------+----------+----------+------+--------+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_74_1  |     1539|   536085|  3 ~ 1045|          -|          -|   513|        no|
+        |- VITIS_LOOP_74_1  |     1443|   625781|  3 ~ 1301|          -|          -|   481|        no|
         +-------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
@@ -101,124 +101,125 @@ ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%phi_urem = alloca i32 1"   --->   
 ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%row_6 = alloca i32 1" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 20 'alloca' 'row_6' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hyst1_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 21 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %thresh_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 22 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%buffer = alloca i64 1" [../src/hysteresis.cpp:69]   --->   Operation 23 'alloca' 'buffer' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%buffer_1 = alloca i64 1" [../src/hysteresis.cpp:69]   --->   Operation 24 'alloca' 'buffer_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%buffer_2 = alloca i64 1" [../src/hysteresis.cpp:69]   --->   Operation 25 'alloca' 'buffer_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%buffer = alloca i64 1" [../src/hysteresis.cpp:69]   --->   Operation 23 'alloca' 'buffer' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%buffer_1 = alloca i64 1" [../src/hysteresis.cpp:69]   --->   Operation 24 'alloca' 'buffer_1' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%buffer_2 = alloca i64 1" [../src/hysteresis.cpp:69]   --->   Operation 25 'alloca' 'buffer_2' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
 ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%buffer_addr = getelementptr i8 %buffer, i64 0, i64 0" [../src/hysteresis.cpp:139]   --->   Operation 26 'getelementptr' 'buffer_addr' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%buffer_1_addr = getelementptr i8 %buffer_1, i64 0, i64 0" [../src/hysteresis.cpp:139]   --->   Operation 27 'getelementptr' 'buffer_1_addr' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%buffer_2_addr = getelementptr i8 %buffer_2, i64 0, i64 0" [../src/hysteresis.cpp:139]   --->   Operation 28 'getelementptr' 'buffer_2_addr' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%buffer_addr_4 = getelementptr i8 %buffer, i64 0, i64 1" [../src/hysteresis.cpp:139]   --->   Operation 29 'getelementptr' 'buffer_addr_4' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%buffer_1_addr_3 = getelementptr i8 %buffer_1, i64 0, i64 1" [../src/hysteresis.cpp:139]   --->   Operation 30 'getelementptr' 'buffer_1_addr_3' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%buffer_2_addr_3 = getelementptr i8 %buffer_2, i64 0, i64 1" [../src/hysteresis.cpp:139]   --->   Operation 31 'getelementptr' 'buffer_2_addr_3' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 32 [1/1] (0.42ns)   --->   "%store_ln10 = store i10 0, i10 %row_6" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 32 'store' 'store_ln10' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 33 [1/1] (0.42ns)   --->   "%store_ln0 = store i10 0, i10 %phi_urem"   --->   Operation 33 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
-ST_1 : Operation 34 [1/1] (0.42ns)   --->   "%store_ln0 = store i10 0, i10 %phi_urem69"   --->   Operation 34 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 32 [1/1] (0.42ns)   --->   "%store_ln10 = store i9 0, i9 %row_6" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 32 'store' 'store_ln10' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 33 [1/1] (0.42ns)   --->   "%store_ln0 = store i9 0, i9 %phi_urem"   --->   Operation 33 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 34 [1/1] (0.42ns)   --->   "%store_ln0 = store i9 0, i9 %phi_urem69"   --->   Operation 34 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 35 [1/1] (0.00ns)   --->   "%br_ln74 = br void %for.body" [../src/hysteresis.cpp:74]   --->   Operation 35 'br' 'br_ln74' <Predicate = true> <Delay = 0.00>
 
-State 2 <SV = 1> <Delay = 1.33>
-ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%row_7 = load i10 %row_6" [../src/hysteresis.cpp:103]   --->   Operation 36 'load' 'row_7' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 37 [1/1] (0.78ns)   --->   "%icmp_ln74 = icmp_eq  i10 %row_7, i10 513" [../src/hysteresis.cpp:74]   --->   Operation 37 'icmp' 'icmp_ln74' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 513, i64 513, i64 513"   --->   Operation 38 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 39 [1/1] (0.78ns)   --->   "%rowsReceived = add i10 %row_7, i10 1" [../src/hysteresis.cpp:83]   --->   Operation 39 'add' 'rowsReceived' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+State 2 <SV = 1> <Delay = 1.32>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%row_7 = load i9 %row_6" [../src/hysteresis.cpp:83]   --->   Operation 36 'load' 'row_7' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.77ns)   --->   "%icmp_ln74 = icmp_eq  i9 %row_7, i9 481" [../src/hysteresis.cpp:74]   --->   Operation 37 'icmp' 'icmp_ln74' <Predicate = true> <Delay = 0.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 481, i64 481, i64 481"   --->   Operation 38 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.77ns)   --->   "%rowsReceived = add i9 %row_7, i9 1" [../src/hysteresis.cpp:83]   --->   Operation 39 'add' 'rowsReceived' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 40 [1/1] (0.00ns)   --->   "%br_ln74 = br i1 %icmp_ln74, void %for.body.split, void %for.end119" [../src/hysteresis.cpp:74]   --->   Operation 40 'br' 'br_ln74' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%specloopname_ln74 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [../src/hysteresis.cpp:74]   --->   Operation 41 'specloopname' 'specloopname_ln74' <Predicate = (!icmp_ln74)> <Delay = 0.00>
-ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%tmp_42 = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %row_7, i32 9" [../src/hysteresis.cpp:75]   --->   Operation 42 'bitselect' 'tmp_42' <Predicate = (!icmp_ln74)> <Delay = 0.00>
-ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%br_ln75 = br i1 %tmp_42, void %VITIS_LOOP_78_2, void %if.end" [../src/hysteresis.cpp:75]   --->   Operation 43 'br' 'br_ln75' <Predicate = (!icmp_ln74)> <Delay = 0.00>
-ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%phi_urem_load85 = load i10 %phi_urem" [../src/hysteresis.cpp:80]   --->   Operation 44 'load' 'phi_urem_load85' <Predicate = (!icmp_ln74 & !tmp_42)> <Delay = 0.00>
-ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%trunc_ln80 = trunc i10 %phi_urem_load85" [../src/hysteresis.cpp:80]   --->   Operation 45 'trunc' 'trunc_ln80' <Predicate = (!icmp_ln74 & !tmp_42)> <Delay = 0.00>
-ST_2 : Operation 46 [2/2] (0.54ns)   --->   "%call_ln80 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_78_2, i8 %buffer_2, i8 %buffer_1, i8 %buffer, i8 %thresh_out, i2 %trunc_ln80" [../src/hysteresis.cpp:80]   --->   Operation 46 'call' 'call_ln80' <Predicate = (!icmp_ln74 & !tmp_42)> <Delay = 0.54> <CoreType = "Generic">   --->   Generic Core
-ST_2 : Operation 47 [1/1] (0.00ns)   --->   "%ret_ln195 = ret" [../src/hysteresis.cpp:195]   --->   Operation 47 'ret' 'ret_ln195' <Predicate = (icmp_ln74)> <Delay = 0.00>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%zext_ln74 = zext i9 %row_7" [../src/hysteresis.cpp:74]   --->   Operation 41 'zext' 'zext_ln74' <Predicate = (!icmp_ln74)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.00ns)   --->   "%specloopname_ln74 = specloopname void @_ssdm_op_SpecLoopName, void @empty_20" [../src/hysteresis.cpp:74]   --->   Operation 42 'specloopname' 'specloopname_ln74' <Predicate = (!icmp_ln74)> <Delay = 0.00>
+ST_2 : Operation 43 [1/1] (0.77ns)   --->   "%icmp_ln75 = icmp_ult  i9 %row_7, i9 480" [../src/hysteresis.cpp:75]   --->   Operation 43 'icmp' 'icmp_ln75' <Predicate = (!icmp_ln74)> <Delay = 0.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns)   --->   "%br_ln75 = br i1 %icmp_ln75, void %if.end, void %VITIS_LOOP_78_2" [../src/hysteresis.cpp:75]   --->   Operation 44 'br' 'br_ln75' <Predicate = (!icmp_ln74)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns)   --->   "%phi_urem_load81 = load i9 %phi_urem" [../src/hysteresis.cpp:80]   --->   Operation 45 'load' 'phi_urem_load81' <Predicate = (!icmp_ln74 & icmp_ln75)> <Delay = 0.00>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%trunc_ln80 = trunc i9 %phi_urem_load81" [../src/hysteresis.cpp:80]   --->   Operation 46 'trunc' 'trunc_ln80' <Predicate = (!icmp_ln74 & icmp_ln75)> <Delay = 0.00>
+ST_2 : Operation 47 [2/2] (0.54ns)   --->   "%call_ln80 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_78_2, i8 %buffer_2, i8 %buffer_1, i8 %buffer, i8 %thresh_out, i2 %trunc_ln80" [../src/hysteresis.cpp:80]   --->   Operation 47 'call' 'call_ln80' <Predicate = (!icmp_ln74 & icmp_ln75)> <Delay = 0.54> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 48 [1/1] (0.00ns)   --->   "%ret_ln195 = ret" [../src/hysteresis.cpp:195]   --->   Operation 48 'ret' 'ret_ln195' <Predicate = (icmp_ln74)> <Delay = 0.00>
 
-State 3 <SV = 2> <Delay = 2.18>
-ST_3 : Operation 48 [1/2] (1.64ns)   --->   "%call_ln80 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_78_2, i8 %buffer_2, i8 %buffer_1, i8 %buffer, i8 %thresh_out, i2 %trunc_ln80" [../src/hysteresis.cpp:80]   --->   Operation 48 'call' 'call_ln80' <Predicate = (!tmp_42)> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end"   --->   Operation 49 'br' 'br_ln0' <Predicate = (!tmp_42)> <Delay = 0.00>
-ST_3 : Operation 50 [1/1] (0.78ns)   --->   "%outputRow = add i10 %row_7, i10 1023" [../src/hysteresis.cpp:85]   --->   Operation 50 'add' 'outputRow' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%tmp_43 = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %outputRow, i32 9" [../src/hysteresis.cpp:87]   --->   Operation 51 'bitselect' 'tmp_43' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%br_ln87 = br i1 %tmp_43, void %VITIS_LOOP_129_3, void %cleanup" [../src/hysteresis.cpp:87]   --->   Operation 52 'br' 'br_ln87' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 53 [1/1] (0.78ns)   --->   "%hasTop = icmp_sgt  i10 %outputRow, i10 0" [../src/hysteresis.cpp:91]   --->   Operation 53 'icmp' 'hasTop' <Predicate = (!tmp_43)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 54 [1/1] (0.78ns)   --->   "%hasBottom = icmp_ne  i10 %outputRow, i10 511" [../src/hysteresis.cpp:92]   --->   Operation 54 'icmp' 'hasBottom' <Predicate = (!tmp_43)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 55 [1/1] (0.78ns)   --->   "%add_ln103 = add i10 %row_7, i10 1022" [../src/hysteresis.cpp:103]   --->   Operation 55 'add' 'add_ln103' <Predicate = (!tmp_43)> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 56 [14/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 56 'srem' 'result' <Predicate = (!tmp_43)> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+State 3 <SV = 2> <Delay = 2.17>
+ST_3 : Operation 49 [1/2] (1.64ns)   --->   "%call_ln80 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_78_2, i8 %buffer_2, i8 %buffer_1, i8 %buffer, i8 %thresh_out, i2 %trunc_ln80" [../src/hysteresis.cpp:80]   --->   Operation 49 'call' 'call_ln80' <Predicate = (icmp_ln75)> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%br_ln0 = br void %if.end"   --->   Operation 50 'br' 'br_ln0' <Predicate = (icmp_ln75)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.77ns)   --->   "%outputRow = add i10 %zext_ln74, i10 1023" [../src/hysteresis.cpp:85]   --->   Operation 51 'add' 'outputRow' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%tmp_41 = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %outputRow, i32 9" [../src/hysteresis.cpp:87]   --->   Operation 52 'bitselect' 'tmp_41' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%br_ln87 = br i1 %tmp_41, void %VITIS_LOOP_129_3, void %cleanup" [../src/hysteresis.cpp:87]   --->   Operation 53 'br' 'br_ln87' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.78ns)   --->   "%hasTop = icmp_sgt  i10 %outputRow, i10 0" [../src/hysteresis.cpp:91]   --->   Operation 54 'icmp' 'hasTop' <Predicate = (!tmp_41)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 55 [1/1] (0.78ns)   --->   "%hasBottom = icmp_slt  i10 %outputRow, i10 479" [../src/hysteresis.cpp:92]   --->   Operation 55 'icmp' 'hasBottom' <Predicate = (!tmp_41)> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.77ns)   --->   "%add_ln103 = add i10 %zext_ln74, i10 1022" [../src/hysteresis.cpp:103]   --->   Operation 56 'add' 'add_ln103' <Predicate = (!tmp_41)> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 57 [14/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 57 'srem' 'result' <Predicate = (!tmp_41)> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 4 <SV = 3> <Delay = 1.39>
-ST_4 : Operation 57 [13/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 57 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 58 [2/2] (1.23ns)   --->   "%buffer_load = load i9 %buffer_addr" [../src/hysteresis.cpp:139]   --->   Operation 58 'load' 'buffer_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_4 : Operation 59 [2/2] (1.23ns)   --->   "%buffer_1_load = load i9 %buffer_1_addr" [../src/hysteresis.cpp:139]   --->   Operation 59 'load' 'buffer_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_4 : Operation 60 [2/2] (1.23ns)   --->   "%buffer_2_load = load i9 %buffer_2_addr" [../src/hysteresis.cpp:139]   --->   Operation 60 'load' 'buffer_2_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_4 : Operation 61 [2/2] (1.23ns)   --->   "%buffer_load_4 = load i9 %buffer_addr_4" [../src/hysteresis.cpp:139]   --->   Operation 61 'load' 'buffer_load_4' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_4 : Operation 62 [2/2] (1.23ns)   --->   "%buffer_1_load_3 = load i9 %buffer_1_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 62 'load' 'buffer_1_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_4 : Operation 63 [2/2] (1.23ns)   --->   "%buffer_2_load_3 = load i9 %buffer_2_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 63 'load' 'buffer_2_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
+ST_4 : Operation 58 [13/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 58 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 59 [2/2] (1.23ns)   --->   "%buffer_load = load i10 %buffer_addr" [../src/hysteresis.cpp:139]   --->   Operation 59 'load' 'buffer_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 60 [2/2] (1.23ns)   --->   "%buffer_1_load = load i10 %buffer_1_addr" [../src/hysteresis.cpp:139]   --->   Operation 60 'load' 'buffer_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 61 [2/2] (1.23ns)   --->   "%buffer_2_load = load i10 %buffer_2_addr" [../src/hysteresis.cpp:139]   --->   Operation 61 'load' 'buffer_2_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 62 [2/2] (1.23ns)   --->   "%buffer_load_4 = load i10 %buffer_addr_4" [../src/hysteresis.cpp:139]   --->   Operation 62 'load' 'buffer_load_4' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 63 [2/2] (1.23ns)   --->   "%buffer_1_load_3 = load i10 %buffer_1_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 63 'load' 'buffer_1_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_4 : Operation 64 [2/2] (1.23ns)   --->   "%buffer_2_load_3 = load i10 %buffer_2_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 64 'load' 'buffer_2_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
 
 State 5 <SV = 4> <Delay = 1.39>
-ST_5 : Operation 64 [12/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 64 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 65 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_load = load i9 %buffer_addr" [../src/hysteresis.cpp:139]   --->   Operation 65 'load' 'buffer_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_5 : Operation 66 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_1_load = load i9 %buffer_1_addr" [../src/hysteresis.cpp:139]   --->   Operation 66 'load' 'buffer_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_5 : Operation 67 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_2_load = load i9 %buffer_2_addr" [../src/hysteresis.cpp:139]   --->   Operation 67 'load' 'buffer_2_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_5 : Operation 68 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_load_4 = load i9 %buffer_addr_4" [../src/hysteresis.cpp:139]   --->   Operation 68 'load' 'buffer_load_4' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_5 : Operation 69 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_1_load_3 = load i9 %buffer_1_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 69 'load' 'buffer_1_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
-ST_5 : Operation 70 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_2_load_3 = load i9 %buffer_2_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 70 'load' 'buffer_2_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
+ST_5 : Operation 65 [12/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 65 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 66 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_load = load i10 %buffer_addr" [../src/hysteresis.cpp:139]   --->   Operation 66 'load' 'buffer_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_5 : Operation 67 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_1_load = load i10 %buffer_1_addr" [../src/hysteresis.cpp:139]   --->   Operation 67 'load' 'buffer_1_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_5 : Operation 68 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_2_load = load i10 %buffer_2_addr" [../src/hysteresis.cpp:139]   --->   Operation 68 'load' 'buffer_2_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_5 : Operation 69 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_load_4 = load i10 %buffer_addr_4" [../src/hysteresis.cpp:139]   --->   Operation 69 'load' 'buffer_load_4' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_5 : Operation 70 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_1_load_3 = load i10 %buffer_1_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 70 'load' 'buffer_1_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
+ST_5 : Operation 71 [1/2] ( I:1.23ns O:1.23ns )   --->   "%buffer_2_load_3 = load i10 %buffer_2_addr_3" [../src/hysteresis.cpp:139]   --->   Operation 71 'load' 'buffer_2_load_3' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 640> <RAM>
 
 State 6 <SV = 5> <Delay = 1.39>
-ST_6 : Operation 71 [11/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 71 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 72 [11/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 72 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 7 <SV = 6> <Delay = 1.39>
-ST_7 : Operation 72 [10/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 72 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 73 [10/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 73 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 8 <SV = 7> <Delay = 1.39>
-ST_8 : Operation 73 [9/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 73 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 74 [9/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 74 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 9 <SV = 8> <Delay = 1.39>
-ST_9 : Operation 74 [8/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 74 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 75 [8/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 75 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 10 <SV = 9> <Delay = 1.39>
-ST_10 : Operation 75 [7/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 75 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 76 [7/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 76 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 11 <SV = 10> <Delay = 1.39>
-ST_11 : Operation 76 [6/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 76 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 77 [6/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 77 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 12 <SV = 11> <Delay = 1.39>
-ST_12 : Operation 77 [5/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 77 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 78 [5/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 78 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 13 <SV = 12> <Delay = 1.39>
-ST_13 : Operation 78 [4/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 78 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 79 [4/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 79 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 14 <SV = 13> <Delay = 1.39>
-ST_14 : Operation 79 [3/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 79 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 80 [3/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 80 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 15 <SV = 14> <Delay = 1.39>
-ST_15 : Operation 80 [2/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 80 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 81 [2/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 81 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
 
 State 16 <SV = 15> <Delay = 2.97>
-ST_16 : Operation 81 [1/1] (0.00ns)   --->   "%phi_urem69_load_5 = load i10 %phi_urem69" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 81 'load' 'phi_urem69_load_5' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 82 [1/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 82 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 83 [1/1] (0.00ns)   --->   "%trunc_ln11 = trunc i10 %result" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 83 'trunc' 'trunc_ln11' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_44 = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %result, i32 2" [../src/hysteresis.cpp:12->../src/hysteresis.cpp:102]   --->   Operation 84 'bitselect' 'tmp_44' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 85 [1/1] (0.54ns)   --->   "%add_ln12 = add i2 %trunc_ln11, i2 3" [../src/hysteresis.cpp:12->../src/hysteresis.cpp:102]   --->   Operation 85 'add' 'add_ln12' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 86 [1/1] (0.17ns)   --->   "%select_ln12 = select i1 %tmp_44, i2 %add_ln12, i2 %trunc_ln11" [../src/hysteresis.cpp:12->../src/hysteresis.cpp:102]   --->   Operation 86 'select' 'select_ln12' <Predicate = true> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_16 : Operation 87 [1/1] (0.00ns)   --->   "%trunc_ln10 = trunc i10 %phi_urem69_load_5" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 87 'trunc' 'trunc_ln10' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 88 [1/1] (0.42ns)   --->   "%tmp = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load, i2 1, i8 %buffer_1_load, i2 2, i8 %buffer_2_load, i8 0, i2 %select_ln12" [../src/hysteresis.cpp:139]   --->   Operation 88 'sparsemux' 'tmp' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 89 [1/1] (0.42ns)   --->   "%tmp_s = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 1, i8 %buffer_load, i2 2, i8 %buffer_1_load, i2 0, i8 %buffer_2_load, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 89 'sparsemux' 'tmp_s' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 90 [1/1] (0.42ns)   --->   "%tmp_33 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load, i2 1, i8 %buffer_1_load, i2 2, i8 %buffer_2_load, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 90 'sparsemux' 'tmp_33' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 91 [1/1] (0.42ns)   --->   "%tmp_34 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load_4, i2 1, i8 %buffer_1_load_3, i2 2, i8 %buffer_2_load_3, i8 0, i2 %select_ln12" [../src/hysteresis.cpp:139]   --->   Operation 91 'sparsemux' 'tmp_34' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 92 [1/1] (0.42ns)   --->   "%tmp_35 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 1, i8 %buffer_load_4, i2 2, i8 %buffer_1_load_3, i2 0, i8 %buffer_2_load_3, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 92 'sparsemux' 'tmp_35' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 93 [1/1] (0.42ns)   --->   "%tmp_36 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load_4, i2 1, i8 %buffer_1_load_3, i2 2, i8 %buffer_2_load_3, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 93 'sparsemux' 'tmp_36' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
-ST_16 : Operation 94 [2/2] (0.42ns)   --->   "%call_ln139 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_143_5, i8 %tmp_36, i8 %tmp_33, i8 %tmp_35, i8 %tmp_s, i8 %tmp_34, i8 %tmp, i1 %hasBottom, i1 %hasTop, i8 %hyst1_out, i8 %buffer, i8 %buffer_1, i8 %buffer_2, i2 %select_ln12, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 94 'call' 'call_ln139' <Predicate = true> <Delay = 0.42> <CoreType = "Generic">   --->   Generic Core
+ST_16 : Operation 82 [1/1] (0.00ns)   --->   "%phi_urem69_load82 = load i9 %phi_urem69" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 82 'load' 'phi_urem69_load82' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 83 [1/14] (1.39ns)   --->   "%result = srem i10 %add_ln103, i10 3" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 83 'srem' 'result' <Predicate = true> <Delay = 1.39> <CoreInst = "DivnS_SEQ">   --->   Core 7 'DivnS_SEQ' <Latency = 13> <II = 10> <Delay = 1.39> <FuncUnit> <Opcode : 'udiv' 'sdiv' 'urem' 'srem'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 84 [1/1] (0.00ns)   --->   "%trunc_ln11 = trunc i10 %result" [../src/hysteresis.cpp:11->../src/hysteresis.cpp:102]   --->   Operation 84 'trunc' 'trunc_ln11' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 85 [1/1] (0.00ns)   --->   "%tmp_42 = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %result, i32 2" [../src/hysteresis.cpp:12->../src/hysteresis.cpp:102]   --->   Operation 85 'bitselect' 'tmp_42' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 86 [1/1] (0.54ns)   --->   "%add_ln12 = add i2 %trunc_ln11, i2 3" [../src/hysteresis.cpp:12->../src/hysteresis.cpp:102]   --->   Operation 86 'add' 'add_ln12' <Predicate = true> <Delay = 0.54> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 87 [1/1] (0.17ns)   --->   "%select_ln12 = select i1 %tmp_42, i2 %add_ln12, i2 %trunc_ln11" [../src/hysteresis.cpp:12->../src/hysteresis.cpp:102]   --->   Operation 87 'select' 'select_ln12' <Predicate = true> <Delay = 0.17> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.17> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_16 : Operation 88 [1/1] (0.00ns)   --->   "%trunc_ln10 = trunc i9 %phi_urem69_load82" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 88 'trunc' 'trunc_ln10' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 89 [1/1] (0.42ns)   --->   "%tmp = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load, i2 1, i8 %buffer_1_load, i2 2, i8 %buffer_2_load, i8 0, i2 %select_ln12" [../src/hysteresis.cpp:139]   --->   Operation 89 'sparsemux' 'tmp' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 90 [1/1] (0.42ns)   --->   "%tmp_s = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 1, i8 %buffer_load, i2 2, i8 %buffer_1_load, i2 0, i8 %buffer_2_load, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 90 'sparsemux' 'tmp_s' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 91 [1/1] (0.42ns)   --->   "%tmp_33 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load, i2 1, i8 %buffer_1_load, i2 2, i8 %buffer_2_load, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 91 'sparsemux' 'tmp_33' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 92 [1/1] (0.42ns)   --->   "%tmp_34 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load_4, i2 1, i8 %buffer_1_load_3, i2 2, i8 %buffer_2_load_3, i8 0, i2 %select_ln12" [../src/hysteresis.cpp:139]   --->   Operation 92 'sparsemux' 'tmp_34' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 93 [1/1] (0.42ns)   --->   "%tmp_35 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 1, i8 %buffer_load_4, i2 2, i8 %buffer_1_load_3, i2 0, i8 %buffer_2_load_3, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 93 'sparsemux' 'tmp_35' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 94 [1/1] (0.42ns)   --->   "%tmp_36 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i8.i8.i2, i2 0, i8 %buffer_load_4, i2 1, i8 %buffer_1_load_3, i2 2, i8 %buffer_2_load_3, i8 0, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 94 'sparsemux' 'tmp_36' <Predicate = true> <Delay = 0.42> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 152 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 0.42> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 95 [2/2] (0.42ns)   --->   "%call_ln139 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_143_5, i8 %tmp_36, i8 %tmp_33, i8 %tmp_35, i8 %tmp_s, i8 %tmp_34, i8 %tmp, i1 %hasBottom, i1 %hasTop, i8 %hyst1_out, i8 %buffer, i8 %buffer_1, i8 %buffer_2, i2 %select_ln12, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 95 'call' 'call_ln139' <Predicate = true> <Delay = 0.42> <CoreType = "Generic">   --->   Generic Core
 
-State 17 <SV = 16> <Delay = 1.61>
-ST_17 : Operation 95 [1/2] (0.00ns)   --->   "%call_ln139 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_143_5, i8 %tmp_36, i8 %tmp_33, i8 %tmp_35, i8 %tmp_s, i8 %tmp_34, i8 %tmp, i1 %hasBottom, i1 %hasTop, i8 %hyst1_out, i8 %buffer, i8 %buffer_1, i8 %buffer_2, i2 %select_ln12, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 95 'call' 'call_ln139' <Predicate = (!tmp_43)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_17 : Operation 96 [1/1] (0.00ns)   --->   "%br_ln0 = br void %cleanup"   --->   Operation 96 'br' 'br_ln0' <Predicate = (!tmp_43)> <Delay = 0.00>
-ST_17 : Operation 97 [1/1] (0.00ns)   --->   "%phi_urem69_load = load i10 %phi_urem69" [../src/hysteresis.cpp:72]   --->   Operation 97 'load' 'phi_urem69_load' <Predicate = true> <Delay = 0.00>
-ST_17 : Operation 98 [1/1] (0.00ns)   --->   "%phi_urem_load = load i10 %phi_urem" [../src/hysteresis.cpp:72]   --->   Operation 98 'load' 'phi_urem_load' <Predicate = true> <Delay = 0.00>
-ST_17 : Operation 99 [1/1] (0.78ns)   --->   "%add_ln72 = add i10 %phi_urem69_load, i10 1" [../src/hysteresis.cpp:72]   --->   Operation 99 'add' 'add_ln72' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 100 [1/1] (0.78ns)   --->   "%icmp_ln72 = icmp_eq  i10 %phi_urem69_load, i10 2" [../src/hysteresis.cpp:72]   --->   Operation 100 'icmp' 'icmp_ln72' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 101 [1/1] (0.40ns)   --->   "%select_ln72 = select i1 %icmp_ln72, i10 0, i10 %add_ln72" [../src/hysteresis.cpp:72]   --->   Operation 101 'select' 'select_ln72' <Predicate = true> <Delay = 0.40> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_17 : Operation 102 [1/1] (0.78ns)   --->   "%add_ln72_4 = add i10 %phi_urem_load, i10 1" [../src/hysteresis.cpp:72]   --->   Operation 102 'add' 'add_ln72_4' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 103 [1/1] (0.78ns)   --->   "%icmp_ln72_4 = icmp_eq  i10 %phi_urem_load, i10 2" [../src/hysteresis.cpp:72]   --->   Operation 103 'icmp' 'icmp_ln72_4' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_17 : Operation 104 [1/1] (0.40ns)   --->   "%select_ln72_4 = select i1 %icmp_ln72_4, i10 0, i10 %add_ln72_4" [../src/hysteresis.cpp:72]   --->   Operation 104 'select' 'select_ln72_4' <Predicate = true> <Delay = 0.40> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.40> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_17 : Operation 105 [1/1] (0.42ns)   --->   "%store_ln10 = store i10 %rowsReceived, i10 %row_6" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 105 'store' 'store_ln10' <Predicate = true> <Delay = 0.42>
-ST_17 : Operation 106 [1/1] (0.42ns)   --->   "%store_ln72 = store i10 %select_ln72_4, i10 %phi_urem" [../src/hysteresis.cpp:72]   --->   Operation 106 'store' 'store_ln72' <Predicate = true> <Delay = 0.42>
-ST_17 : Operation 107 [1/1] (0.42ns)   --->   "%store_ln72 = store i10 %select_ln72, i10 %phi_urem69" [../src/hysteresis.cpp:72]   --->   Operation 107 'store' 'store_ln72' <Predicate = true> <Delay = 0.42>
-ST_17 : Operation 108 [1/1] (0.00ns)   --->   "%br_ln74 = br void %for.body" [../src/hysteresis.cpp:74]   --->   Operation 108 'br' 'br_ln74' <Predicate = true> <Delay = 0.00>
+State 17 <SV = 16> <Delay = 1.60>
+ST_17 : Operation 96 [1/2] (0.00ns)   --->   "%call_ln139 = call void @hysteresis<1>_Pipeline_VITIS_LOOP_143_5, i8 %tmp_36, i8 %tmp_33, i8 %tmp_35, i8 %tmp_s, i8 %tmp_34, i8 %tmp, i1 %hasBottom, i1 %hasTop, i8 %hyst1_out, i8 %buffer, i8 %buffer_1, i8 %buffer_2, i2 %select_ln12, i2 %trunc_ln10" [../src/hysteresis.cpp:139]   --->   Operation 96 'call' 'call_ln139' <Predicate = (!tmp_41)> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_17 : Operation 97 [1/1] (0.00ns)   --->   "%br_ln0 = br void %cleanup"   --->   Operation 97 'br' 'br_ln0' <Predicate = (!tmp_41)> <Delay = 0.00>
+ST_17 : Operation 98 [1/1] (0.00ns)   --->   "%phi_urem69_load = load i9 %phi_urem69" [../src/hysteresis.cpp:72]   --->   Operation 98 'load' 'phi_urem69_load' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 99 [1/1] (0.00ns)   --->   "%phi_urem_load = load i9 %phi_urem" [../src/hysteresis.cpp:72]   --->   Operation 99 'load' 'phi_urem_load' <Predicate = true> <Delay = 0.00>
+ST_17 : Operation 100 [1/1] (0.77ns)   --->   "%add_ln72 = add i9 %phi_urem69_load, i9 1" [../src/hysteresis.cpp:72]   --->   Operation 100 'add' 'add_ln72' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 101 [1/1] (0.77ns)   --->   "%icmp_ln72 = icmp_eq  i9 %phi_urem69_load, i9 2" [../src/hysteresis.cpp:72]   --->   Operation 101 'icmp' 'icmp_ln72' <Predicate = true> <Delay = 0.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 102 [1/1] (0.39ns)   --->   "%select_ln72 = select i1 %icmp_ln72, i9 0, i9 %add_ln72" [../src/hysteresis.cpp:72]   --->   Operation 102 'select' 'select_ln72' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_17 : Operation 103 [1/1] (0.77ns)   --->   "%add_ln72_4 = add i9 %phi_urem_load, i9 1" [../src/hysteresis.cpp:72]   --->   Operation 103 'add' 'add_ln72_4' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 104 [1/1] (0.77ns)   --->   "%icmp_ln72_4 = icmp_eq  i9 %phi_urem_load, i9 2" [../src/hysteresis.cpp:72]   --->   Operation 104 'icmp' 'icmp_ln72_4' <Predicate = true> <Delay = 0.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 105 [1/1] (0.39ns)   --->   "%select_ln72_4 = select i1 %icmp_ln72_4, i9 0, i9 %add_ln72_4" [../src/hysteresis.cpp:72]   --->   Operation 105 'select' 'select_ln72_4' <Predicate = true> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_17 : Operation 106 [1/1] (0.42ns)   --->   "%store_ln10 = store i9 %rowsReceived, i9 %row_6" [../src/hysteresis.cpp:10->../src/hysteresis.cpp:114]   --->   Operation 106 'store' 'store_ln10' <Predicate = true> <Delay = 0.42>
+ST_17 : Operation 107 [1/1] (0.42ns)   --->   "%store_ln72 = store i9 %select_ln72_4, i9 %phi_urem" [../src/hysteresis.cpp:72]   --->   Operation 107 'store' 'store_ln72' <Predicate = true> <Delay = 0.42>
+ST_17 : Operation 108 [1/1] (0.42ns)   --->   "%store_ln72 = store i9 %select_ln72, i9 %phi_urem69" [../src/hysteresis.cpp:72]   --->   Operation 108 'store' 'store_ln72' <Predicate = true> <Delay = 0.42>
+ST_17 : Operation 109 [1/1] (0.00ns)   --->   "%br_ln74 = br void %for.body" [../src/hysteresis.cpp:74]   --->   Operation 109 'br' 'br_ln74' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -228,82 +229,82 @@ Target clock period: 5.000ns, clock uncertainty: 1.350ns.
 
  <State 1>: 0.427ns
 The critical path consists of the following:
-	'alloca' operation 10 bit ('value', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114) [5]  (0.000 ns)
-	'store' operation ('store_ln10', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114) of constant 0 10 bit on local variable 'value', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114 [17]  (0.427 ns)
+	'alloca' operation 9 bit ('value', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114) [5]  (0.000 ns)
+	'store' operation ('store_ln10', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114) of constant 0 9 bit on local variable 'value', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114 [17]  (0.427 ns)
 
- <State 2>: 1.335ns
+ <State 2>: 1.324ns
 The critical path consists of the following:
-	'load' operation 10 bit ('row', ../src/hysteresis.cpp:103) on local variable 'value', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114 [22]  (0.000 ns)
-	'icmp' operation 1 bit ('icmp_ln74', ../src/hysteresis.cpp:74) [23]  (0.787 ns)
-	'call' operation ('call_ln80', ../src/hysteresis.cpp:80) to 'hysteresis<1>_Pipeline_VITIS_LOOP_78_2' [34]  (0.548 ns)
+	'load' operation 9 bit ('row', ../src/hysteresis.cpp:83) on local variable 'value', ../src/hysteresis.cpp:10->../src/hysteresis.cpp:114 [22]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln75', ../src/hysteresis.cpp:75) [30]  (0.776 ns)
+	'call' operation ('call_ln80', ../src/hysteresis.cpp:80) to 'hysteresis<1>_Pipeline_VITIS_LOOP_78_2' [35]  (0.548 ns)
 
- <State 3>: 2.181ns
+ <State 3>: 2.170ns
 The critical path consists of the following:
-	'add' operation 10 bit ('value', ../src/hysteresis.cpp:103) [44]  (0.787 ns)
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'add' operation 10 bit ('value', ../src/hysteresis.cpp:103) [45]  (0.776 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 4>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 5>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 6>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 7>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 8>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 9>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 10>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 11>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 12>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 13>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 14>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 15>: 1.394ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
 
  <State 16>: 2.975ns
 The critical path consists of the following:
-	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [45]  (1.394 ns)
-	'add' operation 2 bit ('add_ln12', ../src/hysteresis.cpp:12->../src/hysteresis.cpp:102) [48]  (0.548 ns)
-	'select' operation 2 bit ('select_ln12', ../src/hysteresis.cpp:12->../src/hysteresis.cpp:102) [49]  (0.179 ns)
-	'sparsemux' operation 8 bit ('tmp_34', ../src/hysteresis.cpp:139) [60]  (0.427 ns)
-	'call' operation ('call_ln139', ../src/hysteresis.cpp:139) to 'hysteresis<1>_Pipeline_VITIS_LOOP_143_5' [63]  (0.427 ns)
+	'srem' operation 10 bit ('result', ../src/hysteresis.cpp:11->../src/hysteresis.cpp:102) [46]  (1.394 ns)
+	'add' operation 2 bit ('add_ln12', ../src/hysteresis.cpp:12->../src/hysteresis.cpp:102) [49]  (0.548 ns)
+	'select' operation 2 bit ('select_ln12', ../src/hysteresis.cpp:12->../src/hysteresis.cpp:102) [50]  (0.179 ns)
+	'sparsemux' operation 8 bit ('tmp', ../src/hysteresis.cpp:139) [55]  (0.427 ns)
+	'call' operation ('call_ln139', ../src/hysteresis.cpp:139) to 'hysteresis<1>_Pipeline_VITIS_LOOP_143_5' [64]  (0.427 ns)
 
- <State 17>: 1.617ns
+ <State 17>: 1.601ns
 The critical path consists of the following:
-	'load' operation 10 bit ('phi_urem_load', ../src/hysteresis.cpp:72) on local variable 'phi_urem' [67]  (0.000 ns)
-	'add' operation 10 bit ('add_ln72_4', ../src/hysteresis.cpp:72) [71]  (0.787 ns)
-	'select' operation 10 bit ('select_ln72_4', ../src/hysteresis.cpp:72) [73]  (0.403 ns)
-	'store' operation ('store_ln72', ../src/hysteresis.cpp:72) of variable 'select_ln72_4', ../src/hysteresis.cpp:72 10 bit on local variable 'phi_urem' [75]  (0.427 ns)
+	'load' operation 9 bit ('phi_urem_load', ../src/hysteresis.cpp:72) on local variable 'phi_urem' [68]  (0.000 ns)
+	'add' operation 9 bit ('add_ln72_4', ../src/hysteresis.cpp:72) [72]  (0.776 ns)
+	'select' operation 9 bit ('select_ln72_4', ../src/hysteresis.cpp:72) [74]  (0.398 ns)
+	'store' operation ('store_ln72', ../src/hysteresis.cpp:72) of variable 'select_ln72_4', ../src/hysteresis.cpp:72 9 bit on local variable 'phi_urem' [76]  (0.427 ns)
 
 
 ============================================================

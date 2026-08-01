@@ -19,10 +19,10 @@ set cdfgNum 31
 set C_modelName {grayscale_Pipeline_burst_read}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict row_words { MEM_WIDTH 512 MEM_SIZE 1536 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_words { MEM_WIDTH 512 MEM_SIZE 1920 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
 set C_modelArgList {
 	{ gmem0 int 512 regular {axi_master 0}  }
-	{ row_words int 512 regular {array 24 { 0 3 } 0 1 }  }
+	{ row_words int 512 regular {array 30 { 0 3 } 0 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -156,8 +156,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "27", "Max" : "27"}
-	, {"Name" : "Interval", "Min" : "25", "Max" : "25"}
+	{"Name" : "Latency", "Min" : "33", "Max" : "33"}
+	, {"Name" : "Interval", "Min" : "31", "Max" : "31"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -18,41 +18,41 @@
 <PipelineType>no</PipelineType>
 <SummaryOfTimingAnalysis>
 <unit>ns</unit>
-<EstimatedClockPeriod>3.324</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.641</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1540</Best-caseLatency>
-<Average-caseLatency>268813</Average-caseLatency>
-<Worst-caseLatency>536086</Worst-caseLatency>
-<Best-caseRealTimeLatency>7.700 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.344 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.680 ms</Worst-caseRealTimeLatency>
-<Interval-min>1540</Interval-min>
-<Interval-max>536086</Interval-max>
+<Best-caseLatency>1444</Best-caseLatency>
+<Average-caseLatency>313613</Average-caseLatency>
+<Worst-caseLatency>625782</Worst-caseLatency>
+<Best-caseRealTimeLatency>7.220 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.568 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>3.129 ms</Worst-caseRealTimeLatency>
+<Interval-min>1444</Interval-min>
+<Interval-max>625782</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_46_1>
 <Slack>3.65</Slack>
-<TripCount>513</TripCount>
+<TripCount>481</TripCount>
 <isPerfectNested>0</isPerfectNested>
 <Latency>
 <range>
-<min>1539</min>
-<max>536085</max>
+<min>1443</min>
+<max>625781</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>7695</min>
-<max>2680425</max>
+<min>7215</min>
+<max>3128905</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
 <range>
 <min>3</min>
-<max>1045</max>
+<max>1301</max>
 </range>
 </IterationLatency>
 <PerformancePragma>-</PerformancePragma>
@@ -69,7 +69,7 @@
 <Name>VITIS_LOOP_46_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/non_maximum_suppression.cpp:77</SourceLocation>
+<SourceLocation>../src/non_maximum_suppression.cpp:55</SourceLocation>
 </VITIS_LOOP_46_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -78,8 +78,8 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>6</BRAM_18K>
-<FF>637</FF>
-<LUT>1356</LUT>
+<FF>642</FF>
+<LUT>1380</LUT>
 <URAM>0</URAM>
 <DSP>0</DSP>
 </Resources>
@@ -244,7 +244,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>11</Bits>
+<Bits>12</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -255,7 +255,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>11</Bits>
+<Bits>12</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>

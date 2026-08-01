@@ -3,476 +3,476 @@
 
 <trans_list>
 
-<trans id="215" from="1" to="2">
+<trans id="214" from="1" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="216" from="2" to="3">
+<trans id="215" from="2" to="3">
 <condition id="-1">
 <or_exp><and_exp><literal name="icmp_ln7" val="0"/>
 </and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="218" from="3" to="4">
+<trans id="217" from="3" to="4">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="219" from="4" to="5">
+<trans id="218" from="4" to="5">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="220" from="5" to="6">
+<trans id="219" from="5" to="6">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="221" from="6" to="7">
+<trans id="220" from="6" to="7">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="222" from="7" to="8">
+<trans id="221" from="7" to="8">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="223" from="8" to="9">
+<trans id="222" from="8" to="9">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="224" from="9" to="10">
+<trans id="223" from="9" to="10">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="225" from="10" to="11">
+<trans id="224" from="10" to="11">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="226" from="11" to="12">
+<trans id="225" from="11" to="12">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="227" from="12" to="13">
+<trans id="226" from="12" to="13">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="228" from="13" to="14">
+<trans id="227" from="13" to="14">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="229" from="14" to="15">
+<trans id="228" from="14" to="15">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="230" from="15" to="16">
+<trans id="229" from="15" to="16">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="231" from="16" to="17">
+<trans id="230" from="16" to="17">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="232" from="17" to="18">
+<trans id="231" from="17" to="18">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="233" from="18" to="19">
+<trans id="232" from="18" to="19">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="234" from="19" to="20">
+<trans id="233" from="19" to="20">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="235" from="20" to="21">
+<trans id="234" from="20" to="21">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="236" from="21" to="22">
+<trans id="235" from="21" to="22">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="237" from="22" to="23">
+<trans id="236" from="22" to="23">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="238" from="23" to="24">
+<trans id="237" from="23" to="24">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="239" from="24" to="25">
+<trans id="238" from="24" to="25">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="240" from="25" to="26">
+<trans id="239" from="25" to="26">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="241" from="26" to="27">
+<trans id="240" from="26" to="27">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="242" from="27" to="28">
+<trans id="241" from="27" to="28">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="243" from="28" to="29">
+<trans id="242" from="28" to="29">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="244" from="29" to="30">
+<trans id="243" from="29" to="30">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="245" from="30" to="31">
+<trans id="244" from="30" to="31">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="246" from="31" to="32">
+<trans id="245" from="31" to="32">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="247" from="32" to="33">
+<trans id="246" from="32" to="33">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="248" from="33" to="34">
+<trans id="247" from="33" to="34">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="249" from="34" to="35">
+<trans id="248" from="34" to="35">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="250" from="35" to="36">
+<trans id="249" from="35" to="36">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="251" from="36" to="37">
+<trans id="250" from="36" to="37">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="252" from="37" to="38">
+<trans id="251" from="37" to="38">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="253" from="38" to="39">
+<trans id="252" from="38" to="39">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="254" from="39" to="40">
+<trans id="253" from="39" to="40">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="255" from="40" to="41">
+<trans id="254" from="40" to="41">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="256" from="41" to="42">
+<trans id="255" from="41" to="42">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="257" from="42" to="43">
+<trans id="256" from="42" to="43">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="258" from="43" to="44">
+<trans id="257" from="43" to="44">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="259" from="44" to="45">
+<trans id="258" from="44" to="45">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="260" from="45" to="46">
+<trans id="259" from="45" to="46">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="261" from="46" to="47">
+<trans id="260" from="46" to="47">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="262" from="47" to="48">
+<trans id="261" from="47" to="48">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="263" from="48" to="49">
+<trans id="262" from="48" to="49">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="264" from="49" to="50">
+<trans id="263" from="49" to="50">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="265" from="50" to="51">
+<trans id="264" from="50" to="51">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="266" from="51" to="52">
+<trans id="265" from="51" to="52">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="267" from="52" to="53">
+<trans id="266" from="52" to="53">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="268" from="53" to="54">
+<trans id="267" from="53" to="54">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="269" from="54" to="55">
+<trans id="268" from="54" to="55">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="270" from="55" to="56">
+<trans id="269" from="55" to="56">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="271" from="56" to="57">
+<trans id="270" from="56" to="57">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="272" from="57" to="58">
+<trans id="271" from="57" to="58">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="273" from="58" to="59">
+<trans id="272" from="58" to="59">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="274" from="59" to="60">
+<trans id="273" from="59" to="60">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="275" from="60" to="61">
+<trans id="274" from="60" to="61">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="276" from="61" to="62">
+<trans id="275" from="61" to="62">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="277" from="62" to="63">
+<trans id="276" from="62" to="63">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="278" from="63" to="64">
+<trans id="277" from="63" to="64">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="279" from="64" to="65">
+<trans id="278" from="64" to="65">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="280" from="65" to="66">
+<trans id="279" from="65" to="66">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="281" from="66" to="67">
+<trans id="280" from="66" to="67">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="282" from="67" to="68">
+<trans id="281" from="67" to="68">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="283" from="68" to="69">
+<trans id="282" from="68" to="69">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="284" from="69" to="70">
+<trans id="283" from="69" to="70">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="285" from="70" to="71">
+<trans id="284" from="70" to="71">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="286" from="71" to="72">
+<trans id="285" from="71" to="72">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="287" from="72" to="73">
+<trans id="286" from="72" to="73">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="288" from="73" to="74">
+<trans id="287" from="73" to="74">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="289" from="74" to="75">
+<trans id="288" from="74" to="75">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="290" from="75" to="76">
+<trans id="289" from="75" to="76">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="291" from="76" to="77">
+<trans id="290" from="76" to="77">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="292" from="77" to="78">
+<trans id="291" from="77" to="78">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="293" from="78" to="79">
+<trans id="292" from="78" to="79">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 </trans>
 
-<trans id="294" from="79" to="2">
+<trans id="293" from="79" to="2">
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
@@ -492,7 +492,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="4" bw="10" op_0_bw="32">
+<Node id="4" bw="9" op_0_bw="32">
 <![CDATA[
 entry:0 %row = alloca i32 1
 
@@ -1047,9 +1047,9 @@ entry:36 %row_bytes_31 = alloca i64 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="41" bw="0" op_0_bw="10" op_1_bw="10">
+<Node id="41" bw="0" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-entry:37 %store_ln7 = store i10 0, i10 %row
+entry:37 %store_ln7 = store i9 0, i9 %row
 
 ]]></Node>
 <StgValue><ssdm name="store_ln7"/></StgValue>
@@ -1080,9 +1080,9 @@ entry:38 %br_ln7 = br void %burst_read
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="10" op_0_bw="10" op_1_bw="0">
+<Node id="44" bw="9" op_0_bw="9" op_1_bw="0">
 <![CDATA[
-burst_read:0 %row_8 = load i10 %row
+burst_read:0 %row_8 = load i9 %row
 
 ]]></Node>
 <StgValue><ssdm name="row_8"/></StgValue>
@@ -1095,9 +1095,9 @@ burst_read:0 %row_8 = load i10 %row
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="45" bw="1" op_0_bw="10" op_1_bw="10">
+<Node id="45" bw="1" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-burst_read:1 %icmp_ln7 = icmp_eq  i10 %row_8, i10 512
+burst_read:1 %icmp_ln7 = icmp_eq  i9 %row_8, i9 480
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln7"/></StgValue>
@@ -1110,9 +1110,9 @@ burst_read:1 %icmp_ln7 = icmp_eq  i10 %row_8, i10 512
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="46" bw="10" op_0_bw="10" op_1_bw="10">
+<Node id="46" bw="9" op_0_bw="9" op_1_bw="9">
 <![CDATA[
-burst_read:2 %add_ln7 = add i10 %row_8, i10 1
+burst_read:2 %add_ln7 = add i9 %row_8, i9 1
 
 ]]></Node>
 <StgValue><ssdm name="add_ln7"/></StgValue>
@@ -1141,12 +1141,12 @@ burst_read:3 %br_ln7 = br i1 %icmp_ln7, void %burst_read.split, void %for.end65
 </and_exp></or_exp>
 </condition>
 
-<Node id="51" bw="9" op_0_bw="10">
+<Node id="51" bw="20" op_0_bw="20" op_1_bw="9" op_2_bw="11">
 <![CDATA[
-burst_read.split:2 %trunc_ln15 = trunc i10 %row_8
+burst_read.split:2 %p_shl = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i9.i11, i9 %row_8, i11 0
 
 ]]></Node>
-<StgValue><ssdm name="trunc_ln15"/></StgValue>
+<StgValue><ssdm name="p_shl"/></StgValue>
 </operation>
 
 <operation id="124" st_id="2" stage="1" lat="1">
@@ -1157,12 +1157,12 @@ burst_read.split:2 %trunc_ln15 = trunc i10 %row_8
 </and_exp></or_exp>
 </condition>
 
-<Node id="52" bw="20" op_0_bw="20" op_1_bw="9" op_2_bw="11">
+<Node id="52" bw="16" op_0_bw="16" op_1_bw="9" op_2_bw="7">
 <![CDATA[
-burst_read.split:3 %p_shl = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i9.i11, i9 %trunc_ln15, i11 0
+burst_read.split:3 %tmp = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i9.i7, i9 %row_8, i7 0
 
 ]]></Node>
-<StgValue><ssdm name="p_shl"/></StgValue>
+<StgValue><ssdm name="tmp"/></StgValue>
 </operation>
 
 <operation id="125" st_id="2" stage="1" lat="1">
@@ -1173,31 +1173,15 @@ burst_read.split:3 %p_shl = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i9.i
 </and_exp></or_exp>
 </condition>
 
-<Node id="53" bw="19" op_0_bw="19" op_1_bw="10" op_2_bw="9">
+<Node id="53" bw="20" op_0_bw="16">
 <![CDATA[
-burst_read.split:4 %tmp = bitconcatenate i19 @_ssdm_op_BitConcatenate.i19.i10.i9, i10 %row_8, i9 0
-
-]]></Node>
-<StgValue><ssdm name="tmp"/></StgValue>
-</operation>
-
-<operation id="126" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln7" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="54" bw="20" op_0_bw="19">
-<![CDATA[
-burst_read.split:5 %zext_ln15_1 = zext i19 %tmp
+burst_read.split:4 %zext_ln15_1 = zext i16 %tmp
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln15_1"/></StgValue>
 </operation>
 
-<operation id="127" st_id="2" stage="1" lat="1">
+<operation id="126" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1205,15 +1189,15 @@ burst_read.split:5 %zext_ln15_1 = zext i19 %tmp
 </and_exp></or_exp>
 </condition>
 
-<Node id="55" bw="20" op_0_bw="20" op_1_bw="20">
+<Node id="54" bw="20" op_0_bw="20" op_1_bw="20">
 <![CDATA[
-burst_read.split:6 %sub_ln15 = sub i20 %p_shl, i20 %zext_ln15_1
+burst_read.split:5 %sub_ln15 = sub i20 %p_shl, i20 %zext_ln15_1
 
 ]]></Node>
 <StgValue><ssdm name="sub_ln15"/></StgValue>
 </operation>
 
-<operation id="128" st_id="2" stage="1" lat="1">
+<operation id="127" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1221,15 +1205,15 @@ burst_read.split:6 %sub_ln15 = sub i20 %p_shl, i20 %zext_ln15_1
 </and_exp></or_exp>
 </condition>
 
-<Node id="56" bw="64" op_0_bw="20">
+<Node id="55" bw="64" op_0_bw="20">
 <![CDATA[
-burst_read.split:7 %zext_ln15 = zext i20 %sub_ln15
+burst_read.split:6 %zext_ln15 = zext i20 %sub_ln15
 
 ]]></Node>
 <StgValue><ssdm name="zext_ln15"/></StgValue>
 </operation>
 
-<operation id="129" st_id="2" stage="1" lat="1">
+<operation id="128" st_id="2" stage="1" lat="1">
 <core>Adder</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1237,12 +1221,28 @@ burst_read.split:7 %zext_ln15 = zext i20 %sub_ln15
 </and_exp></or_exp>
 </condition>
 
-<Node id="57" bw="64" op_0_bw="64" op_1_bw="64">
+<Node id="56" bw="64" op_0_bw="64" op_1_bw="64">
 <![CDATA[
-burst_read.split:8 %add_ln15 = add i64 %zext_ln15, i64 %input_read
+burst_read.split:7 %add_ln15 = add i64 %zext_ln15, i64 %input_read
 
 ]]></Node>
 <StgValue><ssdm name="add_ln15"/></StgValue>
+</operation>
+
+<operation id="129" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp><literal name="icmp_ln7" val="0"/>
+</and_exp></or_exp>
+</condition>
+
+<Node id="57" bw="58" op_0_bw="58" op_1_bw="64" op_2_bw="32" op_3_bw="32">
+<![CDATA[
+burst_read.split:8 %trunc_ln = partselect i58 @_ssdm_op_PartSelect.i58.i64.i32.i32, i64 %add_ln15, i32 6, i32 63
+
+]]></Node>
+<StgValue><ssdm name="trunc_ln"/></StgValue>
 </operation>
 
 <operation id="130" st_id="2" stage="1" lat="1">
@@ -1253,31 +1253,15 @@ burst_read.split:8 %add_ln15 = add i64 %zext_ln15, i64 %input_read
 </and_exp></or_exp>
 </condition>
 
-<Node id="58" bw="58" op_0_bw="58" op_1_bw="64" op_2_bw="32" op_3_bw="32">
+<Node id="64" bw="0" op_0_bw="9" op_1_bw="9" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-burst_read.split:9 %trunc_ln = partselect i58 @_ssdm_op_PartSelect.i58.i64.i32.i32, i64 %add_ln15, i32 6, i32 63
-
-]]></Node>
-<StgValue><ssdm name="trunc_ln"/></StgValue>
-</operation>
-
-<operation id="131" st_id="2" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp><literal name="icmp_ln7" val="0"/>
-</and_exp></or_exp>
-</condition>
-
-<Node id="65" bw="0" op_0_bw="10" op_1_bw="10" op_2_bw="0" op_3_bw="0">
-<![CDATA[
-burst_read.split:16 %store_ln7 = store i10 %add_ln7, i10 %row
+burst_read.split:15 %store_ln7 = store i9 %add_ln7, i9 %row
 
 ]]></Node>
 <StgValue><ssdm name="store_ln7"/></StgValue>
 </operation>
 
-<operation id="132" st_id="2" stage="1" lat="1">
+<operation id="131" st_id="2" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -1285,7 +1269,7 @@ burst_read.split:16 %store_ln7 = store i10 %add_ln7, i10 %row
 </and_exp></or_exp>
 </condition>
 
-<Node id="68" bw="0">
+<Node id="67" bw="0">
 <![CDATA[
 for.end65:0 %ret_ln48 = ret
 
@@ -1296,6 +1280,21 @@ for.end65:0 %ret_ln48 = ret
 
 <state id="3" st_id="3">
 
+<operation id="132" st_id="3" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="58" bw="64" op_0_bw="58">
+<![CDATA[
+burst_read.split:9 %sext_ln15 = sext i58 %trunc_ln
+
+]]></Node>
+<StgValue><ssdm name="sext_ln15"/></StgValue>
+</operation>
+
 <operation id="133" st_id="3" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
@@ -1303,39 +1302,24 @@ for.end65:0 %ret_ln48 = ret
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="59" bw="64" op_0_bw="58">
+<Node id="59" bw="512" op_0_bw="512" op_1_bw="64">
 <![CDATA[
-burst_read.split:10 %sext_ln15 = sext i58 %trunc_ln
-
-]]></Node>
-<StgValue><ssdm name="sext_ln15"/></StgValue>
-</operation>
-
-<operation id="134" st_id="3" stage="1" lat="1">
-<core>NULL</core>
-<MemPortIdVec></MemPortIdVec>
-<condition id="-1">
-<or_exp><and_exp></and_exp></or_exp>
-</condition>
-
-<Node id="60" bw="512" op_0_bw="512" op_1_bw="64">
-<![CDATA[
-burst_read.split:11 %gmem0_addr = getelementptr i512 %gmem0, i64 %sext_ln15
+burst_read.split:10 %gmem0_addr = getelementptr i512 %gmem0, i64 %sext_ln15
 
 ]]></Node>
 <StgValue><ssdm name="gmem0_addr"/></StgValue>
 </operation>
 
-<operation id="135" st_id="3" stage="71" lat="71">
+<operation id="134" st_id="3" stage="71" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1344,16 +1328,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="4" st_id="4">
 
-<operation id="136" st_id="4" stage="70" lat="71">
+<operation id="135" st_id="4" stage="70" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1362,16 +1346,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="5" st_id="5">
 
-<operation id="137" st_id="5" stage="69" lat="71">
+<operation id="136" st_id="5" stage="69" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1380,16 +1364,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="6" st_id="6">
 
-<operation id="138" st_id="6" stage="68" lat="71">
+<operation id="137" st_id="6" stage="68" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1398,16 +1382,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="7" st_id="7">
 
-<operation id="139" st_id="7" stage="67" lat="71">
+<operation id="138" st_id="7" stage="67" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1416,16 +1400,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="8" st_id="8">
 
-<operation id="140" st_id="8" stage="66" lat="71">
+<operation id="139" st_id="8" stage="66" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1434,16 +1418,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="9" st_id="9">
 
-<operation id="141" st_id="9" stage="65" lat="71">
+<operation id="140" st_id="9" stage="65" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1452,16 +1436,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="10" st_id="10">
 
-<operation id="142" st_id="10" stage="64" lat="71">
+<operation id="141" st_id="10" stage="64" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1470,16 +1454,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="11" st_id="11">
 
-<operation id="143" st_id="11" stage="63" lat="71">
+<operation id="142" st_id="11" stage="63" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1488,16 +1472,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="12" st_id="12">
 
-<operation id="144" st_id="12" stage="62" lat="71">
+<operation id="143" st_id="12" stage="62" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1506,16 +1490,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="13" st_id="13">
 
-<operation id="145" st_id="13" stage="61" lat="71">
+<operation id="144" st_id="13" stage="61" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1524,16 +1508,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="14" st_id="14">
 
-<operation id="146" st_id="14" stage="60" lat="71">
+<operation id="145" st_id="14" stage="60" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1542,16 +1526,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="15" st_id="15">
 
-<operation id="147" st_id="15" stage="59" lat="71">
+<operation id="146" st_id="15" stage="59" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1560,16 +1544,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="16" st_id="16">
 
-<operation id="148" st_id="16" stage="58" lat="71">
+<operation id="147" st_id="16" stage="58" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1578,16 +1562,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="17" st_id="17">
 
-<operation id="149" st_id="17" stage="57" lat="71">
+<operation id="148" st_id="17" stage="57" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1596,16 +1580,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="18" st_id="18">
 
-<operation id="150" st_id="18" stage="56" lat="71">
+<operation id="149" st_id="18" stage="56" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1614,16 +1598,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="19" st_id="19">
 
-<operation id="151" st_id="19" stage="55" lat="71">
+<operation id="150" st_id="19" stage="55" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1632,16 +1616,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="20" st_id="20">
 
-<operation id="152" st_id="20" stage="54" lat="71">
+<operation id="151" st_id="20" stage="54" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1650,16 +1634,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="21" st_id="21">
 
-<operation id="153" st_id="21" stage="53" lat="71">
+<operation id="152" st_id="21" stage="53" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1668,16 +1652,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="22" st_id="22">
 
-<operation id="154" st_id="22" stage="52" lat="71">
+<operation id="153" st_id="22" stage="52" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1686,16 +1670,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="23" st_id="23">
 
-<operation id="155" st_id="23" stage="51" lat="71">
+<operation id="154" st_id="23" stage="51" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1704,16 +1688,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="24" st_id="24">
 
-<operation id="156" st_id="24" stage="50" lat="71">
+<operation id="155" st_id="24" stage="50" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1722,16 +1706,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="25" st_id="25">
 
-<operation id="157" st_id="25" stage="49" lat="71">
+<operation id="156" st_id="25" stage="49" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1740,16 +1724,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="26" st_id="26">
 
-<operation id="158" st_id="26" stage="48" lat="71">
+<operation id="157" st_id="26" stage="48" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1758,16 +1742,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="27" st_id="27">
 
-<operation id="159" st_id="27" stage="47" lat="71">
+<operation id="158" st_id="27" stage="47" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1776,16 +1760,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="28" st_id="28">
 
-<operation id="160" st_id="28" stage="46" lat="71">
+<operation id="159" st_id="28" stage="46" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1794,16 +1778,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="29" st_id="29">
 
-<operation id="161" st_id="29" stage="45" lat="71">
+<operation id="160" st_id="29" stage="45" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1812,16 +1796,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="30" st_id="30">
 
-<operation id="162" st_id="30" stage="44" lat="71">
+<operation id="161" st_id="30" stage="44" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1830,16 +1814,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="31" st_id="31">
 
-<operation id="163" st_id="31" stage="43" lat="71">
+<operation id="162" st_id="31" stage="43" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1848,16 +1832,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="32" st_id="32">
 
-<operation id="164" st_id="32" stage="42" lat="71">
+<operation id="163" st_id="32" stage="42" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1866,16 +1850,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="33" st_id="33">
 
-<operation id="165" st_id="33" stage="41" lat="71">
+<operation id="164" st_id="33" stage="41" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1884,16 +1868,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="34" st_id="34">
 
-<operation id="166" st_id="34" stage="40" lat="71">
+<operation id="165" st_id="34" stage="40" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1902,16 +1886,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="35" st_id="35">
 
-<operation id="167" st_id="35" stage="39" lat="71">
+<operation id="166" st_id="35" stage="39" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1920,16 +1904,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="36" st_id="36">
 
-<operation id="168" st_id="36" stage="38" lat="71">
+<operation id="167" st_id="36" stage="38" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1938,16 +1922,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="37" st_id="37">
 
-<operation id="169" st_id="37" stage="37" lat="71">
+<operation id="168" st_id="37" stage="37" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1956,16 +1940,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="38" st_id="38">
 
-<operation id="170" st_id="38" stage="36" lat="71">
+<operation id="169" st_id="38" stage="36" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1974,16 +1958,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="39" st_id="39">
 
-<operation id="171" st_id="39" stage="35" lat="71">
+<operation id="170" st_id="39" stage="35" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -1992,16 +1976,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="40" st_id="40">
 
-<operation id="172" st_id="40" stage="34" lat="71">
+<operation id="171" st_id="40" stage="34" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2010,16 +1994,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="41" st_id="41">
 
-<operation id="173" st_id="41" stage="33" lat="71">
+<operation id="172" st_id="41" stage="33" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2028,16 +2012,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="42" st_id="42">
 
-<operation id="174" st_id="42" stage="32" lat="71">
+<operation id="173" st_id="42" stage="32" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2046,16 +2030,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="43" st_id="43">
 
-<operation id="175" st_id="43" stage="31" lat="71">
+<operation id="174" st_id="43" stage="31" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2064,16 +2048,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="44" st_id="44">
 
-<operation id="176" st_id="44" stage="30" lat="71">
+<operation id="175" st_id="44" stage="30" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2082,16 +2066,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="45" st_id="45">
 
-<operation id="177" st_id="45" stage="29" lat="71">
+<operation id="176" st_id="45" stage="29" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2100,16 +2084,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="46" st_id="46">
 
-<operation id="178" st_id="46" stage="28" lat="71">
+<operation id="177" st_id="46" stage="28" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2118,16 +2102,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="47" st_id="47">
 
-<operation id="179" st_id="47" stage="27" lat="71">
+<operation id="178" st_id="47" stage="27" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2136,16 +2120,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="48" st_id="48">
 
-<operation id="180" st_id="48" stage="26" lat="71">
+<operation id="179" st_id="48" stage="26" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2154,16 +2138,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="49" st_id="49">
 
-<operation id="181" st_id="49" stage="25" lat="71">
+<operation id="180" st_id="49" stage="25" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2172,16 +2156,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="50" st_id="50">
 
-<operation id="182" st_id="50" stage="24" lat="71">
+<operation id="181" st_id="50" stage="24" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2190,16 +2174,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="51" st_id="51">
 
-<operation id="183" st_id="51" stage="23" lat="71">
+<operation id="182" st_id="51" stage="23" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2208,16 +2192,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="52" st_id="52">
 
-<operation id="184" st_id="52" stage="22" lat="71">
+<operation id="183" st_id="52" stage="22" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2226,16 +2210,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="53" st_id="53">
 
-<operation id="185" st_id="53" stage="21" lat="71">
+<operation id="184" st_id="53" stage="21" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2244,16 +2228,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="54" st_id="54">
 
-<operation id="186" st_id="54" stage="20" lat="71">
+<operation id="185" st_id="54" stage="20" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2262,16 +2246,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="55" st_id="55">
 
-<operation id="187" st_id="55" stage="19" lat="71">
+<operation id="186" st_id="55" stage="19" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2280,16 +2264,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="56" st_id="56">
 
-<operation id="188" st_id="56" stage="18" lat="71">
+<operation id="187" st_id="56" stage="18" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2298,16 +2282,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="57" st_id="57">
 
-<operation id="189" st_id="57" stage="17" lat="71">
+<operation id="188" st_id="57" stage="17" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2316,16 +2300,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="58" st_id="58">
 
-<operation id="190" st_id="58" stage="16" lat="71">
+<operation id="189" st_id="58" stage="16" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2334,16 +2318,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="59" st_id="59">
 
-<operation id="191" st_id="59" stage="15" lat="71">
+<operation id="190" st_id="59" stage="15" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2352,16 +2336,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="60" st_id="60">
 
-<operation id="192" st_id="60" stage="14" lat="71">
+<operation id="191" st_id="60" stage="14" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2370,16 +2354,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="61" st_id="61">
 
-<operation id="193" st_id="61" stage="13" lat="71">
+<operation id="192" st_id="61" stage="13" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2388,16 +2372,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="62" st_id="62">
 
-<operation id="194" st_id="62" stage="12" lat="71">
+<operation id="193" st_id="62" stage="12" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2406,16 +2390,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="63" st_id="63">
 
-<operation id="195" st_id="63" stage="11" lat="71">
+<operation id="194" st_id="63" stage="11" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2424,16 +2408,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="64" st_id="64">
 
-<operation id="196" st_id="64" stage="10" lat="71">
+<operation id="195" st_id="64" stage="10" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2442,16 +2426,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="65" st_id="65">
 
-<operation id="197" st_id="65" stage="9" lat="71">
+<operation id="196" st_id="65" stage="9" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2460,16 +2444,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="66" st_id="66">
 
-<operation id="198" st_id="66" stage="8" lat="71">
+<operation id="197" st_id="66" stage="8" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2478,16 +2462,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="67" st_id="67">
 
-<operation id="199" st_id="67" stage="7" lat="71">
+<operation id="198" st_id="67" stage="7" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2496,16 +2480,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="68" st_id="68">
 
-<operation id="200" st_id="68" stage="6" lat="71">
+<operation id="199" st_id="68" stage="6" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2514,16 +2498,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="69" st_id="69">
 
-<operation id="201" st_id="69" stage="5" lat="71">
+<operation id="200" st_id="69" stage="5" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2532,16 +2516,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="70" st_id="70">
 
-<operation id="202" st_id="70" stage="4" lat="71">
+<operation id="201" st_id="70" stage="4" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2550,16 +2534,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="71" st_id="71">
 
-<operation id="203" st_id="71" stage="3" lat="71">
+<operation id="202" st_id="71" stage="3" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2568,16 +2552,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="72" st_id="72">
 
-<operation id="204" st_id="72" stage="2" lat="71">
+<operation id="203" st_id="72" stage="2" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2586,16 +2570,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="73" st_id="73">
 
-<operation id="205" st_id="73" stage="1" lat="71">
+<operation id="204" st_id="73" stage="1" lat="71">
 <core>m_axi</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="61" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
+<Node id="60" bw="1" op_0_bw="1" op_1_bw="512" op_2_bw="64">
 <![CDATA[
-burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 24
+burst_read.split:11 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gmem0_addr, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="empty"/></StgValue>
@@ -2604,16 +2588,16 @@ burst_read.split:12 %empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i512 %gm
 
 <state id="74" st_id="74">
 
-<operation id="206" st_id="74" stage="2" lat="2">
+<operation id="205" st_id="74" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="62" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="512" op_3_bw="0">
+<Node id="61" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="512" op_3_bw="0">
 <![CDATA[
-burst_read.split:13 %call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words
+burst_read.split:12 %call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -2622,16 +2606,16 @@ burst_read.split:13 %call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %
 
 <state id="75" st_id="75">
 
-<operation id="207" st_id="75" stage="1" lat="2">
+<operation id="206" st_id="75" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="62" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="512" op_3_bw="0">
+<Node id="61" bw="0" op_0_bw="0" op_1_bw="512" op_2_bw="512" op_3_bw="0">
 <![CDATA[
-burst_read.split:13 %call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words
+burst_read.split:12 %call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -2640,16 +2624,16 @@ burst_read.split:13 %call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %
 
 <state id="76" st_id="76">
 
-<operation id="208" st_id="76" stage="2" lat="2">
+<operation id="207" st_id="76" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="512" op_34_bw="0" op_35_bw="0">
+<Node id="62" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="512" op_34_bw="0" op_35_bw="0">
 <![CDATA[
-burst_read.split:14 %call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words
+burst_read.split:13 %call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -2658,16 +2642,16 @@ burst_read.split:14 %call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %
 
 <state id="77" st_id="77">
 
-<operation id="209" st_id="77" stage="1" lat="2">
+<operation id="208" st_id="77" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="63" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="512" op_34_bw="0" op_35_bw="0">
+<Node id="62" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="512" op_34_bw="0" op_35_bw="0">
 <![CDATA[
-burst_read.split:14 %call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words
+burst_read.split:13 %call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -2676,16 +2660,16 @@ burst_read.split:14 %call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %
 
 <state id="78" st_id="78">
 
-<operation id="210" st_id="78" stage="2" lat="2">
+<operation id="209" st_id="78" stage="2" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="0" op_35_bw="0">
+<Node id="63" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="0" op_35_bw="0">
 <![CDATA[
-burst_read.split:15 %call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out
+burst_read.split:14 %call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
@@ -2694,7 +2678,7 @@ burst_read.split:15 %call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 
 
 <state id="79" st_id="79">
 
-<operation id="211" st_id="79" stage="1" lat="1">
+<operation id="210" st_id="79" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2703,13 +2687,13 @@ burst_read.split:15 %call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 
 
 <Node id="49" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-burst_read.split:0 %speclooptripcount_ln8 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512
+burst_read.split:0 %speclooptripcount_ln8 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 480, i64 480, i64 480
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln8"/></StgValue>
 </operation>
 
-<operation id="212" st_id="79" stage="1" lat="1">
+<operation id="211" st_id="79" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
@@ -2724,31 +2708,31 @@ burst_read.split:1 %specloopname_ln7 = specloopname void @_ssdm_op_SpecLoopName,
 <StgValue><ssdm name="specloopname_ln7"/></StgValue>
 </operation>
 
-<operation id="213" st_id="79" stage="1" lat="2">
+<operation id="212" st_id="79" stage="1" lat="2">
 <core></core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="64" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="0" op_35_bw="0">
+<Node id="63" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="8" op_4_bw="8" op_5_bw="8" op_6_bw="8" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8" op_11_bw="8" op_12_bw="8" op_13_bw="8" op_14_bw="8" op_15_bw="8" op_16_bw="8" op_17_bw="8" op_18_bw="8" op_19_bw="8" op_20_bw="8" op_21_bw="8" op_22_bw="8" op_23_bw="8" op_24_bw="8" op_25_bw="8" op_26_bw="8" op_27_bw="8" op_28_bw="8" op_29_bw="8" op_30_bw="8" op_31_bw="8" op_32_bw="8" op_33_bw="8" op_34_bw="0" op_35_bw="0">
 <![CDATA[
-burst_read.split:15 %call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out
+burst_read.split:14 %call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out
 
 ]]></Node>
 <StgValue><ssdm name="call_ln0"/></StgValue>
 </operation>
 
-<operation id="214" st_id="79" stage="1" lat="1">
+<operation id="213" st_id="79" stage="1" lat="1">
 <core>NULL</core>
 <MemPortIdVec></MemPortIdVec>
 <condition id="-1">
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="66" bw="0" op_0_bw="0">
+<Node id="65" bw="0" op_0_bw="0">
 <![CDATA[
-burst_read.split:17 %br_ln7 = br void %burst_read
+burst_read.split:16 %br_ln7 = br void %burst_read
 
 ]]></Node>
 <StgValue><ssdm name="br_ln7"/></StgValue>

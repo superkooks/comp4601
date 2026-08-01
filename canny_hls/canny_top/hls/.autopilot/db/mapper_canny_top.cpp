@@ -257,10 +257,10 @@ __xlx_in_r__tmp_vec.push_back(((Byte<64>*)__xlx_apatb_param_in_r)[i]);
   int __xlx_offset_byte_param_in_r = 0*64;
   // Collect __xlx_out_r__tmp_vec
 std::vector<Byte<64>> __xlx_out_r__tmp_vec;
-for (size_t i = 0; i < 4096; ++i){
+for (size_t i = 0; i < 4800; ++i){
 __xlx_out_r__tmp_vec.push_back(((Byte<64>*)__xlx_apatb_param_out_r)[i]);
 }
-  int __xlx_size_param_out_r = 4096;
+  int __xlx_size_param_out_r = 4800;
   int __xlx_offset_param_out_r = 0;
   int __xlx_offset_byte_param_out_r = 0*64;
   // DUT call

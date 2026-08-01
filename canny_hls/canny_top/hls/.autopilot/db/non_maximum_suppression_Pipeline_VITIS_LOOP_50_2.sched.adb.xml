@@ -115,7 +115,7 @@ for.inc:0 %column_3 = load i10 %column
 
 <Node id="16" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.inc:1 %icmp_ln50 = icmp_eq  i10 %column_3, i10 512
+for.inc:1 %icmp_ln50 = icmp_eq  i10 %column_3, i10 640
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln50"/></StgValue>
@@ -257,7 +257,7 @@ for.inc.split:1 %specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i
 
 <Node id="22" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.split:2 %speclooptripcount_ln50 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512
+for.inc.split:2 %speclooptripcount_ln50 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 640, i64 640, i64 640
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln50"/></StgValue>
@@ -330,7 +330,7 @@ for.inc.split:6 %trunc_ln52_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i3
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="27" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:7 %lineBuffer_magnitude_addr = getelementptr i16 %lineBuffer_magnitude, i64 0, i64 %zext_ln50
 
@@ -345,7 +345,7 @@ for.inc.split:7 %lineBuffer_magnitude_addr = getelementptr i16 %lineBuffer_magni
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="28" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="28" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:8 %lineBuffer_magnitude_1_addr = getelementptr i16 %lineBuffer_magnitude_1, i64 0, i64 %zext_ln50
 
@@ -360,7 +360,7 @@ for.inc.split:8 %lineBuffer_magnitude_1_addr = getelementptr i16 %lineBuffer_mag
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="29" bw="9" op_0_bw="16" op_1_bw="64" op_2_bw="64">
+<Node id="29" bw="10" op_0_bw="16" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:9 %lineBuffer_magnitude_2_addr = getelementptr i16 %lineBuffer_magnitude_2, i64 0, i64 %zext_ln50
 
@@ -375,7 +375,7 @@ for.inc.split:9 %lineBuffer_magnitude_2_addr = getelementptr i16 %lineBuffer_mag
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="30" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:10 %lineBuffer_direction_addr = getelementptr i8 %lineBuffer_direction, i64 0, i64 %zext_ln50
 
@@ -390,7 +390,7 @@ for.inc.split:10 %lineBuffer_direction_addr = getelementptr i8 %lineBuffer_direc
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="31" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="31" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:11 %lineBuffer_direction_1_addr = getelementptr i8 %lineBuffer_direction_1, i64 0, i64 %zext_ln50
 
@@ -405,7 +405,7 @@ for.inc.split:11 %lineBuffer_direction_1_addr = getelementptr i8 %lineBuffer_dir
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="32" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="32" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:12 %lineBuffer_direction_2_addr = getelementptr i8 %lineBuffer_direction_2, i64 0, i64 %zext_ln50
 
@@ -421,9 +421,9 @@ for.inc.split:12 %lineBuffer_direction_2_addr = getelementptr i8 %lineBuffer_dir
 </and_exp></or_exp>
 </condition>
 
-<Node id="35" bw="0" op_0_bw="16" op_1_bw="9">
+<Node id="35" bw="0" op_0_bw="16" op_1_bw="10">
 <![CDATA[
-arrayidx726.164.case.1:0 %store_ln52 = store i16 %trunc_ln52, i9 %lineBuffer_magnitude_1_addr
+arrayidx726.164.case.1:0 %store_ln52 = store i16 %trunc_ln52, i10 %lineBuffer_magnitude_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln52"/></StgValue>
@@ -437,9 +437,9 @@ arrayidx726.164.case.1:0 %store_ln52 = store i16 %trunc_ln52, i9 %lineBuffer_mag
 </and_exp></or_exp>
 </condition>
 
-<Node id="36" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="36" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx726.164.case.1:1 %store_ln52 = store i8 %trunc_ln52_1, i9 %lineBuffer_direction_1_addr
+arrayidx726.164.case.1:1 %store_ln52 = store i8 %trunc_ln52_1, i10 %lineBuffer_direction_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln52"/></StgValue>
@@ -469,9 +469,9 @@ arrayidx726.164.case.1:2 %br_ln52 = br void %arrayidx726.164.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="39" bw="0" op_0_bw="16" op_1_bw="9">
+<Node id="39" bw="0" op_0_bw="16" op_1_bw="10">
 <![CDATA[
-arrayidx726.164.case.0:0 %store_ln52 = store i16 %trunc_ln52, i9 %lineBuffer_magnitude_addr
+arrayidx726.164.case.0:0 %store_ln52 = store i16 %trunc_ln52, i10 %lineBuffer_magnitude_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln52"/></StgValue>
@@ -485,9 +485,9 @@ arrayidx726.164.case.0:0 %store_ln52 = store i16 %trunc_ln52, i9 %lineBuffer_mag
 </and_exp></or_exp>
 </condition>
 
-<Node id="40" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="40" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx726.164.case.0:1 %store_ln52 = store i8 %trunc_ln52_1, i9 %lineBuffer_direction_addr
+arrayidx726.164.case.0:1 %store_ln52 = store i8 %trunc_ln52_1, i10 %lineBuffer_direction_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln52"/></StgValue>
@@ -518,9 +518,9 @@ arrayidx726.164.case.0:2 %br_ln52 = br void %arrayidx726.164.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="43" bw="0" op_0_bw="16" op_1_bw="9">
+<Node id="43" bw="0" op_0_bw="16" op_1_bw="10">
 <![CDATA[
-arrayidx726.164.case.2:0 %store_ln52 = store i16 %trunc_ln52, i9 %lineBuffer_magnitude_2_addr
+arrayidx726.164.case.2:0 %store_ln52 = store i16 %trunc_ln52, i10 %lineBuffer_magnitude_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln52"/></StgValue>
@@ -535,9 +535,9 @@ arrayidx726.164.case.2:0 %store_ln52 = store i16 %trunc_ln52, i9 %lineBuffer_mag
 </and_exp></or_exp>
 </condition>
 
-<Node id="44" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="44" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx726.164.case.2:1 %store_ln52 = store i8 %trunc_ln52_1, i9 %lineBuffer_direction_2_addr
+arrayidx726.164.case.2:1 %store_ln52 = store i8 %trunc_ln52_1, i10 %lineBuffer_direction_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln52"/></StgValue>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale_Pipeline_burst_read'" level="0">
-<item name = "Date">Sat Aug  1 15:48:50 2026
+<item name = "Date">Sat Aug  1 17:30:24 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">27, 27, 0.135 us, 0.135 us, 0, 0, loop pipeline stp</column>
+<column name="">33, 33, 0.165 us, 0.165 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- burst_read">25, 25, 3, 1, 1, 24, yes</column>
+<column name="- burst_read">31, 31, 3, 1, 1, 30, yes</column>
 </table>
 </item>
 </section>

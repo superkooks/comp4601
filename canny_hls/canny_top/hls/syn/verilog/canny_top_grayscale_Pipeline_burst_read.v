@@ -399,7 +399,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln17_fu_81_p2 = ((ap_sig_allocacmp_w_2 == 5'd24) ? 1'b1 : 1'b0);
+assign icmp_ln17_fu_81_p2 = ((ap_sig_allocacmp_w_2 == 5'd30) ? 1'b1 : 1'b0);
 
 assign m_axi_gmem0_0_ARADDR = 64'd0;
 

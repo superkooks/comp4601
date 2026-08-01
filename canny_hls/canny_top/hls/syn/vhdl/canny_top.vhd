@@ -153,7 +153,7 @@ architecture behav of canny_top is
     attribute DowngradeIPIdentifiedWarnings of behav : architecture is "yes";
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=547115,HLS_SYN_TPT=332802,HLS_SYN_MEM=80,HLS_SYN_DSP=0,HLS_SYN_FF=11505,HLS_SYN_LUT=19312,HLS_VERSION=2025_2}";
+    "canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=635819,HLS_SYN_TPT=379202,HLS_SYN_MEM=82,HLS_SYN_DSP=0,HLS_SYN_FF=11523,HLS_SYN_LUT=19589,HLS_VERSION=2025_2}";
     constant C_S_AXI_DATA_WIDTH : INTEGER := 32;
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant C_M_AXI_DATA_WIDTH : INTEGER := 32;
@@ -394,48 +394,48 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
     signal gray_out_full_n : STD_LOGIC;
     signal gray_out_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal gray_out_empty_n : STD_LOGIC;
-    signal gray_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal gray_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal gray_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal gray_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal gauss_out_full_n : STD_LOGIC;
     signal gauss_out_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal gauss_out_empty_n : STD_LOGIC;
-    signal gauss_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal gauss_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal gauss_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal gauss_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal sobel_out_full_n : STD_LOGIC;
     signal sobel_out_dout : STD_LOGIC_VECTOR (23 downto 0);
     signal sobel_out_empty_n : STD_LOGIC;
-    signal sobel_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal sobel_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal sobel_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal sobel_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal nms_out_full_n : STD_LOGIC;
     signal nms_out_dout : STD_LOGIC_VECTOR (15 downto 0);
     signal nms_out_empty_n : STD_LOGIC;
-    signal nms_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal nms_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal nms_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal nms_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal thresh_out_full_n : STD_LOGIC;
     signal thresh_out_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal thresh_out_empty_n : STD_LOGIC;
-    signal thresh_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal thresh_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal thresh_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal thresh_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal hyst1_out_full_n : STD_LOGIC;
     signal hyst1_out_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal hyst1_out_empty_n : STD_LOGIC;
-    signal hyst1_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal hyst1_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal hyst1_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal hyst1_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal hyst2_out_full_n : STD_LOGIC;
     signal hyst2_out_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal hyst2_out_empty_n : STD_LOGIC;
-    signal hyst2_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal hyst2_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal hyst2_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal hyst2_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal hyst3_out_full_n : STD_LOGIC;
     signal hyst3_out_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal hyst3_out_empty_n : STD_LOGIC;
-    signal hyst3_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal hyst3_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal hyst3_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal hyst3_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal hyst4_out_full_n : STD_LOGIC;
     signal hyst4_out_dout : STD_LOGIC_VECTOR (7 downto 0);
     signal hyst4_out_empty_n : STD_LOGIC;
-    signal hyst4_out_num_data_valid : STD_LOGIC_VECTOR (10 downto 0);
-    signal hyst4_out_fifo_cap : STD_LOGIC_VECTOR (10 downto 0);
+    signal hyst4_out_num_data_valid : STD_LOGIC_VECTOR (11 downto 0);
+    signal hyst4_out_fifo_cap : STD_LOGIC_VECTOR (11 downto 0);
     signal ap_sync_ready : STD_LOGIC;
     signal ap_sync_reg_entry_proc_U0_ap_ready : STD_LOGIC := '0';
     signal ap_sync_entry_proc_U0_ap_ready : STD_LOGIC;
@@ -582,8 +582,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         gray_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         gray_out_empty_n : IN STD_LOGIC;
         gray_out_read : OUT STD_LOGIC;
-        gray_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        gray_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        gray_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        gray_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         gauss_out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         gauss_out_full_n : IN STD_LOGIC;
         gauss_out_write : OUT STD_LOGIC;
@@ -607,8 +607,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         gauss_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         gauss_out_empty_n : IN STD_LOGIC;
         gauss_out_read : OUT STD_LOGIC;
-        gauss_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        gauss_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        gauss_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        gauss_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         sobel_out_din : OUT STD_LOGIC_VECTOR (23 downto 0);
         sobel_out_full_n : IN STD_LOGIC;
         sobel_out_write : OUT STD_LOGIC;
@@ -632,8 +632,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         sobel_out_dout : IN STD_LOGIC_VECTOR (23 downto 0);
         sobel_out_empty_n : IN STD_LOGIC;
         sobel_out_read : OUT STD_LOGIC;
-        sobel_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        sobel_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        sobel_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        sobel_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         nms_out_din : OUT STD_LOGIC_VECTOR (15 downto 0);
         nms_out_full_n : IN STD_LOGIC;
         nms_out_write : OUT STD_LOGIC;
@@ -655,8 +655,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         nms_out_dout : IN STD_LOGIC_VECTOR (15 downto 0);
         nms_out_empty_n : IN STD_LOGIC;
         nms_out_read : OUT STD_LOGIC;
-        nms_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        nms_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        nms_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        nms_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         thresh_out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         thresh_out_full_n : IN STD_LOGIC;
         thresh_out_write : OUT STD_LOGIC;
@@ -682,8 +682,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         thresh_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         thresh_out_empty_n : IN STD_LOGIC;
         thresh_out_read : OUT STD_LOGIC;
-        thresh_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        thresh_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        thresh_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        thresh_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         hyst1_out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         hyst1_out_full_n : IN STD_LOGIC;
         hyst1_out_write : OUT STD_LOGIC;
@@ -707,8 +707,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         hyst1_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         hyst1_out_empty_n : IN STD_LOGIC;
         hyst1_out_read : OUT STD_LOGIC;
-        hyst1_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        hyst1_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        hyst1_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        hyst1_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         hyst2_out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         hyst2_out_full_n : IN STD_LOGIC;
         hyst2_out_write : OUT STD_LOGIC;
@@ -732,8 +732,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         hyst2_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         hyst2_out_empty_n : IN STD_LOGIC;
         hyst2_out_read : OUT STD_LOGIC;
-        hyst2_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        hyst2_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        hyst2_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        hyst2_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         hyst3_out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         hyst3_out_full_n : IN STD_LOGIC;
         hyst3_out_write : OUT STD_LOGIC;
@@ -754,8 +754,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         hyst3_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         hyst3_out_empty_n : IN STD_LOGIC;
         hyst3_out_read : OUT STD_LOGIC;
-        hyst3_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        hyst3_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+        hyst3_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        hyst3_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
         hyst4_out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
         hyst4_out_full_n : IN STD_LOGIC;
         hyst4_out_write : OUT STD_LOGIC;
@@ -827,8 +827,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         hyst4_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
         hyst4_out_empty_n : IN STD_LOGIC;
         hyst4_out_read : OUT STD_LOGIC;
-        hyst4_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-        hyst4_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0) );
+        hyst4_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+        hyst4_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0) );
     end component;
 
 
@@ -849,7 +849,7 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
     end component;
 
 
-    component canny_top_fifo_w8_d1024_A IS
+    component canny_top_fifo_w8_d1280_A IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -861,12 +861,12 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         if_dout : OUT STD_LOGIC_VECTOR (7 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (10 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (10 downto 0) );
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (11 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (11 downto 0) );
     end component;
 
 
-    component canny_top_fifo_w24_d1024_A IS
+    component canny_top_fifo_w24_d1280_A IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -878,12 +878,12 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         if_dout : OUT STD_LOGIC_VECTOR (23 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (10 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (10 downto 0) );
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (11 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (11 downto 0) );
     end component;
 
 
-    component canny_top_fifo_w16_d1024_A IS
+    component canny_top_fifo_w16_d1280_A IS
     port (
         clk : IN STD_LOGIC;
         reset : IN STD_LOGIC;
@@ -895,8 +895,8 @@ attribute shreg_extract of ap_rst_n_inv : signal is "no";
         if_dout : OUT STD_LOGIC_VECTOR (15 downto 0);
         if_empty_n : OUT STD_LOGIC;
         if_read : IN STD_LOGIC;
-        if_num_data_valid : OUT STD_LOGIC_VECTOR (10 downto 0);
-        if_fifo_cap : OUT STD_LOGIC_VECTOR (10 downto 0) );
+        if_num_data_valid : OUT STD_LOGIC_VECTOR (11 downto 0);
+        if_fifo_cap : OUT STD_LOGIC_VECTOR (11 downto 0) );
     end component;
 
 
@@ -1825,7 +1825,7 @@ begin
         if_num_data_valid => out_r_c_num_data_valid,
         if_fifo_cap => out_r_c_fifo_cap);
 
-    gray_out_U : component canny_top_fifo_w8_d1024_A
+    gray_out_U : component canny_top_fifo_w8_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1840,7 +1840,7 @@ begin
         if_num_data_valid => gray_out_num_data_valid,
         if_fifo_cap => gray_out_fifo_cap);
 
-    gauss_out_U : component canny_top_fifo_w8_d1024_A
+    gauss_out_U : component canny_top_fifo_w8_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1855,7 +1855,7 @@ begin
         if_num_data_valid => gauss_out_num_data_valid,
         if_fifo_cap => gauss_out_fifo_cap);
 
-    sobel_out_U : component canny_top_fifo_w24_d1024_A
+    sobel_out_U : component canny_top_fifo_w24_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1870,7 +1870,7 @@ begin
         if_num_data_valid => sobel_out_num_data_valid,
         if_fifo_cap => sobel_out_fifo_cap);
 
-    nms_out_U : component canny_top_fifo_w16_d1024_A
+    nms_out_U : component canny_top_fifo_w16_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1885,7 +1885,7 @@ begin
         if_num_data_valid => nms_out_num_data_valid,
         if_fifo_cap => nms_out_fifo_cap);
 
-    thresh_out_U : component canny_top_fifo_w8_d1024_A
+    thresh_out_U : component canny_top_fifo_w8_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1900,7 +1900,7 @@ begin
         if_num_data_valid => thresh_out_num_data_valid,
         if_fifo_cap => thresh_out_fifo_cap);
 
-    hyst1_out_U : component canny_top_fifo_w8_d1024_A
+    hyst1_out_U : component canny_top_fifo_w8_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1915,7 +1915,7 @@ begin
         if_num_data_valid => hyst1_out_num_data_valid,
         if_fifo_cap => hyst1_out_fifo_cap);
 
-    hyst2_out_U : component canny_top_fifo_w8_d1024_A
+    hyst2_out_U : component canny_top_fifo_w8_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1930,7 +1930,7 @@ begin
         if_num_data_valid => hyst2_out_num_data_valid,
         if_fifo_cap => hyst2_out_fifo_cap);
 
-    hyst3_out_U : component canny_top_fifo_w8_d1024_A
+    hyst3_out_U : component canny_top_fifo_w8_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -1945,7 +1945,7 @@ begin
         if_num_data_valid => hyst3_out_num_data_valid,
         if_fifo_cap => hyst3_out_fifo_cap);
 
-    hyst4_out_U : component canny_top_fifo_w8_d1024_A
+    hyst4_out_U : component canny_top_fifo_w8_d1280_A
     port map (
         clk => ap_clk,
         reset => ap_rst_n_inv,
@@ -2141,14 +2141,14 @@ begin
     ap_sync_ready <= (ap_sync_grayscale_U0_ap_ready and ap_sync_entry_proc_U0_ap_ready);
     double_threshold_U0_ap_continue <= ap_const_logic_1;
     double_threshold_U0_ap_start <= start_for_double_threshold_U0_empty_n;
-    double_threshold_U0_thresh_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(thresh_out_fifo_cap),11))),32));
-    double_threshold_U0_thresh_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(thresh_out_num_data_valid),11))),32));
+    double_threshold_U0_thresh_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(thresh_out_fifo_cap),12))),32));
+    double_threshold_U0_thresh_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(thresh_out_num_data_valid),12))),32));
     entry_proc_U0_ap_continue <= ap_const_logic_1;
     entry_proc_U0_ap_start <= ((ap_sync_reg_entry_proc_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
     gaussian_blur_U0_ap_continue <= ap_const_logic_1;
     gaussian_blur_U0_ap_start <= start_for_gaussian_blur_U0_empty_n;
-    gaussian_blur_U0_gauss_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gauss_out_fifo_cap),11))),32));
-    gaussian_blur_U0_gauss_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gauss_out_num_data_valid),11))),32));
+    gaussian_blur_U0_gauss_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gauss_out_fifo_cap),12))),32));
+    gaussian_blur_U0_gauss_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gauss_out_num_data_valid),12))),32));
     gmem0_0_RID <= ap_const_lv1_0;
     gmem0_0_RLAST <= ap_const_logic_0;
     gmem0_0_RRESP <= ap_const_lv2_0;
@@ -2158,32 +2158,32 @@ begin
     gmem_0_BUSER <= ap_const_lv1_0;
     grayscale_U0_ap_continue <= ap_const_logic_1;
     grayscale_U0_ap_start <= ((ap_sync_reg_grayscale_U0_ap_ready xor ap_const_logic_1) and ap_start and ap_const_logic_1);
-    grayscale_U0_gray_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gray_out_fifo_cap),11))),32));
-    grayscale_U0_gray_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gray_out_num_data_valid),11))),32));
+    grayscale_U0_gray_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gray_out_fifo_cap),12))),32));
+    grayscale_U0_gray_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(gray_out_num_data_valid),12))),32));
     hysteresis_1_U0_ap_continue <= ap_const_logic_1;
     hysteresis_1_U0_ap_start <= start_for_hysteresis_1_U0_empty_n;
-    hysteresis_1_U0_hyst1_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst1_out_fifo_cap),11))),32));
-    hysteresis_1_U0_hyst1_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst1_out_num_data_valid),11))),32));
+    hysteresis_1_U0_hyst1_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst1_out_fifo_cap),12))),32));
+    hysteresis_1_U0_hyst1_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst1_out_num_data_valid),12))),32));
     hysteresis_2_U0_ap_continue <= ap_const_logic_1;
     hysteresis_2_U0_ap_start <= start_for_hysteresis_2_U0_empty_n;
-    hysteresis_2_U0_hyst2_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst2_out_fifo_cap),11))),32));
-    hysteresis_2_U0_hyst2_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst2_out_num_data_valid),11))),32));
+    hysteresis_2_U0_hyst2_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst2_out_fifo_cap),12))),32));
+    hysteresis_2_U0_hyst2_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst2_out_num_data_valid),12))),32));
     hysteresis_3_U0_ap_continue <= ap_const_logic_1;
     hysteresis_3_U0_ap_start <= start_for_hysteresis_3_U0_empty_n;
-    hysteresis_3_U0_hyst3_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst3_out_fifo_cap),11))),32));
-    hysteresis_3_U0_hyst3_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst3_out_num_data_valid),11))),32));
+    hysteresis_3_U0_hyst3_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst3_out_fifo_cap),12))),32));
+    hysteresis_3_U0_hyst3_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst3_out_num_data_valid),12))),32));
     hysteresis_4_U0_ap_continue <= ap_const_logic_1;
     hysteresis_4_U0_ap_start <= start_for_hysteresis_4_U0_empty_n;
-    hysteresis_4_U0_hyst4_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst4_out_fifo_cap),11))),32));
-    hysteresis_4_U0_hyst4_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst4_out_num_data_valid),11))),32));
+    hysteresis_4_U0_hyst4_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst4_out_fifo_cap),12))),32));
+    hysteresis_4_U0_hyst4_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(hyst4_out_num_data_valid),12))),32));
     non_maximum_suppression_U0_ap_continue <= ap_const_logic_1;
     non_maximum_suppression_U0_ap_start <= start_for_non_maximum_suppression_U0_empty_n;
-    non_maximum_suppression_U0_nms_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(nms_out_fifo_cap),11))),32));
-    non_maximum_suppression_U0_nms_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(nms_out_num_data_valid),11))),32));
+    non_maximum_suppression_U0_nms_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(nms_out_fifo_cap),12))),32));
+    non_maximum_suppression_U0_nms_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(nms_out_num_data_valid),12))),32));
     sobel_U0_ap_continue <= ap_const_logic_1;
     sobel_U0_ap_start <= start_for_sobel_U0_empty_n;
-    sobel_U0_sobel_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sobel_out_fifo_cap),11))),32));
-    sobel_U0_sobel_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sobel_out_num_data_valid),11))),32));
+    sobel_U0_sobel_out_fifo_cap <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sobel_out_fifo_cap),12))),32));
+    sobel_U0_sobel_out_num_data_valid <= std_logic_vector(IEEE.numeric_std.resize(unsigned(std_logic_vector(IEEE.numeric_std.resize(unsigned(sobel_out_num_data_valid),12))),32));
     start_for_double_threshold_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_gaussian_blur_U0_din <= (0=>ap_const_logic_1, others=>'-');
     start_for_hysteresis_1_U0_din <= (0=>ap_const_logic_1, others=>'-');

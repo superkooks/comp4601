@@ -115,7 +115,7 @@ for.inc:0 %column_1 = load i10 %column
 
 <Node id="13" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.inc:1 %icmp_ln96 = icmp_eq  i10 %column_1, i10 512
+for.inc:1 %icmp_ln96 = icmp_eq  i10 %column_1, i10 640
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln96"/></StgValue>
@@ -257,7 +257,7 @@ for.inc.split:1 %specpipeline_ln97 = specpipeline void @_ssdm_op_SpecPipeline, i
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.split:2 %speclooptripcount_ln96 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512
+for.inc.split:2 %speclooptripcount_ln96 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 640, i64 640, i64 640
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln96"/></StgValue>
@@ -300,7 +300,7 @@ for.inc.split:4 %gauss_out_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="22" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:5 %lineBuffer_addr = getelementptr i8 %lineBuffer, i64 0, i64 %zext_ln96
 
@@ -315,7 +315,7 @@ for.inc.split:5 %lineBuffer_addr = getelementptr i8 %lineBuffer, i64 0, i64 %zex
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="23" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:6 %lineBuffer_1_addr = getelementptr i8 %lineBuffer_1, i64 0, i64 %zext_ln96
 
@@ -330,7 +330,7 @@ for.inc.split:6 %lineBuffer_1_addr = getelementptr i8 %lineBuffer_1, i64 0, i64 
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="24" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:7 %lineBuffer_2_addr = getelementptr i8 %lineBuffer_2, i64 0, i64 %zext_ln96
 
@@ -346,9 +346,9 @@ for.inc.split:7 %lineBuffer_2_addr = getelementptr i8 %lineBuffer_2, i64 0, i64 
 </and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="27" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx712.case.1:0 %store_ln98 = store i8 %gauss_out_read, i9 %lineBuffer_1_addr
+arrayidx712.case.1:0 %store_ln98 = store i8 %gauss_out_read, i10 %lineBuffer_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln98"/></StgValue>
@@ -378,9 +378,9 @@ arrayidx712.case.1:1 %br_ln98 = br void %arrayidx712.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="30" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx712.case.0:0 %store_ln98 = store i8 %gauss_out_read, i9 %lineBuffer_addr
+arrayidx712.case.0:0 %store_ln98 = store i8 %gauss_out_read, i10 %lineBuffer_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln98"/></StgValue>
@@ -411,9 +411,9 @@ arrayidx712.case.0:1 %br_ln98 = br void %arrayidx712.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="33" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx712.case.2:0 %store_ln98 = store i8 %gauss_out_read, i9 %lineBuffer_2_addr
+arrayidx712.case.2:0 %store_ln98 = store i8 %gauss_out_read, i10 %lineBuffer_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln98"/></StgValue>

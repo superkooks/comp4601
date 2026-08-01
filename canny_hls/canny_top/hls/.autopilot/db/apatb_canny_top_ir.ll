@@ -9,37 +9,37 @@ target triple = "fpga64-xilinx-none"
 %"struct.ssdm_int<512, false>" = type { i512 }
 
 ; Function Attrs: noinline
-define void @apatb_canny_top_ir(%"class.hls::burst_maxi<ap_uint<512>>"* nocapture readonly %in, i8* noalias nocapture nonnull "fpga.decayed.dim.hint"="262144" "maxi" %out) local_unnamed_addr #0 {
+define void @apatb_canny_top_ir(%"class.hls::burst_maxi<ap_uint<512>>"* nocapture readonly %in, i8* noalias nocapture nonnull "fpga.decayed.dim.hint"="307200" "maxi" %out) local_unnamed_addr #0 {
 entry:
   %0 = getelementptr inbounds %"class.hls::burst_maxi<ap_uint<512>>", %"class.hls::burst_maxi<ap_uint<512>>"* %in, i64 0, i32 0
   %1 = load %"struct.ap_uint<512>"*, %"struct.ap_uint<512>"** %0, align 8
-  %2 = bitcast i8* %out to [262144 x i8]*
-  %3 = call i8* @malloc(i64 262144)
-  %out_copy = bitcast i8* %3 to [262144 x i8]*
-  call fastcc void @copy_in([262144 x i8]* nonnull %2, [262144 x i8]* %out_copy)
-  call void @apatb_canny_top_hw(%"struct.ap_uint<512>"* %1, [262144 x i8]* %out_copy, i64 786432)
-  call void @copy_back([262144 x i8]* %2, [262144 x i8]* %out_copy)
+  %2 = bitcast i8* %out to [307200 x i8]*
+  %3 = call i8* @malloc(i64 307200)
+  %out_copy = bitcast i8* %3 to [307200 x i8]*
+  call fastcc void @copy_in([307200 x i8]* nonnull %2, [307200 x i8]* %out_copy)
+  call void @apatb_canny_top_hw(%"struct.ap_uint<512>"* %1, [307200 x i8]* %out_copy, i64 786432)
+  call void @copy_back([307200 x i8]* %2, [307200 x i8]* %out_copy)
   tail call void @free(i8* %3)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @copy_in([262144 x i8]* readonly, [262144 x i8]*) unnamed_addr #1 {
+define internal fastcc void @copy_in([307200 x i8]* readonly, [307200 x i8]*) unnamed_addr #1 {
 entry:
-  call fastcc void @onebyonecpy_hls.p0a262144i8([262144 x i8]* %1, [262144 x i8]* %0)
+  call fastcc void @onebyonecpy_hls.p0a307200i8([307200 x i8]* %1, [307200 x i8]* %0)
   ret void
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @onebyonecpy_hls.p0a262144i8([262144 x i8]* %dst, [262144 x i8]* readonly %src) unnamed_addr #2 {
+define internal fastcc void @onebyonecpy_hls.p0a307200i8([307200 x i8]* %dst, [307200 x i8]* readonly %src) unnamed_addr #2 {
 entry:
-  %0 = icmp eq [262144 x i8]* %dst, null
-  %1 = icmp eq [262144 x i8]* %src, null
+  %0 = icmp eq [307200 x i8]* %dst, null
+  %1 = icmp eq [307200 x i8]* %src, null
   %2 = or i1 %0, %1
   br i1 %2, label %ret, label %copy
 
 copy:                                             ; preds = %entry
-  call void @arraycpy_hls.p0a262144i8([262144 x i8]* nonnull %dst, [262144 x i8]* nonnull %src, i64 262144)
+  call void @arraycpy_hls.p0a307200i8([307200 x i8]* nonnull %dst, [307200 x i8]* nonnull %src, i64 307200)
   br label %ret
 
 ret:                                              ; preds = %copy, %entry
@@ -47,10 +47,10 @@ ret:                                              ; preds = %copy, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define void @arraycpy_hls.p0a262144i8([262144 x i8]* %dst, [262144 x i8]* readonly %src, i64 %num) local_unnamed_addr #3 {
+define void @arraycpy_hls.p0a307200i8([307200 x i8]* %dst, [307200 x i8]* readonly %src, i64 %num) local_unnamed_addr #3 {
 entry:
-  %0 = icmp eq [262144 x i8]* %src, null
-  %1 = icmp eq [262144 x i8]* %dst, null
+  %0 = icmp eq [307200 x i8]* %src, null
+  %1 = icmp eq [307200 x i8]* %dst, null
   %2 = or i1 %1, %0
   br i1 %2, label %ret, label %copy
 
@@ -63,8 +63,8 @@ for.loop.lr.ph:                                   ; preds = %copy
 
 for.loop:                                         ; preds = %for.loop, %for.loop.lr.ph
   %for.loop.idx2 = phi i64 [ 0, %for.loop.lr.ph ], [ %for.loop.idx.next, %for.loop ]
-  %dst.addr = getelementptr [262144 x i8], [262144 x i8]* %dst, i64 0, i64 %for.loop.idx2
-  %src.addr = getelementptr [262144 x i8], [262144 x i8]* %src, i64 0, i64 %for.loop.idx2
+  %dst.addr = getelementptr [307200 x i8], [307200 x i8]* %dst, i64 0, i64 %for.loop.idx2
+  %src.addr = getelementptr [307200 x i8], [307200 x i8]* %src, i64 0, i64 %for.loop.idx2
   %3 = load i8, i8* %src.addr, align 1
   store i8 %3, i8* %dst.addr, align 1
   %for.loop.idx.next = add nuw nsw i64 %for.loop.idx2, 1
@@ -79,9 +79,9 @@ ret:                                              ; preds = %copy.split, %entry
 }
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @copy_out([262144 x i8]*, [262144 x i8]* readonly) unnamed_addr #4 {
+define internal fastcc void @copy_out([307200 x i8]*, [307200 x i8]* readonly) unnamed_addr #4 {
 entry:
-  call fastcc void @onebyonecpy_hls.p0a262144i8([262144 x i8]* %0, [262144 x i8]* %1)
+  call fastcc void @onebyonecpy_hls.p0a307200i8([307200 x i8]* %0, [307200 x i8]* %1)
   ret void
 }
 
@@ -89,24 +89,24 @@ declare i8* @malloc(i64) local_unnamed_addr
 
 declare void @free(i8*) local_unnamed_addr
 
-declare void @apatb_canny_top_hw(%"struct.ap_uint<512>"*, [262144 x i8]*, i64)
+declare void @apatb_canny_top_hw(%"struct.ap_uint<512>"*, [307200 x i8]*, i64)
 
 ; Function Attrs: argmemonly noinline norecurse willreturn
-define internal fastcc void @copy_back([262144 x i8]*, [262144 x i8]* readonly) unnamed_addr #4 {
+define internal fastcc void @copy_back([307200 x i8]*, [307200 x i8]* readonly) unnamed_addr #4 {
 entry:
-  call fastcc void @onebyonecpy_hls.p0a262144i8([262144 x i8]* %0, [262144 x i8]* %1)
+  call fastcc void @onebyonecpy_hls.p0a307200i8([307200 x i8]* %0, [307200 x i8]* %1)
   ret void
 }
 
 declare void @canny_top_hw_stub(%"class.hls::burst_maxi<ap_uint<512>>"* nocapture readonly, i8* noalias nocapture nonnull)
 
-define void @canny_top_hw_stub_wrapper(%"struct.ap_uint<512>"*, [262144 x i8]*, i64) #5 {
+define void @canny_top_hw_stub_wrapper(%"struct.ap_uint<512>"*, [307200 x i8]*, i64) #5 {
 entry:
-  call void @copy_out([262144 x i8]* null, [262144 x i8]* %1)
+  call void @copy_out([307200 x i8]* null, [307200 x i8]* %1)
   %3 = bitcast %"struct.ap_uint<512>"* %0 to %"class.hls::burst_maxi<ap_uint<512>>"*
-  %4 = bitcast [262144 x i8]* %1 to i8*
+  %4 = bitcast [307200 x i8]* %1 to i8*
   call void @canny_top_hw_stub(%"class.hls::burst_maxi<ap_uint<512>>"* %3, i8* %4)
-  call void @copy_in([262144 x i8]* null, [262144 x i8]* %1)
+  call void @copy_in([307200 x i8]* null, [307200 x i8]* %1)
   ret void
 }
 

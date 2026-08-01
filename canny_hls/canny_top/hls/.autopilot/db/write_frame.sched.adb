@@ -149,7 +149,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>18</bitwidth>
+					<bitwidth>19</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>1</count>
@@ -1050,7 +1050,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>18</bitwidth>
+					<bitwidth>19</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1565,7 +1565,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>18</bitwidth>
+					<bitwidth>19</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -1578,7 +1578,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.87</m_delay>
+				<m_delay>0.88</m_delay>
 				<m_topoIndex>13</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -1910,7 +1910,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>18</bitwidth>
+					<bitwidth>19</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>2</count>
@@ -2269,7 +2269,7 @@
 				<m_isOnCriticalPath>0</m_isOnCriticalPath>
 				<m_isLCDNode>0</m_isLCDNode>
 				<m_isStartOfPath>0</m_isStartOfPath>
-				<m_delay>0.87</m_delay>
+				<m_delay>0.88</m_delay>
 				<m_topoIndex>15</m_topoIndex>
 				<m_clusterGroupNumber>-1</m_clusterGroupNumber>
 			</item>
@@ -2450,7 +2450,7 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>empty_50</name>
+						<name>empty_51</name>
 						<fileName>../src/write_frame.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>13</lineNumber>
@@ -2959,7 +2959,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>18</bitwidth>
+					<bitwidth>19</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>0</content>
@@ -3117,7 +3117,7 @@
 					<bitwidth>64</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>4096</content>
+				<content>4800</content>
 			</item>
 			<item class_id_reference="16" object_id="_63">
 				<Value>
@@ -3272,7 +3272,7 @@
 					<bitwidth>10</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>512</content>
+				<content>640</content>
 			</item>
 			<item class_id_reference="16" object_id="_68">
 				<Value>
@@ -3300,10 +3300,10 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>18</bitwidth>
+					<bitwidth>19</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>262143</content>
+				<content>307199</content>
 			</item>
 			<item class_id_reference="16" object_id="_69">
 				<Value>
@@ -3362,7 +3362,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>18</bitwidth>
+					<bitwidth>19</bitwidth>
 				</Value>
 				<const_type>0</const_type>
 				<content>1</content>
@@ -4560,8 +4560,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>262216</mMinLatency>
-			<mMaxLatency>262216</mMaxLatency>
+			<mMinLatency>307272</mMinLatency>
+			<mMaxLatency>307272</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4610,10 +4610,10 @@
 			</basic_blocks>
 			<mII>1</mII>
 			<mDepth>72</mDepth>
-			<mMinTripCount>262144</mMinTripCount>
-			<mMaxTripCount>262144</mMaxTripCount>
-			<mMinLatency>262214</mMinLatency>
-			<mMaxLatency>262214</mMaxLatency>
+			<mMinTripCount>307200</mMinTripCount>
+			<mMaxTripCount>307200</mMaxTripCount>
+			<mMinLatency>307270</mMinLatency>
+			<mMaxLatency>307270</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

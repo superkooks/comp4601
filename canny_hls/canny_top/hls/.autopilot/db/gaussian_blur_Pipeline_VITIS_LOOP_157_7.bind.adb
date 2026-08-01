@@ -41,7 +41,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>512</array_size>
+				<array_size>640</array_size>
 				<bit_vecs class_id="7" tracking_level="0" version="0">
 					<count>0</count>
 					<item_version>0</item_version>
@@ -77,7 +77,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>512</array_size>
+				<array_size>640</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -113,7 +113,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>512</array_size>
+				<array_size>640</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -149,7 +149,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>512</array_size>
+				<array_size>640</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -185,7 +185,7 @@
 				</Value>
 				<direction>0</direction>
 				<if_type>1</if_type>
-				<array_size>512</array_size>
+				<array_size>640</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -268,7 +268,7 @@
 					<Obj>
 						<type>1</type>
 						<id>8</id>
-						<name>empty_45</name>
+						<name>empty_46</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -558,7 +558,7 @@
 					<Obj>
 						<type>0</type>
 						<id>16</id>
-						<name>tmp_47</name>
+						<name>tmp_44</name>
 						<fileName></fileName>
 						<fileDirectory></fileDirectory>
 						<lineNumber>0</lineNumber>
@@ -1106,7 +1106,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>10</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1220,7 +1220,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>10</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1278,7 +1278,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>10</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1336,7 +1336,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>10</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -1394,7 +1394,7 @@
 						<coreId>4294967295</coreId>
 						<rtlModuleName></rtlModuleName>
 					</Obj>
-					<bitwidth>9</bitwidth>
+					<bitwidth>10</bitwidth>
 				</Value>
 				<oprand_edges>
 					<count>3</count>
@@ -2151,7 +2151,7 @@
 					<Obj>
 						<type>0</type>
 						<id>49</id>
-						<name>tmp_48</name>
+						<name>tmp_45</name>
 						<fileName>../src/gaussian_blur.cpp</fileName>
 						<fileDirectory>/home/superkooks/Uni/COMP4601/assign/canny_hls</fileDirectory>
 						<lineNumber>177</lineNumber>
@@ -3251,7 +3251,7 @@
 					<bitwidth>10</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>512</content>
+				<content>640</content>
 			</item>
 			<item class_id_reference="16" object_id="_64">
 				<Value>
@@ -4786,8 +4786,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>515</mMinLatency>
-			<mMaxLatency>515</mMaxLatency>
+			<mMinLatency>643</mMinLatency>
+			<mMaxLatency>643</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -4831,10 +4831,10 @@
 			</basic_blocks>
 			<mII>1</mII>
 			<mDepth>3</mDepth>
-			<mMinTripCount>512</mMinTripCount>
-			<mMaxTripCount>512</mMaxTripCount>
-			<mMinLatency>513</mMinLatency>
-			<mMaxLatency>513</mMaxLatency>
+			<mMinTripCount>640</mMinTripCount>
+			<mMaxTripCount>640</mMaxTripCount>
+			<mMinLatency>641</mMinLatency>
+			<mMaxLatency>641</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -6167,7 +6167,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_48_fu_377</first>
+			<first>tmp_45_fu_377</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6295,7 +6295,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_47_read_fu_102</first>
+			<first>tmp_44_read_fu_102</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6603,7 +6603,7 @@
 			</second>
 		</item>
 		<item>
-			<first>tmp_47_reg_473</first>
+			<first>tmp_44_reg_473</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>
@@ -6646,7 +6646,7 @@
 			</second>
 		</item>
 		<item>
-			<first>empty_45</first>
+			<first>empty_46</first>
 			<second>
 				<count>1</count>
 				<item_version>0</item_version>

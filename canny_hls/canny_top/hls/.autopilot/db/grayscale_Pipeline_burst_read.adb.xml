@@ -106,7 +106,7 @@ for.inc:0 %w_2 = load i5 %w
 
 <Node id="9" bw="1" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-for.inc:1 %icmp_ln17 = icmp_eq  i5 %w_2, i5 24
+for.inc:1 %icmp_ln17 = icmp_eq  i5 %w_2, i5 30
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln17"/></StgValue>
@@ -234,7 +234,7 @@ for.inc.split:1 %specpipeline_ln18 = specpipeline void @_ssdm_op_SpecPipeline, i
 
 <Node id="15" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.split:2 %speclooptripcount_ln17 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 24, i64 24, i64 24
+for.inc.split:2 %speclooptripcount_ln17 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 30, i64 30, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln17"/></StgValue>

@@ -365,7 +365,7 @@ set ArgLastReadFirstWriteLatency {
 		lineBuffer_4 {Type I LastRead 0 FirstWrite -1}
 		select_ln21 {Type I LastRead 0 FirstWrite -1}
 		select_ln21_1 {Type I LastRead 0 FirstWrite -1}
-		empty_45 {Type I LastRead 0 FirstWrite -1}
+		empty_46 {Type I LastRead 0 FirstWrite -1}
 		select_ln21_2 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		gauss_out {Type O LastRead -1 FirstWrite 2}}
@@ -389,9 +389,9 @@ set ArgLastReadFirstWriteLatency {
 		lineBuffer {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_1 {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_2 {Type I LastRead 0 FirstWrite -1}
-		select_ln23 {Type I LastRead 0 FirstWrite -1}
+		empty_30 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		select_ln23_1 {Type I LastRead 0 FirstWrite -1}}
+		select_ln23 {Type I LastRead 0 FirstWrite -1}}
 	non_maximum_suppression {
 		sobel_out {Type I LastRead 1 FirstWrite -1}
 		nms_out {Type O LastRead -1 FirstWrite 2}}
@@ -530,8 +530,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "547115", "Max" : "548071"}
-	, {"Name" : "Interval", "Min" : "332802", "Max" : "547886"}
+	{"Name" : "Latency", "Min" : "635819", "Max" : "637031"}
+	, {"Name" : "Interval", "Min" : "379202", "Max" : "636846"}
 ]}
 
 set PipelineEnableSignalInfo {[

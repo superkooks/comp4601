@@ -45,8 +45,8 @@ set portList {
 	{ hyst1_out_dout sc_in sc_lv 8 signal 0 } 
 	{ hyst1_out_empty_n sc_in sc_logic 1 signal 0 } 
 	{ hyst1_out_read sc_out sc_logic 1 signal 0 } 
-	{ hyst1_out_num_data_valid sc_in sc_lv 11 signal 0 } 
-	{ hyst1_out_fifo_cap sc_in sc_lv 11 signal 0 } 
+	{ hyst1_out_num_data_valid sc_in sc_lv 12 signal 0 } 
+	{ hyst1_out_fifo_cap sc_in sc_lv 12 signal 0 } 
 	{ hyst2_out_din sc_out sc_lv 8 signal 1 } 
 	{ hyst2_out_full_n sc_in sc_logic 1 signal 1 } 
 	{ hyst2_out_write sc_out sc_logic 1 signal 1 } 
@@ -67,8 +67,8 @@ set NewPortList {[
  	{ "name": "hyst1_out_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "hyst1_out", "role": "dout" }} , 
  	{ "name": "hyst1_out_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst1_out", "role": "empty_n" }} , 
  	{ "name": "hyst1_out_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst1_out", "role": "read" }} , 
- 	{ "name": "hyst1_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "hyst1_out", "role": "num_data_valid" }} , 
- 	{ "name": "hyst1_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "hyst1_out", "role": "fifo_cap" }} , 
+ 	{ "name": "hyst1_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "hyst1_out", "role": "num_data_valid" }} , 
+ 	{ "name": "hyst1_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "hyst1_out", "role": "fifo_cap" }} , 
  	{ "name": "hyst2_out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "hyst2_out", "role": "din" }} , 
  	{ "name": "hyst2_out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst2_out", "role": "full_n" }} , 
  	{ "name": "hyst2_out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst2_out", "role": "write" }} , 
@@ -104,14 +104,14 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1540", "Max" : "536086"}
-	, {"Name" : "Interval", "Min" : "1540", "Max" : "536086"}
+	{"Name" : "Latency", "Min" : "1444", "Max" : "625782"}
+	, {"Name" : "Interval", "Min" : "1444", "Max" : "625782"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	hyst1_out { ap_fifo {  { hyst1_out_dout fifo_data_out 0 8 }  { hyst1_out_empty_n fifo_status_empty 0 1 }  { hyst1_out_read fifo_data_in 1 1 }  { hyst1_out_num_data_valid fifo_update 0 11 }  { hyst1_out_fifo_cap fifo_data 0 11 } } }
+	hyst1_out { ap_fifo {  { hyst1_out_dout fifo_data_out 0 8 }  { hyst1_out_empty_n fifo_status_empty 0 1 }  { hyst1_out_read fifo_data_in 1 1 }  { hyst1_out_num_data_valid fifo_update 0 12 }  { hyst1_out_fifo_cap fifo_data 0 12 } } }
 	hyst2_out { ap_fifo {  { hyst2_out_din fifo_data_out 1 8 }  { hyst2_out_full_n fifo_status_empty 0 1 }  { hyst2_out_write fifo_data_in 1 1 }  { hyst2_out_num_data_valid fifo_update 0 32 }  { hyst2_out_fifo_cap fifo_data 0 32 } } }
 }

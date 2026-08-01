@@ -1,143 +1,5 @@
 {
     "1": {
-        "name": "hysteresis<3>",
-        "file": "hysteresis.cpp",
-        "fileloc": "50",
-        "instructions": "70",
-        "total_instructions": "215",
-        "calls": "6 14",
-        "basicblocks": "8",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "11"
-        },
-        "stores": {
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "2": {
-        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_143_5",
-        "file": "..\/src\/hysteresis.cpp",
-        "fileloc": "91",
-        "instructions": "114",
-        "total_instructions": "114",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "24",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "13"
-        },
-        "stores": {
-            "L": "20"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "3": {
-        "name": "hysteresis<2>",
-        "file": "hysteresis.cpp",
-        "fileloc": "50",
-        "instructions": "70",
-        "total_instructions": "215",
-        "calls": "13 27",
-        "basicblocks": "8",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "11"
-        },
-        "stores": {
-            "L": "6"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "0": {
-        "name": "canny_top",
-        "file": "canny_top.cpp",
-        "fileloc": "9",
-        "instructions": "56",
-        "total_instructions": "2246",
-        "calls": "9 24 18 22 11 5 20 3 1 28 10",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1"
-    },
-    "4": {
-        "name": "grayscale_Pipeline_unpack_pixels",
-        "file": "..\/src\/grayscale.cpp",
-        "fileloc": "32",
-        "instructions": "234",
-        "total_instructions": "234",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "99",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "97"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "5": {
-        "name": "double_threshold",
-        "file": "double_threshold.cpp",
-        "fileloc": "5",
-        "instructions": "20",
-        "total_instructions": "20",
-        "calls": "",
-        "basicblocks": "3",
-        "memory_accesses": "4",
-        "control_depth": "0",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "2"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "6": {
-        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_143_5",
-        "file": "..\/src\/hysteresis.cpp",
-        "fileloc": "91",
-        "instructions": "118",
-        "total_instructions": "118",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "24",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "13"
-        },
-        "stores": {
-            "L": "20"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "7": {
         "name": "gaussian_blur_Pipeline_VITIS_LOOP_94_2",
         "file": "..\/src\/gaussian_blur.cpp",
         "fileloc": "76",
@@ -158,19 +20,19 @@
             "L": "1"
         }
     },
-    "8": {
-        "name": "gaussian_blur_Pipeline_VITIS_LOOP_157_7",
-        "file": "..\/src\/gaussian_blur.cpp",
-        "fileloc": "157",
-        "instructions": "53",
-        "total_instructions": "53",
+    "2": {
+        "name": "double_threshold",
+        "file": "double_threshold.cpp",
+        "fileloc": "5",
+        "instructions": "20",
+        "total_instructions": "20",
         "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "8",
-        "control_depth": "1",
+        "basicblocks": "3",
+        "memory_accesses": "4",
+        "control_depth": "0",
         "def_use_depth": "1",
         "loads": {
-            "L": "6"
+            "L": "1"
         },
         "stores": {
             "L": "2"
@@ -179,46 +41,13 @@
             "L": "1"
         }
     },
-    "9": {
-        "name": "entry_proc",
-        "file": "canny_top.cpp",
-        "fileloc": "0",
-        "instructions": "4",
-        "total_instructions": "4",
-        "calls": "",
-        "basicblocks": "1",
-        "memory_accesses": "0",
-        "control_depth": "0",
-        "def_use_depth": "1"
-    },
-    "10": {
-        "name": "write_frame",
-        "file": "..\/src\/write_frame.cpp",
-        "fileloc": "4",
-        "instructions": "56",
-        "total_instructions": "56",
-        "calls": "",
-        "basicblocks": "9",
-        "memory_accesses": "15",
-        "control_depth": "4",
-        "def_use_depth": "3",
-        "loads": {
-            "L": "6"
-        },
-        "stores": {
-            "L": "7"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "11": {
+    "3": {
         "name": "non_maximum_suppression",
         "file": "non_maximum_suppression.cpp",
         "fileloc": "26",
-        "instructions": "86",
+        "instructions": "87",
         "total_instructions": "244",
-        "calls": "16 15",
+        "calls": "6 10",
         "basicblocks": "8",
         "memory_accesses": "0",
         "control_depth": "0",
@@ -233,33 +62,33 @@
             "L": "1"
         }
     },
-    "12": {
-        "name": "hysteresis<1>_Pipeline_VITIS_LOOP_143_5",
-        "file": "..\/src\/hysteresis.cpp",
-        "fileloc": "91",
-        "instructions": "118",
-        "total_instructions": "118",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "24",
-        "control_depth": "1",
+    "4": {
+        "name": "hysteresis<1>",
+        "file": "hysteresis.cpp",
+        "fileloc": "50",
+        "instructions": "71",
+        "total_instructions": "215",
+        "calls": "18 8",
+        "basicblocks": "8",
+        "memory_accesses": "0",
+        "control_depth": "0",
         "def_use_depth": "1",
         "loads": {
-            "L": "13"
+            "L": "11"
         },
         "stores": {
-            "L": "20"
+            "L": "6"
         },
         "loops": {
             "L": "1"
         }
     },
-    "13": {
+    "5": {
         "name": "hysteresis<2>_Pipeline_VITIS_LOOP_143_5",
         "file": "..\/src\/hysteresis.cpp",
         "fileloc": "91",
-        "instructions": "118",
-        "total_instructions": "118",
+        "instructions": "117",
+        "total_instructions": "117",
         "calls": "",
         "basicblocks": "4",
         "memory_accesses": "24",
@@ -275,28 +104,7 @@
             "L": "1"
         }
     },
-    "14": {
-        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_78_2",
-        "file": "..\/src\/hysteresis.cpp",
-        "fileloc": "78",
-        "instructions": "27",
-        "total_instructions": "27",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "6",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "5"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "15": {
+    "6": {
         "name": "non_maximum_suppression_Pipeline_VITIS_LOOP_50_2",
         "file": "..\/src\/non_maximum_suppression.cpp",
         "fileloc": "50",
@@ -317,28 +125,7 @@
             "L": "1"
         }
     },
-    "16": {
-        "name": "non_maximum_suppression_Pipeline_VITIS_LOOP_105_5",
-        "file": "..\/src\/non_maximum_suppression.cpp",
-        "fileloc": "67",
-        "instructions": "123",
-        "total_instructions": "123",
-        "calls": "",
-        "basicblocks": "7",
-        "memory_accesses": "32",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "18"
-        },
-        "stores": {
-            "L": "24"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "17": {
+    "7": {
         "name": "grayscale_Pipeline_burst_read",
         "file": "..\/src\/grayscale.cpp",
         "fileloc": "17",
@@ -359,19 +146,40 @@
             "L": "1"
         }
     },
-    "18": {
-        "name": "gaussian_blur",
-        "file": "gaussian_blur.cpp",
-        "fileloc": "36",
-        "instructions": "89",
-        "total_instructions": "239",
-        "calls": "8 7",
+    "8": {
+        "name": "hysteresis<1>_Pipeline_VITIS_LOOP_143_5",
+        "file": "..\/src\/hysteresis.cpp",
+        "fileloc": "91",
+        "instructions": "117",
+        "total_instructions": "117",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "24",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "9": {
+        "name": "hysteresis<3>",
+        "file": "hysteresis.cpp",
+        "fileloc": "50",
+        "instructions": "71",
+        "total_instructions": "215",
+        "calls": "21 15",
         "basicblocks": "8",
         "memory_accesses": "0",
         "control_depth": "0",
         "def_use_depth": "1",
         "loads": {
-            "L": "5"
+            "L": "11"
         },
         "stores": {
             "L": "6"
@@ -380,7 +188,70 @@
             "L": "1"
         }
     },
-    "19": {
+    "10": {
+        "name": "non_maximum_suppression_Pipeline_VITIS_LOOP_105_5",
+        "file": "..\/src\/non_maximum_suppression.cpp",
+        "fileloc": "67",
+        "instructions": "122",
+        "total_instructions": "122",
+        "calls": "",
+        "basicblocks": "7",
+        "memory_accesses": "32",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "18"
+        },
+        "stores": {
+            "L": "24"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "11": {
+        "name": "grayscale_Pipeline_unpack_pixels",
+        "file": "..\/src\/grayscale.cpp",
+        "fileloc": "32",
+        "instructions": "234",
+        "total_instructions": "234",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "99",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "97"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "12": {
+        "name": "hysteresis<2>",
+        "file": "hysteresis.cpp",
+        "fileloc": "50",
+        "instructions": "71",
+        "total_instructions": "215",
+        "calls": "19 5",
+        "basicblocks": "8",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "11"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "13": {
         "name": "sobel_Pipeline_VITIS_LOOP_96_2",
         "file": "..\/src\/sobel.cpp",
         "fileloc": "96",
@@ -401,13 +272,46 @@
             "L": "1"
         }
     },
-    "20": {
-        "name": "hysteresis<1>",
-        "file": "hysteresis.cpp",
-        "fileloc": "50",
-        "instructions": "70",
-        "total_instructions": "215",
-        "calls": "12 26",
+    "14": {
+        "name": "entry_proc",
+        "file": "canny_top.cpp",
+        "fileloc": "0",
+        "instructions": "4",
+        "total_instructions": "4",
+        "calls": "",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "15": {
+        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_143_5",
+        "file": "..\/src\/hysteresis.cpp",
+        "fileloc": "91",
+        "instructions": "117",
+        "total_instructions": "117",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "24",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "16": {
+        "name": "sobel",
+        "file": "sobel.cpp",
+        "fileloc": "72",
+        "instructions": "71",
+        "total_instructions": "246",
+        "calls": "13 22",
         "basicblocks": "8",
         "memory_accesses": "0",
         "control_depth": "0",
@@ -422,8 +326,104 @@
             "L": "1"
         }
     },
+    "17": {
+        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_143_5",
+        "file": "..\/src\/hysteresis.cpp",
+        "fileloc": "91",
+        "instructions": "113",
+        "total_instructions": "113",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "24",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "13"
+        },
+        "stores": {
+            "L": "20"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "0": {
+        "name": "canny_top",
+        "file": "canny_top.cpp",
+        "fileloc": "9",
+        "instructions": "56",
+        "total_instructions": "2244",
+        "calls": "14 27 24 16 3 2 4 12 9 28 26",
+        "basicblocks": "1",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1"
+    },
+    "18": {
+        "name": "hysteresis<1>_Pipeline_VITIS_LOOP_78_2",
+        "file": "..\/src\/hysteresis.cpp",
+        "fileloc": "78",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "6",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "19": {
+        "name": "hysteresis<2>_Pipeline_VITIS_LOOP_78_2",
+        "file": "..\/src\/hysteresis.cpp",
+        "fileloc": "78",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "6",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "20": {
+        "name": "gaussian_blur_Pipeline_VITIS_LOOP_157_7",
+        "file": "..\/src\/gaussian_blur.cpp",
+        "fileloc": "157",
+        "instructions": "53",
+        "total_instructions": "53",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "8",
+        "control_depth": "1",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
     "21": {
-        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_78_2",
+        "name": "hysteresis<3>_Pipeline_VITIS_LOOP_78_2",
         "file": "..\/src\/hysteresis.cpp",
         "fileloc": "78",
         "instructions": "27",
@@ -444,21 +444,21 @@
         }
     },
     "22": {
-        "name": "sobel",
-        "file": "sobel.cpp",
-        "fileloc": "72",
-        "instructions": "69",
-        "total_instructions": "245",
-        "calls": "25 19",
-        "basicblocks": "8",
-        "memory_accesses": "0",
-        "control_depth": "0",
+        "name": "sobel_Pipeline_VITIS_LOOP_149_6",
+        "file": "..\/src\/sobel.cpp",
+        "fileloc": "149",
+        "instructions": "148",
+        "total_instructions": "148",
+        "calls": "",
+        "basicblocks": "4",
+        "memory_accesses": "24",
+        "control_depth": "1",
         "def_use_depth": "1",
         "loads": {
-            "L": "11"
+            "L": "13"
         },
         "stores": {
-            "L": "6"
+            "L": "20"
         },
         "loops": {
             "L": "1"
@@ -486,12 +486,75 @@
         }
     },
     "24": {
+        "name": "gaussian_blur",
+        "file": "gaussian_blur.cpp",
+        "fileloc": "36",
+        "instructions": "87",
+        "total_instructions": "237",
+        "calls": "1 20",
+        "basicblocks": "8",
+        "memory_accesses": "0",
+        "control_depth": "0",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "5"
+        },
+        "stores": {
+            "L": "6"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "25": {
+        "name": "hysteresis<4>_Pipeline_VITIS_LOOP_78_2",
+        "file": "..\/src\/hysteresis.cpp",
+        "fileloc": "78",
+        "instructions": "27",
+        "total_instructions": "27",
+        "calls": "",
+        "basicblocks": "8",
+        "memory_accesses": "6",
+        "control_depth": "2",
+        "def_use_depth": "1",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "5"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "26": {
+        "name": "write_frame",
+        "file": "..\/src\/write_frame.cpp",
+        "fileloc": "4",
+        "instructions": "56",
+        "total_instructions": "56",
+        "calls": "",
+        "basicblocks": "9",
+        "memory_accesses": "15",
+        "control_depth": "4",
+        "def_use_depth": "3",
+        "loads": {
+            "L": "6"
+        },
+        "stores": {
+            "L": "7"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "27": {
         "name": "grayscale",
         "file": "grayscale.cpp",
         "fileloc": "3",
-        "instructions": "62",
-        "total_instructions": "526",
-        "calls": "17 23 4",
+        "instructions": "61",
+        "total_instructions": "525",
+        "calls": "7 23 11",
         "basicblocks": "4",
         "memory_accesses": "0",
         "control_depth": "0",
@@ -506,76 +569,13 @@
             "L": "1"
         }
     },
-    "25": {
-        "name": "sobel_Pipeline_VITIS_LOOP_149_6",
-        "file": "..\/src\/sobel.cpp",
-        "fileloc": "149",
-        "instructions": "149",
-        "total_instructions": "149",
-        "calls": "",
-        "basicblocks": "4",
-        "memory_accesses": "24",
-        "control_depth": "1",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "13"
-        },
-        "stores": {
-            "L": "20"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "26": {
-        "name": "hysteresis<1>_Pipeline_VITIS_LOOP_78_2",
-        "file": "..\/src\/hysteresis.cpp",
-        "fileloc": "78",
-        "instructions": "27",
-        "total_instructions": "27",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "6",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "5"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
-    "27": {
-        "name": "hysteresis<2>_Pipeline_VITIS_LOOP_78_2",
-        "file": "..\/src\/hysteresis.cpp",
-        "fileloc": "78",
-        "instructions": "27",
-        "total_instructions": "27",
-        "calls": "",
-        "basicblocks": "8",
-        "memory_accesses": "6",
-        "control_depth": "2",
-        "def_use_depth": "1",
-        "loads": {
-            "L": "1"
-        },
-        "stores": {
-            "L": "5"
-        },
-        "loops": {
-            "L": "1"
-        }
-    },
     "28": {
         "name": "hysteresis<4>",
         "file": "hysteresis.cpp",
         "fileloc": "50",
-        "instructions": "70",
+        "instructions": "71",
         "total_instructions": "211",
-        "calls": "2 21",
+        "calls": "25 17",
         "basicblocks": "8",
         "memory_accesses": "0",
         "control_depth": "0",

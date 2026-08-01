@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'canny_top'
 ================================================================
-* Date:           Sat Aug  1 15:48:52 2026
+* Date:           Sat Aug  1 17:30:26 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline |
     |   min   |   max   |    min   |    max   |   min  |   max  |   Type   |
     +---------+---------+----------+----------+--------+--------+----------+
-    |   547115|   548071|  2.736 ms|  2.740 ms|  332802|  547886|  dataflow|
+    |   635819|   637031|  3.179 ms|  3.185 ms|  379202|  636846|  dataflow|
     +---------+---------+----------+----------+--------+--------+----------+
 
     + Detail: 
@@ -39,16 +39,16 @@
         |              Instance              |          Module         |   min   |   max   |    min   |    max   |   min  |   max  |                      Type                      |
         +------------------------------------+-------------------------+---------+---------+----------+----------+--------+--------+------------------------------------------------+
         |call_ln13_entry_proc_fu_172         |entry_proc               |        0|        0|      0 ns|      0 ns|       0|       0|                                              no|
-        |grp_grayscale_fu_179                |grayscale                |   332801|   332801|  1.664 ms|  1.664 ms|  332801|  332801|                                              no|
-        |grp_gaussian_blur_fu_188            |gaussian_blur            |     1543|   539701|  7.715 us|  2.699 ms|    1543|  539701|                                              no|
-        |grp_sobel_fu_194                    |sobel                    |     1540|   547885|  7.700 us|  2.739 ms|    1540|  547885|                                              no|
-        |grp_non_maximum_suppression_fu_200  |non_maximum_suppression  |     1540|   536086|  7.700 us|  2.680 ms|    1540|  536086|                                              no|
-        |grp_double_threshold_fu_206         |double_threshold         |   262146|   262146|  1.311 ms|  1.311 ms|  262144|  262144|  loop auto-rewind stp (delay=0 clock cycles(s))|
-        |grp_hysteresis_1_s_fu_212           |hysteresis_1_s           |     1540|   536086|  7.700 us|  2.680 ms|    1540|  536086|                                              no|
-        |grp_hysteresis_2_s_fu_218           |hysteresis_2_s           |     1540|   536086|  7.700 us|  2.680 ms|    1540|  536086|                                              no|
-        |grp_hysteresis_3_s_fu_224           |hysteresis_3_s           |     1540|   536086|  7.700 us|  2.680 ms|    1540|  536086|                                              no|
-        |grp_hysteresis_4_s_fu_230           |hysteresis_4_s           |     1540|   536086|  7.700 us|  2.680 ms|    1540|  536086|                                              no|
-        |grp_write_frame_fu_236              |write_frame              |   262216|   262216|  1.311 ms|  1.311 ms|  262145|  262145|  loop auto-rewind stp (delay=1 clock cycles(s))|
+        |grp_grayscale_fu_179                |grayscale                |   379201|   379201|  1.896 ms|  1.896 ms|  379201|  379201|                                              no|
+        |grp_gaussian_blur_fu_188            |gaussian_blur            |     1447|   629493|  7.235 us|  3.147 ms|    1447|  629493|                                              no|
+        |grp_sobel_fu_194                    |sobel                    |     1444|   636845|  7.220 us|  3.184 ms|    1444|  636845|                                              no|
+        |grp_non_maximum_suppression_fu_200  |non_maximum_suppression  |     1444|   625782|  7.220 us|  3.129 ms|    1444|  625782|                                              no|
+        |grp_double_threshold_fu_206         |double_threshold         |   307202|   307202|  1.536 ms|  1.536 ms|  307200|  307200|  loop auto-rewind stp (delay=0 clock cycles(s))|
+        |grp_hysteresis_1_s_fu_212           |hysteresis_1_s           |     1444|   625782|  7.220 us|  3.129 ms|    1444|  625782|                                              no|
+        |grp_hysteresis_2_s_fu_218           |hysteresis_2_s           |     1444|   625782|  7.220 us|  3.129 ms|    1444|  625782|                                              no|
+        |grp_hysteresis_3_s_fu_224           |hysteresis_3_s           |     1444|   625782|  7.220 us|  3.129 ms|    1444|  625782|                                              no|
+        |grp_hysteresis_4_s_fu_230           |hysteresis_4_s           |     1444|   625782|  7.220 us|  3.129 ms|    1444|  625782|                                              no|
+        |grp_write_frame_fu_236              |write_frame              |   307272|   307272|  1.536 ms|  1.536 ms|  307201|  307201|  loop auto-rewind stp (delay=1 clock cycles(s))|
         +------------------------------------+-------------------------+---------+---------+----------+----------+--------+--------+------------------------------------------------+
 
         * Loop: 
@@ -113,38 +113,38 @@ State 1 <SV = 0> <Delay = 2.82>
 ST_1 : Operation 21 [1/1] (1.00ns)   --->   "%out_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %out_r" [../src/canny_top.cpp:13]   --->   Operation 21 'read' 'out_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_1 : Operation 22 [1/1] (1.00ns)   --->   "%in_r_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %in_r" [../src/canny_top.cpp:13]   --->   Operation 22 'read' 'in_r_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 120 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
 ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%out_r_c = alloca i64 1" [../src/canny_top.cpp:13]   --->   Operation 23 'alloca' 'out_r_c' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO_SRL">   --->   Core 80 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 1.97> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 64> <Depth = 11> <FIFO>
-ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%gray_out = alloca i64 1" [../src/canny_top.cpp:15]   --->   Operation 24 'alloca' 'gray_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1024> <FIFO>
-ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%gauss_out = alloca i64 1" [../src/canny_top.cpp:16]   --->   Operation 25 'alloca' 'gauss_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1024> <FIFO>
-ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%sobel_out = alloca i64 1" [../src/canny_top.cpp:17]   --->   Operation 26 'alloca' 'sobel_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 1024> <FIFO>
-ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%nms_out = alloca i64 1" [../src/canny_top.cpp:18]   --->   Operation 27 'alloca' 'nms_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 1024> <FIFO>
-ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%thresh_out = alloca i64 1" [../src/canny_top.cpp:19]   --->   Operation 28 'alloca' 'thresh_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1024> <FIFO>
-ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%hyst1_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 29 'alloca' 'hyst1_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1024> <FIFO>
-ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%hyst2_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 30 'alloca' 'hyst2_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1024> <FIFO>
-ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%hyst3_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 31 'alloca' 'hyst3_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1024> <FIFO>
-ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%hyst4_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 32 'alloca' 'hyst4_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1024> <FIFO>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%gray_out = alloca i64 1" [../src/canny_top.cpp:15]   --->   Operation 24 'alloca' 'gray_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1280> <FIFO>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%gauss_out = alloca i64 1" [../src/canny_top.cpp:16]   --->   Operation 25 'alloca' 'gauss_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1280> <FIFO>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%sobel_out = alloca i64 1" [../src/canny_top.cpp:17]   --->   Operation 26 'alloca' 'sobel_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 1280> <FIFO>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%nms_out = alloca i64 1" [../src/canny_top.cpp:18]   --->   Operation 27 'alloca' 'nms_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 16> <Depth = 1280> <FIFO>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%thresh_out = alloca i64 1" [../src/canny_top.cpp:19]   --->   Operation 28 'alloca' 'thresh_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1280> <FIFO>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%hyst1_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 29 'alloca' 'hyst1_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1280> <FIFO>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%hyst2_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 30 'alloca' 'hyst2_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1280> <FIFO>
+ST_1 : Operation 31 [1/1] (0.00ns)   --->   "%hyst3_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 31 'alloca' 'hyst3_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1280> <FIFO>
+ST_1 : Operation 32 [1/1] (0.00ns)   --->   "%hyst4_out = alloca i64 1" [../src/canny_top.cpp:20]   --->   Operation 32 'alloca' 'hyst4_out' <Predicate = true> <Delay = 0.00> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 8> <Depth = 1280> <FIFO>
 ST_1 : Operation 33 [1/1] (1.82ns)   --->   "%call_ln13 = call void @entry_proc, i64 %out_r_read, i64 %out_r_c" [../src/canny_top.cpp:13]   --->   Operation 33 'call' 'call_ln13' <Predicate = true> <Delay = 1.82> <CoreType = "Generic">   --->   Generic Core
 ST_1 : Operation 34 [2/2] (0.00ns)   --->   "%call_ln35 = call void @grayscale, i512 %gmem0, i64 %in_r_read, i8 %gray_out" [../src/canny_top.cpp:35]   --->   Operation 34 'call' 'call_ln35' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 2 <SV = 1> <Delay = 0.78>
-ST_2 : Operation 35 [1/2] (0.78ns)   --->   "%call_ln35 = call void @grayscale, i512 %gmem0, i64 %in_r_read, i8 %gray_out" [../src/canny_top.cpp:35]   --->   Operation 35 'call' 'call_ln35' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 2 <SV = 1> <Delay = 0.77>
+ST_2 : Operation 35 [1/2] (0.77ns)   --->   "%call_ln35 = call void @grayscale, i512 %gmem0, i64 %in_r_read, i8 %gray_out" [../src/canny_top.cpp:35]   --->   Operation 35 'call' 'call_ln35' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 3 <SV = 2> <Delay = 0.00>
 ST_3 : Operation 36 [2/2] (0.00ns)   --->   "%call_ln36 = call void @gaussian_blur, i8 %gray_out, i8 %gauss_out" [../src/canny_top.cpp:36]   --->   Operation 36 'call' 'call_ln36' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 4 <SV = 3> <Delay = 0.78>
-ST_4 : Operation 37 [1/2] (0.78ns)   --->   "%call_ln36 = call void @gaussian_blur, i8 %gray_out, i8 %gauss_out" [../src/canny_top.cpp:36]   --->   Operation 37 'call' 'call_ln36' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 4 <SV = 3> <Delay = 0.77>
+ST_4 : Operation 37 [1/2] (0.77ns)   --->   "%call_ln36 = call void @gaussian_blur, i8 %gray_out, i8 %gauss_out" [../src/canny_top.cpp:36]   --->   Operation 37 'call' 'call_ln36' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 5 <SV = 4> <Delay = 0.00>
 ST_5 : Operation 38 [2/2] (0.00ns)   --->   "%call_ln37 = call void @sobel, i8 %gauss_out, i24 %sobel_out" [../src/canny_top.cpp:37]   --->   Operation 38 'call' 'call_ln37' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 6 <SV = 5> <Delay = 0.78>
-ST_6 : Operation 39 [1/2] (0.78ns)   --->   "%call_ln37 = call void @sobel, i8 %gauss_out, i24 %sobel_out" [../src/canny_top.cpp:37]   --->   Operation 39 'call' 'call_ln37' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 6 <SV = 5> <Delay = 0.77>
+ST_6 : Operation 39 [1/2] (0.77ns)   --->   "%call_ln37 = call void @sobel, i8 %gauss_out, i24 %sobel_out" [../src/canny_top.cpp:37]   --->   Operation 39 'call' 'call_ln37' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 7 <SV = 6> <Delay = 0.00>
 ST_7 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln38 = call void @non_maximum_suppression, i24 %sobel_out, i16 %nms_out" [../src/canny_top.cpp:38]   --->   Operation 40 'call' 'call_ln38' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 8 <SV = 7> <Delay = 0.78>
-ST_8 : Operation 41 [1/2] (0.78ns)   --->   "%call_ln38 = call void @non_maximum_suppression, i24 %sobel_out, i16 %nms_out" [../src/canny_top.cpp:38]   --->   Operation 41 'call' 'call_ln38' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 8 <SV = 7> <Delay = 0.77>
+ST_8 : Operation 41 [1/2] (0.77ns)   --->   "%call_ln38 = call void @non_maximum_suppression, i24 %sobel_out, i16 %nms_out" [../src/canny_top.cpp:38]   --->   Operation 41 'call' 'call_ln38' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 9 <SV = 8> <Delay = 0.00>
 ST_9 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln39 = call void @double_threshold, i16 %nms_out, i8 %thresh_out" [../src/canny_top.cpp:39]   --->   Operation 42 'call' 'call_ln39' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -155,26 +155,26 @@ ST_10 : Operation 43 [1/2] (0.00ns)   --->   "%call_ln39 = call void @double_thr
 State 11 <SV = 10> <Delay = 0.00>
 ST_11 : Operation 44 [2/2] (0.00ns)   --->   "%call_ln40 = call void @hysteresis<1>, i8 %thresh_out, i8 %hyst1_out" [../src/canny_top.cpp:40]   --->   Operation 44 'call' 'call_ln40' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 12 <SV = 11> <Delay = 0.78>
-ST_12 : Operation 45 [1/2] (0.78ns)   --->   "%call_ln40 = call void @hysteresis<1>, i8 %thresh_out, i8 %hyst1_out" [../src/canny_top.cpp:40]   --->   Operation 45 'call' 'call_ln40' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 12 <SV = 11> <Delay = 0.77>
+ST_12 : Operation 45 [1/2] (0.77ns)   --->   "%call_ln40 = call void @hysteresis<1>, i8 %thresh_out, i8 %hyst1_out" [../src/canny_top.cpp:40]   --->   Operation 45 'call' 'call_ln40' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 13 <SV = 12> <Delay = 0.00>
 ST_13 : Operation 46 [2/2] (0.00ns)   --->   "%call_ln41 = call void @hysteresis<2>, i8 %hyst1_out, i8 %hyst2_out" [../src/canny_top.cpp:41]   --->   Operation 46 'call' 'call_ln41' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 14 <SV = 13> <Delay = 0.78>
-ST_14 : Operation 47 [1/2] (0.78ns)   --->   "%call_ln41 = call void @hysteresis<2>, i8 %hyst1_out, i8 %hyst2_out" [../src/canny_top.cpp:41]   --->   Operation 47 'call' 'call_ln41' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 14 <SV = 13> <Delay = 0.77>
+ST_14 : Operation 47 [1/2] (0.77ns)   --->   "%call_ln41 = call void @hysteresis<2>, i8 %hyst1_out, i8 %hyst2_out" [../src/canny_top.cpp:41]   --->   Operation 47 'call' 'call_ln41' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 15 <SV = 14> <Delay = 0.00>
 ST_15 : Operation 48 [2/2] (0.00ns)   --->   "%call_ln42 = call void @hysteresis<3>, i8 %hyst2_out, i8 %hyst3_out" [../src/canny_top.cpp:42]   --->   Operation 48 'call' 'call_ln42' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 16 <SV = 15> <Delay = 0.78>
-ST_16 : Operation 49 [1/2] (0.78ns)   --->   "%call_ln42 = call void @hysteresis<3>, i8 %hyst2_out, i8 %hyst3_out" [../src/canny_top.cpp:42]   --->   Operation 49 'call' 'call_ln42' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 16 <SV = 15> <Delay = 0.77>
+ST_16 : Operation 49 [1/2] (0.77ns)   --->   "%call_ln42 = call void @hysteresis<3>, i8 %hyst2_out, i8 %hyst3_out" [../src/canny_top.cpp:42]   --->   Operation 49 'call' 'call_ln42' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 17 <SV = 16> <Delay = 0.00>
 ST_17 : Operation 50 [2/2] (0.00ns)   --->   "%call_ln43 = call void @hysteresis<4>, i8 %hyst3_out, i8 %hyst4_out" [../src/canny_top.cpp:43]   --->   Operation 50 'call' 'call_ln43' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
-State 18 <SV = 17> <Delay = 0.78>
-ST_18 : Operation 51 [1/2] (0.78ns)   --->   "%call_ln43 = call void @hysteresis<4>, i8 %hyst3_out, i8 %hyst4_out" [../src/canny_top.cpp:43]   --->   Operation 51 'call' 'call_ln43' <Predicate = true> <Delay = 0.78> <CoreType = "Generic">   --->   Generic Core
+State 18 <SV = 17> <Delay = 0.77>
+ST_18 : Operation 51 [1/2] (0.77ns)   --->   "%call_ln43 = call void @hysteresis<4>, i8 %hyst3_out, i8 %hyst4_out" [../src/canny_top.cpp:43]   --->   Operation 51 'call' 'call_ln43' <Predicate = true> <Delay = 0.77> <CoreType = "Generic">   --->   Generic Core
 
 State 19 <SV = 18> <Delay = 0.00>
 ST_19 : Operation 52 [2/2] (0.00ns)   --->   "%call_ln44 = call void @write_frame, i8 %hyst4_out, i512 %gmem, i64 %out_r_c" [../src/canny_top.cpp:44]   --->   Operation 52 'call' 'call_ln44' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
@@ -194,23 +194,23 @@ ST_20 : Operation 63 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface
 ST_20 : Operation 64 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_29, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_28, void @empty_25, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_2, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 64 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 65 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %out_r, void @empty_26, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_2, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 65 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 66 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_29, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_28, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0"   --->   Operation 66 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 67 [1/1] (0.00ns)   --->   "%empty_97 = specchannel i32 @_ssdm_op_SpecChannel, void @gray_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i8 %gray_out, i8 %gray_out"   --->   Operation 67 'specchannel' 'empty_97' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 67 [1/1] (0.00ns)   --->   "%empty_99 = specchannel i32 @_ssdm_op_SpecChannel, void @gray_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i8 %gray_out, i8 %gray_out"   --->   Operation 67 'specchannel' 'empty_99' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 68 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gray_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 68 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 69 [1/1] (0.00ns)   --->   "%empty_98 = specchannel i32 @_ssdm_op_SpecChannel, void @gauss_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i8 %gauss_out, i8 %gauss_out"   --->   Operation 69 'specchannel' 'empty_98' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 69 [1/1] (0.00ns)   --->   "%empty_100 = specchannel i32 @_ssdm_op_SpecChannel, void @gauss_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i8 %gauss_out, i8 %gauss_out"   --->   Operation 69 'specchannel' 'empty_100' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 70 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gauss_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 70 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 71 [1/1] (0.00ns)   --->   "%empty_99 = specchannel i32 @_ssdm_op_SpecChannel, void @sobel_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i24 %sobel_out, i24 %sobel_out"   --->   Operation 71 'specchannel' 'empty_99' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 71 [1/1] (0.00ns)   --->   "%empty_101 = specchannel i32 @_ssdm_op_SpecChannel, void @sobel_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i24 %sobel_out, i24 %sobel_out"   --->   Operation 71 'specchannel' 'empty_101' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 72 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %sobel_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 72 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 73 [1/1] (0.00ns)   --->   "%empty_100 = specchannel i32 @_ssdm_op_SpecChannel, void @nms_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i16 %nms_out, i16 %nms_out"   --->   Operation 73 'specchannel' 'empty_100' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 73 [1/1] (0.00ns)   --->   "%empty_102 = specchannel i32 @_ssdm_op_SpecChannel, void @nms_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i16 %nms_out, i16 %nms_out"   --->   Operation 73 'specchannel' 'empty_102' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 74 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %nms_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 74 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 75 [1/1] (0.00ns)   --->   "%empty_101 = specchannel i32 @_ssdm_op_SpecChannel, void @thresh_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i8 %thresh_out, i8 %thresh_out"   --->   Operation 75 'specchannel' 'empty_101' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 75 [1/1] (0.00ns)   --->   "%empty_103 = specchannel i32 @_ssdm_op_SpecChannel, void @thresh_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i8 %thresh_out, i8 %thresh_out"   --->   Operation 75 'specchannel' 'empty_103' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 76 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %thresh_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 76 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 77 [1/1] (0.00ns)   --->   "%empty_102 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst1_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i8 %hyst1_out, i8 %hyst1_out"   --->   Operation 77 'specchannel' 'empty_102' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 77 [1/1] (0.00ns)   --->   "%empty_104 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst1_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i8 %hyst1_out, i8 %hyst1_out"   --->   Operation 77 'specchannel' 'empty_104' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 78 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hyst1_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 78 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 79 [1/1] (0.00ns)   --->   "%empty_103 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst2_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i8 %hyst2_out, i8 %hyst2_out"   --->   Operation 79 'specchannel' 'empty_103' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 79 [1/1] (0.00ns)   --->   "%empty_105 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst2_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i8 %hyst2_out, i8 %hyst2_out"   --->   Operation 79 'specchannel' 'empty_105' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 80 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hyst2_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 80 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 81 [1/1] (0.00ns)   --->   "%empty_104 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst3_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i8 %hyst3_out, i8 %hyst3_out"   --->   Operation 81 'specchannel' 'empty_104' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 81 [1/1] (0.00ns)   --->   "%empty_106 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst3_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i8 %hyst3_out, i8 %hyst3_out"   --->   Operation 81 'specchannel' 'empty_106' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 82 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hyst3_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 82 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_20 : Operation 83 [1/1] (0.00ns)   --->   "%empty_105 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst4_out_str, i32 1, void @p_str, void @p_str, i32 1024, i32 1024, i8 %hyst4_out, i8 %hyst4_out"   --->   Operation 83 'specchannel' 'empty_105' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 83 [1/1] (0.00ns)   --->   "%empty_107 = specchannel i32 @_ssdm_op_SpecChannel, void @hyst4_out_str, i32 1, void @p_str, void @p_str, i32 1280, i32 1280, i8 %hyst4_out, i8 %hyst4_out"   --->   Operation 83 'specchannel' 'empty_107' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 84 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hyst4_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 84 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_20 : Operation 85 [1/2] (0.00ns)   --->   "%call_ln44 = call void @write_frame, i8 %hyst4_out, i512 %gmem, i64 %out_r_c" [../src/canny_top.cpp:44]   --->   Operation 85 'call' 'call_ln44' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 ST_20 : Operation 86 [1/1] (0.00ns)   --->   "%ret_ln45 = ret" [../src/canny_top.cpp:45]   --->   Operation 86 'ret' 'ret_ln45' <Predicate = true> <Delay = 0.00>
@@ -273,10 +273,6 @@ specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 specinterface_ln0         (specinterface       ) [ 000000000000000000000]
-empty_97                  (specchannel         ) [ 000000000000000000000]
-specinterface_ln0         (specinterface       ) [ 000000000000000000000]
-empty_98                  (specchannel         ) [ 000000000000000000000]
-specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 empty_99                  (specchannel         ) [ 000000000000000000000]
 specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 empty_100                 (specchannel         ) [ 000000000000000000000]
@@ -290,6 +286,10 @@ specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 empty_104                 (specchannel         ) [ 000000000000000000000]
 specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 empty_105                 (specchannel         ) [ 000000000000000000000]
+specinterface_ln0         (specinterface       ) [ 000000000000000000000]
+empty_106                 (specchannel         ) [ 000000000000000000000]
+specinterface_ln0         (specinterface       ) [ 000000000000000000000]
+empty_107                 (specchannel         ) [ 000000000000000000000]
 specinterface_ln0         (specinterface       ) [ 000000000000000000000]
 call_ln44                 (call                ) [ 000000000000000000000]
 ret_ln45                  (ret                 ) [ 000000000000000000000]
@@ -1400,21 +1400,21 @@ ret_ln45                  (ret                 ) [ 000000000000000000000]
 | Operation|           Functional Unit          |   BRAM  |   DSP   |  Delay  |    FF   |   LUT   |   URAM  |
 |----------|------------------------------------|---------|---------|---------|---------|---------|---------|
 |          |     call_ln13_entry_proc_fu_172    |    0    |    0    |    0    |    0    |    0    |    0    |
-|          |        grp_grayscale_fu_179        |    15   |    2    |  32.27  |   2375  |   1918  |    0    |
-|          |      grp_gaussian_blur_fu_188      |    5    |    0    |  5.551  |   887   |   1117  |    0    |
-|          |          grp_sobel_fu_194          |    3    |    2    |  5.978  |   831   |   1162  |    0    |
-|          | grp_non_maximum_suppression_fu_200 |    6    |    0    |  6.832  |   786   |   923   |    0    |
-|   call   |     grp_double_threshold_fu_206    |    0    |    0    |    0    |    21   |   112   |    0    |
-|          |      grp_hysteresis_1_s_fu_212     |    3    |    0    |  5.551  |   485   |   826   |    0    |
-|          |      grp_hysteresis_2_s_fu_218     |    3    |    0    |  5.551  |   485   |   826   |    0    |
-|          |      grp_hysteresis_3_s_fu_224     |    3    |    0    |  5.551  |   485   |   826   |    0    |
-|          |      grp_hysteresis_4_s_fu_230     |    3    |    0    |  5.551  |   483   |   787   |    0    |
-|          |       grp_write_frame_fu_236       |    0    |    0    |  0.427  |   1747  |   1110  |    0    |
+|          |        grp_grayscale_fu_179        |    15   |    2    |  32.27  |   2374  |   1980  |    0    |
+|          |      grp_gaussian_blur_fu_188      |    5    |    0    |  5.551  |   878   |   1165  |    0    |
+|          |          grp_sobel_fu_194          |    3    |    2    |  5.978  |   847   |   1202  |    0    |
+|          | grp_non_maximum_suppression_fu_200 |    6    |    0    |  6.832  |   810   |   947   |    0    |
+|   call   |     grp_double_threshold_fu_206    |    0    |    0    |    0    |    22   |   114   |    0    |
+|          |      grp_hysteresis_1_s_fu_212     |    3    |    0    |  5.551  |   500   |   850   |    0    |
+|          |      grp_hysteresis_2_s_fu_218     |    3    |    0    |  5.551  |   500   |   850   |    0    |
+|          |      grp_hysteresis_3_s_fu_224     |    3    |    0    |  5.551  |   500   |   850   |    0    |
+|          |      grp_hysteresis_4_s_fu_230     |    3    |    0    |  5.551  |   498   |   811   |    0    |
+|          |       grp_write_frame_fu_236       |    0    |    0    |  0.427  |   1748  |   1112  |    0    |
 |----------|------------------------------------|---------|---------|---------|---------|---------|---------|
 |   read   |       out_r_read_read_fu_160       |    0    |    0    |    0    |    0    |    0    |    0    |
 |          |        in_r_read_read_fu_166       |    0    |    0    |    0    |    0    |    0    |    0    |
 |----------|------------------------------------|---------|---------|---------|---------|---------|---------|
-|   Total  |                                    |    41   |    4    |  73.262 |   8585  |   9607  |    0    |
+|   Total  |                                    |    41   |    4    |  73.262 |   8677  |   9881  |    0    |
 |----------|------------------------------------|---------|---------|---------|---------|---------|---------|
 
 Memories:
@@ -1454,10 +1454,10 @@ N/A
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |   41   |    4   |   73   |  8585  |  9607  |    0   |
+|  Function |   41   |    4   |   73   |  8677  |  9881  |    0   |
 |   Memory  |    -   |    -   |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |    -   |    0   |    0   |    9   |    -   |
 |  Register |    -   |    -   |    -   |   224  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   41   |    4   |   73   |  8809  |  9616  |    0   |
+|   Total   |   41   |    4   |   73   |  8901  |  9890  |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

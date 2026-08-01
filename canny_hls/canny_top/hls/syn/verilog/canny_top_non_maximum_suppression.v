@@ -61,8 +61,8 @@ output   start_write;
 input  [23:0] sobel_out_dout;
 input   sobel_out_empty_n;
 output   sobel_out_read;
-input  [10:0] sobel_out_num_data_valid;
-input  [10:0] sobel_out_fifo_cap;
+input  [11:0] sobel_out_num_data_valid;
+input  [11:0] sobel_out_fifo_cap;
 output  [15:0] nms_out_din;
 input   nms_out_full_n;
 output   nms_out_write;
@@ -80,141 +80,143 @@ reg    ap_done_reg;
 wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    ap_block_state1;
-wire   [9:0] rowsReceived_fu_320_p2;
-reg   [9:0] rowsReceived_reg_683;
+wire   [8:0] rowsReceived_fu_322_p2;
+reg   [8:0] rowsReceived_reg_684;
 wire    ap_CS_fsm_state2;
-wire   [0:0] tmp_fu_326_p3;
-reg   [0:0] tmp_reg_688;
-wire   [1:0] trunc_ln52_fu_334_p1;
-reg   [1:0] trunc_ln52_reg_692;
-wire   [8:0] trunc_ln61_fu_344_p1;
-reg   [8:0] trunc_ln61_reg_697;
+wire   [9:0] zext_ln46_fu_328_p1;
+reg   [9:0] zext_ln46_reg_689;
+wire   [0:0] icmp_ln47_fu_332_p2;
+reg   [0:0] icmp_ln47_reg_695;
+wire   [1:0] trunc_ln52_fu_338_p1;
+reg   [1:0] trunc_ln52_reg_699;
+wire   [8:0] trunc_ln61_fu_348_p1;
+reg   [8:0] trunc_ln61_reg_704;
 wire    ap_CS_fsm_state3;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_done;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_done;
 reg    ap_block_state3_on_subcall_done;
-wire   [0:0] tmp_20_fu_348_p3;
-reg   [0:0] tmp_20_reg_702;
-wire   [1:0] trunc_ln9_fu_367_p1;
-reg   [1:0] trunc_ln9_reg_711;
+wire   [0:0] tmp_fu_352_p3;
+reg   [0:0] tmp_reg_709;
+wire   [1:0] trunc_ln9_fu_371_p1;
+reg   [1:0] trunc_ln9_reg_718;
 wire    ap_CS_fsm_state5;
-wire   [7:0] tmp_9_fu_371_p9;
-reg   [7:0] tmp_9_reg_720;
-wire   [7:0] tmp_4_fu_391_p9;
-reg   [7:0] tmp_4_reg_725;
-reg   [15:0] lineBuffer_magnitude_load_reg_730;
+wire   [7:0] tmp_9_fu_375_p9;
+reg   [7:0] tmp_9_reg_727;
+wire   [7:0] tmp_4_fu_395_p9;
+reg   [7:0] tmp_4_reg_732;
+reg   [15:0] lineBuffer_magnitude_load_reg_737;
 wire    ap_CS_fsm_state15;
-reg   [15:0] lineBuffer_magnitude_1_load_reg_737;
-reg   [15:0] lineBuffer_magnitude_2_load_reg_744;
-reg   [15:0] lineBuffer_magnitude_load_1_reg_751;
-reg   [15:0] lineBuffer_magnitude_1_load_1_reg_758;
-reg   [15:0] lineBuffer_magnitude_2_load_1_reg_765;
-wire   [1:0] select_ln11_fu_429_p3;
-reg   [1:0] select_ln11_reg_772;
+reg   [15:0] lineBuffer_magnitude_1_load_reg_744;
+reg   [15:0] lineBuffer_magnitude_2_load_reg_751;
+reg   [15:0] lineBuffer_magnitude_load_1_reg_758;
+reg   [15:0] lineBuffer_magnitude_1_load_1_reg_765;
+reg   [15:0] lineBuffer_magnitude_2_load_1_reg_772;
+wire   [1:0] select_ln11_fu_433_p3;
+reg   [1:0] select_ln11_reg_779;
 wire    ap_CS_fsm_state16;
-wire   [15:0] tmp_s_fu_438_p9;
-reg   [15:0] tmp_s_reg_777;
-wire   [15:0] tmp_8_fu_456_p9;
-reg   [15:0] tmp_8_reg_782;
-wire   [15:0] tmp_1_fu_473_p9;
-reg   [15:0] tmp_1_reg_787;
-wire   [15:0] tmp_2_fu_490_p9;
-reg   [15:0] tmp_2_reg_792;
-wire   [15:0] tmp_3_fu_508_p9;
-reg   [15:0] tmp_3_reg_797;
-wire   [15:0] tmp_5_fu_525_p9;
-reg   [15:0] tmp_5_reg_802;
-reg   [8:0] lineBuffer_magnitude_address0;
+wire   [15:0] tmp_s_fu_442_p9;
+reg   [15:0] tmp_s_reg_784;
+wire   [15:0] tmp_8_fu_460_p9;
+reg   [15:0] tmp_8_reg_789;
+wire   [15:0] tmp_1_fu_477_p9;
+reg   [15:0] tmp_1_reg_794;
+wire   [15:0] tmp_2_fu_494_p9;
+reg   [15:0] tmp_2_reg_799;
+wire   [15:0] tmp_3_fu_512_p9;
+reg   [15:0] tmp_3_reg_804;
+wire   [15:0] tmp_5_fu_529_p9;
+reg   [15:0] tmp_5_reg_809;
+reg   [9:0] lineBuffer_magnitude_address0;
 reg    lineBuffer_magnitude_ce0;
 reg    lineBuffer_magnitude_we0;
 wire   [15:0] lineBuffer_magnitude_q0;
-wire   [8:0] lineBuffer_magnitude_address1;
+wire   [9:0] lineBuffer_magnitude_address1;
 wire   [15:0] lineBuffer_magnitude_q1;
-reg   [8:0] lineBuffer_magnitude_1_address0;
+reg   [9:0] lineBuffer_magnitude_1_address0;
 reg    lineBuffer_magnitude_1_ce0;
 reg    lineBuffer_magnitude_1_we0;
 wire   [15:0] lineBuffer_magnitude_1_q0;
-wire   [8:0] lineBuffer_magnitude_1_address1;
+wire   [9:0] lineBuffer_magnitude_1_address1;
 wire   [15:0] lineBuffer_magnitude_1_q1;
-reg   [8:0] lineBuffer_magnitude_2_address0;
+reg   [9:0] lineBuffer_magnitude_2_address0;
 reg    lineBuffer_magnitude_2_ce0;
 reg    lineBuffer_magnitude_2_we0;
 wire   [15:0] lineBuffer_magnitude_2_q0;
-wire   [8:0] lineBuffer_magnitude_2_address1;
+wire   [9:0] lineBuffer_magnitude_2_address1;
 wire   [15:0] lineBuffer_magnitude_2_q1;
-reg   [8:0] lineBuffer_direction_address0;
+reg   [9:0] lineBuffer_direction_address0;
 reg    lineBuffer_direction_ce0;
 reg    lineBuffer_direction_we0;
 wire   [7:0] lineBuffer_direction_q0;
-wire   [8:0] lineBuffer_direction_address1;
+wire   [9:0] lineBuffer_direction_address1;
 wire   [7:0] lineBuffer_direction_q1;
-reg   [8:0] lineBuffer_direction_1_address0;
+reg   [9:0] lineBuffer_direction_1_address0;
 reg    lineBuffer_direction_1_ce0;
 reg    lineBuffer_direction_1_we0;
 wire   [7:0] lineBuffer_direction_1_q0;
-wire   [8:0] lineBuffer_direction_1_address1;
+wire   [9:0] lineBuffer_direction_1_address1;
 wire   [7:0] lineBuffer_direction_1_q1;
-reg   [8:0] lineBuffer_direction_2_address0;
+reg   [9:0] lineBuffer_direction_2_address0;
 reg    lineBuffer_direction_2_ce0;
 reg    lineBuffer_direction_2_we0;
 wire   [7:0] lineBuffer_direction_2_q0;
-wire   [8:0] lineBuffer_direction_2_address1;
+wire   [9:0] lineBuffer_direction_2_address1;
 wire   [7:0] lineBuffer_direction_2_q1;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_idle;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_ready;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_sobel_out_read;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_ce0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_we0;
-wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_d0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_ce0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_we0;
-wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_d0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_ce0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_we0;
-wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_d0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_ce0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_we0;
-wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_d0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_ce0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_we0;
-wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_d0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_ce0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_we0;
-wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_d0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_done;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_idle;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_ready;
-wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_nms_out_din;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_nms_out_write;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_ce0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_ce0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_1_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_1_ce0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_1_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_1_ce0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_2_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_2_ce0;
-wire   [8:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_2_address0;
-wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_2_ce0;
-reg    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start_reg;
-wire   [0:0] icmp_ln46_fu_314_p2;
-reg    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start_reg;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_idle;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_ready;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_sobel_out_read;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_ce0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_we0;
+wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_d0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_ce0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_we0;
+wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_d0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_ce0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_we0;
+wire   [7:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_d0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_ce0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_we0;
+wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_d0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_ce0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_we0;
+wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_d0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_ce0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_we0;
+wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_d0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_done;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_idle;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_ready;
+wire   [15:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_nms_out_din;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_nms_out_write;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_ce0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_ce0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_1_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_1_ce0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_1_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_1_ce0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_2_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_2_ce0;
+wire   [9:0] grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_2_address0;
+wire    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_2_ce0;
+reg    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start_reg;
+wire   [0:0] icmp_ln46_fu_316_p2;
+reg    grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start_reg;
 wire    ap_CS_fsm_state17;
-reg   [9:0] phi_urem141_fu_68;
-wire   [9:0] select_ln44_fu_554_p3;
+reg   [8:0] phi_urem141_fu_70;
+wire   [8:0] select_ln44_fu_558_p3;
 reg    ap_block_state17_on_subcall_done;
-reg   [9:0] phi_urem_fu_72;
-wire   [9:0] select_ln44_1_fu_574_p3;
-reg   [9:0] row_2_fu_76;
+reg   [8:0] phi_urem_fu_74;
+wire   [8:0] select_ln44_1_fu_578_p3;
+reg   [8:0] row_2_fu_78;
 reg    lineBuffer_direction_ce1_local;
 wire    ap_CS_fsm_state4;
 reg    lineBuffer_direction_ce0_local;
@@ -229,28 +231,28 @@ reg    lineBuffer_magnitude_1_ce1_local;
 reg    lineBuffer_magnitude_1_ce0_local;
 reg    lineBuffer_magnitude_2_ce1_local;
 reg    lineBuffer_magnitude_2_ce0_local;
-wire   [9:0] outputRow_fu_339_p2;
-wire   [9:0] grp_fu_361_p0;
-wire   [2:0] grp_fu_361_p1;
-wire   [7:0] tmp_9_fu_371_p7;
-wire   [7:0] tmp_4_fu_391_p7;
-wire   [9:0] grp_fu_361_p2;
-wire   [1:0] trunc_ln10_fu_411_p1;
-wire   [0:0] tmp_21_fu_415_p3;
-wire   [1:0] add_ln11_fu_423_p2;
-wire   [15:0] tmp_s_fu_438_p7;
-wire   [15:0] tmp_8_fu_456_p7;
-wire   [15:0] tmp_1_fu_473_p7;
-wire   [15:0] tmp_2_fu_490_p7;
-wire   [15:0] tmp_3_fu_508_p7;
-wire   [15:0] tmp_5_fu_525_p7;
-wire   [0:0] icmp_ln44_fu_548_p2;
-wire   [9:0] add_ln44_fu_542_p2;
-wire   [0:0] icmp_ln44_1_fu_568_p2;
-wire   [9:0] add_ln44_1_fu_562_p2;
-reg    grp_fu_361_ap_start;
-wire    grp_fu_361_ap_done;
-reg    grp_fu_361_ce;
+wire   [9:0] outputRow_fu_343_p2;
+wire   [9:0] grp_fu_365_p0;
+wire   [2:0] grp_fu_365_p1;
+wire   [7:0] tmp_9_fu_375_p7;
+wire   [7:0] tmp_4_fu_395_p7;
+wire   [9:0] grp_fu_365_p2;
+wire   [1:0] trunc_ln10_fu_415_p1;
+wire   [0:0] tmp_18_fu_419_p3;
+wire   [1:0] add_ln11_fu_427_p2;
+wire   [15:0] tmp_s_fu_442_p7;
+wire   [15:0] tmp_8_fu_460_p7;
+wire   [15:0] tmp_1_fu_477_p7;
+wire   [15:0] tmp_2_fu_494_p7;
+wire   [15:0] tmp_3_fu_512_p7;
+wire   [15:0] tmp_5_fu_529_p7;
+wire   [0:0] icmp_ln44_fu_552_p2;
+wire   [8:0] add_ln44_fu_546_p2;
+wire   [0:0] icmp_ln44_1_fu_572_p2;
+wire   [8:0] add_ln44_1_fu_566_p2;
+reg    grp_fu_365_ap_start;
+wire    grp_fu_365_ap_done;
+reg    grp_fu_365_ce;
 reg   [16:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -269,30 +271,30 @@ wire    ap_ST_fsm_state14_blk;
 wire    ap_ST_fsm_state15_blk;
 wire    ap_ST_fsm_state16_blk;
 reg    ap_ST_fsm_state17_blk;
-wire   [1:0] tmp_9_fu_371_p1;
-wire  signed [1:0] tmp_9_fu_371_p3;
-wire   [1:0] tmp_9_fu_371_p5;
-wire   [1:0] tmp_4_fu_391_p1;
-wire  signed [1:0] tmp_4_fu_391_p3;
-wire   [1:0] tmp_4_fu_391_p5;
-wire   [1:0] tmp_s_fu_438_p1;
-wire   [1:0] tmp_s_fu_438_p3;
-wire  signed [1:0] tmp_s_fu_438_p5;
-wire   [1:0] tmp_8_fu_456_p1;
-wire  signed [1:0] tmp_8_fu_456_p3;
-wire   [1:0] tmp_8_fu_456_p5;
-wire   [1:0] tmp_1_fu_473_p1;
-wire   [1:0] tmp_1_fu_473_p3;
-wire  signed [1:0] tmp_1_fu_473_p5;
-wire   [1:0] tmp_2_fu_490_p1;
-wire   [1:0] tmp_2_fu_490_p3;
-wire  signed [1:0] tmp_2_fu_490_p5;
-wire   [1:0] tmp_3_fu_508_p1;
-wire  signed [1:0] tmp_3_fu_508_p3;
-wire   [1:0] tmp_3_fu_508_p5;
-wire   [1:0] tmp_5_fu_525_p1;
-wire   [1:0] tmp_5_fu_525_p3;
-wire  signed [1:0] tmp_5_fu_525_p5;
+wire   [1:0] tmp_9_fu_375_p1;
+wire  signed [1:0] tmp_9_fu_375_p3;
+wire   [1:0] tmp_9_fu_375_p5;
+wire   [1:0] tmp_4_fu_395_p1;
+wire  signed [1:0] tmp_4_fu_395_p3;
+wire   [1:0] tmp_4_fu_395_p5;
+wire   [1:0] tmp_s_fu_442_p1;
+wire   [1:0] tmp_s_fu_442_p3;
+wire  signed [1:0] tmp_s_fu_442_p5;
+wire   [1:0] tmp_8_fu_460_p1;
+wire  signed [1:0] tmp_8_fu_460_p3;
+wire   [1:0] tmp_8_fu_460_p5;
+wire   [1:0] tmp_1_fu_477_p1;
+wire   [1:0] tmp_1_fu_477_p3;
+wire  signed [1:0] tmp_1_fu_477_p5;
+wire   [1:0] tmp_2_fu_494_p1;
+wire   [1:0] tmp_2_fu_494_p3;
+wire  signed [1:0] tmp_2_fu_494_p5;
+wire   [1:0] tmp_3_fu_512_p1;
+wire  signed [1:0] tmp_3_fu_512_p3;
+wire   [1:0] tmp_3_fu_512_p5;
+wire   [1:0] tmp_5_fu_529_p1;
+wire   [1:0] tmp_5_fu_529_p3;
+wire  signed [1:0] tmp_5_fu_529_p5;
 wire    ap_ce_reg;
 
 // power-on initialization
@@ -300,24 +302,24 @@ initial begin
 #0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
 #0 ap_CS_fsm = 17'd1;
-#0 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start_reg = 1'b0;
-#0 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start_reg = 1'b0;
-#0 phi_urem141_fu_68 = 10'd0;
-#0 phi_urem_fu_72 = 10'd0;
-#0 row_2_fu_76 = 10'd0;
+#0 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start_reg = 1'b0;
+#0 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start_reg = 1'b0;
+#0 phi_urem141_fu_70 = 9'd0;
+#0 phi_urem_fu_74 = 9'd0;
+#0 row_2_fu_78 = 9'd0;
 end
 
 canny_top_non_maximum_suppression_lineBuffer_magnitude_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
+    .AddressRange( 640 ),
+    .AddressWidth( 10 ))
 lineBuffer_magnitude_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .address0(lineBuffer_magnitude_address0),
     .ce0(lineBuffer_magnitude_ce0),
     .we0(lineBuffer_magnitude_we0),
-    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_d0),
+    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_d0),
     .q0(lineBuffer_magnitude_q0),
     .address1(lineBuffer_magnitude_address1),
     .ce1(lineBuffer_magnitude_ce1_local),
@@ -326,15 +328,15 @@ lineBuffer_magnitude_U(
 
 canny_top_non_maximum_suppression_lineBuffer_magnitude_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
+    .AddressRange( 640 ),
+    .AddressWidth( 10 ))
 lineBuffer_magnitude_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .address0(lineBuffer_magnitude_1_address0),
     .ce0(lineBuffer_magnitude_1_ce0),
     .we0(lineBuffer_magnitude_1_we0),
-    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_d0),
+    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_d0),
     .q0(lineBuffer_magnitude_1_q0),
     .address1(lineBuffer_magnitude_1_address1),
     .ce1(lineBuffer_magnitude_1_ce1_local),
@@ -343,15 +345,15 @@ lineBuffer_magnitude_1_U(
 
 canny_top_non_maximum_suppression_lineBuffer_magnitude_RAM_AUTO_1R1W #(
     .DataWidth( 16 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
+    .AddressRange( 640 ),
+    .AddressWidth( 10 ))
 lineBuffer_magnitude_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .address0(lineBuffer_magnitude_2_address0),
     .ce0(lineBuffer_magnitude_2_ce0),
     .we0(lineBuffer_magnitude_2_we0),
-    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_d0),
+    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_d0),
     .q0(lineBuffer_magnitude_2_q0),
     .address1(lineBuffer_magnitude_2_address1),
     .ce1(lineBuffer_magnitude_2_ce1_local),
@@ -360,15 +362,15 @@ lineBuffer_magnitude_2_U(
 
 canny_top_sobel_lineBuffer_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
+    .AddressRange( 640 ),
+    .AddressWidth( 10 ))
 lineBuffer_direction_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .address0(lineBuffer_direction_address0),
     .ce0(lineBuffer_direction_ce0),
     .we0(lineBuffer_direction_we0),
-    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_d0),
+    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_d0),
     .q0(lineBuffer_direction_q0),
     .address1(lineBuffer_direction_address1),
     .ce1(lineBuffer_direction_ce1_local),
@@ -377,15 +379,15 @@ lineBuffer_direction_U(
 
 canny_top_sobel_lineBuffer_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
+    .AddressRange( 640 ),
+    .AddressWidth( 10 ))
 lineBuffer_direction_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .address0(lineBuffer_direction_1_address0),
     .ce0(lineBuffer_direction_1_ce0),
     .we0(lineBuffer_direction_1_we0),
-    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_d0),
+    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_d0),
     .q0(lineBuffer_direction_1_q0),
     .address1(lineBuffer_direction_1_address1),
     .ce1(lineBuffer_direction_1_ce1_local),
@@ -394,101 +396,101 @@ lineBuffer_direction_1_U(
 
 canny_top_sobel_lineBuffer_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
+    .AddressRange( 640 ),
+    .AddressWidth( 10 ))
 lineBuffer_direction_2_U(
     .clk(ap_clk),
     .reset(ap_rst),
     .address0(lineBuffer_direction_2_address0),
     .ce0(lineBuffer_direction_2_ce0),
     .we0(lineBuffer_direction_2_we0),
-    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_d0),
+    .d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_d0),
     .q0(lineBuffer_direction_2_q0),
     .address1(lineBuffer_direction_2_address1),
     .ce1(lineBuffer_direction_2_ce1_local),
     .q1(lineBuffer_direction_2_q1)
 );
 
-canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254(
+canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start),
-    .ap_done(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_done),
-    .ap_idle(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_idle),
-    .ap_ready(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_ready),
+    .ap_start(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start),
+    .ap_done(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_done),
+    .ap_idle(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_idle),
+    .ap_ready(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_ready),
     .sobel_out_dout(sobel_out_dout),
     .sobel_out_empty_n(sobel_out_empty_n),
-    .sobel_out_read(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_sobel_out_read),
-    .sobel_out_num_data_valid(11'd0),
-    .sobel_out_fifo_cap(11'd0),
-    .lineBuffer_direction_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_address0),
-    .lineBuffer_direction_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_ce0),
-    .lineBuffer_direction_2_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_we0),
-    .lineBuffer_direction_2_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_d0),
-    .lineBuffer_direction_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_address0),
-    .lineBuffer_direction_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_ce0),
-    .lineBuffer_direction_1_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_we0),
-    .lineBuffer_direction_1_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_d0),
-    .lineBuffer_direction_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_address0),
-    .lineBuffer_direction_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_ce0),
-    .lineBuffer_direction_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_we0),
-    .lineBuffer_direction_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_d0),
-    .lineBuffer_magnitude_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_address0),
-    .lineBuffer_magnitude_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_ce0),
-    .lineBuffer_magnitude_2_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_we0),
-    .lineBuffer_magnitude_2_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_d0),
-    .lineBuffer_magnitude_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_address0),
-    .lineBuffer_magnitude_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_ce0),
-    .lineBuffer_magnitude_1_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_we0),
-    .lineBuffer_magnitude_1_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_d0),
-    .lineBuffer_magnitude_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_address0),
-    .lineBuffer_magnitude_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_ce0),
-    .lineBuffer_magnitude_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_we0),
-    .lineBuffer_magnitude_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_d0),
-    .empty(trunc_ln52_reg_692)
+    .sobel_out_read(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_sobel_out_read),
+    .sobel_out_num_data_valid(12'd0),
+    .sobel_out_fifo_cap(12'd0),
+    .lineBuffer_direction_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_address0),
+    .lineBuffer_direction_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_ce0),
+    .lineBuffer_direction_2_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_we0),
+    .lineBuffer_direction_2_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_d0),
+    .lineBuffer_direction_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_address0),
+    .lineBuffer_direction_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_ce0),
+    .lineBuffer_direction_1_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_we0),
+    .lineBuffer_direction_1_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_d0),
+    .lineBuffer_direction_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_address0),
+    .lineBuffer_direction_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_ce0),
+    .lineBuffer_direction_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_we0),
+    .lineBuffer_direction_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_d0),
+    .lineBuffer_magnitude_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_address0),
+    .lineBuffer_magnitude_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_ce0),
+    .lineBuffer_magnitude_2_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_we0),
+    .lineBuffer_magnitude_2_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_d0),
+    .lineBuffer_magnitude_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_address0),
+    .lineBuffer_magnitude_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_ce0),
+    .lineBuffer_magnitude_1_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_we0),
+    .lineBuffer_magnitude_1_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_d0),
+    .lineBuffer_magnitude_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_address0),
+    .lineBuffer_magnitude_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_ce0),
+    .lineBuffer_magnitude_we0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_we0),
+    .lineBuffer_magnitude_d0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_d0),
+    .empty(trunc_ln52_reg_699)
 );
 
-canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267(
+canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5 grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start),
-    .ap_done(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_done),
-    .ap_idle(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_idle),
-    .ap_ready(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_ready),
-    .nms_out_din(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_nms_out_din),
+    .ap_start(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start),
+    .ap_done(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_done),
+    .ap_idle(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_idle),
+    .ap_ready(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_ready),
+    .nms_out_din(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_nms_out_din),
     .nms_out_full_n(nms_out_full_n),
-    .nms_out_write(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_nms_out_write),
+    .nms_out_write(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_nms_out_write),
     .nms_out_num_data_valid(nms_out_num_data_valid),
     .nms_out_fifo_cap(nms_out_fifo_cap),
-    .tmp_4(tmp_4_reg_725),
-    .tmp_3(tmp_3_reg_797),
-    .tmp_8(tmp_8_reg_782),
-    .tmp_5(tmp_5_reg_802),
-    .tmp_s(tmp_s_reg_777),
-    .tmp_1(tmp_1_reg_787),
-    .tmp_2(tmp_2_reg_792),
-    .tmp_9(tmp_9_reg_720),
-    .outputRow(trunc_ln61_reg_697),
-    .lineBuffer_magnitude_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_address0),
-    .lineBuffer_magnitude_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_ce0),
+    .tmp_4(tmp_4_reg_732),
+    .tmp_3(tmp_3_reg_804),
+    .tmp_8(tmp_8_reg_789),
+    .tmp_5(tmp_5_reg_809),
+    .tmp_s(tmp_s_reg_784),
+    .tmp_1(tmp_1_reg_794),
+    .tmp_2(tmp_2_reg_799),
+    .tmp_9(tmp_9_reg_727),
+    .outputRow(trunc_ln61_reg_704),
+    .lineBuffer_magnitude_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_address0),
+    .lineBuffer_magnitude_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_ce0),
     .lineBuffer_magnitude_q0(lineBuffer_magnitude_q0),
-    .lineBuffer_direction_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_address0),
-    .lineBuffer_direction_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_ce0),
+    .lineBuffer_direction_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_address0),
+    .lineBuffer_direction_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_ce0),
     .lineBuffer_direction_q0(lineBuffer_direction_q0),
-    .lineBuffer_magnitude_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_1_address0),
-    .lineBuffer_magnitude_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_1_ce0),
+    .lineBuffer_magnitude_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_1_address0),
+    .lineBuffer_magnitude_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_1_ce0),
     .lineBuffer_magnitude_1_q0(lineBuffer_magnitude_1_q0),
-    .lineBuffer_direction_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_1_address0),
-    .lineBuffer_direction_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_1_ce0),
+    .lineBuffer_direction_1_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_1_address0),
+    .lineBuffer_direction_1_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_1_ce0),
     .lineBuffer_direction_1_q0(lineBuffer_direction_1_q0),
-    .lineBuffer_magnitude_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_2_address0),
-    .lineBuffer_magnitude_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_2_ce0),
+    .lineBuffer_magnitude_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_2_address0),
+    .lineBuffer_magnitude_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_2_ce0),
     .lineBuffer_magnitude_2_q0(lineBuffer_magnitude_2_q0),
-    .lineBuffer_direction_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_2_address0),
-    .lineBuffer_direction_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_2_ce0),
+    .lineBuffer_direction_2_address0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_2_address0),
+    .lineBuffer_direction_2_ce0(grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_2_ce0),
     .lineBuffer_direction_2_q0(lineBuffer_direction_2_q0),
-    .select_ln11(select_ln11_reg_772),
-    .empty(trunc_ln9_reg_711)
+    .select_ln11(select_ln11_reg_779),
+    .empty(trunc_ln9_reg_718)
 );
 
 canny_top_srem_10ns_3ns_10_14_seq_1 #(
@@ -500,12 +502,12 @@ canny_top_srem_10ns_3ns_10_14_seq_1 #(
 srem_10ns_3ns_10_14_seq_1_U205(
     .clk(ap_clk),
     .reset(ap_rst),
-    .start(grp_fu_361_ap_start),
-    .done(grp_fu_361_ap_done),
-    .din0(grp_fu_361_p0),
-    .din1(grp_fu_361_p1),
-    .ce(grp_fu_361_ce),
-    .dout(grp_fu_361_p2)
+    .start(grp_fu_365_ap_start),
+    .done(grp_fu_365_ap_done),
+    .din0(grp_fu_365_p0),
+    .din1(grp_fu_365_p1),
+    .ce(grp_fu_365_ce),
+    .dout(grp_fu_365_p2)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_8_1_1 #(
@@ -524,9 +526,9 @@ sparsemux_7_2_8_1_1_U206(
     .din0(lineBuffer_direction_q1),
     .din1(lineBuffer_direction_1_q1),
     .din2(lineBuffer_direction_2_q1),
-    .def(tmp_9_fu_371_p7),
-    .sel(trunc_ln9_fu_367_p1),
-    .dout(tmp_9_fu_371_p9)
+    .def(tmp_9_fu_375_p7),
+    .sel(trunc_ln9_fu_371_p1),
+    .dout(tmp_9_fu_375_p9)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_8_1_1 #(
@@ -545,9 +547,9 @@ sparsemux_7_2_8_1_1_U207(
     .din0(lineBuffer_direction_q0),
     .din1(lineBuffer_direction_1_q0),
     .din2(lineBuffer_direction_2_q0),
-    .def(tmp_4_fu_391_p7),
-    .sel(trunc_ln9_fu_367_p1),
-    .dout(tmp_4_fu_391_p9)
+    .def(tmp_4_fu_395_p7),
+    .sel(trunc_ln9_fu_371_p1),
+    .dout(tmp_4_fu_395_p9)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_16_1_1 #(
@@ -563,12 +565,12 @@ sparsemux_7_2_8_1_1_U207(
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
 sparsemux_7_2_16_1_1_U208(
-    .din0(lineBuffer_magnitude_load_reg_730),
-    .din1(lineBuffer_magnitude_1_load_reg_737),
-    .din2(lineBuffer_magnitude_2_load_reg_744),
-    .def(tmp_s_fu_438_p7),
-    .sel(select_ln11_fu_429_p3),
-    .dout(tmp_s_fu_438_p9)
+    .din0(lineBuffer_magnitude_load_reg_737),
+    .din1(lineBuffer_magnitude_1_load_reg_744),
+    .din2(lineBuffer_magnitude_2_load_reg_751),
+    .def(tmp_s_fu_442_p7),
+    .sel(select_ln11_fu_433_p3),
+    .dout(tmp_s_fu_442_p9)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_16_1_1 #(
@@ -584,12 +586,12 @@ sparsemux_7_2_16_1_1_U208(
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
 sparsemux_7_2_16_1_1_U209(
-    .din0(lineBuffer_magnitude_load_reg_730),
-    .din1(lineBuffer_magnitude_1_load_reg_737),
-    .din2(lineBuffer_magnitude_2_load_reg_744),
-    .def(tmp_8_fu_456_p7),
-    .sel(trunc_ln9_reg_711),
-    .dout(tmp_8_fu_456_p9)
+    .din0(lineBuffer_magnitude_load_reg_737),
+    .din1(lineBuffer_magnitude_1_load_reg_744),
+    .din2(lineBuffer_magnitude_2_load_reg_751),
+    .def(tmp_8_fu_460_p7),
+    .sel(trunc_ln9_reg_718),
+    .dout(tmp_8_fu_460_p9)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_16_1_1 #(
@@ -605,12 +607,12 @@ sparsemux_7_2_16_1_1_U209(
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
 sparsemux_7_2_16_1_1_U210(
-    .din0(lineBuffer_magnitude_load_reg_730),
-    .din1(lineBuffer_magnitude_1_load_reg_737),
-    .din2(lineBuffer_magnitude_2_load_reg_744),
-    .def(tmp_1_fu_473_p7),
-    .sel(trunc_ln9_reg_711),
-    .dout(tmp_1_fu_473_p9)
+    .din0(lineBuffer_magnitude_load_reg_737),
+    .din1(lineBuffer_magnitude_1_load_reg_744),
+    .din2(lineBuffer_magnitude_2_load_reg_751),
+    .def(tmp_1_fu_477_p7),
+    .sel(trunc_ln9_reg_718),
+    .dout(tmp_1_fu_477_p9)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_16_1_1 #(
@@ -626,12 +628,12 @@ sparsemux_7_2_16_1_1_U210(
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
 sparsemux_7_2_16_1_1_U211(
-    .din0(lineBuffer_magnitude_load_1_reg_751),
-    .din1(lineBuffer_magnitude_1_load_1_reg_758),
-    .din2(lineBuffer_magnitude_2_load_1_reg_765),
-    .def(tmp_2_fu_490_p7),
-    .sel(select_ln11_fu_429_p3),
-    .dout(tmp_2_fu_490_p9)
+    .din0(lineBuffer_magnitude_load_1_reg_758),
+    .din1(lineBuffer_magnitude_1_load_1_reg_765),
+    .din2(lineBuffer_magnitude_2_load_1_reg_772),
+    .def(tmp_2_fu_494_p7),
+    .sel(select_ln11_fu_433_p3),
+    .dout(tmp_2_fu_494_p9)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_16_1_1 #(
@@ -647,12 +649,12 @@ sparsemux_7_2_16_1_1_U211(
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
 sparsemux_7_2_16_1_1_U212(
-    .din0(lineBuffer_magnitude_load_1_reg_751),
-    .din1(lineBuffer_magnitude_1_load_1_reg_758),
-    .din2(lineBuffer_magnitude_2_load_1_reg_765),
-    .def(tmp_3_fu_508_p7),
-    .sel(trunc_ln9_reg_711),
-    .dout(tmp_3_fu_508_p9)
+    .din0(lineBuffer_magnitude_load_1_reg_758),
+    .din1(lineBuffer_magnitude_1_load_1_reg_765),
+    .din2(lineBuffer_magnitude_2_load_1_reg_772),
+    .def(tmp_3_fu_512_p7),
+    .sel(trunc_ln9_reg_718),
+    .dout(tmp_3_fu_512_p9)
 );
 
 (* dissolve_hierarchy = "yes" *) canny_top_sparsemux_7_2_16_1_1 #(
@@ -668,12 +670,12 @@ sparsemux_7_2_16_1_1_U212(
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
 sparsemux_7_2_16_1_1_U213(
-    .din0(lineBuffer_magnitude_load_1_reg_751),
-    .din1(lineBuffer_magnitude_1_load_1_reg_758),
-    .din2(lineBuffer_magnitude_2_load_1_reg_765),
-    .def(tmp_5_fu_525_p7),
-    .sel(trunc_ln9_reg_711),
-    .dout(tmp_5_fu_525_p9)
+    .din0(lineBuffer_magnitude_load_1_reg_758),
+    .din1(lineBuffer_magnitude_1_load_1_reg_765),
+    .din2(lineBuffer_magnitude_2_load_1_reg_772),
+    .def(tmp_5_fu_529_p7),
+    .sel(trunc_ln9_reg_718),
+    .dout(tmp_5_fu_529_p9)
 );
 
 always @ (posedge ap_clk) begin
@@ -690,7 +692,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((icmp_ln46_fu_314_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+        end else if (((icmp_ln46_fu_316_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -698,24 +700,24 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start_reg <= 1'b0;
+        grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start_reg <= 1'b0;
     end else begin
         if ((1'b1 == ap_CS_fsm_state16)) begin
-            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start_reg <= 1'b1;
-        end else if ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_ready == 1'b1)) begin
-            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start_reg <= 1'b0;
+            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start_reg <= 1'b1;
+        end else if ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_ready == 1'b1)) begin
+            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start_reg <= 1'b0;
+        grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start_reg <= 1'b0;
     end else begin
-        if (((icmp_ln46_fu_314_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2) & (tmp_fu_326_p3 == 1'd0))) begin
-            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start_reg <= 1'b1;
-        end else if ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_ready == 1'b1)) begin
-            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start_reg <= 1'b0;
+        if (((icmp_ln46_fu_316_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2) & (icmp_ln47_fu_332_p2 == 1'd1))) begin
+            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start_reg <= 1'b1;
+        end else if ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_ready == 1'b1)) begin
+            grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start_reg <= 1'b0;
         end
     end
 end
@@ -734,71 +736,72 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        phi_urem141_fu_68 <= 10'd0;
+        phi_urem141_fu_70 <= 9'd0;
     end else if (((1'b0 == ap_block_state17_on_subcall_done) & (1'b1 == ap_CS_fsm_state17))) begin
-        phi_urem141_fu_68 <= select_ln44_fu_554_p3;
+        phi_urem141_fu_70 <= select_ln44_fu_558_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        phi_urem_fu_72 <= 10'd0;
+        phi_urem_fu_74 <= 9'd0;
     end else if (((1'b0 == ap_block_state17_on_subcall_done) & (1'b1 == ap_CS_fsm_state17))) begin
-        phi_urem_fu_72 <= select_ln44_1_fu_574_p3;
+        phi_urem_fu_74 <= select_ln44_1_fu_578_p3;
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        row_2_fu_76 <= 10'd0;
+        row_2_fu_78 <= 9'd0;
     end else if (((1'b0 == ap_block_state17_on_subcall_done) & (1'b1 == ap_CS_fsm_state17))) begin
-        row_2_fu_76 <= rowsReceived_reg_683;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state15)) begin
-        lineBuffer_magnitude_1_load_1_reg_758 <= lineBuffer_magnitude_1_q0;
-        lineBuffer_magnitude_1_load_reg_737 <= lineBuffer_magnitude_1_q1;
-        lineBuffer_magnitude_2_load_1_reg_765 <= lineBuffer_magnitude_2_q0;
-        lineBuffer_magnitude_2_load_reg_744 <= lineBuffer_magnitude_2_q1;
-        lineBuffer_magnitude_load_1_reg_751 <= lineBuffer_magnitude_q0;
-        lineBuffer_magnitude_load_reg_730 <= lineBuffer_magnitude_q1;
+        row_2_fu_78 <= rowsReceived_reg_684;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        rowsReceived_reg_683 <= rowsReceived_fu_320_p2;
-        tmp_reg_688 <= row_2_fu_76[32'd9];
-        trunc_ln52_reg_692 <= trunc_ln52_fu_334_p1;
+        icmp_ln47_reg_695 <= icmp_ln47_fu_332_p2;
+        rowsReceived_reg_684 <= rowsReceived_fu_322_p2;
+        trunc_ln52_reg_699 <= trunc_ln52_fu_338_p1;
+        zext_ln46_reg_689[8 : 0] <= zext_ln46_fu_328_p1[8 : 0];
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state15)) begin
+        lineBuffer_magnitude_1_load_1_reg_765 <= lineBuffer_magnitude_1_q0;
+        lineBuffer_magnitude_1_load_reg_744 <= lineBuffer_magnitude_1_q1;
+        lineBuffer_magnitude_2_load_1_reg_772 <= lineBuffer_magnitude_2_q0;
+        lineBuffer_magnitude_2_load_reg_751 <= lineBuffer_magnitude_2_q1;
+        lineBuffer_magnitude_load_1_reg_758 <= lineBuffer_magnitude_q0;
+        lineBuffer_magnitude_load_reg_737 <= lineBuffer_magnitude_q1;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state16)) begin
-        select_ln11_reg_772 <= select_ln11_fu_429_p3;
-        tmp_1_reg_787 <= tmp_1_fu_473_p9;
-        tmp_2_reg_792 <= tmp_2_fu_490_p9;
-        tmp_3_reg_797 <= tmp_3_fu_508_p9;
-        tmp_5_reg_802 <= tmp_5_fu_525_p9;
-        tmp_8_reg_782 <= tmp_8_fu_456_p9;
-        tmp_s_reg_777 <= tmp_s_fu_438_p9;
-    end
-end
-
-always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3))) begin
-        tmp_20_reg_702 <= outputRow_fu_339_p2[32'd9];
-        trunc_ln61_reg_697 <= trunc_ln61_fu_344_p1;
+        select_ln11_reg_779 <= select_ln11_fu_433_p3;
+        tmp_1_reg_794 <= tmp_1_fu_477_p9;
+        tmp_2_reg_799 <= tmp_2_fu_494_p9;
+        tmp_3_reg_804 <= tmp_3_fu_512_p9;
+        tmp_5_reg_809 <= tmp_5_fu_529_p9;
+        tmp_8_reg_789 <= tmp_8_fu_460_p9;
+        tmp_s_reg_784 <= tmp_s_fu_442_p9;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state5)) begin
-        tmp_4_reg_725 <= tmp_4_fu_391_p9;
-        tmp_9_reg_720 <= tmp_9_fu_371_p9;
-        trunc_ln9_reg_711 <= trunc_ln9_fu_367_p1;
+        tmp_4_reg_732 <= tmp_4_fu_395_p9;
+        tmp_9_reg_727 <= tmp_9_fu_375_p9;
+        trunc_ln9_reg_718 <= trunc_ln9_fu_371_p1;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3))) begin
+        tmp_reg_709 <= outputRow_fu_343_p2[32'd9];
+        trunc_ln61_reg_704 <= trunc_ln61_fu_348_p1;
     end
 end
 
@@ -855,7 +858,7 @@ assign ap_ST_fsm_state8_blk = 1'b0;
 assign ap_ST_fsm_state9_blk = 1'b0;
 
 always @ (*) begin
-    if (((icmp_ln46_fu_314_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((icmp_ln46_fu_316_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -871,23 +874,23 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3) & (tmp_20_fu_348_p3 == 1'd0))) begin
-        grp_fu_361_ap_start = 1'b1;
+    if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3) & (tmp_fu_352_p3 == 1'd0))) begin
+        grp_fu_365_ap_start = 1'b1;
     end else begin
-        grp_fu_361_ap_start = 1'b0;
+        grp_fu_365_ap_start = 1'b0;
     end
 end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state1) | (1'b1 == ap_CS_fsm_state17) | (1'b1 == ap_CS_fsm_state2))) begin
-        grp_fu_361_ce = 1'b0;
+        grp_fu_365_ce = 1'b0;
     end else begin
-        grp_fu_361_ce = 1'b1;
+        grp_fu_365_ce = 1'b1;
     end
 end
 
 always @ (*) begin
-    if (((icmp_ln46_fu_314_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+    if (((icmp_ln46_fu_316_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
         internal_ap_ready = 1'b1;
     end else begin
         internal_ap_ready = 1'b0;
@@ -895,20 +898,20 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_direction_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_1_address0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_address0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_direction_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_1_address0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_address0;
     end else begin
         lineBuffer_direction_1_address0 = 64'd1;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_direction_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_1_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_ce0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_direction_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_1_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_ce0;
     end else begin
         lineBuffer_direction_1_ce0 = lineBuffer_direction_1_ce0_local;
     end
@@ -931,28 +934,28 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_1_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_1_we0;
+    if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_1_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_1_we0;
     end else begin
         lineBuffer_direction_1_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_direction_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_2_address0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_address0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_direction_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_2_address0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_address0;
     end else begin
         lineBuffer_direction_2_address0 = 64'd1;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_direction_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_2_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_ce0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_direction_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_2_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_ce0;
     end else begin
         lineBuffer_direction_2_ce0 = lineBuffer_direction_2_ce0_local;
     end
@@ -975,28 +978,28 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_2_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_2_we0;
+    if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_2_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_2_we0;
     end else begin
         lineBuffer_direction_2_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_direction_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_address0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_address0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_direction_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_address0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_address0;
     end else begin
         lineBuffer_direction_address0 = 64'd1;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_direction_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_direction_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_ce0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_direction_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_direction_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_ce0;
     end else begin
         lineBuffer_direction_ce0 = lineBuffer_direction_ce0_local;
     end
@@ -1019,28 +1022,28 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_direction_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_direction_we0;
+    if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_direction_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_direction_we0;
     end else begin
         lineBuffer_direction_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_magnitude_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_1_address0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_address0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_magnitude_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_1_address0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_1_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_address0;
     end else begin
         lineBuffer_magnitude_1_address0 = 64'd1;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_magnitude_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_1_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_ce0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_magnitude_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_1_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_1_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_ce0;
     end else begin
         lineBuffer_magnitude_1_ce0 = lineBuffer_magnitude_1_ce0_local;
     end
@@ -1063,28 +1066,28 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_1_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_1_we0;
+    if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_1_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_1_we0;
     end else begin
         lineBuffer_magnitude_1_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_magnitude_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_2_address0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_address0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_magnitude_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_2_address0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_2_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_address0;
     end else begin
         lineBuffer_magnitude_2_address0 = 64'd1;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_magnitude_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_2_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_ce0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_magnitude_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_2_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_2_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_ce0;
     end else begin
         lineBuffer_magnitude_2_ce0 = lineBuffer_magnitude_2_ce0_local;
     end
@@ -1107,28 +1110,28 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_2_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_2_we0;
+    if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_2_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_2_we0;
     end else begin
         lineBuffer_magnitude_2_we0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_magnitude_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_address0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_address0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_magnitude_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_address0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_address0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_address0;
     end else begin
         lineBuffer_magnitude_address0 = 64'd1;
     end
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state17) & (tmp_20_reg_702 == 1'd0))) begin
-        lineBuffer_magnitude_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_lineBuffer_magnitude_ce0;
-    end else if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_ce0;
+    if (((1'b1 == ap_CS_fsm_state17) & (tmp_reg_709 == 1'd0))) begin
+        lineBuffer_magnitude_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_lineBuffer_magnitude_ce0;
+    end else if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_ce0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_ce0;
     end else begin
         lineBuffer_magnitude_ce0 = lineBuffer_magnitude_ce0_local;
     end
@@ -1151,8 +1154,8 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state3) & (tmp_reg_688 == 1'd0))) begin
-        lineBuffer_magnitude_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_lineBuffer_magnitude_we0;
+    if (((1'b1 == ap_CS_fsm_state3) & (icmp_ln47_reg_695 == 1'd1))) begin
+        lineBuffer_magnitude_we0 = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_lineBuffer_magnitude_we0;
     end else begin
         lineBuffer_magnitude_we0 = 1'b0;
     end
@@ -1184,16 +1187,16 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            if (((icmp_ln46_fu_314_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
+            if (((icmp_ln46_fu_316_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
                 ap_NS_fsm = ap_ST_fsm_state1;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
             end
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3) & (tmp_20_fu_348_p3 == 1'd1))) begin
+            if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3) & (tmp_fu_352_p3 == 1'd1))) begin
                 ap_NS_fsm = ap_ST_fsm_state17;
-            end else if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3) & (tmp_20_fu_348_p3 == 1'd0))) begin
+            end else if (((1'b0 == ap_block_state3_on_subcall_done) & (1'b1 == ap_CS_fsm_state3) & (tmp_fu_352_p3 == 1'd0))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -1251,11 +1254,11 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln11_fu_423_p2 = ($signed(trunc_ln10_fu_411_p1) + $signed(2'd3));
+assign add_ln11_fu_427_p2 = ($signed(trunc_ln10_fu_415_p1) + $signed(2'd3));
 
-assign add_ln44_1_fu_562_p2 = (phi_urem_fu_72 + 10'd1);
+assign add_ln44_1_fu_566_p2 = (phi_urem_fu_74 + 9'd1);
 
-assign add_ln44_fu_542_p2 = (phi_urem141_fu_68 + 10'd1);
+assign add_ln44_fu_546_p2 = (phi_urem141_fu_70 + 9'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -1280,28 +1283,30 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    ap_block_state17_on_subcall_done = ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_done == 1'b0) & (tmp_20_reg_702 == 1'd0));
+    ap_block_state17_on_subcall_done = ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_done == 1'b0) & (tmp_reg_709 == 1'd0));
 end
 
 always @ (*) begin
-    ap_block_state3_on_subcall_done = ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_done == 1'b0) & (tmp_reg_688 == 1'd0));
+    ap_block_state3_on_subcall_done = ((grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_done == 1'b0) & (icmp_ln47_reg_695 == 1'd1));
 end
 
 assign ap_ready = internal_ap_ready;
 
-assign grp_fu_361_p0 = ($signed(row_2_fu_76) + $signed(10'd1022));
+assign grp_fu_365_p0 = ($signed(zext_ln46_reg_689) + $signed(10'd1022));
 
-assign grp_fu_361_p1 = 10'd3;
+assign grp_fu_365_p1 = 10'd3;
 
-assign grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_ap_start_reg;
+assign grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_ap_start_reg;
 
-assign grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_ap_start_reg;
+assign grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_ap_start_reg;
 
-assign icmp_ln44_1_fu_568_p2 = ((phi_urem_fu_72 == 10'd2) ? 1'b1 : 1'b0);
+assign icmp_ln44_1_fu_572_p2 = ((phi_urem_fu_74 == 9'd2) ? 1'b1 : 1'b0);
 
-assign icmp_ln44_fu_548_p2 = ((phi_urem141_fu_68 == 10'd2) ? 1'b1 : 1'b0);
+assign icmp_ln44_fu_552_p2 = ((phi_urem141_fu_70 == 9'd2) ? 1'b1 : 1'b0);
 
-assign icmp_ln46_fu_314_p2 = ((row_2_fu_76 == 10'd513) ? 1'b1 : 1'b0);
+assign icmp_ln46_fu_316_p2 = ((row_2_fu_78 == 9'd481) ? 1'b1 : 1'b0);
+
+assign icmp_ln47_fu_332_p2 = ((row_2_fu_78 < 9'd480) ? 1'b1 : 1'b0);
 
 assign lineBuffer_direction_1_address1 = 64'd0;
 
@@ -1315,52 +1320,56 @@ assign lineBuffer_magnitude_2_address1 = 64'd0;
 
 assign lineBuffer_magnitude_address1 = 64'd0;
 
-assign nms_out_din = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_nms_out_din;
+assign nms_out_din = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_nms_out_din;
 
-assign nms_out_write = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267_nms_out_write;
+assign nms_out_write = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_269_nms_out_write;
 
-assign outputRow_fu_339_p2 = ($signed(row_2_fu_76) + $signed(10'd1023));
+assign outputRow_fu_343_p2 = ($signed(zext_ln46_reg_689) + $signed(10'd1023));
 
-assign rowsReceived_fu_320_p2 = (row_2_fu_76 + 10'd1);
+assign rowsReceived_fu_322_p2 = (row_2_fu_78 + 9'd1);
 
-assign select_ln11_fu_429_p3 = ((tmp_21_fu_415_p3[0:0] == 1'b1) ? add_ln11_fu_423_p2 : trunc_ln10_fu_411_p1);
+assign select_ln11_fu_433_p3 = ((tmp_18_fu_419_p3[0:0] == 1'b1) ? add_ln11_fu_427_p2 : trunc_ln10_fu_415_p1);
 
-assign select_ln44_1_fu_574_p3 = ((icmp_ln44_1_fu_568_p2[0:0] == 1'b1) ? 10'd0 : add_ln44_1_fu_562_p2);
+assign select_ln44_1_fu_578_p3 = ((icmp_ln44_1_fu_572_p2[0:0] == 1'b1) ? 9'd0 : add_ln44_1_fu_566_p2);
 
-assign select_ln44_fu_554_p3 = ((icmp_ln44_fu_548_p2[0:0] == 1'b1) ? 10'd0 : add_ln44_fu_542_p2);
+assign select_ln44_fu_558_p3 = ((icmp_ln44_fu_552_p2[0:0] == 1'b1) ? 9'd0 : add_ln44_fu_546_p2);
 
-assign sobel_out_read = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254_sobel_out_read;
+assign sobel_out_read = grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_256_sobel_out_read;
 
 assign start_out = real_start;
 
-assign tmp_1_fu_473_p7 = 'bx;
+assign tmp_18_fu_419_p3 = grp_fu_365_p2[32'd2];
 
-assign tmp_20_fu_348_p3 = outputRow_fu_339_p2[32'd9];
+assign tmp_1_fu_477_p7 = 'bx;
 
-assign tmp_21_fu_415_p3 = grp_fu_361_p2[32'd2];
+assign tmp_2_fu_494_p7 = 'bx;
 
-assign tmp_2_fu_490_p7 = 'bx;
+assign tmp_3_fu_512_p7 = 'bx;
 
-assign tmp_3_fu_508_p7 = 'bx;
+assign tmp_4_fu_395_p7 = 'bx;
 
-assign tmp_4_fu_391_p7 = 'bx;
+assign tmp_5_fu_529_p7 = 'bx;
 
-assign tmp_5_fu_525_p7 = 'bx;
+assign tmp_8_fu_460_p7 = 'bx;
 
-assign tmp_8_fu_456_p7 = 'bx;
+assign tmp_9_fu_375_p7 = 'bx;
 
-assign tmp_9_fu_371_p7 = 'bx;
+assign tmp_fu_352_p3 = outputRow_fu_343_p2[32'd9];
 
-assign tmp_fu_326_p3 = row_2_fu_76[32'd9];
+assign tmp_s_fu_442_p7 = 'bx;
 
-assign tmp_s_fu_438_p7 = 'bx;
+assign trunc_ln10_fu_415_p1 = grp_fu_365_p2[1:0];
 
-assign trunc_ln10_fu_411_p1 = grp_fu_361_p2[1:0];
+assign trunc_ln52_fu_338_p1 = phi_urem_fu_74[1:0];
 
-assign trunc_ln52_fu_334_p1 = phi_urem_fu_72[1:0];
+assign trunc_ln61_fu_348_p1 = outputRow_fu_343_p2[8:0];
 
-assign trunc_ln61_fu_344_p1 = outputRow_fu_339_p2[8:0];
+assign trunc_ln9_fu_371_p1 = phi_urem141_fu_70[1:0];
 
-assign trunc_ln9_fu_367_p1 = phi_urem141_fu_68[1:0];
+assign zext_ln46_fu_328_p1 = row_2_fu_78;
+
+always @ (posedge ap_clk) begin
+    zext_ln46_reg_689[9] <= 1'b0;
+end
 
 endmodule //canny_top_non_maximum_suppression

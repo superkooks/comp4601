@@ -22,37 +22,37 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>1540</Best-caseLatency>
-<Average-caseLatency>274969</Average-caseLatency>
-<Worst-caseLatency>547885</Worst-caseLatency>
-<Best-caseRealTimeLatency>7.700 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>1.375 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.739 ms</Worst-caseRealTimeLatency>
-<Interval-min>1540</Interval-min>
-<Interval-max>547885</Interval-max>
+<Best-caseLatency>1444</Best-caseLatency>
+<Average-caseLatency>319385</Average-caseLatency>
+<Worst-caseLatency>636845</Worst-caseLatency>
+<Best-caseRealTimeLatency>7.220 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>1.597 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>3.184 ms</Worst-caseRealTimeLatency>
+<Interval-min>1444</Interval-min>
+<Interval-max>636845</Interval-max>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <VITIS_LOOP_92_1>
 <Slack>3.65</Slack>
-<TripCount>513</TripCount>
+<TripCount>481</TripCount>
 <isPerfectNested>0</isPerfectNested>
 <Latency>
 <range>
-<min>1539</min>
-<max>547884</max>
+<min>1443</min>
+<max>636844</max>
 </range>
 </Latency>
 <AbsoluteTimeLatency>
 <range>
-<min>7695</min>
-<max>2739420</max>
+<min>7215</min>
+<max>3184220</max>
 </range>
 </AbsoluteTimeLatency>
 <IterationLatency>
 <range>
 <min>3</min>
-<max>1068</max>
+<max>1324</max>
 </range>
 </IterationLatency>
 <PerformancePragma>-</PerformancePragma>
@@ -69,7 +69,7 @@
 <Name>VITIS_LOOP_92_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/sobel.cpp:120</SourceLocation>
+<SourceLocation>../src/sobel.cpp:101</SourceLocation>
 </VITIS_LOOP_92_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
@@ -79,8 +79,8 @@
 <Resources>
 <BRAM_18K>3</BRAM_18K>
 <DSP>2</DSP>
-<FF>785</FF>
-<LUT>1564</LUT>
+<FF>791</FF>
+<LUT>1605</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>
@@ -244,7 +244,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>11</Bits>
+<Bits>12</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
@@ -255,7 +255,7 @@
 <IOProtocol>ap_fifo</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
-<Bits>11</Bits>
+<Bits>12</Bits>
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>

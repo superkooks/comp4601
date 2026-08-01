@@ -21,24 +21,24 @@ port (
     gauss_out_write : OUT STD_LOGIC;
     gauss_out_num_data_valid : IN STD_LOGIC_VECTOR (31 downto 0);
     gauss_out_fifo_cap : IN STD_LOGIC_VECTOR (31 downto 0);
-    lineBuffer_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_ce0 : OUT STD_LOGIC;
     lineBuffer_q0 : IN STD_LOGIC_VECTOR (11 downto 0);
-    lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_1_ce0 : OUT STD_LOGIC;
     lineBuffer_1_q0 : IN STD_LOGIC_VECTOR (11 downto 0);
-    lineBuffer_2_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_2_ce0 : OUT STD_LOGIC;
     lineBuffer_2_q0 : IN STD_LOGIC_VECTOR (11 downto 0);
-    lineBuffer_3_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_3_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_3_ce0 : OUT STD_LOGIC;
     lineBuffer_3_q0 : IN STD_LOGIC_VECTOR (11 downto 0);
-    lineBuffer_4_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_4_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_4_ce0 : OUT STD_LOGIC;
     lineBuffer_4_q0 : IN STD_LOGIC_VECTOR (11 downto 0);
     select_ln21 : IN STD_LOGIC_VECTOR (2 downto 0);
     select_ln21_1 : IN STD_LOGIC_VECTOR (2 downto 0);
-    empty_45 : IN STD_LOGIC_VECTOR (2 downto 0);
+    empty_46 : IN STD_LOGIC_VECTOR (2 downto 0);
     select_ln21_2 : IN STD_LOGIC_VECTOR (2 downto 0);
     empty : IN STD_LOGIC_VECTOR (2 downto 0) );
 end;
@@ -56,7 +56,7 @@ architecture behav of canny_top_gaussian_blur_Pipeline_VITIS_LOOP_157_7 is
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
-    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_const_lv10_280 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
@@ -106,7 +106,7 @@ attribute shreg_extract : string;
     signal tmp_104_fu_338_p11 : STD_LOGIC_VECTOR (11 downto 0);
     signal tmp_104_fu_338_p13 : STD_LOGIC_VECTOR (11 downto 0);
     signal tmp_102_fu_284_p13 : STD_LOGIC_VECTOR (11 downto 0);
-    signal tmp_48_fu_377_p3 : STD_LOGIC_VECTOR (12 downto 0);
+    signal tmp_45_fu_377_p3 : STD_LOGIC_VECTOR (12 downto 0);
     signal p_shl_fu_369_p3 : STD_LOGIC_VECTOR (14 downto 0);
     signal zext_ln177_4_fu_385_p1 : STD_LOGIC_VECTOR (14 downto 0);
     signal tmp_s_fu_257_p13 : STD_LOGIC_VECTOR (11 downto 0);
@@ -284,7 +284,7 @@ begin
         din3 => lineBuffer_3_q0,
         din4 => lineBuffer_4_q0,
         def => tmp_102_fu_284_p11,
-        sel => empty_45,
+        sel => empty_46,
         dout => tmp_102_fu_284_p13);
 
     sparsemux_11_3_12_1_1_U103 : component canny_top_sparsemux_11_3_12_1_1
@@ -566,8 +566,8 @@ begin
         end if; 
     end process;
 
-    icmp_ln157_fu_200_p2 <= "1" when (ap_sig_allocacmp_column = ap_const_lv10_200) else "0";
-    lineBuffer_1_address0 <= zext_ln157_fu_212_p1(9 - 1 downto 0);
+    icmp_ln157_fu_200_p2 <= "1" when (ap_sig_allocacmp_column = ap_const_lv10_280) else "0";
+    lineBuffer_1_address0 <= zext_ln157_fu_212_p1(10 - 1 downto 0);
     lineBuffer_1_ce0 <= lineBuffer_1_ce0_local;
 
     lineBuffer_1_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
@@ -579,7 +579,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_2_address0 <= zext_ln157_fu_212_p1(9 - 1 downto 0);
+    lineBuffer_2_address0 <= zext_ln157_fu_212_p1(10 - 1 downto 0);
     lineBuffer_2_ce0 <= lineBuffer_2_ce0_local;
 
     lineBuffer_2_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
@@ -591,7 +591,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_3_address0 <= zext_ln157_fu_212_p1(9 - 1 downto 0);
+    lineBuffer_3_address0 <= zext_ln157_fu_212_p1(10 - 1 downto 0);
     lineBuffer_3_ce0 <= lineBuffer_3_ce0_local;
 
     lineBuffer_3_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
@@ -603,7 +603,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_4_address0 <= zext_ln157_fu_212_p1(9 - 1 downto 0);
+    lineBuffer_4_address0 <= zext_ln157_fu_212_p1(10 - 1 downto 0);
     lineBuffer_4_ce0 <= lineBuffer_4_ce0_local;
 
     lineBuffer_4_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
@@ -615,7 +615,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_address0 <= zext_ln157_fu_212_p1(9 - 1 downto 0);
+    lineBuffer_address0 <= zext_ln157_fu_212_p1(10 - 1 downto 0);
     lineBuffer_ce0 <= lineBuffer_ce0_local;
 
     lineBuffer_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter0, ap_block_pp0_stage0_11001)
@@ -638,13 +638,13 @@ begin
     tmp_104_fu_338_p11 <= "XXXXXXXXXXXX";
     tmp_109_cast_fu_395_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_s_fu_257_p13),13));
     tmp_111_cast_fu_399_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_103_fu_311_p13),13));
-    tmp_48_fu_377_p3 <= (tmp_102_fu_284_p13 & ap_const_lv1_0);
+    tmp_45_fu_377_p3 <= (tmp_102_fu_284_p13 & ap_const_lv1_0);
     tmp_s_fu_257_p11 <= "XXXXXXXXXXXX";
     zext_ln157_fu_212_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(ap_sig_allocacmp_column),64));
     zext_ln177_1_fu_432_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp3_fu_425_p3),16));
     zext_ln177_2_fu_436_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln177_1_reg_522),16));
     zext_ln177_3_fu_415_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln177_fu_409_p2),15));
-    zext_ln177_4_fu_385_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_48_fu_377_p3),15));
+    zext_ln177_4_fu_385_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_45_fu_377_p3),15));
     zext_ln177_fu_365_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_104_fu_338_p13),13));
     zext_ln178_fu_253_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sum_1_fu_226_p13),13));
 end behav;

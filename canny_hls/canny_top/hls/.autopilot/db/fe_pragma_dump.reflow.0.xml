@@ -2,15 +2,15 @@
 <pragma file="../src/canny_top.cpp" line="13" pragmaType="dataflow" parentfunction="canny_top" disable_start_propagation="0"/>
 <pragma file="../src/canny_top.cpp" line="10" pragmaType="interface" parentfunction="canny_top" mode="m_axi" port="" bundle="gmem0" offset="" name="" depth="12288" num_read_outstanding="4" num_write_outstanding="-1" max_burst_read_length="32" max_burst_write_length="-1" latency="-1" max_widen_bitwidth="-1" channel=""/>
 <pragma file="../src/canny_top.cpp" line="11" pragmaType="interface" parentfunction="canny_top" mode="m_axi" port="out" bundle="gmem" offset="" name="" depth="-1" num_read_outstanding="-1" num_write_outstanding="4" max_burst_read_length="-1" max_burst_write_length="8" latency="-1" max_widen_bitwidth="-1" channel=""/>
-<pragma file="../src/canny_top.cpp" line="25" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="gray_out"/>
-<pragma file="../src/canny_top.cpp" line="26" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="gauss_out"/>
-<pragma file="../src/canny_top.cpp" line="27" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="sobel_out"/>
-<pragma file="../src/canny_top.cpp" line="28" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="nms_out"/>
-<pragma file="../src/canny_top.cpp" line="29" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="thresh_out"/>
-<pragma file="../src/canny_top.cpp" line="30" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="hyst1_out"/>
-<pragma file="../src/canny_top.cpp" line="31" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="hyst2_out"/>
-<pragma file="../src/canny_top.cpp" line="32" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="hyst3_out"/>
-<pragma file="../src/canny_top.cpp" line="33" pragmaType="stream" parentfunction="canny_top" depth="1024" type="fifo" variable="hyst4_out"/>
+<pragma file="../src/canny_top.cpp" line="25" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="gray_out"/>
+<pragma file="../src/canny_top.cpp" line="26" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="gauss_out"/>
+<pragma file="../src/canny_top.cpp" line="27" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="sobel_out"/>
+<pragma file="../src/canny_top.cpp" line="28" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="nms_out"/>
+<pragma file="../src/canny_top.cpp" line="29" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="thresh_out"/>
+<pragma file="../src/canny_top.cpp" line="30" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="hyst1_out"/>
+<pragma file="../src/canny_top.cpp" line="31" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="hyst2_out"/>
+<pragma file="../src/canny_top.cpp" line="32" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="hyst3_out"/>
+<pragma file="../src/canny_top.cpp" line="33" pragmaType="stream" parentfunction="canny_top" depth="1280" type="fifo" variable="hyst4_out"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="read" off="0" region="0" recursive="0"/>
 <pragma file="" line="0" pragmaType="inline" parentfunction="write" off="0" region="0" recursive="0"/>

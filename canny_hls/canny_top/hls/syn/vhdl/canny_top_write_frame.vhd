@@ -71,8 +71,8 @@ port (
     hyst4_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
     hyst4_out_empty_n : IN STD_LOGIC;
     hyst4_out_read : OUT STD_LOGIC;
-    hyst4_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-    hyst4_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0) );
+    hyst4_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+    hyst4_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0) );
 end;
 
 
@@ -91,20 +91,20 @@ architecture behav of canny_top_write_frame is
     constant ap_const_lv3_0 : STD_LOGIC_VECTOR (2 downto 0) := "000";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
-    constant ap_const_lv64_1000 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000001000000000000";
+    constant ap_const_lv64_12C0 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000001001011000000";
     constant ap_const_lv64_FFFFFFFFFFFFFFFF : STD_LOGIC_VECTOR (63 downto 0) := "1111111111111111111111111111111111111111111111111111111111111111";
-    constant ap_const_lv18_0 : STD_LOGIC_VECTOR (17 downto 0) := "000000000000000000";
+    constant ap_const_lv19_0 : STD_LOGIC_VECTOR (18 downto 0) := "0000000000000000000";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     constant ap_const_lv504_lc_1 : STD_LOGIC_VECTOR (503 downto 0) := "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
-    constant ap_const_lv18_1 : STD_LOGIC_VECTOR (17 downto 0) := "000000000000000001";
-    constant ap_const_lv18_3FFFF : STD_LOGIC_VECTOR (17 downto 0) := "111111111111111111";
+    constant ap_const_lv19_1 : STD_LOGIC_VECTOR (18 downto 0) := "0000000000000000001";
+    constant ap_const_lv19_4AFFF : STD_LOGIC_VECTOR (18 downto 0) := "1001010111111111111";
     constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
     constant ap_const_lv32_3F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000111111";
     constant ap_const_lv6_3F : STD_LOGIC_VECTOR (5 downto 0) := "111111";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv32_8 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001000";
     constant ap_const_lv32_1F7 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000111110111";
-    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_const_lv10_280 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
 
 attribute shreg_extract : string;
     signal ap_CS_fsm : STD_LOGIC_VECTOR (0 downto 0) := "1";
@@ -294,10 +294,10 @@ attribute shreg_extract : string;
     signal ap_loop_init_pp0_iter2_reg : STD_LOGIC;
     signal sext_ln7_fu_217_p1 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_pp0_stage0_01001 : BOOLEAN;
-    signal indvar_flatten2_fu_98 : STD_LOGIC_VECTOR (17 downto 0) := "000000000000000000";
-    signal add_ln7_fu_187_p2 : STD_LOGIC_VECTOR (17 downto 0);
-    signal ap_sig_allocacmp_indvar_flatten2_load : STD_LOGIC_VECTOR (17 downto 0);
-    signal ap_sig_allocacmp_indvar_flatten2_load_1 : STD_LOGIC_VECTOR (17 downto 0);
+    signal indvar_flatten2_fu_98 : STD_LOGIC_VECTOR (18 downto 0) := "0000000000000000000";
+    signal add_ln7_fu_187_p2 : STD_LOGIC_VECTOR (18 downto 0);
+    signal ap_sig_allocacmp_indvar_flatten2_load : STD_LOGIC_VECTOR (18 downto 0);
+    signal ap_sig_allocacmp_indvar_flatten2_load_1 : STD_LOGIC_VECTOR (18 downto 0);
     signal col_fu_102 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     signal col_2_fu_272_p2 : STD_LOGIC_VECTOR (9 downto 0);
     signal phi_ln104_fu_106 : STD_LOGIC_VECTOR (503 downto 0) := "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
@@ -1692,7 +1692,7 @@ begin
                 ap_NS_fsm <= "X";
         end case;
     end process;
-    add_ln7_fu_187_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_indvar_flatten2_load) + unsigned(ap_const_lv18_1));
+    add_ln7_fu_187_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_indvar_flatten2_load) + unsigned(ap_const_lv19_1));
     ap_CS_fsm_pp0_stage0 <= ap_CS_fsm(0);
         ap_block_pp0_stage0 <= not((ap_const_boolean_1 = ap_const_boolean_1));
 
@@ -1863,7 +1863,7 @@ begin
     ap_sig_allocacmp_indvar_flatten2_load_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, ap_loop_init, indvar_flatten2_fu_98, ap_start_int)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_start_int = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            ap_sig_allocacmp_indvar_flatten2_load <= ap_const_lv18_0;
+            ap_sig_allocacmp_indvar_flatten2_load <= ap_const_lv19_0;
         else 
             ap_sig_allocacmp_indvar_flatten2_load <= indvar_flatten2_fu_98;
         end if; 
@@ -1873,7 +1873,7 @@ begin
     ap_sig_allocacmp_indvar_flatten2_load_1_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_block_pp0_stage0, ap_loop_init, indvar_flatten2_fu_98, ap_start_int)
     begin
         if (((ap_loop_init = ap_const_logic_1) and (ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_start_int = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then 
-            ap_sig_allocacmp_indvar_flatten2_load_1 <= ap_const_lv18_0;
+            ap_sig_allocacmp_indvar_flatten2_load_1 <= ap_const_lv19_0;
         else 
             ap_sig_allocacmp_indvar_flatten2_load_1 <= indvar_flatten2_fu_98;
         end if; 
@@ -1931,8 +1931,8 @@ begin
     end process;
 
     icmp_ln10_fu_258_p2 <= "1" when (trunc_ln8_fu_254_p1 = ap_const_lv6_3F) else "0";
-    icmp_ln7_fu_196_p2 <= "1" when (ap_sig_allocacmp_indvar_flatten2_load_1 = ap_const_lv18_3FFFF) else "0";
-    icmp_ln8_fu_304_p2 <= "1" when (col_2_fu_272_p2 = ap_const_lv10_200) else "0";
+    icmp_ln7_fu_196_p2 <= "1" when (ap_sig_allocacmp_indvar_flatten2_load_1 = ap_const_lv19_4AFFF) else "0";
+    icmp_ln8_fu_304_p2 <= "1" when (col_2_fu_272_p2 = ap_const_lv10_280) else "0";
     m_axi_gmem_0_ARADDR <= ap_const_lv64_0;
     m_axi_gmem_0_ARBURST <= ap_const_lv2_0;
     m_axi_gmem_0_ARCACHE <= ap_const_lv4_0;
@@ -1949,7 +1949,7 @@ begin
     m_axi_gmem_0_AWBURST <= ap_const_lv2_0;
     m_axi_gmem_0_AWCACHE <= ap_const_lv4_0;
     m_axi_gmem_0_AWID <= ap_const_lv1_0;
-    m_axi_gmem_0_AWLEN <= ap_const_lv64_1000(32 - 1 downto 0);
+    m_axi_gmem_0_AWLEN <= ap_const_lv64_12C0(32 - 1 downto 0);
     m_axi_gmem_0_AWLOCK <= ap_const_lv2_0;
     m_axi_gmem_0_AWPROT <= ap_const_lv3_0;
     m_axi_gmem_0_AWQOS <= ap_const_lv4_0;

@@ -45,17 +45,17 @@ output   ap_ready;
 input  [7:0] thresh_out_dout;
 input   thresh_out_empty_n;
 output   thresh_out_read;
-input  [10:0] thresh_out_num_data_valid;
-input  [10:0] thresh_out_fifo_cap;
-output  [8:0] buffer_2_address0;
+input  [11:0] thresh_out_num_data_valid;
+input  [11:0] thresh_out_fifo_cap;
+output  [9:0] buffer_2_address0;
 output   buffer_2_ce0;
 output   buffer_2_we0;
 output  [7:0] buffer_2_d0;
-output  [8:0] buffer_1_address0;
+output  [9:0] buffer_1_address0;
 output   buffer_1_ce0;
 output   buffer_1_we0;
 output  [7:0] buffer_1_d0;
-output  [8:0] buffer_r_address0;
+output  [9:0] buffer_r_address0;
 output   buffer_r_ce0;
 output   buffer_r_we0;
 output  [7:0] buffer_r_d0;
@@ -350,7 +350,7 @@ assign buffer_r_d0 = thresh_out_dout;
 
 assign buffer_r_we0 = buffer_r_we0_local;
 
-assign icmp_ln78_fu_114_p2 = ((ap_sig_allocacmp_column_11 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln78_fu_114_p2 = ((ap_sig_allocacmp_column_11 == 10'd640) ? 1'b1 : 1'b0);
 
 assign tmp_reg_152 = empty;
 

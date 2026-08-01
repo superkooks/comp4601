@@ -2450,7 +2450,7 @@ Args:
   - String:          'Sequential '
   - Direction:       write
   - String:          ' of length '
-  - Length:          '262144'
+  - Length:          '307200'
   - String:          ' has been inferred'
   - String:          ' _XLX_SEP_ '
   - AccessID:        out2seq
@@ -2480,13 +2480,13 @@ Args:
   - String:          'Sequential '
   - Direction:       write
   - String:          ' of '
-  - OrigLength:      '262144'
+  - OrigLength:      '307200'
   - String:          ' x '
   - OrigWords:       '8'
   - String:          'bit words has been widened by '
   - Factor:          '64'
   - String:          ': '
-  - Length:          '4096'
+  - Length:          '4800'
   - String:          ' x '
   - Words:           '512'
   - String:          bit words
@@ -2590,7 +2590,7 @@ Args:
   - String:          'Performing burst_maxi '
   - Direction:       read
   - String:          ' of length '
-  - Length:          '24'
+  - Length:          '30'
   - String:          ' and bit width '
   - Width:           '512'
   - String:          ' on bundle '''
@@ -2616,7 +2616,7 @@ Args:
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '4800'
   - String:          ' and bit width '
   - Width:           '512'
   - String:          ' has been inferred.'
@@ -2640,7 +2640,7 @@ Args:
   - String:          'Multiple burst '
   - Direction:       writes
   - String:          ' of length '
-  - Length:          '4096'
+  - Length:          '4800'
   - String:          ' and bit width '
   - Width:           '512'
   - String:          ' has been inferred on bundle '''

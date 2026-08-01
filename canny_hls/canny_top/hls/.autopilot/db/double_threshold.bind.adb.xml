@@ -23,7 +23,7 @@
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="3" bw="18" op_0_bw="32">
+<Node id="3" bw="19" op_0_bw="32">
 <![CDATA[
 entry:0 %i = alloca i32 1
 
@@ -68,9 +68,9 @@ entry:2 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i16 %nm
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="6" bw="0" op_0_bw="18" op_1_bw="18">
+<Node id="6" bw="0" op_0_bw="19" op_1_bw="19">
 <![CDATA[
-entry:3 %store_ln10 = store i18 0, i18 %i
+entry:3 %store_ln10 = store i19 0, i19 %i
 
 ]]></Node>
 <StgValue><ssdm name="store_ln10"/></StgValue>
@@ -98,9 +98,9 @@ entry:4 %br_ln10 = br void %for.body.split
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="9" bw="18" op_0_bw="18" op_1_bw="0">
+<Node id="9" bw="19" op_0_bw="19" op_1_bw="0">
 <![CDATA[
-for.body.split:0 %i_2 = load i18 %i
+for.body.split:0 %i_2 = load i19 %i
 
 ]]></Node>
 <StgValue><ssdm name="i_2"/></StgValue>
@@ -158,9 +158,9 @@ for.body.split:6 %icmp_ln19 = icmp_ugt  i16 %magnitude, i16 19
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="19" bw="18" op_0_bw="18" op_1_bw="18">
+<Node id="19" bw="19" op_0_bw="19" op_1_bw="19">
 <![CDATA[
-for.body.split:10 %i_3 = add i18 %i_2, i18 1
+for.body.split:10 %i_3 = add i19 %i_2, i19 1
 
 ]]></Node>
 <StgValue><ssdm name="i_3"/></StgValue>
@@ -173,9 +173,9 @@ for.body.split:10 %i_3 = add i18 %i_2, i18 1
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="20" bw="1" op_0_bw="18" op_1_bw="18">
+<Node id="20" bw="1" op_0_bw="19" op_1_bw="19">
 <![CDATA[
-for.body.split:11 %icmp_ln10 = icmp_eq  i18 %i_2, i18 262143
+for.body.split:11 %icmp_ln10 = icmp_eq  i19 %i_2, i19 307199
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln10"/></StgValue>
@@ -188,9 +188,9 @@ for.body.split:11 %icmp_ln10 = icmp_eq  i18 %i_2, i18 262143
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="21" bw="0" op_0_bw="18" op_1_bw="18" op_2_bw="0" op_3_bw="0">
+<Node id="21" bw="0" op_0_bw="19" op_1_bw="19" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body.split:12 %store_ln10 = store i18 %i_3, i18 %i
+for.body.split:12 %store_ln10 = store i19 %i_3, i19 %i
 
 ]]></Node>
 <StgValue><ssdm name="store_ln10"/></StgValue>
@@ -238,7 +238,7 @@ for.body.split:1 %specpipeline_ln11 = specpipeline void @_ssdm_op_SpecPipeline, 
 
 <Node id="11" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.body.split:2 %speclooptripcount_ln10 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 262144, i64 262144, i64 262144
+for.body.split:2 %speclooptripcount_ln10 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 307200, i64 307200, i64 307200
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln10"/></StgValue>

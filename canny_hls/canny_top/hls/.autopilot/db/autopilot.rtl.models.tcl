@@ -96,15 +96,15 @@ set SynModuleInfo {
   {SRCNAME canny_top MODELNAME canny_top RTLNAME canny_top IS_TOP 1
     SUBMODULES {
       {MODELNAME canny_top_fifo_w64_d11_S RTLNAME canny_top_fifo_w64_d11_S BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME out_r_c_U}
-      {MODELNAME canny_top_fifo_w8_d1024_A RTLNAME canny_top_fifo_w8_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME gray_out_U}
-      {MODELNAME canny_top_fifo_w8_d1024_A RTLNAME canny_top_fifo_w8_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME gauss_out_U}
-      {MODELNAME canny_top_fifo_w24_d1024_A RTLNAME canny_top_fifo_w24_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME sobel_out_U}
-      {MODELNAME canny_top_fifo_w16_d1024_A RTLNAME canny_top_fifo_w16_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME nms_out_U}
-      {MODELNAME canny_top_fifo_w8_d1024_A RTLNAME canny_top_fifo_w8_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME thresh_out_U}
-      {MODELNAME canny_top_fifo_w8_d1024_A RTLNAME canny_top_fifo_w8_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst1_out_U}
-      {MODELNAME canny_top_fifo_w8_d1024_A RTLNAME canny_top_fifo_w8_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst2_out_U}
-      {MODELNAME canny_top_fifo_w8_d1024_A RTLNAME canny_top_fifo_w8_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst3_out_U}
-      {MODELNAME canny_top_fifo_w8_d1024_A RTLNAME canny_top_fifo_w8_d1024_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst4_out_U}
+      {MODELNAME canny_top_fifo_w8_d1280_A RTLNAME canny_top_fifo_w8_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME gray_out_U}
+      {MODELNAME canny_top_fifo_w8_d1280_A RTLNAME canny_top_fifo_w8_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME gauss_out_U}
+      {MODELNAME canny_top_fifo_w24_d1280_A RTLNAME canny_top_fifo_w24_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME sobel_out_U}
+      {MODELNAME canny_top_fifo_w16_d1280_A RTLNAME canny_top_fifo_w16_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME nms_out_U}
+      {MODELNAME canny_top_fifo_w8_d1280_A RTLNAME canny_top_fifo_w8_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME thresh_out_U}
+      {MODELNAME canny_top_fifo_w8_d1280_A RTLNAME canny_top_fifo_w8_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst1_out_U}
+      {MODELNAME canny_top_fifo_w8_d1280_A RTLNAME canny_top_fifo_w8_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst2_out_U}
+      {MODELNAME canny_top_fifo_w8_d1280_A RTLNAME canny_top_fifo_w8_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst3_out_U}
+      {MODELNAME canny_top_fifo_w8_d1280_A RTLNAME canny_top_fifo_w8_d1280_A BINDTYPE storage TYPE fifo IMPL memory ALLOW_PRAGMA 1 INSTNAME hyst4_out_U}
       {MODELNAME canny_top_start_for_write_frame_U0 RTLNAME canny_top_start_for_write_frame_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_write_frame_U0_U}
       {MODELNAME canny_top_start_for_gaussian_blur_U0 RTLNAME canny_top_start_for_gaussian_blur_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_gaussian_blur_U0_U}
       {MODELNAME canny_top_start_for_sobel_U0 RTLNAME canny_top_start_for_sobel_U0 BINDTYPE storage TYPE fifo IMPL srl ALLOW_PRAGMA 1 INSTNAME start_for_sobel_U0_U}

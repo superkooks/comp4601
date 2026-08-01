@@ -6,7 +6,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=547115,HLS_SYN_TPT=332802,HLS_SYN_MEM=80,HLS_SYN_DSP=0,HLS_SYN_FF=11505,HLS_SYN_LUT=19312,HLS_VERSION=2025_2}" *)
+(* CORE_GENERATION_INFO="canny_top_canny_top,hls_ip_2025_2,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xck26-sfvc784-2LV-c,HLS_INPUT_CLOCK=5.000000,HLS_INPUT_ARCH=dataflow,HLS_SYN_CLOCK=3.650000,HLS_SYN_LAT=635819,HLS_SYN_TPT=379202,HLS_SYN_MEM=82,HLS_SYN_DSP=0,HLS_SYN_FF=11523,HLS_SYN_LUT=19589,HLS_VERSION=2025_2}" *)
 
 (* DowngradeIPIdentifiedWarnings="yes" *)
 module canny_top (
@@ -490,48 +490,48 @@ wire   [4:0] out_r_c_fifo_cap;
 wire    gray_out_full_n;
 wire   [7:0] gray_out_dout;
 wire    gray_out_empty_n;
-wire   [10:0] gray_out_num_data_valid;
-wire   [10:0] gray_out_fifo_cap;
+wire   [11:0] gray_out_num_data_valid;
+wire   [11:0] gray_out_fifo_cap;
 wire    gauss_out_full_n;
 wire   [7:0] gauss_out_dout;
 wire    gauss_out_empty_n;
-wire   [10:0] gauss_out_num_data_valid;
-wire   [10:0] gauss_out_fifo_cap;
+wire   [11:0] gauss_out_num_data_valid;
+wire   [11:0] gauss_out_fifo_cap;
 wire    sobel_out_full_n;
 wire   [23:0] sobel_out_dout;
 wire    sobel_out_empty_n;
-wire   [10:0] sobel_out_num_data_valid;
-wire   [10:0] sobel_out_fifo_cap;
+wire   [11:0] sobel_out_num_data_valid;
+wire   [11:0] sobel_out_fifo_cap;
 wire    nms_out_full_n;
 wire   [15:0] nms_out_dout;
 wire    nms_out_empty_n;
-wire   [10:0] nms_out_num_data_valid;
-wire   [10:0] nms_out_fifo_cap;
+wire   [11:0] nms_out_num_data_valid;
+wire   [11:0] nms_out_fifo_cap;
 wire    thresh_out_full_n;
 wire   [7:0] thresh_out_dout;
 wire    thresh_out_empty_n;
-wire   [10:0] thresh_out_num_data_valid;
-wire   [10:0] thresh_out_fifo_cap;
+wire   [11:0] thresh_out_num_data_valid;
+wire   [11:0] thresh_out_fifo_cap;
 wire    hyst1_out_full_n;
 wire   [7:0] hyst1_out_dout;
 wire    hyst1_out_empty_n;
-wire   [10:0] hyst1_out_num_data_valid;
-wire   [10:0] hyst1_out_fifo_cap;
+wire   [11:0] hyst1_out_num_data_valid;
+wire   [11:0] hyst1_out_fifo_cap;
 wire    hyst2_out_full_n;
 wire   [7:0] hyst2_out_dout;
 wire    hyst2_out_empty_n;
-wire   [10:0] hyst2_out_num_data_valid;
-wire   [10:0] hyst2_out_fifo_cap;
+wire   [11:0] hyst2_out_num_data_valid;
+wire   [11:0] hyst2_out_fifo_cap;
 wire    hyst3_out_full_n;
 wire   [7:0] hyst3_out_dout;
 wire    hyst3_out_empty_n;
-wire   [10:0] hyst3_out_num_data_valid;
-wire   [10:0] hyst3_out_fifo_cap;
+wire   [11:0] hyst3_out_num_data_valid;
+wire   [11:0] hyst3_out_fifo_cap;
 wire    hyst4_out_full_n;
 wire   [7:0] hyst4_out_dout;
 wire    hyst4_out_empty_n;
-wire   [10:0] hyst4_out_num_data_valid;
-wire   [10:0] hyst4_out_fifo_cap;
+wire   [11:0] hyst4_out_num_data_valid;
+wire   [11:0] hyst4_out_fifo_cap;
 wire    ap_sync_ready;
 reg    ap_sync_reg_entry_proc_U0_ap_ready;
 wire    ap_sync_entry_proc_U0_ap_ready;
@@ -1148,7 +1148,7 @@ canny_top_fifo_w64_d11_S out_r_c_U(
     .if_fifo_cap(out_r_c_fifo_cap)
 );
 
-canny_top_fifo_w8_d1024_A gray_out_U(
+canny_top_fifo_w8_d1280_A gray_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1163,7 +1163,7 @@ canny_top_fifo_w8_d1024_A gray_out_U(
     .if_fifo_cap(gray_out_fifo_cap)
 );
 
-canny_top_fifo_w8_d1024_A gauss_out_U(
+canny_top_fifo_w8_d1280_A gauss_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1178,7 +1178,7 @@ canny_top_fifo_w8_d1024_A gauss_out_U(
     .if_fifo_cap(gauss_out_fifo_cap)
 );
 
-canny_top_fifo_w24_d1024_A sobel_out_U(
+canny_top_fifo_w24_d1280_A sobel_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1193,7 +1193,7 @@ canny_top_fifo_w24_d1024_A sobel_out_U(
     .if_fifo_cap(sobel_out_fifo_cap)
 );
 
-canny_top_fifo_w16_d1024_A nms_out_U(
+canny_top_fifo_w16_d1280_A nms_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1208,7 +1208,7 @@ canny_top_fifo_w16_d1024_A nms_out_U(
     .if_fifo_cap(nms_out_fifo_cap)
 );
 
-canny_top_fifo_w8_d1024_A thresh_out_U(
+canny_top_fifo_w8_d1280_A thresh_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1223,7 +1223,7 @@ canny_top_fifo_w8_d1024_A thresh_out_U(
     .if_fifo_cap(thresh_out_fifo_cap)
 );
 
-canny_top_fifo_w8_d1024_A hyst1_out_U(
+canny_top_fifo_w8_d1280_A hyst1_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1238,7 +1238,7 @@ canny_top_fifo_w8_d1024_A hyst1_out_U(
     .if_fifo_cap(hyst1_out_fifo_cap)
 );
 
-canny_top_fifo_w8_d1024_A hyst2_out_U(
+canny_top_fifo_w8_d1280_A hyst2_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1253,7 +1253,7 @@ canny_top_fifo_w8_d1024_A hyst2_out_U(
     .if_fifo_cap(hyst2_out_fifo_cap)
 );
 
-canny_top_fifo_w8_d1024_A hyst3_out_U(
+canny_top_fifo_w8_d1280_A hyst3_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),
@@ -1268,7 +1268,7 @@ canny_top_fifo_w8_d1024_A hyst3_out_U(
     .if_fifo_cap(hyst3_out_fifo_cap)
 );
 
-canny_top_fifo_w8_d1024_A hyst4_out_U(
+canny_top_fifo_w8_d1280_A hyst4_out_U(
     .clk(ap_clk),
     .reset(ap_rst_n_inv),
     .if_read_ce(1'b1),

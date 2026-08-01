@@ -18,7 +18,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_nms_out \
     op interface \
-    ports { nms_out_dout { I 16 vector } nms_out_empty_n { I 1 bit } nms_out_read { O 1 bit } nms_out_num_data_valid { I 11 vector } nms_out_fifo_cap { I 11 vector } } \
+    ports { nms_out_dout { I 16 vector } nms_out_empty_n { I 1 bit } nms_out_read { O 1 bit } nms_out_num_data_valid { I 12 vector } nms_out_fifo_cap { I 12 vector } } \
 } "
 }
 

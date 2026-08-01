@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale_Pipeline_unpack_pixels'" level="0">
-<item name = "Date">Sat Aug  1 15:48:51 2026
+<item name = "Date">Sat Aug  1 17:30:24 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">519, 519, 2.595 us, 2.595 us, 0, 0, loop pipeline stp</column>
+<column name="">647, 647, 3.235 us, 3.235 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- unpack_pixels">517, 517, 7, 1, 1, 512, yes</column>
+<column name="- unpack_pixels">645, 645, 7, 1, 1, 640, yes</column>
 </table>
 </item>
 </section>

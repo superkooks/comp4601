@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'grayscale'
 ================================================================
-* Date:           Sat Aug  1 15:48:52 2026
+* Date:           Sat Aug  1 17:30:26 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -29,7 +29,7 @@
     |  Latency (cycles) |  Latency (absolute) |     Interval    | Pipeline|
     |   min   |   max   |    min   |    max   |   min  |   max  |   Type  |
     +---------+---------+----------+----------+--------+--------+---------+
-    |   332801|   332801|  1.664 ms|  1.664 ms|  332801|  332801|       no|
+    |   379201|   379201|  1.896 ms|  1.896 ms|  379201|  379201|       no|
     +---------+---------+----------+----------+--------+--------+---------+
 
     + Detail: 
@@ -38,9 +38,9 @@
         |                                             |                                  |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
         |                   Instance                  |              Module              |   min   |   max   |    min   |    max   | min | max |        Type       |
         +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
-        |grp_grayscale_Pipeline_burst_read_fu_225     |grayscale_Pipeline_burst_read     |       27|       27|  0.135 us|  0.135 us|    0|    0|  loop pipeline stp|
-        |grp_grayscale_Pipeline_unpack_bytes_fu_232   |grayscale_Pipeline_unpack_bytes   |       26|       26|  0.130 us|  0.130 us|    0|    0|  loop pipeline stp|
-        |grp_grayscale_Pipeline_unpack_pixels_fu_269  |grayscale_Pipeline_unpack_pixels  |      519|      519|  2.595 us|  2.595 us|    0|    0|  loop pipeline stp|
+        |grp_grayscale_Pipeline_burst_read_fu_225     |grayscale_Pipeline_burst_read     |       33|       33|  0.165 us|  0.165 us|    0|    0|  loop pipeline stp|
+        |grp_grayscale_Pipeline_unpack_bytes_fu_232   |grayscale_Pipeline_unpack_bytes   |       32|       32|  0.160 us|  0.160 us|    0|    0|  loop pipeline stp|
+        |grp_grayscale_Pipeline_unpack_pixels_fu_269  |grayscale_Pipeline_unpack_pixels  |      647|      647|  3.235 us|  3.235 us|    0|    0|  loop pipeline stp|
         +---------------------------------------------+----------------------------------+---------+---------+----------+----------+-----+-----+-------------------+
 
         * Loop: 
@@ -48,7 +48,7 @@
         |                  |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
         |     Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
         +------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- VITIS_LOOP_7_1  |   332800|   332800|       650|          -|          -|   512|        no|
+        |- VITIS_LOOP_7_1  |   379200|   379200|       790|          -|          -|   480|        no|
         +------------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
@@ -61,14 +61,14 @@
 |       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
 +-----------------+---------+------+--------+--------+-----+
 |DSP              |        -|     -|       -|       -|    -|
-|Expression       |        -|     -|       0|     135|    -|
+|Expression       |        -|     -|       0|     132|    -|
 |FIFO             |        -|     -|       -|       -|    -|
-|Instance         |        -|     2|     699|    1237|    -|
-|Memory           |       15|     -|     512|     192|    0|
+|Instance         |        -|     2|     699|    1236|    -|
+|Memory           |       15|     -|     512|     256|    0|
 |Multiplexer      |        -|     -|       0|    2996|    -|
-|Register         |        -|     -|     216|       -|    -|
+|Register         |        -|     -|     215|       -|    -|
 +-----------------+---------+------+--------+--------+-----+
-|Total            |       15|     2|    1427|    4560|    0|
+|Total            |       15|     2|    1426|    4620|    0|
 +-----------------+---------+------+--------+--------+-----+
 |Available        |      288|  1248|  234240|  117120|   64|
 +-----------------+---------+------+--------+--------+-----+
@@ -82,9 +82,9 @@
     +---------------------------------------------+----------------------------------+---------+----+-----+------+-----+
     |grp_grayscale_Pipeline_burst_read_fu_225     |grayscale_Pipeline_burst_read     |        0|   0|  533|    73|    0|
     |grp_grayscale_Pipeline_unpack_bytes_fu_232   |grayscale_Pipeline_unpack_bytes   |        0|   0|   13|    62|    0|
-    |grp_grayscale_Pipeline_unpack_pixels_fu_269  |grayscale_Pipeline_unpack_pixels  |        0|   2|  153|  1102|    0|
+    |grp_grayscale_Pipeline_unpack_pixels_fu_269  |grayscale_Pipeline_unpack_pixels  |        0|   2|  153|  1101|    0|
     +---------------------------------------------+----------------------------------+---------+----+-----+------+-----+
-    |Total                                        |                                  |        0|   2|  699|  1237|    0|
+    |Total                                        |                                  |        0|   2|  699|  1236|    0|
     +---------------------------------------------+----------------------------------+---------+----+-----+------+-----+
 
     * DSP: 
@@ -94,41 +94,41 @@
     +----------------+-----------------------------------+---------+----+----+-----+------+-----+------+-------------+
     |     Memory     |               Module              | BRAM_18K| FF | LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +----------------+-----------------------------------+---------+----+----+-----+------+-----+------+-------------+
-    |row_bytes_U     |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_1_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_2_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_3_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_4_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_5_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_6_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_7_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_8_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_9_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_10_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_11_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_12_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_13_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_14_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_15_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_16_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_17_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_18_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_19_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_20_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_21_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_22_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_23_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_24_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_25_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_26_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_27_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_28_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_29_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_30_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_bytes_31_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   6|    0|    48|    8|     1|          384|
-    |row_words_U     |grayscale_row_words_RAM_AUTO_1R1W  |       15|   0|   0|    0|    24|  512|     1|        12288|
+    |row_bytes_U     |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_1_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_2_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_3_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_4_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_5_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_6_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_7_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_8_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_9_U   |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_10_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_11_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_12_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_13_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_14_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_15_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_16_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_17_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_18_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_19_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_20_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_21_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_22_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_23_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_24_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_25_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_26_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_27_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_28_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_29_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_30_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_bytes_31_U  |grayscale_row_bytes_RAM_AUTO_1R1W  |        0|  16|   8|    0|    60|    8|     1|          480|
+    |row_words_U     |grayscale_row_words_RAM_AUTO_1R1W  |       15|   0|   0|    0|    30|  512|     1|        15360|
     +----------------+-----------------------------------+---------+----+----+-----+------+-----+------+-------------+
-    |Total           |                                   |       15| 512| 192|    0|  1560|  768|    33|        24576|
+    |Total           |                                   |       15| 512| 256|    0|  1950|  768|    33|        30720|
     +----------------+-----------------------------------+---------+----+----+-----+------+-----+------+-------------+
 
     * FIFO: 
@@ -138,13 +138,13 @@
     +--------------------+----------+----+---+----+------------+------------+
     |    Variable Name   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
     +--------------------+----------+----+---+----+------------+------------+
-    |add_ln15_fu_361_p2  |         +|   0|  0|  71|          64|          64|
-    |add_ln7_fu_321_p2   |         +|   0|  0|  17|          10|           1|
-    |sub_ln15_fu_351_p2  |         -|   0|  0|  27|          20|          20|
-    |icmp_ln7_fu_315_p2  |      icmp|   0|  0|  18|          10|          11|
+    |add_ln15_fu_357_p2  |         +|   0|  0|  71|          64|          64|
+    |add_ln7_fu_321_p2   |         +|   0|  0|  16|           9|           1|
+    |sub_ln15_fu_347_p2  |         -|   0|  0|  27|          20|          20|
+    |icmp_ln7_fu_315_p2  |      icmp|   0|  0|  16|           9|           7|
     |ap_block_state1     |        or|   0|  0|   2|           1|           1|
     +--------------------+----------+----+---+----+------------+------------+
-    |Total               |          |   0|  0| 135|         105|          97|
+    |Total               |          |   0|  0| 132|         103|          93|
     +--------------------+----------+----+---+----+------------+------------+
 
     * Multiplexer: 
@@ -360,12 +360,12 @@
     |row_bytes_ce1           |   14|          3|    1|          3|
     |row_bytes_we0           |    9|          2|    1|          2|
     |row_bytes_we1           |    9|          2|    1|          2|
-    |row_fu_76               |    9|          2|   10|         20|
+    |row_fu_76               |    9|          2|    9|         18|
     |row_words_address0      |   14|          3|    5|         15|
     |row_words_ce0           |   14|          3|    1|          3|
     |row_words_we0           |    9|          2|    1|          2|
     +------------------------+-----+-----------+-----+-----------+
-    |Total                   | 2996|        637|  655|       1939|
+    |Total                   | 2996|        637|  654|       1937|
     +------------------------+-----+-----------+-----+-----------+
 
     * Register: 
@@ -377,12 +377,12 @@
     |grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg     |   1|   0|    1|          0|
     |grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg   |   1|   0|    1|          0|
     |grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg  |   1|   0|    1|          0|
-    |input_read_reg_398                                        |  64|   0|   64|          0|
-    |row_fu_76                                                 |  10|   0|   10|          0|
+    |input_read_reg_394                                        |  64|   0|   64|          0|
+    |row_fu_76                                                 |   9|   0|    9|          0|
     |start_once_reg                                            |   1|   0|    1|          0|
-    |trunc_ln_reg_406                                          |  58|   0|   58|          0|
+    |trunc_ln_reg_402                                          |  58|   0|   58|          0|
     +----------------------------------------------------------+----+----+-----+-----------+
-    |Total                                                     | 216|   0|  216|          0|
+    |Total                                                     | 215|   0|  215|          0|
     +----------------------------------------------------------+----+----+-----+-----------+
 
 
@@ -609,260 +609,259 @@ ST_1 : Operation 113 [1/1] (0.67ns)   --->   "%row_bytes_28 = alloca i64 1" [../
 ST_1 : Operation 114 [1/1] (0.67ns)   --->   "%row_bytes_29 = alloca i64 1" [../src/grayscale.cpp:9]   --->   Operation 114 'alloca' 'row_bytes_29' <Predicate = true> <Delay = 0.67>
 ST_1 : Operation 115 [1/1] (0.67ns)   --->   "%row_bytes_30 = alloca i64 1" [../src/grayscale.cpp:9]   --->   Operation 115 'alloca' 'row_bytes_30' <Predicate = true> <Delay = 0.67>
 ST_1 : Operation 116 [1/1] (0.67ns)   --->   "%row_bytes_31 = alloca i64 1" [../src/grayscale.cpp:9]   --->   Operation 116 'alloca' 'row_bytes_31' <Predicate = true> <Delay = 0.67>
-ST_1 : Operation 117 [1/1] (0.42ns)   --->   "%store_ln7 = store i10 0, i10 %row" [../src/grayscale.cpp:7]   --->   Operation 117 'store' 'store_ln7' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 117 [1/1] (0.42ns)   --->   "%store_ln7 = store i9 0, i9 %row" [../src/grayscale.cpp:7]   --->   Operation 117 'store' 'store_ln7' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 118 [1/1] (0.00ns)   --->   "%br_ln7 = br void %burst_read" [../src/grayscale.cpp:7]   --->   Operation 118 'br' 'br_ln7' <Predicate = true> <Delay = 0.00>
 
 State 2 <SV = 1> <Delay = 1.97>
-ST_2 : Operation 119 [1/1] (0.00ns)   --->   "%row_8 = load i10 %row" [../src/grayscale.cpp:7]   --->   Operation 119 'load' 'row_8' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 120 [1/1] (0.78ns)   --->   "%icmp_ln7 = icmp_eq  i10 %row_8, i10 512" [../src/grayscale.cpp:7]   --->   Operation 120 'icmp' 'icmp_ln7' <Predicate = true> <Delay = 0.78> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 121 [1/1] (0.78ns)   --->   "%add_ln7 = add i10 %row_8, i10 1" [../src/grayscale.cpp:7]   --->   Operation 121 'add' 'add_ln7' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 119 [1/1] (0.00ns)   --->   "%row_8 = load i9 %row" [../src/grayscale.cpp:7]   --->   Operation 119 'load' 'row_8' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 120 [1/1] (0.77ns)   --->   "%icmp_ln7 = icmp_eq  i9 %row_8, i9 480" [../src/grayscale.cpp:7]   --->   Operation 120 'icmp' 'icmp_ln7' <Predicate = true> <Delay = 0.77> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 121 [1/1] (0.77ns)   --->   "%add_ln7 = add i9 %row_8, i9 1" [../src/grayscale.cpp:7]   --->   Operation 121 'add' 'add_ln7' <Predicate = true> <Delay = 0.77> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.77> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 122 [1/1] (0.00ns)   --->   "%br_ln7 = br i1 %icmp_ln7, void %burst_read.split, void %for.end65" [../src/grayscale.cpp:7]   --->   Operation 122 'br' 'br_ln7' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 123 [1/1] (0.00ns)   --->   "%trunc_ln15 = trunc i10 %row_8" [../src/grayscale.cpp:15]   --->   Operation 123 'trunc' 'trunc_ln15' <Predicate = (!icmp_ln7)> <Delay = 0.00>
-ST_2 : Operation 124 [1/1] (0.00ns)   --->   "%p_shl = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i9.i11, i9 %trunc_ln15, i11 0" [../src/grayscale.cpp:15]   --->   Operation 124 'bitconcatenate' 'p_shl' <Predicate = (!icmp_ln7)> <Delay = 0.00>
-ST_2 : Operation 125 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i19 @_ssdm_op_BitConcatenate.i19.i10.i9, i10 %row_8, i9 0" [../src/grayscale.cpp:15]   --->   Operation 125 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln7)> <Delay = 0.00>
-ST_2 : Operation 126 [1/1] (0.00ns)   --->   "%zext_ln15_1 = zext i19 %tmp" [../src/grayscale.cpp:15]   --->   Operation 126 'zext' 'zext_ln15_1' <Predicate = (!icmp_ln7)> <Delay = 0.00>
-ST_2 : Operation 127 [1/1] (0.89ns)   --->   "%sub_ln15 = sub i20 %p_shl, i20 %zext_ln15_1" [../src/grayscale.cpp:15]   --->   Operation 127 'sub' 'sub_ln15' <Predicate = (!icmp_ln7)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 128 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i20 %sub_ln15" [../src/grayscale.cpp:15]   --->   Operation 128 'zext' 'zext_ln15' <Predicate = (!icmp_ln7)> <Delay = 0.00>
-ST_2 : Operation 129 [1/1] (1.08ns)   --->   "%add_ln15 = add i64 %zext_ln15, i64 %input_read" [../src/grayscale.cpp:15]   --->   Operation 129 'add' 'add_ln15' <Predicate = (!icmp_ln7)> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 130 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i58 @_ssdm_op_PartSelect.i58.i64.i32.i32, i64 %add_ln15, i32 6, i32 63" [../src/grayscale.cpp:15]   --->   Operation 130 'partselect' 'trunc_ln' <Predicate = (!icmp_ln7)> <Delay = 0.00>
-ST_2 : Operation 131 [1/1] (0.42ns)   --->   "%store_ln7 = store i10 %add_ln7, i10 %row" [../src/grayscale.cpp:7]   --->   Operation 131 'store' 'store_ln7' <Predicate = (!icmp_ln7)> <Delay = 0.42>
-ST_2 : Operation 132 [1/1] (0.00ns)   --->   "%ret_ln48 = ret" [../src/grayscale.cpp:48]   --->   Operation 132 'ret' 'ret_ln48' <Predicate = (icmp_ln7)> <Delay = 0.00>
+ST_2 : Operation 123 [1/1] (0.00ns)   --->   "%p_shl = bitconcatenate i20 @_ssdm_op_BitConcatenate.i20.i9.i11, i9 %row_8, i11 0" [../src/grayscale.cpp:15]   --->   Operation 123 'bitconcatenate' 'p_shl' <Predicate = (!icmp_ln7)> <Delay = 0.00>
+ST_2 : Operation 124 [1/1] (0.00ns)   --->   "%tmp = bitconcatenate i16 @_ssdm_op_BitConcatenate.i16.i9.i7, i9 %row_8, i7 0" [../src/grayscale.cpp:15]   --->   Operation 124 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln7)> <Delay = 0.00>
+ST_2 : Operation 125 [1/1] (0.00ns)   --->   "%zext_ln15_1 = zext i16 %tmp" [../src/grayscale.cpp:15]   --->   Operation 125 'zext' 'zext_ln15_1' <Predicate = (!icmp_ln7)> <Delay = 0.00>
+ST_2 : Operation 126 [1/1] (0.89ns)   --->   "%sub_ln15 = sub i20 %p_shl, i20 %zext_ln15_1" [../src/grayscale.cpp:15]   --->   Operation 126 'sub' 'sub_ln15' <Predicate = (!icmp_ln7)> <Delay = 0.89> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.89> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 127 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i20 %sub_ln15" [../src/grayscale.cpp:15]   --->   Operation 127 'zext' 'zext_ln15' <Predicate = (!icmp_ln7)> <Delay = 0.00>
+ST_2 : Operation 128 [1/1] (1.08ns)   --->   "%add_ln15 = add i64 %zext_ln15, i64 %input_read" [../src/grayscale.cpp:15]   --->   Operation 128 'add' 'add_ln15' <Predicate = (!icmp_ln7)> <Delay = 1.08> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.08> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 129 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i58 @_ssdm_op_PartSelect.i58.i64.i32.i32, i64 %add_ln15, i32 6, i32 63" [../src/grayscale.cpp:15]   --->   Operation 129 'partselect' 'trunc_ln' <Predicate = (!icmp_ln7)> <Delay = 0.00>
+ST_2 : Operation 130 [1/1] (0.42ns)   --->   "%store_ln7 = store i9 %add_ln7, i9 %row" [../src/grayscale.cpp:7]   --->   Operation 130 'store' 'store_ln7' <Predicate = (!icmp_ln7)> <Delay = 0.42>
+ST_2 : Operation 131 [1/1] (0.00ns)   --->   "%ret_ln48 = ret" [../src/grayscale.cpp:48]   --->   Operation 131 'ret' 'ret_ln48' <Predicate = (icmp_ln7)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 3.65>
-ST_3 : Operation 133 [1/1] (0.00ns)   --->   "%sext_ln15 = sext i58 %trunc_ln" [../src/grayscale.cpp:15]   --->   Operation 133 'sext' 'sext_ln15' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 134 [1/1] (0.00ns)   --->   "%gmem0_addr = getelementptr i512 %gmem0, i64 %sext_ln15" [../src/grayscale.cpp:15]   --->   Operation 134 'getelementptr' 'gmem0_addr' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 135 [71/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 135 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_3 : Operation 132 [1/1] (0.00ns)   --->   "%sext_ln15 = sext i58 %trunc_ln" [../src/grayscale.cpp:15]   --->   Operation 132 'sext' 'sext_ln15' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 133 [1/1] (0.00ns)   --->   "%gmem0_addr = getelementptr i512 %gmem0, i64 %sext_ln15" [../src/grayscale.cpp:15]   --->   Operation 133 'getelementptr' 'gmem0_addr' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 134 [71/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 134 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 4 <SV = 3> <Delay = 0.00>
-ST_4 : Operation 136 [70/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 136 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_4 : Operation 135 [70/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 135 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 5 <SV = 4> <Delay = 0.00>
-ST_5 : Operation 137 [69/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 137 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_5 : Operation 136 [69/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 136 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 6 <SV = 5> <Delay = 0.00>
-ST_6 : Operation 138 [68/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 138 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_6 : Operation 137 [68/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 137 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 7 <SV = 6> <Delay = 0.00>
-ST_7 : Operation 139 [67/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 139 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_7 : Operation 138 [67/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 138 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 8 <SV = 7> <Delay = 0.00>
-ST_8 : Operation 140 [66/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 140 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_8 : Operation 139 [66/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 139 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 9 <SV = 8> <Delay = 0.00>
-ST_9 : Operation 141 [65/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 141 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_9 : Operation 140 [65/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 140 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 10 <SV = 9> <Delay = 0.00>
-ST_10 : Operation 142 [64/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 142 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_10 : Operation 141 [64/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 141 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 11 <SV = 10> <Delay = 0.00>
-ST_11 : Operation 143 [63/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 143 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_11 : Operation 142 [63/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 142 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 12 <SV = 11> <Delay = 0.00>
-ST_12 : Operation 144 [62/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 144 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_12 : Operation 143 [62/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 143 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 13 <SV = 12> <Delay = 0.00>
-ST_13 : Operation 145 [61/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 145 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_13 : Operation 144 [61/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 144 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 14 <SV = 13> <Delay = 0.00>
-ST_14 : Operation 146 [60/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 146 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_14 : Operation 145 [60/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 145 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 15 <SV = 14> <Delay = 0.00>
-ST_15 : Operation 147 [59/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 147 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_15 : Operation 146 [59/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 146 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 16 <SV = 15> <Delay = 0.00>
-ST_16 : Operation 148 [58/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 148 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_16 : Operation 147 [58/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 147 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 17 <SV = 16> <Delay = 0.00>
-ST_17 : Operation 149 [57/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 149 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_17 : Operation 148 [57/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 148 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 18 <SV = 17> <Delay = 0.00>
-ST_18 : Operation 150 [56/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 150 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_18 : Operation 149 [56/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 149 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 19 <SV = 18> <Delay = 0.00>
-ST_19 : Operation 151 [55/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 151 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_19 : Operation 150 [55/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 150 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 20 <SV = 19> <Delay = 0.00>
-ST_20 : Operation 152 [54/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 152 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_20 : Operation 151 [54/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 151 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 21 <SV = 20> <Delay = 0.00>
-ST_21 : Operation 153 [53/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 153 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_21 : Operation 152 [53/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 152 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 22 <SV = 21> <Delay = 0.00>
-ST_22 : Operation 154 [52/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 154 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_22 : Operation 153 [52/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 153 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 23 <SV = 22> <Delay = 0.00>
-ST_23 : Operation 155 [51/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 155 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_23 : Operation 154 [51/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 154 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 24 <SV = 23> <Delay = 0.00>
-ST_24 : Operation 156 [50/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 156 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_24 : Operation 155 [50/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 155 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 25 <SV = 24> <Delay = 0.00>
-ST_25 : Operation 157 [49/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 157 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_25 : Operation 156 [49/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 156 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 26 <SV = 25> <Delay = 0.00>
-ST_26 : Operation 158 [48/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 158 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_26 : Operation 157 [48/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 157 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 27 <SV = 26> <Delay = 0.00>
-ST_27 : Operation 159 [47/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 159 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_27 : Operation 158 [47/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 158 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 28 <SV = 27> <Delay = 0.00>
-ST_28 : Operation 160 [46/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 160 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_28 : Operation 159 [46/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 159 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 29 <SV = 28> <Delay = 0.00>
-ST_29 : Operation 161 [45/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 161 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_29 : Operation 160 [45/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 160 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 30 <SV = 29> <Delay = 0.00>
-ST_30 : Operation 162 [44/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 162 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_30 : Operation 161 [44/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 161 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 31 <SV = 30> <Delay = 0.00>
-ST_31 : Operation 163 [43/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 163 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_31 : Operation 162 [43/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 162 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 32 <SV = 31> <Delay = 0.00>
-ST_32 : Operation 164 [42/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 164 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_32 : Operation 163 [42/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 163 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 33 <SV = 32> <Delay = 0.00>
-ST_33 : Operation 165 [41/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 165 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_33 : Operation 164 [41/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 164 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 34 <SV = 33> <Delay = 0.00>
-ST_34 : Operation 166 [40/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 166 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_34 : Operation 165 [40/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 165 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 35 <SV = 34> <Delay = 0.00>
-ST_35 : Operation 167 [39/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 167 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_35 : Operation 166 [39/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 166 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 36 <SV = 35> <Delay = 0.00>
-ST_36 : Operation 168 [38/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 168 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_36 : Operation 167 [38/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 167 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 37 <SV = 36> <Delay = 0.00>
-ST_37 : Operation 169 [37/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 169 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_37 : Operation 168 [37/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 168 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 38 <SV = 37> <Delay = 0.00>
-ST_38 : Operation 170 [36/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 170 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_38 : Operation 169 [36/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 169 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 39 <SV = 38> <Delay = 0.00>
-ST_39 : Operation 171 [35/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 171 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_39 : Operation 170 [35/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 170 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 40 <SV = 39> <Delay = 0.00>
-ST_40 : Operation 172 [34/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 172 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_40 : Operation 171 [34/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 171 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 41 <SV = 40> <Delay = 0.00>
-ST_41 : Operation 173 [33/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 173 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_41 : Operation 172 [33/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 172 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 42 <SV = 41> <Delay = 0.00>
-ST_42 : Operation 174 [32/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 174 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_42 : Operation 173 [32/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 173 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 43 <SV = 42> <Delay = 0.00>
-ST_43 : Operation 175 [31/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 175 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_43 : Operation 174 [31/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 174 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 44 <SV = 43> <Delay = 0.00>
-ST_44 : Operation 176 [30/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 176 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_44 : Operation 175 [30/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 175 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 45 <SV = 44> <Delay = 0.00>
-ST_45 : Operation 177 [29/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 177 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_45 : Operation 176 [29/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 176 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 46 <SV = 45> <Delay = 0.00>
-ST_46 : Operation 178 [28/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 178 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_46 : Operation 177 [28/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 177 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 47 <SV = 46> <Delay = 0.00>
-ST_47 : Operation 179 [27/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 179 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_47 : Operation 178 [27/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 178 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 48 <SV = 47> <Delay = 0.00>
-ST_48 : Operation 180 [26/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 180 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_48 : Operation 179 [26/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 179 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 49 <SV = 48> <Delay = 0.00>
-ST_49 : Operation 181 [25/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 181 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_49 : Operation 180 [25/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 180 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 50 <SV = 49> <Delay = 0.00>
-ST_50 : Operation 182 [24/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 182 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_50 : Operation 181 [24/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 181 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 51 <SV = 50> <Delay = 0.00>
-ST_51 : Operation 183 [23/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 183 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_51 : Operation 182 [23/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 182 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 52 <SV = 51> <Delay = 0.00>
-ST_52 : Operation 184 [22/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 184 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_52 : Operation 183 [22/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 183 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 53 <SV = 52> <Delay = 0.00>
-ST_53 : Operation 185 [21/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 185 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_53 : Operation 184 [21/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 184 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 54 <SV = 53> <Delay = 0.00>
-ST_54 : Operation 186 [20/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 186 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_54 : Operation 185 [20/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 185 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 55 <SV = 54> <Delay = 0.00>
-ST_55 : Operation 187 [19/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 187 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_55 : Operation 186 [19/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 186 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 56 <SV = 55> <Delay = 0.00>
-ST_56 : Operation 188 [18/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 188 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_56 : Operation 187 [18/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 187 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 57 <SV = 56> <Delay = 0.00>
-ST_57 : Operation 189 [17/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 189 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_57 : Operation 188 [17/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 188 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 58 <SV = 57> <Delay = 0.00>
-ST_58 : Operation 190 [16/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 190 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_58 : Operation 189 [16/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 189 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 59 <SV = 58> <Delay = 0.00>
-ST_59 : Operation 191 [15/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 191 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_59 : Operation 190 [15/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 190 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 60 <SV = 59> <Delay = 0.00>
-ST_60 : Operation 192 [14/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 192 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_60 : Operation 191 [14/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 191 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 61 <SV = 60> <Delay = 0.00>
-ST_61 : Operation 193 [13/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 193 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_61 : Operation 192 [13/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 192 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 62 <SV = 61> <Delay = 0.00>
-ST_62 : Operation 194 [12/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 194 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_62 : Operation 193 [12/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 193 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 63 <SV = 62> <Delay = 0.00>
-ST_63 : Operation 195 [11/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 195 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_63 : Operation 194 [11/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 194 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 64 <SV = 63> <Delay = 0.00>
-ST_64 : Operation 196 [10/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 196 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_64 : Operation 195 [10/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 195 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 65 <SV = 64> <Delay = 0.00>
-ST_65 : Operation 197 [9/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 197 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_65 : Operation 196 [9/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 196 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 66 <SV = 65> <Delay = 0.00>
-ST_66 : Operation 198 [8/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 198 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_66 : Operation 197 [8/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 197 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 67 <SV = 66> <Delay = 0.00>
-ST_67 : Operation 199 [7/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 199 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_67 : Operation 198 [7/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 198 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 68 <SV = 67> <Delay = 0.00>
-ST_68 : Operation 200 [6/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 200 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_68 : Operation 199 [6/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 199 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 69 <SV = 68> <Delay = 0.00>
-ST_69 : Operation 201 [5/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 201 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_69 : Operation 200 [5/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 200 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 70 <SV = 69> <Delay = 0.00>
-ST_70 : Operation 202 [4/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 202 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_70 : Operation 201 [4/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 201 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 71 <SV = 70> <Delay = 0.00>
-ST_71 : Operation 203 [3/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 203 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_71 : Operation 202 [3/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 202 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 72 <SV = 71> <Delay = 0.00>
-ST_72 : Operation 204 [2/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 204 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_72 : Operation 203 [2/71] (3.65ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 203 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 73 <SV = 72> <Delay = 3.65>
-ST_73 : Operation 205 [1/71] ( I:3.65ns O:3.65ns )   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 24" [../src/grayscale.cpp:15]   --->   Operation 205 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_73 : Operation 204 [1/71] ( I:3.65ns O:3.65ns )   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i512, i64 %gmem0_addr, i64 30" [../src/grayscale.cpp:15]   --->   Operation 204 'readreq' 'empty' <Predicate = true> <Delay = 3.65> <CoreInst = "m_axi">   --->   Core 119 'm_axi' <Latency = 6> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'readrequnaligned' 'writerequnaligned' 'read' 'write' 'readreq' 'writereq' 'writeresp'>
 
 State 74 <SV = 73> <Delay = 0.00>
-ST_74 : Operation 206 [2/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words"   --->   Operation 206 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_74 : Operation 205 [2/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words"   --->   Operation 205 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 75 <SV = 74> <Delay = 0.00>
-ST_75 : Operation 207 [1/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words"   --->   Operation 207 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_75 : Operation 206 [1/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_burst_read, i512 %gmem0, i512 %row_words"   --->   Operation 206 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 76 <SV = 75> <Delay = 0.00>
-ST_76 : Operation 208 [2/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words"   --->   Operation 208 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_76 : Operation 207 [2/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words"   --->   Operation 207 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 77 <SV = 76> <Delay = 1.64>
-ST_77 : Operation 209 [1/2] (1.64ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words"   --->   Operation 209 'call' 'call_ln0' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
+ST_77 : Operation 208 [1/2] (1.64ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_bytes, i8 %row_bytes_31, i8 %row_bytes_30, i8 %row_bytes_29, i8 %row_bytes_28, i8 %row_bytes_27, i8 %row_bytes_26, i8 %row_bytes_25, i8 %row_bytes_24, i8 %row_bytes_23, i8 %row_bytes_22, i8 %row_bytes_21, i8 %row_bytes_20, i8 %row_bytes_19, i8 %row_bytes_18, i8 %row_bytes_17, i8 %row_bytes_16, i8 %row_bytes_15, i8 %row_bytes_14, i8 %row_bytes_13, i8 %row_bytes_12, i8 %row_bytes_11, i8 %row_bytes_10, i8 %row_bytes_9, i8 %row_bytes_8, i8 %row_bytes_7, i8 %row_bytes_6, i8 %row_bytes_5, i8 %row_bytes_4, i8 %row_bytes_3, i8 %row_bytes_2, i8 %row_bytes_1, i8 %row_bytes, i512 %row_words"   --->   Operation 208 'call' 'call_ln0' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Generic Core
 
 State 78 <SV = 77> <Delay = 0.00>
-ST_78 : Operation 210 [2/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out"   --->   Operation 210 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_78 : Operation 209 [2/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out"   --->   Operation 209 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
 
 State 79 <SV = 78> <Delay = 0.00>
-ST_79 : Operation 211 [1/1] (0.00ns)   --->   "%speclooptripcount_ln8 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/grayscale.cpp:8]   --->   Operation 211 'speclooptripcount' 'speclooptripcount_ln8' <Predicate = true> <Delay = 0.00>
-ST_79 : Operation 212 [1/1] (0.00ns)   --->   "%specloopname_ln7 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [../src/grayscale.cpp:7]   --->   Operation 212 'specloopname' 'specloopname_ln7' <Predicate = true> <Delay = 0.00>
-ST_79 : Operation 213 [1/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out"   --->   Operation 213 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
-ST_79 : Operation 214 [1/1] (0.00ns)   --->   "%br_ln7 = br void %burst_read" [../src/grayscale.cpp:7]   --->   Operation 214 'br' 'br_ln7' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 210 [1/1] (0.00ns)   --->   "%speclooptripcount_ln8 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 480, i64 480, i64 480" [../src/grayscale.cpp:8]   --->   Operation 210 'speclooptripcount' 'speclooptripcount_ln8' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 211 [1/1] (0.00ns)   --->   "%specloopname_ln7 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [../src/grayscale.cpp:7]   --->   Operation 211 'specloopname' 'specloopname_ln7' <Predicate = true> <Delay = 0.00>
+ST_79 : Operation 212 [1/2] (0.00ns)   --->   "%call_ln0 = call void @grayscale_Pipeline_unpack_pixels, i8 %row_bytes, i8 %row_bytes_1, i8 %row_bytes_2, i8 %row_bytes_3, i8 %row_bytes_4, i8 %row_bytes_5, i8 %row_bytes_6, i8 %row_bytes_7, i8 %row_bytes_8, i8 %row_bytes_9, i8 %row_bytes_10, i8 %row_bytes_11, i8 %row_bytes_12, i8 %row_bytes_13, i8 %row_bytes_14, i8 %row_bytes_15, i8 %row_bytes_16, i8 %row_bytes_17, i8 %row_bytes_18, i8 %row_bytes_19, i8 %row_bytes_20, i8 %row_bytes_21, i8 %row_bytes_22, i8 %row_bytes_23, i8 %row_bytes_24, i8 %row_bytes_25, i8 %row_bytes_26, i8 %row_bytes_27, i8 %row_bytes_28, i8 %row_bytes_29, i8 %row_bytes_30, i8 %row_bytes_31, i8 %gray_out"   --->   Operation 212 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+ST_79 : Operation 213 [1/1] (0.00ns)   --->   "%br_ln7 = br void %burst_read" [../src/grayscale.cpp:7]   --->   Operation 213 'br' 'br_ln7' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -928,7 +927,6 @@ row_8                 (load             ) [ 000000000000000000000000000000000000
 icmp_ln7              (icmp             ) [ 00111111111111111111111111111111111111111111111111111111111111111111111111111111]
 add_ln7               (add              ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000000000]
 br_ln7                (br               ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000000000]
-trunc_ln15            (trunc            ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000000000]
 p_shl                 (bitconcatenate   ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000000000]
 tmp                   (bitconcatenate   ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000000000]
 zext_ln15_1           (zext             ) [ 00000000000000000000000000000000000000000000000000000000000000000000000000000000]
@@ -1174,7 +1172,7 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 <pin id="49" dir="1" index="0" bw="1" slack="0"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="_ssdm_op_BitConcatenate.i19.i10.i9"/></StgValue>
+<StgValue><ssdm name="_ssdm_op_BitConcatenate.i16.i9.i7"/></StgValue>
 </bind>
 </comp>
 
@@ -1298,7 +1296,7 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 <comp id="76" class="1004" name="row_fu_76">
 <pin_list>
 <pin id="77" dir="0" index="0" bw="1" slack="0"/>
-<pin id="78" dir="1" index="1" bw="10" slack="0"/>
+<pin id="78" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="alloca(26) " fcode="alloca"/>
@@ -1798,7 +1796,7 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 <comp id="307" class="1004" name="store_ln7_store_fu_307">
 <pin_list>
 <pin id="308" dir="0" index="0" bw="1" slack="0"/>
-<pin id="309" dir="0" index="1" bw="10" slack="0"/>
+<pin id="309" dir="0" index="1" bw="9" slack="0"/>
 <pin id="310" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1809,8 +1807,8 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 
 <comp id="312" class="1004" name="row_8_load_fu_312">
 <pin_list>
-<pin id="313" dir="0" index="0" bw="10" slack="1"/>
-<pin id="314" dir="1" index="1" bw="10" slack="0"/>
+<pin id="313" dir="0" index="0" bw="9" slack="1"/>
+<pin id="314" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="load(27) " fcode="load"/>
@@ -1820,8 +1818,8 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 
 <comp id="315" class="1004" name="icmp_ln7_fu_315">
 <pin_list>
-<pin id="316" dir="0" index="0" bw="10" slack="0"/>
-<pin id="317" dir="0" index="1" bw="10" slack="0"/>
+<pin id="316" dir="0" index="0" bw="9" slack="0"/>
+<pin id="317" dir="0" index="1" bw="9" slack="0"/>
 <pin id="318" dir="1" index="2" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -1832,9 +1830,9 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 
 <comp id="321" class="1004" name="add_ln7_fu_321">
 <pin_list>
-<pin id="322" dir="0" index="0" bw="10" slack="0"/>
+<pin id="322" dir="0" index="0" bw="9" slack="0"/>
 <pin id="323" dir="0" index="1" bw="1" slack="0"/>
-<pin id="324" dir="1" index="2" bw="10" slack="0"/>
+<pin id="324" dir="1" index="2" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -1842,23 +1840,12 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="327" class="1004" name="trunc_ln15_fu_327">
+<comp id="327" class="1004" name="p_shl_fu_327">
 <pin_list>
-<pin id="328" dir="0" index="0" bw="10" slack="0"/>
-<pin id="329" dir="1" index="1" bw="9" slack="0"/>
-</pin_list>
-<bind>
-<opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln15/2 "/>
-</bind>
-</comp>
-
-<comp id="331" class="1004" name="p_shl_fu_331">
-<pin_list>
-<pin id="332" dir="0" index="0" bw="20" slack="0"/>
-<pin id="333" dir="0" index="1" bw="9" slack="0"/>
-<pin id="334" dir="0" index="2" bw="1" slack="0"/>
-<pin id="335" dir="1" index="3" bw="20" slack="0"/>
+<pin id="328" dir="0" index="0" bw="20" slack="0"/>
+<pin id="329" dir="0" index="1" bw="9" slack="0"/>
+<pin id="330" dir="0" index="2" bw="1" slack="0"/>
+<pin id="331" dir="1" index="3" bw="20" slack="0"/>
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
@@ -1866,12 +1853,12 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="339" class="1004" name="tmp_fu_339">
+<comp id="335" class="1004" name="tmp_fu_335">
 <pin_list>
-<pin id="340" dir="0" index="0" bw="19" slack="0"/>
-<pin id="341" dir="0" index="1" bw="10" slack="0"/>
-<pin id="342" dir="0" index="2" bw="1" slack="0"/>
-<pin id="343" dir="1" index="3" bw="19" slack="0"/>
+<pin id="336" dir="0" index="0" bw="16" slack="0"/>
+<pin id="337" dir="0" index="1" bw="9" slack="0"/>
+<pin id="338" dir="0" index="2" bw="1" slack="0"/>
+<pin id="339" dir="1" index="3" bw="16" slack="0"/>
 </pin_list>
 <bind>
 <opcode="bitconcatenate(1004) " fcode="bitconcatenate"/>
@@ -1879,10 +1866,10 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="347" class="1004" name="zext_ln15_1_fu_347">
+<comp id="343" class="1004" name="zext_ln15_1_fu_343">
 <pin_list>
-<pin id="348" dir="0" index="0" bw="19" slack="0"/>
-<pin id="349" dir="1" index="1" bw="20" slack="0"/>
+<pin id="344" dir="0" index="0" bw="16" slack="0"/>
+<pin id="345" dir="1" index="1" bw="20" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
@@ -1890,11 +1877,11 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="351" class="1004" name="sub_ln15_fu_351">
+<comp id="347" class="1004" name="sub_ln15_fu_347">
 <pin_list>
-<pin id="352" dir="0" index="0" bw="20" slack="0"/>
-<pin id="353" dir="0" index="1" bw="19" slack="0"/>
-<pin id="354" dir="1" index="2" bw="20" slack="0"/>
+<pin id="348" dir="0" index="0" bw="20" slack="0"/>
+<pin id="349" dir="0" index="1" bw="16" slack="0"/>
+<pin id="350" dir="1" index="2" bw="20" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sub(10) " fcode="sub"/>
@@ -1902,10 +1889,10 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="357" class="1004" name="zext_ln15_fu_357">
+<comp id="353" class="1004" name="zext_ln15_fu_353">
 <pin_list>
-<pin id="358" dir="0" index="0" bw="20" slack="0"/>
-<pin id="359" dir="1" index="1" bw="64" slack="0"/>
+<pin id="354" dir="0" index="0" bw="20" slack="0"/>
+<pin id="355" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
@@ -1913,11 +1900,11 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="361" class="1004" name="add_ln15_fu_361">
+<comp id="357" class="1004" name="add_ln15_fu_357">
 <pin_list>
-<pin id="362" dir="0" index="0" bw="20" slack="0"/>
-<pin id="363" dir="0" index="1" bw="64" slack="1"/>
-<pin id="364" dir="1" index="2" bw="64" slack="0"/>
+<pin id="358" dir="0" index="0" bw="20" slack="0"/>
+<pin id="359" dir="0" index="1" bw="64" slack="1"/>
+<pin id="360" dir="1" index="2" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="add(8) " fcode="add"/>
@@ -1925,13 +1912,13 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="366" class="1004" name="trunc_ln_fu_366">
+<comp id="362" class="1004" name="trunc_ln_fu_362">
 <pin_list>
-<pin id="367" dir="0" index="0" bw="58" slack="0"/>
-<pin id="368" dir="0" index="1" bw="64" slack="0"/>
-<pin id="369" dir="0" index="2" bw="4" slack="0"/>
-<pin id="370" dir="0" index="3" bw="7" slack="0"/>
-<pin id="371" dir="1" index="4" bw="58" slack="1"/>
+<pin id="363" dir="0" index="0" bw="58" slack="0"/>
+<pin id="364" dir="0" index="1" bw="64" slack="0"/>
+<pin id="365" dir="0" index="2" bw="4" slack="0"/>
+<pin id="366" dir="0" index="3" bw="7" slack="0"/>
+<pin id="367" dir="1" index="4" bw="58" slack="1"/>
 </pin_list>
 <bind>
 <opcode="partselect(1002) " fcode="partselect"/>
@@ -1939,11 +1926,11 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="376" class="1004" name="store_ln7_store_fu_376">
+<comp id="372" class="1004" name="store_ln7_store_fu_372">
 <pin_list>
-<pin id="377" dir="0" index="0" bw="10" slack="0"/>
-<pin id="378" dir="0" index="1" bw="10" slack="1"/>
-<pin id="379" dir="1" index="2" bw="0" slack="2147483647"/>
+<pin id="373" dir="0" index="0" bw="9" slack="0"/>
+<pin id="374" dir="0" index="1" bw="9" slack="1"/>
+<pin id="375" dir="1" index="2" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
 <opcode="store(28) " fcode="store"/>
@@ -1951,10 +1938,10 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="381" class="1004" name="sext_ln15_fu_381">
+<comp id="377" class="1004" name="sext_ln15_fu_377">
 <pin_list>
-<pin id="382" dir="0" index="0" bw="58" slack="1"/>
-<pin id="383" dir="1" index="1" bw="64" slack="0"/>
+<pin id="378" dir="0" index="0" bw="58" slack="1"/>
+<pin id="379" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="sext(35) " fcode="sext"/>
@@ -1962,11 +1949,11 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="384" class="1004" name="gmem0_addr_fu_384">
+<comp id="380" class="1004" name="gmem0_addr_fu_380">
 <pin_list>
-<pin id="385" dir="0" index="0" bw="64" slack="0"/>
-<pin id="386" dir="0" index="1" bw="64" slack="0"/>
-<pin id="387" dir="1" index="2" bw="64" slack="0"/>
+<pin id="381" dir="0" index="0" bw="64" slack="0"/>
+<pin id="382" dir="0" index="1" bw="64" slack="0"/>
+<pin id="383" dir="1" index="2" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="getelementptr(29) " fcode="getelementptr"/>
@@ -1974,40 +1961,40 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 </bind>
 </comp>
 
-<comp id="391" class="1005" name="row_reg_391">
+<comp id="387" class="1005" name="row_reg_387">
 <pin_list>
-<pin id="392" dir="0" index="0" bw="10" slack="0"/>
-<pin id="393" dir="1" index="1" bw="10" slack="0"/>
+<pin id="388" dir="0" index="0" bw="9" slack="0"/>
+<pin id="389" dir="1" index="1" bw="9" slack="0"/>
 </pin_list>
 <bind>
 <opset="row "/>
 </bind>
 </comp>
 
-<comp id="398" class="1005" name="input_read_reg_398">
+<comp id="394" class="1005" name="input_read_reg_394">
 <pin_list>
-<pin id="399" dir="0" index="0" bw="64" slack="1"/>
-<pin id="400" dir="1" index="1" bw="64" slack="1"/>
+<pin id="395" dir="0" index="0" bw="64" slack="1"/>
+<pin id="396" dir="1" index="1" bw="64" slack="1"/>
 </pin_list>
 <bind>
 <opset="input_read "/>
 </bind>
 </comp>
 
-<comp id="406" class="1005" name="trunc_ln_reg_406">
+<comp id="402" class="1005" name="trunc_ln_reg_402">
 <pin_list>
-<pin id="407" dir="0" index="0" bw="58" slack="1"/>
-<pin id="408" dir="1" index="1" bw="58" slack="1"/>
+<pin id="403" dir="0" index="0" bw="58" slack="1"/>
+<pin id="404" dir="1" index="1" bw="58" slack="1"/>
 </pin_list>
 <bind>
 <opset="trunc_ln "/>
 </bind>
 </comp>
 
-<comp id="411" class="1005" name="gmem0_addr_reg_411">
+<comp id="407" class="1005" name="gmem0_addr_reg_407">
 <pin_list>
-<pin id="412" dir="0" index="0" bw="512" slack="1"/>
-<pin id="413" dir="1" index="1" bw="512" slack="1"/>
+<pin id="408" dir="0" index="0" bw="512" slack="1"/>
+<pin id="409" dir="1" index="1" bw="512" slack="1"/>
 </pin_list>
 <bind>
 <opset="gmem0_addr "/>
@@ -2113,65 +2100,63 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 
 <net id="326"><net_src comp="42" pin="0"/><net_sink comp="321" pin=1"/></net>
 
-<net id="330"><net_src comp="312" pin="1"/><net_sink comp="327" pin=0"/></net>
+<net id="332"><net_src comp="44" pin="0"/><net_sink comp="327" pin=0"/></net>
 
-<net id="336"><net_src comp="44" pin="0"/><net_sink comp="331" pin=0"/></net>
+<net id="333"><net_src comp="312" pin="1"/><net_sink comp="327" pin=1"/></net>
 
-<net id="337"><net_src comp="327" pin="1"/><net_sink comp="331" pin=1"/></net>
+<net id="334"><net_src comp="46" pin="0"/><net_sink comp="327" pin=2"/></net>
 
-<net id="338"><net_src comp="46" pin="0"/><net_sink comp="331" pin=2"/></net>
+<net id="340"><net_src comp="48" pin="0"/><net_sink comp="335" pin=0"/></net>
 
-<net id="344"><net_src comp="48" pin="0"/><net_sink comp="339" pin=0"/></net>
+<net id="341"><net_src comp="312" pin="1"/><net_sink comp="335" pin=1"/></net>
 
-<net id="345"><net_src comp="312" pin="1"/><net_sink comp="339" pin=1"/></net>
+<net id="342"><net_src comp="50" pin="0"/><net_sink comp="335" pin=2"/></net>
 
-<net id="346"><net_src comp="50" pin="0"/><net_sink comp="339" pin=2"/></net>
+<net id="346"><net_src comp="335" pin="3"/><net_sink comp="343" pin=0"/></net>
 
-<net id="350"><net_src comp="339" pin="3"/><net_sink comp="347" pin=0"/></net>
+<net id="351"><net_src comp="327" pin="3"/><net_sink comp="347" pin=0"/></net>
 
-<net id="355"><net_src comp="331" pin="3"/><net_sink comp="351" pin=0"/></net>
+<net id="352"><net_src comp="343" pin="1"/><net_sink comp="347" pin=1"/></net>
 
-<net id="356"><net_src comp="347" pin="1"/><net_sink comp="351" pin=1"/></net>
+<net id="356"><net_src comp="347" pin="2"/><net_sink comp="353" pin=0"/></net>
 
-<net id="360"><net_src comp="351" pin="2"/><net_sink comp="357" pin=0"/></net>
+<net id="361"><net_src comp="353" pin="1"/><net_sink comp="357" pin=0"/></net>
 
-<net id="365"><net_src comp="357" pin="1"/><net_sink comp="361" pin=0"/></net>
+<net id="368"><net_src comp="52" pin="0"/><net_sink comp="362" pin=0"/></net>
 
-<net id="372"><net_src comp="52" pin="0"/><net_sink comp="366" pin=0"/></net>
+<net id="369"><net_src comp="357" pin="2"/><net_sink comp="362" pin=1"/></net>
 
-<net id="373"><net_src comp="361" pin="2"/><net_sink comp="366" pin=1"/></net>
+<net id="370"><net_src comp="54" pin="0"/><net_sink comp="362" pin=2"/></net>
 
-<net id="374"><net_src comp="54" pin="0"/><net_sink comp="366" pin=2"/></net>
+<net id="371"><net_src comp="56" pin="0"/><net_sink comp="362" pin=3"/></net>
 
-<net id="375"><net_src comp="56" pin="0"/><net_sink comp="366" pin=3"/></net>
+<net id="376"><net_src comp="321" pin="2"/><net_sink comp="372" pin=0"/></net>
 
-<net id="380"><net_src comp="321" pin="2"/><net_sink comp="376" pin=0"/></net>
+<net id="384"><net_src comp="0" pin="0"/><net_sink comp="380" pin=0"/></net>
 
-<net id="388"><net_src comp="0" pin="0"/><net_sink comp="384" pin=0"/></net>
+<net id="385"><net_src comp="377" pin="1"/><net_sink comp="380" pin=1"/></net>
 
-<net id="389"><net_src comp="381" pin="1"/><net_sink comp="384" pin=1"/></net>
+<net id="386"><net_src comp="380" pin="2"/><net_sink comp="218" pin=1"/></net>
 
-<net id="390"><net_src comp="384" pin="2"/><net_sink comp="218" pin=1"/></net>
+<net id="390"><net_src comp="76" pin="1"/><net_sink comp="387" pin=0"/></net>
 
-<net id="394"><net_src comp="76" pin="1"/><net_sink comp="391" pin=0"/></net>
+<net id="391"><net_src comp="387" pin="1"/><net_sink comp="307" pin=1"/></net>
 
-<net id="395"><net_src comp="391" pin="1"/><net_sink comp="307" pin=1"/></net>
+<net id="392"><net_src comp="387" pin="1"/><net_sink comp="312" pin=0"/></net>
 
-<net id="396"><net_src comp="391" pin="1"/><net_sink comp="312" pin=0"/></net>
+<net id="393"><net_src comp="387" pin="1"/><net_sink comp="372" pin=1"/></net>
 
-<net id="397"><net_src comp="391" pin="1"/><net_sink comp="376" pin=1"/></net>
+<net id="397"><net_src comp="212" pin="2"/><net_sink comp="394" pin=0"/></net>
 
-<net id="401"><net_src comp="212" pin="2"/><net_sink comp="398" pin=0"/></net>
+<net id="398"><net_src comp="394" pin="1"/><net_sink comp="357" pin=1"/></net>
 
-<net id="402"><net_src comp="398" pin="1"/><net_sink comp="361" pin=1"/></net>
+<net id="405"><net_src comp="362" pin="4"/><net_sink comp="402" pin=0"/></net>
 
-<net id="409"><net_src comp="366" pin="4"/><net_sink comp="406" pin=0"/></net>
+<net id="406"><net_src comp="402" pin="1"/><net_sink comp="377" pin=0"/></net>
 
-<net id="410"><net_src comp="406" pin="1"/><net_sink comp="381" pin=0"/></net>
+<net id="410"><net_src comp="380" pin="2"/><net_sink comp="407" pin=0"/></net>
 
-<net id="414"><net_src comp="384" pin="2"/><net_sink comp="411" pin=0"/></net>
-
-<net id="415"><net_src comp="411" pin="1"/><net_sink comp="218" pin=1"/></net>
+<net id="411"><net_src comp="407" pin="1"/><net_sink comp="218" pin=1"/></net>
 
 </net_list>
 
@@ -2192,8 +2177,7 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 		icmp_ln7 : 1
 		add_ln7 : 1
 		br_ln7 : 2
-		trunc_ln15 : 1
-		p_shl : 2
+		p_shl : 1
 		tmp : 1
 		zext_ln15_1 : 2
 		sub_ln15 : 3
@@ -2294,83 +2278,81 @@ br_ln7                (br               ) [ 000000000000000000000000000000000000
 |   call   |  grp_grayscale_Pipeline_unpack_bytes_fu_232 |    0    |  0.427  |    15   |    33   |
 |          | grp_grayscale_Pipeline_unpack_pixels_fu_269 |    2    |  31.416 |   681   |   1528  |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|    add   |                add_ln7_fu_321               |    0    |    0    |    0    |    17   |
-|          |               add_ln15_fu_361               |    0    |    0    |    0    |    71   |
+|    add   |                add_ln7_fu_321               |    0    |    0    |    0    |    16   |
+|          |               add_ln15_fu_357               |    0    |    0    |    0    |    71   |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|    sub   |               sub_ln15_fu_351               |    0    |    0    |    0    |    27   |
+|    sub   |               sub_ln15_fu_347               |    0    |    0    |    0    |    27   |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|   icmp   |               icmp_ln7_fu_315               |    0    |    0    |    0    |    17   |
+|   icmp   |               icmp_ln7_fu_315               |    0    |    0    |    0    |    16   |
 |----------|---------------------------------------------|---------|---------|---------|---------|
 |   read   |            input_read_read_fu_212           |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------|---------|---------|---------|---------|
 |  readreq |              grp_readreq_fu_218             |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|   trunc  |              trunc_ln15_fu_327              |    0    |    0    |    0    |    0    |
+|bitconcatenate|                 p_shl_fu_327                |    0    |    0    |    0    |    0    |
+|          |                  tmp_fu_335                 |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|bitconcatenate|                 p_shl_fu_331                |    0    |    0    |    0    |    0    |
-|          |                  tmp_fu_339                 |    0    |    0    |    0    |    0    |
+|   zext   |              zext_ln15_1_fu_343             |    0    |    0    |    0    |    0    |
+|          |               zext_ln15_fu_353              |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|   zext   |              zext_ln15_1_fu_347             |    0    |    0    |    0    |    0    |
-|          |               zext_ln15_fu_357              |    0    |    0    |    0    |    0    |
+|partselect|               trunc_ln_fu_362               |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|partselect|               trunc_ln_fu_366               |    0    |    0    |    0    |    0    |
+|   sext   |               sext_ln15_fu_377              |    0    |    0    |    0    |    0    |
 |----------|---------------------------------------------|---------|---------|---------|---------|
-|   sext   |               sext_ln15_fu_381              |    0    |    0    |    0    |    0    |
-|----------|---------------------------------------------|---------|---------|---------|---------|
-|   Total  |                                             |    2    |  31.843 |   1219  |   1717  |
+|   Total  |                                             |    2    |  31.843 |   1219  |   1715  |
 |----------|---------------------------------------------|---------|---------|---------|---------|
 
 Memories:
 +------------+--------+--------+--------+--------+
 |            |  BRAM  |   FF   |   LUT  |  URAM  |
 +------------+--------+--------+--------+--------+
-|  row_bytes |    0   |   16   |    6   |    0   |
-| row_bytes_1|    0   |   16   |    6   |    0   |
-|row_bytes_10|    0   |   16   |    6   |    0   |
-|row_bytes_11|    0   |   16   |    6   |    0   |
-|row_bytes_12|    0   |   16   |    6   |    0   |
-|row_bytes_13|    0   |   16   |    6   |    0   |
-|row_bytes_14|    0   |   16   |    6   |    0   |
-|row_bytes_15|    0   |   16   |    6   |    0   |
-|row_bytes_16|    0   |   16   |    6   |    0   |
-|row_bytes_17|    0   |   16   |    6   |    0   |
-|row_bytes_18|    0   |   16   |    6   |    0   |
-|row_bytes_19|    0   |   16   |    6   |    0   |
-| row_bytes_2|    0   |   16   |    6   |    0   |
-|row_bytes_20|    0   |   16   |    6   |    0   |
-|row_bytes_21|    0   |   16   |    6   |    0   |
-|row_bytes_22|    0   |   16   |    6   |    0   |
-|row_bytes_23|    0   |   16   |    6   |    0   |
-|row_bytes_24|    0   |   16   |    6   |    0   |
-|row_bytes_25|    0   |   16   |    6   |    0   |
-|row_bytes_26|    0   |   16   |    6   |    0   |
-|row_bytes_27|    0   |   16   |    6   |    0   |
-|row_bytes_28|    0   |   16   |    6   |    0   |
-|row_bytes_29|    0   |   16   |    6   |    0   |
-| row_bytes_3|    0   |   16   |    6   |    0   |
-|row_bytes_30|    0   |   16   |    6   |    0   |
-|row_bytes_31|    0   |   16   |    6   |    0   |
-| row_bytes_4|    0   |   16   |    6   |    0   |
-| row_bytes_5|    0   |   16   |    6   |    0   |
-| row_bytes_6|    0   |   16   |    6   |    0   |
-| row_bytes_7|    0   |   16   |    6   |    0   |
-| row_bytes_8|    0   |   16   |    6   |    0   |
-| row_bytes_9|    0   |   16   |    6   |    0   |
+|  row_bytes |    0   |   16   |    8   |    0   |
+| row_bytes_1|    0   |   16   |    8   |    0   |
+|row_bytes_10|    0   |   16   |    8   |    0   |
+|row_bytes_11|    0   |   16   |    8   |    0   |
+|row_bytes_12|    0   |   16   |    8   |    0   |
+|row_bytes_13|    0   |   16   |    8   |    0   |
+|row_bytes_14|    0   |   16   |    8   |    0   |
+|row_bytes_15|    0   |   16   |    8   |    0   |
+|row_bytes_16|    0   |   16   |    8   |    0   |
+|row_bytes_17|    0   |   16   |    8   |    0   |
+|row_bytes_18|    0   |   16   |    8   |    0   |
+|row_bytes_19|    0   |   16   |    8   |    0   |
+| row_bytes_2|    0   |   16   |    8   |    0   |
+|row_bytes_20|    0   |   16   |    8   |    0   |
+|row_bytes_21|    0   |   16   |    8   |    0   |
+|row_bytes_22|    0   |   16   |    8   |    0   |
+|row_bytes_23|    0   |   16   |    8   |    0   |
+|row_bytes_24|    0   |   16   |    8   |    0   |
+|row_bytes_25|    0   |   16   |    8   |    0   |
+|row_bytes_26|    0   |   16   |    8   |    0   |
+|row_bytes_27|    0   |   16   |    8   |    0   |
+|row_bytes_28|    0   |   16   |    8   |    0   |
+|row_bytes_29|    0   |   16   |    8   |    0   |
+| row_bytes_3|    0   |   16   |    8   |    0   |
+|row_bytes_30|    0   |   16   |    8   |    0   |
+|row_bytes_31|    0   |   16   |    8   |    0   |
+| row_bytes_4|    0   |   16   |    8   |    0   |
+| row_bytes_5|    0   |   16   |    8   |    0   |
+| row_bytes_6|    0   |   16   |    8   |    0   |
+| row_bytes_7|    0   |   16   |    8   |    0   |
+| row_bytes_8|    0   |   16   |    8   |    0   |
+| row_bytes_9|    0   |   16   |    8   |    0   |
 |  row_words |   15   |    0   |    0   |    0   |
 +------------+--------+--------+--------+--------+
-|    Total   |   15   |   512  |   192  |    0   |
+|    Total   |   15   |   512  |   256  |    0   |
 +------------+--------+--------+--------+--------+
 
 * Register list:
 +------------------+--------+
 |                  |   FF   |
 +------------------+--------+
-|gmem0_addr_reg_411|   512  |
-|input_read_reg_398|   64   |
-|    row_reg_391   |   10   |
-| trunc_ln_reg_406 |   58   |
+|gmem0_addr_reg_407|   512  |
+|input_read_reg_394|   64   |
+|    row_reg_387   |    9   |
+| trunc_ln_reg_402 |   58   |
 +------------------+--------+
-|       Total      |   644  |
+|       Total      |   643  |
 +------------------+--------+
 
 * Multiplexer (MUX) list: 
@@ -2388,10 +2370,10 @@ Memories:
 +-----------+--------+--------+--------+--------+--------+--------+
 |           |  BRAM  |   DSP  |  Delay |   FF   |   LUT  |  URAM  |
 +-----------+--------+--------+--------+--------+--------+--------+
-|  Function |    -   |    2   |   31   |  1219  |  1717  |    -   |
-|   Memory  |   15   |    -   |    -   |   512  |   192  |    0   |
+|  Function |    -   |    2   |   31   |  1219  |  1715  |    -   |
+|   Memory  |   15   |    -   |    -   |   512  |   256  |    0   |
 |Multiplexer|    -   |    -   |    0   |    0   |    9   |    -   |
-|  Register |    -   |    -   |    -   |   644  |    -   |    -   |
+|  Register |    -   |    -   |    -   |   643  |    -   |    -   |
 +-----------+--------+--------+--------+--------+--------+--------+
-|   Total   |   15   |    2   |   32   |  2375  |  1918  |    0   |
+|   Total   |   15   |    2   |   32   |  2374  |  1980  |    0   |
 +-----------+--------+--------+--------+--------+--------+--------+

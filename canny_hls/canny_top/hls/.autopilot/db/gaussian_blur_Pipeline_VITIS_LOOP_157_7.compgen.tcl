@@ -28,7 +28,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer \
     op interface \
-    ports { lineBuffer_address0 { O 9 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_q0 { I 12 vector } } \
+    ports { lineBuffer_address0 { O 10 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_q0 { I 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer'"
@@ -47,7 +47,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer_1 \
     op interface \
-    ports { lineBuffer_1_address0 { O 9 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_q0 { I 12 vector } } \
+    ports { lineBuffer_1_address0 { O 10 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_q0 { I 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_1'"
@@ -66,7 +66,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer_2 \
     op interface \
-    ports { lineBuffer_2_address0 { O 9 vector } lineBuffer_2_ce0 { O 1 bit } lineBuffer_2_q0 { I 12 vector } } \
+    ports { lineBuffer_2_address0 { O 10 vector } lineBuffer_2_ce0 { O 1 bit } lineBuffer_2_q0 { I 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_2'"
@@ -85,7 +85,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer_3 \
     op interface \
-    ports { lineBuffer_3_address0 { O 9 vector } lineBuffer_3_ce0 { O 1 bit } lineBuffer_3_q0 { I 12 vector } } \
+    ports { lineBuffer_3_address0 { O 10 vector } lineBuffer_3_ce0 { O 1 bit } lineBuffer_3_q0 { I 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_3'"
@@ -104,7 +104,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir I \
     corename lineBuffer_4 \
     op interface \
-    ports { lineBuffer_4_address0 { O 9 vector } lineBuffer_4_ce0 { O 1 bit } lineBuffer_4_q0 { I 12 vector } } \
+    ports { lineBuffer_4_address0 { O 10 vector } lineBuffer_4_ce0 { O 1 bit } lineBuffer_4_q0 { I 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_4'"
@@ -146,14 +146,14 @@ eval "cg_default_interface_gen_dc { \
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
     id 114 \
-    name empty_45 \
+    name empty_46 \
     type other \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_empty_45 \
+    corename dc_empty_46 \
     op interface \
-    ports { empty_45 { I 3 vector } } \
+    ports { empty_46 { I 3 vector } } \
 } "
 }
 

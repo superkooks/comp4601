@@ -115,7 +115,7 @@ for.inc:0 %column_9 = load i10 %column
 
 <Node id="13" bw="1" op_0_bw="10" op_1_bw="10">
 <![CDATA[
-for.inc:1 %icmp_ln78 = icmp_eq  i10 %column_9, i10 512
+for.inc:1 %icmp_ln78 = icmp_eq  i10 %column_9, i10 640
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln78"/></StgValue>
@@ -257,7 +257,7 @@ for.inc.split:1 %specpipeline_ln79 = specpipeline void @_ssdm_op_SpecPipeline, i
 
 <Node id="19" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-for.inc.split:2 %speclooptripcount_ln78 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512
+for.inc.split:2 %speclooptripcount_ln78 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 640, i64 640, i64 640
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln78"/></StgValue>
@@ -300,7 +300,7 @@ for.inc.split:4 %hyst1_out_read = read i8 @_ssdm_op_Read.ap_fifo.volatile.i8P0A,
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="22" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="22" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:5 %buffer_addr = getelementptr i8 %buffer_r, i64 0, i64 %zext_ln78
 
@@ -315,7 +315,7 @@ for.inc.split:5 %buffer_addr = getelementptr i8 %buffer_r, i64 0, i64 %zext_ln78
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="23" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="23" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:6 %buffer_1_addr = getelementptr i8 %buffer_1, i64 0, i64 %zext_ln78
 
@@ -330,7 +330,7 @@ for.inc.split:6 %buffer_1_addr = getelementptr i8 %buffer_1, i64 0, i64 %zext_ln
 <or_exp><and_exp></and_exp></or_exp>
 </condition>
 
-<Node id="24" bw="9" op_0_bw="8" op_1_bw="64" op_2_bw="64">
+<Node id="24" bw="10" op_0_bw="8" op_1_bw="64" op_2_bw="64">
 <![CDATA[
 for.inc.split:7 %buffer_2_addr = getelementptr i8 %buffer_2, i64 0, i64 %zext_ln78
 
@@ -346,9 +346,9 @@ for.inc.split:7 %buffer_2_addr = getelementptr i8 %buffer_2, i64 0, i64 %zext_ln
 </and_exp></or_exp>
 </condition>
 
-<Node id="27" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="27" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx712.case.1:0 %store_ln80 = store i8 %hyst1_out_read, i9 %buffer_1_addr
+arrayidx712.case.1:0 %store_ln80 = store i8 %hyst1_out_read, i10 %buffer_1_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln80"/></StgValue>
@@ -378,9 +378,9 @@ arrayidx712.case.1:1 %br_ln80 = br void %arrayidx712.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="30" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="30" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx712.case.0:0 %store_ln80 = store i8 %hyst1_out_read, i9 %buffer_addr
+arrayidx712.case.0:0 %store_ln80 = store i8 %hyst1_out_read, i10 %buffer_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln80"/></StgValue>
@@ -411,9 +411,9 @@ arrayidx712.case.0:1 %br_ln80 = br void %arrayidx712.exit
 </and_exp></or_exp>
 </condition>
 
-<Node id="33" bw="0" op_0_bw="8" op_1_bw="9">
+<Node id="33" bw="0" op_0_bw="8" op_1_bw="10">
 <![CDATA[
-arrayidx712.case.2:0 %store_ln80 = store i8 %hyst1_out_read, i9 %buffer_2_addr
+arrayidx712.case.2:0 %store_ln80 = store i8 %hyst1_out_read, i10 %buffer_2_addr
 
 ]]></Node>
 <StgValue><ssdm name="store_ln80"/></StgValue>

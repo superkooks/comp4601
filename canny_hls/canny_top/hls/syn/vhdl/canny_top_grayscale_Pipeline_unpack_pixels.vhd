@@ -260,7 +260,7 @@ architecture behav of canny_top_grayscale_Pipeline_unpack_pixels is
     constant ap_const_lv5_15 : STD_LOGIC_VECTOR (4 downto 0) := "10101";
     constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_const_lv10_280 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
     constant ap_const_lv32_5 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000101";
@@ -1503,7 +1503,7 @@ begin
     grp_fu_1900_p1 <= ap_const_lv16_96(8 - 1 downto 0);
     grp_fu_1900_p2 <= grp_fu_1900_p20(15 - 1 downto 0);
     grp_fu_1900_p20 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(grp_fu_1891_p3),16));
-    icmp_ln32_fu_1267_p2 <= "1" when (ap_sig_allocacmp_column_13 = ap_const_lv10_200) else "0";
+    icmp_ln32_fu_1267_p2 <= "1" when (ap_sig_allocacmp_column_13 = ap_const_lv10_280) else "0";
     lshr_ln1_fu_1494_p4 <= add_ln37_fu_1489_p2(10 downto 5);
     lshr_ln2_fu_1545_p4 <= add_ln38_fu_1540_p2(10 downto 5);
     lshr_ln_fu_1308_p4 <= sub_ln36_fu_1302_p2(10 downto 5);

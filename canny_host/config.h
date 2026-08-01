@@ -3,8 +3,8 @@
 
 #include <cstdint>
 
-constexpr int WIDTH = 512;
-constexpr int HEIGHT = 512;
+constexpr int WIDTH = 640;
+constexpr int HEIGHT = 480;
 
 constexpr int GAUSSIAN_KERNEL_SIZE = 5;
 constexpr int SOBEL_KERNEL_SIZE = 3;

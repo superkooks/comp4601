@@ -86,7 +86,7 @@ architecture behav of canny_top_grayscale_Pipeline_burst_read is
     constant ap_const_lv4_0 : STD_LOGIC_VECTOR (3 downto 0) := "0000";
     constant ap_const_lv512_lc_1 : STD_LOGIC_VECTOR (511 downto 0) := "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000";
     constant ap_const_lv5_0 : STD_LOGIC_VECTOR (4 downto 0) := "00000";
-    constant ap_const_lv5_18 : STD_LOGIC_VECTOR (4 downto 0) := "11000";
+    constant ap_const_lv5_1E : STD_LOGIC_VECTOR (4 downto 0) := "11110";
     constant ap_const_lv5_1 : STD_LOGIC_VECTOR (4 downto 0) := "00001";
 
 attribute shreg_extract : string;
@@ -386,7 +386,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln17_fu_81_p2 <= "1" when (ap_sig_allocacmp_w_2 = ap_const_lv5_18) else "0";
+    icmp_ln17_fu_81_p2 <= "1" when (ap_sig_allocacmp_w_2 = ap_const_lv5_1E) else "0";
     m_axi_gmem0_0_ARADDR <= ap_const_lv64_0;
     m_axi_gmem0_0_ARBURST <= ap_const_lv2_0;
     m_axi_gmem0_0_ARCACHE <= ap_const_lv4_0;

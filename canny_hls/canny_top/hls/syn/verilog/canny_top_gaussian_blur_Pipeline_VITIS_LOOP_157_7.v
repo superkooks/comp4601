@@ -36,7 +36,7 @@ module canny_top_gaussian_blur_Pipeline_VITIS_LOOP_157_7 (
         lineBuffer_4_q0,
         select_ln21,
         select_ln21_1,
-        empty_45,
+        empty_46,
         select_ln21_2,
         empty
 );
@@ -54,24 +54,24 @@ input   gauss_out_full_n;
 output   gauss_out_write;
 input  [31:0] gauss_out_num_data_valid;
 input  [31:0] gauss_out_fifo_cap;
-output  [8:0] lineBuffer_address0;
+output  [9:0] lineBuffer_address0;
 output   lineBuffer_ce0;
 input  [11:0] lineBuffer_q0;
-output  [8:0] lineBuffer_1_address0;
+output  [9:0] lineBuffer_1_address0;
 output   lineBuffer_1_ce0;
 input  [11:0] lineBuffer_1_q0;
-output  [8:0] lineBuffer_2_address0;
+output  [9:0] lineBuffer_2_address0;
 output   lineBuffer_2_ce0;
 input  [11:0] lineBuffer_2_q0;
-output  [8:0] lineBuffer_3_address0;
+output  [9:0] lineBuffer_3_address0;
 output   lineBuffer_3_ce0;
 input  [11:0] lineBuffer_3_q0;
-output  [8:0] lineBuffer_4_address0;
+output  [9:0] lineBuffer_4_address0;
 output   lineBuffer_4_ce0;
 input  [11:0] lineBuffer_4_q0;
 input  [2:0] select_ln21;
 input  [2:0] select_ln21_1;
-input  [2:0] empty_45;
+input  [2:0] empty_46;
 input  [2:0] select_ln21_2;
 input  [2:0] empty;
 
@@ -117,7 +117,7 @@ wire   [11:0] tmp_103_fu_311_p11;
 wire   [11:0] tmp_104_fu_338_p11;
 wire   [11:0] tmp_104_fu_338_p13;
 wire   [11:0] tmp_102_fu_284_p13;
-wire   [12:0] tmp_48_fu_377_p3;
+wire   [12:0] tmp_45_fu_377_p3;
 wire   [14:0] p_shl_fu_369_p3;
 wire   [14:0] zext_ln177_4_fu_385_p1;
 wire   [11:0] tmp_s_fu_257_p13;
@@ -255,7 +255,7 @@ sparsemux_11_3_12_1_1_U102(
     .din3(lineBuffer_3_q0),
     .din4(lineBuffer_4_q0),
     .def(tmp_102_fu_284_p11),
-    .sel(empty_45),
+    .sel(empty_46),
     .dout(tmp_102_fu_284_p13)
 );
 
@@ -543,7 +543,7 @@ assign ap_ready = ap_ready_sig;
 
 assign gauss_out_din = {{sum_fu_439_p2[15:8]}};
 
-assign icmp_ln157_fu_200_p2 = ((ap_sig_allocacmp_column == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln157_fu_200_p2 = ((ap_sig_allocacmp_column == 10'd640) ? 1'b1 : 1'b0);
 
 assign lineBuffer_1_address0 = zext_ln157_fu_212_p1;
 
@@ -587,7 +587,7 @@ assign tmp_109_cast_fu_395_p1 = tmp_s_fu_257_p13;
 
 assign tmp_111_cast_fu_399_p1 = tmp_103_fu_311_p13;
 
-assign tmp_48_fu_377_p3 = {{tmp_102_fu_284_p13}, {1'd0}};
+assign tmp_45_fu_377_p3 = {{tmp_102_fu_284_p13}, {1'd0}};
 
 assign tmp_s_fu_257_p11 = 'bx;
 
@@ -599,7 +599,7 @@ assign zext_ln177_2_fu_436_p1 = add_ln177_1_reg_522;
 
 assign zext_ln177_3_fu_415_p1 = add_ln177_fu_409_p2;
 
-assign zext_ln177_4_fu_385_p1 = tmp_48_fu_377_p3;
+assign zext_ln177_4_fu_385_p1 = tmp_45_fu_377_p3;
 
 assign zext_ln177_fu_365_p1 = tmp_104_fu_338_p13;
 

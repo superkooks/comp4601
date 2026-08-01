@@ -19,29 +19,29 @@ port (
     sobel_out_dout : IN STD_LOGIC_VECTOR (23 downto 0);
     sobel_out_empty_n : IN STD_LOGIC;
     sobel_out_read : OUT STD_LOGIC;
-    sobel_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-    sobel_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
-    lineBuffer_direction_2_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    sobel_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+    sobel_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
+    lineBuffer_direction_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_direction_2_ce0 : OUT STD_LOGIC;
     lineBuffer_direction_2_we0 : OUT STD_LOGIC;
     lineBuffer_direction_2_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    lineBuffer_direction_1_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_direction_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_direction_1_ce0 : OUT STD_LOGIC;
     lineBuffer_direction_1_we0 : OUT STD_LOGIC;
     lineBuffer_direction_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_direction_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_direction_ce0 : OUT STD_LOGIC;
     lineBuffer_direction_we0 : OUT STD_LOGIC;
     lineBuffer_direction_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    lineBuffer_magnitude_2_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_magnitude_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_magnitude_2_ce0 : OUT STD_LOGIC;
     lineBuffer_magnitude_2_we0 : OUT STD_LOGIC;
     lineBuffer_magnitude_2_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    lineBuffer_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_magnitude_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_magnitude_1_ce0 : OUT STD_LOGIC;
     lineBuffer_magnitude_1_we0 : OUT STD_LOGIC;
     lineBuffer_magnitude_1_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
-    lineBuffer_magnitude_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    lineBuffer_magnitude_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     lineBuffer_magnitude_ce0 : OUT STD_LOGIC;
     lineBuffer_magnitude_we0 : OUT STD_LOGIC;
     lineBuffer_magnitude_d0 : OUT STD_LOGIC_VECTOR (15 downto 0);
@@ -63,7 +63,7 @@ architecture behav of canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv2_1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_const_lv10_280 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
     constant ap_const_lv32_10 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010000";
     constant ap_const_lv32_17 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000010111";
@@ -316,8 +316,8 @@ begin
         end if; 
     end process;
 
-    icmp_ln50_fu_162_p2 <= "1" when (ap_sig_allocacmp_column_3 = ap_const_lv10_200) else "0";
-    lineBuffer_direction_1_address0 <= zext_ln50_fu_187_p1(9 - 1 downto 0);
+    icmp_ln50_fu_162_p2 <= "1" when (ap_sig_allocacmp_column_3 = ap_const_lv10_280) else "0";
+    lineBuffer_direction_1_address0 <= zext_ln50_fu_187_p1(10 - 1 downto 0);
     lineBuffer_direction_1_ce0 <= lineBuffer_direction_1_ce0_local;
 
     lineBuffer_direction_1_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -341,7 +341,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_direction_2_address0 <= zext_ln50_fu_187_p1(9 - 1 downto 0);
+    lineBuffer_direction_2_address0 <= zext_ln50_fu_187_p1(10 - 1 downto 0);
     lineBuffer_direction_2_ce0 <= lineBuffer_direction_2_ce0_local;
 
     lineBuffer_direction_2_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -365,7 +365,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_direction_address0 <= zext_ln50_fu_187_p1(9 - 1 downto 0);
+    lineBuffer_direction_address0 <= zext_ln50_fu_187_p1(10 - 1 downto 0);
     lineBuffer_direction_ce0 <= lineBuffer_direction_ce0_local;
 
     lineBuffer_direction_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -389,7 +389,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_magnitude_1_address0 <= zext_ln50_fu_187_p1(9 - 1 downto 0);
+    lineBuffer_magnitude_1_address0 <= zext_ln50_fu_187_p1(10 - 1 downto 0);
     lineBuffer_magnitude_1_ce0 <= lineBuffer_magnitude_1_ce0_local;
 
     lineBuffer_magnitude_1_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -413,7 +413,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_magnitude_2_address0 <= zext_ln50_fu_187_p1(9 - 1 downto 0);
+    lineBuffer_magnitude_2_address0 <= zext_ln50_fu_187_p1(10 - 1 downto 0);
     lineBuffer_magnitude_2_ce0 <= lineBuffer_magnitude_2_ce0_local;
 
     lineBuffer_magnitude_2_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -437,7 +437,7 @@ begin
         end if; 
     end process;
 
-    lineBuffer_magnitude_address0 <= zext_ln50_fu_187_p1(9 - 1 downto 0);
+    lineBuffer_magnitude_address0 <= zext_ln50_fu_187_p1(10 - 1 downto 0);
     lineBuffer_magnitude_ce0 <= lineBuffer_magnitude_ce0_local;
 
     lineBuffer_magnitude_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)

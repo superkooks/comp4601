@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale'" level="0">
-<item name = "Date">Sat Aug  1 15:48:51 2026
+<item name = "Date">Sat Aug  1 17:30:25 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">332801, 332801, 1.664 ms, 1.664 ms, 332801, 332801, no</column>
+<column name="">379201, 379201, 1.896 ms, 1.896 ms, 379201, 379201, no</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_7_1">332800, 332800, 650, -, -, 512, no</column>
+<column name="- VITIS_LOOP_7_1">379200, 379200, 790, -, -, 480, no</column>
 </table>
 </item>
 </section>

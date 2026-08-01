@@ -1319,7 +1319,7 @@ void apatb_canny_top_hw(void* __xlx_apatb_param_in_r, void* __xlx_apatb_param_ou
   };
   port2.param = { __xlx_apatb_param_out_r };
   port2.mname = { "out_r" };
-  port2.nbytes = { 262144 };
+  port2.nbytes = { 307200 };
 
 #ifdef USE_BINARY_TV_FILE
   static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {

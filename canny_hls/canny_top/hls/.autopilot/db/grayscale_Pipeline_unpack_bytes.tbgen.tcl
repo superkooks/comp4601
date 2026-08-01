@@ -19,73 +19,73 @@ set cdfgNum 31
 set C_modelName {grayscale_Pipeline_unpack_bytes}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict row_bytes_31 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_30 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_29 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_28 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_27 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_26 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_25 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_24 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_23 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_22 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_21 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_20 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_19 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_18 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_17 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_16 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_15 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_14 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_13 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_12 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_11 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_10 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_9 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_8 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_7 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_6 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_5 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_4 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_3 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_2 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes_1 { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_bytes { MEM_WIDTH 8 MEM_SIZE 48 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
-dict set ap_memory_interface_dict row_words { MEM_WIDTH 512 MEM_SIZE 1536 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict row_bytes_31 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_30 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_29 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_28 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_27 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_26 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_25 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_24 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_23 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_22 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_21 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_20 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_19 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_18 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_17 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_16 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_15 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_14 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_13 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_12 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_11 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_10 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_9 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_8 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_7 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_6 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_5 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_4 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_3 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_2 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes_1 { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_bytes { MEM_WIDTH 8 MEM_SIZE 60 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 0 }
+dict set ap_memory_interface_dict row_words { MEM_WIDTH 512 MEM_SIZE 1920 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ row_bytes_31 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_30 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_29 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_28 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_27 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_26 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_25 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_24 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_23 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_22 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_21 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_20 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_19 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_18 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_17 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_16 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_15 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_14 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_13 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_12 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_11 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_10 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_9 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_8 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_7 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_6 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_5 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_4 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_3 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_2 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes_1 int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_bytes int 8 regular {array 48 { 0 0 } 0 1 }  }
-	{ row_words int 512 regular {array 24 { 1 3 } 1 1 }  }
+	{ row_bytes_31 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_30 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_29 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_28 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_27 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_26 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_25 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_24 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_23 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_22 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_21 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_20 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_19 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_18 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_17 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_16 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_15 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_14 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_13 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_12 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_11 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_10 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_9 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_8 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_7 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_6 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_5 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_4 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_3 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_2 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes_1 int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_bytes int 8 regular {array 60 { 0 0 } 0 1 }  }
+	{ row_words int 512 regular {array 30 { 1 3 } 1 1 }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
@@ -699,8 +699,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "26", "Max" : "26"}
-	, {"Name" : "Interval", "Min" : "25", "Max" : "25"}
+	{"Name" : "Latency", "Min" : "32", "Max" : "32"}
+	, {"Name" : "Interval", "Min" : "31", "Max" : "31"}
 ]}
 
 set PipelineEnableSignalInfo {[

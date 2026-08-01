@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'canny_top'" level="0">
-<item name = "Date">Sat Aug  1 15:48:52 2026
+<item name = "Date">Sat Aug  1 17:30:26 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">547115, 548071, 2.736 ms, 2.740 ms, 332802, 547886, dataflow</column>
+<column name="">635819, 637031, 3.179 ms, 3.185 ms, 379202, 636846, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
@@ -32,16 +32,16 @@
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="call_ln13_entry_proc_fu_172">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
-<column name="grp_grayscale_fu_179">grayscale, 332801, 332801, 1.664 ms, 1.664 ms, 332801, 332801, no</column>
-<column name="grp_gaussian_blur_fu_188">gaussian_blur, 1543, 539701, 7.715 us, 2.699 ms, 1543, 539701, no</column>
-<column name="grp_sobel_fu_194">sobel, 1540, 547885, 7.700 us, 2.739 ms, 1540, 547885, no</column>
-<column name="grp_non_maximum_suppression_fu_200">non_maximum_suppression, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
-<column name="grp_double_threshold_fu_206">double_threshold, 262146, 262146, 1.311 ms, 1.311 ms, 262144, 262144, loop auto-rewind stp (delay=0 clock cycles(s))</column>
-<column name="grp_hysteresis_1_s_fu_212">hysteresis_1_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
-<column name="grp_hysteresis_2_s_fu_218">hysteresis_2_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
-<column name="grp_hysteresis_3_s_fu_224">hysteresis_3_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
-<column name="grp_hysteresis_4_s_fu_230">hysteresis_4_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
-<column name="grp_write_frame_fu_236">write_frame, 262216, 262216, 1.311 ms, 1.311 ms, 262145, 262145, loop auto-rewind stp (delay=1 clock cycles(s))</column>
+<column name="grp_grayscale_fu_179">grayscale, 379201, 379201, 1.896 ms, 1.896 ms, 379201, 379201, no</column>
+<column name="grp_gaussian_blur_fu_188">gaussian_blur, 1447, 629493, 7.235 us, 3.147 ms, 1447, 629493, no</column>
+<column name="grp_sobel_fu_194">sobel, 1444, 636845, 7.220 us, 3.184 ms, 1444, 636845, no</column>
+<column name="grp_non_maximum_suppression_fu_200">non_maximum_suppression, 1444, 625782, 7.220 us, 3.129 ms, 1444, 625782, no</column>
+<column name="grp_double_threshold_fu_206">double_threshold, 307202, 307202, 1.536 ms, 1.536 ms, 307200, 307200, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_hysteresis_1_s_fu_212">hysteresis_1_s, 1444, 625782, 7.220 us, 3.129 ms, 1444, 625782, no</column>
+<column name="grp_hysteresis_2_s_fu_218">hysteresis_2_s, 1444, 625782, 7.220 us, 3.129 ms, 1444, 625782, no</column>
+<column name="grp_hysteresis_3_s_fu_224">hysteresis_3_s, 1444, 625782, 7.220 us, 3.129 ms, 1444, 625782, no</column>
+<column name="grp_hysteresis_4_s_fu_230">hysteresis_4_s, 1444, 625782, 7.220 us, 3.129 ms, 1444, 625782, no</column>
+<column name="grp_write_frame_fu_236">write_frame, 307272, 307272, 1.536 ms, 1.536 ms, 307201, 307201, loop auto-rewind stp (delay=1 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

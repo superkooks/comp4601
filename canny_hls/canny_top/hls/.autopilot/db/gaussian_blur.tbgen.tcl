@@ -45,8 +45,8 @@ set portList {
 	{ gray_out_dout sc_in sc_lv 8 signal 0 } 
 	{ gray_out_empty_n sc_in sc_logic 1 signal 0 } 
 	{ gray_out_read sc_out sc_logic 1 signal 0 } 
-	{ gray_out_num_data_valid sc_in sc_lv 11 signal 0 } 
-	{ gray_out_fifo_cap sc_in sc_lv 11 signal 0 } 
+	{ gray_out_num_data_valid sc_in sc_lv 12 signal 0 } 
+	{ gray_out_fifo_cap sc_in sc_lv 12 signal 0 } 
 	{ gauss_out_din sc_out sc_lv 8 signal 1 } 
 	{ gauss_out_full_n sc_in sc_logic 1 signal 1 } 
 	{ gauss_out_write sc_out sc_logic 1 signal 1 } 
@@ -67,8 +67,8 @@ set NewPortList {[
  	{ "name": "gray_out_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gray_out", "role": "dout" }} , 
  	{ "name": "gray_out_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gray_out", "role": "empty_n" }} , 
  	{ "name": "gray_out_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gray_out", "role": "read" }} , 
- 	{ "name": "gray_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "gray_out", "role": "num_data_valid" }} , 
- 	{ "name": "gray_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "gray_out", "role": "fifo_cap" }} , 
+ 	{ "name": "gray_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "gray_out", "role": "num_data_valid" }} , 
+ 	{ "name": "gray_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "gray_out", "role": "fifo_cap" }} , 
  	{ "name": "gauss_out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gauss_out", "role": "din" }} , 
  	{ "name": "gauss_out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gauss_out", "role": "full_n" }} , 
  	{ "name": "gauss_out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gauss_out", "role": "write" }} , 
@@ -98,7 +98,7 @@ set ArgLastReadFirstWriteLatency {
 		lineBuffer_4 {Type I LastRead 0 FirstWrite -1}
 		select_ln21 {Type I LastRead 0 FirstWrite -1}
 		select_ln21_1 {Type I LastRead 0 FirstWrite -1}
-		empty_45 {Type I LastRead 0 FirstWrite -1}
+		empty_46 {Type I LastRead 0 FirstWrite -1}
 		select_ln21_2 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		gauss_out {Type O LastRead -1 FirstWrite 2}}}
@@ -106,14 +106,14 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1543", "Max" : "539701"}
-	, {"Name" : "Interval", "Min" : "1543", "Max" : "539701"}
+	{"Name" : "Latency", "Min" : "1447", "Max" : "629493"}
+	, {"Name" : "Interval", "Min" : "1447", "Max" : "629493"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	gray_out { ap_fifo {  { gray_out_dout fifo_data_out 0 8 }  { gray_out_empty_n fifo_status_empty 0 1 }  { gray_out_read fifo_data_in 1 1 }  { gray_out_num_data_valid fifo_update 0 11 }  { gray_out_fifo_cap fifo_data 0 11 } } }
+	gray_out { ap_fifo {  { gray_out_dout fifo_data_out 0 8 }  { gray_out_empty_n fifo_status_empty 0 1 }  { gray_out_read fifo_data_in 1 1 }  { gray_out_num_data_valid fifo_update 0 12 }  { gray_out_fifo_cap fifo_data 0 12 } } }
 	gauss_out { ap_fifo {  { gauss_out_din fifo_data_out 1 8 }  { gauss_out_full_n fifo_status_empty 0 1 }  { gauss_out_write fifo_data_in 1 1 }  { gauss_out_num_data_valid fifo_update 0 32 }  { gauss_out_fifo_cap fifo_data 0 32 } } }
 }

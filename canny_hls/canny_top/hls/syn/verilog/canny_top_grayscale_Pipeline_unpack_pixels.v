@@ -2387,7 +2387,7 @@ assign grp_fu_1900_p2 = grp_fu_1900_p20;
 
 assign grp_fu_1900_p20 = grp_fu_1891_p3;
 
-assign icmp_ln32_fu_1267_p2 = ((ap_sig_allocacmp_column_13 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln32_fu_1267_p2 = ((ap_sig_allocacmp_column_13 == 10'd640) ? 1'b1 : 1'b0);
 
 assign lshr_ln1_fu_1494_p4 = {{add_ln37_fu_1489_p2[10:5]}};
 

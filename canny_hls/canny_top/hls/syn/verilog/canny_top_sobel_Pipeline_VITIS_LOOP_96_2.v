@@ -45,17 +45,17 @@ output   ap_ready;
 input  [7:0] gauss_out_dout;
 input   gauss_out_empty_n;
 output   gauss_out_read;
-input  [10:0] gauss_out_num_data_valid;
-input  [10:0] gauss_out_fifo_cap;
-output  [8:0] lineBuffer_2_address0;
+input  [11:0] gauss_out_num_data_valid;
+input  [11:0] gauss_out_fifo_cap;
+output  [9:0] lineBuffer_2_address0;
 output   lineBuffer_2_ce0;
 output   lineBuffer_2_we0;
 output  [7:0] lineBuffer_2_d0;
-output  [8:0] lineBuffer_1_address0;
+output  [9:0] lineBuffer_1_address0;
 output   lineBuffer_1_ce0;
 output   lineBuffer_1_we0;
 output  [7:0] lineBuffer_1_d0;
-output  [8:0] lineBuffer_address0;
+output  [9:0] lineBuffer_address0;
 output   lineBuffer_ce0;
 output   lineBuffer_we0;
 output  [7:0] lineBuffer_d0;
@@ -326,7 +326,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln96_fu_114_p2 = ((ap_sig_allocacmp_column_1 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln96_fu_114_p2 = ((ap_sig_allocacmp_column_1 == 10'd640) ? 1'b1 : 1'b0);
 
 assign lineBuffer_1_address0 = zext_ln96_fu_139_p1;
 

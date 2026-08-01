@@ -81,6 +81,369 @@
     ]
   },
   {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_host/host.cpp",
+    "owner": "_generated_diagnostic_collection_name_#5a774637-fc32-43c1-ba7d-bda378346c1b",
+    "data": [
+      {
+        "code": "pp_file_not_found",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 6,
+            "character": 9
+          },
+          "end": {
+            "line": 6,
+            "character": 23
+          }
+        },
+        "message": "'xrt/xrt_bo.h' file not found",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 31,
+            "character": 4
+          },
+          "end": {
+            "line": 31,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 32,
+            "character": 4
+          },
+          "end": {
+            "line": 32,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 33,
+            "character": 4
+          },
+          "end": {
+            "line": 33,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 34,
+            "character": 4
+          },
+          "end": {
+            "line": 34,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 37,
+            "character": 4
+          },
+          "end": {
+            "line": 37,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 38,
+            "character": 4
+          },
+          "end": {
+            "line": 38,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 46,
+            "character": 18
+          },
+          "end": {
+            "line": 46,
+            "character": 21
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 50,
+            "character": 11
+          },
+          "end": {
+            "line": 50,
+            "character": 14
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 53,
+            "character": 13
+          },
+          "end": {
+            "line": 53,
+            "character": 16
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 54,
+            "character": 14
+          },
+          "end": {
+            "line": 54,
+            "character": 17
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 58,
+            "character": 10
+          },
+          "end": {
+            "line": 58,
+            "character": 13
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 62,
+            "character": 13
+          },
+          "end": {
+            "line": 62,
+            "character": 15
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 62,
+            "character": 36
+          },
+          "end": {
+            "line": 62,
+            "character": 43
+          }
+        },
+        "message": "Use of undeclared identifier 'CV_8UC3'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 63,
+            "character": 14
+          },
+          "end": {
+            "line": 63,
+            "character": 16
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 63,
+            "character": 37
+          },
+          "end": {
+            "line": 63,
+            "character": 42
+          }
+        },
+        "message": "Use of undeclared identifier 'CV_8U'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 68,
+            "character": 16
+          },
+          "end": {
+            "line": 68,
+            "character": 40
+          }
+        },
+        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_TO_DEVICE'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 77,
+            "character": 17
+          },
+          "end": {
+            "line": 77,
+            "character": 43
+          }
+        },
+        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_FROM_DEVICE'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 92,
+            "character": 4
+          },
+          "end": {
+            "line": 92,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 93,
+            "character": 4
+          },
+          "end": {
+            "line": 93,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "fatal_too_many_errors",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "message": "Too many errors emitted, stopping now",
+        "source": "clang",
+        "relatedInformation": []
+      }
+    ]
+  },
+  {
     "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
     "owner": "canny_hls::synthesis",
     "data": [
@@ -103,7 +466,7 @@
   },
   {
     "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
-    "owner": "_generated_diagnostic_collection_name_#6bec7743-bdfa-4c96-acdd-cdb745ab86c0",
+    "owner": "_generated_diagnostic_collection_name_#5a774637-fc32-43c1-ba7d-bda378346c1b",
     "data": [
       {
         "code": "unsupported_type_and_header",
@@ -163,7 +526,7 @@
     "owner": "canny_hls::synthesis",
     "data": [
       {
-        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_92_1' (../src/sobel.cpp:92:31) in function 'sobel'.",
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 481 for loop 'VITIS_LOOP_92_1' (../src/sobel.cpp:92:31) in function 'sobel'.",
         "range": {
           "start": {
             "line": 91,
@@ -184,7 +547,7 @@
     "owner": "canny_hls::synthesis",
     "data": [
       {
-        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_46_1' (../src/non_maximum_suppression.cpp:46:31) in function 'non_maximum_suppression'.",
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 481 for loop 'VITIS_LOOP_46_1' (../src/non_maximum_suppression.cpp:46:31) in function 'non_maximum_suppression'.",
         "range": {
           "start": {
             "line": 45,
@@ -205,7 +568,7 @@
     "owner": "canny_hls::synthesis",
     "data": [
       {
-        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<4>'.",
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 481 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<4>'.",
         "range": {
           "start": {
             "line": 73,
@@ -220,7 +583,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<3>'.",
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 481 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<3>'.",
         "range": {
           "start": {
             "line": 73,
@@ -235,7 +598,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<2>'.",
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 481 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<2>'.",
         "range": {
           "start": {
             "line": 73,
@@ -250,7 +613,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<1>'.",
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 481 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<1>'.",
         "range": {
           "start": {
             "line": 73,
@@ -268,7 +631,7 @@
   },
   {
     "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
-    "owner": "_generated_diagnostic_collection_name_#6bec7743-bdfa-4c96-acdd-cdb745ab86c0",
+    "owner": "_generated_diagnostic_collection_name_#5a774637-fc32-43c1-ba7d-bda378346c1b",
     "data": [
       {
         "code": "unsupported_type_and_header",
@@ -311,7 +674,7 @@
     "owner": "canny_hls::synthesis",
     "data": [
       {
-        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 514 for loop 'VITIS_LOOP_59_1' (../src/gaussian_blur.cpp:59:31) in function 'gaussian_blur'.",
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 482 for loop 'VITIS_LOOP_59_1' (../src/gaussian_blur.cpp:59:31) in function 'gaussian_blur'.",
         "range": {
           "start": {
             "line": 58,
@@ -329,7 +692,7 @@
   },
   {
     "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
-    "owner": "_generated_diagnostic_collection_name_#6bec7743-bdfa-4c96-acdd-cdb745ab86c0",
+    "owner": "_generated_diagnostic_collection_name_#5a774637-fc32-43c1-ba7d-bda378346c1b",
     "data": [
       {
         "code": "unsupported_type_and_header",
@@ -779,371 +1142,8 @@
     ]
   },
   {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_host/host.cpp",
-    "owner": "_generated_diagnostic_collection_name_#6bec7743-bdfa-4c96-acdd-cdb745ab86c0",
-    "data": [
-      {
-        "code": "pp_file_not_found",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 6,
-            "character": 9
-          },
-          "end": {
-            "line": 6,
-            "character": 23
-          }
-        },
-        "message": "'xrt/xrt_bo.h' file not found",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 31,
-            "character": 4
-          },
-          "end": {
-            "line": 31,
-            "character": 7
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 32,
-            "character": 4
-          },
-          "end": {
-            "line": 32,
-            "character": 7
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 33,
-            "character": 4
-          },
-          "end": {
-            "line": 33,
-            "character": 7
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 34,
-            "character": 4
-          },
-          "end": {
-            "line": 34,
-            "character": 7
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 37,
-            "character": 4
-          },
-          "end": {
-            "line": 37,
-            "character": 6
-          }
-        },
-        "message": "Use of undeclared identifier 'cv'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 38,
-            "character": 4
-          },
-          "end": {
-            "line": 38,
-            "character": 6
-          }
-        },
-        "message": "Use of undeclared identifier 'cv'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 46,
-            "character": 18
-          },
-          "end": {
-            "line": 46,
-            "character": 21
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 50,
-            "character": 11
-          },
-          "end": {
-            "line": 50,
-            "character": 14
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 53,
-            "character": 13
-          },
-          "end": {
-            "line": 53,
-            "character": 16
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 54,
-            "character": 14
-          },
-          "end": {
-            "line": 54,
-            "character": 17
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 58,
-            "character": 10
-          },
-          "end": {
-            "line": 58,
-            "character": 13
-          }
-        },
-        "message": "Use of undeclared identifier 'xrt'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 62,
-            "character": 13
-          },
-          "end": {
-            "line": 62,
-            "character": 15
-          }
-        },
-        "message": "Use of undeclared identifier 'cv'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 62,
-            "character": 36
-          },
-          "end": {
-            "line": 62,
-            "character": 43
-          }
-        },
-        "message": "Use of undeclared identifier 'CV_8UC3'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 63,
-            "character": 14
-          },
-          "end": {
-            "line": 63,
-            "character": 16
-          }
-        },
-        "message": "Use of undeclared identifier 'cv'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 63,
-            "character": 37
-          },
-          "end": {
-            "line": 63,
-            "character": 42
-          }
-        },
-        "message": "Use of undeclared identifier 'CV_8U'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 68,
-            "character": 16
-          },
-          "end": {
-            "line": 68,
-            "character": 40
-          }
-        },
-        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_TO_DEVICE'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 77,
-            "character": 17
-          },
-          "end": {
-            "line": 77,
-            "character": 43
-          }
-        },
-        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_FROM_DEVICE'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 92,
-            "character": 4
-          },
-          "end": {
-            "line": 92,
-            "character": 6
-          }
-        },
-        "message": "Use of undeclared identifier 'cv'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "undeclared_var_use",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 93,
-            "character": 4
-          },
-          "end": {
-            "line": 93,
-            "character": 6
-          }
-        },
-        "message": "Use of undeclared identifier 'cv'",
-        "source": "clang",
-        "relatedInformation": []
-      },
-      {
-        "code": "fatal_too_many_errors",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "message": "Too many errors emitted, stopping now",
-        "source": "clang",
-        "relatedInformation": []
-      }
-    ]
-  },
-  {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
-    "owner": "_generated_diagnostic_collection_name_#6bec7743-bdfa-4c96-acdd-cdb745ab86c0",
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/write_frame.cpp",
+    "owner": "_generated_diagnostic_collection_name_#5a774637-fc32-43c1-ba7d-bda378346c1b",
     "data": [
       {
         "code": "unsupported_type_and_header",
@@ -1182,8 +1182,8 @@
     ]
   },
   {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/write_frame.cpp",
-    "owner": "_generated_diagnostic_collection_name_#6bec7743-bdfa-4c96-acdd-cdb745ab86c0",
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+    "owner": "_generated_diagnostic_collection_name_#5a774637-fc32-43c1-ba7d-bda378346c1b",
     "data": [
       {
         "code": "unsupported_type_and_header",

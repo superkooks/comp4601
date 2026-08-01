@@ -176,12 +176,12 @@ architecture behav of canny_top_grayscale is
     constant ap_const_lv32_4C : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000001001100";
     constant ap_const_lv32_4D : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000001001101";
     constant ap_const_lv32_4E : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000001001110";
-    constant ap_const_lv64_18 : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000011000";
-    constant ap_const_lv10_0 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
-    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
-    constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
-    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
+    constant ap_const_lv64_1E : STD_LOGIC_VECTOR (63 downto 0) := "0000000000000000000000000000000000000000000000000000000000011110";
     constant ap_const_lv9_0 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
+    constant ap_const_lv9_1E0 : STD_LOGIC_VECTOR (8 downto 0) := "111100000";
+    constant ap_const_lv9_1 : STD_LOGIC_VECTOR (8 downto 0) := "000000001";
+    constant ap_const_lv11_0 : STD_LOGIC_VECTOR (10 downto 0) := "00000000000";
+    constant ap_const_lv7_0 : STD_LOGIC_VECTOR (6 downto 0) := "0000000";
     constant ap_const_lv32_6 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000110";
     constant ap_const_lv32_3F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000111111";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
@@ -199,9 +199,9 @@ attribute shreg_extract : string;
     signal gmem0_blk_n_AR : STD_LOGIC;
     signal ap_CS_fsm_state3 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state3 : signal is "none";
-    signal input_read_reg_398 : STD_LOGIC_VECTOR (63 downto 0);
+    signal input_read_reg_394 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_block_state1 : BOOLEAN;
-    signal trunc_ln_reg_406 : STD_LOGIC_VECTOR (57 downto 0);
+    signal trunc_ln_reg_402 : STD_LOGIC_VECTOR (57 downto 0);
     signal ap_CS_fsm_state2 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state2 : signal is "none";
     signal row_words_address0 : STD_LOGIC_VECTOR (4 downto 0);
@@ -915,17 +915,16 @@ attribute shreg_extract : string;
     attribute fsm_encoding of ap_CS_fsm_state78 : signal is "none";
     signal ap_CS_fsm_state79 : STD_LOGIC;
     attribute fsm_encoding of ap_CS_fsm_state79 : signal is "none";
-    signal sext_ln15_fu_381_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal row_fu_76 : STD_LOGIC_VECTOR (9 downto 0) := "0000000000";
-    signal add_ln7_fu_321_p2 : STD_LOGIC_VECTOR (9 downto 0);
+    signal sext_ln15_fu_377_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal row_fu_76 : STD_LOGIC_VECTOR (8 downto 0) := "000000000";
+    signal add_ln7_fu_321_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal icmp_ln7_fu_315_p2 : STD_LOGIC_VECTOR (0 downto 0);
-    signal trunc_ln15_fu_327_p1 : STD_LOGIC_VECTOR (8 downto 0);
-    signal tmp_fu_339_p3 : STD_LOGIC_VECTOR (18 downto 0);
-    signal p_shl_fu_331_p3 : STD_LOGIC_VECTOR (19 downto 0);
-    signal zext_ln15_1_fu_347_p1 : STD_LOGIC_VECTOR (19 downto 0);
-    signal sub_ln15_fu_351_p2 : STD_LOGIC_VECTOR (19 downto 0);
-    signal zext_ln15_fu_357_p1 : STD_LOGIC_VECTOR (63 downto 0);
-    signal add_ln15_fu_361_p2 : STD_LOGIC_VECTOR (63 downto 0);
+    signal tmp_fu_335_p3 : STD_LOGIC_VECTOR (15 downto 0);
+    signal p_shl_fu_327_p3 : STD_LOGIC_VECTOR (19 downto 0);
+    signal zext_ln15_1_fu_343_p1 : STD_LOGIC_VECTOR (19 downto 0);
+    signal sub_ln15_fu_347_p2 : STD_LOGIC_VECTOR (19 downto 0);
+    signal zext_ln15_fu_353_p1 : STD_LOGIC_VECTOR (63 downto 0);
+    signal add_ln15_fu_357_p2 : STD_LOGIC_VECTOR (63 downto 0);
     signal ap_NS_fsm : STD_LOGIC_VECTOR (78 downto 0);
     signal ap_ST_fsm_state1_blk : STD_LOGIC;
     signal ap_ST_fsm_state2_blk : STD_LOGIC;
@@ -1589,7 +1588,7 @@ begin
     row_words_U : component canny_top_grayscale_row_words_RAM_AUTO_1R1W
     generic map (
         DataWidth => 512,
-        AddressRange => 24,
+        AddressRange => 30,
         AddressWidth => 5)
     port map (
         clk => ap_clk,
@@ -1603,7 +1602,7 @@ begin
     row_bytes_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1622,7 +1621,7 @@ begin
     row_bytes_1_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1641,7 +1640,7 @@ begin
     row_bytes_2_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1660,7 +1659,7 @@ begin
     row_bytes_3_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1679,7 +1678,7 @@ begin
     row_bytes_4_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1698,7 +1697,7 @@ begin
     row_bytes_5_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1717,7 +1716,7 @@ begin
     row_bytes_6_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1736,7 +1735,7 @@ begin
     row_bytes_7_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1755,7 +1754,7 @@ begin
     row_bytes_8_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1774,7 +1773,7 @@ begin
     row_bytes_9_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1793,7 +1792,7 @@ begin
     row_bytes_10_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1812,7 +1811,7 @@ begin
     row_bytes_11_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1831,7 +1830,7 @@ begin
     row_bytes_12_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1850,7 +1849,7 @@ begin
     row_bytes_13_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1869,7 +1868,7 @@ begin
     row_bytes_14_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1888,7 +1887,7 @@ begin
     row_bytes_15_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1907,7 +1906,7 @@ begin
     row_bytes_16_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1926,7 +1925,7 @@ begin
     row_bytes_17_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1945,7 +1944,7 @@ begin
     row_bytes_18_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1964,7 +1963,7 @@ begin
     row_bytes_19_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -1983,7 +1982,7 @@ begin
     row_bytes_20_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2002,7 +2001,7 @@ begin
     row_bytes_21_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2021,7 +2020,7 @@ begin
     row_bytes_22_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2040,7 +2039,7 @@ begin
     row_bytes_23_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2059,7 +2058,7 @@ begin
     row_bytes_24_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2078,7 +2077,7 @@ begin
     row_bytes_25_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2097,7 +2096,7 @@ begin
     row_bytes_26_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2116,7 +2115,7 @@ begin
     row_bytes_27_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2135,7 +2134,7 @@ begin
     row_bytes_28_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2154,7 +2153,7 @@ begin
     row_bytes_29_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2173,7 +2172,7 @@ begin
     row_bytes_30_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2192,7 +2191,7 @@ begin
     row_bytes_31_U : component canny_top_grayscale_row_bytes_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
-        AddressRange => 48,
+        AddressRange => 60,
         AddressWidth => 6)
     port map (
         clk => ap_clk,
@@ -2841,7 +2840,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then 
-                row_fu_76 <= ap_const_lv10_0;
+                row_fu_76 <= ap_const_lv9_0;
             elsif (((ap_const_logic_1 = ap_CS_fsm_state2) and (icmp_ln7_fu_315_p2 = ap_const_lv1_0))) then 
                 row_fu_76 <= add_ln7_fu_321_p2;
             end if; 
@@ -2851,7 +2850,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_logic_1 = ap_CS_fsm_state1) and (ap_const_boolean_0 = ap_block_state1))) then
-                input_read_reg_398 <= input_r;
+                input_read_reg_394 <= input_r;
             end if;
         end if;
     end process;
@@ -2859,7 +2858,7 @@ begin
     begin
         if (ap_clk'event and ap_clk = '1') then
             if ((ap_const_logic_1 = ap_CS_fsm_state2)) then
-                trunc_ln_reg_406 <= add_ln15_fu_361_p2(63 downto 6);
+                trunc_ln_reg_402 <= add_ln15_fu_357_p2(63 downto 6);
             end if;
         end if;
     end process;
@@ -3053,8 +3052,8 @@ begin
                 ap_NS_fsm <= "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
         end case;
     end process;
-    add_ln15_fu_361_p2 <= std_logic_vector(unsigned(zext_ln15_fu_357_p1) + unsigned(input_read_reg_398));
-    add_ln7_fu_321_p2 <= std_logic_vector(unsigned(row_fu_76) + unsigned(ap_const_lv10_1));
+    add_ln15_fu_357_p2 <= std_logic_vector(unsigned(zext_ln15_fu_353_p1) + unsigned(input_read_reg_394));
+    add_ln7_fu_321_p2 <= std_logic_vector(unsigned(row_fu_76) + unsigned(ap_const_lv9_1));
     ap_CS_fsm_state1 <= ap_CS_fsm(0);
     ap_CS_fsm_state2 <= ap_CS_fsm(1);
     ap_CS_fsm_state3 <= ap_CS_fsm(2);
@@ -3230,7 +3229,7 @@ begin
     grp_grayscale_Pipeline_burst_read_fu_225_ap_start <= grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg;
     grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start <= grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg;
     grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start <= grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg;
-    icmp_ln7_fu_315_p2 <= "1" when (row_fu_76 = ap_const_lv10_200) else "0";
+    icmp_ln7_fu_315_p2 <= "1" when (row_fu_76 = ap_const_lv9_1E0) else "0";
 
     internal_ap_ready_assign_proc : process(ap_CS_fsm_state2, icmp_ln7_fu_315_p2)
     begin
@@ -3242,10 +3241,10 @@ begin
     end process;
 
 
-    m_axi_gmem0_0_ARADDR_assign_proc : process(m_axi_gmem0_0_ARREADY, ap_CS_fsm_state3, grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARADDR, ap_CS_fsm_state74, ap_CS_fsm_state75, sext_ln15_fu_381_p1)
+    m_axi_gmem0_0_ARADDR_assign_proc : process(m_axi_gmem0_0_ARREADY, ap_CS_fsm_state3, grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARADDR, ap_CS_fsm_state74, ap_CS_fsm_state75, sext_ln15_fu_377_p1)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state3) and (m_axi_gmem0_0_ARREADY = ap_const_logic_1))) then 
-            m_axi_gmem0_0_ARADDR <= sext_ln15_fu_381_p1;
+            m_axi_gmem0_0_ARADDR <= sext_ln15_fu_377_p1;
         elsif (((ap_const_logic_1 = ap_CS_fsm_state75) or (ap_const_logic_1 = ap_CS_fsm_state74))) then 
             m_axi_gmem0_0_ARADDR <= grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARADDR;
         else 
@@ -3287,7 +3286,7 @@ begin
     m_axi_gmem0_0_ARLEN_assign_proc : process(m_axi_gmem0_0_ARREADY, ap_CS_fsm_state3, grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLEN, ap_CS_fsm_state74, ap_CS_fsm_state75)
     begin
         if (((ap_const_logic_1 = ap_CS_fsm_state3) and (m_axi_gmem0_0_ARREADY = ap_const_logic_1))) then 
-            m_axi_gmem0_0_ARLEN <= ap_const_lv64_18(32 - 1 downto 0);
+            m_axi_gmem0_0_ARLEN <= ap_const_lv64_1E(32 - 1 downto 0);
         elsif (((ap_const_logic_1 = ap_CS_fsm_state75) or (ap_const_logic_1 = ap_CS_fsm_state74))) then 
             m_axi_gmem0_0_ARLEN <= grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLEN;
         else 
@@ -3396,7 +3395,7 @@ begin
     m_axi_gmem0_0_WSTRB <= ap_const_lv64_0;
     m_axi_gmem0_0_WUSER <= ap_const_lv1_0;
     m_axi_gmem0_0_WVALID <= ap_const_logic_0;
-    p_shl_fu_331_p3 <= (trunc_ln15_fu_327_p1 & ap_const_lv11_0);
+    p_shl_fu_327_p3 <= (row_fu_76 & ap_const_lv11_0);
 
     real_start_assign_proc : process(ap_start, start_full_n, start_once_reg)
     begin
@@ -5617,7 +5616,7 @@ begin
         end if; 
     end process;
 
-        sext_ln15_fu_381_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_reg_406),64));
+        sext_ln15_fu_377_p1 <= std_logic_vector(IEEE.numeric_std.resize(signed(trunc_ln_reg_402),64));
 
     start_out <= real_start;
 
@@ -5630,9 +5629,8 @@ begin
         end if; 
     end process;
 
-    sub_ln15_fu_351_p2 <= std_logic_vector(unsigned(p_shl_fu_331_p3) - unsigned(zext_ln15_1_fu_347_p1));
-    tmp_fu_339_p3 <= (row_fu_76 & ap_const_lv9_0);
-    trunc_ln15_fu_327_p1 <= row_fu_76(9 - 1 downto 0);
-    zext_ln15_1_fu_347_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_339_p3),20));
-    zext_ln15_fu_357_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sub_ln15_fu_351_p2),64));
+    sub_ln15_fu_347_p2 <= std_logic_vector(unsigned(p_shl_fu_327_p3) - unsigned(zext_ln15_1_fu_343_p1));
+    tmp_fu_335_p3 <= (row_fu_76 & ap_const_lv7_0);
+    zext_ln15_1_fu_343_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(tmp_fu_335_p3),20));
+    zext_ln15_fu_353_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(sub_ln15_fu_347_p2),64));
 end behav;

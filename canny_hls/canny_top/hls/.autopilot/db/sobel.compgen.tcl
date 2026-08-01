@@ -29,7 +29,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_gauss_out \
     op interface \
-    ports { gauss_out_dout { I 8 vector } gauss_out_empty_n { I 1 bit } gauss_out_read { O 1 bit } gauss_out_num_data_valid { I 11 vector } gauss_out_fifo_cap { I 11 vector } } \
+    ports { gauss_out_dout { I 8 vector } gauss_out_empty_n { I 1 bit } gauss_out_read { O 1 bit } gauss_out_num_data_valid { I 12 vector } gauss_out_fifo_cap { I 12 vector } } \
 } "
 }
 

@@ -43,8 +43,8 @@ output   ap_ready;
 input  [15:0] nms_out_dout;
 input   nms_out_empty_n;
 output   nms_out_read;
-input  [10:0] nms_out_num_data_valid;
-input  [10:0] nms_out_fifo_cap;
+input  [11:0] nms_out_num_data_valid;
+input  [11:0] nms_out_fifo_cap;
 output  [7:0] thresh_out_din;
 input   thresh_out_full_n;
 output   thresh_out_write;
@@ -82,10 +82,10 @@ reg    ap_block_pp0_stage0_11001_grp1;
 wire   [0:0] icmp_ln19_fu_77_p2;
 reg   [0:0] icmp_ln19_reg_127;
 reg    ap_block_pp0_stage0_11001;
-reg   [17:0] i_fu_46;
-wire   [17:0] i_3_fu_83_p2;
+reg   [18:0] i_fu_46;
+wire   [18:0] i_3_fu_83_p2;
 wire    ap_loop_init;
-reg   [17:0] ap_sig_allocacmp_i_2;
+reg   [18:0] ap_sig_allocacmp_i_2;
 wire    ap_block_pp0_stage0;
 reg    ap_block_pp0_stage0_01001_grp1;
 wire   [7:0] select_ln16_fu_100_p3;
@@ -105,7 +105,7 @@ initial begin
 #0 ap_CS_fsm = 1'd1;
 #0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 i_fu_46 = 18'd0;
+#0 i_fu_46 = 19'd0;
 end
 
 canny_top_flow_control_loop_pipe flow_control_loop_pipe_U(
@@ -231,7 +231,7 @@ end
 
 always @ (*) begin
     if (((1'b0 == ap_block_pp0_stage0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
-        ap_sig_allocacmp_i_2 = 18'd0;
+        ap_sig_allocacmp_i_2 = 19'd0;
     end else begin
         ap_sig_allocacmp_i_2 = i_fu_46;
     end
@@ -336,9 +336,9 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = internal_ap_ready;
 
-assign i_3_fu_83_p2 = (ap_sig_allocacmp_i_2 + 18'd1);
+assign i_3_fu_83_p2 = (ap_sig_allocacmp_i_2 + 19'd1);
 
-assign icmp_ln10_fu_89_p2 = ((ap_sig_allocacmp_i_2 == 18'd262143) ? 1'b1 : 1'b0);
+assign icmp_ln10_fu_89_p2 = ((ap_sig_allocacmp_i_2 == 19'd307199) ? 1'b1 : 1'b0);
 
 assign icmp_ln16_fu_71_p2 = ((nms_out_dout > 16'd79) ? 1'b1 : 1'b0);
 

@@ -19,17 +19,17 @@ port (
     hyst3_out_dout : IN STD_LOGIC_VECTOR (7 downto 0);
     hyst3_out_empty_n : IN STD_LOGIC;
     hyst3_out_read : OUT STD_LOGIC;
-    hyst3_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-    hyst3_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
-    buffer_2_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    hyst3_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+    hyst3_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
+    buffer_2_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     buffer_2_ce0 : OUT STD_LOGIC;
     buffer_2_we0 : OUT STD_LOGIC;
     buffer_2_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    buffer_1_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    buffer_1_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     buffer_1_ce0 : OUT STD_LOGIC;
     buffer_1_we0 : OUT STD_LOGIC;
     buffer_1_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
-    buffer_r_address0 : OUT STD_LOGIC_VECTOR (8 downto 0);
+    buffer_r_address0 : OUT STD_LOGIC_VECTOR (9 downto 0);
     buffer_r_ce0 : OUT STD_LOGIC;
     buffer_r_we0 : OUT STD_LOGIC;
     buffer_r_d0 : OUT STD_LOGIC_VECTOR (7 downto 0);
@@ -51,7 +51,7 @@ architecture behav of canny_top_hysteresis_4_Pipeline_VITIS_LOOP_78_2 is
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
     constant ap_const_lv2_1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
     constant ap_const_lv2_0 : STD_LOGIC_VECTOR (1 downto 0) := "00";
-    constant ap_const_lv10_200 : STD_LOGIC_VECTOR (9 downto 0) := "1000000000";
+    constant ap_const_lv10_280 : STD_LOGIC_VECTOR (9 downto 0) := "1010000000";
     constant ap_const_lv10_1 : STD_LOGIC_VECTOR (9 downto 0) := "0000000001";
 
 attribute shreg_extract : string;
@@ -295,7 +295,7 @@ begin
         end if; 
     end process;
 
-    buffer_1_address0 <= zext_ln78_fu_139_p1(9 - 1 downto 0);
+    buffer_1_address0 <= zext_ln78_fu_139_p1(10 - 1 downto 0);
     buffer_1_ce0 <= buffer_1_ce0_local;
 
     buffer_1_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -319,7 +319,7 @@ begin
         end if; 
     end process;
 
-    buffer_2_address0 <= zext_ln78_fu_139_p1(9 - 1 downto 0);
+    buffer_2_address0 <= zext_ln78_fu_139_p1(10 - 1 downto 0);
     buffer_2_ce0 <= buffer_2_ce0_local;
 
     buffer_2_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -343,7 +343,7 @@ begin
         end if; 
     end process;
 
-    buffer_r_address0 <= zext_ln78_fu_139_p1(9 - 1 downto 0);
+    buffer_r_address0 <= zext_ln78_fu_139_p1(10 - 1 downto 0);
     buffer_r_ce0 <= buffer_r_ce0_local;
 
     buffer_r_ce0_local_assign_proc : process(ap_CS_fsm_pp0_stage0, ap_enable_reg_pp0_iter1, ap_block_pp0_stage0_11001_grp1)
@@ -387,7 +387,7 @@ begin
         end if; 
     end process;
 
-    icmp_ln78_fu_114_p2 <= "1" when (ap_sig_allocacmp_column_5 = ap_const_lv10_200) else "0";
+    icmp_ln78_fu_114_p2 <= "1" when (ap_sig_allocacmp_column_5 = ap_const_lv10_280) else "0";
     tmp_reg_152 <= empty;
     zext_ln78_fu_139_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(column_5_reg_156),64));
 end behav;

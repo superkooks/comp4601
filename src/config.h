@@ -3,8 +3,8 @@
 
 #include <cstdint>
 
-constexpr int WIDTH = 512;
-constexpr int HEIGHT = 512;
+constexpr int WIDTH = 640;
+constexpr int HEIGHT = 480;
 
 constexpr std::uint8_t LOW_THRESHOLD = 20;
 constexpr std::uint8_t HIGH_THRESHOLD = 80;

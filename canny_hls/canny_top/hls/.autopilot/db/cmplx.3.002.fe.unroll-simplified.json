@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "6 10 11 1 19 4 13 14 17 8",
+    "calls": "19 21 16 14 17 8 1 4 2 15",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "canny_top.cpp",
@@ -9,77 +9,11 @@
     "instructions": 40,
     "memory_accesses": 0,
     "name": "canny_top",
-    "total_instructions": 2265
+    "total_instructions": 2286
   },
   "1": {
-    "basicblocks": 18,
-    "calls": "20 20 20 16 16 16 16",
-    "control_depth": 4,
-    "def_use_depth": 8,
-    "file": "non_maximum_suppression.cpp",
-    "fileloc": 26,
-    "instructions": 275,
-    "loads": {
-      "L": 53
-    },
-    "memory_accesses": 64,
-    "name": "non_maximum_suppression",
-    "stores": {
-      "L": 47
-    },
-    "total_instructions": 310
-  },
-  "10": {
-    "basicblocks": 14,
-    "calls": "15 21 15 21 15 21 15 21 15 21",
-    "control_depth": 2,
-    "def_use_depth": 8,
-    "file": "gaussian_blur.cpp",
-    "fileloc": 36,
-    "instructions": 192,
-    "loads": {
-      "L": 24
-    },
-    "memory_accesses": 41,
-    "name": "gaussian_blur",
-    "stores": {
-      "L": 29
-    },
-    "total_instructions": 272
-  },
-  "11": {
-    "basicblocks": 10,
-    "calls": "12 9 12 9 12 9 12 12 12 2 2 18 12",
-    "control_depth": 0,
-    "def_use_depth": 11,
-    "file": "sobel.cpp",
-    "fileloc": 72,
-    "instructions": 183,
-    "loads": {
-      "L": 27
-    },
-    "memory_accesses": 33,
-    "name": "sobel",
-    "stores": {
-      "L": 25
-    },
-    "total_instructions": 273
-  },
-  "12": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "sobel.cpp",
-    "fileloc": 60,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "border_replicate",
-    "total_instructions": 5
-  },
-  "13": {
     "basicblocks": 13,
-    "calls": "7 7 7 3 3 3 3 5",
+    "calls": "3 3 3 10 10 10 10 12",
     "control_depth": 2,
     "def_use_depth": 5,
     "file": "hysteresis.cpp",
@@ -95,127 +29,7 @@
     },
     "total_instructions": 239
   },
-  "14": {
-    "basicblocks": 13,
-    "calls": "7 7 7 3 3 3 3 5",
-    "control_depth": 2,
-    "def_use_depth": 5,
-    "file": "hysteresis.cpp",
-    "fileloc": 50,
-    "instructions": 154,
-    "loads": {
-      "L": 24
-    },
-    "memory_accesses": 31,
-    "name": "hysteresis<3>",
-    "stores": {
-      "L": 25
-    },
-    "total_instructions": 239
-  },
-  "15": {
-    "basicblocks": 5,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "gaussian_blur.cpp",
-    "fileloc": 24,
-    "instructions": 11,
-    "memory_accesses": 0,
-    "name": "reflect_101",
-    "total_instructions": 11
-  },
-  "16": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "non_maximum_suppression.cpp",
-    "fileloc": 14,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "clamp_column",
-    "total_instructions": 5
-  },
-  "17": {
-    "basicblocks": 13,
-    "calls": "7 7 7 3 3 3 3 5",
-    "control_depth": 3,
-    "def_use_depth": 4,
-    "file": "hysteresis.cpp",
-    "fileloc": 50,
-    "instructions": 153,
-    "loads": {
-      "L": 24
-    },
-    "memory_accesses": 31,
-    "name": "hysteresis<4>",
-    "stores": {
-      "L": 25
-    },
-    "total_instructions": 238
-  },
-  "18": {
-    "basicblocks": 7,
-    "calls": "2 2",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "sobel.cpp",
-    "fileloc": 31,
-    "instructions": 24,
-    "memory_accesses": 0,
-    "name": "quantise_direction",
-    "total_instructions": 32
-  },
-  "19": {
-    "basicblocks": 3,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 4,
-    "file": "double_threshold.cpp",
-    "fileloc": 5,
-    "instructions": 12,
-    "memory_accesses": 2,
-    "name": "double_threshold",
-    "total_instructions": 12
-  },
-  "2": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "sobel.cpp",
-    "fileloc": 27,
-    "instructions": 4,
-    "memory_accesses": 0,
-    "name": "absolute_value",
-    "total_instructions": 4
-  },
-  "20": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "non_maximum_suppression.cpp",
-    "fileloc": 9,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "positive_modulo",
-    "total_instructions": 5
-  },
-  "21": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "gaussian_blur.cpp",
-    "fileloc": 19,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "positive_modulo",
-    "total_instructions": 5
-  },
-  "3": {
+  "10": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -227,25 +41,19 @@
     "name": "clamp_column",
     "total_instructions": 5
   },
-  "4": {
-    "basicblocks": 13,
-    "calls": "7 7 7 3 3 3 3 5",
-    "control_depth": 2,
-    "def_use_depth": 5,
-    "file": "hysteresis.cpp",
-    "fileloc": 50,
-    "instructions": 154,
-    "loads": {
-      "L": 24
-    },
-    "memory_accesses": 31,
-    "name": "hysteresis<1>",
-    "stores": {
-      "L": 25
-    },
-    "total_instructions": 239
+  "11": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "gaussian_blur.cpp",
+    "fileloc": 24,
+    "instructions": 11,
+    "memory_accesses": 0,
+    "name": "reflect_101",
+    "total_instructions": 11
   },
-  "5": {
+  "12": {
     "basicblocks": 17,
     "calls": "",
     "control_depth": 0,
@@ -260,7 +68,94 @@
     "name": "has_strong_neighbour",
     "total_instructions": 50
   },
-  "6": {
+  "13": {
+    "basicblocks": 7,
+    "calls": "9 9",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "sobel.cpp",
+    "fileloc": 31,
+    "instructions": 24,
+    "memory_accesses": 0,
+    "name": "quantise_direction",
+    "total_instructions": 32
+  },
+  "14": {
+    "basicblocks": 18,
+    "calls": "6 6 6 20 20 20 20",
+    "control_depth": 4,
+    "def_use_depth": 8,
+    "file": "non_maximum_suppression.cpp",
+    "fileloc": 26,
+    "instructions": 275,
+    "loads": {
+      "L": 53
+    },
+    "memory_accesses": 64,
+    "name": "non_maximum_suppression",
+    "stores": {
+      "L": 47
+    },
+    "total_instructions": 310
+  },
+  "15": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "write_frame.cpp",
+    "fileloc": 3,
+    "instructions": 17,
+    "memory_accesses": 2,
+    "name": "write_frame",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 17
+  },
+  "16": {
+    "basicblocks": 10,
+    "calls": "18 5 18 5 18 5 18 18 18 9 9 13 18",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "sobel.cpp",
+    "fileloc": 72,
+    "instructions": 183,
+    "loads": {
+      "L": 27
+    },
+    "memory_accesses": 33,
+    "name": "sobel",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 294
+  },
+  "17": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "double_threshold.cpp",
+    "fileloc": 5,
+    "instructions": 12,
+    "memory_accesses": 2,
+    "name": "double_threshold",
+    "total_instructions": 12
+  },
+  "18": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "sobel.cpp",
+    "fileloc": 60,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "border_replicate",
+    "total_instructions": 8
+  },
+  "19": {
     "basicblocks": 9,
     "calls": "",
     "control_depth": 0,
@@ -278,7 +173,55 @@
     },
     "total_instructions": 386
   },
-  "7": {
+  "2": {
+    "basicblocks": 13,
+    "calls": "3 3 3 10 10 10 10 12",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 153,
+    "loads": {
+      "L": 24
+    },
+    "memory_accesses": 31,
+    "name": "hysteresis<4>",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 238
+  },
+  "20": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "non_maximum_suppression.cpp",
+    "fileloc": 14,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "clamp_column",
+    "total_instructions": 5
+  },
+  "21": {
+    "basicblocks": 14,
+    "calls": "11 7 11 7 11 7 11 7 11 7",
+    "control_depth": 2,
+    "def_use_depth": 8,
+    "file": "gaussian_blur.cpp",
+    "fileloc": 36,
+    "instructions": 192,
+    "loads": {
+      "L": 24
+    },
+    "memory_accesses": 41,
+    "name": "gaussian_blur",
+    "stores": {
+      "L": 29
+    },
+    "total_instructions": 272
+  },
+  "3": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -290,22 +233,25 @@
     "name": "positive_modulo",
     "total_instructions": 5
   },
-  "8": {
-    "basicblocks": 5,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 3,
-    "file": "write_frame.cpp",
-    "fileloc": 3,
-    "instructions": 17,
-    "memory_accesses": 2,
-    "name": "write_frame",
-    "stores": {
-      "L": 1
+  "4": {
+    "basicblocks": 13,
+    "calls": "3 3 3 10 10 10 10 12",
+    "control_depth": 2,
+    "def_use_depth": 5,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 154,
+    "loads": {
+      "L": 24
     },
-    "total_instructions": 17
+    "memory_accesses": 31,
+    "name": "hysteresis<3>",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 239
   },
-  "9": {
+  "5": {
     "basicblocks": 1,
     "calls": "",
     "control_depth": 0,
@@ -316,5 +262,59 @@
     "memory_accesses": 0,
     "name": "positive_modulo",
     "total_instructions": 5
+  },
+  "6": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "non_maximum_suppression.cpp",
+    "fileloc": 9,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "positive_modulo",
+    "total_instructions": 5
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "gaussian_blur.cpp",
+    "fileloc": 19,
+    "instructions": 5,
+    "memory_accesses": 0,
+    "name": "positive_modulo",
+    "total_instructions": 5
+  },
+  "8": {
+    "basicblocks": 13,
+    "calls": "3 3 3 10 10 10 10 12",
+    "control_depth": 2,
+    "def_use_depth": 5,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 154,
+    "loads": {
+      "L": 24
+    },
+    "memory_accesses": 31,
+    "name": "hysteresis<1>",
+    "stores": {
+      "L": 25
+    },
+    "total_instructions": 239
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "sobel.cpp",
+    "fileloc": 27,
+    "instructions": 4,
+    "memory_accesses": 0,
+    "name": "absolute_value",
+    "total_instructions": 4
   }
 }

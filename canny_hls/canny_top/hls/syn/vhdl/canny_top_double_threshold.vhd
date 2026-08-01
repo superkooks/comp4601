@@ -21,8 +21,8 @@ port (
     nms_out_dout : IN STD_LOGIC_VECTOR (15 downto 0);
     nms_out_empty_n : IN STD_LOGIC;
     nms_out_read : OUT STD_LOGIC;
-    nms_out_num_data_valid : IN STD_LOGIC_VECTOR (10 downto 0);
-    nms_out_fifo_cap : IN STD_LOGIC_VECTOR (10 downto 0);
+    nms_out_num_data_valid : IN STD_LOGIC_VECTOR (11 downto 0);
+    nms_out_fifo_cap : IN STD_LOGIC_VECTOR (11 downto 0);
     thresh_out_din : OUT STD_LOGIC_VECTOR (7 downto 0);
     thresh_out_full_n : IN STD_LOGIC;
     thresh_out_write : OUT STD_LOGIC;
@@ -43,11 +43,11 @@ architecture behav of canny_top_double_threshold is
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_boolean_0 : BOOLEAN := false;
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv18_0 : STD_LOGIC_VECTOR (17 downto 0) := "000000000000000000";
+    constant ap_const_lv19_0 : STD_LOGIC_VECTOR (18 downto 0) := "0000000000000000000";
     constant ap_const_lv16_4F : STD_LOGIC_VECTOR (15 downto 0) := "0000000001001111";
     constant ap_const_lv16_13 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000010011";
-    constant ap_const_lv18_1 : STD_LOGIC_VECTOR (17 downto 0) := "000000000000000001";
-    constant ap_const_lv18_3FFFF : STD_LOGIC_VECTOR (17 downto 0) := "111111111111111111";
+    constant ap_const_lv19_1 : STD_LOGIC_VECTOR (18 downto 0) := "0000000000000000001";
+    constant ap_const_lv19_4AFFF : STD_LOGIC_VECTOR (18 downto 0) := "1001010111111111111";
     constant ap_const_lv8_FF : STD_LOGIC_VECTOR (7 downto 0) := "11111111";
     constant ap_const_lv8_80 : STD_LOGIC_VECTOR (7 downto 0) := "10000000";
     constant ap_const_lv8_0 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
@@ -80,10 +80,10 @@ attribute shreg_extract : string;
     signal icmp_ln19_fu_77_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln19_reg_127 : STD_LOGIC_VECTOR (0 downto 0);
     signal ap_block_pp0_stage0_11001 : BOOLEAN;
-    signal i_fu_46 : STD_LOGIC_VECTOR (17 downto 0) := "000000000000000000";
-    signal i_3_fu_83_p2 : STD_LOGIC_VECTOR (17 downto 0);
+    signal i_fu_46 : STD_LOGIC_VECTOR (18 downto 0) := "0000000000000000000";
+    signal i_3_fu_83_p2 : STD_LOGIC_VECTOR (18 downto 0);
     signal ap_loop_init : STD_LOGIC;
-    signal ap_sig_allocacmp_i_2 : STD_LOGIC_VECTOR (17 downto 0);
+    signal ap_sig_allocacmp_i_2 : STD_LOGIC_VECTOR (18 downto 0);
     signal ap_block_pp0_stage0 : BOOLEAN;
     signal ap_block_pp0_stage0_01001_grp1 : BOOLEAN;
     signal select_ln16_fu_100_p3 : STD_LOGIC_VECTOR (7 downto 0);
@@ -333,14 +333,14 @@ begin
     ap_sig_allocacmp_i_2_assign_proc : process(ap_CS_fsm_pp0_stage0, i_fu_46, ap_loop_init, ap_block_pp0_stage0, ap_start_int)
     begin
         if (((ap_const_boolean_0 = ap_block_pp0_stage0) and (ap_start_int = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0) and (ap_loop_init = ap_const_logic_1))) then 
-            ap_sig_allocacmp_i_2 <= ap_const_lv18_0;
+            ap_sig_allocacmp_i_2 <= ap_const_lv19_0;
         else 
             ap_sig_allocacmp_i_2 <= i_fu_46;
         end if; 
     end process;
 
-    i_3_fu_83_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_2) + unsigned(ap_const_lv18_1));
-    icmp_ln10_fu_89_p2 <= "1" when (ap_sig_allocacmp_i_2 = ap_const_lv18_3FFFF) else "0";
+    i_3_fu_83_p2 <= std_logic_vector(unsigned(ap_sig_allocacmp_i_2) + unsigned(ap_const_lv19_1));
+    icmp_ln10_fu_89_p2 <= "1" when (ap_sig_allocacmp_i_2 = ap_const_lv19_4AFFF) else "0";
     icmp_ln16_fu_71_p2 <= "1" when (unsigned(nms_out_dout) > unsigned(ap_const_lv16_4F)) else "0";
     icmp_ln19_fu_77_p2 <= "1" when (unsigned(nms_out_dout) > unsigned(ap_const_lv16_13)) else "0";
 

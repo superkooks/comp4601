@@ -23,7 +23,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_4 \
     op interface \
-    ports { lineBuffer_4_address0 { O 9 vector } lineBuffer_4_ce0 { O 1 bit } lineBuffer_4_we0 { O 1 bit } lineBuffer_4_d0 { O 12 vector } } \
+    ports { lineBuffer_4_address0 { O 10 vector } lineBuffer_4_ce0 { O 1 bit } lineBuffer_4_we0 { O 1 bit } lineBuffer_4_d0 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_4'"
@@ -42,7 +42,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_3 \
     op interface \
-    ports { lineBuffer_3_address0 { O 9 vector } lineBuffer_3_ce0 { O 1 bit } lineBuffer_3_we0 { O 1 bit } lineBuffer_3_d0 { O 12 vector } } \
+    ports { lineBuffer_3_address0 { O 10 vector } lineBuffer_3_ce0 { O 1 bit } lineBuffer_3_we0 { O 1 bit } lineBuffer_3_d0 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_3'"
@@ -61,7 +61,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_2 \
     op interface \
-    ports { lineBuffer_2_address0 { O 9 vector } lineBuffer_2_ce0 { O 1 bit } lineBuffer_2_we0 { O 1 bit } lineBuffer_2_d0 { O 12 vector } } \
+    ports { lineBuffer_2_address0 { O 10 vector } lineBuffer_2_ce0 { O 1 bit } lineBuffer_2_we0 { O 1 bit } lineBuffer_2_d0 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_2'"
@@ -80,7 +80,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_1 \
     op interface \
-    ports { lineBuffer_1_address0 { O 9 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_we0 { O 1 bit } lineBuffer_1_d0 { O 12 vector } } \
+    ports { lineBuffer_1_address0 { O 10 vector } lineBuffer_1_ce0 { O 1 bit } lineBuffer_1_we0 { O 1 bit } lineBuffer_1_d0 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_1'"
@@ -99,7 +99,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer \
     op interface \
-    ports { lineBuffer_address0 { O 9 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_we0 { O 1 bit } lineBuffer_d0 { O 12 vector } } \
+    ports { lineBuffer_address0 { O 10 vector } lineBuffer_ce0 { O 1 bit } lineBuffer_we0 { O 1 bit } lineBuffer_d0 { O 12 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer'"
@@ -163,7 +163,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_gray_out \
     op interface \
-    ports { gray_out_dout { I 8 vector } gray_out_empty_n { I 1 bit } gray_out_read { O 1 bit } gray_out_num_data_valid { I 11 vector } gray_out_fifo_cap { I 11 vector } } \
+    ports { gray_out_dout { I 8 vector } gray_out_empty_n { I 1 bit } gray_out_read { O 1 bit } gray_out_num_data_valid { I 12 vector } gray_out_fifo_cap { I 12 vector } } \
 } "
 }
 

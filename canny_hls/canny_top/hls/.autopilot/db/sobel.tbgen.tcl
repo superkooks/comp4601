@@ -45,8 +45,8 @@ set portList {
 	{ gauss_out_dout sc_in sc_lv 8 signal 0 } 
 	{ gauss_out_empty_n sc_in sc_logic 1 signal 0 } 
 	{ gauss_out_read sc_out sc_logic 1 signal 0 } 
-	{ gauss_out_num_data_valid sc_in sc_lv 11 signal 0 } 
-	{ gauss_out_fifo_cap sc_in sc_lv 11 signal 0 } 
+	{ gauss_out_num_data_valid sc_in sc_lv 12 signal 0 } 
+	{ gauss_out_fifo_cap sc_in sc_lv 12 signal 0 } 
 	{ sobel_out_din sc_out sc_lv 24 signal 1 } 
 	{ sobel_out_full_n sc_in sc_logic 1 signal 1 } 
 	{ sobel_out_write sc_out sc_logic 1 signal 1 } 
@@ -67,8 +67,8 @@ set NewPortList {[
  	{ "name": "gauss_out_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "gauss_out", "role": "dout" }} , 
  	{ "name": "gauss_out_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gauss_out", "role": "empty_n" }} , 
  	{ "name": "gauss_out_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "gauss_out", "role": "read" }} , 
- 	{ "name": "gauss_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "gauss_out", "role": "num_data_valid" }} , 
- 	{ "name": "gauss_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "gauss_out", "role": "fifo_cap" }} , 
+ 	{ "name": "gauss_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "gauss_out", "role": "num_data_valid" }} , 
+ 	{ "name": "gauss_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":12, "type": "signal", "bundle":{"name": "gauss_out", "role": "fifo_cap" }} , 
  	{ "name": "sobel_out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":24, "type": "signal", "bundle":{"name": "sobel_out", "role": "din" }} , 
  	{ "name": "sobel_out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sobel_out", "role": "full_n" }} , 
  	{ "name": "sobel_out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "sobel_out", "role": "write" }} , 
@@ -96,21 +96,21 @@ set ArgLastReadFirstWriteLatency {
 		lineBuffer {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_1 {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_2 {Type I LastRead 0 FirstWrite -1}
-		select_ln23 {Type I LastRead 0 FirstWrite -1}
+		empty_30 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
-		select_ln23_1 {Type I LastRead 0 FirstWrite -1}}}
+		select_ln23 {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1540", "Max" : "547885"}
-	, {"Name" : "Interval", "Min" : "1540", "Max" : "547885"}
+	{"Name" : "Latency", "Min" : "1444", "Max" : "636845"}
+	, {"Name" : "Interval", "Min" : "1444", "Max" : "636845"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	gauss_out { ap_fifo {  { gauss_out_dout fifo_data_out 0 8 }  { gauss_out_empty_n fifo_status_empty 0 1 }  { gauss_out_read fifo_data_in 1 1 }  { gauss_out_num_data_valid fifo_update 0 11 }  { gauss_out_fifo_cap fifo_data 0 11 } } }
+	gauss_out { ap_fifo {  { gauss_out_dout fifo_data_out 0 8 }  { gauss_out_empty_n fifo_status_empty 0 1 }  { gauss_out_read fifo_data_in 1 1 }  { gauss_out_num_data_valid fifo_update 0 12 }  { gauss_out_fifo_cap fifo_data 0 12 } } }
 	sobel_out { ap_fifo {  { sobel_out_din fifo_data_out 1 24 }  { sobel_out_full_n fifo_status_empty 0 1 }  { sobel_out_write fifo_data_in 1 1 }  { sobel_out_num_data_valid fifo_update 0 32 }  { sobel_out_fifo_cap fifo_data 0 32 } } }
 }

@@ -85,7 +85,7 @@ VITIS_LOOP_26_2:0 %w_1 = load i5 %w
 
 <Node id="39" bw="1" op_0_bw="5" op_1_bw="5">
 <![CDATA[
-VITIS_LOOP_26_2:1 %icmp_ln24 = icmp_eq  i5 %w_1, i5 24
+VITIS_LOOP_26_2:1 %icmp_ln24 = icmp_eq  i5 %w_1, i5 30
 
 ]]></Node>
 <StgValue><ssdm name="icmp_ln24"/></StgValue>
@@ -228,7 +228,7 @@ VITIS_LOOP_26_2.split:1 %specpipeline_ln25 = specpipeline void @_ssdm_op_SpecPip
 
 <Node id="45" bw="0" op_0_bw="0" op_1_bw="64" op_2_bw="64" op_3_bw="64">
 <![CDATA[
-VITIS_LOOP_26_2.split:2 %speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 24, i64 24, i64 24
+VITIS_LOOP_26_2.split:2 %speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 30, i64 30, i64 30
 
 ]]></Node>
 <StgValue><ssdm name="speclooptripcount_ln24"/></StgValue>

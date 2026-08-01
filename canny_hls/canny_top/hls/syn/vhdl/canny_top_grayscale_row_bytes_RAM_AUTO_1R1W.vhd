@@ -13,7 +13,7 @@ entity canny_top_grayscale_row_bytes_RAM_AUTO_1R1W is
         MEM_TYPE        : string    := "auto";
         DataWidth       : integer   := 8;
         AddressWidth    : integer   := 6;
-        AddressRange    : integer   := 48
+        AddressRange    : integer   := 60
     );
     port (
         address0    : in std_logic_vector(AddressWidth-1 downto 0);

@@ -57,29 +57,29 @@ output   ap_ready;
 input  [23:0] sobel_out_dout;
 input   sobel_out_empty_n;
 output   sobel_out_read;
-input  [10:0] sobel_out_num_data_valid;
-input  [10:0] sobel_out_fifo_cap;
-output  [8:0] lineBuffer_direction_2_address0;
+input  [11:0] sobel_out_num_data_valid;
+input  [11:0] sobel_out_fifo_cap;
+output  [9:0] lineBuffer_direction_2_address0;
 output   lineBuffer_direction_2_ce0;
 output   lineBuffer_direction_2_we0;
 output  [7:0] lineBuffer_direction_2_d0;
-output  [8:0] lineBuffer_direction_1_address0;
+output  [9:0] lineBuffer_direction_1_address0;
 output   lineBuffer_direction_1_ce0;
 output   lineBuffer_direction_1_we0;
 output  [7:0] lineBuffer_direction_1_d0;
-output  [8:0] lineBuffer_direction_address0;
+output  [9:0] lineBuffer_direction_address0;
 output   lineBuffer_direction_ce0;
 output   lineBuffer_direction_we0;
 output  [7:0] lineBuffer_direction_d0;
-output  [8:0] lineBuffer_magnitude_2_address0;
+output  [9:0] lineBuffer_magnitude_2_address0;
 output   lineBuffer_magnitude_2_ce0;
 output   lineBuffer_magnitude_2_we0;
 output  [15:0] lineBuffer_magnitude_2_d0;
-output  [8:0] lineBuffer_magnitude_1_address0;
+output  [9:0] lineBuffer_magnitude_1_address0;
 output   lineBuffer_magnitude_1_ce0;
 output   lineBuffer_magnitude_1_we0;
 output  [15:0] lineBuffer_magnitude_1_d0;
-output  [8:0] lineBuffer_magnitude_address0;
+output  [9:0] lineBuffer_magnitude_address0;
 output   lineBuffer_magnitude_ce0;
 output   lineBuffer_magnitude_we0;
 output  [15:0] lineBuffer_magnitude_d0;
@@ -405,7 +405,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln50_fu_162_p2 = ((ap_sig_allocacmp_column_3 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln50_fu_162_p2 = ((ap_sig_allocacmp_column_3 == 10'd640) ? 1'b1 : 1'b0);
 
 assign lineBuffer_direction_1_address0 = zext_ln50_fu_187_p1;
 

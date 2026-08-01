@@ -136,8 +136,8 @@ input  [0:0] m_axi_gmem_0_BUSER;
 input  [7:0] hyst4_out_dout;
 input   hyst4_out_empty_n;
 output   hyst4_out_read;
-input  [10:0] hyst4_out_num_data_valid;
-input  [10:0] hyst4_out_fifo_cap;
+input  [11:0] hyst4_out_num_data_valid;
+input  [11:0] hyst4_out_fifo_cap;
 
 reg ap_idle;
 reg out_r_read;
@@ -330,10 +330,10 @@ reg    ap_loop_init_pp0_iter1_reg;
 reg    ap_loop_init_pp0_iter2_reg;
 wire  signed [63:0] sext_ln7_fu_217_p1;
 reg    ap_block_pp0_stage0_01001;
-reg   [17:0] indvar_flatten2_fu_98;
-wire   [17:0] add_ln7_fu_187_p2;
-reg   [17:0] ap_sig_allocacmp_indvar_flatten2_load;
-reg   [17:0] ap_sig_allocacmp_indvar_flatten2_load_1;
+reg   [18:0] indvar_flatten2_fu_98;
+wire   [18:0] add_ln7_fu_187_p2;
+reg   [18:0] ap_sig_allocacmp_indvar_flatten2_load;
+reg   [18:0] ap_sig_allocacmp_indvar_flatten2_load_1;
 reg   [9:0] col_fu_102;
 wire   [9:0] col_2_fu_272_p2;
 reg   [503:0] phi_ln104_fu_106;
@@ -501,7 +501,7 @@ initial begin
 #0 ap_enable_reg_pp0_iter70 = 1'b0;
 #0 ap_enable_reg_pp0_iter71 = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 indvar_flatten2_fu_98 = 18'd0;
+#0 indvar_flatten2_fu_98 = 19'd0;
 #0 col_fu_102 = 10'd0;
 #0 phi_ln104_fu_106 = 504'd0;
 end
@@ -1523,7 +1523,7 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_indvar_flatten2_load = 18'd0;
+        ap_sig_allocacmp_indvar_flatten2_load = 19'd0;
     end else begin
         ap_sig_allocacmp_indvar_flatten2_load = indvar_flatten2_fu_98;
     end
@@ -1531,7 +1531,7 @@ end
 
 always @ (*) begin
     if (((ap_loop_init == 1'b1) & (1'b0 == ap_block_pp0_stage0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
-        ap_sig_allocacmp_indvar_flatten2_load_1 = 18'd0;
+        ap_sig_allocacmp_indvar_flatten2_load_1 = 19'd0;
     end else begin
         ap_sig_allocacmp_indvar_flatten2_load_1 = indvar_flatten2_fu_98;
     end
@@ -1628,7 +1628,7 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln7_fu_187_p2 = (ap_sig_allocacmp_indvar_flatten2_load + 18'd1);
+assign add_ln7_fu_187_p2 = (ap_sig_allocacmp_indvar_flatten2_load + 19'd1);
 
 assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
@@ -1704,9 +1704,9 @@ assign col_2_fu_272_p2 = (select_ln7_fu_238_p3 + 10'd1);
 
 assign icmp_ln10_fu_258_p2 = ((trunc_ln8_fu_254_p1 == 6'd63) ? 1'b1 : 1'b0);
 
-assign icmp_ln7_fu_196_p2 = ((ap_sig_allocacmp_indvar_flatten2_load_1 == 18'd262143) ? 1'b1 : 1'b0);
+assign icmp_ln7_fu_196_p2 = ((ap_sig_allocacmp_indvar_flatten2_load_1 == 19'd307199) ? 1'b1 : 1'b0);
 
-assign icmp_ln8_fu_304_p2 = ((col_2_fu_272_p2 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln8_fu_304_p2 = ((col_2_fu_272_p2 == 10'd640) ? 1'b1 : 1'b0);
 
 assign m_axi_gmem_0_ARADDR = 64'd0;
 
@@ -1740,7 +1740,7 @@ assign m_axi_gmem_0_AWCACHE = 4'd0;
 
 assign m_axi_gmem_0_AWID = 1'd0;
 
-assign m_axi_gmem_0_AWLEN = 64'd4096;
+assign m_axi_gmem_0_AWLEN = 64'd4800;
 
 assign m_axi_gmem_0_AWLOCK = 2'd0;
 

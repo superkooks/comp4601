@@ -1889,7 +1889,7 @@ assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
 assign ap_ready = ap_ready_sig;
 
-assign icmp_ln24_fu_1051_p2 = ((ap_sig_allocacmp_w_1 == 5'd24) ? 1'b1 : 1'b0);
+assign icmp_ln24_fu_1051_p2 = ((ap_sig_allocacmp_w_1 == 5'd30) ? 1'b1 : 1'b0);
 
 assign or_ln_fu_1409_p3 = {{w_1_reg_1738}, {1'd1}};
 

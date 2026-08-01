@@ -118,68 +118,69 @@ int main(int argc, char** argv) {
     auto processor = CannyFPGA();
 
     // BENCHMARK SINGLE IMAGE
-    auto img_mat = cv::imread("test.jpg");
-    cv::imshow("Input", img_mat);
-    img_mat.copyTo(processor.in_mat);
+    // auto img_mat = cv::imread("test.jpg");
+    // cv::imshow("Input", img_mat);
+    // img_mat.copyTo(processor.in_mat);
 
-    // Warm up (first call can pay one-off driver/cache costs).
-    processor.process_frame();
+    // // Warm up (first call can pay one-off driver/cache costs).
+    // processor.process_frame();
 
-    constexpr int NUM_ITERS = 100;
-    double total_sum = 0, sync_in_sum = 0, launch_sum = 0, wait_sum = 0, sync_out_sum = 0;
-    double total_min = std::numeric_limits<double>::max();
+    // constexpr int NUM_ITERS = 100;
+    // double total_sum = 0, sync_in_sum = 0, launch_sum = 0, wait_sum = 0, sync_out_sum = 0;
+    // double total_min = std::numeric_limits<double>::max();
 
-    for (int i = 0; i < NUM_ITERS; i++) {
-        auto t = processor.process_frame();
-        total_sum += t.total_us;
-        sync_in_sum += t.sync_in_us;
-        launch_sum += t.launch_us;
-        wait_sum += t.wait_us;
-        sync_out_sum += t.sync_out_us;
-        total_min = std::min(total_min, t.total_us);
-    }
+    // for (int i = 0; i < NUM_ITERS; i++) {
+    //     auto t = processor.process_frame();
+    //     total_sum += t.total_us;
+    //     sync_in_sum += t.sync_in_us;
+    //     launch_sum += t.launch_us;
+    //     wait_sum += t.wait_us;
+    //     sync_out_sum += t.sync_out_us;
+    //     total_min = std::min(total_min, t.total_us);
+    // }
 
-    std::cout << "Over " << NUM_ITERS << " iterations:\n"
-              << "  total    mean=" << total_sum / NUM_ITERS << "us  min=" << total_min << "us\n"
-              << "  sync-in  mean=" << sync_in_sum / NUM_ITERS << "us\n"
-              << "  launch   mean=" << launch_sum / NUM_ITERS << "us\n"
-              << "  wait     mean=" << wait_sum / NUM_ITERS << "us\n"
-              << "  sync-out mean=" << sync_out_sum / NUM_ITERS << "us\n";
+    // std::cout << "Over " << NUM_ITERS << " iterations:\n"
+    //           << "  total    mean=" << total_sum / NUM_ITERS << "us  min=" << total_min << "us\n"
+    //           << "  sync-in  mean=" << sync_in_sum / NUM_ITERS << "us\n"
+    //           << "  launch   mean=" << launch_sum / NUM_ITERS << "us\n"
+    //           << "  wait     mean=" << wait_sum / NUM_ITERS << "us\n"
+    //           << "  sync-out mean=" << sync_out_sum / NUM_ITERS << "us\n";
 
-    cv::imshow("Output", processor.out_mat);
-    cv::imwrite("out.jpg", processor.out_mat);
+    // cv::imshow("Output", processor.out_mat);
+    // cv::imwrite("out.jpg", processor.out_mat);
 
-    for (;;)
-        if (cv::waitKey(0) == 'q')
-            break;
+    // for (;;)
+    //     if (cv::waitKey(0) == 'q')
+    //         break;
     
 
     // LIVE WEBCAM CAPTURE
-    // cv::Mat frame;
-    // cv::VideoCapture cap;
+    cv::Mat frame;
+    cv::VideoCapture cap;
     
-    // // open selected camera using selected API
-    // cap.open(0);
-    // if (!cap.isOpened()) {
-    //     std::cerr << "ERROR! Unable to open camera\n";
-    //     return -1;
-    // }
+    cap.open(0);
+    if (!cap.isOpened()) {
+        std::cerr << "ERROR! Unable to open camera\n";
+        return -1;
+    }
     
-    // std::cout << "Start grabbing" << std::endl
-    //     << "Press any q to terminate" << std::endl;
-    // for (;;) {
-    //     // wait for a new frame from camera and store it into 'frame'
-    //     cap.read(frame);
-    //     // check if we succeeded
-    //     if (frame.empty()) {
-    //         std::cerr << "ERROR! blank frame grabbed\n";
-    //         break;
-    //     }
-    //     // show live and wait for a key with timeout long enough to show images
-    //     cv::imshow("Live", frame);
-    //     if (cv::waitKey(5) >= 0)
-    //         break;
-    // }
+    std::cout << "Start grabbing" << std::endl
+        << "Press any q to terminate" << std::endl;
+    for (;;) {
+        cap.read(frame);
+        if (frame.empty()) {
+            std::cerr << "ERROR! blank frame grabbed\n";
+            break;
+        }
+
+        frame.copyTo(processor.in_mat);
+        processor.process_frame();
+
+        cv::imshow("Input", frame);
+        cv::imshow("Output", processor.out_mat);
+        if (cv::waitKey(16) == 'q')
+            break;
+    }
 
     return 0;
 }

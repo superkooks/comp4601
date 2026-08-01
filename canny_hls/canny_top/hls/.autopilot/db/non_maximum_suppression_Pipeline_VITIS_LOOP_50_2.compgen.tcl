@@ -18,7 +18,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_direction_2 \
     op interface \
-    ports { lineBuffer_direction_2_address0 { O 9 vector } lineBuffer_direction_2_ce0 { O 1 bit } lineBuffer_direction_2_we0 { O 1 bit } lineBuffer_direction_2_d0 { O 8 vector } } \
+    ports { lineBuffer_direction_2_address0 { O 10 vector } lineBuffer_direction_2_ce0 { O 1 bit } lineBuffer_direction_2_we0 { O 1 bit } lineBuffer_direction_2_d0 { O 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_direction_2'"
@@ -37,7 +37,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_direction_1 \
     op interface \
-    ports { lineBuffer_direction_1_address0 { O 9 vector } lineBuffer_direction_1_ce0 { O 1 bit } lineBuffer_direction_1_we0 { O 1 bit } lineBuffer_direction_1_d0 { O 8 vector } } \
+    ports { lineBuffer_direction_1_address0 { O 10 vector } lineBuffer_direction_1_ce0 { O 1 bit } lineBuffer_direction_1_we0 { O 1 bit } lineBuffer_direction_1_d0 { O 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_direction_1'"
@@ -56,7 +56,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_direction \
     op interface \
-    ports { lineBuffer_direction_address0 { O 9 vector } lineBuffer_direction_ce0 { O 1 bit } lineBuffer_direction_we0 { O 1 bit } lineBuffer_direction_d0 { O 8 vector } } \
+    ports { lineBuffer_direction_address0 { O 10 vector } lineBuffer_direction_ce0 { O 1 bit } lineBuffer_direction_we0 { O 1 bit } lineBuffer_direction_d0 { O 8 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_direction'"
@@ -75,7 +75,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_magnitude_2 \
     op interface \
-    ports { lineBuffer_magnitude_2_address0 { O 9 vector } lineBuffer_magnitude_2_ce0 { O 1 bit } lineBuffer_magnitude_2_we0 { O 1 bit } lineBuffer_magnitude_2_d0 { O 16 vector } } \
+    ports { lineBuffer_magnitude_2_address0 { O 10 vector } lineBuffer_magnitude_2_ce0 { O 1 bit } lineBuffer_magnitude_2_we0 { O 1 bit } lineBuffer_magnitude_2_d0 { O 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_magnitude_2'"
@@ -94,7 +94,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_magnitude_1 \
     op interface \
-    ports { lineBuffer_magnitude_1_address0 { O 9 vector } lineBuffer_magnitude_1_ce0 { O 1 bit } lineBuffer_magnitude_1_we0 { O 1 bit } lineBuffer_magnitude_1_d0 { O 16 vector } } \
+    ports { lineBuffer_magnitude_1_address0 { O 10 vector } lineBuffer_magnitude_1_ce0 { O 1 bit } lineBuffer_magnitude_1_we0 { O 1 bit } lineBuffer_magnitude_1_d0 { O 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_magnitude_1'"
@@ -113,7 +113,7 @@ eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
     dir O \
     corename lineBuffer_magnitude \
     op interface \
-    ports { lineBuffer_magnitude_address0 { O 9 vector } lineBuffer_magnitude_ce0 { O 1 bit } lineBuffer_magnitude_we0 { O 1 bit } lineBuffer_magnitude_d0 { O 16 vector } } \
+    ports { lineBuffer_magnitude_address0 { O 10 vector } lineBuffer_magnitude_ce0 { O 1 bit } lineBuffer_magnitude_we0 { O 1 bit } lineBuffer_magnitude_d0 { O 16 vector } } \
 } "
 } else {
 puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'lineBuffer_magnitude'"
@@ -132,7 +132,7 @@ eval "cg_default_interface_gen_dc { \
     sync_rst true \
     corename dc_sobel_out \
     op interface \
-    ports { sobel_out_dout { I 24 vector } sobel_out_empty_n { I 1 bit } sobel_out_read { O 1 bit } sobel_out_num_data_valid { I 11 vector } sobel_out_fifo_cap { I 11 vector } } \
+    ports { sobel_out_dout { I 24 vector } sobel_out_empty_n { I 1 bit } sobel_out_read { O 1 bit } sobel_out_num_data_valid { I 12 vector } sobel_out_fifo_cap { I 12 vector } } \
 } "
 }
 

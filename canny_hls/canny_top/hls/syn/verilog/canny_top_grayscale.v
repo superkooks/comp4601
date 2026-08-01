@@ -240,9 +240,9 @@ wire    ap_CS_fsm_state1;
 reg    internal_ap_ready;
 reg    gmem0_blk_n_AR;
 wire    ap_CS_fsm_state3;
-reg   [63:0] input_read_reg_398;
+reg   [63:0] input_read_reg_394;
 reg    ap_block_state1;
-reg   [57:0] trunc_ln_reg_406;
+reg   [57:0] trunc_ln_reg_402;
 wire    ap_CS_fsm_state2;
 reg   [4:0] row_words_address0;
 reg    row_words_ce0;
@@ -949,17 +949,16 @@ wire    ap_CS_fsm_state77;
 reg    grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg;
 wire    ap_CS_fsm_state78;
 wire    ap_CS_fsm_state79;
-wire  signed [63:0] sext_ln15_fu_381_p1;
-reg   [9:0] row_fu_76;
-wire   [9:0] add_ln7_fu_321_p2;
+wire  signed [63:0] sext_ln15_fu_377_p1;
+reg   [8:0] row_fu_76;
+wire   [8:0] add_ln7_fu_321_p2;
 wire   [0:0] icmp_ln7_fu_315_p2;
-wire   [8:0] trunc_ln15_fu_327_p1;
-wire   [18:0] tmp_fu_339_p3;
-wire   [19:0] p_shl_fu_331_p3;
-wire   [19:0] zext_ln15_1_fu_347_p1;
-wire   [19:0] sub_ln15_fu_351_p2;
-wire   [63:0] zext_ln15_fu_357_p1;
-wire   [63:0] add_ln15_fu_361_p2;
+wire   [15:0] tmp_fu_335_p3;
+wire   [19:0] p_shl_fu_327_p3;
+wire   [19:0] zext_ln15_1_fu_343_p1;
+wire   [19:0] sub_ln15_fu_347_p2;
+wire   [63:0] zext_ln15_fu_353_p1;
+wire   [63:0] add_ln15_fu_357_p2;
 reg   [78:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
@@ -1050,12 +1049,12 @@ initial begin
 #0 grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg = 1'b0;
 #0 grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg = 1'b0;
 #0 grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg = 1'b0;
-#0 row_fu_76 = 10'd0;
+#0 row_fu_76 = 9'd0;
 end
 
 canny_top_grayscale_row_words_RAM_AUTO_1R1W #(
     .DataWidth( 512 ),
-    .AddressRange( 24 ),
+    .AddressRange( 30 ),
     .AddressWidth( 5 ))
 row_words_U(
     .clk(ap_clk),
@@ -1069,7 +1068,7 @@ row_words_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_U(
     .clk(ap_clk),
@@ -1088,7 +1087,7 @@ row_bytes_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_1_U(
     .clk(ap_clk),
@@ -1107,7 +1106,7 @@ row_bytes_1_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_2_U(
     .clk(ap_clk),
@@ -1126,7 +1125,7 @@ row_bytes_2_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_3_U(
     .clk(ap_clk),
@@ -1145,7 +1144,7 @@ row_bytes_3_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_4_U(
     .clk(ap_clk),
@@ -1164,7 +1163,7 @@ row_bytes_4_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_5_U(
     .clk(ap_clk),
@@ -1183,7 +1182,7 @@ row_bytes_5_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_6_U(
     .clk(ap_clk),
@@ -1202,7 +1201,7 @@ row_bytes_6_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_7_U(
     .clk(ap_clk),
@@ -1221,7 +1220,7 @@ row_bytes_7_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_8_U(
     .clk(ap_clk),
@@ -1240,7 +1239,7 @@ row_bytes_8_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_9_U(
     .clk(ap_clk),
@@ -1259,7 +1258,7 @@ row_bytes_9_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_10_U(
     .clk(ap_clk),
@@ -1278,7 +1277,7 @@ row_bytes_10_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_11_U(
     .clk(ap_clk),
@@ -1297,7 +1296,7 @@ row_bytes_11_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_12_U(
     .clk(ap_clk),
@@ -1316,7 +1315,7 @@ row_bytes_12_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_13_U(
     .clk(ap_clk),
@@ -1335,7 +1334,7 @@ row_bytes_13_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_14_U(
     .clk(ap_clk),
@@ -1354,7 +1353,7 @@ row_bytes_14_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_15_U(
     .clk(ap_clk),
@@ -1373,7 +1372,7 @@ row_bytes_15_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_16_U(
     .clk(ap_clk),
@@ -1392,7 +1391,7 @@ row_bytes_16_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_17_U(
     .clk(ap_clk),
@@ -1411,7 +1410,7 @@ row_bytes_17_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_18_U(
     .clk(ap_clk),
@@ -1430,7 +1429,7 @@ row_bytes_18_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_19_U(
     .clk(ap_clk),
@@ -1449,7 +1448,7 @@ row_bytes_19_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_20_U(
     .clk(ap_clk),
@@ -1468,7 +1467,7 @@ row_bytes_20_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_21_U(
     .clk(ap_clk),
@@ -1487,7 +1486,7 @@ row_bytes_21_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_22_U(
     .clk(ap_clk),
@@ -1506,7 +1505,7 @@ row_bytes_22_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_23_U(
     .clk(ap_clk),
@@ -1525,7 +1524,7 @@ row_bytes_23_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_24_U(
     .clk(ap_clk),
@@ -1544,7 +1543,7 @@ row_bytes_24_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_25_U(
     .clk(ap_clk),
@@ -1563,7 +1562,7 @@ row_bytes_25_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_26_U(
     .clk(ap_clk),
@@ -1582,7 +1581,7 @@ row_bytes_26_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_27_U(
     .clk(ap_clk),
@@ -1601,7 +1600,7 @@ row_bytes_27_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_28_U(
     .clk(ap_clk),
@@ -1620,7 +1619,7 @@ row_bytes_28_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_29_U(
     .clk(ap_clk),
@@ -1639,7 +1638,7 @@ row_bytes_29_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_30_U(
     .clk(ap_clk),
@@ -1658,7 +1657,7 @@ row_bytes_30_U(
 
 canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 48 ),
+    .AddressRange( 60 ),
     .AddressWidth( 6 ))
 row_bytes_31_U(
     .clk(ap_clk),
@@ -2278,7 +2277,7 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
-        row_fu_76 <= 10'd0;
+        row_fu_76 <= 9'd0;
     end else if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln7_fu_315_p2 == 1'd0))) begin
         row_fu_76 <= add_ln7_fu_321_p2;
     end
@@ -2286,13 +2285,13 @@ end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
-        input_read_reg_398 <= input_r;
+        input_read_reg_394 <= input_r;
     end
 end
 
 always @ (posedge ap_clk) begin
     if ((1'b1 == ap_CS_fsm_state2)) begin
-        trunc_ln_reg_406 <= {{add_ln15_fu_361_p2[63:6]}};
+        trunc_ln_reg_402 <= {{add_ln15_fu_357_p2[63:6]}};
     end
 end
 
@@ -2518,7 +2517,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem0_0_ARREADY == 1'b1))) begin
-        m_axi_gmem0_0_ARADDR = sext_ln15_fu_381_p1;
+        m_axi_gmem0_0_ARADDR = sext_ln15_fu_377_p1;
     end else if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
         m_axi_gmem0_0_ARADDR = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARADDR;
     end else begin
@@ -2552,7 +2551,7 @@ end
 
 always @ (*) begin
     if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem0_0_ARREADY == 1'b1))) begin
-        m_axi_gmem0_0_ARLEN = 64'd24;
+        m_axi_gmem0_0_ARLEN = 64'd30;
     end else if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
         m_axi_gmem0_0_ARLEN = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLEN;
     end else begin
@@ -4731,9 +4730,9 @@ always @ (*) begin
     endcase
 end
 
-assign add_ln15_fu_361_p2 = (zext_ln15_fu_357_p1 + input_read_reg_398);
+assign add_ln15_fu_357_p2 = (zext_ln15_fu_353_p1 + input_read_reg_394);
 
-assign add_ln7_fu_321_p2 = (row_fu_76 + 10'd1);
+assign add_ln7_fu_321_p2 = (row_fu_76 + 9'd1);
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
@@ -4769,7 +4768,7 @@ assign grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start = grp_grayscale_Pipel
 
 assign grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start = grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg;
 
-assign icmp_ln7_fu_315_p2 = ((row_fu_76 == 10'd512) ? 1'b1 : 1'b0);
+assign icmp_ln7_fu_315_p2 = ((row_fu_76 == 9'd480) ? 1'b1 : 1'b0);
 
 assign m_axi_gmem0_0_AWADDR = 64'd0;
 
@@ -4809,20 +4808,18 @@ assign m_axi_gmem0_0_WUSER = 1'd0;
 
 assign m_axi_gmem0_0_WVALID = 1'b0;
 
-assign p_shl_fu_331_p3 = {{trunc_ln15_fu_327_p1}, {11'd0}};
+assign p_shl_fu_327_p3 = {{row_fu_76}, {11'd0}};
 
-assign sext_ln15_fu_381_p1 = $signed(trunc_ln_reg_406);
+assign sext_ln15_fu_377_p1 = $signed(trunc_ln_reg_402);
 
 assign start_out = real_start;
 
-assign sub_ln15_fu_351_p2 = (p_shl_fu_331_p3 - zext_ln15_1_fu_347_p1);
+assign sub_ln15_fu_347_p2 = (p_shl_fu_327_p3 - zext_ln15_1_fu_343_p1);
 
-assign tmp_fu_339_p3 = {{row_fu_76}, {9'd0}};
+assign tmp_fu_335_p3 = {{row_fu_76}, {7'd0}};
 
-assign trunc_ln15_fu_327_p1 = row_fu_76[8:0];
+assign zext_ln15_1_fu_343_p1 = tmp_fu_335_p3;
 
-assign zext_ln15_1_fu_347_p1 = tmp_fu_339_p3;
-
-assign zext_ln15_fu_357_p1 = sub_ln15_fu_351_p2;
+assign zext_ln15_fu_353_p1 = sub_ln15_fu_347_p2;
 
 endmodule //canny_top_grayscale

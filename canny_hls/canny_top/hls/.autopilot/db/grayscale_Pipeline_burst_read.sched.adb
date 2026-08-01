@@ -77,7 +77,7 @@
 				</Value>
 				<direction>1</direction>
 				<if_type>1</if_type>
-				<array_size>24</array_size>
+				<array_size>30</array_size>
 				<bit_vecs>
 					<count>0</count>
 					<item_version>0</item_version>
@@ -950,7 +950,7 @@
 					<bitwidth>5</bitwidth>
 				</Value>
 				<const_type>0</const_type>
-				<content>24</content>
+				<content>30</content>
 			</item>
 			<item class_id_reference="16" object_id="_20">
 				<Value>
@@ -1384,8 +1384,8 @@
 			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>27</mMinLatency>
-			<mMaxLatency>27</mMaxLatency>
+			<mMinLatency>33</mMinLatency>
+			<mMaxLatency>33</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>
@@ -1429,10 +1429,10 @@
 			</basic_blocks>
 			<mII>1</mII>
 			<mDepth>3</mDepth>
-			<mMinTripCount>24</mMinTripCount>
-			<mMaxTripCount>24</mMaxTripCount>
-			<mMinLatency>25</mMinLatency>
-			<mMaxLatency>25</mMaxLatency>
+			<mMinTripCount>30</mMinTripCount>
+			<mMaxTripCount>30</mMaxTripCount>
+			<mMinLatency>31</mMinLatency>
+			<mMaxLatency>31</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
 		</item>

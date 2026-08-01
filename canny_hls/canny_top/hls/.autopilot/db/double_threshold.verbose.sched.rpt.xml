@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'double_threshold'" level="0">
-<item name = "Date">Sat Aug  1 15:48:51 2026
+<item name = "Date">Sat Aug  1 17:30:25 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">262146, 262146, 1.311 ms, 1.311 ms, 262144, 262144, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="">307202, 307202, 1.536 ms, 1.536 ms, 307200, 307200, loop auto-rewind stp (delay=0 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Detail">
@@ -35,7 +35,7 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_10_1">262144, 262144, 2, 1, 1, 262144, yes</column>
+<column name="- VITIS_LOOP_10_1">307200, 307200, 2, 1, 1, 307200, yes</column>
 </table>
 </item>
 </section>
