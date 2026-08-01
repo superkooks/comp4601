@@ -253,7 +253,7 @@ initial begin
 #0 row_4_fu_74 = 10'd0;
 end
 
-canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W #(
+canny_top_sobel_lineBuffer_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 512 ),
     .AddressWidth( 9 ))
@@ -270,7 +270,7 @@ buffer_U(
     .q1(buffer_q1)
 );
 
-canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W #(
+canny_top_sobel_lineBuffer_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 512 ),
     .AddressWidth( 9 ))
@@ -287,7 +287,7 @@ buffer_1_U(
     .q1(buffer_1_q1)
 );
 
-canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W #(
+canny_top_sobel_lineBuffer_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
     .AddressRange( 512 ),
     .AddressWidth( 9 ))
@@ -370,7 +370,7 @@ canny_top_srem_10ns_3ns_10_14_seq_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 3 ),
     .dout_WIDTH( 10 ))
-srem_10ns_3ns_10_14_seq_1_U306(
+srem_10ns_3ns_10_14_seq_1_U308(
     .clk(ap_clk),
     .reset(ap_rst),
     .start(grp_fu_273_ap_start),
@@ -393,7 +393,7 @@ srem_10ns_3ns_10_14_seq_1_U306(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U307(
+sparsemux_7_2_8_1_1_U309(
     .din0(buffer_load_reg_563),
     .din1(buffer_1_load_reg_570),
     .din2(buffer_2_load_reg_577),
@@ -414,7 +414,7 @@ sparsemux_7_2_8_1_1_U307(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U308(
+sparsemux_7_2_8_1_1_U310(
     .din0(buffer_load_reg_563),
     .din1(buffer_1_load_reg_570),
     .din2(buffer_2_load_reg_577),
@@ -435,7 +435,7 @@ sparsemux_7_2_8_1_1_U308(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U309(
+sparsemux_7_2_8_1_1_U311(
     .din0(buffer_load_reg_563),
     .din1(buffer_1_load_reg_570),
     .din2(buffer_2_load_reg_577),
@@ -456,7 +456,7 @@ sparsemux_7_2_8_1_1_U309(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U310(
+sparsemux_7_2_8_1_1_U312(
     .din0(buffer_load_2_reg_584),
     .din1(buffer_1_load_1_reg_591),
     .din2(buffer_2_load_1_reg_598),
@@ -477,7 +477,7 @@ sparsemux_7_2_8_1_1_U310(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U311(
+sparsemux_7_2_8_1_1_U313(
     .din0(buffer_load_2_reg_584),
     .din1(buffer_1_load_1_reg_591),
     .din2(buffer_2_load_1_reg_598),
@@ -498,7 +498,7 @@ sparsemux_7_2_8_1_1_U311(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U312(
+sparsemux_7_2_8_1_1_U314(
     .din0(buffer_load_2_reg_584),
     .din1(buffer_1_load_1_reg_591),
     .din2(buffer_2_load_1_reg_598),

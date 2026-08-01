@@ -1,7 +1,7 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "4 5 9 8 11 1 10 7 3 2",
+    "calls": "8 10 1 9 4 6 7 5 3 2",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "canny_top.cpp",
@@ -9,61 +9,43 @@
     "instructions": 51,
     "memory_accesses": 0,
     "name": "canny_top",
-    "total_instructions": 2050
+    "total_instructions": 1927
   },
   "1": {
-    "basicblocks": 31,
+    "basicblocks": 24,
     "calls": "",
-    "control_depth": 9,
-    "def_use_depth": 8,
-    "file": "hysteresis.cpp",
-    "fileloc": 50,
-    "instructions": 153,
+    "control_depth": 6,
+    "def_use_depth": 15,
+    "file": "sobel.cpp",
+    "fileloc": 72,
+    "instructions": 175,
     "loads": {
       "L": 10
     },
     "memory_accesses": 11,
-    "name": "hysteresis<1>",
+    "name": "sobel",
     "stores": {
       "L": 4
     },
-    "total_instructions": 153
+    "total_instructions": 175
   },
   "10": {
-    "basicblocks": 31,
+    "basicblocks": 27,
     "calls": "",
-    "control_depth": 9,
+    "control_depth": 2,
     "def_use_depth": 8,
-    "file": "hysteresis.cpp",
-    "fileloc": 50,
-    "instructions": 153,
+    "file": "gaussian_blur.cpp",
+    "fileloc": 36,
+    "instructions": 190,
     "loads": {
-      "L": 10
+      "L": 9
     },
-    "memory_accesses": 11,
-    "name": "hysteresis<2>",
+    "memory_accesses": 15,
+    "name": "gaussian_blur",
     "stores": {
-      "L": 4
+      "L": 6
     },
-    "total_instructions": 153
-  },
-  "11": {
-    "basicblocks": 4,
-    "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 4,
-    "file": "double_threshold.cpp",
-    "fileloc": 5,
-    "instructions": 20,
-    "loads": {
-      "L": 1
-    },
-    "memory_accesses": 4,
-    "name": "double_threshold",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 20
+    "total_instructions": 190
   },
   "2": {
     "basicblocks": 9,
@@ -99,54 +81,24 @@
     "total_instructions": 149
   },
   "4": {
-    "basicblocks": 13,
+    "basicblocks": 4,
     "calls": "",
     "control_depth": 1,
-    "def_use_depth": 10,
-    "file": "grayscale.cpp",
-    "fileloc": 3,
-    "instructions": 651,
+    "def_use_depth": 4,
+    "file": "double_threshold.cpp",
+    "fileloc": 5,
+    "instructions": 20,
     "loads": {
-      "L": 97
+      "L": 1
     },
-    "memory_accesses": 165,
-    "name": "grayscale",
+    "memory_accesses": 4,
+    "name": "double_threshold",
     "stores": {
-      "L": 66
+      "L": 1
     },
-    "total_instructions": 651
+    "total_instructions": 20
   },
   "5": {
-    "basicblocks": 23,
-    "calls": "6 6 6 6 6 6 6 6 6 6 6",
-    "control_depth": 2,
-    "def_use_depth": 8,
-    "file": "gaussian_blur.cpp",
-    "fileloc": 36,
-    "instructions": 192,
-    "loads": {
-      "L": 12
-    },
-    "memory_accesses": 17,
-    "name": "gaussian_blur",
-    "stores": {
-      "L": 7
-    },
-    "total_instructions": 313
-  },
-  "6": {
-    "basicblocks": 5,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "gaussian_blur.cpp",
-    "fileloc": 24,
-    "instructions": 11,
-    "memory_accesses": 0,
-    "name": "reflect_101",
-    "total_instructions": 11
-  },
-  "7": {
     "basicblocks": 31,
     "calls": "",
     "control_depth": 9,
@@ -164,7 +116,61 @@
     },
     "total_instructions": 153
   },
+  "6": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 9,
+    "def_use_depth": 8,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 153,
+    "loads": {
+      "L": 10
+    },
+    "memory_accesses": 11,
+    "name": "hysteresis<1>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 153
+  },
+  "7": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 9,
+    "def_use_depth": 8,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 153,
+    "loads": {
+      "L": 10
+    },
+    "memory_accesses": 11,
+    "name": "hysteresis<2>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 153
+  },
   "8": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 10,
+    "file": "grayscale.cpp",
+    "fileloc": 3,
+    "instructions": 651,
+    "loads": {
+      "L": 97
+    },
+    "memory_accesses": 165,
+    "name": "grayscale",
+    "stores": {
+      "L": 66
+    },
+    "total_instructions": 651
+  },
+  "9": {
     "basicblocks": 26,
     "calls": "",
     "control_depth": 2,
@@ -181,23 +187,5 @@
       "L": 8
     },
     "total_instructions": 196
-  },
-  "9": {
-    "basicblocks": 24,
-    "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 15,
-    "file": "sobel.cpp",
-    "fileloc": 72,
-    "instructions": 175,
-    "loads": {
-      "L": 10
-    },
-    "memory_accesses": 11,
-    "name": "sobel",
-    "stores": {
-      "L": 4
-    },
-    "total_instructions": 175
   }
 }

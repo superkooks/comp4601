@@ -67,10 +67,10 @@ newFuncRoot:1 %pixel = alloca i32 1
 
 <Node id="16" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:2 %empty_55 = alloca i32 1
+newFuncRoot:2 %empty_51 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_55"/></StgValue>
+<StgValue><ssdm name="empty_51"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -82,10 +82,10 @@ newFuncRoot:2 %empty_55 = alloca i32 1
 
 <Node id="17" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:3 %empty_56 = alloca i32 1
+newFuncRoot:3 %empty_52 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_56"/></StgValue>
+<StgValue><ssdm name="empty_52"/></StgValue>
 </operation>
 
 <operation id="11" st_id="1" stage="1" lat="1">
@@ -112,10 +112,10 @@ newFuncRoot:4 %pixel_2 = alloca i32 1
 
 <Node id="19" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:5 %empty_57 = alloca i32 1
+newFuncRoot:5 %empty_53 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_57"/></StgValue>
+<StgValue><ssdm name="empty_53"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -142,10 +142,10 @@ newFuncRoot:6 %pixel_1 = alloca i32 1
 
 <Node id="21" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:7 %empty_58 = alloca i32 1
+newFuncRoot:7 %empty_54 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_58"/></StgValue>
+<StgValue><ssdm name="empty_54"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -172,10 +172,10 @@ newFuncRoot:8 %pixel_3 = alloca i32 1
 
 <Node id="23" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:9 %empty_59 = alloca i32 1
+newFuncRoot:9 %empty_55 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_59"/></StgValue>
+<StgValue><ssdm name="empty_55"/></StgValue>
 </operation>
 
 <operation id="17" st_id="1" stage="1" lat="1">
@@ -187,7 +187,7 @@ newFuncRoot:9 %empty_59 = alloca i32 1
 
 <Node id="24" bw="0" op_0_bw="0" op_1_bw="24" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %sobel_out, void @empty_11, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0
+newFuncRoot:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %sobel_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -337,7 +337,7 @@ newFuncRoot:19 %tmp_2_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %tmp_2
 
 <Node id="34" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:20 %store_ln0 = store i8 %tmp_2_read, i8 %empty_59
+newFuncRoot:20 %store_ln0 = store i8 %tmp_2_read, i8 %empty_55
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -367,7 +367,7 @@ newFuncRoot:21 %store_ln165 = store i8 %tmp_6_read, i8 %pixel_3
 
 <Node id="36" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:22 %store_ln0 = store i8 %tmp_3_read, i8 %empty_58
+newFuncRoot:22 %store_ln0 = store i8 %tmp_3_read, i8 %empty_54
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -397,7 +397,7 @@ newFuncRoot:23 %store_ln165 = store i8 %tmp_4_read, i8 %pixel_1
 
 <Node id="38" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:24 %store_ln0 = store i8 %tmp_1_read, i8 %empty_57
+newFuncRoot:24 %store_ln0 = store i8 %tmp_1_read, i8 %empty_53
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -427,7 +427,7 @@ newFuncRoot:25 %store_ln165 = store i8 %tmp_3_read, i8 %pixel_2
 
 <Node id="40" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:26 %store_ln0 = store i8 %tmp_5_read, i8 %empty_56
+newFuncRoot:26 %store_ln0 = store i8 %tmp_5_read, i8 %empty_52
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -442,7 +442,7 @@ newFuncRoot:26 %store_ln0 = store i8 %tmp_5_read, i8 %empty_56
 
 <Node id="41" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:27 %store_ln0 = store i8 %tmp_2_read, i8 %empty_55
+newFuncRoot:27 %store_ln0 = store i8 %tmp_2_read, i8 %empty_51
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -757,7 +757,7 @@ VITIS_LOOP_155_7.split_ifconv:106 %store_ln149 = store i10 %column_2, i10 %colum
 
 <Node id="47" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7:1 %p_load40 = load i8 %empty_57
+VITIS_LOOP_155_7:1 %p_load40 = load i8 %empty_53
 
 ]]></Node>
 <StgValue><ssdm name="p_load40"/></StgValue>
@@ -787,7 +787,7 @@ VITIS_LOOP_155_7:2 %pixel_4 = load i8 %pixel_1
 
 <Node id="49" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7:3 %p_load39 = load i8 %empty_58
+VITIS_LOOP_155_7:3 %p_load39 = load i8 %empty_54
 
 ]]></Node>
 <StgValue><ssdm name="p_load39"/></StgValue>
@@ -817,7 +817,7 @@ VITIS_LOOP_155_7:4 %pixel_5 = load i8 %pixel_3
 
 <Node id="51" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7:5 %p_load = load i8 %empty_59
+VITIS_LOOP_155_7:5 %p_load = load i8 %empty_55
 
 ]]></Node>
 <StgValue><ssdm name="p_load"/></StgValue>
@@ -849,7 +849,7 @@ VITIS_LOOP_155_7.split_ifconv:0 %pixel_load = load i8 %pixel
 
 <Node id="57" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:1 %p_load42 = load i8 %empty_55
+VITIS_LOOP_155_7.split_ifconv:1 %p_load42 = load i8 %empty_51
 
 ]]></Node>
 <StgValue><ssdm name="p_load42"/></StgValue>
@@ -865,7 +865,7 @@ VITIS_LOOP_155_7.split_ifconv:1 %p_load42 = load i8 %empty_55
 
 <Node id="58" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:2 %p_load41 = load i8 %empty_56
+VITIS_LOOP_155_7.split_ifconv:2 %p_load41 = load i8 %empty_52
 
 ]]></Node>
 <StgValue><ssdm name="p_load41"/></StgValue>
@@ -1537,7 +1537,7 @@ VITIS_LOOP_155_7.split_ifconv:96 %tmp_7 = sparsemux i8 @_ssdm_op_SparseMux.ap_au
 
 <Node id="153" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:97 %store_ln0 = store i8 %p_load41, i8 %empty_59
+VITIS_LOOP_155_7.split_ifconv:97 %store_ln0 = store i8 %p_load41, i8 %empty_55
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -1569,7 +1569,7 @@ VITIS_LOOP_155_7.split_ifconv:98 %store_ln165 = store i8 %tmp_7, i8 %pixel_3
 
 <Node id="155" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:99 %store_ln165 = store i8 %pixel_5, i8 %empty_58
+VITIS_LOOP_155_7.split_ifconv:99 %store_ln165 = store i8 %pixel_5, i8 %empty_54
 
 ]]></Node>
 <StgValue><ssdm name="store_ln165"/></StgValue>
@@ -1601,7 +1601,7 @@ VITIS_LOOP_155_7.split_ifconv:100 %store_ln165 = store i8 %tmp_9, i8 %pixel_1
 
 <Node id="157" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:101 %store_ln165 = store i8 %pixel_4, i8 %empty_57
+VITIS_LOOP_155_7.split_ifconv:101 %store_ln165 = store i8 %pixel_4, i8 %empty_53
 
 ]]></Node>
 <StgValue><ssdm name="store_ln165"/></StgValue>
@@ -1633,7 +1633,7 @@ VITIS_LOOP_155_7.split_ifconv:102 %store_ln165 = store i8 %p_load39, i8 %pixel_2
 
 <Node id="159" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:103 %store_ln199 = store i8 %tmp_s, i8 %empty_56
+VITIS_LOOP_155_7.split_ifconv:103 %store_ln199 = store i8 %tmp_s, i8 %empty_52
 
 ]]></Node>
 <StgValue><ssdm name="store_ln199"/></StgValue>
@@ -1649,7 +1649,7 @@ VITIS_LOOP_155_7.split_ifconv:103 %store_ln199 = store i8 %tmp_s, i8 %empty_56
 
 <Node id="160" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:104 %store_ln0 = store i8 %p_load, i8 %empty_55
+VITIS_LOOP_155_7.split_ifconv:104 %store_ln0 = store i8 %p_load, i8 %empty_51
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -2002,7 +2002,7 @@ cleanup.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="60" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:4 %specpipeline_ln150 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_5
+VITIS_LOOP_155_7.split_ifconv:4 %specpipeline_ln150 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_4
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln150"/></StgValue>
@@ -2032,7 +2032,7 @@ VITIS_LOOP_155_7.split_ifconv:5 %speclooptripcount_ln149 = speclooptripcount voi
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-VITIS_LOOP_155_7.split_ifconv:6 %specloopname_ln149 = specloopname void @_ssdm_op_SpecLoopName, void @empty_25
+VITIS_LOOP_155_7.split_ifconv:6 %specloopname_ln149 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln149"/></StgValue>

@@ -43,22 +43,16 @@
 <ID>188</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135</InstName>
-<ModuleName>gaussian_blur_Pipeline_VITIS_LOOP_63_2</ModuleName>
+<InstName>grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114</InstName>
+<ModuleName>gaussian_blur_Pipeline_VITIS_LOOP_94_2</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>135</ID>
+<ID>114</ID>
 </Instance>
 <Instance>
-<InstName>grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142</InstName>
-<ModuleName>gaussian_blur_Pipeline_VITIS_LOOP_82_4</ModuleName>
+<InstName>grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129</InstName>
+<ModuleName>gaussian_blur_Pipeline_VITIS_LOOP_157_7</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>142</ID>
-</Instance>
-<Instance>
-<InstName>grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156</InstName>
-<ModuleName>gaussian_blur_Pipeline_VITIS_LOOP_130_8</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>156</ID>
+<ID>129</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -7168,63 +7162,63 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>gaussian_blur_Pipeline_VITIS_LOOP_63_2</Name>
+<Name>gaussian_blur_Pipeline_VITIS_LOOP_94_2</Name>
 <Loops>
-<VITIS_LOOP_63_2></VITIS_LOOP_63_2>
+<VITIS_LOOP_94_2></VITIS_LOOP_94_2>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>2.987</EstimatedClockPeriod>
+<EstimatedClockPeriod>2.478</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>514</Best-caseLatency>
-<Average-caseLatency>514</Average-caseLatency>
-<Worst-caseLatency>514</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.570 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.570 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.570 us</Worst-caseRealTimeLatency>
+<Best-caseLatency>515</Best-caseLatency>
+<Average-caseLatency>515</Average-caseLatency>
+<Worst-caseLatency>515</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.575 us</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.575 us</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.575 us</Worst-caseRealTimeLatency>
 <PipelineInitiationInterval>513</PipelineInitiationInterval>
 <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_63_2>
-<Name>VITIS_LOOP_63_2</Name>
+<VITIS_LOOP_94_2>
+<Name>VITIS_LOOP_94_2</Name>
 <Slack>3.65</Slack>
 <TripCount>512</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>512</Latency>
-<AbsoluteTimeLatency>2.560 us</AbsoluteTimeLatency>
+<Latency>513</Latency>
+<AbsoluteTimeLatency>2.565 us</AbsoluteTimeLatency>
 <PipelineII>1</PipelineII>
-<PipelineDepth>2</PipelineDepth>
+<PipelineDepth>3</PipelineDepth>
 <PipelineType>yes</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_63_2>
+</VITIS_LOOP_94_2>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:63</SourceLocation>
+<SourceLocation>../src/gaussian_blur.cpp:94</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_63_2>
-<Name>VITIS_LOOP_63_2</Name>
+<VITIS_LOOP_94_2>
+<Name>VITIS_LOOP_94_2</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:63</SourceLocation>
-</VITIS_LOOP_63_2>
+<SourceLocation>../src/gaussian_blur.cpp:110</SourceLocation>
+</VITIS_LOOP_94_2>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<FF>23</FF>
+<FF>122</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>84</LUT>
+<LUT>309</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>~0</UTIL_LUT>
 <BRAM_18K>0</BRAM_18K>
@@ -7241,7 +7235,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_63_2</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_94_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7252,7 +7246,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_63_2</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_94_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7263,7 +7257,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_63_2</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_94_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7274,7 +7268,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_63_2</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_94_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7285,7 +7279,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_63_2</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_94_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7296,7 +7290,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_63_2</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_94_2</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7361,192 +7355,8 @@
 <Attribute>unknown</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>row_in_address0</name>
-<Object>row_in</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>9</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>row_in_ce0</name>
-<Object>row_in</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>row_in_we0</name>
-<Object>row_in</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>row_in_d0</name>
-<Object>row_in</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>8</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
-<Name>gaussian_blur_Pipeline_VITIS_LOOP_82_4</Name>
-<Loops>
-<VITIS_LOOP_82_4></VITIS_LOOP_82_4>
-</Loops>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>5.00</TargetClockPeriod>
-<ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.614</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>515</Best-caseLatency>
-<Average-caseLatency>515</Average-caseLatency>
-<Worst-caseLatency>515</Worst-caseLatency>
-<Best-caseRealTimeLatency>2.575 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.575 us</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>2.575 us</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>513</PipelineInitiationInterval>
-<PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
-<PerformancePragma>-</PerformancePragma>
-</SummaryOfOverallLatency>
-<SummaryOfLoopLatency>
-<VITIS_LOOP_82_4>
-<Name>VITIS_LOOP_82_4</Name>
-<Slack>3.65</Slack>
-<TripCount>512</TripCount>
-<isPerfectNested>0</isPerfectNested>
-<Latency>513</Latency>
-<AbsoluteTimeLatency>2.565 us</AbsoluteTimeLatency>
-<PipelineII>1</PipelineII>
-<PipelineDepth>3</PipelineDepth>
-<PipelineType>yes</PipelineType>
-<PerformancePragma>-</PerformancePragma>
-<InstanceList>
-</InstanceList>
-</VITIS_LOOP_82_4>
-</SummaryOfLoopLatency>
-<SummaryOfViolations>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:82</SourceLocation>
-<SummaryOfLoopViolations>
-<VITIS_LOOP_82_4>
-<Name>VITIS_LOOP_82_4</Name>
-<IssueType>-</IssueType>
-<ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:82</SourceLocation>
-</VITIS_LOOP_82_4>
-</SummaryOfLoopViolations>
-</SummaryOfViolations>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<FF>88</FF>
-<AVAIL_FF>234240</AVAIL_FF>
-<UTIL_FF>~0</UTIL_FF>
-<LUT>245</LUT>
-<AVAIL_LUT>117120</AVAIL_LUT>
-<UTIL_LUT>~0</UTIL_LUT>
-<BRAM_18K>0</BRAM_18K>
-<AVAIL_BRAM>288</AVAIL_BRAM>
-<UTIL_BRAM>0</UTIL_BRAM>
-<DSP>0</DSP>
-<AVAIL_DSP>1248</AVAIL_DSP>
-<UTIL_DSP>0</UTIL_DSP>
-<URAM>0</URAM>
-<AVAIL_URAM>64</AVAIL_URAM>
-<UTIL_URAM>0</UTIL_URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_82_4</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_82_4</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_82_4</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_82_4</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_82_4</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_82_4</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>row_in_load</name>
-<Object>row_in_load</Object>
+<name>sample2</name>
+<Object>sample2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7556,8 +7366,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>row_in_load_1</name>
-<Object>row_in_load_1</Object>
+<name>sample1</name>
+<Object>sample1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -7567,44 +7377,11 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>row_in_load_2</name>
-<Object>row_in_load_2</Object>
+<name>sample0</name>
+<Object>sample0</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>8</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>row_in_address0</name>
-<Object>row_in</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>9</Bits>
-<Attribute>address</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>row_in_ce0</name>
-<Object>row_in</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>row_in_q0</name>
-<Object>row_in</Object>
-<Type>array</Type>
-<Scope></Scope>
-<IOProtocol>ap_memory</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
 <Bits>8</Bits>
@@ -7844,9 +7621,9 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>gaussian_blur_Pipeline_VITIS_LOOP_130_8</Name>
+<Name>gaussian_blur_Pipeline_VITIS_LOOP_157_7</Name>
 <Loops>
-<VITIS_LOOP_130_8></VITIS_LOOP_130_8>
+<VITIS_LOOP_157_7></VITIS_LOOP_157_7>
 </Loops>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
@@ -7866,8 +7643,8 @@
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
-<VITIS_LOOP_130_8>
-<Name>VITIS_LOOP_130_8</Name>
+<VITIS_LOOP_157_7>
+<Name>VITIS_LOOP_157_7</Name>
 <Slack>3.65</Slack>
 <TripCount>512</TripCount>
 <isPerfectNested>0</isPerfectNested>
@@ -7879,19 +7656,19 @@
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
 </InstanceList>
-</VITIS_LOOP_130_8>
+</VITIS_LOOP_157_7>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:130</SourceLocation>
+<SourceLocation>../src/gaussian_blur.cpp:157</SourceLocation>
 <SummaryOfLoopViolations>
-<VITIS_LOOP_130_8>
-<Name>VITIS_LOOP_130_8</Name>
+<VITIS_LOOP_157_7>
+<Name>VITIS_LOOP_157_7</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:130</SourceLocation>
-</VITIS_LOOP_130_8>
+<SourceLocation>../src/gaussian_blur.cpp:157</SourceLocation>
+</VITIS_LOOP_157_7>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
@@ -7917,7 +7694,7 @@
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_130_8</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_157_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7928,7 +7705,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_130_8</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_157_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7939,7 +7716,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_130_8</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_157_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7950,7 +7727,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_130_8</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_157_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7961,7 +7738,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_130_8</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_157_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -7972,7 +7749,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>gaussian_blur_Pipeline_VITIS_LOOP_130_8</Object>
+<Object>gaussian_blur_Pipeline_VITIS_LOOP_157_7</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -8202,8 +7979,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>empty_46</name>
-<Object>empty_46</Object>
+<name>select_ln21</name>
+<Object>select_ln21</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8213,8 +7990,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>empty_47</name>
-<Object>empty_47</Object>
+<name>select_ln21_1</name>
+<Object>select_ln21_1</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8224,8 +8001,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>empty_48</name>
-<Object>empty_48</Object>
+<name>empty_45</name>
+<Object>empty_45</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8235,8 +8012,8 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>empty_49</name>
-<Object>empty_49</Object>
+<name>select_ln21_2</name>
+<Object>select_ln21_2</Object>
 <Type>scalar</Type>
 <Scope></Scope>
 <IOProtocol>ap_none</IOProtocol>
@@ -8267,16 +8044,16 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>5.00</TargetClockPeriod>
 <ClockUncertainty>1.35</ClockUncertainty>
-<EstimatedClockPeriod>3.614</EstimatedClockPeriod>
+<EstimatedClockPeriod>3.353</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>1543</Best-caseLatency>
-<Average-caseLatency>402977</Average-caseLatency>
-<Worst-caseLatency>803897</Worst-caseLatency>
+<Average-caseLatency>270879</Average-caseLatency>
+<Worst-caseLatency>539701</Worst-caseLatency>
 <Best-caseRealTimeLatency>7.715 us</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>2.015 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>4.019 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>1543 ~ 803897</PipelineInitiationInterval>
+<Average-caseRealTimeLatency>1.354 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.699 ms</Worst-caseRealTimeLatency>
+<PipelineInitiationInterval>1543 ~ 539701</PipelineInitiationInterval>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -8286,47 +8063,46 @@
 <Slack>3.65</Slack>
 <TripCount>514</TripCount>
 <isPerfectNested>0</isPerfectNested>
-<Latency>1542 ~ 803896</Latency>
-<AbsoluteTimeLatency>7.710 us ~ 4.019 ms</AbsoluteTimeLatency>
+<Latency>1542 ~ 539700</Latency>
+<AbsoluteTimeLatency>7.710 us ~ 2.699 ms</AbsoluteTimeLatency>
 <IterationLatency>
 <range>
 <min>3</min>
-<max>1564</max>
+<max>1050</max>
 </range>
 </IterationLatency>
-<PipelineDepth>3 ~ 1564</PipelineDepth>
+<PipelineDepth>3 ~ 1050</PipelineDepth>
 <PipelineType>no</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 <InstanceList>
-<Instance>grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135</Instance>
-<Instance>grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142</Instance>
-<Instance>grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156</Instance>
+<Instance>grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114</Instance>
+<Instance>grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129</Instance>
 </InstanceList>
 </VITIS_LOOP_59_1>
 </SummaryOfLoopLatency>
 <SummaryOfViolations>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:24~../src/gaussian_blur.cpp:125</SourceLocation>
+<SourceLocation>../src/gaussian_blur.cpp:24~../src/gaussian_blur.cpp:152</SourceLocation>
 <SummaryOfLoopViolations>
 <VITIS_LOOP_59_1>
 <Name>VITIS_LOOP_59_1</Name>
 <IssueType>-</IssueType>
 <ViolationType>-</ViolationType>
-<SourceLocation>../src/gaussian_blur.cpp:125</SourceLocation>
+<SourceLocation>../src/gaussian_blur.cpp:28~../src/gaussian_blur.cpp:152</SourceLocation>
 </VITIS_LOOP_59_1>
 </SummaryOfLoopViolations>
 </SummaryOfViolations>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>6</BRAM_18K>
+<BRAM_18K>5</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
-<UTIL_BRAM>2</UTIL_BRAM>
-<FF>859</FF>
+<UTIL_BRAM>1</UTIL_BRAM>
+<FF>820</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>~0</UTIL_FF>
-<LUT>1553</LUT>
+<LUT>1582</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>1</UTIL_LUT>
 <URAM>0</URAM>
@@ -16086,19 +15862,19 @@
 <EstimatedClockPeriod>3.650</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>802629</Best-caseLatency>
-<Average-caseLatency>802629</Average-caseLatency>
-<Worst-caseLatency>803979</Worst-caseLatency>
-<Best-caseRealTimeLatency>4.013 ms</Best-caseRealTimeLatency>
-<Average-caseRealTimeLatency>4.013 ms</Average-caseRealTimeLatency>
-<Worst-caseRealTimeLatency>4.020 ms</Worst-caseRealTimeLatency>
+<Best-caseLatency>547115</Best-caseLatency>
+<Average-caseLatency>547115</Average-caseLatency>
+<Worst-caseLatency>548071</Worst-caseLatency>
+<Best-caseRealTimeLatency>2.736 ms</Best-caseRealTimeLatency>
+<Average-caseRealTimeLatency>2.736 ms</Average-caseRealTimeLatency>
+<Worst-caseRealTimeLatency>2.740 ms</Worst-caseRealTimeLatency>
 <DataflowPipelineThroughput>
 <range>
 <min>332802</min>
-<max>803898</max>
+<max>547886</max>
 </range>
 </DataflowPipelineThroughput>
-<PipelineInitiationInterval>332802 ~ 803898</PipelineInitiationInterval>
+<PipelineInitiationInterval>332802 ~ 547886</PipelineInitiationInterval>
 <PipelineType>dataflow</PipelineType>
 <PerformancePragma>-</PerformancePragma>
 </SummaryOfOverallLatency>
@@ -16110,16 +15886,16 @@
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>81</BRAM_18K>
+<BRAM_18K>80</BRAM_18K>
 <AVAIL_BRAM>288</AVAIL_BRAM>
-<UTIL_BRAM>28</UTIL_BRAM>
+<UTIL_BRAM>27</UTIL_BRAM>
 <DSP>4</DSP>
 <AVAIL_DSP>1248</AVAIL_DSP>
 <UTIL_DSP>~0</UTIL_DSP>
-<FF>11544</FF>
+<FF>11505</FF>
 <AVAIL_FF>234240</AVAIL_FF>
 <UTIL_FF>4</UTIL_FF>
-<LUT>19285</LUT>
+<LUT>19314</LUT>
 <AVAIL_LUT>117120</AVAIL_LUT>
 <UTIL_LUT>16</UTIL_LUT>
 <URAM>0</URAM>

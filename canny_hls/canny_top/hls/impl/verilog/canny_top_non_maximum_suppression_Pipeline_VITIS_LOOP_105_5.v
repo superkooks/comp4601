@@ -256,7 +256,7 @@ end
     .def_WIDTH( 16 ),
     .sel_WIDTH( 4 ),
     .dout_WIDTH( 16 ))
-sparsemux_11_4_16_1_1_U176(
+sparsemux_11_4_16_1_1_U178(
     .din0(neighbourOne_4_fu_613_p2),
     .din1(neighbourOne_4_fu_613_p4),
     .din2(neighbourOne_4_fu_613_p6),
@@ -283,7 +283,7 @@ sparsemux_11_4_16_1_1_U176(
     .def_WIDTH( 16 ),
     .sel_WIDTH( 4 ),
     .dout_WIDTH( 16 ))
-sparsemux_11_4_16_1_1_U177(
+sparsemux_11_4_16_1_1_U179(
     .din0(neighbourTwo_4_fu_641_p2),
     .din1(neighbourTwo_4_fu_641_p4),
     .din2(neighbourTwo_4_fu_641_p6),
@@ -306,7 +306,7 @@ sparsemux_11_4_16_1_1_U177(
     .def_WIDTH( 16 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
-sparsemux_7_2_16_1_1_U178(
+sparsemux_7_2_16_1_1_U180(
     .din0(lineBuffer_magnitude_q0),
     .din1(lineBuffer_magnitude_1_q0),
     .din2(lineBuffer_magnitude_2_q0),
@@ -327,7 +327,7 @@ sparsemux_7_2_16_1_1_U178(
     .def_WIDTH( 16 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
-sparsemux_7_2_16_1_1_U179(
+sparsemux_7_2_16_1_1_U181(
     .din0(lineBuffer_magnitude_q0),
     .din1(lineBuffer_magnitude_1_q0),
     .din2(lineBuffer_magnitude_2_q0),
@@ -348,7 +348,7 @@ sparsemux_7_2_16_1_1_U179(
     .def_WIDTH( 16 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 16 ))
-sparsemux_7_2_16_1_1_U180(
+sparsemux_7_2_16_1_1_U182(
     .din0(lineBuffer_magnitude_q0),
     .din1(lineBuffer_magnitude_1_q0),
     .din2(lineBuffer_magnitude_2_q0),
@@ -369,7 +369,7 @@ sparsemux_7_2_16_1_1_U180(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U181(
+sparsemux_7_2_8_1_1_U183(
     .din0(lineBuffer_direction_q0),
     .din1(lineBuffer_direction_1_q0),
     .din2(lineBuffer_direction_2_q0),

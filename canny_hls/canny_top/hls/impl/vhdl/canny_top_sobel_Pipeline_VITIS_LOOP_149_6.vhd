@@ -117,17 +117,17 @@ attribute shreg_extract : string;
     signal ap_loop_init : STD_LOGIC;
     signal ap_sig_allocacmp_column : STD_LOGIC_VECTOR (9 downto 0);
     signal pixel_fu_118 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
-    signal empty_55_fu_122 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
-    signal empty_56_fu_126 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    signal empty_51_fu_122 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    signal empty_52_fu_126 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal tmp_s_fu_581_p9 : STD_LOGIC_VECTOR (7 downto 0);
     signal pixel_2_fu_130 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
-    signal empty_57_fu_134 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    signal empty_53_fu_134 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal pixel_1_fu_138 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal tmp_9_fu_562_p9 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_58_fu_142 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    signal empty_54_fu_142 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal pixel_3_fu_146 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal tmp_7_fu_600_p9 : STD_LOGIC_VECTOR (7 downto 0);
-    signal empty_59_fu_150 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
+    signal empty_55_fu_150 : STD_LOGIC_VECTOR (7 downto 0) := "00000000";
     signal ap_block_pp0_stage0_01001_grp1 : BOOLEAN;
     signal lineBuffer_ce0_local : STD_LOGIC;
     signal lineBuffer_1_ce0_local : STD_LOGIC;
@@ -346,7 +346,7 @@ attribute shreg_extract : string;
 
 
 begin
-    sparsemux_7_2_8_1_1_U132 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U133 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -367,7 +367,7 @@ begin
         sel => select_ln23,
         dout => tmp_9_fu_562_p9);
 
-    sparsemux_7_2_8_1_1_U133 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U134 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -388,7 +388,7 @@ begin
         sel => empty,
         dout => tmp_s_fu_581_p9);
 
-    sparsemux_7_2_8_1_1_U134 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U135 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -409,7 +409,7 @@ begin
         sel => select_ln23_1,
         dout => tmp_7_fu_600_p9);
 
-    mul_10ns_11ns_20_1_1_U135 : component canny_top_mul_10ns_11ns_20_1_1
+    mul_10ns_11ns_20_1_1_U136 : component canny_top_mul_10ns_11ns_20_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -421,7 +421,7 @@ begin
         din1 => mul_ln42_fu_715_p1,
         dout => mul_ln42_fu_715_p2);
 
-    mul_10ns_10ns_19_1_1_U136 : component canny_top_mul_10ns_10ns_19_1_1
+    mul_10ns_10ns_19_1_1_U137 : component canny_top_mul_10ns_10ns_19_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -433,7 +433,7 @@ begin
         din1 => mul_ln42_1_fu_729_p1,
         dout => mul_ln42_1_fu_729_p2);
 
-    mul_10ns_13ns_22_1_1_U137 : component canny_top_mul_10ns_13ns_22_1_1
+    mul_10ns_13ns_22_1_1_U138 : component canny_top_mul_10ns_13ns_22_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -445,7 +445,7 @@ begin
         din1 => mul_ln46_fu_745_p1,
         dout => mul_ln46_fu_745_p2);
 
-    sparsemux_9_3_2_1_1_U138 : component canny_top_sparsemux_9_3_2_1_1
+    sparsemux_9_3_2_1_1_U139 : component canny_top_sparsemux_9_3_2_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -573,66 +573,66 @@ begin
         end if;
     end process;
 
-    empty_55_fu_122_assign_proc : process (ap_clk)
+    empty_51_fu_122_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 if ((ap_loop_init = ap_const_logic_1)) then 
-                    empty_55_fu_122 <= tmp_2;
+                    empty_51_fu_122 <= tmp_2;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (icmp_ln149_reg_982 = ap_const_lv1_0))) then 
-                    empty_55_fu_122 <= empty_59_fu_150;
+                    empty_51_fu_122 <= empty_55_fu_150;
                 end if;
             end if; 
         end if;
     end process;
 
-    empty_56_fu_126_assign_proc : process (ap_clk)
+    empty_52_fu_126_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 if ((ap_loop_init = ap_const_logic_1)) then 
-                    empty_56_fu_126 <= tmp_5;
+                    empty_52_fu_126 <= tmp_5;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (icmp_ln149_reg_982 = ap_const_lv1_0))) then 
-                    empty_56_fu_126 <= tmp_s_fu_581_p9;
+                    empty_52_fu_126 <= tmp_s_fu_581_p9;
                 end if;
             end if; 
         end if;
     end process;
 
-    empty_57_fu_134_assign_proc : process (ap_clk)
+    empty_53_fu_134_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 if ((ap_loop_init = ap_const_logic_1)) then 
-                    empty_57_fu_134 <= tmp_1;
+                    empty_53_fu_134 <= tmp_1;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (icmp_ln149_reg_982 = ap_const_lv1_0))) then 
-                    empty_57_fu_134 <= pixel_1_fu_138;
+                    empty_53_fu_134 <= pixel_1_fu_138;
                 end if;
             end if; 
         end if;
     end process;
 
-    empty_58_fu_142_assign_proc : process (ap_clk)
+    empty_54_fu_142_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 if ((ap_loop_init = ap_const_logic_1)) then 
-                    empty_58_fu_142 <= tmp_3;
+                    empty_54_fu_142 <= tmp_3;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (icmp_ln149_reg_982 = ap_const_lv1_0))) then 
-                    empty_58_fu_142 <= pixel_3_fu_146;
+                    empty_54_fu_142 <= pixel_3_fu_146;
                 end if;
             end if; 
         end if;
     end process;
 
-    empty_59_fu_150_assign_proc : process (ap_clk)
+    empty_55_fu_150_assign_proc : process (ap_clk)
     begin
         if (ap_clk'event and ap_clk = '1') then
             if (((ap_const_boolean_0 = ap_block_pp0_stage0_11001) and (ap_const_logic_1 = ap_CS_fsm_pp0_stage0))) then
                 if ((ap_loop_init = ap_const_logic_1)) then 
-                    empty_59_fu_150 <= tmp_2;
+                    empty_55_fu_150 <= tmp_2;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (icmp_ln149_reg_982 = ap_const_lv1_0))) then 
-                    empty_59_fu_150 <= empty_56_fu_126;
+                    empty_55_fu_150 <= empty_52_fu_126;
                 end if;
             end if; 
         end if;
@@ -658,7 +658,7 @@ begin
                 if ((ap_loop_init = ap_const_logic_1)) then 
                     pixel_2_fu_130 <= tmp_3;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (icmp_ln149_reg_982 = ap_const_lv1_0))) then 
-                    pixel_2_fu_130 <= empty_58_fu_142;
+                    pixel_2_fu_130 <= empty_54_fu_142;
                 end if;
             end if; 
         end if;
@@ -684,7 +684,7 @@ begin
                 if ((ap_loop_init = ap_const_logic_1)) then 
                     pixel_fu_118 <= tmp_1;
                 elsif (((ap_enable_reg_pp0_iter1 = ap_const_logic_1) and (icmp_ln149_reg_982 = ap_const_lv1_0))) then 
-                    pixel_fu_118 <= empty_57_fu_134;
+                    pixel_fu_118 <= empty_53_fu_134;
                 end if;
             end if; 
         end if;
@@ -912,8 +912,8 @@ begin
     or_ln38_fu_704_p2 <= (absoluteY_fu_681_p3 or absoluteX_reg_1019);
     or_ln42_fu_785_p2 <= (xor_ln42_fu_780_p2 or icmp_ln38_reg_1037);
     or_ln51_fu_764_p2 <= (gradientY_reg_1012_pp0_iter2_reg or gradientX_reg_1001_pp0_iter2_reg);
-    p_cast8_fu_400_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_55_fu_122),9));
-    p_cast9_fu_430_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_58_fu_142),9));
+    p_cast8_fu_400_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_51_fu_122),9));
+    p_cast9_fu_430_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_54_fu_142),9));
     result_direction_fu_860_p10 <= ((or_ln42_fu_785_p2 & and_ln46_fu_805_p2) & and_ln52_3_fu_844_p2);
     result_direction_fu_860_p9 <= "XX";
     result_magnitude_fu_698_p2 <= std_logic_vector(unsigned(zext_ln180_2_fu_694_p1) + unsigned(zext_ln180_1_fu_691_p1));
@@ -983,8 +983,8 @@ begin
     zext_ln165_3_fu_452_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(pixel_3_fu_146),9));
     zext_ln165_4_fu_384_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(pixel_fu_118),11));
     zext_ln165_fu_388_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(pixel_fu_118),10));
-    zext_ln166_1_fu_404_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_56_fu_126),9));
-    zext_ln166_fu_392_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_57_fu_134),9));
+    zext_ln166_1_fu_404_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_52_fu_126),9));
+    zext_ln166_fu_392_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(empty_53_fu_134),9));
     zext_ln172_fu_502_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(add_ln172_fu_496_p2),10));
     zext_ln179_fu_761_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(result_magnitude_reg_1032),16));
     zext_ln180_1_fu_691_p1 <= std_logic_vector(IEEE.numeric_std.resize(unsigned(absoluteX_reg_1019),11));

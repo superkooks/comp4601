@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'gaussian_blur'" level="0">
-<item name = "Date">Sat Aug  1 12:52:06 2026
+<item name = "Date">Sat Aug  1 15:48:51 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.614 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.353 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,21 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1543, 803897, 7.715 us, 4.019 ms, 1543, 803897, no</column>
+<column name="">1543, 539701, 7.715 us, 2.699 ms, 1543, 539701, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135">gaussian_blur_Pipeline_VITIS_LOOP_63_2, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142">gaussian_blur_Pipeline_VITIS_LOOP_82_4, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
-<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156">gaussian_blur_Pipeline_VITIS_LOOP_130_8, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114">gaussian_blur_Pipeline_VITIS_LOOP_94_2, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
+<column name="grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129">gaussian_blur_Pipeline_VITIS_LOOP_157_7, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- VITIS_LOOP_59_1">1542, 803896, 3 ~ 1564, -, -, 514, no</column>
+<column name="- VITIS_LOOP_59_1">1542, 539700, 3 ~ 1050, -, -, 514, no</column>
 </table>
 </item>
 </section>

@@ -119,17 +119,17 @@ wire   [9:0] column_2_fu_313_p2;
 wire    ap_loop_init;
 reg   [9:0] ap_sig_allocacmp_column;
 reg   [7:0] pixel_fu_118;
-reg   [7:0] empty_55_fu_122;
-reg   [7:0] empty_56_fu_126;
+reg   [7:0] empty_51_fu_122;
+reg   [7:0] empty_52_fu_126;
 wire   [7:0] tmp_s_fu_581_p9;
 reg   [7:0] pixel_2_fu_130;
-reg   [7:0] empty_57_fu_134;
+reg   [7:0] empty_53_fu_134;
 reg   [7:0] pixel_1_fu_138;
 wire   [7:0] tmp_9_fu_562_p9;
-reg   [7:0] empty_58_fu_142;
+reg   [7:0] empty_54_fu_142;
 reg   [7:0] pixel_3_fu_146;
 wire   [7:0] tmp_7_fu_600_p9;
-reg   [7:0] empty_59_fu_150;
+reg   [7:0] empty_55_fu_150;
 reg    ap_block_pp0_stage0_01001_grp1;
 reg    lineBuffer_ce0_local;
 reg    lineBuffer_1_ce0_local;
@@ -246,14 +246,14 @@ initial begin
 #0 ap_enable_reg_pp0_iter3 = 1'b0;
 #0 column_1_fu_114 = 10'd0;
 #0 pixel_fu_118 = 8'd0;
-#0 empty_55_fu_122 = 8'd0;
-#0 empty_56_fu_126 = 8'd0;
+#0 empty_51_fu_122 = 8'd0;
+#0 empty_52_fu_126 = 8'd0;
 #0 pixel_2_fu_130 = 8'd0;
-#0 empty_57_fu_134 = 8'd0;
+#0 empty_53_fu_134 = 8'd0;
 #0 pixel_1_fu_138 = 8'd0;
-#0 empty_58_fu_142 = 8'd0;
+#0 empty_54_fu_142 = 8'd0;
 #0 pixel_3_fu_146 = 8'd0;
-#0 empty_59_fu_150 = 8'd0;
+#0 empty_55_fu_150 = 8'd0;
 #0 ap_done_reg = 1'b0;
 end
 
@@ -269,7 +269,7 @@ end
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U132(
+sparsemux_7_2_8_1_1_U133(
     .din0(lineBuffer_q0),
     .din1(lineBuffer_1_q0),
     .din2(lineBuffer_2_q0),
@@ -290,7 +290,7 @@ sparsemux_7_2_8_1_1_U132(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U133(
+sparsemux_7_2_8_1_1_U134(
     .din0(lineBuffer_q0),
     .din1(lineBuffer_1_q0),
     .din2(lineBuffer_2_q0),
@@ -311,7 +311,7 @@ sparsemux_7_2_8_1_1_U133(
     .def_WIDTH( 8 ),
     .sel_WIDTH( 2 ),
     .dout_WIDTH( 8 ))
-sparsemux_7_2_8_1_1_U134(
+sparsemux_7_2_8_1_1_U135(
     .din0(lineBuffer_q0),
     .din1(lineBuffer_1_q0),
     .din2(lineBuffer_2_q0),
@@ -326,7 +326,7 @@ canny_top_mul_10ns_11ns_20_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 11 ),
     .dout_WIDTH( 20 ))
-mul_10ns_11ns_20_1_1_U135(
+mul_10ns_11ns_20_1_1_U136(
     .din0(mul_ln42_fu_715_p0),
     .din1(mul_ln42_fu_715_p1),
     .dout(mul_ln42_fu_715_p2)
@@ -338,7 +338,7 @@ canny_top_mul_10ns_10ns_19_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 10 ),
     .dout_WIDTH( 19 ))
-mul_10ns_10ns_19_1_1_U136(
+mul_10ns_10ns_19_1_1_U137(
     .din0(mul_ln42_1_fu_729_p0),
     .din1(mul_ln42_1_fu_729_p1),
     .dout(mul_ln42_1_fu_729_p2)
@@ -350,7 +350,7 @@ canny_top_mul_10ns_13ns_22_1_1 #(
     .din0_WIDTH( 10 ),
     .din1_WIDTH( 13 ),
     .dout_WIDTH( 22 ))
-mul_10ns_13ns_22_1_1_U137(
+mul_10ns_13ns_22_1_1_U138(
     .din0(mul_ln46_fu_745_p0),
     .din1(mul_ln46_fu_745_p1),
     .dout(mul_ln46_fu_745_p2)
@@ -370,7 +370,7 @@ mul_10ns_13ns_22_1_1_U137(
     .def_WIDTH( 2 ),
     .sel_WIDTH( 3 ),
     .dout_WIDTH( 2 ))
-sparsemux_9_3_2_1_1_U138(
+sparsemux_9_3_2_1_1_U139(
     .din0(2'd0),
     .din1(2'd2),
     .din2(2'd3),
@@ -460,9 +460,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_55_fu_122 <= tmp_2;
+            empty_51_fu_122 <= tmp_2;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln149_reg_982 == 1'd0))) begin
-            empty_55_fu_122 <= empty_59_fu_150;
+            empty_51_fu_122 <= empty_55_fu_150;
         end
     end
 end
@@ -470,9 +470,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_56_fu_126 <= tmp_5;
+            empty_52_fu_126 <= tmp_5;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln149_reg_982 == 1'd0))) begin
-            empty_56_fu_126 <= tmp_s_fu_581_p9;
+            empty_52_fu_126 <= tmp_s_fu_581_p9;
         end
     end
 end
@@ -480,9 +480,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_57_fu_134 <= tmp_1;
+            empty_53_fu_134 <= tmp_1;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln149_reg_982 == 1'd0))) begin
-            empty_57_fu_134 <= pixel_1_fu_138;
+            empty_53_fu_134 <= pixel_1_fu_138;
         end
     end
 end
@@ -490,9 +490,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_58_fu_142 <= tmp_3;
+            empty_54_fu_142 <= tmp_3;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln149_reg_982 == 1'd0))) begin
-            empty_58_fu_142 <= pixel_3_fu_146;
+            empty_54_fu_142 <= pixel_3_fu_146;
         end
     end
 end
@@ -500,9 +500,9 @@ end
 always @ (posedge ap_clk) begin
     if (((1'b0 == ap_block_pp0_stage0_11001) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
         if ((ap_loop_init == 1'b1)) begin
-            empty_59_fu_150 <= tmp_2;
+            empty_55_fu_150 <= tmp_2;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln149_reg_982 == 1'd0))) begin
-            empty_59_fu_150 <= empty_56_fu_126;
+            empty_55_fu_150 <= empty_52_fu_126;
         end
     end
 end
@@ -522,7 +522,7 @@ always @ (posedge ap_clk) begin
         if ((ap_loop_init == 1'b1)) begin
             pixel_2_fu_130 <= tmp_3;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln149_reg_982 == 1'd0))) begin
-            pixel_2_fu_130 <= empty_58_fu_142;
+            pixel_2_fu_130 <= empty_54_fu_142;
         end
     end
 end
@@ -542,7 +542,7 @@ always @ (posedge ap_clk) begin
         if ((ap_loop_init == 1'b1)) begin
             pixel_fu_118 <= tmp_1;
         end else if (((ap_enable_reg_pp0_iter1 == 1'b1) & (icmp_ln149_reg_982 == 1'd0))) begin
-            pixel_fu_118 <= empty_57_fu_134;
+            pixel_fu_118 <= empty_53_fu_134;
         end
     end
 end
@@ -795,9 +795,9 @@ assign or_ln42_fu_785_p2 = (xor_ln42_fu_780_p2 | icmp_ln38_reg_1037);
 
 assign or_ln51_fu_764_p2 = (gradientY_reg_1012_pp0_iter2_reg | gradientX_reg_1001_pp0_iter2_reg);
 
-assign p_cast8_fu_400_p1 = empty_55_fu_122;
+assign p_cast8_fu_400_p1 = empty_51_fu_122;
 
-assign p_cast9_fu_430_p1 = empty_58_fu_142;
+assign p_cast9_fu_430_p1 = empty_54_fu_142;
 
 assign result_direction_fu_860_p10 = {{{or_ln42_fu_785_p2}, {and_ln46_fu_805_p2}}, {and_ln52_3_fu_844_p2}};
 
@@ -879,9 +879,9 @@ assign zext_ln165_4_fu_384_p1 = pixel_fu_118;
 
 assign zext_ln165_fu_388_p1 = pixel_fu_118;
 
-assign zext_ln166_1_fu_404_p1 = empty_56_fu_126;
+assign zext_ln166_1_fu_404_p1 = empty_52_fu_126;
 
-assign zext_ln166_fu_392_p1 = empty_57_fu_134;
+assign zext_ln166_fu_392_p1 = empty_53_fu_134;
 
 assign zext_ln172_fu_502_p1 = add_ln172_fu_496_p2;
 

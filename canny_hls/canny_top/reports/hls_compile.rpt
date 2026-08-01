@@ -4,7 +4,7 @@
 == Synthesis Summary Report of 'canny_top'
 ================================================================
 + General Information: 
-    * Date:           Sat Aug  1 12:52:08 2026
+    * Date:           Sat Aug  1 15:48:53 2026
     * Version:        2025.2 (Build 6295257 on Nov 14 2025)
     * Project:        canny_top
     * Solution:       hls (Vitis Kernel Flow Target)
@@ -17,7 +17,7 @@
 |                         Modules                        | Issue|               | Iteration|         |  Trip  |          |       Latency       |      |          |         |            |             |     |
 |                         & Loops                        | Type | Violation Type|  Latency | Interval|  Count | Pipelined| (cycles)|    (ns)   | Slack|   BRAM   |   DSP   |     FF     |     LUT     | URAM|
 +--------------------------------------------------------+------+---------------+----------+---------+--------+----------+---------+-----------+------+----------+---------+------------+-------------+-----+
-|+ canny_top*                                            |     -|              -|         -|   803898|       -|  dataflow|   803979|  4.020e+06|  0.00|  81 (28%)|  4 (~0%)|  11544 (4%)|  19285 (16%)|    -|
+|+ canny_top*                                            |     -|              -|         -|   547886|       -|  dataflow|   548071|  2.740e+06|  0.00|  80 (27%)|  4 (~0%)|  11505 (4%)|  19314 (16%)|    -|
 | + entry_proc                                           |     -|              -|         -|        0|       -|        no|        0|      0.000|  1.82|         -|        -|     3 (~0%)|     29 (~0%)|    -|
 | + grayscale                                            |     -|              -|         -|   332801|       -|        no|   332801|  1.664e+06|  0.00|   15 (5%)|  2 (~0%)|  1427 (~0%)|    4560 (3%)|    -|
 |  o VITIS_LOOP_7_1                                      |     -|              -|       650|        -|     512|        no|   332800|  1.664e+06|  3.65|         -|        -|           -|            -|    -|
@@ -27,14 +27,12 @@
 |    o unpack_bytes                                      |     -|              -|         2|        1|      24|       yes|       24|    120.000|  3.65|         -|        -|           -|            -|    -|
 |   + grayscale_Pipeline_unpack_pixels                   |     -|              -|         -|        -|       -|       yes|      519|  2.595e+03|  1.19|         -|  2 (~0%)|   153 (~0%)|   1102 (~0%)|    -|
 |    o unpack_pixels                                     |     -|              -|         7|        1|     512|       yes|      517|  2.585e+03|  3.65|         -|        -|           -|            -|    -|
-| + gaussian_blur                                        |     -|              -|         -|   803897|       -|        no|   803897|  4.019e+06|  0.04|    6 (2%)|        -|   859 (~0%)|    1553 (1%)|    -|
-|  o VITIS_LOOP_59_1                                     |     -|              -|      1564|        -|     514|        no|   803896|  4.019e+06|  3.65|         -|        -|           -|            -|    -|
-|   + gaussian_blur_Pipeline_VITIS_LOOP_63_2             |     -|              -|         -|        -|       -|       yes|      514|  2.570e+03|  0.66|         -|        -|    23 (~0%)|     84 (~0%)|    -|
-|    o VITIS_LOOP_63_2                                   |     -|              -|         2|        1|     512|       yes|      512|  2.560e+03|  3.65|         -|        -|           -|            -|    -|
-|   + gaussian_blur_Pipeline_VITIS_LOOP_82_4             |     -|              -|         -|        -|       -|       yes|      515|  2.575e+03|  0.04|         -|        -|    88 (~0%)|    245 (~0%)|    -|
-|    o VITIS_LOOP_82_4                                   |     -|              -|         3|        1|     512|       yes|      513|  2.565e+03|  3.65|         -|        -|           -|            -|    -|
-|   + gaussian_blur_Pipeline_VITIS_LOOP_130_8            |     -|              -|         -|        -|       -|       yes|      515|  2.575e+03|  0.30|         -|        -|    43 (~0%)|    309 (~0%)|    -|
-|    o VITIS_LOOP_130_8                                  |     -|              -|         3|        1|     512|       yes|      513|  2.565e+03|  3.65|         -|        -|           -|            -|    -|
+| + gaussian_blur                                        |     -|              -|         -|   539701|       -|        no|   539701|  2.699e+06|  0.30|    5 (1%)|        -|   820 (~0%)|    1582 (1%)|    -|
+|  o VITIS_LOOP_59_1                                     |     -|              -|      1050|        -|     514|        no|   539700|  2.698e+06|  3.65|         -|        -|           -|            -|    -|
+|   + gaussian_blur_Pipeline_VITIS_LOOP_94_2             |     -|              -|         -|        -|       -|       yes|      515|  2.575e+03|  1.17|         -|        -|   122 (~0%)|    309 (~0%)|    -|
+|    o VITIS_LOOP_94_2                                   |     -|              -|         3|        1|     512|       yes|      513|  2.565e+03|  3.65|         -|        -|           -|            -|    -|
+|   + gaussian_blur_Pipeline_VITIS_LOOP_157_7            |     -|              -|         -|        -|       -|       yes|      515|  2.575e+03|  0.30|         -|        -|    43 (~0%)|    309 (~0%)|    -|
+|    o VITIS_LOOP_157_7                                  |     -|              -|         3|        1|     512|       yes|      513|  2.565e+03|  3.65|         -|        -|           -|            -|    -|
 | + sobel                                                |     -|              -|         -|   547885|       -|        no|   547885|  2.739e+06|  0.00|    3 (1%)|  2 (~0%)|   785 (~0%)|    1564 (1%)|    -|
 |  o VITIS_LOOP_92_1                                     |     -|              -|      1068|        -|     513|        no|   547884|  2.739e+06|  3.65|         -|        -|           -|            -|    -|
 |   + sobel_Pipeline_VITIS_LOOP_96_2                     |     -|              -|         -|        -|       -|       yes|      514|  2.570e+03|  0.66|         -|        -|    23 (~0%)|     84 (~0%)|    -|
@@ -209,68 +207,73 @@
 |     mac_muladd_8ns_5ns_15s_15_4_1_U42                 | 1   |        | add_ln42         | add       | dsp_slice                | 3       |
 |     mac_muladd_8ns_8ns_15ns_16_4_1_U43                | 1   |        | gray             | add       | dsp_slice                | 3       |
 |  + gaussian_blur                                      | 0   |        |                  |           |                          |         |
-|    icmp_ln59_fu_188_p2                                |     |        | icmp_ln59        | seteq     | auto                     | 0       |
-|    rowsReceived_fu_194_p2                             |     |        | rowsReceived     | add       | fabric                   | 0       |
-|    outputRow_fu_217_p2                                |     |        | outputRow        | add       | fabric                   | 0       |
-|    add_ln125_fu_230_p2                                |     |        | add_ln125        | add       | fabric                   | 0       |
-|    sub_ln26_fu_239_p2                                 |     |        | sub_ln26         | sub       | fabric                   | 0       |
-|    grp_fu_261_p0                                      |     |        | value_assign     | select    | auto_sel                 | 0       |
-|    urem_9ns_4ns_3_13_seq_1_U117                       |     |        | urem_ln20        | urem      | auto_seq                 | 12      |
-|    add_ln125_1_fu_267_p2                              |     |        | add_ln125_1      | add       | fabric                   | 0       |
-|    sub_ln26_1_fu_276_p2                               |     |        | sub_ln26_1       | sub       | fabric                   | 0       |
-|    grp_fu_298_p0                                      |     |        | value_assign_13  | select    | auto_sel                 | 0       |
-|    urem_9ns_4ns_3_13_seq_1_U118                       |     |        | urem_ln20_1      | urem      | auto_seq                 | 12      |
-|    urem_9ns_4ns_3_13_seq_1_U119                       |     |        | urem_ln20_2      | urem      | auto_seq                 | 12      |
-|    add_ln125_2_fu_314_p2                              |     |        | add_ln125_2      | add       | fabric                   | 0       |
-|    sub_ln26_2_fu_323_p2                               |     |        | sub_ln26_2       | sub       | fabric                   | 0       |
-|    icmp_ln27_fu_347_p2                                |     |        | icmp_ln27        | seteq     | auto                     | 0       |
-|    sub_ln28_fu_353_p2                                 |     |        | sub_ln28         | sub       | fabric                   | 0       |
-|    select_ln27_fu_359_p3                              |     |        | select_ln27      | select    | auto_sel                 | 0       |
-|    grp_fu_375_p0                                      |     |        | value_assign_15  | select    | auto_sel                 | 0       |
-|    urem_9ns_4ns_3_13_seq_1_U120                       |     |        | urem_ln20_3      | urem      | auto_seq                 | 12      |
-|    sub_ln28_2_fu_384_p2                               |     |        | sub_ln28_2       | sub       | fabric                   | 0       |
-|    grp_fu_397_p0                                      |     |        | select_ln27_1    | select    | auto_sel                 | 0       |
-|    urem_9ns_4ns_3_13_seq_1_U121                       |     |        | urem_ln20_4      | urem      | auto_seq                 | 12      |
-|    add_ln57_fu_428_p2                                 |     |        | add_ln57         | add       | fabric                   | 0       |
-|    icmp_ln57_fu_434_p2                                |     |        | icmp_ln57        | seteq     | auto                     | 0       |
-|    select_ln57_fu_440_p3                              |     |        | select_ln57      | select    | auto_sel                 | 0       |
-|   + gaussian_blur_Pipeline_VITIS_LOOP_63_2            | 0   |        |                  |           |                          |         |
-|     icmp_ln63_fu_68_p2                                |     |        | icmp_ln63        | seteq     | auto                     | 0       |
-|     add_ln63_fu_74_p2                                 |     |        | add_ln63         | add       | fabric                   | 0       |
-|   + gaussian_blur_Pipeline_VITIS_LOOP_82_4            | 0   |        |                  |           |                          |         |
-|     icmp_ln82_fu_235_p2                               |     |        | icmp_ln82        | seteq     | auto                     | 0       |
-|     add_ln82_fu_241_p2                                |     |        | add_ln82         | add       | fabric                   | 0       |
-|     tmp4_fu_366_p2                                    |     |        | tmp4             | add       | fabric                   | 0       |
-|     add_ln89_fu_384_p2                                |     |        | add_ln89         | add       | fabric                   | 0       |
-|     add_ln89_2_fu_404_p2                              |     |        | add_ln89_2       | add       | fabric                   | 0       |
-|     add_ln102_fu_267_p2                               |     |        | add_ln102        | add       | fabric                   | 0       |
-|     sub_ln28_fu_285_p2                                |     |        | sub_ln28         | sub       | fabric                   | 0       |
-|     select_ln27_fu_291_p3                             |     |        | select_ln27      | select    | auto_sel                 | 0       |
-|   + gaussian_blur_Pipeline_VITIS_LOOP_130_8           | 0   |        |                  |           |                          |         |
-|     icmp_ln130_fu_200_p2                              |     |        | icmp_ln130       | seteq     | auto                     | 0       |
-|     add_ln130_fu_206_p2                               |     |        | add_ln130        | add       | fabric                   | 0       |
+|    icmp_ln59_fu_169_p2                                |     |        | icmp_ln59        | seteq     | auto                     | 0       |
+|    rowsReceived_fu_175_p2                             |     |        | rowsReceived     | add       | fabric                   | 0       |
+|    outputRow_fu_202_p2                                |     |        | outputRow        | add       | fabric                   | 0       |
+|    add_ln152_fu_215_p2                                |     |        | add_ln152        | add       | fabric                   | 0       |
+|    sub_ln26_fu_228_p2                                 |     |        | sub_ln26         | sub       | fabric                   | 0       |
+|    grp_fu_241_p0                                      |     |        | select_ln25      | select    | auto_sel                 | 0       |
+|    srem_10ns_4ns_10_14_seq_1_U118                     |     |        | result           | srem      | auto_seq                 | 13      |
+|    add_ln21_fu_381_p2                                 |     |        | add_ln21         | add       | fabric                   | 0       |
+|    select_ln21_fu_387_p3                              |     |        | select_ln21      | select    | auto_sel                 | 0       |
+|    add_ln152_1_fu_247_p2                              |     |        | add_ln152_1      | add       | fabric                   | 0       |
+|    sub_ln26_1_fu_260_p2                               |     |        | sub_ln26_1       | sub       | fabric                   | 0       |
+|    grp_fu_273_p0                                      |     |        | select_ln25_1    | select    | auto_sel                 | 0       |
+|    srem_10ns_4ns_10_14_seq_1_U119                     |     |        | result_1         | srem      | auto_seq                 | 13      |
+|    add_ln21_1_fu_407_p2                               |     |        | add_ln21_1       | add       | fabric                   | 0       |
+|    select_ln21_1_fu_413_p3                            |     |        | select_ln21_1    | select    | auto_sel                 | 0       |
+|    add_ln152_2_fu_279_p2                              |     |        | add_ln152_2      | add       | fabric                   | 0       |
+|    sub_ln26_2_fu_296_p2                               |     |        | sub_ln26_2       | sub       | fabric                   | 0       |
+|    icmp_ln27_fu_315_p2                                |     |        | icmp_ln27        | seteq     | auto                     | 0       |
+|    xor_ln28_fu_321_p2                                 |     |        | xor_ln28         | xor       | auto                     | 0       |
+|    select_ln27_fu_326_p3                              |     |        | select_ln27      | select    | auto_sel                 | 0       |
+|    grp_fu_346_p0                                      |     |        | value_assign_15  | select    | auto_sel                 | 0       |
+|    srem_11ns_4ns_11_15_seq_1_U120                     |     |        | result_2         | srem      | auto_seq                 | 14      |
+|    add_ln21_2_fu_438_p2                               |     |        | add_ln21_2       | add       | fabric                   | 0       |
+|    select_ln21_2_fu_444_p3                            |     |        | select_ln21_2    | select    | auto_sel                 | 0       |
+|    sub_ln28_fu_352_p2                                 |     |        | sub_ln28         | sub       | fabric                   | 0       |
+|    grp_fu_363_p0                                      |     |        | select_ln27_1    | select    | auto_sel                 | 0       |
+|    urem_9ns_4ns_3_13_seq_1_U121                       |     |        | result_3         | urem      | auto_seq                 | 12      |
+|    add_ln57_fu_457_p2                                 |     |        | add_ln57         | add       | fabric                   | 0       |
+|    icmp_ln57_fu_463_p2                                |     |        | icmp_ln57        | seteq     | auto                     | 0       |
+|    select_ln57_fu_469_p3                              |     |        | select_ln57      | select    | auto_sel                 | 0       |
+|    add_ln57_1_fu_477_p2                               |     |        | add_ln57_1       | add       | fabric                   | 0       |
+|    icmp_ln57_1_fu_483_p2                              |     |        | icmp_ln57_1      | seteq     | auto                     | 0       |
+|    select_ln57_1_fu_489_p3                            |     |        | select_ln57_1    | select    | auto_sel                 | 0       |
+|   + gaussian_blur_Pipeline_VITIS_LOOP_94_2            | 0   |        |                  |           |                          |         |
+|     icmp_ln94_fu_288_p2                               |     |        | icmp_ln94        | seteq     | auto                     | 0       |
+|     add_ln94_fu_294_p2                                |     |        | add_ln94         | add       | fabric                   | 0       |
+|     tmp4_fu_391_p2                                    |     |        | tmp4             | add       | fabric                   | 0       |
+|     add_ln101_fu_409_p2                               |     |        | add_ln101        | add       | fabric                   | 0       |
+|     add_ln101_2_fu_429_p2                             |     |        | add_ln101_2      | add       | fabric                   | 0       |
+|     add_ln110_fu_312_p2                               |     |        | add_ln110        | add       | fabric                   | 0       |
+|     nextSample_fu_473_p10                             |     |        | xor_ln121        | xor       | auto                     | 0       |
+|     sparsemux_9_2_8_1_1_U88                           |     |        | nextSample       | sparsemux | compactencoding_dontcare | 0       |
+|   + gaussian_blur_Pipeline_VITIS_LOOP_157_7           | 0   |        |                  |           |                          |         |
+|     icmp_ln157_fu_200_p2                              |     |        | icmp_ln157       | seteq     | auto                     | 0       |
+|     add_ln157_fu_206_p2                               |     |        | add_ln157        | add       | fabric                   | 0       |
 |     sparsemux_11_3_12_1_1_U100                        |     |        | sum_1            | sparsemux | compactencoding_dontcare | 0       |
 |     sparsemux_11_3_12_1_1_U101                        |     |        | tmp_s            | sparsemux | compactencoding_dontcare | 0       |
 |     sparsemux_11_3_12_1_1_U102                        |     |        | tmp_102          | sparsemux | compactencoding_dontcare | 0       |
 |     sparsemux_11_3_12_1_1_U103                        |     |        | tmp_103          | sparsemux | compactencoding_dontcare | 0       |
 |     sparsemux_11_3_12_1_1_U104                        |     |        | tmp_104          | sparsemux | compactencoding_dontcare | 0       |
 |     tmp26_fu_403_p2                                   |     |        | tmp26            | add       | fabric                   | 0       |
-|     add_ln150_fu_409_p2                               |     |        | add_ln150        | add       | fabric                   | 0       |
+|     add_ln177_fu_409_p2                               |     |        | add_ln177        | add       | fabric                   | 0       |
 |     sum_fu_439_p2                                     |     |        | sum              | add       | fabric                   | 0       |
 |  + sobel                                              | 2   |        |                  |           |                          |         |
 |    icmp_ln92_fu_211_p2                                |     |        | icmp_ln92        | seteq     | auto                     | 0       |
 |    rowsReceived_fu_217_p2                             |     |        | rowsReceived     | add       | fabric                   | 0       |
 |    outputRow_fu_236_p2                                |     |        | outputRow        | add       | fabric                   | 0       |
 |    add_ln120_fu_249_p2                                |     |        | add_ln120        | add       | fabric                   | 0       |
-|    urem_32s_3ns_2_36_seq_1_U158                       |     |        | urem_ln23        | urem      | auto_seq                 | 35      |
+|    urem_32s_3ns_2_36_seq_1_U159                       |     |        | urem_ln23        | urem      | auto_seq                 | 35      |
 |    select_ln23_fu_276_p3                              |     |        | select_ln23      | select    | auto_sel                 | 0       |
 |    select_ln23_1_fu_289_p3                            |     |        | select_ln23_1    | select    | auto_sel                 | 0       |
-|    sparsemux_7_2_8_1_1_U159                           |     |        | tmp_1            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U160                           |     |        | tmp_2            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U161                           |     |        | tmp_3            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U162                           |     |        | tmp_4            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U163                           |     |        | tmp_5            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U164                           |     |        | tmp_6            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U160                           |     |        | tmp_1            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U161                           |     |        | tmp_2            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U162                           |     |        | tmp_3            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U163                           |     |        | tmp_4            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U164                           |     |        | tmp_5            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U165                           |     |        | tmp_6            | sparsemux | onehotencoding_realdef   | 0       |
 |    add_ln90_fu_405_p2                                 |     |        | add_ln90         | add       | fabric                   | 0       |
 |    icmp_ln90_fu_411_p2                                |     |        | icmp_ln90        | seteq     | auto                     | 0       |
 |    select_ln90_fu_417_p3                              |     |        | select_ln90      | select    | auto_sel                 | 0       |
@@ -297,10 +300,10 @@
 |     result_magnitude_fu_698_p2                        |     |        | result_magnitude | add       | fabric                   | 0       |
 |     or_ln38_fu_704_p2                                 |     |        | or_ln38          | or        | auto                     | 0       |
 |     icmp_ln38_fu_709_p2                               |     |        | icmp_ln38        | seteq     | auto                     | 0       |
-|     mul_10ns_11ns_20_1_1_U135                         | 1   |        | mul_ln42         | mul       | auto                     | 0       |
-|     mul_10ns_10ns_19_1_1_U136                         |     |        | mul_ln42_1       | mul       | auto                     | 0       |
+|     mul_10ns_11ns_20_1_1_U136                         | 1   |        | mul_ln42         | mul       | auto                     | 0       |
+|     mul_10ns_10ns_19_1_1_U137                         |     |        | mul_ln42_1       | mul       | auto                     | 0       |
 |     icmp_ln42_fu_739_p2                               |     |        | icmp_ln42        | setgt     | auto                     | 0       |
-|     mul_10ns_13ns_22_1_1_U137                         | 1   |        | mul_ln46         | mul       | auto                     | 0       |
+|     mul_10ns_13ns_22_1_1_U138                         | 1   |        | mul_ln46         | mul       | auto                     | 0       |
 |     icmp_ln46_fu_755_p2                               |     |        | icmp_ln46        | setlt     | auto                     | 0       |
 |     or_ln51_fu_764_p2                                 |     |        | or_ln51          | or        | auto                     | 0       |
 |     and_ln52_fu_772_p2                                |     |        | and_ln52         | and       | auto                     | 0       |
@@ -314,28 +317,28 @@
 |     and_ln52_1_fu_833_p2                              |     |        | and_ln52_1       | and       | auto                     | 0       |
 |     and_ln52_2_fu_838_p2                              |     |        | and_ln52_2       | and       | auto                     | 0       |
 |     and_ln52_3_fu_844_p2                              |     |        | and_ln52_3       | and       | auto                     | 0       |
-|     sparsemux_9_3_2_1_1_U138                          |     |        | result_direction | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_9_3_2_1_1_U139                          |     |        | result_direction | sparsemux | onehotencoding_realdef   | 0       |
 |     add_ln185_fu_319_p2                               |     |        | add_ln185        | add       | fabric                   | 0       |
 |     nextColumn_fu_337_p3                              |     |        | nextColumn       | select    | auto_sel                 | 0       |
-|     sparsemux_7_2_8_1_1_U132                          |     |        | tmp_9            | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U133                          |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U134                          |     |        | tmp_7            | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U133                          |     |        | tmp_9            | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U134                          |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U135                          |     |        | tmp_7            | sparsemux | onehotencoding_realdef   | 0       |
 |  + non_maximum_suppression                            | 0   |        |                  |           |                          |         |
 |    icmp_ln46_fu_314_p2                                |     |        | icmp_ln46        | seteq     | auto                     | 0       |
 |    rowsReceived_fu_320_p2                             |     |        | rowsReceived     | add       | fabric                   | 0       |
 |    outputRow_fu_339_p2                                |     |        | outputRow        | add       | fabric                   | 0       |
 |    grp_fu_361_p0                                      |     |        | add_ln77         | add       | fabric                   | 0       |
-|    srem_10ns_3ns_10_14_seq_1_U203                     |     |        | result           | srem      | auto_seq                 | 13      |
+|    srem_10ns_3ns_10_14_seq_1_U205                     |     |        | result           | srem      | auto_seq                 | 13      |
 |    add_ln11_fu_423_p2                                 |     |        | add_ln11         | add       | fabric                   | 0       |
 |    select_ln11_fu_429_p3                              |     |        | select_ln11      | select    | auto_sel                 | 0       |
-|    sparsemux_7_2_16_1_1_U206                          |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_16_1_1_U207                          |     |        | tmp_8            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U204                           |     |        | tmp_9            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_16_1_1_U208                          |     |        | tmp_1            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_16_1_1_U209                          |     |        | tmp_2            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_16_1_1_U210                          |     |        | tmp_3            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U205                           |     |        | tmp_4            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_16_1_1_U211                          |     |        | tmp_5            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_16_1_1_U208                          |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_16_1_1_U209                          |     |        | tmp_8            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U206                           |     |        | tmp_9            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_16_1_1_U210                          |     |        | tmp_1            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_16_1_1_U211                          |     |        | tmp_2            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_16_1_1_U212                          |     |        | tmp_3            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U207                           |     |        | tmp_4            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_16_1_1_U213                          |     |        | tmp_5            | sparsemux | onehotencoding_realdef   | 0       |
 |    add_ln44_fu_542_p2                                 |     |        | add_ln44         | add       | fabric                   | 0       |
 |    icmp_ln44_fu_548_p2                                |     |        | icmp_ln44        | seteq     | auto                     | 0       |
 |    select_ln44_fu_554_p3                              |     |        | select_ln44      | select    | auto_sel                 | 0       |
@@ -368,8 +371,8 @@
 |     icmp_ln116_1_fu_583_p2                            |     |        | icmp_ln116_1     | seteq     | auto                     | 0       |
 |     icmp_ln116_2_fu_589_p2                            |     |        | icmp_ln116_2     | seteq     | auto                     | 0       |
 |     icmp_ln116_3_fu_595_p2                            |     |        | icmp_ln116_3     | seteq     | auto                     | 0       |
-|     sparsemux_11_4_16_1_1_U176                        |     |        | neighbourOne_4   | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_11_4_16_1_1_U177                        |     |        | neighbourTwo_4   | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_11_4_16_1_1_U178                        |     |        | neighbourOne_4   | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_11_4_16_1_1_U179                        |     |        | neighbourTwo_4   | sparsemux | onehotencoding_realdef   | 0       |
 |     icmp_ln151_fu_669_p2                              |     |        | icmp_ln151       | setlt     | auto                     | 0       |
 |     xor_ln151_fu_675_p2                               |     |        | xor_ln151        | xor       | auto                     | 0       |
 |     icmp_ln152_fu_681_p2                              |     |        | icmp_ln152       | setlt     | auto                     | 0       |
@@ -377,10 +380,10 @@
 |     and_ln151_fu_693_p2                               |     |        | and_ln151        | and       | auto                     | 0       |
 |     add_ln160_fu_427_p2                               |     |        | add_ln160        | add       | fabric                   | 0       |
 |     nextColumn_fu_445_p3                              |     |        | nextColumn       | select    | auto_sel                 | 0       |
-|     sparsemux_7_2_16_1_1_U178                         |     |        | tmp_6            | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_16_1_1_U179                         |     |        | tmp_7            | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_16_1_1_U180                         |     |        | tmp_10           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U181                          |     |        | tmp_11           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_16_1_1_U180                         |     |        | tmp_6            | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_16_1_1_U181                         |     |        | tmp_7            | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_16_1_1_U182                         |     |        | tmp_10           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U183                          |     |        | tmp_11           | sparsemux | onehotencoding_realdef   | 0       |
 |  + double_threshold                                   | 0   |        |                  |           |                          |         |
 |    icmp_ln16_fu_71_p2                                 |     |        | icmp_ln16        | setgt     | auto                     | 0       |
 |    icmp_ln19_fu_77_p2                                 |     |        | icmp_ln19        | setgt     | auto                     | 0       |
@@ -395,15 +398,15 @@
 |    hasTop_fu_256_p2                                   |     |        | hasTop           | setgt     | auto                     | 0       |
 |    hasBottom_fu_262_p2                                |     |        | hasBottom        | setne     | auto                     | 0       |
 |    grp_fu_273_p0                                      |     |        | add_ln103        | add       | fabric                   | 0       |
-|    srem_10ns_3ns_10_14_seq_1_U242                     |     |        | result           | srem      | auto_seq                 | 13      |
+|    srem_10ns_3ns_10_14_seq_1_U244                     |     |        | result           | srem      | auto_seq                 | 13      |
 |    add_ln12_fu_291_p2                                 |     |        | add_ln12         | add       | fabric                   | 0       |
 |    select_ln12_fu_297_p3                              |     |        | select_ln12      | select    | auto_sel                 | 0       |
-|    sparsemux_7_2_8_1_1_U243                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U244                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U245                           |     |        | tmp_33           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U246                           |     |        | tmp_34           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U247                           |     |        | tmp_35           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U248                           |     |        | tmp_36           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U245                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U246                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U247                           |     |        | tmp_33           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U248                           |     |        | tmp_34           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U249                           |     |        | tmp_35           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U250                           |     |        | tmp_36           | sparsemux | onehotencoding_realdef   | 0       |
 |    add_ln72_fu_419_p2                                 |     |        | add_ln72         | add       | fabric                   | 0       |
 |    icmp_ln72_fu_425_p2                                |     |        | icmp_ln72        | seteq     | auto                     | 0       |
 |    select_ln72_fu_431_p3                              |     |        | select_ln72      | select    | auto_sel                 | 0       |
@@ -457,12 +460,12 @@
 |     or_ln44_26_fu_583_p2                              |     |        | or_ln44_26       | or        | auto                     | 0       |
 |     and_ln44_17_fu_589_p2                             |     |        | and_ln44_17      | and       | auto                     | 0       |
 |     or_ln44_27_fu_701_p2                              |     |        | or_ln44_27       | or        | auto                     | 0       |
-|     sparsemux_7_2_8_1_1_x_U226                        |     |        | result           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_x_U228                        |     |        | result           | sparsemux | onehotencoding_realdef   | 0       |
 |     add_ln177_fu_319_p2                               |     |        | add_ln177        | add       | fabric                   | 0       |
 |     nextColumn_fu_337_p3                              |     |        | nextColumn       | select    | auto_sel                 | 0       |
-|     sparsemux_7_2_8_1_1_U223                          |     |        | tmp_37           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U224                          |     |        | tmp_38           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U225                          |     |        | tmp_39           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U225                          |     |        | tmp_37           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U226                          |     |        | tmp_38           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U227                          |     |        | tmp_39           | sparsemux | onehotencoding_realdef   | 0       |
 |  + hysteresis_2_s                                     | 0   |        |                  |           |                          |         |
 |    icmp_ln74_fu_218_p2                                |     |        | icmp_ln74        | seteq     | auto                     | 0       |
 |    rowsReceived_fu_224_p2                             |     |        | rowsReceived     | add       | fabric                   | 0       |
@@ -470,15 +473,15 @@
 |    hasTop_fu_256_p2                                   |     |        | hasTop           | setgt     | auto                     | 0       |
 |    hasBottom_fu_262_p2                                |     |        | hasBottom        | setne     | auto                     | 0       |
 |    grp_fu_273_p0                                      |     |        | add_ln103        | add       | fabric                   | 0       |
-|    srem_10ns_3ns_10_14_seq_1_U274                     |     |        | result           | srem      | auto_seq                 | 13      |
+|    srem_10ns_3ns_10_14_seq_1_U276                     |     |        | result           | srem      | auto_seq                 | 13      |
 |    add_ln12_fu_291_p2                                 |     |        | add_ln12         | add       | fabric                   | 0       |
 |    select_ln12_fu_297_p3                              |     |        | select_ln12      | select    | auto_sel                 | 0       |
-|    sparsemux_7_2_8_1_1_U275                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U276                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U277                           |     |        | tmp_26           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U278                           |     |        | tmp_27           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U279                           |     |        | tmp_28           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U280                           |     |        | tmp_29           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U277                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U278                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U279                           |     |        | tmp_26           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U280                           |     |        | tmp_27           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U281                           |     |        | tmp_28           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U282                           |     |        | tmp_29           | sparsemux | onehotencoding_realdef   | 0       |
 |    add_ln72_fu_419_p2                                 |     |        | add_ln72         | add       | fabric                   | 0       |
 |    icmp_ln72_fu_425_p2                                |     |        | icmp_ln72        | seteq     | auto                     | 0       |
 |    select_ln72_fu_431_p3                              |     |        | select_ln72      | select    | auto_sel                 | 0       |
@@ -532,12 +535,12 @@
 |     or_ln44_19_fu_583_p2                              |     |        | or_ln44_19       | or        | auto                     | 0       |
 |     and_ln44_13_fu_589_p2                             |     |        | and_ln44_13      | and       | auto                     | 0       |
 |     or_ln44_20_fu_701_p2                              |     |        | or_ln44_20       | or        | auto                     | 0       |
-|     sparsemux_7_2_8_1_1_x_U259                        |     |        | result           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_x_U261                        |     |        | result           | sparsemux | onehotencoding_realdef   | 0       |
 |     add_ln177_fu_319_p2                               |     |        | add_ln177        | add       | fabric                   | 0       |
 |     nextColumn_fu_337_p3                              |     |        | nextColumn       | select    | auto_sel                 | 0       |
-|     sparsemux_7_2_8_1_1_U256                          |     |        | tmp_30           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U257                          |     |        | tmp_31           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U258                          |     |        | tmp_32           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U258                          |     |        | tmp_30           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U259                          |     |        | tmp_31           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U260                          |     |        | tmp_32           | sparsemux | onehotencoding_realdef   | 0       |
 |  + hysteresis_3_s                                     | 0   |        |                  |           |                          |         |
 |    icmp_ln74_fu_218_p2                                |     |        | icmp_ln74        | seteq     | auto                     | 0       |
 |    rowsReceived_fu_224_p2                             |     |        | rowsReceived     | add       | fabric                   | 0       |
@@ -545,15 +548,15 @@
 |    hasTop_fu_256_p2                                   |     |        | hasTop           | setgt     | auto                     | 0       |
 |    hasBottom_fu_262_p2                                |     |        | hasBottom        | setne     | auto                     | 0       |
 |    grp_fu_273_p0                                      |     |        | add_ln103        | add       | fabric                   | 0       |
-|    srem_10ns_3ns_10_14_seq_1_U306                     |     |        | result           | srem      | auto_seq                 | 13      |
+|    srem_10ns_3ns_10_14_seq_1_U308                     |     |        | result           | srem      | auto_seq                 | 13      |
 |    add_ln12_fu_291_p2                                 |     |        | add_ln12         | add       | fabric                   | 0       |
 |    select_ln12_fu_297_p3                              |     |        | select_ln12      | select    | auto_sel                 | 0       |
-|    sparsemux_7_2_8_1_1_U307                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U308                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U309                           |     |        | tmp_19           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U310                           |     |        | tmp_20           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U311                           |     |        | tmp_21           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U312                           |     |        | tmp_22           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U309                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U310                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U311                           |     |        | tmp_19           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U312                           |     |        | tmp_20           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U313                           |     |        | tmp_21           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U314                           |     |        | tmp_22           | sparsemux | onehotencoding_realdef   | 0       |
 |    add_ln72_fu_419_p2                                 |     |        | add_ln72         | add       | fabric                   | 0       |
 |    icmp_ln72_fu_425_p2                                |     |        | icmp_ln72        | seteq     | auto                     | 0       |
 |    select_ln72_fu_431_p3                              |     |        | select_ln72      | select    | auto_sel                 | 0       |
@@ -607,12 +610,12 @@
 |     or_ln44_12_fu_583_p2                              |     |        | or_ln44_12       | or        | auto                     | 0       |
 |     and_ln44_9_fu_589_p2                              |     |        | and_ln44_9       | and       | auto                     | 0       |
 |     or_ln44_13_fu_701_p2                              |     |        | or_ln44_13       | or        | auto                     | 0       |
-|     sparsemux_7_2_8_1_1_x_U291                        |     |        | result           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_x_U293                        |     |        | result           | sparsemux | onehotencoding_realdef   | 0       |
 |     add_ln177_fu_319_p2                               |     |        | add_ln177        | add       | fabric                   | 0       |
 |     nextColumn_fu_337_p3                              |     |        | nextColumn       | select    | auto_sel                 | 0       |
-|     sparsemux_7_2_8_1_1_U288                          |     |        | tmp_23           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U289                          |     |        | tmp_24           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U290                          |     |        | tmp_25           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U290                          |     |        | tmp_23           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U291                          |     |        | tmp_24           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U292                          |     |        | tmp_25           | sparsemux | onehotencoding_realdef   | 0       |
 |  + hysteresis_4_s                                     | 0   |        |                  |           |                          |         |
 |    icmp_ln74_fu_218_p2                                |     |        | icmp_ln74        | seteq     | auto                     | 0       |
 |    rowsReceived_fu_224_p2                             |     |        | rowsReceived     | add       | fabric                   | 0       |
@@ -620,15 +623,15 @@
 |    hasTop_fu_256_p2                                   |     |        | hasTop           | setgt     | auto                     | 0       |
 |    hasBottom_fu_262_p2                                |     |        | hasBottom        | setne     | auto                     | 0       |
 |    grp_fu_273_p0                                      |     |        | add_ln103        | add       | fabric                   | 0       |
-|    srem_10ns_3ns_10_14_seq_1_U337                     |     |        | result           | srem      | auto_seq                 | 13      |
+|    srem_10ns_3ns_10_14_seq_1_U339                     |     |        | result           | srem      | auto_seq                 | 13      |
 |    add_ln12_fu_291_p2                                 |     |        | add_ln12         | add       | fabric                   | 0       |
 |    select_ln12_fu_297_p3                              |     |        | select_ln12      | select    | auto_sel                 | 0       |
-|    sparsemux_7_2_8_1_1_U338                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U339                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U340                           |     |        | tmp_12           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U341                           |     |        | tmp_13           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U342                           |     |        | tmp_14           | sparsemux | onehotencoding_realdef   | 0       |
-|    sparsemux_7_2_8_1_1_U343                           |     |        | tmp_15           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U340                           |     |        | tmp              | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U341                           |     |        | tmp_s            | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U342                           |     |        | tmp_12           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U343                           |     |        | tmp_13           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U344                           |     |        | tmp_14           | sparsemux | onehotencoding_realdef   | 0       |
+|    sparsemux_7_2_8_1_1_U345                           |     |        | tmp_15           | sparsemux | onehotencoding_realdef   | 0       |
 |    add_ln72_fu_419_p2                                 |     |        | add_ln72         | add       | fabric                   | 0       |
 |    icmp_ln72_fu_425_p2                                |     |        | icmp_ln72        | seteq     | auto                     | 0       |
 |    select_ln72_fu_431_p3                              |     |        | select_ln72      | select    | auto_sel                 | 0       |
@@ -682,9 +685,9 @@
 |     hyst4_out_din                                     |     |        | select_ln151     | select    | auto_sel                 | 0       |
 |     add_ln177_fu_317_p2                               |     |        | add_ln177        | add       | fabric                   | 0       |
 |     nextColumn_fu_335_p3                              |     |        | nextColumn       | select    | auto_sel                 | 0       |
-|     sparsemux_7_2_8_1_1_U320                          |     |        | tmp_16           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U321                          |     |        | tmp_17           | sparsemux | onehotencoding_realdef   | 0       |
-|     sparsemux_7_2_8_1_1_U322                          |     |        | tmp_18           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U322                          |     |        | tmp_16           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U323                          |     |        | tmp_17           | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_7_2_8_1_1_U324                          |     |        | tmp_18           | sparsemux | onehotencoding_realdef   | 0       |
 |  + write_frame                                        | 0   |        |                  |           |                          |         |
 |    select_ln7_fu_238_p3                               |     |        | select_ln7       | select    | auto_sel                 | 0       |
 |    select_ln7_1_fu_246_p3                             |     |        | select_ln7_1     | select    | auto_sel                 | 0       |
@@ -704,7 +707,7 @@
 | Name                        | Usage         | Type        | BRAM | URAM | Pragma | Variable               | Impl   | Latency | Bitwidth, Depth, |
 |                             |               |             |      |      |        |                        |        |         | Banks            |
 +-----------------------------+---------------+-------------+------+------+--------+------------------------+--------+---------+------------------+
-| + canny_top                 |               |             | 81   | 0    |        |                        |        |         |                  |
+| + canny_top                 |               |             | 80   | 0    |        |                        |        |         |                  |
 |   control_s_axi_U           | interface     | s_axilite   |      |      |        |                        |        |         |                  |
 |   gmem_m_axi_U              | interface     | m_axi       |      |      |        |                        |        |         |                  |
 |   gmem0_m_axi_U             | interface     | m_axi       | 29   |      |        |                        |        |         |                  |
@@ -752,13 +755,12 @@
 |    row_bytes_29_U           | ram_t2p array |             |      |      |        | row_bytes_29           | auto   | 1       | 8, 48, 1         |
 |    row_bytes_30_U           | ram_t2p array |             |      |      |        | row_bytes_30           | auto   | 1       | 8, 48, 1         |
 |    row_bytes_31_U           | ram_t2p array |             |      |      |        | row_bytes_31           | auto   | 1       | 8, 48, 1         |
-|  + gaussian_blur            |               |             | 6    | 0    |        |                        |        |         |                  |
+|  + gaussian_blur            |               |             | 5    | 0    |        |                        |        |         |                  |
 |    lineBuffer_U             | ram_1p array  |             | 1    |      |        | lineBuffer             | auto   | 1       | 12, 512, 1       |
 |    lineBuffer_1_U           | ram_1p array  |             | 1    |      |        | lineBuffer_1           | auto   | 1       | 12, 512, 1       |
 |    lineBuffer_2_U           | ram_1p array  |             | 1    |      |        | lineBuffer_2           | auto   | 1       | 12, 512, 1       |
 |    lineBuffer_3_U           | ram_1p array  |             | 1    |      |        | lineBuffer_3           | auto   | 1       | 12, 512, 1       |
 |    lineBuffer_4_U           | ram_1p array  |             | 1    |      |        | lineBuffer_4           | auto   | 1       | 12, 512, 1       |
-|    row_in_U                 | ram_2p array  |             | 1    |      |        | row_in                 | auto   | 1       | 8, 512, 1        |
 |  + sobel                    |               |             | 3    | 0    |        |                        |        |         |                  |
 |    lineBuffer_U             | ram_2p array  |             | 1    |      |        | lineBuffer             | auto   | 1       | 8, 512, 1        |
 |    lineBuffer_1_U           | ram_2p array  |             | 1    |      |        | lineBuffer_1           | auto   | 1       | 8, 512, 1        |
@@ -818,18 +820,18 @@
 | STREAM          | variable=hyst4_out depth=STREAM_DEPTH                                                  | in canny_top (../src/canny_top.cpp:33)                              |
 | PIPELINE        | ii=1                                                                                   | in double_threshold (../src/double_threshold.cpp:11)                |
 | ARRAY_PARTITION | variable=lineBuffer type=complete dim=1                                                | in gaussian_blur (../src/gaussian_blur.cpp:55)                      |
-| PIPELINE        | ii=1                                                                                   | in gaussian_blur (../src/gaussian_blur.cpp:64)                      |
-| ARRAY_PARTITION | variable=window type=complete                                                          | in gaussian_blur (../src/gaussian_blur.cpp:75)                      |
-| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:78)                      |
-| PIPELINE        | ii=1                                                                                   | in gaussian_blur (../src/gaussian_blur.cpp:83)                      |
-| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:88)                      |
-| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:97)                      |
-| ARRAY_PARTITION | variable=slot type=complete                                                            | in gaussian_blur (../src/gaussian_blur.cpp:119)                     |
-| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:122)                     |
-| PIPELINE        | ii=1                                                                                   | in gaussian_blur (../src/gaussian_blur.cpp:131)                     |
-| ARRAY_PARTITION | variable=banked type=complete                                                          | in gaussian_blur (../src/gaussian_blur.cpp:139)                     |
-| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:142)                     |
+| ARRAY_PARTITION | variable=window type=complete                                                          | in gaussian_blur (../src/gaussian_blur.cpp:74)                      |
+| ARRAY_PARTITION | variable=history type=complete                                                         | in gaussian_blur (../src/gaussian_blur.cpp:77)                      |
+| PIPELINE        | ii=1                                                                                   | in gaussian_blur (../src/gaussian_blur.cpp:95)                      |
+| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:100)                     |
+| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:114)                     |
+| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:125)                     |
+| ARRAY_PARTITION | variable=slot type=complete                                                            | in gaussian_blur (../src/gaussian_blur.cpp:146)                     |
 | UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:149)                     |
+| PIPELINE        | ii=1                                                                                   | in gaussian_blur (../src/gaussian_blur.cpp:158)                     |
+| ARRAY_PARTITION | variable=banked type=complete                                                          | in gaussian_blur (../src/gaussian_blur.cpp:166)                     |
+| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:169)                     |
+| UNROLL          |                                                                                        | in gaussian_blur (../src/gaussian_blur.cpp:176)                     |
 | PIPELINE        | ii=1                                                                                   | in grayscale (../src/grayscale.cpp:18)                              |
 | PIPELINE        | ii=1                                                                                   | in grayscale (../src/grayscale.cpp:25)                              |
 | UNROLL          |                                                                                        | in grayscale (../src/grayscale.cpp:27)                              |

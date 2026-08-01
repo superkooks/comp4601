@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hysteresis_4_s'" level="0">
-<item name = "Date">Sat Aug  1 12:52:06 2026
+<item name = "Date">Sat Aug  1 15:48:52 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>

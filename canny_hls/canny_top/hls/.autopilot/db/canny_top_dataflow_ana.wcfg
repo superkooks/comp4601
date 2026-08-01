@@ -132,53 +132,37 @@
             <obj_property name="Render_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/gaussian_blur_U0_activity.dataflowTxWaveData.Cycles</obj_property>
             <obj_property name="Value_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/gaussian_blur_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
             <obj_property name="Detail_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/gaussian_blur_U0_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity">
-               <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity">
+               <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity</obj_property>
+               <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
-            <wvobject type="group" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity">
-               <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity</obj_property>
+            <wvobject type="group" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity">
+               <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity</obj_property>
+               <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity</obj_property>
                <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
                <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
                <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity.dataflowTxTooltipData</obj_property>
-            </wvobject>
-            <wvobject type="group" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity">
-               <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <obj_property name="UseFullPath">true</obj_property>
-               <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity</obj_property>
-               <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity</obj_property>
-               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
-               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
-               <obj_property name="UseCustomSignalColor">true</obj_property>
-               <obj_property name="CustomSignalColor">turquoise</obj_property>
-               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity.dataflowTxTooltipData</obj_property>
+               <obj_property name="Render_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity.dataflowTxTooltipData</obj_property>
             </wvobject>
          </wvobject>
          <wvobject type="group" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/sobel_U0/sobel_U0_activity">
@@ -753,17 +737,13 @@
       <wvobject type="group" fp_name="gaussian_blur_U0_group">
          <obj_property name="label">gaussian_blur_U0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity">
-            <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity">
+            <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_activity</obj_property>
          </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity">
-            <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_activity</obj_property>
-         </wvobject>
-         <wvobject type="protoinst" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity">
-            <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_activity</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity">
+            <obj_property name="ElementShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_activity</obj_property>
          </wvobject>
          <wvobject type="group" fp_name="gaussian_blur_U0_Input_group">
             <obj_property name="label">Input Channels</obj_property>
@@ -771,6 +751,10 @@
             <wvobject type="group" fp_name="gray_out_group">
                <obj_property name="label">gray_out(gray_out_U, FIFO)</obj_property>
                <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/gray_out_blk_n">
+                  <obj_property name="ElementShortName">gray_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">gray_out_blk_n</obj_property>
+               </wvobject>
                <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/gray_out_dout">
                   <obj_property name="ElementShortName">gray_out_dout[7:0]</obj_property>
                   <obj_property name="ObjectShortName">gray_out_dout[7:0]</obj_property>
@@ -827,61 +811,41 @@
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_group">
-            <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135</obj_property>
+         <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_group">
+            <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135_Handshake_group">
+            <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/ap_start">
+               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135/ap_done">
+               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_94_2_fu_114/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
-         <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_group">
-            <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142</obj_property>
+         <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_group">
+            <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142_Handshake_group">
+            <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/ap_start">
+               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142/ap_done">
-                  <obj_property name="ElementShortName">ap_done</obj_property>
-                  <obj_property name="ObjectShortName">ap_done</obj_property>
-               </wvobject>
-            </wvobject>
-         </wvobject>
-         <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_group">
-            <obj_property name="label">grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156</obj_property>
-            <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="group" fp_name="grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156_Handshake_group">
-               <obj_property name="label">Block-level handshake</obj_property>
-               <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/ap_start">
-                  <obj_property name="ElementShortName">ap_start</obj_property>
-                  <obj_property name="ObjectShortName">ap_start</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/ap_ready">
-                  <obj_property name="ElementShortName">ap_ready</obj_property>
-                  <obj_property name="ObjectShortName">ap_ready</obj_property>
-               </wvobject>
-               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156/ap_done">
+               <wvobject type="logic" fp_name="/apatb_canny_top_top/AESL_inst_canny_top/gaussian_blur_U0/grp_gaussian_blur_Pipeline_VITIS_LOOP_157_7_fu_129/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>

@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'grayscale_Pipeline_unpack_bytes'
 ================================================================
-* Date:           Sat Aug  1 12:52:05 2026
+* Date:           Sat Aug  1 15:48:50 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -99,9 +99,9 @@ ST_1 : Operation 15 [1/1] (0.42ns)   --->   "%store_ln24 = store i5 %add_ln24, i
 ST_1 : Operation 217 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 217 'ret' 'ret_ln0' <Predicate = (icmp_ln24)> <Delay = 0.42>
 
 State 2 <SV = 1> <Delay = 1.91>
-ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln25 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_5" [../src/grayscale.cpp:25]   --->   Operation 16 'specpipeline' 'specpipeline_ln25' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%specpipeline_ln25 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_4" [../src/grayscale.cpp:25]   --->   Operation 16 'specpipeline' 'specpipeline_ln25' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%speclooptripcount_ln24 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 24, i64 24, i64 24" [../src/grayscale.cpp:24]   --->   Operation 17 'speclooptripcount' 'speclooptripcount_ln24' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln24 = specloopname void @_ssdm_op_SpecLoopName, void @empty_14" [../src/grayscale.cpp:24]   --->   Operation 18 'specloopname' 'specloopname_ln24' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specloopname_ln24 = specloopname void @_ssdm_op_SpecLoopName, void @empty_19" [../src/grayscale.cpp:24]   --->   Operation 18 'specloopname' 'specloopname_ln24' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/2] ( I:1.23ns O:1.23ns )   --->   "%row_words_load = load i5 %row_words_addr" [../src/grayscale.cpp:28]   --->   Operation 19 'load' 'row_words_load' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 512> <Depth = 24> <RAM>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%shl_ln = bitconcatenate i6 @_ssdm_op_BitConcatenate.i6.i5.i1, i5 %w_1, i1 0" [../src/grayscale.cpp:28]   --->   Operation 20 'bitconcatenate' 'shl_ln' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%zext_ln28 = zext i6 %shl_ln" [../src/grayscale.cpp:28]   --->   Operation 21 'zext' 'zext_ln28' <Predicate = true> <Delay = 0.00>

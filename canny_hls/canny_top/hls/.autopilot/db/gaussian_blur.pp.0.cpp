@@ -56077,33 +56077,35 @@ void gaussian_blur(
 
     VITIS_LOOP_59_1: for (int row = 0; row < TOTAL_ROWS; ++row) {
         if (row < HEIGHT) {
-            std::uint8_t row_in[WIDTH];
-
-            VITIS_LOOP_63_2: for (int column = 0; column < WIDTH; ++column) {
-#pragma HLS PIPELINE II=1
-                row_in[column] = input.read();
-            }
-
             const int writeSlot = rowsReceived % KERNEL_SIZE;
-
-
-
-
-
+# 73 "../src/gaussian_blur.cpp"
             std::uint8_t window[KERNEL_SIZE];
 #pragma HLS ARRAY_PARTITION variable=window type=complete
 
-            VITIS_LOOP_77_3: for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
-#pragma HLS UNROLL
-                window[tap] = row_in[reflect_101(tap - 2, WIDTH)];
-            }
+            std::uint8_t history[KERNEL_SIZE - 1];
+#pragma HLS ARRAY_PARTITION variable=history type=complete
 
-            VITIS_LOOP_82_4: for (int column = 0; column < WIDTH; ++column) {
+            const std::uint8_t sample0 = input.read();
+            const std::uint8_t sample1 = input.read();
+            const std::uint8_t sample2 = input.read();
+
+            window[0] = sample2;
+            window[1] = sample1;
+            window[2] = sample0;
+            window[3] = sample1;
+            window[4] = sample2;
+
+            history[0] = sample0;
+            history[1] = sample0;
+            history[2] = sample1;
+            history[3] = sample2;
+
+            VITIS_LOOP_94_2: for (int column = 0; column < WIDTH; ++column) {
 #pragma HLS PIPELINE II=1
 
                 int horizontalSum = 0;
 
-                VITIS_LOOP_87_5: for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
+                VITIS_LOOP_99_3: for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
 #pragma HLS UNROLL
                     horizontalSum +=
                         static_cast<int>(window[tap]) * GAUSSIAN_TAPS[tap];
@@ -56112,13 +56114,28 @@ void gaussian_blur(
                 lineBuffer[writeSlot][column] =
                     static_cast<std::uint16_t>(horizontalSum);
 
-                VITIS_LOOP_96_6: for (int tap = 0; tap < KERNEL_SIZE - 1; ++tap) {
+                std::uint8_t nextSample;
+
+                if (column + 3 < WIDTH) {
+                    nextSample = input.read();
+
+                    VITIS_LOOP_113_4: for (int tap = 0; tap < KERNEL_SIZE - 2; ++tap) {
+#pragma HLS UNROLL
+                        history[tap] = history[tap + 1];
+                    }
+                    history[KERNEL_SIZE - 2] = nextSample;
+                } else {
+
+
+                    nextSample = history[WIDTH - 1 - column];
+                }
+
+                VITIS_LOOP_124_5: for (int tap = 0; tap < KERNEL_SIZE - 1; ++tap) {
 #pragma HLS UNROLL
                     window[tap] = window[tap + 1];
                 }
 
-                window[KERNEL_SIZE - 1] =
-                    row_in[reflect_101(column + 3, WIDTH)];
+                window[KERNEL_SIZE - 1] = nextSample;
             }
         }
 
@@ -56137,7 +56154,7 @@ void gaussian_blur(
         int slot[KERNEL_SIZE];
 #pragma HLS ARRAY_PARTITION variable=slot type=complete
 
-        VITIS_LOOP_121_7: for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
+        VITIS_LOOP_148_6: for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
 #pragma HLS UNROLL
             slot[tap] =
                 positive_modulo(
@@ -56146,7 +56163,7 @@ void gaussian_blur(
                 );
         }
 
-        VITIS_LOOP_130_8: for (int column = 0; column < WIDTH; ++column) {
+        VITIS_LOOP_157_7: for (int column = 0; column < WIDTH; ++column) {
 #pragma HLS PIPELINE II=1
 
 
@@ -56157,14 +56174,14 @@ void gaussian_blur(
             std::uint16_t banked[KERNEL_SIZE];
 #pragma HLS ARRAY_PARTITION variable=banked type=complete
 
-            VITIS_LOOP_141_9: for (int bank = 0; bank < KERNEL_SIZE; ++bank) {
+            VITIS_LOOP_168_8: for (int bank = 0; bank < KERNEL_SIZE; ++bank) {
 #pragma HLS UNROLL
                 banked[bank] = lineBuffer[bank][column];
             }
 
             std::uint32_t sum = 0;
 
-            VITIS_LOOP_148_10: for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
+            VITIS_LOOP_175_9: for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
 #pragma HLS UNROLL
                 sum +=
                     static_cast<std::uint32_t>(banked[slot[tap]]) *

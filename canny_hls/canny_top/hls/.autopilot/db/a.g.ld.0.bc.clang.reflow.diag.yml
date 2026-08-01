@@ -1,7 +1,7 @@
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 124, Column: 17 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 151, Column: 17 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.22)'
@@ -14,7 +14,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 79, Column: 38 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 152, Column: 21 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - Callee:          '(anonymous namespace)::reflect_101(int, int)'
@@ -553,41 +553,51 @@ Args:
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 87, Column: 34 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 99, Column: 34 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_87_5
+  - LoopName:        VITIS_LOOP_99_3
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 96, Column: 34 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 113, Column: 39 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_96_6
+  - LoopName:        VITIS_LOOP_113_4
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 141, Column: 31 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 124, Column: 35 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_141_9
+  - LoopName:        VITIS_LOOP_124_5
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 148, Column: 32 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 168, Column: 31 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_148_10
+  - LoopName:        VITIS_LOOP_168_8
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 175, Column: 31 }
+Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_175_9
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
@@ -1269,9 +1279,9 @@ DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_77_3
+  - LoopName:        VITIS_LOOP_99_3
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:77:30'
+  - LoopLoc:         '../src/gaussian_blur.cpp:99:34'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -1285,14 +1295,14 @@ DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_87_5
+  - LoopName:        VITIS_LOOP_113_4
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:87:34'
+  - LoopLoc:         '../src/gaussian_blur.cpp:113:39'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
   - String:          ''' completely with a factor of '
-  - Factor:          '5'
+  - Factor:          '3'
 ...
 --- !Passed
 Pass:            reflow-pragma-loop-unroll
@@ -1301,9 +1311,9 @@ DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_96_6
+  - LoopName:        VITIS_LOOP_124_5
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:96:34'
+  - LoopLoc:         '../src/gaussian_blur.cpp:124:35'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -1317,9 +1327,9 @@ DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_121_7
+  - LoopName:        VITIS_LOOP_148_6
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:121:27'
+  - LoopLoc:         '../src/gaussian_blur.cpp:148:27'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -1333,9 +1343,9 @@ DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_141_9
+  - LoopName:        VITIS_LOOP_168_8
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:141:31'
+  - LoopLoc:         '../src/gaussian_blur.cpp:168:31'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -1349,9 +1359,9 @@ DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_148_10
+  - LoopName:        VITIS_LOOP_175_9
   - String:          ''' ('
-  - LoopLoc:         '../src/gaussian_blur.cpp:148:32'
+  - LoopLoc:         '../src/gaussian_blur.cpp:175:31'
   - String:          ') '
   - String:          'in function '''
   - String:          gaussian_blur
@@ -1377,7 +1387,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 79, Column: 38 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 152, Column: 21 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - Callee:          '(anonymous namespace)::reflect_101(int, int)'
@@ -1390,7 +1400,7 @@ Args:
 --- !Missed
 Pass:            inline
 Name:            NeverInline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 124, Column: 17 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 151, Column: 17 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.22)'
@@ -1802,6 +1812,20 @@ DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Inlining function '''
+  - Callee:          '(anonymous namespace)::reflect_101(int, int)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 24, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'gaussian_blur(hls::stream<unsigned char, 0>&, hls::stream<unsigned char, 0>&)'
+    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
+Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
+Args:            
+  - String:          'Inlining function '''
   - Callee:          '(anonymous namespace)::positive_modulo(int, int) (.22)'
     DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 19, Column: 0 }
   - String:          ''' into '''
@@ -2112,7 +2136,25 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 138, Column: 27 }
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 76, Column: 26 }
+Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          history
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 165, Column: 27 }
 Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
 Args:            
   - String:          'Applying '
@@ -2605,19 +2647,6 @@ Args:
   - BundleName:      gmem
   - String:          '''.'
   - String:          ' These burst requests might be further partitioned into multiple requests during RTL generation, based on max_read_burst_length or max_write_burst_length settings.'
-...
---- !Missed
-Pass:            inline
-Name:            NeverInline
-DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 79, Column: 38 }
-Function:        _Z13gaussian_blurRN3hls6streamIhLi0EEES2_
-Args:            
-  - Callee:          '(anonymous namespace)::reflect_101(int, int)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 24, Column: 0 }
-  - String:          ' not inlined into '
-  - Caller:          'gaussian_blur(hls::stream<unsigned char, 0>&, hls::stream<unsigned char, 0>&)'
-    DebugLoc:        { File: ../src/gaussian_blur.cpp, Line: 39, Column: 0 }
-  - String:          ' because it should never be inlined (cost=never)'
 ...
 --- !Missed
 Pass:            inline

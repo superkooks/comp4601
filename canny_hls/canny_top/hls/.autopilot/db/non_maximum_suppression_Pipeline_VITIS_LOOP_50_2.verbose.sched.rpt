@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_50_2'
 ================================================================
-* Date:           Sat Aug  1 12:52:06 2026
+* Date:           Sat Aug  1 15:48:51 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -86,7 +86,7 @@ IsGatedGlobalClock: 0
 
 State 1 <SV = 0> <Delay = 1.64>
 ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%column = alloca i32 1" [../src/non_maximum_suppression.cpp:50]   --->   Operation 5 'alloca' 'column' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %sobel_out, void @empty_11, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %sobel_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 6 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%tmp = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %empty"   --->   Operation 7 'read' 'tmp' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 8 [1/1] (0.42ns)   --->   "%store_ln50 = store i10 0, i10 %column" [../src/non_maximum_suppression.cpp:50]   --->   Operation 8 'store' 'store_ln50' <Predicate = true> <Delay = 0.42>
 ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%br_ln50 = br void %for.inc" [../src/non_maximum_suppression.cpp:50]   --->   Operation 9 'br' 'br_ln50' <Predicate = true> <Delay = 0.00>
@@ -101,9 +101,9 @@ ST_1 : Operation 39 [1/1] (0.42ns)   --->   "%ret_ln0 = ret"   --->   Operation 
 
 State 2 <SV = 1> <Delay = 2.98>
 ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%zext_ln50 = zext i10 %column_3" [../src/non_maximum_suppression.cpp:50]   --->   Operation 17 'zext' 'zext_ln50' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_5" [../src/non_maximum_suppression.cpp:51]   --->   Operation 18 'specpipeline' 'specpipeline_ln51' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%specpipeline_ln51 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_4" [../src/non_maximum_suppression.cpp:51]   --->   Operation 18 'specpipeline' 'specpipeline_ln51' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%speclooptripcount_ln50 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 512, i64 512, i64 512" [../src/non_maximum_suppression.cpp:50]   --->   Operation 19 'speclooptripcount' 'speclooptripcount_ln50' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln50 = specloopname void @_ssdm_op_SpecLoopName, void @empty_16" [../src/non_maximum_suppression.cpp:50]   --->   Operation 20 'specloopname' 'specloopname_ln50' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%specloopname_ln50 = specloopname void @_ssdm_op_SpecLoopName, void @empty_1" [../src/non_maximum_suppression.cpp:50]   --->   Operation 20 'specloopname' 'specloopname_ln50' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] ( I:1.75ns O:1.75ns )   --->   "%sobel_out_read = read i24 @_ssdm_op_Read.ap_fifo.volatile.i24P0A, i24 %sobel_out" [../src/non_maximum_suppression.cpp:52]   --->   Operation 21 'read' 'sobel_out_read' <Predicate = true> <Delay = 1.75> <CoreInst = "FIFO">   --->   Core 77 'FIFO' <Latency = 0> <II = 1> <Delay = 1.75> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 24> <Depth = 1024> <FIFO>
 ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%trunc_ln52 = trunc i24 %sobel_out_read" [../src/non_maximum_suppression.cpp:52]   --->   Operation 22 'trunc' 'trunc_ln52' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln52_1 = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %sobel_out_read, i32 16, i32 23" [../src/non_maximum_suppression.cpp:52]   --->   Operation 23 'partselect' 'trunc_ln52_1' <Predicate = true> <Delay = 0.00>
@@ -133,13 +133,13 @@ Target clock period: 5.000ns, clock uncertainty: 1.350ns.
 The critical path consists of the following:
 	'store' operation ('store_ln50', ../src/non_maximum_suppression.cpp:50) of constant 0 10 bit on local variable 'column', ../src/non_maximum_suppression.cpp:50 [12]  (0.427 ns)
 	'load' operation 10 bit ('column', ../src/non_maximum_suppression.cpp:50) on local variable 'column', ../src/non_maximum_suppression.cpp:50 [15]  (0.000 ns)
-	'add' operation 10 bit ('add_ln50', ../src/non_maximum_suppression.cpp:50) [17]  (0.787 ns)
+	'icmp' operation 1 bit ('icmp_ln50', ../src/non_maximum_suppression.cpp:50) [16]  (0.787 ns)
 	'store' operation ('store_ln50', ../src/non_maximum_suppression.cpp:50) of variable 'add_ln50', ../src/non_maximum_suppression.cpp:50 10 bit on local variable 'column', ../src/non_maximum_suppression.cpp:50 [47]  (0.427 ns)
 
  <State 2>: 2.987ns
 The critical path consists of the following:
 	fifo read operation ('sobel_out_read', ../src/non_maximum_suppression.cpp:52) on port 'sobel_out' (../src/non_maximum_suppression.cpp:52) [24]  (1.750 ns)
-	'store' operation ('store_ln52', ../src/non_maximum_suppression.cpp:52) of variable 'trunc_ln52', ../src/non_maximum_suppression.cpp:52 16 bit on array 'lineBuffer_magnitude' [39]  (1.237 ns)
+	'store' operation ('store_ln52', ../src/non_maximum_suppression.cpp:52) of variable 'trunc_ln52', ../src/non_maximum_suppression.cpp:52 16 bit on array 'lineBuffer_magnitude_2' [43]  (1.237 ns)
 
 
 ============================================================

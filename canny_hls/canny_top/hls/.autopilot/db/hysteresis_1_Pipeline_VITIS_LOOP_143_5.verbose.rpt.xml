@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hysteresis_1_Pipeline_VITIS_LOOP_143_5'" level="0">
-<item name = "Date">Sat Aug  1 12:52:07 2026
+<item name = "Date">Sat Aug  1 15:48:52 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -62,10 +62,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_7_2_8_1_1_U223">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U224">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 <column name="sparsemux_7_2_8_1_1_U225">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_x_U226">sparsemux_7_2_8_1_1_x, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U226">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U227">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_x_U228">sparsemux_7_2_8_1_1_x, 0, 0, 0, 9, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -138,14 +138,14 @@
 <column name="ap_sig_allocacmp_column">9, 2, 10, 20</column>
 <column name="centre_fu_112">9, 2, 8, 16</column>
 <column name="column_11_fu_96">9, 2, 10, 20</column>
-<column name="empty_87_fu_100">9, 2, 8, 16</column>
-<column name="empty_88_fu_104">9, 2, 8, 16</column>
-<column name="empty_89_fu_108">9, 2, 8, 16</column>
-<column name="empty_90_fu_116">9, 2, 8, 16</column>
-<column name="empty_91_fu_120">9, 2, 8, 16</column>
-<column name="empty_92_fu_124">9, 2, 8, 16</column>
-<column name="empty_93_fu_128">9, 2, 8, 16</column>
-<column name="empty_94_fu_132">9, 2, 8, 16</column>
+<column name="empty_83_fu_100">9, 2, 8, 16</column>
+<column name="empty_84_fu_104">9, 2, 8, 16</column>
+<column name="empty_85_fu_108">9, 2, 8, 16</column>
+<column name="empty_86_fu_116">9, 2, 8, 16</column>
+<column name="empty_87_fu_120">9, 2, 8, 16</column>
+<column name="empty_88_fu_124">9, 2, 8, 16</column>
+<column name="empty_89_fu_128">9, 2, 8, 16</column>
+<column name="empty_90_fu_132">9, 2, 8, 16</column>
 <column name="hyst1_out_blk_n">9, 2, 1, 2</column>
 </table>
 </item>
@@ -159,14 +159,14 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="centre_fu_112">8, 0, 8, 0</column>
 <column name="column_11_fu_96">10, 0, 10, 0</column>
-<column name="empty_87_fu_100">8, 0, 8, 0</column>
-<column name="empty_88_fu_104">8, 0, 8, 0</column>
-<column name="empty_89_fu_108">8, 0, 8, 0</column>
-<column name="empty_90_fu_116">8, 0, 8, 0</column>
-<column name="empty_91_fu_120">8, 0, 8, 0</column>
-<column name="empty_92_fu_124">8, 0, 8, 0</column>
-<column name="empty_93_fu_128">8, 0, 8, 0</column>
-<column name="empty_94_fu_132">8, 0, 8, 0</column>
+<column name="empty_83_fu_100">8, 0, 8, 0</column>
+<column name="empty_84_fu_104">8, 0, 8, 0</column>
+<column name="empty_85_fu_108">8, 0, 8, 0</column>
+<column name="empty_86_fu_116">8, 0, 8, 0</column>
+<column name="empty_87_fu_120">8, 0, 8, 0</column>
+<column name="empty_88_fu_124">8, 0, 8, 0</column>
+<column name="empty_89_fu_128">8, 0, 8, 0</column>
+<column name="empty_90_fu_132">8, 0, 8, 0</column>
 <column name="hasLeft_reg_832">1, 0, 1, 0</column>
 <column name="hasRight_reg_839">1, 0, 1, 0</column>
 <column name="icmp_ln143_reg_828">1, 0, 1, 0</column>

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'sobel_Pipeline_VITIS_LOOP_149_6'" level="0">
-<item name = "Date">Sat Aug  1 12:52:07 2026
+<item name = "Date">Sat Aug  1 15:48:52 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -62,13 +62,13 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="mul_10ns_10ns_19_1_1_U136">mul_10ns_10ns_19_1_1, 0, 0, 0, 62, 0</column>
-<column name="mul_10ns_11ns_20_1_1_U135">mul_10ns_11ns_20_1_1, 0, 1, 0, 5, 0</column>
-<column name="mul_10ns_13ns_22_1_1_U137">mul_10ns_13ns_22_1_1, 0, 1, 0, 5, 0</column>
-<column name="sparsemux_7_2_8_1_1_U132">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="mul_10ns_10ns_19_1_1_U137">mul_10ns_10ns_19_1_1, 0, 0, 0, 62, 0</column>
+<column name="mul_10ns_11ns_20_1_1_U136">mul_10ns_11ns_20_1_1, 0, 1, 0, 5, 0</column>
+<column name="mul_10ns_13ns_22_1_1_U138">mul_10ns_13ns_22_1_1, 0, 1, 0, 5, 0</column>
 <column name="sparsemux_7_2_8_1_1_U133">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 <column name="sparsemux_7_2_8_1_1_U134">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_9_3_2_1_1_U138">sparsemux_9_3_2_1_1, 0, 0, 0, 14, 0</column>
+<column name="sparsemux_7_2_8_1_1_U135">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_9_3_2_1_1_U139">sparsemux_9_3_2_1_1, 0, 0, 0, 14, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -131,11 +131,11 @@
 <column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
 <column name="ap_sig_allocacmp_column">9, 2, 10, 20</column>
 <column name="column_1_fu_114">9, 2, 10, 20</column>
-<column name="empty_55_fu_122">9, 2, 8, 16</column>
-<column name="empty_56_fu_126">9, 2, 8, 16</column>
-<column name="empty_57_fu_134">9, 2, 8, 16</column>
-<column name="empty_58_fu_142">9, 2, 8, 16</column>
-<column name="empty_59_fu_150">9, 2, 8, 16</column>
+<column name="empty_51_fu_122">9, 2, 8, 16</column>
+<column name="empty_52_fu_126">9, 2, 8, 16</column>
+<column name="empty_53_fu_134">9, 2, 8, 16</column>
+<column name="empty_54_fu_142">9, 2, 8, 16</column>
+<column name="empty_55_fu_150">9, 2, 8, 16</column>
 <column name="pixel_1_fu_138">9, 2, 8, 16</column>
 <column name="pixel_2_fu_130">9, 2, 8, 16</column>
 <column name="pixel_3_fu_146">9, 2, 8, 16</column>
@@ -155,11 +155,11 @@
 <column name="ap_loop_exit_ready_pp0_iter1_reg">1, 0, 1, 0</column>
 <column name="ap_loop_exit_ready_pp0_iter2_reg">1, 0, 1, 0</column>
 <column name="column_1_fu_114">10, 0, 10, 0</column>
-<column name="empty_55_fu_122">8, 0, 8, 0</column>
-<column name="empty_56_fu_126">8, 0, 8, 0</column>
-<column name="empty_57_fu_134">8, 0, 8, 0</column>
-<column name="empty_58_fu_142">8, 0, 8, 0</column>
-<column name="empty_59_fu_150">8, 0, 8, 0</column>
+<column name="empty_51_fu_122">8, 0, 8, 0</column>
+<column name="empty_52_fu_126">8, 0, 8, 0</column>
+<column name="empty_53_fu_134">8, 0, 8, 0</column>
+<column name="empty_54_fu_142">8, 0, 8, 0</column>
+<column name="empty_55_fu_150">8, 0, 8, 0</column>
 <column name="gradientX_reg_1001">11, 0, 11, 0</column>
 <column name="gradientX_reg_1001_pp0_iter2_reg">11, 0, 11, 0</column>
 <column name="gradientY_reg_1012">11, 0, 11, 0</column>

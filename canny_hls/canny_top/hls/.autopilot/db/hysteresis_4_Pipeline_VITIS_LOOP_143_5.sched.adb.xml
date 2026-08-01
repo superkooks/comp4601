@@ -46,10 +46,10 @@ newFuncRoot:0 %column_5 = alloca i32 1
 
 <Node id="16" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:1 %empty_60 = alloca i32 1
+newFuncRoot:1 %empty_56 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_60"/></StgValue>
+<StgValue><ssdm name="empty_56"/></StgValue>
 </operation>
 
 <operation id="8" st_id="1" stage="1" lat="1">
@@ -61,10 +61,10 @@ newFuncRoot:1 %empty_60 = alloca i32 1
 
 <Node id="17" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:2 %empty_61 = alloca i32 1
+newFuncRoot:2 %empty_57 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_61"/></StgValue>
+<StgValue><ssdm name="empty_57"/></StgValue>
 </operation>
 
 <operation id="9" st_id="1" stage="1" lat="1">
@@ -76,10 +76,10 @@ newFuncRoot:2 %empty_61 = alloca i32 1
 
 <Node id="18" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:3 %empty_62 = alloca i32 1
+newFuncRoot:3 %empty_58 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_62"/></StgValue>
+<StgValue><ssdm name="empty_58"/></StgValue>
 </operation>
 
 <operation id="10" st_id="1" stage="1" lat="1">
@@ -106,10 +106,10 @@ newFuncRoot:4 %centre = alloca i32 1
 
 <Node id="20" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:5 %empty_63 = alloca i32 1
+newFuncRoot:5 %empty_59 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_63"/></StgValue>
+<StgValue><ssdm name="empty_59"/></StgValue>
 </operation>
 
 <operation id="12" st_id="1" stage="1" lat="1">
@@ -121,10 +121,10 @@ newFuncRoot:5 %empty_63 = alloca i32 1
 
 <Node id="21" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:6 %empty_64 = alloca i32 1
+newFuncRoot:6 %empty_60 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_64"/></StgValue>
+<StgValue><ssdm name="empty_60"/></StgValue>
 </operation>
 
 <operation id="13" st_id="1" stage="1" lat="1">
@@ -136,10 +136,10 @@ newFuncRoot:6 %empty_64 = alloca i32 1
 
 <Node id="22" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:7 %empty_65 = alloca i32 1
+newFuncRoot:7 %empty_61 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_65"/></StgValue>
+<StgValue><ssdm name="empty_61"/></StgValue>
 </operation>
 
 <operation id="14" st_id="1" stage="1" lat="1">
@@ -151,10 +151,10 @@ newFuncRoot:7 %empty_65 = alloca i32 1
 
 <Node id="23" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:8 %empty_66 = alloca i32 1
+newFuncRoot:8 %empty_62 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_66"/></StgValue>
+<StgValue><ssdm name="empty_62"/></StgValue>
 </operation>
 
 <operation id="15" st_id="1" stage="1" lat="1">
@@ -166,10 +166,10 @@ newFuncRoot:8 %empty_66 = alloca i32 1
 
 <Node id="24" bw="8" op_0_bw="32">
 <![CDATA[
-newFuncRoot:9 %empty_67 = alloca i32 1
+newFuncRoot:9 %empty_63 = alloca i32 1
 
 ]]></Node>
-<StgValue><ssdm name="empty_67"/></StgValue>
+<StgValue><ssdm name="empty_63"/></StgValue>
 </operation>
 
 <operation id="16" st_id="1" stage="1" lat="1">
@@ -181,7 +181,7 @@ newFuncRoot:9 %empty_67 = alloca i32 1
 
 <Node id="25" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="0" op_3_bw="32" op_4_bw="32" op_5_bw="0" op_6_bw="32" op_7_bw="32" op_8_bw="0" op_9_bw="0" op_10_bw="0" op_11_bw="32" op_12_bw="32" op_13_bw="32" op_14_bw="32" op_15_bw="0" op_16_bw="0" op_17_bw="32" op_18_bw="32" op_19_bw="32" op_20_bw="32">
 <![CDATA[
-newFuncRoot:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hyst4_out, void @empty_11, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0
+newFuncRoot:10 %specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %hyst4_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0
 
 ]]></Node>
 <StgValue><ssdm name="specinterface_ln0"/></StgValue>
@@ -286,10 +286,10 @@ newFuncRoot:16 %tmp_13_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %tmp_13
 
 <Node id="32" bw="8" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:17 %tmp_read_68 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %tmp_s
+newFuncRoot:17 %tmp_read_64 = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %tmp_s
 
 ]]></Node>
-<StgValue><ssdm name="tmp_read_68"/></StgValue>
+<StgValue><ssdm name="tmp_read_64"/></StgValue>
 </operation>
 
 <operation id="24" st_id="1" stage="1" lat="1">
@@ -346,7 +346,7 @@ newFuncRoot:20 %tmp_15_read = read i8 @_ssdm_op_Read.ap_auto.i8, i8 %tmp_15
 
 <Node id="36" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:21 %store_ln0 = store i8 %tmp_15_read, i8 %empty_67
+newFuncRoot:21 %store_ln0 = store i8 %tmp_15_read, i8 %empty_63
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -361,7 +361,7 @@ newFuncRoot:21 %store_ln0 = store i8 %tmp_15_read, i8 %empty_67
 
 <Node id="37" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:22 %store_ln0 = store i8 %tmp_12_read, i8 %empty_66
+newFuncRoot:22 %store_ln0 = store i8 %tmp_12_read, i8 %empty_62
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -376,7 +376,7 @@ newFuncRoot:22 %store_ln0 = store i8 %tmp_12_read, i8 %empty_66
 
 <Node id="38" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:23 %store_ln0 = store i8 %tmp_14_read, i8 %empty_65
+newFuncRoot:23 %store_ln0 = store i8 %tmp_14_read, i8 %empty_61
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -391,7 +391,7 @@ newFuncRoot:23 %store_ln0 = store i8 %tmp_14_read, i8 %empty_65
 
 <Node id="39" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:24 %store_ln0 = store i8 %tmp_13_read, i8 %empty_64
+newFuncRoot:24 %store_ln0 = store i8 %tmp_13_read, i8 %empty_60
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -406,7 +406,7 @@ newFuncRoot:24 %store_ln0 = store i8 %tmp_13_read, i8 %empty_64
 
 <Node id="40" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:25 %store_ln0 = store i8 %tmp_read, i8 %empty_63
+newFuncRoot:25 %store_ln0 = store i8 %tmp_read, i8 %empty_59
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -421,7 +421,7 @@ newFuncRoot:25 %store_ln0 = store i8 %tmp_read, i8 %empty_63
 
 <Node id="41" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:26 %store_ln146 = store i8 %tmp_read_68, i8 %centre
+newFuncRoot:26 %store_ln146 = store i8 %tmp_read_64, i8 %centre
 
 ]]></Node>
 <StgValue><ssdm name="store_ln146"/></StgValue>
@@ -436,7 +436,7 @@ newFuncRoot:26 %store_ln146 = store i8 %tmp_read_68, i8 %centre
 
 <Node id="42" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:27 %store_ln0 = store i8 %tmp_12_read, i8 %empty_62
+newFuncRoot:27 %store_ln0 = store i8 %tmp_12_read, i8 %empty_58
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -451,7 +451,7 @@ newFuncRoot:27 %store_ln0 = store i8 %tmp_12_read, i8 %empty_62
 
 <Node id="43" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:28 %store_ln0 = store i8 %tmp_read_68, i8 %empty_61
+newFuncRoot:28 %store_ln0 = store i8 %tmp_read_64, i8 %empty_57
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -466,7 +466,7 @@ newFuncRoot:28 %store_ln0 = store i8 %tmp_read_68, i8 %empty_61
 
 <Node id="44" bw="0" op_0_bw="8" op_1_bw="8">
 <![CDATA[
-newFuncRoot:29 %store_ln0 = store i8 %tmp_read, i8 %empty_60
+newFuncRoot:29 %store_ln0 = store i8 %tmp_read, i8 %empty_56
 
 ]]></Node>
 <StgValue><ssdm name="store_ln0"/></StgValue>
@@ -813,7 +813,7 @@ for.body53:1 %centre_1 = load i8 %centre
 
 <Node id="50" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53:2 %p_load14 = load i8 %empty_63
+for.body53:2 %p_load14 = load i8 %empty_59
 
 ]]></Node>
 <StgValue><ssdm name="p_load14"/></StgValue>
@@ -828,7 +828,7 @@ for.body53:2 %p_load14 = load i8 %empty_63
 
 <Node id="51" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53:3 %p_load13 = load i8 %empty_64
+for.body53:3 %p_load13 = load i8 %empty_60
 
 ]]></Node>
 <StgValue><ssdm name="p_load13"/></StgValue>
@@ -843,7 +843,7 @@ for.body53:3 %p_load13 = load i8 %empty_64
 
 <Node id="52" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53:4 %p_load12 = load i8 %empty_65
+for.body53:4 %p_load12 = load i8 %empty_61
 
 ]]></Node>
 <StgValue><ssdm name="p_load12"/></StgValue>
@@ -858,7 +858,7 @@ for.body53:4 %p_load12 = load i8 %empty_65
 
 <Node id="53" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53:5 %p_load11 = load i8 %empty_66
+for.body53:5 %p_load11 = load i8 %empty_62
 
 ]]></Node>
 <StgValue><ssdm name="p_load11"/></StgValue>
@@ -873,7 +873,7 @@ for.body53:5 %p_load11 = load i8 %empty_66
 
 <Node id="54" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53:6 %p_load = load i8 %empty_67
+for.body53:6 %p_load = load i8 %empty_63
 
 ]]></Node>
 <StgValue><ssdm name="p_load"/></StgValue>
@@ -889,7 +889,7 @@ for.body53:6 %p_load = load i8 %empty_67
 
 <Node id="59" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53.split_ifconv:0 %p_load17 = load i8 %empty_60
+for.body53.split_ifconv:0 %p_load17 = load i8 %empty_56
 
 ]]></Node>
 <StgValue><ssdm name="p_load17"/></StgValue>
@@ -905,7 +905,7 @@ for.body53.split_ifconv:0 %p_load17 = load i8 %empty_60
 
 <Node id="60" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53.split_ifconv:1 %p_load16 = load i8 %empty_61
+for.body53.split_ifconv:1 %p_load16 = load i8 %empty_57
 
 ]]></Node>
 <StgValue><ssdm name="p_load16"/></StgValue>
@@ -921,7 +921,7 @@ for.body53.split_ifconv:1 %p_load16 = load i8 %empty_61
 
 <Node id="61" bw="8" op_0_bw="8" op_1_bw="0">
 <![CDATA[
-for.body53.split_ifconv:2 %p_load15 = load i8 %empty_62
+for.body53.split_ifconv:2 %p_load15 = load i8 %empty_58
 
 ]]></Node>
 <StgValue><ssdm name="p_load15"/></StgValue>
@@ -1593,7 +1593,7 @@ for.body53.split_ifconv:59 %tmp_18 = sparsemux i8 @_ssdm_op_SparseMux.ap_auto.3i
 
 <Node id="119" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:60 %store_ln191 = store i8 %tmp_18, i8 %empty_67
+for.body53.split_ifconv:60 %store_ln191 = store i8 %tmp_18, i8 %empty_63
 
 ]]></Node>
 <StgValue><ssdm name="store_ln191"/></StgValue>
@@ -1609,7 +1609,7 @@ for.body53.split_ifconv:60 %store_ln191 = store i8 %tmp_18, i8 %empty_67
 
 <Node id="120" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:61 %store_ln44 = store i8 %p_load, i8 %empty_66
+for.body53.split_ifconv:61 %store_ln44 = store i8 %p_load, i8 %empty_62
 
 ]]></Node>
 <StgValue><ssdm name="store_ln44"/></StgValue>
@@ -1625,7 +1625,7 @@ for.body53.split_ifconv:61 %store_ln44 = store i8 %p_load, i8 %empty_66
 
 <Node id="121" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:62 %store_ln191 = store i8 %tmp_17, i8 %empty_65
+for.body53.split_ifconv:62 %store_ln191 = store i8 %tmp_17, i8 %empty_61
 
 ]]></Node>
 <StgValue><ssdm name="store_ln191"/></StgValue>
@@ -1641,7 +1641,7 @@ for.body53.split_ifconv:62 %store_ln191 = store i8 %tmp_17, i8 %empty_65
 
 <Node id="122" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:63 %store_ln191 = store i8 %tmp_16, i8 %empty_64
+for.body53.split_ifconv:63 %store_ln191 = store i8 %tmp_16, i8 %empty_60
 
 ]]></Node>
 <StgValue><ssdm name="store_ln191"/></StgValue>
@@ -1657,7 +1657,7 @@ for.body53.split_ifconv:63 %store_ln191 = store i8 %tmp_16, i8 %empty_64
 
 <Node id="123" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:64 %store_ln39 = store i8 %p_load13, i8 %empty_63
+for.body53.split_ifconv:64 %store_ln39 = store i8 %p_load13, i8 %empty_59
 
 ]]></Node>
 <StgValue><ssdm name="store_ln39"/></StgValue>
@@ -1689,7 +1689,7 @@ for.body53.split_ifconv:65 %store_ln146 = store i8 %p_load12, i8 %centre
 
 <Node id="125" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:66 %store_ln43 = store i8 %p_load11, i8 %empty_62
+for.body53.split_ifconv:66 %store_ln43 = store i8 %p_load11, i8 %empty_58
 
 ]]></Node>
 <StgValue><ssdm name="store_ln43"/></StgValue>
@@ -1705,7 +1705,7 @@ for.body53.split_ifconv:66 %store_ln43 = store i8 %p_load11, i8 %empty_62
 
 <Node id="126" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:67 %store_ln153 = store i8 %centre_1, i8 %empty_61
+for.body53.split_ifconv:67 %store_ln153 = store i8 %centre_1, i8 %empty_57
 
 ]]></Node>
 <StgValue><ssdm name="store_ln153"/></StgValue>
@@ -1721,7 +1721,7 @@ for.body53.split_ifconv:67 %store_ln153 = store i8 %centre_1, i8 %empty_61
 
 <Node id="127" bw="0" op_0_bw="8" op_1_bw="8" op_2_bw="0" op_3_bw="0">
 <![CDATA[
-for.body53.split_ifconv:68 %store_ln38 = store i8 %p_load14, i8 %empty_60
+for.body53.split_ifconv:68 %store_ln38 = store i8 %p_load14, i8 %empty_56
 
 ]]></Node>
 <StgValue><ssdm name="store_ln38"/></StgValue>
@@ -1755,7 +1755,7 @@ cleanup.loopexit.exitStub:0 %ret_ln0 = ret
 
 <Node id="62" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="0">
 <![CDATA[
-for.body53.split_ifconv:3 %specpipeline_ln144 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_5
+for.body53.split_ifconv:3 %specpipeline_ln144 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_4
 
 ]]></Node>
 <StgValue><ssdm name="specpipeline_ln144"/></StgValue>
@@ -1785,7 +1785,7 @@ for.body53.split_ifconv:4 %speclooptripcount_ln143 = speclooptripcount void @_ss
 
 <Node id="64" bw="0" op_0_bw="0" op_1_bw="0">
 <![CDATA[
-for.body53.split_ifconv:5 %specloopname_ln143 = specloopname void @_ssdm_op_SpecLoopName, void @empty_8
+for.body53.split_ifconv:5 %specloopname_ln143 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21
 
 ]]></Node>
 <StgValue><ssdm name="specloopname_ln143"/></StgValue>

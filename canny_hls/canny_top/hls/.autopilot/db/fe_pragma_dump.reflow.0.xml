@@ -22,19 +22,19 @@
 <pragma file="../src/grayscale.cpp" line="25" pragmaType="pipeline" parentfunction="grayscale" off="0" ii="1" rewind="0" style=""/>
 <pragma file="../src/grayscale.cpp" line="33" pragmaType="pipeline" parentfunction="grayscale" off="0" ii="1" rewind="0" style=""/>
 <pragma file="../src/grayscale.cpp" line="27" pragmaType="unroll" parentfunction="grayscale" factor="-1" skip_exit_check="0"/>
-<pragma file="../src/gaussian_blur.cpp" line="64" pragmaType="pipeline" parentfunction="gaussian_blur" off="0" ii="1" rewind="0" style=""/>
-<pragma file="../src/gaussian_blur.cpp" line="78" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
-<pragma file="../src/gaussian_blur.cpp" line="83" pragmaType="pipeline" parentfunction="gaussian_blur" off="0" ii="1" rewind="0" style=""/>
-<pragma file="../src/gaussian_blur.cpp" line="122" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
-<pragma file="../src/gaussian_blur.cpp" line="131" pragmaType="pipeline" parentfunction="gaussian_blur" off="0" ii="1" rewind="0" style=""/>
-<pragma file="../src/gaussian_blur.cpp" line="88" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
-<pragma file="../src/gaussian_blur.cpp" line="97" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
-<pragma file="../src/gaussian_blur.cpp" line="142" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="95" pragmaType="pipeline" parentfunction="gaussian_blur" off="0" ii="1" rewind="0" style=""/>
 <pragma file="../src/gaussian_blur.cpp" line="149" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="158" pragmaType="pipeline" parentfunction="gaussian_blur" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../src/gaussian_blur.cpp" line="100" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="114" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="125" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="169" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
+<pragma file="../src/gaussian_blur.cpp" line="176" pragmaType="unroll" parentfunction="gaussian_blur" factor="-1" skip_exit_check="0"/>
 <pragma file="../src/gaussian_blur.cpp" line="55" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="lineBuffer"/>
-<pragma file="../src/gaussian_blur.cpp" line="75" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="window"/>
-<pragma file="../src/gaussian_blur.cpp" line="119" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
-<pragma file="../src/gaussian_blur.cpp" line="139" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
+<pragma file="../src/gaussian_blur.cpp" line="74" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="window"/>
+<pragma file="../src/gaussian_blur.cpp" line="77" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="history"/>
+<pragma file="../src/gaussian_blur.cpp" line="146" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="slot"/>
+<pragma file="../src/gaussian_blur.cpp" line="166" pragmaType="array_partition" parentfunction="gaussian_blur" dim="1" factor="0" mode="complete" dynamic="0" variable="banked"/>
 <pragma file="../src/sobel.cpp" line="97" pragmaType="pipeline" parentfunction="sobel" off="0" ii="1" rewind="0" style=""/>
 <pragma file="../src/sobel.cpp" line="117" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>
 <pragma file="../src/sobel.cpp" line="137" pragmaType="unroll" parentfunction="sobel" factor="-1" skip_exit_check="0"/>

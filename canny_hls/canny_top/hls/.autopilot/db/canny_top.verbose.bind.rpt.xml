@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'canny_top'" level="0">
-<item name = "Date">Sat Aug  1 12:52:06 2026
+<item name = "Date">Sat Aug  1 15:48:52 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">802629, 803979, 4.013 ms, 4.020 ms, 332802, 803898, dataflow</column>
+<column name="">547115, 548071, 2.736 ms, 2.740 ms, 332802, 547886, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
@@ -33,7 +33,7 @@
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
 <column name="call_ln13_entry_proc_fu_172">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
 <column name="grp_grayscale_fu_179">grayscale, 332801, 332801, 1.664 ms, 1.664 ms, 332801, 332801, no</column>
-<column name="grp_gaussian_blur_fu_188">gaussian_blur, 1543, 803897, 7.715 us, 4.019 ms, 1543, 803897, no</column>
+<column name="grp_gaussian_blur_fu_188">gaussian_blur, 1543, 539701, 7.715 us, 2.699 ms, 1543, 539701, no</column>
 <column name="grp_sobel_fu_194">sobel, 1540, 547885, 7.700 us, 2.739 ms, 1540, 547885, no</column>
 <column name="grp_non_maximum_suppression_fu_200">non_maximum_suppression, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
 <column name="grp_double_threshold_fu_206">double_threshold, 262146, 262146, 1.311 ms, 1.311 ms, 262144, 262144, loop auto-rewind stp (delay=0 clock cycles(s))</column>

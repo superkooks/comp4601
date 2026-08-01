@@ -27,6 +27,7 @@
     "src/canny_top.cpp": "canny_hls",
     "src/non_maximum_suppression.cpp": "canny_hls",
     "testbench/test_grayscale.cpp": "canny_hls",
+    "src/write_frame.cpp": "canny_hls",
     "testbench/sobel_reference.h": "canny_hls",
     "testbench/hysteresis_reference.cpp": "canny_hls",
     "testbench/gaussian_reference.cpp": "canny_hls",

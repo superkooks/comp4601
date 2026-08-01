@@ -58,26 +58,38 @@ void gaussian_blur(
 
     for (int row = 0; row < TOTAL_ROWS; ++row) {
         if (row < HEIGHT) {
-            std::uint8_t row_in[WIDTH];
-
-            for (int column = 0; column < WIDTH; ++column) {
-                #pragma HLS PIPELINE II=1
-                row_in[column] = input.read();
-            }
-
             const int writeSlot = rowsReceived % KERNEL_SIZE;
 
             /*
-             * Horizontal pass.  A shift register holds the five taps, so each
-             * input pixel is fetched exactly once instead of once per tap.
+             * Streaming horizontal pass: a 5-tap shift register slides across
+             * the row as samples arrive directly from the input stream, so
+             * the whole row never needs to be buffered first -- this used to
+             * be two separate WIDTH-long loops (read row, then filter row),
+             * now it is one. `history` keeps the last few samples actually
+             * read purely to satisfy reflect_101 at the far edge of the row,
+             * where the last two output columns look back at samples already
+             * seen instead of reading anything new.
              */
             std::uint8_t window[KERNEL_SIZE];
             #pragma HLS ARRAY_PARTITION variable=window type=complete
 
-            for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
-                #pragma HLS UNROLL
-                window[tap] = row_in[reflect_101(tap - 2, WIDTH)];
-            }
+            std::uint8_t history[KERNEL_SIZE - 1];
+            #pragma HLS ARRAY_PARTITION variable=history type=complete
+
+            const std::uint8_t sample0 = input.read();
+            const std::uint8_t sample1 = input.read();
+            const std::uint8_t sample2 = input.read();
+
+            window[0] = sample2;
+            window[1] = sample1;
+            window[2] = sample0;
+            window[3] = sample1;
+            window[4] = sample2;
+
+            history[0] = sample0;
+            history[1] = sample0;
+            history[2] = sample1;
+            history[3] = sample2;
 
             for (int column = 0; column < WIDTH; ++column) {
                 #pragma HLS PIPELINE II=1
@@ -93,13 +105,28 @@ void gaussian_blur(
                 lineBuffer[writeSlot][column] =
                     static_cast<std::uint16_t>(horizontalSum);
 
+                std::uint8_t nextSample;
+
+                if (column + 3 < WIDTH) {
+                    nextSample = input.read();
+
+                    for (int tap = 0; tap < KERNEL_SIZE - 2; ++tap) {
+                        #pragma HLS UNROLL
+                        history[tap] = history[tap + 1];
+                    }
+                    history[KERNEL_SIZE - 2] = nextSample;
+                } else {
+                    // Last two columns: reflect back into samples already
+                    // read, held in `history` since the row itself is gone.
+                    nextSample = history[WIDTH - 1 - column];
+                }
+
                 for (int tap = 0; tap < KERNEL_SIZE - 1; ++tap) {
                     #pragma HLS UNROLL
                     window[tap] = window[tap + 1];
                 }
 
-                window[KERNEL_SIZE - 1] =
-                    row_in[reflect_101(column + 3, WIDTH)];
+                window[KERNEL_SIZE - 1] = nextSample;
             }
         }
 

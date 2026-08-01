@@ -2406,8 +2406,8 @@
         <mDepth>-1</mDepth>
         <mMinTripCount>-1</mMinTripCount>
         <mMaxTripCount>-1</mMaxTripCount>
-        <mMinLatency>802629</mMinLatency>
-        <mMaxLatency>803979</mMaxLatency>
+        <mMinLatency>547115</mMinLatency>
+        <mMaxLatency>548071</mMaxLatency>
         <mIsDfPipe>1</mIsDfPipe>
         <mDfPipe class_id="23" tracking_level="1" version="0" object_id="_101">
           <port_list class_id="24" tracking_level="0" version="0">
@@ -3940,15 +3940,15 @@
             <item_version>0</item_version>
             <item>
               <first>BRAM</first>
-              <second>6</second>
+              <second>5</second>
             </item>
             <item>
               <first>FF</first>
-              <second>859</second>
+              <second>820</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>1553</second>
+              <second>1582</second>
             </item>
             <item>
               <first>URAM</first>

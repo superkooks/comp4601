@@ -404,7 +404,7 @@ attribute shreg_extract : string;
     end component;
 
 
-    component canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W IS
+    component canny_top_sobel_lineBuffer_RAM_AUTO_1R1W IS
     generic (
         DataWidth : INTEGER;
         AddressRange : INTEGER;
@@ -425,7 +425,7 @@ attribute shreg_extract : string;
 
 
 begin
-    lineBuffer_U : component canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W
+    lineBuffer_U : component canny_top_sobel_lineBuffer_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
         AddressRange => 512,
@@ -442,7 +442,7 @@ begin
         ce1 => lineBuffer_ce1_local,
         q1 => lineBuffer_q1);
 
-    lineBuffer_1_U : component canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W
+    lineBuffer_1_U : component canny_top_sobel_lineBuffer_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
         AddressRange => 512,
@@ -459,7 +459,7 @@ begin
         ce1 => lineBuffer_1_ce1_local,
         q1 => lineBuffer_1_q1);
 
-    lineBuffer_2_U : component canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W
+    lineBuffer_2_U : component canny_top_sobel_lineBuffer_RAM_AUTO_1R1W
     generic map (
         DataWidth => 8,
         AddressRange => 512,
@@ -535,7 +535,7 @@ begin
         empty => trunc_ln60_reg_592,
         select_ln23_1 => select_ln23_1_reg_597);
 
-    urem_32s_3ns_2_36_seq_1_U158 : component canny_top_urem_32s_3ns_2_36_seq_1
+    urem_32s_3ns_2_36_seq_1_U159 : component canny_top_urem_32s_3ns_2_36_seq_1
     generic map (
         ID => 1,
         NUM_STAGE => 36,
@@ -552,7 +552,7 @@ begin
         ce => grp_fu_266_ce,
         dout => grp_fu_266_p2);
 
-    sparsemux_7_2_8_1_1_U159 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U160 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -573,7 +573,7 @@ begin
         sel => select_ln23_fu_276_p3,
         dout => tmp_1_fu_297_p9);
 
-    sparsemux_7_2_8_1_1_U160 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U161 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -594,7 +594,7 @@ begin
         sel => trunc_ln60_fu_284_p1,
         dout => tmp_2_fu_315_p9);
 
-    sparsemux_7_2_8_1_1_U161 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U162 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -615,7 +615,7 @@ begin
         sel => select_ln23_1_fu_289_p3,
         dout => tmp_3_fu_333_p9);
 
-    sparsemux_7_2_8_1_1_U162 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U163 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -636,7 +636,7 @@ begin
         sel => select_ln23_fu_276_p3,
         dout => tmp_4_fu_351_p9);
 
-    sparsemux_7_2_8_1_1_U163 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U164 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -657,7 +657,7 @@ begin
         sel => trunc_ln60_fu_284_p1,
         dout => tmp_5_fu_369_p9);
 
-    sparsemux_7_2_8_1_1_U164 : component canny_top_sparsemux_7_2_8_1_1
+    sparsemux_7_2_8_1_1_U165 : component canny_top_sparsemux_7_2_8_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

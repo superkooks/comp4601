@@ -15,7 +15,7 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 32
+set cdfgNum 31
 set C_modelName {gaussian_blur}
 set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
@@ -77,40 +77,37 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	gaussian_blur {
-		gray_out {Type I LastRead 1 FirstWrite -1}
+		gray_out {Type I LastRead 3 FirstWrite -1}
 		gauss_out {Type O LastRead -1 FirstWrite 2}}
-	gaussian_blur_Pipeline_VITIS_LOOP_63_2 {
+	gaussian_blur_Pipeline_VITIS_LOOP_94_2 {
+		sample2 {Type I LastRead 0 FirstWrite -1}
+		sample1 {Type I LastRead 0 FirstWrite -1}
+		sample0 {Type I LastRead 0 FirstWrite -1}
 		gray_out {Type I LastRead 1 FirstWrite -1}
-		row_in {Type O LastRead -1 FirstWrite 1}}
-	gaussian_blur_Pipeline_VITIS_LOOP_82_4 {
-		row_in_load {Type I LastRead 0 FirstWrite -1}
-		row_in_load_1 {Type I LastRead 0 FirstWrite -1}
-		row_in_load_2 {Type I LastRead 0 FirstWrite -1}
-		row_in {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_4 {Type O LastRead -1 FirstWrite 2}
 		lineBuffer_3 {Type O LastRead -1 FirstWrite 2}
 		lineBuffer_2 {Type O LastRead -1 FirstWrite 2}
 		lineBuffer_1 {Type O LastRead -1 FirstWrite 2}
 		lineBuffer {Type O LastRead -1 FirstWrite 2}
 		empty {Type I LastRead 0 FirstWrite -1}}
-	gaussian_blur_Pipeline_VITIS_LOOP_130_8 {
+	gaussian_blur_Pipeline_VITIS_LOOP_157_7 {
 		lineBuffer {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_1 {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_2 {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_3 {Type I LastRead 0 FirstWrite -1}
 		lineBuffer_4 {Type I LastRead 0 FirstWrite -1}
-		empty_46 {Type I LastRead 0 FirstWrite -1}
-		empty_47 {Type I LastRead 0 FirstWrite -1}
-		empty_48 {Type I LastRead 0 FirstWrite -1}
-		empty_49 {Type I LastRead 0 FirstWrite -1}
+		select_ln21 {Type I LastRead 0 FirstWrite -1}
+		select_ln21_1 {Type I LastRead 0 FirstWrite -1}
+		empty_45 {Type I LastRead 0 FirstWrite -1}
+		select_ln21_2 {Type I LastRead 0 FirstWrite -1}
 		empty {Type I LastRead 0 FirstWrite -1}
 		gauss_out {Type O LastRead -1 FirstWrite 2}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1543", "Max" : "803897"}
-	, {"Name" : "Interval", "Min" : "1543", "Max" : "803897"}
+	{"Name" : "Latency", "Min" : "1543", "Max" : "539701"}
+	, {"Name" : "Interval", "Min" : "1543", "Max" : "539701"}
 ]}
 
 set PipelineEnableSignalInfo {[

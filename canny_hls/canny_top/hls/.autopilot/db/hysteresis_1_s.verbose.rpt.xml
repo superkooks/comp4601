@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'hysteresis_1_s'" level="0">
-<item name = "Date">Sat Aug  1 12:52:07 2026
+<item name = "Date">Sat Aug  1 15:48:53 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -66,13 +66,13 @@
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
 <column name="grp_hysteresis_1_Pipeline_VITIS_LOOP_143_5_fu_175">hysteresis_1_Pipeline_VITIS_LOOP_143_5, 0, 0, 94, 497, 0</column>
 <column name="grp_hysteresis_1_Pipeline_VITIS_LOOP_78_2_fu_165">hysteresis_1_Pipeline_VITIS_LOOP_78_2, 0, 0, 23, 84, 0</column>
-<column name="sparsemux_7_2_8_1_1_U243">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U244">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 <column name="sparsemux_7_2_8_1_1_U245">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 <column name="sparsemux_7_2_8_1_1_U246">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 <column name="sparsemux_7_2_8_1_1_U247">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 <column name="sparsemux_7_2_8_1_1_U248">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
-<column name="srem_10ns_3ns_10_14_seq_1_U242">srem_10ns_3ns_10_14_seq_1, 0, 0, 131, 56, 0</column>
+<column name="sparsemux_7_2_8_1_1_U249">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U250">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="srem_10ns_3ns_10_14_seq_1_U244">srem_10ns_3ns_10_14_seq_1, 0, 0, 131, 56, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">
@@ -81,9 +81,9 @@
 </item>
 <item name = "Memory"><table name="" hasTotal="1">
 <keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
-<column name="buffer_U">gaussian_blur_row_in_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 1, 4096</column>
-<column name="buffer_1_U">gaussian_blur_row_in_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 1, 4096</column>
-<column name="buffer_2_U">gaussian_blur_row_in_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 1, 4096</column>
+<column name="buffer_U">sobel_lineBuffer_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 1, 4096</column>
+<column name="buffer_1_U">sobel_lineBuffer_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 1, 4096</column>
+<column name="buffer_2_U">sobel_lineBuffer_RAM_AUTO_1R1W, 1, 0, 0, 0, 512, 8, 1, 4096</column>
 </table>
 </item>
 <item name = "FIFO"><table name="" hasTotal="1">

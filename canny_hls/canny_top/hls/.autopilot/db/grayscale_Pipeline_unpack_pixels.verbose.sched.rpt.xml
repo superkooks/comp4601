@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale_Pipeline_unpack_pixels'" level="0">
-<item name = "Date">Sat Aug  1 12:52:05 2026
+<item name = "Date">Sat Aug  1 15:48:51 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>

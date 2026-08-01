@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'non_maximum_suppression'
 ================================================================
-* Date:           Sat Aug  1 12:52:07 2026
+* Date:           Sat Aug  1 15:48:52 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -81,15 +81,15 @@
     +--------------------------------------------------------------+---------------------------------------------------+---------+----+-----+-----+-----+
     |grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267  |non_maximum_suppression_Pipeline_VITIS_LOOP_105_5  |        0|   0|  197|  615|    0|
     |grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254   |non_maximum_suppression_Pipeline_VITIS_LOOP_50_2   |        0|   0|   23|   84|    0|
-    |sparsemux_7_2_16_1_1_U206                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
-    |sparsemux_7_2_16_1_1_U207                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
     |sparsemux_7_2_16_1_1_U208                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
     |sparsemux_7_2_16_1_1_U209                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
     |sparsemux_7_2_16_1_1_U210                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
     |sparsemux_7_2_16_1_1_U211                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
-    |sparsemux_7_2_8_1_1_U204                                      |sparsemux_7_2_8_1_1                                |        0|   0|    0|    9|    0|
-    |sparsemux_7_2_8_1_1_U205                                      |sparsemux_7_2_8_1_1                                |        0|   0|    0|    9|    0|
-    |srem_10ns_3ns_10_14_seq_1_U203                                |srem_10ns_3ns_10_14_seq_1                          |        0|   0|  131|   56|    0|
+    |sparsemux_7_2_16_1_1_U212                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_16_1_1_U213                                     |sparsemux_7_2_16_1_1                               |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_8_1_1_U206                                      |sparsemux_7_2_8_1_1                                |        0|   0|    0|    9|    0|
+    |sparsemux_7_2_8_1_1_U207                                      |sparsemux_7_2_8_1_1                                |        0|   0|    0|    9|    0|
+    |srem_10ns_3ns_10_14_seq_1_U205                                |srem_10ns_3ns_10_14_seq_1                          |        0|   0|  131|   56|    0|
     +--------------------------------------------------------------+---------------------------------------------------+---------+----+-----+-----+-----+
     |Total                                                         |                                                   |        0|   0|  351|  827|    0|
     +--------------------------------------------------------------+---------------------------------------------------+---------+----+-----+-----+-----+
@@ -101,12 +101,12 @@
     +--------------------------+------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |          Memory          |                           Module                           | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
     +--------------------------+------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |lineBuffer_direction_U    |gaussian_blur_row_in_RAM_AUTO_1R1W                          |        1|  0|   0|    0|   512|    8|     1|         4096|
-    |lineBuffer_direction_1_U  |gaussian_blur_row_in_RAM_AUTO_1R1W                          |        1|  0|   0|    0|   512|    8|     1|         4096|
-    |lineBuffer_direction_2_U  |gaussian_blur_row_in_RAM_AUTO_1R1W                          |        1|  0|   0|    0|   512|    8|     1|         4096|
     |lineBuffer_magnitude_U    |non_maximum_suppression_lineBuffer_magnitude_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|   16|     1|         8192|
     |lineBuffer_magnitude_1_U  |non_maximum_suppression_lineBuffer_magnitude_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|   16|     1|         8192|
     |lineBuffer_magnitude_2_U  |non_maximum_suppression_lineBuffer_magnitude_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|   16|     1|         8192|
+    |lineBuffer_direction_U    |sobel_lineBuffer_RAM_AUTO_1R1W                              |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |lineBuffer_direction_1_U  |sobel_lineBuffer_RAM_AUTO_1R1W                              |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |lineBuffer_direction_2_U  |sobel_lineBuffer_RAM_AUTO_1R1W                              |        1|  0|   0|    0|   512|    8|     1|         4096|
     +--------------------------+------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
     |Total                     |                                                            |        6|  0|   0|    0|  3072|   72|     6|        36864|
     +--------------------------+------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+

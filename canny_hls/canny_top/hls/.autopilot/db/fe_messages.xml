@@ -146,40 +146,40 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:55:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lineBuffer type=complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:64:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:75:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:74:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:78:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:77:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=history type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:83:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:95:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:88:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:100:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:97:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:114:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:119:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:125:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:146:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=slot type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:122:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:149:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:131:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:158:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:139:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:166:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=banked type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:142:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:169:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:149:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:176:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/grayscale.cpp:18:1" msg_body="HLS pragma dump">
@@ -218,17 +218,20 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:195:32" msg_body="Loop 'VITIS_LOOP_195_10' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_195_10"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:87:34" msg_body="Loop 'VITIS_LOOP_87_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_87_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:99:34" msg_body="Loop 'VITIS_LOOP_99_3' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_99_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:96:34" msg_body="Loop 'VITIS_LOOP_96_6' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_96_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:113:39" msg_body="Loop 'VITIS_LOOP_113_4' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_113_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:141:31" msg_body="Loop 'VITIS_LOOP_141_9' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_141_9"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:124:35" msg_body="Loop 'VITIS_LOOP_124_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_124_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:148:32" msg_body="Loop 'VITIS_LOOP_148_10' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_148_10"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:168:31" msg_body="Loop 'VITIS_LOOP_168_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_168_8"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:175:31" msg_body="Loop 'VITIS_LOOP_175_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_175_9"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/grayscale.cpp:26:30" msg_body="Loop 'VITIS_LOOP_26_2' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="VITIS_LOOP_26_2"/>
@@ -314,26 +317,29 @@
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_195_10' (../src/sobel.cpp:195:32) in function 'sobel' completely with a factor of 3">
         <args Factor="3" LoopLoc="../src/sobel.cpp:195:32" LoopName="VITIS_LOOP_195_10"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_77_3' (../src/gaussian_blur.cpp:77:30) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:77:30" LoopName="VITIS_LOOP_77_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_99_3' (../src/gaussian_blur.cpp:99:34) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:99:34" LoopName="VITIS_LOOP_99_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_87_5' (../src/gaussian_blur.cpp:87:34) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:87:34" LoopName="VITIS_LOOP_87_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_113_4' (../src/gaussian_blur.cpp:113:39) in function 'gaussian_blur' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/gaussian_blur.cpp:113:39" LoopName="VITIS_LOOP_113_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_96_6' (../src/gaussian_blur.cpp:96:34) in function 'gaussian_blur' completely with a factor of 4">
-        <args Factor="4" LoopLoc="../src/gaussian_blur.cpp:96:34" LoopName="VITIS_LOOP_96_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_124_5' (../src/gaussian_blur.cpp:124:35) in function 'gaussian_blur' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../src/gaussian_blur.cpp:124:35" LoopName="VITIS_LOOP_124_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_121_7' (../src/gaussian_blur.cpp:121:27) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:121:27" LoopName="VITIS_LOOP_121_7"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_148_6' (../src/gaussian_blur.cpp:148:27) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:148:27" LoopName="VITIS_LOOP_148_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_141_9' (../src/gaussian_blur.cpp:141:31) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:141:31" LoopName="VITIS_LOOP_141_9"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_168_8' (../src/gaussian_blur.cpp:168:31) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:168:31" LoopName="VITIS_LOOP_168_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_148_10' (../src/gaussian_blur.cpp:148:32) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:148:32" LoopName="VITIS_LOOP_148_10"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_175_9' (../src/gaussian_blur.cpp:175:31) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:175:31" LoopName="VITIS_LOOP_175_9"/>
     </msg>
     <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/grayscale.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_26_2' (../src/grayscale.cpp:26:30) in function 'grayscale' completely with a factor of 64">
         <args Factor="64" LoopLoc="../src/grayscale.cpp:26:30" LoopName="VITIS_LOOP_26_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Inlining function '(anonymous namespace)::reflect_101(int, int)' into 'gaussian_blur(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::reflect_101(int, int)" Callee-DebugLoc="File ../src/gaussian_blur.cpp Line 24 Column 0" Caller="gaussian_blur(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;)" Caller-DebugLoc="File ../src/gaussian_blur.cpp Line 39 Column 0"/>
     </msg>
     <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int) (.22)' into 'gaussian_blur(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;)'">
         <args Callee="(anonymous namespace)::positive_modulo(int, int) (.22)" Callee-DebugLoc="File ../src/gaussian_blur.cpp Line 19 Column 0" Caller="gaussian_blur(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;)" Caller-DebugLoc="File ../src/gaussian_blur.cpp Line 39 Column 0"/>
@@ -401,7 +407,10 @@
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:54:19" msg_body="Applying array_partition to 'lineBuffer': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="lineBuffer"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:138:27" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:76:26" msg_body="Applying array_partition to 'history': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="history"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:165:27" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="banked"/>
     </msg>
     <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/sobel.cpp:87:18" msg_body="Applying array_partition to 'lineBuffer': Complete partitioning on dimension 1.">

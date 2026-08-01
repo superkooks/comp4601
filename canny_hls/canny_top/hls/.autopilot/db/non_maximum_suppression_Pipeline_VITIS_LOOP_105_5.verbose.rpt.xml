@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'non_maximum_suppression_Pipeline_VITIS_LOOP_105_5'" level="0">
-<item name = "Date">Sat Aug  1 12:52:07 2026
+<item name = "Date">Sat Aug  1 15:48:52 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -62,12 +62,12 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
-<column name="sparsemux_11_4_16_1_1_U176">sparsemux_11_4_16_1_1, 0, 0, 0, 20, 0</column>
-<column name="sparsemux_11_4_16_1_1_U177">sparsemux_11_4_16_1_1, 0, 0, 0, 20, 0</column>
-<column name="sparsemux_7_2_16_1_1_U178">sparsemux_7_2_16_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_16_1_1_U179">sparsemux_7_2_16_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_11_4_16_1_1_U178">sparsemux_11_4_16_1_1, 0, 0, 0, 20, 0</column>
+<column name="sparsemux_11_4_16_1_1_U179">sparsemux_11_4_16_1_1, 0, 0, 0, 20, 0</column>
 <column name="sparsemux_7_2_16_1_1_U180">sparsemux_7_2_16_1_1, 0, 0, 0, 9, 0</column>
-<column name="sparsemux_7_2_8_1_1_U181">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_16_1_1_U181">sparsemux_7_2_16_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_16_1_1_U182">sparsemux_7_2_16_1_1, 0, 0, 0, 9, 0</column>
+<column name="sparsemux_7_2_8_1_1_U183">sparsemux_7_2_8_1_1, 0, 0, 0, 9, 0</column>
 </table>
 </item>
 <item name = "DSP"><table name="" hasTotal="0">

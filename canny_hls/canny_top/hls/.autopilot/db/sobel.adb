@@ -272,7 +272,7 @@
               <isStorage>1</isStorage>
               <storageDepth>512</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_sobel_lineBuffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -328,7 +328,7 @@
               <isStorage>1</isStorage>
               <storageDepth>512</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_sobel_lineBuffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -384,7 +384,7 @@
               <isStorage>1</isStorage>
               <storageDepth>512</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_sobel_lineBuffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -1976,7 +1976,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>urem_32s_3ns_2_36_seq_1_U158</rtlName>
+              <rtlName>urem_32s_3ns_2_36_seq_1_U159</rtlName>
               <control>auto</control>
               <opType>urem</opType>
               <implIndex>auto_seq</implIndex>
@@ -2460,7 +2460,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U159</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U160</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -2524,7 +2524,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U160</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U161</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -2588,7 +2588,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U161</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U162</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -2823,7 +2823,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U162</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U163</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -2887,7 +2887,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U163</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U164</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -2951,7 +2951,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U164</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U165</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -7738,21 +7738,6 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U159 (sparsemux_7_2_8_1_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>sparsemux_7_2_8_1_1_U160 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>2</count>
@@ -7828,7 +7813,22 @@
           </second>
         </item>
         <item>
-          <first>urem_32s_3ns_2_36_seq_1_U158 (urem_32s_3ns_2_36_seq_1)</first>
+          <first>sparsemux_7_2_8_1_1_U165 (sparsemux_7_2_8_1_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>urem_32s_3ns_2_36_seq_1_U159 (urem_32s_3ns_2_36_seq_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -9296,13 +9296,6 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U159</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
           <first>sparsemux_7_2_8_1_1_U160</first>
           <second>
             <count>0</count>
@@ -9338,7 +9331,14 @@
           </second>
         </item>
         <item>
-          <first>urem_32s_3ns_2_36_seq_1_U158</first>
+          <first>sparsemux_7_2_8_1_1_U165</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>urem_32s_3ns_2_36_seq_1_U159</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -9365,7 +9365,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U159 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U160 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9373,7 +9373,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U160 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U161 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9381,7 +9381,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U161 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U162 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9389,7 +9389,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U162 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U163 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9397,7 +9397,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U163 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U164 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9405,7 +9405,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U164 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U165 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9413,7 +9413,7 @@
           </second>
         </item>
         <item>
-          <first>urem_32s_3ns_2_36_seq_1_U158 (urem_32s_3ns_2_36_seq_1)</first>
+          <first>urem_32s_3ns_2_36_seq_1_U159 (urem_32s_3ns_2_36_seq_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

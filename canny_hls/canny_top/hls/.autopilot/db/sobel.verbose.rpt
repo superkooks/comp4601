@@ -3,7 +3,7 @@
 ================================================================
 == Vitis HLS Report for 'sobel'
 ================================================================
-* Date:           Sat Aug  1 12:52:07 2026
+* Date:           Sat Aug  1 15:48:52 2026
 
 * Version:        2025.2 (Build 6295257 on Nov 14 2025)
 * Project:        canny_top
@@ -81,13 +81,13 @@
     +--------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
     |grp_sobel_Pipeline_VITIS_LOOP_149_6_fu_169  |sobel_Pipeline_VITIS_LOOP_149_6  |        0|   2|  178|  689|    0|
     |grp_sobel_Pipeline_VITIS_LOOP_96_2_fu_159   |sobel_Pipeline_VITIS_LOOP_96_2   |        0|   0|   23|   84|    0|
-    |sparsemux_7_2_8_1_1_U159                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
     |sparsemux_7_2_8_1_1_U160                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
     |sparsemux_7_2_8_1_1_U161                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
     |sparsemux_7_2_8_1_1_U162                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
     |sparsemux_7_2_8_1_1_U163                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
     |sparsemux_7_2_8_1_1_U164                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
-    |urem_32s_3ns_2_36_seq_1_U158                |urem_32s_3ns_2_36_seq_1          |        0|   0|  394|  238|    0|
+    |sparsemux_7_2_8_1_1_U165                    |sparsemux_7_2_8_1_1              |        0|   0|    0|    9|    0|
+    |urem_32s_3ns_2_36_seq_1_U159                |urem_32s_3ns_2_36_seq_1          |        0|   0|  394|  238|    0|
     +--------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
     |Total                                       |                                 |        0|   2|  595| 1065|    0|
     +--------------------------------------------+---------------------------------+---------+----+-----+-----+-----+
@@ -96,15 +96,15 @@
     N/A
 
     * Memory: 
-    +----------------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |     Memory     |               Module               | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
-    +----------------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |lineBuffer_U    |gaussian_blur_row_in_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    8|     1|         4096|
-    |lineBuffer_1_U  |gaussian_blur_row_in_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    8|     1|         4096|
-    |lineBuffer_2_U  |gaussian_blur_row_in_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    8|     1|         4096|
-    +----------------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
-    |Total           |                                    |        3|  0|   0|    0|  1536|   24|     3|        12288|
-    +----------------+------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    +----------------+--------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |     Memory     |             Module             | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +----------------+--------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |lineBuffer_U    |sobel_lineBuffer_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |lineBuffer_1_U  |sobel_lineBuffer_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    8|     1|         4096|
+    |lineBuffer_2_U  |sobel_lineBuffer_RAM_AUTO_1R1W  |        1|  0|   0|    0|   512|    8|     1|         4096|
+    +----------------+--------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total           |                                |        3|  0|   0|    0|  1536|   24|     3|        12288|
+    +----------------+--------------------------------+---------+---+----+-----+------+-----+------+-------------+
 
     * FIFO: 
     N/A
@@ -299,8 +299,8 @@ State 1 <SV = 0> <Delay = 1.23>
 ST_1 : Operation 40 [1/1] (0.00ns)   --->   "%phi_urem69 = alloca i32 1"   --->   Operation 40 'alloca' 'phi_urem69' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 41 [1/1] (0.00ns)   --->   "%phi_urem = alloca i32 1"   --->   Operation 41 'alloca' 'phi_urem' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 42 [1/1] (0.00ns)   --->   "%row_1 = alloca i32 1" [../src/sobel.cpp:60->../src/sobel.cpp:120]   --->   Operation 42 'alloca' 'row_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %sobel_out, void @empty_11, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gauss_out, void @empty_11, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_5, void @empty_5, void @empty_5, i32 0, i32 0, i32 0, i32 0, void @empty_5, void @empty_5, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 43 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i24 %sobel_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 43 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 44 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i8 %gauss_out, void @empty_10, i32 0, i32 0, void @empty_4, i32 0, i32 0, void @empty_4, void @empty_4, void @empty_4, i32 0, i32 0, i32 0, i32 0, void @empty_4, void @empty_4, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 44 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 45 [1/1] (1.23ns)   --->   "%lineBuffer = alloca i64 1" [../src/sobel.cpp:87]   --->   Operation 45 'alloca' 'lineBuffer' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
 ST_1 : Operation 46 [1/1] (1.23ns)   --->   "%lineBuffer_1 = alloca i64 1" [../src/sobel.cpp:87]   --->   Operation 46 'alloca' 'lineBuffer_1' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
 ST_1 : Operation 47 [1/1] (1.23ns)   --->   "%lineBuffer_2 = alloca i64 1" [../src/sobel.cpp:87]   --->   Operation 47 'alloca' 'lineBuffer_2' <Predicate = true> <Delay = 1.23> <CoreInst = "RAM">   --->   Core 82 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 512> <RAM>
@@ -321,7 +321,7 @@ ST_2 : Operation 59 [1/1] (0.78ns)   --->   "%icmp_ln92 = icmp_eq  i10 %row_2, i
 ST_2 : Operation 60 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 513, i64 513, i64 513"   --->   Operation 60 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 61 [1/1] (0.78ns)   --->   "%rowsReceived = add i10 %row_2, i10 1" [../src/sobel.cpp:101]   --->   Operation 61 'add' 'rowsReceived' <Predicate = true> <Delay = 0.78> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.78> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 62 [1/1] (0.00ns)   --->   "%br_ln92 = br i1 %icmp_ln92, void %for.body.split, void %for.end139" [../src/sobel.cpp:92]   --->   Operation 62 'br' 'br_ln92' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%specloopname_ln92 = specloopname void @_ssdm_op_SpecLoopName, void @empty_15" [../src/sobel.cpp:92]   --->   Operation 63 'specloopname' 'specloopname_ln92' <Predicate = (!icmp_ln92)> <Delay = 0.00>
+ST_2 : Operation 63 [1/1] (0.00ns)   --->   "%specloopname_ln92 = specloopname void @_ssdm_op_SpecLoopName, void @empty_23" [../src/sobel.cpp:92]   --->   Operation 63 'specloopname' 'specloopname_ln92' <Predicate = (!icmp_ln92)> <Delay = 0.00>
 ST_2 : Operation 64 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i10.i32, i10 %row_2, i32 9" [../src/sobel.cpp:93]   --->   Operation 64 'bitselect' 'tmp' <Predicate = (!icmp_ln92)> <Delay = 0.00>
 ST_2 : Operation 65 [1/1] (0.00ns)   --->   "%br_ln93 = br i1 %tmp, void %VITIS_LOOP_96_2, void %if.end" [../src/sobel.cpp:93]   --->   Operation 65 'br' 'br_ln93' <Predicate = (!icmp_ln92)> <Delay = 0.00>
 ST_2 : Operation 66 [1/1] (0.00ns)   --->   "%phi_urem_load_1 = load i10 %phi_urem" [../src/sobel.cpp:98]   --->   Operation 66 'load' 'phi_urem_load_1' <Predicate = (!icmp_ln92 & !tmp)> <Delay = 0.00>
@@ -620,7 +620,7 @@ br_ln92               (br               ) [ 000000000000000000000000000000000000
 <pin id="9" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_11"/></StgValue>
+<StgValue><ssdm name="empty_10"/></StgValue>
 </bind>
 </comp>
 
@@ -638,7 +638,7 @@ br_ln92               (br               ) [ 000000000000000000000000000000000000
 <pin id="13" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_5"/></StgValue>
+<StgValue><ssdm name="empty_4"/></StgValue>
 </bind>
 </comp>
 
@@ -728,7 +728,7 @@ br_ln92               (br               ) [ 000000000000000000000000000000000000
 <pin id="33" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="empty_15"/></StgValue>
+<StgValue><ssdm name="empty_23"/></StgValue>
 </bind>
 </comp>
 

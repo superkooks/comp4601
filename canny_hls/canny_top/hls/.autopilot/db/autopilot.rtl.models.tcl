@@ -20,18 +20,22 @@ set SynModuleInfo {
       {MODELNAME canny_top_grayscale_row_bytes_RAM_AUTO_1R1W RTLNAME canny_top_grayscale_row_bytes_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
-  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_63_2 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_63_2 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_63_2}
-  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_82_4 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_82_4 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_82_4}
-  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_130_8 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_130_8 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_130_8
+  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_94_2 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_94_2 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_94_2
+    SUBMODULES {
+      {MODELNAME canny_top_sparsemux_9_2_8_1_1 RTLNAME canny_top_sparsemux_9_2_8_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
+    }
+  }
+  {SRCNAME gaussian_blur_Pipeline_VITIS_LOOP_157_7 MODELNAME gaussian_blur_Pipeline_VITIS_LOOP_157_7 RTLNAME canny_top_gaussian_blur_Pipeline_VITIS_LOOP_157_7
     SUBMODULES {
       {MODELNAME canny_top_sparsemux_11_3_12_1_1 RTLNAME canny_top_sparsemux_11_3_12_1_1 BINDTYPE op TYPE sparsemux IMPL compactencoding_dontcare}
     }
   }
   {SRCNAME gaussian_blur MODELNAME gaussian_blur RTLNAME canny_top_gaussian_blur
     SUBMODULES {
+      {MODELNAME canny_top_srem_10ns_4ns_10_14_seq_1 RTLNAME canny_top_srem_10ns_4ns_10_14_seq_1 BINDTYPE op TYPE srem IMPL auto_seq LATENCY 13 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_srem_11ns_4ns_11_15_seq_1 RTLNAME canny_top_srem_11ns_4ns_11_15_seq_1 BINDTYPE op TYPE srem IMPL auto_seq LATENCY 14 ALLOW_PRAGMA 1}
       {MODELNAME canny_top_urem_9ns_4ns_3_13_seq_1 RTLNAME canny_top_urem_9ns_4ns_3_13_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 12 ALLOW_PRAGMA 1}
       {MODELNAME canny_top_gaussian_blur_lineBuffer_RAM_AUTO_1R1W RTLNAME canny_top_gaussian_blur_lineBuffer_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
-      {MODELNAME canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W RTLNAME canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME sobel_Pipeline_VITIS_LOOP_96_2 MODELNAME sobel_Pipeline_VITIS_LOOP_96_2 RTLNAME canny_top_sobel_Pipeline_VITIS_LOOP_96_2}
@@ -47,6 +51,7 @@ set SynModuleInfo {
   {SRCNAME sobel MODELNAME sobel RTLNAME canny_top_sobel
     SUBMODULES {
       {MODELNAME canny_top_urem_32s_3ns_2_36_seq_1 RTLNAME canny_top_urem_32s_3ns_2_36_seq_1 BINDTYPE op TYPE urem IMPL auto_seq LATENCY 35 ALLOW_PRAGMA 1}
+      {MODELNAME canny_top_sobel_lineBuffer_RAM_AUTO_1R1W RTLNAME canny_top_sobel_lineBuffer_RAM_AUTO_1R1W BINDTYPE storage TYPE ram IMPL auto LATENCY 2 ALLOW_PRAGMA 1}
     }
   }
   {SRCNAME non_maximum_suppression_Pipeline_VITIS_LOOP_50_2 MODELNAME non_maximum_suppression_Pipeline_VITIS_LOOP_50_2 RTLNAME canny_top_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2}

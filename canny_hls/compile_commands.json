@@ -37,6 +37,20 @@
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
+      "/home/superkooks/Uni/COMP4601/assign/src/write_frame.cpp"
+    ],
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/write_frame.cpp"
+  },
+  {
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
+    "arguments": [
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
+      "-fhls",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
+      "-fhlstoplevel=canny_top",
+      "-I../src",
+      "-c",
       "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp"
     ],
     "file": "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp"

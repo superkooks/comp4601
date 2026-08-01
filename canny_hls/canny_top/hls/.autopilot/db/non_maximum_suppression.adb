@@ -440,7 +440,7 @@
               <isStorage>1</isStorage>
               <storageDepth>512</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_sobel_lineBuffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -496,7 +496,7 @@
               <isStorage>1</isStorage>
               <storageDepth>512</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_sobel_lineBuffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -552,7 +552,7 @@
               <isStorage>1</isStorage>
               <storageDepth>512</storageDepth>
               <coreId>82</coreId>
-              <rtlModuleName>canny_top_gaussian_blur_row_in_RAM_AUTO_1R1W</rtlModuleName>
+              <rtlModuleName>canny_top_sobel_lineBuffer_RAM_AUTO_1R1W</rtlModuleName>
             </Obj>
             <bitwidth>8</bitwidth>
           </Value>
@@ -2423,7 +2423,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>result</originalName>
-              <rtlName>srem_10ns_3ns_10_14_seq_1_U203</rtlName>
+              <rtlName>srem_10ns_3ns_10_14_seq_1_U205</rtlName>
               <control>auto</control>
               <opType>srem</opType>
               <implIndex>auto_seq</implIndex>
@@ -2971,7 +2971,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_16_1_1_U206</rtlName>
+              <rtlName>sparsemux_7_2_16_1_1_U208</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -3035,7 +3035,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_16_1_1_U207</rtlName>
+              <rtlName>sparsemux_7_2_16_1_1_U209</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -3270,7 +3270,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U204</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U206</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -3334,7 +3334,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_16_1_1_U208</rtlName>
+              <rtlName>sparsemux_7_2_16_1_1_U210</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -3569,7 +3569,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_16_1_1_U209</rtlName>
+              <rtlName>sparsemux_7_2_16_1_1_U211</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -3633,7 +3633,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_16_1_1_U210</rtlName>
+              <rtlName>sparsemux_7_2_16_1_1_U212</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -3868,7 +3868,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_8_1_1_U205</rtlName>
+              <rtlName>sparsemux_7_2_8_1_1_U207</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -3932,7 +3932,7 @@
                 </item>
               </inlineStackInfo>
               <originalName></originalName>
-              <rtlName>sparsemux_7_2_16_1_1_U211</rtlName>
+              <rtlName>sparsemux_7_2_16_1_1_U213</rtlName>
               <control>auto</control>
               <opType>sparsemux</opType>
               <implIndex>onehotencoding_realdef</implIndex>
@@ -8791,36 +8791,6 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U206 (sparsemux_7_2_16_1_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>sparsemux_7_2_16_1_1_U207 (sparsemux_7_2_16_1_1)</first>
-          <second>
-            <count>2</count>
-            <item_version>0</item_version>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
           <first>sparsemux_7_2_16_1_1_U208 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>2</count>
@@ -8881,7 +8851,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U204 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U212 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8896,7 +8866,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U205 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U213 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8911,7 +8881,37 @@
           </second>
         </item>
         <item>
-          <first>srem_10ns_3ns_10_14_seq_1_U203 (srem_10ns_3ns_10_14_seq_1)</first>
+          <first>sparsemux_7_2_8_1_1_U206 (sparsemux_7_2_8_1_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>sparsemux_7_2_8_1_1_U207 (sparsemux_7_2_8_1_1)</first>
+          <second>
+            <count>2</count>
+            <item_version>0</item_version>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>srem_10ns_3ns_10_14_seq_1_U205 (srem_10ns_3ns_10_14_seq_1)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -10754,20 +10754,6 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U206</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>sparsemux_7_2_16_1_1_U207</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
           <first>sparsemux_7_2_16_1_1_U208</first>
           <second>
             <count>0</count>
@@ -10796,21 +10782,35 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U204</first>
+          <first>sparsemux_7_2_16_1_1_U212</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U205</first>
+          <first>sparsemux_7_2_16_1_1_U213</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
           </second>
         </item>
         <item>
-          <first>srem_10ns_3ns_10_14_seq_1_U203</first>
+          <first>sparsemux_7_2_8_1_1_U206</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>sparsemux_7_2_8_1_1_U207</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
+          <first>srem_10ns_3ns_10_14_seq_1_U205</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -10837,7 +10837,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U206 (sparsemux_7_2_16_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U208 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10845,7 +10845,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U207 (sparsemux_7_2_16_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U209 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10853,7 +10853,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U208 (sparsemux_7_2_16_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U210 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10861,7 +10861,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U209 (sparsemux_7_2_16_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U211 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10869,7 +10869,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U210 (sparsemux_7_2_16_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U212 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10877,7 +10877,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_16_1_1_U211 (sparsemux_7_2_16_1_1)</first>
+          <first>sparsemux_7_2_16_1_1_U213 (sparsemux_7_2_16_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10885,7 +10885,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U204 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U206 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10893,7 +10893,7 @@
           </second>
         </item>
         <item>
-          <first>sparsemux_7_2_8_1_1_U205 (sparsemux_7_2_8_1_1)</first>
+          <first>sparsemux_7_2_8_1_1_U207 (sparsemux_7_2_8_1_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10901,7 +10901,7 @@
           </second>
         </item>
         <item>
-          <first>srem_10ns_3ns_10_14_seq_1_U203 (srem_10ns_3ns_10_14_seq_1)</first>
+          <first>srem_10ns_3ns_10_14_seq_1_U205 (srem_10ns_3ns_10_14_seq_1)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
