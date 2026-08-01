@@ -2,86 +2,76 @@
     <item name="Total Instructions per Compilation Phase">
         <table>
             <keys size="4">Phase, Step, Instructions, Description</keys>
-            <column name="Compile/Link">, 2576, After all functions are compiled and linked into a single design</column>
+            <column name="Compile/Link">, 2634, After all functions are compiled and linked into a single design</column>
             <column name="">, , </column>
             <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
-            <column name="">(1) unroll, 3034, user unroll pragmas are applied</column>
-            <column name="">(2) simplification, 2250, simplification of applied user unroll pragmas</column>
-            <column name="">(3) inline, 1925, user inline pragmas are applied</column>
-            <column name="">(4) simplification, 1737, simplification of applied user inline pragmas</column>
+            <column name="">(1) unroll, 3081, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 2336, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 1942, user inline pragmas are applied</column>
+            <column name="">(4) simplification, 1767, simplification of applied user inline pragmas</column>
             <column name="">, , </column>
             <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(1) array partition, 1976, user array partition pragmas are applied</column>
-            <column name="">(2) simplification, 1546, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
-            <column name="">(3) aggregate/disaggregate, 1546, user struct aggregate/disaggregate pragmas are applied</column>
-            <column name="">(4) array reshape, 1546, apply array reshape pragmas</column>
-            <column name="">(5) access patterns, 1569, array access pattern optmizations</column>
+            <column name="">(1) array partition, 2087, user array partition pragmas are applied</column>
+            <column name="">(2) simplification, 1553, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate, 1555, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape, 1566, apply array reshape pragmas</column>
+            <column name="">(5) access patterns, 1591, array access pattern optmizations</column>
             <column name="">, , </column>
             <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
-            <column name="">(1) loop simplification, 1570, loop and instruction simplification</column>
-            <column name="">(2) parallelization, 1570, loops are unrolled or pipelined to meet performance targets</column>
-            <column name="">(3) array partition, 1562, arrays are partitioned to meet performance targets</column>
-            <column name="">(4) simplification, 1558, simplification of design after performance transformations</column>
+            <column name="">(1) loop simplification, 1592, loop and instruction simplification</column>
+            <column name="">(2) parallelization, 1592, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition, 4720, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification, 1957, simplification of design after performance transformations</column>
             <column name="">, , </column>
             <column name="HW Transforms">, , After hardware transfomations</column>
-            <column name="">(1) lowering, 1582, initial conversion to HW specific instructions</column>
-            <column name="">(2) optimizations, 1696, high level synthesis optimizations</column>
+            <column name="">(1) lowering, 1974, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 2050, high level synthesis optimizations</column>
         </table>
     </item>
     <item name="Instructions per Function for each Compilation Phase">
         <hiertable>
             <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
             <rows>
-                <row id="0" col0="canny_top" col1="canny_top.cpp:9" col2="2576" col3="1737" col4="1569" col5="1558" col6="1696">
-                    <row id="5" col0="reset_canny_stages" col1="canny_top.cpp:42" col2="193" col3="" col4="" col5="" col6="">
-                        <row id="9" col0="gaussian_blur_reset" col1="gaussian_blur.cpp:44" col2="25" col3="" col4="" col5="" col6=""/>
-                        <row id="4" col0="sobel_reset" col1="sobel.cpp:76" col2="25" col3="" col4="" col5="" col6=""/>
-                        <row id="14" col0="non_maximum_suppression_reset" col1="non_maximum_suppression.cpp:29" col2="32" col3="" col4="" col5="" col6=""/>
-                        <row id="27" col0="hysteresis_reset&lt;1&gt;" col1="hysteresis.cpp:56" col2="25" col3="" col4="" col5="" col6=""/>
-                        <row id="8" col0="hysteresis_reset&lt;2&gt;" col1="hysteresis.cpp:56" col2="25" col3="" col4="" col5="" col6=""/>
-                        <row id="20" col0="hysteresis_reset&lt;3&gt;" col1="hysteresis.cpp:56" col2="25" col3="" col4="" col5="" col6=""/>
-                        <row id="15" col0="hysteresis_reset&lt;4&gt;" col1="hysteresis.cpp:56" col2="25" col3="" col4="" col5="" col6=""/>
-                        <row id="22" col0="output_row_reset" col1="output_row.cpp:5" col2="2" col3="" col4="" col5="" col6=""/>
+                <row id="0" col0="canny_top" col1="canny_top.cpp:9" col2="2634" col3="1767" col4="1591" col5="1957" col6="2050">
+                    <row id="2" col0="grayscale" col1="grayscale.cpp:3" col2="186" col3="315" col4="317" col5="699" col6="651"/>
+                    <row id="9" col0="gaussian_blur" col1="gaussian_blur.cpp:36" col2="275" col3="317" col4="297" col5="296" col6="313">
+                        <row id="13" col0="reflect_101" col1="gaussian_blur.cpp:24" col2="42" col2_disp="  42 (3 calls)" col3="121" col3_disp=" 121 (11 calls)" col4="121" col4_disp=" 121 (11 calls)" col5="121" col5_disp=" 121 (11 calls)" col6="121" col6_disp=" 121 (11 calls)"/>
+                        <row id="7" col0="positive_modulo" col1="gaussian_blur.cpp:19" col2="8" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="12" col0="grayscale" col1="grayscale.cpp:5" col2="47" col3="44" col4="48" col5="47" col6=""/>
-                    <row id="16" col0="gaussian_blur" col1="gaussian_blur.cpp:54" col2="230" col3="308" col4="270" col5="269" col6="">
-                        <row id="23" col0="reflect_101" col1="gaussian_blur.cpp:32" col2="42" col2_disp="  42 (3 calls)" col3="121" col3_disp=" 121 (11 calls)" col4="121" col4_disp=" 121 (11 calls)" col5="121" col5_disp=" 121 (11 calls)" col6=""/>
-                        <row id="10" col0="positive_modulo" col1="gaussian_blur.cpp:27" col2="8" col3="" col4="" col5="" col6=""/>
-                    </row>
-                    <row id="11" col0="sobel" col1="sobel.cpp:86" col2="319" col3="198" col4="157" col5="156" col6="">
-                        <row id="13" col0="border_replicate" col1="sobel.cpp:64" col2="30" col2_disp="  30 (3 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="1" col0="positive_modulo" col1="sobel.cpp:26" col2="8" col3="" col4="" col5="" col6=""/>
-                        <row id="30" col0="absolute_value" col1="sobel.cpp:31" col2="14" col2_disp="  14 (2 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="3" col0="quantise_direction" col1="sobel.cpp:35" col2="43" col3="" col4="" col5="" col6="">
-                            <row id="30" col0="absolute_value" col1="sobel.cpp:31" col2="14" col2_disp="  14 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="12" col0="sobel" col1="sobel.cpp:72" col2="341" col3="188" col4="161" col5="159" col6="175">
+                        <row id="17" col0="border_replicate" col1="sobel.cpp:60" col2="30" col2_disp="  30 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="3" col0="positive_modulo" col1="sobel.cpp:22" col2="8" col3="" col4="" col5="" col6=""/>
+                        <row id="10" col0="absolute_value" col1="sobel.cpp:27" col2="14" col2_disp="  14 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="15" col0="quantise_direction" col1="sobel.cpp:31" col2="43" col3="" col4="" col5="" col6="">
+                            <row id="10" col0="absolute_value" col1="sobel.cpp:27" col2="14" col2_disp="  14 (2 calls)" col3="" col4="" col5="" col6=""/>
                         </row>
                     </row>
-                    <row id="28" col0="non_maximum_suppression" col1="non_maximum_suppression.cpp:41" col2="337" col3="221" col4="150" col5="149" col6="">
-                        <row id="25" col0="positive_modulo" col1="non_maximum_suppression.cpp:12" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="19" col0="clamp_column" col1="non_maximum_suppression.cpp:17" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                    <row id="19" col0="non_maximum_suppression" col1="non_maximum_suppression.cpp:26" col2="362" col3="218" col4="180" col5="178" col6="196">
+                        <row id="4" col0="positive_modulo" col1="non_maximum_suppression.cpp:9" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="21" col0="clamp_column" col1="non_maximum_suppression.cpp:14" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="18" col0="double_threshold" col1="double_threshold.cpp:5" col2="37" col3="18" col4="18" col5="17" col6=""/>
-                    <row id="21" col0="hysteresis&lt;1&gt;" col1="hysteresis.cpp:67" col2="312" col3="181" col4="140" col5="138" col6="">
-                        <row id="26" col0="positive_modulo" col1="hysteresis.cpp:16" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="7" col0="clamp_column" col1="hysteresis.cpp:21" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="2" col0="has_strong_neighbour" col1="hysteresis.cpp:35" col2="64" col3="" col4="" col5="" col6=""/>
+                    <row id="18" col0="double_threshold" col1="double_threshold.cpp:5" col2="44" col3="12" col4="12" col5="12" col6="20"/>
+                    <row id="1" col0="hysteresis&lt;1&gt;" col1="hysteresis.cpp:50" col2="324" col3="165" col4="139" col5="136" col6="153">
+                        <row id="5" col0="positive_modulo" col1="hysteresis.cpp:10" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="11" col0="clamp_column" col1="hysteresis.cpp:15" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="14" col0="has_strong_neighbour" col1="hysteresis.cpp:29" col2="64" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="17" col0="hysteresis&lt;2&gt;" col1="hysteresis.cpp:67" col2="312" col3="181" col4="140" col5="138" col6="">
-                        <row id="26" col0="positive_modulo" col1="hysteresis.cpp:16" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="7" col0="clamp_column" col1="hysteresis.cpp:21" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="2" col0="has_strong_neighbour" col1="hysteresis.cpp:35" col2="64" col3="" col4="" col5="" col6=""/>
+                    <row id="6" col0="hysteresis&lt;2&gt;" col1="hysteresis.cpp:50" col2="324" col3="165" col4="139" col5="136" col6="153">
+                        <row id="5" col0="positive_modulo" col1="hysteresis.cpp:10" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="11" col0="clamp_column" col1="hysteresis.cpp:15" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="14" col0="has_strong_neighbour" col1="hysteresis.cpp:29" col2="64" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="29" col0="hysteresis&lt;3&gt;" col1="hysteresis.cpp:67" col2="312" col3="181" col4="140" col5="138" col6="">
-                        <row id="26" col0="positive_modulo" col1="hysteresis.cpp:16" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="7" col0="clamp_column" col1="hysteresis.cpp:21" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="2" col0="has_strong_neighbour" col1="hysteresis.cpp:35" col2="64" col3="" col4="" col5="" col6=""/>
+                    <row id="8" col0="hysteresis&lt;3&gt;" col1="hysteresis.cpp:50" col2="324" col3="165" col4="139" col5="136" col6="153">
+                        <row id="5" col0="positive_modulo" col1="hysteresis.cpp:10" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="11" col0="clamp_column" col1="hysteresis.cpp:15" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="14" col0="has_strong_neighbour" col1="hysteresis.cpp:29" col2="64" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="6" col0="hysteresis&lt;4&gt;" col1="hysteresis.cpp:67" col2="312" col3="181" col4="140" col5="138" col6="">
-                        <row id="26" col0="positive_modulo" col1="hysteresis.cpp:16" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="7" col0="clamp_column" col1="hysteresis.cpp:21" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
-                        <row id="2" col0="has_strong_neighbour" col1="hysteresis.cpp:35" col2="64" col3="" col4="" col5="" col6=""/>
+                    <row id="16" col0="hysteresis&lt;4&gt;" col1="hysteresis.cpp:50" col2="324" col3="163" col4="135" col5="132" col6="149">
+                        <row id="5" col0="positive_modulo" col1="hysteresis.cpp:10" col2="24" col2_disp="  24 (3 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="11" col0="clamp_column" col1="hysteresis.cpp:15" col2="18" col2_disp="  18 (2 calls)" col3="" col4="" col5="" col6=""/>
+                        <row id="14" col0="has_strong_neighbour" col1="hysteresis.cpp:29" col2="64" col3="" col4="" col5="" col6=""/>
                     </row>
-                    <row id="24" col0="output_row" col1="output_row.cpp:9" col2="25" col3="19" col4="30" col5="32" col6=""/>
+                    <row id="20" col0="write_frame" col1="write_frame.cpp:3" col2="35" col3="16" col4="28" col5="29" col6="36"/>
                 </row>
             </rows>
             <notes/>

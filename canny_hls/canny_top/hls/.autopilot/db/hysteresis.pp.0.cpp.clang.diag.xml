@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp</string>
+  <string>/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/hysteresis.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -9,7 +9,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>79</integer>
+      <integer>70</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -25,7 +25,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>90</integer>
+      <integer>79</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -41,7 +41,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>110</integer>
+      <integer>99</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -57,7 +57,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>138</integer>
+      <integer>127</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -73,7 +73,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>143</integer>
+      <integer>132</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -89,7 +89,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>148</integer>
+      <integer>137</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -105,7 +105,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>155</integer>
+      <integer>144</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -121,7 +121,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>187</integer>
+      <integer>180</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -137,7 +137,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>190</integer>
+      <integer>183</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -153,7 +153,7 @@
       <key>filename</key>
       <string>../src/hysteresis.cpp</string>
       <key>line</key>
-      <integer>195</integer>
+      <integer>188</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>

@@ -5,6 +5,7 @@
 
 #include "canny_stages.h"
 #include "threshold_reference.h"
+#include "hls_stream.h"
 
 int test_threshold() {
     const int pixelCount = HEIGHT * WIDTH;
@@ -27,37 +28,23 @@ int test_threshold() {
 
     double_threshold_reference(input.data(), expected.data());
 
-    std::uint16_t invalidInput[WIDTH] = {};
-    std::uint8_t producedRow[WIDTH] = {};
-    bool invalidResult = true;
-    double_threshold(
-        invalidInput,
-        producedRow,
-        false,
-        &invalidResult
-    );
+    hls::stream<std::uint16_t> inputStream;
+    hls::stream<std::uint8_t> outputStream;
 
-    int validFailures = invalidResult ? 1 : 0;
+    // double_threshold has no vertical window, so it has no row delay at
+    // all: it reads exactly HEIGHT rows and emits exactly HEIGHT rows.
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            inputStream.write(input[row * WIDTH + column]);
+        }
+    }
+
+    double_threshold(inputStream, outputStream);
 
     for (int row = 0; row < HEIGHT; ++row) {
-        bool valid = false;
-        double_threshold(
-            input.data() + row * WIDTH,
-            producedRow,
-            true,
-            &valid
-        );
-
-        if (!valid) {
-            ++validFailures;
-            continue;
+        for (int column = 0; column < WIDTH; ++column) {
+            actual[row * WIDTH + column] = outputStream.read();
         }
-
-        std::copy(
-            producedRow,
-            producedRow + WIDTH,
-            actual.data() + row * WIDTH
-        );
     }
 
     int mismatchCount = 0;
@@ -87,12 +74,10 @@ int test_threshold() {
     std::cout << "Pixels tested: " << pixelCount << '\n';
     std::cout << "Mismatches: " << mismatchCount << '\n';
     std::cout << "Boundary-check failures: " << boundaryFailures << '\n';
-    std::cout << "Valid-signal failures: " << validFailures << '\n';
 
     if (
         mismatchCount != 0 ||
-        boundaryFailures != 0 ||
-        validFailures != 0
+        boundaryFailures != 0
     ) {
         std::cerr << "Double threshold test FAILED.\n";
         return 1;

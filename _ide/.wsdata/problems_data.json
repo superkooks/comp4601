@@ -1,10 +1,741 @@
 [
   {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_host/host.cpp",
+    "owner": "_generated_diagnostic_collection_name_#6858f618-cdcb-4fb2-b16e-3a06e443a428",
+    "data": [
+      {
+        "code": "pp_file_not_found",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 6,
+            "character": 9
+          },
+          "end": {
+            "line": 6,
+            "character": 23
+          }
+        },
+        "message": "'xrt/xrt_bo.h' file not found",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 31,
+            "character": 4
+          },
+          "end": {
+            "line": 31,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 32,
+            "character": 4
+          },
+          "end": {
+            "line": 32,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 33,
+            "character": 4
+          },
+          "end": {
+            "line": 33,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 34,
+            "character": 4
+          },
+          "end": {
+            "line": 34,
+            "character": 7
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 37,
+            "character": 4
+          },
+          "end": {
+            "line": 37,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 38,
+            "character": 4
+          },
+          "end": {
+            "line": 38,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 46,
+            "character": 18
+          },
+          "end": {
+            "line": 46,
+            "character": 21
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 50,
+            "character": 11
+          },
+          "end": {
+            "line": 50,
+            "character": 14
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 53,
+            "character": 13
+          },
+          "end": {
+            "line": 53,
+            "character": 16
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 54,
+            "character": 14
+          },
+          "end": {
+            "line": 54,
+            "character": 17
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 58,
+            "character": 10
+          },
+          "end": {
+            "line": 58,
+            "character": 13
+          }
+        },
+        "message": "Use of undeclared identifier 'xrt'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 62,
+            "character": 13
+          },
+          "end": {
+            "line": 62,
+            "character": 15
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 62,
+            "character": 36
+          },
+          "end": {
+            "line": 62,
+            "character": 43
+          }
+        },
+        "message": "Use of undeclared identifier 'CV_8UC3'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 63,
+            "character": 14
+          },
+          "end": {
+            "line": 63,
+            "character": 16
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 63,
+            "character": 37
+          },
+          "end": {
+            "line": 63,
+            "character": 42
+          }
+        },
+        "message": "Use of undeclared identifier 'CV_8U'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 68,
+            "character": 16
+          },
+          "end": {
+            "line": 68,
+            "character": 40
+          }
+        },
+        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_TO_DEVICE'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 77,
+            "character": 17
+          },
+          "end": {
+            "line": 77,
+            "character": 43
+          }
+        },
+        "message": "Use of undeclared identifier 'XCL_BO_SYNC_BO_FROM_DEVICE'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 92,
+            "character": 4
+          },
+          "end": {
+            "line": 92,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "undeclared_var_use",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 93,
+            "character": 4
+          },
+          "end": {
+            "line": 93,
+            "character": 6
+          }
+        },
+        "message": "Use of undeclared identifier 'cv'",
+        "source": "clang",
+        "relatedInformation": []
+      },
+      {
+        "code": "fatal_too_many_errors",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "message": "Too many errors emitted, stopping now",
+        "source": "clang",
+        "relatedInformation": []
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
+    "owner": "_generated_diagnostic_collection_name_#6858f618-cdcb-4fb2-b16e-3a06e443a428",
+    "data": [
+      {
+        "code": "unsupported_type_and_header",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 2,
+            "character": 9
+          },
+          "end": {
+            "line": 2,
+            "character": 25
+          }
+        },
+        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
+        "source": "clang",
+        "relatedInformation": [
+          {
+            "message": "Error occurred here",
+            "location": {
+              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
+              "range": {
+                "start": {
+                  "line": 62,
+                  "character": 5
+                },
+                "end": {
+                  "line": 62,
+                  "character": 14
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<4>'.",
+        "range": {
+          "start": {
+            "line": 73,
+            "character": 30
+          },
+          "end": {
+            "line": 73,
+            "character": 30
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<3>'.",
+        "range": {
+          "start": {
+            "line": 73,
+            "character": 30
+          },
+          "end": {
+            "line": 73,
+            "character": 30
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<2>'.",
+        "range": {
+          "start": {
+            "line": 73,
+            "character": 30
+          },
+          "end": {
+            "line": 73,
+            "character": 30
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_74_1' (../src/hysteresis.cpp:74:31) in function 'hysteresis<1>'.",
+        "range": {
+          "start": {
+            "line": 73,
+            "character": 30
+          },
+          "end": {
+            "line": 73,
+            "character": 30
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 514 for loop 'VITIS_LOOP_59_1' (../src/gaussian_blur.cpp:59:31) in function 'gaussian_blur'.",
+        "range": {
+          "start": {
+            "line": 58,
+            "character": 30
+          },
+          "end": {
+            "line": 58,
+            "character": 30
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
+    "owner": "_generated_diagnostic_collection_name_#6858f618-cdcb-4fb2-b16e-3a06e443a428",
+    "data": [
+      {
+        "code": "unsupported_type_and_header",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 2,
+            "character": 9
+          },
+          "end": {
+            "line": 2,
+            "character": 25
+          }
+        },
+        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
+        "source": "clang",
+        "relatedInformation": [
+          {
+            "message": "Error occurred here",
+            "location": {
+              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
+              "range": {
+                "start": {
+                  "line": 62,
+                  "character": 5
+                },
+                "end": {
+                  "line": 62,
+                  "character": 14
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
+    "owner": "_generated_diagnostic_collection_name_#6858f618-cdcb-4fb2-b16e-3a06e443a428",
+    "data": [
+      {
+        "code": "unsupported_type_and_header",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 9
+          },
+          "end": {
+            "line": 0,
+            "character": 25
+          }
+        },
+        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
+        "source": "clang",
+        "relatedInformation": [
+          {
+            "message": "Error occurred here",
+            "location": {
+              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
+              "range": {
+                "start": {
+                  "line": 62,
+                  "character": 5
+                },
+                "end": {
+                  "line": 62,
+                  "character": 14
+                }
+              }
+            }
+          }
+        ]
+      },
+      {
+        "code": "unsupported_type_and_header",
+        "severity": 1,
+        "range": {
+          "start": {
+            "line": 8,
+            "character": 5
+          },
+          "end": {
+            "line": 8,
+            "character": 14
+          }
+        },
+        "message": "[HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
+        "source": "clang",
+        "relatedInformation": []
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [HLS 214-464] Skipping array undecay on variable length array 'in'. (../src/canny_top.cpp:9:0)",
+        "range": {
+          "start": {
+            "line": 8,
+            "character": 0
+          },
+          "end": {
+            "line": 8,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///errors_without_file",
+    "owner": "canny_hls::co-simulation",
+    "data": [
+      {
+        "message": "ERROR: A depth specification is required for interface port 'in_r' for cosimulation.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 1,
+        "source": "canny_hls::co-simulation"
+      },
+      {
+        "message": "ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '1'.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 1,
+        "source": "canny_hls::co-simulation"
+      },
+      {
+        "message": "ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 1,
+        "source": "canny_hls::co-simulation"
+      },
+      {
+        "message": "ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 1,
+        "source": "canny_hls::co-simulation"
+      },
+      {
+        "message": "ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 1,
+        "source": "canny_hls::co-simulation"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_92_1' (../src/sobel.cpp:92:31) in function 'sobel'.",
+        "range": {
+          "start": {
+            "line": 91,
+            "character": 30
+          },
+          "end": {
+            "line": 91,
+            "character": 30
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp",
+    "owner": "canny_hls::synthesis",
+    "data": [
+      {
+        "message": "WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 513 for loop 'VITIS_LOOP_46_1' (../src/non_maximum_suppression.cpp:46:31) in function 'non_maximum_suppression'.",
+        "range": {
+          "start": {
+            "line": 45,
+            "character": 30
+          },
+          "end": {
+            "line": 45,
+            "character": 30
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      }
+    ]
+  },
+  {
     "uri": "file:///warnings_without_file",
     "owner": "canny_hls::synthesis",
     "data": [
       {
-        "message": "WARNING: [HLS 200-1449] Process grayscale has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<1>_Pipeline_VITIS_LOOP_78_2' to 'hysteresis_1_Pipeline_VITIS_LOOP_78_2'.",
         "range": {
           "start": {
             "line": 0,
@@ -19,1087 +750,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [HLS 200-1449] Process dataflow_in_loop_VITIS_LOOP_7_1.1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_VITIS_LOOP_7_1.1_Block_newFuncRoot_proc' to 'dataflow_in_loop_VITIS_LOOP_7_1_1_Block_newFuncRoot_proc'.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_VITIS_LOOP_7_1.1' to 'dataflow_in_loop_VITIS_LOOP_7_1_1'.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_2' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_3' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_1' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWVALID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWADDR' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWLEN' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWSIZE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWBURST' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWLOCK' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWCACHE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWPROT' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWQOS' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWREGION' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_AWUSER' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_out_0_BREADY' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'rowsReceived' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWVALID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWADDR' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWLEN' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWSIZE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWBURST' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWLOCK' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWCACHE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWPROT' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWQOS' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWREGION' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_AWUSER' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_WVALID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_WDATA' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_WSTRB' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_WLAST' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_WID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_WUSER' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_in_0_BREADY' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARVALID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARADDR' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARLEN' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARSIZE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARBURST' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARLOCK' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARCACHE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARPROT' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARQOS' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARREGION' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_ARUSER' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'dataflow_in_loop_VITIS_LOOP_7_1_1/m_axi_gmem_out_0_RREADY' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process gaussian_blur has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1450] Process gaussian_blur has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process sobel has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1450] Process sobel has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process non_maximum_suppression has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1450] Process non_maximum_suppression has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process hysteresis<1> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1450] Process hysteresis<1> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process hysteresis<2> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1450] Process hysteresis<2> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process hysteresis<3> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1450] Process hysteresis<3> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process hysteresis<4> has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1450] Process hysteresis<4> has both a successor and writes an output to its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this output via a successor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process output_row has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [HLS 200-1449] Process dataflow_in_loop_VITIS_LOOP_12_1.1 has both a predecessor and reads an input from its caller (see the GUI dataflow viewer). This may lead to lower throughput. Consider copying this input via a predecessor process.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_VITIS_LOOP_12_1.1_Block_newFuncRoot_proc' to 'dataflow_in_loop_VITIS_LOOP_12_1_1_Block_newFuncRoot_proc'.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<1>_Pipeline_VITIS_LOOP_89_1' to 'hysteresis_1_Pipeline_VITIS_LOOP_89_1'.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<1>_Pipeline_VITIS_LOOP_154_4' to 'hysteresis_1_Pipeline_VITIS_LOOP_154_4'.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<1>_Pipeline_VITIS_LOOP_143_5' to 'hysteresis_1_Pipeline_VITIS_LOOP_143_5'.",
         "range": {
           "start": {
             "line": 0,
@@ -1129,7 +780,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<2>_Pipeline_VITIS_LOOP_89_1' to 'hysteresis_2_Pipeline_VITIS_LOOP_89_1'.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<2>_Pipeline_VITIS_LOOP_78_2' to 'hysteresis_2_Pipeline_VITIS_LOOP_78_2'.",
         "range": {
           "start": {
             "line": 0,
@@ -1144,7 +795,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<2>_Pipeline_VITIS_LOOP_154_4' to 'hysteresis_2_Pipeline_VITIS_LOOP_154_4'.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<2>_Pipeline_VITIS_LOOP_143_5' to 'hysteresis_2_Pipeline_VITIS_LOOP_143_5'.",
         "range": {
           "start": {
             "line": 0,
@@ -1174,7 +825,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<3>_Pipeline_VITIS_LOOP_89_1' to 'hysteresis_3_Pipeline_VITIS_LOOP_89_1'.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<3>_Pipeline_VITIS_LOOP_78_2' to 'hysteresis_3_Pipeline_VITIS_LOOP_78_2'.",
         "range": {
           "start": {
             "line": 0,
@@ -1189,7 +840,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<3>_Pipeline_VITIS_LOOP_154_4' to 'hysteresis_3_Pipeline_VITIS_LOOP_154_4'.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<3>_Pipeline_VITIS_LOOP_143_5' to 'hysteresis_3_Pipeline_VITIS_LOOP_143_5'.",
         "range": {
           "start": {
             "line": 0,
@@ -1219,7 +870,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<4>_Pipeline_VITIS_LOOP_89_1' to 'hysteresis_4_Pipeline_VITIS_LOOP_89_1'.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<4>_Pipeline_VITIS_LOOP_78_2' to 'hysteresis_4_Pipeline_VITIS_LOOP_78_2'.",
         "range": {
           "start": {
             "line": 0,
@@ -1234,7 +885,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<4>_Pipeline_VITIS_LOOP_154_4' to 'hysteresis_4_Pipeline_VITIS_LOOP_154_4'.",
+        "message": "WARNING: [SYN 201-103] Legalizing function name 'hysteresis<4>_Pipeline_VITIS_LOOP_143_5' to 'hysteresis_4_Pipeline_VITIS_LOOP_143_5'.",
         "range": {
           "start": {
             "line": 0,
@@ -1264,7 +915,187 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [SYN 201-103] Legalizing function name 'dataflow_in_loop_VITIS_LOOP_12_1.1' to 'dataflow_in_loop_VITIS_LOOP_12_1_1'.",
+        "message": "WARNING: [HLS 200-1020] Increasing the depth of FIFO start_for_write_frame_U0 (from entry_proc_U0 to write_frame_U0) to 10 to improve performance and/or avoid deadlocks.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARVALID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARADDR' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARID' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARLEN' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARSIZE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARBURST' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARLOCK' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARCACHE' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARPROT' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARQOS' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARREGION' to 0.",
+        "range": {
+          "start": {
+            "line": 0,
+            "character": 0
+          },
+          "end": {
+            "line": 0,
+            "character": 0
+          }
+        },
+        "severity": 2,
+        "source": "canny_hls::synthesis"
+      },
+      {
+        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'grayscale_Pipeline_burst_read/m_axi_gmem0_0_ARUSER' to 0.",
         "range": {
           "start": {
             "line": 0,
@@ -1294,7 +1125,7 @@
         "source": "canny_hls::synthesis"
       },
       {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWVALID' to 0.",
+        "message": "WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.",
         "range": {
           "start": {
             "line": 0,
@@ -1307,246 +1138,46 @@
         },
         "severity": 2,
         "source": "canny_hls::synthesis"
-      },
+      }
+    ]
+  },
+  {
+    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+    "owner": "_generated_diagnostic_collection_name_#6858f618-cdcb-4fb2-b16e-3a06e443a428",
+    "data": [
       {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWADDR' to 0.",
+        "code": "unsupported_type_and_header",
+        "severity": 1,
         "range": {
           "start": {
             "line": 0,
-            "character": 0
+            "character": 9
           },
           "end": {
             "line": 0,
-            "character": 0
+            "character": 25
           }
         },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWID' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
+        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
+        "source": "clang",
+        "relatedInformation": [
+          {
+            "message": "Error occurred here",
+            "location": {
+              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
+              "range": {
+                "start": {
+                  "line": 62,
+                  "character": 5
+                },
+                "end": {
+                  "line": 62,
+                  "character": 14
+                }
+              }
+            }
           }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWLEN' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWSIZE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWBURST' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWLOCK' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWCACHE' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWPROT' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWQOS' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWREGION' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_AWUSER' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Setting dangling out port 'output_row_Pipeline_VITIS_LOOP_20_1/m_axi_gmem_0_BREADY' to 0.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_1_s' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_2_s' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_3_s' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
-      },
-      {
-        "message": "WARNING: [RTGEN 206-101] Register 'p_anonymous_namespace_rowsReceived_4_s' is power-on initialization.",
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 0
-          },
-          "end": {
-            "line": 0,
-            "character": 0
-          }
-        },
-        "severity": 2,
-        "source": "canny_hls::synthesis"
+        ]
       }
     ]
   }

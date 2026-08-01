@@ -1,0 +1,1307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1785552727504">
+  <ports id="1" name="gray_out" type="PortType" originalName="input" coreId="4294967295" bitwidth="8" iftype="IfTypeRom">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="gauss_out" type="PortType" originalName="output" coreId="4294967295" bitwidth="8" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="100" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="105" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="108" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.0/@node_objs.10"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.11"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.12"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.0/@node_objs.13"/>
+  <edges id="117" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="118" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.1"/>
+  <edges id="121" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.1/@node_objs.2"/>
+  <edges id="124" source_obj="//@blocks.1/@node_objs.1" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="125" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="126" edge_type="CtrlEdge" source_obj="//@blocks.7" sink_obj="//@blocks.1/@node_objs.3"/>
+  <edges id="127" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.0"/>
+  <edges id="130" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.2/@node_objs.1"/>
+  <edges id="133" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="134" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="135" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.2/@node_objs.2"/>
+  <edges id="136" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="139" source_obj="//@ports.0" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="140" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.3/@node_objs.1"/>
+  <edges id="141" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.3/@node_objs.2"/>
+  <edges id="142" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="143" source_obj="//@blocks.0/@node_objs.9" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="144" source_obj="//@blocks.0/@node_objs.10" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="147" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="148" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="149" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="150" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="151" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="152" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="153" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="154" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="155" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="156" source_obj="//@blocks.3/@node_objs.2" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="157" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.3/@node_objs.7"/>
+  <edges id="158" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.4/@node_objs.0"/>
+  <edges id="162" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.4/@node_objs.1"/>
+  <edges id="164" source_obj="//@blocks.4/@node_objs.1" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="165" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="166" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.4/@node_objs.2"/>
+  <edges id="167" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.5/@node_objs.0"/>
+  <edges id="170" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.1"/>
+  <edges id="173" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.2"/>
+  <edges id="175" source_obj="//@blocks.5/@node_objs.0" sink_obj="//@blocks.5/@node_objs.3"/>
+  <edges id="177" source_obj="//@blocks.5/@node_objs.3" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="178" source_obj="//@blocks.5/@node_objs.2" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="179" source_obj="//@blocks.5/@node_objs.1" sink_obj="//@blocks.5/@node_objs.4"/>
+  <edges id="180" source_obj="//@blocks.5/@node_objs.4" sink_obj="//@blocks.5/@node_objs.5"/>
+  <edges id="183" source_obj="//@blocks.5/@node_objs.5" sink_obj="//@blocks.5/@node_objs.6"/>
+  <edges id="184" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.5/@node_objs.7"/>
+  <edges id="187" source_obj="//@blocks.5/@node_objs.7" sink_obj="//@blocks.5/@node_objs.8"/>
+  <edges id="189" source_obj="//@blocks.5/@node_objs.8" sink_obj="//@blocks.5/@node_objs.9"/>
+  <edges id="191" source_obj="//@blocks.5/@node_objs.7" sink_obj="//@blocks.5/@node_objs.10"/>
+  <edges id="193" source_obj="//@blocks.5/@node_objs.10" sink_obj="//@blocks.5/@node_objs.11"/>
+  <edges id="194" source_obj="//@blocks.5/@node_objs.9" sink_obj="//@blocks.5/@node_objs.11"/>
+  <edges id="195" source_obj="//@blocks.5/@node_objs.8" sink_obj="//@blocks.5/@node_objs.11"/>
+  <edges id="196" source_obj="//@blocks.5/@node_objs.11" sink_obj="//@blocks.5/@node_objs.12"/>
+  <edges id="198" source_obj="//@blocks.5/@node_objs.12" sink_obj="//@blocks.5/@node_objs.13"/>
+  <edges id="199" source_obj="//@blocks.4/@node_objs.0" sink_obj="//@blocks.5/@node_objs.14"/>
+  <edges id="200" source_obj="//@blocks.5/@node_objs.14" sink_obj="//@blocks.5/@node_objs.15"/>
+  <edges id="202" source_obj="//@blocks.5/@node_objs.15" sink_obj="//@blocks.5/@node_objs.16"/>
+  <edges id="203" source_obj="//@blocks.2/@node_objs.0" sink_obj="//@blocks.5/@node_objs.17"/>
+  <edges id="206" source_obj="//@blocks.5/@node_objs.17" sink_obj="//@blocks.5/@node_objs.18"/>
+  <edges id="208" source_obj="//@blocks.5/@node_objs.18" sink_obj="//@blocks.5/@node_objs.19"/>
+  <edges id="211" source_obj="//@blocks.5/@node_objs.17" sink_obj="//@blocks.5/@node_objs.20"/>
+  <edges id="216" source_obj="//@blocks.5/@node_objs.17" sink_obj="//@blocks.5/@node_objs.21"/>
+  <edges id="219" source_obj="//@blocks.5/@node_objs.21" sink_obj="//@blocks.5/@node_objs.22"/>
+  <edges id="224" source_obj="//@blocks.5/@node_objs.18" sink_obj="//@blocks.5/@node_objs.23"/>
+  <edges id="225" source_obj="//@blocks.5/@node_objs.22" sink_obj="//@blocks.5/@node_objs.24"/>
+  <edges id="226" source_obj="//@blocks.5/@node_objs.23" sink_obj="//@blocks.5/@node_objs.24"/>
+  <edges id="227" source_obj="//@blocks.5/@node_objs.18" sink_obj="//@blocks.5/@node_objs.24"/>
+  <edges id="228" source_obj="//@blocks.5/@node_objs.20" sink_obj="//@blocks.5/@node_objs.25"/>
+  <edges id="229" source_obj="//@blocks.5/@node_objs.19" sink_obj="//@blocks.5/@node_objs.25"/>
+  <edges id="230" source_obj="//@blocks.5/@node_objs.24" sink_obj="//@blocks.5/@node_objs.25"/>
+  <edges id="231" source_obj="//@blocks.5/@node_objs.25" sink_obj="//@blocks.5/@node_objs.26"/>
+  <edges id="233" source_obj="//@blocks.5/@node_objs.26" sink_obj="//@blocks.5/@node_objs.27"/>
+  <edges id="234" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.5/@node_objs.28"/>
+  <edges id="236" source_obj="//@blocks.5/@node_objs.28" sink_obj="//@blocks.5/@node_objs.29"/>
+  <edges id="237" source_obj="//@blocks.2/@node_objs.1" sink_obj="//@blocks.5/@node_objs.30"/>
+  <edges id="238" source_obj="//@blocks.5/@node_objs.29" sink_obj="//@blocks.5/@node_objs.30"/>
+  <edges id="239" source_obj="//@blocks.5/@node_objs.28" sink_obj="//@blocks.5/@node_objs.30"/>
+  <edges id="240" source_obj="//@blocks.5/@node_objs.30" sink_obj="//@blocks.5/@node_objs.31"/>
+  <edges id="242" source_obj="//@blocks.5/@node_objs.31" sink_obj="//@blocks.5/@node_objs.32"/>
+  <edges id="245" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="246" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="247" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="248" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="249" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="250" source_obj="//@blocks.5/@node_objs.6" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="251" source_obj="//@blocks.5/@node_objs.13" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="252" source_obj="//@blocks.5/@node_objs.16" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="253" source_obj="//@blocks.5/@node_objs.27" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="254" source_obj="//@blocks.5/@node_objs.32" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="255" source_obj="//@blocks.5/@node_objs.33" sink_obj="//@ports.1"/>
+  <edges id="256" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.5/@node_objs.34"/>
+  <edges id="257" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="258" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.1"/>
+  <edges id="260" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.2"/>
+  <edges id="263" source_obj="//@blocks.6/@node_objs.2" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="265" source_obj="//@blocks.6/@node_objs.1" sink_obj="//@blocks.6/@node_objs.3"/>
+  <edges id="266" source_obj="//@blocks.1/@node_objs.2" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="267" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="268" source_obj="//@blocks.6/@node_objs.3" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="269" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="270" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.6/@node_objs.6"/>
+  <edges id="328" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="329" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.7"/>
+  <edges id="330" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@blocks.2"/>
+  <edges id="331" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.4"/>
+  <edges id="332" edge_type="CtrlEdge" source_obj="//@blocks.2" sink_obj="//@blocks.3"/>
+  <edges id="333" edge_type="CtrlEdge" source_obj="//@blocks.3" sink_obj="//@blocks.4"/>
+  <edges id="334" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.6"/>
+  <edges id="335" edge_type="CtrlEdge" source_obj="//@blocks.4" sink_obj="//@blocks.5"/>
+  <edges id="336" edge_type="CtrlEdge" source_obj="//@blocks.5" sink_obj="//@blocks.6"/>
+  <edges id="337" edge_type="CtrlEdge" source_obj="//@blocks.6" sink_obj="//@blocks.1" is_back_edge="1"/>
+  <edges id="338" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.5" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="339" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.4" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="340" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.3" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="341" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.3"/>
+  <edges id="342" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.4"/>
+  <edges id="343" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.5"/>
+  <edges id="344" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.5/@node_objs.33"/>
+  <edges id="345" edge_type="VirtEdge" source_obj="//@blocks.6/@node_objs.0" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="346" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.1/@node_objs.0"/>
+  <edges id="347" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.3/@node_objs.0"/>
+  <edges id="348" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.11" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="349" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.6/@node_objs.0"/>
+  <edges id="350" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.12" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="351" edge_type="VirtEdge" source_obj="//@blocks.1/@node_objs.0" sink_obj="//@blocks.6/@node_objs.4"/>
+  <edges id="352" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.0" sink_obj="//@blocks.6/@node_objs.5"/>
+  <edges id="353" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.1" sink_obj="//@blocks.3/@node_objs.6"/>
+  <edges id="354" edge_type="VirtEdge" source_obj="//@blocks.3/@node_objs.6" sink_obj="//@blocks.5/@node_objs.33"/>
+  <blocks id="19" name="entry" type="BlockType">
+    <controlOutputObjs>for.body</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="3" name="phi_urem" coreId="4294967295" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="4" name="row_7" lineNumber="24" originalName="v" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="reflect_101" bitwidth="10" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="24" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="lineBuffer" lineNumber="54" originalName="lineBuffer" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="lineBuffer_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="gaussian_blur" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="54" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="lineBuffer_1" lineNumber="54" originalName="lineBuffer" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="lineBuffer_1_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="gaussian_blur" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="54" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="lineBuffer_2" lineNumber="54" originalName="lineBuffer" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="lineBuffer_2_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="gaussian_blur" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="54" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="lineBuffer_3" lineNumber="54" originalName="lineBuffer" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="lineBuffer_3_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="gaussian_blur" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="54" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="lineBuffer_4" lineNumber="54" originalName="lineBuffer" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="lineBuffer_4_U" coreName="RAM" implIndex="auto" control="no" opType="ram_1p" coreId="82" contextFuncName="gaussian_blur" bitwidth="12" opcode="alloca" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="54" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="row_in" lineNumber="61" originalName="row_in" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="row_in_U" coreName="RAM" implIndex="auto" control="no" opType="ram_2p" coreId="82" contextFuncName="gaussian_blur" bitwidth="8" opcode="alloca" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="61" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="row_in_addr" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="9" opcode="getelementptr" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="row_in_addr_1" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="9" opcode="getelementptr" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="row_in_addr_2" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="9" opcode="getelementptr" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="row_7_write_ln24" lineNumber="24" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="reflect_101" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="24" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="phi_urem_write_ln0" coreId="4294967295" opcode="store" m_display="0" m_delay="0.42" m_topoIndex="13" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="br_ln59" lineNumber="59" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" opcode="br" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="59" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <controlInputObjs>for.body</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>54</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>79</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>125</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="25" name="for.body" type="BlockType">
+    <controlInputObjs>entry</controlInputObjs>
+    <controlInputObjs>cleanup</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.end122</controlOutputObjs>
+    <controlOutputObjs>for.body.split</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="row_9" lineNumber="125" originalName="row" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="10" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>zext</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="21" name="icmp_ln59" lineNumber="59" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="icmp_ln59_fu_188_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="gaussian_blur" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.78" m_topoIndex="16" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="59" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="rowsReceived" lineNumber="106" originalName="rowsReceived" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="rowsReceived_fu_194_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="gaussian_blur" bitwidth="10" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.78" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="106" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="24" name="br_ln59" lineNumber="59" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="18" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="59" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <controlInputObjs>for.body.split</controlInputObjs>
+      <controlInputObjs>for.end122</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>125</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>106</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="30" name="for.body.split" type="BlockType">
+    <controlInputObjs>for.body</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <controlOutputObjs>for.inc.preheader</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="zext_ln59" lineNumber="59" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="zext_ln59_fu_200_p1" coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="11" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="19" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="59" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="28" name="tmp" lineNumber="60" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="tmp_reg_502" coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="1" opcode="bitselect" nodeLabel="1.0" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="60" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="br_ln60" lineNumber="60" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="60" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <controlInputObjs>for.inc.preheader</controlInputObjs>
+      <controlInputObjs>if.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>60</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="39" name="for.inc.preheader" type="BlockType">
+    <controlInputObjs>for.body.split</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>if.end</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="31" name="phi_urem_load_6" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="10" opcode="load" nodeLabel="6.0" m_display="0" m_topoIndex="27" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="_ln0" rtlName="grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135" coreId="4294967295" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+      <dataInputObjs>gray_out</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>gaussian_blur_Pipeline_VITIS_LOOP_63_2</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="33" name="trunc_ln79" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln79_fu_212_p1" coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="3" opcode="trunc" nodeLabel="6.0" m_display="0" m_topoIndex="28" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="34" name="row_in_load" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="gaussian_blur" bitwidth="8" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="24" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="row_in_load_1" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="gaussian_blur" bitwidth="8" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="25" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="36" name="row_in_load_2" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreName="RAM" implIndex="auto" control="no" opType="ram" coreId="82" contextFuncName="gaussian_blur" bitwidth="8" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>getelementptr</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln79" lineNumber="79" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142" coreId="4294967295" contextFuncName="gaussian_blur" opcode="call" nodeLabel="6.0" nodeLatency="1" m_display="0" m_delay="0.67" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="79" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>load</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <constName>gaussian_blur_Pipeline_VITIS_LOOP_82_4</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+      <controlInputObjs>if.end</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>79</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="43" name="if.end" type="BlockType">
+    <controlInputObjs>for.body.split</controlInputObjs>
+    <controlInputObjs>for.inc.preheader</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>cleanup</controlOutputObjs>
+    <controlOutputObjs>VITIS_LOOP_121_7</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="40" name="outputRow" lineNumber="108" originalName="outputRow" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="outputRow_fu_217_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="gaussian_blur" bitwidth="10" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.78" m_topoIndex="31" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="108" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="tmp_52" lineNumber="110" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="tmp_52_reg_527" coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="1" opcode="bitselect" nodeLabel="7.0" m_display="0" m_topoIndex="32" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="110" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>br</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="42" name="br_ln110" lineNumber="110" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" opcode="br" nodeLabel="7.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="110" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <controlInputObjs>VITIS_LOOP_121_7</controlInputObjs>
+      <controlInputObjs>cleanup</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>108</validLinenumbers>
+      <validLinenumbers>110</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="79" name="VITIS_LOOP_121_7" type="BlockType">
+    <controlInputObjs>if.end</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>cleanup</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="44" name="add_ln125" lineNumber="125" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="add_ln125_fu_230_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="gaussian_blur" bitwidth="10" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.78" m_topoIndex="34" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="45" name="trunc_ln26" lineNumber="26" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln26_fu_235_p1" coreId="4294967295" contextFuncName="reflect_101" bitwidth="9" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="35" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="sub_ln26" lineNumber="26" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="sub_ln26_fu_239_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="reflect_101" bitwidth="9" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="0.77" m_topoIndex="36" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="47" name="tmp_53" lineNumber="25" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="tmp_53_fu_245_p3" coreId="4294967295" contextFuncName="reflect_101" bitwidth="1" opcode="bitselect" nodeLabel="7.0" m_display="0" m_topoIndex="37" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="25" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="48" name="value_assign" lineNumber="25" originalName="value" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="grp_fu_261_p0" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="reflect_101" bitwidth="9" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.39" m_topoIndex="38" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="25" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>urem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="49" name="urem_ln20" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="urem_9ns_4ns_3_13_seq_1_U117" coreName="DivnS_SEQ" implIndex="auto_seq" control="no" opType="urem" coreId="7" contextFuncName="positive_modulo" bitwidth="3" opcode="urem" nodeLabel="7.0" nodeLatency="12" m_display="0" m_delay="1.39" m_topoIndex="39" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="50" name="trunc_ln20" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln20_fu_403_p1" coreId="4294967295" contextFuncName="positive_modulo" bitwidth="3" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="62" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>urem</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="51" name="add_ln125_1" lineNumber="125" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="add_ln125_1_fu_267_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="gaussian_blur" bitwidth="10" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.78" m_topoIndex="40" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="52" name="trunc_ln26_1" lineNumber="26" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln26_1_fu_272_p1" coreId="4294967295" contextFuncName="reflect_101" bitwidth="9" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="41" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="53" name="sub_ln26_1" lineNumber="26" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="sub_ln26_1_fu_276_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="reflect_101" bitwidth="9" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="0.77" m_topoIndex="42" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="54" name="tmp_54" lineNumber="25" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="tmp_54_fu_282_p3" coreId="4294967295" contextFuncName="reflect_101" bitwidth="1" opcode="bitselect" nodeLabel="7.0" m_display="0" m_topoIndex="43" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="25" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="55" name="value_assign_13" lineNumber="25" originalName="value" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="grp_fu_298_p0" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="reflect_101" bitwidth="9" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.39" m_topoIndex="44" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="25" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>urem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="56" name="urem_ln20_1" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="urem_9ns_4ns_3_13_seq_1_U118" coreName="DivnS_SEQ" implIndex="auto_seq" control="no" opType="urem" coreId="7" contextFuncName="positive_modulo" bitwidth="3" opcode="urem" nodeLabel="7.0" nodeLatency="12" m_display="0" m_delay="1.39" m_topoIndex="45" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="57" name="trunc_ln20_1" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln20_1_fu_408_p1" coreId="4294967295" contextFuncName="positive_modulo" bitwidth="3" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="63" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>urem</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="58" name="trunc_ln26_2" lineNumber="26" originalName="value" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="grp_fu_308_p0" coreId="4294967295" contextFuncName="reflect_101" bitwidth="9" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="46" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>urem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="59" name="urem_ln20_2" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="urem_9ns_4ns_3_13_seq_1_U119" coreName="DivnS_SEQ" implIndex="auto_seq" control="no" opType="urem" coreId="7" contextFuncName="positive_modulo" bitwidth="3" opcode="urem" nodeLabel="7.0" nodeLatency="12" m_display="0" m_delay="1.39" m_topoIndex="47" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="60" name="trunc_ln20_2" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln20_2_fu_413_p1" coreId="4294967295" contextFuncName="positive_modulo" bitwidth="3" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="64" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>urem</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="61" name="add_ln125_2" lineNumber="125" originalName="v" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="add_ln125_2_fu_314_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="gaussian_blur" bitwidth="11" opcode="add" nodeLabel="7.0" m_display="0" m_delay="0.78" m_topoIndex="48" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>zext</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <dataOutputObjs>bitselect</dataOutputObjs>
+      <dataOutputObjs>partselect</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="62" name="trunc_ln26_3" lineNumber="26" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln26_3_fu_319_p1" coreId="4294967295" contextFuncName="reflect_101" bitwidth="9" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="49" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="63" name="sub_ln26_2" lineNumber="26" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="sub_ln26_2_fu_323_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="reflect_101" bitwidth="9" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="0.77" m_topoIndex="50" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="64" name="tmp_55" lineNumber="25" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="tmp_55_fu_329_p3" coreId="4294967295" contextFuncName="reflect_101" bitwidth="1" opcode="bitselect" nodeLabel="7.0" m_display="0" m_topoIndex="51" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="25" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="65" name="tmp_56" lineNumber="27" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="tmp_56_fu_337_p4" coreId="4294967295" contextFuncName="reflect_101" bitwidth="2" opcode="partselect" nodeLabel="7.0" m_display="0" m_topoIndex="52" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="27" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="66" name="icmp_ln27" lineNumber="27" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="icmp_ln27_fu_347_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="reflect_101" bitwidth="1" opcode="icmp" nodeLabel="7.0" m_display="0" m_delay="0.54" m_topoIndex="53" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="27" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>partselect</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="67" name="sub_ln28" lineNumber="28" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="sub_ln28_fu_353_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="reflect_101" bitwidth="9" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="0.77" m_topoIndex="54" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="28" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="68" name="select_ln27" lineNumber="27" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="select_ln27_fu_359_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="reflect_101" bitwidth="9" opcode="select" nodeLabel="7.0" m_display="0" m_topoIndex="55" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="27" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="69" name="value_assign_15" lineNumber="25" originalName="value" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="grp_fu_375_p0" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="reflect_101" bitwidth="9" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.39" m_topoIndex="56" m_clusterGroupNumber="1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="25" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>urem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="70" name="urem_ln20_3" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="urem_9ns_4ns_3_13_seq_1_U120" coreName="DivnS_SEQ" implIndex="auto_seq" control="no" opType="urem" coreId="7" contextFuncName="positive_modulo" bitwidth="3" opcode="urem" nodeLabel="7.0" nodeLatency="12" m_display="0" m_delay="1.39" m_topoIndex="57" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="71" name="trunc_ln20_3" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln20_3_fu_418_p1" coreId="4294967295" contextFuncName="positive_modulo" bitwidth="3" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="65" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>urem</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="72" name="trunc_ln26_4" lineNumber="26" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln26_4_fu_381_p1" coreId="4294967295" contextFuncName="reflect_101" bitwidth="9" opcode="trunc" nodeLabel="7.0" m_display="0" m_topoIndex="58" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="26" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>sub</dataOutputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="73" name="sub_ln28_2" lineNumber="28" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="sub_ln28_2_fu_384_p2" coreName="Adder" implIndex="fabric" control="no" opType="sub" coreId="1" contextFuncName="reflect_101" bitwidth="9" opcode="sub" nodeLabel="7.0" m_display="0" m_delay="0.77" m_topoIndex="59" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="28" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="74" name="select_ln27_1" lineNumber="27" originalName="value" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="grp_fu_397_p0" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="reflect_101" bitwidth="9" opcode="select" nodeLabel="7.0" m_display="0" m_delay="0.39" m_topoIndex="60" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="27" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>bitselect</dataInputObjs>
+      <dataInputObjs>sub</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>urem</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="75" name="urem_ln20_4" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="urem_9ns_4ns_3_13_seq_1_U121" coreName="DivnS_SEQ" implIndex="auto_seq" control="no" opType="urem" coreId="7" contextFuncName="positive_modulo" bitwidth="3" opcode="urem" nodeLabel="7.0" nodeLatency="12" m_display="0" m_delay="1.39" m_topoIndex="61" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataOutputObjs>trunc</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="76" name="trunc_ln20_4" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="trunc_ln20_4_fu_423_p1" coreId="4294967295" contextFuncName="positive_modulo" bitwidth="3" opcode="trunc" nodeLabel="19.0" m_display="0" m_topoIndex="66" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>urem</dataInputObjs>
+      <dataOutputObjs>call</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="77" name="_ln20" lineNumber="20" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156" coreId="4294967295" contextFuncName="positive_modulo" opcode="call" nodeLabel="19.0" nodeLatency="1" m_display="0" m_topoIndex="67" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="124" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="20" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="positive_modulo"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataInputObjs>trunc</dataInputObjs>
+      <dataOutputObjs>gauss_out</dataOutputObjs>
+      <constName>gaussian_blur_Pipeline_VITIS_LOOP_130_8</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="78" name="br_ln0" coreId="4294967295" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="68" m_clusterGroupNumber="-1">
+      <controlInputObjs>cleanup</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>125</validLinenumbers>
+      <validLinenumbers>26</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>27</validLinenumbers>
+      <validLinenumbers>28</validLinenumbers>
+      <validLinenumbers>124</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="87" name="cleanup" type="BlockType">
+    <controlInputObjs>if.end</controlInputObjs>
+    <controlInputObjs>VITIS_LOOP_121_7</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <controlOutputObjs>for.body</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="80" name="phi_urem_load" lineNumber="57" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" bitwidth="10" opcode="load" nodeLabel="20.0" m_display="0" m_topoIndex="69" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="57" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>alloca</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+      <dataOutputObjs>icmp</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="81" name="add_ln57" lineNumber="57" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="add_ln57_fu_428_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="gaussian_blur" bitwidth="10" opcode="add" nodeLabel="20.0" m_display="0" m_delay="0.78" m_topoIndex="70" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="57" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="82" name="icmp_ln57" lineNumber="57" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="icmp_ln57_fu_434_p2" coreName="Cmp" implIndex="auto" control="no" opType="seteq" coreId="9" contextFuncName="gaussian_blur" bitwidth="1" opcode="icmp" nodeLabel="20.0" m_display="0" m_delay="0.78" m_topoIndex="71" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="57" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>load</dataInputObjs>
+      <dataOutputObjs>select</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="83" name="select_ln57" lineNumber="57" fileName="../src/gaussian_blur.cpp" fileDirectory="../." rtlName="select_ln57_fu_440_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="gaussian_blur" bitwidth="10" opcode="select" nodeLabel="20.0" m_display="0" m_delay="0.4" m_topoIndex="72" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="57" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>icmp</dataInputObjs>
+      <dataInputObjs>add</dataInputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="84" name="row_7_write_ln24" lineNumber="24" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="reflect_101" opcode="store" nodeLabel="20.0" m_display="0" m_delay="0.42" m_topoIndex="73" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="125" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="24" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="reflect_101"/>
+      <dataInputObjs>add</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="85" name="phi_urem_write_ln57" lineNumber="57" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" opcode="store" nodeLabel="20.0" m_display="0" m_delay="0.42" m_topoIndex="74" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="57" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <dataInputObjs>select</dataInputObjs>
+      <dataInputObjs>alloca</dataInputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="86" name="br_ln59" lineNumber="59" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" opcode="br" nodeLabel="20.0" m_display="0" m_topoIndex="75" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="59" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+      <controlInputObjs>for.body</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>57</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>59</validLinenumbers>
+      <validLinenumbers>125</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="89" name="for.end122" type="BlockType">
+    <controlInputObjs>for.body</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="88" name="_ln158" lineNumber="158" fileName="../src/gaussian_blur.cpp" fileDirectory="../." coreId="4294967295" contextFuncName="gaussian_blur" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="../src/gaussian_blur.cpp" linenumber="158" fileDirectory="/home/superkooks/Uni/COMP4601/assign/canny_hls" functionName="gaussian_blur"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="../src/gaussian_blur.cpp">
+      <validLinenumbers>158</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <regnodes realName="trunc_ln20_4_reg_576">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln59_reg_497">
+    <nodeIds>26</nodeIds>
+  </regnodes>
+  <regnodes realName="row_in_addr_2_reg_481">
+    <nodeIds>15</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln20_3_reg_571">
+    <nodeIds>71</nodeIds>
+  </regnodes>
+  <regnodes realName="value_assign_13_reg_536">
+    <nodeIds>55</nodeIds>
+  </regnodes>
+  <regnodes realName="phi_urem_reg_457">
+    <nodeIds>3</nodeIds>
+  </regnodes>
+  <regnodes realName="rowsReceived_reg_492">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="value_assign_15_reg_546">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="select_ln27_1_reg_551">
+    <nodeIds>74</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_52_reg_527">
+    <nodeIds>41</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln20_1_reg_561">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="row_in_load_2_reg_517">
+    <nodeIds>36</nodeIds>
+  </regnodes>
+  <regnodes realName="value_assign_reg_531">
+    <nodeIds>48</nodeIds>
+  </regnodes>
+  <regnodes realName="row_7_reg_464">
+    <nodeIds>4</nodeIds>
+  </regnodes>
+  <regnodes realName="row_in_addr_reg_471">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln26_2_reg_541">
+    <nodeIds>58</nodeIds>
+  </regnodes>
+  <regnodes realName="row_in_load_1_reg_512">
+    <nodeIds>35</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln79_reg_522">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="row_in_load_reg_507">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_502">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="row_in_addr_1_reg_476">
+    <nodeIds>14</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln20_2_reg_566">
+    <nodeIds>60</nodeIds>
+  </regnodes>
+  <regnodes realName="trunc_ln20_reg_556">
+    <nodeIds>50</nodeIds>
+  </regnodes>
+  <expressionNodes realName="row_in_alloca_fu_98">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lineBuffer_4_alloca_fu_94">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_56_fu_337">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln26_2_fu_323">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln57_fu_440">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln57_fu_434">
+    <nodeIds>82</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_55_fu_329">
+    <nodeIds>64</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_7_fu_74">
+    <nodeIds>4</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln27_1_fu_390">
+    <nodeIds>74</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln28_2_fu_384">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_in_addr_2_gep_fu_118">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln79_fu_212">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln125_2_fu_314">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="value_assign_15_fu_367">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln26_1_fu_276">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_52_fu_222">
+    <nodeIds>41</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln20_1_fu_408">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_53_fu_245">
+    <nodeIds>47</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln26_fu_235">
+    <nodeIds>45</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln125_1_fu_267">
+    <nodeIds>51</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln28_fu_353">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln27_fu_347">
+    <nodeIds>66</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lineBuffer_3_alloca_fu_90">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sub_ln26_fu_239">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="select_ln27_fu_359">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln20_fu_403">
+    <nodeIds>50</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln20_3_fu_418">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln26_4_fu_381">
+    <nodeIds>72</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="phi_urem_fu_70">
+    <nodeIds>3</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lineBuffer_alloca_fu_78">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="value_assign_13_fu_290">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln20_4_fu_423">
+    <nodeIds>76</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="value_assign_fu_253">
+    <nodeIds>48</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln26_2_fu_304">
+    <nodeIds>58</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_in_addr_1_gep_fu_110">
+    <nodeIds>14</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_54_fu_282">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_fu_204">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln59_fu_200">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="row_in_addr_gep_fu_102">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="outputRow_fu_217">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln26_1_fu_272">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln125_fu_230">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln57_fu_428">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln20_2_fu_413">
+    <nodeIds>60</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln59_fu_188">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lineBuffer_2_alloca_fu_86">
+    <nodeIds>9</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="lineBuffer_1_alloca_fu_82">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="rowsReceived_fu_194">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln26_3_fu_319">
+    <nodeIds>62</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_fu_308">
+    <nodeIds>59</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_261">
+    <nodeIds>49</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_gaussian_blur_Pipeline_VITIS_LOOP_82_4_fu_142">
+    <nodeIds>37</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_gaussian_blur_Pipeline_VITIS_LOOP_130_8_fu_156">
+    <nodeIds>77</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_gaussian_blur_Pipeline_VITIS_LOOP_63_2_fu_135">
+    <nodeIds>32</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_298">
+    <nodeIds>56</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_375">
+    <nodeIds>70</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_397">
+    <nodeIds>75</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="store_ln24_store_fu_175">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="grp_load_fu_172">
+    <nodeIds>31</nodeIds>
+    <nodeIds>80</nodeIds>
+  </ioNodes>
+  <ioNodes realName="row_9_load_fu_185">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln57_store_fu_452">
+    <nodeIds>85</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_180">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln24_store_fu_448">
+    <nodeIds>84</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="row_in">
+    <nodeIds>35</nodeIds>
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="row_in" portID="1">
+    <nodeIds>34</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="row_in" portID="100">
+    <nodeIds>32</nodeIds>
+    <nodeIds>37</nodeIds>
+  </memoryPorts>
+  <ioPorts name="gauss_out">
+    <contents name="call">
+      <nodeIds>77</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gray_out">
+    <contents name="call">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="32" stage="2" latency="2"/>
+      <operations id="88" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="32" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="34" stage="2" latency="2"/>
+      <operations id="35" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="34" stage="1" latency="2"/>
+      <operations id="35" stage="1" latency="2"/>
+      <operations id="36" stage="2" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="36" stage="1" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="37" stage="2" latency="2"/>
+    </states>
+    <states id="8">
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="48" stage="1" latency="1"/>
+      <operations id="49" stage="13" latency="13"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="13" latency="13"/>
+      <operations id="58" stage="1" latency="1"/>
+      <operations id="59" stage="13" latency="13"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="1"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="1"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="13" latency="13"/>
+      <operations id="72" stage="1" latency="1"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="75" stage="13" latency="13"/>
+    </states>
+    <states id="9">
+      <operations id="49" stage="12" latency="13"/>
+      <operations id="56" stage="12" latency="13"/>
+      <operations id="59" stage="12" latency="13"/>
+      <operations id="70" stage="12" latency="13"/>
+      <operations id="75" stage="12" latency="13"/>
+    </states>
+    <states id="10">
+      <operations id="49" stage="11" latency="13"/>
+      <operations id="56" stage="11" latency="13"/>
+      <operations id="59" stage="11" latency="13"/>
+      <operations id="70" stage="11" latency="13"/>
+      <operations id="75" stage="11" latency="13"/>
+    </states>
+    <states id="11">
+      <operations id="49" stage="10" latency="13"/>
+      <operations id="56" stage="10" latency="13"/>
+      <operations id="59" stage="10" latency="13"/>
+      <operations id="70" stage="10" latency="13"/>
+      <operations id="75" stage="10" latency="13"/>
+    </states>
+    <states id="12">
+      <operations id="49" stage="9" latency="13"/>
+      <operations id="56" stage="9" latency="13"/>
+      <operations id="59" stage="9" latency="13"/>
+      <operations id="70" stage="9" latency="13"/>
+      <operations id="75" stage="9" latency="13"/>
+    </states>
+    <states id="13">
+      <operations id="49" stage="8" latency="13"/>
+      <operations id="56" stage="8" latency="13"/>
+      <operations id="59" stage="8" latency="13"/>
+      <operations id="70" stage="8" latency="13"/>
+      <operations id="75" stage="8" latency="13"/>
+    </states>
+    <states id="14">
+      <operations id="49" stage="7" latency="13"/>
+      <operations id="56" stage="7" latency="13"/>
+      <operations id="59" stage="7" latency="13"/>
+      <operations id="70" stage="7" latency="13"/>
+      <operations id="75" stage="7" latency="13"/>
+    </states>
+    <states id="15">
+      <operations id="49" stage="6" latency="13"/>
+      <operations id="56" stage="6" latency="13"/>
+      <operations id="59" stage="6" latency="13"/>
+      <operations id="70" stage="6" latency="13"/>
+      <operations id="75" stage="6" latency="13"/>
+    </states>
+    <states id="16">
+      <operations id="49" stage="5" latency="13"/>
+      <operations id="56" stage="5" latency="13"/>
+      <operations id="59" stage="5" latency="13"/>
+      <operations id="70" stage="5" latency="13"/>
+      <operations id="75" stage="5" latency="13"/>
+    </states>
+    <states id="17">
+      <operations id="49" stage="4" latency="13"/>
+      <operations id="56" stage="4" latency="13"/>
+      <operations id="59" stage="4" latency="13"/>
+      <operations id="70" stage="4" latency="13"/>
+      <operations id="75" stage="4" latency="13"/>
+    </states>
+    <states id="18">
+      <operations id="49" stage="3" latency="13"/>
+      <operations id="56" stage="3" latency="13"/>
+      <operations id="59" stage="3" latency="13"/>
+      <operations id="70" stage="3" latency="13"/>
+      <operations id="75" stage="3" latency="13"/>
+    </states>
+    <states id="19">
+      <operations id="49" stage="2" latency="13"/>
+      <operations id="56" stage="2" latency="13"/>
+      <operations id="59" stage="2" latency="13"/>
+      <operations id="70" stage="2" latency="13"/>
+      <operations id="75" stage="2" latency="13"/>
+    </states>
+    <states id="20">
+      <operations id="49" stage="1" latency="13"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="13"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="59" stage="1" latency="13"/>
+      <operations id="60" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="13"/>
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="75" stage="1" latency="13"/>
+      <operations id="76" stage="1" latency="1"/>
+      <operations id="77" stage="2" latency="2"/>
+    </states>
+    <states id="21">
+      <operations id="77" stage="1" latency="2"/>
+      <operations id="78" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="1"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="2">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="gaussian_blur" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1543" mMaxLatency="803897">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>19</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_59_1" mII="-1" mDepth="-1" mMinTripCount="514" mMaxTripCount="514" mMinLatency="1542" mMaxLatency="803896" mType="1">
+      <basicBlocks>25</basicBlocks>
+      <basicBlocks>30</basicBlocks>
+      <basicBlocks>39</basicBlocks>
+      <basicBlocks>43</basicBlocks>
+      <basicBlocks>79</basicBlocks>
+      <basicBlocks>87</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>89</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

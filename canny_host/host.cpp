@@ -1,5 +1,8 @@
 #include <iostream>
 #include <cstring>
+#include <chrono>
+#include <limits>
+#include <algorithm>
 
 #include "xrt/xrt_bo.h"
 #include "xrt/xrt_device.h"
@@ -16,18 +19,27 @@
 const int device_index = 0;
 const char *binaryFile = "binary_container_1.xclbin";
 
+struct FrameTiming {
+    double sync_in_us;
+    double launch_us;
+    double wait_us;
+    double sync_out_us;
+    double total_us;
+};
+
 class CannyFPGA {
     private:
     xrt::kernel krnl;
     xrt::bo in_buf;
     xrt::bo out_buf;
+    xrt::run run;
 
     public:
     cv::Mat in_mat;
     cv::Mat out_mat;
 
     CannyFPGA();
-    void process_frame();
+    FrameTiming process_frame();
 };
 
 CannyFPGA::CannyFPGA() {
@@ -42,17 +54,38 @@ CannyFPGA::CannyFPGA() {
     in_buf = xrt::bo(device, WIDTH*HEIGHT*3, krnl.group_id(0));
     out_buf = xrt::bo(device, WIDTH*HEIGHT, krnl.group_id(1));
 
+    // Create the run object once and reuse it every frame, instead of paying
+    // XRT's argument-registration/command-submission setup cost on every call.
+    run = xrt::run(krnl);
+    run.set_arg(0, in_buf);
+    run.set_arg(1, out_buf);
+
     in_mat = cv::Mat(HEIGHT, WIDTH, CV_8UC3, in_buf.map<uint8_t*>());
     out_mat = cv::Mat(HEIGHT, WIDTH, CV_8U, out_buf.map<uint8_t*>());
 }
 
-void CannyFPGA::process_frame() {
+FrameTiming CannyFPGA::process_frame() {
+    auto t0 = std::chrono::high_resolution_clock::now();
     in_buf.sync(XCL_BO_SYNC_BO_TO_DEVICE);
 
-    auto run = krnl(in_buf, out_buf);
+    auto t1 = std::chrono::high_resolution_clock::now();
+    run.start();
+
+    auto t2 = std::chrono::high_resolution_clock::now();
     run.wait();
 
+    auto t3 = std::chrono::high_resolution_clock::now();
     out_buf.sync(XCL_BO_SYNC_BO_FROM_DEVICE);
+
+    auto t4 = std::chrono::high_resolution_clock::now();
+
+    return FrameTiming{
+        std::chrono::duration<double, std::micro>(t1 - t0).count(),
+        std::chrono::duration<double, std::micro>(t2 - t1).count(),
+        std::chrono::duration<double, std::micro>(t3 - t2).count(),
+        std::chrono::duration<double, std::micro>(t4 - t3).count(),
+        std::chrono::duration<double, std::micro>(t4 - t0).count(),
+    };
 }
 
 class CannyCV {
@@ -82,13 +115,37 @@ void CannyCV::process_frame() {
 }
 
 int main(int argc, char** argv) {
-    auto processor = CannyCV();
+    auto processor = CannyFPGA();
 
     // BENCHMARK SINGLE IMAGE
     auto img_mat = cv::imread("test.jpg");
     cv::imshow("Input", img_mat);
     img_mat.copyTo(processor.in_mat);
+
+    // Warm up (first call can pay one-off driver/cache costs).
     processor.process_frame();
+
+    constexpr int NUM_ITERS = 100;
+    double total_sum = 0, sync_in_sum = 0, launch_sum = 0, wait_sum = 0, sync_out_sum = 0;
+    double total_min = std::numeric_limits<double>::max();
+
+    for (int i = 0; i < NUM_ITERS; i++) {
+        auto t = processor.process_frame();
+        total_sum += t.total_us;
+        sync_in_sum += t.sync_in_us;
+        launch_sum += t.launch_us;
+        wait_sum += t.wait_us;
+        sync_out_sum += t.sync_out_us;
+        total_min = std::min(total_min, t.total_us);
+    }
+
+    std::cout << "Over " << NUM_ITERS << " iterations:\n"
+              << "  total    mean=" << total_sum / NUM_ITERS << "us  min=" << total_min << "us\n"
+              << "  sync-in  mean=" << sync_in_sum / NUM_ITERS << "us\n"
+              << "  launch   mean=" << launch_sum / NUM_ITERS << "us\n"
+              << "  wait     mean=" << wait_sum / NUM_ITERS << "us\n"
+              << "  sync-out mean=" << sync_out_sum / NUM_ITERS << "us\n";
+
     cv::imshow("Output", processor.out_mat);
     cv::imwrite("out.jpg", processor.out_mat);
 

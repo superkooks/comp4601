@@ -11,98 +11,122 @@ module canny_top_double_threshold (
         ap_clk,
         ap_rst,
         ap_start,
+        start_full_n,
         ap_done,
         ap_continue,
         ap_idle,
         ap_ready,
-        p_read,
-        out_nonmax_address0,
-        out_nonmax_ce0,
-        out_nonmax_q0,
-        out_double_address0,
-        out_double_ce0,
-        out_double_we0,
-        out_double_d0,
-        ap_return
+        nms_out_dout,
+        nms_out_empty_n,
+        nms_out_read,
+        nms_out_num_data_valid,
+        nms_out_fifo_cap,
+        thresh_out_din,
+        thresh_out_full_n,
+        thresh_out_write,
+        thresh_out_num_data_valid,
+        thresh_out_fifo_cap,
+        start_out,
+        start_write
 );
 
-parameter    ap_ST_fsm_state1 = 2'd1;
-parameter    ap_ST_fsm_state2 = 2'd2;
+parameter    ap_ST_fsm_pp0_stage0 = 1'd1;
 
 input   ap_clk;
 input   ap_rst;
 input   ap_start;
+input   start_full_n;
 output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [0:0] p_read;
-output  [8:0] out_nonmax_address0;
-output   out_nonmax_ce0;
-input  [10:0] out_nonmax_q0;
-output  [8:0] out_double_address0;
-output   out_double_ce0;
-output   out_double_we0;
-output  [7:0] out_double_d0;
-output  [0:0] ap_return;
+input  [15:0] nms_out_dout;
+input   nms_out_empty_n;
+output   nms_out_read;
+input  [10:0] nms_out_num_data_valid;
+input  [10:0] nms_out_fifo_cap;
+output  [7:0] thresh_out_din;
+input   thresh_out_full_n;
+output   thresh_out_write;
+input  [31:0] thresh_out_num_data_valid;
+input  [31:0] thresh_out_fifo_cap;
+output   start_out;
+output   start_write;
 
-reg ap_done;
 reg ap_idle;
-reg ap_ready;
+reg nms_out_read;
+reg thresh_out_write;
+reg start_write;
 
+reg    real_start;
+reg    start_once_reg;
+(* fsm_encoding = "none" *) reg   [0:0] ap_CS_fsm;
+wire    ap_CS_fsm_pp0_stage0;
+wire    ap_enable_reg_pp0_iter0;
+reg    ap_enable_reg_pp0_iter1;
+reg    ap_idle_pp0;
+wire    internal_ap_ready;
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [1:0] ap_CS_fsm;
-wire    ap_CS_fsm_state1;
-wire   [0:0] p_read_9_read_fu_14_p2;
-reg   [0:0] p_read_9_reg_40;
-reg    ap_block_state1;
-wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start;
-wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done;
-wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_idle;
-wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_ready;
-wire   [8:0] grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_address0;
-wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_ce0;
-wire   [8:0] grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_address0;
-wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_ce0;
-wire    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_we0;
-wire   [7:0] grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_d0;
-reg   [0:0] ap_phi_mux_valid_out_write_assign_phi_fu_24_p4;
-reg   [0:0] valid_out_write_assign_reg_20;
-wire    ap_CS_fsm_state2;
-reg    ap_block_state2_on_subcall_done;
-reg    grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg;
-reg    ap_block_state1_ignore_call0;
-reg   [1:0] ap_NS_fsm;
-reg    ap_ST_fsm_state1_blk;
-reg    ap_ST_fsm_state2_blk;
+reg    ap_block_state1_pp0_stage0_iter0_grp1;
+reg    ap_block_pp0_stage0_subdone;
+wire   [0:0] icmp_ln10_fu_89_p2;
+reg    ap_condition_exit_pp0_iter0_stage0;
+wire    ap_loop_exit_ready;
+reg    ap_ready_int;
+reg    nms_out_blk_n;
+wire    ap_block_pp0_stage0_grp1;
+reg    thresh_out_blk_n;
+wire   [0:0] icmp_ln16_fu_71_p2;
+reg   [0:0] icmp_ln16_reg_122;
+reg    ap_block_pp0_stage0_11001_grp1;
+wire   [0:0] icmp_ln19_fu_77_p2;
+reg   [0:0] icmp_ln19_reg_127;
+reg    ap_block_pp0_stage0_11001;
+reg   [17:0] i_fu_46;
+wire   [17:0] i_3_fu_83_p2;
+wire    ap_loop_init;
+reg   [17:0] ap_sig_allocacmp_i_2;
+wire    ap_block_pp0_stage0;
+reg    ap_block_pp0_stage0_01001_grp1;
+wire   [7:0] select_ln16_fu_100_p3;
+wire    ap_continue_int;
+reg    ap_done_int;
+reg    ap_loop_exit_ready_pp0_iter1_reg;
+reg   [0:0] ap_NS_fsm;
+wire    ap_enable_pp0;
+wire    ap_start_int;
+wire    ap_done_sig;
+reg    ap_condition_117;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
+#0 start_once_reg = 1'b0;
+#0 ap_CS_fsm = 1'd1;
+#0 ap_enable_reg_pp0_iter1 = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 2'd1;
-#0 grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg = 1'b0;
+#0 i_fu_46 = 18'd0;
 end
 
-canny_top_double_threshold_Pipeline_VITIS_LOOP_16_1 grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32(
+canny_top_flow_control_loop_pipe flow_control_loop_pipe_U(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start),
-    .ap_done(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done),
-    .ap_idle(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_idle),
-    .ap_ready(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_ready),
-    .out_nonmax_address0(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_address0),
-    .out_nonmax_ce0(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_ce0),
-    .out_nonmax_q0(out_nonmax_q0),
-    .out_double_address0(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_address0),
-    .out_double_ce0(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_ce0),
-    .out_double_we0(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_we0),
-    .out_double_d0(grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_d0)
+    .ap_start(real_start),
+    .ap_ready(internal_ap_ready),
+    .ap_done(ap_done_sig),
+    .ap_start_int(ap_start_int),
+    .ap_loop_init(ap_loop_init),
+    .ap_ready_int(ap_ready_int),
+    .ap_loop_exit_ready(ap_condition_exit_pp0_iter0_stage0),
+    .ap_loop_exit_done(ap_done_int),
+    .ap_continue_int(ap_continue_int),
+    .ap_done_int(ap_done_int),
+    .ap_continue(ap_continue)
 );
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        ap_CS_fsm <= ap_ST_fsm_state1;
+        ap_CS_fsm <= ap_ST_fsm_pp0_stage0;
     end else begin
         ap_CS_fsm <= ap_NS_fsm;
     end
@@ -112,9 +136,9 @@ always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
         ap_done_reg <= 1'b0;
     end else begin
-        if ((ap_continue == 1'b1)) begin
+        if ((ap_continue_int == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
+        end else if (((1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -122,56 +146,67 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= 1'b0;
+        ap_enable_reg_pp0_iter1 <= 1'b0;
     end else begin
-        if (((1'b0 == ap_block_state1_ignore_call0) & (p_read_9_read_fu_14_p2 == 1'd1) & (1'b1 == ap_CS_fsm_state1))) begin
-            grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= 1'b1;
-        end else if ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_ready == 1'b1)) begin
-            grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg <= 1'b0;
+        if (((1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+            ap_enable_reg_pp0_iter1 <= ap_start_int;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (p_read_9_reg_40 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        valid_out_write_assign_reg_20 <= 1'd1;
-    end else if (((1'b0 == ap_block_state1) & (p_read_9_read_fu_14_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state1))) begin
-        valid_out_write_assign_reg_20 <= 1'd0;
+    if (ap_rst == 1'b1) begin
+        start_once_reg <= 1'b0;
+    end else begin
+        if (((real_start == 1'b1) & (internal_ap_ready == 1'b0))) begin
+            start_once_reg <= 1'b1;
+        end else if ((internal_ap_ready == 1'b1)) begin
+            start_once_reg <= 1'b0;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-        p_read_9_reg_40 <= p_read;
+    if ((1'b1 == ap_CS_fsm_pp0_stage0)) begin
+        if (((ap_loop_exit_ready == 1'b0) & (1'b0 == ap_block_pp0_stage0_subdone))) begin
+            ap_loop_exit_ready_pp0_iter1_reg <= 1'b0;
+        end else if ((1'b0 == ap_block_pp0_stage0_11001)) begin
+            ap_loop_exit_ready_pp0_iter1_reg <= ap_loop_exit_ready;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_condition_117)) begin
+        i_fu_46 <= i_3_fu_83_p2;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        icmp_ln16_reg_122 <= icmp_ln16_fu_71_p2;
+        icmp_ln19_reg_127 <= icmp_ln19_fu_77_p2;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_block_state1)) begin
-        ap_ST_fsm_state1_blk = 1'b1;
+    if (((icmp_ln10_fu_89_p2 == 1'd1) & (1'b0 == ap_block_pp0_stage0_subdone) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        ap_condition_exit_pp0_iter0_stage0 = 1'b1;
     end else begin
-        ap_ST_fsm_state1_blk = 1'b0;
+        ap_condition_exit_pp0_iter0_stage0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_block_state2_on_subcall_done)) begin
-        ap_ST_fsm_state2_blk = 1'b1;
+    if (((1'b0 == ap_block_pp0_stage0_subdone) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_exit_ready_pp0_iter1_reg == 1'b1))) begin
+        ap_done_int = 1'b1;
     end else begin
-        ap_ST_fsm_state2_blk = 1'b0;
+        ap_done_int = ap_done_reg;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
-        ap_done = 1'b1;
-    end else begin
-        ap_done = ap_done_reg;
-    end
-end
-
-always @ (*) begin
-    if (((ap_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
+    if (((ap_idle_pp0 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_start_int == 1'b0))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -179,36 +214,81 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((p_read_9_reg_40 == 1'd1) & (1'b1 == ap_CS_fsm_state2))) begin
-        ap_phi_mux_valid_out_write_assign_phi_fu_24_p4 = 1'd1;
+    if (((ap_enable_reg_pp0_iter1 == 1'b0) & (ap_enable_reg_pp0_iter0 == 1'b0))) begin
+        ap_idle_pp0 = 1'b1;
     end else begin
-        ap_phi_mux_valid_out_write_assign_phi_fu_24_p4 = valid_out_write_assign_reg_20;
+        ap_idle_pp0 = 1'b0;
     end
 end
 
 always @ (*) begin
-    if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
-        ap_ready = 1'b1;
+    if (((1'b0 == ap_block_pp0_stage0_subdone) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        ap_ready_int = 1'b1;
     end else begin
-        ap_ready = 1'b0;
+        ap_ready_int = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0) & (ap_loop_init == 1'b1))) begin
+        ap_sig_allocacmp_i_2 = 18'd0;
+    end else begin
+        ap_sig_allocacmp_i_2 = i_fu_46;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_grp1) & (ap_done_reg == 1'b0) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        nms_out_blk_n = nms_out_empty_n;
+    end else begin
+        nms_out_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        nms_out_read = 1'b1;
+    end else begin
+        nms_out_read = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((start_full_n == 1'b0) & (start_once_reg == 1'b0))) begin
+        real_start = 1'b0;
+    end else begin
+        real_start = ap_start;
+    end
+end
+
+always @ (*) begin
+    if (((real_start == 1'b1) & (start_once_reg == 1'b0))) begin
+        start_write = 1'b1;
+    end else begin
+        start_write = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_grp1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        thresh_out_blk_n = thresh_out_full_n;
+    end else begin
+        thresh_out_blk_n = 1'b1;
+    end
+end
+
+always @ (*) begin
+    if (((1'b0 == ap_block_pp0_stage0_11001_grp1) & (ap_enable_reg_pp0_iter1 == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0))) begin
+        thresh_out_write = 1'b1;
+    end else begin
+        thresh_out_write = 1'b0;
     end
 end
 
 always @ (*) begin
     case (ap_CS_fsm)
-        ap_ST_fsm_state1 : begin
-            if (((1'b0 == ap_block_state1) & (1'b1 == ap_CS_fsm_state1))) begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end
-        end
-        ap_ST_fsm_state2 : begin
-            if (((1'b0 == ap_block_state2_on_subcall_done) & (1'b1 == ap_CS_fsm_state2))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
-            end else begin
-                ap_NS_fsm = ap_ST_fsm_state2;
-            end
+        ap_ST_fsm_pp0_stage0 : begin
+            ap_NS_fsm = ap_ST_fsm_pp0_stage0;
         end
         default : begin
             ap_NS_fsm = 'bx;
@@ -216,38 +296,58 @@ always @ (*) begin
     endcase
 end
 
-assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
+assign ap_CS_fsm_pp0_stage0 = ap_CS_fsm[32'd0];
 
-assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
+assign ap_block_pp0_stage0 = ~(1'b1 == 1'b1);
 
 always @ (*) begin
-    ap_block_state1 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
+    ap_block_pp0_stage0_01001_grp1 = ((ap_done_reg == 1'b1) | ((thresh_out_full_n == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1)) | ((ap_start_int == 1'b1) & (1'b1 == ap_block_state1_pp0_stage0_iter0_grp1)));
 end
 
 always @ (*) begin
-    ap_block_state1_ignore_call0 = ((ap_start == 1'b0) | (ap_done_reg == 1'b1));
+    ap_block_pp0_stage0_11001 = ((ap_done_reg == 1'b1) | ((thresh_out_full_n == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1)) | ((ap_start_int == 1'b1) & ((ap_done_reg == 1'b1) | (1'b1 == ap_block_state1_pp0_stage0_iter0_grp1))));
 end
 
 always @ (*) begin
-    ap_block_state2_on_subcall_done = ((grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_done == 1'b0) & (p_read_9_reg_40 == 1'd1));
+    ap_block_pp0_stage0_11001_grp1 = ((ap_done_reg == 1'b1) | ((thresh_out_full_n == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1)) | ((ap_start_int == 1'b1) & (1'b1 == ap_block_state1_pp0_stage0_iter0_grp1)));
 end
 
-assign ap_return = ap_phi_mux_valid_out_write_assign_phi_fu_24_p4;
+assign ap_block_pp0_stage0_grp1 = ~(1'b1 == 1'b1);
 
-assign grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_ap_start_reg;
+always @ (*) begin
+    ap_block_pp0_stage0_subdone = ((ap_done_reg == 1'b1) | ((thresh_out_full_n == 1'b0) & (ap_enable_reg_pp0_iter1 == 1'b1)) | ((ap_start_int == 1'b1) & ((ap_done_reg == 1'b1) | (1'b1 == ap_block_state1_pp0_stage0_iter0_grp1))));
+end
 
-assign out_double_address0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_address0;
+always @ (*) begin
+    ap_block_state1_pp0_stage0_iter0_grp1 = ((ap_done_reg == 1'b1) | (nms_out_empty_n == 1'b0));
+end
 
-assign out_double_ce0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_ce0;
+always @ (*) begin
+    ap_condition_117 = ((1'b0 == ap_block_pp0_stage0_11001) & (ap_start_int == 1'b1) & (1'b1 == ap_CS_fsm_pp0_stage0));
+end
 
-assign out_double_d0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_d0;
+assign ap_done = ap_done_sig;
 
-assign out_double_we0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_double_we0;
+assign ap_enable_pp0 = (ap_idle_pp0 ^ 1'b1);
 
-assign out_nonmax_address0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_address0;
+assign ap_enable_reg_pp0_iter0 = ap_start_int;
 
-assign out_nonmax_ce0 = grp_double_threshold_Pipeline_VITIS_LOOP_16_1_fu_32_out_nonmax_ce0;
+assign ap_loop_exit_ready = ap_condition_exit_pp0_iter0_stage0;
 
-assign p_read_9_read_fu_14_p2 = p_read;
+assign ap_ready = internal_ap_ready;
+
+assign i_3_fu_83_p2 = (ap_sig_allocacmp_i_2 + 18'd1);
+
+assign icmp_ln10_fu_89_p2 = ((ap_sig_allocacmp_i_2 == 18'd262143) ? 1'b1 : 1'b0);
+
+assign icmp_ln16_fu_71_p2 = ((nms_out_dout > 16'd79) ? 1'b1 : 1'b0);
+
+assign icmp_ln19_fu_77_p2 = ((nms_out_dout > 16'd19) ? 1'b1 : 1'b0);
+
+assign select_ln16_fu_100_p3 = ((icmp_ln16_reg_122[0:0] == 1'b1) ? 8'd255 : 8'd128);
+
+assign start_out = real_start;
+
+assign thresh_out_din = ((icmp_ln19_reg_127[0:0] == 1'b1) ? select_ln16_fu_100_p3 : 8'd0);
 
 endmodule //canny_top_double_threshold

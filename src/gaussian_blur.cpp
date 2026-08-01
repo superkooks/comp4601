@@ -16,14 +16,6 @@ constexpr int KERNEL_SIZE = 5;
  */
 constexpr int GAUSSIAN_TAPS[KERNEL_SIZE] = {1, 4, 6, 4, 1};
 
-/*
- * Horizontally filtered rows.  The largest possible value is 255 * 16, so
- * 16 bits per entry is enough.  One row per memory bank, so the vertical pass
- * can read all five taps in the same cycle.
- */
-std::uint16_t lineBuffer[KERNEL_SIZE][WIDTH] = {};
-int rowsReceived = 0;
-
 int positive_modulo(int value, int divisor) {
     const int result = value % divisor;
     return result < 0 ? result + divisor : result;
@@ -41,115 +33,126 @@ int reflect_101(int v, int max) {
 
 }
 
-void gaussian_blur_reset() {
-    rowsReceived = 0;
-
-    for (int row = 0; row < KERNEL_SIZE; ++row) {
-        for (int column = 0; column < WIDTH; ++column) {
-            lineBuffer[row][column] = 0;
-        }
-    }
-}
-
 void gaussian_blur(
-    const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH],
-    bool *valid_out
+    hls::stream<std::uint8_t> &input,
+    hls::stream<std::uint8_t> &output
 ) {
+    // Gaussian blur needs three rows of input before it can output its first row.
+    // Therefore, once the input runs out, we still need to output two extra rows,
+    // which the kernel will derive from reflected input (reflect_101)
+    constexpr int OWN_DELAY = 2;
+    constexpr int TOTAL_ROWS = HEIGHT + OWN_DELAY;
+
+    /*
+     * Horizontally filtered rows.  The largest possible value is 255 * 16, so
+     * 16 bits per entry is enough.  One row per memory bank, so the vertical
+     * pass can read all five taps in the same cycle.  This used to be
+     * anonymous-namespace static state shared across HEIGHT+8 separate calls;
+     * now the whole frame is processed by one call, so it is an ordinary
+     * local that lives for the duration of that call.
+     */
+    std::uint16_t lineBuffer[KERNEL_SIZE][WIDTH];
     #pragma HLS ARRAY_PARTITION variable=lineBuffer type=complete dim=1
 
-    const int writeSlot =
-        rowsReceived % KERNEL_SIZE;
+    int rowsReceived = 0;
 
-    /*
-     * Horizontal pass.  A shift register holds the five taps, so each input
-     * pixel is fetched exactly once instead of once per tap.
-     */
-    std::uint8_t window[KERNEL_SIZE];
-    #pragma HLS ARRAY_PARTITION variable=window type=complete
+    for (int row = 0; row < TOTAL_ROWS; ++row) {
+        if (row < HEIGHT) {
+            std::uint8_t row_in[WIDTH];
 
-    for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
-        #pragma HLS UNROLL
-        window[tap] = input[reflect_101(tap - 2, WIDTH)];
-    }
+            for (int column = 0; column < WIDTH; ++column) {
+                #pragma HLS PIPELINE II=1
+                row_in[column] = input.read();
+            }
 
-    for (int column = 0; column < WIDTH; ++column) {
-        #pragma HLS PIPELINE II=1
+            const int writeSlot = rowsReceived % KERNEL_SIZE;
 
-        int horizontalSum = 0;
+            /*
+             * Horizontal pass.  A shift register holds the five taps, so each
+             * input pixel is fetched exactly once instead of once per tap.
+             */
+            std::uint8_t window[KERNEL_SIZE];
+            #pragma HLS ARRAY_PARTITION variable=window type=complete
 
-        for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
-            #pragma HLS UNROLL
-            horizontalSum +=
-                static_cast<int>(window[tap]) * GAUSSIAN_TAPS[tap];
+            for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
+                #pragma HLS UNROLL
+                window[tap] = row_in[reflect_101(tap - 2, WIDTH)];
+            }
+
+            for (int column = 0; column < WIDTH; ++column) {
+                #pragma HLS PIPELINE II=1
+
+                int horizontalSum = 0;
+
+                for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
+                    #pragma HLS UNROLL
+                    horizontalSum +=
+                        static_cast<int>(window[tap]) * GAUSSIAN_TAPS[tap];
+                }
+
+                lineBuffer[writeSlot][column] =
+                    static_cast<std::uint16_t>(horizontalSum);
+
+                for (int tap = 0; tap < KERNEL_SIZE - 1; ++tap) {
+                    #pragma HLS UNROLL
+                    window[tap] = window[tap + 1];
+                }
+
+                window[KERNEL_SIZE - 1] =
+                    row_in[reflect_101(column + 3, WIDTH)];
+            }
         }
 
-        lineBuffer[writeSlot][column] =
-            static_cast<std::uint16_t>(horizontalSum);
+        ++rowsReceived;
 
-        for (int tap = 0; tap < KERNEL_SIZE - 1; ++tap) {
-            #pragma HLS UNROLL
-            window[tap] = window[tap + 1];
+        const int outputRow = rowsReceived - 3;
+
+        if (outputRow < 0) {
+            continue;
         }
-
-        window[KERNEL_SIZE - 1] =
-            input[reflect_101(column + 3, WIDTH)];
-    }
-
-    ++rowsReceived;
-
-    const int outputRow = rowsReceived - 3;
-
-    if (outputRow < 0) {
-        *valid_out = false;
-        return;
-    }
-
-    /*
-     * The five source rows are fixed for the whole output row, so resolve
-     * their buffer slots once rather than once per pixel.  This removes the
-     * per tap modulo that dominated the original loop.
-     */
-    int slot[KERNEL_SIZE];
-    #pragma HLS ARRAY_PARTITION variable=slot type=complete
-
-    for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
-        #pragma HLS UNROLL
-        slot[tap] =
-            positive_modulo(
-                reflect_101(rowsReceived - 5 + tap, HEIGHT),
-                KERNEL_SIZE
-            );
-    }
-
-    for (int column = 0; column < WIDTH; ++column) {
-        #pragma HLS PIPELINE II=1
 
         /*
-         * Read every bank once at a fixed index and select in registers.
-         * Reflected rows can name the same slot twice, which would otherwise
-         * serialise two reads onto a single memory port.
+         * The five source rows are fixed for the whole output row, so
+         * resolve their buffer slots once rather than once per pixel.
          */
-        std::uint16_t banked[KERNEL_SIZE];
-        #pragma HLS ARRAY_PARTITION variable=banked type=complete
-
-        for (int bank = 0; bank < KERNEL_SIZE; ++bank) {
-            #pragma HLS UNROLL
-            banked[bank] = lineBuffer[bank][column];
-        }
-
-        std::uint32_t sum = 0;
+        int slot[KERNEL_SIZE];
+        #pragma HLS ARRAY_PARTITION variable=slot type=complete
 
         for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
             #pragma HLS UNROLL
-            sum +=
-                static_cast<std::uint32_t>(banked[slot[tap]]) *
-                static_cast<std::uint32_t>(GAUSSIAN_TAPS[tap]);
+            slot[tap] =
+                positive_modulo(
+                    reflect_101(rowsReceived - 5 + tap, HEIGHT),
+                    KERNEL_SIZE
+                );
         }
 
-        output[column] =
-            static_cast<std::uint8_t>(sum >> 8);
-    }
+        for (int column = 0; column < WIDTH; ++column) {
+            #pragma HLS PIPELINE II=1
 
-    *valid_out = true;
+            /*
+             * Read every bank once at a fixed index and select in registers.
+             * Reflected rows can name the same slot twice, which would
+             * otherwise serialise two reads onto a single memory port.
+             */
+            std::uint16_t banked[KERNEL_SIZE];
+            #pragma HLS ARRAY_PARTITION variable=banked type=complete
+
+            for (int bank = 0; bank < KERNEL_SIZE; ++bank) {
+                #pragma HLS UNROLL
+                banked[bank] = lineBuffer[bank][column];
+            }
+
+            std::uint32_t sum = 0;
+
+            for (int tap = 0; tap < KERNEL_SIZE; ++tap) {
+                #pragma HLS UNROLL
+                sum +=
+                    static_cast<std::uint32_t>(banked[slot[tap]]) *
+                    static_cast<std::uint32_t>(GAUSSIAN_TAPS[tap]);
+            }
+
+            output.write(static_cast<std::uint8_t>(sum >> 8));
+        }
+    }
 }

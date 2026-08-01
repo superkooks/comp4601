@@ -2,427 +2,442 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="directive:1:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=canny_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:10:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=in depth=12288 bundle=gmem0 max_read_burst_length=32 num_read_outstanding=4" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:11:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=out bundle=gmem max_write_burst_length=8 num_write_outstanding=4" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:13:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:79:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:25:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=gray_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:26:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=gauss_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:27:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=sobel_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:28:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=nms_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:29:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=thresh_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:30:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=hyst1_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:31:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=hyst2_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:32:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=hyst3_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:33:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="canny_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=hyst4_out depth=STREAM_DEPTH" ARG_PragmaType="stream" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/write_frame.cpp:9:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="write_frame" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:70:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=buffer type=complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:90:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:79:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:110:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:99:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=slot type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:138:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:127:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window type=complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:143:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:132:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:148:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:137:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:155:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:144:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:187:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:180:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=banked type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:190:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:183:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:195:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/hysteresis.cpp:188:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="hysteresis" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:47:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/double_threshold.cpp:11:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="double_threshold" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:42:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lineBuffer type=complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:58:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:51:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:82:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:75:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=slot type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:96:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:89:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window type=complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:101:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:94:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:99:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:106:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:113:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:170:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:163:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=banked type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:173:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:166:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:178:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/non_maximum_suppression.cpp:171:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="non_maximum_suppression" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:97:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:88:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lineBuffer type=complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:103:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:97:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:120:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:114:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=slot type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:123:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:117:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:138:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:132:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window type=complete dim=0" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:137:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:143:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:149:1" msg_body="HLS pragma dump">
-        <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
-    </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:156:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:150:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:164:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:158:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:169:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:163:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:197:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:188:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=banked type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:200:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:191:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:205:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/sobel.cpp:196:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="sobel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:59:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:55:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=lineBuffer type=complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:69:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:64:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:75:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=window type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:72:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:78:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:77:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:83:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:82:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:88:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:91:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:97:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:114:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:119:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=slot type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:117:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:122:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:126:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:131:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:134:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:139:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=banked type=complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:137:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:142:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:144:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/gaussian_blur.cpp:149:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="gaussian_blur" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/grayscale.cpp:23:1" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/grayscale.cpp:18:1" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="hls" ARG_PragmaFunction="grayscale" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:189:27" msg_body="Loop 'VITIS_LOOP_189_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_189_5"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/grayscale.cpp:25:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="grayscale" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:194:27" msg_body="Loop 'VITIS_LOOP_194_6' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_194_6"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/grayscale.cpp:27:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="grayscale" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:172:27" msg_body="Loop 'VITIS_LOOP_172_5' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_172_5"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../src/grayscale.cpp:33:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="grayscale" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:177:27" msg_body="Loop 'VITIS_LOOP_177_6' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_177_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:182:31" msg_body="Loop 'VITIS_LOOP_182_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_182_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:161:27" msg_body="Loop 'VITIS_LOOP_161_6' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_161_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:187:31" msg_body="Loop 'VITIS_LOOP_187_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_187_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:166:31" msg_body="Loop 'VITIS_LOOP_166_7' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_166_7"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:165:31" msg_body="Loop 'VITIS_LOOP_165_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_165_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:199:27" msg_body="Loop 'VITIS_LOOP_199_8' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_199_8"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:170:31" msg_body="Loop 'VITIS_LOOP_170_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_170_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:204:27" msg_body="Loop 'VITIS_LOOP_204_9' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_204_9"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:155:31" msg_body="Loop 'VITIS_LOOP_155_7' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_155_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:136:27" msg_body="Loop 'VITIS_LOOP_136_7' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_136_7"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:160:35" msg_body="Loop 'VITIS_LOOP_160_8' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_160_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:143:27" msg_body="Loop 'VITIS_LOOP_143_8' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_143_8"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:190:31" msg_body="Loop 'VITIS_LOOP_190_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_190_9"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:81:26" msg_body="Loop 'VITIS_LOOP_81_3' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_81_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/sobel.cpp:195:32" msg_body="Loop 'VITIS_LOOP_195_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_195_10"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:90:26" msg_body="Loop 'VITIS_LOOP_90_4' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_90_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:87:34" msg_body="Loop 'VITIS_LOOP_87_5' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_87_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_189_5' (../src/hysteresis.cpp:189:27) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:189:27" LoopName="VITIS_LOOP_189_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:96:34" msg_body="Loop 'VITIS_LOOP_96_6' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_96_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_194_6' (../src/hysteresis.cpp:194:27) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:194:27" LoopName="VITIS_LOOP_194_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:141:31" msg_body="Loop 'VITIS_LOOP_141_9' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_141_9"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_140_2' (../src/hysteresis.cpp:140:23) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:140:23" LoopName="VITIS_LOOP_140_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:148:32" msg_body="Loop 'VITIS_LOOP_148_10' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_148_10"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_147_3' (../src/hysteresis.cpp:147:27) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:147:27" LoopName="VITIS_LOOP_147_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../src/grayscale.cpp:26:30" msg_body="Loop 'VITIS_LOOP_26_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_26_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_189_5' (../src/hysteresis.cpp:189:27) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:189:27" LoopName="VITIS_LOOP_189_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_129_3' (../src/hysteresis.cpp:129:27) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:129:27" LoopName="VITIS_LOOP_129_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_194_6' (../src/hysteresis.cpp:194:27) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:194:27" LoopName="VITIS_LOOP_194_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_136_4' (../src/hysteresis.cpp:136:31) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:136:31" LoopName="VITIS_LOOP_136_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_140_2' (../src/hysteresis.cpp:140:23) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:140:23" LoopName="VITIS_LOOP_140_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_182_6' (../src/hysteresis.cpp:182:31) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:182:31" LoopName="VITIS_LOOP_182_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_147_3' (../src/hysteresis.cpp:147:27) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:147:27" LoopName="VITIS_LOOP_147_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_187_7' (../src/hysteresis.cpp:187:31) in function 'hysteresis&lt;4&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:187:31" LoopName="VITIS_LOOP_187_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_189_5' (../src/hysteresis.cpp:189:27) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:189:27" LoopName="VITIS_LOOP_189_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_129_3' (../src/hysteresis.cpp:129:27) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:129:27" LoopName="VITIS_LOOP_129_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_194_6' (../src/hysteresis.cpp:194:27) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:194:27" LoopName="VITIS_LOOP_194_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_136_4' (../src/hysteresis.cpp:136:31) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:136:31" LoopName="VITIS_LOOP_136_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_140_2' (../src/hysteresis.cpp:140:23) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:140:23" LoopName="VITIS_LOOP_140_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_182_6' (../src/hysteresis.cpp:182:31) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:182:31" LoopName="VITIS_LOOP_182_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_147_3' (../src/hysteresis.cpp:147:27) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:147:27" LoopName="VITIS_LOOP_147_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_187_7' (../src/hysteresis.cpp:187:31) in function 'hysteresis&lt;3&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:187:31" LoopName="VITIS_LOOP_187_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_189_5' (../src/hysteresis.cpp:189:27) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:189:27" LoopName="VITIS_LOOP_189_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_129_3' (../src/hysteresis.cpp:129:27) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:129:27" LoopName="VITIS_LOOP_129_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_194_6' (../src/hysteresis.cpp:194:27) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:194:27" LoopName="VITIS_LOOP_194_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_136_4' (../src/hysteresis.cpp:136:31) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:136:31" LoopName="VITIS_LOOP_136_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_140_2' (../src/hysteresis.cpp:140:23) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:140:23" LoopName="VITIS_LOOP_140_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_182_6' (../src/hysteresis.cpp:182:31) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:182:31" LoopName="VITIS_LOOP_182_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Unrolling loop 'VITIS_LOOP_147_3' (../src/hysteresis.cpp:147:27) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/hysteresis.cpp:147:27" LoopName="VITIS_LOOP_147_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_187_7' (../src/hysteresis.cpp:187:31) in function 'hysteresis&lt;2&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:187:31" LoopName="VITIS_LOOP_187_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:46:0" msg_body="Unrolling loop 'VITIS_LOOP_172_5' (../src/non_maximum_suppression.cpp:172:27) in function 'non_maximum_suppression' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:172:27" LoopName="VITIS_LOOP_172_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_129_3' (../src/hysteresis.cpp:129:27) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:129:27" LoopName="VITIS_LOOP_129_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:46:0" msg_body="Unrolling loop 'VITIS_LOOP_177_6' (../src/non_maximum_suppression.cpp:177:27) in function 'non_maximum_suppression' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:177:27" LoopName="VITIS_LOOP_177_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_136_4' (../src/hysteresis.cpp:136:31) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:136:31" LoopName="VITIS_LOOP_136_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:46:0" msg_body="Unrolling loop 'VITIS_LOOP_98_2' (../src/non_maximum_suppression.cpp:98:22) in function 'non_maximum_suppression' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:98:22" LoopName="VITIS_LOOP_98_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_182_6' (../src/hysteresis.cpp:182:31) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:182:31" LoopName="VITIS_LOOP_182_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:46:0" msg_body="Unrolling loop 'VITIS_LOOP_105_3' (../src/non_maximum_suppression.cpp:105:27) in function 'non_maximum_suppression' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:105:27" LoopName="VITIS_LOOP_105_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Unrolling loop 'VITIS_LOOP_187_7' (../src/hysteresis.cpp:187:31) in function 'hysteresis&lt;1&gt;' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/hysteresis.cpp:187:31" LoopName="VITIS_LOOP_187_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_161_6' (../src/sobel.cpp:161:27) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/sobel.cpp:161:27" LoopName="VITIS_LOOP_161_6"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:29:0" msg_body="Unrolling loop 'VITIS_LOOP_91_3' (../src/non_maximum_suppression.cpp:91:26) in function 'non_maximum_suppression' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:91:26" LoopName="VITIS_LOOP_91_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_166_7' (../src/sobel.cpp:166:31) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/sobel.cpp:166:31" LoopName="VITIS_LOOP_166_7"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:29:0" msg_body="Unrolling loop 'VITIS_LOOP_98_4' (../src/non_maximum_suppression.cpp:98:30) in function 'non_maximum_suppression' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:98:30" LoopName="VITIS_LOOP_98_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_199_8' (../src/sobel.cpp:199:27) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/sobel.cpp:199:27" LoopName="VITIS_LOOP_199_8"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:29:0" msg_body="Unrolling loop 'VITIS_LOOP_165_6' (../src/non_maximum_suppression.cpp:165:31) in function 'non_maximum_suppression' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:165:31" LoopName="VITIS_LOOP_165_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_204_9' (../src/sobel.cpp:204:27) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/sobel.cpp:204:27" LoopName="VITIS_LOOP_204_9"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:29:0" msg_body="Unrolling loop 'VITIS_LOOP_170_7' (../src/non_maximum_suppression.cpp:170:31) in function 'non_maximum_suppression' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/non_maximum_suppression.cpp:170:31" LoopName="VITIS_LOOP_170_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_140_3' (../src/sobel.cpp:140:23) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/sobel.cpp:140:23" LoopName="VITIS_LOOP_140_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_116_3' (../src/sobel.cpp:116:27) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/sobel.cpp:116:27" LoopName="VITIS_LOOP_116_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_148_4' (../src/sobel.cpp:148:27) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/sobel.cpp:148:27" LoopName="VITIS_LOOP_148_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_134_4' (../src/sobel.cpp:134:27) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/sobel.cpp:134:27" LoopName="VITIS_LOOP_134_4"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Unrolling loop 'VITIS_LOOP_122_2' (../src/sobel.cpp:122:23) in function 'sobel' completely with a factor of 3">
-        <args Factor="3" LoopLoc="../src/sobel.cpp:122:23" LoopName="VITIS_LOOP_122_2"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_142_5' (../src/sobel.cpp:142:31) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/sobel.cpp:142:31" LoopName="VITIS_LOOP_142_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_136_7' (../src/gaussian_blur.cpp:136:27) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:136:27" LoopName="VITIS_LOOP_136_7"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_155_7' (../src/sobel.cpp:155:31) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/sobel.cpp:155:31" LoopName="VITIS_LOOP_155_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_143_8' (../src/gaussian_blur.cpp:143:27) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:143:27" LoopName="VITIS_LOOP_143_8"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_160_8' (../src/sobel.cpp:160:35) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/sobel.cpp:160:35" LoopName="VITIS_LOOP_160_8"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_116_5' (../src/gaussian_blur.cpp:116:23) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:116:23" LoopName="VITIS_LOOP_116_5"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_190_9' (../src/sobel.cpp:190:31) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/sobel.cpp:190:31" LoopName="VITIS_LOOP_190_9"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_81_3' (../src/gaussian_blur.cpp:81:26) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:81:26" LoopName="VITIS_LOOP_81_3"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Unrolling loop 'VITIS_LOOP_195_10' (../src/sobel.cpp:195:32) in function 'sobel' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../src/sobel.cpp:195:32" LoopName="VITIS_LOOP_195_10"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_90_4' (../src/gaussian_blur.cpp:90:26) in function 'gaussian_blur' completely with a factor of 4">
-        <args Factor="4" LoopLoc="../src/gaussian_blur.cpp:90:26" LoopName="VITIS_LOOP_90_4"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_77_3' (../src/gaussian_blur.cpp:77:30) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:77:30" LoopName="VITIS_LOOP_77_3"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:58:0" msg_body="Unrolling loop 'VITIS_LOOP_71_1' (../src/gaussian_blur.cpp:71:22) in function 'gaussian_blur' completely with a factor of 5">
-        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:71:22" LoopName="VITIS_LOOP_71_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_87_5' (../src/gaussian_blur.cpp:87:34) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:87:34" LoopName="VITIS_LOOP_87_5"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'gaussian_blur_reset()' into 'reset_canny_stages()'">
-        <args Callee="gaussian_blur_reset()" Callee-DebugLoc="File ../src/gaussian_blur.cpp Line 44 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_96_6' (../src/gaussian_blur.cpp:96:34) in function 'gaussian_blur' completely with a factor of 4">
+        <args Factor="4" LoopLoc="../src/gaussian_blur.cpp:96:34" LoopName="VITIS_LOOP_96_6"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'sobel_reset()' into 'reset_canny_stages()'">
-        <args Callee="sobel_reset()" Callee-DebugLoc="File ../src/sobel.cpp Line 76 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_121_7' (../src/gaussian_blur.cpp:121:27) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:121:27" LoopName="VITIS_LOOP_121_7"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'non_maximum_suppression_reset()' into 'reset_canny_stages()'">
-        <args Callee="non_maximum_suppression_reset()" Callee-DebugLoc="File ../src/non_maximum_suppression.cpp Line 29 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_141_9' (../src/gaussian_blur.cpp:141:31) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:141:31" LoopName="VITIS_LOOP_141_9"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'void hysteresis_reset&lt;1&gt;()' into 'reset_canny_stages()'">
-        <args Callee="void hysteresis_reset&lt;1&gt;()" Callee-DebugLoc="File ../src/hysteresis.cpp Line 56 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Unrolling loop 'VITIS_LOOP_148_10' (../src/gaussian_blur.cpp:148:32) in function 'gaussian_blur' completely with a factor of 5">
+        <args Factor="5" LoopLoc="../src/gaussian_blur.cpp:148:32" LoopName="VITIS_LOOP_148_10"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'void hysteresis_reset&lt;2&gt;()' into 'reset_canny_stages()'">
-        <args Callee="void hysteresis_reset&lt;2&gt;()" Callee-DebugLoc="File ../src/hysteresis.cpp Line 56 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../src/grayscale.cpp:6:0" msg_body="Unrolling loop 'VITIS_LOOP_26_2' (../src/grayscale.cpp:26:30) in function 'grayscale' completely with a factor of 64">
+        <args Factor="64" LoopLoc="../src/grayscale.cpp:26:30" LoopName="VITIS_LOOP_26_2"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'void hysteresis_reset&lt;3&gt;()' into 'reset_canny_stages()'">
-        <args Callee="void hysteresis_reset&lt;3&gt;()" Callee-DebugLoc="File ../src/hysteresis.cpp Line 56 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:39:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int) (.22)' into 'gaussian_blur(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::positive_modulo(int, int) (.22)" Callee-DebugLoc="File ../src/gaussian_blur.cpp Line 19 Column 0" Caller="gaussian_blur(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;)" Caller-DebugLoc="File ../src/gaussian_blur.cpp Line 39 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'void hysteresis_reset&lt;4&gt;()' into 'reset_canny_stages()'">
-        <args Callee="void hysteresis_reset&lt;4&gt;()" Callee-DebugLoc="File ../src/hysteresis.cpp Line 56 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:34:0" msg_body="Inlining function '(anonymous namespace)::absolute_value(int)' into '(anonymous namespace)::quantise_direction(int, int)'">
+        <args Callee="(anonymous namespace)::absolute_value(int)" Callee-DebugLoc="File ../src/sobel.cpp Line 27 Column 0" Caller="(anonymous namespace)::quantise_direction(int, int)" Caller-DebugLoc="File ../src/sobel.cpp Line 34 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:42:0" msg_body="Inlining function 'output_row_reset()' into 'reset_canny_stages()'">
-        <args Callee="output_row_reset()" Callee-DebugLoc="File ../src/output_row.cpp Line 5 Column 0" Caller="reset_canny_stages()" Caller-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Inlining function '(anonymous namespace)::border_replicate(int, int)' into 'sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::border_replicate(int, int)" Callee-DebugLoc="File ../src/sobel.cpp Line 60 Column 0" Caller="sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)" Caller-DebugLoc="File ../src/sobel.cpp Line 75 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:58:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int) (.42)' into 'gaussian_blur(unsigned char const*, unsigned char*, bool*)'">
-        <args Callee="(anonymous namespace)::positive_modulo(int, int) (.42)" Callee-DebugLoc="File ../src/gaussian_blur.cpp Line 27 Column 0" Caller="gaussian_blur(unsigned char const*, unsigned char*, bool*)" Caller-DebugLoc="File ../src/gaussian_blur.cpp Line 58 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int) (.19)' into 'sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::positive_modulo(int, int) (.19)" Callee-DebugLoc="File ../src/sobel.cpp Line 22 Column 0" Caller="sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)" Caller-DebugLoc="File ../src/sobel.cpp Line 75 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:38:0" msg_body="Inlining function '(anonymous namespace)::absolute_value(int)' into '(anonymous namespace)::quantise_direction(int, int)'">
-        <args Callee="(anonymous namespace)::absolute_value(int)" Callee-DebugLoc="File ../src/sobel.cpp Line 31 Column 0" Caller="(anonymous namespace)::quantise_direction(int, int)" Caller-DebugLoc="File ../src/sobel.cpp Line 38 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Inlining function '(anonymous namespace)::absolute_value(int)' into 'sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::absolute_value(int)" Callee-DebugLoc="File ../src/sobel.cpp Line 27 Column 0" Caller="sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)" Caller-DebugLoc="File ../src/sobel.cpp Line 75 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Inlining function '(anonymous namespace)::border_replicate(int, int)' into 'sobel(unsigned char const*, GradientPixel*, bool, bool*)'">
-        <args Callee="(anonymous namespace)::border_replicate(int, int)" Callee-DebugLoc="File ../src/sobel.cpp Line 64 Column 0" Caller="sobel(unsigned char const*, GradientPixel*, bool, bool*)" Caller-DebugLoc="File ../src/sobel.cpp Line 91 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:75:0" msg_body="Inlining function '(anonymous namespace)::quantise_direction(int, int)' into 'sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::quantise_direction(int, int)" Callee-DebugLoc="File ../src/sobel.cpp Line 34 Column 0" Caller="sobel(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;GradientPixel, 0&gt;&amp;)" Caller-DebugLoc="File ../src/sobel.cpp Line 75 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int) (.35)' into 'sobel(unsigned char const*, GradientPixel*, bool, bool*)'">
-        <args Callee="(anonymous namespace)::positive_modulo(int, int) (.35)" Callee-DebugLoc="File ../src/sobel.cpp Line 26 Column 0" Caller="sobel(unsigned char const*, GradientPixel*, bool, bool*)" Caller-DebugLoc="File ../src/sobel.cpp Line 91 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:29:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int) (.15)' into 'non_maximum_suppression(hls::stream&lt;GradientPixel, 0&gt;&amp;, hls::stream&lt;unsigned short, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::positive_modulo(int, int) (.15)" Callee-DebugLoc="File ../src/non_maximum_suppression.cpp Line 9 Column 0" Caller="non_maximum_suppression(hls::stream&lt;GradientPixel, 0&gt;&amp;, hls::stream&lt;unsigned short, 0&gt;&amp;)" Caller-DebugLoc="File ../src/non_maximum_suppression.cpp Line 29 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Inlining function '(anonymous namespace)::absolute_value(int)' into 'sobel(unsigned char const*, GradientPixel*, bool, bool*)'">
-        <args Callee="(anonymous namespace)::absolute_value(int)" Callee-DebugLoc="File ../src/sobel.cpp Line 31 Column 0" Caller="sobel(unsigned char const*, GradientPixel*, bool, bool*)" Caller-DebugLoc="File ../src/sobel.cpp Line 91 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:29:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int) (.16)' into 'non_maximum_suppression(hls::stream&lt;GradientPixel, 0&gt;&amp;, hls::stream&lt;unsigned short, 0&gt;&amp;)'">
+        <args Callee="(anonymous namespace)::clamp_column(int) (.16)" Callee-DebugLoc="File ../src/non_maximum_suppression.cpp Line 14 Column 0" Caller="non_maximum_suppression(hls::stream&lt;GradientPixel, 0&gt;&amp;, hls::stream&lt;unsigned short, 0&gt;&amp;)" Caller-DebugLoc="File ../src/non_maximum_suppression.cpp Line 29 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/sobel.cpp:91:0" msg_body="Inlining function '(anonymous namespace)::quantise_direction(int, int)' into 'sobel(unsigned char const*, GradientPixel*, bool, bool*)'">
-        <args Callee="(anonymous namespace)::quantise_direction(int, int)" Callee-DebugLoc="File ../src/sobel.cpp Line 38 Column 0" Caller="sobel(unsigned char const*, GradientPixel*, bool, bool*)" Caller-DebugLoc="File ../src/sobel.cpp Line 91 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;1&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 10 Column 0" Caller="void hysteresis&lt;1&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:46:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int) (.27)' into 'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'">
-        <args Callee="(anonymous namespace)::positive_modulo(int, int) (.27)" Callee-DebugLoc="File ../src/non_maximum_suppression.cpp Line 12 Column 0" Caller="non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)" Caller-DebugLoc="File ../src/non_maximum_suppression.cpp Line 46 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;1&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 15 Column 0" Caller="void hysteresis&lt;1&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:46:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int) (.28)' into 'non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)'">
-        <args Callee="(anonymous namespace)::clamp_column(int) (.28)" Callee-DebugLoc="File ../src/non_maximum_suppression.cpp Line 17 Column 0" Caller="non_maximum_suppression(GradientPixel const*, unsigned short*, bool, bool*)" Caller-DebugLoc="File ../src/non_maximum_suppression.cpp Line 46 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;1&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 35 Column 0" Caller="void hysteresis&lt;1&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;1&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 16 Column 0" Caller="void hysteresis&lt;1&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;2&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 10 Column 0" Caller="void hysteresis&lt;2&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;1&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 21 Column 0" Caller="void hysteresis&lt;1&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;2&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 15 Column 0" Caller="void hysteresis&lt;2&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;1&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 41 Column 0" Caller="void hysteresis&lt;1&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;2&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 35 Column 0" Caller="void hysteresis&lt;2&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;2&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 16 Column 0" Caller="void hysteresis&lt;2&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;3&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 10 Column 0" Caller="void hysteresis&lt;3&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;2&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 21 Column 0" Caller="void hysteresis&lt;2&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;3&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 15 Column 0" Caller="void hysteresis&lt;3&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;2&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 41 Column 0" Caller="void hysteresis&lt;2&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;3&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 35 Column 0" Caller="void hysteresis&lt;3&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;3&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 16 Column 0" Caller="void hysteresis&lt;3&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;4&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 10 Column 0" Caller="void hysteresis&lt;4&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;3&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 21 Column 0" Caller="void hysteresis&lt;3&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;4&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 15 Column 0" Caller="void hysteresis&lt;4&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;3&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 41 Column 0" Caller="void hysteresis&lt;3&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:54:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;4&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)'">
+        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 35 Column 0" Caller="void hysteresis&lt;4&gt;(hls::stream&lt;unsigned char, 0&gt;&amp;, hls::stream&lt;unsigned char, 0&gt;&amp;, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 54 Column 0"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::positive_modulo(int, int)' into 'void hysteresis&lt;4&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::positive_modulo(int, int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 16 Column 0" Caller="void hysteresis&lt;4&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../src/canny_top.cpp:9:0" msg_body="Skipping array undecay on variable length array 'in'.">
+        <args ArrayName="in"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::clamp_column(int)' into 'void hysteresis&lt;4&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::clamp_column(int)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 21 Column 0" Caller="void hysteresis&lt;4&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:54:19" msg_body="Applying array_partition to 'lineBuffer': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="lineBuffer"/>
     </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:73:0" msg_body="Inlining function '(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)' into 'void hysteresis&lt;4&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)'">
-        <args Callee="(anonymous namespace)::has_strong_neighbour(unsigned char const (*) [3], bool, bool, bool, bool)" Callee-DebugLoc="File ../src/hysteresis.cpp Line 41 Column 0" Caller="void hysteresis&lt;4&gt;(unsigned char const*, unsigned char*, bool, bool*, unsigned char)" Caller-DebugLoc="File ../src/hysteresis.cpp Line 73 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../src/canny_top.cpp:9:0" msg_body="Inlining function 'reset_canny_stages()' into 'canny_top(RGBPixel*, unsigned char*)'">
-        <args Callee="reset_canny_stages()" Callee-DebugLoc="File ../src/canny_top.cpp Line 42 Column 0" Caller="canny_top(RGBPixel*, unsigned char*)" Caller-DebugLoc="File ../src/canny_top.cpp Line 9 Column 0"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:11:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferILi4EEE': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferILi4EEE"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:11:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferILi3EEE': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferILi3EEE"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:11:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferILi2EEE': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferILi2EEE"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:11:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferILi1EEE': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferILi1EEE"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:9:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferE.direction': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferE.direction"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:9:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferE.magnitude': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferE.magnitude"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/sobel.cpp:23:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferE.32': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferE.32"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:24:0" msg_body="Applying array_partition to '_ZN12_GLOBAL__N_110lineBufferE.39': Complete partitioning on dimension 1.">
-        <args Dim="1" Mode="Complete" UOName="_ZN12_GLOBAL__N_110lineBufferE.39"/>
-    </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:133:23" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:138:27" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="banked"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/sobel.cpp:196:22" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/sobel.cpp:87:18" msg_body="Applying array_partition to 'lineBuffer': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="lineBuffer"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/sobel.cpp:187:26" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="banked"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:169:23" msg_body="Applying array_partition to 'banked.magnitude': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:41:19" msg_body="Applying array_partition to 'lineBuffer.magnitude': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="lineBuffer.magnitude"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:41:19" msg_body="Applying array_partition to 'lineBuffer.direction': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="lineBuffer.direction"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:162:27" msg_body="Applying array_partition to 'banked.magnitude': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="banked.magnitude"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:169:23" msg_body="Applying array_partition to 'banked.direction': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:162:27" msg_body="Applying array_partition to 'banked.direction': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="banked.direction"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:186:22" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:69:18" msg_body="Applying array_partition to 'buffer': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="buffer"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:179:26" msg_body="Applying array_partition to 'banked': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="banked"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/output_row.cpp:20:22" msg_body="pipeline   1 output_row config_compile -pipeline_loops 64VITIS_LOOP_20_1 ../src/output_row.cpp:20:22">
-        <args LoopLoc="../src/output_row.cpp:20:22" LoopLoc-DebugLoc="File ../src/output_row.cpp Line 20 Column 22" LoopName="VITIS_LOOP_20_1" PragmaFunction="output_row" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    <msg msg_groups="PRAGMA_AGGREGATE" msg_id="214-241" msg_severity="INFO" msg_loc="../src/canny_top.cpp:17:32" msg_body="Aggregating fifo (hls::stream) variable 'sobel_out' with compact=bit mode in 24-bits">
+        <args AggregateTypeName="compact=bit" Bitwidth="24" HwTyName="fifo (hls::stream)" Name="sobel_out"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/double_threshold.cpp:16:22" msg_body="pipeline   1 double_threshold config_compile -pipeline_loops 64VITIS_LOOP_16_1 ../src/double_threshold.cpp:16:22">
-        <args LoopLoc="../src/double_threshold.cpp:16:22" LoopLoc-DebugLoc="File ../src/double_threshold.cpp Line 16 Column 22" LoopName="VITIS_LOOP_16_1" PragmaFunction="double_threshold" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/grayscale.cpp:9:22" msg_body="array_partition dim=1 type=cyclic factor=32 variable=row_bytes 1 grayscale ../src/grayscale.cpp:9:22 ../src/grayscale.cpp:25:1row_bytes">
+        <args PragmaFunction="grayscale" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=32 variable=row_bytes" PragmaSrcLoc="../src/grayscale.cpp:25:1" PragmaSrcLoc-DebugLoc="File ../src/grayscale.cpp Line 25 Column 1" PragmaType="array_partition" VarLoc="../src/grayscale.cpp:9:22" VarName="row_bytes"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/grayscale.cpp:20:5" msg_body="pipeline   1 grayscale config_compile -pipeline_loops 64anonymous ../src/grayscale.cpp:20:5">
-        <args LoopLoc="../src/grayscale.cpp:20:5" LoopLoc-DebugLoc="File ../src/grayscale.cpp Line 20 Column 5" LoopName="anonymous" PragmaFunction="grayscale" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../src/grayscale.cpp:25:1" msg_body="Inferring pragma 'array_partition type=cyclic factor=32 dim=1' for array 'row_bytes' due to pipeline pragma">
+        <args Dim="1" Factor="32" Mode="cyclic" Name="row_bytes" PragmaType="array_partition"/>
     </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/gaussian_blur.cpp:48:26" msg_body="pipeline   1 canny_top config_compile -pipeline_loops 64VITIS_LOOP_48_2 ../src/gaussian_blur.cpp:48:26">
-        <args LoopLoc="../src/gaussian_blur.cpp:48:26" LoopLoc-DebugLoc="File ../src/gaussian_blur.cpp Line 48 Column 26" LoopName="VITIS_LOOP_48_2" PragmaFunction="canny_top" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/sobel.cpp:80:26" msg_body="pipeline   1 canny_top config_compile -pipeline_loops 64VITIS_LOOP_80_2 ../src/sobel.cpp:80:26">
-        <args LoopLoc="../src/sobel.cpp:80:26" LoopLoc-DebugLoc="File ../src/sobel.cpp Line 80 Column 26" LoopName="VITIS_LOOP_80_2" PragmaFunction="canny_top" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/non_maximum_suppression.cpp:33:26" msg_body="pipeline   1 canny_top config_compile -pipeline_loops 64VITIS_LOOP_33_2 ../src/non_maximum_suppression.cpp:33:26">
-        <args LoopLoc="../src/non_maximum_suppression.cpp:33:26" LoopLoc-DebugLoc="File ../src/non_maximum_suppression.cpp Line 33 Column 26" LoopName="VITIS_LOOP_33_2" PragmaFunction="canny_top" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
-    </msg>
-    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../src/hysteresis.cpp:60:26" msg_body="pipeline   1 canny_top config_compile -pipeline_loops 64VITIS_LOOP_60_2 ../src/hysteresis.cpp:60:26">
-        <args LoopLoc="../src/hysteresis.cpp:60:26" LoopLoc-DebugLoc="File ../src/hysteresis.cpp Line 60 Column 26" LoopName="VITIS_LOOP_60_2" PragmaFunction="canny_top" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../src/grayscale.cpp:9:22" msg_body="Applying array_partition to 'row_bytes': Cyclic partitioning with factor 32 on dimension 1.">
+        <args Dim="1" Factor="32" Mode="Cyclic" UOName="row_bytes"/>
     </msg>
 </xilinx:hls_fe_msgs>

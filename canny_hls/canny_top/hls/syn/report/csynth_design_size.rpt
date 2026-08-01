@@ -6,78 +6,69 @@
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 | Phase         | Step                       | Instructions | Description                                                                            |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
-| Compile/Link  |                            | 2,576        | After all functions are compiled and linked into a single design                       |
+| Compile/Link  |                            | 2,634        | After all functions are compiled and linked into a single design                       |
 |               |                            |              |                                                                                        |
 | Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
-|               | (1) unroll                 | 3,034        | user unroll pragmas are applied                                                        |
-|               | (2) simplification         | 2,250        | simplification of applied user unroll pragmas                                          |
-|               | (3) inline                 | 1,925        | user inline pragmas are applied                                                        |
-|               | (4) simplification         | 1,737        | simplification of applied user inline pragmas                                          |
+|               | (1) unroll                 | 3,081        | user unroll pragmas are applied                                                        |
+|               | (2) simplification         | 2,336        | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 | 1,942        | user inline pragmas are applied                                                        |
+|               | (4) simplification         | 1,767        | simplification of applied user inline pragmas                                          |
 |               |                            |              |                                                                                        |
 | Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
-|               | (1) array partition        | 1,976        | user array partition pragmas are applied                                               |
-|               | (2) simplification         | 1,546        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
-|               | (3) aggregate/disaggregate | 1,546        | user struct aggregate/disaggregate pragmas are applied                                 |
-|               | (4) array reshape          | 1,546        | apply array reshape pragmas                                                            |
-|               | (5) access patterns        | 1,569        | array access pattern optmizations                                                      |
+|               | (1) array partition        | 2,087        | user array partition pragmas are applied                                               |
+|               | (2) simplification         | 1,553        | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate | 1,555        | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          | 1,566        | apply array reshape pragmas                                                            |
+|               | (5) access patterns        | 1,591        | array access pattern optmizations                                                      |
 |               |                            |              |                                                                                        |
 | Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
-|               | (1) loop simplification    | 1,570        | loop and instruction simplification                                                    |
-|               | (2) parallelization        | 1,570        | loops are unrolled or pipelined to meet performance targets                            |
-|               | (3) array partition        | 1,562        | arrays are partitioned to meet performance targets                                     |
-|               | (4) simplification         | 1,558        | simplification of design after performance transformations                             |
+|               | (1) loop simplification    | 1,592        | loop and instruction simplification                                                    |
+|               | (2) parallelization        | 1,592        | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        | 4,720        | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         | 1,957        | simplification of design after performance transformations                             |
 |               |                            |              |                                                                                        |
 | HW Transforms |                            |              | After hardware transfomations                                                          |
-|               | (1) lowering               | 1,582        | initial conversion to HW specific instructions                                         |
-|               | (2) optimizations          | 1,696        | high level synthesis optimizations                                                     |
+|               | (1) lowering               | 1,974        | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          | 2,050        | high level synthesis optimizations                                                     |
 +---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
 
 * Instructions per Function for each Compilation Phase
-+-------------------------------------+--------------------------------+----------------+-----------------+-----------------+-----------------+---------------+
-| Function                            | Location                       | Compile/Link   | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms |
-+-------------------------------------+--------------------------------+----------------+-----------------+-----------------+-----------------+---------------+
-| + canny_top                         | canny_top.cpp:9                | 2,576          | 1,737           | 1,569           | 1,558           | 1,696         |
-|  + reset_canny_stages               | canny_top.cpp:42               |  193           |                 |                 |                 |               |
-|     gaussian_blur_reset             | gaussian_blur.cpp:44           |   25           |                 |                 |                 |               |
-|     sobel_reset                     | sobel.cpp:76                   |   25           |                 |                 |                 |               |
-|     non_maximum_suppression_rese... | non_maximum_suppression.cpp:29 |   32           |                 |                 |                 |               |
-|     hysteresis_reset<1>             | hysteresis.cpp:56              |   25           |                 |                 |                 |               |
-|     hysteresis_reset<2>             | hysteresis.cpp:56              |   25           |                 |                 |                 |               |
-|     hysteresis_reset<3>             | hysteresis.cpp:56              |   25           |                 |                 |                 |               |
-|     hysteresis_reset<4>             | hysteresis.cpp:56              |   25           |                 |                 |                 |               |
-|     output_row_reset                | output_row.cpp:5               |    2           |                 |                 |                 |               |
-|    grayscale                        | grayscale.cpp:5                |   47           |   44            |   48            |   47            |               |
-|  + gaussian_blur                    | gaussian_blur.cpp:54           |  230           |  308            |  270            |  269            |               |
-|     reflect_101                     | gaussian_blur.cpp:32           |   42 (3 calls) |  121 (11 calls) |  121 (11 calls) |  121 (11 calls) |               |
-|     positive_modulo                 | gaussian_blur.cpp:27           |    8           |                 |                 |                 |               |
-|  + sobel                            | sobel.cpp:86                   |  319           |  198            |  157            |  156            |               |
-|     border_replicate                | sobel.cpp:64                   |   30 (3 calls) |                 |                 |                 |               |
-|     positive_modulo                 | sobel.cpp:26                   |    8           |                 |                 |                 |               |
-|     absolute_value                  | sobel.cpp:31                   |   14 (2 calls) |                 |                 |                 |               |
-|   + quantise_direction              | sobel.cpp:35                   |   43           |                 |                 |                 |               |
-|      absolute_value                 | sobel.cpp:31                   |   14 (2 calls) |                 |                 |                 |               |
-|  + non_maximum_suppression          | non_maximum_suppression.cpp:41 |  337           |  221            |  150            |  149            |               |
-|     positive_modulo                 | non_maximum_suppression.cpp:12 |   24 (3 calls) |                 |                 |                 |               |
-|     clamp_column                    | non_maximum_suppression.cpp:17 |   18 (2 calls) |                 |                 |                 |               |
-|    double_threshold                 | double_threshold.cpp:5         |   37           |   18            |   18            |   17            |               |
-|  + hysteresis<1>                    | hysteresis.cpp:67              |  312           |  181            |  140            |  138            |               |
-|     positive_modulo                 | hysteresis.cpp:16              |   24 (3 calls) |                 |                 |                 |               |
-|     clamp_column                    | hysteresis.cpp:21              |   18 (2 calls) |                 |                 |                 |               |
-|     has_strong_neighbour            | hysteresis.cpp:35              |   64           |                 |                 |                 |               |
-|  + hysteresis<2>                    | hysteresis.cpp:67              |  312           |  181            |  140            |  138            |               |
-|     positive_modulo                 | hysteresis.cpp:16              |   24 (3 calls) |                 |                 |                 |               |
-|     clamp_column                    | hysteresis.cpp:21              |   18 (2 calls) |                 |                 |                 |               |
-|     has_strong_neighbour            | hysteresis.cpp:35              |   64           |                 |                 |                 |               |
-|  + hysteresis<3>                    | hysteresis.cpp:67              |  312           |  181            |  140            |  138            |               |
-|     positive_modulo                 | hysteresis.cpp:16              |   24 (3 calls) |                 |                 |                 |               |
-|     clamp_column                    | hysteresis.cpp:21              |   18 (2 calls) |                 |                 |                 |               |
-|     has_strong_neighbour            | hysteresis.cpp:35              |   64           |                 |                 |                 |               |
-|  + hysteresis<4>                    | hysteresis.cpp:67              |  312           |  181            |  140            |  138            |               |
-|     positive_modulo                 | hysteresis.cpp:16              |   24 (3 calls) |                 |                 |                 |               |
-|     clamp_column                    | hysteresis.cpp:21              |   18 (2 calls) |                 |                 |                 |               |
-|     has_strong_neighbour            | hysteresis.cpp:35              |   64           |                 |                 |                 |               |
-|    output_row                       | output_row.cpp:9               |   25           |   19            |   30            |   32            |               |
-+-------------------------------------+--------------------------------+----------------+-----------------+-----------------+-----------------+---------------+
++----------------------------+--------------------------------+----------------+-----------------+-----------------+-----------------+-----------------+
+| Function                   | Location                       | Compile/Link   | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
++----------------------------+--------------------------------+----------------+-----------------+-----------------+-----------------+-----------------+
+| + canny_top                | canny_top.cpp:9                | 2,634          | 1,767           | 1,591           | 1,957           | 2,050           |
+|    grayscale               | grayscale.cpp:3                |  186           |  315            |  317            |  699            |  651            |
+|  + gaussian_blur           | gaussian_blur.cpp:36           |  275           |  317            |  297            |  296            |  313            |
+|     reflect_101            | gaussian_blur.cpp:24           |   42 (3 calls) |  121 (11 calls) |  121 (11 calls) |  121 (11 calls) |  121 (11 calls) |
+|     positive_modulo        | gaussian_blur.cpp:19           |    8           |                 |                 |                 |                 |
+|  + sobel                   | sobel.cpp:72                   |  341           |  188            |  161            |  159            |  175            |
+|     border_replicate       | sobel.cpp:60                   |   30 (3 calls) |                 |                 |                 |                 |
+|     positive_modulo        | sobel.cpp:22                   |    8           |                 |                 |                 |                 |
+|     absolute_value         | sobel.cpp:27                   |   14 (2 calls) |                 |                 |                 |                 |
+|   + quantise_direction     | sobel.cpp:31                   |   43           |                 |                 |                 |                 |
+|      absolute_value        | sobel.cpp:27                   |   14 (2 calls) |                 |                 |                 |                 |
+|  + non_maximum_suppression | non_maximum_suppression.cpp:26 |  362           |  218            |  180            |  178            |  196            |
+|     positive_modulo        | non_maximum_suppression.cpp:9  |   24 (3 calls) |                 |                 |                 |                 |
+|     clamp_column           | non_maximum_suppression.cpp:14 |   18 (2 calls) |                 |                 |                 |                 |
+|    double_threshold        | double_threshold.cpp:5         |   44           |   12            |   12            |   12            |   20            |
+|  + hysteresis<1>           | hysteresis.cpp:50              |  324           |  165            |  139            |  136            |  153            |
+|     positive_modulo        | hysteresis.cpp:10              |   24 (3 calls) |                 |                 |                 |                 |
+|     clamp_column           | hysteresis.cpp:15              |   18 (2 calls) |                 |                 |                 |                 |
+|     has_strong_neighbour   | hysteresis.cpp:29              |   64           |                 |                 |                 |                 |
+|  + hysteresis<2>           | hysteresis.cpp:50              |  324           |  165            |  139            |  136            |  153            |
+|     positive_modulo        | hysteresis.cpp:10              |   24 (3 calls) |                 |                 |                 |                 |
+|     clamp_column           | hysteresis.cpp:15              |   18 (2 calls) |                 |                 |                 |                 |
+|     has_strong_neighbour   | hysteresis.cpp:29              |   64           |                 |                 |                 |                 |
+|  + hysteresis<3>           | hysteresis.cpp:50              |  324           |  165            |  139            |  136            |  153            |
+|     positive_modulo        | hysteresis.cpp:10              |   24 (3 calls) |                 |                 |                 |                 |
+|     clamp_column           | hysteresis.cpp:15              |   18 (2 calls) |                 |                 |                 |                 |
+|     has_strong_neighbour   | hysteresis.cpp:29              |   64           |                 |                 |                 |                 |
+|  + hysteresis<4>           | hysteresis.cpp:50              |  324           |  163            |  135            |  132            |  149            |
+|     positive_modulo        | hysteresis.cpp:10              |   24 (3 calls) |                 |                 |                 |                 |
+|     clamp_column           | hysteresis.cpp:15              |   18 (2 calls) |                 |                 |                 |                 |
+|     has_strong_neighbour   | hysteresis.cpp:29              |   64           |                 |                 |                 |                 |
+|    write_frame             | write_frame.cpp:3              |   35           |   16            |   28            |   29            |   36            |
++----------------------------+--------------------------------+----------------+-----------------+-----------------+-----------------+-----------------+
 
 * Design Size Message Settings
 +---------------------------------------------+--------+------------------------------------------------------------------+

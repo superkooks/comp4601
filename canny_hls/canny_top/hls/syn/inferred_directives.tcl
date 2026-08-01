@@ -1,13 +1,3 @@
-# Inferred from syn.compile.pipeline_loops=64
-set_directive_pipeline output_row/VITIS_LOOP_20_1
-set_directive_pipeline double_threshold/VITIS_LOOP_16_1
-set_directive_pipeline grayscale/anonymous
-set_directive_pipeline canny_top/VITIS_LOOP_48_2
-set_directive_pipeline canny_top/VITIS_LOOP_80_2
-set_directive_pipeline canny_top/VITIS_LOOP_33_2
-set_directive_pipeline canny_top/VITIS_LOOP_60_2
-# Inferred from Performance Budgeter performance directives
-set_directive_loop_flatten canny_top/VITIS_LOOP_47_1
-set_directive_loop_flatten canny_top/VITIS_LOOP_59_1
-set_directive_loop_flatten canny_top/VITIS_LOOP_32_1
-set_directive_loop_flatten canny_top/VITIS_LOOP_79_1
+# Inferred from performance & pipeline pragmas/directives
+set_directive_array_partition grayscale/row_bytes -dim=1 -type=cyclic -factor=32 row_bytes
+set_directive_loop_flatten write_frame/VITIS_LOOP_7_1

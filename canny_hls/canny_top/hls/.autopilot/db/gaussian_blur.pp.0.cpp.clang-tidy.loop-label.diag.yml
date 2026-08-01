@@ -1,124 +1,172 @@
 ---
-MainSourceFile:  'C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+MainSourceFile:  '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
 Diagnostics:
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_47_1:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      47
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      676
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          22541
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          364010
           Length:          0
-          ReplacementText: 'VITIS_LOOP_47_1: '
+          ReplacementText: 'VITIS_LOOP_676_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_48_2:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      48
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      690
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          22595
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          364481
           Length:          0
-          ReplacementText: 'VITIS_LOOP_48_2: '
+          ReplacementText: 'VITIS_LOOP_690_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_71_1:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      71
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_int_ref.h'
+      FileOffset:      704
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          23054
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          364953
           Length:          0
-          ReplacementText: 'VITIS_LOOP_71_1: '
+          ReplacementText: 'VITIS_LOOP_704_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_76_2:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      76
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        '/opt/Xilinx/2025.2/Vitis/common/technology/autopilot/etc/ap_fixed_base.h'
+      FileOffset:      1251
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          23188
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          708431
           Length:          0
-          ReplacementText: 'VITIS_LOOP_76_2: '
+          ReplacementText: 'VITIS_LOOP_1251_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_81_3:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      81
+      Message:         'Added loop label VITIS_LOOP_59_1:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      59
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          23304
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2365331
           Length:          0
-          ReplacementText: 'VITIS_LOOP_81_3: '
+          ReplacementText: 'VITIS_LOOP_59_1: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_90_4:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      90
+      Message:         'Added loop label VITIS_LOOP_63_2:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      63
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          23581
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2365457
           Length:          0
-          ReplacementText: 'VITIS_LOOP_90_4: '
+          ReplacementText: 'VITIS_LOOP_63_2: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_116_5:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      116
+      Message:         'Added loop label VITIS_LOOP_77_3:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      77
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          24031
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2365778
           Length:          0
-          ReplacementText: 'VITIS_LOOP_116_5: '
+          ReplacementText: 'VITIS_LOOP_77_3: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_125_6:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      125
+      Message:         'Added loop label VITIS_LOOP_82_4:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      82
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          24260
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2365937
           Length:          0
-          ReplacementText: 'VITIS_LOOP_125_6: '
+          ReplacementText: 'VITIS_LOOP_82_4: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_136_7:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      136
+      Message:         'Added loop label VITIS_LOOP_87_5:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      87
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          24451
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2366069
           Length:          0
-          ReplacementText: 'VITIS_LOOP_136_7: '
+          ReplacementText: 'VITIS_LOOP_87_5: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
   - DiagnosticName:  xilinx-label-all-loops
     DiagnosticMessage:
-      Message:         'Added loop label VITIS_LOOP_143_8:  '
-      FilePath:        'C:\Users\twhsaw\Projects\comp4601\src\gaussian_blur.cpp'
-      FileOffset:      143
+      Message:         'Added loop label VITIS_LOOP_96_6:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      96
       Replacements:
-        - FilePath:        'C:\Users\twhsaw\Projects\comp4601\canny_hls\canny_top\hls\.autopilot\db\gaussian_blur.pp.0.cpp'
-          Offset:          24623
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2366394
           Length:          0
-          ReplacementText: 'VITIS_LOOP_143_8: '
+          ReplacementText: 'VITIS_LOOP_96_6: '
     Level:           Remark
-    BuildDirectory:  'C:\Users\twhsaw\Projects\comp4601\canny_hls'
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_121_7:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      121
+      Replacements:
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2366896
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_121_7: '
+    Level:           Remark
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_130_8:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      130
+      Replacements:
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2367153
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_130_8: '
+    Level:           Remark
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_141_9:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      141
+      Replacements:
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2367352
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_141_9: '
+    Level:           Remark
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_148_10:  '
+      FilePath:        '/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp'
+      FileOffset:      148
+      Replacements:
+        - FilePath:        '/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/gaussian_blur.pp.0.cpp'
+          Offset:          2367540
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_148_10: '
+    Level:           Remark
+    BuildDirectory:  '/home/superkooks/Uni/COMP4601/assign/canny_hls'
 ...

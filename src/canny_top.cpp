@@ -1,51 +1,45 @@
 #include "canny_stages.h"
 #include "config.h"
+#include "hls_burst_maxi.h"
+#include "hls_stream.h"
+#include "ap_int.h"
 
-// static void hysteresis1(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
-// static void hysteresis2(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
-// static void hysteresis3(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
-// static void hysteresis4(uint8_t in[WIDTH], uint8_t out[WIDTH], bool in_v, bool *out_v) { hysteresis(in, out, in_v, out_v); }
+// Manually configure the AXI-M burst, so we can transfer data quicker.
+// More info in grayscale.cpp. Output is already widened automatically.
+void canny_top(hls::burst_maxi<ap_uint<512>> in, uint8_t out[WIDTH*HEIGHT]) {
+    #pragma HLS INTERFACE m_axi port=in depth=12288 bundle=gmem0 max_read_burst_length=32 num_read_outstanding=4
+    #pragma HLS INTERFACE m_axi port=out bundle=gmem max_write_burst_length=8 num_write_outstanding=4
 
-void canny_top(struct RGBPixel in[WIDTH*HEIGHT], uint8_t out[WIDTH*HEIGHT]) {
-    reset_canny_stages();
+    #pragma HLS DATAFLOW
 
-    for (int i = 0; i < HEIGHT+8; i++) {
-        #pragma HLS DATAFLOW
-        uint8_t out_grayscale[WIDTH];
-        uint8_t out_gaussian[WIDTH];
-        struct GradientPixel out_sobel[WIDTH];
-        uint16_t out_nonmax[WIDTH];
-        uint8_t out_double[WIDTH];
-        uint8_t out_hysteresis1[WIDTH], out_hysteresis2[WIDTH], out_hysteresis3[WIDTH], out_hysteresis4[WIDTH];
-        bool gaussian_valid;
-        bool sobel_valid;
-        bool nonmax_valid;
-        bool double_valid;
-        bool hysteresis1_valid, hysteresis2_valid, hysteresis3_valid, hysteresis4_valid;
+    hls::stream<std::uint8_t> gray_out;
+    hls::stream<std::uint8_t> gauss_out;
+    hls::stream<GradientPixel> sobel_out;
+    hls::stream<std::uint16_t> nms_out;
+    hls::stream<std::uint8_t> thresh_out;
+    hls::stream<std::uint8_t> hyst1_out, hyst2_out, hyst3_out, hyst4_out;
 
-        int pix_idx = i < HEIGHT ? i*WIDTH : 0;
+    // Two rows deep so each stage can get a row ahead of the next stage
+    constexpr int STREAM_DEPTH = WIDTH * 2;
 
-        grayscale(&in[pix_idx], out_grayscale);
-        // output_row(out_grayscale, out, true);
-        gaussian_blur(out_grayscale, out_gaussian, &gaussian_valid);
-        sobel(out_gaussian, out_sobel, gaussian_valid, &sobel_valid);
-        non_maximum_suppression(out_sobel, out_nonmax, sobel_valid, &nonmax_valid);
-        double_threshold(out_nonmax, out_double, nonmax_valid, &double_valid);
-        hysteresis<1>(out_double, out_hysteresis1, double_valid, &hysteresis1_valid, WEAK_EDGE);
-        hysteresis<2>(out_hysteresis1, out_hysteresis2, hysteresis1_valid, &hysteresis2_valid, WEAK_EDGE);
-        hysteresis<3>(out_hysteresis2, out_hysteresis3, hysteresis2_valid, &hysteresis3_valid, WEAK_EDGE);
-        hysteresis<4>(out_hysteresis3, out_hysteresis4, hysteresis3_valid, &hysteresis4_valid, NON_EDGE);
-        output_row(out_hysteresis4, out, hysteresis4_valid);
-    }
-}
+    #pragma HLS STREAM variable=gray_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=gauss_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=sobel_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=nms_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=thresh_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=hyst1_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=hyst2_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=hyst3_out depth=STREAM_DEPTH
+    #pragma HLS STREAM variable=hyst4_out depth=STREAM_DEPTH
 
-void reset_canny_stages() {
-    gaussian_blur_reset();
-    sobel_reset();
-    non_maximum_suppression_reset();
-    hysteresis_reset<1>();
-    hysteresis_reset<2>();
-    hysteresis_reset<3>();
-    hysteresis_reset<4>();
-    output_row_reset();
+    grayscale(in, gray_out);
+    gaussian_blur(gray_out, gauss_out);
+    sobel(gauss_out, sobel_out);
+    non_maximum_suppression(sobel_out, nms_out);
+    double_threshold(nms_out, thresh_out);
+    hysteresis<1>(thresh_out, hyst1_out, WEAK_EDGE);
+    hysteresis<2>(hyst1_out, hyst2_out, WEAK_EDGE);
+    hysteresis<3>(hyst2_out, hyst3_out, WEAK_EDGE);
+    hysteresis<4>(hyst3_out, hyst4_out, NON_EDGE);
+    write_frame(hyst4_out, out);
 }

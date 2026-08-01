@@ -1,18 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set name canny_top_srem_32ns_3ns_3_36_seq_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {srem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
-}
-
-
-set name canny_top_srem_32ns_3ns_2_36_seq_1
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {srem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
-}
-
-
-set name canny_top_urem_32ns_3ns_2_36_seq_1
+set name canny_top_urem_32s_3ns_2_36_seq_1
 if {${::AESL::PGuard_rtl_comp_handler}} {
 	::AP::rtl_comp_handler $name BINDTYPE {op} TYPE {urem} IMPL {auto_seq} LATENCY 35 ALLOW_PRAGMA 1
 }
@@ -25,147 +13,33 @@ if {${::AESL::PGuard_autoexp_gen}} {
     AESL_LIB_XILADAPTER::native_axis_begin
 }
 
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 135 \
-    name out_gaussian \
-    reset_level 1 \
-    sync_rst true \
-    dir I \
-    corename out_gaussian \
-    op interface \
-    ports { out_gaussian_address0 { O 9 vector } out_gaussian_ce0 { O 1 bit } out_gaussian_q0 { I 8 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_gaussian'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 136 \
-    name out_sobel_magnitude \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename out_sobel_magnitude \
-    op interface \
-    ports { out_sobel_magnitude_address0 { O 9 vector } out_sobel_magnitude_ce0 { O 1 bit } out_sobel_magnitude_we0 { O 1 bit } out_sobel_magnitude_d0 { O 11 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_sobel_magnitude'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 137 \
-    name out_sobel_direction \
-    reset_level 1 \
-    sync_rst true \
-    dir O \
-    corename out_sobel_direction \
-    op interface \
-    ports { out_sobel_direction_address0 { O 9 vector } out_sobel_direction_ce0 { O 1 bit } out_sobel_direction_we0 { O 1 bit } out_sobel_direction_d0 { O 2 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'out_sobel_direction'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 139 \
-    name p_anonymous_namespace_lineBuffer_32_0 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename p_anonymous_namespace_lineBuffer_32_0 \
-    op interface \
-    ports { p_anonymous_namespace_lineBuffer_32_0_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_0_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_d0 { O 8 vector } p_anonymous_namespace_lineBuffer_32_0_q0 { I 8 vector } p_anonymous_namespace_lineBuffer_32_0_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_32_0_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_32_0_q1 { I 8 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_0'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 140 \
-    name p_anonymous_namespace_lineBuffer_32_1 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename p_anonymous_namespace_lineBuffer_32_1 \
-    op interface \
-    ports { p_anonymous_namespace_lineBuffer_32_1_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_1_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_d0 { O 8 vector } p_anonymous_namespace_lineBuffer_32_1_q0 { I 8 vector } p_anonymous_namespace_lineBuffer_32_1_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_32_1_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_32_1_q1 { I 8 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_1'"
-}
-}
-
-
-# XIL_BRAM:
-if {${::AESL::PGuard_autoexp_gen}} {
-if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
-eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 141 \
-    name p_anonymous_namespace_lineBuffer_32_2 \
-    reset_level 1 \
-    sync_rst true \
-    dir IO \
-    corename p_anonymous_namespace_lineBuffer_32_2 \
-    op interface \
-    ports { p_anonymous_namespace_lineBuffer_32_2_address0 { O 9 vector } p_anonymous_namespace_lineBuffer_32_2_ce0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_we0 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_d0 { O 8 vector } p_anonymous_namespace_lineBuffer_32_2_q0 { I 8 vector } p_anonymous_namespace_lineBuffer_32_2_address1 { O 9 vector } p_anonymous_namespace_lineBuffer_32_2_ce1 { O 1 bit } p_anonymous_namespace_lineBuffer_32_2_q1 { I 8 vector } } \
-} "
-} else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'p_anonymous_namespace_lineBuffer_32_2'"
-}
-}
-
-
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 134 \
-    name p_read \
-    type other \
+    id 166 \
+    name gauss_out \
+    type fifo \
     dir I \
     reset_level 1 \
     sync_rst true \
-    corename dc_p_read \
+    corename dc_gauss_out \
     op interface \
-    ports { p_read { I 1 vector } } \
+    ports { gauss_out_dout { I 8 vector } gauss_out_empty_n { I 1 bit } gauss_out_read { O 1 bit } gauss_out_num_data_valid { I 11 vector } gauss_out_fifo_cap { I 11 vector } } \
 } "
 }
 
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 138 \
-    name p_anonymous_namespace_rowsReceived_2 \
-    type other \
-    dir IO \
+    id 167 \
+    name sobel_out \
+    type fifo \
+    dir O \
     reset_level 1 \
     sync_rst true \
-    corename dc_p_anonymous_namespace_rowsReceived_2 \
+    corename dc_sobel_out \
     op interface \
-    ports { p_anonymous_namespace_rowsReceived_2_i { I 32 vector } p_anonymous_namespace_rowsReceived_2_o { O 32 vector } p_anonymous_namespace_rowsReceived_2_o_ap_vld { O 1 bit } } \
+    ports { sobel_out_din { O 24 vector } sobel_out_full_n { I 1 bit } sobel_out_write { O 1 bit } sobel_out_num_data_valid { I 32 vector } sobel_out_fifo_cap { I 32 vector } } \
 } "
 }
 
@@ -183,20 +57,6 @@ eval "cg_default_interface_gen_dc { \
 } "
 }
 
-# Direct connection:
-if {${::AESL::PGuard_autoexp_gen}} {
-eval "cg_default_interface_gen_dc { \
-    id -2 \
-    name ap_return \
-    type ap_return \
-    reset_level 1 \
-    sync_rst true \
-    corename ap_return \
-    op interface \
-    ports { ap_return { O 1 vector } } \
-} "
-}
-
 
 # Adapter definition:
 set PortName ap_clk
@@ -204,7 +64,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_clock] == "cg_default_interface_gen_clock"} {
 eval "cg_default_interface_gen_clock { \
-    id -3 \
+    id -2 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \
@@ -224,7 +84,7 @@ set DataWd 1
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc cg_default_interface_gen_reset] == "cg_default_interface_gen_reset"} {
 eval "cg_default_interface_gen_reset { \
-    id -4 \
+    id -3 \
     name ${PortName} \
     reset_level 1 \
     sync_rst true \

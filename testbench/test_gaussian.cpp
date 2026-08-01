@@ -6,6 +6,7 @@
 
 #include "canny_stages.h"
 #include "gaussian_reference.h"
+#include "hls_stream.h"
 
 int test_gaussian() {
     const int pixelCount = HEIGHT * WIDTH;
@@ -26,39 +27,24 @@ int test_gaussian() {
     input[(HEIGHT / 2) * WIDTH + (WIDTH / 2)] = 255;
 
     gaussian_reference(input.data(), expected.data());
-    gaussian_blur_reset();
 
-    std::uint8_t producedRow[WIDTH] = {};
-    std::uint8_t flushRow[WIDTH] = {};
-    int outputRows = 0;
-    int validFailures = 0;
+    hls::stream<std::uint8_t> inputStream;
+    hls::stream<std::uint8_t> outputStream;
 
-    for (int call = 0; call < HEIGHT + 2; ++call) {
-        bool valid = true;
-        const std::uint8_t* inputRow =
-            call < HEIGHT
-                ? input.data() + call * WIDTH
-                : flushRow;
-
-        gaussian_blur(inputRow, producedRow, &valid);
-
-        const bool expectedValid = call >= 2;
-        if (valid != expectedValid) {
-            ++validFailures;
+    // gaussian_blur reads exactly HEIGHT rows and emits exactly HEIGHT rows
+    // (see canny_stages.h): its own row-delay is handled internally now, so
+    // the testbench doesn't need to feed or discard any extra rows.
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            inputStream.write(input[row * WIDTH + column]);
         }
+    }
 
-        if (valid) {
-            if (outputRows >= HEIGHT) {
-                ++validFailures;
-                continue;
-            }
+    gaussian_blur(inputStream, outputStream);
 
-            std::copy(
-                producedRow,
-                producedRow + WIDTH,
-                actual.data() + outputRows * WIDTH
-            );
-            ++outputRows;
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            actual[row * WIDTH + column] = outputStream.read();
         }
     }
 
@@ -86,16 +72,11 @@ int test_gaussian() {
         }
     }
 
-    if (outputRows != HEIGHT) {
-        ++validFailures;
-    }
-
     std::cout << "Pixels tested: " << pixelCount << '\n';
     std::cout << "Mismatches: " << mismatchCount << '\n';
     std::cout << "Maximum absolute error: " << maximumError << '\n';
-    std::cout << "Valid-timing failures: " << validFailures << '\n';
 
-    if (mismatchCount != 0 || validFailures != 0) {
+    if (mismatchCount != 0) {
         std::cerr << "Gaussian blur test FAILED.\n";
         return 1;
     }

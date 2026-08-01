@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sat Jul 25 12:05:10 2026",
- "timestampMillis": "1784945110209",
+ "dateTimestamp": "Fri Jul 31 12:01:12 2026",
+ "timestampMillis": "1785463272255",
  "buildStep": {
-  "cmdId": "d4ffbd3d-c38d-45c8-b9e9-07aecea0c395",
+  "cmdId": "4a771eb9-fd1b-4a70-b3f4-370065f20bbd",
   "name": "vitis-run",
   "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/logs/canny_top.steps.log",
   "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --package --config /home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg --work_dir canny_top ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jul 25 12:05:10 2026",
- "timestampMillis": "1784945110209",
+ "dateTimestamp": "Fri Jul 31 12:01:12 2026",
+ "timestampMillis": "1785463272255",
  "status": {
-  "cmdId": "d4ffbd3d-c38d-45c8-b9e9-07aecea0c395",
+  "cmdId": "4a771eb9-fd1b-4a70-b3f4-370065f20bbd",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sat Jul 25 12:05:12 2026",
- "timestampMillis": "1784945112312",
+ "dateTimestamp": "Fri Jul 31 12:01:14 2026",
+ "timestampMillis": "1785463274225",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,17 +64,16 @@
      "uuid": ""
     },
     "sources": [
+     "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp",
-     "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
-     "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
-     "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/config.h",
      "/home/superkooks/Uni/COMP4601/assign/src/canny_types.h",
-     "/home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
-     "/home/superkooks/Uni/COMP4601/assign/src/output_row.cpp"
+     "/home/superkooks/Uni/COMP4601/assign/src/canny_stages.h"
     ],
     "psSources": [],
     "cuNames": [],
@@ -90,10 +89,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sat Jul 25 12:05:12 2026",
- "timestampMillis": "1784945112313",
+ "dateTimestamp": "Fri Jul 31 12:01:14 2026",
+ "timestampMillis": "1785463274226",
  "buildStep": {
-  "cmdId": "d2895a67-641b-4e52-8d27-fe969a254f01",
+  "cmdId": "9bcb66a8-5d74-4121-a4fe-1b0272c9dc1b",
   "name": "",
   "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/hls.log",
   "commandLine": "",
@@ -106,10 +105,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jul 25 12:05:12 2026",
- "timestampMillis": "1784945112313",
+ "dateTimestamp": "Fri Jul 31 12:01:14 2026",
+ "timestampMillis": "1785463274226",
  "status": {
-  "cmdId": "d2895a67-641b-4e52-8d27-fe969a254f01",
+  "cmdId": "9bcb66a8-5d74-4121-a4fe-1b0272c9dc1b",
   "state": "CS_RUNNING"
  }
 }
@@ -117,10 +116,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jul 25 12:05:17 2026",
- "timestampMillis": "1784945117802",
+ "dateTimestamp": "Fri Jul 31 12:01:19 2026",
+ "timestampMillis": "1785463279478",
  "status": {
-  "cmdId": "d2895a67-641b-4e52-8d27-fe969a254f01",
+  "cmdId": "9bcb66a8-5d74-4121-a4fe-1b0272c9dc1b",
   "state": "CS_PASSED"
  }
 }
@@ -128,10 +127,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sat Jul 25 12:05:17 2026",
- "timestampMillis": "1784945117860",
+ "dateTimestamp": "Fri Jul 31 12:01:19 2026",
+ "timestampMillis": "1785463279536",
  "status": {
-  "cmdId": "d4ffbd3d-c38d-45c8-b9e9-07aecea0c395",
+  "cmdId": "4a771eb9-fd1b-4a70-b3f4-370065f20bbd",
   "state": "CS_PASSED"
  }
 }
@@ -139,8 +138,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jul 25 12:05:17 2026",
- "timestampMillis": "1784945117860",
+ "dateTimestamp": "Fri Jul 31 12:01:19 2026",
+ "timestampMillis": "1785463279537",
  "report": {
   "path": "",
   "name": "",
@@ -153,8 +152,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sat Jul 25 12:05:17 2026",
- "timestampMillis": "1784945117861",
+ "dateTimestamp": "Fri Jul 31 12:01:19 2026",
+ "timestampMillis": "1785463279537",
  "report": {
   "path": "",
   "name": "",

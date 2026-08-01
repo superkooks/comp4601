@@ -1,0 +1,181 @@
+
+
+================================================================
+== Vitis HLS Report for 'gaussian_blur_Pipeline_VITIS_LOOP_130_8'
+================================================================
+* Date:           Sat Aug  1 12:52:07 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        canny_top
+* Solution:       hls (Vitis Kernel Flow Target)
+* Product family: zynquplus
+* Target device:  xck26-sfvc784-2LV-c
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  5.00 ns|  3.353 ns|     1.35 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |      515|      515|  2.575 us|  2.575 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_130_8  |      513|      513|         3|          1|          1|   512|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|     134|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       0|     130|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       0|      45|    -|
+|Register         |        -|     -|      43|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|      43|     309|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+    |          Instance          |         Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+    |sparsemux_11_3_12_1_1_U100  |sparsemux_11_3_12_1_1  |        0|   0|  0|  26|    0|
+    |sparsemux_11_3_12_1_1_U101  |sparsemux_11_3_12_1_1  |        0|   0|  0|  26|    0|
+    |sparsemux_11_3_12_1_1_U102  |sparsemux_11_3_12_1_1  |        0|   0|  0|  26|    0|
+    |sparsemux_11_3_12_1_1_U103  |sparsemux_11_3_12_1_1  |        0|   0|  0|  26|    0|
+    |sparsemux_11_3_12_1_1_U104  |sparsemux_11_3_12_1_1  |        0|   0|  0|  26|    0|
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+    |Total                       |                       |        0|   0|  0| 130|    0|
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |          Variable Name         | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |add_ln130_fu_206_p2             |         +|   0|  0|  17|          10|           1|
+    |add_ln150_1_fu_419_p2           |         +|   0|  0|  16|          15|          15|
+    |add_ln150_fu_409_p2             |         +|   0|  0|  20|          13|          13|
+    |sum_fu_439_p2                   |         +|   0|  0|  23|          16|          16|
+    |tmp26_fu_403_p2                 |         +|   0|  0|  20|          13|          13|
+    |sub_ln150_fu_389_p2             |         -|   0|  0|  16|          15|          15|
+    |ap_block_pp0_stage0_01001_grp1  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln130_fu_200_p2            |      icmp|   0|  0|  18|          10|          11|
+    |ap_enable_pp0                   |       xor|   0|  0|   2|           1|           2|
+    +--------------------------------+----------+----+---+----+------------+------------+
+    |Total                           |          |   0|  0| 134|          94|          87|
+    +--------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_column  |   9|          2|   10|         20|
+    |column_14_fu_86          |   9|          2|   10|         20|
+    |gauss_out_blk_n          |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   23|         46|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------+----+----+-----+-----------+
+    |               Name               | FF | LUT| Bits| Const Bits|
+    +----------------------------------+----+----+-----+-----------+
+    |add_ln150_1_reg_522               |  15|   0|   15|          0|
+    |ap_CS_fsm                         |   1|   0|    1|          0|
+    |ap_done_reg                       |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1           |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2           |   1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg  |   1|   0|    1|          0|
+    |column_14_fu_86                   |  10|   0|   10|          0|
+    |tmp26_reg_517                     |  13|   0|   13|          0|
+    +----------------------------------+----+----+-----+-----------+
+    |Total                             |  43|   0|   43|          0|
+    +----------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-----------------------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |              Source Object              |    C Type    |
++--------------------------+-----+-----+------------+-----------------------------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_130_8|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_130_8|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_130_8|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_130_8|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_130_8|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  gaussian_blur_Pipeline_VITIS_LOOP_130_8|  return value|
+|gauss_out_din             |  out|    8|     ap_fifo|                                gauss_out|       pointer|
+|gauss_out_full_n          |   in|    1|     ap_fifo|                                gauss_out|       pointer|
+|gauss_out_write           |  out|    1|     ap_fifo|                                gauss_out|       pointer|
+|gauss_out_num_data_valid  |   in|   32|     ap_fifo|                                gauss_out|       pointer|
+|gauss_out_fifo_cap        |   in|   32|     ap_fifo|                                gauss_out|       pointer|
+|lineBuffer_address0       |  out|    9|   ap_memory|                               lineBuffer|         array|
+|lineBuffer_ce0            |  out|    1|   ap_memory|                               lineBuffer|         array|
+|lineBuffer_q0             |   in|   12|   ap_memory|                               lineBuffer|         array|
+|lineBuffer_1_address0     |  out|    9|   ap_memory|                             lineBuffer_1|         array|
+|lineBuffer_1_ce0          |  out|    1|   ap_memory|                             lineBuffer_1|         array|
+|lineBuffer_1_q0           |   in|   12|   ap_memory|                             lineBuffer_1|         array|
+|lineBuffer_2_address0     |  out|    9|   ap_memory|                             lineBuffer_2|         array|
+|lineBuffer_2_ce0          |  out|    1|   ap_memory|                             lineBuffer_2|         array|
+|lineBuffer_2_q0           |   in|   12|   ap_memory|                             lineBuffer_2|         array|
+|lineBuffer_3_address0     |  out|    9|   ap_memory|                             lineBuffer_3|         array|
+|lineBuffer_3_ce0          |  out|    1|   ap_memory|                             lineBuffer_3|         array|
+|lineBuffer_3_q0           |   in|   12|   ap_memory|                             lineBuffer_3|         array|
+|lineBuffer_4_address0     |  out|    9|   ap_memory|                             lineBuffer_4|         array|
+|lineBuffer_4_ce0          |  out|    1|   ap_memory|                             lineBuffer_4|         array|
+|lineBuffer_4_q0           |   in|   12|   ap_memory|                             lineBuffer_4|         array|
+|empty_46                  |   in|    3|     ap_none|                                 empty_46|        scalar|
+|empty_47                  |   in|    3|     ap_none|                                 empty_47|        scalar|
+|empty_48                  |   in|    3|     ap_none|                                 empty_48|        scalar|
+|empty_49                  |   in|    3|     ap_none|                                 empty_49|        scalar|
+|empty                     |   in|    3|     ap_none|                                    empty|        scalar|
++--------------------------+-----+-----+------------+-----------------------------------------+--------------+
+

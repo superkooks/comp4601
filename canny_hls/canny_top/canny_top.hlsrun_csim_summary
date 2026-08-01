@@ -9,10 +9,10 @@
 <ENTRY>
 {
  "type": "ET_CmdStep",
- "dateTimestamp": "Sun Jul 19 16:54:36 2026",
- "timestampMillis": "1784444076613",
+ "dateTimestamp": "Sat Aug  1 12:18:11 2026",
+ "timestampMillis": "1785550691212",
  "buildStep": {
-  "cmdId": "4ea4a1b5-b968-4f37-a1e4-a39a75298a06",
+  "cmdId": "d1fbd66a-19ce-4015-940c-81d25323e843",
   "name": "vitis-run",
   "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/logs/canny_top.steps.log",
   "commandLine": "/opt/Xilinx/2025.2/Vitis/bin/unwrapped/lnx64.o/vitis-run  --mode hls --csim --config /home/superkooks/Uni/COMP4601/assign/canny_hls/hls_config.cfg --work_dir canny_top ",
@@ -33,10 +33,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Jul 19 16:54:36 2026",
- "timestampMillis": "1784444076613",
+ "dateTimestamp": "Sat Aug  1 12:18:11 2026",
+ "timestampMillis": "1785550691212",
  "status": {
-  "cmdId": "4ea4a1b5-b968-4f37-a1e4-a39a75298a06",
+  "cmdId": "d1fbd66a-19ce-4015-940c-81d25323e843",
   "state": "CS_RUNNING"
  }
 }
@@ -44,8 +44,8 @@
 <ENTRY>
 {
  "type": "ET_FlowMetaData",
- "dateTimestamp": "Sun Jul 19 16:54:42 2026",
- "timestampMillis": "1784444082248",
+ "dateTimestamp": "Sat Aug  1 12:18:13 2026",
+ "timestampMillis": "1785550693091",
  "buildSummary": {
   "hardwarePlatform": "",
   "hardwareDsa": "",
@@ -64,16 +64,14 @@
      "uuid": ""
     },
     "sources": [
+     "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp",
-     "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
-     "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
+     "/home/superkooks/Uni/COMP4601/assign/src/write_frame.cpp",
      "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
-     "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
-     "/home/superkooks/Uni/COMP4601/assign/include/config.h",
-     "/home/superkooks/Uni/COMP4601/assign/include/canny_types.h",
-     "/home/superkooks/Uni/COMP4601/assign/include/canny_stages.h",
      "/home/superkooks/Uni/COMP4601/assign/src/config.h",
      "/home/superkooks/Uni/COMP4601/assign/src/canny_types.h",
      "/home/superkooks/Uni/COMP4601/assign/src/canny_stages.h"
@@ -92,10 +90,10 @@
 <ENTRY>
 {
  "type": "ET_SubCmdStep",
- "dateTimestamp": "Sun Jul 19 16:54:42 2026",
- "timestampMillis": "1784444082249",
+ "dateTimestamp": "Sat Aug  1 12:18:13 2026",
+ "timestampMillis": "1785550693092",
  "buildStep": {
-  "cmdId": "65c430d8-a9dc-4ef9-9fad-cd809347e4dc",
+  "cmdId": "d787c915-1ca2-49c6-b485-9afbc5ff6eb0",
   "name": "",
   "logFile": "/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/hls.log",
   "commandLine": "",
@@ -108,10 +106,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Jul 19 16:54:42 2026",
- "timestampMillis": "1784444082250",
+ "dateTimestamp": "Sat Aug  1 12:18:13 2026",
+ "timestampMillis": "1785550693092",
  "status": {
-  "cmdId": "65c430d8-a9dc-4ef9-9fad-cd809347e4dc",
+  "cmdId": "d787c915-1ca2-49c6-b485-9afbc5ff6eb0",
   "state": "CS_RUNNING"
  }
 }
@@ -119,10 +117,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Jul 19 16:54:46 2026",
- "timestampMillis": "1784444086718",
+ "dateTimestamp": "Sat Aug  1 12:18:36 2026",
+ "timestampMillis": "1785550716086",
  "status": {
-  "cmdId": "65c430d8-a9dc-4ef9-9fad-cd809347e4dc",
+  "cmdId": "d787c915-1ca2-49c6-b485-9afbc5ff6eb0",
   "state": "CS_PASSED"
  }
 }
@@ -130,10 +128,10 @@
 <ENTRY>
 {
  "type": "ET_Status",
- "dateTimestamp": "Sun Jul 19 16:54:46 2026",
- "timestampMillis": "1784444086886",
+ "dateTimestamp": "Sat Aug  1 12:18:36 2026",
+ "timestampMillis": "1785550716137",
  "status": {
-  "cmdId": "4ea4a1b5-b968-4f37-a1e4-a39a75298a06",
+  "cmdId": "d1fbd66a-19ce-4015-940c-81d25323e843",
   "state": "CS_PASSED"
  }
 }
@@ -141,8 +139,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Jul 19 16:54:46 2026",
- "timestampMillis": "1784444086887",
+ "dateTimestamp": "Sat Aug  1 12:18:36 2026",
+ "timestampMillis": "1785550716138",
  "report": {
   "path": "",
   "name": "",
@@ -155,8 +153,8 @@
 <ENTRY>
 {
  "type": "ET_Report",
- "dateTimestamp": "Sun Jul 19 16:54:46 2026",
- "timestampMillis": "1784444086888",
+ "dateTimestamp": "Sat Aug  1 12:18:36 2026",
+ "timestampMillis": "1785550716138",
  "report": {
   "path": "",
   "name": "",

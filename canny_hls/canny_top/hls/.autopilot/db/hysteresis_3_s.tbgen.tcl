@@ -15,175 +15,103 @@ set hasInterrupt 0
 set DLRegFirstOffset 0
 set DLRegItemOffset 0
 set svuvm_can_support 1
-set cdfgNum 41
+set cdfgNum 32
 set C_modelName {hysteresis<3>}
-set C_modelType { int 1 }
+set C_modelType { void 0 }
 set ap_memory_interface_dict [dict create]
-dict set ap_memory_interface_dict out_hysteresis2 { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict out_hysteresis3 { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
-dict set ap_memory_interface_dict p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 { MEM_WIDTH 8 MEM_SIZE 512 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
 set C_modelArgList {
-	{ p_read int 1 regular  }
-	{ out_hysteresis2 int 8 regular {array 512 { 1 3 } 1 1 }  }
-	{ out_hysteresis3 int 8 regular {array 512 { 0 3 } 0 1 }  }
-	{ p_anonymous_namespace_rowsReceived_3_s int 32 regular {pointer 2} {global 2}  }
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 int 8 regular {array 512 { 2 1 } 1 1 } {global 2}  }
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 int 8 regular {array 512 { 2 1 } 1 1 } {global 2}  }
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 int 8 regular {array 512 { 2 1 } 1 1 } {global 2}  }
+	{ hyst2_out int 8 regular {fifo 0 volatile }  }
+	{ hyst3_out int 8 regular {fifo 1 volatile }  }
 }
 set hasAXIMCache 0
 set l_AXIML2Cache [list]
 set AXIMCacheInstDict [dict create]
 set C_modelArgMapList {[ 
-	{ "Name" : "p_read", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
- 	{ "Name" : "out_hysteresis2", "interface" : "memory", "bitwidth" : 8, "direction" : "READONLY"} , 
- 	{ "Name" : "out_hysteresis3", "interface" : "memory", "bitwidth" : 8, "direction" : "WRITEONLY"} , 
- 	{ "Name" : "p_anonymous_namespace_rowsReceived_3_s", "interface" : "wire", "bitwidth" : 32, "direction" : "READWRITE", "extern" : 0} , 
- 	{ "Name" : "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "interface" : "memory", "bitwidth" : 8, "direction" : "READWRITE", "extern" : 0} , 
- 	{ "Name" : "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "interface" : "memory", "bitwidth" : 8, "direction" : "READWRITE", "extern" : 0} , 
- 	{ "Name" : "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "interface" : "memory", "bitwidth" : 8, "direction" : "READWRITE", "extern" : 0} , 
- 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 1} ]}
+	{ "Name" : "hyst2_out", "interface" : "fifo", "bitwidth" : 8, "direction" : "READONLY"} , 
+ 	{ "Name" : "hyst3_out", "interface" : "fifo", "bitwidth" : 8, "direction" : "WRITEONLY"} ]}
 # RTL Port declarations: 
-set portNum 43
+set portNum 20
 set portList { 
 	{ ap_clk sc_in sc_logic 1 clock -1 } 
 	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
 	{ ap_start sc_in sc_logic 1 start -1 } 
+	{ start_full_n sc_in sc_logic 1 signal -1 } 
 	{ ap_done sc_out sc_logic 1 predone -1 } 
 	{ ap_continue sc_in sc_logic 1 continue -1 } 
 	{ ap_idle sc_out sc_logic 1 done -1 } 
 	{ ap_ready sc_out sc_logic 1 ready -1 } 
-	{ p_read sc_in sc_lv 1 signal 0 } 
-	{ out_hysteresis2_address0 sc_out sc_lv 9 signal 1 } 
-	{ out_hysteresis2_ce0 sc_out sc_logic 1 signal 1 } 
-	{ out_hysteresis2_q0 sc_in sc_lv 8 signal 1 } 
-	{ out_hysteresis3_address0 sc_out sc_lv 9 signal 2 } 
-	{ out_hysteresis3_ce0 sc_out sc_logic 1 signal 2 } 
-	{ out_hysteresis3_we0 sc_out sc_logic 1 signal 2 } 
-	{ out_hysteresis3_d0 sc_out sc_lv 8 signal 2 } 
-	{ p_anonymous_namespace_rowsReceived_3_s_i sc_in sc_lv 32 signal 3 } 
-	{ p_anonymous_namespace_rowsReceived_3_s_o sc_out sc_lv 32 signal 3 } 
-	{ p_anonymous_namespace_rowsReceived_3_s_o_ap_vld sc_out sc_logic 1 outvld 3 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 sc_out sc_lv 9 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 sc_out sc_logic 1 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 sc_out sc_logic 1 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 sc_out sc_lv 8 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0 sc_in sc_lv 8 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1 sc_out sc_lv 9 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1 sc_out sc_logic 1 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1 sc_in sc_lv 8 signal 4 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 sc_out sc_lv 9 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 sc_out sc_logic 1 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 sc_out sc_logic 1 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 sc_out sc_lv 8 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0 sc_in sc_lv 8 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1 sc_out sc_lv 9 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1 sc_out sc_logic 1 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1 sc_in sc_lv 8 signal 5 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0 sc_out sc_lv 9 signal 6 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 sc_out sc_logic 1 signal 6 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0 sc_out sc_logic 1 signal 6 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0 sc_out sc_lv 8 signal 6 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0 sc_in sc_lv 8 signal 6 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1 sc_out sc_lv 9 signal 6 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1 sc_out sc_logic 1 signal 6 } 
-	{ p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1 sc_in sc_lv 8 signal 6 } 
-	{ ap_return sc_out sc_lv 1 signal -1 } 
+	{ start_out sc_out sc_logic 1 signal -1 } 
+	{ start_write sc_out sc_logic 1 signal -1 } 
+	{ hyst2_out_dout sc_in sc_lv 8 signal 0 } 
+	{ hyst2_out_empty_n sc_in sc_logic 1 signal 0 } 
+	{ hyst2_out_read sc_out sc_logic 1 signal 0 } 
+	{ hyst2_out_num_data_valid sc_in sc_lv 11 signal 0 } 
+	{ hyst2_out_fifo_cap sc_in sc_lv 11 signal 0 } 
+	{ hyst3_out_din sc_out sc_lv 8 signal 1 } 
+	{ hyst3_out_full_n sc_in sc_logic 1 signal 1 } 
+	{ hyst3_out_write sc_out sc_logic 1 signal 1 } 
+	{ hyst3_out_num_data_valid sc_in sc_lv 32 signal 1 } 
+	{ hyst3_out_fifo_cap sc_in sc_lv 32 signal 1 } 
 }
 set NewPortList {[ 
 	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
  	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
  	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
+ 	{ "name": "start_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_full_n", "role": "default" }} , 
  	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
  	{ "name": "ap_continue", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "continue", "bundle":{"name": "ap_continue", "role": "default" }} , 
  	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
  	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
- 	{ "name": "p_read", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "p_read", "role": "default" }} , 
- 	{ "name": "out_hysteresis2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "out_hysteresis2", "role": "address0" }} , 
- 	{ "name": "out_hysteresis2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_hysteresis2", "role": "ce0" }} , 
- 	{ "name": "out_hysteresis2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "out_hysteresis2", "role": "q0" }} , 
- 	{ "name": "out_hysteresis3_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "out_hysteresis3", "role": "address0" }} , 
- 	{ "name": "out_hysteresis3_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_hysteresis3", "role": "ce0" }} , 
- 	{ "name": "out_hysteresis3_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "out_hysteresis3", "role": "we0" }} , 
- 	{ "name": "out_hysteresis3_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "out_hysteresis3", "role": "d0" }} , 
- 	{ "name": "p_anonymous_namespace_rowsReceived_3_s_i", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_anonymous_namespace_rowsReceived_3_s", "role": "i" }} , 
- 	{ "name": "p_anonymous_namespace_rowsReceived_3_s_o", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "p_anonymous_namespace_rowsReceived_3_s", "role": "o" }} , 
- 	{ "name": "p_anonymous_namespace_rowsReceived_3_s_o_ap_vld", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "outvld", "bundle":{"name": "p_anonymous_namespace_rowsReceived_3_s", "role": "o_ap_vld" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "address0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "ce0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "we0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "d0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "q0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "address1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "ce1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0", "role": "q1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "address0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "ce0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "we0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "d0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "q0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "address1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "ce1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1", "role": "q1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "address0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "ce0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "we0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "d0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "q0" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1", "direction": "out", "datatype": "sc_lv", "bitwidth":9, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "address1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "ce1" }} , 
- 	{ "name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2", "role": "q1" }} , 
- 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
+ 	{ "name": "start_out", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_out", "role": "default" }} , 
+ 	{ "name": "start_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "start_write", "role": "default" }} , 
+ 	{ "name": "hyst2_out_dout", "direction": "in", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "hyst2_out", "role": "dout" }} , 
+ 	{ "name": "hyst2_out_empty_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst2_out", "role": "empty_n" }} , 
+ 	{ "name": "hyst2_out_read", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst2_out", "role": "read" }} , 
+ 	{ "name": "hyst2_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "hyst2_out", "role": "num_data_valid" }} , 
+ 	{ "name": "hyst2_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":11, "type": "signal", "bundle":{"name": "hyst2_out", "role": "fifo_cap" }} , 
+ 	{ "name": "hyst3_out_din", "direction": "out", "datatype": "sc_lv", "bitwidth":8, "type": "signal", "bundle":{"name": "hyst3_out", "role": "din" }} , 
+ 	{ "name": "hyst3_out_full_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst3_out", "role": "full_n" }} , 
+ 	{ "name": "hyst3_out_write", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "hyst3_out", "role": "write" }} , 
+ 	{ "name": "hyst3_out_num_data_valid", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "hyst3_out", "role": "num_data_valid" }} , 
+ 	{ "name": "hyst3_out_fifo_cap", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "hyst3_out", "role": "fifo_cap" }}  ]}
 
 set ArgLastReadFirstWriteLatency {
 	hysteresis_3_s {
-		p_read {Type I LastRead 0 FirstWrite -1}
-		out_hysteresis2 {Type I LastRead 0 FirstWrite -1}
-		out_hysteresis3 {Type O LastRead -1 FirstWrite 1}
-		p_anonymous_namespace_rowsReceived_3_s {Type IO LastRead 0 FirstWrite 0}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type IO LastRead 70 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type IO LastRead 70 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 {Type IO LastRead 70 FirstWrite -1}}
-	hysteresis_3_Pipeline_VITIS_LOOP_89_1 {
-		out_hysteresis2 {Type I LastRead 0 FirstWrite -1}
-		empty {Type I LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type O LastRead -1 FirstWrite 1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type O LastRead -1 FirstWrite 1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 {Type O LastRead -1 FirstWrite 1}}
-	hysteresis_3_Pipeline_VITIS_LOOP_154_4 {
-		tmp_21 {Type I LastRead 0 FirstWrite -1}
-		tmp_18 {Type I LastRead 0 FirstWrite -1}
-		tmp_20 {Type I LastRead 0 FirstWrite -1}
-		tmp_s {Type I LastRead 0 FirstWrite -1}
+		hyst2_out {Type I LastRead 1 FirstWrite -1}
+		hyst3_out {Type O LastRead -1 FirstWrite 2}}
+	hysteresis_3_Pipeline_VITIS_LOOP_78_2 {
+		buffer_2 {Type O LastRead -1 FirstWrite 1}
+		buffer_1 {Type O LastRead -1 FirstWrite 1}
+		buffer_r {Type O LastRead -1 FirstWrite 1}
+		hyst2_out {Type I LastRead 1 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}}
+	hysteresis_3_Pipeline_VITIS_LOOP_143_5 {
+		tmp_22 {Type I LastRead 0 FirstWrite -1}
 		tmp_19 {Type I LastRead 0 FirstWrite -1}
+		tmp_21 {Type I LastRead 0 FirstWrite -1}
+		tmp_s {Type I LastRead 0 FirstWrite -1}
+		tmp_20 {Type I LastRead 0 FirstWrite -1}
 		tmp {Type I LastRead 0 FirstWrite -1}
-		outputRow {Type I LastRead 0 FirstWrite -1}
-		select_ln18 {Type I LastRead 0 FirstWrite -1}
-		p_smodpost {Type I LastRead 0 FirstWrite -1}
-		select_ln18_2 {Type I LastRead 0 FirstWrite -1}
-		out_hysteresis3 {Type O LastRead -1 FirstWrite 1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 {Type I LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 {Type I LastRead 0 FirstWrite -1}
-		p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 {Type I LastRead 0 FirstWrite -1}}}
+		hasBottom {Type I LastRead 0 FirstWrite -1}
+		hasTop {Type I LastRead 0 FirstWrite -1}
+		hyst3_out {Type O LastRead -1 FirstWrite 2}
+		buffer_r {Type I LastRead 0 FirstWrite -1}
+		buffer_1 {Type I LastRead 0 FirstWrite -1}
+		buffer_2 {Type I LastRead 0 FirstWrite -1}
+		select_ln12 {Type I LastRead 0 FirstWrite -1}
+		empty {Type I LastRead 0 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "1", "Max" : "1101"}
-	, {"Name" : "Interval", "Min" : "1", "Max" : "1101"}
+	{"Name" : "Latency", "Min" : "1540", "Max" : "536086"}
+	, {"Name" : "Interval", "Min" : "1540", "Max" : "536086"}
 ]}
 
 set PipelineEnableSignalInfo {[
 ]}
 
 set Spec2ImplPortList { 
-	p_read { ap_none {  { p_read in_data 0 1 } } }
-	out_hysteresis2 { ap_memory {  { out_hysteresis2_address0 mem_address 1 9 }  { out_hysteresis2_ce0 mem_ce 1 1 }  { out_hysteresis2_q0 mem_dout 0 8 } } }
-	out_hysteresis3 { ap_memory {  { out_hysteresis3_address0 mem_address 1 9 }  { out_hysteresis3_ce0 mem_ce 1 1 }  { out_hysteresis3_we0 mem_we 1 1 }  { out_hysteresis3_d0 mem_din 1 8 } } }
-	p_anonymous_namespace_rowsReceived_3_s { ap_ovld {  { p_anonymous_namespace_rowsReceived_3_s_i in_data 0 32 }  { p_anonymous_namespace_rowsReceived_3_s_o out_data 1 32 }  { p_anonymous_namespace_rowsReceived_3_s_o_ap_vld out_vld 1 1 } } }
-	p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0 { ap_memory {  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address0 mem_address 1 9 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce0 mem_ce 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_we0 mem_we 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_d0 mem_din 1 8 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q0 mem_dout 0 8 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_address1 MemPortADDR2 1 9 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_ce1 MemPortCE2 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_0_q1 MemPortDOUT2 0 8 } } }
-	p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1 { ap_memory {  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address0 mem_address 1 9 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce0 mem_ce 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_we0 mem_we 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_d0 mem_din 1 8 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q0 mem_dout 0 8 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_address1 MemPortADDR2 1 9 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_ce1 MemPortCE2 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_1_q1 MemPortDOUT2 0 8 } } }
-	p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2 { ap_memory {  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address0 mem_address 1 9 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce0 mem_ce 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_we0 mem_we 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_d0 mem_din 1 8 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q0 mem_dout 0 8 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_address1 MemPortADDR2 1 9 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_ce1 MemPortCE2 1 1 }  { p_ZN12_GLOBAL_N_110lineBufferILi3EEE_2_q1 MemPortDOUT2 0 8 } } }
+	hyst2_out { ap_fifo {  { hyst2_out_dout fifo_data_out 0 8 }  { hyst2_out_empty_n fifo_status_empty 0 1 }  { hyst2_out_read fifo_data_in 1 1 }  { hyst2_out_num_data_valid fifo_update 0 11 }  { hyst2_out_fifo_cap fifo_data 0 11 } } }
+	hyst3_out { ap_fifo {  { hyst3_out_din fifo_data_out 1 8 }  { hyst3_out_full_n fifo_status_empty 0 1 }  { hyst3_out_write fifo_data_in 1 1 }  { hyst3_out_num_data_valid fifo_update 0 32 }  { hyst3_out_fifo_cap fifo_data 0 32 } } }
 }

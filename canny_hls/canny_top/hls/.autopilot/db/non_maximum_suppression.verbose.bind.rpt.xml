@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'non_maximum_suppression'" level="0">
-<item name = "Date">Thu Jul 30 19:40:28 2026
+<item name = "Date">Sat Aug  1 12:52:06 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">5.00 ns, 3.636 ns, 1.35 ns</column>
+<column name="ap_clk">5.00 ns, 3.324 ns, 1.35 ns</column>
 </table>
 </item>
 </section>
@@ -24,19 +24,20 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1, 1101, 5.000 ns, 5.505 us, 1, 1101, no</column>
+<column name="">1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_57_1_fu_175">non_maximum_suppression_Pipeline_VITIS_LOOP_57_1, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
-<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_112_4_fu_196">non_maximum_suppression_Pipeline_VITIS_LOOP_112_4, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_50_2_fu_254">non_maximum_suppression_Pipeline_VITIS_LOOP_50_2, 514, 514, 2.570 us, 2.570 us, 0, 0, loop pipeline stp</column>
+<column name="grp_non_maximum_suppression_Pipeline_VITIS_LOOP_105_5_fu_267">non_maximum_suppression_Pipeline_VITIS_LOOP_105_5, 515, 515, 2.575 us, 2.575 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_46_1">1539, 536085, 3 ~ 1045, -, -, 513, no</column>
 </table>
 </item>
 </section>

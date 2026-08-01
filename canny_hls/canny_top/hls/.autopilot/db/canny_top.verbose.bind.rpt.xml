@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'canny_top'" level="0">
-<item name = "Date">Thu Jul 30 19:40:37 2026
+<item name = "Date">Sat Aug  1 12:52:06 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,21 +24,24 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">1112296, 1120548, 5.561 ms, 5.603 ms, 1112297, 1120549, no</column>
+<column name="">802629, 803979, 4.013 ms, 4.020 ms, 332802, 803898, dataflow</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2_fu_142">canny_top_Pipeline_VITIS_LOOP_47_1_VITIS_LOOP_48_2, 2562, 2562, 12.810 us, 12.810 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2_fu_156">canny_top_Pipeline_VITIS_LOOP_79_1_VITIS_LOOP_80_2, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2_fu_166">canny_top_Pipeline_VITIS_LOOP_32_1_VITIS_LOOP_33_2, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2_fu_182">canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_2, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21_fu_192">canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_21, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22_fu_202">canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_22, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23_fu_212">canny_top_Pipeline_VITIS_LOOP_59_1_VITIS_LOOP_60_23, 1538, 1538, 7.690 us, 7.690 us, 0, 0, loop pipeline stp</column>
-<column name="grp_dataflow_parent_loop_proc_fu_222">dataflow_parent_loop_proc, 1109731, 1117983, 5.549 ms, 5.590 ms, 1109731, 1117983, no</column>
+<column name="call_ln13_entry_proc_fu_172">entry_proc, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_grayscale_fu_179">grayscale, 332801, 332801, 1.664 ms, 1.664 ms, 332801, 332801, no</column>
+<column name="grp_gaussian_blur_fu_188">gaussian_blur, 1543, 803897, 7.715 us, 4.019 ms, 1543, 803897, no</column>
+<column name="grp_sobel_fu_194">sobel, 1540, 547885, 7.700 us, 2.739 ms, 1540, 547885, no</column>
+<column name="grp_non_maximum_suppression_fu_200">non_maximum_suppression, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
+<column name="grp_double_threshold_fu_206">double_threshold, 262146, 262146, 1.311 ms, 1.311 ms, 262144, 262144, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="grp_hysteresis_1_s_fu_212">hysteresis_1_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
+<column name="grp_hysteresis_2_s_fu_218">hysteresis_2_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
+<column name="grp_hysteresis_3_s_fu_224">hysteresis_3_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
+<column name="grp_hysteresis_4_s_fu_230">hysteresis_4_s, 1540, 536086, 7.700 us, 2.680 ms, 1540, 536086, no</column>
+<column name="grp_write_frame_fu_236">write_frame, 262216, 262216, 1.311 ms, 1.311 ms, 262145, 262145, loop auto-rewind stp (delay=1 clock cycles(s))</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

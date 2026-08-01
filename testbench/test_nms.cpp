@@ -6,6 +6,7 @@
 
 #include "canny_stages.h"
 #include "nms_reference.h"
+#include "hls_stream.h"
 
 namespace {
 
@@ -79,52 +80,25 @@ int test_nms() {
         input.data(),
         expected.data()
     );
-    non_maximum_suppression_reset();
 
-    GradientPixel flushRow[WIDTH] = {};
-    std::uint16_t producedRow[WIDTH] = {};
-    bool invalidResult = true;
-    non_maximum_suppression(
-        flushRow,
-        producedRow,
-        false,
-        &invalidResult
-    );
+    hls::stream<GradientPixel> inputStream;
+    hls::stream<std::uint16_t> outputStream;
 
-    int validFailures = invalidResult ? 1 : 0;
-    int outputRows = 0;
-
-    for (int call = 0; call < HEIGHT + 1; ++call) {
-        bool valid = true;
-        const GradientPixel* inputRow =
-            call < HEIGHT
-                ? input.data() + call * WIDTH
-                : flushRow;
-
-        non_maximum_suppression(
-            inputRow,
-            producedRow,
-            true,
-            &valid
-        );
-
-        const bool expectedValid = call >= 1;
-        if (valid != expectedValid) {
-            ++validFailures;
+    // non_maximum_suppression reads exactly HEIGHT rows and emits exactly
+    // HEIGHT rows (see canny_stages.h): its own row-delay is handled
+    // internally now, so the testbench doesn't need to feed or discard any
+    // extra rows.
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            inputStream.write(input[row * WIDTH + column]);
         }
+    }
 
-        if (valid) {
-            if (outputRows >= HEIGHT) {
-                ++validFailures;
-                continue;
-            }
+    non_maximum_suppression(inputStream, outputStream);
 
-            std::copy(
-                producedRow,
-                producedRow + WIDTH,
-                actual.data() + outputRows * WIDTH
-            );
-            ++outputRows;
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            actual[row * WIDTH + column] = outputStream.read();
         }
     }
 
@@ -158,20 +132,14 @@ int test_nms() {
     manualFailures += actual[140 * WIDTH + 140] == 180 ? 0 : 1;
     manualFailures += actual[160 * WIDTH + 160] == 0 ? 0 : 1;
 
-    if (outputRows != HEIGHT) {
-        ++validFailures;
-    }
-
     std::cout << "Pixels tested: " << pixelCount << '\n';
     std::cout << "Mismatches: " << mismatchCount << '\n';
     std::cout << "Maximum absolute error: " << maximumError << '\n';
     std::cout << "Manual-check failures: " << manualFailures << '\n';
-    std::cout << "Valid-timing failures: " << validFailures << '\n';
 
     if (
         mismatchCount != 0 ||
-        manualFailures != 0 ||
-        validFailures != 0
+        manualFailures != 0
     ) {
         std::cerr << "Non-maximum suppression test FAILED.\n";
         return 1;

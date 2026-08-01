@@ -6,6 +6,7 @@
 
 #include "canny_stages.h"
 #include "sobel_reference.h"
+#include "hls_stream.h"
 
 namespace {
 
@@ -59,42 +60,24 @@ int test_sobel() {
     }
 
     sobel_reference(input.data(), expected.data());
-    sobel_reset();
 
-    GradientPixel producedRow[WIDTH] = {};
-    std::uint8_t flushRow[WIDTH] = {};
-    bool invalidResult = true;
-    sobel(flushRow, producedRow, false, &invalidResult);
+    hls::stream<std::uint8_t> inputStream;
+    hls::stream<GradientPixel> outputStream;
 
-    int validFailures = invalidResult ? 1 : 0;
-    int outputRows = 0;
-
-    for (int call = 0; call < HEIGHT + 1; ++call) {
-        bool valid = true;
-        const std::uint8_t* inputRow =
-            call < HEIGHT
-                ? input.data() + call * WIDTH
-                : flushRow;
-
-        sobel(inputRow, producedRow, true, &valid);
-
-        const bool expectedValid = call >= 1;
-        if (valid != expectedValid) {
-            ++validFailures;
+    // sobel reads exactly HEIGHT rows and emits exactly HEIGHT rows (see
+    // canny_stages.h): its own row-delay is handled internally now, so the
+    // testbench doesn't need to feed or discard any extra rows.
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            inputStream.write(input[row * WIDTH + column]);
         }
+    }
 
-        if (valid) {
-            if (outputRows >= HEIGHT) {
-                ++validFailures;
-                continue;
-            }
+    sobel(inputStream, outputStream);
 
-            std::copy(
-                producedRow,
-                producedRow + WIDTH,
-                actual.data() + outputRows * WIDTH
-            );
-            ++outputRows;
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            actual[row * WIDTH + column] = outputStream.read();
         }
     }
 
@@ -139,20 +122,14 @@ int test_sobel() {
         }
     }
 
-    if (outputRows != HEIGHT) {
-        ++validFailures;
-    }
-
     std::cout << "Pixels tested: " << pixelCount << '\n';
     std::cout << "Magnitude mismatches: " << magnitudeMismatches << '\n';
     std::cout << "Direction mismatches: " << directionMismatches << '\n';
     std::cout << "Maximum magnitude error: " << maximumMagnitudeError << '\n';
-    std::cout << "Valid-timing failures: " << validFailures << '\n';
 
     if (
         magnitudeMismatches != 0 ||
-        directionMismatches != 0 ||
-        validFailures != 0
+        directionMismatches != 0
     ) {
         std::cerr << "Sobel test FAILED.\n";
         return 1;

@@ -1,6 +1,6 @@
 <dict>
   <key>main-file</key>
-  <string>C:/Users/twhsaw/Projects/comp4601/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp</string>
+  <string>/home/superkooks/Uni/COMP4601/assign/canny_hls/canny_top/hls/.autopilot/db/sobel.pp.0.cpp</string>
   <key>diagnostics</key>
   <array>
     <dict>
@@ -9,7 +9,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>97</integer>
+      <integer>88</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -25,7 +25,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>103</integer>
+      <integer>97</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -41,7 +41,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>120</integer>
+      <integer>114</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -57,7 +57,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>123</integer>
+      <integer>117</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -73,11 +73,27 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>138</integer>
+      <integer>132</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
       <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=array_partition_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_XLX_SEP_ PragmaOptions=variable=window type=complete dim=0_XLX_SEP_</string>
+      <key>ID</key>
+      <integer>6999</integer>
+      <key>WarningOption</key>
+      <string>dump-hls-pragmas</string>
+    </dict>
+    <dict>
+      <key>level</key>
+      <string>warning</string>
+      <key>filename</key>
+      <string>../src/sobel.cpp</string>
+      <key>line</key>
+      <integer>137</integer>
+      <key>column</key>
+      <integer>1</integer>
+      <key>message</key>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
       <key>ID</key>
       <integer>6999</integer>
       <key>WarningOption</key>
@@ -105,23 +121,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>149</integer>
-      <key>column</key>
-      <integer>1</integer>
-      <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=unroll_XLX_SEP_ PragmaContext=hls_XLX_SEP_ PragmaFunction=sobel_XLX_SEP_ PragmaOptions=_XLX_SEP_</string>
-      <key>ID</key>
-      <integer>6999</integer>
-      <key>WarningOption</key>
-      <string>dump-hls-pragmas</string>
-    </dict>
-    <dict>
-      <key>level</key>
-      <string>warning</string>
-      <key>filename</key>
-      <string>../src/sobel.cpp</string>
-      <key>line</key>
-      <integer>156</integer>
+      <integer>150</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -137,7 +137,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>164</integer>
+      <integer>158</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -153,7 +153,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>169</integer>
+      <integer>163</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -169,7 +169,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>197</integer>
+      <integer>188</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -185,7 +185,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>200</integer>
+      <integer>191</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>
@@ -201,7 +201,7 @@
       <key>filename</key>
       <string>../src/sobel.cpp</string>
       <key>line</key>
-      <integer>205</integer>
+      <integer>196</integer>
       <key>column</key>
       <integer>1</integer>
       <key>message</key>

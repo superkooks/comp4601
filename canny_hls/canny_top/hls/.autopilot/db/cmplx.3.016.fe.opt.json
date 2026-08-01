@@ -1,251 +1,203 @@
 {
   "0": {
-    "basicblocks": 76,
-    "calls": "11",
-    "control_depth": 2,
-    "def_use_depth": 2,
+    "basicblocks": 1,
+    "calls": "4 5 9 8 11 1 10 7 3 2",
+    "control_depth": 0,
+    "def_use_depth": 1,
     "file": "canny_top.cpp",
     "fileloc": 9,
-    "instructions": 295,
-    "memory_accesses": 34,
+    "instructions": 51,
+    "memory_accesses": 0,
     "name": "canny_top",
-    "stores": {
-      "G": 34
-    },
-    "total_instructions": 1696
+    "total_instructions": 2050
   },
   "1": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 9,
+    "def_use_depth": 8,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 153,
+    "loads": {
+      "L": 10
+    },
+    "memory_accesses": 11,
+    "name": "hysteresis<1>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 153
+  },
+  "10": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 9,
+    "def_use_depth": 8,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 153,
+    "loads": {
+      "L": 10
+    },
+    "memory_accesses": 11,
+    "name": "hysteresis<2>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 153
+  },
+  "11": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 4,
+    "file": "double_threshold.cpp",
+    "fileloc": 5,
+    "instructions": 20,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 4,
+    "name": "double_threshold",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 20
+  },
+  "2": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 3,
+    "file": "write_frame.cpp",
+    "fileloc": 3,
+    "instructions": 36,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 3,
+    "name": "write_frame",
+    "total_instructions": 36
+  },
+  "3": {
+    "basicblocks": 29,
+    "calls": "",
+    "control_depth": 9,
+    "def_use_depth": 8,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 149,
+    "loads": {
+      "L": 10
+    },
+    "memory_accesses": 11,
+    "name": "hysteresis<4>",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 149
+  },
+  "4": {
+    "basicblocks": 13,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 10,
+    "file": "grayscale.cpp",
+    "fileloc": 3,
+    "instructions": 651,
+    "loads": {
+      "L": 97
+    },
+    "memory_accesses": 165,
+    "name": "grayscale",
+    "stores": {
+      "L": 66
+    },
+    "total_instructions": 651
+  },
+  "5": {
+    "basicblocks": 23,
+    "calls": "6 6 6 6 6 6 6 6 6 6 6",
+    "control_depth": 2,
+    "def_use_depth": 8,
+    "file": "gaussian_blur.cpp",
+    "fileloc": 36,
+    "instructions": 192,
+    "loads": {
+      "L": 12
+    },
+    "memory_accesses": 17,
+    "name": "gaussian_blur",
+    "stores": {
+      "L": 7
+    },
+    "total_instructions": 313
+  },
+  "6": {
     "basicblocks": 5,
     "calls": "",
     "control_depth": 0,
     "def_use_depth": 1,
     "file": "gaussian_blur.cpp",
-    "fileloc": 32,
+    "fileloc": 24,
     "instructions": 11,
     "memory_accesses": 0,
     "name": "reflect_101",
     "total_instructions": 11
   },
-  "10": {
+  "7": {
     "basicblocks": 31,
     "calls": "",
-    "control_depth": 11,
+    "control_depth": 9,
     "def_use_depth": 8,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 154,
+    "file": "hysteresis.cpp",
+    "fileloc": 50,
+    "instructions": 153,
     "loads": {
-      "G": 10,
-      "L": 2
+      "L": 10
     },
     "memory_accesses": 11,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 4,
-      "L": 5
-    },
-    "total_instructions": 154
-  },
-  "11": {
-    "basicblocks": 1,
-    "calls": "7 5 4 13 6 12 8 2 3 10 9",
-    "control_depth": 0,
-    "def_use_depth": 1,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 32,
-    "memory_accesses": 0,
-    "name": "_Z9canny_topP8RGBPixelPh_for.body",
-    "total_instructions": 1401
-  },
-  "12": {
-    "basicblocks": 6,
-    "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 5,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 23,
-    "loads": {
-      "L": 2
-    },
-    "memory_accesses": 2,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "L": 2
-    },
-    "total_instructions": 23
-  },
-  "13": {
-    "basicblocks": 20,
-    "calls": "",
-    "control_depth": 6,
-    "def_use_depth": 12,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 166,
-    "loads": {
-      "G": 10,
-      "L": 2
-    },
-    "memory_accesses": 9,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft",
-    "stores": {
-      "G": 4,
-      "L": 3
-    },
-    "total_instructions": 166
-  },
-  "2": {
-    "basicblocks": 31,
-    "calls": "",
-    "control_depth": 11,
-    "def_use_depth": 8,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 154,
-    "loads": {
-      "G": 10,
-      "L": 2
-    },
-    "memory_accesses": 11,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 4,
-      "L": 5
-    },
-    "total_instructions": 154
-  },
-  "3": {
-    "basicblocks": 31,
-    "calls": "",
-    "control_depth": 11,
-    "def_use_depth": 8,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 154,
-    "loads": {
-      "G": 10,
-      "L": 2
-    },
-    "memory_accesses": 11,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 4,
-      "L": 5
-    },
-    "total_instructions": 154
-  },
-  "4": {
-    "basicblocks": 15,
-    "calls": "1 1 1 1 1 1 1 1 1 1 1",
-    "control_depth": 2,
-    "def_use_depth": 8,
-    "file": "gaussian_blur.cpp",
-    "fileloc": 54,
-    "instructions": 157,
-    "loads": {
-      "G": 6,
-      "L": 6
-    },
-    "memory_accesses": 12,
-    "name": "gaussian_blur",
-    "stores": {
-      "G": 6,
-      "L": 2
-    },
-    "total_instructions": 278
-  },
-  "5": {
-    "basicblocks": 7,
-    "calls": "",
-    "control_depth": 1,
-    "def_use_depth": 7,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 79,
-    "loads": {
-      "L": 7
-    },
-    "memory_accesses": 10,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft",
+    "name": "hysteresis<3>",
     "stores": {
       "L": 4
     },
-    "total_instructions": 79
-  },
-  "6": {
-    "basicblocks": 19,
-    "calls": "",
-    "control_depth": 2,
-    "def_use_depth": 9,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 165,
-    "loads": {
-      "G": 19,
-      "L": 3
-    },
-    "memory_accesses": 15,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 7,
-      "L": 2
-    },
-    "total_instructions": 165
-  },
-  "7": {
-    "basicblocks": 1,
-    "calls": "",
-    "control_depth": 0,
-    "def_use_depth": 2,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 5,
-    "memory_accesses": 0,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 5
+    "total_instructions": 153
   },
   "8": {
-    "basicblocks": 31,
-    "calls": "",
-    "control_depth": 11,
-    "def_use_depth": 8,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 154,
-    "loads": {
-      "G": 10,
-      "L": 2
-    },
-    "memory_accesses": 11,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft",
-    "stores": {
-      "G": 4,
-      "L": 5
-    },
-    "total_instructions": 154
-  },
-  "9": {
-    "basicblocks": 8,
+    "basicblocks": 26,
     "calls": "",
     "control_depth": 2,
-    "def_use_depth": 6,
-    "file": "canny_top.cpp",
-    "fileloc": 0,
-    "instructions": 37,
+    "def_use_depth": 8,
+    "file": "non_maximum_suppression.cpp",
+    "fileloc": 26,
+    "instructions": 196,
     "loads": {
-      "G": 1,
-      "L": 2
+      "L": 19
     },
-    "memory_accesses": 2,
-    "name": "dataflow_in_loop_VITIS_LOOP_12_1.1_newFuncRoot.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft.aft",
+    "memory_accesses": 19,
+    "name": "non_maximum_suppression",
     "stores": {
-      "G": 1
+      "L": 8
     },
-    "total_instructions": 37
+    "total_instructions": 196
+  },
+  "9": {
+    "basicblocks": 24,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 15,
+    "file": "sobel.cpp",
+    "fileloc": 72,
+    "instructions": 175,
+    "loads": {
+      "L": 10
+    },
+    "memory_accesses": 11,
+    "name": "sobel",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 175
   }
 }

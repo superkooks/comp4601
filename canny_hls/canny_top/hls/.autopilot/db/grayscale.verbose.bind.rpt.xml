@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vitis HLS Report for 'grayscale'" level="0">
-<item name = "Date">Thu Jul 30 19:40:23 2026
+<item name = "Date">Sat Aug  1 12:52:05 2026
 </item>
 <item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
 <item name = "Project">canny_top</item>
@@ -24,19 +24,21 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">2132, 2132, 10.660 us, 10.660 us, 2132, 2132, no</column>
+<column name="">332801, 332801, 1.664 ms, 1.664 ms, 332801, 332801, no</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
-<column name="grp_grayscale_Pipeline_1_fu_70">grayscale_Pipeline_1, 1610, 1610, 8.050 us, 8.050 us, 0, 0, loop pipeline stp</column>
-<column name="grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80">grayscale_Pipeline_VITIS_LOOP_22_1, 518, 518, 2.590 us, 2.590 us, 0, 0, loop pipeline stp</column>
+<column name="grp_grayscale_Pipeline_burst_read_fu_225">grayscale_Pipeline_burst_read, 27, 27, 0.135 us, 0.135 us, 0, 0, loop pipeline stp</column>
+<column name="grp_grayscale_Pipeline_unpack_bytes_fu_232">grayscale_Pipeline_unpack_bytes, 26, 26, 0.130 us, 0.130 us, 0, 0, loop pipeline stp</column>
+<column name="grp_grayscale_Pipeline_unpack_pixels_fu_269">grayscale_Pipeline_unpack_pixels, 519, 519, 2.595 us, 2.595 us, 0, 0, loop pipeline stp</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_7_1">332800, 332800, 650, -, -, 512, no</column>
 </table>
 </item>
 </section>

@@ -27,10 +27,13 @@ using namespace std;
 #define AUTOTB_TVOUT_out_r "../tv/cdatafile/c.canny_top.autotvout_out_r.dat"
 #define AUTOTB_TVIN_gmem "../tv/cdatafile/c.canny_top.autotvin_gmem.dat"
 #define AUTOTB_TVOUT_gmem "../tv/cdatafile/c.canny_top.autotvout_gmem.dat"
+#define AUTOTB_TVIN_gmem0 "../tv/cdatafile/c.canny_top.autotvin_gmem0.dat"
+#define AUTOTB_TVOUT_gmem0 "../tv/cdatafile/c.canny_top.autotvout_gmem0.dat"
 
 
 // tvout file define:
 #define AUTOTB_TVOUT_PC_gmem "../tv/rtldatafile/rtl.canny_top.autotvout_gmem.dat"
+#define AUTOTB_TVOUT_PC_gmem0 "../tv/rtldatafile/rtl.canny_top.autotvout_gmem0.dat"
 
 
 namespace hls::sim
@@ -1258,7 +1261,7 @@ extern "C"
 void canny_top_hw_stub_wrapper(void*, void*);
 
 extern "C"
-void apatb_canny_top_hw(void* __xlx_apatb_param_in_r, void* __xlx_apatb_param_out_r)
+void apatb_canny_top_hw(void* __xlx_apatb_param_in_r, void* __xlx_apatb_param_out_r, size_t __xlx_nbytes_in_r)
 {
   static hls::sim::Byte<4> __xlx_offset_byte_param_in_r;
   static hls::sim::Register port0 {
@@ -1311,24 +1314,37 @@ void apatb_canny_top_hw(void* __xlx_apatb_param_in_r, void* __xlx_apatb_param_ou
     .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem),
 #endif
 #endif
-    .hasWrite = { true, true },
-    .max_nbytes = { 0, 0 },
+    .hasWrite = { true },
+    .max_nbytes = { 0 },
   };
-  port2.param = { __xlx_apatb_param_in_r, __xlx_apatb_param_out_r };
-  port2.mname = { "in_r", "out_r" };
-  port2.nbytes = { 786432, 262144 };
-  for (size_t i = 0; i < port2.nbytes.size(); ++i) {
-    if (port2.nbytes[i] > port2.max_nbytes[i]) {
-      port2.max_nbytes[i] = port2.nbytes[i];
-    }
-  }
-  port2.offset.clear();
-  for (size_t off = 0, i = 0; i < port2.nbytes.size(); ++i) {
-    port2.offset.push_back(off);
-    off += hls::sim::divide_ceil(port2.max_nbytes[i], port2.asize);
-  }
-  __xlx_offset_byte_param_in_r = port2.offset[0]*64;
-  __xlx_offset_byte_param_out_r = port2.offset[1]*64;
+  port2.param = { __xlx_apatb_param_out_r };
+  port2.mname = { "out_r" };
+  port2.nbytes = { 262144 };
+
+#ifdef USE_BINARY_TV_FILE
+  static hls::sim::Memory<hls::sim::Input, hls::sim::Output> port3 {
+#else
+  static hls::sim::Memory<hls::sim::Reader, hls::sim::Writer> port3 {
+#endif
+    .width = 512,
+    .asize = 64,
+    .hbm = false,
+    .name = { "gmem0" },
+#ifdef POST_CHECK
+#else
+    .owriter = nullptr,
+#ifdef USE_BINARY_TV_FILE
+    .iwriter = new hls::sim::Output(AUTOTB_TVIN_gmem0),
+#else
+    .iwriter = new hls::sim::Writer(AUTOTB_TVIN_gmem0),
+#endif
+#endif
+    .hasWrite = { false },
+    .max_nbytes = { 0 },
+  };
+  port3.param = { __xlx_apatb_param_in_r };
+  port3.mname = { "in_r" };
+  port3.nbytes = { __xlx_nbytes_in_r };
 
   try {
 #ifdef POST_CHECK
@@ -1341,9 +1357,11 @@ void apatb_canny_top_hw(void* __xlx_apatb_param_in_r, void* __xlx_apatb_param_ou
     delay_dump(port0, port0.iwriter, tcl.AESL_transaction);
     delay_dump(port1, port1.iwriter, tcl.AESL_transaction);
     dump(port2, port2.iwriter, tcl.AESL_transaction);
+    dump(port3, port3.iwriter, tcl.AESL_transaction);
     port0.doTCL(tcl);
     port1.doTCL(tcl);
     port2.doTCL(tcl);
+    port3.doTCL(tcl);
     CodeState = CALL_C_DUT;
     canny_top_hw_stub_wrapper(__xlx_apatb_param_in_r, __xlx_apatb_param_out_r);
     CodeState = DUMP_OUTPUTS;

@@ -4,6 +4,7 @@
 #include <vector>
 
 #include "canny_stages.h"
+#include "hls_burst_maxi.h"
 #include "pipeline_reference.h"
 
 int test_pipeline() {
@@ -48,8 +49,11 @@ int test_pipeline() {
         }
     }
 
+    hls::burst_maxi<ap_uint<512>> input_port(
+        reinterpret_cast<ap_uint<512> *>(input.data()));
+
     canny_reference(input.data(), expected.data());
-    canny_top(input.data(), actual.data());
+    canny_top(input_port, actual.data());
 
     int mismatchCount = 0;
     int expectedEdges = 0;

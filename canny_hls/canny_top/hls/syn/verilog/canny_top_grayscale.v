@@ -11,371 +11,2201 @@ module canny_top_grayscale (
         ap_clk,
         ap_rst,
         ap_start,
+        start_full_n,
         ap_done,
         ap_continue,
         ap_idle,
         ap_ready,
-        p_read,
-        m_axi_gmem_0_AWVALID,
-        m_axi_gmem_0_AWREADY,
-        m_axi_gmem_0_AWADDR,
-        m_axi_gmem_0_AWID,
-        m_axi_gmem_0_AWLEN,
-        m_axi_gmem_0_AWSIZE,
-        m_axi_gmem_0_AWBURST,
-        m_axi_gmem_0_AWLOCK,
-        m_axi_gmem_0_AWCACHE,
-        m_axi_gmem_0_AWPROT,
-        m_axi_gmem_0_AWQOS,
-        m_axi_gmem_0_AWREGION,
-        m_axi_gmem_0_AWUSER,
-        m_axi_gmem_0_WVALID,
-        m_axi_gmem_0_WREADY,
-        m_axi_gmem_0_WDATA,
-        m_axi_gmem_0_WSTRB,
-        m_axi_gmem_0_WLAST,
-        m_axi_gmem_0_WID,
-        m_axi_gmem_0_WUSER,
-        m_axi_gmem_0_ARVALID,
-        m_axi_gmem_0_ARREADY,
-        m_axi_gmem_0_ARADDR,
-        m_axi_gmem_0_ARID,
-        m_axi_gmem_0_ARLEN,
-        m_axi_gmem_0_ARSIZE,
-        m_axi_gmem_0_ARBURST,
-        m_axi_gmem_0_ARLOCK,
-        m_axi_gmem_0_ARCACHE,
-        m_axi_gmem_0_ARPROT,
-        m_axi_gmem_0_ARQOS,
-        m_axi_gmem_0_ARREGION,
-        m_axi_gmem_0_ARUSER,
-        m_axi_gmem_0_RVALID,
-        m_axi_gmem_0_RREADY,
-        m_axi_gmem_0_RDATA,
-        m_axi_gmem_0_RLAST,
-        m_axi_gmem_0_RID,
-        m_axi_gmem_0_RFIFONUM,
-        m_axi_gmem_0_RUSER,
-        m_axi_gmem_0_RRESP,
-        m_axi_gmem_0_BVALID,
-        m_axi_gmem_0_BREADY,
-        m_axi_gmem_0_BRESP,
-        m_axi_gmem_0_BID,
-        m_axi_gmem_0_BUSER,
-        in_r,
-        out_grayscale_address0,
-        out_grayscale_ce0,
-        out_grayscale_we0,
-        out_grayscale_d0
+        start_out,
+        start_write,
+        m_axi_gmem0_0_AWVALID,
+        m_axi_gmem0_0_AWREADY,
+        m_axi_gmem0_0_AWADDR,
+        m_axi_gmem0_0_AWID,
+        m_axi_gmem0_0_AWLEN,
+        m_axi_gmem0_0_AWSIZE,
+        m_axi_gmem0_0_AWBURST,
+        m_axi_gmem0_0_AWLOCK,
+        m_axi_gmem0_0_AWCACHE,
+        m_axi_gmem0_0_AWPROT,
+        m_axi_gmem0_0_AWQOS,
+        m_axi_gmem0_0_AWREGION,
+        m_axi_gmem0_0_AWUSER,
+        m_axi_gmem0_0_WVALID,
+        m_axi_gmem0_0_WREADY,
+        m_axi_gmem0_0_WDATA,
+        m_axi_gmem0_0_WSTRB,
+        m_axi_gmem0_0_WLAST,
+        m_axi_gmem0_0_WID,
+        m_axi_gmem0_0_WUSER,
+        m_axi_gmem0_0_ARVALID,
+        m_axi_gmem0_0_ARREADY,
+        m_axi_gmem0_0_ARADDR,
+        m_axi_gmem0_0_ARID,
+        m_axi_gmem0_0_ARLEN,
+        m_axi_gmem0_0_ARSIZE,
+        m_axi_gmem0_0_ARBURST,
+        m_axi_gmem0_0_ARLOCK,
+        m_axi_gmem0_0_ARCACHE,
+        m_axi_gmem0_0_ARPROT,
+        m_axi_gmem0_0_ARQOS,
+        m_axi_gmem0_0_ARREGION,
+        m_axi_gmem0_0_ARUSER,
+        m_axi_gmem0_0_RVALID,
+        m_axi_gmem0_0_RREADY,
+        m_axi_gmem0_0_RDATA,
+        m_axi_gmem0_0_RLAST,
+        m_axi_gmem0_0_RID,
+        m_axi_gmem0_0_RFIFONUM,
+        m_axi_gmem0_0_RUSER,
+        m_axi_gmem0_0_RRESP,
+        m_axi_gmem0_0_BVALID,
+        m_axi_gmem0_0_BREADY,
+        m_axi_gmem0_0_BRESP,
+        m_axi_gmem0_0_BID,
+        m_axi_gmem0_0_BUSER,
+        input_r,
+        gray_out_din,
+        gray_out_full_n,
+        gray_out_write,
+        gray_out_num_data_valid,
+        gray_out_fifo_cap
 );
 
-parameter    ap_ST_fsm_state1 = 5'd1;
-parameter    ap_ST_fsm_state2 = 5'd2;
-parameter    ap_ST_fsm_state3 = 5'd4;
-parameter    ap_ST_fsm_state4 = 5'd8;
-parameter    ap_ST_fsm_state5 = 5'd16;
+parameter    ap_ST_fsm_state1 = 79'd1;
+parameter    ap_ST_fsm_state2 = 79'd2;
+parameter    ap_ST_fsm_state3 = 79'd4;
+parameter    ap_ST_fsm_state4 = 79'd8;
+parameter    ap_ST_fsm_state5 = 79'd16;
+parameter    ap_ST_fsm_state6 = 79'd32;
+parameter    ap_ST_fsm_state7 = 79'd64;
+parameter    ap_ST_fsm_state8 = 79'd128;
+parameter    ap_ST_fsm_state9 = 79'd256;
+parameter    ap_ST_fsm_state10 = 79'd512;
+parameter    ap_ST_fsm_state11 = 79'd1024;
+parameter    ap_ST_fsm_state12 = 79'd2048;
+parameter    ap_ST_fsm_state13 = 79'd4096;
+parameter    ap_ST_fsm_state14 = 79'd8192;
+parameter    ap_ST_fsm_state15 = 79'd16384;
+parameter    ap_ST_fsm_state16 = 79'd32768;
+parameter    ap_ST_fsm_state17 = 79'd65536;
+parameter    ap_ST_fsm_state18 = 79'd131072;
+parameter    ap_ST_fsm_state19 = 79'd262144;
+parameter    ap_ST_fsm_state20 = 79'd524288;
+parameter    ap_ST_fsm_state21 = 79'd1048576;
+parameter    ap_ST_fsm_state22 = 79'd2097152;
+parameter    ap_ST_fsm_state23 = 79'd4194304;
+parameter    ap_ST_fsm_state24 = 79'd8388608;
+parameter    ap_ST_fsm_state25 = 79'd16777216;
+parameter    ap_ST_fsm_state26 = 79'd33554432;
+parameter    ap_ST_fsm_state27 = 79'd67108864;
+parameter    ap_ST_fsm_state28 = 79'd134217728;
+parameter    ap_ST_fsm_state29 = 79'd268435456;
+parameter    ap_ST_fsm_state30 = 79'd536870912;
+parameter    ap_ST_fsm_state31 = 79'd1073741824;
+parameter    ap_ST_fsm_state32 = 79'd2147483648;
+parameter    ap_ST_fsm_state33 = 79'd4294967296;
+parameter    ap_ST_fsm_state34 = 79'd8589934592;
+parameter    ap_ST_fsm_state35 = 79'd17179869184;
+parameter    ap_ST_fsm_state36 = 79'd34359738368;
+parameter    ap_ST_fsm_state37 = 79'd68719476736;
+parameter    ap_ST_fsm_state38 = 79'd137438953472;
+parameter    ap_ST_fsm_state39 = 79'd274877906944;
+parameter    ap_ST_fsm_state40 = 79'd549755813888;
+parameter    ap_ST_fsm_state41 = 79'd1099511627776;
+parameter    ap_ST_fsm_state42 = 79'd2199023255552;
+parameter    ap_ST_fsm_state43 = 79'd4398046511104;
+parameter    ap_ST_fsm_state44 = 79'd8796093022208;
+parameter    ap_ST_fsm_state45 = 79'd17592186044416;
+parameter    ap_ST_fsm_state46 = 79'd35184372088832;
+parameter    ap_ST_fsm_state47 = 79'd70368744177664;
+parameter    ap_ST_fsm_state48 = 79'd140737488355328;
+parameter    ap_ST_fsm_state49 = 79'd281474976710656;
+parameter    ap_ST_fsm_state50 = 79'd562949953421312;
+parameter    ap_ST_fsm_state51 = 79'd1125899906842624;
+parameter    ap_ST_fsm_state52 = 79'd2251799813685248;
+parameter    ap_ST_fsm_state53 = 79'd4503599627370496;
+parameter    ap_ST_fsm_state54 = 79'd9007199254740992;
+parameter    ap_ST_fsm_state55 = 79'd18014398509481984;
+parameter    ap_ST_fsm_state56 = 79'd36028797018963968;
+parameter    ap_ST_fsm_state57 = 79'd72057594037927936;
+parameter    ap_ST_fsm_state58 = 79'd144115188075855872;
+parameter    ap_ST_fsm_state59 = 79'd288230376151711744;
+parameter    ap_ST_fsm_state60 = 79'd576460752303423488;
+parameter    ap_ST_fsm_state61 = 79'd1152921504606846976;
+parameter    ap_ST_fsm_state62 = 79'd2305843009213693952;
+parameter    ap_ST_fsm_state63 = 79'd4611686018427387904;
+parameter    ap_ST_fsm_state64 = 79'd9223372036854775808;
+parameter    ap_ST_fsm_state65 = 79'd18446744073709551616;
+parameter    ap_ST_fsm_state66 = 79'd36893488147419103232;
+parameter    ap_ST_fsm_state67 = 79'd73786976294838206464;
+parameter    ap_ST_fsm_state68 = 79'd147573952589676412928;
+parameter    ap_ST_fsm_state69 = 79'd295147905179352825856;
+parameter    ap_ST_fsm_state70 = 79'd590295810358705651712;
+parameter    ap_ST_fsm_state71 = 79'd1180591620717411303424;
+parameter    ap_ST_fsm_state72 = 79'd2361183241434822606848;
+parameter    ap_ST_fsm_state73 = 79'd4722366482869645213696;
+parameter    ap_ST_fsm_state74 = 79'd9444732965739290427392;
+parameter    ap_ST_fsm_state75 = 79'd18889465931478580854784;
+parameter    ap_ST_fsm_state76 = 79'd37778931862957161709568;
+parameter    ap_ST_fsm_state77 = 79'd75557863725914323419136;
+parameter    ap_ST_fsm_state78 = 79'd151115727451828646838272;
+parameter    ap_ST_fsm_state79 = 79'd302231454903657293676544;
 
 input   ap_clk;
 input   ap_rst;
 input   ap_start;
+input   start_full_n;
 output   ap_done;
 input   ap_continue;
 output   ap_idle;
 output   ap_ready;
-input  [17:0] p_read;
-output   m_axi_gmem_0_AWVALID;
-input   m_axi_gmem_0_AWREADY;
-output  [63:0] m_axi_gmem_0_AWADDR;
-output  [0:0] m_axi_gmem_0_AWID;
-output  [31:0] m_axi_gmem_0_AWLEN;
-output  [2:0] m_axi_gmem_0_AWSIZE;
-output  [1:0] m_axi_gmem_0_AWBURST;
-output  [1:0] m_axi_gmem_0_AWLOCK;
-output  [3:0] m_axi_gmem_0_AWCACHE;
-output  [2:0] m_axi_gmem_0_AWPROT;
-output  [3:0] m_axi_gmem_0_AWQOS;
-output  [3:0] m_axi_gmem_0_AWREGION;
-output  [0:0] m_axi_gmem_0_AWUSER;
-output   m_axi_gmem_0_WVALID;
-input   m_axi_gmem_0_WREADY;
-output  [511:0] m_axi_gmem_0_WDATA;
-output  [63:0] m_axi_gmem_0_WSTRB;
-output   m_axi_gmem_0_WLAST;
-output  [0:0] m_axi_gmem_0_WID;
-output  [0:0] m_axi_gmem_0_WUSER;
-output   m_axi_gmem_0_ARVALID;
-input   m_axi_gmem_0_ARREADY;
-output  [63:0] m_axi_gmem_0_ARADDR;
-output  [0:0] m_axi_gmem_0_ARID;
-output  [31:0] m_axi_gmem_0_ARLEN;
-output  [2:0] m_axi_gmem_0_ARSIZE;
-output  [1:0] m_axi_gmem_0_ARBURST;
-output  [1:0] m_axi_gmem_0_ARLOCK;
-output  [3:0] m_axi_gmem_0_ARCACHE;
-output  [2:0] m_axi_gmem_0_ARPROT;
-output  [3:0] m_axi_gmem_0_ARQOS;
-output  [3:0] m_axi_gmem_0_ARREGION;
-output  [0:0] m_axi_gmem_0_ARUSER;
-input   m_axi_gmem_0_RVALID;
-output   m_axi_gmem_0_RREADY;
-input  [511:0] m_axi_gmem_0_RDATA;
-input   m_axi_gmem_0_RLAST;
-input  [0:0] m_axi_gmem_0_RID;
-input  [8:0] m_axi_gmem_0_RFIFONUM;
-input  [0:0] m_axi_gmem_0_RUSER;
-input  [1:0] m_axi_gmem_0_RRESP;
-input   m_axi_gmem_0_BVALID;
-output   m_axi_gmem_0_BREADY;
-input  [1:0] m_axi_gmem_0_BRESP;
-input  [0:0] m_axi_gmem_0_BID;
-input  [0:0] m_axi_gmem_0_BUSER;
-input  [63:0] in_r;
-output  [8:0] out_grayscale_address0;
-output   out_grayscale_ce0;
-output   out_grayscale_we0;
-output  [7:0] out_grayscale_d0;
+output   start_out;
+output   start_write;
+output   m_axi_gmem0_0_AWVALID;
+input   m_axi_gmem0_0_AWREADY;
+output  [63:0] m_axi_gmem0_0_AWADDR;
+output  [0:0] m_axi_gmem0_0_AWID;
+output  [31:0] m_axi_gmem0_0_AWLEN;
+output  [2:0] m_axi_gmem0_0_AWSIZE;
+output  [1:0] m_axi_gmem0_0_AWBURST;
+output  [1:0] m_axi_gmem0_0_AWLOCK;
+output  [3:0] m_axi_gmem0_0_AWCACHE;
+output  [2:0] m_axi_gmem0_0_AWPROT;
+output  [3:0] m_axi_gmem0_0_AWQOS;
+output  [3:0] m_axi_gmem0_0_AWREGION;
+output  [0:0] m_axi_gmem0_0_AWUSER;
+output   m_axi_gmem0_0_WVALID;
+input   m_axi_gmem0_0_WREADY;
+output  [511:0] m_axi_gmem0_0_WDATA;
+output  [63:0] m_axi_gmem0_0_WSTRB;
+output   m_axi_gmem0_0_WLAST;
+output  [0:0] m_axi_gmem0_0_WID;
+output  [0:0] m_axi_gmem0_0_WUSER;
+output   m_axi_gmem0_0_ARVALID;
+input   m_axi_gmem0_0_ARREADY;
+output  [63:0] m_axi_gmem0_0_ARADDR;
+output  [0:0] m_axi_gmem0_0_ARID;
+output  [31:0] m_axi_gmem0_0_ARLEN;
+output  [2:0] m_axi_gmem0_0_ARSIZE;
+output  [1:0] m_axi_gmem0_0_ARBURST;
+output  [1:0] m_axi_gmem0_0_ARLOCK;
+output  [3:0] m_axi_gmem0_0_ARCACHE;
+output  [2:0] m_axi_gmem0_0_ARPROT;
+output  [3:0] m_axi_gmem0_0_ARQOS;
+output  [3:0] m_axi_gmem0_0_ARREGION;
+output  [0:0] m_axi_gmem0_0_ARUSER;
+input   m_axi_gmem0_0_RVALID;
+output   m_axi_gmem0_0_RREADY;
+input  [511:0] m_axi_gmem0_0_RDATA;
+input   m_axi_gmem0_0_RLAST;
+input  [0:0] m_axi_gmem0_0_RID;
+input  [7:0] m_axi_gmem0_0_RFIFONUM;
+input  [0:0] m_axi_gmem0_0_RUSER;
+input  [1:0] m_axi_gmem0_0_RRESP;
+input   m_axi_gmem0_0_BVALID;
+output   m_axi_gmem0_0_BREADY;
+input  [1:0] m_axi_gmem0_0_BRESP;
+input  [0:0] m_axi_gmem0_0_BID;
+input  [0:0] m_axi_gmem0_0_BUSER;
+input  [63:0] input_r;
+output  [7:0] gray_out_din;
+input   gray_out_full_n;
+output   gray_out_write;
+input  [31:0] gray_out_num_data_valid;
+input  [31:0] gray_out_fifo_cap;
 
 reg ap_done;
 reg ap_idle;
-reg ap_ready;
+reg start_write;
+reg m_axi_gmem0_0_ARVALID;
+reg[63:0] m_axi_gmem0_0_ARADDR;
+reg[0:0] m_axi_gmem0_0_ARID;
+reg[31:0] m_axi_gmem0_0_ARLEN;
+reg[2:0] m_axi_gmem0_0_ARSIZE;
+reg[1:0] m_axi_gmem0_0_ARBURST;
+reg[1:0] m_axi_gmem0_0_ARLOCK;
+reg[3:0] m_axi_gmem0_0_ARCACHE;
+reg[2:0] m_axi_gmem0_0_ARPROT;
+reg[3:0] m_axi_gmem0_0_ARQOS;
+reg[3:0] m_axi_gmem0_0_ARREGION;
+reg[0:0] m_axi_gmem0_0_ARUSER;
+reg m_axi_gmem0_0_RREADY;
 
+reg    real_start;
+reg    start_once_reg;
 reg    ap_done_reg;
-(* fsm_encoding = "none" *) reg   [4:0] ap_CS_fsm;
+(* fsm_encoding = "none" *) reg   [78:0] ap_CS_fsm;
 wire    ap_CS_fsm_state1;
-reg   [17:0] p_read_8_reg_116;
-reg    ap_block_state1;
-wire   [63:0] empty_97_fu_109_p2;
-reg   [63:0] empty_97_reg_122;
-wire    ap_CS_fsm_state2;
-reg   [8:0] local_blue_address0;
-reg    local_blue_ce0;
-reg    local_blue_we0;
-wire   [7:0] local_blue_q0;
-reg   [8:0] local_green_address0;
-reg    local_green_ce0;
-reg    local_green_we0;
-wire   [7:0] local_green_q0;
-reg   [8:0] local_red_address0;
-reg    local_red_ce0;
-reg    local_red_we0;
-wire   [7:0] local_red_q0;
-wire    grp_grayscale_Pipeline_1_fu_70_ap_start;
-wire    grp_grayscale_Pipeline_1_fu_70_ap_done;
-wire    grp_grayscale_Pipeline_1_fu_70_ap_idle;
-wire    grp_grayscale_Pipeline_1_fu_70_ap_ready;
-wire    grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWVALID;
-wire   [63:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWADDR;
-wire   [0:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWID;
-wire   [31:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWLEN;
-wire   [2:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWSIZE;
-wire   [1:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWBURST;
-wire   [1:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWLOCK;
-wire   [3:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWCACHE;
-wire   [2:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWPROT;
-wire   [3:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWQOS;
-wire   [3:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWREGION;
-wire   [0:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWUSER;
-wire    grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WVALID;
-wire   [511:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WDATA;
-wire   [63:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WSTRB;
-wire    grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WLAST;
-wire   [0:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WID;
-wire   [0:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WUSER;
-wire    grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARVALID;
-wire   [63:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARADDR;
-wire   [0:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARID;
-wire   [31:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARLEN;
-wire   [2:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARSIZE;
-wire   [1:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARBURST;
-wire   [1:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARLOCK;
-wire   [3:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARCACHE;
-wire   [2:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARPROT;
-wire   [3:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARQOS;
-wire   [3:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARREGION;
-wire   [0:0] grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARUSER;
-wire    grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_RREADY;
-wire    grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_BREADY;
-wire   [8:0] grp_grayscale_Pipeline_1_fu_70_local_blue_address0;
-wire    grp_grayscale_Pipeline_1_fu_70_local_blue_ce0;
-wire    grp_grayscale_Pipeline_1_fu_70_local_blue_we0;
-wire   [7:0] grp_grayscale_Pipeline_1_fu_70_local_blue_d0;
-wire   [8:0] grp_grayscale_Pipeline_1_fu_70_local_green_address0;
-wire    grp_grayscale_Pipeline_1_fu_70_local_green_ce0;
-wire    grp_grayscale_Pipeline_1_fu_70_local_green_we0;
-wire   [7:0] grp_grayscale_Pipeline_1_fu_70_local_green_d0;
-wire   [8:0] grp_grayscale_Pipeline_1_fu_70_local_red_address0;
-wire    grp_grayscale_Pipeline_1_fu_70_local_red_ce0;
-wire    grp_grayscale_Pipeline_1_fu_70_local_red_we0;
-wire   [7:0] grp_grayscale_Pipeline_1_fu_70_local_red_d0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_done;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_idle;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_ready;
-wire   [8:0] grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_blue_address0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_blue_ce0;
-wire   [8:0] grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_green_address0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_green_ce0;
-wire   [8:0] grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_red_address0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_red_ce0;
-wire   [8:0] grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_address0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_ce0;
-wire    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_we0;
-wire   [7:0] grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_d0;
-reg    grp_grayscale_Pipeline_1_fu_70_ap_start_reg;
+reg    internal_ap_ready;
+reg    gmem0_blk_n_AR;
 wire    ap_CS_fsm_state3;
-reg    grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start_reg;
-wire    ap_CS_fsm_state4;
-wire    ap_CS_fsm_state5;
-wire   [19:0] p_shl_fu_92_p3;
-wire   [19:0] zext_ln6_fu_89_p1;
-wire   [19:0] empty_fu_99_p2;
-wire   [63:0] p_cast9_fu_105_p1;
-reg   [4:0] ap_NS_fsm;
+reg   [63:0] input_read_reg_398;
+reg    ap_block_state1;
+reg   [57:0] trunc_ln_reg_406;
+wire    ap_CS_fsm_state2;
+reg   [4:0] row_words_address0;
+reg    row_words_ce0;
+reg    row_words_we0;
+wire   [511:0] row_words_q0;
+reg   [5:0] row_bytes_address0;
+reg    row_bytes_ce0;
+reg    row_bytes_we0;
+wire   [7:0] row_bytes_q0;
+reg   [5:0] row_bytes_address1;
+reg    row_bytes_ce1;
+reg    row_bytes_we1;
+wire   [7:0] row_bytes_q1;
+reg   [5:0] row_bytes_1_address0;
+reg    row_bytes_1_ce0;
+reg    row_bytes_1_we0;
+wire   [7:0] row_bytes_1_q0;
+reg   [5:0] row_bytes_1_address1;
+reg    row_bytes_1_ce1;
+reg    row_bytes_1_we1;
+wire   [7:0] row_bytes_1_q1;
+reg   [5:0] row_bytes_2_address0;
+reg    row_bytes_2_ce0;
+reg    row_bytes_2_we0;
+wire   [7:0] row_bytes_2_q0;
+reg   [5:0] row_bytes_2_address1;
+reg    row_bytes_2_ce1;
+reg    row_bytes_2_we1;
+wire   [7:0] row_bytes_2_q1;
+reg   [5:0] row_bytes_3_address0;
+reg    row_bytes_3_ce0;
+reg    row_bytes_3_we0;
+wire   [7:0] row_bytes_3_q0;
+reg   [5:0] row_bytes_3_address1;
+reg    row_bytes_3_ce1;
+reg    row_bytes_3_we1;
+wire   [7:0] row_bytes_3_q1;
+reg   [5:0] row_bytes_4_address0;
+reg    row_bytes_4_ce0;
+reg    row_bytes_4_we0;
+wire   [7:0] row_bytes_4_q0;
+reg   [5:0] row_bytes_4_address1;
+reg    row_bytes_4_ce1;
+reg    row_bytes_4_we1;
+wire   [7:0] row_bytes_4_q1;
+reg   [5:0] row_bytes_5_address0;
+reg    row_bytes_5_ce0;
+reg    row_bytes_5_we0;
+wire   [7:0] row_bytes_5_q0;
+reg   [5:0] row_bytes_5_address1;
+reg    row_bytes_5_ce1;
+reg    row_bytes_5_we1;
+wire   [7:0] row_bytes_5_q1;
+reg   [5:0] row_bytes_6_address0;
+reg    row_bytes_6_ce0;
+reg    row_bytes_6_we0;
+wire   [7:0] row_bytes_6_q0;
+reg   [5:0] row_bytes_6_address1;
+reg    row_bytes_6_ce1;
+reg    row_bytes_6_we1;
+wire   [7:0] row_bytes_6_q1;
+reg   [5:0] row_bytes_7_address0;
+reg    row_bytes_7_ce0;
+reg    row_bytes_7_we0;
+wire   [7:0] row_bytes_7_q0;
+reg   [5:0] row_bytes_7_address1;
+reg    row_bytes_7_ce1;
+reg    row_bytes_7_we1;
+wire   [7:0] row_bytes_7_q1;
+reg   [5:0] row_bytes_8_address0;
+reg    row_bytes_8_ce0;
+reg    row_bytes_8_we0;
+wire   [7:0] row_bytes_8_q0;
+reg   [5:0] row_bytes_8_address1;
+reg    row_bytes_8_ce1;
+reg    row_bytes_8_we1;
+wire   [7:0] row_bytes_8_q1;
+reg   [5:0] row_bytes_9_address0;
+reg    row_bytes_9_ce0;
+reg    row_bytes_9_we0;
+wire   [7:0] row_bytes_9_q0;
+reg   [5:0] row_bytes_9_address1;
+reg    row_bytes_9_ce1;
+reg    row_bytes_9_we1;
+wire   [7:0] row_bytes_9_q1;
+reg   [5:0] row_bytes_10_address0;
+reg    row_bytes_10_ce0;
+reg    row_bytes_10_we0;
+wire   [7:0] row_bytes_10_q0;
+reg   [5:0] row_bytes_10_address1;
+reg    row_bytes_10_ce1;
+reg    row_bytes_10_we1;
+wire   [7:0] row_bytes_10_q1;
+reg   [5:0] row_bytes_11_address0;
+reg    row_bytes_11_ce0;
+reg    row_bytes_11_we0;
+wire   [7:0] row_bytes_11_q0;
+reg   [5:0] row_bytes_11_address1;
+reg    row_bytes_11_ce1;
+reg    row_bytes_11_we1;
+wire   [7:0] row_bytes_11_q1;
+reg   [5:0] row_bytes_12_address0;
+reg    row_bytes_12_ce0;
+reg    row_bytes_12_we0;
+wire   [7:0] row_bytes_12_q0;
+reg   [5:0] row_bytes_12_address1;
+reg    row_bytes_12_ce1;
+reg    row_bytes_12_we1;
+wire   [7:0] row_bytes_12_q1;
+reg   [5:0] row_bytes_13_address0;
+reg    row_bytes_13_ce0;
+reg    row_bytes_13_we0;
+wire   [7:0] row_bytes_13_q0;
+reg   [5:0] row_bytes_13_address1;
+reg    row_bytes_13_ce1;
+reg    row_bytes_13_we1;
+wire   [7:0] row_bytes_13_q1;
+reg   [5:0] row_bytes_14_address0;
+reg    row_bytes_14_ce0;
+reg    row_bytes_14_we0;
+wire   [7:0] row_bytes_14_q0;
+reg   [5:0] row_bytes_14_address1;
+reg    row_bytes_14_ce1;
+reg    row_bytes_14_we1;
+wire   [7:0] row_bytes_14_q1;
+reg   [5:0] row_bytes_15_address0;
+reg    row_bytes_15_ce0;
+reg    row_bytes_15_we0;
+wire   [7:0] row_bytes_15_q0;
+reg   [5:0] row_bytes_15_address1;
+reg    row_bytes_15_ce1;
+reg    row_bytes_15_we1;
+wire   [7:0] row_bytes_15_q1;
+reg   [5:0] row_bytes_16_address0;
+reg    row_bytes_16_ce0;
+reg    row_bytes_16_we0;
+wire   [7:0] row_bytes_16_q0;
+reg   [5:0] row_bytes_16_address1;
+reg    row_bytes_16_ce1;
+reg    row_bytes_16_we1;
+wire   [7:0] row_bytes_16_q1;
+reg   [5:0] row_bytes_17_address0;
+reg    row_bytes_17_ce0;
+reg    row_bytes_17_we0;
+wire   [7:0] row_bytes_17_q0;
+reg   [5:0] row_bytes_17_address1;
+reg    row_bytes_17_ce1;
+reg    row_bytes_17_we1;
+wire   [7:0] row_bytes_17_q1;
+reg   [5:0] row_bytes_18_address0;
+reg    row_bytes_18_ce0;
+reg    row_bytes_18_we0;
+wire   [7:0] row_bytes_18_q0;
+reg   [5:0] row_bytes_18_address1;
+reg    row_bytes_18_ce1;
+reg    row_bytes_18_we1;
+wire   [7:0] row_bytes_18_q1;
+reg   [5:0] row_bytes_19_address0;
+reg    row_bytes_19_ce0;
+reg    row_bytes_19_we0;
+wire   [7:0] row_bytes_19_q0;
+reg   [5:0] row_bytes_19_address1;
+reg    row_bytes_19_ce1;
+reg    row_bytes_19_we1;
+wire   [7:0] row_bytes_19_q1;
+reg   [5:0] row_bytes_20_address0;
+reg    row_bytes_20_ce0;
+reg    row_bytes_20_we0;
+wire   [7:0] row_bytes_20_q0;
+reg   [5:0] row_bytes_20_address1;
+reg    row_bytes_20_ce1;
+reg    row_bytes_20_we1;
+wire   [7:0] row_bytes_20_q1;
+reg   [5:0] row_bytes_21_address0;
+reg    row_bytes_21_ce0;
+reg    row_bytes_21_we0;
+wire   [7:0] row_bytes_21_q0;
+reg   [5:0] row_bytes_21_address1;
+reg    row_bytes_21_ce1;
+reg    row_bytes_21_we1;
+wire   [7:0] row_bytes_21_q1;
+reg   [5:0] row_bytes_22_address0;
+reg    row_bytes_22_ce0;
+reg    row_bytes_22_we0;
+wire   [7:0] row_bytes_22_q0;
+reg   [5:0] row_bytes_22_address1;
+reg    row_bytes_22_ce1;
+reg    row_bytes_22_we1;
+wire   [7:0] row_bytes_22_q1;
+reg   [5:0] row_bytes_23_address0;
+reg    row_bytes_23_ce0;
+reg    row_bytes_23_we0;
+wire   [7:0] row_bytes_23_q0;
+reg   [5:0] row_bytes_23_address1;
+reg    row_bytes_23_ce1;
+reg    row_bytes_23_we1;
+wire   [7:0] row_bytes_23_q1;
+reg   [5:0] row_bytes_24_address0;
+reg    row_bytes_24_ce0;
+reg    row_bytes_24_we0;
+wire   [7:0] row_bytes_24_q0;
+reg   [5:0] row_bytes_24_address1;
+reg    row_bytes_24_ce1;
+reg    row_bytes_24_we1;
+wire   [7:0] row_bytes_24_q1;
+reg   [5:0] row_bytes_25_address0;
+reg    row_bytes_25_ce0;
+reg    row_bytes_25_we0;
+wire   [7:0] row_bytes_25_q0;
+reg   [5:0] row_bytes_25_address1;
+reg    row_bytes_25_ce1;
+reg    row_bytes_25_we1;
+wire   [7:0] row_bytes_25_q1;
+reg   [5:0] row_bytes_26_address0;
+reg    row_bytes_26_ce0;
+reg    row_bytes_26_we0;
+wire   [7:0] row_bytes_26_q0;
+reg   [5:0] row_bytes_26_address1;
+reg    row_bytes_26_ce1;
+reg    row_bytes_26_we1;
+wire   [7:0] row_bytes_26_q1;
+reg   [5:0] row_bytes_27_address0;
+reg    row_bytes_27_ce0;
+reg    row_bytes_27_we0;
+wire   [7:0] row_bytes_27_q0;
+reg   [5:0] row_bytes_27_address1;
+reg    row_bytes_27_ce1;
+reg    row_bytes_27_we1;
+wire   [7:0] row_bytes_27_q1;
+reg   [5:0] row_bytes_28_address0;
+reg    row_bytes_28_ce0;
+reg    row_bytes_28_we0;
+wire   [7:0] row_bytes_28_q0;
+reg   [5:0] row_bytes_28_address1;
+reg    row_bytes_28_ce1;
+reg    row_bytes_28_we1;
+wire   [7:0] row_bytes_28_q1;
+reg   [5:0] row_bytes_29_address0;
+reg    row_bytes_29_ce0;
+reg    row_bytes_29_we0;
+wire   [7:0] row_bytes_29_q0;
+reg   [5:0] row_bytes_29_address1;
+reg    row_bytes_29_ce1;
+reg    row_bytes_29_we1;
+wire   [7:0] row_bytes_29_q1;
+reg   [5:0] row_bytes_30_address0;
+reg    row_bytes_30_ce0;
+reg    row_bytes_30_we0;
+wire   [7:0] row_bytes_30_q0;
+reg   [5:0] row_bytes_30_address1;
+reg    row_bytes_30_ce1;
+reg    row_bytes_30_we1;
+wire   [7:0] row_bytes_30_q1;
+reg   [5:0] row_bytes_31_address0;
+reg    row_bytes_31_ce0;
+reg    row_bytes_31_we0;
+wire   [7:0] row_bytes_31_q0;
+reg   [5:0] row_bytes_31_address1;
+reg    row_bytes_31_ce1;
+reg    row_bytes_31_we1;
+wire   [7:0] row_bytes_31_q1;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_ap_start;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_ap_done;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_ap_idle;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_ap_ready;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWVALID;
+wire   [63:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWADDR;
+wire   [0:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWID;
+wire   [31:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWLEN;
+wire   [2:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWSIZE;
+wire   [1:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWBURST;
+wire   [1:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWLOCK;
+wire   [3:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWCACHE;
+wire   [2:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWPROT;
+wire   [3:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWQOS;
+wire   [3:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWREGION;
+wire   [0:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWUSER;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WVALID;
+wire   [511:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WDATA;
+wire   [63:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WSTRB;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WLAST;
+wire   [0:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WID;
+wire   [0:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WUSER;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARVALID;
+wire   [63:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARADDR;
+wire   [0:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARID;
+wire   [31:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLEN;
+wire   [2:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARSIZE;
+wire   [1:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARBURST;
+wire   [1:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLOCK;
+wire   [3:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARCACHE;
+wire   [2:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARPROT;
+wire   [3:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARQOS;
+wire   [3:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARREGION;
+wire   [0:0] grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARUSER;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_RREADY;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_BREADY;
+wire   [4:0] grp_grayscale_Pipeline_burst_read_fu_225_row_words_address0;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_row_words_ce0;
+wire    grp_grayscale_Pipeline_burst_read_fu_225_row_words_we0;
+wire   [511:0] grp_grayscale_Pipeline_burst_read_fu_225_row_words_d0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_done;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_idle;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_ready;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_d1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_ce0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_we0;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_d0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_address1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_ce1;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_we1;
+wire   [7:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_d1;
+wire   [4:0] grp_grayscale_Pipeline_unpack_bytes_fu_232_row_words_address0;
+wire    grp_grayscale_Pipeline_unpack_bytes_fu_232_row_words_ce0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_done;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_idle;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_ready;
+wire   [7:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_gray_out_din;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_gray_out_write;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_ce1;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_address0;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_ce0;
+wire   [5:0] grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_address1;
+wire    grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_ce1;
+reg    grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg;
+wire    ap_CS_fsm_state74;
+wire    ap_CS_fsm_state75;
+reg    grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg;
+wire    ap_CS_fsm_state76;
+wire    ap_CS_fsm_state77;
+reg    grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg;
+wire    ap_CS_fsm_state78;
+wire    ap_CS_fsm_state79;
+wire  signed [63:0] sext_ln15_fu_381_p1;
+reg   [9:0] row_fu_76;
+wire   [9:0] add_ln7_fu_321_p2;
+wire   [0:0] icmp_ln7_fu_315_p2;
+wire   [8:0] trunc_ln15_fu_327_p1;
+wire   [18:0] tmp_fu_339_p3;
+wire   [19:0] p_shl_fu_331_p3;
+wire   [19:0] zext_ln15_1_fu_347_p1;
+wire   [19:0] sub_ln15_fu_351_p2;
+wire   [63:0] zext_ln15_fu_357_p1;
+wire   [63:0] add_ln15_fu_361_p2;
+reg   [78:0] ap_NS_fsm;
 reg    ap_ST_fsm_state1_blk;
 wire    ap_ST_fsm_state2_blk;
 reg    ap_ST_fsm_state3_blk;
 wire    ap_ST_fsm_state4_blk;
-reg    ap_ST_fsm_state5_blk;
+wire    ap_ST_fsm_state5_blk;
+wire    ap_ST_fsm_state6_blk;
+wire    ap_ST_fsm_state7_blk;
+wire    ap_ST_fsm_state8_blk;
+wire    ap_ST_fsm_state9_blk;
+wire    ap_ST_fsm_state10_blk;
+wire    ap_ST_fsm_state11_blk;
+wire    ap_ST_fsm_state12_blk;
+wire    ap_ST_fsm_state13_blk;
+wire    ap_ST_fsm_state14_blk;
+wire    ap_ST_fsm_state15_blk;
+wire    ap_ST_fsm_state16_blk;
+wire    ap_ST_fsm_state17_blk;
+wire    ap_ST_fsm_state18_blk;
+wire    ap_ST_fsm_state19_blk;
+wire    ap_ST_fsm_state20_blk;
+wire    ap_ST_fsm_state21_blk;
+wire    ap_ST_fsm_state22_blk;
+wire    ap_ST_fsm_state23_blk;
+wire    ap_ST_fsm_state24_blk;
+wire    ap_ST_fsm_state25_blk;
+wire    ap_ST_fsm_state26_blk;
+wire    ap_ST_fsm_state27_blk;
+wire    ap_ST_fsm_state28_blk;
+wire    ap_ST_fsm_state29_blk;
+wire    ap_ST_fsm_state30_blk;
+wire    ap_ST_fsm_state31_blk;
+wire    ap_ST_fsm_state32_blk;
+wire    ap_ST_fsm_state33_blk;
+wire    ap_ST_fsm_state34_blk;
+wire    ap_ST_fsm_state35_blk;
+wire    ap_ST_fsm_state36_blk;
+wire    ap_ST_fsm_state37_blk;
+wire    ap_ST_fsm_state38_blk;
+wire    ap_ST_fsm_state39_blk;
+wire    ap_ST_fsm_state40_blk;
+wire    ap_ST_fsm_state41_blk;
+wire    ap_ST_fsm_state42_blk;
+wire    ap_ST_fsm_state43_blk;
+wire    ap_ST_fsm_state44_blk;
+wire    ap_ST_fsm_state45_blk;
+wire    ap_ST_fsm_state46_blk;
+wire    ap_ST_fsm_state47_blk;
+wire    ap_ST_fsm_state48_blk;
+wire    ap_ST_fsm_state49_blk;
+wire    ap_ST_fsm_state50_blk;
+wire    ap_ST_fsm_state51_blk;
+wire    ap_ST_fsm_state52_blk;
+wire    ap_ST_fsm_state53_blk;
+wire    ap_ST_fsm_state54_blk;
+wire    ap_ST_fsm_state55_blk;
+wire    ap_ST_fsm_state56_blk;
+wire    ap_ST_fsm_state57_blk;
+wire    ap_ST_fsm_state58_blk;
+wire    ap_ST_fsm_state59_blk;
+wire    ap_ST_fsm_state60_blk;
+wire    ap_ST_fsm_state61_blk;
+wire    ap_ST_fsm_state62_blk;
+wire    ap_ST_fsm_state63_blk;
+wire    ap_ST_fsm_state64_blk;
+wire    ap_ST_fsm_state65_blk;
+wire    ap_ST_fsm_state66_blk;
+wire    ap_ST_fsm_state67_blk;
+wire    ap_ST_fsm_state68_blk;
+wire    ap_ST_fsm_state69_blk;
+wire    ap_ST_fsm_state70_blk;
+wire    ap_ST_fsm_state71_blk;
+wire    ap_ST_fsm_state72_blk;
+wire    ap_ST_fsm_state73_blk;
+wire    ap_ST_fsm_state74_blk;
+reg    ap_ST_fsm_state75_blk;
+wire    ap_ST_fsm_state76_blk;
+reg    ap_ST_fsm_state77_blk;
+wire    ap_ST_fsm_state78_blk;
+reg    ap_ST_fsm_state79_blk;
 wire    ap_ce_reg;
 
 // power-on initialization
 initial begin
+#0 start_once_reg = 1'b0;
 #0 ap_done_reg = 1'b0;
-#0 ap_CS_fsm = 5'd1;
-#0 grp_grayscale_Pipeline_1_fu_70_ap_start_reg = 1'b0;
-#0 grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start_reg = 1'b0;
+#0 ap_CS_fsm = 79'd1;
+#0 grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg = 1'b0;
+#0 grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg = 1'b0;
+#0 grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg = 1'b0;
+#0 row_fu_76 = 10'd0;
 end
 
-canny_top_grayscale_local_blue_RAM_AUTO_1R1W #(
-    .DataWidth( 8 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
-local_blue_U(
+canny_top_grayscale_row_words_RAM_AUTO_1R1W #(
+    .DataWidth( 512 ),
+    .AddressRange( 24 ),
+    .AddressWidth( 5 ))
+row_words_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(local_blue_address0),
-    .ce0(local_blue_ce0),
-    .we0(local_blue_we0),
-    .d0(grp_grayscale_Pipeline_1_fu_70_local_blue_d0),
-    .q0(local_blue_q0)
+    .address0(row_words_address0),
+    .ce0(row_words_ce0),
+    .we0(row_words_we0),
+    .d0(grp_grayscale_Pipeline_burst_read_fu_225_row_words_d0),
+    .q0(row_words_q0)
 );
 
-canny_top_grayscale_local_blue_RAM_AUTO_1R1W #(
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
-local_green_U(
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(local_green_address0),
-    .ce0(local_green_ce0),
-    .we0(local_green_we0),
-    .d0(grp_grayscale_Pipeline_1_fu_70_local_green_d0),
-    .q0(local_green_q0)
+    .address0(row_bytes_address0),
+    .ce0(row_bytes_ce0),
+    .we0(row_bytes_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_d0),
+    .q0(row_bytes_q0),
+    .address1(row_bytes_address1),
+    .ce1(row_bytes_ce1),
+    .we1(row_bytes_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_d1),
+    .q1(row_bytes_q1)
 );
 
-canny_top_grayscale_local_blue_RAM_AUTO_1R1W #(
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
     .DataWidth( 8 ),
-    .AddressRange( 512 ),
-    .AddressWidth( 9 ))
-local_red_U(
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_1_U(
     .clk(ap_clk),
     .reset(ap_rst),
-    .address0(local_red_address0),
-    .ce0(local_red_ce0),
-    .we0(local_red_we0),
-    .d0(grp_grayscale_Pipeline_1_fu_70_local_red_d0),
-    .q0(local_red_q0)
+    .address0(row_bytes_1_address0),
+    .ce0(row_bytes_1_ce0),
+    .we0(row_bytes_1_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_d0),
+    .q0(row_bytes_1_q0),
+    .address1(row_bytes_1_address1),
+    .ce1(row_bytes_1_ce1),
+    .we1(row_bytes_1_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_d1),
+    .q1(row_bytes_1_q1)
 );
 
-canny_top_grayscale_Pipeline_1 grp_grayscale_Pipeline_1_fu_70(
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_2_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_2_address0),
+    .ce0(row_bytes_2_ce0),
+    .we0(row_bytes_2_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_d0),
+    .q0(row_bytes_2_q0),
+    .address1(row_bytes_2_address1),
+    .ce1(row_bytes_2_ce1),
+    .we1(row_bytes_2_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_d1),
+    .q1(row_bytes_2_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_3_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_3_address0),
+    .ce0(row_bytes_3_ce0),
+    .we0(row_bytes_3_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_d0),
+    .q0(row_bytes_3_q0),
+    .address1(row_bytes_3_address1),
+    .ce1(row_bytes_3_ce1),
+    .we1(row_bytes_3_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_d1),
+    .q1(row_bytes_3_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_4_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_4_address0),
+    .ce0(row_bytes_4_ce0),
+    .we0(row_bytes_4_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_d0),
+    .q0(row_bytes_4_q0),
+    .address1(row_bytes_4_address1),
+    .ce1(row_bytes_4_ce1),
+    .we1(row_bytes_4_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_d1),
+    .q1(row_bytes_4_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_5_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_5_address0),
+    .ce0(row_bytes_5_ce0),
+    .we0(row_bytes_5_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_d0),
+    .q0(row_bytes_5_q0),
+    .address1(row_bytes_5_address1),
+    .ce1(row_bytes_5_ce1),
+    .we1(row_bytes_5_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_d1),
+    .q1(row_bytes_5_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_6_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_6_address0),
+    .ce0(row_bytes_6_ce0),
+    .we0(row_bytes_6_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_d0),
+    .q0(row_bytes_6_q0),
+    .address1(row_bytes_6_address1),
+    .ce1(row_bytes_6_ce1),
+    .we1(row_bytes_6_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_d1),
+    .q1(row_bytes_6_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_7_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_7_address0),
+    .ce0(row_bytes_7_ce0),
+    .we0(row_bytes_7_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_d0),
+    .q0(row_bytes_7_q0),
+    .address1(row_bytes_7_address1),
+    .ce1(row_bytes_7_ce1),
+    .we1(row_bytes_7_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_d1),
+    .q1(row_bytes_7_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_8_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_8_address0),
+    .ce0(row_bytes_8_ce0),
+    .we0(row_bytes_8_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_d0),
+    .q0(row_bytes_8_q0),
+    .address1(row_bytes_8_address1),
+    .ce1(row_bytes_8_ce1),
+    .we1(row_bytes_8_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_d1),
+    .q1(row_bytes_8_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_9_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_9_address0),
+    .ce0(row_bytes_9_ce0),
+    .we0(row_bytes_9_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_d0),
+    .q0(row_bytes_9_q0),
+    .address1(row_bytes_9_address1),
+    .ce1(row_bytes_9_ce1),
+    .we1(row_bytes_9_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_d1),
+    .q1(row_bytes_9_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_10_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_10_address0),
+    .ce0(row_bytes_10_ce0),
+    .we0(row_bytes_10_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_d0),
+    .q0(row_bytes_10_q0),
+    .address1(row_bytes_10_address1),
+    .ce1(row_bytes_10_ce1),
+    .we1(row_bytes_10_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_d1),
+    .q1(row_bytes_10_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_11_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_11_address0),
+    .ce0(row_bytes_11_ce0),
+    .we0(row_bytes_11_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_d0),
+    .q0(row_bytes_11_q0),
+    .address1(row_bytes_11_address1),
+    .ce1(row_bytes_11_ce1),
+    .we1(row_bytes_11_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_d1),
+    .q1(row_bytes_11_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_12_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_12_address0),
+    .ce0(row_bytes_12_ce0),
+    .we0(row_bytes_12_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_d0),
+    .q0(row_bytes_12_q0),
+    .address1(row_bytes_12_address1),
+    .ce1(row_bytes_12_ce1),
+    .we1(row_bytes_12_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_d1),
+    .q1(row_bytes_12_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_13_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_13_address0),
+    .ce0(row_bytes_13_ce0),
+    .we0(row_bytes_13_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_d0),
+    .q0(row_bytes_13_q0),
+    .address1(row_bytes_13_address1),
+    .ce1(row_bytes_13_ce1),
+    .we1(row_bytes_13_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_d1),
+    .q1(row_bytes_13_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_14_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_14_address0),
+    .ce0(row_bytes_14_ce0),
+    .we0(row_bytes_14_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_d0),
+    .q0(row_bytes_14_q0),
+    .address1(row_bytes_14_address1),
+    .ce1(row_bytes_14_ce1),
+    .we1(row_bytes_14_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_d1),
+    .q1(row_bytes_14_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_15_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_15_address0),
+    .ce0(row_bytes_15_ce0),
+    .we0(row_bytes_15_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_d0),
+    .q0(row_bytes_15_q0),
+    .address1(row_bytes_15_address1),
+    .ce1(row_bytes_15_ce1),
+    .we1(row_bytes_15_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_d1),
+    .q1(row_bytes_15_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_16_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_16_address0),
+    .ce0(row_bytes_16_ce0),
+    .we0(row_bytes_16_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_d0),
+    .q0(row_bytes_16_q0),
+    .address1(row_bytes_16_address1),
+    .ce1(row_bytes_16_ce1),
+    .we1(row_bytes_16_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_d1),
+    .q1(row_bytes_16_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_17_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_17_address0),
+    .ce0(row_bytes_17_ce0),
+    .we0(row_bytes_17_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_d0),
+    .q0(row_bytes_17_q0),
+    .address1(row_bytes_17_address1),
+    .ce1(row_bytes_17_ce1),
+    .we1(row_bytes_17_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_d1),
+    .q1(row_bytes_17_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_18_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_18_address0),
+    .ce0(row_bytes_18_ce0),
+    .we0(row_bytes_18_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_d0),
+    .q0(row_bytes_18_q0),
+    .address1(row_bytes_18_address1),
+    .ce1(row_bytes_18_ce1),
+    .we1(row_bytes_18_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_d1),
+    .q1(row_bytes_18_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_19_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_19_address0),
+    .ce0(row_bytes_19_ce0),
+    .we0(row_bytes_19_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_d0),
+    .q0(row_bytes_19_q0),
+    .address1(row_bytes_19_address1),
+    .ce1(row_bytes_19_ce1),
+    .we1(row_bytes_19_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_d1),
+    .q1(row_bytes_19_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_20_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_20_address0),
+    .ce0(row_bytes_20_ce0),
+    .we0(row_bytes_20_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_d0),
+    .q0(row_bytes_20_q0),
+    .address1(row_bytes_20_address1),
+    .ce1(row_bytes_20_ce1),
+    .we1(row_bytes_20_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_d1),
+    .q1(row_bytes_20_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_21_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_21_address0),
+    .ce0(row_bytes_21_ce0),
+    .we0(row_bytes_21_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_d0),
+    .q0(row_bytes_21_q0),
+    .address1(row_bytes_21_address1),
+    .ce1(row_bytes_21_ce1),
+    .we1(row_bytes_21_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_d1),
+    .q1(row_bytes_21_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_22_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_22_address0),
+    .ce0(row_bytes_22_ce0),
+    .we0(row_bytes_22_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_d0),
+    .q0(row_bytes_22_q0),
+    .address1(row_bytes_22_address1),
+    .ce1(row_bytes_22_ce1),
+    .we1(row_bytes_22_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_d1),
+    .q1(row_bytes_22_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_23_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_23_address0),
+    .ce0(row_bytes_23_ce0),
+    .we0(row_bytes_23_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_d0),
+    .q0(row_bytes_23_q0),
+    .address1(row_bytes_23_address1),
+    .ce1(row_bytes_23_ce1),
+    .we1(row_bytes_23_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_d1),
+    .q1(row_bytes_23_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_24_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_24_address0),
+    .ce0(row_bytes_24_ce0),
+    .we0(row_bytes_24_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_d0),
+    .q0(row_bytes_24_q0),
+    .address1(row_bytes_24_address1),
+    .ce1(row_bytes_24_ce1),
+    .we1(row_bytes_24_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_d1),
+    .q1(row_bytes_24_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_25_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_25_address0),
+    .ce0(row_bytes_25_ce0),
+    .we0(row_bytes_25_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_d0),
+    .q0(row_bytes_25_q0),
+    .address1(row_bytes_25_address1),
+    .ce1(row_bytes_25_ce1),
+    .we1(row_bytes_25_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_d1),
+    .q1(row_bytes_25_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_26_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_26_address0),
+    .ce0(row_bytes_26_ce0),
+    .we0(row_bytes_26_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_d0),
+    .q0(row_bytes_26_q0),
+    .address1(row_bytes_26_address1),
+    .ce1(row_bytes_26_ce1),
+    .we1(row_bytes_26_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_d1),
+    .q1(row_bytes_26_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_27_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_27_address0),
+    .ce0(row_bytes_27_ce0),
+    .we0(row_bytes_27_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_d0),
+    .q0(row_bytes_27_q0),
+    .address1(row_bytes_27_address1),
+    .ce1(row_bytes_27_ce1),
+    .we1(row_bytes_27_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_d1),
+    .q1(row_bytes_27_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_28_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_28_address0),
+    .ce0(row_bytes_28_ce0),
+    .we0(row_bytes_28_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_d0),
+    .q0(row_bytes_28_q0),
+    .address1(row_bytes_28_address1),
+    .ce1(row_bytes_28_ce1),
+    .we1(row_bytes_28_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_d1),
+    .q1(row_bytes_28_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_29_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_29_address0),
+    .ce0(row_bytes_29_ce0),
+    .we0(row_bytes_29_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_d0),
+    .q0(row_bytes_29_q0),
+    .address1(row_bytes_29_address1),
+    .ce1(row_bytes_29_ce1),
+    .we1(row_bytes_29_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_d1),
+    .q1(row_bytes_29_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_30_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_30_address0),
+    .ce0(row_bytes_30_ce0),
+    .we0(row_bytes_30_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_d0),
+    .q0(row_bytes_30_q0),
+    .address1(row_bytes_30_address1),
+    .ce1(row_bytes_30_ce1),
+    .we1(row_bytes_30_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_d1),
+    .q1(row_bytes_30_q1)
+);
+
+canny_top_grayscale_row_bytes_RAM_AUTO_1R1W #(
+    .DataWidth( 8 ),
+    .AddressRange( 48 ),
+    .AddressWidth( 6 ))
+row_bytes_31_U(
+    .clk(ap_clk),
+    .reset(ap_rst),
+    .address0(row_bytes_31_address0),
+    .ce0(row_bytes_31_ce0),
+    .we0(row_bytes_31_we0),
+    .d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_d0),
+    .q0(row_bytes_31_q0),
+    .address1(row_bytes_31_address1),
+    .ce1(row_bytes_31_ce1),
+    .we1(row_bytes_31_we1),
+    .d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_d1),
+    .q1(row_bytes_31_q1)
+);
+
+canny_top_grayscale_Pipeline_burst_read grp_grayscale_Pipeline_burst_read_fu_225(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_grayscale_Pipeline_1_fu_70_ap_start),
-    .ap_done(grp_grayscale_Pipeline_1_fu_70_ap_done),
-    .ap_idle(grp_grayscale_Pipeline_1_fu_70_ap_idle),
-    .ap_ready(grp_grayscale_Pipeline_1_fu_70_ap_ready),
-    .m_axi_gmem_0_AWVALID(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWVALID),
-    .m_axi_gmem_0_AWREADY(1'b0),
-    .m_axi_gmem_0_AWADDR(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWADDR),
-    .m_axi_gmem_0_AWID(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWID),
-    .m_axi_gmem_0_AWLEN(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWLEN),
-    .m_axi_gmem_0_AWSIZE(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWSIZE),
-    .m_axi_gmem_0_AWBURST(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWBURST),
-    .m_axi_gmem_0_AWLOCK(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWLOCK),
-    .m_axi_gmem_0_AWCACHE(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWCACHE),
-    .m_axi_gmem_0_AWPROT(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWPROT),
-    .m_axi_gmem_0_AWQOS(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWQOS),
-    .m_axi_gmem_0_AWREGION(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWREGION),
-    .m_axi_gmem_0_AWUSER(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_AWUSER),
-    .m_axi_gmem_0_WVALID(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WVALID),
-    .m_axi_gmem_0_WREADY(1'b0),
-    .m_axi_gmem_0_WDATA(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WDATA),
-    .m_axi_gmem_0_WSTRB(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WSTRB),
-    .m_axi_gmem_0_WLAST(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WLAST),
-    .m_axi_gmem_0_WID(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WID),
-    .m_axi_gmem_0_WUSER(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_WUSER),
-    .m_axi_gmem_0_ARVALID(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARVALID),
-    .m_axi_gmem_0_ARREADY(m_axi_gmem_0_ARREADY),
-    .m_axi_gmem_0_ARADDR(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARADDR),
-    .m_axi_gmem_0_ARID(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARID),
-    .m_axi_gmem_0_ARLEN(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARLEN),
-    .m_axi_gmem_0_ARSIZE(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARSIZE),
-    .m_axi_gmem_0_ARBURST(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARBURST),
-    .m_axi_gmem_0_ARLOCK(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARLOCK),
-    .m_axi_gmem_0_ARCACHE(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARCACHE),
-    .m_axi_gmem_0_ARPROT(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARPROT),
-    .m_axi_gmem_0_ARQOS(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARQOS),
-    .m_axi_gmem_0_ARREGION(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARREGION),
-    .m_axi_gmem_0_ARUSER(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARUSER),
-    .m_axi_gmem_0_RVALID(m_axi_gmem_0_RVALID),
-    .m_axi_gmem_0_RREADY(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_RREADY),
-    .m_axi_gmem_0_RDATA(m_axi_gmem_0_RDATA),
-    .m_axi_gmem_0_RLAST(m_axi_gmem_0_RLAST),
-    .m_axi_gmem_0_RID(m_axi_gmem_0_RID),
-    .m_axi_gmem_0_RFIFONUM(m_axi_gmem_0_RFIFONUM),
-    .m_axi_gmem_0_RUSER(m_axi_gmem_0_RUSER),
-    .m_axi_gmem_0_RRESP(m_axi_gmem_0_RRESP),
-    .m_axi_gmem_0_BVALID(1'b0),
-    .m_axi_gmem_0_BREADY(grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_BREADY),
-    .m_axi_gmem_0_BRESP(2'd0),
-    .m_axi_gmem_0_BID(1'd0),
-    .m_axi_gmem_0_BUSER(1'd0),
-    .empty(empty_97_reg_122),
-    .local_blue_address0(grp_grayscale_Pipeline_1_fu_70_local_blue_address0),
-    .local_blue_ce0(grp_grayscale_Pipeline_1_fu_70_local_blue_ce0),
-    .local_blue_we0(grp_grayscale_Pipeline_1_fu_70_local_blue_we0),
-    .local_blue_d0(grp_grayscale_Pipeline_1_fu_70_local_blue_d0),
-    .local_green_address0(grp_grayscale_Pipeline_1_fu_70_local_green_address0),
-    .local_green_ce0(grp_grayscale_Pipeline_1_fu_70_local_green_ce0),
-    .local_green_we0(grp_grayscale_Pipeline_1_fu_70_local_green_we0),
-    .local_green_d0(grp_grayscale_Pipeline_1_fu_70_local_green_d0),
-    .local_red_address0(grp_grayscale_Pipeline_1_fu_70_local_red_address0),
-    .local_red_ce0(grp_grayscale_Pipeline_1_fu_70_local_red_ce0),
-    .local_red_we0(grp_grayscale_Pipeline_1_fu_70_local_red_we0),
-    .local_red_d0(grp_grayscale_Pipeline_1_fu_70_local_red_d0)
+    .ap_start(grp_grayscale_Pipeline_burst_read_fu_225_ap_start),
+    .ap_done(grp_grayscale_Pipeline_burst_read_fu_225_ap_done),
+    .ap_idle(grp_grayscale_Pipeline_burst_read_fu_225_ap_idle),
+    .ap_ready(grp_grayscale_Pipeline_burst_read_fu_225_ap_ready),
+    .m_axi_gmem0_0_AWVALID(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWVALID),
+    .m_axi_gmem0_0_AWREADY(1'b0),
+    .m_axi_gmem0_0_AWADDR(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWADDR),
+    .m_axi_gmem0_0_AWID(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWID),
+    .m_axi_gmem0_0_AWLEN(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWLEN),
+    .m_axi_gmem0_0_AWSIZE(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWSIZE),
+    .m_axi_gmem0_0_AWBURST(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWBURST),
+    .m_axi_gmem0_0_AWLOCK(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWLOCK),
+    .m_axi_gmem0_0_AWCACHE(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWCACHE),
+    .m_axi_gmem0_0_AWPROT(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWPROT),
+    .m_axi_gmem0_0_AWQOS(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWQOS),
+    .m_axi_gmem0_0_AWREGION(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWREGION),
+    .m_axi_gmem0_0_AWUSER(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_AWUSER),
+    .m_axi_gmem0_0_WVALID(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WVALID),
+    .m_axi_gmem0_0_WREADY(1'b0),
+    .m_axi_gmem0_0_WDATA(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WDATA),
+    .m_axi_gmem0_0_WSTRB(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WSTRB),
+    .m_axi_gmem0_0_WLAST(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WLAST),
+    .m_axi_gmem0_0_WID(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WID),
+    .m_axi_gmem0_0_WUSER(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_WUSER),
+    .m_axi_gmem0_0_ARVALID(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARVALID),
+    .m_axi_gmem0_0_ARREADY(m_axi_gmem0_0_ARREADY),
+    .m_axi_gmem0_0_ARADDR(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARADDR),
+    .m_axi_gmem0_0_ARID(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARID),
+    .m_axi_gmem0_0_ARLEN(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLEN),
+    .m_axi_gmem0_0_ARSIZE(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARSIZE),
+    .m_axi_gmem0_0_ARBURST(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARBURST),
+    .m_axi_gmem0_0_ARLOCK(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLOCK),
+    .m_axi_gmem0_0_ARCACHE(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARCACHE),
+    .m_axi_gmem0_0_ARPROT(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARPROT),
+    .m_axi_gmem0_0_ARQOS(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARQOS),
+    .m_axi_gmem0_0_ARREGION(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARREGION),
+    .m_axi_gmem0_0_ARUSER(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARUSER),
+    .m_axi_gmem0_0_RVALID(m_axi_gmem0_0_RVALID),
+    .m_axi_gmem0_0_RREADY(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_RREADY),
+    .m_axi_gmem0_0_RDATA(m_axi_gmem0_0_RDATA),
+    .m_axi_gmem0_0_RLAST(m_axi_gmem0_0_RLAST),
+    .m_axi_gmem0_0_RID(m_axi_gmem0_0_RID),
+    .m_axi_gmem0_0_RFIFONUM(m_axi_gmem0_0_RFIFONUM),
+    .m_axi_gmem0_0_RUSER(m_axi_gmem0_0_RUSER),
+    .m_axi_gmem0_0_RRESP(m_axi_gmem0_0_RRESP),
+    .m_axi_gmem0_0_BVALID(1'b0),
+    .m_axi_gmem0_0_BREADY(grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_BREADY),
+    .m_axi_gmem0_0_BRESP(2'd0),
+    .m_axi_gmem0_0_BID(1'd0),
+    .m_axi_gmem0_0_BUSER(1'd0),
+    .row_words_address0(grp_grayscale_Pipeline_burst_read_fu_225_row_words_address0),
+    .row_words_ce0(grp_grayscale_Pipeline_burst_read_fu_225_row_words_ce0),
+    .row_words_we0(grp_grayscale_Pipeline_burst_read_fu_225_row_words_we0),
+    .row_words_d0(grp_grayscale_Pipeline_burst_read_fu_225_row_words_d0)
 );
 
-canny_top_grayscale_Pipeline_VITIS_LOOP_22_1 grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80(
+canny_top_grayscale_Pipeline_unpack_bytes grp_grayscale_Pipeline_unpack_bytes_fu_232(
     .ap_clk(ap_clk),
     .ap_rst(ap_rst),
-    .ap_start(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start),
-    .ap_done(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_done),
-    .ap_idle(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_idle),
-    .ap_ready(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_ready),
-    .local_blue_address0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_blue_address0),
-    .local_blue_ce0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_blue_ce0),
-    .local_blue_q0(local_blue_q0),
-    .local_green_address0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_green_address0),
-    .local_green_ce0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_green_ce0),
-    .local_green_q0(local_green_q0),
-    .local_red_address0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_red_address0),
-    .local_red_ce0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_red_ce0),
-    .local_red_q0(local_red_q0),
-    .out_grayscale_address0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_address0),
-    .out_grayscale_ce0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_ce0),
-    .out_grayscale_we0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_we0),
-    .out_grayscale_d0(grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_d0)
+    .ap_start(grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start),
+    .ap_done(grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_done),
+    .ap_idle(grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_idle),
+    .ap_ready(grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_ready),
+    .row_bytes_31_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_address0),
+    .row_bytes_31_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_ce0),
+    .row_bytes_31_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_we0),
+    .row_bytes_31_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_d0),
+    .row_bytes_31_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_address1),
+    .row_bytes_31_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_ce1),
+    .row_bytes_31_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_we1),
+    .row_bytes_31_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_d1),
+    .row_bytes_30_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_address0),
+    .row_bytes_30_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_ce0),
+    .row_bytes_30_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_we0),
+    .row_bytes_30_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_d0),
+    .row_bytes_30_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_address1),
+    .row_bytes_30_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_ce1),
+    .row_bytes_30_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_we1),
+    .row_bytes_30_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_d1),
+    .row_bytes_29_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_address0),
+    .row_bytes_29_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_ce0),
+    .row_bytes_29_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_we0),
+    .row_bytes_29_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_d0),
+    .row_bytes_29_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_address1),
+    .row_bytes_29_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_ce1),
+    .row_bytes_29_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_we1),
+    .row_bytes_29_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_d1),
+    .row_bytes_28_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_address0),
+    .row_bytes_28_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_ce0),
+    .row_bytes_28_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_we0),
+    .row_bytes_28_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_d0),
+    .row_bytes_28_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_address1),
+    .row_bytes_28_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_ce1),
+    .row_bytes_28_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_we1),
+    .row_bytes_28_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_d1),
+    .row_bytes_27_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_address0),
+    .row_bytes_27_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_ce0),
+    .row_bytes_27_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_we0),
+    .row_bytes_27_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_d0),
+    .row_bytes_27_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_address1),
+    .row_bytes_27_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_ce1),
+    .row_bytes_27_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_we1),
+    .row_bytes_27_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_d1),
+    .row_bytes_26_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_address0),
+    .row_bytes_26_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_ce0),
+    .row_bytes_26_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_we0),
+    .row_bytes_26_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_d0),
+    .row_bytes_26_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_address1),
+    .row_bytes_26_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_ce1),
+    .row_bytes_26_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_we1),
+    .row_bytes_26_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_d1),
+    .row_bytes_25_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_address0),
+    .row_bytes_25_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_ce0),
+    .row_bytes_25_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_we0),
+    .row_bytes_25_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_d0),
+    .row_bytes_25_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_address1),
+    .row_bytes_25_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_ce1),
+    .row_bytes_25_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_we1),
+    .row_bytes_25_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_d1),
+    .row_bytes_24_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_address0),
+    .row_bytes_24_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_ce0),
+    .row_bytes_24_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_we0),
+    .row_bytes_24_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_d0),
+    .row_bytes_24_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_address1),
+    .row_bytes_24_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_ce1),
+    .row_bytes_24_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_we1),
+    .row_bytes_24_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_d1),
+    .row_bytes_23_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_address0),
+    .row_bytes_23_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_ce0),
+    .row_bytes_23_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_we0),
+    .row_bytes_23_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_d0),
+    .row_bytes_23_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_address1),
+    .row_bytes_23_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_ce1),
+    .row_bytes_23_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_we1),
+    .row_bytes_23_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_d1),
+    .row_bytes_22_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_address0),
+    .row_bytes_22_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_ce0),
+    .row_bytes_22_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_we0),
+    .row_bytes_22_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_d0),
+    .row_bytes_22_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_address1),
+    .row_bytes_22_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_ce1),
+    .row_bytes_22_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_we1),
+    .row_bytes_22_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_d1),
+    .row_bytes_21_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_address0),
+    .row_bytes_21_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_ce0),
+    .row_bytes_21_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_we0),
+    .row_bytes_21_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_d0),
+    .row_bytes_21_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_address1),
+    .row_bytes_21_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_ce1),
+    .row_bytes_21_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_we1),
+    .row_bytes_21_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_d1),
+    .row_bytes_20_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_address0),
+    .row_bytes_20_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_ce0),
+    .row_bytes_20_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_we0),
+    .row_bytes_20_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_d0),
+    .row_bytes_20_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_address1),
+    .row_bytes_20_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_ce1),
+    .row_bytes_20_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_we1),
+    .row_bytes_20_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_d1),
+    .row_bytes_19_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_address0),
+    .row_bytes_19_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_ce0),
+    .row_bytes_19_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_we0),
+    .row_bytes_19_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_d0),
+    .row_bytes_19_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_address1),
+    .row_bytes_19_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_ce1),
+    .row_bytes_19_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_we1),
+    .row_bytes_19_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_d1),
+    .row_bytes_18_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_address0),
+    .row_bytes_18_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_ce0),
+    .row_bytes_18_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_we0),
+    .row_bytes_18_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_d0),
+    .row_bytes_18_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_address1),
+    .row_bytes_18_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_ce1),
+    .row_bytes_18_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_we1),
+    .row_bytes_18_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_d1),
+    .row_bytes_17_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_address0),
+    .row_bytes_17_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_ce0),
+    .row_bytes_17_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_we0),
+    .row_bytes_17_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_d0),
+    .row_bytes_17_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_address1),
+    .row_bytes_17_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_ce1),
+    .row_bytes_17_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_we1),
+    .row_bytes_17_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_d1),
+    .row_bytes_16_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_address0),
+    .row_bytes_16_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_ce0),
+    .row_bytes_16_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_we0),
+    .row_bytes_16_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_d0),
+    .row_bytes_16_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_address1),
+    .row_bytes_16_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_ce1),
+    .row_bytes_16_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_we1),
+    .row_bytes_16_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_d1),
+    .row_bytes_15_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_address0),
+    .row_bytes_15_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_ce0),
+    .row_bytes_15_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_we0),
+    .row_bytes_15_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_d0),
+    .row_bytes_15_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_address1),
+    .row_bytes_15_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_ce1),
+    .row_bytes_15_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_we1),
+    .row_bytes_15_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_d1),
+    .row_bytes_14_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_address0),
+    .row_bytes_14_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_ce0),
+    .row_bytes_14_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_we0),
+    .row_bytes_14_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_d0),
+    .row_bytes_14_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_address1),
+    .row_bytes_14_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_ce1),
+    .row_bytes_14_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_we1),
+    .row_bytes_14_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_d1),
+    .row_bytes_13_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_address0),
+    .row_bytes_13_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_ce0),
+    .row_bytes_13_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_we0),
+    .row_bytes_13_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_d0),
+    .row_bytes_13_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_address1),
+    .row_bytes_13_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_ce1),
+    .row_bytes_13_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_we1),
+    .row_bytes_13_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_d1),
+    .row_bytes_12_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_address0),
+    .row_bytes_12_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_ce0),
+    .row_bytes_12_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_we0),
+    .row_bytes_12_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_d0),
+    .row_bytes_12_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_address1),
+    .row_bytes_12_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_ce1),
+    .row_bytes_12_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_we1),
+    .row_bytes_12_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_d1),
+    .row_bytes_11_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_address0),
+    .row_bytes_11_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_ce0),
+    .row_bytes_11_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_we0),
+    .row_bytes_11_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_d0),
+    .row_bytes_11_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_address1),
+    .row_bytes_11_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_ce1),
+    .row_bytes_11_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_we1),
+    .row_bytes_11_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_d1),
+    .row_bytes_10_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_address0),
+    .row_bytes_10_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_ce0),
+    .row_bytes_10_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_we0),
+    .row_bytes_10_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_d0),
+    .row_bytes_10_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_address1),
+    .row_bytes_10_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_ce1),
+    .row_bytes_10_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_we1),
+    .row_bytes_10_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_d1),
+    .row_bytes_9_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_address0),
+    .row_bytes_9_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_ce0),
+    .row_bytes_9_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_we0),
+    .row_bytes_9_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_d0),
+    .row_bytes_9_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_address1),
+    .row_bytes_9_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_ce1),
+    .row_bytes_9_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_we1),
+    .row_bytes_9_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_d1),
+    .row_bytes_8_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_address0),
+    .row_bytes_8_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_ce0),
+    .row_bytes_8_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_we0),
+    .row_bytes_8_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_d0),
+    .row_bytes_8_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_address1),
+    .row_bytes_8_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_ce1),
+    .row_bytes_8_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_we1),
+    .row_bytes_8_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_d1),
+    .row_bytes_7_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_address0),
+    .row_bytes_7_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_ce0),
+    .row_bytes_7_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_we0),
+    .row_bytes_7_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_d0),
+    .row_bytes_7_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_address1),
+    .row_bytes_7_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_ce1),
+    .row_bytes_7_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_we1),
+    .row_bytes_7_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_d1),
+    .row_bytes_6_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_address0),
+    .row_bytes_6_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_ce0),
+    .row_bytes_6_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_we0),
+    .row_bytes_6_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_d0),
+    .row_bytes_6_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_address1),
+    .row_bytes_6_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_ce1),
+    .row_bytes_6_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_we1),
+    .row_bytes_6_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_d1),
+    .row_bytes_5_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_address0),
+    .row_bytes_5_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_ce0),
+    .row_bytes_5_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_we0),
+    .row_bytes_5_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_d0),
+    .row_bytes_5_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_address1),
+    .row_bytes_5_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_ce1),
+    .row_bytes_5_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_we1),
+    .row_bytes_5_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_d1),
+    .row_bytes_4_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_address0),
+    .row_bytes_4_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_ce0),
+    .row_bytes_4_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_we0),
+    .row_bytes_4_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_d0),
+    .row_bytes_4_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_address1),
+    .row_bytes_4_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_ce1),
+    .row_bytes_4_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_we1),
+    .row_bytes_4_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_d1),
+    .row_bytes_3_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_address0),
+    .row_bytes_3_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_ce0),
+    .row_bytes_3_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_we0),
+    .row_bytes_3_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_d0),
+    .row_bytes_3_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_address1),
+    .row_bytes_3_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_ce1),
+    .row_bytes_3_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_we1),
+    .row_bytes_3_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_d1),
+    .row_bytes_2_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_address0),
+    .row_bytes_2_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_ce0),
+    .row_bytes_2_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_we0),
+    .row_bytes_2_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_d0),
+    .row_bytes_2_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_address1),
+    .row_bytes_2_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_ce1),
+    .row_bytes_2_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_we1),
+    .row_bytes_2_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_d1),
+    .row_bytes_1_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_address0),
+    .row_bytes_1_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_ce0),
+    .row_bytes_1_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_we0),
+    .row_bytes_1_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_d0),
+    .row_bytes_1_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_address1),
+    .row_bytes_1_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_ce1),
+    .row_bytes_1_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_we1),
+    .row_bytes_1_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_d1),
+    .row_bytes_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_address0),
+    .row_bytes_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_ce0),
+    .row_bytes_we0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_we0),
+    .row_bytes_d0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_d0),
+    .row_bytes_address1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_address1),
+    .row_bytes_ce1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_ce1),
+    .row_bytes_we1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_we1),
+    .row_bytes_d1(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_d1),
+    .row_words_address0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_words_address0),
+    .row_words_ce0(grp_grayscale_Pipeline_unpack_bytes_fu_232_row_words_ce0),
+    .row_words_q0(row_words_q0)
+);
+
+canny_top_grayscale_Pipeline_unpack_pixels grp_grayscale_Pipeline_unpack_pixels_fu_269(
+    .ap_clk(ap_clk),
+    .ap_rst(ap_rst),
+    .ap_start(grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start),
+    .ap_done(grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_done),
+    .ap_idle(grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_idle),
+    .ap_ready(grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_ready),
+    .gray_out_din(grp_grayscale_Pipeline_unpack_pixels_fu_269_gray_out_din),
+    .gray_out_full_n(gray_out_full_n),
+    .gray_out_write(grp_grayscale_Pipeline_unpack_pixels_fu_269_gray_out_write),
+    .gray_out_num_data_valid(gray_out_num_data_valid),
+    .gray_out_fifo_cap(gray_out_fifo_cap),
+    .row_bytes_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_address0),
+    .row_bytes_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_ce0),
+    .row_bytes_q0(row_bytes_q0),
+    .row_bytes_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_address1),
+    .row_bytes_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_ce1),
+    .row_bytes_q1(row_bytes_q1),
+    .row_bytes_1_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_address0),
+    .row_bytes_1_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_ce0),
+    .row_bytes_1_q0(row_bytes_1_q0),
+    .row_bytes_1_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_address1),
+    .row_bytes_1_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_ce1),
+    .row_bytes_1_q1(row_bytes_1_q1),
+    .row_bytes_2_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_address0),
+    .row_bytes_2_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_ce0),
+    .row_bytes_2_q0(row_bytes_2_q0),
+    .row_bytes_2_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_address1),
+    .row_bytes_2_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_ce1),
+    .row_bytes_2_q1(row_bytes_2_q1),
+    .row_bytes_3_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_address0),
+    .row_bytes_3_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_ce0),
+    .row_bytes_3_q0(row_bytes_3_q0),
+    .row_bytes_3_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_address1),
+    .row_bytes_3_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_ce1),
+    .row_bytes_3_q1(row_bytes_3_q1),
+    .row_bytes_4_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_address0),
+    .row_bytes_4_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_ce0),
+    .row_bytes_4_q0(row_bytes_4_q0),
+    .row_bytes_4_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_address1),
+    .row_bytes_4_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_ce1),
+    .row_bytes_4_q1(row_bytes_4_q1),
+    .row_bytes_5_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_address0),
+    .row_bytes_5_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_ce0),
+    .row_bytes_5_q0(row_bytes_5_q0),
+    .row_bytes_5_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_address1),
+    .row_bytes_5_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_ce1),
+    .row_bytes_5_q1(row_bytes_5_q1),
+    .row_bytes_6_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_address0),
+    .row_bytes_6_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_ce0),
+    .row_bytes_6_q0(row_bytes_6_q0),
+    .row_bytes_6_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_address1),
+    .row_bytes_6_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_ce1),
+    .row_bytes_6_q1(row_bytes_6_q1),
+    .row_bytes_7_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_address0),
+    .row_bytes_7_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_ce0),
+    .row_bytes_7_q0(row_bytes_7_q0),
+    .row_bytes_7_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_address1),
+    .row_bytes_7_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_ce1),
+    .row_bytes_7_q1(row_bytes_7_q1),
+    .row_bytes_8_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_address0),
+    .row_bytes_8_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_ce0),
+    .row_bytes_8_q0(row_bytes_8_q0),
+    .row_bytes_8_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_address1),
+    .row_bytes_8_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_ce1),
+    .row_bytes_8_q1(row_bytes_8_q1),
+    .row_bytes_9_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_address0),
+    .row_bytes_9_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_ce0),
+    .row_bytes_9_q0(row_bytes_9_q0),
+    .row_bytes_9_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_address1),
+    .row_bytes_9_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_ce1),
+    .row_bytes_9_q1(row_bytes_9_q1),
+    .row_bytes_10_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_address0),
+    .row_bytes_10_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_ce0),
+    .row_bytes_10_q0(row_bytes_10_q0),
+    .row_bytes_10_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_address1),
+    .row_bytes_10_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_ce1),
+    .row_bytes_10_q1(row_bytes_10_q1),
+    .row_bytes_11_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_address0),
+    .row_bytes_11_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_ce0),
+    .row_bytes_11_q0(row_bytes_11_q0),
+    .row_bytes_11_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_address1),
+    .row_bytes_11_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_ce1),
+    .row_bytes_11_q1(row_bytes_11_q1),
+    .row_bytes_12_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_address0),
+    .row_bytes_12_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_ce0),
+    .row_bytes_12_q0(row_bytes_12_q0),
+    .row_bytes_12_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_address1),
+    .row_bytes_12_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_ce1),
+    .row_bytes_12_q1(row_bytes_12_q1),
+    .row_bytes_13_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_address0),
+    .row_bytes_13_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_ce0),
+    .row_bytes_13_q0(row_bytes_13_q0),
+    .row_bytes_13_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_address1),
+    .row_bytes_13_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_ce1),
+    .row_bytes_13_q1(row_bytes_13_q1),
+    .row_bytes_14_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_address0),
+    .row_bytes_14_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_ce0),
+    .row_bytes_14_q0(row_bytes_14_q0),
+    .row_bytes_14_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_address1),
+    .row_bytes_14_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_ce1),
+    .row_bytes_14_q1(row_bytes_14_q1),
+    .row_bytes_15_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_address0),
+    .row_bytes_15_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_ce0),
+    .row_bytes_15_q0(row_bytes_15_q0),
+    .row_bytes_15_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_address1),
+    .row_bytes_15_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_ce1),
+    .row_bytes_15_q1(row_bytes_15_q1),
+    .row_bytes_16_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_address0),
+    .row_bytes_16_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_ce0),
+    .row_bytes_16_q0(row_bytes_16_q0),
+    .row_bytes_16_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_address1),
+    .row_bytes_16_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_ce1),
+    .row_bytes_16_q1(row_bytes_16_q1),
+    .row_bytes_17_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_address0),
+    .row_bytes_17_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_ce0),
+    .row_bytes_17_q0(row_bytes_17_q0),
+    .row_bytes_17_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_address1),
+    .row_bytes_17_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_ce1),
+    .row_bytes_17_q1(row_bytes_17_q1),
+    .row_bytes_18_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_address0),
+    .row_bytes_18_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_ce0),
+    .row_bytes_18_q0(row_bytes_18_q0),
+    .row_bytes_18_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_address1),
+    .row_bytes_18_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_ce1),
+    .row_bytes_18_q1(row_bytes_18_q1),
+    .row_bytes_19_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_address0),
+    .row_bytes_19_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_ce0),
+    .row_bytes_19_q0(row_bytes_19_q0),
+    .row_bytes_19_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_address1),
+    .row_bytes_19_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_ce1),
+    .row_bytes_19_q1(row_bytes_19_q1),
+    .row_bytes_20_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_address0),
+    .row_bytes_20_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_ce0),
+    .row_bytes_20_q0(row_bytes_20_q0),
+    .row_bytes_20_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_address1),
+    .row_bytes_20_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_ce1),
+    .row_bytes_20_q1(row_bytes_20_q1),
+    .row_bytes_21_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_address0),
+    .row_bytes_21_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_ce0),
+    .row_bytes_21_q0(row_bytes_21_q0),
+    .row_bytes_21_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_address1),
+    .row_bytes_21_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_ce1),
+    .row_bytes_21_q1(row_bytes_21_q1),
+    .row_bytes_22_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_address0),
+    .row_bytes_22_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_ce0),
+    .row_bytes_22_q0(row_bytes_22_q0),
+    .row_bytes_22_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_address1),
+    .row_bytes_22_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_ce1),
+    .row_bytes_22_q1(row_bytes_22_q1),
+    .row_bytes_23_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_address0),
+    .row_bytes_23_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_ce0),
+    .row_bytes_23_q0(row_bytes_23_q0),
+    .row_bytes_23_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_address1),
+    .row_bytes_23_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_ce1),
+    .row_bytes_23_q1(row_bytes_23_q1),
+    .row_bytes_24_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_address0),
+    .row_bytes_24_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_ce0),
+    .row_bytes_24_q0(row_bytes_24_q0),
+    .row_bytes_24_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_address1),
+    .row_bytes_24_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_ce1),
+    .row_bytes_24_q1(row_bytes_24_q1),
+    .row_bytes_25_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_address0),
+    .row_bytes_25_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_ce0),
+    .row_bytes_25_q0(row_bytes_25_q0),
+    .row_bytes_25_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_address1),
+    .row_bytes_25_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_ce1),
+    .row_bytes_25_q1(row_bytes_25_q1),
+    .row_bytes_26_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_address0),
+    .row_bytes_26_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_ce0),
+    .row_bytes_26_q0(row_bytes_26_q0),
+    .row_bytes_26_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_address1),
+    .row_bytes_26_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_ce1),
+    .row_bytes_26_q1(row_bytes_26_q1),
+    .row_bytes_27_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_address0),
+    .row_bytes_27_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_ce0),
+    .row_bytes_27_q0(row_bytes_27_q0),
+    .row_bytes_27_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_address1),
+    .row_bytes_27_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_ce1),
+    .row_bytes_27_q1(row_bytes_27_q1),
+    .row_bytes_28_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_address0),
+    .row_bytes_28_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_ce0),
+    .row_bytes_28_q0(row_bytes_28_q0),
+    .row_bytes_28_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_address1),
+    .row_bytes_28_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_ce1),
+    .row_bytes_28_q1(row_bytes_28_q1),
+    .row_bytes_29_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_address0),
+    .row_bytes_29_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_ce0),
+    .row_bytes_29_q0(row_bytes_29_q0),
+    .row_bytes_29_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_address1),
+    .row_bytes_29_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_ce1),
+    .row_bytes_29_q1(row_bytes_29_q1),
+    .row_bytes_30_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_address0),
+    .row_bytes_30_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_ce0),
+    .row_bytes_30_q0(row_bytes_30_q0),
+    .row_bytes_30_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_address1),
+    .row_bytes_30_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_ce1),
+    .row_bytes_30_q1(row_bytes_30_q1),
+    .row_bytes_31_address0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_address0),
+    .row_bytes_31_ce0(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_ce0),
+    .row_bytes_31_q0(row_bytes_31_q0),
+    .row_bytes_31_address1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_address1),
+    .row_bytes_31_ce1(grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_ce1),
+    .row_bytes_31_q1(row_bytes_31_q1)
 );
 
 always @ (posedge ap_clk) begin
@@ -392,7 +2222,7 @@ always @ (posedge ap_clk) begin
     end else begin
         if ((ap_continue == 1'b1)) begin
             ap_done_reg <= 1'b0;
-        end else if (((grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+        end else if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln7_fu_315_p2 == 1'd1))) begin
             ap_done_reg <= 1'b1;
         end
     end
@@ -400,39 +2230,91 @@ end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_grayscale_Pipeline_1_fu_70_ap_start_reg <= 1'b0;
+        grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state2)) begin
-            grp_grayscale_Pipeline_1_fu_70_ap_start_reg <= 1'b1;
-        end else if ((grp_grayscale_Pipeline_1_fu_70_ap_ready == 1'b1)) begin
-            grp_grayscale_Pipeline_1_fu_70_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state74)) begin
+            grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg <= 1'b1;
+        end else if ((grp_grayscale_Pipeline_burst_read_fu_225_ap_ready == 1'b1)) begin
+            grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (ap_rst == 1'b1) begin
-        grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start_reg <= 1'b0;
+        grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg <= 1'b0;
     end else begin
-        if ((1'b1 == ap_CS_fsm_state4)) begin
-            grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start_reg <= 1'b1;
-        end else if ((grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_ready == 1'b1)) begin
-            grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start_reg <= 1'b0;
+        if ((1'b1 == ap_CS_fsm_state76)) begin
+            grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg <= 1'b1;
+        end else if ((grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_ready == 1'b1)) begin
+            grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg <= 1'b0;
         end
     end
 end
 
 always @ (posedge ap_clk) begin
-    if ((1'b1 == ap_CS_fsm_state2)) begin
-        empty_97_reg_122 <= empty_97_fu_109_p2;
+    if (ap_rst == 1'b1) begin
+        grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg <= 1'b0;
+    end else begin
+        if ((1'b1 == ap_CS_fsm_state78)) begin
+            grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg <= 1'b1;
+        end else if ((grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_ready == 1'b1)) begin
+            grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg <= 1'b0;
+        end
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if (ap_rst == 1'b1) begin
+        start_once_reg <= 1'b0;
+    end else begin
+        if (((real_start == 1'b1) & (internal_ap_ready == 1'b0))) begin
+            start_once_reg <= 1'b1;
+        end else if ((internal_ap_ready == 1'b1)) begin
+            start_once_reg <= 1'b0;
+        end
     end
 end
 
 always @ (posedge ap_clk) begin
     if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
-        p_read_8_reg_116 <= p_read;
+        row_fu_76 <= 10'd0;
+    end else if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln7_fu_315_p2 == 1'd0))) begin
+        row_fu_76 <= add_ln7_fu_321_p2;
     end
 end
+
+always @ (posedge ap_clk) begin
+    if (((1'b1 == ap_CS_fsm_state1) & (1'b0 == ap_block_state1))) begin
+        input_read_reg_398 <= input_r;
+    end
+end
+
+always @ (posedge ap_clk) begin
+    if ((1'b1 == ap_CS_fsm_state2)) begin
+        trunc_ln_reg_406 <= {{add_ln15_fu_361_p2[63:6]}};
+    end
+end
+
+assign ap_ST_fsm_state10_blk = 1'b0;
+
+assign ap_ST_fsm_state11_blk = 1'b0;
+
+assign ap_ST_fsm_state12_blk = 1'b0;
+
+assign ap_ST_fsm_state13_blk = 1'b0;
+
+assign ap_ST_fsm_state14_blk = 1'b0;
+
+assign ap_ST_fsm_state15_blk = 1'b0;
+
+assign ap_ST_fsm_state16_blk = 1'b0;
+
+assign ap_ST_fsm_state17_blk = 1'b0;
+
+assign ap_ST_fsm_state18_blk = 1'b0;
+
+assign ap_ST_fsm_state19_blk = 1'b0;
 
 always @ (*) begin
     if ((1'b1 == ap_block_state1)) begin
@@ -442,28 +2324,168 @@ always @ (*) begin
     end
 end
 
+assign ap_ST_fsm_state20_blk = 1'b0;
+
+assign ap_ST_fsm_state21_blk = 1'b0;
+
+assign ap_ST_fsm_state22_blk = 1'b0;
+
+assign ap_ST_fsm_state23_blk = 1'b0;
+
+assign ap_ST_fsm_state24_blk = 1'b0;
+
+assign ap_ST_fsm_state25_blk = 1'b0;
+
+assign ap_ST_fsm_state26_blk = 1'b0;
+
+assign ap_ST_fsm_state27_blk = 1'b0;
+
+assign ap_ST_fsm_state28_blk = 1'b0;
+
+assign ap_ST_fsm_state29_blk = 1'b0;
+
 assign ap_ST_fsm_state2_blk = 1'b0;
 
+assign ap_ST_fsm_state30_blk = 1'b0;
+
+assign ap_ST_fsm_state31_blk = 1'b0;
+
+assign ap_ST_fsm_state32_blk = 1'b0;
+
+assign ap_ST_fsm_state33_blk = 1'b0;
+
+assign ap_ST_fsm_state34_blk = 1'b0;
+
+assign ap_ST_fsm_state35_blk = 1'b0;
+
+assign ap_ST_fsm_state36_blk = 1'b0;
+
+assign ap_ST_fsm_state37_blk = 1'b0;
+
+assign ap_ST_fsm_state38_blk = 1'b0;
+
+assign ap_ST_fsm_state39_blk = 1'b0;
+
 always @ (*) begin
-    if ((grp_grayscale_Pipeline_1_fu_70_ap_done == 1'b0)) begin
+    if ((m_axi_gmem0_0_ARREADY == 1'b0)) begin
         ap_ST_fsm_state3_blk = 1'b1;
     end else begin
         ap_ST_fsm_state3_blk = 1'b0;
     end
 end
 
+assign ap_ST_fsm_state40_blk = 1'b0;
+
+assign ap_ST_fsm_state41_blk = 1'b0;
+
+assign ap_ST_fsm_state42_blk = 1'b0;
+
+assign ap_ST_fsm_state43_blk = 1'b0;
+
+assign ap_ST_fsm_state44_blk = 1'b0;
+
+assign ap_ST_fsm_state45_blk = 1'b0;
+
+assign ap_ST_fsm_state46_blk = 1'b0;
+
+assign ap_ST_fsm_state47_blk = 1'b0;
+
+assign ap_ST_fsm_state48_blk = 1'b0;
+
+assign ap_ST_fsm_state49_blk = 1'b0;
+
 assign ap_ST_fsm_state4_blk = 1'b0;
 
+assign ap_ST_fsm_state50_blk = 1'b0;
+
+assign ap_ST_fsm_state51_blk = 1'b0;
+
+assign ap_ST_fsm_state52_blk = 1'b0;
+
+assign ap_ST_fsm_state53_blk = 1'b0;
+
+assign ap_ST_fsm_state54_blk = 1'b0;
+
+assign ap_ST_fsm_state55_blk = 1'b0;
+
+assign ap_ST_fsm_state56_blk = 1'b0;
+
+assign ap_ST_fsm_state57_blk = 1'b0;
+
+assign ap_ST_fsm_state58_blk = 1'b0;
+
+assign ap_ST_fsm_state59_blk = 1'b0;
+
+assign ap_ST_fsm_state5_blk = 1'b0;
+
+assign ap_ST_fsm_state60_blk = 1'b0;
+
+assign ap_ST_fsm_state61_blk = 1'b0;
+
+assign ap_ST_fsm_state62_blk = 1'b0;
+
+assign ap_ST_fsm_state63_blk = 1'b0;
+
+assign ap_ST_fsm_state64_blk = 1'b0;
+
+assign ap_ST_fsm_state65_blk = 1'b0;
+
+assign ap_ST_fsm_state66_blk = 1'b0;
+
+assign ap_ST_fsm_state67_blk = 1'b0;
+
+assign ap_ST_fsm_state68_blk = 1'b0;
+
+assign ap_ST_fsm_state69_blk = 1'b0;
+
+assign ap_ST_fsm_state6_blk = 1'b0;
+
+assign ap_ST_fsm_state70_blk = 1'b0;
+
+assign ap_ST_fsm_state71_blk = 1'b0;
+
+assign ap_ST_fsm_state72_blk = 1'b0;
+
+assign ap_ST_fsm_state73_blk = 1'b0;
+
+assign ap_ST_fsm_state74_blk = 1'b0;
+
 always @ (*) begin
-    if ((grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_done == 1'b0)) begin
-        ap_ST_fsm_state5_blk = 1'b1;
+    if ((grp_grayscale_Pipeline_burst_read_fu_225_ap_done == 1'b0)) begin
+        ap_ST_fsm_state75_blk = 1'b1;
     end else begin
-        ap_ST_fsm_state5_blk = 1'b0;
+        ap_ST_fsm_state75_blk = 1'b0;
     end
 end
 
+assign ap_ST_fsm_state76_blk = 1'b0;
+
 always @ (*) begin
-    if (((grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
+    if ((grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_done == 1'b0)) begin
+        ap_ST_fsm_state77_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state77_blk = 1'b0;
+    end
+end
+
+assign ap_ST_fsm_state78_blk = 1'b0;
+
+always @ (*) begin
+    if ((grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_done == 1'b0)) begin
+        ap_ST_fsm_state79_blk = 1'b1;
+    end else begin
+        ap_ST_fsm_state79_blk = 1'b0;
+    end
+end
+
+assign ap_ST_fsm_state7_blk = 1'b0;
+
+assign ap_ST_fsm_state8_blk = 1'b0;
+
+assign ap_ST_fsm_state9_blk = 1'b0;
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln7_fu_315_p2 == 1'd1))) begin
         ap_done = 1'b1;
     end else begin
         ap_done = ap_done_reg;
@@ -471,7 +2493,7 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((1'b1 == ap_CS_fsm_state1) & (ap_start == 1'b0))) begin
+    if (((real_start == 1'b0) & (1'b1 == ap_CS_fsm_state1))) begin
         ap_idle = 1'b1;
     end else begin
         ap_idle = 1'b0;
@@ -479,94 +2501,1964 @@ always @ (*) begin
 end
 
 always @ (*) begin
-    if (((grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-        ap_ready = 1'b1;
-    end else begin
-        ap_ready = 1'b0;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_blue_address0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_blue_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_blue_address0 = grp_grayscale_Pipeline_1_fu_70_local_blue_address0;
-    end else begin
-        local_blue_address0 = 'bx;
-    end
-end
-
-always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_blue_ce0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_blue_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_blue_ce0 = grp_grayscale_Pipeline_1_fu_70_local_blue_ce0;
-    end else begin
-        local_blue_ce0 = 1'b0;
-    end
-end
-
-always @ (*) begin
     if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_blue_we0 = grp_grayscale_Pipeline_1_fu_70_local_blue_we0;
+        gmem0_blk_n_AR = m_axi_gmem0_0_ARREADY;
     end else begin
-        local_blue_we0 = 1'b0;
+        gmem0_blk_n_AR = 1'b1;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_green_address0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_green_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_green_address0 = grp_grayscale_Pipeline_1_fu_70_local_green_address0;
+    if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln7_fu_315_p2 == 1'd1))) begin
+        internal_ap_ready = 1'b1;
     end else begin
-        local_green_address0 = 'bx;
+        internal_ap_ready = 1'b0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_green_ce0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_green_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_green_ce0 = grp_grayscale_Pipeline_1_fu_70_local_green_ce0;
+    if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem0_0_ARREADY == 1'b1))) begin
+        m_axi_gmem0_0_ARADDR = sext_ln15_fu_381_p1;
+    end else if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARADDR = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARADDR;
     end else begin
-        local_green_ce0 = 1'b0;
+        m_axi_gmem0_0_ARADDR = 'bx;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_green_we0 = grp_grayscale_Pipeline_1_fu_70_local_green_we0;
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARBURST = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARBURST;
     end else begin
-        local_green_we0 = 1'b0;
+        m_axi_gmem0_0_ARBURST = 2'd0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_red_address0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_red_address0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_red_address0 = grp_grayscale_Pipeline_1_fu_70_local_red_address0;
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARCACHE = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARCACHE;
     end else begin
-        local_red_address0 = 'bx;
+        m_axi_gmem0_0_ARCACHE = 4'd0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state5)) begin
-        local_red_ce0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_local_red_ce0;
-    end else if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_red_ce0 = grp_grayscale_Pipeline_1_fu_70_local_red_ce0;
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARID = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARID;
     end else begin
-        local_red_ce0 = 1'b0;
+        m_axi_gmem0_0_ARID = 1'd0;
     end
 end
 
 always @ (*) begin
-    if ((1'b1 == ap_CS_fsm_state3)) begin
-        local_red_we0 = grp_grayscale_Pipeline_1_fu_70_local_red_we0;
+    if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem0_0_ARREADY == 1'b1))) begin
+        m_axi_gmem0_0_ARLEN = 64'd24;
+    end else if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARLEN = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLEN;
     end else begin
-        local_red_we0 = 1'b0;
+        m_axi_gmem0_0_ARLEN = 'bx;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARLOCK = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARLOCK;
+    end else begin
+        m_axi_gmem0_0_ARLOCK = 2'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARPROT = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARPROT;
+    end else begin
+        m_axi_gmem0_0_ARPROT = 3'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARQOS = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARQOS;
+    end else begin
+        m_axi_gmem0_0_ARQOS = 4'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARREGION = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARREGION;
+    end else begin
+        m_axi_gmem0_0_ARREGION = 4'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARSIZE = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARSIZE;
+    end else begin
+        m_axi_gmem0_0_ARSIZE = 3'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARUSER = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARUSER;
+    end else begin
+        m_axi_gmem0_0_ARUSER = 1'd0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem0_0_ARREADY == 1'b1))) begin
+        m_axi_gmem0_0_ARVALID = 1'b1;
+    end else if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_ARVALID = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_ARVALID;
+    end else begin
+        m_axi_gmem0_0_ARVALID = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((1'b1 == ap_CS_fsm_state75) | (1'b1 == ap_CS_fsm_state74))) begin
+        m_axi_gmem0_0_RREADY = grp_grayscale_Pipeline_burst_read_fu_225_m_axi_gmem0_0_RREADY;
+    end else begin
+        m_axi_gmem0_0_RREADY = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((start_once_reg == 1'b0) & (start_full_n == 1'b0))) begin
+        real_start = 1'b0;
+    end else begin
+        real_start = ap_start;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_10_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_10_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_address0;
+    end else begin
+        row_bytes_10_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_10_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_10_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_address1;
+    end else begin
+        row_bytes_10_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_10_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_10_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_ce0;
+    end else begin
+        row_bytes_10_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_10_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_10_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_10_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_ce1;
+    end else begin
+        row_bytes_10_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_10_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_we0;
+    end else begin
+        row_bytes_10_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_10_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_10_we1;
+    end else begin
+        row_bytes_10_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_11_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_11_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_address0;
+    end else begin
+        row_bytes_11_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_11_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_11_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_address1;
+    end else begin
+        row_bytes_11_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_11_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_11_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_ce0;
+    end else begin
+        row_bytes_11_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_11_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_11_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_11_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_ce1;
+    end else begin
+        row_bytes_11_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_11_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_we0;
+    end else begin
+        row_bytes_11_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_11_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_11_we1;
+    end else begin
+        row_bytes_11_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_12_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_12_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_address0;
+    end else begin
+        row_bytes_12_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_12_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_12_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_address1;
+    end else begin
+        row_bytes_12_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_12_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_12_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_ce0;
+    end else begin
+        row_bytes_12_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_12_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_12_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_12_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_ce1;
+    end else begin
+        row_bytes_12_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_12_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_we0;
+    end else begin
+        row_bytes_12_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_12_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_12_we1;
+    end else begin
+        row_bytes_12_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_13_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_13_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_address0;
+    end else begin
+        row_bytes_13_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_13_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_13_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_address1;
+    end else begin
+        row_bytes_13_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_13_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_13_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_ce0;
+    end else begin
+        row_bytes_13_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_13_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_13_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_13_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_ce1;
+    end else begin
+        row_bytes_13_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_13_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_we0;
+    end else begin
+        row_bytes_13_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_13_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_13_we1;
+    end else begin
+        row_bytes_13_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_14_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_14_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_address0;
+    end else begin
+        row_bytes_14_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_14_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_14_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_address1;
+    end else begin
+        row_bytes_14_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_14_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_14_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_ce0;
+    end else begin
+        row_bytes_14_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_14_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_14_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_14_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_ce1;
+    end else begin
+        row_bytes_14_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_14_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_we0;
+    end else begin
+        row_bytes_14_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_14_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_14_we1;
+    end else begin
+        row_bytes_14_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_15_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_15_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_address0;
+    end else begin
+        row_bytes_15_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_15_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_15_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_address1;
+    end else begin
+        row_bytes_15_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_15_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_15_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_ce0;
+    end else begin
+        row_bytes_15_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_15_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_15_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_15_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_ce1;
+    end else begin
+        row_bytes_15_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_15_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_we0;
+    end else begin
+        row_bytes_15_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_15_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_15_we1;
+    end else begin
+        row_bytes_15_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_16_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_16_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_address0;
+    end else begin
+        row_bytes_16_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_16_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_16_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_address1;
+    end else begin
+        row_bytes_16_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_16_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_16_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_ce0;
+    end else begin
+        row_bytes_16_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_16_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_16_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_16_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_ce1;
+    end else begin
+        row_bytes_16_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_16_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_we0;
+    end else begin
+        row_bytes_16_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_16_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_16_we1;
+    end else begin
+        row_bytes_16_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_17_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_17_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_address0;
+    end else begin
+        row_bytes_17_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_17_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_17_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_address1;
+    end else begin
+        row_bytes_17_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_17_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_17_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_ce0;
+    end else begin
+        row_bytes_17_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_17_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_17_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_17_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_ce1;
+    end else begin
+        row_bytes_17_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_17_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_we0;
+    end else begin
+        row_bytes_17_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_17_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_17_we1;
+    end else begin
+        row_bytes_17_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_18_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_18_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_address0;
+    end else begin
+        row_bytes_18_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_18_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_18_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_address1;
+    end else begin
+        row_bytes_18_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_18_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_18_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_ce0;
+    end else begin
+        row_bytes_18_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_18_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_18_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_18_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_ce1;
+    end else begin
+        row_bytes_18_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_18_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_we0;
+    end else begin
+        row_bytes_18_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_18_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_18_we1;
+    end else begin
+        row_bytes_18_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_19_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_19_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_address0;
+    end else begin
+        row_bytes_19_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_19_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_19_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_address1;
+    end else begin
+        row_bytes_19_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_19_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_19_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_ce0;
+    end else begin
+        row_bytes_19_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_19_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_19_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_19_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_ce1;
+    end else begin
+        row_bytes_19_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_19_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_we0;
+    end else begin
+        row_bytes_19_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_19_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_19_we1;
+    end else begin
+        row_bytes_19_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_1_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_1_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_address0;
+    end else begin
+        row_bytes_1_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_1_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_1_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_address1;
+    end else begin
+        row_bytes_1_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_1_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_1_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_ce0;
+    end else begin
+        row_bytes_1_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_1_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_1_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_1_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_ce1;
+    end else begin
+        row_bytes_1_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_1_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_we0;
+    end else begin
+        row_bytes_1_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_1_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_1_we1;
+    end else begin
+        row_bytes_1_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_20_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_20_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_address0;
+    end else begin
+        row_bytes_20_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_20_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_20_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_address1;
+    end else begin
+        row_bytes_20_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_20_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_20_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_ce0;
+    end else begin
+        row_bytes_20_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_20_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_20_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_20_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_ce1;
+    end else begin
+        row_bytes_20_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_20_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_we0;
+    end else begin
+        row_bytes_20_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_20_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_20_we1;
+    end else begin
+        row_bytes_20_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_21_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_21_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_address0;
+    end else begin
+        row_bytes_21_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_21_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_21_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_address1;
+    end else begin
+        row_bytes_21_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_21_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_21_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_ce0;
+    end else begin
+        row_bytes_21_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_21_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_21_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_21_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_ce1;
+    end else begin
+        row_bytes_21_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_21_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_we0;
+    end else begin
+        row_bytes_21_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_21_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_21_we1;
+    end else begin
+        row_bytes_21_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_22_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_22_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_address0;
+    end else begin
+        row_bytes_22_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_22_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_22_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_address1;
+    end else begin
+        row_bytes_22_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_22_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_22_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_ce0;
+    end else begin
+        row_bytes_22_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_22_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_22_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_22_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_ce1;
+    end else begin
+        row_bytes_22_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_22_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_we0;
+    end else begin
+        row_bytes_22_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_22_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_22_we1;
+    end else begin
+        row_bytes_22_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_23_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_23_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_address0;
+    end else begin
+        row_bytes_23_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_23_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_23_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_address1;
+    end else begin
+        row_bytes_23_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_23_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_23_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_ce0;
+    end else begin
+        row_bytes_23_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_23_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_23_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_23_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_ce1;
+    end else begin
+        row_bytes_23_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_23_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_we0;
+    end else begin
+        row_bytes_23_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_23_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_23_we1;
+    end else begin
+        row_bytes_23_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_24_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_24_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_address0;
+    end else begin
+        row_bytes_24_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_24_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_24_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_address1;
+    end else begin
+        row_bytes_24_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_24_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_24_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_ce0;
+    end else begin
+        row_bytes_24_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_24_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_24_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_24_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_ce1;
+    end else begin
+        row_bytes_24_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_24_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_we0;
+    end else begin
+        row_bytes_24_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_24_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_24_we1;
+    end else begin
+        row_bytes_24_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_25_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_25_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_address0;
+    end else begin
+        row_bytes_25_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_25_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_25_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_address1;
+    end else begin
+        row_bytes_25_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_25_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_25_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_ce0;
+    end else begin
+        row_bytes_25_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_25_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_25_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_25_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_ce1;
+    end else begin
+        row_bytes_25_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_25_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_we0;
+    end else begin
+        row_bytes_25_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_25_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_25_we1;
+    end else begin
+        row_bytes_25_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_26_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_26_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_address0;
+    end else begin
+        row_bytes_26_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_26_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_26_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_address1;
+    end else begin
+        row_bytes_26_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_26_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_26_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_ce0;
+    end else begin
+        row_bytes_26_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_26_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_26_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_26_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_ce1;
+    end else begin
+        row_bytes_26_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_26_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_we0;
+    end else begin
+        row_bytes_26_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_26_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_26_we1;
+    end else begin
+        row_bytes_26_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_27_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_27_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_address0;
+    end else begin
+        row_bytes_27_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_27_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_27_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_address1;
+    end else begin
+        row_bytes_27_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_27_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_27_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_ce0;
+    end else begin
+        row_bytes_27_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_27_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_27_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_27_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_ce1;
+    end else begin
+        row_bytes_27_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_27_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_we0;
+    end else begin
+        row_bytes_27_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_27_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_27_we1;
+    end else begin
+        row_bytes_27_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_28_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_28_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_address0;
+    end else begin
+        row_bytes_28_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_28_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_28_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_address1;
+    end else begin
+        row_bytes_28_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_28_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_28_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_ce0;
+    end else begin
+        row_bytes_28_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_28_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_28_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_28_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_ce1;
+    end else begin
+        row_bytes_28_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_28_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_we0;
+    end else begin
+        row_bytes_28_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_28_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_28_we1;
+    end else begin
+        row_bytes_28_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_29_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_29_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_address0;
+    end else begin
+        row_bytes_29_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_29_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_29_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_address1;
+    end else begin
+        row_bytes_29_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_29_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_29_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_ce0;
+    end else begin
+        row_bytes_29_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_29_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_29_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_29_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_ce1;
+    end else begin
+        row_bytes_29_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_29_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_we0;
+    end else begin
+        row_bytes_29_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_29_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_29_we1;
+    end else begin
+        row_bytes_29_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_2_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_2_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_address0;
+    end else begin
+        row_bytes_2_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_2_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_2_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_address1;
+    end else begin
+        row_bytes_2_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_2_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_2_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_ce0;
+    end else begin
+        row_bytes_2_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_2_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_2_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_2_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_ce1;
+    end else begin
+        row_bytes_2_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_2_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_we0;
+    end else begin
+        row_bytes_2_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_2_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_2_we1;
+    end else begin
+        row_bytes_2_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_30_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_30_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_address0;
+    end else begin
+        row_bytes_30_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_30_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_30_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_address1;
+    end else begin
+        row_bytes_30_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_30_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_30_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_ce0;
+    end else begin
+        row_bytes_30_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_30_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_30_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_30_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_ce1;
+    end else begin
+        row_bytes_30_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_30_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_we0;
+    end else begin
+        row_bytes_30_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_30_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_30_we1;
+    end else begin
+        row_bytes_30_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_31_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_31_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_address0;
+    end else begin
+        row_bytes_31_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_31_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_31_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_address1;
+    end else begin
+        row_bytes_31_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_31_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_31_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_ce0;
+    end else begin
+        row_bytes_31_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_31_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_31_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_31_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_ce1;
+    end else begin
+        row_bytes_31_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_31_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_we0;
+    end else begin
+        row_bytes_31_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_31_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_31_we1;
+    end else begin
+        row_bytes_31_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_3_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_3_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_address0;
+    end else begin
+        row_bytes_3_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_3_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_3_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_address1;
+    end else begin
+        row_bytes_3_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_3_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_3_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_ce0;
+    end else begin
+        row_bytes_3_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_3_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_3_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_3_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_ce1;
+    end else begin
+        row_bytes_3_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_3_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_we0;
+    end else begin
+        row_bytes_3_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_3_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_3_we1;
+    end else begin
+        row_bytes_3_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_4_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_4_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_address0;
+    end else begin
+        row_bytes_4_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_4_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_4_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_address1;
+    end else begin
+        row_bytes_4_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_4_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_4_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_ce0;
+    end else begin
+        row_bytes_4_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_4_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_4_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_4_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_ce1;
+    end else begin
+        row_bytes_4_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_4_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_we0;
+    end else begin
+        row_bytes_4_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_4_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_4_we1;
+    end else begin
+        row_bytes_4_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_5_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_5_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_address0;
+    end else begin
+        row_bytes_5_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_5_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_5_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_address1;
+    end else begin
+        row_bytes_5_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_5_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_5_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_ce0;
+    end else begin
+        row_bytes_5_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_5_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_5_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_5_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_ce1;
+    end else begin
+        row_bytes_5_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_5_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_we0;
+    end else begin
+        row_bytes_5_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_5_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_5_we1;
+    end else begin
+        row_bytes_5_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_6_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_6_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_address0;
+    end else begin
+        row_bytes_6_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_6_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_6_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_address1;
+    end else begin
+        row_bytes_6_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_6_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_6_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_ce0;
+    end else begin
+        row_bytes_6_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_6_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_6_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_6_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_ce1;
+    end else begin
+        row_bytes_6_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_6_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_we0;
+    end else begin
+        row_bytes_6_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_6_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_6_we1;
+    end else begin
+        row_bytes_6_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_7_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_7_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_address0;
+    end else begin
+        row_bytes_7_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_7_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_7_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_address1;
+    end else begin
+        row_bytes_7_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_7_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_7_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_ce0;
+    end else begin
+        row_bytes_7_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_7_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_7_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_7_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_ce1;
+    end else begin
+        row_bytes_7_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_7_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_we0;
+    end else begin
+        row_bytes_7_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_7_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_7_we1;
+    end else begin
+        row_bytes_7_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_8_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_8_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_address0;
+    end else begin
+        row_bytes_8_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_8_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_8_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_address1;
+    end else begin
+        row_bytes_8_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_8_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_8_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_ce0;
+    end else begin
+        row_bytes_8_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_8_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_8_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_8_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_ce1;
+    end else begin
+        row_bytes_8_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_8_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_we0;
+    end else begin
+        row_bytes_8_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_8_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_8_we1;
+    end else begin
+        row_bytes_8_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_9_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_9_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_address0;
+    end else begin
+        row_bytes_9_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_9_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_9_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_address1;
+    end else begin
+        row_bytes_9_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_9_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_9_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_ce0;
+    end else begin
+        row_bytes_9_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_9_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_9_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_9_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_ce1;
+    end else begin
+        row_bytes_9_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_9_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_we0;
+    end else begin
+        row_bytes_9_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_9_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_9_we1;
+    end else begin
+        row_bytes_9_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_address0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_address0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_address0;
+    end else begin
+        row_bytes_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_address1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_address1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_address1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_address1;
+    end else begin
+        row_bytes_address1 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_ce0 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_ce0;
+    end else begin
+        row_bytes_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state79)) begin
+        row_bytes_ce1 = grp_grayscale_Pipeline_unpack_pixels_fu_269_row_bytes_ce1;
+    end else if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_ce1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_ce1;
+    end else begin
+        row_bytes_ce1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_we0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_we0;
+    end else begin
+        row_bytes_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_bytes_we1 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_bytes_we1;
+    end else begin
+        row_bytes_we1 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_words_address0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_words_address0;
+    end else if ((1'b1 == ap_CS_fsm_state75)) begin
+        row_words_address0 = grp_grayscale_Pipeline_burst_read_fu_225_row_words_address0;
+    end else begin
+        row_words_address0 = 'bx;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state77)) begin
+        row_words_ce0 = grp_grayscale_Pipeline_unpack_bytes_fu_232_row_words_ce0;
+    end else if ((1'b1 == ap_CS_fsm_state75)) begin
+        row_words_ce0 = grp_grayscale_Pipeline_burst_read_fu_225_row_words_ce0;
+    end else begin
+        row_words_ce0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if ((1'b1 == ap_CS_fsm_state75)) begin
+        row_words_we0 = grp_grayscale_Pipeline_burst_read_fu_225_row_words_we0;
+    end else begin
+        row_words_we0 = 1'b0;
+    end
+end
+
+always @ (*) begin
+    if (((start_once_reg == 1'b0) & (real_start == 1'b1))) begin
+        start_write = 1'b1;
+    end else begin
+        start_write = 1'b0;
     end
 end
 
@@ -580,10 +4472,14 @@ always @ (*) begin
             end
         end
         ap_ST_fsm_state2 : begin
-            ap_NS_fsm = ap_ST_fsm_state3;
+            if (((1'b1 == ap_CS_fsm_state2) & (icmp_ln7_fu_315_p2 == 1'd1))) begin
+                ap_NS_fsm = ap_ST_fsm_state1;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state3;
+            end
         end
         ap_ST_fsm_state3 : begin
-            if (((1'b1 == ap_CS_fsm_state3) & (grp_grayscale_Pipeline_1_fu_70_ap_done == 1'b1))) begin
+            if (((1'b1 == ap_CS_fsm_state3) & (m_axi_gmem0_0_ARREADY == 1'b1))) begin
                 ap_NS_fsm = ap_ST_fsm_state4;
             end else begin
                 ap_NS_fsm = ap_ST_fsm_state3;
@@ -593,10 +4489,240 @@ always @ (*) begin
             ap_NS_fsm = ap_ST_fsm_state5;
         end
         ap_ST_fsm_state5 : begin
-            if (((grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state5))) begin
-                ap_NS_fsm = ap_ST_fsm_state1;
+            ap_NS_fsm = ap_ST_fsm_state6;
+        end
+        ap_ST_fsm_state6 : begin
+            ap_NS_fsm = ap_ST_fsm_state7;
+        end
+        ap_ST_fsm_state7 : begin
+            ap_NS_fsm = ap_ST_fsm_state8;
+        end
+        ap_ST_fsm_state8 : begin
+            ap_NS_fsm = ap_ST_fsm_state9;
+        end
+        ap_ST_fsm_state9 : begin
+            ap_NS_fsm = ap_ST_fsm_state10;
+        end
+        ap_ST_fsm_state10 : begin
+            ap_NS_fsm = ap_ST_fsm_state11;
+        end
+        ap_ST_fsm_state11 : begin
+            ap_NS_fsm = ap_ST_fsm_state12;
+        end
+        ap_ST_fsm_state12 : begin
+            ap_NS_fsm = ap_ST_fsm_state13;
+        end
+        ap_ST_fsm_state13 : begin
+            ap_NS_fsm = ap_ST_fsm_state14;
+        end
+        ap_ST_fsm_state14 : begin
+            ap_NS_fsm = ap_ST_fsm_state15;
+        end
+        ap_ST_fsm_state15 : begin
+            ap_NS_fsm = ap_ST_fsm_state16;
+        end
+        ap_ST_fsm_state16 : begin
+            ap_NS_fsm = ap_ST_fsm_state17;
+        end
+        ap_ST_fsm_state17 : begin
+            ap_NS_fsm = ap_ST_fsm_state18;
+        end
+        ap_ST_fsm_state18 : begin
+            ap_NS_fsm = ap_ST_fsm_state19;
+        end
+        ap_ST_fsm_state19 : begin
+            ap_NS_fsm = ap_ST_fsm_state20;
+        end
+        ap_ST_fsm_state20 : begin
+            ap_NS_fsm = ap_ST_fsm_state21;
+        end
+        ap_ST_fsm_state21 : begin
+            ap_NS_fsm = ap_ST_fsm_state22;
+        end
+        ap_ST_fsm_state22 : begin
+            ap_NS_fsm = ap_ST_fsm_state23;
+        end
+        ap_ST_fsm_state23 : begin
+            ap_NS_fsm = ap_ST_fsm_state24;
+        end
+        ap_ST_fsm_state24 : begin
+            ap_NS_fsm = ap_ST_fsm_state25;
+        end
+        ap_ST_fsm_state25 : begin
+            ap_NS_fsm = ap_ST_fsm_state26;
+        end
+        ap_ST_fsm_state26 : begin
+            ap_NS_fsm = ap_ST_fsm_state27;
+        end
+        ap_ST_fsm_state27 : begin
+            ap_NS_fsm = ap_ST_fsm_state28;
+        end
+        ap_ST_fsm_state28 : begin
+            ap_NS_fsm = ap_ST_fsm_state29;
+        end
+        ap_ST_fsm_state29 : begin
+            ap_NS_fsm = ap_ST_fsm_state30;
+        end
+        ap_ST_fsm_state30 : begin
+            ap_NS_fsm = ap_ST_fsm_state31;
+        end
+        ap_ST_fsm_state31 : begin
+            ap_NS_fsm = ap_ST_fsm_state32;
+        end
+        ap_ST_fsm_state32 : begin
+            ap_NS_fsm = ap_ST_fsm_state33;
+        end
+        ap_ST_fsm_state33 : begin
+            ap_NS_fsm = ap_ST_fsm_state34;
+        end
+        ap_ST_fsm_state34 : begin
+            ap_NS_fsm = ap_ST_fsm_state35;
+        end
+        ap_ST_fsm_state35 : begin
+            ap_NS_fsm = ap_ST_fsm_state36;
+        end
+        ap_ST_fsm_state36 : begin
+            ap_NS_fsm = ap_ST_fsm_state37;
+        end
+        ap_ST_fsm_state37 : begin
+            ap_NS_fsm = ap_ST_fsm_state38;
+        end
+        ap_ST_fsm_state38 : begin
+            ap_NS_fsm = ap_ST_fsm_state39;
+        end
+        ap_ST_fsm_state39 : begin
+            ap_NS_fsm = ap_ST_fsm_state40;
+        end
+        ap_ST_fsm_state40 : begin
+            ap_NS_fsm = ap_ST_fsm_state41;
+        end
+        ap_ST_fsm_state41 : begin
+            ap_NS_fsm = ap_ST_fsm_state42;
+        end
+        ap_ST_fsm_state42 : begin
+            ap_NS_fsm = ap_ST_fsm_state43;
+        end
+        ap_ST_fsm_state43 : begin
+            ap_NS_fsm = ap_ST_fsm_state44;
+        end
+        ap_ST_fsm_state44 : begin
+            ap_NS_fsm = ap_ST_fsm_state45;
+        end
+        ap_ST_fsm_state45 : begin
+            ap_NS_fsm = ap_ST_fsm_state46;
+        end
+        ap_ST_fsm_state46 : begin
+            ap_NS_fsm = ap_ST_fsm_state47;
+        end
+        ap_ST_fsm_state47 : begin
+            ap_NS_fsm = ap_ST_fsm_state48;
+        end
+        ap_ST_fsm_state48 : begin
+            ap_NS_fsm = ap_ST_fsm_state49;
+        end
+        ap_ST_fsm_state49 : begin
+            ap_NS_fsm = ap_ST_fsm_state50;
+        end
+        ap_ST_fsm_state50 : begin
+            ap_NS_fsm = ap_ST_fsm_state51;
+        end
+        ap_ST_fsm_state51 : begin
+            ap_NS_fsm = ap_ST_fsm_state52;
+        end
+        ap_ST_fsm_state52 : begin
+            ap_NS_fsm = ap_ST_fsm_state53;
+        end
+        ap_ST_fsm_state53 : begin
+            ap_NS_fsm = ap_ST_fsm_state54;
+        end
+        ap_ST_fsm_state54 : begin
+            ap_NS_fsm = ap_ST_fsm_state55;
+        end
+        ap_ST_fsm_state55 : begin
+            ap_NS_fsm = ap_ST_fsm_state56;
+        end
+        ap_ST_fsm_state56 : begin
+            ap_NS_fsm = ap_ST_fsm_state57;
+        end
+        ap_ST_fsm_state57 : begin
+            ap_NS_fsm = ap_ST_fsm_state58;
+        end
+        ap_ST_fsm_state58 : begin
+            ap_NS_fsm = ap_ST_fsm_state59;
+        end
+        ap_ST_fsm_state59 : begin
+            ap_NS_fsm = ap_ST_fsm_state60;
+        end
+        ap_ST_fsm_state60 : begin
+            ap_NS_fsm = ap_ST_fsm_state61;
+        end
+        ap_ST_fsm_state61 : begin
+            ap_NS_fsm = ap_ST_fsm_state62;
+        end
+        ap_ST_fsm_state62 : begin
+            ap_NS_fsm = ap_ST_fsm_state63;
+        end
+        ap_ST_fsm_state63 : begin
+            ap_NS_fsm = ap_ST_fsm_state64;
+        end
+        ap_ST_fsm_state64 : begin
+            ap_NS_fsm = ap_ST_fsm_state65;
+        end
+        ap_ST_fsm_state65 : begin
+            ap_NS_fsm = ap_ST_fsm_state66;
+        end
+        ap_ST_fsm_state66 : begin
+            ap_NS_fsm = ap_ST_fsm_state67;
+        end
+        ap_ST_fsm_state67 : begin
+            ap_NS_fsm = ap_ST_fsm_state68;
+        end
+        ap_ST_fsm_state68 : begin
+            ap_NS_fsm = ap_ST_fsm_state69;
+        end
+        ap_ST_fsm_state69 : begin
+            ap_NS_fsm = ap_ST_fsm_state70;
+        end
+        ap_ST_fsm_state70 : begin
+            ap_NS_fsm = ap_ST_fsm_state71;
+        end
+        ap_ST_fsm_state71 : begin
+            ap_NS_fsm = ap_ST_fsm_state72;
+        end
+        ap_ST_fsm_state72 : begin
+            ap_NS_fsm = ap_ST_fsm_state73;
+        end
+        ap_ST_fsm_state73 : begin
+            ap_NS_fsm = ap_ST_fsm_state74;
+        end
+        ap_ST_fsm_state74 : begin
+            ap_NS_fsm = ap_ST_fsm_state75;
+        end
+        ap_ST_fsm_state75 : begin
+            if (((grp_grayscale_Pipeline_burst_read_fu_225_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state75))) begin
+                ap_NS_fsm = ap_ST_fsm_state76;
             end else begin
-                ap_NS_fsm = ap_ST_fsm_state5;
+                ap_NS_fsm = ap_ST_fsm_state75;
+            end
+        end
+        ap_ST_fsm_state76 : begin
+            ap_NS_fsm = ap_ST_fsm_state77;
+        end
+        ap_ST_fsm_state77 : begin
+            if (((grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state77))) begin
+                ap_NS_fsm = ap_ST_fsm_state78;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state77;
+            end
+        end
+        ap_ST_fsm_state78 : begin
+            ap_NS_fsm = ap_ST_fsm_state79;
+        end
+        ap_ST_fsm_state79 : begin
+            if (((grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_done == 1'b1) & (1'b1 == ap_CS_fsm_state79))) begin
+                ap_NS_fsm = ap_ST_fsm_state2;
+            end else begin
+                ap_NS_fsm = ap_ST_fsm_state79;
             end
         end
         default : begin
@@ -605,104 +4731,98 @@ always @ (*) begin
     endcase
 end
 
+assign add_ln15_fu_361_p2 = (zext_ln15_fu_357_p1 + input_read_reg_398);
+
+assign add_ln7_fu_321_p2 = (row_fu_76 + 10'd1);
+
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 
 assign ap_CS_fsm_state2 = ap_CS_fsm[32'd1];
 
 assign ap_CS_fsm_state3 = ap_CS_fsm[32'd2];
 
-assign ap_CS_fsm_state4 = ap_CS_fsm[32'd3];
+assign ap_CS_fsm_state74 = ap_CS_fsm[32'd73];
 
-assign ap_CS_fsm_state5 = ap_CS_fsm[32'd4];
+assign ap_CS_fsm_state75 = ap_CS_fsm[32'd74];
+
+assign ap_CS_fsm_state76 = ap_CS_fsm[32'd75];
+
+assign ap_CS_fsm_state77 = ap_CS_fsm[32'd76];
+
+assign ap_CS_fsm_state78 = ap_CS_fsm[32'd77];
+
+assign ap_CS_fsm_state79 = ap_CS_fsm[32'd78];
 
 always @ (*) begin
-    ap_block_state1 = ((ap_done_reg == 1'b1) | (ap_start == 1'b0));
+    ap_block_state1 = ((ap_done_reg == 1'b1) | (real_start == 1'b0));
 end
 
-assign empty_97_fu_109_p2 = (p_cast9_fu_105_p1 + in_r);
+assign ap_ready = internal_ap_ready;
 
-assign empty_fu_99_p2 = (p_shl_fu_92_p3 - zext_ln6_fu_89_p1);
+assign gray_out_din = grp_grayscale_Pipeline_unpack_pixels_fu_269_gray_out_din;
 
-assign grp_grayscale_Pipeline_1_fu_70_ap_start = grp_grayscale_Pipeline_1_fu_70_ap_start_reg;
+assign gray_out_write = grp_grayscale_Pipeline_unpack_pixels_fu_269_gray_out_write;
 
-assign grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_ap_start_reg;
+assign grp_grayscale_Pipeline_burst_read_fu_225_ap_start = grp_grayscale_Pipeline_burst_read_fu_225_ap_start_reg;
 
-assign m_axi_gmem_0_ARADDR = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARADDR;
+assign grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start = grp_grayscale_Pipeline_unpack_bytes_fu_232_ap_start_reg;
 
-assign m_axi_gmem_0_ARBURST = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARBURST;
+assign grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start = grp_grayscale_Pipeline_unpack_pixels_fu_269_ap_start_reg;
 
-assign m_axi_gmem_0_ARCACHE = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARCACHE;
+assign icmp_ln7_fu_315_p2 = ((row_fu_76 == 10'd512) ? 1'b1 : 1'b0);
 
-assign m_axi_gmem_0_ARID = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARID;
+assign m_axi_gmem0_0_AWADDR = 64'd0;
 
-assign m_axi_gmem_0_ARLEN = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARLEN;
+assign m_axi_gmem0_0_AWBURST = 2'd0;
 
-assign m_axi_gmem_0_ARLOCK = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARLOCK;
+assign m_axi_gmem0_0_AWCACHE = 4'd0;
 
-assign m_axi_gmem_0_ARPROT = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARPROT;
+assign m_axi_gmem0_0_AWID = 1'd0;
 
-assign m_axi_gmem_0_ARQOS = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARQOS;
+assign m_axi_gmem0_0_AWLEN = 32'd0;
 
-assign m_axi_gmem_0_ARREGION = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARREGION;
+assign m_axi_gmem0_0_AWLOCK = 2'd0;
 
-assign m_axi_gmem_0_ARSIZE = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARSIZE;
+assign m_axi_gmem0_0_AWPROT = 3'd0;
 
-assign m_axi_gmem_0_ARUSER = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARUSER;
+assign m_axi_gmem0_0_AWQOS = 4'd0;
 
-assign m_axi_gmem_0_ARVALID = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_ARVALID;
+assign m_axi_gmem0_0_AWREGION = 4'd0;
 
-assign m_axi_gmem_0_AWADDR = 64'd0;
+assign m_axi_gmem0_0_AWSIZE = 3'd0;
 
-assign m_axi_gmem_0_AWBURST = 2'd0;
+assign m_axi_gmem0_0_AWUSER = 1'd0;
 
-assign m_axi_gmem_0_AWCACHE = 4'd0;
+assign m_axi_gmem0_0_AWVALID = 1'b0;
 
-assign m_axi_gmem_0_AWID = 1'd0;
+assign m_axi_gmem0_0_BREADY = 1'b0;
 
-assign m_axi_gmem_0_AWLEN = 32'd0;
+assign m_axi_gmem0_0_WDATA = 512'd0;
 
-assign m_axi_gmem_0_AWLOCK = 2'd0;
+assign m_axi_gmem0_0_WID = 1'd0;
 
-assign m_axi_gmem_0_AWPROT = 3'd0;
+assign m_axi_gmem0_0_WLAST = 1'b0;
 
-assign m_axi_gmem_0_AWQOS = 4'd0;
+assign m_axi_gmem0_0_WSTRB = 64'd0;
 
-assign m_axi_gmem_0_AWREGION = 4'd0;
+assign m_axi_gmem0_0_WUSER = 1'd0;
 
-assign m_axi_gmem_0_AWSIZE = 3'd0;
+assign m_axi_gmem0_0_WVALID = 1'b0;
 
-assign m_axi_gmem_0_AWUSER = 1'd0;
+assign p_shl_fu_331_p3 = {{trunc_ln15_fu_327_p1}, {11'd0}};
 
-assign m_axi_gmem_0_AWVALID = 1'b0;
+assign sext_ln15_fu_381_p1 = $signed(trunc_ln_reg_406);
 
-assign m_axi_gmem_0_BREADY = 1'b0;
+assign start_out = real_start;
 
-assign m_axi_gmem_0_RREADY = grp_grayscale_Pipeline_1_fu_70_m_axi_gmem_0_RREADY;
+assign sub_ln15_fu_351_p2 = (p_shl_fu_331_p3 - zext_ln15_1_fu_347_p1);
 
-assign m_axi_gmem_0_WDATA = 512'd0;
+assign tmp_fu_339_p3 = {{row_fu_76}, {9'd0}};
 
-assign m_axi_gmem_0_WID = 1'd0;
+assign trunc_ln15_fu_327_p1 = row_fu_76[8:0];
 
-assign m_axi_gmem_0_WLAST = 1'b0;
+assign zext_ln15_1_fu_347_p1 = tmp_fu_339_p3;
 
-assign m_axi_gmem_0_WSTRB = 64'd0;
-
-assign m_axi_gmem_0_WUSER = 1'd0;
-
-assign m_axi_gmem_0_WVALID = 1'b0;
-
-assign out_grayscale_address0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_address0;
-
-assign out_grayscale_ce0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_ce0;
-
-assign out_grayscale_d0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_d0;
-
-assign out_grayscale_we0 = grp_grayscale_Pipeline_VITIS_LOOP_22_1_fu_80_out_grayscale_we0;
-
-assign p_cast9_fu_105_p1 = empty_fu_99_p2;
-
-assign p_shl_fu_92_p3 = {{p_read_8_reg_116}, {2'd0}};
-
-assign zext_ln6_fu_89_p1 = p_read_8_reg_116;
+assign zext_ln15_fu_357_p1 = sub_ln15_fu_351_p2;
 
 endmodule //canny_top_grayscale

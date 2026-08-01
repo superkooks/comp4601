@@ -3,29 +3,26 @@
 #include "canny_stages.h"
 
 void double_threshold(
-    const std::uint16_t input[WIDTH],
-    std::uint8_t output[WIDTH],
-    bool valid_in,
-    bool *valid_out
+    hls::stream<std::uint16_t> &input,
+    hls::stream<std::uint8_t> &output
 ) {
-    if (!valid_in) {
-        *valid_out = false;
-        return;
-    }
+    // No vertical window, so no look-ahead rows are owed at the end.
+    for (int i = 0; i < HEIGHT * WIDTH; ++i) {
+        #pragma HLS PIPELINE II=1
 
-    for (int column = 0; column < WIDTH; ++column) {
-        const std::uint16_t magnitude = input[column];
+        const std::uint16_t magnitude = input.read();
 
+        std::uint8_t result;
         if (magnitude >= HIGH_THRESHOLD) {
-            output[column] = STRONG_EDGE;
+            result = STRONG_EDGE;
         }
         else if (magnitude >= LOW_THRESHOLD) {
-            output[column] = WEAK_EDGE;
+            result = WEAK_EDGE;
         }
         else {
-            output[column] = NON_EDGE;
+            result = NON_EDGE;
         }
-    }
 
-    *valid_out = true;
+        output.write(result);
+    }
 }

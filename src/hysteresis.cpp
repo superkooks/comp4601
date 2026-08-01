@@ -7,12 +7,6 @@ namespace {
 
 constexpr int WINDOW_SIZE = 3;
 
-template <int Instance>
-std::uint8_t lineBuffer[WINDOW_SIZE][WIDTH] = {};
-
-template <int Instance>
-int rowsReceived = 0;
-
 int positive_modulo(int value, int divisor) {
     const int result = value % divisor;
     return result < 0 ? result + divisor : result;
@@ -53,161 +47,154 @@ bool has_strong_neighbour(
 }
 
 template <int Instance>
-void hysteresis_reset() {
-    rowsReceived<Instance> = 0;
-
-    for (int row = 0; row < WINDOW_SIZE; ++row) {
-        for (int column = 0; column < WIDTH; ++column) {
-            lineBuffer<Instance>[row][column] = NON_EDGE;
-        }
-    }
-}
-
-template <int Instance>
 void hysteresis(
-    const std::uint8_t input[WIDTH],
-    std::uint8_t output[WIDTH],
-    bool valid_in,
-    bool *valid_out,
+    hls::stream<std::uint8_t> &input,
+    hls::stream<std::uint8_t> &output,
     std::uint8_t resolve_weak
 ) {
     /*
-     * Bound to a plain name so the partition pragma can refer to it: the
-     * pragma parser does not accept a template argument list.
+     * hysteresis needs 1 row of vertical look-ahead before it can emit its
+     * first output row (see outputRow below), so it still owes 1 trailing
+     * output row once its real input runs out. That trailing row is always
+     * resolved from rows already in buffer (via hasTop / hasBottom gating,
+     * not by reading anything new), so only the first HEIGHT of these
+     * TOTAL_ROWS iterations touch the input stream at all. This is the same
+     * for every Instance now that each hysteresis stage independently reads
+     * exactly HEIGHT rows, rather than depending on its position in the
+     * chain.
      */
-    auto &buffer = lineBuffer<Instance>;
+    constexpr int OWN_DELAY = 1;
+    constexpr int TOTAL_ROWS = HEIGHT + OWN_DELAY;
+
+    std::uint8_t buffer[WINDOW_SIZE][WIDTH];
     #pragma HLS ARRAY_PARTITION variable=buffer type=complete dim=1
 
-    if (!valid_in) {
-        *valid_out = false;
-        return;
-    }
+    int rowsReceived = 0;
 
-    const int writeSlot =
-        rowsReceived<Instance> % WINDOW_SIZE;
+    for (int row = 0; row < TOTAL_ROWS; ++row) {
+        if (row < HEIGHT) {
+            const int writeSlot = rowsReceived % WINDOW_SIZE;
 
-    for (int column = 0; column < WIDTH; ++column) {
-        #pragma HLS PIPELINE II=1
-        buffer[writeSlot][column] = input[column];
-    }
-    rowsReceived<Instance>++;
+            for (int column = 0; column < WIDTH; ++column) {
+                #pragma HLS PIPELINE II=1
+                buffer[writeSlot][column] = input.read();
+            }
+        }
+        rowsReceived++;
 
-    const int outputRow = rowsReceived<Instance> - 2;
+        const int outputRow = rowsReceived - 2;
 
-    if (outputRow < 0) {
-        *valid_out = false;
-        return;
-    }
+        if (outputRow < 0) {
+            continue;
+        }
 
-    const bool hasTop = outputRow > 0;
-    const bool hasBottom = outputRow < HEIGHT - 1;
+        const bool hasTop = outputRow > 0;
+        const bool hasBottom = outputRow < HEIGHT - 1;
 
-    /*
-     * Row slots are fixed for the whole output row, so resolve them once
-     * rather than once per pixel.
-     */
-    int slot[WINDOW_SIZE];
-    #pragma HLS ARRAY_PARTITION variable=slot type=complete
+        /*
+         * Row slots are fixed for the whole output row, so resolve them once
+         * rather than once per pixel.
+         */
+        int slot[WINDOW_SIZE];
+        #pragma HLS ARRAY_PARTITION variable=slot type=complete
 
-    slot[0] =
-        positive_modulo(
-            rowsReceived<Instance> - 3,
-            WINDOW_SIZE
-        );
+        slot[0] =
+            positive_modulo(
+                rowsReceived - 3,
+                WINDOW_SIZE
+            );
 
-    slot[1] =
-        positive_modulo(
-            rowsReceived<Instance> - 2,
-            WINDOW_SIZE
-        );
+        slot[1] =
+            positive_modulo(
+                rowsReceived - 2,
+                WINDOW_SIZE
+            );
 
-    slot[2] =
-        positive_modulo(
-            rowsReceived<Instance> - 1,
-            WINDOW_SIZE
-        );
+        slot[2] =
+            positive_modulo(
+                rowsReceived - 1,
+                WINDOW_SIZE
+            );
 
-    /*
-     * A 3x3 register window slides across the row so the line buffer is read
-     * once per column instead of once per neighbour.  Every bank is read at a
-     * fixed index and selected in registers, because the slots are dynamic.
-     * Columns outside the image are clamped when loaded and then discarded by
-     * the hasLeft and hasRight guards.
-     */
-    std::uint8_t window[WINDOW_SIZE][WINDOW_SIZE];
-    #pragma HLS ARRAY_PARTITION variable=window type=complete dim=0
+        /*
+         * A 3x3 register window slides across the row so the line buffer is
+         * read once per column instead of once per neighbour.  Every bank is
+         * read at a fixed index and selected in registers, because the slots
+         * are dynamic.  Columns outside the image are clamped when loaded and
+         * then discarded by the hasLeft and hasRight guards.
+         */
+        std::uint8_t window[WINDOW_SIZE][WINDOW_SIZE];
+        #pragma HLS ARRAY_PARTITION variable=window type=complete dim=0
 
-    for (int windowColumn = 0;
-         windowColumn < WINDOW_SIZE;
-         ++windowColumn) {
-        #pragma HLS UNROLL
-
-        const int sourceColumn = clamp_column(windowColumn - 1);
-
-        for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
+        for (int windowColumn = 0;
+             windowColumn < WINDOW_SIZE;
+             ++windowColumn) {
             #pragma HLS UNROLL
-            window[windowRow][windowColumn] =
-                buffer[slot[windowRow]][sourceColumn];
+
+            const int sourceColumn = clamp_column(windowColumn - 1);
+
+            for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
+                #pragma HLS UNROLL
+                window[windowRow][windowColumn] =
+                    buffer[slot[windowRow]][sourceColumn];
+            }
+        }
+
+        for (int column = 0; column < WIDTH; ++column) {
+            #pragma HLS PIPELINE II=1
+
+            const std::uint8_t centre = window[1][1];
+
+            const bool hasLeft = column > 0;
+            const bool hasRight = column < WIDTH - 1;
+
+            std::uint8_t result;
+
+            if (centre == STRONG_EDGE) {
+                result = STRONG_EDGE;
+            }
+            else if (
+                centre == WEAK_EDGE &&
+                has_strong_neighbour(
+                    window,
+                    hasTop,
+                    hasBottom,
+                    hasLeft,
+                    hasRight
+                )
+            ) {
+                result = STRONG_EDGE;
+            }
+            else if (centre == WEAK_EDGE) {
+                result = resolve_weak;
+            }
+            else {
+                result = NON_EDGE;
+            }
+
+            output.write(result);
+
+            const int nextColumn = clamp_column(column + 2);
+
+            std::uint8_t banked[WINDOW_SIZE];
+            #pragma HLS ARRAY_PARTITION variable=banked type=complete
+
+            for (int bank = 0; bank < WINDOW_SIZE; ++bank) {
+                #pragma HLS UNROLL
+                banked[bank] = buffer[bank][nextColumn];
+            }
+
+            for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
+                #pragma HLS UNROLL
+                window[windowRow][0] = window[windowRow][1];
+                window[windowRow][1] = window[windowRow][2];
+                window[windowRow][2] = banked[slot[windowRow]];
+            }
         }
     }
-
-    for (int column = 0; column < WIDTH; ++column) {
-        #pragma HLS PIPELINE II=1
-
-        const std::uint8_t centre = window[1][1];
-
-        const bool hasLeft = column > 0;
-        const bool hasRight = column < WIDTH - 1;
-
-        if (centre == STRONG_EDGE) {
-            output[column] = STRONG_EDGE;
-        }
-        else if (
-            centre == WEAK_EDGE &&
-            has_strong_neighbour(
-                window,
-                hasTop,
-                hasBottom,
-                hasLeft,
-                hasRight
-            )
-        ) {
-            output[column] = STRONG_EDGE;
-        }
-        else if (centre == WEAK_EDGE) {
-            output[column] = resolve_weak;
-        }
-        else {
-            output[column] = NON_EDGE;
-        }
-
-        const int nextColumn = clamp_column(column + 2);
-
-        std::uint8_t banked[WINDOW_SIZE];
-        #pragma HLS ARRAY_PARTITION variable=banked type=complete
-
-        for (int bank = 0; bank < WINDOW_SIZE; ++bank) {
-            #pragma HLS UNROLL
-            banked[bank] = buffer[bank][nextColumn];
-        }
-
-        for (int windowRow = 0; windowRow < WINDOW_SIZE; ++windowRow) {
-            #pragma HLS UNROLL
-            window[windowRow][0] = window[windowRow][1];
-            window[windowRow][1] = window[windowRow][2];
-            window[windowRow][2] = banked[slot[windowRow]];
-        }
-    }
-
-    *valid_out = true;
 }
 
-template void hysteresis<1>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
-template void hysteresis<2>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
-template void hysteresis<3>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
-template void hysteresis<4>(const std::uint8_t[WIDTH], std::uint8_t[WIDTH], bool, bool*, std::uint8_t);
-
-template void hysteresis_reset<1>();
-template void hysteresis_reset<2>();
-template void hysteresis_reset<3>();
-template void hysteresis_reset<4>();
+template void hysteresis<1>(hls::stream<std::uint8_t>&, hls::stream<std::uint8_t>&, std::uint8_t);
+template void hysteresis<2>(hls::stream<std::uint8_t>&, hls::stream<std::uint8_t>&, std::uint8_t);
+template void hysteresis<3>(hls::stream<std::uint8_t>&, hls::stream<std::uint8_t>&, std::uint8_t);
+template void hysteresis<4>(hls::stream<std::uint8_t>&, hls::stream<std::uint8_t>&, std::uint8_t);

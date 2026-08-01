@@ -6,6 +6,7 @@
 
 #include "canny_stages.h"
 #include "hysteresis_reference.h"
+#include "hls_stream.h"
 
 namespace {
 
@@ -14,68 +15,31 @@ int image_index(int row, int column) {
 }
 
 template <int Instance>
-int run_hysteresis(
+void run_hysteresis(
     const std::vector<std::uint8_t>& input,
     std::vector<std::uint8_t>& output,
     std::uint8_t resolveWeak
 ) {
-    hysteresis_reset<Instance>();
+    // hysteresis reads exactly HEIGHT rows and emits exactly HEIGHT rows,
+    // regardless of Instance (see canny_stages.h): its own row-delay is
+    // handled internally now, so the testbench doesn't need to feed or
+    // discard any extra rows.
+    hls::stream<std::uint8_t> inputStream;
+    hls::stream<std::uint8_t> outputStream;
 
-    std::uint8_t flushRow[WIDTH] = {};
-    std::uint8_t producedRow[WIDTH] = {};
-    bool invalidResult = true;
-
-    hysteresis<Instance>(
-        flushRow,
-        producedRow,
-        false,
-        &invalidResult,
-        resolveWeak
-    );
-
-    int validFailures = invalidResult ? 1 : 0;
-    int outputRows = 0;
-
-    for (int call = 0; call < HEIGHT + 1; ++call) {
-        bool valid = true;
-        const std::uint8_t* inputRow =
-            call < HEIGHT
-                ? input.data() + call * WIDTH
-                : flushRow;
-
-        hysteresis<Instance>(
-            inputRow,
-            producedRow,
-            true,
-            &valid,
-            resolveWeak
-        );
-
-        const bool expectedValid = call >= 1;
-        if (valid != expectedValid) {
-            ++validFailures;
-        }
-
-        if (valid) {
-            if (outputRows >= HEIGHT) {
-                ++validFailures;
-                continue;
-            }
-
-            std::copy(
-                producedRow,
-                producedRow + WIDTH,
-                output.data() + outputRows * WIDTH
-            );
-            ++outputRows;
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            inputStream.write(input[row * WIDTH + column]);
         }
     }
 
-    if (outputRows != HEIGHT) {
-        ++validFailures;
-    }
+    hysteresis<Instance>(inputStream, outputStream, resolveWeak);
 
-    return validFailures;
+    for (int row = 0; row < HEIGHT; ++row) {
+        for (int column = 0; column < WIDTH; ++column) {
+            output[row * WIDTH + column] = outputStream.read();
+        }
+    }
 }
 
 int compare_images(
@@ -153,17 +117,8 @@ int test_hysteresis() {
         WEAK_EDGE
     );
 
-    int validFailures = 0;
-    validFailures += run_hysteresis<1>(
-        input,
-        actualResolve,
-        NON_EDGE
-    );
-    validFailures += run_hysteresis<2>(
-        input,
-        actualPreserve,
-        WEAK_EDGE
-    );
+    run_hysteresis<1>(input, actualResolve, NON_EDGE);
+    run_hysteresis<2>(input, actualPreserve, WEAK_EDGE);
 
     const int resolveMismatches = compare_images(
         expectedResolve,
@@ -198,13 +153,11 @@ int test_hysteresis() {
     std::cout << "Resolve-mode mismatches: " << resolveMismatches << '\n';
     std::cout << "Preserve-mode mismatches: " << preserveMismatches << '\n';
     std::cout << "Manual-check failures: " << manualFailures << '\n';
-    std::cout << "Valid-timing failures: " << validFailures << '\n';
 
     if (
         resolveMismatches != 0 ||
         preserveMismatches != 0 ||
-        manualFailures != 0 ||
-        validFailures != 0
+        manualFailures != 0
     ) {
         std::cerr << "Hysteresis test FAILED.\n";
         return 1;

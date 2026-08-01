@@ -7,6 +7,8 @@
         "-IC:\\AMDDesignTools\\2025.2\\Vitis\\include\\etc",
         "-IC:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\auto_cc\\include",
         "-IC:\\Users\\twhsaw\\Projects\\comp4601\\src",
-        "-IC:\\Users\\twhsaw\\Projects\\comp4601\\testbench"
+        "-IC:\\Users\\twhsaw\\Projects\\comp4601\\testbench",
+        "-I/home/superkooks/Uni/COMP4601/assign/src",
+        "-I/home/superkooks/Uni/COMP4601/assign/testbench"
     ]
 }

@@ -1,12 +1,16 @@
-#include <array>
 #include <cstdint>
 #include <iostream>
+#include <vector>
 
 #include "canny_stages.h"
+#include "hls_stream.h"
+#include "hls_burst_maxi.h"
+#include "ap_int.h"
 
 int test_grayscale() {
-    std::array<RGBPixel, WIDTH> input{};
-    std::array<std::uint8_t, WIDTH> output{};
+    const int pixelCount = HEIGHT * WIDTH;
+
+    std::vector<RGBPixel> input(pixelCount, RGBPixel{0, 0, 0});
 
     input[0] = {0, 0, 0};
     input[1] = {255, 255, 255};
@@ -15,37 +19,34 @@ int test_grayscale() {
     input[4] = {255, 0, 0};
     input[5] = {10, 20, 30};
 
-    grayscale(input.data(), output.data());
+    hls::burst_maxi<ap_uint<512>> input_port(
+        reinterpret_cast<ap_uint<512> *>(input.data()));
 
-    const std::array<std::uint8_t, 6> expected = {
-        0,
-        255,
-        76,
-        149,
-        28,
-        21
-    };
+    hls::stream<std::uint8_t> output;
+    grayscale(input_port, output);
+
+    const std::uint8_t expected[6] = {0, 255, 76, 149, 28, 21};
 
     int failures = 0;
 
-    for (std::size_t index = 0; index < expected.size(); ++index) {
-        if (output[index] != expected[index]) {
-            std::cerr
-                << "Mismatch at pixel " << index
-                << ": expected " << static_cast<int>(expected[index])
-                << ", received " << static_cast<int>(output[index])
-                << '\n';
-            ++failures;
-        }
-    }
+    for (int i = 0; i < pixelCount; ++i) {
+        const std::uint8_t value = output.read();
 
-    for (int index = static_cast<int>(expected.size());
-         index < WIDTH;
-         ++index) {
-        if (output[index] != 0) {
-            std::cerr
-                << "Unexpected nonzero output at pixel "
-                << index << '\n';
+        const int row = i / WIDTH;
+        const int column = i % WIDTH;
+
+        // Row 0 holds the six test samples; every other row is zero.
+        const std::uint8_t expectedValue =
+            (row == 0 && column < 6) ? expected[column] : 0;
+
+        if (value != expectedValue) {
+            if (failures < 20) {
+                std::cerr
+                    << "Mismatch at pixel " << i
+                    << ": expected " << static_cast<int>(expectedValue)
+                    << ", received " << static_cast<int>(value)
+                    << '\n';
+            }
             ++failures;
         }
     }

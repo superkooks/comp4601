@@ -1,310 +1,296 @@
 [
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\sobel.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\sobel.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\double_threshold.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\double_threshold.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/non_maximum_suppression.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\grayscale.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\grayscale.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\hysteresis.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\hysteresis.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/sobel.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\output_row.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\output_row.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/double_threshold.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\canny_top.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\canny_top.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
+      "-hls-syn-headers-dir=/opt/Xilinx/2025.2/Vitis/common/technology/autopilot",
       "-fhlstoplevel=canny_top",
       "-I../src",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\non_maximum_suppression.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\non_maximum_suppression.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
-      "-fhls",
-      "-hls-syn-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\common\\technology\\autopilot",
-      "-fhlstoplevel=canny_top",
-      "-I../src",
-      "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\gaussian_blur.cpp"
-    ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\src\\gaussian_blur.cpp"
-  },
-  {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
-    "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_pipeline.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_grayscale.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_pipeline.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_grayscale.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_grayscale.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_nms.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_grayscale.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_nms.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\threshold_reference.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_hysteresis.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\threshold_reference.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_hysteresis.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_nms.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/hysteresis_reference.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_nms.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/hysteresis_reference.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_threshold.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/gaussian_reference.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_threshold.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/gaussian_reference.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_top.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/threshold_reference.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_top.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/threshold_reference.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\hysteresis_reference.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_sobel.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\hysteresis_reference.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_sobel.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_sobel.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/pipeline_reference.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_sobel.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/pipeline_reference.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_hysteresis.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_top.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_hysteresis.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_top.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\sobel_reference.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_gaussian.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\sobel_reference.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_gaussian.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_gaussian.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_threshold.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\test_gaussian.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_threshold.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\pipeline_reference.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/nms_reference.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\pipeline_reference.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/nms_reference.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\nms_reference.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/test_pipeline.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\nms_reference.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/test_pipeline.cpp"
   },
   {
-    "directory": "C:\\Users\\twhsaw\\Projects\\comp4601\\canny_hls",
+    "directory": "/home/superkooks/Uni/COMP4601/assign/canny_hls",
     "arguments": [
-      "C:\\AMDDesignTools\\2025.2\\Vitis\\win64\\tools\\vcxx\\libexec\\clang++.exe",
-      "--sysroot=C:\\AMDDesignTools\\2025.2\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "/bin/clang++",
+      "--gcc-toolchain=/opt/Xilinx/2025.2/Vitis/tps/lnx64/gcc-8.3.0",
       "-fhls-tb",
-      "-hls-sim-headers-dir=C:\\AMDDesignTools\\2025.2\\Vitis\\include",
+      "-hls-sim-headers-dir=/opt/Xilinx/2025.2/Vitis/include",
       "-I../src",
       "-I../testbench",
       "-c",
-      "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\gaussian_reference.cpp"
+      "/home/superkooks/Uni/COMP4601/assign/testbench/sobel_reference.cpp"
     ],
-    "file": "C:\\Users\\twhsaw\\Projects\\comp4601\\testbench\\gaussian_reference.cpp"
+    "file": "/home/superkooks/Uni/COMP4601/assign/testbench/sobel_reference.cpp"
   }
 ]
