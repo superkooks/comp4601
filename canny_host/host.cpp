@@ -19,14 +19,6 @@
 const int device_index = 0;
 const char *binaryFile = "binary_container_1.xclbin";
 
-struct FrameTiming {
-    double sync_in_us;
-    double launch_us;
-    double wait_us;
-    double sync_out_us;
-    double total_us;
-};
-
 class CannyFPGA {
     private:
     xrt::kernel krnl;
@@ -39,7 +31,7 @@ class CannyFPGA {
     cv::Mat out_mat;
 
     CannyFPGA();
-    FrameTiming process_frame();
+    void process_frame();
 };
 
 CannyFPGA::CannyFPGA() {
@@ -64,28 +56,11 @@ CannyFPGA::CannyFPGA() {
     out_mat = cv::Mat(HEIGHT, WIDTH, CV_8U, out_buf.map<uint8_t*>());
 }
 
-FrameTiming CannyFPGA::process_frame() {
-    auto t0 = std::chrono::high_resolution_clock::now();
+void CannyFPGA::process_frame() {
     in_buf.sync(XCL_BO_SYNC_BO_TO_DEVICE);
-
-    auto t1 = std::chrono::high_resolution_clock::now();
     run.start();
-
-    auto t2 = std::chrono::high_resolution_clock::now();
     run.wait();
-
-    auto t3 = std::chrono::high_resolution_clock::now();
     out_buf.sync(XCL_BO_SYNC_BO_FROM_DEVICE);
-
-    auto t4 = std::chrono::high_resolution_clock::now();
-
-    return FrameTiming{
-        std::chrono::duration<double, std::micro>(t1 - t0).count(),
-        std::chrono::duration<double, std::micro>(t2 - t1).count(),
-        std::chrono::duration<double, std::micro>(t3 - t2).count(),
-        std::chrono::duration<double, std::micro>(t4 - t3).count(),
-        std::chrono::duration<double, std::micro>(t4 - t0).count(),
-    };
 }
 
 class CannyCV {
@@ -115,72 +90,72 @@ void CannyCV::process_frame() {
 }
 
 int main(int argc, char** argv) {
-    auto processor = CannyFPGA();
+    auto processor = CannyCV();
 
     // BENCHMARK SINGLE IMAGE
-    // auto img_mat = cv::imread("test.jpg");
-    // cv::imshow("Input", img_mat);
-    // img_mat.copyTo(processor.in_mat);
+    auto img_mat = cv::imread("test.jpg");
+    cv::imshow("Input", img_mat);
+    img_mat.copyTo(processor.in_mat);
 
-    // // Warm up (first call can pay one-off driver/cache costs).
-    // processor.process_frame();
+    // Warm up (first call can pay one-off driver/cache costs).
+    processor.process_frame();
 
-    // constexpr int NUM_ITERS = 100;
-    // double total_sum = 0, sync_in_sum = 0, launch_sum = 0, wait_sum = 0, sync_out_sum = 0;
-    // double total_min = std::numeric_limits<double>::max();
+    constexpr int NUM_ITERS = 1000;
+    double total_sum = 0;
+    double total_min = std::numeric_limits<double>::max();
+    double total_max = std::numeric_limits<double>::lowest();
 
-    // for (int i = 0; i < NUM_ITERS; i++) {
-    //     auto t = processor.process_frame();
-    //     total_sum += t.total_us;
-    //     sync_in_sum += t.sync_in_us;
-    //     launch_sum += t.launch_us;
-    //     wait_sum += t.wait_us;
-    //     sync_out_sum += t.sync_out_us;
-    //     total_min = std::min(total_min, t.total_us);
-    // }
+    for (int i = 0; i < NUM_ITERS; i++) {
+        auto t0 = std::chrono::high_resolution_clock::now();
+        processor.process_frame();
+        auto t1 = std::chrono::high_resolution_clock::now();
 
-    // std::cout << "Over " << NUM_ITERS << " iterations:\n"
-    //           << "  total    mean=" << total_sum / NUM_ITERS << "us  min=" << total_min << "us\n"
-    //           << "  sync-in  mean=" << sync_in_sum / NUM_ITERS << "us\n"
-    //           << "  launch   mean=" << launch_sum / NUM_ITERS << "us\n"
-    //           << "  wait     mean=" << wait_sum / NUM_ITERS << "us\n"
-    //           << "  sync-out mean=" << sync_out_sum / NUM_ITERS << "us\n";
+        const double elapsed_us =
+            std::chrono::duration<double, std::micro>(t1 - t0).count();
 
-    // cv::imshow("Output", processor.out_mat);
-    // cv::imwrite("out.jpg", processor.out_mat);
+        total_sum += elapsed_us;
+        total_min = std::min(total_min, elapsed_us);
+        total_max = std::max(total_max, elapsed_us);
+    }
 
-    // for (;;)
-    //     if (cv::waitKey(0) == 'q')
-    //         break;
+    std::cout << "Over " << NUM_ITERS << " iterations:\n"
+              << "  total mean=" << total_sum / NUM_ITERS << "us  min=" << total_min << "us  max=" << total_max << "us\n";
+
+    cv::imshow("Output", processor.out_mat);
+    cv::imwrite("out.jpg", processor.out_mat);
+
+    for (;;)
+        if (cv::waitKey(0) == 'q')
+            break;
     
 
     // LIVE WEBCAM CAPTURE
-    cv::Mat frame;
-    cv::VideoCapture cap;
+    // cv::Mat frame;
+    // cv::VideoCapture cap;
     
-    cap.open(0);
-    if (!cap.isOpened()) {
-        std::cerr << "ERROR! Unable to open camera\n";
-        return -1;
-    }
+    // cap.open(0);
+    // if (!cap.isOpened()) {
+    //     std::cerr << "ERROR! Unable to open camera\n";
+    //     return -1;
+    // }
     
-    std::cout << "Start grabbing" << std::endl
-        << "Press any q to terminate" << std::endl;
-    for (;;) {
-        cap.read(frame);
-        if (frame.empty()) {
-            std::cerr << "ERROR! blank frame grabbed\n";
-            break;
-        }
+    // std::cout << "Start grabbing" << std::endl
+    //     << "Press any q to terminate" << std::endl;
+    // for (;;) {
+    //     cap.read(frame);
+    //     if (frame.empty()) {
+    //         std::cerr << "ERROR! blank frame grabbed\n";
+    //         break;
+    //     }
 
-        frame.copyTo(processor.in_mat);
-        processor.process_frame();
+    //     frame.copyTo(processor.in_mat);
+    //     processor.process_frame();
 
-        cv::imshow("Input", frame);
-        cv::imshow("Output", processor.out_mat);
-        if (cv::waitKey(16) == 'q')
-            break;
-    }
+    //     cv::imshow("Input", frame);
+    //     cv::imshow("Output", processor.out_mat);
+    //     if (cv::waitKey(16) == 'q')
+    //         break;
+    // }
 
     return 0;
 }
