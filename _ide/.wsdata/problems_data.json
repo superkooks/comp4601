@@ -118,7 +118,7 @@
   },
   {
     "uri": "file:///home/superkooks/Uni/COMP4601/assign/canny_host/host.cpp",
-    "owner": "_generated_diagnostic_collection_name_#49b9ffc8-ba9a-4bd9-919b-3465e70584a1",
+    "owner": "_generated_diagnostic_collection_name_#2e19423e-3d1f-4847-a20a-1e559538599c",
     "data": [
       {
         "code": "pp_file_not_found",
@@ -501,63 +501,6 @@
     ]
   },
   {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_top.cpp",
-    "owner": "_generated_diagnostic_collection_name_#49b9ffc8-ba9a-4bd9-919b-3465e70584a1",
-    "data": [
-      {
-        "code": "unsupported_type_and_header",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 9
-          },
-          "end": {
-            "line": 0,
-            "character": 25
-          }
-        },
-        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
-        "source": "clang",
-        "relatedInformation": [
-          {
-            "message": "Error occurred here",
-            "location": {
-              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
-              "range": {
-                "start": {
-                  "line": 62,
-                  "character": 5
-                },
-                "end": {
-                  "line": 62,
-                  "character": 14
-                }
-              }
-            }
-          }
-        ]
-      },
-      {
-        "code": "unsupported_type_and_header",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 8,
-            "character": 5
-          },
-          "end": {
-            "line": 8,
-            "character": 14
-          }
-        },
-        "message": "[HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
-        "source": "clang",
-        "relatedInformation": []
-      }
-    ]
-  },
-  {
     "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/sobel.cpp",
     "owner": "canny_hls::synthesis",
     "data": [
@@ -666,46 +609,6 @@
     ]
   },
   {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/hysteresis.cpp",
-    "owner": "_generated_diagnostic_collection_name_#49b9ffc8-ba9a-4bd9-919b-3465e70584a1",
-    "data": [
-      {
-        "code": "unsupported_type_and_header",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 2,
-            "character": 9
-          },
-          "end": {
-            "line": 2,
-            "character": 25
-          }
-        },
-        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
-        "source": "clang",
-        "relatedInformation": [
-          {
-            "message": "Error occurred here",
-            "location": {
-              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
-              "range": {
-                "start": {
-                  "line": 62,
-                  "character": 5
-                },
-                "end": {
-                  "line": 62,
-                  "character": 14
-                }
-              }
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
     "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
     "owner": "canny_hls::synthesis",
     "data": [
@@ -723,46 +626,6 @@
         },
         "severity": 2,
         "source": "canny_hls::synthesis"
-      }
-    ]
-  },
-  {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/gaussian_blur.cpp",
-    "owner": "_generated_diagnostic_collection_name_#49b9ffc8-ba9a-4bd9-919b-3465e70584a1",
-    "data": [
-      {
-        "code": "unsupported_type_and_header",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 2,
-            "character": 9
-          },
-          "end": {
-            "line": 2,
-            "character": 25
-          }
-        },
-        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
-        "source": "clang",
-        "relatedInformation": [
-          {
-            "message": "Error occurred here",
-            "location": {
-              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
-              "range": {
-                "start": {
-                  "line": 62,
-                  "character": 5
-                },
-                "end": {
-                  "line": 62,
-                  "character": 14
-                }
-              }
-            }
-          }
-        ]
       }
     ]
   },
@@ -1174,86 +1037,6 @@
         },
         "severity": 2,
         "source": "canny_hls::synthesis"
-      }
-    ]
-  },
-  {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/grayscale.cpp",
-    "owner": "_generated_diagnostic_collection_name_#49b9ffc8-ba9a-4bd9-919b-3465e70584a1",
-    "data": [
-      {
-        "code": "unsupported_type_and_header",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 9
-          },
-          "end": {
-            "line": 0,
-            "character": 25
-          }
-        },
-        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
-        "source": "clang",
-        "relatedInformation": [
-          {
-            "message": "Error occurred here",
-            "location": {
-              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
-              "range": {
-                "start": {
-                  "line": 62,
-                  "character": 5
-                },
-                "end": {
-                  "line": 62,
-                  "character": 14
-                }
-              }
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/write_frame.cpp",
-    "owner": "_generated_diagnostic_collection_name_#49b9ffc8-ba9a-4bd9-919b-3465e70584a1",
-    "data": [
-      {
-        "code": "unsupported_type_and_header",
-        "severity": 1,
-        "range": {
-          "start": {
-            "line": 0,
-            "character": 9
-          },
-          "end": {
-            "line": 0,
-            "character": 25
-          }
-        },
-        "message": "In included file: [HLS 211-200] the type 'hls::burst_maxi' from hls_burst_maxi.h is not supported by Code Analyzer C simulation",
-        "source": "clang",
-        "relatedInformation": [
-          {
-            "message": "Error occurred here",
-            "location": {
-              "uri": "file:///home/superkooks/Uni/COMP4601/assign/src/canny_stages.h",
-              "range": {
-                "start": {
-                  "line": 62,
-                  "character": 5
-                },
-                "end": {
-                  "line": 62,
-                  "character": 14
-                }
-              }
-            }
-          }
-        ]
       }
     ]
   }

@@ -90,44 +90,66 @@ void CannyCV::process_frame() {
 }
 
 int main(int argc, char** argv) {
-    auto processor = CannyCV();
-
     // BENCHMARK SINGLE IMAGE
+    // auto processor = CannyCV();
+
+    // auto img_mat = cv::imread("test.jpg");
+    // cv::imshow("Input", img_mat);
+    // img_mat.copyTo(processor.in_mat);
+
+    // // Warm up (first call can pay one-off driver/cache costs).
+    // processor.process_frame();
+
+    // constexpr int NUM_ITERS = 1000;
+    // double total_sum = 0;
+    // double total_min = std::numeric_limits<double>::max();
+    // double total_max = std::numeric_limits<double>::lowest();
+
+    // for (int i = 0; i < NUM_ITERS; i++) {
+    //     auto t0 = std::chrono::high_resolution_clock::now();
+    //     processor.process_frame();
+    //     auto t1 = std::chrono::high_resolution_clock::now();
+
+    //     const double elapsed_us =
+    //         std::chrono::duration<double, std::micro>(t1 - t0).count();
+
+    //     total_sum += elapsed_us;
+    //     total_min = std::min(total_min, elapsed_us);
+    //     total_max = std::max(total_max, elapsed_us);
+    // }
+
+    // std::cout << "Over " << NUM_ITERS << " iterations:\n"
+    //           << "  total mean=" << total_sum / NUM_ITERS << "us  min=" << total_min << "us  max=" << total_max << "us\n";
+
+    // cv::imshow("Output", processor.out_mat);
+    // cv::imwrite("out.jpg", processor.out_mat);
+
+    // for (;;)
+    //     if (cv::waitKey(0) == 'q')
+    //         break;
+
+    // COMPARE FPGA AND OPENCV OUTPUTS ON A SINGLE IMAGE
+    auto fpga = CannyFPGA();
+    auto cv_ref = CannyCV();
+
     auto img_mat = cv::imread("test.jpg");
     cv::imshow("Input", img_mat);
-    img_mat.copyTo(processor.in_mat);
+    img_mat.copyTo(fpga.in_mat);
+    img_mat.copyTo(cv_ref.in_mat);
 
-    // Warm up (first call can pay one-off driver/cache costs).
-    processor.process_frame();
+    fpga.process_frame();
+    cv_ref.process_frame();
 
-    constexpr int NUM_ITERS = 1000;
-    double total_sum = 0;
-    double total_min = std::numeric_limits<double>::max();
-    double total_max = std::numeric_limits<double>::lowest();
+    cv::imshow("FPGA output", fpga.out_mat);
+    cv::imshow("OpenCV output", cv_ref.out_mat);
 
-    for (int i = 0; i < NUM_ITERS; i++) {
-        auto t0 = std::chrono::high_resolution_clock::now();
-        processor.process_frame();
-        auto t1 = std::chrono::high_resolution_clock::now();
-
-        const double elapsed_us =
-            std::chrono::duration<double, std::micro>(t1 - t0).count();
-
-        total_sum += elapsed_us;
-        total_min = std::min(total_min, elapsed_us);
-        total_max = std::max(total_max, elapsed_us);
-    }
-
-    std::cout << "Over " << NUM_ITERS << " iterations:\n"
-              << "  total mean=" << total_sum / NUM_ITERS << "us  min=" << total_min << "us  max=" << total_max << "us\n";
-
-    cv::imshow("Output", processor.out_mat);
-    cv::imwrite("out.jpg", processor.out_mat);
+    cv::imwrite("fpga_out.jpg", fpga.out_mat);
+    cv::imwrite("opencv_out.jpg", cv_ref.out_mat);
 
     for (;;)
         if (cv::waitKey(0) == 'q')
             break;
-    
+
 
     // LIVE WEBCAM CAPTURE
     // cv::Mat frame;
