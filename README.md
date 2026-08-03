@@ -40,3 +40,6 @@ Luke McCallum ([z5591695@ad.unsw.edu.au](mailto:z5591695@ad.unsw.edu.au))
 ## Final Presentation
 [Final Presentation PDF](./final-presentation.pdf)
 
+## Demonstration Plan
+[Demo Plan PDF](./demo-plan.pdf)
+
